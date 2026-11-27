@@ -1,6 +1,6 @@
 # Happy Low Cost: chollos de vuelos activos (27 nov 2026)
 
-> 17 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-27T00:34:32Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 17 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-27T00:46:15Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
@@ -214,3 +214,883 @@ Cada guía tiene qué ver, ruta por días, cuándo ir, dónde dormir, qué comer
 - [Qué ver en Rovaniemi y Laponia en 5 días: guía sin humo](https://www.happylowcost.com/destinos/rovaniemi/) (Finlandia). Markdown: https://www.happylowcost.com/destinos/rovaniemi/index.md. English: https://www.happylowcost.com/en/destinations/rovaniemi-and-lapland/
 - [Qué ver en Chiang Mai en 4 días: templos y khao soi](https://www.happylowcost.com/destinos/chiang-mai/) (Tailandia). Markdown: https://www.happylowcost.com/destinos/chiang-mai/index.md. English: https://www.happylowcost.com/en/destinations/chiang-mai/
 - [Qué ver en Ciudad de Panamá en 3 días: guía sin postureo](https://www.happylowcost.com/destinos/ciudad-de-panama/) (Panamá). Markdown: https://www.happylowcost.com/destinos/ciudad-de-panama/index.md. English: https://www.happylowcost.com/en/destinations/panama-city/
+
+<!-- rutas -->
+## Rutas de vuelos con precios reales (875 rutas, consultadas en Kiwi.com en la fecha indicada)
+
+- [Alicante → Milán](https://www.happylowcost.com/vuelos/alicante-milan/): desde 38 € ida y vuelta, lo habitual 39 €, directo, Wizz Air Malta, consultado el 2026-11-22
+- [Alicante → Venecia](https://www.happylowcost.com/vuelos/alicante-venecia/): desde 40 € ida y vuelta, lo habitual 48 €, directo, Ryanair, consultado el 2026-11-23
+- [Alicante → Copenhague](https://www.happylowcost.com/vuelos/alicante-copenhague/): desde 58 € ida y vuelta, lo habitual 97 €, directo, Ryanair, consultado el 2026-11-21
+- [Alicante → Salzburgo](https://www.happylowcost.com/vuelos/alicante-salzburgo/): desde 69 € ida y vuelta, lo habitual 105 €, directo, Ryanair, consultado el 2026-11-23
+- [Alicante → Brujas](https://www.happylowcost.com/vuelos/alicante-brujas/): desde 71 € ida y vuelta, lo habitual 117 €, directo, Ryanair, consultado el 2026-11-21
+- [Alicante → Belgrado](https://www.happylowcost.com/vuelos/alicante-belgrado/): desde 79 € ida y vuelta, lo habitual 86 €, directo, Wizz Air, consultado el 2026-11-21
+- [Alicante → Cerdeña](https://www.happylowcost.com/vuelos/alicante-cerdena/): desde 123 € ida y vuelta, lo habitual 124 €, 1 escala(s), Ryanair, consultado el 2026-11-21
+- [Alicante → Vilna](https://www.happylowcost.com/vuelos/alicante-vilna/): desde 123 € ida y vuelta, lo habitual 160 €, 1 escala(s), Wizz Air UK, consultado el 2026-11-23
+- [Alicante → Chipre](https://www.happylowcost.com/vuelos/alicante-chipre/): desde 138 € ida y vuelta, lo habitual 175 €, 1 escala(s), Wizz Air Malta, consultado el 2026-11-21
+- [Alicante → Mykonos](https://www.happylowcost.com/vuelos/alicante-mykonos/): desde 240 € ida y vuelta, lo habitual 261 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-22
+- [Alicante → Creta](https://www.happylowcost.com/vuelos/alicante-creta/): desde 249 € ida y vuelta, lo habitual 311 €, 1 escala(s), Vueling, consultado el 2026-11-21
+- [Alicante → Isla de Sal](https://www.happylowcost.com/vuelos/alicante-sal/): desde 254 € ida y vuelta, lo habitual 307 €, 1 escala(s), Ryanair, consultado el 2026-11-23
+- [Alicante → El Cairo](https://www.happylowcost.com/vuelos/alicante-el-cairo/): desde 265 € ida y vuelta, lo habitual 300 €, 1 escala(s), Iberia Airlines, consultado el 2026-11-22
+- [Alicante → San Juan](https://www.happylowcost.com/vuelos/alicante-san-juan/): desde 608 € ida y vuelta, lo habitual 847 €, 2 escala(s), Iberia Airlines, consultado el 2026-11-23
+- [Alicante → Orlando](https://www.happylowcost.com/vuelos/alicante-orlando/): desde 624 € ida y vuelta, lo habitual 703 €, 1 escala(s), Wizz Air UK, consultado el 2026-11-22
+- [Alicante → Seúl](https://www.happylowcost.com/vuelos/alicante-seul/): desde 680 € ida y vuelta, lo habitual 1091 €, 1 escala(s), Vueling, consultado el 2026-11-23
+- [Alicante → Las Vegas](https://www.happylowcost.com/vuelos/alicante-las-vegas/): desde 684 € ida y vuelta, lo habitual 881 €, 2 escala(s), Ryanair, consultado el 2026-11-22
+- [Alicante → Fort Lauderdale](https://www.happylowcost.com/vuelos/alicante-fort-lauderdale/): desde 729 € ida y vuelta, lo habitual 2017 €, 2 escala(s), Wizz Air UK, consultado el 2026-11-22
+- [Alicante → Manila](https://www.happylowcost.com/vuelos/alicante-manila/): desde 779 € ida y vuelta, lo habitual 871 €, 2 escala(s), Vueling, consultado el 2026-11-22
+- [Alicante → Cancún](https://www.happylowcost.com/vuelos/alicante-cancun/): desde 813 € ida y vuelta, lo habitual 978 €, 2 escala(s), Ryanair, consultado el 2026-11-21
+- [Alicante → Bangkok](https://www.happylowcost.com/vuelos/alicante-bangkok/): desde 819 € ida y vuelta, lo habitual 935 €, 2 escala(s), Qatar Airways, consultado el 2026-11-21
+- [Alicante → Río de Janeiro](https://www.happylowcost.com/vuelos/alicante-rio-de-janeiro/): desde 879 € ida y vuelta, lo habitual 1477 €, 3 escala(s), Air Europa, consultado el 2026-11-23
+- [Alicante → Isla Mauricio](https://www.happylowcost.com/vuelos/alicante-mauricio/): desde 969 € ida y vuelta, lo habitual 1001 €, 2 escala(s), Ryanair, consultado el 2026-11-22
+- [Alicante → Kioto](https://www.happylowcost.com/vuelos/alicante-kioto/): desde 1022 € ida y vuelta, lo habitual 1357 €, 2 escala(s), Vueling, consultado el 2026-11-22
+- [Barcelona → Nápoles](https://www.happylowcost.com/vuelos/barcelona-napoles/): desde 34 € ida y vuelta, lo habitual 60 €, directo, Vueling, mes más barato 2027-01 (32 €), consultado el 2026-11-13
+- [Barcelona → Venecia](https://www.happylowcost.com/vuelos/barcelona-venecia/): desde 35 € ida y vuelta, lo habitual 41 €, directo, Wizz Air Malta, mes más barato 2027-02 (31 €), consultado el 2026-11-13
+- [Barcelona → Bolonia](https://www.happylowcost.com/vuelos/barcelona-bolonia/): desde 47 € ida y vuelta, lo habitual 52 €, directo, Ryanair, mes más barato 2027-01 (34 €), consultado el 2026-11-12
+- [Barcelona → Agadir](https://www.happylowcost.com/vuelos/barcelona-agadir/): desde 54 € ida y vuelta, lo habitual 84 €, directo, Vueling, mes más barato 2027-03 (46 €), consultado el 2026-11-11
+- [Barcelona → Brujas](https://www.happylowcost.com/vuelos/barcelona-brujas/): desde 67 € ida y vuelta, lo habitual 86 €, directo, Ryanair, mes más barato 2027-03 (58 €), consultado el 2026-11-12
+- [Barcelona → Belgrado](https://www.happylowcost.com/vuelos/barcelona-belgrado/): desde 68 € ida y vuelta, lo habitual 84 €, directo, Wizz Air, mes más barato 2027-03 (60 €), consultado el 2026-11-12
+- [Barcelona → Estocolmo](https://www.happylowcost.com/vuelos/barcelona-estocolmo/): desde 81 € ida y vuelta, lo habitual 119 €, directo, Ryanair, mes más barato 2027-01 (79 €), consultado el 2026-11-12
+- [Barcelona → Florencia](https://www.happylowcost.com/vuelos/barcelona-florencia/): desde 81 € ida y vuelta, lo habitual 94 €, directo, Vueling, mes más barato 2027-04 (83 €), consultado el 2026-11-12
+- [Barcelona → Atenas](https://www.happylowcost.com/vuelos/barcelona-atenas/): desde 85 € ida y vuelta, lo habitual 107 €, directo, Vueling, mes más barato 2027-02 (84 €), consultado el 2026-11-11
+- [Barcelona → Santorini](https://www.happylowcost.com/vuelos/barcelona-santorini/): desde 187 € ida y vuelta, lo habitual 235 €, 1 escala(s), SKY express, mes más barato 2026-12 (217 €), consultado el 2026-11-13
+- [Barcelona → Mykonos](https://www.happylowcost.com/vuelos/barcelona-mykonos/): desde 201 € ida y vuelta, lo habitual 229 €, 1 escala(s), SKY express, mes más barato 2027-05 (165 €), consultado el 2026-11-13
+- [Barcelona → El Cairo](https://www.happylowcost.com/vuelos/barcelona-el-cairo/): desde 206 € ida y vuelta, lo habitual 294 €, directo, Vueling, mes más barato 2026-12 (210 €), consultado el 2026-11-12
+- [Barcelona → Nueva York](https://www.happylowcost.com/vuelos/barcelona-nueva-york/): desde 379 € ida y vuelta, lo habitual 535 €, directo, Iberia Airlines, mes más barato 2027-01 (381 €), consultado el 2026-11-13
+- [Barcelona → Phu Quoc](https://www.happylowcost.com/vuelos/barcelona-phu-quoc/): desde 628 € ida y vuelta, lo habitual 686 €, 2 escala(s), Shenzhen Airlines, mes más barato 2027-03 (717 €), consultado el 2026-11-13
+- [Barcelona → Kioto](https://www.happylowcost.com/vuelos/barcelona-kioto/): desde 698 € ida y vuelta, lo habitual 863 €, 1 escala(s), KLM Royal Dutch Airlines, mes más barato 2027-01 (719 €), consultado el 2026-11-12
+- [Barcelona → Fort Lauderdale](https://www.happylowcost.com/vuelos/barcelona-fort-lauderdale/): desde 757 € ida y vuelta, lo habitual 759 €, 1 escala(s), Air France, mes más barato 2027-02 (624 €), consultado el 2026-11-12
+- [Barcelona → San Juan](https://www.happylowcost.com/vuelos/barcelona-san-juan/): desde 785 € ida y vuelta, lo habitual 843 €, 1 escala(s), Level, mes más barato 2027-04 (669 €), consultado el 2026-11-13
+- [Berlín → Milán](https://www.happylowcost.com/vuelos/berlin-milan/): desde 38 € ida y vuelta, lo habitual 49 €, directo, Ryanair, consultado el 2026-10-22
+- [Berlín → Budapest](https://www.happylowcost.com/vuelos/berlin-budapest/): desde 44 € ida y vuelta, lo habitual 51 €, directo, Ryanair, consultado el 2026-10-22
+- [Berlín → Edimburgo](https://www.happylowcost.com/vuelos/berlin-edimburgo/): desde 98 € ida y vuelta, lo habitual 105 €, directo, easyJet, consultado el 2026-10-22
+- [Berlín → Estambul](https://www.happylowcost.com/vuelos/berlin-estambul/): desde 114 € ida y vuelta, lo habitual 115 €, directo, AJet, consultado el 2026-10-22
+- [Berlín → Chipre](https://www.happylowcost.com/vuelos/berlin-chipre/): desde 120 € ida y vuelta, lo habitual 182 €, directo, easyJet, consultado el 2026-10-22
+- [Berlín → Cracovia](https://www.happylowcost.com/vuelos/berlin-cracovia/): desde 128 € ida y vuelta, lo habitual 140 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Berlín → Salzburgo](https://www.happylowcost.com/vuelos/berlin-salzburgo/): desde 131 € ida y vuelta, lo habitual 175 €, directo, Eurowings, consultado el 2026-10-22
+- [Berlín → Luxemburgo](https://www.happylowcost.com/vuelos/berlin-luxemburgo/): desde 132 € ida y vuelta, lo habitual 180 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Berlín → Hamburgo](https://www.happylowcost.com/vuelos/berlin-hamburgo/): desde 145 € ida y vuelta, lo habitual 151 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Berlín → Creta](https://www.happylowcost.com/vuelos/berlin-creta/): desde 205 € ida y vuelta, lo habitual 220 €, 1 escala(s), SKY express, consultado el 2026-10-22
+- [Berlín → Isla de Sal](https://www.happylowcost.com/vuelos/berlin-sal/): desde 287 € ida y vuelta, lo habitual 309 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Berlín → El Cairo](https://www.happylowcost.com/vuelos/berlin-el-cairo/): desde 305 € ida y vuelta, lo habitual 310 €, directo, Egyptair, consultado el 2026-10-22
+- [Berlín → Zanzíbar](https://www.happylowcost.com/vuelos/berlin-zanzibar/): desde 631 € ida y vuelta, lo habitual 712 €, 1 escala(s), easyJet, consultado el 2026-10-22
+- [Berlín → Vietnam](https://www.happylowcost.com/vuelos/berlin-hanoi/): desde 639 € ida y vuelta, lo habitual 682 €, 1 escala(s), Etihad Airways, consultado el 2026-10-22
+- [Berlín → Bali](https://www.happylowcost.com/vuelos/berlin-bali/): desde 746 € ida y vuelta, lo habitual 747 €, 2 escala(s), Pegasus, consultado el 2026-10-22
+- [Berlín → Portland](https://www.happylowcost.com/vuelos/berlin-portland/): desde 782 € ida y vuelta, lo habitual 798 €, 2 escala(s), SAS, consultado el 2026-10-22
+- [Berlín → Perú](https://www.happylowcost.com/vuelos/berlin-lima/): desde 849 € ida y vuelta, lo habitual 1117 €, 2 escala(s), Air Canada, consultado el 2026-10-22
+- [Berlín → Kioto](https://www.happylowcost.com/vuelos/berlin-kioto/): desde 861 € ida y vuelta, lo habitual 950 €, 1 escala(s), Finnair, consultado el 2026-10-22
+- [Berlín → Buenos Aires](https://www.happylowcost.com/vuelos/berlin-buenos-aires/): desde 1107 € ida y vuelta, lo habitual 1135 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Bilbao → Oporto](https://www.happylowcost.com/vuelos/bilbao-oporto/): desde 42 € ida y vuelta, lo habitual 43 €, directo, Vueling, consultado el 2026-11-24
+- [Bilbao → Venecia](https://www.happylowcost.com/vuelos/bilbao-venecia/): desde 43 € ida y vuelta, lo habitual 47 €, directo, Vueling, consultado el 2026-11-25
+- [Bilbao → Agadir](https://www.happylowcost.com/vuelos/bilbao-agadir/): desde 82 € ida y vuelta, lo habitual 82 €, 1 escala(s), Royal Air Maroc, consultado el 2026-11-23
+- [Bilbao → Cerdeña](https://www.happylowcost.com/vuelos/bilbao-cerdena/): desde 84 € ida y vuelta, lo habitual 114 €, 1 escala(s), Vueling, consultado el 2026-11-23
+- [Bilbao → Brujas](https://www.happylowcost.com/vuelos/bilbao-brujas/): desde 108 € ida y vuelta, lo habitual 139 €, directo, Brussels Airlines, consultado el 2026-11-23
+- [Bilbao → Fez](https://www.happylowcost.com/vuelos/bilbao-fez/): desde 128 € ida y vuelta, lo habitual 146 €, 1 escala(s), Vueling, consultado el 2026-11-24
+- [Bilbao → Chipre](https://www.happylowcost.com/vuelos/bilbao-chipre/): desde 154 € ida y vuelta, lo habitual 169 €, 1 escala(s), easyJet, consultado el 2026-11-23
+- [Bilbao → Azores](https://www.happylowcost.com/vuelos/bilbao-azores/): desde 179 € ida y vuelta, lo habitual 204 €, 1 escala(s), Vueling, consultado el 2026-11-23
+- [Bilbao → Creta](https://www.happylowcost.com/vuelos/bilbao-creta/): desde 205 € ida y vuelta, lo habitual 273 €, 1 escala(s), Vueling, consultado el 2026-11-23
+- [Bilbao → Isla de Sal](https://www.happylowcost.com/vuelos/bilbao-sal/): desde 240 € ida y vuelta, lo habitual 262 €, 1 escala(s), Vueling, consultado el 2026-11-24
+- [Bilbao → Mykonos](https://www.happylowcost.com/vuelos/bilbao-mykonos/): desde 243 € ida y vuelta, lo habitual 270 €, 2 escala(s), easyJet, consultado el 2026-11-24
+- [Bilbao → Zanzíbar](https://www.happylowcost.com/vuelos/bilbao-zanzibar/): desde 621 € ida y vuelta, lo habitual 675 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-25
+- [Bilbao → Kuala Lumpur](https://www.happylowcost.com/vuelos/bilbao-kuala-lumpur/): desde 686 € ida y vuelta, lo habitual 688 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-24
+- [Bilbao → Las Vegas](https://www.happylowcost.com/vuelos/bilbao-las-vegas/): desde 716 € ida y vuelta, lo habitual 854 €, 2 escala(s), Vueling, consultado el 2026-11-24
+- [Bilbao → Phu Quoc](https://www.happylowcost.com/vuelos/bilbao-phu-quoc/): desde 770 € ida y vuelta, lo habitual 801 €, 2 escala(s), Vueling, consultado el 2026-11-24
+- [Bilbao → San Juan](https://www.happylowcost.com/vuelos/bilbao-san-juan/): desde 772 € ida y vuelta, lo habitual 816 €, 1 escala(s), Iberia Airlines, consultado el 2026-11-25
+- [Bilbao → Ciudad del Cabo](https://www.happylowcost.com/vuelos/bilbao-ciudad-del-cabo/): desde 813 € ida y vuelta, lo habitual 1054 €, 2 escala(s), Iberia Airlines, consultado el 2026-11-23
+- [Bilbao → Buenos Aires](https://www.happylowcost.com/vuelos/bilbao-buenos-aires/): desde 1188 € ida y vuelta, lo habitual 1382 €, 1 escala(s), Iberia Airlines, consultado el 2026-11-23
+- [Bruselas → Venecia](https://www.happylowcost.com/vuelos/bruselas-venecia/): desde 38 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Budapest](https://www.happylowcost.com/vuelos/bruselas-budapest/): desde 41 € ida y vuelta, lo habitual 49 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Cracovia](https://www.happylowcost.com/vuelos/bruselas-cracovia/): desde 44 € ida y vuelta, lo habitual 49 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Dublín](https://www.happylowcost.com/vuelos/bruselas-dublin/): desde 44 € ida y vuelta, lo habitual 48 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Sofía](https://www.happylowcost.com/vuelos/bruselas-sofia/): desde 44 € ida y vuelta, lo habitual 88 €, directo, Wizz Air, consultado el 2026-10-23
+- [Bruselas → Estocolmo](https://www.happylowcost.com/vuelos/bruselas-estocolmo/): desde 46 € ida y vuelta, lo habitual 50 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Viena](https://www.happylowcost.com/vuelos/bruselas-viena/): desde 58 € ida y vuelta, lo habitual 64 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Praga](https://www.happylowcost.com/vuelos/bruselas-praga/): desde 61 € ida y vuelta, lo habitual 73 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Palermo](https://www.happylowcost.com/vuelos/bruselas-palermo/): desde 62 € ida y vuelta, lo habitual 72 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Atenas](https://www.happylowcost.com/vuelos/bruselas-atenas/): desde 69 € ida y vuelta, lo habitual 84 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Helsinki](https://www.happylowcost.com/vuelos/bruselas-helsinki/): desde 69 € ida y vuelta, lo habitual 80 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Oporto](https://www.happylowcost.com/vuelos/bruselas-oporto/): desde 69 € ida y vuelta, lo habitual 72 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Florencia](https://www.happylowcost.com/vuelos/bruselas-florencia/): desde 84 € ida y vuelta, lo habitual 109 €, directo, Vueling, consultado el 2026-10-23
+- [Bruselas → Madeira](https://www.happylowcost.com/vuelos/bruselas-madeira/): desde 104 € ida y vuelta, lo habitual 104 €, directo, Ryanair, consultado el 2026-10-23
+- [Bruselas → Oslo](https://www.happylowcost.com/vuelos/bruselas-oslo/): desde 129 € ida y vuelta, lo habitual 136 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Berlín](https://www.happylowcost.com/vuelos/bruselas-berlin/): desde 136 € ida y vuelta, lo habitual 136 €, directo, Brussels Airlines, consultado el 2026-10-23
+- [Bruselas → Belgrado](https://www.happylowcost.com/vuelos/bruselas-belgrado/): desde 165 € ida y vuelta, lo habitual 210 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Zúrich](https://www.happylowcost.com/vuelos/bruselas-zurich/): desde 185 € ida y vuelta, lo habitual 229 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Santorini](https://www.happylowcost.com/vuelos/bruselas-santorini/): desde 215 € ida y vuelta, lo habitual 225 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Copenhague](https://www.happylowcost.com/vuelos/bruselas-copenhague/): desde 220 € ida y vuelta, lo habitual 220 €, directo, Brussels Airlines, consultado el 2026-10-23
+- [Bruselas → Isla de Sal](https://www.happylowcost.com/vuelos/bruselas-sal/): desde 222 € ida y vuelta, lo habitual 249 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Azores](https://www.happylowcost.com/vuelos/bruselas-azores/): desde 226 € ida y vuelta, lo habitual 265 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → El Cairo](https://www.happylowcost.com/vuelos/bruselas-el-cairo/): desde 262 € ida y vuelta, lo habitual 273 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Dubái](https://www.happylowcost.com/vuelos/bruselas-dubai/): desde 273 € ida y vuelta, lo habitual 278 €, 1 escala(s), Pegasus, consultado el 2026-10-23
+- [Bruselas → Hong Kong](https://www.happylowcost.com/vuelos/bruselas-hong-kong/): desde 412 € ida y vuelta, lo habitual 412 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Bruselas → Seúl](https://www.happylowcost.com/vuelos/bruselas-seul/): desde 434 € ida y vuelta, lo habitual 561 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Bruselas → Vietnam](https://www.happylowcost.com/vuelos/bruselas-hanoi/): desde 440 € ida y vuelta, lo habitual 453 €, 1 escala(s), Juneyao Airlines, consultado el 2026-10-23
+- [Bruselas → Phuket](https://www.happylowcost.com/vuelos/bruselas-phuket/): desde 468 € ida y vuelta, lo habitual 544 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Bruselas → Singapur](https://www.happylowcost.com/vuelos/bruselas-singapur/): desde 528 € ida y vuelta, lo habitual 620 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Bruselas → Phu Quoc](https://www.happylowcost.com/vuelos/bruselas-phu-quoc/): desde 547 € ida y vuelta, lo habitual 555 €, 2 escala(s), Juneyao Airlines, consultado el 2026-10-23
+- [Bruselas → Kioto](https://www.happylowcost.com/vuelos/bruselas-kioto/): desde 576 € ida y vuelta, lo habitual 652 €, 1 escala(s), Hainan Airlines, consultado el 2026-10-23
+- [Bruselas → Nairobi](https://www.happylowcost.com/vuelos/bruselas-nairobi/): desde 601 € ida y vuelta, lo habitual 605 €, 1 escala(s), Ethiopian Airlines, consultado el 2026-10-23
+- [Bruselas → Miami](https://www.happylowcost.com/vuelos/bruselas-miami/): desde 610 € ida y vuelta, lo habitual 644 €, 1 escala(s), SAS, consultado el 2026-10-23
+- [Bruselas → Orlando](https://www.happylowcost.com/vuelos/bruselas-orlando/): desde 614 € ida y vuelta, lo habitual 667 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Bali](https://www.happylowcost.com/vuelos/bruselas-bali/): desde 628 € ida y vuelta, lo habitual 689 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Sri Lanka](https://www.happylowcost.com/vuelos/bruselas-sri-lanka/): desde 641 € ida y vuelta, lo habitual 643 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Bruselas → Cancún](https://www.happylowcost.com/vuelos/bruselas-cancun/): desde 730 € ida y vuelta, lo habitual 764 €, 1 escala(s), Air Canada, consultado el 2026-10-23
+- [Bruselas → Burbank](https://www.happylowcost.com/vuelos/bruselas-burbank/): desde 770 € ida y vuelta, lo habitual 791 €, 2 escala(s), United Airlines, consultado el 2026-10-23
+- [Bruselas → Bogotá](https://www.happylowcost.com/vuelos/bruselas-bogota/): desde 974 € ida y vuelta, lo habitual 1024 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Bruselas → Buenos Aires](https://www.happylowcost.com/vuelos/bruselas-buenos-aires/): desde 1024 € ida y vuelta, lo habitual 1130 €, 2 escala(s), LATAM Airlines, consultado el 2026-10-23
+- [Copenhague → Varsovia](https://www.happylowcost.com/vuelos/copenhague-varsovia/): desde 38 € ida y vuelta, lo habitual 44 €, directo, Ryanair, consultado el 2026-10-23
+- [Copenhague → Cracovia](https://www.happylowcost.com/vuelos/copenhague-cracovia/): desde 42 € ida y vuelta, lo habitual 52 €, directo, Ryanair, consultado el 2026-10-23
+- [Copenhague → Budapest](https://www.happylowcost.com/vuelos/copenhague-budapest/): desde 51 € ida y vuelta, lo habitual 55 €, directo, Ryanair, consultado el 2026-10-23
+- [Copenhague → Edimburgo](https://www.happylowcost.com/vuelos/copenhague-edimburgo/): desde 58 € ida y vuelta, lo habitual 64 €, directo, Ryanair, consultado el 2026-10-23
+- [Copenhague → Berlín](https://www.happylowcost.com/vuelos/copenhague-berlin/): desde 64 € ida y vuelta, lo habitual 85 €, directo, Norwegian Air Sweden, consultado el 2026-10-23
+- [Copenhague → Oporto](https://www.happylowcost.com/vuelos/copenhague-oporto/): desde 78 € ida y vuelta, lo habitual 88 €, directo, Ryanair, consultado el 2026-10-23
+- [Copenhague → Londres](https://www.happylowcost.com/vuelos/copenhague-londres/): desde 98 € ida y vuelta, lo habitual 100 €, directo, Ryanair, consultado el 2026-10-23
+- [Copenhague → Belgrado](https://www.happylowcost.com/vuelos/copenhague-belgrado/): desde 104 € ida y vuelta, lo habitual 104 €, directo, Air Serbia, consultado el 2026-10-23
+- [Copenhague → Oslo](https://www.happylowcost.com/vuelos/copenhague-oslo/): desde 125 € ida y vuelta, lo habitual 125 €, directo, Norwegian Air Sweden, consultado el 2026-10-23
+- [Copenhague → Cerdeña](https://www.happylowcost.com/vuelos/copenhague-cerdena/): desde 135 € ida y vuelta, lo habitual 141 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Copenhague → Vilna](https://www.happylowcost.com/vuelos/copenhague-vilna/): desde 156 € ida y vuelta, lo habitual 157 €, directo, SAS, consultado el 2026-10-23
+- [Copenhague → Hamburgo](https://www.happylowcost.com/vuelos/copenhague-hamburgo/): desde 177 € ida y vuelta, lo habitual 224 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Copenhague → Tallin](https://www.happylowcost.com/vuelos/copenhague-tallin/): desde 182 € ida y vuelta, lo habitual 189 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Copenhague → Zúrich](https://www.happylowcost.com/vuelos/copenhague-zurich/): desde 211 € ida y vuelta, lo habitual 278 €, directo, SAS, consultado el 2026-10-23
+- [Copenhague → Brujas](https://www.happylowcost.com/vuelos/copenhague-brujas/): desde 241 € ida y vuelta, lo habitual 254 €, directo, SAS, consultado el 2026-10-23
+- [Copenhague → Mykonos](https://www.happylowcost.com/vuelos/copenhague-mykonos/): desde 276 € ida y vuelta, lo habitual 303 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Copenhague → Sri Lanka](https://www.happylowcost.com/vuelos/copenhague-sri-lanka/): desde 699 € ida y vuelta, lo habitual 726 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Copenhague → Phu Quoc](https://www.happylowcost.com/vuelos/copenhague-phu-quoc/): desde 738 € ida y vuelta, lo habitual 765 €, 2 escala(s), China Eastern Airlines, consultado el 2026-10-23
+- [Copenhague → Kuala Lumpur](https://www.happylowcost.com/vuelos/copenhague-kuala-lumpur/): desde 749 € ida y vuelta, lo habitual 754 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Copenhague → Punta Cana](https://www.happylowcost.com/vuelos/copenhague-punta-cana/): desde 772 € ida y vuelta, lo habitual 825 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Copenhague → San Francisco](https://www.happylowcost.com/vuelos/copenhague-san-francisco/): desde 775 € ida y vuelta, lo habitual 786 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Copenhague → Kioto](https://www.happylowcost.com/vuelos/copenhague-kioto/): desde 840 € ida y vuelta, lo habitual 1043 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-23
+- [Copenhague → Isla Mauricio](https://www.happylowcost.com/vuelos/copenhague-mauricio/): desde 866 € ida y vuelta, lo habitual 944 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Copenhague → Buenos Aires](https://www.happylowcost.com/vuelos/copenhague-buenos-aires/): desde 1154 € ida y vuelta, lo habitual 1186 €, 3 escala(s), Ryanair, consultado el 2026-10-23
+- [Dublín → Estocolmo](https://www.happylowcost.com/vuelos/dublin-estocolmo/): desde 38 € ida y vuelta, lo habitual 41 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Luxemburgo](https://www.happylowcost.com/vuelos/dublin-luxemburgo/): desde 38 € ida y vuelta, lo habitual 61 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → París](https://www.happylowcost.com/vuelos/dublin-paris/): desde 38 € ida y vuelta, lo habitual 38 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Edimburgo](https://www.happylowcost.com/vuelos/dublin-edimburgo/): desde 42 € ida y vuelta, lo habitual 45 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Londres](https://www.happylowcost.com/vuelos/dublin-londres/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Brujas](https://www.happylowcost.com/vuelos/dublin-brujas/): desde 44 € ida y vuelta, lo habitual 51 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Bruselas](https://www.happylowcost.com/vuelos/dublin-bruselas/): desde 44 € ida y vuelta, lo habitual 51 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Oporto](https://www.happylowcost.com/vuelos/dublin-oporto/): desde 46 € ida y vuelta, lo habitual 67 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Venecia](https://www.happylowcost.com/vuelos/dublin-venecia/): desde 47 € ida y vuelta, lo habitual 55 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Hamburgo](https://www.happylowcost.com/vuelos/dublin-hamburgo/): desde 52 € ida y vuelta, lo habitual 93 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Madeira](https://www.happylowcost.com/vuelos/dublin-madeira/): desde 55 € ida y vuelta, lo habitual 80 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Varsovia](https://www.happylowcost.com/vuelos/dublin-varsovia/): desde 60 € ida y vuelta, lo habitual 70 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Ámsterdam](https://www.happylowcost.com/vuelos/dublin-amsterdam/): desde 64 € ida y vuelta, lo habitual 67 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Dubrovnik](https://www.happylowcost.com/vuelos/dublin-dubrovnik/): desde 64 € ida y vuelta, lo habitual 72 €, directo, Ryanair, consultado el 2026-10-22
+- [Dublín → Viena](https://www.happylowcost.com/vuelos/dublin-viena/): desde 98 € ida y vuelta, lo habitual 102 €, 1 escala(s), KLM Royal Dutch Airlines, consultado el 2026-10-22
+- [Dublín → Múnich](https://www.happylowcost.com/vuelos/dublin-munich/): desde 107 € ida y vuelta, lo habitual 107 €, directo, Lufthansa, consultado el 2026-10-22
+- [Dublín → Zúrich](https://www.happylowcost.com/vuelos/dublin-zurich/): desde 113 € ida y vuelta, lo habitual 114 €, directo, Aer Lingus, consultado el 2026-10-22
+- [Dublín → Cerdeña](https://www.happylowcost.com/vuelos/dublin-cerdena/): desde 116 € ida y vuelta, lo habitual 134 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → Islandia](https://www.happylowcost.com/vuelos/dublin-reikiavik/): desde 175 € ida y vuelta, lo habitual 185 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → Isla de Sal](https://www.happylowcost.com/vuelos/dublin-sal/): desde 233 € ida y vuelta, lo habitual 243 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → El Cairo](https://www.happylowcost.com/vuelos/dublin-el-cairo/): desde 295 € ida y vuelta, lo habitual 305 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → Phuket](https://www.happylowcost.com/vuelos/dublin-phuket/): desde 498 € ida y vuelta, lo habitual 617 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → Los Ángeles](https://www.happylowcost.com/vuelos/dublin-los-angeles/): desde 540 € ida y vuelta, lo habitual 648 €, 1 escala(s), SAS, consultado el 2026-10-22
+- [Dublín → Orlando](https://www.happylowcost.com/vuelos/dublin-orlando/): desde 542 € ida y vuelta, lo habitual 597 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → Nueva York](https://www.happylowcost.com/vuelos/dublin-nueva-york/): desde 558 € ida y vuelta, lo habitual 570 €, 1 escala(s), KLM Royal Dutch Airlines, consultado el 2026-10-22
+- [Dublín → Bali](https://www.happylowcost.com/vuelos/dublin-bali/): desde 637 € ida y vuelta, lo habitual 689 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-22
+- [Dublín → Charleston](https://www.happylowcost.com/vuelos/dublin-charleston/): desde 681 € ida y vuelta, lo habitual 700 €, 1 escala(s), United Airlines, consultado el 2026-10-22
+- [Dublín → Nassau](https://www.happylowcost.com/vuelos/dublin-nassau/): desde 799 € ida y vuelta, lo habitual 810 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → Ciudad de México](https://www.happylowcost.com/vuelos/dublin-ciudad-de-mexico/): desde 917 € ida y vuelta, lo habitual 963 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Dublín → Buenos Aires](https://www.happylowcost.com/vuelos/dublin-buenos-aires/): desde 994 € ida y vuelta, lo habitual 1071 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Dubái → Estambul](https://www.happylowcost.com/vuelos/dubai-estambul/): desde 214 € ida y vuelta, lo habitual 224 €, directo, Pegasus, consultado el 2026-10-23
+- [Dubái → Bucarest](https://www.happylowcost.com/vuelos/dubai-bucarest/): desde 241 € ida y vuelta, lo habitual 289 €, 1 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → El Cairo](https://www.happylowcost.com/vuelos/dubai-el-cairo/): desde 271 € ida y vuelta, lo habitual 280 €, directo, Air Cairo, consultado el 2026-10-23
+- [Dubái → Sri Lanka](https://www.happylowcost.com/vuelos/dubai-sri-lanka/): desde 297 € ida y vuelta, lo habitual 321 €, directo, SriLankan Airlines, consultado el 2026-10-23
+- [Dubái → Budapest](https://www.happylowcost.com/vuelos/dubai-budapest/): desde 314 € ida y vuelta, lo habitual 427 €, 1 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → Múnich](https://www.happylowcost.com/vuelos/dubai-munich/): desde 342 € ida y vuelta, lo habitual 364 €, 1 escala(s), Oman Air, consultado el 2026-10-23
+- [Dubái → Edimburgo](https://www.happylowcost.com/vuelos/dubai-edimburgo/): desde 378 € ida y vuelta, lo habitual 433 €, 1 escala(s), SunExpress, consultado el 2026-10-23
+- [Dubái → Manila](https://www.happylowcost.com/vuelos/dubai-manila/): desde 385 € ida y vuelta, lo habitual 506 €, directo, Cebu Pacific, consultado el 2026-10-23
+- [Dubái → Nairobi](https://www.happylowcost.com/vuelos/dubai-nairobi/): desde 392 € ida y vuelta, lo habitual 407 €, directo, Fly Dubai, consultado el 2026-10-23
+- [Dubái → Dublín](https://www.happylowcost.com/vuelos/dubai-dublin/): desde 396 € ida y vuelta, lo habitual 431 €, 1 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → Bolonia](https://www.happylowcost.com/vuelos/dubai-bolonia/): desde 415 € ida y vuelta, lo habitual 417 €, 1 escala(s), Turkish Airlines, consultado el 2026-10-23
+- [Dubái → Zanzíbar](https://www.happylowcost.com/vuelos/dubai-zanzibar/): desde 423 € ida y vuelta, lo habitual 498 €, 1 escala(s), Air Tanzania, consultado el 2026-10-23
+- [Dubái → Cerdeña](https://www.happylowcost.com/vuelos/dubai-cerdena/): desde 440 € ida y vuelta, lo habitual 451 €, 2 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → Chipre](https://www.happylowcost.com/vuelos/dubai-chipre/): desde 443 € ida y vuelta, lo habitual 453 €, 1 escala(s), Israir, consultado el 2026-10-23
+- [Dubái → Maldivas](https://www.happylowcost.com/vuelos/dubai-maldivas/): desde 451 € ida y vuelta, lo habitual 452 €, directo, Air Arabia, consultado el 2026-10-23
+- [Dubái → Tallin](https://www.happylowcost.com/vuelos/dubai-tallin/): desde 456 € ida y vuelta, lo habitual 490 €, 2 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → Riga](https://www.happylowcost.com/vuelos/dubai-riga/): desde 457 € ida y vuelta, lo habitual 477 €, 2 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → Dubrovnik](https://www.happylowcost.com/vuelos/dubai-dubrovnik/): desde 472 € ida y vuelta, lo habitual 519 €, 2 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → Tenerife](https://www.happylowcost.com/vuelos/dubai-tenerife/): desde 502 € ida y vuelta, lo habitual 517 €, 2 escala(s), AJet, consultado el 2026-10-23
+- [Dubái → Bali](https://www.happylowcost.com/vuelos/dubai-bali/): desde 534 € ida y vuelta, lo habitual 535 €, 1 escala(s), Saudi Arabian Airlines, consultado el 2026-10-23
+- [Dubái → Madeira](https://www.happylowcost.com/vuelos/dubai-madeira/): desde 549 € ida y vuelta, lo habitual 574 €, 1 escala(s), Air Arabia, consultado el 2026-10-23
+- [Dubái → Isla Mauricio](https://www.happylowcost.com/vuelos/dubai-mauricio/): desde 587 € ida y vuelta, lo habitual 654 €, 2 escala(s), Saudi Arabian Airlines, consultado el 2026-10-23
+- [Dubái → Tokio](https://www.happylowcost.com/vuelos/dubai-tokio/): desde 640 € ida y vuelta, lo habitual 841 €, 1 escala(s), Air India Limited, consultado el 2026-10-23
+- [Dubái → Phu Quoc](https://www.happylowcost.com/vuelos/dubai-phu-quoc/): desde 643 € ida y vuelta, lo habitual 668 €, 2 escala(s), Air India Limited, consultado el 2026-10-23
+- [Dubái → Kioto](https://www.happylowcost.com/vuelos/dubai-kioto/): desde 778 € ida y vuelta, lo habitual 782 €, 1 escala(s), Qatar Airways, consultado el 2026-10-23
+- [Dubái → San Juan](https://www.happylowcost.com/vuelos/dubai-san-juan/): desde 935 € ida y vuelta, lo habitual 1126 €, 2 escala(s), Royal Jordanian, consultado el 2026-10-23
+- [Dubái → San Francisco](https://www.happylowcost.com/vuelos/dubai-san-francisco/): desde 1120 € ida y vuelta, lo habitual 1232 €, 1 escala(s), ITA Airways, consultado el 2026-10-23
+- [Dubái → Nassau](https://www.happylowcost.com/vuelos/dubai-nassau/): desde 1257 € ida y vuelta, lo habitual 1260 €, 3 escala(s), Pegasus, consultado el 2026-10-23
+- [Dubái → Río de Janeiro](https://www.happylowcost.com/vuelos/dubai-rio-de-janeiro/): desde 1281 € ida y vuelta, lo habitual 1383 €, 3 escala(s), Pegasus, consultado el 2026-10-23
+- [Estocolmo → Riga](https://www.happylowcost.com/vuelos/estocolmo-riga/): desde 37 € ida y vuelta, lo habitual 38 €, directo, Norwegian Air Sweden, consultado el 2026-10-23
+- [Estocolmo → Varsovia](https://www.happylowcost.com/vuelos/estocolmo-varsovia/): desde 37 € ida y vuelta, lo habitual 56 €, directo, Ryanair, consultado el 2026-10-23
+- [Estocolmo → Dublín](https://www.happylowcost.com/vuelos/estocolmo-dublin/): desde 41 € ida y vuelta, lo habitual 44 €, directo, Ryanair, consultado el 2026-10-23
+- [Estocolmo → Tallin](https://www.happylowcost.com/vuelos/estocolmo-tallin/): desde 45 € ida y vuelta, lo habitual 47 €, directo, Ryanair, consultado el 2026-10-23
+- [Estocolmo → Bruselas](https://www.happylowcost.com/vuelos/estocolmo-bruselas/): desde 55 € ida y vuelta, lo habitual 56 €, directo, Ryanair, consultado el 2026-10-23
+- [Estocolmo → Helsinki](https://www.happylowcost.com/vuelos/estocolmo-helsinki/): desde 56 € ida y vuelta, lo habitual 59 €, directo, Norwegian Air Sweden, consultado el 2026-10-23
+- [Estocolmo → Belgrado](https://www.happylowcost.com/vuelos/estocolmo-belgrado/): desde 97 € ida y vuelta, lo habitual 116 €, directo, Air Serbia, consultado el 2026-10-23
+- [Estocolmo → Oslo](https://www.happylowcost.com/vuelos/estocolmo-oslo/): desde 104 € ida y vuelta, lo habitual 104 €, directo, Ethiopian Airlines, consultado el 2026-10-23
+- [Estocolmo → Copenhague](https://www.happylowcost.com/vuelos/estocolmo-copenhague/): desde 114 € ida y vuelta, lo habitual 116 €, directo, Norwegian Air Sweden, consultado el 2026-10-23
+- [Estocolmo → Palermo](https://www.happylowcost.com/vuelos/estocolmo-palermo/): desde 114 € ida y vuelta, lo habitual 117 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Dubrovnik](https://www.happylowcost.com/vuelos/estocolmo-dubrovnik/): desde 115 € ida y vuelta, lo habitual 130 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Tenerife](https://www.happylowcost.com/vuelos/estocolmo-tenerife/): desde 126 € ida y vuelta, lo habitual 154 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Venecia](https://www.happylowcost.com/vuelos/estocolmo-venecia/): desde 128 € ida y vuelta, lo habitual 129 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Florencia](https://www.happylowcost.com/vuelos/estocolmo-florencia/): desde 158 € ida y vuelta, lo habitual 163 €, 1 escala(s), KLM Royal Dutch Airlines, consultado el 2026-10-23
+- [Estocolmo → Azores](https://www.happylowcost.com/vuelos/estocolmo-azores/): desde 242 € ida y vuelta, lo habitual 267 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Orlando](https://www.happylowcost.com/vuelos/estocolmo-orlando/): desde 528 € ida y vuelta, lo habitual 532 €, 1 escala(s), Icelandair, consultado el 2026-10-23
+- [Estocolmo → Tokio](https://www.happylowcost.com/vuelos/estocolmo-tokio/): desde 594 € ida y vuelta, lo habitual 740 €, 1 escala(s), SAS, consultado el 2026-10-23
+- [Estocolmo → Bali](https://www.happylowcost.com/vuelos/estocolmo-bali/): desde 691 € ida y vuelta, lo habitual 758 €, 3 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Seúl](https://www.happylowcost.com/vuelos/estocolmo-seul/): desde 701 € ida y vuelta, lo habitual 709 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Sri Lanka](https://www.happylowcost.com/vuelos/estocolmo-sri-lanka/): desde 722 € ida y vuelta, lo habitual 741 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Zanzíbar](https://www.happylowcost.com/vuelos/estocolmo-zanzibar/): desde 743 € ida y vuelta, lo habitual 817 €, 1 escala(s), Norwegian Air Sweden, consultado el 2026-10-23
+- [Estocolmo → Buenos Aires](https://www.happylowcost.com/vuelos/estocolmo-buenos-aires/): desde 1011 € ida y vuelta, lo habitual 1093 €, 3 escala(s), Ryanair, consultado el 2026-10-23
+- [Estocolmo → Bogotá](https://www.happylowcost.com/vuelos/estocolmo-bogota/): desde 1090 € ida y vuelta, lo habitual 1137 €, 2 escala(s), Icelandair, consultado el 2026-10-23
+- [Gran Canaria → Marrakech](https://www.happylowcost.com/vuelos/gran-canaria-marrakech/): desde 47 € ida y vuelta, lo habitual 56 €, directo, Ryanair, consultado el 2026-11-26
+- [Gran Canaria → Venecia](https://www.happylowcost.com/vuelos/gran-canaria-venecia/): desde 55 € ida y vuelta, lo habitual 81 €, directo, Ryanair, consultado el 2026-10-22
+- [Gran Canaria → Nápoles](https://www.happylowcost.com/vuelos/gran-canaria-napoles/): desde 124 € ida y vuelta, lo habitual 138 €, 1 escala(s), Vueling, consultado el 2026-11-26
+- [Gran Canaria → Bolonia](https://www.happylowcost.com/vuelos/gran-canaria-bolonia/): desde 126 € ida y vuelta, lo habitual 159 €, 1 escala(s), Vueling, consultado el 2026-11-25
+- [Gran Canaria → Brujas](https://www.happylowcost.com/vuelos/gran-canaria-brujas/): desde 137 € ida y vuelta, lo habitual 153 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Bruselas](https://www.happylowcost.com/vuelos/gran-canaria-bruselas/): desde 137 € ida y vuelta, lo habitual 153 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Fez](https://www.happylowcost.com/vuelos/gran-canaria-fez/): desde 144 € ida y vuelta, lo habitual 160 €, 1 escala(s), Vueling, consultado el 2026-11-26
+- [Gran Canaria → Cracovia](https://www.happylowcost.com/vuelos/gran-canaria-cracovia/): desde 158 € ida y vuelta, lo habitual 190 €, 1 escala(s), easyJet, consultado el 2026-11-25
+- [Gran Canaria → Copenhague](https://www.happylowcost.com/vuelos/gran-canaria-copenhague/): desde 161 € ida y vuelta, lo habitual 179 €, 1 escala(s), Ryanair, consultado el 2026-11-25
+- [Gran Canaria → Oslo](https://www.happylowcost.com/vuelos/gran-canaria-oslo/): desde 176 € ida y vuelta, lo habitual 180 €, 1 escala(s), Ryanair, consultado el 2026-11-26
+- [Gran Canaria → Sofía](https://www.happylowcost.com/vuelos/gran-canaria-sofia/): desde 176 € ida y vuelta, lo habitual 177 €, 1 escala(s), Vueling, consultado el 2026-11-27
+- [Gran Canaria → Chipre](https://www.happylowcost.com/vuelos/gran-canaria-chipre/): desde 179 € ida y vuelta, lo habitual 202 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Varsovia](https://www.happylowcost.com/vuelos/gran-canaria-varsovia/): desde 181 € ida y vuelta, lo habitual 192 €, 1 escala(s), Iberia Express, consultado el 2026-10-22
+- [Gran Canaria → Atenas](https://www.happylowcost.com/vuelos/gran-canaria-atenas/): desde 187 € ida y vuelta, lo habitual 228 €, 1 escala(s), Vueling, consultado el 2026-11-25
+- [Gran Canaria → Riga](https://www.happylowcost.com/vuelos/gran-canaria-riga/): desde 189 € ida y vuelta, lo habitual 216 €, 1 escala(s), Ryanair, consultado el 2026-11-26
+- [Gran Canaria → Azores](https://www.happylowcost.com/vuelos/gran-canaria-azores/): desde 262 € ida y vuelta, lo habitual 272 €, 2 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Isla de Sal](https://www.happylowcost.com/vuelos/gran-canaria-sal/): desde 265 € ida y vuelta, lo habitual 286 €, 1 escala(s), Royal Air Maroc, consultado el 2026-11-26
+- [Gran Canaria → Estambul](https://www.happylowcost.com/vuelos/gran-canaria-estambul/): desde 275 € ida y vuelta, lo habitual 398 €, 1 escala(s), Air Europa, consultado el 2026-11-25
+- [Gran Canaria → Mykonos](https://www.happylowcost.com/vuelos/gran-canaria-mykonos/): desde 297 € ida y vuelta, lo habitual 383 €, 2 escala(s), Vueling, consultado el 2026-11-26
+- [Gran Canaria → El Cairo](https://www.happylowcost.com/vuelos/gran-canaria-el-cairo/): desde 301 € ida y vuelta, lo habitual 391 €, 2 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Miami](https://www.happylowcost.com/vuelos/gran-canaria-miami/): desde 593 € ida y vuelta, lo habitual 600 €, 2 escala(s), Iberia Express, consultado el 2026-11-26
+- [Gran Canaria → Orlando](https://www.happylowcost.com/vuelos/gran-canaria-orlando/): desde 621 € ida y vuelta, lo habitual 757 €, 1 escala(s), Iberia Express, consultado el 2026-11-26
+- [Gran Canaria → San Francisco](https://www.happylowcost.com/vuelos/gran-canaria-san-francisco/): desde 622 € ida y vuelta, lo habitual 689 €, 2 escala(s), Iberia Express, consultado el 2026-11-26
+- [Gran Canaria → Las Vegas](https://www.happylowcost.com/vuelos/gran-canaria-las-vegas/): desde 658 € ida y vuelta, lo habitual 685 €, 3 escala(s), Iberia Express, consultado el 2026-11-26
+- [Gran Canaria → Seúl](https://www.happylowcost.com/vuelos/gran-canaria-seul/): desde 684 € ida y vuelta, lo habitual 1099 €, 1 escala(s), Vueling, consultado el 2026-11-26
+- [Gran Canaria → Sri Lanka](https://www.happylowcost.com/vuelos/gran-canaria-sri-lanka/): desde 703 € ida y vuelta, lo habitual 777 €, 3 escala(s), Iberia Express, consultado el 2026-10-22
+- [Gran Canaria → Hong Kong](https://www.happylowcost.com/vuelos/gran-canaria-hong-kong/): desde 730 € ida y vuelta, lo habitual 855 €, 2 escala(s), Ryanair, consultado el 2026-11-26
+- [Gran Canaria → Zanzíbar](https://www.happylowcost.com/vuelos/gran-canaria-zanzibar/): desde 780 € ida y vuelta, lo habitual 821 €, 2 escala(s), easyJet, consultado el 2026-10-22
+- [Gran Canaria → Phuket](https://www.happylowcost.com/vuelos/gran-canaria-phuket/): desde 788 € ida y vuelta, lo habitual 807 €, 2 escala(s), Vueling, consultado el 2026-11-26
+- [Gran Canaria → Punta Cana](https://www.happylowcost.com/vuelos/gran-canaria-punta-cana/): desde 788 € ida y vuelta, lo habitual 794 €, 1 escala(s), Iberia Express, consultado el 2026-11-26
+- [Gran Canaria → Kioto](https://www.happylowcost.com/vuelos/gran-canaria-kioto/): desde 826 € ida y vuelta, lo habitual 894 €, 2 escala(s), Iberia Express, consultado el 2026-11-26
+- [Gran Canaria → Cancún](https://www.happylowcost.com/vuelos/gran-canaria-cancun/): desde 835 € ida y vuelta, lo habitual 948 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Ciudad de México](https://www.happylowcost.com/vuelos/gran-canaria-ciudad-de-mexico/): desde 895 € ida y vuelta, lo habitual 1241 €, 3 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Maldivas](https://www.happylowcost.com/vuelos/gran-canaria-maldivas/): desde 904 € ida y vuelta, lo habitual 1045 €, 2 escala(s), Iberia Express, consultado el 2026-11-26
+- [Gran Canaria → Isla Mauricio](https://www.happylowcost.com/vuelos/gran-canaria-mauricio/): desde 986 € ida y vuelta, lo habitual 1305 €, 3 escala(s), Air Europa, consultado el 2026-11-26
+- [Gran Canaria → Manila](https://www.happylowcost.com/vuelos/gran-canaria-manila/): desde 1271 € ida y vuelta, lo habitual 1885 €, 2 escala(s), Etihad Airways, consultado el 2026-11-26
+- [Ibiza → Milán](https://www.happylowcost.com/vuelos/ibiza-milan/): desde 69 € ida y vuelta, lo habitual 93 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → París](https://www.happylowcost.com/vuelos/ibiza-paris/): desde 74 € ida y vuelta, lo habitual 77 €, directo, Vueling, consultado el 2026-10-22
+- [Ibiza → Fez](https://www.happylowcost.com/vuelos/ibiza-fez/): desde 104 € ida y vuelta, lo habitual 120 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Bolonia](https://www.happylowcost.com/vuelos/ibiza-bolonia/): desde 112 € ida y vuelta, lo habitual 120 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Oporto](https://www.happylowcost.com/vuelos/ibiza-oporto/): desde 117 € ida y vuelta, lo habitual 121 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Brujas](https://www.happylowcost.com/vuelos/ibiza-brujas/): desde 124 € ida y vuelta, lo habitual 160 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Budapest](https://www.happylowcost.com/vuelos/ibiza-budapest/): desde 127 € ida y vuelta, lo habitual 139 €, 1 escala(s), Iberia Express, consultado el 2026-10-22
+- [Ibiza → Sofía](https://www.happylowcost.com/vuelos/ibiza-sofia/): desde 128 € ida y vuelta, lo habitual 159 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Varsovia](https://www.happylowcost.com/vuelos/ibiza-varsovia/): desde 130 € ida y vuelta, lo habitual 134 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Atenas](https://www.happylowcost.com/vuelos/ibiza-atenas/): desde 136 € ida y vuelta, lo habitual 177 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Florencia](https://www.happylowcost.com/vuelos/ibiza-florencia/): desde 137 € ida y vuelta, lo habitual 145 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Viena](https://www.happylowcost.com/vuelos/ibiza-viena/): desde 151 € ida y vuelta, lo habitual 155 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Chipre](https://www.happylowcost.com/vuelos/ibiza-chipre/): desde 171 € ida y vuelta, lo habitual 190 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Oslo](https://www.happylowcost.com/vuelos/ibiza-oslo/): desde 173 € ida y vuelta, lo habitual 177 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Tallin](https://www.happylowcost.com/vuelos/ibiza-tallin/): desde 173 € ida y vuelta, lo habitual 193 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Salzburgo](https://www.happylowcost.com/vuelos/ibiza-salzburgo/): desde 184 € ida y vuelta, lo habitual 202 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Vilna](https://www.happylowcost.com/vuelos/ibiza-vilna/): desde 184 € ida y vuelta, lo habitual 193 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Madeira](https://www.happylowcost.com/vuelos/ibiza-madeira/): desde 189 € ida y vuelta, lo habitual 202 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Azores](https://www.happylowcost.com/vuelos/ibiza-azores/): desde 241 € ida y vuelta, lo habitual 257 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Mykonos](https://www.happylowcost.com/vuelos/ibiza-mykonos/): desde 244 € ida y vuelta, lo habitual 281 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Creta](https://www.happylowcost.com/vuelos/ibiza-creta/): desde 264 € ida y vuelta, lo habitual 269 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Helsinki](https://www.happylowcost.com/vuelos/ibiza-helsinki/): desde 266 € ida y vuelta, lo habitual 293 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → El Cairo](https://www.happylowcost.com/vuelos/ibiza-el-cairo/): desde 272 € ida y vuelta, lo habitual 288 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Dubái](https://www.happylowcost.com/vuelos/ibiza-dubai/): desde 408 € ida y vuelta, lo habitual 428 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Nairobi](https://www.happylowcost.com/vuelos/ibiza-nairobi/): desde 570 € ida y vuelta, lo habitual 759 €, 2 escala(s), Air Europa, consultado el 2026-10-22
+- [Ibiza → Hong Kong](https://www.happylowcost.com/vuelos/ibiza-hong-kong/): desde 609 € ida y vuelta, lo habitual 653 €, 3 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Miami](https://www.happylowcost.com/vuelos/ibiza-miami/): desde 620 € ida y vuelta, lo habitual 698 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Manila](https://www.happylowcost.com/vuelos/ibiza-manila/): desde 668 € ida y vuelta, lo habitual 746 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Phu Quoc](https://www.happylowcost.com/vuelos/ibiza-phu-quoc/): desde 668 € ida y vuelta, lo habitual 694 €, 2 escala(s), Transavia, consultado el 2026-10-22
+- [Ibiza → Bali](https://www.happylowcost.com/vuelos/ibiza-bali/): desde 693 € ida y vuelta, lo habitual 784 €, 3 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Kuala Lumpur](https://www.happylowcost.com/vuelos/ibiza-kuala-lumpur/): desde 726 € ida y vuelta, lo habitual 739 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Sri Lanka](https://www.happylowcost.com/vuelos/ibiza-sri-lanka/): desde 732 € ida y vuelta, lo habitual 798 €, 3 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Zanzíbar](https://www.happylowcost.com/vuelos/ibiza-zanzibar/): desde 756 € ida y vuelta, lo habitual 786 €, 2 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Ibiza → San Francisco](https://www.happylowcost.com/vuelos/ibiza-san-francisco/): desde 758 € ida y vuelta, lo habitual 769 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Los Ángeles](https://www.happylowcost.com/vuelos/ibiza-los-angeles/): desde 763 € ida y vuelta, lo habitual 779 €, 3 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Ibiza → San Juan](https://www.happylowcost.com/vuelos/ibiza-san-juan/): desde 782 € ida y vuelta, lo habitual 796 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Ibiza → Maldivas](https://www.happylowcost.com/vuelos/ibiza-maldivas/): desde 824 € ida y vuelta, lo habitual 921 €, 2 escala(s), Iberia Express, consultado el 2026-10-22
+- [Ibiza → Nassau](https://www.happylowcost.com/vuelos/ibiza-nassau/): desde 902 € ida y vuelta, lo habitual 911 €, 3 escala(s), Iberia Express, consultado el 2026-10-22
+- [Ibiza → Perú](https://www.happylowcost.com/vuelos/ibiza-lima/): desde 942 € ida y vuelta, lo habitual 1067 €, 1 escala(s), Iberia Express, consultado el 2026-10-22
+- [Lisboa → Marrakech](https://www.happylowcost.com/vuelos/lisboa-marrakech/): desde 44 € ida y vuelta, lo habitual 53 €, directo, Ryanair, consultado el 2026-10-22
+- [Lisboa → Madeira](https://www.happylowcost.com/vuelos/lisboa-madeira/): desde 45 € ida y vuelta, lo habitual 52 €, directo, Ryanair, consultado el 2026-10-22
+- [Lisboa → Malta](https://www.happylowcost.com/vuelos/lisboa-malta/): desde 48 € ida y vuelta, lo habitual 55 €, directo, Ryanair, consultado el 2026-10-22
+- [Lisboa → Bolonia](https://www.happylowcost.com/vuelos/lisboa-bolonia/): desde 57 € ida y vuelta, lo habitual 108 €, directo, Ryanair, consultado el 2026-10-22
+- [Lisboa → Nápoles](https://www.happylowcost.com/vuelos/lisboa-napoles/): desde 63 € ida y vuelta, lo habitual 129 €, directo, Ryanair, consultado el 2026-10-22
+- [Lisboa → Roma](https://www.happylowcost.com/vuelos/lisboa-roma/): desde 77 € ida y vuelta, lo habitual 89 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Lisboa → Venecia](https://www.happylowcost.com/vuelos/lisboa-venecia/): desde 78 € ida y vuelta, lo habitual 116 €, directo, Ryanair, consultado el 2026-10-23
+- [Lisboa → Brujas](https://www.happylowcost.com/vuelos/lisboa-brujas/): desde 84 € ida y vuelta, lo habitual 109 €, directo, Ryanair, consultado el 2026-10-22
+- [Lisboa → Budapest](https://www.happylowcost.com/vuelos/lisboa-budapest/): desde 109 € ida y vuelta, lo habitual 139 €, directo, Ryanair, consultado el 2026-10-22
+- [Lisboa → Azores](https://www.happylowcost.com/vuelos/lisboa-azores/): desde 118 € ida y vuelta, lo habitual 131 €, directo, TAP Portugal, consultado el 2026-10-22
+- [Lisboa → Isla de Sal](https://www.happylowcost.com/vuelos/lisboa-sal/): desde 134 € ida y vuelta, lo habitual 137 €, directo, easyJet, consultado el 2026-10-23
+- [Lisboa → Sofía](https://www.happylowcost.com/vuelos/lisboa-sofia/): desde 142 € ida y vuelta, lo habitual 170 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Lisboa → Oslo](https://www.happylowcost.com/vuelos/lisboa-oslo/): desde 160 € ida y vuelta, lo habitual 166 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Lisboa → Florencia](https://www.happylowcost.com/vuelos/lisboa-florencia/): desde 161 € ida y vuelta, lo habitual 184 €, 1 escala(s), easyJet, consultado el 2026-10-22
+- [Lisboa → Salzburgo](https://www.happylowcost.com/vuelos/lisboa-salzburgo/): desde 165 € ida y vuelta, lo habitual 203 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Lisboa → Vilna](https://www.happylowcost.com/vuelos/lisboa-vilna/): desde 169 € ida y vuelta, lo habitual 189 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Lisboa → Praga](https://www.happylowcost.com/vuelos/lisboa-praga/): desde 178 € ida y vuelta, lo habitual 190 €, directo, Smartwings, consultado el 2026-10-23
+- [Lisboa → Creta](https://www.happylowcost.com/vuelos/lisboa-creta/): desde 247 € ida y vuelta, lo habitual 258 €, 1 escala(s), SKY express, consultado el 2026-10-22
+- [Lisboa → San Francisco](https://www.happylowcost.com/vuelos/lisboa-san-francisco/): desde 655 € ida y vuelta, lo habitual 664 €, 2 escala(s), Royal Air Maroc, consultado el 2026-10-23
+- [Lisboa → Seúl](https://www.happylowcost.com/vuelos/lisboa-seul/): desde 664 € ida y vuelta, lo habitual 697 €, 1 escala(s), Vueling, consultado el 2026-10-23
+- [Lisboa → Las Vegas](https://www.happylowcost.com/vuelos/lisboa-las-vegas/): desde 672 € ida y vuelta, lo habitual 790 €, 2 escala(s), Royal Air Maroc, consultado el 2026-10-22
+- [Lisboa → Bangkok](https://www.happylowcost.com/vuelos/lisboa-bangkok/): desde 684 € ida y vuelta, lo habitual 745 €, 1 escala(s), easyJet, consultado el 2026-10-22
+- [Lisboa → Sri Lanka](https://www.happylowcost.com/vuelos/lisboa-sri-lanka/): desde 732 € ida y vuelta, lo habitual 742 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Lisboa → Portland](https://www.happylowcost.com/vuelos/lisboa-portland/): desde 783 € ida y vuelta, lo habitual 803 €, 3 escala(s), Ryanair, consultado el 2026-10-23
+- [Lisboa → Río de Janeiro](https://www.happylowcost.com/vuelos/lisboa-rio-de-janeiro/): desde 791 € ida y vuelta, lo habitual 854 €, 1 escala(s), LATAM Airlines, consultado el 2026-10-23
+- [Lisboa → Maldivas](https://www.happylowcost.com/vuelos/lisboa-maldivas/): desde 826 € ida y vuelta, lo habitual 874 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Lisboa → Kioto](https://www.happylowcost.com/vuelos/lisboa-kioto/): desde 920 € ida y vuelta, lo habitual 947 €, 2 escala(s), easyJet, consultado el 2026-10-22
+- [Londres → Bolonia](https://www.happylowcost.com/vuelos/londres-bolonia/): desde 42 € ida y vuelta, lo habitual 49 €, directo, Ryanair, mes más barato 2027-01 (47 €), consultado el 2026-10-22
+- [Londres → Dublín](https://www.happylowcost.com/vuelos/londres-dublin/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, mes más barato 2027-01 (39 €), consultado el 2026-10-22
+- [Londres → Dubrovnik](https://www.happylowcost.com/vuelos/londres-dubrovnik/): desde 42 € ida y vuelta, lo habitual 57 €, directo, Ryanair, mes más barato 2026-12 (41 €), consultado el 2026-10-22
+- [Londres → Luxemburgo](https://www.happylowcost.com/vuelos/londres-luxemburgo/): desde 42 € ida y vuelta, lo habitual 52 €, directo, Ryanair, mes más barato 2027-01 (40 €), consultado el 2026-10-22
+- [Londres → Tenerife](https://www.happylowcost.com/vuelos/londres-tenerife/): desde 42 € ida y vuelta, lo habitual 49 €, directo, Ryanair, mes más barato 2026-12 (52 €), consultado el 2026-10-22
+- [Londres → Venecia](https://www.happylowcost.com/vuelos/londres-venecia/): desde 42 € ida y vuelta, lo habitual 44 €, directo, Ryanair, mes más barato 2027-03 (48 €), consultado el 2026-10-22
+- [Londres → Oslo](https://www.happylowcost.com/vuelos/londres-oslo/): desde 43 € ida y vuelta, lo habitual 53 €, directo, Ryanair UK, mes más barato 2027-01 (43 €), consultado el 2026-10-22
+- [Londres → Varsovia](https://www.happylowcost.com/vuelos/londres-varsovia/): desde 43 € ida y vuelta, lo habitual 49 €, directo, Ryanair, mes más barato 2027-01 (39 €), consultado el 2026-10-22
+- [Londres → Edimburgo](https://www.happylowcost.com/vuelos/londres-edimburgo/): desde 45 € ida y vuelta, lo habitual 46 €, directo, Ryanair UK, mes más barato 2026-12 (42 €), consultado el 2026-10-22
+- [Londres → Praga](https://www.happylowcost.com/vuelos/londres-praga/): desde 45 € ida y vuelta, lo habitual 62 €, directo, Ryanair, mes más barato 2027-01 (57 €), consultado el 2026-10-22
+- [Londres → Roma](https://www.happylowcost.com/vuelos/londres-roma/): desde 46 € ida y vuelta, lo habitual 52 €, directo, Ryanair, mes más barato 2027-01 (46 €), consultado el 2026-10-22
+- [Londres → Florencia](https://www.happylowcost.com/vuelos/londres-florencia/): desde 59 € ida y vuelta, lo habitual 59 €, directo, Vueling, mes más barato 2027-01 (56 €), consultado el 2026-10-22
+- [Londres → Salzburgo](https://www.happylowcost.com/vuelos/londres-salzburgo/): desde 59 € ida y vuelta, lo habitual 60 €, directo, Ryanair, mes más barato 2027-01 (88 €), consultado el 2026-10-22
+- [Londres → Riga](https://www.happylowcost.com/vuelos/londres-riga/): desde 70 € ida y vuelta, lo habitual 73 €, directo, Ryanair, mes más barato 2027-02 (71 €), consultado el 2026-10-22
+- [Londres → Viena](https://www.happylowcost.com/vuelos/londres-viena/): desde 72 € ida y vuelta, lo habitual 77 €, directo, Ryanair, mes más barato 2027-01 (62 €), consultado el 2026-10-22
+- [Londres → Bucarest](https://www.happylowcost.com/vuelos/londres-bucarest/): desde 83 € ida y vuelta, lo habitual 83 €, directo, Ryanair, mes más barato 2027-01 (67 €), consultado el 2026-10-22
+- [Londres → Múnich](https://www.happylowcost.com/vuelos/londres-munich/): desde 94 € ida y vuelta, lo habitual 150 €, directo, easyJet, mes más barato 2027-03 (131 €), consultado el 2026-10-22
+- [Londres → Islandia](https://www.happylowcost.com/vuelos/londres-reikiavik/): desde 104 € ida y vuelta, lo habitual 107 €, directo, easyJet, mes más barato 2027-03 (94 €), consultado el 2026-10-22
+- [Londres → Brujas](https://www.happylowcost.com/vuelos/londres-brujas/): desde 134 € ida y vuelta, lo habitual 153 €, directo, Brussels Airlines, mes más barato 2027-01 (143 €), consultado el 2026-10-22
+- [Londres → Azores](https://www.happylowcost.com/vuelos/londres-azores/): desde 216 € ida y vuelta, lo habitual 234 €, 1 escala(s), Ryanair, mes más barato 2027-02 (237 €), consultado el 2026-10-22
+- [Londres → Vietnam](https://www.happylowcost.com/vuelos/londres-hanoi/): desde 469 € ida y vuelta, lo habitual 470 €, 1 escala(s), Air China, mes más barato 2027-02 (493 €), consultado el 2026-10-22
+- [Londres → Orlando](https://www.happylowcost.com/vuelos/londres-orlando/): desde 470 € ida y vuelta, lo habitual 573 €, directo, Norse Atlantic UK, mes más barato 2027-01 (470 €), consultado el 2026-10-22
+- [Londres → Ciudad del Cabo](https://www.happylowcost.com/vuelos/londres-ciudad-del-cabo/): desde 542 € ida y vuelta, lo habitual 689 €, directo, Norse Atlantic UK, mes más barato 2027-03 (592 €), consultado el 2026-10-22
+- [Londres → Punta Cana](https://www.happylowcost.com/vuelos/londres-punta-cana/): desde 672 € ida y vuelta, lo habitual 673 €, 1 escala(s), Air Transat, mes más barato 2027-04 (625 €), consultado el 2026-10-22
+- [Londres → Perú](https://www.happylowcost.com/vuelos/londres-lima/): desde 701 € ida y vuelta, lo habitual 759 €, 2 escala(s), Ryanair, mes más barato 2027-02 (774 €), consultado el 2026-10-22
+- [Londres → Bogotá](https://www.happylowcost.com/vuelos/londres-bogota/): desde 884 € ida y vuelta, lo habitual 995 €, 1 escala(s), Air Canada, mes más barato 2027-02 (846 €), consultado el 2026-10-22
+- [Madrid → Marrakech](https://www.happylowcost.com/vuelos/madrid-marrakech/): desde 41 € ida y vuelta, lo habitual 42 €, directo, Ryanair, mes más barato 2027-01 (38 €), consultado el 2026-11-14
+- [Madrid → Fez](https://www.happylowcost.com/vuelos/madrid-fez/): desde 43 € ida y vuelta, lo habitual 48 €, directo, Ryanair, mes más barato 2027-01 (38 €), consultado el 2026-11-14
+- [Madrid → Agadir](https://www.happylowcost.com/vuelos/madrid-agadir/): desde 44 € ida y vuelta, lo habitual 52 €, directo, Ryanair, mes más barato 2027-01 (41 €), consultado el 2026-11-13
+- [Madrid → Roma](https://www.happylowcost.com/vuelos/madrid-roma/): desde 44 € ida y vuelta, lo habitual 57 €, directo, Ryanair, mes más barato 2027-02 (42 €), consultado el 2026-11-15
+- [Madrid → Brujas](https://www.happylowcost.com/vuelos/madrid-brujas/): desde 75 € ida y vuelta, lo habitual 120 €, directo, Ryanair, mes más barato 2027-02 (79 €), consultado el 2026-11-13
+- [Madrid → Zúrich](https://www.happylowcost.com/vuelos/madrid-zurich/): desde 126 € ida y vuelta, lo habitual 148 €, directo, Swiss International Air Lines, mes más barato 2027-01 (126 €), consultado el 2026-11-15
+- [Madrid → Los Ángeles](https://www.happylowcost.com/vuelos/madrid-los-angeles/): desde 394 € ida y vuelta, lo habitual 618 €, 1 escala(s), Royal Air Maroc, mes más barato 2027-02 (385 €), consultado el 2026-11-14
+- [Madrid → Isla Mauricio](https://www.happylowcost.com/vuelos/madrid-mauricio/): desde 589 € ida y vuelta, lo habitual 886 €, 1 escala(s), Saudi Arabian Airlines, mes más barato 2027-01 (658 €), consultado el 2026-11-14
+- [Madrid → Zanzíbar](https://www.happylowcost.com/vuelos/madrid-zanzibar/): desde 590 € ida y vuelta, lo habitual 591 €, 1 escala(s), Etihad Airways, mes más barato 2026-12 (595 €), consultado el 2026-11-15
+- [Madrid → Phu Quoc](https://www.happylowcost.com/vuelos/madrid-phu-quoc/): desde 630 € ida y vuelta, lo habitual 658 €, 2 escala(s), Hainan Airlines, mes más barato 2027-01 (681 €), consultado el 2026-11-15
+- [Madrid → Nassau](https://www.happylowcost.com/vuelos/madrid-nassau/): desde 645 € ida y vuelta, lo habitual 808 €, 1 escala(s), Air Canada, mes más barato 2027-03 (724 €), consultado el 2026-11-15
+- [Madrid → Kioto](https://www.happylowcost.com/vuelos/madrid-kioto/): desde 716 € ida y vuelta, lo habitual 932 €, 1 escala(s), China Eastern Airlines, mes más barato 2027-01 (713 €), consultado el 2026-11-14
+- [Madrid → Charleston](https://www.happylowcost.com/vuelos/madrid-charleston/): desde 729 € ida y vuelta, lo habitual 765 €, 2 escala(s), TAP Portugal, mes más barato 2027-04 (733 €), consultado el 2026-11-14
+- [Madrid → Jacksonville](https://www.happylowcost.com/vuelos/madrid-jacksonville/): desde 763 € ida y vuelta, lo habitual 828 €, 1 escala(s), Air France, mes más barato 2027-04 (682 €), consultado el 2026-11-14
+- [Manchester → Brujas](https://www.happylowcost.com/vuelos/manchester-brujas/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
+- [Manchester → Bruselas](https://www.happylowcost.com/vuelos/manchester-bruselas/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
+- [Manchester → Copenhague](https://www.happylowcost.com/vuelos/manchester-copenhague/): desde 42 € ida y vuelta, lo habitual 49 €, directo, Ryanair UK, consultado el 2026-10-23
+- [Manchester → Oslo](https://www.happylowcost.com/vuelos/manchester-oslo/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair UK, consultado el 2026-10-23
+- [Manchester → París](https://www.happylowcost.com/vuelos/manchester-paris/): desde 44 € ida y vuelta, lo habitual 46 €, directo, Ryanair, consultado el 2026-10-23
+- [Manchester → Tenerife](https://www.happylowcost.com/vuelos/manchester-tenerife/): desde 48 € ida y vuelta, lo habitual 58 €, directo, Ryanair, consultado el 2026-10-23
+- [Manchester → Agadir](https://www.happylowcost.com/vuelos/manchester-agadir/): desde 64 € ida y vuelta, lo habitual 69 €, directo, Ryanair UK, consultado el 2026-10-23
+- [Manchester → Bolonia](https://www.happylowcost.com/vuelos/manchester-bolonia/): desde 69 € ida y vuelta, lo habitual 100 €, directo, Ryanair, consultado el 2026-10-23
+- [Manchester → Budapest](https://www.happylowcost.com/vuelos/manchester-budapest/): desde 77 € ida y vuelta, lo habitual 85 €, directo, Ryanair, consultado el 2026-10-23
+- [Manchester → Bucarest](https://www.happylowcost.com/vuelos/manchester-bucarest/): desde 81 € ida y vuelta, lo habitual 86 €, directo, Ryanair, consultado el 2026-10-23
+- [Manchester → Islandia](https://www.happylowcost.com/vuelos/manchester-reikiavik/): desde 93 € ida y vuelta, lo habitual 98 €, directo, easyJet, consultado el 2026-10-23
+- [Manchester → Londres](https://www.happylowcost.com/vuelos/manchester-londres/): desde 110 € ida y vuelta, lo habitual 126 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Manchester → Estocolmo](https://www.happylowcost.com/vuelos/manchester-estocolmo/): desde 120 € ida y vuelta, lo habitual 135 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Manchester → Edimburgo](https://www.happylowcost.com/vuelos/manchester-edimburgo/): desde 123 € ida y vuelta, lo habitual 123 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Manchester → Madeira](https://www.happylowcost.com/vuelos/manchester-madeira/): desde 142 € ida y vuelta, lo habitual 149 €, directo, TUI Airways, consultado el 2026-10-23
+- [Manchester → Isla de Sal](https://www.happylowcost.com/vuelos/manchester-sal/): desde 187 € ida y vuelta, lo habitual 204 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Manchester → Helsinki](https://www.happylowcost.com/vuelos/manchester-helsinki/): desde 199 € ida y vuelta, lo habitual 199 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Manchester → Bangkok](https://www.happylowcost.com/vuelos/manchester-bangkok/): desde 577 € ida y vuelta, lo habitual 617 €, 1 escala(s), Juneyao Airlines, consultado el 2026-10-23
+- [Manchester → Miami](https://www.happylowcost.com/vuelos/manchester-miami/): desde 638 € ida y vuelta, lo habitual 665 €, 1 escala(s), easyJet, consultado el 2026-10-23
+- [Manchester → Punta Cana](https://www.happylowcost.com/vuelos/manchester-punta-cana/): desde 675 € ida y vuelta, lo habitual 778 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Manchester → Maldivas](https://www.happylowcost.com/vuelos/manchester-maldivas/): desde 738 € ida y vuelta, lo habitual 804 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Manchester → Río de Janeiro](https://www.happylowcost.com/vuelos/manchester-rio-de-janeiro/): desde 762 € ida y vuelta, lo habitual 878 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Manchester → Buenos Aires](https://www.happylowcost.com/vuelos/manchester-buenos-aires/): desde 1052 € ida y vuelta, lo habitual 1173 €, 3 escala(s), Ryanair, consultado el 2026-10-23
+- [Milán → Sofía](https://www.happylowcost.com/vuelos/milan-sofia/): desde 33 € ida y vuelta, lo habitual 36 €, directo, Wizz Air, consultado el 2026-10-23
+- [Milán → Cerdeña](https://www.happylowcost.com/vuelos/milan-cerdena/): desde 36 € ida y vuelta, lo habitual 38 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Nápoles](https://www.happylowcost.com/vuelos/milan-napoles/): desde 36 € ida y vuelta, lo habitual 36 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Milán → Palermo](https://www.happylowcost.com/vuelos/milan-palermo/): desde 36 € ida y vuelta, lo habitual 38 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Varsovia](https://www.happylowcost.com/vuelos/milan-varsovia/): desde 36 € ida y vuelta, lo habitual 38 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Milán → Agadir](https://www.happylowcost.com/vuelos/milan-agadir/): desde 38 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Malta](https://www.happylowcost.com/vuelos/milan-malta/): desde 38 € ida y vuelta, lo habitual 38 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Bucarest](https://www.happylowcost.com/vuelos/milan-bucarest/): desde 39 € ida y vuelta, lo habitual 41 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Milán → Budapest](https://www.happylowcost.com/vuelos/milan-budapest/): desde 40 € ida y vuelta, lo habitual 41 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Cracovia](https://www.happylowcost.com/vuelos/milan-cracovia/): desde 40 € ida y vuelta, lo habitual 43 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Fez](https://www.happylowcost.com/vuelos/milan-fez/): desde 40 € ida y vuelta, lo habitual 46 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Oporto](https://www.happylowcost.com/vuelos/milan-oporto/): desde 41 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Oslo](https://www.happylowcost.com/vuelos/milan-oslo/): desde 41 € ida y vuelta, lo habitual 57 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Brujas](https://www.happylowcost.com/vuelos/milan-brujas/): desde 42 € ida y vuelta, lo habitual 46 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Bruselas](https://www.happylowcost.com/vuelos/milan-bruselas/): desde 42 € ida y vuelta, lo habitual 46 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Londres](https://www.happylowcost.com/vuelos/milan-londres/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Belgrado](https://www.happylowcost.com/vuelos/milan-belgrado/): desde 45 € ida y vuelta, lo habitual 56 €, directo, Wizz Air, consultado el 2026-10-23
+- [Milán → Berlín](https://www.happylowcost.com/vuelos/milan-berlin/): desde 45 € ida y vuelta, lo habitual 51 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Milán → Praga](https://www.happylowcost.com/vuelos/milan-praga/): desde 47 € ida y vuelta, lo habitual 54 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Viena](https://www.happylowcost.com/vuelos/milan-viena/): desde 47 € ida y vuelta, lo habitual 52 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Vilna](https://www.happylowcost.com/vuelos/milan-vilna/): desde 63 € ida y vuelta, lo habitual 85 €, directo, Wizz Air, consultado el 2026-10-23
+- [Milán → Atenas](https://www.happylowcost.com/vuelos/milan-atenas/): desde 64 € ida y vuelta, lo habitual 66 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Venecia](https://www.happylowcost.com/vuelos/milan-venecia/): desde 82 € ida y vuelta, lo habitual 100 €, 1 escala(s), Vueling, consultado el 2026-10-23
+- [Milán → Islandia](https://www.happylowcost.com/vuelos/milan-reikiavik/): desde 105 € ida y vuelta, lo habitual 129 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Milán → Creta](https://www.happylowcost.com/vuelos/milan-creta/): desde 111 € ida y vuelta, lo habitual 161 €, directo, easyJet, consultado el 2026-10-23
+- [Milán → Tallin](https://www.happylowcost.com/vuelos/milan-tallin/): desde 117 € ida y vuelta, lo habitual 131 €, directo, Ryanair, consultado el 2026-10-23
+- [Milán → Florencia](https://www.happylowcost.com/vuelos/milan-florencia/): desde 118 € ida y vuelta, lo habitual 120 €, 1 escala(s), easyJet, consultado el 2026-10-23
+- [Milán → Dubrovnik](https://www.happylowcost.com/vuelos/milan-dubrovnik/): desde 119 € ida y vuelta, lo habitual 121 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Milán → Ámsterdam](https://www.happylowcost.com/vuelos/milan-amsterdam/): desde 124 € ida y vuelta, lo habitual 124 €, directo, easyJet, consultado el 2026-10-23
+- [Milán → Múnich](https://www.happylowcost.com/vuelos/milan-munich/): desde 126 € ida y vuelta, lo habitual 127 €, directo, Lufthansa, consultado el 2026-10-23
+- [Milán → Mykonos](https://www.happylowcost.com/vuelos/milan-mykonos/): desde 185 € ida y vuelta, lo habitual 233 €, 1 escala(s), easyJet, consultado el 2026-10-23
+- [Milán → Santorini](https://www.happylowcost.com/vuelos/milan-santorini/): desde 190 € ida y vuelta, lo habitual 200 €, 1 escala(s), easyJet, consultado el 2026-10-23
+- [Milán → El Cairo](https://www.happylowcost.com/vuelos/milan-el-cairo/): desde 191 € ida y vuelta, lo habitual 223 €, directo, Air Cairo, consultado el 2026-10-23
+- [Milán → Miami](https://www.happylowcost.com/vuelos/milan-miami/): desde 515 € ida y vuelta, lo habitual 534 €, directo, American Airlines, consultado el 2026-10-23
+- [Milán → Vietnam](https://www.happylowcost.com/vuelos/milan-hanoi/): desde 584 € ida y vuelta, lo habitual 585 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Milán → Sri Lanka](https://www.happylowcost.com/vuelos/milan-sri-lanka/): desde 594 € ida y vuelta, lo habitual 610 €, 1 escala(s), Air Arabia, consultado el 2026-10-23
+- [Milán → Tokio](https://www.happylowcost.com/vuelos/milan-tokio/): desde 628 € ida y vuelta, lo habitual 630 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-23
+- [Milán → Maldivas](https://www.happylowcost.com/vuelos/milan-maldivas/): desde 651 € ida y vuelta, lo habitual 659 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Milán → Kioto](https://www.happylowcost.com/vuelos/milan-kioto/): desde 710 € ida y vuelta, lo habitual 730 €, 1 escala(s), Korean Air, consultado el 2026-10-23
+- [Milán → Perú](https://www.happylowcost.com/vuelos/milan-lima/): desde 713 € ida y vuelta, lo habitual 740 €, 1 escala(s), Air Canada, consultado el 2026-10-23
+- [Milán → Bali](https://www.happylowcost.com/vuelos/milan-bali/): desde 750 € ida y vuelta, lo habitual 874 €, 2 escala(s), Hainan Airlines, consultado el 2026-10-23
+- [Málaga → Fez](https://www.happylowcost.com/vuelos/malaga-fez/): desde 36 € ida y vuelta, lo habitual 50 €, directo, Ryanair, consultado el 2026-11-16
+- [Málaga → Marrakech](https://www.happylowcost.com/vuelos/malaga-marrakech/): desde 36 € ida y vuelta, lo habitual 40 €, directo, Ryanair, consultado el 2026-11-16
+- [Málaga → Lisboa](https://www.happylowcost.com/vuelos/malaga-lisboa/): desde 38 € ida y vuelta, lo habitual 45 €, directo, Ryanair, consultado el 2026-11-16
+- [Málaga → Brujas](https://www.happylowcost.com/vuelos/malaga-brujas/): desde 61 € ida y vuelta, lo habitual 79 €, directo, Ryanair, consultado el 2026-11-15
+- [Málaga → Hamburgo](https://www.happylowcost.com/vuelos/malaga-hamburgo/): desde 75 € ida y vuelta, lo habitual 85 €, directo, Ryanair, consultado el 2026-11-16
+- [Málaga → Bucarest](https://www.happylowcost.com/vuelos/malaga-bucarest/): desde 78 € ida y vuelta, lo habitual 105 €, directo, Ryanair, consultado el 2026-11-15
+- [Málaga → Ámsterdam](https://www.happylowcost.com/vuelos/malaga-amsterdam/): desde 91 € ida y vuelta, lo habitual 116 €, directo, Vueling, consultado el 2026-11-15
+- [Málaga → Chipre](https://www.happylowcost.com/vuelos/malaga-chipre/): desde 150 € ida y vuelta, lo habitual 162 €, 1 escala(s), Wizz Air Malta, consultado el 2026-11-16
+- [Málaga → Dubái](https://www.happylowcost.com/vuelos/malaga-dubai/): desde 237 € ida y vuelta, lo habitual 382 €, 2 escala(s), Vueling, consultado el 2026-11-16
+- [Málaga → Creta](https://www.happylowcost.com/vuelos/malaga-creta/): desde 262 € ida y vuelta, lo habitual 272 €, 1 escala(s), Transavia, consultado el 2026-11-16
+- [Málaga → Mykonos](https://www.happylowcost.com/vuelos/malaga-mykonos/): desde 283 € ida y vuelta, lo habitual 283 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-16
+- [Málaga → San Francisco](https://www.happylowcost.com/vuelos/malaga-san-francisco/): desde 652 € ida y vuelta, lo habitual 688 €, 1 escala(s), TAP Portugal, consultado el 2026-11-17
+- [Málaga → Manila](https://www.happylowcost.com/vuelos/malaga-manila/): desde 674 € ida y vuelta, lo habitual 742 €, 2 escala(s), Transavia, consultado el 2026-11-16
+- [Málaga → Portland](https://www.happylowcost.com/vuelos/malaga-portland/): desde 696 € ida y vuelta, lo habitual 1580 €, 2 escala(s), Norwegian Air Sweden, consultado el 2026-11-17
+- [Málaga → Sri Lanka](https://www.happylowcost.com/vuelos/malaga-sri-lanka/): desde 696 € ida y vuelta, lo habitual 1001 €, 2 escala(s), Ryanair, consultado el 2026-11-17
+- [Málaga → Kioto](https://www.happylowcost.com/vuelos/malaga-kioto/): desde 702 € ida y vuelta, lo habitual 779 €, 1 escala(s), Air France, consultado el 2026-11-16
+- [Málaga → Singapur](https://www.happylowcost.com/vuelos/malaga-singapur/): desde 765 € ida y vuelta, lo habitual 834 €, 1 escala(s), Turkish Airlines, consultado el 2026-11-17
+- [Málaga → Maldivas](https://www.happylowcost.com/vuelos/malaga-maldivas/): desde 824 € ida y vuelta, lo habitual 831 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-16
+- [Málaga → Isla Mauricio](https://www.happylowcost.com/vuelos/malaga-mauricio/): desde 914 € ida y vuelta, lo habitual 1196 €, 2 escala(s), Ryanair, consultado el 2026-11-16
+- [Málaga → San Juan](https://www.happylowcost.com/vuelos/malaga-san-juan/): desde 993 € ida y vuelta, lo habitual 1182 €, 1 escala(s), Iberia Airlines, consultado el 2026-11-17
+- [Múnich → Londres](https://www.happylowcost.com/vuelos/munich-londres/): desde 97 € ida y vuelta, lo habitual 142 €, directo, easyJet, consultado el 2026-10-23
+- [Múnich → Dublín](https://www.happylowcost.com/vuelos/munich-dublin/): desde 105 € ida y vuelta, lo habitual 107 €, directo, Aer Lingus, consultado el 2026-10-23
+- [Múnich → Viena](https://www.happylowcost.com/vuelos/munich-viena/): desde 162 € ida y vuelta, lo habitual 162 €, directo, Austrian Airlines, consultado el 2026-10-23
+- [Múnich → Oporto](https://www.happylowcost.com/vuelos/munich-oporto/): desde 169 € ida y vuelta, lo habitual 185 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Múnich → Cracovia](https://www.happylowcost.com/vuelos/munich-cracovia/): desde 175 € ida y vuelta, lo habitual 185 €, directo, Lufthansa, consultado el 2026-10-23
+- [Múnich → Marrakech](https://www.happylowcost.com/vuelos/munich-marrakech/): desde 175 € ida y vuelta, lo habitual 182 €, 1 escala(s), Vueling, consultado el 2026-10-23
+- [Múnich → Bruselas](https://www.happylowcost.com/vuelos/munich-bruselas/): desde 181 € ida y vuelta, lo habitual 224 €, directo, Brussels Airlines, consultado el 2026-10-23
+- [Múnich → Ámsterdam](https://www.happylowcost.com/vuelos/munich-amsterdam/): desde 193 € ida y vuelta, lo habitual 195 €, directo, KLM Royal Dutch Airlines, consultado el 2026-10-23
+- [Múnich → Lisboa](https://www.happylowcost.com/vuelos/munich-lisboa/): desde 252 € ida y vuelta, lo habitual 262 €, directo, TAP Portugal, consultado el 2026-10-23
+- [Múnich → Isla de Sal](https://www.happylowcost.com/vuelos/munich-sal/): desde 355 € ida y vuelta, lo habitual 368 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Múnich → Singapur](https://www.happylowcost.com/vuelos/munich-singapur/): desde 534 € ida y vuelta, lo habitual 577 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Múnich → Phu Quoc](https://www.happylowcost.com/vuelos/munich-phu-quoc/): desde 589 € ida y vuelta, lo habitual 687 €, 2 escala(s), Air China, consultado el 2026-10-23
+- [Múnich → Miami](https://www.happylowcost.com/vuelos/munich-miami/): desde 598 € ida y vuelta, lo habitual 599 €, 1 escala(s), ITA Airways, consultado el 2026-10-23
+- [Múnich → Kuala Lumpur](https://www.happylowcost.com/vuelos/munich-kuala-lumpur/): desde 611 € ida y vuelta, lo habitual 611 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Múnich → Las Vegas](https://www.happylowcost.com/vuelos/munich-las-vegas/): desde 678 € ida y vuelta, lo habitual 765 €, 1 escala(s), Lufthansa, consultado el 2026-10-23
+- [Múnich → Bali](https://www.happylowcost.com/vuelos/munich-bali/): desde 695 € ida y vuelta, lo habitual 697 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Múnich → Cancún](https://www.happylowcost.com/vuelos/munich-cancun/): desde 760 € ida y vuelta, lo habitual 762 €, 1 escala(s), Air Canada, consultado el 2026-10-23
+- [Múnich → Kioto](https://www.happylowcost.com/vuelos/munich-kioto/): desde 874 € ida y vuelta, lo habitual 941 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Nueva York → Orlando](https://www.happylowcost.com/vuelos/nueva-york-orlando/): desde 106 € ida y vuelta, lo habitual 108 €, directo, Frontier Airlines, consultado el 2026-10-23
+- [Nueva York → Charleston](https://www.happylowcost.com/vuelos/nueva-york-charleston/): desde 107 € ida y vuelta, lo habitual 137 €, directo, BREEZE, consultado el 2026-10-23
+- [Nueva York → Fort Lauderdale](https://www.happylowcost.com/vuelos/nueva-york-fort-lauderdale/): desde 108 € ida y vuelta, lo habitual 152 €, directo, Allegiant Air, consultado el 2026-10-23
+- [Nueva York → Jacksonville](https://www.happylowcost.com/vuelos/nueva-york-jacksonville/): desde 119 € ida y vuelta, lo habitual 247 €, 1 escala(s), Frontier Airlines, consultado el 2026-10-23
+- [Nueva York → Miami](https://www.happylowcost.com/vuelos/nueva-york-miami/): desde 189 € ida y vuelta, lo habitual 189 €, directo, United Airlines, consultado el 2026-10-23
+- [Nueva York → San Juan](https://www.happylowcost.com/vuelos/nueva-york-san-juan/): desde 213 € ida y vuelta, lo habitual 220 €, directo, JetBlue Airways, consultado el 2026-10-23
+- [Nueva York → Burbank](https://www.happylowcost.com/vuelos/nueva-york-burbank/): desde 221 € ida y vuelta, lo habitual 221 €, 1 escala(s), Alaska Airlines, consultado el 2026-10-23
+- [Nueva York → Los Ángeles](https://www.happylowcost.com/vuelos/nueva-york-los-angeles/): desde 231 € ida y vuelta, lo habitual 234 €, 1 escala(s), JetBlue Airways, consultado el 2026-10-23
+- [Nueva York → Las Vegas](https://www.happylowcost.com/vuelos/nueva-york-las-vegas/): desde 247 € ida y vuelta, lo habitual 262 €, 1 escala(s), JetBlue Airways, consultado el 2026-10-23
+- [Nueva York → Nassau](https://www.happylowcost.com/vuelos/nueva-york-nassau/): desde 276 € ida y vuelta, lo habitual 290 €, directo, United Airlines, consultado el 2026-10-23
+- [Nueva York → Portland](https://www.happylowcost.com/vuelos/nueva-york-portland/): desde 320 € ida y vuelta, lo habitual 322 €, directo, Alaska Airlines, consultado el 2026-10-23
+- [Nueva York → San Francisco](https://www.happylowcost.com/vuelos/nueva-york-san-francisco/): desde 321 € ida y vuelta, lo habitual 333 €, 1 escala(s), JetBlue Airways, consultado el 2026-10-23
+- [Nueva York → Punta Cana](https://www.happylowcost.com/vuelos/nueva-york-punta-cana/): desde 334 € ida y vuelta, lo habitual 339 €, 1 escala(s), JetBlue Airways, consultado el 2026-10-23
+- [Nueva York → Cancún](https://www.happylowcost.com/vuelos/nueva-york-cancun/): desde 386 € ida y vuelta, lo habitual 391 €, directo, AeroMexico, consultado el 2026-10-23
+- [Nueva York → Ciudad de México](https://www.happylowcost.com/vuelos/nueva-york-ciudad-de-mexico/): desde 412 € ida y vuelta, lo habitual 449 €, 1 escala(s), AeroMexico, consultado el 2026-10-23
+- [Nueva York → Londres](https://www.happylowcost.com/vuelos/nueva-york-londres/): desde 493 € ida y vuelta, lo habitual 562 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Nueva York → Brujas](https://www.happylowcost.com/vuelos/nueva-york-brujas/): desde 530 € ida y vuelta, lo habitual 543 €, 1 escala(s), SAS, consultado el 2026-10-23
+- [Nueva York → Praga](https://www.happylowcost.com/vuelos/nueva-york-praga/): desde 533 € ida y vuelta, lo habitual 659 €, 1 escala(s), Condor, consultado el 2026-10-23
+- [Nueva York → Bogotá](https://www.happylowcost.com/vuelos/nueva-york-bogota/): desde 544 € ida y vuelta, lo habitual 576 €, 1 escala(s), Arajet, consultado el 2026-10-23
+- [Nueva York → Florencia](https://www.happylowcost.com/vuelos/nueva-york-florencia/): desde 549 € ida y vuelta, lo habitual 575 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Nueva York → Perú](https://www.happylowcost.com/vuelos/nueva-york-lima/): desde 566 € ida y vuelta, lo habitual 638 €, 1 escala(s), Arajet, consultado el 2026-10-23
+- [Nueva York → Hamburgo](https://www.happylowcost.com/vuelos/nueva-york-hamburgo/): desde 584 € ida y vuelta, lo habitual 628 €, 1 escala(s), Condor, consultado el 2026-10-23
+- [Nueva York → Río de Janeiro](https://www.happylowcost.com/vuelos/nueva-york-rio-de-janeiro/): desde 587 € ida y vuelta, lo habitual 800 €, 1 escala(s), Copa Airlines, consultado el 2026-10-23
+- [Nueva York → El Cairo](https://www.happylowcost.com/vuelos/nueva-york-el-cairo/): desde 653 € ida y vuelta, lo habitual 667 €, 1 escala(s), Royal Jordanian, consultado el 2026-10-23
+- [Nueva York → Santorini](https://www.happylowcost.com/vuelos/nueva-york-santorini/): desde 747 € ida y vuelta, lo habitual 752 €, 2 escala(s), Turkish Airlines, consultado el 2026-10-23
+- [Nueva York → Buenos Aires](https://www.happylowcost.com/vuelos/nueva-york-buenos-aires/): desde 768 € ida y vuelta, lo habitual 894 €, 1 escala(s), Arajet, consultado el 2026-10-23
+- [Nueva York → Mykonos](https://www.happylowcost.com/vuelos/nueva-york-mykonos/): desde 769 € ida y vuelta, lo habitual 771 €, 2 escala(s), Turkish Airlines, consultado el 2026-10-23
+- [Nueva York → Singapur](https://www.happylowcost.com/vuelos/nueva-york-singapur/): desde 842 € ida y vuelta, lo habitual 870 €, 1 escala(s), United Airlines, consultado el 2026-10-23
+- [Nueva York → Bali](https://www.happylowcost.com/vuelos/nueva-york-bali/): desde 851 € ida y vuelta, lo habitual 1000 €, 1 escala(s), Korean Air, consultado el 2026-10-23
+- [Nueva York → Tokio](https://www.happylowcost.com/vuelos/nueva-york-tokio/): desde 862 € ida y vuelta, lo habitual 886 €, 1 escala(s), Air Premia, consultado el 2026-10-23
+- [Oslo → Cracovia](https://www.happylowcost.com/vuelos/oslo-cracovia/): desde 38 € ida y vuelta, lo habitual 39 €, directo, Ryanair, consultado el 2026-10-23
+- [Oslo → Riga](https://www.happylowcost.com/vuelos/oslo-riga/): desde 38 € ida y vuelta, lo habitual 38 €, directo, Ryanair, consultado el 2026-10-23
+- [Oslo → Varsovia](https://www.happylowcost.com/vuelos/oslo-varsovia/): desde 47 € ida y vuelta, lo habitual 50 €, directo, Wizz Air, consultado el 2026-10-23
+- [Oslo → Vilna](https://www.happylowcost.com/vuelos/oslo-vilna/): desde 51 € ida y vuelta, lo habitual 53 €, directo, Ryanair, consultado el 2026-10-23
+- [Oslo → Bucarest](https://www.happylowcost.com/vuelos/oslo-bucarest/): desde 56 € ida y vuelta, lo habitual 68 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Oslo → París](https://www.happylowcost.com/vuelos/oslo-paris/): desde 98 € ida y vuelta, lo habitual 119 €, directo, Transavia France, consultado el 2026-10-23
+- [Oslo → Helsinki](https://www.happylowcost.com/vuelos/oslo-helsinki/): desde 109 € ida y vuelta, lo habitual 111 €, directo, Norwegian Air Sweden, consultado el 2026-10-23
+- [Oslo → Copenhague](https://www.happylowcost.com/vuelos/oslo-copenhague/): desde 125 € ida y vuelta, lo habitual 127 €, directo, Norwegian Air Shuttle, consultado el 2026-10-23
+- [Oslo → Brujas](https://www.happylowcost.com/vuelos/oslo-brujas/): desde 127 € ida y vuelta, lo habitual 142 €, directo, SAS, consultado el 2026-10-23
+- [Oslo → Ámsterdam](https://www.happylowcost.com/vuelos/oslo-amsterdam/): desde 143 € ida y vuelta, lo habitual 151 €, directo, Norwegian Air Shuttle, consultado el 2026-10-23
+- [Oslo → Luxemburgo](https://www.happylowcost.com/vuelos/oslo-luxemburgo/): desde 168 € ida y vuelta, lo habitual 189 €, 1 escala(s), Ryanair UK, consultado el 2026-10-23
+- [Oslo → Isla de Sal](https://www.happylowcost.com/vuelos/oslo-sal/): desde 283 € ida y vuelta, lo habitual 294 €, 2 escala(s), KLM Royal Dutch Airlines, consultado el 2026-10-23
+- [Oslo → Dubái](https://www.happylowcost.com/vuelos/oslo-dubai/): desde 330 € ida y vuelta, lo habitual 354 €, 1 escala(s), Pegasus, consultado el 2026-10-23
+- [Oslo → Bangkok](https://www.happylowcost.com/vuelos/oslo-bangkok/): desde 414 € ida y vuelta, lo habitual 539 €, directo, Norse Atlantic Airways, consultado el 2026-10-23
+- [Oslo → Phuket](https://www.happylowcost.com/vuelos/oslo-phuket/): desde 509 € ida y vuelta, lo habitual 624 €, 1 escala(s), Norse Atlantic Airways, consultado el 2026-10-23
+- [Oslo → Nueva York](https://www.happylowcost.com/vuelos/oslo-nueva-york/): desde 522 € ida y vuelta, lo habitual 554 €, 1 escala(s), Icelandair, consultado el 2026-10-23
+- [Oslo → Ciudad del Cabo](https://www.happylowcost.com/vuelos/oslo-ciudad-del-cabo/): desde 578 € ida y vuelta, lo habitual 666 €, 2 escala(s), Ethiopian Airlines, consultado el 2026-10-23
+- [Oslo → San Francisco](https://www.happylowcost.com/vuelos/oslo-san-francisco/): desde 589 € ida y vuelta, lo habitual 664 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Oslo → Seúl](https://www.happylowcost.com/vuelos/oslo-seul/): desde 598 € ida y vuelta, lo habitual 657 €, 2 escala(s), SAS, consultado el 2026-10-23
+- [Oslo → Singapur](https://www.happylowcost.com/vuelos/oslo-singapur/): desde 641 € ida y vuelta, lo habitual 715 €, 1 escala(s), Norwegian Air Shuttle, consultado el 2026-10-23
+- [Oslo → Bali](https://www.happylowcost.com/vuelos/oslo-bali/): desde 673 € ida y vuelta, lo habitual 830 €, 3 escala(s), Wizz Air Malta, consultado el 2026-10-23
+- [Oslo → Zanzíbar](https://www.happylowcost.com/vuelos/oslo-zanzibar/): desde 739 € ida y vuelta, lo habitual 836 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Oslo → Punta Cana](https://www.happylowcost.com/vuelos/oslo-punta-cana/): desde 786 € ida y vuelta, lo habitual 812 €, 1 escala(s), KLM Royal Dutch Airlines, consultado el 2026-10-23
+- [Oslo → Ciudad de México](https://www.happylowcost.com/vuelos/oslo-ciudad-de-mexico/): desde 853 € ida y vuelta, lo habitual 961 €, 3 escala(s), Ryanair, consultado el 2026-10-23
+- [Oslo → Isla Mauricio](https://www.happylowcost.com/vuelos/oslo-mauricio/): desde 915 € ida y vuelta, lo habitual 933 €, 2 escala(s), Norwegian Air Shuttle, consultado el 2026-10-23
+- [Oslo → Perú](https://www.happylowcost.com/vuelos/oslo-lima/): desde 960 € ida y vuelta, lo habitual 1088 €, 2 escala(s), Norwegian Air Shuttle, consultado el 2026-10-23
+- [Palma → Malta](https://www.happylowcost.com/vuelos/palma-malta/): desde 38 € ida y vuelta, lo habitual 38 €, directo, Ryanair, consultado el 2026-10-22
+- [Palma → Milán](https://www.happylowcost.com/vuelos/palma-milan/): desde 40 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-22
+- [Palma → París](https://www.happylowcost.com/vuelos/palma-paris/): desde 51 € ida y vuelta, lo habitual 60 €, directo, Vueling, consultado el 2026-10-22
+- [Palma → Venecia](https://www.happylowcost.com/vuelos/palma-venecia/): desde 55 € ida y vuelta, lo habitual 58 €, directo, Ryanair, consultado el 2026-10-22
+- [Palma → Bruselas](https://www.happylowcost.com/vuelos/palma-bruselas/): desde 76 € ida y vuelta, lo habitual 90 €, directo, Ryanair, consultado el 2026-10-22
+- [Palma → Varsovia](https://www.happylowcost.com/vuelos/palma-varsovia/): desde 82 € ida y vuelta, lo habitual 93 €, directo, Ryanair, consultado el 2026-10-22
+- [Palma → Agadir](https://www.happylowcost.com/vuelos/palma-agadir/): desde 94 € ida y vuelta, lo habitual 122 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Palma → Cracovia](https://www.happylowcost.com/vuelos/palma-cracovia/): desde 98 € ida y vuelta, lo habitual 138 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Palma → Nápoles](https://www.happylowcost.com/vuelos/palma-napoles/): desde 102 € ida y vuelta, lo habitual 112 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Palma → Fez](https://www.happylowcost.com/vuelos/palma-fez/): desde 112 € ida y vuelta, lo habitual 117 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Palma → Dubrovnik](https://www.happylowcost.com/vuelos/palma-dubrovnik/): desde 116 € ida y vuelta, lo habitual 126 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Palma → Belgrado](https://www.happylowcost.com/vuelos/palma-belgrado/): desde 133 € ida y vuelta, lo habitual 143 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Palma → Praga](https://www.happylowcost.com/vuelos/palma-praga/): desde 141 € ida y vuelta, lo habitual 147 €, directo, Smartwings, consultado el 2026-10-22
+- [Palma → Tallin](https://www.happylowcost.com/vuelos/palma-tallin/): desde 144 € ida y vuelta, lo habitual 163 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Palma → Riga](https://www.happylowcost.com/vuelos/palma-riga/): desde 154 € ida y vuelta, lo habitual 160 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Palma → Salzburgo](https://www.happylowcost.com/vuelos/palma-salzburgo/): desde 159 € ida y vuelta, lo habitual 170 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Palma → Santorini](https://www.happylowcost.com/vuelos/palma-santorini/): desde 225 € ida y vuelta, lo habitual 233 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Palma → Azores](https://www.happylowcost.com/vuelos/palma-azores/): desde 242 € ida y vuelta, lo habitual 252 €, 2 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Palma → El Cairo](https://www.happylowcost.com/vuelos/palma-el-cairo/): desde 247 € ida y vuelta, lo habitual 287 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Palma → Nueva York](https://www.happylowcost.com/vuelos/palma-nueva-york/): desde 435 € ida y vuelta, lo habitual 585 €, 1 escala(s), Lufthansa, consultado el 2026-10-22
+- [Palma → Ciudad del Cabo](https://www.happylowcost.com/vuelos/palma-ciudad-del-cabo/): desde 631 € ida y vuelta, lo habitual 781 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Palma → Bali](https://www.happylowcost.com/vuelos/palma-bali/): desde 638 € ida y vuelta, lo habitual 734 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Palma → Orlando](https://www.happylowcost.com/vuelos/palma-orlando/): desde 651 € ida y vuelta, lo habitual 653 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Palma → Sri Lanka](https://www.happylowcost.com/vuelos/palma-sri-lanka/): desde 668 € ida y vuelta, lo habitual 751 €, 3 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Palma → Los Ángeles](https://www.happylowcost.com/vuelos/palma-los-angeles/): desde 753 € ida y vuelta, lo habitual 795 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Palma → Río de Janeiro](https://www.happylowcost.com/vuelos/palma-rio-de-janeiro/): desde 786 € ida y vuelta, lo habitual 805 €, 3 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Palma → Nassau](https://www.happylowcost.com/vuelos/palma-nassau/): desde 809 € ida y vuelta, lo habitual 892 €, 2 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Palma → Maldivas](https://www.happylowcost.com/vuelos/palma-maldivas/): desde 818 € ida y vuelta, lo habitual 940 €, 3 escala(s), easyJet, consultado el 2026-10-22
+- [Palma → Bogotá](https://www.happylowcost.com/vuelos/palma-bogota/): desde 956 € ida y vuelta, lo habitual 1205 €, 2 escala(s), Iberia Express, consultado el 2026-10-22
+- [París → Dublín](https://www.happylowcost.com/vuelos/paris-dublin/): desde 38 € ida y vuelta, lo habitual 41 €, directo, Ryanair, consultado el 2026-10-22
+- [París → Milán](https://www.happylowcost.com/vuelos/paris-milan/): desde 42 € ida y vuelta, lo habitual 44 €, directo, Ryanair, mes más barato 2027-01 (39 €), consultado el 2026-10-22
+- [París → Marrakech](https://www.happylowcost.com/vuelos/paris-marrakech/): desde 43 € ida y vuelta, lo habitual 53 €, directo, Ryanair, consultado el 2026-10-22
+- [París → Oporto](https://www.happylowcost.com/vuelos/paris-oporto/): desde 54 € ida y vuelta, lo habitual 57 €, directo, Ryanair, consultado el 2026-10-22
+- [París → Cerdeña](https://www.happylowcost.com/vuelos/paris-cerdena/): desde 56 € ida y vuelta, lo habitual 58 €, directo, Ryanair, consultado el 2026-10-22
+- [París → Agadir](https://www.happylowcost.com/vuelos/paris-agadir/): desde 67 € ida y vuelta, lo habitual 69 €, directo, Ryanair, consultado el 2026-10-22
+- [París → Viena](https://www.happylowcost.com/vuelos/paris-viena/): desde 68 € ida y vuelta, lo habitual 81 €, directo, Ryanair, consultado el 2026-10-22
+- [París → Londres](https://www.happylowcost.com/vuelos/paris-londres/): desde 77 € ida y vuelta, lo habitual 93 €, directo, Vueling, mes más barato 2026-12 (73 €), consultado el 2026-10-22
+- [París → Oslo](https://www.happylowcost.com/vuelos/paris-oslo/): desde 119 € ida y vuelta, lo habitual 129 €, directo, Transavia France, consultado el 2026-10-22
+- [París → Brujas](https://www.happylowcost.com/vuelos/paris-brujas/): desde 127 € ida y vuelta, lo habitual 129 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [París → Bruselas](https://www.happylowcost.com/vuelos/paris-bruselas/): desde 127 € ida y vuelta, lo habitual 129 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [París → Islandia](https://www.happylowcost.com/vuelos/paris-reikiavik/): desde 127 € ida y vuelta, lo habitual 132 €, directo, easyJet, consultado el 2026-10-22
+- [París → Creta](https://www.happylowcost.com/vuelos/paris-creta/): desde 129 € ida y vuelta, lo habitual 131 €, directo, Transavia France, consultado el 2026-10-22
+- [París → Estambul](https://www.happylowcost.com/vuelos/paris-estambul/): desde 144 € ida y vuelta, lo habitual 161 €, directo, Transavia France, consultado el 2026-10-22
+- [París → Azores](https://www.happylowcost.com/vuelos/paris-azores/): desde 226 € ida y vuelta, lo habitual 244 €, 1 escala(s), Transavia France, consultado el 2026-10-22
+- [París → Los Ángeles](https://www.happylowcost.com/vuelos/paris-los-angeles/): desde 491 € ida y vuelta, lo habitual 677 €, 1 escala(s), TAP Portugal, consultado el 2026-10-22
+- [París → Hong Kong](https://www.happylowcost.com/vuelos/paris-hong-kong/): desde 516 € ida y vuelta, lo habitual 525 €, 1 escala(s), Air China, consultado el 2026-10-22
+- [París → Seúl](https://www.happylowcost.com/vuelos/paris-seul/): desde 531 € ida y vuelta, lo habitual 556 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-22
+- [París → Vietnam](https://www.happylowcost.com/vuelos/paris-hanoi/): desde 540 € ida y vuelta, lo habitual 573 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-22
+- [París → San Francisco](https://www.happylowcost.com/vuelos/paris-san-francisco/): desde 590 € ida y vuelta, lo habitual 659 €, 1 escala(s), TAP Portugal, consultado el 2026-10-22
+- [París → Kuala Lumpur](https://www.happylowcost.com/vuelos/paris-kuala-lumpur/): desde 591 € ida y vuelta, lo habitual 593 €, 1 escala(s), Air India Limited, consultado el 2026-10-22
+- [París → Sri Lanka](https://www.happylowcost.com/vuelos/paris-sri-lanka/): desde 605 € ida y vuelta, lo habitual 617 €, 1 escala(s), Air India Limited, consultado el 2026-10-22
+- [París → Punta Cana](https://www.happylowcost.com/vuelos/paris-punta-cana/): desde 652 € ida y vuelta, lo habitual 710 €, 1 escala(s), Air Transat, consultado el 2026-10-22
+- [París → Bali](https://www.happylowcost.com/vuelos/paris-bali/): desde 684 € ida y vuelta, lo habitual 685 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-22
+- [París → Cancún](https://www.happylowcost.com/vuelos/paris-cancun/): desde 704 € ida y vuelta, lo habitual 741 €, 1 escala(s), Lufthansa, consultado el 2026-10-22
+- [París → Kioto](https://www.happylowcost.com/vuelos/paris-kioto/): desde 788 € ida y vuelta, lo habitual 828 €, 1 escala(s), Korean Air, consultado el 2026-10-22
+- [Roma → Malta](https://www.happylowcost.com/vuelos/roma-malta/): desde 34 € ida y vuelta, lo habitual 36 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Palermo](https://www.happylowcost.com/vuelos/roma-palermo/): desde 37 € ida y vuelta, lo habitual 43 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Cerdeña](https://www.happylowcost.com/vuelos/roma-cerdena/): desde 41 € ida y vuelta, lo habitual 41 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Budapest](https://www.happylowcost.com/vuelos/roma-budapest/): desde 42 € ida y vuelta, lo habitual 58 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Marrakech](https://www.happylowcost.com/vuelos/roma-marrakech/): desde 48 € ida y vuelta, lo habitual 56 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Brujas](https://www.happylowcost.com/vuelos/roma-brujas/): desde 50 € ida y vuelta, lo habitual 60 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Bruselas](https://www.happylowcost.com/vuelos/roma-bruselas/): desde 50 € ida y vuelta, lo habitual 60 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Oporto](https://www.happylowcost.com/vuelos/roma-oporto/): desde 50 € ida y vuelta, lo habitual 56 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Bucarest](https://www.happylowcost.com/vuelos/roma-bucarest/): desde 52 € ida y vuelta, lo habitual 59 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Roma → Chipre](https://www.happylowcost.com/vuelos/roma-chipre/): desde 72 € ida y vuelta, lo habitual 92 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Roma → Tallin](https://www.happylowcost.com/vuelos/roma-tallin/): desde 73 € ida y vuelta, lo habitual 92 €, directo, Wizz Air Malta, consultado el 2026-10-23
+- [Roma → Tenerife](https://www.happylowcost.com/vuelos/roma-tenerife/): desde 75 € ida y vuelta, lo habitual 106 €, directo, Ryanair, consultado el 2026-10-23
+- [Roma → Berlín](https://www.happylowcost.com/vuelos/roma-berlin/): desde 76 € ida y vuelta, lo habitual 90 €, directo, Eurowings, consultado el 2026-10-23
+- [Roma → Zúrich](https://www.happylowcost.com/vuelos/roma-zurich/): desde 85 € ida y vuelta, lo habitual 85 €, directo, easyJet, consultado el 2026-10-23
+- [Roma → Fez](https://www.happylowcost.com/vuelos/roma-fez/): desde 128 € ida y vuelta, lo habitual 134 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Roma → Agadir](https://www.happylowcost.com/vuelos/roma-agadir/): desde 131 € ida y vuelta, lo habitual 134 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-23
+- [Roma → Bolonia](https://www.happylowcost.com/vuelos/roma-bolonia/): desde 145 € ida y vuelta, lo habitual 145 €, directo, ITA Airways, consultado el 2026-10-23
+- [Roma → Ámsterdam](https://www.happylowcost.com/vuelos/roma-amsterdam/): desde 190 € ida y vuelta, lo habitual 205 €, directo, KLM Royal Dutch Airlines, consultado el 2026-10-23
+- [Roma → Mykonos](https://www.happylowcost.com/vuelos/roma-mykonos/): desde 214 € ida y vuelta, lo habitual 221 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Roma → Isla de Sal](https://www.happylowcost.com/vuelos/roma-sal/): desde 242 € ida y vuelta, lo habitual 257 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Roma → Bangkok](https://www.happylowcost.com/vuelos/roma-bangkok/): desde 511 € ida y vuelta, lo habitual 526 €, 1 escala(s), Royal Jordanian, consultado el 2026-10-23
+- [Roma → Kuala Lumpur](https://www.happylowcost.com/vuelos/roma-kuala-lumpur/): desde 538 € ida y vuelta, lo habitual 592 €, 1 escala(s), Hainan Airlines, consultado el 2026-10-23
+- [Roma → Sri Lanka](https://www.happylowcost.com/vuelos/roma-sri-lanka/): desde 590 € ida y vuelta, lo habitual 590 €, 1 escala(s), Air Arabia, consultado el 2026-10-23
+- [Roma → San Francisco](https://www.happylowcost.com/vuelos/roma-san-francisco/): desde 591 € ida y vuelta, lo habitual 619 €, 1 escala(s), ITA Airways, consultado el 2026-10-23
+- [Roma → Vietnam](https://www.happylowcost.com/vuelos/roma-hanoi/): desde 629 € ida y vuelta, lo habitual 630 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Roma → Seúl](https://www.happylowcost.com/vuelos/roma-seul/): desde 637 € ida y vuelta, lo habitual 692 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Roma → Zanzíbar](https://www.happylowcost.com/vuelos/roma-zanzibar/): desde 660 € ida y vuelta, lo habitual 667 €, 1 escala(s), Air Cairo, consultado el 2026-10-23
+- [Roma → Punta Cana](https://www.happylowcost.com/vuelos/roma-punta-cana/): desde 699 € ida y vuelta, lo habitual 806 €, 1 escala(s), Air Europa, consultado el 2026-10-23
+- [Roma → Las Vegas](https://www.happylowcost.com/vuelos/roma-las-vegas/): desde 709 € ida y vuelta, lo habitual 761 €, 2 escala(s), Royal Air Maroc, consultado el 2026-10-23
+- [Roma → Bali](https://www.happylowcost.com/vuelos/roma-bali/): desde 716 € ida y vuelta, lo habitual 721 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Roma → Kioto](https://www.happylowcost.com/vuelos/roma-kioto/): desde 735 € ida y vuelta, lo habitual 962 €, 1 escala(s), Korean Air, consultado el 2026-10-23
+- [Roma → Isla Mauricio](https://www.happylowcost.com/vuelos/roma-mauricio/): desde 840 € ida y vuelta, lo habitual 920 €, 1 escala(s), Saudi Arabian Airlines, consultado el 2026-10-23
+- [Roma → Buenos Aires](https://www.happylowcost.com/vuelos/roma-buenos-aires/): desde 929 € ida y vuelta, lo habitual 1072 €, 1 escala(s), Ethiopian Airlines, consultado el 2026-10-23
+- [Roma → Ciudad de México](https://www.happylowcost.com/vuelos/roma-ciudad-de-mexico/): desde 962 € ida y vuelta, lo habitual 1085 €, 1 escala(s), Air France, consultado el 2026-10-23
+- [Roma → Perú](https://www.happylowcost.com/vuelos/roma-lima/): desde 1056 € ida y vuelta, lo habitual 1109 €, 2 escala(s), Ryanair, consultado el 2026-10-23
+- [Santiago de Compostela → Londres](https://www.happylowcost.com/vuelos/santiago-de-compostela-londres/): desde 83 € ida y vuelta, lo habitual 104 €, directo, Ryanair, consultado el 2026-10-22
+- [Santiago de Compostela → Roma](https://www.happylowcost.com/vuelos/santiago-de-compostela-roma/): desde 85 € ida y vuelta, lo habitual 108 €, directo, Wizz Air Malta, consultado el 2026-10-22
+- [Santiago de Compostela → Zúrich](https://www.happylowcost.com/vuelos/santiago-de-compostela-zurich/): desde 93 € ida y vuelta, lo habitual 170 €, directo, Vueling, consultado el 2026-10-22
+- [Santiago de Compostela → Nápoles](https://www.happylowcost.com/vuelos/santiago-de-compostela-napoles/): desde 109 € ida y vuelta, lo habitual 136 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Santiago de Compostela → Venecia](https://www.happylowcost.com/vuelos/santiago-de-compostela-venecia/): desde 123 € ida y vuelta, lo habitual 130 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Santiago de Compostela → Brujas](https://www.happylowcost.com/vuelos/santiago-de-compostela-brujas/): desde 132 € ida y vuelta, lo habitual 177 €, 1 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Cracovia](https://www.happylowcost.com/vuelos/santiago-de-compostela-cracovia/): desde 141 € ida y vuelta, lo habitual 154 €, 1 escala(s), Wizz Air, consultado el 2026-10-22
+- [Santiago de Compostela → Luxemburgo](https://www.happylowcost.com/vuelos/santiago-de-compostela-luxemburgo/): desde 143 € ida y vuelta, lo habitual 180 €, 1 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Sofía](https://www.happylowcost.com/vuelos/santiago-de-compostela-sofia/): desde 151 € ida y vuelta, lo habitual 164 €, 1 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Chipre](https://www.happylowcost.com/vuelos/santiago-de-compostela-chipre/): desde 186 € ida y vuelta, lo habitual 234 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Santiago de Compostela → Atenas](https://www.happylowcost.com/vuelos/santiago-de-compostela-atenas/): desde 190 € ida y vuelta, lo habitual 207 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Santiago de Compostela → Salzburgo](https://www.happylowcost.com/vuelos/santiago-de-compostela-salzburgo/): desde 190 € ida y vuelta, lo habitual 225 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Santiago de Compostela → Belgrado](https://www.happylowcost.com/vuelos/santiago-de-compostela-belgrado/): desde 199 € ida y vuelta, lo habitual 203 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Santiago de Compostela → Múnich](https://www.happylowcost.com/vuelos/santiago-de-compostela-munich/): desde 207 € ida y vuelta, lo habitual 211 €, 1 escala(s), Vueling, consultado el 2026-10-22
+- [Santiago de Compostela → Isla de Sal](https://www.happylowcost.com/vuelos/santiago-de-compostela-sal/): desde 254 € ida y vuelta, lo habitual 280 €, 2 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Azores](https://www.happylowcost.com/vuelos/santiago-de-compostela-azores/): desde 269 € ida y vuelta, lo habitual 288 €, 2 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Santiago de Compostela → Dubái](https://www.happylowcost.com/vuelos/santiago-de-compostela-dubai/): desde 402 € ida y vuelta, lo habitual 421 €, 2 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Kuala Lumpur](https://www.happylowcost.com/vuelos/santiago-de-compostela-kuala-lumpur/): desde 611 € ida y vuelta, lo habitual 761 €, 2 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Punta Cana](https://www.happylowcost.com/vuelos/santiago-de-compostela-punta-cana/): desde 681 € ida y vuelta, lo habitual 792 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Santiago de Compostela → Isla Mauricio](https://www.happylowcost.com/vuelos/santiago-de-compostela-mauricio/): desde 725 € ida y vuelta, lo habitual 820 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Santiago de Compostela → Ciudad del Cabo](https://www.happylowcost.com/vuelos/santiago-de-compostela-ciudad-del-cabo/): desde 742 € ida y vuelta, lo habitual 771 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Santiago de Compostela → Manila](https://www.happylowcost.com/vuelos/santiago-de-compostela-manila/): desde 754 € ida y vuelta, lo habitual 808 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Santiago de Compostela → Cancún](https://www.happylowcost.com/vuelos/santiago-de-compostela-cancun/): desde 779 € ida y vuelta, lo habitual 912 €, 1 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → San Juan](https://www.happylowcost.com/vuelos/santiago-de-compostela-san-juan/): desde 787 € ida y vuelta, lo habitual 806 €, 3 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Sri Lanka](https://www.happylowcost.com/vuelos/santiago-de-compostela-sri-lanka/): desde 787 € ida y vuelta, lo habitual 795 €, 3 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Maldivas](https://www.happylowcost.com/vuelos/santiago-de-compostela-maldivas/): desde 861 € ida y vuelta, lo habitual 894 €, 2 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Portland](https://www.happylowcost.com/vuelos/santiago-de-compostela-portland/): desde 871 € ida y vuelta, lo habitual 876 €, 3 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Santiago de Compostela → Las Vegas](https://www.happylowcost.com/vuelos/santiago-de-compostela-las-vegas/): desde 903 € ida y vuelta, lo habitual 906 €, 3 escala(s), Vueling, consultado el 2026-10-22
+- [Santiago de Compostela → Buenos Aires](https://www.happylowcost.com/vuelos/santiago-de-compostela-buenos-aires/): desde 1080 € ida y vuelta, lo habitual 1185 €, 2 escala(s), Iberia Airlines, consultado el 2026-10-22
+- [Sevilla → Lisboa](https://www.happylowcost.com/vuelos/sevilla-lisboa/): desde 39 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-11-18
+- [Sevilla → Milán](https://www.happylowcost.com/vuelos/sevilla-milan/): desde 39 € ida y vuelta, lo habitual 40 €, directo, Wizz Air Malta, consultado el 2026-11-18
+- [Sevilla → Bruselas](https://www.happylowcost.com/vuelos/sevilla-bruselas/): desde 97 € ida y vuelta, lo habitual 105 €, directo, Ryanair, consultado el 2026-11-17
+- [Sevilla → Madeira](https://www.happylowcost.com/vuelos/sevilla-madeira/): desde 125 € ida y vuelta, lo habitual 151 €, 1 escala(s), Ryanair, consultado el 2026-11-18
+- [Sevilla → Hamburgo](https://www.happylowcost.com/vuelos/sevilla-hamburgo/): desde 139 € ida y vuelta, lo habitual 182 €, 1 escala(s), Ryanair, consultado el 2026-11-18
+- [Sevilla → Helsinki](https://www.happylowcost.com/vuelos/sevilla-helsinki/): desde 152 € ida y vuelta, lo habitual 196 €, 1 escala(s), Ryanair, consultado el 2026-11-18
+- [Sevilla → Múnich](https://www.happylowcost.com/vuelos/sevilla-munich/): desde 168 € ida y vuelta, lo habitual 176 €, 1 escala(s), Vueling, consultado el 2026-11-18
+- [Sevilla → Salzburgo](https://www.happylowcost.com/vuelos/sevilla-salzburgo/): desde 168 € ida y vuelta, lo habitual 178 €, 1 escala(s), Wizz Air UK, consultado el 2026-11-19
+- [Sevilla → Vilna](https://www.happylowcost.com/vuelos/sevilla-vilna/): desde 170 € ida y vuelta, lo habitual 177 €, 1 escala(s), Ryanair, consultado el 2026-11-19
+- [Sevilla → Riga](https://www.happylowcost.com/vuelos/sevilla-riga/): desde 173 € ida y vuelta, lo habitual 189 €, 1 escala(s), Wizz Air Malta, consultado el 2026-11-19
+- [Sevilla → Islandia](https://www.happylowcost.com/vuelos/sevilla-reikiavik/): desde 200 € ida y vuelta, lo habitual 207 €, 1 escala(s), Ryanair, consultado el 2026-11-19
+- [Sevilla → Azores](https://www.happylowcost.com/vuelos/sevilla-azores/): desde 216 € ida y vuelta, lo habitual 218 €, 1 escala(s), Ryanair, consultado el 2026-11-17
+- [Sevilla → Isla de Sal](https://www.happylowcost.com/vuelos/sevilla-sal/): desde 260 € ida y vuelta, lo habitual 261 €, 1 escala(s), Ryanair, consultado el 2026-11-19
+- [Sevilla → Mykonos](https://www.happylowcost.com/vuelos/sevilla-mykonos/): desde 299 € ida y vuelta, lo habitual 300 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-18
+- [Sevilla → San Francisco](https://www.happylowcost.com/vuelos/sevilla-san-francisco/): desde 410 € ida y vuelta, lo habitual 1003 €, 2 escala(s), Iberia Airlines, consultado el 2026-11-19
+- [Sevilla → San Juan](https://www.happylowcost.com/vuelos/sevilla-san-juan/): desde 606 € ida y vuelta, lo habitual 904 €, 2 escala(s), Iberia Airlines, consultado el 2026-11-19
+- [Sevilla → Sri Lanka](https://www.happylowcost.com/vuelos/sevilla-sri-lanka/): desde 607 € ida y vuelta, lo habitual 745 €, 2 escala(s), Pegasus, consultado el 2026-11-19
+- [Sevilla → Bangkok](https://www.happylowcost.com/vuelos/sevilla-bangkok/): desde 634 € ida y vuelta, lo habitual 704 €, 3 escala(s), Pegasus, consultado el 2026-11-17
+- [Sevilla → Ciudad del Cabo](https://www.happylowcost.com/vuelos/sevilla-ciudad-del-cabo/): desde 715 € ida y vuelta, lo habitual 1614 €, 1 escala(s), Vueling, consultado el 2026-11-18
+- [Sevilla → Zanzíbar](https://www.happylowcost.com/vuelos/sevilla-zanzibar/): desde 725 € ida y vuelta, lo habitual 815 €, 2 escala(s), Pegasus, consultado el 2026-11-19
+- [Sevilla → Hong Kong](https://www.happylowcost.com/vuelos/sevilla-hong-kong/): desde 730 € ida y vuelta, lo habitual 1176 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-18
+- [Sevilla → Portland](https://www.happylowcost.com/vuelos/sevilla-portland/): desde 763 € ida y vuelta, lo habitual 862 €, 2 escala(s), TAP Portugal, consultado el 2026-11-19
+- [Sevilla → Manila](https://www.happylowcost.com/vuelos/sevilla-manila/): desde 768 € ida y vuelta, lo habitual 792 €, 2 escala(s), easyJet, consultado el 2026-11-18
+- [Sevilla → Phu Quoc](https://www.happylowcost.com/vuelos/sevilla-phu-quoc/): desde 774 € ida y vuelta, lo habitual 774 €, 3 escala(s), Vueling, consultado el 2026-11-19
+- [Sevilla → Bali](https://www.happylowcost.com/vuelos/sevilla-bali/): desde 778 € ida y vuelta, lo habitual 1534 €, 3 escala(s), Ryanair, consultado el 2026-11-17
+- [Sevilla → Kioto](https://www.happylowcost.com/vuelos/sevilla-kioto/): desde 787 € ida y vuelta, lo habitual 849 €, 2 escala(s), KLM Royal Dutch Airlines, consultado el 2026-11-18
+- [Sevilla → Cancún](https://www.happylowcost.com/vuelos/sevilla-cancun/): desde 814 € ida y vuelta, lo habitual 1011 €, 1 escala(s), Air Europa, consultado el 2026-11-17
+- [Sevilla → Punta Cana](https://www.happylowcost.com/vuelos/sevilla-punta-cana/): desde 822 € ida y vuelta, lo habitual 833 €, 1 escala(s), Vueling, consultado el 2026-11-19
+- [Sevilla → Maldivas](https://www.happylowcost.com/vuelos/sevilla-maldivas/): desde 867 € ida y vuelta, lo habitual 955 €, 1 escala(s), Turkish Airlines, consultado el 2026-11-18
+- [Sevilla → Las Vegas](https://www.happylowcost.com/vuelos/sevilla-las-vegas/): desde 929 € ida y vuelta, lo habitual 973 €, 2 escala(s), Wizz Air UK, consultado el 2026-11-18
+- [Sevilla → Isla Mauricio](https://www.happylowcost.com/vuelos/sevilla-mauricio/): desde 959 € ida y vuelta, lo habitual 1008 €, 2 escala(s), Ryanair, consultado el 2026-11-18
+- [Sevilla → Río de Janeiro](https://www.happylowcost.com/vuelos/sevilla-rio-de-janeiro/): desde 1079 € ida y vuelta, lo habitual 1343 €, 2 escala(s), TAP Portugal, consultado el 2026-11-19
+- [Sevilla → Nassau](https://www.happylowcost.com/vuelos/sevilla-nassau/): desde 1142 € ida y vuelta, lo habitual 1142 €, 2 escala(s), Transavia France, consultado el 2026-11-18
+- [Singapur → Kuala Lumpur](https://www.happylowcost.com/vuelos/singapur-kuala-lumpur/): desde 86 € ida y vuelta, lo habitual 86 €, directo, AirAsia, consultado el 2026-10-23
+- [Singapur → Bali](https://www.happylowcost.com/vuelos/singapur-bali/): desde 125 € ida y vuelta, lo habitual 139 €, directo, Scoot, consultado el 2026-10-23
+- [Singapur → Phuket](https://www.happylowcost.com/vuelos/singapur-phuket/): desde 147 € ida y vuelta, lo habitual 187 €, directo, Singapore Airlines, consultado el 2026-10-23
+- [Singapur → Phu Quoc](https://www.happylowcost.com/vuelos/singapur-phu-quoc/): desde 162 € ida y vuelta, lo habitual 165 €, directo, Sun PhuQuoc Airways, consultado el 2026-10-23
+- [Singapur → Manila](https://www.happylowcost.com/vuelos/singapur-manila/): desde 163 € ida y vuelta, lo habitual 241 €, directo, Cebu Pacific, consultado el 2026-10-23
+- [Singapur → Bangkok](https://www.happylowcost.com/vuelos/singapur-bangkok/): desde 172 € ida y vuelta, lo habitual 180 €, directo, Thai Lion Air, consultado el 2026-10-23
+- [Singapur → Vietnam](https://www.happylowcost.com/vuelos/singapur-hanoi/): desde 199 € ida y vuelta, lo habitual 224 €, directo, VietJet Air, consultado el 2026-10-23
+- [Singapur → Seúl](https://www.happylowcost.com/vuelos/singapur-seul/): desde 249 € ida y vuelta, lo habitual 271 €, directo, Tway Airlines, consultado el 2026-10-23
+- [Singapur → Hong Kong](https://www.happylowcost.com/vuelos/singapur-hong-kong/): desde 256 € ida y vuelta, lo habitual 276 €, directo, Scoot, consultado el 2026-10-23
+- [Singapur → Sri Lanka](https://www.happylowcost.com/vuelos/singapur-sri-lanka/): desde 304 € ida y vuelta, lo habitual 357 €, 1 escala(s), Scoot, consultado el 2026-10-23
+- [Singapur → Kioto](https://www.happylowcost.com/vuelos/singapur-kioto/): desde 319 € ida y vuelta, lo habitual 446 €, 1 escala(s), AirAsia, consultado el 2026-10-23
+- [Singapur → Maldivas](https://www.happylowcost.com/vuelos/singapur-maldivas/): desde 392 € ida y vuelta, lo habitual 451 €, 1 escala(s), AirAsia, consultado el 2026-10-23
+- [Singapur → Tokio](https://www.happylowcost.com/vuelos/singapur-tokio/): desde 401 € ida y vuelta, lo habitual 408 €, directo, Scoot, consultado el 2026-10-23
+- [Singapur → Dubái](https://www.happylowcost.com/vuelos/singapur-dubai/): desde 513 € ida y vuelta, lo habitual 521 €, directo, Emirates, consultado el 2026-10-23
+- [Singapur → Malta](https://www.happylowcost.com/vuelos/singapur-malta/): desde 623 € ida y vuelta, lo habitual 637 €, 2 escala(s), Oman Air, consultado el 2026-10-23
+- [Singapur → Creta](https://www.happylowcost.com/vuelos/singapur-creta/): desde 629 € ida y vuelta, lo habitual 630 €, 1 escala(s), Scoot, consultado el 2026-10-23
+- [Singapur → Belgrado](https://www.happylowcost.com/vuelos/singapur-belgrado/): desde 674 € ida y vuelta, lo habitual 738 €, 1 escala(s), China Southern Airlines, consultado el 2026-10-23
+- [Singapur → Hamburgo](https://www.happylowcost.com/vuelos/singapur-hamburgo/): desde 698 € ida y vuelta, lo habitual 803 €, 2 escala(s), Oman Air, consultado el 2026-10-23
+- [Singapur → Madeira](https://www.happylowcost.com/vuelos/singapur-madeira/): desde 713 € ida y vuelta, lo habitual 795 €, 2 escala(s), Oman Air, consultado el 2026-10-23
+- [Singapur → Oslo](https://www.happylowcost.com/vuelos/singapur-oslo/): desde 739 € ida y vuelta, lo habitual 778 €, 1 escala(s), Turkish Airlines, consultado el 2026-10-23
+- [Singapur → Ciudad del Cabo](https://www.happylowcost.com/vuelos/singapur-ciudad-del-cabo/): desde 781 € ida y vuelta, lo habitual 947 €, 2 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Singapur → Orlando](https://www.happylowcost.com/vuelos/singapur-orlando/): desde 1081 € ida y vuelta, lo habitual 1207 €, 2 escala(s), Korean Air, consultado el 2026-10-23
+- [Singapur → Miami](https://www.happylowcost.com/vuelos/singapur-miami/): desde 1120 € ida y vuelta, lo habitual 1504 €, 2 escala(s), Singapore Airlines, consultado el 2026-10-23
+- [Singapur → Buenos Aires](https://www.happylowcost.com/vuelos/singapur-buenos-aires/): desde 1854 € ida y vuelta, lo habitual 1854 €, 2 escala(s), Turkish Airlines, consultado el 2026-10-23
+- [Sídney → Bali](https://www.happylowcost.com/vuelos/sidney-bali/): desde 392 € ida y vuelta, lo habitual 427 €, directo, Jetstar Airways, consultado el 2026-10-23
+- [Sídney → Vietnam](https://www.happylowcost.com/vuelos/sidney-hanoi/): desde 448 € ida y vuelta, lo habitual 610 €, 1 escala(s), Xiamen Airlines, consultado el 2026-10-23
+- [Sídney → Kuala Lumpur](https://www.happylowcost.com/vuelos/sidney-kuala-lumpur/): desde 454 € ida y vuelta, lo habitual 577 €, directo, Batik Air Malaysia, consultado el 2026-10-23
+- [Sídney → Singapur](https://www.happylowcost.com/vuelos/sidney-singapur/): desde 525 € ida y vuelta, lo habitual 632 €, 1 escala(s), Batik Air Malaysia, consultado el 2026-10-23
+- [Sídney → Los Ángeles](https://www.happylowcost.com/vuelos/sidney-los-angeles/): desde 616 € ida y vuelta, lo habitual 833 €, 1 escala(s), Alaska Airlines, consultado el 2026-10-23
+- [Sídney → Tokio](https://www.happylowcost.com/vuelos/sidney-tokio/): desde 630 € ida y vuelta, lo habitual 818 €, 1 escala(s), Juneyao Airlines, consultado el 2026-10-23
+- [Sídney → Maldivas](https://www.happylowcost.com/vuelos/sidney-maldivas/): desde 746 € ida y vuelta, lo habitual 945 €, 1 escala(s), Batik Air Malaysia, consultado el 2026-10-23
+- [Sídney → Dublín](https://www.happylowcost.com/vuelos/sidney-dublin/): desde 799 € ida y vuelta, lo habitual 1371 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-23
+- [Sídney → Edimburgo](https://www.happylowcost.com/vuelos/sidney-edimburgo/): desde 906 € ida y vuelta, lo habitual 1285 €, 2 escala(s), Scoot, consultado el 2026-10-23
+- [Sídney → Oporto](https://www.happylowcost.com/vuelos/sidney-oporto/): desde 918 € ida y vuelta, lo habitual 1022 €, 2 escala(s), China Southern Airlines, consultado el 2026-10-23
+- [Sídney → Cracovia](https://www.happylowcost.com/vuelos/sidney-cracovia/): desde 930 € ida y vuelta, lo habitual 1235 €, 2 escala(s), China Southern Airlines, consultado el 2026-10-23
+- [Sídney → Nueva York](https://www.happylowcost.com/vuelos/sidney-nueva-york/): desde 944 € ida y vuelta, lo habitual 1476 €, 2 escala(s), Alaska Airlines, consultado el 2026-10-23
+- [Sídney → Cerdeña](https://www.happylowcost.com/vuelos/sidney-cerdena/): desde 969 € ida y vuelta, lo habitual 1285 €, 2 escala(s), China Southern Airlines, consultado el 2026-10-23
+- [Sídney → Agadir](https://www.happylowcost.com/vuelos/sidney-agadir/): desde 986 € ida y vuelta, lo habitual 1254 €, 2 escala(s), China Southern Airlines, consultado el 2026-10-23
+- [Sídney → Belgrado](https://www.happylowcost.com/vuelos/sidney-belgrado/): desde 1018 € ida y vuelta, lo habitual 1192 €, 2 escala(s), China Southern Airlines, consultado el 2026-10-23
+- [Sídney → Orlando](https://www.happylowcost.com/vuelos/sidney-orlando/): desde 1049 € ida y vuelta, lo habitual 1482 €, 2 escala(s), Air Canada, consultado el 2026-10-23
+- [Sídney → Ciudad de México](https://www.happylowcost.com/vuelos/sidney-ciudad-de-mexico/): desde 1199 € ida y vuelta, lo habitual 1406 €, 2 escala(s), Fiji Airways, consultado el 2026-10-23
+- [Sídney → Lisboa](https://www.happylowcost.com/vuelos/sidney-lisboa/): desde 1346 € ida y vuelta, lo habitual 1398 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Toronto → Fort Lauderdale](https://www.happylowcost.com/vuelos/toronto-fort-lauderdale/): desde 134 € ida y vuelta, lo habitual 155 €, directo, WestJet, consultado el 2026-10-23
+- [Toronto → Nueva York](https://www.happylowcost.com/vuelos/toronto-nueva-york/): desde 151 € ida y vuelta, lo habitual 153 €, directo, Porter Airlines, consultado el 2026-10-23
+- [Toronto → Orlando](https://www.happylowcost.com/vuelos/toronto-orlando/): desde 195 € ida y vuelta, lo habitual 213 €, directo, Flair Airlines, consultado el 2026-10-23
+- [Toronto → San Francisco](https://www.happylowcost.com/vuelos/toronto-san-francisco/): desde 219 € ida y vuelta, lo habitual 239 €, directo, Porter Airlines, consultado el 2026-10-23
+- [Toronto → Las Vegas](https://www.happylowcost.com/vuelos/toronto-las-vegas/): desde 224 € ida y vuelta, lo habitual 224 €, directo, Porter Airlines, consultado el 2026-10-23
+- [Toronto → Jacksonville](https://www.happylowcost.com/vuelos/toronto-jacksonville/): desde 257 € ida y vuelta, lo habitual 259 €, 1 escala(s), Porter Airlines, consultado el 2026-10-23
+- [Toronto → Cancún](https://www.happylowcost.com/vuelos/toronto-cancun/): desde 264 € ida y vuelta, lo habitual 291 €, directo, Flair Airlines, consultado el 2026-10-23
+- [Toronto → Charleston](https://www.happylowcost.com/vuelos/toronto-charleston/): desde 276 € ida y vuelta, lo habitual 336 €, 1 escala(s), WestJet, consultado el 2026-10-23
+- [Toronto → Miami](https://www.happylowcost.com/vuelos/toronto-miami/): desde 277 € ida y vuelta, lo habitual 277 €, directo, Air Canada, consultado el 2026-10-23
+- [Toronto → Los Ángeles](https://www.happylowcost.com/vuelos/toronto-los-angeles/): desde 282 € ida y vuelta, lo habitual 287 €, directo, Porter Airlines, consultado el 2026-10-23
+- [Toronto → Nassau](https://www.happylowcost.com/vuelos/toronto-nassau/): desde 294 € ida y vuelta, lo habitual 324 €, directo, Porter Airlines, consultado el 2026-10-23
+- [Toronto → San Juan](https://www.happylowcost.com/vuelos/toronto-san-juan/): desde 300 € ida y vuelta, lo habitual 314 €, 1 escala(s), Air Canada, consultado el 2026-10-23
+- [Toronto → Portland](https://www.happylowcost.com/vuelos/toronto-portland/): desde 315 € ida y vuelta, lo habitual 315 €, 1 escala(s), Alaska Airlines, consultado el 2026-10-23
+- [Toronto → Punta Cana](https://www.happylowcost.com/vuelos/toronto-punta-cana/): desde 315 € ida y vuelta, lo habitual 318 €, directo, Flair Airlines, consultado el 2026-10-23
+- [Toronto → Ciudad de México](https://www.happylowcost.com/vuelos/toronto-ciudad-de-mexico/): desde 367 € ida y vuelta, lo habitual 438 €, directo, Flair Airlines, consultado el 2026-10-23
+- [Toronto → Burbank](https://www.happylowcost.com/vuelos/toronto-burbank/): desde 399 € ida y vuelta, lo habitual 403 €, 2 escala(s), Porter Airlines, consultado el 2026-10-23
+- [Toronto → Bogotá](https://www.happylowcost.com/vuelos/toronto-bogota/): desde 462 € ida y vuelta, lo habitual 565 €, 1 escala(s), LATAM Airlines, consultado el 2026-10-23
+- [Toronto → Madeira](https://www.happylowcost.com/vuelos/toronto-madeira/): desde 468 € ida y vuelta, lo habitual 469 €, 1 escala(s), SATA Azores Airlines, consultado el 2026-10-23
+- [Toronto → Azores](https://www.happylowcost.com/vuelos/toronto-azores/): desde 501 € ida y vuelta, lo habitual 576 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Toronto → Marrakech](https://www.happylowcost.com/vuelos/toronto-marrakech/): desde 518 € ida y vuelta, lo habitual 590 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Toronto → Dublín](https://www.happylowcost.com/vuelos/toronto-dublin/): desde 533 € ida y vuelta, lo habitual 534 €, 1 escala(s), Icelandair, consultado el 2026-10-23
+- [Toronto → Perú](https://www.happylowcost.com/vuelos/toronto-lima/): desde 552 € ida y vuelta, lo habitual 553 €, directo, Air Transat, consultado el 2026-10-23
+- [Toronto → Londres](https://www.happylowcost.com/vuelos/toronto-londres/): desde 577 € ida y vuelta, lo habitual 577 €, directo, Air Transat, consultado el 2026-10-23
+- [Toronto → Múnich](https://www.happylowcost.com/vuelos/toronto-munich/): desde 606 € ida y vuelta, lo habitual 607 €, 1 escala(s), Condor, consultado el 2026-10-23
+- [Toronto → Cerdeña](https://www.happylowcost.com/vuelos/toronto-cerdena/): desde 622 € ida y vuelta, lo habitual 637 €, 2 escala(s), Condor, consultado el 2026-10-23
+- [Toronto → Estambul](https://www.happylowcost.com/vuelos/toronto-estambul/): desde 715 € ida y vuelta, lo habitual 733 €, 2 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Toronto → Río de Janeiro](https://www.happylowcost.com/vuelos/toronto-rio-de-janeiro/): desde 758 € ida y vuelta, lo habitual 811 €, 2 escala(s), WestJet, consultado el 2026-10-23
+- [Toronto → Buenos Aires](https://www.happylowcost.com/vuelos/toronto-buenos-aires/): desde 804 € ida y vuelta, lo habitual 832 €, 1 escala(s), Arajet, consultado el 2026-10-23
+- [Toronto → Bangkok](https://www.happylowcost.com/vuelos/toronto-bangkok/): desde 931 € ida y vuelta, lo habitual 1184 €, 2 escala(s), Porter Airlines, consultado el 2026-10-23
+- [Toronto → Manila](https://www.happylowcost.com/vuelos/toronto-manila/): desde 975 € ida y vuelta, lo habitual 1066 €, 2 escala(s), Porter Airlines, consultado el 2026-10-23
+- [Toronto → Vietnam](https://www.happylowcost.com/vuelos/toronto-hanoi/): desde 1076 € ida y vuelta, lo habitual 1118 €, 2 escala(s), Porter Airlines, consultado el 2026-10-23
+- [Toronto → Bali](https://www.happylowcost.com/vuelos/toronto-bali/): desde 1125 € ida y vuelta, lo habitual 1145 €, 2 escala(s), Korean Air, consultado el 2026-10-23
+- [Valencia → Milán](https://www.happylowcost.com/vuelos/valencia-milan/): desde 36 € ida y vuelta, lo habitual 38 €, directo, Ryanair, consultado el 2026-11-20
+- [Valencia → Venecia](https://www.happylowcost.com/vuelos/valencia-venecia/): desde 36 € ida y vuelta, lo habitual 53 €, directo, Ryanair, consultado el 2026-11-21
+- [Valencia → Marrakech](https://www.happylowcost.com/vuelos/valencia-marrakech/): desde 39 € ida y vuelta, lo habitual 52 €, directo, Ryanair, consultado el 2026-11-20
+- [Valencia → Oporto](https://www.happylowcost.com/vuelos/valencia-oporto/): desde 41 € ida y vuelta, lo habitual 48 €, directo, Ryanair, consultado el 2026-11-20
+- [Valencia → Brujas](https://www.happylowcost.com/vuelos/valencia-brujas/): desde 69 € ida y vuelta, lo habitual 100 €, directo, Ryanair, consultado el 2026-11-19
+- [Valencia → Riga](https://www.happylowcost.com/vuelos/valencia-riga/): desde 164 € ida y vuelta, lo habitual 213 €, 1 escala(s), Wizz Air UK, consultado el 2026-11-21
+- [Valencia → Salzburgo](https://www.happylowcost.com/vuelos/valencia-salzburgo/): desde 175 € ida y vuelta, lo habitual 214 €, 1 escala(s), Ryanair, consultado el 2026-11-21
+- [Valencia → Azores](https://www.happylowcost.com/vuelos/valencia-azores/): desde 213 € ida y vuelta, lo habitual 238 €, 1 escala(s), Ryanair, consultado el 2026-11-19
+- [Valencia → Hong Kong](https://www.happylowcost.com/vuelos/valencia-hong-kong/): desde 627 € ida y vuelta, lo habitual 873 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-20
+- [Valencia → Phu Quoc](https://www.happylowcost.com/vuelos/valencia-phu-quoc/): desde 696 € ida y vuelta, lo habitual 707 €, 3 escala(s), Wizz Air Malta, consultado el 2026-11-20
+- [Valencia → Sri Lanka](https://www.happylowcost.com/vuelos/valencia-sri-lanka/): desde 740 € ida y vuelta, lo habitual 824 €, 2 escala(s), Ryanair, consultado el 2026-11-21
+- [Valencia → San Juan](https://www.happylowcost.com/vuelos/valencia-san-juan/): desde 747 € ida y vuelta, lo habitual 823 €, 1 escala(s), Iberia Airlines, consultado el 2026-11-21
+- [Valencia → Cancún](https://www.happylowcost.com/vuelos/valencia-cancun/): desde 807 € ida y vuelta, lo habitual 851 €, 1 escala(s), Air Europa, consultado el 2026-11-19
+- [Valencia → Nassau](https://www.happylowcost.com/vuelos/valencia-nassau/): desde 853 € ida y vuelta, lo habitual 952 €, 2 escala(s), Iberia Airlines, consultado el 2026-11-20
+- [Valencia → Las Vegas](https://www.happylowcost.com/vuelos/valencia-las-vegas/): desde 860 € ida y vuelta, lo habitual 949 €, 3 escala(s), Ryanair, consultado el 2026-11-20
+- [Valencia → Río de Janeiro](https://www.happylowcost.com/vuelos/valencia-rio-de-janeiro/): desde 869 € ida y vuelta, lo habitual 1382 €, 3 escala(s), Air Europa, consultado el 2026-11-21
+- [Valencia → Maldivas](https://www.happylowcost.com/vuelos/valencia-maldivas/): desde 890 € ida y vuelta, lo habitual 1101 €, 2 escala(s), Wizz Air Malta, consultado el 2026-11-20
+- [Valencia → Manila](https://www.happylowcost.com/vuelos/valencia-manila/): desde 977 € ida y vuelta, lo habitual 1051 €, 2 escala(s), Etihad Airways, consultado el 2026-11-20
+- [Viena → Venecia](https://www.happylowcost.com/vuelos/viena-venecia/): desde 43 € ida y vuelta, lo habitual 45 €, directo, Ryanair, consultado el 2026-10-23
+- [Viena → Milán](https://www.happylowcost.com/vuelos/viena-milan/): desde 48 € ida y vuelta, lo habitual 68 €, directo, Ryanair, consultado el 2026-10-23
+- [Viena → Cracovia](https://www.happylowcost.com/vuelos/viena-cracovia/): desde 50 € ida y vuelta, lo habitual 61 €, directo, Ryanair, consultado el 2026-10-23
+- [Viena → Chipre](https://www.happylowcost.com/vuelos/viena-chipre/): desde 69 € ida y vuelta, lo habitual 99 €, directo, Ryanair, consultado el 2026-10-23
+- [Viena → Londres](https://www.happylowcost.com/vuelos/viena-londres/): desde 84 € ida y vuelta, lo habitual 95 €, directo, Ryanair, consultado el 2026-10-23
+- [Viena → Vilna](https://www.happylowcost.com/vuelos/viena-vilna/): desde 108 € ida y vuelta, lo habitual 119 €, directo, Ryanair, consultado el 2026-10-23
+- [Viena → Hamburgo](https://www.happylowcost.com/vuelos/viena-hamburgo/): desde 121 € ida y vuelta, lo habitual 132 €, directo, Eurowings, consultado el 2026-10-23
+- [Viena → Salzburgo](https://www.happylowcost.com/vuelos/viena-salzburgo/): desde 199 € ida y vuelta, lo habitual 206 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Viena → Azores](https://www.happylowcost.com/vuelos/viena-azores/): desde 263 € ida y vuelta, lo habitual 301 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Viena → El Cairo](https://www.happylowcost.com/vuelos/viena-el-cairo/): desde 294 € ida y vuelta, lo habitual 312 €, 1 escala(s), Ryanair, consultado el 2026-10-23
+- [Viena → Hong Kong](https://www.happylowcost.com/vuelos/viena-hong-kong/): desde 492 € ida y vuelta, lo habitual 492 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-23
+- [Viena → Bangkok](https://www.happylowcost.com/vuelos/viena-bangkok/): desde 538 € ida y vuelta, lo habitual 538 €, 1 escala(s), Air China, consultado el 2026-10-23
+- [Viena → San Francisco](https://www.happylowcost.com/vuelos/viena-san-francisco/): desde 578 € ida y vuelta, lo habitual 671 €, 1 escala(s), Air Canada, consultado el 2026-10-23
+- [Zaragoza → Milán](https://www.happylowcost.com/vuelos/zaragoza-milan/): desde 38 € ida y vuelta, lo habitual 51 €, directo, Ryanair, consultado el 2026-10-22
+- [Zaragoza → Londres](https://www.happylowcost.com/vuelos/zaragoza-londres/): desde 45 € ida y vuelta, lo habitual 84 €, directo, Ryanair, consultado el 2026-10-22
+- [Zaragoza → Brujas](https://www.happylowcost.com/vuelos/zaragoza-brujas/): desde 87 € ida y vuelta, lo habitual 111 €, directo, Ryanair, consultado el 2026-10-22
+- [Zaragoza → Palermo](https://www.happylowcost.com/vuelos/zaragoza-palermo/): desde 104 € ida y vuelta, lo habitual 118 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Cracovia](https://www.happylowcost.com/vuelos/zaragoza-cracovia/): desde 112 € ida y vuelta, lo habitual 134 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Cerdeña](https://www.happylowcost.com/vuelos/zaragoza-cerdena/): desde 114 € ida y vuelta, lo habitual 134 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Estocolmo](https://www.happylowcost.com/vuelos/zaragoza-estocolmo/): desde 118 € ida y vuelta, lo habitual 184 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Fez](https://www.happylowcost.com/vuelos/zaragoza-fez/): desde 120 € ida y vuelta, lo habitual 130 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Sofía](https://www.happylowcost.com/vuelos/zaragoza-sofia/): desde 133 € ida y vuelta, lo habitual 142 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Varsovia](https://www.happylowcost.com/vuelos/zaragoza-varsovia/): desde 133 € ida y vuelta, lo habitual 135 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Copenhague](https://www.happylowcost.com/vuelos/zaragoza-copenhague/): desde 135 € ida y vuelta, lo habitual 148 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Edimburgo](https://www.happylowcost.com/vuelos/zaragoza-edimburgo/): desde 137 € ida y vuelta, lo habitual 146 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Oslo](https://www.happylowcost.com/vuelos/zaragoza-oslo/): desde 141 € ida y vuelta, lo habitual 173 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Belgrado](https://www.happylowcost.com/vuelos/zaragoza-belgrado/): desde 143 € ida y vuelta, lo habitual 176 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Praga](https://www.happylowcost.com/vuelos/zaragoza-praga/): desde 156 € ida y vuelta, lo habitual 171 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Riga](https://www.happylowcost.com/vuelos/zaragoza-riga/): desde 159 € ida y vuelta, lo habitual 170 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Dubrovnik](https://www.happylowcost.com/vuelos/zaragoza-dubrovnik/): desde 161 € ida y vuelta, lo habitual 182 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Zúrich](https://www.happylowcost.com/vuelos/zaragoza-zurich/): desde 171 € ida y vuelta, lo habitual 190 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Chipre](https://www.happylowcost.com/vuelos/zaragoza-chipre/): desde 174 € ida y vuelta, lo habitual 176 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Madeira](https://www.happylowcost.com/vuelos/zaragoza-madeira/): desde 174 € ida y vuelta, lo habitual 185 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Islandia](https://www.happylowcost.com/vuelos/zaragoza-reikiavik/): desde 176 € ida y vuelta, lo habitual 210 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Atenas](https://www.happylowcost.com/vuelos/zaragoza-atenas/): desde 181 € ida y vuelta, lo habitual 203 €, 1 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Florencia](https://www.happylowcost.com/vuelos/zaragoza-florencia/): desde 190 € ida y vuelta, lo habitual 203 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Múnich](https://www.happylowcost.com/vuelos/zaragoza-munich/): desde 203 € ida y vuelta, lo habitual 233 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Creta](https://www.happylowcost.com/vuelos/zaragoza-creta/): desde 247 € ida y vuelta, lo habitual 268 €, 2 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Santorini](https://www.happylowcost.com/vuelos/zaragoza-santorini/): desde 278 € ida y vuelta, lo habitual 281 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → El Cairo](https://www.happylowcost.com/vuelos/zaragoza-el-cairo/): desde 300 € ida y vuelta, lo habitual 324 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Dubái](https://www.happylowcost.com/vuelos/zaragoza-dubai/): desde 377 € ida y vuelta, lo habitual 423 €, 2 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Nueva York](https://www.happylowcost.com/vuelos/zaragoza-nueva-york/): desde 554 € ida y vuelta, lo habitual 668 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Zaragoza → Orlando](https://www.happylowcost.com/vuelos/zaragoza-orlando/): desde 597 € ida y vuelta, lo habitual 670 €, 3 escala(s), Vueling, consultado el 2026-10-22
+- [Zaragoza → Vietnam](https://www.happylowcost.com/vuelos/zaragoza-hanoi/): desde 630 € ida y vuelta, lo habitual 639 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Seúl](https://www.happylowcost.com/vuelos/zaragoza-seul/): desde 640 € ida y vuelta, lo habitual 704 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Miami](https://www.happylowcost.com/vuelos/zaragoza-miami/): desde 648 € ida y vuelta, lo habitual 701 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Singapur](https://www.happylowcost.com/vuelos/zaragoza-singapur/): desde 679 € ida y vuelta, lo habitual 700 €, 3 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Phu Quoc](https://www.happylowcost.com/vuelos/zaragoza-phu-quoc/): desde 694 € ida y vuelta, lo habitual 705 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Bali](https://www.happylowcost.com/vuelos/zaragoza-bali/): desde 710 € ida y vuelta, lo habitual 790 €, 3 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Ciudad del Cabo](https://www.happylowcost.com/vuelos/zaragoza-ciudad-del-cabo/): desde 714 € ida y vuelta, lo habitual 787 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Nairobi](https://www.happylowcost.com/vuelos/zaragoza-nairobi/): desde 723 € ida y vuelta, lo habitual 792 €, 2 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Los Ángeles](https://www.happylowcost.com/vuelos/zaragoza-los-angeles/): desde 727 € ida y vuelta, lo habitual 746 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Zanzíbar](https://www.happylowcost.com/vuelos/zaragoza-zanzibar/): desde 732 € ida y vuelta, lo habitual 812 €, 3 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zaragoza → Sri Lanka](https://www.happylowcost.com/vuelos/zaragoza-sri-lanka/): desde 740 € ida y vuelta, lo habitual 778 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Punta Cana](https://www.happylowcost.com/vuelos/zaragoza-punta-cana/): desde 743 € ida y vuelta, lo habitual 841 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → San Francisco](https://www.happylowcost.com/vuelos/zaragoza-san-francisco/): desde 772 € ida y vuelta, lo habitual 823 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Las Vegas](https://www.happylowcost.com/vuelos/zaragoza-las-vegas/): desde 792 € ida y vuelta, lo habitual 811 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Cancún](https://www.happylowcost.com/vuelos/zaragoza-cancun/): desde 825 € ida y vuelta, lo habitual 914 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Tokio](https://www.happylowcost.com/vuelos/zaragoza-tokio/): desde 830 € ida y vuelta, lo habitual 831 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Río de Janeiro](https://www.happylowcost.com/vuelos/zaragoza-rio-de-janeiro/): desde 837 € ida y vuelta, lo habitual 858 €, 2 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Perú](https://www.happylowcost.com/vuelos/zaragoza-lima/): desde 1024 € ida y vuelta, lo habitual 1185 €, 2 escala(s), Vueling, consultado el 2026-10-22
+- [Zaragoza → Bogotá](https://www.happylowcost.com/vuelos/zaragoza-bogota/): desde 1080 € ida y vuelta, lo habitual 1234 €, 3 escala(s), Ryanair, consultado el 2026-10-22
+- [Zaragoza → Buenos Aires](https://www.happylowcost.com/vuelos/zaragoza-buenos-aires/): desde 1080 € ida y vuelta, lo habitual 1181 €, 2 escala(s), Wizz Air Malta, consultado el 2026-10-22
+- [Zúrich → Roma](https://www.happylowcost.com/vuelos/zurich-roma/): desde 85 € ida y vuelta, lo habitual 86 €, directo, easyJet, consultado el 2026-10-23
+- [Zúrich → Marrakech](https://www.happylowcost.com/vuelos/zurich-marrakech/): desde 92 € ida y vuelta, lo habitual 112 €, directo, easyJet, consultado el 2026-10-23
+- [Zúrich → Estambul](https://www.happylowcost.com/vuelos/zurich-estambul/): desde 104 € ida y vuelta, lo habitual 107 €, directo, AJet, consultado el 2026-10-23
+- [Zúrich → Edimburgo](https://www.happylowcost.com/vuelos/zurich-edimburgo/): desde 118 € ida y vuelta, lo habitual 140 €, directo, easyJet, consultado el 2026-10-23
+- [Zúrich → Palermo](https://www.happylowcost.com/vuelos/zurich-palermo/): desde 168 € ida y vuelta, lo habitual 177 €, 1 escala(s), easyJet, consultado el 2026-10-23
+- [Zúrich → Brujas](https://www.happylowcost.com/vuelos/zurich-brujas/): desde 198 € ida y vuelta, lo habitual 201 €, 1 escala(s), KLM Royal Dutch Airlines, consultado el 2026-10-23
+- [Zúrich → Malta](https://www.happylowcost.com/vuelos/zurich-malta/): desde 220 € ida y vuelta, lo habitual 224 €, directo, KM Malta Airlines, consultado el 2026-10-23
+- [Zúrich → Vilna](https://www.happylowcost.com/vuelos/zurich-vilna/): desde 226 € ida y vuelta, lo habitual 242 €, 1 escala(s), easyJet, consultado el 2026-10-23
+- [Zúrich → Los Ángeles](https://www.happylowcost.com/vuelos/zurich-los-angeles/): desde 489 € ida y vuelta, lo habitual 720 €, 1 escala(s), TAP Portugal, consultado el 2026-10-23
+- [Zúrich → Phuket](https://www.happylowcost.com/vuelos/zurich-phuket/): desde 610 € ida y vuelta, lo habitual 643 €, 1 escala(s), Etihad Airways, consultado el 2026-10-23
+- [Zúrich → Fort Lauderdale](https://www.happylowcost.com/vuelos/zurich-fort-lauderdale/): desde 682 € ida y vuelta, lo habitual 750 €, 2 escala(s), SAS, consultado el 2026-10-23
+- [Zúrich → Zanzíbar](https://www.happylowcost.com/vuelos/zurich-zanzibar/): desde 688 € ida y vuelta, lo habitual 689 €, 1 escala(s), Air Cairo, consultado el 2026-10-23
+- [Zúrich → Isla Mauricio](https://www.happylowcost.com/vuelos/zurich-mauricio/): desde 829 € ida y vuelta, lo habitual 851 €, 1 escala(s), Condor, consultado el 2026-10-23
+- [Zúrich → Río de Janeiro](https://www.happylowcost.com/vuelos/zurich-rio-de-janeiro/): desde 860 € ida y vuelta, lo habitual 864 €, 1 escala(s), Air France, consultado el 2026-10-23
+- [Zúrich → Kioto](https://www.happylowcost.com/vuelos/zurich-kioto/): desde 1036 € ida y vuelta, lo habitual 1044 €, 1 escala(s), Cathay Pacific, consultado el 2026-10-23
+- [Ámsterdam → Dublín](https://www.happylowcost.com/vuelos/amsterdam-dublin/): desde 61 € ida y vuelta, lo habitual 68 €, directo, Ryanair, consultado el 2026-10-22
+- [Ámsterdam → Londres](https://www.happylowcost.com/vuelos/amsterdam-londres/): desde 119 € ida y vuelta, lo habitual 120 €, directo, easyJet, consultado el 2026-10-22
+- [Ámsterdam → Milán](https://www.happylowcost.com/vuelos/amsterdam-milan/): desde 120 € ida y vuelta, lo habitual 128 €, directo, easyJet, consultado el 2026-10-22
+- [Ámsterdam → Madeira](https://www.happylowcost.com/vuelos/amsterdam-madeira/): desde 124 € ida y vuelta, lo habitual 128 €, directo, easyJet, consultado el 2026-10-22
+- [Ámsterdam → Palermo](https://www.happylowcost.com/vuelos/amsterdam-palermo/): desde 127 € ida y vuelta, lo habitual 141 €, directo, easyJet, consultado el 2026-10-22
+- [Ámsterdam → Edimburgo](https://www.happylowcost.com/vuelos/amsterdam-edimburgo/): desde 140 € ida y vuelta, lo habitual 140 €, directo, easyJet, consultado el 2026-10-22
+- [Ámsterdam → Creta](https://www.happylowcost.com/vuelos/amsterdam-creta/): desde 145 € ida y vuelta, lo habitual 149 €, directo, Transavia, consultado el 2026-10-22
+- [Ámsterdam → Brujas](https://www.happylowcost.com/vuelos/amsterdam-brujas/): desde 162 € ida y vuelta, lo habitual 173 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Ámsterdam → Bruselas](https://www.happylowcost.com/vuelos/amsterdam-bruselas/): desde 162 € ida y vuelta, lo habitual 173 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Ámsterdam → Cerdeña](https://www.happylowcost.com/vuelos/amsterdam-cerdena/): desde 166 € ida y vuelta, lo habitual 178 €, 1 escala(s), easyJet, consultado el 2026-10-22
+- [Ámsterdam → Cracovia](https://www.happylowcost.com/vuelos/amsterdam-cracovia/): desde 180 € ida y vuelta, lo habitual 184 €, 1 escala(s), Ryanair, consultado el 2026-10-22
+- [Ámsterdam → Sofía](https://www.happylowcost.com/vuelos/amsterdam-sofia/): desde 184 € ida y vuelta, lo habitual 193 €, 1 escala(s), easyJet, consultado el 2026-10-22
+- [Ámsterdam → París](https://www.happylowcost.com/vuelos/amsterdam-paris/): desde 186 € ida y vuelta, lo habitual 186 €, directo, KLM Royal Dutch Airlines, consultado el 2026-10-22
+- [Ámsterdam → Budapest](https://www.happylowcost.com/vuelos/amsterdam-budapest/): desde 187 € ida y vuelta, lo habitual 208 €, directo, KLM Royal Dutch Airlines, consultado el 2026-10-22
+- [Ámsterdam → Bolonia](https://www.happylowcost.com/vuelos/amsterdam-bolonia/): desde 205 € ida y vuelta, lo habitual 229 €, directo, KLM Royal Dutch Airlines, consultado el 2026-10-22
+- [Ámsterdam → Viena](https://www.happylowcost.com/vuelos/amsterdam-viena/): desde 210 € ida y vuelta, lo habitual 213 €, directo, KLM Royal Dutch Airlines, consultado el 2026-10-22
+- [Ámsterdam → Helsinki](https://www.happylowcost.com/vuelos/amsterdam-helsinki/): desde 217 € ida y vuelta, lo habitual 218 €, directo, Finnair, consultado el 2026-10-22
+- [Ámsterdam → Isla de Sal](https://www.happylowcost.com/vuelos/amsterdam-sal/): desde 231 € ida y vuelta, lo habitual 231 €, directo, Transavia, consultado el 2026-10-22
+- [Ámsterdam → Tallin](https://www.happylowcost.com/vuelos/amsterdam-tallin/): desde 255 € ida y vuelta, lo habitual 256 €, directo, airBaltic, consultado el 2026-10-22
+- [Ámsterdam → El Cairo](https://www.happylowcost.com/vuelos/amsterdam-el-cairo/): desde 273 € ida y vuelta, lo habitual 284 €, directo, Transavia, consultado el 2026-10-22
+- [Ámsterdam → Nairobi](https://www.happylowcost.com/vuelos/amsterdam-nairobi/): desde 524 € ida y vuelta, lo habitual 568 €, 1 escala(s), Saudi Arabian Airlines, consultado el 2026-10-22
+- [Ámsterdam → Vietnam](https://www.happylowcost.com/vuelos/amsterdam-hanoi/): desde 552 € ida y vuelta, lo habitual 558 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-22
+- [Ámsterdam → Nueva York](https://www.happylowcost.com/vuelos/amsterdam-nueva-york/): desde 573 € ida y vuelta, lo habitual 602 €, 1 escala(s), SAS, consultado el 2026-10-22
+- [Ámsterdam → Hong Kong](https://www.happylowcost.com/vuelos/amsterdam-hong-kong/): desde 582 € ida y vuelta, lo habitual 584 €, 1 escala(s), China Southern Airlines, consultado el 2026-10-22
+- [Ámsterdam → Seúl](https://www.happylowcost.com/vuelos/amsterdam-seul/): desde 611 € ida y vuelta, lo habitual 611 €, 1 escala(s), China Southern Airlines, consultado el 2026-10-22
+- [Ámsterdam → San Francisco](https://www.happylowcost.com/vuelos/amsterdam-san-francisco/): desde 659 € ida y vuelta, lo habitual 659 €, 1 escala(s), Aer Lingus, consultado el 2026-10-22
+- [Ámsterdam → Kioto](https://www.happylowcost.com/vuelos/amsterdam-kioto/): desde 690 € ida y vuelta, lo habitual 885 €, 1 escala(s), China Eastern Airlines, consultado el 2026-10-22
+- [Ámsterdam → Isla Mauricio](https://www.happylowcost.com/vuelos/amsterdam-mauricio/): desde 698 € ida y vuelta, lo habitual 778 €, 1 escala(s), Saudi Arabian Airlines, consultado el 2026-10-22
+- [Ámsterdam → Zanzíbar](https://www.happylowcost.com/vuelos/amsterdam-zanzibar/): desde 712 € ida y vuelta, lo habitual 712 €, 1 escala(s), Etihad Airways, consultado el 2026-10-22
+<!-- /rutas -->

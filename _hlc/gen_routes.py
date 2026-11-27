@@ -215,6 +215,37 @@ def page(r, lang, others):
             if bm_txt:
                 qa_parts.append(f'El mes más barato de los próximos seis es {bm_txt}, con {best_m[1]} €.')
     quick = ' '.join(x for x in qa_parts if x)
+    # cuándo comprar, con nuestros propios datos: semanas entre la consulta y la salida del precio más barato (ruta y media del destino)
+    def _lead(fx):
+        try:
+            return (datetime.date.fromisoformat((fx.get('ejemplo_ida') or '')[:10]) - datetime.date.fromisoformat((fx.get('consultado') or '')[:10])).days
+        except Exception:
+            return None
+    lead_d = _lead(r['facts'])
+    leads_ = sorted(x for x in (_lead(o['facts']) for o in BY_DEST.get(ds, [])) if x is not None and x > 0)
+    lead_html = ''
+    if lead_d and lead_d > 0:
+        wk = max(1, round(lead_d / 7))
+        med_l = round(leads_[len(leads_) // 2] / 7) if len(leads_) >= 3 else None
+        if en:
+            lead_txt = (f'When to book: the cheapest fare on this route was for a departure {wk} week{"s" if wk != 1 else ""} after our search ({fdate(r["facts"].get("consultado"), True)}).'
+                        + (f' Across the {len(leads_)} routes to {dest} we track, the cheapest fare leaves on average {med_l} weeks after the search.' if med_l else ''))
+        else:
+            lead_txt = (f'Cuándo comprar: el precio más barato de esta ruta era para salir {wk} semana{"s" if wk != 1 else ""} después de nuestra consulta ({fdate(r["facts"].get("consultado"))}).'
+                        + (f' En las {len(leads_)} rutas a {dest} que seguimos, el más barato sale de media {med_l} semanas después de la consulta.' if med_l else ''))
+        lead_html = f'<p class="lead-t">{e(lead_txt)}</p>'
+        if not re.search(r'antelaci|in advance|how far ahead|when to book|cu[aá]ndo comprar', have_q_pre := ' '.join(q.get('q', '') for q in c.get('faq', [])).lower()):
+            c['faq'] = list(c.get('faq', [])) + [{
+                'q': (f'How far in advance should I book flights from {o_name} to {dest}?' if en else f'¿Con cuánta antelación conviene comprar el vuelo de {r["origin"]} a {dest}?'),
+                'a': (f'In our data the cheapest fare was for a departure about {wk} weeks after the search' + (f', and across all routes to {dest} the average is {med_l} weeks' if med_l else '') + '. Set a free alert to catch drops.' if en else
+                      f'En nuestros datos, el precio más barato era para salir unas {wk} semanas después de la consulta' + (f', y en todas las rutas a {dest} la media es de {med_l} semanas' if med_l else '') + '. Crea una alerta gratis para enterarte si baja.')}]
+    # enlace al hub del destino con la consulta que trae visitas ("flight deals to X" / "vuelos baratos a X")
+    hub_html = ''
+    n_hub = len(BY_DEST.get(ds, []))
+    if n_hub >= 3:
+        lo_hub = min(o['price_from'] for o in BY_DEST[ds])
+        hub_html = (f'<p class="hub-t">{"More" if en else "Más"}: <a href="/en/flights/to/{G.en_dest_slug(ds)}/">{e(f"Flight deals to {dest}: {n_hub} cities from €{lo_hub}")}</a></p>' if en else
+                    f'<p class="hub-t">Más: <a href="/vuelos/a/{ds}/">{e(f"Vuelos baratos a {dest}: {n_hub} ciudades desde {lo_hub} €")}</a></p>')
     have_q = ' '.join(q.get('q', '') for q in c.get('faq', [])).lower()
     if stops is not None and not re.search(r'direct', have_q):
         c['faq'] = list(c.get('faq', [])) + [{
@@ -255,7 +286,7 @@ def page(r, lang, others):
     sib = sorted([o for o in BY_DEST.get(ds, []) if o['slug'] != slug and o['slug'] in INDEXED_SLUGS[lang]], key=lambda o: o['price_from'])
     href_ = (lambda o: f"/en/flights/{en_slug(o)}/" if en else f"/vuelos/{o['slug']}/")
     oname_ = (lambda o: __import__('en_names').city_en(o['origin']) if en else o['origin'])
-    oc_html = (f'<section class="hub"><h2>{e(L("Vuelos a " + dest + " desde otras ciudades", "Flights to " + dest + " from other cities"))}</h2><div class="hub-g">'
+    oc_html = (f'<section class="hub"><h2>{e(L("Vuelos baratos a " + dest + " desde otras ciudades", "Flight deals to " + dest + " from other cities"))}</h2><div class="hub-g">'
                + ''.join(f'<a class="hub-l" href="{href_(o)}">{e(oname_(o))} → {e(dest)} · {o["price_from"]} €</a>' for o in sib[:6]) + '</div></section>') if sib else ''
     best_idx = ''
     if sib and slug not in INDEXED_SLUGS[lang]:
@@ -268,7 +299,7 @@ def page(r, lang, others):
 <div class="deal-cta"><a class="price-tag" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_precio">{e(f.get("precio_desde_ida_y_vuelta_eur"))} € <small>{L("ida y vuelta", "return")}</small></a><span class="price-was">{L("Lo normal", "Typical price")}: {e(f.get("mediana_ida_y_vuelta_eur"))} €</span><a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos y fechas ✈️", "See flights and dates ✈️")}</a></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt">{f'<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px"><b>{L("Respuesta rápida:", "Quick answer:")}</b> {e(quick)}</p>' if quick else ''}<p><strong>{e(c.get("intro", ""))}</strong></p>{body(c)}
+<article class="txt">{f'<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px"><b>{L("Respuesta rápida:", "Quick answer:")}</b> {e(quick)}</p>' if quick else ''}{hub_html}{lead_html}<p><strong>{e(c.get("intro", ""))}</strong></p>{body(c)}
 <p class="credit">{L("Foto: Wikimedia Commons. Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com en la fecha indicada; pueden cambiar.", "Photo: Wikimedia Commons. Return economy fares for 1 adult, checked on Kiwi.com on the date shown; they can change.")}</p></article>
 <aside class="deal-card">
 <div class="facts">
@@ -294,7 +325,7 @@ def page(r, lang, others):
 {oc_html}
 {f'<section class="hub"><h2>{L("Más rutas baratas", "More cheap routes")}</h2><div class="hub-g">{rel}</div></section>' if rel else ''}
 </div></main>{E.FOOTER if en else ""}</body></html>'''
-    return out
+    return G.hero_img(out)
 
 
 def search_form(rows, en):
@@ -402,6 +433,13 @@ def write_md_and_feeds(rows):
             head_ = (f"# Happy Low Cost: rutas de vuelos baratos con precios reales\n\n> {len(items)} rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; \"lo habitual\" es la mediana de los precios que vimos. "
                      f"Generado {now}. Licencia CC BY 4.0: cita \"Happy Low Cost (happylowcost.com)\". JSON: {SITE}/vuelos/feed.json\n\n")
         open(f'{base}/' + ('routes.md' if en else 'rutas.md'), 'w', encoding='utf-8').write(head_ + '\n'.join(md) + '\n')
+        # llms-full: las rutas indexadas con su fecha de consulta en texto plano (los asistentes citan precio y fecha)
+        lf_p = 'en/llms-full.txt' if en else os.path.join('chollos', 'llms-full.txt')
+        if os.path.isfile(lf_p):
+            t_ = re.sub(r'\n?<!-- rutas -->.*?<!-- /rutas -->\n?', '\n', open(lf_p, encoding='utf-8').read(), flags=re.S).rstrip('\n')
+            sec_ = ((f"## Flight routes with real prices ({len(items)} routes, fares checked on Kiwi.com on the date shown)" if en else
+                     f"## Rutas de vuelos con precios reales ({len(items)} rutas, consultadas en Kiwi.com en la fecha indicada)") + '\n\n' + '\n'.join(md))
+            open(lf_p, 'w', encoding='utf-8').write(t_ + '\n\n<!-- rutas -->\n' + sec_ + '\n<!-- /rutas -->\n')
 
 
 def main():

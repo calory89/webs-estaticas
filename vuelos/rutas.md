@@ -1,6 +1,6 @@
 # Happy Low Cost: rutas de vuelos baratos con precios reales
 
-> 875 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T00:35Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
+> 875 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T00:50Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
 
 - [Alicante → Milán](https://www.happylowcost.com/vuelos/alicante-milan/): desde 38 € ida y vuelta, lo habitual 39 €, directo, Wizz Air Malta, consultado el 2026-11-22
 - [Alicante → Venecia](https://www.happylowcost.com/vuelos/alicante-venecia/): desde 40 € ida y vuelta, lo habitual 48 €, directo, Ryanair, consultado el 2026-11-23
@@ -31,16 +31,16 @@
 - [Barcelona → Bolonia](https://www.happylowcost.com/vuelos/barcelona-bolonia/): desde 47 € ida y vuelta, lo habitual 52 €, directo, Ryanair, mes más barato 2027-01 (34 €), consultado el 2026-11-12
 - [Barcelona → Agadir](https://www.happylowcost.com/vuelos/barcelona-agadir/): desde 54 € ida y vuelta, lo habitual 84 €, directo, Vueling, mes más barato 2027-03 (46 €), consultado el 2026-11-11
 - [Barcelona → Brujas](https://www.happylowcost.com/vuelos/barcelona-brujas/): desde 67 € ida y vuelta, lo habitual 86 €, directo, Ryanair, mes más barato 2027-03 (58 €), consultado el 2026-11-12
-- [Barcelona → Belgrado](https://www.happylowcost.com/vuelos/barcelona-belgrado/): desde 68 € ida y vuelta, lo habitual 84 €, directo, Wizz Air, mes más barato 2027-03 (66 €), consultado el 2026-11-12
+- [Barcelona → Belgrado](https://www.happylowcost.com/vuelos/barcelona-belgrado/): desde 68 € ida y vuelta, lo habitual 84 €, directo, Wizz Air, mes más barato 2027-03 (60 €), consultado el 2026-11-12
 - [Barcelona → Estocolmo](https://www.happylowcost.com/vuelos/barcelona-estocolmo/): desde 81 € ida y vuelta, lo habitual 119 €, directo, Ryanair, mes más barato 2027-01 (79 €), consultado el 2026-11-12
 - [Barcelona → Florencia](https://www.happylowcost.com/vuelos/barcelona-florencia/): desde 81 € ida y vuelta, lo habitual 94 €, directo, Vueling, mes más barato 2027-04 (83 €), consultado el 2026-11-12
 - [Barcelona → Atenas](https://www.happylowcost.com/vuelos/barcelona-atenas/): desde 85 € ida y vuelta, lo habitual 107 €, directo, Vueling, mes más barato 2027-02 (84 €), consultado el 2026-11-11
 - [Barcelona → Santorini](https://www.happylowcost.com/vuelos/barcelona-santorini/): desde 187 € ida y vuelta, lo habitual 235 €, 1 escala(s), SKY express, mes más barato 2026-12 (217 €), consultado el 2026-11-13
-- [Barcelona → Mykonos](https://www.happylowcost.com/vuelos/barcelona-mykonos/): desde 201 € ida y vuelta, lo habitual 229 €, 1 escala(s), SKY express, mes más barato 2027-05 (172 €), consultado el 2026-11-13
+- [Barcelona → Mykonos](https://www.happylowcost.com/vuelos/barcelona-mykonos/): desde 201 € ida y vuelta, lo habitual 229 €, 1 escala(s), SKY express, mes más barato 2027-05 (165 €), consultado el 2026-11-13
 - [Barcelona → El Cairo](https://www.happylowcost.com/vuelos/barcelona-el-cairo/): desde 206 € ida y vuelta, lo habitual 294 €, directo, Vueling, mes más barato 2026-12 (210 €), consultado el 2026-11-12
 - [Barcelona → Nueva York](https://www.happylowcost.com/vuelos/barcelona-nueva-york/): desde 379 € ida y vuelta, lo habitual 535 €, directo, Iberia Airlines, mes más barato 2027-01 (381 €), consultado el 2026-11-13
 - [Barcelona → Phu Quoc](https://www.happylowcost.com/vuelos/barcelona-phu-quoc/): desde 628 € ida y vuelta, lo habitual 686 €, 2 escala(s), Shenzhen Airlines, mes más barato 2027-03 (717 €), consultado el 2026-11-13
-- [Barcelona → Kioto](https://www.happylowcost.com/vuelos/barcelona-kioto/): desde 698 € ida y vuelta, lo habitual 863 €, 1 escala(s), KLM Royal Dutch Airlines, mes más barato 2027-01 (692 €), consultado el 2026-11-12
+- [Barcelona → Kioto](https://www.happylowcost.com/vuelos/barcelona-kioto/): desde 698 € ida y vuelta, lo habitual 863 €, 1 escala(s), KLM Royal Dutch Airlines, mes más barato 2027-01 (719 €), consultado el 2026-11-12
 - [Barcelona → Fort Lauderdale](https://www.happylowcost.com/vuelos/barcelona-fort-lauderdale/): desde 757 € ida y vuelta, lo habitual 759 €, 1 escala(s), Air France, mes más barato 2027-02 (624 €), consultado el 2026-11-12
 - [Barcelona → San Juan](https://www.happylowcost.com/vuelos/barcelona-san-juan/): desde 785 € ida y vuelta, lo habitual 843 €, 1 escala(s), Level, mes más barato 2027-04 (669 €), consultado el 2026-11-13
 - [Berlín → Milán](https://www.happylowcost.com/vuelos/berlin-milan/): desde 38 € ida y vuelta, lo habitual 49 €, directo, Ryanair, consultado el 2026-10-22
@@ -330,18 +330,18 @@
 - [Lisboa → Kioto](https://www.happylowcost.com/vuelos/lisboa-kioto/): desde 920 € ida y vuelta, lo habitual 947 €, 2 escala(s), easyJet, consultado el 2026-10-22
 - [Londres → Bolonia](https://www.happylowcost.com/vuelos/londres-bolonia/): desde 42 € ida y vuelta, lo habitual 49 €, directo, Ryanair, mes más barato 2027-01 (47 €), consultado el 2026-10-22
 - [Londres → Dublín](https://www.happylowcost.com/vuelos/londres-dublin/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, mes más barato 2027-01 (39 €), consultado el 2026-10-22
-- [Londres → Dubrovnik](https://www.happylowcost.com/vuelos/londres-dubrovnik/): desde 42 € ida y vuelta, lo habitual 57 €, directo, Ryanair, mes más barato 2027-01 (40 €), consultado el 2026-10-22
+- [Londres → Dubrovnik](https://www.happylowcost.com/vuelos/londres-dubrovnik/): desde 42 € ida y vuelta, lo habitual 57 €, directo, Ryanair, mes más barato 2026-12 (41 €), consultado el 2026-10-22
 - [Londres → Luxemburgo](https://www.happylowcost.com/vuelos/londres-luxemburgo/): desde 42 € ida y vuelta, lo habitual 52 €, directo, Ryanair, mes más barato 2027-01 (40 €), consultado el 2026-10-22
 - [Londres → Tenerife](https://www.happylowcost.com/vuelos/londres-tenerife/): desde 42 € ida y vuelta, lo habitual 49 €, directo, Ryanair, mes más barato 2026-12 (52 €), consultado el 2026-10-22
-- [Londres → Venecia](https://www.happylowcost.com/vuelos/londres-venecia/): desde 42 € ida y vuelta, lo habitual 44 €, directo, Ryanair, mes más barato 2027-01 (45 €), consultado el 2026-10-22
-- [Londres → Oslo](https://www.happylowcost.com/vuelos/londres-oslo/): desde 43 € ida y vuelta, lo habitual 53 €, directo, Ryanair UK, mes más barato 2027-01 (39 €), consultado el 2026-10-22
+- [Londres → Venecia](https://www.happylowcost.com/vuelos/londres-venecia/): desde 42 € ida y vuelta, lo habitual 44 €, directo, Ryanair, mes más barato 2027-03 (48 €), consultado el 2026-10-22
+- [Londres → Oslo](https://www.happylowcost.com/vuelos/londres-oslo/): desde 43 € ida y vuelta, lo habitual 53 €, directo, Ryanair UK, mes más barato 2027-01 (43 €), consultado el 2026-10-22
 - [Londres → Varsovia](https://www.happylowcost.com/vuelos/londres-varsovia/): desde 43 € ida y vuelta, lo habitual 49 €, directo, Ryanair, mes más barato 2027-01 (39 €), consultado el 2026-10-22
 - [Londres → Edimburgo](https://www.happylowcost.com/vuelos/londres-edimburgo/): desde 45 € ida y vuelta, lo habitual 46 €, directo, Ryanair UK, mes más barato 2026-12 (42 €), consultado el 2026-10-22
 - [Londres → Praga](https://www.happylowcost.com/vuelos/londres-praga/): desde 45 € ida y vuelta, lo habitual 62 €, directo, Ryanair, mes más barato 2027-01 (57 €), consultado el 2026-10-22
 - [Londres → Roma](https://www.happylowcost.com/vuelos/londres-roma/): desde 46 € ida y vuelta, lo habitual 52 €, directo, Ryanair, mes más barato 2027-01 (46 €), consultado el 2026-10-22
 - [Londres → Florencia](https://www.happylowcost.com/vuelos/londres-florencia/): desde 59 € ida y vuelta, lo habitual 59 €, directo, Vueling, mes más barato 2027-01 (56 €), consultado el 2026-10-22
-- [Londres → Salzburgo](https://www.happylowcost.com/vuelos/londres-salzburgo/): desde 59 € ida y vuelta, lo habitual 60 €, directo, Ryanair, mes más barato 2026-12 (67 €), consultado el 2026-10-22
-- [Londres → Riga](https://www.happylowcost.com/vuelos/londres-riga/): desde 70 € ida y vuelta, lo habitual 73 €, directo, Ryanair, mes más barato 2027-01 (57 €), consultado el 2026-10-22
+- [Londres → Salzburgo](https://www.happylowcost.com/vuelos/londres-salzburgo/): desde 59 € ida y vuelta, lo habitual 60 €, directo, Ryanair, mes más barato 2027-01 (88 €), consultado el 2026-10-22
+- [Londres → Riga](https://www.happylowcost.com/vuelos/londres-riga/): desde 70 € ida y vuelta, lo habitual 73 €, directo, Ryanair, mes más barato 2027-02 (71 €), consultado el 2026-10-22
 - [Londres → Viena](https://www.happylowcost.com/vuelos/londres-viena/): desde 72 € ida y vuelta, lo habitual 77 €, directo, Ryanair, mes más barato 2027-01 (62 €), consultado el 2026-10-22
 - [Londres → Bucarest](https://www.happylowcost.com/vuelos/londres-bucarest/): desde 83 € ida y vuelta, lo habitual 83 €, directo, Ryanair, mes más barato 2027-01 (67 €), consultado el 2026-10-22
 - [Londres → Múnich](https://www.happylowcost.com/vuelos/londres-munich/): desde 94 € ida y vuelta, lo habitual 150 €, directo, easyJet, mes más barato 2027-03 (131 €), consultado el 2026-10-22
@@ -360,14 +360,14 @@
 - [Madrid → Roma](https://www.happylowcost.com/vuelos/madrid-roma/): desde 44 € ida y vuelta, lo habitual 57 €, directo, Ryanair, mes más barato 2027-02 (42 €), consultado el 2026-11-15
 - [Madrid → Brujas](https://www.happylowcost.com/vuelos/madrid-brujas/): desde 75 € ida y vuelta, lo habitual 120 €, directo, Ryanair, mes más barato 2027-02 (79 €), consultado el 2026-11-13
 - [Madrid → Zúrich](https://www.happylowcost.com/vuelos/madrid-zurich/): desde 126 € ida y vuelta, lo habitual 148 €, directo, Swiss International Air Lines, mes más barato 2027-01 (126 €), consultado el 2026-11-15
-- [Madrid → Los Ángeles](https://www.happylowcost.com/vuelos/madrid-los-angeles/): desde 394 € ida y vuelta, lo habitual 618 €, 1 escala(s), Royal Air Maroc, mes más barato 2027-02 (380 €), consultado el 2026-11-14
-- [Madrid → Isla Mauricio](https://www.happylowcost.com/vuelos/madrid-mauricio/): desde 589 € ida y vuelta, lo habitual 886 €, 1 escala(s), Saudi Arabian Airlines, mes más barato 2027-01 (697 €), consultado el 2026-11-14
+- [Madrid → Los Ángeles](https://www.happylowcost.com/vuelos/madrid-los-angeles/): desde 394 € ida y vuelta, lo habitual 618 €, 1 escala(s), Royal Air Maroc, mes más barato 2027-02 (385 €), consultado el 2026-11-14
+- [Madrid → Isla Mauricio](https://www.happylowcost.com/vuelos/madrid-mauricio/): desde 589 € ida y vuelta, lo habitual 886 €, 1 escala(s), Saudi Arabian Airlines, mes más barato 2027-01 (658 €), consultado el 2026-11-14
 - [Madrid → Zanzíbar](https://www.happylowcost.com/vuelos/madrid-zanzibar/): desde 590 € ida y vuelta, lo habitual 591 €, 1 escala(s), Etihad Airways, mes más barato 2026-12 (595 €), consultado el 2026-11-15
 - [Madrid → Phu Quoc](https://www.happylowcost.com/vuelos/madrid-phu-quoc/): desde 630 € ida y vuelta, lo habitual 658 €, 2 escala(s), Hainan Airlines, mes más barato 2027-01 (681 €), consultado el 2026-11-15
-- [Madrid → Nassau](https://www.happylowcost.com/vuelos/madrid-nassau/): desde 645 € ida y vuelta, lo habitual 808 €, 1 escala(s), Air Canada, mes más barato 2027-03 (677 €), consultado el 2026-11-15
+- [Madrid → Nassau](https://www.happylowcost.com/vuelos/madrid-nassau/): desde 645 € ida y vuelta, lo habitual 808 €, 1 escala(s), Air Canada, mes más barato 2027-03 (724 €), consultado el 2026-11-15
 - [Madrid → Kioto](https://www.happylowcost.com/vuelos/madrid-kioto/): desde 716 € ida y vuelta, lo habitual 932 €, 1 escala(s), China Eastern Airlines, mes más barato 2027-01 (713 €), consultado el 2026-11-14
 - [Madrid → Charleston](https://www.happylowcost.com/vuelos/madrid-charleston/): desde 729 € ida y vuelta, lo habitual 765 €, 2 escala(s), TAP Portugal, mes más barato 2027-04 (733 €), consultado el 2026-11-14
-- [Madrid → Jacksonville](https://www.happylowcost.com/vuelos/madrid-jacksonville/): desde 763 € ida y vuelta, lo habitual 828 €, 1 escala(s), Air France, mes más barato 2027-01 (740 €), consultado el 2026-11-14
+- [Madrid → Jacksonville](https://www.happylowcost.com/vuelos/madrid-jacksonville/): desde 763 € ida y vuelta, lo habitual 828 €, 1 escala(s), Air France, mes más barato 2027-04 (682 €), consultado el 2026-11-14
 - [Manchester → Brujas](https://www.happylowcost.com/vuelos/manchester-brujas/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
 - [Manchester → Bruselas](https://www.happylowcost.com/vuelos/manchester-bruselas/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, consultado el 2026-10-23
 - [Manchester → Copenhague](https://www.happylowcost.com/vuelos/manchester-copenhague/): desde 42 € ida y vuelta, lo habitual 49 €, directo, Ryanair UK, consultado el 2026-10-23

@@ -237,7 +237,7 @@ document.documentElement.classList.add('hlc-js');
       var L=el.getAttribute('data-photos').split('|').filter(Boolean);if(L.length<2||(w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)').matches))return;
       for(var i=L.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));if(i>0&&j>0){var t=L[i];L[i]=L[j];L[j]=t;}}
       var n=0;el.classList.add('ph-rot');
-      setInterval(function(){if(d.hidden)return;var nx=L[(n+1)%L.length],im=new Image();im.onload=function(){n=(n+1)%L.length;el.style.backgroundImage='url('+nx+')';};im.src=nx;},6000);
+      setInterval(function(){if(d.hidden)return;var nx=L[(n+1)%L.length],im=new Image();im.onload=function(){n=(n+1)%L.length;var hi=el.querySelector('.dh-img');if(hi){hi.removeAttribute('srcset');hi.src=nx;}else el.style.backgroundImage='url('+nx+')';};im.src=nx;},6000);
     });
   }
 
@@ -450,7 +450,7 @@ document.documentElement.classList.add('hlc-js');
     w.HLC_seen=function(){d.querySelectorAll('a.dc[data-slug]').forEach(function(a){if(L.indexOf(a.getAttribute('data-slug'))>=0)a.classList.add('seen');});};w.HLC_seen();
     if(m){var s=m.getAttribute('data-deal-slug');if(L.indexOf(s)<0){L.unshift(s);ls('hlc_seen',JSON.stringify(L.slice(0,80)));}}}
   /* ---------- Tablas anchas: aviso de que se pueden deslizar ---------- */
-  function wideTables(){d.querySelectorAll('table.pm-t,table.bagt,.inner-post-entry table').forEach(function(tb){if(tb.parentNode.classList.contains('tb-x'))return;var x=d.createElement('div');x.className='tb-x';x.setAttribute('tabindex','0');x.setAttribute('role','region');x.setAttribute('aria-label',T('Tabla: desliza para ver más','Table: swipe to see more'));tb.parentNode.insertBefore(x,tb);x.appendChild(tb);if(x.scrollWidth>x.clientWidth+4)x.classList.add('more');x.addEventListener('scroll',function(){x.classList.toggle('more',x.scrollLeft+x.clientWidth<x.scrollWidth-4);},{passive:true});});}
+  function wideTables(){d.querySelectorAll('table.pm-t,table.bagt,.inner-post-entry table').forEach(function(tb,ti){if(tb.parentNode.classList.contains('tb-x'))return;var x=d.createElement('div');x.className='tb-x';x.setAttribute('tabindex','0');x.setAttribute('role','region');x.setAttribute('aria-label',T('Tabla','Table')+' '+(ti+1)+T(': desliza para ver más',': swipe to see more'));tb.parentNode.insertBefore(x,tb);x.appendChild(tb);if(x.scrollWidth>x.clientWidth+4)x.classList.add('more');x.addEventListener('scroll',function(){x.classList.toggle('more',x.scrollLeft+x.clientWidth<x.scrollWidth-4);},{passive:true});});}
   /* ---------- Avisos tras confirmar o darse de baja (enlaces de los emails) ---------- */
   function alertNotice(){try{var q=new URLSearchParams(location.search),c=q.get('confirmada'),b=q.get('baja');if(!c&&!b)return;
     var m=c==='ok'?T('✅ Alerta confirmada. Te avisaremos cuando salga un chollo desde tu aeropuerto.','✅ Alert confirmed. We will let you know when a deal leaves from your airport.'):c?T('Ese enlace de confirmación no es válido o ha caducado. Vuelve a crear la alerta.','That confirmation link is not valid. Please create the alert again.'):b==='ok'?T('Te has dado de baja. No recibirás más avisos.','You have unsubscribed. No more alerts.'):T('No hemos podido darte de baja con ese enlace. Escríbenos desde Contacto.','We could not unsubscribe you with that link. Write to us via Contact.');

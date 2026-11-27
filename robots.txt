@@ -49,4 +49,5 @@ Sitemap: https://www.happylowcost.com/sitemap_index.xml
 
 # Plain-text summary for AI assistants: https://www.happylowcost.com/llms.txt
 # Full text (live deals and every travel guide): https://www.happylowcost.com/llms-full.txt
+# English full text: https://www.happylowcost.com/en/llms-full.txt
 # Every guide also has a Markdown version: /destinos/<city>/index.md and /en/destinations/<city>/index.md

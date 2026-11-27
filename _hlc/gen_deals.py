@@ -901,7 +901,7 @@ def nearby_guides(p, have, n=3):
 
 GUIDE_TABLE_CSS = ('<style>.deal-body>.txt{min-width:0}.g-tw{overflow-x:auto;max-width:100%;margin:14px 0}.g-itin,.g-bud{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;font-size:15px;line-height:1.5}'
                    '.g-itin caption,.g-bud caption{text-align:left;font-weight:700;padding:0 0 6px}.g-itin th,.g-itin td,.g-bud th,.g-bud td{padding:10px 12px;border-bottom:1px solid #EADCC4;text-align:left;vertical-align:top}'
-                   '.g-itin th[scope=row]{white-space:nowrap}.g-near{display:flex;flex-wrap:wrap;gap:8px}</style>')
+                   '.g-itin th[scope=row]{white-space:nowrap}.g-near{display:flex;flex-wrap:wrap;gap:8px}main>section.sec.t3,main>section.sec#precios,main>section.sec#prices{content-visibility:auto;contain-intrinsic-size:auto 900px}</style>')
 
 
 def hero_preload(hero, lib=None):
@@ -913,6 +913,82 @@ def hero_preload(hero, lib=None):
                 f'<link rel="preload" as="image" href="{hero}" media="(min-width: 801px)" fetchpriority="high">'
                 f'<style>@media (max-width:800px){{.deal-hero{{background-image:url(/hlc/img/cities/{lib}-800.jpg)!important}}}}</style>')
     return f'<link rel="preload" as="image" href="{hero}" fetchpriority="high">'
+
+
+try:
+    WIKIDATA = json.load(open(os.path.join(HERE, 'wikidata.json'), encoding='utf-8'))
+except Exception:
+    WIKIDATA = {}
+
+
+def wd_same(slug, lang='es'):
+    """sameAs de Wikidata y Wikipedia para el destino (comprobado por coordenadas al sacarlo: el mismo sitio, no un homónimo)."""
+    w = WIKIDATA.get(slug)
+    if not w or not w.get('q'):
+        return []
+    out = [f"https://www.wikidata.org/wiki/{w['q']}"]
+    t = w.get('es') if lang == 'es' else w.get('en')
+    if t:
+        out.append(f"https://{'es' if lang == 'es' else 'en'}.wikipedia.org/wiki/" + urllib.parse.quote(t.replace(' ', '_')))
+    return out
+
+
+_DIMS = {}
+
+
+def _dims(path):
+    if path not in _DIMS:
+        try:
+            _DIMS[path] = Image.open(path).size
+        except Exception:
+            _DIMS[path] = None
+    return _DIMS[path]
+
+
+HERO_CSS = '<style>.deal-hero .dh-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}@media print{.deal-hero .dh-img{display:none}}</style>'
+_HERO_RX = re.compile(r'<section class="deal-hero" style="background-image:url\(([^)]+)\)"([^>]*)>')
+
+
+def hero_img(page):
+    """Cabecera como <img> real con alt (Google Imágenes la indexa; un background no), srcset 800/1200/original
+    para que el móvil baje la de 800 px, precarga con imagesrcset y og:image recortada a 1200x630 (lo que declara la página)."""
+    m = _HERO_RX.search(page)
+    if not m or 'class="dh-img"' in page:
+        return page
+    src, rest = m.group(1).strip('\'"'), m.group(2)
+    alt_m = re.search(r'<meta property="og:image:alt" content="([^"]*)"', page)
+    alt = alt_m.group(1) if alt_m else ''
+    lm = re.match(r'/hlc/img/cities/([a-z0-9-]+?)(?:-800)?\.jpg$', src)
+    srcset, img_src, wh = '', src, None
+    if lm:
+        slug = lm.group(1)
+        base = os.path.join(LIB, slug + '.jpg')
+        wh = _dims(base)
+        if wh:
+            parts = []
+            if os.path.exists(os.path.join(LIB, slug + '-800.jpg')):
+                parts.append(f'/hlc/img/cities/{slug}-800.jpg 800w')
+            if os.path.exists(os.path.join(LIB, slug + '-w1200.jpg')):
+                parts.append(f'/hlc/img/cities/{slug}-w1200.jpg 1200w')
+            parts.append(f'/hlc/img/cities/{slug}.jpg {wh[0]}w')
+            srcset = ', '.join(parts)
+            img_src = f'/hlc/img/cities/{slug}.jpg'
+        og = os.path.join(LIB, slug + '-og.jpg')
+        if os.path.exists(og):
+            page = re.sub(r'(<meta property="og:image" content=")' + re.escape(SITE) + r'/hlc/img/cities/' + re.escape(slug) + r'(?:-800)?\.jpg"',
+                          r'\g<1>' + SITE + f'/hlc/img/cities/{slug}-og.jpg"', page, count=1)
+            page = page.replace(f'<meta name="twitter:image" content="{SITE}/hlc/img/cities/{slug}.jpg"', f'<meta name="twitter:image" content="{SITE}/hlc/img/cities/{slug}-og.jpg"')
+        # fuera las precargas y el truco de background de 800 px: la precarga nueva usa el mismo srcset que la <img>
+        page = re.sub(r'<link rel="preload" as="image" href="/hlc/img/cities/' + re.escape(slug) + r'(?:-800)?\.jpg"[^>]*>', '', page)
+        page = re.sub(r'<style>@media \(max-width:800px\)\{\.deal-hero\{background-image:url\([^)]*\)!important\}\}</style>', '', page)
+    else:
+        page = re.sub(r'<link rel="preload" as="image" href="' + re.escape(src) + r'"[^>]*>', '', page)
+    pre = (f'<link rel="preload" as="image" imagesrcset="{srcset}" imagesizes="100vw" fetchpriority="high">' if srcset else
+           f'<link rel="preload" as="image" href="{src}" fetchpriority="high">')
+    img = (f'<img class="dh-img" src="{img_src}"' + (f' srcset="{srcset}" sizes="100vw"' if srcset else '')
+           + (f' width="{wh[0]}" height="{wh[1]}"' if wh else '') + f' alt="{alt}" fetchpriority="high" decoding="async">')
+    page = page.replace(m.group(0), f'<section class="deal-hero"{rest}>{img}', 1)
+    return page.replace('</head>', pre + HERO_CSS + '</head>', 1)
 
 
 def guide_md(title, url, gh, name, days, updated_iso, lang='es', extra=''):
@@ -1341,7 +1417,7 @@ def main():
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}" data-deal-pub="{e((x.get('approved_at') or '')[:19])}Z">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Precio {"comprobado de nuevo" if (x.get("facts") or {}).get("checked_at") else "verificado"} <span data-rel="{e(checked(x)[:19])}Z">el {e(fecha(verified))} a las {e(verified[11:16])} (hora peninsular)</span>{f" · {ce} {e(cn)}" if cs else ""} <span class="k-n">· <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></span></div>
+<div class="kicker" style="color:#FFC531">✓ Precio {"comprobado de nuevo" if (x.get("facts") or {}).get("checked_at") else "verificado"} <span data-rel="{e(checked(x)[:19])}Z">el {e(fecha(verified))} a las {e(verified[11:16])} (hora peninsular)</span>{f' · Publicado el <time datetime="{e((x.get("approved_at") or "")[:19])}">{e(fecha(madrid(x.get("approved_at"))))}</time>' if x.get("approved_at") else ""}{f" · {ce} {e(cn)}" if cs else ""} <span class="k-n">· <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></span></div>
 <h1>{e(h1t)}</h1>
 <div class="deal-cta"><a class="price-tag" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></a>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(local(x.get("price"), f.get("origen_cc")))} al cambio de hoy</span>' if local(x.get("price"), f.get("origen_cc")) else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
@@ -1377,7 +1453,7 @@ def main():
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">También te puede interesar</div><h2>Chollos parecidos</h2></div><a class="hlc-btn o" href="/chollos/">Ver todos</a></div><div class="dc-grid">{rel_html}</div></section>
 </div></main></body></html>'''
         page = page.replace('</head>', '<link rel="alternate" type="text/markdown" href="' + url + 'index.md" title="Markdown"></head>', 1)
-        open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(page)
+        open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(hero_img(page))
         open(os.path.join(out, 'index.md'), 'w', encoding='utf-8').write(deal_md(x, url, h1t, qa))
 
     cities_ = {}
@@ -1546,7 +1622,7 @@ def main():
         sub = [x for x in deals if fn_(x['facts'])]
         cheapest = min((x['price'] for x in sub), default=None)
         intro = (f"{desc_} {len(sub)} chollos ahora mismo" + (f", desde {cheapest} €." if cheapest else ".") + " Precios comprobados cada día.") if sub else f"{desc_} Ahora mismo no hay ninguno: crea una alerta y te avisamos."
-        list_page(f'chollos/ideas/{k_}', f'{h1_}: chollos de vuelos · Happy Low Cost', h1_, 'Ideas para viajar barato', intro, sub, f'{SITE}/chollos/ideas/{k_}/',
+        list_page(f'chollos/ideas/{k_}', ('Vuelos baratos para Navidad 2026 y fin de año: chollos' if k_ == 'navidad-2026' else f'{h1_}: chollos de vuelos · Happy Low Cost'), ('Vuelos baratos para Navidad 2026' if k_ == 'navidad-2026' else h1_), 'Ideas para viajar barato', intro, sub, f'{SITE}/chollos/ideas/{k_}/',
                   [('Inicio', '/'), ('Chollos', '/chollos/'), (h1_, None)], extra_links=hub, noindex=not sub,
                   seo_html=ideas_faq(sub, h1_, False, {'menos-de-50-euros': 50, 'menos-de-100-euros': 100}.get(k_)))
         gen.add(f'ideas/{k_}')
@@ -1599,6 +1675,8 @@ def main():
                    "containedInPlace": {"@type": "Country", "name": en_names.COUNTRY_ES_FIX.get(p['c'], p['c'])}}
         if attr:
             dest_ld["includesAttraction"] = attr
+        if wd_same(p['s'], 'es'):
+            dest_ld["sameAs"] = wd_same(p['s'], 'es')
         art = {"@type": "Article", "headline": (g.get('seo_title') or f"Qué ver en {p['n']}")[:110], "description": g.get('meta_description') or '', "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
                "dateModified": g.get('updated_at'), "datePublished": g.get('updated_at'), "wordCount": words, "inLanguage": "es-ES", "about": {"@id": url + '#destino'},
                "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "mainEntityOfPage": url, "isAccessibleForFree": True,
@@ -1637,7 +1715,7 @@ def main():
 {near_html}<section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">Más inspiración</div><h2>Otros destinos</h2></div></div><div class="hub-g">{''.join(f'<a class="hub-l" href="/destinos/{q["s"]}/">{e(q["n"])}</a>' for q in DLIB if q['s'] in dmap and q['s'] != p['s'] and q['r'] == p['r'])}</div></section>
 </div></main></body></html>'''
         os.makedirs(os.path.join('destinos', p['s']), exist_ok=True)
-        open(os.path.join('destinos', p['s'], 'index.html'), 'w', encoding='utf-8').write(page)
+        open(os.path.join('destinos', p['s'], 'index.html'), 'w', encoding='utf-8').write(hero_img(page))
         open(os.path.join('destinos', p['s'], 'index.md'), 'w', encoding='utf-8').write(guide_md(ttl0, url, re.sub(r'<section class="g-sum".*?</section>', '', gh, flags=re.S), p['n'], nd, g.get('updated_at'), 'es',
              (f"## Vuelos y chollos\n\n- Chollos de vuelos a {p['n']}: {SITE}/destinos/{p['s']}/#chollos\n" + (f"- Precios de vuelos a {p['n']} desde varias ciudades: {SITE}{hub_es}\n" if hub_es else '') + f"- Alerta gratis de chollos: {SITE}/alertas/\n")))
         dlinks.append((p, g))
@@ -1678,6 +1756,8 @@ def main():
         il = {"@type": "ItemList", "name": "Guías de viaje por destino", "numberOfItems": len(dlinks), "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/destinos/{p['s']}/", "name": p['n']} for i, (p, g) in enumerate(dlinks)]}
         block = '<!--guias--><section class="hub"><h2>Guías de viaje por destino</h2><div class="hub-g">' + ''.join(f'<a class="hub-l" href="/destinos/{p["s"]}/">{e(p["n"])} <small>{e(p["c"])}</small></a>' for p, g in dlinks) + '</div></section>' + ld_script([il]) + '<!--/guias-->'
         di = re.sub(r'<!--guias-->.*?<!--/guias-->', block, di, flags=re.S) if '<!--guias-->' in di else di.replace('</main>', block + '</main>', 1)
+        if 'hreflang="x-default"' not in di and '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/destinos/">' in di:
+            di = di.replace('<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/destinos/">', '<link rel="alternate" hreflang="es" href="https://www.happylowcost.com/destinos/"><link rel="alternate" hreflang="x-default" href="https://www.happylowcost.com/destinos/">', 1)
         open('destinos/index.html', 'w', encoding='utf-8').write(di)
 
     # llms-full.txt: además de los chollos, todas las guías con su versión Markdown (lo leen ChatGPT, Claude, Perplexity...)

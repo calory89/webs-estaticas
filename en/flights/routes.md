@@ -1,6 +1,6 @@
 # Happy Low Cost: cheap flight routes with real prices
 
-> 945 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T00:35Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
+> 945 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T00:50Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
 
 - [Alicante → Milan](https://www.happylowcost.com/en/flights/alicante-milan/): from 38 € return, usual 39 €, nonstop, Wizz Air Malta, checked 2026-11-22
 - [Alicante → Venice](https://www.happylowcost.com/en/flights/alicante-venice/): from 40 € return, usual 48 €, nonstop, Ryanair, checked 2026-11-23
@@ -30,7 +30,7 @@
 - [Barcelona → Fez](https://www.happylowcost.com/en/flights/barcelona-fez/): from 45 € return, usual 46 €, nonstop, Ryanair, cheapest month 2027-02 (44 €), checked 2026-11-12
 - [Barcelona → Bologna](https://www.happylowcost.com/en/flights/barcelona-bologna/): from 47 € return, usual 52 €, nonstop, Ryanair, cheapest month 2027-01 (34 €), checked 2026-11-12
 - [Barcelona → Bruges](https://www.happylowcost.com/en/flights/barcelona-bruges/): from 67 € return, usual 86 €, nonstop, Ryanair, cheapest month 2027-03 (58 €), checked 2026-11-12
-- [Barcelona → Belgrade](https://www.happylowcost.com/en/flights/barcelona-belgrade/): from 68 € return, usual 84 €, nonstop, Wizz Air, cheapest month 2027-03 (66 €), checked 2026-11-12
+- [Barcelona → Belgrade](https://www.happylowcost.com/en/flights/barcelona-belgrade/): from 68 € return, usual 84 €, nonstop, Wizz Air, cheapest month 2027-03 (60 €), checked 2026-11-12
 - [Barcelona → Florence](https://www.happylowcost.com/en/flights/barcelona-florence/): from 81 € return, usual 94 €, nonstop, Vueling, cheapest month 2027-04 (83 €), checked 2026-11-12
 - [Barcelona → Tallinn](https://www.happylowcost.com/en/flights/barcelona-tallinn/): from 86 € return, usual 137 €, nonstop, Ryanair, cheapest month 2027-01 (111 €), checked 2026-11-13
 - [Barcelona → Cyprus](https://www.happylowcost.com/en/flights/barcelona-cyprus/): from 130 € return, usual 153 €, nonstop, Wizz Air, cheapest month 2027-02 (124 €), checked 2026-11-12
@@ -38,7 +38,7 @@
 - [Barcelona → Salzburg](https://www.happylowcost.com/en/flights/barcelona-salzburg/): from 160 € return, usual 181 €, 1 stop(s), easyJet, cheapest month 2027-02 (144 €), checked 2026-11-13
 - [Barcelona → Iceland](https://www.happylowcost.com/en/flights/barcelona-iceland/): from 176 € return, usual 184 €, 1 stop(s), Wizz Air, cheapest month 2027-04 (160 €), checked 2026-11-13
 - [Barcelona → Santorini](https://www.happylowcost.com/en/flights/barcelona-santorini/): from 187 € return, usual 235 €, 1 stop(s), SKY express, cheapest month 2026-12 (217 €), checked 2026-11-13
-- [Barcelona → Mykonos](https://www.happylowcost.com/en/flights/barcelona-mykonos/): from 201 € return, usual 229 €, 1 stop(s), SKY express, cheapest month 2027-05 (172 €), checked 2026-11-13
+- [Barcelona → Mykonos](https://www.happylowcost.com/en/flights/barcelona-mykonos/): from 201 € return, usual 229 €, 1 stop(s), SKY express, cheapest month 2027-05 (165 €), checked 2026-11-13
 - [Barcelona → Sal Island](https://www.happylowcost.com/en/flights/barcelona-sal-island/): from 204 € return, usual 299 €, 1 stop(s), Vueling, cheapest month 2027-01 (194 €), checked 2026-11-13
 - [Barcelona → Cairo](https://www.happylowcost.com/en/flights/barcelona-cairo/): from 206 € return, usual 294 €, nonstop, Vueling, cheapest month 2026-12 (210 €), checked 2026-11-12
 - [Barcelona → New York](https://www.happylowcost.com/en/flights/barcelona-new-york/): from 379 € return, usual 535 €, nonstop, Iberia Airlines, cheapest month 2027-01 (381 €), checked 2026-11-13
@@ -49,7 +49,7 @@
 - [Barcelona → Peru](https://www.happylowcost.com/en/flights/barcelona-peru/): from 676 € return, usual 719 €, 1 stop(s), Avianca, cheapest month 2027-02 (677 €), checked 2026-11-12
 - [Barcelona → Sri Lanka](https://www.happylowcost.com/en/flights/barcelona-sri-lanka/): from 684 € return, usual 718 €, 1 stop(s), Etihad Airways, cheapest month 2027-02 (645 €), checked 2026-11-13
 - [Barcelona → Bali](https://www.happylowcost.com/en/flights/barcelona-bali/): from 692 € return, usual 769 €, 1 stop(s), Qatar Airways, cheapest month 2027-01 (626 €), checked 2026-11-11
-- [Barcelona → Kyoto](https://www.happylowcost.com/en/flights/barcelona-kyoto/): from 698 € return, usual 863 €, 1 stop(s), KLM Royal Dutch Airlines, cheapest month 2027-01 (692 €), checked 2026-11-12
+- [Barcelona → Kyoto](https://www.happylowcost.com/en/flights/barcelona-kyoto/): from 698 € return, usual 863 €, 1 stop(s), KLM Royal Dutch Airlines, cheapest month 2027-01 (719 €), checked 2026-11-12
 - [Barcelona → Las Vegas](https://www.happylowcost.com/en/flights/barcelona-las-vegas/): from 724 € return, usual 731 €, 2 stop(s), TAP Portugal, cheapest month 2027-01 (649 €), checked 2026-11-12
 - [Barcelona → Jacksonville](https://www.happylowcost.com/en/flights/barcelona-jacksonville/): from 744 € return, usual 836 €, 2 stop(s), Air France, cheapest month 2027-01 (767 €), checked 2026-11-12
 - [Barcelona → Manila](https://www.happylowcost.com/en/flights/barcelona-manila/): from 752 € return, usual 818 €, 1 stop(s), Etihad Airways, cheapest month 2027-01 (706 €), checked 2026-11-12
@@ -331,14 +331,14 @@
 - [Lisbon → Tokyo](https://www.happylowcost.com/en/flights/lisbon-tokyo/): from 1000 € return, usual 1034 €, 1 stop(s), LOT Polish Airlines, checked 2026-10-23
 - [London → Bologna](https://www.happylowcost.com/en/flights/london-bologna/): from 42 € return, usual 49 €, nonstop, Ryanair, cheapest month 2027-01 (47 €), checked 2026-10-22
 - [London → Dublin](https://www.happylowcost.com/en/flights/london-dublin/): from 42 € return, usual 42 €, nonstop, Ryanair, cheapest month 2027-01 (39 €), checked 2026-10-22
-- [London → Dubrovnik](https://www.happylowcost.com/en/flights/london-dubrovnik/): from 42 € return, usual 57 €, nonstop, Ryanair, cheapest month 2027-01 (40 €), checked 2026-10-22
+- [London → Dubrovnik](https://www.happylowcost.com/en/flights/london-dubrovnik/): from 42 € return, usual 57 €, nonstop, Ryanair, cheapest month 2026-12 (41 €), checked 2026-10-22
 - [London → Luxembourg](https://www.happylowcost.com/en/flights/london-luxembourg/): from 42 € return, usual 52 €, nonstop, Ryanair, cheapest month 2027-01 (40 €), checked 2026-10-22
 - [London → Tenerife](https://www.happylowcost.com/en/flights/london-tenerife/): from 42 € return, usual 49 €, nonstop, Ryanair, cheapest month 2026-12 (52 €), checked 2026-10-22
 - [London → Edinburgh](https://www.happylowcost.com/en/flights/london-edinburgh/): from 45 € return, usual 46 €, nonstop, Ryanair UK, cheapest month 2026-12 (42 €), checked 2026-10-22
 - [London → Prague](https://www.happylowcost.com/en/flights/london-prague/): from 45 € return, usual 62 €, nonstop, Ryanair, cheapest month 2027-01 (57 €), checked 2026-10-22
 - [London → Rome](https://www.happylowcost.com/en/flights/london-rome/): from 46 € return, usual 52 €, nonstop, Ryanair, cheapest month 2027-01 (46 €), checked 2026-10-22
 - [London → Florence](https://www.happylowcost.com/en/flights/london-florence/): from 59 € return, usual 59 €, nonstop, Vueling, cheapest month 2027-01 (56 €), checked 2026-10-22
-- [London → Salzburg](https://www.happylowcost.com/en/flights/london-salzburg/): from 59 € return, usual 60 €, nonstop, Ryanair, cheapest month 2026-12 (67 €), checked 2026-10-22
+- [London → Salzburg](https://www.happylowcost.com/en/flights/london-salzburg/): from 59 € return, usual 60 €, nonstop, Ryanair, cheapest month 2027-01 (88 €), checked 2026-10-22
 - [London → Athens](https://www.happylowcost.com/en/flights/london-athens/): from 83 € return, usual 109 €, nonstop, easyJet, cheapest month 2027-01 (94 €), checked 2026-10-22
 - [London → Munich](https://www.happylowcost.com/en/flights/london-munich/): from 94 € return, usual 150 €, nonstop, easyJet, cheapest month 2027-03 (131 €), checked 2026-10-22
 - [London → Iceland](https://www.happylowcost.com/en/flights/london-iceland/): from 104 € return, usual 107 €, nonstop, easyJet, cheapest month 2027-03 (94 €), checked 2026-10-22
@@ -346,11 +346,11 @@
 - [London → Hong Kong](https://www.happylowcost.com/en/flights/london-hong-kong/): from 437 € return, usual 477 €, 1 stop(s), China Eastern Airlines, cheapest month 2027-05 (429 €), checked 2026-10-22
 - [London → Burbank](https://www.happylowcost.com/en/flights/london-burbank/): from 537 € return, usual 561 €, 1 stop(s), Alaska Airlines, cheapest month 2027-01 (667 €), checked 2026-10-22
 - [London → Cape Town](https://www.happylowcost.com/en/flights/london-cape-town/): from 542 € return, usual 689 €, nonstop, Norse Atlantic UK, cheapest month 2027-03 (592 €), checked 2026-10-22
-- [London → Singapore](https://www.happylowcost.com/en/flights/london-singapore/): from 546 € return, usual 547 €, 1 stop(s), Hainan Airlines, cheapest month 2027-02 (555 €), checked 2026-10-22
+- [London → Singapore](https://www.happylowcost.com/en/flights/london-singapore/): from 546 € return, usual 547 €, 1 stop(s), Hainan Airlines, cheapest month 2027-02 (542 €), checked 2026-10-22
 - [London → Manila](https://www.happylowcost.com/en/flights/london-manila/): from 602 € return, usual 653 €, 1 stop(s), China Southern Airlines, cheapest month 2027-01 (594 €), checked 2026-10-22
 - [London → Nairobi](https://www.happylowcost.com/en/flights/london-nairobi/): from 654 € return, usual 710 €, 1 stop(s), Etihad Airways, cheapest month 2027-03 (583 €), checked 2026-10-22
 - [London → San Juan](https://www.happylowcost.com/en/flights/london-san-juan/): from 746 € return, usual 787 €, 1 stop(s), Norse Atlantic UK, cheapest month 2027-04 (659 €), checked 2026-10-22
-- [London → Zanzibar](https://www.happylowcost.com/en/flights/london-zanzibar/): from 750 € return, usual 762 €, 1 stop(s), easyJet, cheapest month 2027-01 (667 €), checked 2026-10-22
+- [London → Zanzibar](https://www.happylowcost.com/en/flights/london-zanzibar/): from 750 € return, usual 762 €, 1 stop(s), easyJet, cheapest month 2027-01 (599 €), checked 2026-10-22
 - [London → Nassau](https://www.happylowcost.com/en/flights/london-nassau/): from 764 € return, usual 764 €, 1 stop(s), Air Canada, cheapest month 2027-04 (741 €), checked 2026-10-22
 - [London → Mexico City](https://www.happylowcost.com/en/flights/london-mexico-city/): from 952 € return, usual 992 €, 1 stop(s), Norse Atlantic UK, cheapest month 2027-04 (892 €), checked 2026-10-22
 - [Madrid → Marrakesh](https://www.happylowcost.com/en/flights/madrid-marrakesh/): from 41 € return, usual 42 €, nonstop, Ryanair, cheapest month 2027-01 (38 €), checked 2026-11-14
@@ -370,10 +370,10 @@
 - [Madrid → Crete](https://www.happylowcost.com/en/flights/madrid-crete/): from 232 € return, usual 275 €, 1 stop(s), SKY express, cheapest month 2027-05 (152 €), checked 2026-11-14
 - [Madrid → Seoul](https://www.happylowcost.com/en/flights/madrid-seoul/): from 550 € return, usual 679 €, 1 stop(s), Sichuan Airlines, cheapest month 2027-04 (626 €), checked 2026-11-15
 - [Madrid → Kuala Lumpur](https://www.happylowcost.com/en/flights/madrid-kuala-lumpur/): from 586 € return, usual 594 €, 1 stop(s), Etihad Airways, cheapest month 2027-02 (490 €), checked 2026-11-14
-- [Madrid → Mauritius](https://www.happylowcost.com/en/flights/madrid-mauritius/): from 589 € return, usual 886 €, 1 stop(s), Saudi Arabian Airlines, cheapest month 2027-01 (697 €), checked 2026-11-14
+- [Madrid → Mauritius](https://www.happylowcost.com/en/flights/madrid-mauritius/): from 589 € return, usual 886 €, 1 stop(s), Saudi Arabian Airlines, cheapest month 2027-01 (658 €), checked 2026-11-14
 - [Madrid → Zanzibar](https://www.happylowcost.com/en/flights/madrid-zanzibar/): from 590 € return, usual 591 €, 1 stop(s), Etihad Airways, cheapest month 2026-12 (595 €), checked 2026-11-15
 - [Madrid → Vietnam](https://www.happylowcost.com/en/flights/madrid-vietnam/): from 627 € return, usual 695 €, 1 stop(s), China Southern Airlines, cheapest month 2026-12 (580 €), checked 2026-11-14
-- [Madrid → Nassau](https://www.happylowcost.com/en/flights/madrid-nassau/): from 645 € return, usual 808 €, 1 stop(s), Air Canada, cheapest month 2027-03 (677 €), checked 2026-11-15
+- [Madrid → Nassau](https://www.happylowcost.com/en/flights/madrid-nassau/): from 645 € return, usual 808 €, 1 stop(s), Air Canada, cheapest month 2027-03 (724 €), checked 2026-11-15
 - [Madrid → Sri Lanka](https://www.happylowcost.com/en/flights/madrid-sri-lanka/): from 669 € return, usual 766 €, 1 stop(s), Etihad Airways, cheapest month 2027-01 (681 €), checked 2026-11-15
 - [Madrid → Mexico City](https://www.happylowcost.com/en/flights/madrid-mexico-city/): from 689 € return, usual 777 €, nonstop, Iberia Airlines, cheapest month 2027-02 (675 €), checked 2026-11-14
 - [Madrid → Kyoto](https://www.happylowcost.com/en/flights/madrid-kyoto/): from 716 € return, usual 932 €, 1 stop(s), China Eastern Airlines, cheapest month 2027-01 (713 €), checked 2026-11-14

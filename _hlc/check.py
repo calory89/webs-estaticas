@@ -92,6 +92,7 @@ def _file_of(url):
     return p_ if p_.endswith('.html') else os.path.join(p_, 'index.html')
 
 
+bad_xd = []
 for f in sorted(set(scope)):
     s_ = _head(f) if os.path.isfile(f) else None
     if not s_:
@@ -116,6 +117,11 @@ for f in sorted(set(scope)):
             bad_hl.append(f'{f} -> {href} (no existe)')
         elif f'href="{me}"' not in o_ and HL.search(o_):
             bad_hl.append(f'{f} -> {href} (no vuelve)')
+    # x-default coherente: toda pareja es/en lleva x-default, y apunta a la versión española
+    hl_ = dict(HL.findall(s_))
+    xd_ = re.search(r'<link rel="alternate" hreflang="x-default" href="([^"]+)">', s_)
+    if 'es' in hl_ and 'en' in hl_ and (not xd_ or xd_.group(1) != hl_['es']):
+        bad_xd.append(f)
     t = TIT.search(s_)
     if t:
         tt = t.group(1).strip()
@@ -126,6 +132,8 @@ for f in sorted(set(scope)):
             dash.append(f)
 if bad_ld:
     errors.append(f'{len(bad_ld)} página(s) con JSON-LD ilegible, p. ej. {bad_ld[0]}')
+if bad_xd:
+    warns.append(f'{len(bad_xd)} página(s) sin x-default o con x-default distinto de la versión española, p. ej. {bad_xd[0]}')
 if bad_hl:
     warns.append(f'{len(bad_hl)} hreflang sin reciprocidad, p. ej. {bad_hl[0]}')
 if bad_can:
@@ -154,7 +162,18 @@ elif nfiles > 18500:
 # ---------- lo que pedimos a Google tiene que existir ----------
 # El 26-nov-2026 los sitemaps pedian 1.702 URLs y 1.115 daban 404, y 195 de las
 # 207 URLs de /en/deals/ que Google tenia indexadas tambien. Se mira aqui.
-sm_dead, sm_noidx = [], []
+sm_dead, sm_noidx, sm_robots = [], [], []
+# lo que robots.txt bloquea (grupo User-agent: *) no se pide en los sitemaps: Google lo cuenta como error de cobertura
+_dis = []
+try:
+    _grp = re.split(r'(?im)^\s*User-agent:\s*', open('robots.txt', encoding='utf-8').read())
+    for g_ in _grp:
+        if g_.split('\n', 1)[0].strip() == '*':
+            _dis = [l_.split(':', 1)[1].strip() for l_ in g_.splitlines() if l_.lower().startswith('disallow:') and l_.split(':', 1)[1].strip()]
+            break
+except Exception:
+    pass
+_dis_rx = [re.compile('^' + re.escape(d_).replace('\\*', '.*').replace('\\$', '$')) for d_ in _dis]
 for sm in sorted(glob.glob('*-sitemap*.xml') + glob.glob('sitemap*.xml')):
     if sm.startswith('sitemap_index'):
         continue
@@ -166,6 +185,10 @@ for sm in sorted(glob.glob('*-sitemap*.xml') + glob.glob('sitemap*.xml')):
         p = unquote(urlsplit(loc).path)
         rel = p.lstrip('/')
         if not rel:
+            continue
+        pq = p + (('?' + urlsplit(loc).query) if urlsplit(loc).query else '')
+        if any(rx.match(pq) for rx in _dis_rx):
+            sm_robots.append((sm, p))
             continue
         f_ = rel if os.path.isfile(rel) else os.path.join(rel, 'index.html')
         if os.path.isfile(f_):
@@ -203,8 +226,10 @@ def _drop_locs(sm, paths):
 
 
 _fixed = 0
-for _sm in sorted({sm for sm, _ in sm_dead} | {sm for sm, _ in sm_noidx}):
-    _fixed += _drop_locs(_sm, [p for s_, p in sm_dead if s_ == _sm] + [p for s_, p in sm_noidx if s_ == _sm])
+for _sm in sorted({sm for sm, _ in sm_dead} | {sm for sm, _ in sm_noidx} | {sm for sm, _ in sm_robots}):
+    _fixed += _drop_locs(_sm, [p for s_, p in sm_dead if s_ == _sm] + [p for s_, p in sm_noidx if s_ == _sm] + [p for s_, p in sm_robots if s_ == _sm])
+if sm_robots:
+    warns.append(f'{len(sm_robots)} URL(s) bloqueadas por robots.txt fuera de los sitemaps: ' + ', '.join(p for _, p in sm_robots[:5]))
 if sm_dead:
     ex = ', '.join(p for _, p in sm_dead[:5])
     warns.append(f'{len(sm_dead)} URL(s) sin pagina fuera de los sitemaps: {ex}')

@@ -85,7 +85,7 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <div><a class="fx-logo" href="/en/" style="display:inline-block;padding:0"><b>happy</b><svg width="104" height="19" viewBox="0 0 250 46" aria-hidden="true" style="display:block"><path d="M8 8 Q120 58 214 14" fill="none" stroke="#FFC531" stroke-width="11" stroke-linecap="round"/></svg><i>low cost</i></a>
 <p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
 <div><h2 class="fx-h">Deals</h2><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/alerts/">Free deal alerts</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/videos/">Traveller videos</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
-<div><h2 class="fx-h">Explore</h2><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
+<div><h2 class="fx-h">Explore</h2><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a><a href="/en/flights/from/london/">Cheap flights from London</a><a href="/en/flights/from/manchester/">Cheap flights from Manchester</a><a href="/en/flights/from/dublin/">Cheap flights from Dublin</a><a href="/en/flights/from/new-york/">Cheap flights from New York</a></div>
 <div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://x.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
@@ -106,6 +106,9 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
                      og_image=og_image or f'{SITE}/hlc/brand/og-default.jpg', extra_head=extra, body_class=body_class).items():
         h = h.replace('{' + k + '}', v)
     return h
+
+
+TRAVEL_GUIDE_Q = {'cancun', 'dubrovnik', 'el-cairo', 'bogota'}
 
 
 def dates_en(f):
@@ -197,7 +200,7 @@ def filters(deals):
 
 def write(path, html_):
     os.makedirs(path, exist_ok=True)
-    open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(html_)
+    open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(G.hero_img(html_))
 
 
 def crumbs(items):
@@ -256,7 +259,7 @@ def main():
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}" data-deal-pub="{e((x.get('approved_at') or '')[:19])}Z">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{G.photos_attr(ls_) if ls_ else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Price {"re-checked" if (x.get("facts") or {}).get("checked_at") else "verified"} <span data-rel="{e(G.checked(x)[:19])}Z">on {e(date_en(verified))} at {e(verified[11:16])} (UTC)</span> <span class="k-n">· <a href="/en/how-we-verify/" style="color:#FFC531;text-decoration:underline">how we check</a></span></div>
+<div class="kicker" style="color:#FFC531">✓ Price {"re-checked" if (x.get("facts") or {}).get("checked_at") else "verified"} <span data-rel="{e(G.checked(x)[:19])}Z">on {e(date_en(verified))} at {e(verified[11:16])} (UTC)</span>{f' · Published <time datetime="{e((x.get("approved_at") or "")[:19])}">{e(date_en((x.get("approved_at") or "")[:10]))}</time>' if x.get("approved_at") else ""} <span class="k-n">· <a href="/en/how-we-verify/" style="color:#FFC531;text-decoration:underline">how we check</a></span></div>
 <h1>{e(title)}</h1>
 <div class="deal-cta"><a class="price-tag" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio_en">€{e(x.get('price'))} <small>{trip(f)}</small></a>{f'<span class="price-was">Usual price <s>€{e(f.get("precio_normal"))}</s> · you save {e(f.get("ahorro_pct"))}%</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(G.local(x.get("price"), f.get("origen_cc"), True))} at today’s rate</span>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}<a class="hlc-btn" href="{e(fl)}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo_en" style="min-height:56px;font-size:17px">See flight & dates ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
@@ -432,7 +435,10 @@ def main():
         intro_ = (f"{desc_} {len(sub)} deals right now" + (f", from €{cheapest}." if cheapest else ".") + " Prices re-checked every day.") if sub else f"{desc_} None right now: new fares land every hour."
         ch_, cld_ = crumbs([('Home', '/en/'), ('Deals', '/en/deals/'), (h1_, None)])
         es_k = {v: k for k, v in G.IDEAS_EN.items()}.get(k_)
-        pg = head(f'{h1_}: cheap flight deals · Happy Low Cost', G.smart_desc(intro_), f'{SITE}/en/deals/ideas/{k_}/', (f'{SITE}/chollos/ideas/{es_k}/' if es_k and os.path.isdir(f'chollos/ideas/{es_k}') else None), ld=[cld_], body_class='chollos',
+        # Search Console: la consulta que trae esta página es "cheap flights for christmas 2026" (pos. 8)
+        if k_ == 'christmas-2026':
+            h1_ = 'Cheap flights for Christmas 2026'
+        pg = head((f'{h1_}: deals · Happy Low Cost' if k_ == 'christmas-2026' else f'{h1_}: cheap flight deals · Happy Low Cost'), G.smart_desc(intro_), f'{SITE}/en/deals/ideas/{k_}/', (f'{SITE}/chollos/ideas/{es_k}/' if es_k and os.path.isdir(f'chollos/ideas/{es_k}') else None), ld=[cld_], body_class='chollos',
                   robots=G.ROBOTS_IDX if sub else 'noindex, follow')
         pg += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch_}
@@ -558,6 +564,8 @@ def main():
         dest_ld = {"@type": "TouristDestination", "@id": url + '#dest', "name": n, "url": url, "image": {"@id": img_ld["@id"]},
                    **({"geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']}} if p.get('y') is not None else {}),
                    "containedInPlace": {"@type": "Country", "name": en_names.country_en(p['c'])}}
+        if G.wd_same(p['s'], 'en'):
+            dest_ld["sameAs"] = G.wd_same(p['s'], 'en')
         if attr:
             dest_ld["includesAttraction"] = attr
         art = {"@type": "Article", "headline": (g.get('seo_title_en') or f'What to see in {n}')[:110], "description": g.get('meta_description_en') or '', "image": f"{SITE}/hlc/img/cities/{p['s']}.jpg",
@@ -579,6 +587,9 @@ def main():
         dsc_ = g.get('meta_description_en') or f'{n} travel guide: what to see, where to stay, what to eat and cheap flights.'
         if 2 <= nd_ <= 21:
             ttl_ = f'{n} itinerary: what to see in {nd_} days ({datetime.date.today().year})'
+            # Search Console (28 días): estas guías salen por "X travel guide" / "X travel" (Cancún pos. 3,6; Dubrovnik 15,7; El Cairo y Bogotá), no por "itinerary"
+            if p['s'] in TRAVEL_GUIDE_Q:
+                ttl_ = f'{n} travel guide: {nd_}-day itinerary ({datetime.date.today().year})'
             if 'itinerar' not in dsc_.lower() and 'day by day' not in dsc_.lower() and not re.search(r'\b\d+[ -]days?\b|\b(three|four|five|seven)[ -]days?\b', dsc_, re.I):
                 dsc_ = f'{nd_} days in {n}, day by day: ' + dsc_[:1].lower() + dsc_[1:]
         if bud and 'budget' not in dsc_.lower():
@@ -645,6 +656,24 @@ def main():
     rss = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Happy Low Cost · Flight deals</title><link>' + SITE + '/en/deals/</link><description>Verified cheap flight deals worldwide</description><language>en</language>' +
            ''.join(f'<item><title>{e(x["en"].get("title"))}</title><link>{SITE}/en/deals/{G.en_deal_slug(x)}/</link><guid>{SITE}/en/deals/{G.en_deal_slug(x)}/</guid><description>{e(x["en"].get("excerpt") or "")}</description></item>' for x in deals[:50]) + '</channel></rss>\n')
     open('en/deals/feed.xml', 'w', encoding='utf-8').write(rss)
+    # llms-full en inglés: chollos vivos y guías para ChatGPT, Claude, Perplexity... (antes solo había versión española)
+    try:
+        lf = [f'# Happy Low Cost: live flight deals and travel guides in English ({date_en(datetime.date.today().isoformat())})', '',
+              f'> {len(deals)} verified return flight deals, each at least {G.MIN_SAVE}% below the usual price of its route, and {len(dl)} travel guides with day-by-day itineraries. '
+              f'Prices change by the hour: always check the deal page. Same data as JSON: {SITE}/chollos/feed.json. Spanish version: {SITE}/llms-full.txt', '',
+              f'Happy Low Cost has published flight deals since 2012. How we verify deals: {SITE}/en/how-we-verify/', '', '## Live flight deals', '']
+        for x in deals:
+            f = x['facts']; o, dn = names(x)
+            lf.append(f'- [{o} to {dn}: €{x.get("price")} {trip(f)}]({SITE}/en/deals/{G.en_deal_slug(x)}/)' + (f', {f.get("aerolinea")}' if f.get('aerolinea') else '')
+                      + (', nonstop' if f.get('escalas') == 0 else '') + f', {dates_en(f)}' + (f'. Usual price €{f.get("precio_normal")} (-{f.get("ahorro_pct")}%)' if f.get('precio_normal') else '')
+                      + f'. Checked {date_en((G.checked(x) or "")[:10])}.')
+        lf += ['', f'## Travel guides ({len(dl)} destinations)', '', 'Each guide has what to see, a day-by-day route, when to go, where to stay, what to eat and a daily budget. Markdown version at index.md.', '']
+        for p_, g_ in dl:
+            u_ = f"{SITE}/en/destinations/{G.en_dest_slug(p_['s'])}/"
+            lf.append(f"- [{g_.get('seo_title_en') or 'What to see in ' + NAMES.get(p_['s'], p_['n'])}]({u_}). Markdown: {u_}index.md")
+        open('en/llms-full.txt', 'w', encoding='utf-8').write('\n'.join(lf) + '\n')
+    except Exception as ex:
+        print('en llms-full', ex)
     urls = [f'{SITE}/en/', f'{SITE}/en/deals/', f'{SITE}/en/destinations/'] + [f'{SITE}/en/deals/ideas/{k}/' for k, n, c in ideas_en if c] + [f'{SITE}/en/deals/from/{k}/' for k, n, c in city_links] + [f'{SITE}/en/deals/{s}/' for s in sorted(hechos)] + [f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/" for p, g in dl]
     # guías con su fecha real y su foto (sitemap de imágenes)
     gextra = {f"{SITE}/en/destinations/{G.en_dest_slug(p['s'])}/": (((g.get('updated_en') or g.get('updated_at') or '')[:10]), f"{SITE}/hlc/img/cities/{p['s']}.jpg") for p, g in dl}

@@ -1,0 +1,848 @@
+{
+"agadir": {
+"q": "Q170525",
+"en": "Agadir",
+"es": "Agadir",
+"km": 6
+},
+"algarve": {
+"q": "Q26831",
+"en": "Algarve",
+"es": "Algarve",
+"km": 3
+},
+"alicante": {
+"q": "Q11959",
+"en": "Alicante",
+"es": "Alicante",
+"km": 10
+},
+"amsterdam": {
+"q": "Q727",
+"en": "Amsterdam",
+"es": "Ámsterdam",
+"km": 1
+},
+"antalya": {
+"q": "Q6487",
+"en": "Antalya",
+"es": "Antalya",
+"km": 9
+},
+"atenas": {
+"q": "Q1524",
+"en": "Athens",
+"es": "Atenas",
+"km": 0
+},
+"azores": {
+"q": "Q25263",
+"en": "Azores",
+"es": "Azores",
+"km": 229
+},
+"bangkok": {
+"q": "Q1861",
+"en": "Bangkok",
+"es": "Bangkok",
+"km": 1
+},
+"barcelona": {
+"q": "Q1492",
+"en": "Barcelona",
+"es": "Barcelona",
+"km": 12
+},
+"belgrado": {
+"q": "Q3711",
+"en": "Belgrade",
+"es": "Belgrado",
+"km": 3
+},
+"bergen": {
+"q": "Q26793",
+"en": "Bergen",
+"es": "Bergen",
+"km": 13
+},
+"berlin": {
+"q": "Q64",
+"en": "Berlin",
+"es": "Berlín",
+"km": 1
+},
+"bilbao": {
+"q": "Q8692",
+"en": "Bilbao",
+"es": "Bilbao",
+"km": 5
+},
+"bogota": {
+"q": "Q2841",
+"en": "Bogotá",
+"es": "Bogotá",
+"km": 11
+},
+"bolonia": {
+"q": "Q1891",
+"en": "Bologna",
+"es": "Bolonia",
+"km": 0
+},
+"boston": {
+"q": "Q100",
+"en": "Boston",
+"es": "Boston",
+"km": 4
+},
+"bratislava": {
+"q": "Q1780",
+"en": "Bratislava",
+"es": "Bratislava",
+"km": 8
+},
+"breslavia": {
+"q": "Q1799",
+"en": "Wrocław",
+"es": "Breslavia",
+"km": 10
+},
+"brujas": {
+"q": "Q12994",
+"en": "Bruges",
+"es": "Brujas",
+"km": 0
+},
+"bruselas": {
+"q": "Q239",
+"en": "City of Brussels",
+"es": "Bruselas",
+"km": 0
+},
+"bucarest": {
+"q": "Q19660",
+"en": "Bucharest",
+"es": "Bucarest",
+"km": 2
+},
+"budapest": {
+"q": "Q1781",
+"en": "Budapest",
+"es": "Budapest",
+"km": 0
+},
+"buenos-aires": {
+"q": "Q1486",
+"en": "Buenos Aires",
+"es": "Buenos Aires",
+"km": 0
+},
+"burdeos": {
+"q": "Q1479",
+"en": "Bordeaux",
+"es": "Burdeos",
+"km": 11
+},
+"cadiz": {
+"q": "Q15682",
+"en": "Cádiz",
+"es": "Cádiz",
+"km": 31
+},
+"cancun": {
+"q": "Q8969",
+"en": "Cancún",
+"es": "Cancún",
+"km": 3
+},
+"capadocia": {
+"q": "Q217265",
+"en": "Cappadocia",
+"es": "Capadocia",
+"km": 34
+},
+"casablanca": {
+"q": "Q7903",
+"en": "Casablanca",
+"es": "Casablanca",
+"km": 18
+},
+"catania": {
+"q": "Q1903",
+"en": "Catania",
+"es": "Catania",
+"km": 4
+},
+"cerdena": {
+"q": "Q1462",
+"en": "Sardinia",
+"es": "Cerdeña",
+"km": 87
+},
+"chiang-mai": {
+"q": "Q52028",
+"en": "Chiang Mai",
+"es": "Chiang Mai",
+"km": 5
+},
+"chicago": {
+"q": "Q1297",
+"en": "Chicago",
+"es": "Chicago",
+"km": 25
+},
+"chipre": {
+"q": "Q229",
+"en": "Cyprus",
+"es": "Chipre",
+"km": 57
+},
+"ciudad-de-panama": {
+"q": "Q3306",
+"en": "Panama City",
+"es": "Ciudad de Panamá",
+"km": 20
+},
+"colonia": {
+"q": "Q365",
+"en": "Cologne",
+"es": "Colonia (Alemania)",
+"km": 15
+},
+"copenhague": {
+"q": "Q1748",
+"en": "Copenhagen",
+"es": "Copenhague",
+"km": 0
+},
+"cracovia": {
+"q": "Q31487",
+"en": "Kraków",
+"es": "Cracovia",
+"km": 0
+},
+"creta": {
+"q": "Q34374",
+"en": "Crete",
+"es": "Creta",
+"km": 22
+},
+"cusco": {
+"q": "Q5582862",
+"en": "Cusco",
+"es": "Cusco",
+"km": 5
+},
+"doha": {
+"q": "Q3861",
+"en": "Doha",
+"es": "Doha",
+"km": 5
+},
+"dublin": {
+"q": "Q1761",
+"en": "Dublin",
+"es": "Dublín",
+"km": 0
+},
+"dubrovnik": {
+"q": "Q1722",
+"en": "Dubrovnik",
+"es": "Dubrovnik",
+"km": 2
+},
+"edimburgo": {
+"q": "Q23436",
+"en": "Edinburgh",
+"es": "Edimburgo",
+"km": 0
+},
+"el-cairo": {
+"q": "Q85",
+"en": "Cairo",
+"es": "El Cairo",
+"km": 1
+},
+"estambul": {
+"q": "Q406",
+"en": "Istanbul",
+"es": "Estambul",
+"km": 2
+},
+"estocolmo": {
+"q": "Q1754",
+"en": "Stockholm",
+"es": "Estocolmo",
+"km": 0
+},
+"estrasburgo": {
+"q": "Q6602",
+"en": "Strasbourg",
+"es": "Estrasburgo",
+"km": 10
+},
+"florencia": {
+"q": "Q2044",
+"en": "Florence",
+"es": "Florencia",
+"km": 0
+},
+"frankfurt": {
+"q": "Q1794",
+"en": "Frankfurt",
+"es": "Fráncfort del Meno",
+"km": 14
+},
+"fuerteventura": {
+"q": "Q192534",
+"en": "Fuerteventura",
+"es": "Fuerteventura",
+"km": 15
+},
+"gdansk": {
+"q": "Q1792",
+"en": "Gdańsk",
+"es": "Gdansk",
+"km": 12
+},
+"ginebra": {
+"q": "Q71",
+"en": "Geneva",
+"es": "Ginebra",
+"km": 5
+},
+"gran-canaria": {
+"q": "Q178925",
+"en": "Gran Canaria",
+"es": "Gran Canaria",
+"km": 20
+},
+"granada": {
+"q": "Q8810",
+"en": "Granada",
+"es": "Granada",
+"km": 16
+},
+"hamburgo": {
+"q": "Q1055",
+"en": "Hamburg",
+"es": "Hamburgo",
+"km": 1
+},
+"hanoi": {
+"q": "Q1858",
+"en": "Hanoi",
+"es": "Hanói",
+"km": 3
+},
+"helsinki": {
+"q": "Q1757",
+"en": "Helsinki",
+"es": "Helsinki",
+"km": 0
+},
+"hong-kong": {
+"q": "Q8646",
+"en": "Hong Kong",
+"es": "Hong Kong",
+"km": 3
+},
+"ibiza": {
+"q": "Q52631",
+"en": "Ibiza",
+"es": "Ibiza",
+"km": 13
+},
+"jerusalen": {
+"q": "Q1218",
+"en": "Jerusalem",
+"es": "Jerusalén",
+"km": 41
+},
+"katmandu": {
+"q": "Q3037",
+"en": "Kathmandu",
+"es": "Katmandú",
+"km": 4
+},
+"kioto": {
+"q": "Q34600",
+"en": "Kyoto",
+"es": "Kioto",
+"km": 0
+},
+"kotor": {
+"q": "Q171080",
+"en": "Kotor",
+"es": "Kotor",
+"km": 5
+},
+"kuala-lumpur": {
+"q": "Q1865",
+"en": "Kuala Lumpur",
+"es": "Kuala Lumpur",
+"km": 2
+},
+"la-habana": {
+"q": "Q1563",
+"en": "Havana",
+"es": "La Habana",
+"km": 3
+},
+"lanzarote": {
+"q": "Q182432",
+"en": "Lanzarote",
+"es": "Lanzarote",
+"km": 10
+},
+"las-vegas": {
+"q": "Q23768",
+"en": "Las Vegas",
+"es": "Las Vegas",
+"km": 0
+},
+"lisboa": {
+"q": "Q597",
+"en": "Lisbon",
+"es": "Lisboa",
+"km": 1
+},
+"liubliana": {
+"q": "Q437",
+"en": "Ljubljana",
+"es": "Liubliana",
+"km": 19
+},
+"londres": {
+"q": "Q84",
+"en": "London",
+"es": "Londres",
+"km": 0
+},
+"los-angeles": {
+"q": "Q65",
+"en": "Los Angeles",
+"es": "Los Ángeles",
+"km": 0
+},
+"los-cabos": {
+"q": "Q659516",
+"en": "Los Cabos",
+"es": "Municipio de Los Cabos",
+"km": 12
+},
+"lyon": {
+"q": "Q456",
+"en": "Lyon",
+"es": "Lyon",
+"km": 20
+},
+"madeira": {
+"q": "Q26253",
+"en": "Madeira",
+"es": "Madeira",
+"km": 14
+},
+"madrid": {
+"q": "Q2807",
+"en": "Madrid",
+"es": "Madrid",
+"km": 14
+},
+"malaga": {
+"q": "Q8851",
+"en": "Málaga",
+"es": "Málaga",
+"km": 9
+},
+"mallorca": {
+"q": "Q8828",
+"en": "Mallorca",
+"es": "Mallorca",
+"km": 23
+},
+"malta": {
+"q": "Q233",
+"en": "Malta",
+"es": "Malta",
+"km": 10
+},
+"manila": {
+"q": "Q1461",
+"en": "Manila",
+"es": "Manila",
+"km": 1
+},
+"marrakech": {
+"q": "Q101625",
+"en": "Marrakesh",
+"es": "Marrakech",
+"km": 2
+},
+"marsella": {
+"q": "Q23482",
+"en": "Marseille",
+"es": "Marsella",
+"km": 21
+},
+"medellin": {
+"q": "Q48278",
+"en": "Medellín",
+"es": "Medellín",
+"km": 19
+},
+"menorca": {
+"q": "Q52636",
+"en": "Menorca",
+"es": "Menorca",
+"km": 17
+},
+"miami": {
+"q": "Q8652",
+"en": "Miami",
+"es": "Miami",
+"km": 2
+},
+"milan": {
+"q": "Q490",
+"en": "Milan",
+"es": "Milán",
+"km": 1
+},
+"montevideo": {
+"q": "Q1335",
+"en": "Montevideo",
+"es": "Montevideo",
+"km": 16
+},
+"montreal": {
+"q": "Q340",
+"en": "Montreal",
+"es": "Montreal",
+"km": 15
+},
+"munich": {
+"q": "Q1726",
+"en": "Munich",
+"es": "Múnich",
+"km": 0
+},
+"mykonos": {
+"q": "Q190210",
+"en": "Mykonos",
+"es": "Miconos",
+"km": 0
+},
+"nairobi": {
+"q": "Q3870",
+"en": "Nairobi",
+"es": "Nairobi",
+"km": 13
+},
+"napoles": {
+"q": "Q2634",
+"en": "Naples",
+"es": "Nápoles",
+"km": 2
+},
+"niza": {
+"q": "Q33959",
+"en": "Nice",
+"es": "Niza",
+"km": 0
+},
+"nueva-delhi": {
+"q": "Q987",
+"en": "New Delhi",
+"es": "Nueva Delhi",
+"km": 12
+},
+"oaxaca": {
+"q": "Q34110",
+"en": "Oaxaca",
+"es": "Oaxaca",
+"km": 10
+},
+"oporto": {
+"q": "Q36433",
+"en": "Porto",
+"es": "Oporto",
+"km": 0
+},
+"osaka": {
+"q": "Q35765",
+"en": "Osaka",
+"es": "Osaka",
+"km": 38
+},
+"oslo": {
+"q": "Q585",
+"en": "Oslo",
+"es": "Oslo",
+"km": 1
+},
+"palermo": {
+"q": "Q2656",
+"en": "Palermo",
+"es": "Palermo",
+"km": 0
+},
+"paris": {
+"q": "Q90",
+"en": "Paris",
+"es": "París",
+"km": 0
+},
+"pekin": {
+"q": "Q956",
+"en": "Beijing",
+"es": "Pekín",
+"km": 24
+},
+"phuket": {
+"q": "Q182565",
+"en": "Phuket province",
+"es": "Provincia de Phuket",
+"km": 1
+},
+"pisa": {
+"q": "Q13375",
+"en": "Pisa",
+"es": "Pisa",
+"km": 4
+},
+"praga": {
+"q": "Q1085",
+"en": "Prague",
+"es": "Praga",
+"km": 2
+},
+"quito": {
+"q": "Q2900",
+"en": "Quito",
+"es": "Quito",
+"km": 9
+},
+"reikiavik": {
+"q": "Q1764",
+"en": "Reykjavík",
+"es": "Reikiavik",
+"km": 0
+},
+"riga": {
+"q": "Q1773",
+"en": "Riga",
+"es": "Riga",
+"km": 0
+},
+"rio-de-janeiro": {
+"q": "Q8678",
+"en": "Rio de Janeiro",
+"es": "Río de Janeiro",
+"km": 4
+},
+"roma": {
+"q": "Q220",
+"en": "Rome",
+"es": "Roma",
+"km": 2
+},
+"salzburgo": {
+"q": "Q34713",
+"en": "Salzburg",
+"es": "Salzburgo",
+"km": 2
+},
+"san-diego": {
+"q": "Q16552",
+"en": "San Diego",
+"es": "San Diego (California)",
+"km": 3
+},
+"san-francisco": {
+"q": "Q62",
+"en": "San Francisco",
+"es": "San Francisco (California)",
+"km": 1
+},
+"san-sebastian": {
+"q": "Q10313",
+"en": "San Sebastián",
+"es": "San Sebastián",
+"km": 16
+},
+"santiago-de-chile": {
+"q": "Q2887",
+"en": "Santiago",
+"es": "Santiago de Chile",
+"km": 14
+},
+"santo-domingo": {
+"q": "Q34820",
+"en": "Santo Domingo",
+"es": "Santo Domingo",
+"km": 28
+},
+"santorini": {
+"q": "Q129296",
+"en": "Santorini",
+"es": "Santorini",
+"km": 4
+},
+"sao-paulo": {
+"q": "Q174",
+"en": "São Paulo",
+"es": "São Paulo",
+"km": 21
+},
+"sarajevo": {
+"q": "Q11194",
+"en": "Sarajevo",
+"es": "Sarajevo",
+"km": 8
+},
+"seul": {
+"q": "Q8684",
+"en": "Seoul",
+"es": "Seúl",
+"km": 1
+},
+"sevilla": {
+"q": "Q8717",
+"en": "Seville",
+"es": "Sevilla",
+"km": 10
+},
+"shanghai": {
+"q": "Q8686",
+"en": "Shanghai",
+"es": "Shanghái",
+"km": 34
+},
+"singapur": {
+"q": "Q334",
+"en": "Singapore",
+"es": "Singapur",
+"km": 2
+},
+"sofia": {
+"q": "Q472",
+"en": "Sofia",
+"es": "Sofía",
+"km": 0
+},
+"split": {
+"q": "Q1663",
+"en": "Split, Croatia",
+"es": "Split",
+"km": 12
+},
+"tallin": {
+"q": "Q1770",
+"en": "Tallinn",
+"es": "Tallin",
+"km": 0
+},
+"tenerife": {
+"q": "Q40846",
+"en": "Tenerife",
+"es": "Tenerife",
+"km": 3
+},
+"tirana": {
+"q": "Q19689",
+"en": "Tirana",
+"es": "Tirana",
+"km": 12
+},
+"tokio": {
+"q": "Q1490",
+"en": "Tokyo",
+"es": "Tokio",
+"km": 1
+},
+"toronto": {
+"q": "Q172",
+"en": "Toronto",
+"es": "Toronto",
+"km": 20
+},
+"tromso": {
+"q": "Q42328401",
+"en": "Tromsø",
+"es": null,
+"km": 3
+},
+"tunez": {
+"q": "Q3572",
+"en": "Tunis",
+"es": "Túnez (ciudad)",
+"km": 6
+},
+"turin": {
+"q": "Q495",
+"en": "Turin",
+"es": "Turín",
+"km": 14
+},
+"valencia": {
+"q": "Q8818",
+"en": "Valencia",
+"es": "Valencia",
+"km": 9
+},
+"vancouver": {
+"q": "Q24639",
+"en": "Vancouver",
+"es": "Vancouver",
+"km": 9
+},
+"varsovia": {
+"q": "Q270",
+"en": "Warsaw",
+"es": "Varsovia",
+"km": 0
+},
+"venecia": {
+"q": "Q641",
+"en": "Venice",
+"es": "Venecia",
+"km": 0
+},
+"verona": {
+"q": "Q2028",
+"en": "Verona",
+"es": "Verona",
+"km": 9
+},
+"viena": {
+"q": "Q1741",
+"en": "Vienna",
+"es": "Viena",
+"km": 0
+},
+"vilna": {
+"q": "Q216",
+"en": "Vilnius",
+"es": "Vilna",
+"km": 0
+},
+"washington-d-c": {
+"q": "Q61",
+"en": "Washington, D.C.",
+"es": "Washington D. C.",
+"km": 39
+},
+"zagreb": {
+"q": "Q1435",
+"en": "Zagreb",
+"es": "Zagreb",
+"km": 11
+},
+"zurich": {
+"q": "Q72",
+"en": "Zurich",
+"es": "Zúrich",
+"km": 1
+}
+}

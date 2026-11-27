@@ -12,7 +12,7 @@
   Service-Worker-Allowed: /
 
 /hlc/fx.json
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /panel/*
   X-Robots-Tag: noindex, nofollow
@@ -56,39 +56,53 @@
 /destinos/*/index.md
   Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /en/destinations/*/index.md
   Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /llms.txt
   Content-Type: text/plain; charset=utf-8
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /vuelos/rutas.md
   Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /en/flights/routes.md
   Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /vuelos/feed.json
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
   Access-Control-Allow-Origin: *
 
 /en/flights/feed.json
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
   Access-Control-Allow-Origin: *
 
 /vuelos/*.csv
   Content-Type: text/csv; charset=utf-8
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
   Access-Control-Allow-Origin: *
 
 /.well-known/ai.txt
   Content-Type: text/plain; charset=utf-8
+
+/chollos/*/index.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=900, stale-while-revalidate=3600
+
+/en/deals/*/index.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=900, stale-while-revalidate=3600
+
+/en/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=900, stale-while-revalidate=3600

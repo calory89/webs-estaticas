@@ -2,7 +2,7 @@
 """Páginas fijas de Happy Low Cost en español e inglés: cómo verificamos los chollos (/como-verificamos/, /en/how-we-verify/).
 Uso (desde la raíz de la rama pub/happylowcost.com): python3 _hlc/gen_static.py
 """
-import os, sys, json
+import os, re, sys, json
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
@@ -244,6 +244,40 @@ def extra_pages():
             os.makedirs('guias/errores-de-tarifa', exist_ok=True); open('guias/errores-de-tarifa/index.html', 'w', encoding='utf-8').write(pg)
 
 
+ALERT_QA_EN = [
+    ('Can I get alerts without giving an email?', 'Yes. Use the button on this page to turn on notifications in this browser and the alert arrives as a push notification. You can turn it off from the browser settings.'),
+    ('Which destinations can I choose?', 'Any city, island or country, or simply "anywhere". If you leave it open, we send the best deal from your airport within your price.'),
+    ('What price limit should I pick?', 'The most you would pay for a return flight. The quick options go from €100 to €1,000; we only tell you about deals at or below your limit.'),
+    ('How do I stop the alerts?', 'Every email has an unsubscribe link: one click and you are out. Push alerts stop when you block notifications for happylowcost.com in your browser.'),
+]
+ALERT_QA_ES = [
+    ('¿Es gratis?', 'Sí. Te mandamos como máximo un aviso al día y te das de baja con un clic.'),
+    ('¿Qué cuenta como chollo?', 'Un vuelo de ida y vuelta al menos un 40 % más barato que el precio habitual de esa ruta, con el precio comprobado de nuevo antes de publicarlo y cada día después.'),
+    ('¿Puedo recibir avisos sin dar mi email?', 'Sí. Con el botón de esta página activas las notificaciones en este navegador y el aviso te llega como notificación. Lo quitas desde los ajustes del navegador.'),
+    ('¿Qué destinos puedo elegir?', 'Cualquier ciudad, isla o país, o simplemente "a cualquier sitio". Si lo dejas abierto, te avisamos del mejor chollo desde tu aeropuerto dentro de tu precio.'),
+    ('¿Qué precio máximo pongo?', 'Lo máximo que pagarías por un vuelo de ida y vuelta. Solo te avisamos de chollos que estén en ese precio o por debajo.'),
+    ('¿Cómo dejo de recibir avisos?', 'Cada email lleva un enlace para darte de baja con un clic. Los avisos en el navegador se paran al bloquear las notificaciones de happylowcost.com.'),
+]
+
+
+def alerts_es_faq():
+    """/alertas/ (la genera build_pages.py, que no corre en el workflow): preguntas frecuentes con FAQPage, idempotente."""
+    p = os.path.join('alertas', 'index.html')
+    if not os.path.isfile(p):
+        return
+    t0 = open(p, encoding='utf-8').read()
+    t = re.sub(r'<!--hlc-afaq-->.*?<!--/hlc-afaq-->', '', t0, flags=re.S)
+    blk = ('<!--hlc-afaq--><section class="sec" style="padding-top:0"><div class="wrap" style="max-width:860px"><h2>Preguntas frecuentes sobre las alertas</h2>'
+           + ''.join(f'<details><summary>{G.e(q)}</summary><p>{G.e(a)}</p></details>' for q, a in ALERT_QA_ES)
+           + '</div></section>' + G.ld_script([faq_ld(ALERT_QA_ES, 'es-ES')]) + '<!--/hlc-afaq-->')
+    i = t.rfind('</main>')
+    if i < 0:
+        return
+    t = t[:i] + blk + t[i:]
+    if t != t0:
+        open(p, 'w', encoding='utf-8').write(t)
+
+
 def alerts_pages():
     """/en/alerts/: la mitad inglesa del sitio no tenia donde pedir un aviso.
 
@@ -272,7 +306,7 @@ def alerts_pages():
     chips = ''.join(f'<button type="button" class="chip" data-chip data-v="{G.e(c)}" aria-pressed="{"true" if i == 0 else "false"}">{G.e(c)}</button>' for i, c in enumerate(tops))
     qas = [('Is it free?', 'Yes. We send at most one email a day and you unsubscribe with one click.'),
            ('Where do your deals leave from?', 'Most of them from Spain, and a growing number from the United States, Canada, Australia and the rest of Europe. The airports above are the ones in today\'s deals, so you can see what we actually cover before you leave your email.'),
-           ('What counts as a deal?', 'A return flight at least 40 % below the usual price for that route, with the price checked again before it is published and every day after that.')]
+           ('What counts as a deal?', 'A return flight at least 40 % below the usual price for that route, with the price checked again before it is published and every day after that.')] + ALERT_QA_EN
     form = f'''<form class="alert-form" data-hlc-alert novalidate><div class="af" style="display:flex;flex-direction:column;gap:20px">
 <fieldset class="fld"><legend>Where do you fly from?</legend><div class="chips">{chips}</div></fieldset>
 <div class="fld"><label for="af-dest">Where do you dream of going?</label><input id="af-dest" name="destination" type="text" placeholder="Japan, New York, Bali… or anywhere" autocomplete="off" {inp}></div>
@@ -571,6 +605,7 @@ setTimeout(load,800);})();
     extra_pages()
     videos_pages()
     alerts_pages()
+    alerts_es_faq()
     import gen_blog
     gen_blog.main()
     pages = ['/videos/', '/en/videos/', '/en/alerts/', '/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',

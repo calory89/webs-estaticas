@@ -158,11 +158,11 @@ def write(path, html_):
     open(os.path.join(path, 'index.html'), 'w', encoding='utf-8').write(html_)
 
 
-def page_shell(en, title, desc, url, alt_url, ld, body_class):
+def page_shell(en, title, desc, url, alt_url, ld, body_class, og=None, og_alt=None):
     if en:
-        return E.head(title, desc, url, alt_url, ld=ld, body_class=body_class)
+        return E.head(title, desc, url, alt_url, ld=ld, body_class=body_class, og_image=og, og_alt=og_alt)
     alt = f'<link rel="alternate" hreflang="es" href="{url}"><link rel="alternate" hreflang="en" href="{alt_url}"><link rel="alternate" hreflang="x-default" href="{url}">'
-    return G.head(title=e(title), desc=e(desc), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+    return G.head(title=e(title), desc=e(desc), canonical=url, og_type='article', og_image=og or f'{SITE}/hlc/brand/og-default.jpg', og_alt=e(og_alt or title),
                   extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script(ld), body_class=body_class)
 
 
@@ -232,7 +232,14 @@ def dest_page(d, lst, meses, en, en_slug, guide):
         if best:
             qas.append((f'¿Cuál es el mes más barato para volar a {name}?', f'Desde {oname(best[0])}, el mes más barato de los próximos seis es {mname(best[1])}, con {best[2]} € ida y vuelta.'))
         crumbs = [('Inicio', '/'), ('Rutas de vuelos', '/vuelos/'), (f'Vuelos a {name}', None)]
-    desc = G.smart_desc(lead)
+    # descripción para el clic (CTR): precio, ciudades, directos, mes más barato y fecha de consulta
+    if en:
+        desc = (f'{name} flights from €{r1["price_from"]} return ({oname(r1)})' + (f' and €{r0["price_from"]} from {oname(r0)}' if r0 is not r1 else '')
+                + f'. {len(lst)} departure cities, {len(direct)} direct.' + (f' Cheapest month: {mname(best[1], True)}.' if best else '') + f' Fares checked {fd(checked, True)}.')
+    else:
+        desc = (f'Vuelos a {name} desde {r0["price_from"]} € ida y vuelta ({oname(r0)}). {len(lst)} ciudades de salida, {len(direct)} con directo.'
+                + (f' Mes más barato: {mname(best[1])}.' if best else '') + f' Precios del {fd(checked)}.')
+    desc = G.smart_desc(desc, 160)
     ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs)]
     T = (lambda a, b: b if en else a)
     stats = (f'<div class="pm-stats"><div><b>{r0["price_from"]} €</b><span>{T("lo más barato que encontramos", "cheapest we found")}</span></div>'
@@ -252,7 +259,7 @@ def dest_page(d, lst, meses, en, en_slug, guide):
     gl = ''
     if guide:
         gl = f'<a class="hlc-btn o" href="{T("/destinos/" + d + "/", "/en/destinations/" + slug_en + "/")}">{T("Guía de " + name, name + " travel guide")}</a>'
-    out = page_shell(en, title + ' · Happy Low Cost', desc, url, url_es if en else url_en, ld, 'precios')
+    out = page_shell(en, title + ' · Happy Low Cost', desc, url, url_es if en else url_en, ld, 'precios', og=(f'{SITE}/hlc/img/cities/{d}-og.jpg' if os.path.exists(f'hlc/img/cities/{d}-og.jpg') else None), og_alt=(f'Photo of {name}' if en else f'Foto de {name}'))
     out += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs, en)}'
             f'<div class="kicker">{T("Precios reales, consultados en Kiwi.com", "Real prices, checked on Kiwi.com")}</div><h1 class="x-h1">{e(title)}</h1>'
             + QA_BOX(T, qa_) +
@@ -309,7 +316,11 @@ def orig_page(o, lst, en, en_slug):
                (f'¿Cuántos destinos hay por menos de 100 € desde {oname}?', f'{len(under)} de los {len(lst)} destinos que vigilamos tenían vuelo de ida y vuelta por menos de 100 €' + (': ' + ', '.join(dname(r) for r in under[:8]) + ('…' if len(under) > 8 else '.') if under else '.')),
                (f'¿Qué vuelos directos desde {oname} son los más baratos?', ('Los directos más baratos: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in direct[:5]) + '.') if direct else 'En nuestra última consulta, las opciones más baratas hacían al menos una escala.')]
         crumbs = [('Inicio', '/'), ('Rutas de vuelos', '/vuelos/'), (f'Vuelos desde {oname}', None)]
-    desc = G.smart_desc(lead)
+    if en:
+        desc = (f'From {oname}: ' + ', '.join(f'{dname(r)} €{r["price_from"]}' for r in lst[:3]) + f' return. {len(under)} destinations under €100, {len(direct)} direct. Fares checked {fd(checked, True)}.')
+    else:
+        desc = (f'Desde {oname}: ' + ', '.join(f'{dname(r)} {r["price_from"]} €' for r in lst[:3]) + f' ida y vuelta. {len(under)} destinos por menos de 100 €, {len(direct)} directos. Precios del {fd(checked)}.')
+    desc = G.smart_desc(desc, 160)
     ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs)]
     d0 = direct[0] if direct else None
     if en:
@@ -352,6 +363,108 @@ def _inject(path, box, marker='hlc-prices'):
     return True
 
 
+UK_IE = ('Londres', 'London', 'Manchester', 'Dublín', 'Dublin', 'Edimburgo', 'Edinburgh', 'Glasgow', 'Bristol', 'Birmingham', 'Liverpool', 'Belfast', 'Cork', 'Shannon', 'Newcastle', 'Leeds')
+try:
+    DIAS = json.load(open(os.path.join('destinos', 'dias.json'), encoding='utf-8'))
+except Exception:
+    DIAS = {}
+
+
+def guide_budget_eur(d):
+    """Presupuesto diario más ajustado de la guía (primera fila de su tabla), en euros: (mínimo, máximo) o None."""
+    p = os.path.join('destinos', d, 'index.html')
+    if not os.path.isfile(p):
+        return None
+    m = re.search(r'<table class="g-bud">.*?<tbody><tr><th scope="row">[^<]*</th><td>([^<]*)</td>', open(p, encoding='utf-8', errors='surrogateescape').read(), re.S)
+    if not m or not re.search(r'€|euro', m.group(1), re.I):
+        return None
+    n = [int(x) for x in re.findall(r'\d+', m.group(1).replace('.', ''))]
+    n = [x for x in n if 5 <= x <= 2000]
+    if not n or len(n) > 2:
+        return None
+    return (min(n), max(n))
+
+
+def _put(path, marker, block, before_rx):
+    """Mete un bloque idempotente (entre <!--marker--> y <!--/marker-->) antes de la primera sección que casa con before_rx."""
+    if not os.path.isfile(path):
+        return
+    t0 = open(path, encoding='utf-8', errors='surrogateescape').read()
+    t = _strip(t0, f'<!--{marker}-->', f'<!--/{marker}-->')
+    if block:
+        m = re.search(before_rx, t)
+        if not m:
+            return
+        t = t[:m.start()] + f'<!--{marker}-->{block}<!--/{marker}-->' + t[m.start():]
+    if t != t0:
+        open(path, 'w', encoding='utf-8', errors='surrogateescape').write(t)
+
+
+def home_blocks(by_orig, by_dest, en_slug):
+    """Portadas: vuelos baratos desde Reino Unido e Irlanda (EN) y, hasta el 6 de enero, Navidad destacada (ES y EN)."""
+    cols = []
+    for o in ('Londres', 'Manchester', 'Dublín', 'Edimburgo'):
+        lst = sorted(by_orig.get(o) or [], key=lambda r: r['price_from'])
+        if len(lst) < 3:
+            continue
+        oe = en_names.city_en(o)
+        cols.append(f'<div class="uk-c"><h3><a href="/en/flights/from/{G.slugify(oe)}/">Cheap flights from {e(oe)}</a></h3><ul>'
+                    + ''.join(f'<li><a href="/en/flights/{en_slug(r)}/">{e(E.NAMES.get(r["dest_slug"], r["dest"]))}</a> <b>€{r["price_from"]}</b>'
+                              + (' · nonstop' if (r.get('facts') or {}).get('escalas_ida') == 0 else '') + '</li>' for r in lst[:5])
+                    + f'</ul><a class="uk-all" href="/en/flights/from/{G.slugify(oe)}/">All {len(lst)} destinations from {e(oe)}</a></div>')
+    uk = ''
+    if cols:
+        uk = ('<section class="sec" id="uk-ie"><div class="wrap"><div class="sec-h"><div><div class="kicker">Real return fares, checked on Kiwi.com</div><h2>Cheap flights from the UK &amp; Ireland</h2></div></div>'
+              '<style>.uk-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.uk-c{background:#fff;border-radius:16px;padding:16px 18px;border:1px solid #EADCC4}.uk-c h3{margin:0 0 8px;font-size:18px}.uk-c ul{list-style:none;margin:0 0 10px;padding:0}.uk-c li{padding:6px 0;border-bottom:1px solid #F3E9D8;display:flex;gap:6px;flex-wrap:wrap}.uk-c li b{margin-left:auto}.uk-all{font-weight:600}</style>'
+              f'<div class="uk-g">{"".join(cols)}</div></div></section>')
+    _put('en/index.html', 'hlc-uk', uk, r'(?s)<section[^>]*>(?:(?!</section>).)*?Most-read itineraries')
+    xmas = datetime.date.today() <= datetime.date(2027, 1, 6)
+    es_x = ('<section class="sec" style="padding-top:10px" id="navidad"><div class="wrap"><a class="hlc-btn" href="/chollos/ideas/navidad-2026/" style="width:100%;justify-content:center">🎄 Vuelos baratos para Navidad 2026: los chollos de estas fechas</a>'
+            '<p style="text-align:center;margin:8px 0 0"><a href="/chollos/ideas/puente-diciembre-2026/">Puente de diciembre 2026</a></p></div></section>') if xmas and os.path.isdir('chollos/ideas/navidad-2026') else ''
+    en_x = ('<section class="sec" style="padding-top:10px" id="christmas"><div class="wrap"><a class="hlc-btn" href="/en/deals/ideas/christmas-2026/" style="width:100%;justify-content:center">🎄 Cheap flights for Christmas 2026: deals for these dates</a></div></section>'
+            ) if xmas and os.path.isdir('en/deals/ideas/christmas-2026') else ''
+    _put('index.html', 'hlc-xmas', es_x, r'<!--top-guias-->')
+    _put('en/index.html', 'hlc-xmas', en_x, r'(?s)<section[^>]*>(?:(?!</section>).)*?Ideas for cheap travel')
+
+
+def xmas_blocks(rows, meses, en_slug):
+    """Ideas de Navidad: precio más barato de diciembre de 2026 desde Reino Unido e Irlanda (EN) y desde España (ES), de nuestro calendario."""
+    def dec(r):
+        return next((m[1] for m in ((meses.get(r['slug']) or {}).get('m') or []) if m[0] == '2026-12' and m[1]), None)
+    for en, path, origins in ((True, 'en/deals/ideas/christmas-2026/index.html', UK_IE), (False, 'chollos/ideas/navidad-2026/index.html', tuple(SPAIN))):
+        if not os.path.isfile(path):
+            continue
+        lst = sorted([(r, dec(r)) for r in rows if r['origin'] in origins and dec(r)], key=lambda v: v[1])
+        seen, top = set(), []
+        for r, p_ in lst:
+            if r['dest_slug'] in seen:
+                continue
+            seen.add(r['dest_slug'])
+            top.append((r, p_))
+        blk = ''
+        if len(top) >= 5:
+            if en:
+                trs = ''.join(f'<tr><th scope="row"><a href="/en/flights/{en_slug(r)}/">{e(en_names.city_en(r["origin"]))} → {e(E.NAMES.get(r["dest_slug"], r["dest"]))}</a></th><td class="pm-p">€{p_}</td></tr>' for r, p_ in top[:15])
+                blk = (f'<section class="sec" style="padding-top:0"><div class="wrap" style="max-width:760px"><h2>Christmas 2026 flights from the UK and Ireland</h2>'
+                       f'<p>Cheapest return fare we found for a December 2026 departure from London, Manchester, Dublin and other UK and Irish airports, one line per destination. From our price calendar (Kiwi.com); fares change.</p>'
+                       f'<div class="pm-scroll"><table class="pm-t"><thead><tr><th scope="col">Route</th><th scope="col">December from</th></tr></thead><tbody>{trs}</tbody></table></div>'
+                       f'<p><a class="hlc-btn o" href="/en/flights/month/december-2026/">All cheap flights in December 2026</a></p></div></section>')
+            else:
+                trs = ''.join(f'<tr><th scope="row"><a href="/vuelos/{r["slug"]}/">{e(r["origin"])} → {e(r["dest"])}</a></th><td class="pm-p">{p_} €</td></tr>' for r, p_ in top[:15])
+                blk = (f'<section class="sec" style="padding-top:0"><div class="wrap" style="max-width:760px"><h2>Vuelos para Navidad 2026 desde España</h2>'
+                       f'<p>El vuelo de ida y vuelta más barato que encontramos con salida en diciembre de 2026 desde aeropuertos españoles, una línea por destino. Sale de nuestro calendario de precios (Kiwi.com); puede cambiar.</p>'
+                       f'<div class="pm-scroll"><table class="pm-t"><thead><tr><th scope="col">Ruta</th><th scope="col">Diciembre desde</th></tr></thead><tbody>{trs}</tbody></table></div>'
+                       f'<p><a class="hlc-btn o" href="/vuelos/mes/diciembre-2026/">Todos los vuelos baratos en diciembre de 2026</a></p></div></section>')
+        t0 = open(path, encoding='utf-8', errors='surrogateescape').read()
+        t = _strip(t0, '<!--hlc-xmasr-->', '<!--/hlc-xmasr-->')
+        if blk:
+            i = t.rfind('</main>')
+            if i > 0:
+                t = t[:i] + '<!--hlc-xmasr-->' + blk + '<!--/hlc-xmasr-->' + t[i:]
+        if t != t0:
+            open(path, 'w', encoding='utf-8', errors='surrogateescape').write(t)
+
+
 def build(rows, en_slug):
     meses = load_meses()
     w = warm(rows, meses, int(os.environ.get('HLC_WARM', '40')))
@@ -391,11 +504,51 @@ def build(rows, en_slug):
             rows_es = ''.join(f'<tr><th scope="row"><a href="/vuelos/{r["slug"]}/">{e(r["origin"])}</a></th><td class="pm-p">{r["price_from"]} €</td><td>{e(stops((r.get("facts") or {}).get("escalas_ida")))}</td></tr>' for r in top)
             rows_en = ''.join(f'<tr><th scope="row"><a href="/en/flights/{en_slug(r)}/">{e(en_names.city_en(r["origin"]))}</a></th><td class="pm-p">€{r["price_from"]}</td><td>{e(stops((r.get("facts") or {}).get("escalas_ida"), True))}</td></tr>' for r in top)
             dname, dname_en = lst[0]['dest'], E.NAMES.get(d, lst[0]['dest'])
-            _inject(f'destinos/{d}/index.html', f'<section class="sec" style="padding-top:0" id="precios"><div class="wrap"><h2>Cuánto cuesta volar a {e(dname)}</h2><p>Lo más barato que encontramos desde las ciudades principales, ida y vuelta (desde {low} €).</p>'
-                    f'<div class="pm-scroll" style="max-width:640px"><table class="pm-t"><thead><tr><th scope="col">Salida</th><th scope="col">Más barato</th><th scope="col">Escalas</th></tr></thead><tbody>{rows_es}</tbody></table></div>'
+            nd_, bud_ = DIAS.get(d) or 0, guide_budget_eur(d)
+            # España: solo salidas españolas ("Cómo llegar a X desde España"); si no hay 2, la tabla general
+            sp = sorted([r for r in lst if r['origin'] in SPAIN], key=lambda r: r['price_from'])
+            if len(sp) >= 2:
+                ndir = sum(1 for r in sp if (r.get('facts') or {}).get('escalas_ida') == 0)
+                rows_sp = ''.join(f'<tr><th scope="row"><a href="/vuelos/{r["slug"]}/">{e(r["origin"])}</a></th><td class="pm-p">{r["price_from"]} €</td><td>{e(stops((r.get("facts") or {}).get("escalas_ida")))}</td><td>{e((r.get("facts") or {}).get("aerolinea") or "")}</td></tr>' for r in sp[:8])
+                h_es = (f'<h2>Cómo llegar a {e(dname)} desde España</h2><p>Vuelo de ida y vuelta más barato que encontramos desde {len(sp)} ciudades españolas: desde {sp[0]["price_from"]} € ({e(sp[0]["origin"])})'
+                        + (f'; con vuelo directo desde {ndir} de ellas' if ndir else '; ninguna con vuelo directo en la opción más barata') + '.</p>'
+                        f'<div class="pm-scroll" style="max-width:720px"><table class="pm-t"><thead><tr><th scope="col">Salida</th><th scope="col">Más barato</th><th scope="col">Escalas</th><th scope="col">Aerolínea</th></tr></thead><tbody>{rows_sp}</tbody></table></div>')
+                fl_es, fl_from = sp[0]['price_from'], sp[0]['origin']
+            else:
+                h_es = (f'<h2>Cuánto cuesta volar a {e(dname)}</h2><p>Lo más barato que encontramos desde las ciudades principales, ida y vuelta (desde {low} €).</p>'
+                        f'<div class="pm-scroll" style="max-width:640px"><table class="pm-t"><thead><tr><th scope="col">Salida</th><th scope="col">Más barato</th><th scope="col">Escalas</th></tr></thead><tbody>{rows_es}</tbody></table></div>')
+                fl_es, fl_from = low, min(lst, key=lambda r: r['price_from'])['origin']
+            cost_es = cost_en = ''
+            if nd_ and bud_:
+                a_, b_ = fl_es + nd_ * bud_[0], fl_es + nd_ * bud_[1]
+                rng = f'Unos {a_} €' if a_ == b_ else f'Entre {a_} y {b_} €'
+                cost_es = (f'<h3>Cuánto cuesta un viaje de {nd_} días a {e(dname)}</h3><p>{rng} por persona: vuelo de ida y vuelta desde {fl_es} € (desde {e(fl_from)}) más {nd_} días a '
+                           + (f'{bud_[0]} €' if bud_[0] == bud_[1] else f'{bud_[0]}-{bud_[1]} €') + ' al día, el presupuesto más ajustado de esta guía (alojamiento, comida y transporte). Precio del vuelo consultado en Kiwi.com; puede cambiar.</p>')
+            _inject(f'destinos/{d}/index.html', f'<section class="sec" style="padding-top:0" id="precios"><div class="wrap">{h_es}{cost_es}'
                     f'<p style="margin-top:12px"><a class="hlc-btn o" href="/vuelos/a/{d}/">Precios desde las {len(lst)} ciudades y el mes más barato</a></p></div></section>')
-            _inject(f'en/destinations/{G.en_dest_slug(d)}/index.html', f'<section class="sec" style="padding-top:0" id="prices"><div class="wrap"><h2>How much it costs to fly to {e(dname_en)}</h2><p>Cheapest return price we found from the main cities (from €{low}).</p>'
-                    f'<div class="pm-scroll" style="max-width:640px"><table class="pm-t"><thead><tr><th scope="col">From</th><th scope="col">Lowest</th><th scope="col">Stops</th></tr></thead><tbody>{rows_en}</tbody></table></div>'
+            # Inglés: Reino Unido e Irlanda ("How to get to X from the UK and Ireland"), con la salida de Londres destacada
+            uk = sorted([r for r in lst if r['origin'] in UK_IE], key=lambda r: r['price_from'])
+            if uk:
+                lon = next((r for r in uk if r['origin'] in ('Londres', 'London')), None)
+                rows_uk = ''.join(f'<tr><th scope="row"><a href="/en/flights/{en_slug(r)}/">{e(en_names.city_en(r["origin"]))}</a></th><td class="pm-p">€{r["price_from"]}</td><td>{e(stops((r.get("facts") or {}).get("escalas_ida"), True))}</td><td>{e((r.get("facts") or {}).get("aerolinea") or "")}</td></tr>' for r in uk)
+                lon_t = ''
+                if lon:
+                    fl_ = lon.get('facts') or {}
+                    lon_t = (f' From London, the cheapest return flight we found costs €{lon["price_from"]}' + (f' with {e(fl_.get("aerolinea"))}' if fl_.get('aerolinea') else '')
+                             + (', nonstop' if fl_.get('escalas_ida') == 0 else '') + '.')
+                h_en = (f'<h2>How to get to {e(dname_en)} from the UK and Ireland</h2><p>Cheapest return flights we found from {len(uk)} UK and Irish {"city" if len(uk) == 1 else "cities"}, from €{uk[0]["price_from"]}.{lon_t}</p>'
+                        f'<div class="pm-scroll" style="max-width:720px"><table class="pm-t"><thead><tr><th scope="col">From</th><th scope="col">Lowest</th><th scope="col">Stops</th><th scope="col">Airline</th></tr></thead><tbody>{rows_uk}</tbody></table></div>'
+                        f'<p>Other departure cities:</p><div class="pm-scroll" style="max-width:640px"><table class="pm-t"><thead><tr><th scope="col">From</th><th scope="col">Lowest</th><th scope="col">Stops</th></tr></thead><tbody>{rows_en}</tbody></table></div>')
+                fl_en, fl_from_en = uk[0]['price_from'], en_names.city_en(uk[0]['origin'])
+            else:
+                h_en = (f'<h2>How much it costs to fly to {e(dname_en)}</h2><p>Cheapest return price we found from the main cities (from €{low}).</p>'
+                        f'<div class="pm-scroll" style="max-width:640px"><table class="pm-t"><thead><tr><th scope="col">From</th><th scope="col">Lowest</th><th scope="col">Stops</th></tr></thead><tbody>{rows_en}</tbody></table></div>')
+                fl_en, fl_from_en = low, en_names.city_en(min(lst, key=lambda r: r['price_from'])['origin'])
+            if nd_ and bud_:
+                a_, b_ = fl_en + nd_ * bud_[0], fl_en + nd_ * bud_[1]
+                cost_en = (f'<h3>How much a {nd_}-day trip to {e(dname_en)} costs</h3><p>About ' + (f'€{a_}' if a_ == b_ else f'€{a_} to €{b_}') + f' per person: a return flight from €{fl_en} (from {e(fl_from_en)}) plus {nd_} days at '
+                           + (f'€{bud_[0]}' if bud_[0] == bud_[1] else f'€{bud_[0]}-{bud_[1]}') + ' a day, the tightest budget in our guide (accommodation, food and transport). Flight price checked on Kiwi.com; it can change.</p>')
+            _inject(f'en/destinations/{G.en_dest_slug(d)}/index.html', f'<section class="sec" style="padding-top:0" id="prices"><div class="wrap">{h_en}{cost_en}'
                     f'<p style="margin-top:12px"><a class="hlc-btn o" href="/en/flights/to/{G.en_dest_slug(d)}/">Prices from all {len(lst)} cities</a></p></div></section>')
     ds = sorted(by_dest.items(), key=lambda kv: kv[1][0]['dest'])
     os_ = sorted(by_orig.items())
@@ -407,7 +560,12 @@ def build(rows, en_slug):
                       f'<h2 style="margin-top:28px">{T("Precios por ciudad de salida", "Prices by departure city")}</h2><div class="chips pm-chips">{oa}</div>'
                       f'<h2 style="margin-top:28px">{T("Nuestros datos", "Our data")}</h2><div class="chips pm-chips"><a class="chip" href="{T("/vuelos/datos/", "/en/flights/data/")}">{T("Precios de vuelos 2026 por ruta", "Flight prices 2026 by route")}</a>'
                       f'<a class="chip" href="{T("/vuelos/datos/mes-mas-barato/", "/en/flights/data/cheapest-month/")}">{T("Mes más barato por destino", "Cheapest month by destination")}</a>'
-                      f'<a class="chip" href="/vuelos/precios-vuelos-2026.csv">CSV</a></div></div></section>')
+                      f'<a class="chip" href="/vuelos/precios-vuelos-2026.csv">CSV</a>'
+                      + ''.join(f'<a class="chip" href="{T("/vuelos/mes/" + MES_ES[m_ - 1] + "-" + str(y_) + "/", "/en/flights/month/" + MES_EN[m_ - 1].lower() + "-" + str(y_) + "/")}">{T("Vuelos baratos en " + MES_ES[m_ - 1], "Cheap flights in " + MES_EN[m_ - 1])} {y_}</a>'
+                                for y_, m_ in [(_today.year + (_today.month - 1 + k) // 12, (_today.month - 1 + k) % 12 + 1) for k in range(1, 4)])
+                      + '</div></div></section>')
+    home_blocks(by_orig, by_dest, en_slug)
+    xmas_blocks(rows, meses, en_slug)
     du_es, du_en = data_pages(rows, meses, en_slug)
     urls_es += du_es
     urls_en += du_en
@@ -510,4 +668,53 @@ def data_pages(rows, meses, en_slug):
                  + '</div></main>' + FILTER_JS.replace('.pm-t:not(.pm-m) tbody tr', '.pm-t tbody tr') + (E.FOOTER if en else '') + '</body></html>')
         write('en/flights/data/cheapest-month' if en else 'vuelos/datos/mes-mas-barato', page)
         (out_en if en else out_es).append((url2, t2))
+
+        # ---- vuelos baratos por mes (los tres próximos): el precio más bajo de cada destino en ese mes, de nuestro calendario ----
+        base_m = 'en/flights/month' if en else 'vuelos/mes'
+        keep_m = set()
+        for k in range(1, 4):
+            y_, m_ = _today.year + (_today.month - 1 + k) // 12, (_today.month - 1 + k) % 12 + 1
+            ym = f'{y_}-{m_:02d}'
+            slug_m = (MES_EN[m_ - 1].lower() if en else MES_ES[m_ - 1]) + f'-{y_}'
+            keep_m.add(slug_m)
+            pool = [r for r in rows if (en or r['origin'] in SPAIN)]
+            bym = {}
+            for r in pool:
+                pm = next((m[1] for m in ((meses.get(r['slug']) or {}).get('m') or []) if m[0] == ym and m[1]), None)
+                if pm and (r['dest_slug'] not in bym or pm < bym[r['dest_slug']][1]):
+                    bym[r['dest_slug']] = (r, pm)
+            if len(bym) < 10:
+                continue
+            lst_m = sorted(bym.values(), key=lambda v: v[1])
+            mn = T(f'{MES_ES[m_ - 1]} de {y_}', f'{MES_EN[m_ - 1]} {y_}')
+            url3_es, url3_en = f'{SITE}/vuelos/mes/{MES_ES[m_ - 1]}-{y_}/', f'{SITE}/en/flights/month/{MES_EN[m_ - 1].lower()}-{y_}/'
+            url3 = url3_en if en else url3_es
+            u100 = sum(1 for v in lst_m if v[1] < 100)
+            title3 = T(f'Vuelos baratos en {MES_ES[m_ - 1]} {y_}: {len(lst_m)} destinos desde {lst_m[0][1]} €', f'Cheap flights in {mn}: {len(lst_m)} destinations from €{lst_m[0][1]}')
+            lead3 = T(f'El vuelo de ida y vuelta más barato que encontramos para {mn} a cada destino, saliendo de España: {", ".join(f"{dname(r)} ({p} € desde {oname(r)})" for r, p in lst_m[:3])}. '
+                      f'{u100} destinos por menos de 100 €. Sale de nuestro calendario de precios (Kiwi.com), que se actualiza cada pocos días.',
+                      f'The cheapest return flight we found for {mn} to each destination: {", ".join(f"{dname(r)} (€{p} from {oname(r)})" for r, p in lst_m[:3])}. '
+                      f'{u100} destinations under €100. From our price calendar (Kiwi.com), refreshed every few days.')
+            trs3 = ''.join(f'<tr data-q="{e(G.slugify(dname(r) + " " + oname(r)))}"><th scope="row"><a href="{link(r)}">{e(dname(r))}</a></th><td class="pm-p">{p} €</td><td>{e(oname(r))}</td></tr>' for r, p in lst_m[:80])
+            tbl3 = (f'<div class="pm-scroll"><table class="pm-t pm-x"><thead><tr><th scope="col">{T("Destino", "Destination")}</th><th scope="col">{T("Desde", "From")} ({e(mn)})</th><th scope="col">{T("Salida", "Departure")}</th></tr></thead><tbody>{trs3}</tbody></table></div>')
+            other = ''.join(f'<a class="chip" href="/{base_m}/{s_}/">{e(s_.replace("-", " ").capitalize())}</a>' for s_ in [(MES_EN[((_today.month - 1 + j) % 12)].lower() if en else MES_ES[((_today.month - 1 + j) % 12)]) + f'-{_today.year + (_today.month - 1 + j) // 12}' for j in range(1, 4)] if s_ != slug_m)
+            qas3 = [(T(f'¿Cuál es el destino más barato para volar en {mn}?', f'What is the cheapest destination to fly to in {mn}?'),
+                     T(f'En nuestro calendario, {dname(lst_m[0][0])}: ida y vuelta desde {lst_m[0][1]} € saliendo de {oname(lst_m[0][0])}.', f'In our calendar, {dname(lst_m[0][0])}: return from €{lst_m[0][1]} from {oname(lst_m[0][0])}.')),
+                    (T(f'¿Cuántos destinos hay por menos de 100 € en {mn}?', f'How many destinations are under €100 in {mn}?'),
+                     T(f'{u100} de los {len(lst_m)} destinos que vigilamos tienen vuelo de ida y vuelta por menos de 100 € en {mn}.', f'{u100} of the {len(lst_m)} destinations we track have a return flight under €100 in {mn}.'))]
+            crumbs3 = crumbs[:2] + [(T('Vuelos baratos en ' + mn, 'Cheap flights in ' + mn), None)]
+            page = page_shell(en, title3, G.smart_desc(lead3, 160), url3, url3_es if en else url3_en, [faq_ld(qas3, 'en' if en else 'es-ES'), crumbs_ld(crumbs3)], 'precios')
+            page += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs3, en)}<div class="kicker">{T("Precios reales, consultados en Kiwi.com", "Real prices, checked on Kiwi.com")}</div><h1 class="x-h1">{e(title3)}</h1>'
+                     + QA_BOX(T, lead3) + f'<input type="search" class="pm-q" placeholder="{T("Filtra por destino", "Filter by destination")}" aria-label="{T("Filtrar", "Filter")}">' + tbl3
+                     + f'<p class="pm-note">{e(T("Precio de ida y vuelta en clase turista para 1 adulto, el más bajo que vimos para alguna fecha de ese mes. Puede cambiar.", "Return economy fare for 1 adult, the lowest we saw for some date in that month. It can change."))}</p>'
+                     + f'<h2>{T("Otros meses", "Other months")}</h2><div class="chips">{other}<a class="chip" href="{T("/vuelos/datos/mes-mas-barato/", "/en/flights/data/cheapest-month/")}">{T("Mes más barato por destino", "Cheapest month by destination")}</a></div>'
+                     + '<h2>' + T('Preguntas frecuentes', 'FAQ') + '</h2>' + ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in qas3)
+                     + '</div></main>' + FILTER_JS.replace('.pm-t:not(.pm-m) tbody tr', '.pm-t tbody tr') + (E.FOOTER if en else '') + '</body></html>')
+            write(f'{base_m}/{slug_m}', page)
+            (out_en if en else out_es).append((url3, t2))
+        if os.path.isdir(base_m):
+            import shutil
+            for d_ in os.listdir(base_m):
+                if d_ not in keep_m and os.path.isdir(os.path.join(base_m, d_)):
+                    shutil.rmtree(os.path.join(base_m, d_))
     return out_es, out_en
