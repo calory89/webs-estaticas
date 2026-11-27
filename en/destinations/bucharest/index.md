@@ -127,6 +127,10 @@ It is wise. Tours can sell out in high season, and you need a passport or ID to 
 
 May, June and September are the most pleasant for weather and light, with fewer extremes than summer or winter.
 
+### Is Bucharest worth visiting?
+
+For the traveller who wrote this guide, yes: Bucharest is not pretty in the obvious way, and that is half the appeal. 3 days are enough for the essentials. Budget: Budget: around €40 to €55 per day (hostel bed, street food, public transport).
+
 ## Flights and deals
 
 - Flight deals to Bucharest: https://www.happylowcost.com/en/destinations/bucharest/#deals

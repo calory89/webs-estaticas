@@ -236,6 +236,10 @@ Younger people and hotel staff often speak some English, and the MRT signs are i
 
 October and November offer the best weather, with dry, warm days and no typhoons. March and April are a good second choice.
 
+### Is Taipei worth visiting?
+
+For the traveller who wrote this guide, yes: Taipei is not a pretty city at first glance. 4 days are enough for the essentials. Budget: Shoestring: €45-60 (NT$1,600-2,100) per day.
+
 ## Flights and deals
 
 - Flight deals to Taipei: https://www.happylowcost.com/en/destinations/taipei/#deals

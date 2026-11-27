@@ -119,6 +119,10 @@ No es imprescindible. Con el autobús desde Fira llegas a los puntos principales
 
 Oia es lo más famoso, pero también el más masificado. Imerovigli y Firostefani ofrecen una vista muy parecida con bastante menos gente.
 
+### ¿Merece la pena visitar Santorini?
+
+Para quien escribió esta guía, sí: Santorini es lo que parece en las fotos: un acantilado de más de 200 metros sobre una caldera volcánica, con pueblos blancos colgados del borde. Con 3 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santorini: https://www.happylowcost.com/destinos/santorini/#chollos

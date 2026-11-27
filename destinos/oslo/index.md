@@ -109,6 +109,10 @@ Prácticamente en todas partes, incluso para cosas pequeñas. No hace falta llev
 
 Muy raramente. Para eso hay que subir al norte del país, a Tromsø o más arriba.
 
+### ¿Merece la pena visitar Oslo?
+
+Para quien escribió esta guía, sí: Oslo no es la ciudad más espectacular de Noruega, y mejor saberlo antes de ir. Con 3 días ves lo esencial. Presupuesto: Un dormitorio compartido ronda los 40 a 60 euros por noche, y una doble sencilla suele quedar entre 100 y 160 euros, más en verano.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Oslo: https://www.happylowcost.com/destinos/oslo/#chollos

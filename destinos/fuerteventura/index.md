@@ -241,6 +241,10 @@ Menos que muchas zonas de playa de la península: gasolina y alcohol son más ba
 
 En agosto y septiembre, con máximas en torno a 28-30 °C. En invierno ronda los 20-22 °C, suficiente para playa en días sin viento.
 
+### ¿Merece la pena visitar Fuerteventura?
+
+Para quien escribió esta guía, sí: Fuerteventura es una isla seca, marrón, ventosa y bastante vacía, y precisamente por eso engancha. Con 6 días ves lo esencial. Presupuesto: Ajustado (unos 70-90 € por persona y día, en pareja): apartamento compartido a 70 €, coche a medias, compra en supermercado y un menú al día, playas y senderos gratis.
+
 ### ¿Es caro viajar a Fuerteventura?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 70-90 €, en pareja por persona y día, y en el nivel "medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -109,6 +109,10 @@ January, February and early November have the lowest prices for flights and hote
 
 Today the cheapest deal we have to Krakow is €58 return from Bilbao. Fares change by the hour: check the live price on the deal page.
 
+### Is Krakow worth visiting?
+
+For the traveller who wrote this guide, yes: Kraków came through the Second World War with its medieval centre largely intact, and you feel it the moment you step into the Main Square. 3 days are enough for the essentials. Budget: Budget: about €40 to €55 a day, with a hostel bed, milk bar meals, street food and one museum.
+
 ## Flights and deals
 
 - Flight deals to Krakow: https://www.happylowcost.com/en/destinations/krakow/#deals

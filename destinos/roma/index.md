@@ -114,6 +114,10 @@ Solo si vas a hacer muchos museos y usar mucho el transporte. Calcula antes con 
 
 Tres días para lo esencial, cuatro para ir con calma. Menos de dos es un maratón poco recomendable.
 
+### ¿Merece la pena visitar Roma?
+
+Para quien escribió esta guía, sí: Roma no se visita, se anda. Puedes salir del hotel sin plan, girar por una callejuela y acabar delante de una iglesia del siglo XVII con un Caravaggio dentro y la puerta abierta. Con 4 días ves lo esencial. Presupuesto: Como referencia general: una cama en hostal suele moverse entre 25 y 45 euros, una habitación doble en hotel de gama media entre 90 y 150, y los hoteles más cómodos arrancan sobre los 200.
+
 ### ¿Es caro viajar a Roma?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -108,6 +108,10 @@ You might spot geiko or maiko in the evening around Hanamikoji. Keep your distan
 
 Early April and mid-to-late November have the best scenery but also the biggest crowds. Late April, May and October are good compromises.
 
+### Is Kyoto worth visiting?
+
+For the traveller who wrote this guide, yes: Kyoto was Japan's capital for over a thousand years, and it shows. 4 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Kyoto: https://www.happylowcost.com/en/destinations/kyoto/#deals

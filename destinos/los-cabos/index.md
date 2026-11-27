@@ -241,6 +241,10 @@ No, los españoles entran como turistas sin visado con pasaporte en vigor. Compr
 
 El peso mexicano, aunque el dólar se acepta casi en todas partes. Pagar en pesos o con tarjeta suele salir más barato.
 
+### ¿Merece la pena visitar Los Cabos?
+
+Para quien escribió esta guía, sí: Los Cabos no es una ciudad, sino dos pueblos muy distintos unidos por una carretera de unos 30 km llena de resorts y campos de golf. Con 5 días ves lo esencial. Presupuesto: Calcula con 1 € a unos 20 MXN, y prepárate para ver muchos precios en dólares.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Los Cabos: https://www.happylowcost.com/destinos/los-cabos/#chollos

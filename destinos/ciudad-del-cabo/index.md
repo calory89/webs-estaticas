@@ -119,6 +119,10 @@ De noviembre a marzo hay buen tiempo. Para evitar multitudes y precios altos, me
 
 Sí, en Ciudad del Cabo el agua del grifo es potable. Aun así, en épocas de sequía puede haber restricciones, así que respeta las normas de ahorro del alojamiento.
 
+### ¿Merece la pena visitar Ciudad del Cabo?
+
+Para quien escribió esta guía, sí: Pocas ciudades del mundo tienen una montaña plana en medio del centro, dos océanos a tiro de coche, pingüinos en una playa y viñedos a media hora. Con 5 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad del Cabo: https://www.happylowcost.com/destinos/ciudad-del-cabo/#chollos

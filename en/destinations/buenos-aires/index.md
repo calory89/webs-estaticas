@@ -142,6 +142,10 @@ Colonia del Sacramento in Uruguay if you want a change of country and old-world 
 
 4 days are enough to see the essentials of Buenos Aires without rushing. The route in this guide is organised day by day.
 
+### Is Buenos Aires worth visiting?
+
+For the traveller who wrote this guide, yes: Buenos Aires feels like a European capital that drifted south and picked up a stronger personality on the way. 4 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Buenos Aires: https://www.happylowcost.com/en/destinations/buenos-aires/#deals

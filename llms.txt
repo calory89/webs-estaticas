@@ -19,8 +19,9 @@ Happy Low Cost is a cheap-flight deals site founded by Carlos de Ory (https://ww
 - [Destinations map and guides](https://www.happylowcost.com/destinos/)
 - [Where to stay: the 3 best hotels in each destination](https://www.happylowcost.com/hoteles/)
 - [Create a free deal alert](https://www.happylowcost.com/alertas/)
-- [How we verify each deal](https://www.happylowcost.com/como-verificamos/)
-- [Fare errors: what they are and what to do if they are cancelled](https://www.happylowcost.com/guias/errores-de-tarifa/)
+- [How we verify each deal](https://www.happylowcost.com/como-verificamos/) ([English](https://www.happylowcost.com/en/how-we-verify/)); [legal notice and privacy](https://www.happylowcost.com/aviso-legal-datos-cookies/) ([English](https://www.happylowcost.com/en/legal/))
+- [Happy Low Cost or a flight search engine: which to use and when](https://www.happylowcost.com/en/happy-low-cost-vs-flight-search-engines/) ([Spanish](https://www.happylowcost.com/happy-low-cost-vs-buscadores/))
+- [Fare errors: what they are, how to book one step by step and what to do if they are cancelled](https://www.happylowcost.com/guias/errores-de-tarifa/) ([English](https://www.happylowcost.com/en/guides/error-fares/))
 - [Travel tools](https://www.happylowcost.com/herramientas/)
 - [Blog](https://www.happylowcost.com/blog/)
 
@@ -30,6 +31,7 @@ Happy Low Cost is a cheap-flight deals site founded by Carlos de Ory (https://ww
 - [Under €50](https://www.happylowcost.com/chollos/ideas/menos-de-50-euros/) and [under €100](https://www.happylowcost.com/chollos/ideas/menos-de-100-euros/)
 - [Long haul](https://www.happylowcost.com/chollos/ideas/larga-distancia/)
 - [Direct flights only](https://www.happylowcost.com/chollos/ideas/directos/)
+- Long weekends 2027 with cheap city breaks: [Spain (puentes 2027)](https://www.happylowcost.com/vuelos/puentes-2027/) ([English](https://www.happylowcost.com/en/flights/spain-bank-holidays-2027/)) and [UK bank holidays 2027](https://www.happylowcost.com/en/flights/uk-bank-holidays-2027/) ([Spanish](https://www.happylowcost.com/vuelos/festivos-reino-unido-2027/))
 - By region: [Europe](https://www.happylowcost.com/chollos/a/europa/), [North America](https://www.happylowcost.com/chollos/a/norteamerica/), [Asia](https://www.happylowcost.com/chollos/a/asia/)
 
 ## Machine-readable data

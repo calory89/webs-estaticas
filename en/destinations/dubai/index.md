@@ -150,6 +150,10 @@ Yes, easily. It's roughly 90 minutes by road or intercity bus. The Sheikh Zayed 
 
 4 days are enough to see the essentials of Dubai without rushing. The route in this guide is organised day by day.
 
+### Is Dubai worth visiting?
+
+For the traveller who wrote this guide, yes: Dubai is a city built at absurd speed, and that is both the appeal and the catch. 4 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Dubai: https://www.happylowcost.com/en/destinations/dubai/#deals

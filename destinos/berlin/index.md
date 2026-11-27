@@ -126,6 +126,10 @@ No siempre. Aunque ha mejorado, muchos bares, puestos y tiendas pequeñas solo a
 
 Para primera visita, Mitte o Friedrichshain. Si buscas ambiente alternativo, Kreuzberg; si prefieres tranquilidad, Prenzlauer Berg.
 
+### ¿Merece la pena visitar Berlín?
+
+Para quien escribió esta guía, sí: Berlín no es una ciudad bonita en el sentido de Praga o Viena, y conviene saberlo antes de aterrizar. Con 4 días ves lo esencial. Presupuesto: Mochilero: unos 50-65 euros (dormitorio compartido, comida callejera, museos gratuitos o uno de pago al día).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Berlín: https://www.happylowcost.com/destinos/berlin/#chollos

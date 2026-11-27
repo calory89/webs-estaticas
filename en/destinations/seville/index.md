@@ -250,6 +250,10 @@ Yes. It's generally safe. The main issues are pickpockets in crowds and the rose
 
 Easily. The AVE train takes about 45 minutes, so Córdoba works as a day trip from Seville.
 
+### Is Seville worth visiting?
+
+For the traveller who wrote this guide, yes: Seville is the Spain people picture before they've been: orange trees, tiled courtyards, flamenco, and tapas bars where locals eat standing up at 10pm. 3 days are enough for the essentials. Budget: Typical sight costs: Alcázar €16-20, Cathedral €13-15, Casa de Pilatos €12-18, flamenco €25-30.
+
 ## Flights and deals
 
 - Flight deals to Seville: https://www.happylowcost.com/en/destinations/seville/#deals

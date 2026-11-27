@@ -233,6 +233,10 @@ Sí, sin problema. Hay buses cada pocos minutos y el trayecto dura menos de dos 
 
 Después de un día de lluvia o viento, cuando se limpia el aire. En invierno y primavera las montañas están nevadas y la vista es mucho mejor.
 
+### ¿Merece la pena visitar Santiago de Chile?
+
+Para quien escribió esta guía, sí: Santiago no es una ciudad que enamore a primera vista. Con 3 días ves lo esencial. Presupuesto: Por persona y día, sin vuelos: Ajustado: 45-60 €.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santiago de Chile: https://www.happylowcost.com/destinos/santiago-de-chile/#chollos

@@ -113,6 +113,10 @@ Visit the big sights early in the morning or in the evening, stay a few streets 
 
 Today the cheapest deal we have to Prague is €106 return from Zaragoza. Fares change by the hour: check the live price on the deal page.
 
+### Is Prague worth visiting?
+
+For the traveller who wrote this guide, yes: Prague came through the twentieth century with its centre largely intact, and you feel it the minute you climb out of the metro. 3 days are enough for the essentials. Budget: A budget traveller can manage on about 50 to 70 euros a day with a hostel, lunch menus, a pub dinner and transport passes.
+
 ## Flights and deals
 
 - Flight deals to Prague: https://www.happylowcost.com/en/destinations/prague/#deals

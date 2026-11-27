@@ -227,6 +227,10 @@ Sí, el español es la lengua de la calle y casi todo el mundo habla también in
 
 De finales de abril a junio y de septiembre a noviembre, con vuelos y hoteles bastante más baratos. Esta última etapa coincide con la temporada de huracanes, así que contrata seguro con cancelación.
 
+### ¿Merece la pena visitar San Juan?
+
+Para quien escribió esta guía, sí: San Juan es una ciudad caribeña con dos caras que conviven a diez minutos en coche. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado: unos 120-150 $ (110-140 €) por persona y día, durmiendo en hostal o apartamento compartido en Santurce, comiendo en kioscos y fondas y moviéndote en bus y Uber puntual.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Juan: https://www.happylowcost.com/destinos/san-juan/#chollos

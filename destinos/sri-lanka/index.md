@@ -130,6 +130,10 @@ Sí, se tramita online mediante la autorización electrónica (ETA). Hazla antes
 
 De diciembre a marzo suele ser lo más estable para el sur, el oeste y las montañas. Para la costa este, mejor de abril a septiembre.
 
+### ¿Merece la pena visitar Sri Lanka?
+
+Para quien escribió esta guía, sí: Sri Lanka es una isla del tamaño de Aragón y poco más, pero en ella caben ruinas de reinos de hace dos mil años, plantaciones de té a más de mil metros, elefantes en libertad, surf y una costa con fuertes coloniales. Con 10 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sri Lanka: https://www.happylowcost.com/destinos/sri-lanka/#chollos

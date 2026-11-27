@@ -127,6 +127,10 @@ En la mayoría de hoteles, tiendas y grandes cadenas, sí. Para bares pequeños,
 
 Con 5 días ves lo esencial de Tokio sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Tokio?
+
+Para quien escribió esta guía, sí: Tokio no se parece a nada que hayas visto, y lo curioso es que casi nunca resulta agobiante. Con 5 días ves lo esencial. Presupuesto: Ajustado (60-80 euros): hostal o cápsula, comidas en cadenas y konbini, transporte con Suica y entradas gratuitas.
+
 ### ¿Es caro viajar a Tokio?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

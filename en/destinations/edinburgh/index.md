@@ -149,6 +149,10 @@ Very, but expect steep streets, steps and cobbles. Wear sturdy shoes and pack a 
 
 St Andrews is the favourite for a coast and old-town feel. Stirling is a good pick for history, and North Berwick is a relaxed seaside option.
 
+### Is Edinburgh worth visiting?
+
+For the traveller who wrote this guide, yes: Edinburgh is built on volcanic rock, and it shows. 3 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Edinburgh: https://www.happylowcost.com/en/destinations/edinburgh/#deals

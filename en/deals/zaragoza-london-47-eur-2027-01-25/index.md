@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €90
 - **Saving:** 48 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Zaragoza to London?
 
-€47 return with Ryanair, leaving 25 Jan 2027 and coming back 1 Feb 2027. Price last checked on 26 Nov 2026.
+€47 return with Ryanair, leaving 25 Jan 2027 and coming back 1 Feb 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

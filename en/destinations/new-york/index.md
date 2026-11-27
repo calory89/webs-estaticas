@@ -103,6 +103,10 @@ January and February, outside holiday periods, bring the lowest hotel and flight
 
 No. Parking is costly, traffic is heavy and the subway is faster. Only consider a car for day trips beyond the city.
 
+### Is New York worth visiting?
+
+For the traveller who wrote this guide, yes: New York is loud, expensive and tiring, and it is still one of the few cities that lives up to its reputation. 5 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to New York: https://www.happylowcost.com/en/destinations/new-york/#deals

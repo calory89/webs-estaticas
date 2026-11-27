@@ -128,6 +128,10 @@ Algo. El primer día puedes notar cansancio o dolor de cabeza. Bebe agua, evita 
 
 La mayoría de los grandes, incluidos el de Antropología, el Templo Mayor y la Casa Azul. Planifica los lunes para pasear por barrios o mercados.
 
+### ¿Merece la pena visitar Ciudad de México?
+
+Para quien escribió esta guía, sí: Es una de las pocas capitales del mundo que abruma y engancha a la vez. Con 4 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad de México: https://www.happylowcost.com/destinos/ciudad-de-mexico/#chollos

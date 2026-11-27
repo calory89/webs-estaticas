@@ -219,6 +219,10 @@ No, todas las playas son públicas. En las más visitadas pagas el parking en te
 
 Es la bebida típica de Menorca: ginebra local Xoriguer con limonada. Se toma sobre todo en fiestas y en verano.
 
+### ¿Merece la pena visitar Menorca?
+
+Para quien escribió esta guía, sí: Menorca es la Balear tranquila. No tiene la fiesta de Ibiza ni el tamaño de Mallorca. Con 5 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 80-110 € al día por persona): habitación compartida en el interior o en Maó, bus, picnic de mercado y una cena sencilla.
+
 ### ¿Es caro viajar a Menorca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

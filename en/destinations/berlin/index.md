@@ -134,6 +134,12 @@ Generally yes. Watch for pickpockets around Alexanderplatz, major stations and c
 
 Not always. Germany is still more cash-friendly than many countries, and some small cafés, bars and market stalls prefer or require cash. Carry some euros.
 
+## FAQs
+
+### Is Berlin worth visiting?
+
+For the traveller who wrote this guide, yes: Berlin is big, flat, a bit scruffy and endlessly interesting. 4 days are enough for the essentials. Budget: Shoestring: about 55 to 75 euros, with a hostel dorm, street food, and free sights.
+
 ## Flights and deals
 
 - Flight deals to Berlin: https://www.happylowcost.com/en/destinations/berlin/#deals

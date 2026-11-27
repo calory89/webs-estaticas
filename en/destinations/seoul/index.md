@@ -123,6 +123,10 @@ Cards are accepted almost everywhere, and T-money works for transport and in con
 
 5 days are enough to see the essentials of Seoul without rushing. The route in this guide is organised day by day.
 
+### Is Seoul worth visiting?
+
+For the traveller who wrote this guide, yes: Seoul is one of the few huge cities that is easy to enjoy. 5 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Seoul: https://www.happylowcost.com/en/destinations/seoul/#deals

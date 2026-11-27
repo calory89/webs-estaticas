@@ -136,6 +136,10 @@ Yes, mostly in summer. Many swimming spots are rocky natural pools or small beac
 
 It's cheaper than much of Western Europe, especially for food. Car rental and accommodation are the main costs, particularly in peak summer.
 
+### Is The Azores worth visiting?
+
+For the traveller who wrote this guide, yes: Nine volcanic islands sit in the middle of the Atlantic, about a three-hour flight from Lisbon and a little over four from Boston.
+
 ## Flights and deals
 
 - Flight deals to The Azores: https://www.happylowcost.com/en/destinations/azores/#deals

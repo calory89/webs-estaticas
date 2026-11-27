@@ -221,6 +221,10 @@ En la ciudad está Pane e Pomodoro, correcta para un baño rápido. Las buenas e
 
 Noviembre, enero y febrero, con vuelos y hoteles muy baratos. Para combinar precio y buen tiempo, mayo y finales de septiembre.
 
+### ¿Merece la pena visitar Bari y Puglia?
+
+Para quien escribió esta guía, sí: Bari no es una ciudad bonita de postal. Es un puerto grande, ruidoso y bastante desordenado. Con 5 días ves lo esencial. Presupuesto: Presupuesto ajustado: 60-80 € al día por persona.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bari y Puglia: https://www.happylowcost.com/destinos/bari/#chollos

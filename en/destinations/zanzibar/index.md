@@ -142,6 +142,10 @@ Light cotton clothes, a cover-up for Stone Town, reef-safe sunscreen, a hat, ins
 
 7 days are enough to see the essentials of Zanzibar without rushing. The route in this guide is organised day by day.
 
+### Is Zanzibar worth visiting?
+
+For the traveller who wrote this guide, yes: Zanzibar is two things at once. One is a maze of coral-stone alleys where Swahili, Arab, Indian and European history is stacked on top of itself. 7 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Zanzibar: https://www.happylowcost.com/en/destinations/zanzibar/#deals

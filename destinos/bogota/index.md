@@ -132,6 +132,10 @@ Los ciudadanos españoles no necesitan visado para estancias turísticas cortas,
 
 En hoteles, centros comerciales y restaurantes medios, sí. En mercados, taxis y puestos callejeros necesitarás efectivo en pesos colombianos, así que saca dinero en cajeros de bancos o centros comerciales.
 
+### ¿Merece la pena visitar Bogotá?
+
+Para quien escribió esta guía, sí: Bogotá no entra por los ojos como Cartagena ni tiene el clima de Medellín. Con 3 días ves lo esencial. Presupuesto: Como referencia, una cama en dormitorio compartido ronda los 10-20 euros, una habitación privada sencilla 30-50 euros y un hotel de categoría media 60-100 euros por noche.
+
 ### ¿Es caro viajar a Bogotá?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-45 euros por persona y día, y en el nivel "cómodo", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

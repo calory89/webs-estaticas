@@ -239,6 +239,10 @@ La Praia da Marinha es la más famosa y lo merece, pero Camilo, Dona Ana y Belic
 
 Sí, desde Tavira o Faro son unas 2 horas en coche o algo más en autobús. Desde Lagos se hace muy pesado.
 
+### ¿Merece la pena visitar Algarve?
+
+Para quien escribió esta guía, sí: El Algarve son unos 150 kilómetros de costa en el sur de Portugal con dos caras muy distintas. Con 6 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 70-90 € al día) : hostal o habitación sencilla (30-50 €), prato do dia y supermercado (20-25 €), tren y ferris (5-10 €), playas y senderos gratis.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Algarve: https://www.happylowcost.com/destinos/algarve/#chollos

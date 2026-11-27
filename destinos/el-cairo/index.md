@@ -124,6 +124,10 @@ Ropa ligera que tape hombros y rodillas, sobre todo para visitar mezquitas. Las 
 
 Con 4 días ves lo esencial de El Cairo sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar El Cairo?
+
+Para quien escribió esta guía, sí: El Cairo cansa, y también engancha. Hay más de veinte millones de personas, un tráfico que parece improvisado y un nivel de ruido que no baja ni de madrugada. Con 4 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a El Cairo: https://www.happylowcost.com/destinos/el-cairo/#chollos

@@ -148,6 +148,10 @@ Pompeii is larger and more famous, and needs most of a day. Herculaneum is compa
 
 Yes, Naples tap water is safe and widely praised. Fill a bottle and save money.
 
+### Is Naples worth visiting?
+
+For the traveller who wrote this guide, yes: Naples is loud, crowded, a bit scruffy and completely unlike anywhere else in Italy. 3 days are enough for the essentials. Budget: Budget: about €60 to 80, with a hostel bed, street food and pizza, and public transport.
+
 ## Flights and deals
 
 - Flight deals to Naples: https://www.happylowcost.com/en/destinations/naples/#deals

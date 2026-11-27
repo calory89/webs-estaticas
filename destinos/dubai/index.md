@@ -142,6 +142,10 @@ El invierno, de noviembre a marzo, tiene el mejor clima. El verano es más barat
 
 Con 4 días ves lo esencial de Dubái sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Dubái?
+
+Para quien escribió esta guía, sí: Dubái tiene fama de ciudad para millonarios, y lo es si te alojas en un resort de Palm Jumeirah y cenas en un restaurante con vistas. Con 4 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Dubái: https://www.happylowcost.com/destinos/dubai/#chollos

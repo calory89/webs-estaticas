@@ -251,6 +251,10 @@ Light, loose clothing covering shoulders and knees, plus a scarf for temples and
 
 From late October to January it can be severe, especially in November. Check the AQI daily, carry an N95 mask and plan indoor time on bad days.
 
+### Is New Delhi worth visiting?
+
+For the traveller who wrote this guide, yes: New Delhi is loud, polluted, chaotic and occasionally exhausting, and it is also one of the best cities in Asia for history and food. 4 days are enough for the essentials. Budget: Hostel dorm €8-15, street food €5, metro €2, one or two paid monuments €6-12.
+
 ### Is New Delhi expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.

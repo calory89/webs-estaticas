@@ -159,6 +159,10 @@ Four or five days is a good balance. Add a couple more if you want to hike a lot
 
 Today the cheapest deal we have to Madeira is €111 return from Gran Canaria. Fares change by the hour: check the live price on the deal page.
 
+### Is Madeira worth visiting?
+
+For the traveller who wrote this guide, yes: Madeira is a steep volcanic island in the Atlantic, closer to Morocco than to Lisbon, and it feels like nowhere else in Portugal. 5 days are enough for the essentials. Budget: Budget: €60-90 per person, with a guesthouse, bakery breakfasts, simple lunches and buses.
+
 ## Flights and deals
 
 - Flight deals to Madeira: https://www.happylowcost.com/en/destinations/madeira/#deals

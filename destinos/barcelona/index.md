@@ -237,6 +237,10 @@ Muchos museos municipales y el MNAC son gratis el primer domingo de mes, y vario
 
 No. Todo el mundo habla castellano y en zonas turísticas también inglés. Un "bon dia" o un "gràcies" siempre se agradece.
 
+### ¿Merece la pena visitar Barcelona?
+
+Para quien escribió esta guía, sí: Barcelona es una ciudad muy fácil de disfrutar y bastante fácil de hacer mal. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado: unos 70-90 € al día por persona.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Barcelona: https://www.happylowcost.com/destinos/barcelona/#chollos

@@ -127,6 +127,10 @@ Con 5 días ves lo esencial de Madeira sin prisas. La ruta de esta guía está o
 
 Hoy el chollo más barato que tenemos a Madeira cuesta 111 € ida y vuelta desde Gran Canaria. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Merece la pena visitar Madeira?
+
+Para quien escribió esta guía, sí: Madeira es una isla pequeña con un relieve exagerado. Con 5 días ves lo esencial. Presupuesto: Como referencia general, un hostal o habitación sencilla puede salir desde unos 25-40 € por persona, un hotel de gama media entre 70 y 120 € la noche para dos, y los de categoría alta suben bastante, sobre todo en Navidad y Fin…
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Madeira: https://www.happylowcost.com/destinos/madeira/#chollos

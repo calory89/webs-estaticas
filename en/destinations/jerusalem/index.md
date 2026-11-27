@@ -235,6 +235,10 @@ Yes. Foreign tourists can take bus 231 from near Damascus Gate and cross the che
 
 Yes. It is guided-only, and slots often sell out days ahead, especially in spring and autumn. Book online as soon as your dates are fixed.
 
+### Is Jerusalem worth visiting?
+
+For the traveller who wrote this guide, yes: Jerusalem is intense, and you should know that before you book. 3 days are enough for the essentials. Budget: Shoestring: €60-80 per day (₪240-320).
+
 ## Flights and deals
 
 - Flight deals to Jerusalem: https://www.happylowcost.com/en/destinations/jerusalem/#deals

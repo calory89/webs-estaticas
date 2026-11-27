@@ -145,6 +145,10 @@ En la zona se habla alemán suizo, pero casi todo el mundo entiende y habla ingl
 
 De mayo a septiembre por el clima y el lago. Diciembre si prefieres mercadillos y ambiente navideño.
 
+### ¿Merece la pena visitar Zúrich?
+
+Para quien escribió esta guía, sí: Zúrich tiene fama de ciudad de bancos y relojes, y es verdad que hay muchos de ambos. Con 2 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Zúrich: https://www.happylowcost.com/destinos/zurich/#chollos

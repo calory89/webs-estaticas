@@ -110,6 +110,12 @@ It's moderate by international standards. Food and transport are cheap if you ea
 
 Some do in hotels and tourist spots, but not widely. A few Portuguese phrases and a translation app help a lot.
 
+## FAQs
+
+### Is Rio de Janeiro worth visiting?
+
+For the traveller who wrote this guide, yes: Rio is a big city that happens to have granite mountains dropping straight into the sea, and that geography shapes everything. 4 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Rio de Janeiro: https://www.happylowcost.com/en/destinations/rio-de-janeiro/#deals

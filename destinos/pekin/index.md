@@ -202,6 +202,10 @@ Sí, para la Ciudad Prohibida, Tiananmén y el Museo Nacional es obligatorio y s
 
 Poco fuera de hoteles y zonas muy turísticas. Lleva un traductor con descarga offline y las direcciones del hotel escritas en chino.
 
+### ¿Merece la pena visitar Pekín?
+
+Para quien escribió esta guía, sí: Pekín no es una ciudad bonita en el sentido europeo. Con 4 días ves lo esencial. Presupuesto: Presupuesto ajustado: 45-60 € al día (albergue o habitación sencilla, comida de barrio, metro y entradas).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Pekín: https://www.happylowcost.com/destinos/pekin/#chollos

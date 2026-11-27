@@ -230,6 +230,10 @@ It's mid-priced by Spanish standards but pricey in August. Shoulder months and s
 
 Very good. Shallow sandy bays like Son Bou, Cala Galdana and Binibeca suit small kids, and the island is calm and safe.
 
+### Is Menorca worth visiting?
+
+For the traveller who wrote this guide, yes: Menorca is the quiet Balearic island. It's flatter, greener and far less built-up than Mallorca or Ibiza. 5 days are enough for the essentials. Budget: Shoestring (about €70-100 per person per day): Shared room or hostal (€40-60 each), buses, supermarket picnics, one menú del día, free beaches.
+
 ## Flights and deals
 
 - Flight deals to Menorca: https://www.happylowcost.com/en/destinations/menorca/#deals

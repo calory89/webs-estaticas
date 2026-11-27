@@ -137,6 +137,10 @@ By bike and on foot. Most major sights sit within a short ride of each other, an
 
 3 days are enough to see the essentials of Copenhagen without rushing. The route in this guide is organised day by day.
 
+### Is Copenhagen worth visiting?
+
+For the traveller who wrote this guide, yes: Copenhagen is a capital you can actually relax in. 3 days are enough for the essentials. Budget: Budget: about 90 to 120 euros, with a hostel, bakery breakfasts, hot dogs and market lunches.
+
 ## Flights and deals
 
 - Flight deals to Copenhagen: https://www.happylowcost.com/en/destinations/copenhagen/#deals

@@ -123,6 +123,10 @@ No. Usa agua embotellada, incluso para lavarte los dientes si tienes el estómag
 
 Si buscas paisaje y frescor, el norte con Hanói, Ninh Binh y Lan Ha. Si prefieres calor, playa y ciudad, Saigón, Mekong y Hoi An.
 
+### ¿Merece la pena visitar Vietnam?
+
+Para quien escribió esta guía, sí: Vietnam es largo, estrecho y muy variado. Presupuesto: En general, hostales con cama en dormitorio desde unos 6-10 €, habitaciones privadas sencillas desde 15-25 € y hoteles muy buenos de 40-70 €, mucho más baratos que en Europa.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Vietnam: https://www.happylowcost.com/destinos/hanoi/#chollos

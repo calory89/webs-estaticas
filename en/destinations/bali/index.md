@@ -122,6 +122,10 @@ No. Many visitors hire a driver for day trips and use apps for short rides. If y
 
 No. Use bottled or filtered water, including for brushing your teeth if you have a sensitive stomach.
 
+### Is Bali worth visiting?
+
+For the traveller who wrote this guide, yes: Bali works because it packs a lot into a small island. 7 days are enough for the essentials.
+
 ### Is Bali expensive?
 
 It depends on how you travel. This guide puts the "budget" level at about $30-50 per person per day and the "comfortable" level at about $200 and up. Flights are extra: this page shows real fares checked by Happy Low Cost.

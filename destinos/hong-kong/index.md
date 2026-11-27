@@ -228,6 +228,10 @@ Sí, en Hong Kong no hay las restricciones de China continental, así que no nec
 
 De octubre a diciembre, por el clima seco y templado. El verano es más barato, pero muy caluroso y con riesgo de tifones.
 
+### ¿Merece la pena visitar Hong Kong?
+
+Para quien escribió esta guía, sí: Hong Kong es una ciudad vertical, húmeda y ruidosa donde los rascacielos se apilan contra montañas cubiertas de selva. Con 4 días ves lo esencial. Presupuesto: Presupuesto ajustado: 70-100 € al día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Hong Kong: https://www.happylowcost.com/destinos/hong-kong/#chollos

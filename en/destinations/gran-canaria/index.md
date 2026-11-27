@@ -238,6 +238,10 @@ Less than most of mainland Spain's resort coasts. Canarian taxes are lower, so d
 
 Yes. The fast ferry from Agaete takes about 1 hour 20 minutes. It's a long day, though, so focus on one area, such as Santa Cruz and La Laguna.
 
+### Is Gran Canaria worth visiting?
+
+For the traveller who wrote this guide, yes: Gran Canaria is two islands pretending to be one. 5 days are enough for the essentials. Budget: Shoestring (€50-70 per day): hostel or a cheap room in Las Palmas (€25-40), menú del día lunches, supermarket breakfast, buses and free beaches.
+
 ## Flights and deals
 
 - Flight deals to Gran Canaria: https://www.happylowcost.com/en/destinations/gran-canaria/#deals

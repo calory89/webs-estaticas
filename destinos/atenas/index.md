@@ -113,6 +113,10 @@ No para Atenas. El tráfico es complicado y aparcar es un dolor de cabeza. Solo 
 
 Hoy el chollo más barato que tenemos a Atenas cuesta 133 € ida y vuelta desde Zaragoza. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Merece la pena visitar Atenas?
+
+Para quien escribió esta guía, sí: Atenas no es una ciudad bonita en el sentido clásico. Con 3 días ves lo esencial. Presupuesto: Como orientación, un hostal en dormitorio compartido ronda los 20-35 € por noche, una habitación doble sencilla suele estar entre 60 y 100 €, y un hotel de gama media entre 100 y 150 €.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Atenas: https://www.happylowcost.com/destinos/atenas/#chollos

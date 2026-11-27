@@ -234,6 +234,10 @@ Sí, es muy segura, incluso de noche. Ten el cuidado normal con la cartera en D�
 
 En hoteles, museos y restaurantes del centro, sí. En bares de leche y con gente mayor, menos; ayuda llevar el traductor del móvil a mano.
 
+### ¿Merece la pena visitar Gdansk?
+
+Para quien escribió esta guía, sí: Gdansk es una ciudad portuaria del Báltico que quedó arrasada en 1945 y se reconstruyó casa a casa, con fachadas estrechas de colores, grúas de astillero y mucha historia del siglo XX. Con 3 días ves lo esencial. Presupuesto: Presupuesto por persona y día, sin vuelo: Ajustado: 50-70 € al día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Gdansk: https://www.happylowcost.com/destinos/gdansk/#chollos

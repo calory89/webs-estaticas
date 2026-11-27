@@ -162,7 +162,7 @@ elif nfiles > 18500:
 # ---------- lo que pedimos a Google tiene que existir ----------
 # El 26-nov-2026 los sitemaps pedian 1.702 URLs y 1.115 daban 404, y 195 de las
 # 207 URLs de /en/deals/ que Google tenia indexadas tambien. Se mira aqui.
-sm_dead, sm_noidx, sm_robots = [], [], []
+sm_dead, sm_noidx, sm_robots, sm_redir = [], [], [], []
 # lo que robots.txt bloquea (grupo User-agent: *) no se pide en los sitemaps: Google lo cuenta como error de cobertura
 _dis = []
 try:
@@ -189,6 +189,10 @@ for sm in sorted(glob.glob('*-sitemap*.xml') + glob.glob('sitemap*.xml')):
         pq = p + (('?' + urlsplit(loc).query) if urlsplit(loc).query else '')
         if any(rx.match(pq) for rx in _dis_rx):
             sm_robots.append((sm, p))
+            continue
+        # ronda 6: una URL que _redirects manda a otra (slugs EN antiguos: tallin, vilna, mauricio...) no se pide en el sitemap
+        if p in redirect_src or p.rstrip('/') in redirect_src:
+            sm_redir.append((sm, p))
             continue
         f_ = rel if os.path.isfile(rel) else os.path.join(rel, 'index.html')
         if os.path.isfile(f_):
@@ -226,8 +230,10 @@ def _drop_locs(sm, paths):
 
 
 _fixed = 0
-for _sm in sorted({sm for sm, _ in sm_dead} | {sm for sm, _ in sm_noidx} | {sm for sm, _ in sm_robots}):
-    _fixed += _drop_locs(_sm, [p for s_, p in sm_dead if s_ == _sm] + [p for s_, p in sm_noidx if s_ == _sm] + [p for s_, p in sm_robots if s_ == _sm])
+for _sm in sorted({sm for sm, _ in sm_dead} | {sm for sm, _ in sm_noidx} | {sm for sm, _ in sm_robots} | {sm for sm, _ in sm_redir}):
+    _fixed += _drop_locs(_sm, [p for s_, p in sm_dead if s_ == _sm] + [p for s_, p in sm_noidx if s_ == _sm] + [p for s_, p in sm_robots if s_ == _sm] + [p for s_, p in sm_redir if s_ == _sm])
+if sm_redir:
+    warns.append(f'{len(sm_redir)} URL(s) con redirección 301 fuera de los sitemaps: ' + ', '.join(p for _, p in sm_redir[:5]))
 if sm_robots:
     warns.append(f'{len(sm_robots)} URL(s) bloqueadas por robots.txt fuera de los sitemaps: ' + ', '.join(p for _, p in sm_robots[:5]))
 if sm_dead:

@@ -1,4 +1,4 @@
-# Qué ver en Las Vegas en 4 días: guía de un viajero español
+# Qué hacer en Las Vegas en 4 días: guía low cost con precios
 
 > Guía de viaje de Las Vegas de Happy Low Cost, itinerario de 4 días. Página original: https://www.happylowcost.com/destinos/las-vegas/
 > Actualizada: 2026-10-21
@@ -121,6 +121,10 @@ En general sí, sobre todo en el Strip, que está muy vigilado. Por la noche con
 ### ¿Hace falta alquilar coche?
 
 Para el Strip y Downtown, no. Para Red Rock Canyon, Valley of Fire o la presa Hoover, sí compensa, o bien una excursión organizada que salga del propio hotel.
+
+### ¿Merece la pena visitar Las Vegas?
+
+Para quien escribió esta guía, sí: Las Vegas es un decorado gigante en mitad del desierto de Nevada, y eso es justo lo que la hace interesante. Con 4 días ves lo esencial.
 
 ## Vuelos y chollos
 

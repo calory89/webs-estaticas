@@ -227,6 +227,10 @@ Mayo, junio y septiembre: buen tiempo, agua templada y precios más razonables q
 
 La socca, la pissaladière y el pan bagnat. Si solo puedes probar uno, socca recién salida del horno.
 
+### ¿Merece la pena visitar Niza?
+
+Para quien escribió esta guía, sí: Niza es una ciudad de verdad, no un decorado de la Costa Azul. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado: entre 80 y 110 € por persona y día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Niza: https://www.happylowcost.com/destinos/niza/#chollos

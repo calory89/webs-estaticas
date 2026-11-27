@@ -114,6 +114,10 @@ Mejor no. Compra agua embotellada, que es barata, y úsala también para lavarte
 
 Con 4 días ves lo esencial de Estambul sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Estambul?
+
+Para quien escribió esta guía, sí: Estambul es de las pocas ciudades donde cruzas de un continente a otro por el precio de un billete de ferry y un té. Con 4 días ves lo esencial. Presupuesto: Orientativamente, una cama en dormitorio compartido ronda los 15-25 euros, un hotel sencillo de 3 estrellas entre 50 y 90, y uno con encanto en Gálata o Sultanahmet puede superar los 120.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Estambul: https://www.happylowcost.com/destinos/estambul/#chollos

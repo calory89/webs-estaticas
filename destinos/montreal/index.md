@@ -215,6 +215,10 @@ De finales de mayo a principios de octubre, con septiembre como mes ideal. En in
 
 Sí, sin problema. El metro, el autobús 747 y las bicis BIXI cubren todo lo que necesitas; el coche solo compensa para excursiones a la naturaleza.
 
+### ¿Merece la pena visitar Montreal?
+
+Para quien escribió esta guía, sí: Montreal es la ciudad más europea de Norteamérica, pero no por su piedra antigua, que es poca y está concentrada en un par de calles. Con 3 días ves lo esencial. Presupuesto: Presupuesto por persona y día, sin vuelos: Ajustado: unos 80-110 € (120-165 CAD).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montreal: https://www.happylowcost.com/destinos/montreal/#chollos

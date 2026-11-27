@@ -145,6 +145,10 @@ It is pricier than most Italian cities, mainly for hotels. Eating can be afforda
 
 Generally yes. Watch for pickpockets on the metro, around the Duomo and near Centrale station, and take care late at night in the streets around the station.
 
+### Is Milan worth visiting?
+
+For the traveller who wrote this guide, yes: Milan has a reputation for being Italy's grey, expensive business city, and people who spend one rushed afternoon there tend to agree. 3 days are enough for the essentials. Budget: Budget: about €70-100 per person, with hostel or shared room, street food, an aperitivo and public transport.
+
 ## Flights and deals
 
 - Flight deals to Milan: https://www.happylowcost.com/en/destinations/milan/#deals

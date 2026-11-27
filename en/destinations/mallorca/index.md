@@ -229,6 +229,10 @@ No. The party scene is mostly limited to Magaluf and part of Playa de Palma. The
 
 The sea drops to around 14-15°C from January to March, which is bracing. Most people swim comfortably from late May to October.
 
+### Is Mallorca worth visiting?
+
+For the traveller who wrote this guide, yes: Mallorca is three islands in one. There's Palma, a proper Mediterranean city with a Gothic cathedral and a serious food scene. 6 days are enough for the essentials. Budget: Hostel bed €35, menú del día at lunch, supermarket dinner, buses, free beaches.
+
 ## Flights and deals
 
 - Flight deals to Mallorca: https://www.happylowcost.com/en/destinations/mallorca/#deals

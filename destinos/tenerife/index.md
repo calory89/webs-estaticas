@@ -123,6 +123,10 @@ Sí, pero el acceso está regulado y conviene reservar. Comprueba el estado del 
 
 Con 5 días ves lo esencial de Tenerife sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Tenerife?
+
+Para quien escribió esta guía, sí: Tenerife son varias islas en una. En una mañana puedes estar en un bosque de laurisilva envuelto en niebla y, tres horas después, tomando el sol en una playa del sur sin una nube. Con 5 días ves lo esencial. Presupuesto: Como referencia, una habitación sencilla ronda los 40-60 € por noche en temporada baja, un hotel de tres estrellas entre 80 y 130 €, y un apartamento para dos personas queda en un punto intermedio.
+
 ### ¿Es caro viajar a Tenerife?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "cómodo", unos 200 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

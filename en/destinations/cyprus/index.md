@@ -123,6 +123,10 @@ June to October is the most reliable. September is often the best, with warm sea
 
 Today the cheapest deal we have to Cyprus is €121 return from Alicante. Fares change by the hour: check the live price on the deal page.
 
+### Is Cyprus worth visiting?
+
+For the traveller who wrote this guide, yes: Cyprus is a small island with a long memory. 7 days are enough for the essentials. Budget: Budget: about €60-90 per person: hostel or simple apartment, souvlaki and bakery lunches, buses and the odd taxi.
+
 ## Flights and deals
 
 - Flight deals to Cyprus: https://www.happylowcost.com/en/destinations/cyprus/#deals

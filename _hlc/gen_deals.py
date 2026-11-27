@@ -722,6 +722,16 @@ def guide_extra_faq(gh, name, days, sub, lang='es'):
         out.append(((f'¿Cuánto cuesta un vuelo barato a {name}?' if es else f'How much is a cheap flight to {name}?'),
                     (f'Hoy el chollo más barato que tenemos a {name} cuesta {x["price"]} € ida y vuelta' + (f' desde {o}' if o else '') + '. Los precios cambian cada hora: compruébalo en la página del chollo.' if es else
                      f'Today the cheapest deal we have to {name} is €{x["price"]} return' + (f' from {o}' if o else '') + '. Fares change by the hour: check the live price on the deal page.')))
+    # ronda 6: "is casablanca worth visiting" (pos. 9,4) y "¿merece la pena X?": respuesta con la primera frase de la propia guía
+    if not re.search(r'merece la pena|vale la pena|worth', have):
+        p1 = next((p_ for p_ in re.findall(r'<p>(.*?)</p>', gh or '', re.S) if len(re.sub(r'<[^>]+>', '', p_)) > 80), '')
+        s1 = _first_sentence(p1, 220) if p1 else ''
+        if s1 and not s1.endswith('…'):
+            bud = section_text(gh, r'presupuesto|cu[aá]nto cuesta|budget|cost', r'\d+\s?(€|euros?|EUR)|€\s?\d+', fallback=False)
+            if es:
+                out.append((f'¿Merece la pena visitar {name}?', f'Para quien escribió esta guía, sí: {s1}' + (f' Con {days} días ves lo esencial.' if days else '') + (f' Presupuesto: {bud}' if bud else '')))
+            else:
+                out.append((f'Is {name} worth visiting?', f'For the traveller who wrote this guide, yes: {s1}' + (f' {days} days are enough for the essentials.' if days else '') + (f' Budget: {bud}' if bud else '')))
     return out
 
 
@@ -860,6 +870,14 @@ TITLE_Q_ES = {
     'punta-cana': lambda n, d: f'{n} en {d} días: guía para viajar barato por tu cuenta',  # "7 días en punta cana" pos. 11,5 (la guía tiene 6)
     'maldivas': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía low cost',  # "que hacer en maldivas 7 días" 33 impr. pos. 7,9
     'estocolmo': lambda n, d: f'Qué ver en {n} en {d} días: guía práctica low cost',  # "que ver en estocolmo en 3 dias" 26 impr. pos. 11
+    # Ronda 6 (GSC 30-oct a 26-nov)
+    'varsovia': lambda n, d: f'Qué ver en {n} en {d} días: guía low cost con precios',  # "que ver en varsovia en 3 dias" 189 impr. pos. 10,6
+    'zanzibar': lambda n, d: f'Qué ver en {n} en {d} días: playa, Stone Town y precios',  # "que ver/que hacer en zanzibar 7 dias" 71 impr. pos. 9,6
+    'helsinki': lambda n, d: f'Qué ver en {n} en {d} días: guía low cost con precios',  # "que ver en helsinki en 3 días" 29 impr. pos. 9,9
+    'cerdena': lambda n, d: f'{n} barato: qué ver en {d} días y cuánto cuesta',  # "cerdeña barato" 23 impr. pos. 22,5
+    'cancun': lambda n, d: f'Qué hacer en {n} en {d} días: guía low cost con precios',  # "que hacer en cancun en 4 dias" 15 impr. pos. 9,6
+    'fez': lambda n, d: f'Qué ver en {n} en {d} días: la medina, dónde comer y dormir',  # "que ver en fez en 3 dias" 16 impr. pos. 9,2
+    'las-vegas': lambda n, d: f'Qué hacer en {n} en {d} días: guía low cost con precios',  # "que hacer en las vegas en 4 dias" 15 impr. pos. 5,9
 }
 
 try:

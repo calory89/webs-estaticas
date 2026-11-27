@@ -237,6 +237,10 @@ March or April, when the weather is mild and stable and the summer crowds have g
 
 Very. Normal city precautions apply late at night around Flinders Street and King Street, but violent crime against visitors is rare.
 
+### Is Melbourne worth visiting?
+
+For the traveller who wrote this guide, yes: Melbourne doesn't do postcard landmarks the way Sydney does. 4 days are enough for the essentials. Budget: Shoestring: A$100-140 a day (€57-80).
+
 ## Flights and deals
 
 - Flight deals to Melbourne: https://www.happylowcost.com/en/destinations/melbourne/#deals

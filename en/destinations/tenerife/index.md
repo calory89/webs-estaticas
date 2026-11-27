@@ -125,6 +125,10 @@ Yes, though the Atlantic is cool in winter, around 19 to 20°C. Many people use 
 
 4 days are enough to see the essentials of Tenerife without rushing. The route in this guide is organised day by day.
 
+### Is Tenerife worth visiting?
+
+For the traveller who wrote this guide, yes: Most people picture a beach package, and the south does that job well. 4 days are enough for the essentials. Budget: Budget: about 55 to 80 euros, with a hostel or basic apartment, buses, and market or menu del día meals.
+
 ## Flights and deals
 
 - Flight deals to Tenerife: https://www.happylowcost.com/en/destinations/tenerife/#deals

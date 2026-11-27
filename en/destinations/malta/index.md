@@ -137,6 +137,10 @@ It is cheaper than much of Western Europe, especially for food and local transpo
 
 5 days are enough to see the essentials of Malta without rushing. The route in this guide is organised day by day.
 
+### Is Malta worth visiting?
+
+For the traveller who wrote this guide, yes: Malta packs seven thousand years of history into an island you can drive across in about 45 minutes. 5 days are enough for the essentials. Budget: Budget: about €60 to €80, with a hostel, bus travel and cheap local food.
+
 ## Flights and deals
 
 - Flight deals to Malta: https://www.happylowcost.com/en/destinations/malta/#deals

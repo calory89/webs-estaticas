@@ -109,6 +109,10 @@ A primera hora, antes de las nueve, y en días sin cruceros. En el puerto suelen
 
 Con 3 días ves lo esencial de Mykonos sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Mykonos?
+
+Para quien escribió esta guía, sí: Mykonos tiene fama de isla cara y de fiesta, y las dos cosas son ciertas. Con 3 días ves lo esencial. Presupuesto: Como referencia, una habitación doble sencilla puede ir desde unos 60-90 euros en temporada baja hasta 150-250 en agosto.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Mykonos: https://www.happylowcost.com/destinos/mykonos/#chollos

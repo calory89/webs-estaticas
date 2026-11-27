@@ -1,4 +1,4 @@
-# Qué ver en Cerdeña en 7 días: guía de un viajero low cost
+# Cerdeña barato: qué ver en 7 días y cuánto cuesta
 
 > Guía de viaje de Cerdeña de Happy Low Cost, itinerario de 7 días. Página original: https://www.happylowcost.com/destinos/cerdena/
 > Actualizada: 2026-10-21
@@ -135,6 +135,10 @@ Con 7 días ves lo esencial de Cerdeña sin prisas. La ruta de esta guía está 
 ### ¿Cuánto cuesta un vuelo barato a Cerdeña?
 
 Hoy el chollo más barato que tenemos a Cerdeña cuesta 43 € ida y vuelta desde Barcelona. Los precios cambian cada hora: compruébalo en la página del chollo.
+
+### ¿Merece la pena visitar Cerdeña?
+
+Para quien escribió esta guía, sí: Cerdeña no es una isla pequeña ni una playa con extras. Con 7 días ves lo esencial. Presupuesto: Como orientación, una habitación doble sencilla puede rondar los 60-90 euros fuera de temporada y subir mucho por encima de los 130 en agosto.
 
 ### ¿Es caro viajar a Cerdeña?
 

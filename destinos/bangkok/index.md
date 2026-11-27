@@ -124,6 +124,10 @@ Con hombros y rodillas cubiertos, sin camisetas de tirantes ni pantalón corto. 
 
 Con 4 días ves lo esencial de Bangkok sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Bangkok?
+
+Para quien escribió esta guía, sí: Bangkok agota y engancha a partes iguales. Con 4 días ves lo esencial. Presupuesto: Hay hostales desde 10-20 euros la cama y hoteles sencillos desde 35-50 euros.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bangkok: https://www.happylowcost.com/destinos/bangkok/#chollos

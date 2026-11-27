@@ -157,6 +157,10 @@ Yes. Round up or add around 10 percent in restaurants and cafés, and tell the w
 
 Today the cheapest deal we have to Vienna is €67 return from Palma de Mallorca. Fares change by the hour: check the live price on the deal page.
 
+### Is Vienna worth visiting?
+
+For the traveller who wrote this guide, yes: Vienna is a city that still works the way it did a century ago, only with better trams. 3 days are enough for the essentials. Budget: Budget: around 60 to 80 euros per person (hostel, street food, public transport, one paid sight).
+
 ## Flights and deals
 
 - Flight deals to Vienna: https://www.happylowcost.com/en/destinations/vienna/#deals

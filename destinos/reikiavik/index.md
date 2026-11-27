@@ -115,6 +115,10 @@ Entre septiembre y marzo, con noches despejadas y lejos de la contaminación lum
 
 Con 7 días ves lo esencial de Islandia sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Islandia?
+
+Para quien escribió esta guía, sí: Islandia es cara, y conviene decirlo desde el principio. Con 7 días ves lo esencial. Presupuesto: Un dormitorio compartido ronda los 50 a 80 euros, una habitación doble sencilla entre 120 y 250, y un camping unos 15 a 25 por persona.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Islandia: https://www.happylowcost.com/destinos/reikiavik/#chollos

@@ -120,6 +120,10 @@ Only if you plan to visit many paid attractions in a short time. With free museu
 
 Today the cheapest deal we have to London is €47 return from Zaragoza. Fares change by the hour: check the live price on the deal page.
 
+### Is London worth visiting?
+
+For the traveller who wrote this guide, yes: London is expensive, grey more often than anyone admits, and the Tube can be unpleasant at 8:30 on a weekday. 4 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to London: https://www.happylowcost.com/en/destinations/london/#deals

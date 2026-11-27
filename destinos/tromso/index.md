@@ -219,6 +219,10 @@ Normalmente no; lo habitual es hacer escala en Oslo. En invierno a veces hay vue
 
 No, la moneda es la corona noruega, aunque prácticamente todo se paga con tarjeta. Ni siquiera hace falta sacar efectivo.
 
+### ¿Merece la pena visitar Tromsø?
+
+Para quien escribió esta guía, sí: Tromsø es una ciudad de unos 78.000 habitantes metida en una isla a 350 kilómetros al norte del Círculo Polar Ártico, y eso lo condiciona todo: en invierno el sol no sale durante casi dos meses y en verano no se pone. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado (por persona y día): 90-130 €.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tromsø: https://www.happylowcost.com/destinos/tromso/#chollos

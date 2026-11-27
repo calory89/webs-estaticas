@@ -210,6 +210,10 @@ Sí, en verano las playas urbanas se llenan. El agua es del Río de la Plata, co
 
 Buenos Aires tiene más cosas que ver y más vida nocturna. Montevideo es más tranquila y fácil, y combinan muy bien en el mismo viaje gracias al ferry.
 
+### ¿Merece la pena visitar Montevideo?
+
+Para quien escribió esta guía, sí: Montevideo no es Buenos Aires y no intenta serlo. Con 3 días ves lo esencial. Presupuesto: Uruguay usa el peso uruguayo (UYU); 1 € equivale a unos 45-48 pesos.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montevideo: https://www.happylowcost.com/destinos/montevideo/#chollos

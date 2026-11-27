@@ -224,6 +224,10 @@ It is the priciest city in Colombia, with old-town restaurants close to European
 
 December to April is dry and breezy but busy and expensive. May and June offer a good balance of decent weather and lower prices.
 
+### Is Cartagena worth visiting?
+
+For the traveller who wrote this guide, yes: Cartagena is the prettiest colonial city in the Caribbean, and it knows it. 4 days are enough for the essentials. Budget: Dorm bed (€12-20), street food and menú del día, free sights, one paid museum.
+
 ## Flights and deals
 
 - Flight deals to Cartagena: https://www.happylowcost.com/en/destinations/cartagena/#deals

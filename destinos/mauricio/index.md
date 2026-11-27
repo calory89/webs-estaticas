@@ -117,6 +117,10 @@ De mayo a octubre. El riesgo de ciclones y lluvias fuertes se concentra de enero
 
 Las playas públicas son de acceso libre. Puedes bañarte en Mont Choisy, Pereybere, Flic en Flac o Belle Mare sin pagar. Los hoteles privatizan las tumbonas, no la arena.
 
+### ¿Merece la pena visitar Isla Mauricio?
+
+Para quien escribió esta guía, sí: Mauricio vende postales de resort con laguna turquesa, y es verdad que las hay. Con 7 días ves lo esencial. Presupuesto: Una habitación sencilla puede costar entre 35 y 70 € la noche según temporada.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Isla Mauricio: https://www.happylowcost.com/destinos/mauricio/#chollos

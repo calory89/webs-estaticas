@@ -115,6 +115,10 @@ Yes. It's easy to navigate, cheap and well connected, and English is widely unde
 
 3 days are enough to see the essentials of Bangkok without rushing. The route in this guide is organised day by day.
 
+### Is Bangkok worth visiting?
+
+For the traveller who wrote this guide, yes: Bangkok is loud, hot and sprawling, and it's one of the most rewarding big cities in Asia. 3 days are enough for the essentials. Budget: Backpackers can manage on roughly 1,000 to 1,500 baht a day, which is about 25 to 40 euros.
+
 ## Flights and deals
 
 - Flight deals to Bangkok: https://www.happylowcost.com/en/destinations/bangkok/#deals

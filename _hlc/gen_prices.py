@@ -177,6 +177,57 @@ def _hotel(city, en):
     return f'https://www.kqzyfj.com/click-101900924-17288959?sid=happylowcost-precios&url={quote(f"https://www.booking.com/{host}?ss={city}", safe="")}'
 
 
+# ---------- ronda 6: piezas comunes de los hubs (Search Console 30-oct a 26-nov) ----------
+# Origenes fuera de Europa (el resto de ciudades que vigilamos estan en Europa)
+ORIG_COUNTRY = {**{c: 'España' for c in SPAIN}, 'Londres': 'Reino Unido', 'Manchester': 'Reino Unido', 'Dublín': 'Irlanda', 'Berlín': 'Alemania', 'Múnich': 'Alemania',
+                'Bruselas': 'Bélgica', 'Copenhague': 'Dinamarca', 'Estocolmo': 'Suecia', 'Oslo': 'Noruega', 'Lisboa': 'Portugal', 'Milán': 'Italia', 'Roma': 'Italia', 'París': 'Francia',
+                'Viena': 'Austria', 'Zúrich': 'Suiza', 'Ámsterdam': 'Países Bajos', 'Nueva York': 'Estados Unidos', 'Toronto': 'Canadá', 'Sídney': 'Australia', 'Singapur': 'Singapur', 'Dubái': 'Emiratos Árabes Unidos'}
+NON_EU_ORIG = {'Dubái', 'Nueva York', 'Singapur', 'Sídney', 'Toronto'}
+try:
+    REGION = {x['s']: x.get('r') for x in json.load(open('hlc/destinos.json', encoding='utf-8'))}
+except Exception:
+    REGION = {}
+# Moneda local de la ciudad de salida (tipo del BCE de hlc/fx.json; el dirham va atado al dolar a 3,6725)
+CUR = {'Londres': ('GBP', '£'), 'Manchester': ('GBP', '£'), 'Nueva York': ('USD', 'US$'), 'Toronto': ('CAD', 'C$'), 'Sídney': ('AUD', 'A$'),
+       'Singapur': ('SGD', 'S$'), 'Dubái': ('AED', 'AED '), 'Copenhague': ('DKK', 'DKK '), 'Estocolmo': ('SEK', 'SEK '), 'Oslo': ('NOK', 'NOK '), 'Zúrich': ('CHF', 'CHF ')}
+try:
+    _FX = json.load(open('hlc/fx.json', encoding='utf-8'))
+except Exception:
+    _FX = {}
+LOWCOST = ('Ryanair', 'Wizz', 'easyJet', 'Vueling', 'Transavia', 'Norwegian', 'Pegasus', 'Scoot', 'Volotea', 'Jet2', 'Eurowings', 'Flair', 'JetBlue',
+           'Spirit', 'Frontier', 'flydubai', 'Air Arabia', 'Jetstar', 'AirAsia', 'Iberia Express', 'Level', 'French bee', 'Norse', 'Play', 'airBaltic', 'SKY express', 'Lynx')
+
+
+def local_money(o, eur):
+    """'£38' / 'C$70' a partir de euros, o '' si no hay tipo."""
+    c = CUR.get(o)
+    if not c:
+        return ''
+    rates = _FX.get('rates') or {}
+    rt = rates.get(c[0]) or (rates.get('USD') * 3.6725 if c[0] == 'AED' and rates.get('USD') else None)
+    return f'{c[1]}{round(eur * rt)}' if rt else ''
+
+
+def clean_prices(lst):
+    """Quita precios que se repiten exactos en 5 o mas rutas de la misma ciudad (dato raro del agente, ver notas de la ronda 5)."""
+    from collections import Counter
+    cnt = Counter((r['origin'], r['price_from']) for r in lst)
+    return [r for r in lst if cnt[(r['origin'], r['price_from'])] < 5]
+
+
+def page_ld(name, url, checked, en):
+    """WebPage con fecha de los precios y speakable para la respuesta rapida (asistentes de voz e IA)."""
+    return {"@type": "WebPage", "@id": url + '#webpage', "url": url, "name": name, "inLanguage": 'en' if en else 'es-ES',
+            **({"dateModified": checked[:10]} if checked else {}), "publisher": {"@id": SITE + '/#organization'},
+            "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", ".qa"]}}
+
+
+def src_box(url, checked, en):
+    if en:
+        return f'<p class="pm-src" style="font-size:14px;color:#555;overflow-wrap:anywhere">Source: Happy Low Cost own data (fares checked on Kiwi.com, last search {fd(checked, True)}). To cite this page: <a href="{url}">{url}</a></p>'
+    return f'<p class="pm-src" style="font-size:14px;color:#555;overflow-wrap:anywhere">Fuente: datos propios de Happy Low Cost (precios consultados en Kiwi.com, última consulta del {fd(checked)}). Para citar esta página: <a href="{url}">{url}</a></p>'
+
+
 # ---------- destino ----------
 def dest_page(d, lst, meses, en, en_slug, guide):
     lst = sorted(lst, key=lambda r: r['price_from'])
@@ -248,6 +299,30 @@ def dest_page(d, lst, meses, en, en_slug, guide):
         else:
             qas.append((f'¿Qué aerolínea es la más barata para volar a {name}?', (f'En nuestra última consulta, el vuelo de ida y vuelta más barato a {name} era con {a0} ({ra["price_from"]} € desde {oname(ra)}). ' if a0 else '')
                         + 'Aerolíneas con los precios más bajos en las ciudades que vigilamos: ' + ', '.join(f'{k} ({len(v)} ruta{"s" if len(v) != 1 else ""}, desde {min(x["price_from"] for x in v)} €)' for k, v in top_) + '.'))
+    # ronda 6: "vuelos a roma ryanair", "flights to tenerife ryanair", "who is cheaper for flights to dubrovnik, tui or ryanair?" (113 impr. pos. 4,6)
+    # solo con vuelo directo de Ryanair: con escalas, Kiwi.com combina un primer tramo de Ryanair con otra aerolínea y no significa que Ryanair vuele allí
+    _ry = [r_ for r_ in lst if ((r_.get('facts') or {}).get('aerolinea') or '').startswith('Ryanair') and (r_.get('facts') or {}).get('escalas_ida') == 0]
+    _ot = [r_ for r_ in lst if ((r_.get('facts') or {}).get('aerolinea') or '') and not ((r_.get('facts') or {}).get('aerolinea') or '').startswith('Ryanair')]
+    if _ry:
+        ry0 = _ry[0]
+        if en:
+            a_ = (f'Yes. In our latest search Ryanair had the cheapest fare, with a direct flight, to {name} from {len(_ry)} of the {len(lst)} cities we track; the lowest was {ry0["price_from"]} € return from {oname(ry0)}. ')
+            if _ot:
+                a_ += (f'The cheapest fare with another airline was {_ot[0]["price_from"]} € ({(_ot[0].get("facts") or {}).get("aerolinea")}, from {oname(_ot[0])}), so ' + ('Ryanair was cheaper.' if ry0['price_from'] < _ot[0]['price_from'] else 'Ryanair was not the cheapest option.' if ry0['price_from'] > _ot[0]['price_from'] else 'both cost the same.'))
+            qas.append((f'Does Ryanair fly to {name}, and is it the cheapest?', a_))
+        else:
+            a_ = f'Sí. En nuestra última consulta, Ryanair tenía la tarifa más barata, con vuelo directo, a {name} desde {len(_ry)} de las {len(lst)} ciudades que vigilamos; la más baja, {ry0["price_from"]} € ida y vuelta desde {oname(ry0)}. '
+            if _ot:
+                a_ += (f'Con otra aerolínea, lo más barato fue {_ot[0]["price_from"]} € ({(_ot[0].get("facts") or {}).get("aerolinea")}, desde {oname(_ot[0])}), así que ' + ('Ryanair salía más barata.' if ry0['price_from'] < _ot[0]['price_from'] else 'Ryanair no era la opción más barata.' if ry0['price_from'] > _ot[0]['price_from'] else 'costaban lo mismo.'))
+            qas.append((f'¿Vuela Ryanair a {name} y es la más barata?', a_))
+    # ronda 6: "cheapest flights to japan from europe" (pos. 2,1): destinos fuera de Europa, el vuelo más barato desde ciudades europeas
+    if REGION.get(d) and REGION.get(d) != 'europa':
+        eu_ = [r_ for r_ in lst if r_['origin'] not in NON_EU_ORIG][:4]
+        if eu_:
+            if en:
+                qas.append((f'What is the cheapest flight to {name} from Europe?', f'From the European cities we track, the cheapest return to {name} was from {oname(eu_[0])} at {eu_[0]["price_from"]} € (search on {fd((eu_[0].get("facts") or {}).get("consultado"), True)}). Next: ' + ', '.join(f'{oname(r_)} ({r_["price_from"]} €)' for r_ in eu_[1:]) + '.' if len(eu_) > 1 else f'From the European cities we track, the cheapest return to {name} was from {oname(eu_[0])} at {eu_[0]["price_from"]} €.'))
+            else:
+                qas.append((f'¿Cuál es el vuelo más barato a {name} desde Europa?', f'Desde las ciudades europeas que vigilamos, el ida y vuelta más barato a {name} salía de {oname(eu_[0])} por {eu_[0]["price_from"]} € (consulta del {fd((eu_[0].get("facts") or {}).get("consultado"))}). Después: ' + ', '.join(f'{oname(r_)} ({r_["price_from"]} €)' for r_ in eu_[1:]) + '.' if len(eu_) > 1 else f'Desde las ciudades europeas que vigilamos, el ida y vuelta más barato a {name} salía de {oname(eu_[0])} por {eu_[0]["price_from"]} €.'))
     # descripción para el clic (CTR): precio, ciudades, directos, mes más barato y fecha de consulta
     if en:
         desc = (f'{name} flights from €{r1["price_from"]} return ({oname(r1)})' + (f' and €{r0["price_from"]} from {oname(r0)}' if r0 is not r1 else '')
@@ -256,14 +331,15 @@ def dest_page(d, lst, meses, en, en_slug, guide):
         desc = (f'Vuelos a {name} desde {r0["price_from"]} € ida y vuelta ({oname(r0)}). {len(lst)} ciudades de salida, {len(direct)} con directo.'
                 + (f' Mes más barato: {mname(best[1])}.' if best else '') + f' Precios del {fd(checked)}.')
     desc = G.smart_desc(desc, 160)
-    ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs)]
+    ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs), page_ld(title, url, checked, en)]
     T = (lambda a, b: b if en else a)
     stats = (f'<div class="pm-stats"><div><b>{r0["price_from"]} €</b><span>{T("lo más barato que encontramos", "cheapest we found")}</span></div>'
              + (f'<div><b>{int(statistics.median(meds))} €</b><span>{T("precio habitual (mediana)", "usual price (median)")}</span></div>' if meds else '')
              + f'<div><b>{len(direct)}</b><span>{T("ciudades con vuelo directo", "cities with direct flights")}</span></div><div><b>{len(lst)}</b><span>{T("ciudades de salida", "departure cities")}</span></div></div>')
     # respuesta rápida: 2-3 frases citables con precio, directos y mes más barato
     if en:
-        qa_ = (f'Cheapest return flight to {name} we found from {oname(r1)}: {r1["price_from"]} € (search on {fd(f1.get("consultado"), True)})' + (f'; from any city, {r0["price_from"]} € from {oname(r0)}. ' if r1 is not r0 else '. ')
+        lm1 = local_money(r1['origin'], r1['price_from'])
+        qa_ = (f'Cheapest return flight to {name} we found from {oname(r1)}: {r1["price_from"]} €' + (f' (about {lm1})' if lm1 else '') + f' (search on {fd(f1.get("consultado"), True)})' + (f'; from any city, {r0["price_from"]} € from {oname(r0)}. ' if r1 is not r0 else '. ')
                + (f'Direct flights from {len(direct)} of the {len(lst)} cities we track. ' if direct else f'None of the {len(lst)} cities we track had a direct flight among the cheapest options. ')
                + (f'Cheapest month: {mname(best[1], True)} ({best[2]} € from {oname(best[0])}).' if best else ''))
     else:
@@ -281,9 +357,10 @@ def dest_page(d, lst, meses, en, en_slug, guide):
             + QA_BOX(T, qa_) +
             f'<p style="font-size:18px;max-width:820px">{e(lead)}</p>{stats}'
             f'<div class="hlc-row" style="margin:18px 0 6px">{gl}{hot}<a class="hlc-btn o" href="{T("/alertas/", "/en/deals/")}">{T("Avísame de chollos a " + name, "Today’s deals")}</a></div>'
-            f'<h2>{T("Precio desde cada ciudad", "Price from each city")}</h2><input type="search" class="pm-q" placeholder="{T("Filtra por ciudad de salida", "Filter by departure city")}" aria-label="{T("Filtrar", "Filter")}">'
+            f'<h2>{T("Vuelos baratos a " + name + " desde cada ciudad", "Cheap flights to " + name + " from each city")}</h2><input type="search" class="pm-q" placeholder="{T("Filtra por ciudad de salida", "Filter by departure city")}" aria-label="{T("Filtrar", "Filter")}">'
             + table(lst, en, T('Salida', 'Departure'), oname, link)
             + f'<p class="pm-note">{e(T(f"Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com (última consulta: {fd(checked)}). Habitual es la mediana de los precios que vimos. Los precios cambian cada día.", f"Return prices in economy for 1 adult, checked on Kiwi.com (last search: {fd(checked, True)}). Usual is the median of the prices we saw. Prices change every day."))}</p>'
+            + src_box(url, checked, en)
             + (f'<h2>{T("Cuándo es más barato volar a " + name, "When it is cheapest to fly to " + name)}</h2>{mt}' if mt else '')
             + ('' if en else f'<section class="hlc-rel"><h2 data-rel-h>Chollos de hoy a {e(name)}</h2><div class="dc-grid" data-hlc-deals data-max="4" data-dest="{e(d)}"></div><div class="hlc-row"><a class="hlc-btn o" href="/chollos/">Todos los chollos de hoy</a></div></section>')
             + f'<h2>{T("Preguntas frecuentes", "FAQ")}</h2><div class="txt guide">' + ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in qas) + '</div>'
@@ -305,6 +382,49 @@ def budget_blocks(lst, en, dname, link):
 
 
 
+def orig_extra_faq(o, lst, en, oname, dname):
+    """Ronda 6: preguntas de asistentes de IA que ya traen impresiones a los hubs "desde" (GSC 30-oct a 26-nov):
+    "¿cuáles son los países más baratos para visitar volando desde barcelona?" (pos. 6,8), "cheapest countries to fly to from ireland" (33 impr.),
+    "what european cities usually have very cheap flights from london?" (pos. 3,3), "what destinations do budget airlines from london serve?" (22 impr. pos. 6)."""
+    T = (lambda a, b: b if en else a)
+    ok = clean_prices(lst)
+    qas = []
+    # países más baratos (el destino más barato de cada país)
+    oc = ORIG_COUNTRY.get(o)
+    byc = {}
+    for r in ok:
+        if oc and en_names.COUNTRY_ES_FIX.get(r['country'], r['country']) == oc:
+            continue
+        c0 = en_names.COUNTRY_ES_FIX.get(r['country'], r['country'])
+        c = en_names.country_en(c0) if en else c0
+        if c and (c not in byc or r['price_from'] < byc[c]['price_from']):
+            byc[c] = r
+    cs = sorted(byc.items(), key=lambda kv: kv[1]['price_from'])[:6]
+    where = ('Ireland' if o == 'Dublín' else oname) if en else oname
+    if len(cs) >= 3:
+        qas.append((T(f'¿Cuáles son los países más baratos para volar desde {where}?', f'What are the cheapest countries to fly to from {where}?'),
+                    T('Por el vuelo de ida y vuelta más barato a cada país en nuestra última consulta: ', 'By the cheapest return flight to each country in our latest search: ')
+                    + ', '.join(f'{c} ({dname(r)}, {r["price_from"]} €)' for c, r in cs) + '.'))
+    # ciudades europeas más baratas
+    eu = [r for r in ok if REGION.get(r['dest_slug']) == 'europa'][:6]
+    if len(eu) >= 3:
+        qas.append((T(f'¿Qué ciudades europeas tienen los vuelos más baratos desde {oname}?', f'Which European cities have the cheapest flights from {oname}?'),
+                    ', '.join(f'{dname(r)} ({r["price_from"]} €' + (T(', directo', ', direct') if (r.get('facts') or {}).get('escalas_ida') == 0 else '') + ')' for r in eu)
+                    + T(', ida y vuelta, en nuestra última consulta.', ' return, in our latest search.')))
+    # aerolíneas low cost y sus destinos
+    bya = {}
+    for r in ok:
+        a = ((r.get('facts') or {}).get('aerolinea') or '').strip()
+        if a and any(a.startswith(k) for k in LOWCOST):
+            bya.setdefault(re.sub(r'\s+(UK|Malta|Sweden|France|Air Shuttle)$', '', a), []).append(r)
+    top = sorted(bya.items(), key=lambda kv: -len(kv[1]))[:4]
+    if top:
+        qas.append((T(f'¿Qué aerolíneas low cost vuelan desde {oname} y a dónde?', f'Which budget airlines fly from {oname}, and where to?'),
+                    T('Aerolíneas low cost con la tarifa más barata en nuestras rutas desde ', 'Budget airlines with the cheapest fare on our routes from ') + oname + ': '
+                    + '; '.join(f'{a}: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in l[:3]) for a, l in top) + '.'))
+    return qas
+
+
 def orig_page(o, lst, en, en_slug):
     lst = sorted(lst, key=lambda r: r['price_from'])
     oname = en_names.city_en(o) if en else o
@@ -319,7 +439,8 @@ def orig_page(o, lst, en, en_slug):
     under = [r for r in lst if r['price_from'] < 100]
     T = (lambda a, b: b if en else a)
     if en:
-        title = f'Cheapest flights from {oname}: {len(lst)} destinations from €{lst[0]["price_from"]} ({NOW_EN})'
+        # ronda 6 (GSC 30-oct a 26-nov): "cheap flights from X" tiene más impresiones que "cheapest" en Ámsterdam, Singapur, Copenhague, Dubái, Mánchester, Múnich, Madrid y Zúrich
+        title = f'Cheap flights from {oname}: {len(lst)} destinations from €{lst[0]["price_from"]} ({NOW_EN})'
         lead = f'The cheapest return flights from {oname} we found: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in lst[:4]) + f'. {len(under)} destinations under 100 € return and {len(direct)} with direct flights.'
         qas = [(f'Where can I fly cheaply from {oname}?', 'The cheapest destinations in our last search: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in lst[:5]) + '.'),
                (f'How many destinations under 100 € can I reach from {oname}?', f'{len(under)} of the {len(lst)} destinations we track had a return flight under 100 €' + (': ' + ', '.join(dname(r) for r in under[:8]) + ('…' if len(under) > 8 else '.') if under else '.')),
@@ -337,13 +458,16 @@ def orig_page(o, lst, en, en_slug):
     else:
         desc = (f'Desde {oname}: ' + ', '.join(f'{dname(r)} {r["price_from"]} €' for r in lst[:3]) + f' ida y vuelta. {len(under)} destinos por menos de 100 €, {len(direct)} directos. Precios del {fd(checked)}.')
     desc = G.smart_desc(desc, 160)
-    ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs)]
+    qas += orig_extra_faq(o, lst, en, oname, dname)
+    ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs), page_ld(title, url, checked, en)]
     d0 = direct[0] if direct else None
     if en:
-        qa_ = (f'The cheapest return flight from {oname} we found goes to {dname(lst[0])} for {lst[0]["price_from"]} € (search on {fd(checked, True)}). '
+        lm = local_money(o, lst[0]['price_from'])
+        qa_ = (f'The cheapest return flight from {oname} we found goes to {dname(lst[0])} for {lst[0]["price_from"]} €' + (f' (about {lm})' if lm else '') + f' (search on {fd(checked, True)}). '
                f'{len(under)} of the {len(lst)} destinations we track cost under 100 € return' + (f', and the cheapest direct flight is to {dname(d0)} ({d0["price_from"]} €).' if d0 else '.'))
     else:
-        qa_ = (f'El vuelo de ida y vuelta más barato desde {oname} que encontramos va a {dname(lst[0])} por {lst[0]["price_from"]} € (consulta del {fd(checked)}). '
+        lm = local_money(o, lst[0]['price_from'])
+        qa_ = (f'El vuelo de ida y vuelta más barato desde {oname} que encontramos va a {dname(lst[0])} por {lst[0]["price_from"]} €' + (f' (unos {lm})' if lm else '') + f' (consulta del {fd(checked)}). '
                f'{len(under)} de los {len(lst)} destinos que vigilamos cuestan menos de 100 € ida y vuelta' + (f', y el directo más barato es a {dname(d0)} ({d0["price_from"]} €).' if d0 else '.'))
     out = page_shell(en, title + ' · Happy Low Cost', desc, url, url_es if en else url_en, ld, 'precios')
     out += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs, en)}'
@@ -356,6 +480,7 @@ def orig_page(o, lst, en, en_slug):
             + f'<h2>{T("Precio a cada destino", "Price to each destination")}</h2><input type="search" class="pm-q" placeholder="{T("Filtra por destino", "Filter by destination")}" aria-label="{T("Filtrar", "Filter")}">'
             + table(lst, en, T('Destino', 'Destination'), dname, link)
             + f'<p class="pm-note">{e(T(f"Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com (última consulta: {fd(checked)}). Habitual es la mediana de los precios que vimos. Los precios cambian cada día.", f"Return prices in economy for 1 adult, checked on Kiwi.com (last search: {fd(checked, True)}). Usual is the median of the prices we saw. Prices change every day."))}</p>'
+            + src_box(url, checked, en)
             + f'<h2>{T("Preguntas frecuentes", "FAQ")}</h2><div class="txt guide">' + ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in qas) + '</div>'
             + '</div></main>' + FILTER_JS + (E.FOOTER if en else '') + '</body></html>')
     return out
@@ -664,7 +789,7 @@ def country_pages(by_dest, en_slug):
             crumbs = [(T('Inicio', 'Home'), T('/', '/en/')), (T('Rutas de vuelos', 'Flight routes'), T('/vuelos/', '/en/flights/')), (h1, None)]
             desc = G.smart_desc(T(f'Vuelos a {cn} desde {r0["price_from"]} € ida y vuelta: {len(dd)} ciudades (' + ', '.join(dname(l[0]) for _d, l in cities[:4]) + f') y {len(allr)} rutas con precios reales del {fd(checked)}.',
                                   f'{ce} flights from €{r0["price_from"]} return: {len(dd)} cities (' + ', '.join(dname(l[0]) for _d, l in cities[:4]) + f') and {len(allr)} routes with real fares checked {fd(checked, True)}.'), 160)
-            ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs)]
+            ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs), page_ld(title, url_en if en else url_es, checked, en)]
             cards = ''.join(f'<tr><th scope="row">' + (f'<a href="{hub(d)}">{e(dname(l[0]))}</a>' if hub(d) else e(dname(l[0]))) + f'</th><td class="pm-p">{min(r["price_from"] for r in l)} €</td><td>{len(l)}</td>'
                             f'<td><a href="{link(min(l, key=lambda r: r["price_from"]))}">{e(oname(min(l, key=lambda r: r["price_from"])))}</a></td></tr>' for d, l in cities)
             ctab = (f'<div class="pm-scroll"><table class="pm-t"><thead><tr><th scope="col">{T("Ciudad", "City")}</th><th scope="col">{T("Desde", "From")}</th><th scope="col">{T("Rutas", "Routes")}</th><th scope="col">{T("Salida más barata", "Cheapest departure")}</th></tr></thead><tbody>{cards}</tbody></table></div>')
@@ -674,6 +799,7 @@ def country_pages(by_dest, en_slug):
                     + f'<h2>{e(T(f"Ciudades de {cn}", f"Cities in {cn}"))}</h2>' + ctab
                     + f'<h2>{e(T(f"Las rutas más baratas a {cn}", f"Cheapest routes to {cn}"))}</h2>' + table(allr[:20], en, T('Ruta', 'Route'), lambda r: f'{oname(r)} → {dname(r)}', link)
                     + f'<p class="pm-note">{e(T(f"Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com (última consulta: {fd(checked)}). Cambian cada día.", f"Return economy fares for 1 adult, checked on Kiwi.com (last search: {fd(checked, True)}). They change every day."))}</p>'
+                    + src_box(url_en if en else url_es, checked, en)
                     + f'<h2>{T("Preguntas frecuentes", "FAQ")}</h2><div class="txt guide">' + ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in qas) + '</div>'
                     + '</div></main>' + (E.FOOTER if en else '') + '</body></html>')
             write(f'en/flights/country/{G.slugify(ce)}' if en else f'vuelos/pais/{cs}', out)
@@ -799,6 +925,9 @@ def build(rows, en_slug):
             lk = [(u, t) for u, t in SHORT_LABEL.items() if u.startswith('/en/') == en and u.rstrip('/').endswith('-' + (G.slugify(en_names.city_en(o)) if en else G.slugify(o)))]
             if lk:
                 _inject(base.strip('/') + '/index.html', '<nav class="wrap pm-links" aria-label="' + ('More' if en else 'Más') + '">' + ''.join(f'<a href="{u}">{e(t)}</a>' for u, t in lk) + '</nav>', 'hlc-short')
+    hu_es, hu_en = holiday_pages(by_orig, en_slug)
+    urls_es += hu_es
+    urls_en += hu_en
     ds = sorted(by_dest.items(), key=lambda kv: kv[1][0]['dest'])
     os_ = sorted(by_orig.items())
     for en, path in ((False, 'vuelos/index.html'), (True, 'en/flights/index.html')):
@@ -811,6 +940,7 @@ def build(rows, en_slug):
                       f'<h2 style="margin-top:28px">{T("Nuestros datos", "Our data")}</h2><div class="chips pm-chips"><a class="chip" href="{T("/vuelos/datos/", "/en/flights/data/")}">{T("Precios de vuelos 2026 por ruta", "Flight prices 2026 by route")}</a>'
                       f'<a class="chip" href="{T("/vuelos/datos/mes-mas-barato/", "/en/flights/data/cheapest-month/")}">{T("Mes más barato por destino", "Cheapest month by destination")}</a>'
                       f'<a class="chip" href="/vuelos/precios-vuelos-2026.csv">CSV</a>'
+                      + ''.join(f'<a class="chip" href="{u_}">{e(t_)}</a>' for u_, t_ in HOLI_LINKS[en])
                       + ''.join(f'<a class="chip" href="{u_.replace(SITE, "")}">{e(t_)}</a>' for u_, t_ in ((u[0], SHORT_LABEL.get(u[0].replace(SITE, ''), '')) for u in (su_en if en else su_es)) if t_)
                       + ''.join(f'<a class="chip" href="{T("/vuelos/mes/" + MES_ES[m_ - 1] + "-" + str(y_) + "/", "/en/flights/month/" + MES_EN[m_ - 1].lower() + "-" + str(y_) + "/")}">{T("Vuelos baratos en " + MES_ES[m_ - 1], "Cheap flights in " + MES_EN[m_ - 1])} {y_}</a>'
                                 for y_, m_ in [(_today.year + (_today.month - 1 + k) // 12, (_today.month - 1 + k) % 12 + 1) for k in range(1, 4)])
@@ -821,6 +951,121 @@ def build(rows, en_slug):
     urls_es += du_es
     urls_en += du_en
     print('precios', {'destinos': sum(1 for u in urls_es if '/a/' in u[0]), 'origenes': sum(1 for u in urls_es if '/desde/' in u[0]), 'meses_nuevos': w, 'meses_total': len(meses)})
+    return urls_es, urls_en
+
+
+def cite_meta(page, title, url, date_, en):
+    """Ronda 6: etiquetas citation_* (Google Scholar y lectores de citas) en las páginas de datos."""
+    m = (f'<meta name="citation_title" content="{e(title)}"><meta name="citation_author" content="Happy Low Cost">'
+         f'<meta name="citation_publisher" content="Happy Low Cost"><meta name="citation_date" content="{(date_ or "")[:10].replace("-", "/")}">'
+         f'<meta name="citation_public_url" content="{url}"><meta name="citation_language" content="{"en" if en else "es"}">')
+    return page.replace('</head>', m + '</head>', 1)
+
+
+# ---------- ronda 6: puentes y festivos 2027 con escapadas baratas ----------
+# Fiestas nacionales 2027: BOE-A-2026-21254 (Resolución de 8 de octubre de 2026, BOE del 13-oct-2026)
+ES_HOL_2027 = [
+    ('2027-01-01', 'Año Nuevo', "New Year's Day", 'Viernes: fin de semana largo del 1 al 3 de enero.', 'Friday: long weekend from 1 to 3 January.'),
+    ('2027-01-06', 'Epifanía del Señor (Reyes)', 'Epiphany', 'Miércoles: cogiendo el jueves 7 y el viernes 8, tienes 5 días (del 6 al 10).', 'Wednesday: taking Thursday 7 and Friday 8 off gives you 5 days (6 to 10 January).'),
+    ('2027-03-26', 'Viernes Santo', 'Good Friday', 'Semana Santa: fin de semana largo del 26 al 28 de marzo. El Jueves Santo (25) y el Lunes de Pascua (29) dependen de cada comunidad.', 'Easter: long weekend from 26 to 28 March. Maundy Thursday (25) and Easter Monday (29) depend on each region.'),
+    ('2027-05-01', 'Fiesta del Trabajo', 'Labour Day', 'Cae en sábado: no hay puente nacional.', 'Falls on a Saturday: no national long weekend.'),
+    ('2027-10-12', 'Fiesta Nacional de España', 'Spanish National Day', 'Martes: cogiendo el lunes 11, tienes 4 días (del 9 al 12).', 'Tuesday: taking Monday 11 off gives you 4 days (9 to 12 October).'),
+    ('2027-11-01', 'Todos los Santos', "All Saints' Day", 'Lunes: fin de semana largo del 30 de octubre al 1 de noviembre.', 'Monday: long weekend from 30 October to 1 November.'),
+    ('2027-12-06', 'Día de la Constitución', 'Constitution Day', 'Lunes, y el miércoles 8 también es festivo: cogiendo el martes 7, tienes 5 días (del 4 al 8).', 'Monday, and Wednesday 8 is also a holiday: taking Tuesday 7 off gives you 5 days (4 to 8 December).'),
+    ('2027-12-08', 'Inmaculada Concepción', 'Immaculate Conception', 'Miércoles: el «acueducto» de diciembre, junto con el 6.', 'Wednesday: the December "bridge" together with the 6th.'),
+    ('2027-12-25', 'Navidad', 'Christmas Day', 'Cae en sábado: consulta si tu comunidad traslada algún festivo.', 'Falls on a Saturday: check whether your region moves any holiday.'),
+]
+# Bank holidays 2027 de Inglaterra y Gales (gov.uk/bank-holidays; Escocia e Irlanda del Norte tienen días distintos)
+UK_HOL_2027 = [
+    ('2027-01-01', 'Año Nuevo', "New Year's Day", 'Fin de semana largo del 1 al 3 de enero.', 'Long weekend: 1 to 3 January.'),
+    ('2027-03-26', 'Viernes Santo', 'Good Friday', 'Con el Lunes de Pascua, 4 días seguidos (26 al 29 de marzo).', 'With Easter Monday, 4 days in a row (26 to 29 March).'),
+    ('2027-03-29', 'Lunes de Pascua', 'Easter Monday', 'Fin del puente de Semana Santa (no es festivo en Escocia).', 'End of the Easter weekend (not a bank holiday in Scotland).'),
+    ('2027-05-03', 'Early May bank holiday', 'Early May bank holiday', 'Fin de semana largo del 1 al 3 de mayo.', 'Long weekend: 1 to 3 May.'),
+    ('2027-05-31', 'Spring bank holiday', 'Spring bank holiday', 'Fin de semana largo del 29 al 31 de mayo.', 'Long weekend: 29 to 31 May.'),
+    ('2027-08-30', 'Summer bank holiday', 'Summer bank holiday', 'Fin de semana largo del 28 al 30 de agosto (en Escocia es el 2 de agosto).', 'Long weekend: 28 to 30 August (Scotland has its own date).'),
+    ('2027-12-27', 'Navidad (sustituye al sábado 25)', 'Christmas Day (substitute day)', 'Con el 28, del sábado 25 al martes 28 de diciembre: 4 días.', 'With the 28th, from Saturday 25 to Tuesday 28 December: 4 days.'),
+    ('2027-12-28', 'Boxing Day (sustituye al domingo 26)', 'Boxing Day (substitute day)', 'Cierra el puente de Navidad.', 'Closes the Christmas break.'),
+]
+DOW_ES = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
+DOW_EN = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+HOLI_LINKS = {False: [], True: []}
+
+
+def holiday_pages(by_orig, en_slug):
+    urls_es, urls_en = [], []
+    gbp = _gbp()
+    HOLI_LINKS[False][:] = []
+    HOLI_LINKS[True][:] = []
+    specs = [('es', ES_HOL_2027, ['Madrid', 'Barcelona'], 'vuelos/puentes-2027', 'en/flights/spain-bank-holidays-2027',
+              'Puentes 2027: festivos nacionales y vuelos baratos para escaparte', 'Spain bank holidays 2027: long weekends and cheap flights',
+              'https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-21254', 'BOE del 13 de octubre de 2026', 'Spanish Official Gazette (BOE), 13 October 2026'),
+             ('uk', UK_HOL_2027, ['Londres', 'Manchester'], 'vuelos/festivos-reino-unido-2027', 'en/flights/uk-bank-holidays-2027',
+              'Festivos de Reino Unido 2027: puentes y escapadas baratas', 'UK bank holidays 2027: long weekends and cheap city breaks',
+              'https://www.gov.uk/bank-holidays', 'gov.uk', 'gov.uk')]
+    for key, hol, origs, p_es, p_en, t_es, t_en, src, src_es, src_en in specs:
+        upcoming = [h for h in hol if h[0] >= _today.isoformat()]
+        if not upcoming:
+            continue
+        picks = {}
+        for o in origs:
+            lst = clean_prices(by_orig.get(o) or [])
+            near = sorted([r for r in lst if 0 < airport_km(r.get('origin_iata'), r.get('dest_iata')) <= SHORT_KM], key=lambda r: r['price_from'])
+            picks[o] = near[:6]
+        checked = max([((r.get('facts') or {}).get('consultado') or '') for l in picks.values() for r in l] or [''])
+        for en in (False, True):
+            T = (lambda a, b: b if en else a)
+            url_es, url_en = f'{SITE}/{p_es}/', f'{SITE}/{p_en}/'
+            url = url_en if en else url_es
+            title = t_en if en else t_es
+            dname = (lambda r: E.NAMES.get(r['dest_slug'], r['dest'])) if en else (lambda r: r['dest'])
+            link = (lambda r: f'/en/flights/{en_slug(r)}/') if en else (lambda r: f'/vuelos/{r["slug"]}/')
+            def money(o, v):
+                if en and o in ('Londres', 'Manchester') and gbp:
+                    return f'£{int(round(v * gbp))} (€{v})'
+                return f'€{v}' if en else f'{v} €'
+            def dlabel(iso):
+                d_ = datetime.date.fromisoformat(iso)
+                return f'{DOW_EN[d_.weekday()]} {d_.day} {MES_EN[d_.month - 1]}' if en else f'{DOW_ES[d_.weekday()]} {d_.day} de {MES_ES[d_.month - 1]}'
+            if key == 'es':
+                lead = T(f'España tiene 9 fiestas nacionales en 2027 (BOE del 13 de octubre de 2026). Siete caen en lunes, martes, miércoles o viernes y dan para puente: el mejor, el de diciembre, con 5 días cogiendo solo el martes 7. Cada comunidad añade sus propios festivos.',
+                         'Spain has 9 national public holidays in 2027 (Official Gazette, 13 October 2026). Seven fall on a Monday, Tuesday, Wednesday or Friday and make a long weekend: the best is in December, with 5 days off for just one day of leave on Tuesday 7. Each region adds its own holidays.')
+            else:
+                lead = T('Inglaterra y Gales tienen 8 bank holidays en 2027, todos en día laborable: seis fines de semana largos, con 4 días seguidos en Semana Santa (26 al 29 de marzo) y en Navidad (25 al 28 de diciembre). Escocia e Irlanda del Norte tienen algunos días distintos.',
+                         'England and Wales have 8 bank holidays in 2027, all on weekdays: six long weekends, with 4 days in a row at Easter (26 to 29 March) and Christmas (25 to 28 December). Scotland and Northern Ireland have some different days.')
+            nxt = upcoming[0]
+            qa_ = T(f'Próximo festivo: {nxt[1]}, {dlabel(nxt[0])}. {nxt[3]}', f'Next holiday: {nxt[2]}, {dlabel(nxt[0])}. {nxt[4]}')
+            trs = ''.join(f'<tr><th scope="row"><time datetime="{h[0]}">{e(dlabel(h[0]))}</time></th><td>{e(h[2] if en else h[1])}</td><td>{e(h[4] if en else h[3])}</td></tr>' for h in hol)
+            tab = (f'<div class="pm-scroll"><table class="pm-t"><thead><tr><th scope="col">{T("Fecha", "Date")}</th><th scope="col">{T("Festivo", "Holiday")}</th><th scope="col">{T("Puente", "Long weekend")}</th></tr></thead><tbody>{trs}</tbody></table></div>')
+            fl = ''
+            for o, l in picks.items():
+                if len(l) < 3:
+                    continue
+                on = en_names.city_en(o) if en else o
+                esc = (f'/en/flights/weekend-breaks/from-{G.slugify(en_names.city_en(o))}/' if en else f'/vuelos/escapadas/desde-{G.slugify(o)}/')
+                fl += (f'<h3>{T("Escapadas desde " + on, "City breaks from " + on)}</h3><ul>' + ''.join(f'<li><a href="{link(r)}">{e(dname(r))}</a>: {T("desde", "from")} {money(o, r["price_from"])}' + (T(', directo', ', direct') if (r.get('facts') or {}).get('escalas_ida') == 0 else '') + '</li>' for r in l)
+                       + f'</ul><p><a href="{esc}">{T("Todas las escapadas desde " + on, "All weekend breaks from " + on)}</a></p>')
+            if fl:
+                fl = (f'<h2>{T("Vuelos baratos para los puentes", "Cheap flights for the long weekends")}</h2><p class="pm-note">{e(T(f"Vuelo de ida y vuelta más barato que encontramos a menos de 2.000 km (consulta del {fd(checked)}, no necesariamente en esas fechas). Los precios cambian cada día.", f"Cheapest return flight we found under 2,000 km (search on {fd(checked, True)}, not necessarily on those dates). Prices change every day."))}</p>' + fl)
+            qas = [(T('¿Cuántos festivos hay en 2027?', 'How many bank holidays are there in 2027?'), lead),
+                   (T('¿Cuál es el próximo puente?', 'When is the next long weekend?'), qa_)]
+            months = sorted({h[0][:7] for h in upcoming})[:3]
+            mlinks = ''.join(f'<a class="chip" href="{T("/vuelos/mes/" + MES_ES[int(m[5:]) - 1] + "-" + m[:4] + "/", "/en/flights/month/" + MES_EN[int(m[5:]) - 1].lower() + "-" + m[:4] + "/")}">{T("Vuelos baratos en " + MES_ES[int(m[5:]) - 1], "Cheap flights in " + MES_EN[int(m[5:]) - 1])} {m[:4]}</a>'
+                             for m in months if os.path.isdir(T('vuelos/mes/' + MES_ES[int(m[5:]) - 1] + '-' + m[:4], 'en/flights/month/' + MES_EN[int(m[5:]) - 1].lower() + '-' + m[:4])))
+            crumbs = [(T('Inicio', 'Home'), T('/', '/en/')), (T('Rutas de vuelos', 'Flight routes'), T('/vuelos/', '/en/flights/')), (title.split(':')[0], None)]
+            desc = G.smart_desc(lead, 160)
+            ld = [faq_ld(qas, 'en' if en else 'es-ES'), crumbs_ld(crumbs), page_ld(title, url, checked, en)]
+            out = page_shell(en, title + ' · Happy Low Cost', desc, url, url_es if en else url_en, ld, 'precios')
+            out += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs, en)}<div class="kicker">{T("Calendario 2027", "2027 calendar")}</div><h1 class="x-h1">{e(title)}</h1>'
+                    + QA_BOX(T, qa_) + f'<p style="font-size:18px;max-width:820px">{e(lead)}</p>'
+                    + f'<h2>{T("Calendario de festivos 2027", "2027 bank holiday calendar")}</h2>' + tab
+                    + f'<p class="pm-src" style="font-size:14px;color:#555;overflow-wrap:anywhere">{T("Fuente", "Source")}: <a href="{src}" rel="nofollow noopener">{e(src_en if en else src_es)}</a>.' + T(' Faltan los festivos autonómicos y locales.', '') + '</p>'
+                    + fl + (f'<div class="chips pm-chips" style="margin-top:14px">{mlinks}</div>' if mlinks else '')
+                    + f'<div class="hlc-row" style="margin:18px 0"><a class="hlc-btn" href="{T("/alertas/", "/en/alerts/")}">{T("Avísame de chollos para el puente", "Alert me to deals for the long weekend")}</a></div>'
+                    + f'<h2>{T("Preguntas frecuentes", "FAQ")}</h2><div class="txt guide">' + ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in qas) + '</div>'
+                    + '</div></main>' + (E.FOOTER if en else '') + '</body></html>')
+            write(p_en if en else p_es, out)
+            (urls_en if en else urls_es).append((url, checked[:10]))
+            HOLI_LINKS[en].append((url.replace(SITE, ''), title.split(':')[0]))
     return urls_es, urls_en
 
 
@@ -875,6 +1120,7 @@ def data_pages(rows, meses, en_slug):
                f'<th scope="col">{T("Diferencia", "Difference")}</th><th scope="col">{T("Escalas", "Stops")}</th><th scope="col">{T("Aerolínea", "Airline")}</th><th scope="col">{T("Consulta", "Checked")}</th></tr></thead><tbody>{trs}</tbody></table></div>')
         cite = T(f'Cómo citarlo: «Happy Low Cost, Precios de vuelos desde España {yr}, {url_es}, consultado el {fd(checked)}».', f'How to cite: "Happy Low Cost, Flight prices from Spain {yr}, {url_en}, retrieved {fd(checked, True)}".')
         page = page_shell(en, title, G.smart_desc(lead), url, url_es if en else url_en, [ds, crumbs_ld(crumbs)], 'precios')
+        page = cite_meta(page, title, url, checked, en)
         page += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs, en)}<div class="kicker">{T("Datos propios", "Our own data")}</div><h1 class="x-h1">{e(title)}</h1>'
                  + QA_BOX(T, lead) +
                  f'<div class="hlc-row" style="margin:14px 0"><a class="hlc-btn o" href="/vuelos/precios-vuelos-{yr}.csv" download>{T("Descargar CSV (todas las rutas)", "Download CSV (all routes)")}</a>'
@@ -912,6 +1158,7 @@ def data_pages(rows, meses, en_slug):
                    variableMeasured=T(["mes más barato", "precio ida y vuelta (EUR)"], ["cheapest month", "return fare (EUR)"]))
         crumbs2 = crumbs[:2] + [(T('Datos', 'Data'), T('/vuelos/datos/', '/en/flights/data/')), (T('Mes más barato', 'Cheapest month'), None)]
         page = page_shell(en, title2, G.smart_desc(lead2), url2, url2_es if en else url2_en, [ds2, crumbs_ld(crumbs2)], 'precios')
+        page = cite_meta(page, title2, url2, t2, en)
         page += (f'<main class="sec" style="padding-top:22px"><div class="wrap">{crumbs_html(crumbs2, en)}<div class="kicker">{T("Datos propios", "Our own data")}</div><h1 class="x-h1">{e(title2)}</h1>'
                  + QA_BOX(T, lead2) + f'<input type="search" class="pm-q" placeholder="{T("Filtra por destino", "Filter by destination")}" aria-label="{T("Filtrar", "Filter")}">' + tbl2.replace('class="pm-t"', 'class="pm-t pm-x"')
                  + f'<p class="pm-note">{e(T("Precio de ida y vuelta en clase turista para 1 adulto. Un mes más barato no garantiza ese precio en todas sus fechas.", "Return economy fare for 1 adult. A cheaper month does not guarantee that fare on every date."))} '

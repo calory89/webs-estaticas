@@ -120,6 +120,10 @@ Se paga con tarjeta casi en todas partes, incluso en puestos de calle. Lleva alg
 
 Con 4 días ves lo esencial de Seúl sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Seúl?
+
+Para quien escribió esta guía, sí: Seúl funciona como pocas capitales asiáticas. Con 4 días ves lo esencial. Presupuesto: Hay camas en dormitorio desde unos 20-30 € y habitaciones privadas sencillas desde 50-60 €.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Seúl: https://www.happylowcost.com/destinos/seul/#chollos

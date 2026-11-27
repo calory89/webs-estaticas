@@ -240,6 +240,10 @@ En Tortuguero, la tortuga verde desova de julio a octubre. Para ver tortuga laú
 
 En la mayor parte del país, sí, incluidos San José, La Fortuna y Monteverde. En zonas rurales y en algunas partes del Caribe es mejor preguntar.
 
+### ¿Merece la pena visitar Costa Rica?
+
+Para quien escribió esta guía, sí: Costa Rica no es barata ni tiene grandes ciudades bonitas. Con 7 días ves lo esencial. Presupuesto: El Parque Nacional Volcán Arenal tiene senderos sobre coladas de lava antiguas y cuesta unos 15 €.
+
 ### ¿Es caro viajar a Costa Rica?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 140-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

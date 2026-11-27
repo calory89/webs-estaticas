@@ -123,6 +123,10 @@ Consulta con un centro de vacunación internacional antes de ir. La malaria exis
 
 El chelín tanzano es la moneda oficial, pero los precios turísticos se dan en dólares. Lleva billetes recientes y en buen estado, porque los antiguos a veces se rechazan.
 
+### ¿Merece la pena visitar Zanzíbar?
+
+Para quien escribió esta guía, sí: Zanzíbar tiene fama de postal de lujo, y es verdad que hay resorts de cinco cifras la noche. Presupuesto: Hay opciones económicas desde unos 25-40 euros la doble, y casas con más encanto por encima de los 80.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Zanzíbar: https://www.happylowcost.com/destinos/zanzibar/#chollos

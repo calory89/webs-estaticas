@@ -1,4 +1,4 @@
-# Varsovia en 3 días: qué ver, dónde comer y cuánto cuesta
+# Qué ver en Varsovia en 3 días: guía low cost con precios
 
 > Guía de viaje de Varsovia de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/varsovia/
 > Actualizada: 2026-10-21
@@ -114,6 +114,10 @@ En general sí. Aplica el sentido común habitual en estaciones y transporte, y 
 ### ¿Cuál es la mejor época para visitarla?
 
 Mayo, junio y septiembre, por el clima agradable. Si prefieres precios más bajos y ambiente navideño, diciembre merece la pena.
+
+### ¿Merece la pena visitar Varsovia?
+
+Para quien escribió esta guía, sí: Varsovia no te gana por el postal, te gana por la historia que lleva encima. Con 3 días ves lo esencial. Presupuesto: Orientativamente, una cama en dormitorio compartido ronda los 15-25 euros, una habitación doble en hotel sencillo entre 50 y 90, y los apartamentos funcionan bien si viajáis en grupo.
 
 ### ¿Es caro viajar a Varsovia?
 

@@ -236,6 +236,10 @@ Spanish is the everyday language, but English is widely spoken in hotels, restau
 
 Late August to early November is the cheapest, though it falls in hurricane season. May and early June are a safer compromise between price and weather.
 
+### Is San Juan worth visiting?
+
+For the traveller who wrote this guide, yes: San Juan is two cities in one. Old San Juan is a walled Spanish colonial town of pastel houses and blue cobblestones on a small island. 4 days are enough for the essentials. Budget: Daily budgets per person, excluding flights: Shoestring: about $90-130 (€85-120).
+
 ## Flights and deals
 
 - Flight deals to San Juan: https://www.happylowcost.com/en/destinations/san-juan/#deals

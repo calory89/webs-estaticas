@@ -230,6 +230,10 @@ La Torre de Shanghái, por altura. Si quieres las vistas gratis con la Torre inc
 
 People's Square o la calle Nanjing Este por comodidad, y la Concesión Francesa si prefieres un ambiente más tranquilo y de barrio.
 
+### ¿Merece la pena visitar Shanghái?
+
+Para quien escribió esta guía, sí: Shanghái no es la China de templos y murallas que muchos imaginan. Con 4 días ves lo esencial. Presupuesto: Presupuesto ajustado: 45-60 € al día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Shanghái: https://www.happylowcost.com/destinos/shanghai/#chollos

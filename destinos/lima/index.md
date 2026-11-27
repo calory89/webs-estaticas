@@ -127,6 +127,10 @@ Para sierra y Machu Picchu, de mayo a septiembre. Si quieres evitar multitudes y
 
 Con 14 días ves lo esencial de Perú sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Perú?
+
+Para quien escribió esta guía, sí: Perú es de esos países donde cada tres días cambias de planeta. Con 14 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Perú: https://www.happylowcost.com/destinos/lima/#chollos

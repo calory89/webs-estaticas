@@ -135,6 +135,10 @@ Yes, very widely. Finnish and Swedish are the official languages, and you will s
 
 Very. Normal city precautions are enough, though you should keep an eye on pickpockets around the station and on trams in busy periods.
 
+### Is Helsinki worth visiting?
+
+For the traveller who wrote this guide, yes: Helsinki is compact, calm and a little odd, and that is the appeal. 3 days are enough for the essentials. Budget: Budget: about 80 to 110 euros, with a hostel, market lunch and supermarket dinner.
+
 ## Flights and deals
 
 - Flight deals to Helsinki: https://www.happylowcost.com/en/destinations/helsinki/#deals

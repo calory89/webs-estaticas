@@ -208,6 +208,10 @@ Easily. The train takes about 20 minutes and costs just a few euros, and a half 
 
 Socca, pissaladière, pan bagnat, salade niçoise and petits farcis. Socca hot from the oven is the one not to miss.
 
+### Is Nice worth visiting?
+
+For the traveller who wrote this guide, yes: Nice is the most liveable city on the French Riviera: big enough to have real neighbourhoods, markets and locals going about their day, small enough to cross on foot in an hour. 3 days are enough for the essentials. Budget: Shoestring (€70-100 per day): hostel bed €30-45, street food and supermarket picnics €20-25, public beaches, one museum, local transport €5.
+
 ## Flights and deals
 
 - Flight deals to Nice: https://www.happylowcost.com/en/destinations/nice/#deals

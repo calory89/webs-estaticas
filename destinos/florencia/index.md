@@ -147,6 +147,10 @@ Casi todo, sí. El centro es pequeño y plano. Solo el Piazzale Michelangelo tie
 
 Abril, mayo, septiembre y octubre tienen buen clima y la ciudad se mantiene manejable. Evita julio y agosto si no soportas el calor.
 
+### ¿Merece la pena visitar Florencia?
+
+Para quien escribió esta guía, sí: Florencia cabe en un paseo. Puedes cruzar el centro histórico a pie en veinte minutos, y en ese rato pasas por más obras maestras por metro cuadrado que en casi cualquier otra ciudad europea. Con 3 días ves lo esencial. Presupuesto: Como referencia, una cama en dormitorio compartido suele moverse en torno a 30-50 euros, una habitación doble sencilla entre 90 y 150 y los hoteles céntricos de categoría media parten de unos 150-200, con mucha variación según…
+
 ### ¿Es caro viajar a Florencia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

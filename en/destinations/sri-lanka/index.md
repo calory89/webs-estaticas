@@ -127,6 +127,10 @@ No. Stick to bottled or filtered water, and many guesthouses have refill station
 
 Yes, it is enough for the main sights and a few beach days at a relaxed pace. Even ten days works if you keep the route simple.
 
+### Is Sri Lanka worth visiting?
+
+For the traveller who wrote this guide, yes: Sri Lanka is small, roughly the size of Ireland, yet in a single week you can climb a rock fortress at sunrise, watch elephants at a waterhole, ride a train through tea country and end up on a surf beach. 9 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Sri Lanka: https://www.happylowcost.com/en/destinations/sri-lanka/#deals

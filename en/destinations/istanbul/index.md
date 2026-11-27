@@ -148,6 +148,10 @@ Mostly, yes, in hotels, restaurants and shops. Keep some cash for small purchase
 
 4 days are enough to see the essentials of Istanbul without rushing. The route in this guide is organised day by day.
 
+### Is Istanbul worth visiting?
+
+For the traveller who wrote this guide, yes: Istanbul is one of the few cities where you can have breakfast in Europe, take a ferry for the price of a coffee and be in Asia before the tea gets cold. 4 days are enough for the essentials. Budget: Budget: about 40 to 60 euros a day, with a hostel, street food and public transport.
+
 ## Flights and deals
 
 - Flight deals to Istanbul: https://www.happylowcost.com/en/destinations/istanbul/#deals

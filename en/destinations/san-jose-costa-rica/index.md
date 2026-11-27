@@ -249,6 +249,10 @@ February to April gives the driest Pacific weather. December and May offer a goo
 
 In most of the country, including San José, La Fortuna and Monteverde, tap water is safe. In some coastal and rural areas, ask locally or stick to filtered water.
 
+### Is Costa Rica worth visiting?
+
+For the traveller who wrote this guide, yes: Costa Rica is not a cheap tropical escape, so don't arrive expecting Nicaraguan or Guatemalan prices. 7 days are enough for the essentials. Budget: Arenal Volcano National Park costs about €15 (₡8,500) and its trails cross old lava flows with clear views of the summit, weather permitting.
+
 ## Flights and deals
 
 - Flight deals to Costa Rica: https://www.happylowcost.com/en/destinations/san-jose-costa-rica/#deals

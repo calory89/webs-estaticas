@@ -114,6 +114,10 @@ Mejor no. Compra agua embotellada, que se vende por todas partes, y ten cuidado 
 
 Entre tres y cuatro para lo esencial. Si quieres añadir Viñales, cuenta con cinco o seis.
 
+### ¿Merece la pena visitar La Habana?
+
+Para quien escribió esta guía, sí: La Habana no se parece a nada que hayas pisado en Europa ni en el resto del Caribe. Con 4 días ves lo esencial. Presupuesto: La opción más recomendable en general son las casas particulares, el alojamiento en casa de familias, con habitación privada y desayuno por un precio orientativo de entre 30 y 60 euros.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a La Habana: https://www.happylowcost.com/destinos/la-habana/#chollos

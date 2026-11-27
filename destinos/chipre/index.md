@@ -123,6 +123,10 @@ Con 7 días ves lo esencial de Chipre sin prisas. La ruta de esta guía está or
 
 Hoy el chollo más barato que tenemos a Chipre cuesta 121 € ida y vuelta desde Alicante. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Merece la pena visitar Chipre?
+
+Para quien escribió esta guía, sí: Chipre te da en una semana lo que otros sitios reparten en tres países: playas de agua clara, mosaicos romanos, monasterios bizantinos pintados y montañas con pueblos de piedra. Con 7 días ves lo esencial. Presupuesto: Orientativamente, una habitación sencilla o un apartahotel económico ronda los 45 a 80 euros por noche en temporada media, y sube bastante en verano.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Chipre: https://www.happylowcost.com/destinos/chipre/#chollos

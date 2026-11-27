@@ -227,6 +227,10 @@ En enero, pasado Reyes, y en septiembre durante la ruska. Diciembre es con difer
 
 Sí, en Finlandia se paga con tarjeta hasta un café. No hace falta llevar efectivo.
 
+### ¿Merece la pena visitar Rovaniemi y Laponia?
+
+Para quien escribió esta guía, sí: Rovaniemi es una ciudad pequeña de unos 65.000 habitantes, reconstruida casi entera tras la Segunda Guerra Mundial. Con 5 días ves lo esencial. Presupuesto: Cifras por persona y día, sin vuelos: Ajustado: unos 120-150 € al día.
+
 ### ¿Es caro viajar a Rovaniemi y Laponia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 120-150 € por persona y día, y en el nivel "medio", unos unos 250-350 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -118,6 +118,10 @@ Peruvian soles. Cards work in hotels and bigger restaurants, but carry cash for 
 
 10 days are enough to see the essentials of Peru without rushing. The route in this guide is organised day by day.
 
+### Is Peru worth visiting?
+
+For the traveller who wrote this guide, yes: Peru packs in more than almost any country its size. 10 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Peru: https://www.happylowcost.com/en/destinations/peru/#deals

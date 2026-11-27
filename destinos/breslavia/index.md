@@ -222,6 +222,10 @@ Más de 600, y el número sigue creciendo. Puedes comprar un mapa en la oficina 
 
 En hoteles, restaurantes del centro y entre la gente joven, sí. En los bares de leche y con gente mayor, tira de señas o de traductor.
 
+### ¿Merece la pena visitar Breslavia?
+
+Para quien escribió esta guía, sí: Breslavia (Wrocław en polaco) es la ciudad polaca que más sorprende a quien llega sin expectativas. Con 3 días ves lo esencial. Presupuesto: Presupuesto orientativo por persona y día, sin vuelo: Ajustado: unos 45-60 € al día.
+
 ### ¿Es caro viajar a Breslavia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 45-60 € por persona y día, y en el nivel "medio", unos unos 90-130 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -228,6 +228,10 @@ No. The Metro, buses, bikeshare and walking cover everything in the city, and pa
 
 Reagan National is closest to the centre by far, but Dulles has most international flights and BWI often has the cheapest fares. All three connect by public transport.
 
+### Is Washington DC worth visiting?
+
+For the traveller who wrote this guide, yes: Washington DC is the rare big-name capital where most of the headline sights cost nothing. 3 days are enough for the essentials. Budget: Daily budgets per person, excluding flights: Shoestring: about €90-130 ($100-140).
+
 ## Flights and deals
 
 - Flight deals to Washington DC: https://www.happylowcost.com/en/destinations/washington-dc/#deals

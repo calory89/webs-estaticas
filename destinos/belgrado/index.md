@@ -105,6 +105,10 @@ Bastante, sobre todo entre jóvenes y en hostelería. Aun así, aprender "hvala"
 
 Depende de lo que busques. Si quieres ambiente de noche y baños, verano. Si prefieres caminar sin sufrir el calor, primavera o principios de otoño.
 
+### ¿Merece la pena visitar Belgrado?
+
+Para quien escribió esta guía, sí: Belgrado no es una ciudad bonita en el sentido clásico, y eso forma parte de su gracia. Con 3 días ves lo esencial. Presupuesto: De forma orientativa, una cama en hostel ronda los 12-20 euros, una habitación doble en pensión o apartamento sencillo, 35-55, y un hotel de gama media, 60-90.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Belgrado: https://www.happylowcost.com/destinos/belgrado/#chollos

@@ -135,6 +135,10 @@ Florence is far closer to the centre. Pisa often has more flights and cheaper fa
 
 Late April, May, late September and October offer the best balance of mild weather and manageable crowds.
 
+### Is Florence worth visiting?
+
+For the traveller who wrote this guide, yes: Florence is small enough to cross on foot in about 40 minutes, and almost every step of it is worth taking. 3 days are enough for the essentials. Budget: Budget: about €80 to €110 including a hostel bed, market lunches and one major sight.
+
 ## Flights and deals
 
 - Flight deals to Florence: https://www.happylowcost.com/en/destinations/florence/#deals

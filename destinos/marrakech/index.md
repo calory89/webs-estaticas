@@ -129,6 +129,10 @@ Sí, pero con restricciones. Se sirve en algunos hoteles, bares y restaurantes d
 
 Con 3 días ves lo esencial de Marrakech sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Marrakech?
+
+Para quien escribió esta guía, sí: Marrakech está a tres horas de vuelo desde buena parte de España, con low cost casi todo el año, y aun así parece otro planeta. Con 3 días ves lo esencial. Presupuesto: Hay habitaciones sencillas desde unos 30 o 40 euros y riads con encanto por 60 a 100.
+
 ### ¿Es caro viajar a Marrakech?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

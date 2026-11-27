@@ -135,6 +135,10 @@ Es habitual dejar un 10 % en restaurantes si el servicio ha sido bueno. En los b
 
 Hoy el chollo más barato que tenemos a Cracovia cuesta 58 € ida y vuelta desde Bilbao. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Merece la pena visitar Cracovia?
+
+Para quien escribió esta guía, sí: Cracovia es una de esas ciudades que resultan fáciles. Con 3 días ves lo esencial. Presupuesto: Ajustado: 40-50 € con hostal, bares mleczne y algún museo.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cracovia: https://www.happylowcost.com/destinos/cracovia/#chollos

@@ -137,6 +137,10 @@ Yes, if you accept some rain. Temperatures are mild, crowds are lighter and hote
 
 Today the cheapest deal we have to Lisbon is €46 return from Barcelona. Fares change by the hour: check the live price on the deal page.
 
+### Is Lisbon worth visiting?
+
+For the traveller who wrote this guide, yes: Lisbon is one of the few European capitals that still feels affordable, walkable (if you like hills) and properly lived-in. 3 days are enough for the essentials. Budget: Budget: about 60 to 80 euros per day with a hostel, simple meals and public transport.
+
 ## Flights and deals
 
 - Flight deals to Lisbon: https://www.happylowcost.com/en/destinations/lisbon/#deals

@@ -113,6 +113,10 @@ Mostly, yes. Use normal city sense: watch your phone and bags in crowded areas a
 
 Howth is the easiest by DART, with cliff walks and fresh seafood. Glendalough or Newgrange suit those with more time or a car.
 
+### Is Dublin worth visiting?
+
+For the traveller who wrote this guide, yes: Dublin is compact, talkative and a little scruffy, and that is much of its appeal. 3 days are enough for the essentials. Budget: Expect mid-range hotels from roughly €150 to €250 a night.
+
 ## Flights and deals
 
 - Flight deals to Dublin: https://www.happylowcost.com/en/destinations/dublin/#deals

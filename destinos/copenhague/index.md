@@ -121,6 +121,10 @@ De mayo a septiembre, por el clima y las horas de luz. Si buscas precios más ba
 
 Con 3 días ves lo esencial de Copenhague sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Copenhague?
+
+Para quien escribió esta guía, sí: Copenhague es una ciudad pequeña que funciona como un reloj. Con 3 días ves lo esencial. Presupuesto: En albergues, una cama en dormitorio compartido ronda los 35-55 euros por noche, y una habitación doble sencilla, entre 100 y 160 en temporada alta.
+
 ### ¿Es caro viajar a Copenhague?
 
 Depende de cómo viajes. Según esta guía, en el nivel "mochilero ajustado" se gastan unos 80-110 euros por persona y día, y en el nivel "más cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

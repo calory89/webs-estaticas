@@ -129,6 +129,10 @@ It is long rather than technical. If you walk regularly and start early, most pe
 
 The west, with Chania as a base. It combines a beautiful old town with Elafonissi, Balos and Samaria within reach.
 
+### Is Crete worth visiting?
+
+For the traveller who wrote this guide, yes: Crete is not an island you "do" in a weekend. 7 days are enough for the essentials. Budget: Budget: about €60-80 a day with hostels or simple rooms, bakery breakfasts, gyros or taverna lunches, and buses.
+
 ## Flights and deals
 
 - Flight deals to Crete: https://www.happylowcost.com/en/destinations/crete/#deals

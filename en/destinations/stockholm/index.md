@@ -144,6 +144,10 @@ Very rarely. The city has too much light, and the aurora is much more likely in 
 
 Today the cheapest deal we have to Stockholm is €71 return from Barcelona. Fares change by the hour: check the live price on the deal page.
 
+### Is Stockholm worth visiting?
+
+For the traveller who wrote this guide, yes: Stockholm is spread across 14 islands where Lake Mälaren meets the Baltic, so you are rarely more than a few minutes from water. 3 days are enough for the essentials. Budget: Budget: about 70 to 100 € a day.
+
 ## Flights and deals
 
 - Flight deals to Stockholm: https://www.happylowcost.com/en/destinations/stockholm/#deals

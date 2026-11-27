@@ -116,6 +116,10 @@ It is generally treated, but many visitors stick to bottled water. Ask at your a
 
 Five to seven days is ideal for seeing the island and still relaxing. A long weekend is too short for more than one region.
 
+### Is Mauritius worth visiting?
+
+For the traveller who wrote this guide, yes: Most people book Mauritius for the lagoons, and the lagoons are every bit as good as the photos. 3 days are enough for the essentials. Budget: Budget: around 40 to 60 euros a day, with a guesthouse, street food and buses.
+
 ## Flights and deals
 
 - Flight deals to Mauritius: https://www.happylowcost.com/en/destinations/mauritius/#deals

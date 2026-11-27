@@ -224,6 +224,10 @@ The tourist areas are generally safe. Use normal city caution at night downtown,
 
 Cocoa Beach and New Smyrna Beach on the Atlantic are both about an hour's drive. The Gulf Coast beaches near Tampa are about two hours away.
 
+### Is Orlando worth visiting?
+
+For the traveller who wrote this guide, yes: Orlando is two cities stuck together. One is the theme park machine to the southwest: Disney, Universal, SeaWorld and International Drive, with their hotels, outlet malls and eight-lane roads. 5 days are enough for the essentials. Budget: Per person per day, not counting flights: Shoestring (€110-160 / $125-185 on non-park days): shared motel or rental in Kissimmee, cheap food in Mills 50 or the supermarket, state parks and free attractions.
+
 ### Is Orlando expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €110-160 / $125-185 on non-park days per person per day and the "mid-range" level at about €220-350 / $250-400 on park days. Flights are extra: this page shows real fares checked by Happy Low Cost.

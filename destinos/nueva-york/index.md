@@ -121,6 +121,10 @@ Casi siempre. Lleva algo de efectivo para propinas pequeñas y carritos callejer
 
 Solo si vas a visitar muchas atracciones de pago. Calcula qué entradas quieres de verdad y compara con el precio del pase antes de decidir.
 
+### ¿Merece la pena visitar Nueva York?
+
+Para quien escribió esta guía, sí: Nueva York ya la conoces aunque no hayas estado: las series, las películas y los telediarios te la han metido en la cabeza. Con 5 días ves lo esencial. Presupuesto: Ajustado (unos 100-150 euros): hostal o habitación en Queens, comida callejera, metro y actividades gratuitas.
+
 ### ¿Es caro viajar a Nueva York?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-150 euros por persona y día, y en el nivel "cómodo", unos más de 350 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

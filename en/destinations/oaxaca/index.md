@@ -219,6 +219,10 @@ Yes. Restaurants and hotels in the centre take cards, but markets, street food, 
 
 Not really. Street food and markets are very cheap, and you can travel well on €35-50 a day. Boutique hotels and top restaurants push it up, and prices rise sharply during the big festivals.
 
+### Is Oaxaca worth visiting?
+
+For the traveller who wrote this guide, yes: Oaxaca is a low-rise colonial city of painted walls and green stone churches. 4 days are enough for the essentials. Budget: Hostel dorm (€12-20), market meals and street food (€10-15), colectivos and shuttles (€3-5), one paid site (€5), a cheap mezcal or two.
+
 ## Flights and deals
 
 - Flight deals to Oaxaca: https://www.happylowcost.com/en/destinations/oaxaca/#deals

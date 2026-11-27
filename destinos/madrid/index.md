@@ -235,6 +235,10 @@ Sí, incluso de noche en el centro. El problema principal son los carteristas en
 
 Rastro por la mañana, vermut en La Latina y tarde en el Retiro. Muchas tiendas del centro abren, así que también es buen día para comprar.
 
+### ¿Merece la pena visitar Madrid?
+
+Para quien escribió esta guía, sí: Madrid no tiene playa ni una postal tan reconocible como la Sagrada Familia, y le da igual. Con 3 días ves lo esencial. Presupuesto: Ajustado: unos 70-90 € al día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Madrid: https://www.happylowcost.com/destinos/madrid/#chollos

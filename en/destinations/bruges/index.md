@@ -118,6 +118,10 @@ From late morning to late afternoon, especially at weekends and in July and Augu
 
 Yes. Trains run frequently and take about an hour. Take an early one and you will have the best part of the day before the tour groups arrive.
 
+### Is Bruges worth visiting?
+
+For the traveller who wrote this guide, yes: Bruges is small enough to walk end to end in under an hour, and that is the point. 2 days are enough for the essentials. Budget: Backpacker: about 70 to 100 euros, with a dorm bed, frites and supermarket lunches, and one museum.
+
 ## Flights and deals
 
 - Flight deals to Bruges: https://www.happylowcost.com/en/destinations/bruges/#deals

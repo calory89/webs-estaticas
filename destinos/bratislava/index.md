@@ -225,6 +225,10 @@ Los jóvenes y el personal de hoteles y restaurantes del centro, sí. En los mer
 
 Gratis, Slavín y las terrazas del castillo. De pago, el mirador UFO del Puente SNP, sobre todo al atardecer.
 
+### ¿Merece la pena visitar Bratislava?
+
+Para quien escribió esta guía, sí: Bratislava es una capital pequeña que mucha gente visita como apéndice de Viena y luego se arrepiente de haberle dado solo una tarde. Con 2 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 50-70 € al día): hostal 25 €, menú del día y cena sencilla 20 €, transporte 5 €, alguna entrada 5-10 €, cervezas 5 €.
+
 ### ¿Es caro viajar a Bratislava?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

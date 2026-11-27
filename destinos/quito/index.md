@@ -228,6 +228,10 @@ Sí, hay vuelos directos o con escala en Guayaquil a las islas. Cuenta con pagar
 
 La Floresta para la mayoría de viajeros, por equilibrio entre seguridad, comida y ubicación. El centro histórico si solo vas dos o tres noches y quieres tenerlo todo a pie.
 
+### ¿Merece la pena visitar Quito?
+
+Para quien escribió esta guía, sí: Quito es una capital estirada a lo largo de un valle andino, a unos 2.850 metros de altura, con volcanes asomando por casi todas las calles. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado (35-50 € al día): hostal en La Mariscal (12-20 €), almuerzos del día y mercados (8-10 €), metro y bus (2 €), una entrada al día (5 €).
+
 ### ¿Es caro viajar a Quito?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

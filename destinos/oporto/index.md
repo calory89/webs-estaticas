@@ -125,6 +125,10 @@ Mayo y septiembre me parecen los más equilibrados: buen tiempo, menos masificac
 
 Con 3 días ves lo esencial de Oporto sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Oporto?
+
+Para quien escribió esta guía, sí: Oporto es de esas ciudades que se abarcan a pie en un fin de semana y aun así te dejan con ganas de volver. Con 3 días ves lo esencial. Presupuesto: Orientativamente, una cama en dormitorio de hostal sale por 20-35 euros la noche.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Oporto: https://www.happylowcost.com/destinos/oporto/#chollos

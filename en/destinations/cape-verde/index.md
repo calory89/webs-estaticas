@@ -239,6 +239,10 @@ Yes. The water ranges from about 21°C in winter to 26°C in late summer. Santa 
 
 Binter Cabo Verde flies between the main islands. CV Interilhas ferries run shorter hops such as Mindelo to Porto Novo on Santo Antão.
 
+### Is Cape Verde worth visiting?
+
+For the traveller who wrote this guide, yes: Cape Verde is ten volcanic islands off West Africa, and they have very little in common with each other. 7 days are enough for the essentials. Budget: Shoestring: €45-65 a day (5,000-7,200 CVE).
+
 ## Flights and deals
 
 - Flight deals to Cape Verde: https://www.happylowcost.com/en/destinations/cape-verde/#deals

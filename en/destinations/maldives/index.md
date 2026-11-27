@@ -123,6 +123,10 @@ The local currency is the rufiyaa, but US dollars are widely accepted for touris
 
 Generally yes in lagoons, but currents can be strong outside them. Use a guide for channel dives, wear a rash vest for sun and never touch the coral.
 
+### Is The Maldives worth visiting?
+
+For the traveller who wrote this guide, yes: Because the water really does look like that.
+
 ## Flights and deals
 
 - Flight deals to The Maldives: https://www.happylowcost.com/en/destinations/maldives/#deals

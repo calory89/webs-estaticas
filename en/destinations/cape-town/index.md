@@ -123,6 +123,10 @@ Yes, Cape Town's tap water is generally safe and good quality. Carry a refillabl
 
 5 days are enough to see the essentials of Cape Town without rushing. The route in this guide is organised day by day.
 
+### Is Cape Town worth visiting?
+
+For the traveller who wrote this guide, yes: Few cities put a flat-topped mountain, two oceans, a wine region and a penguin colony within an hour's drive of each other. 5 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Cape Town: https://www.happylowcost.com/en/destinations/cape-town/#deals

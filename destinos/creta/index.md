@@ -145,6 +145,10 @@ No, comparada con otras islas griegas. Se come bien por poco y hay alojamiento p
 
 La Canea, si buscas ambiente y belleza. Heraclión, si priorizas conexiones, Knossos y el museo.
 
+### ¿Merece la pena visitar Creta?
+
+Para quien escribió esta guía, sí: Creta no es una isla, es casi un país pequeño. Con 7 días ves lo esencial. Presupuesto: Hay casas venecianas convertidas en alojamientos, y alrededor de 60-100 euros la noche en temporada alta.
+
 ### ¿Es caro viajar a Creta?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos más de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

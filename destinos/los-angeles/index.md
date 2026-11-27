@@ -129,6 +129,10 @@ Septiembre y octubre ofrecen el mejor equilibrio entre clima y multitudes. Prima
 
 Para pasear, sí. Para bañarse, el agua del Pacífico es fría casi siempre y solo resulta agradable a final de verano y principios de otoño.
 
+### ¿Merece la pena visitar Los Ángeles?
+
+Para quien escribió esta guía, sí: Los Ángeles decepciona a quien espera una ciudad con centro, plaza y catedral. Con 5 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Los Ángeles: https://www.happylowcost.com/destinos/los-angeles/#chollos

@@ -123,6 +123,10 @@ Yes. Sofia's tap water is safe, and it's famously fresh. Public mineral-water fo
 
 Rakia, rose products, honey, lyutenitsa and a jar of white cheese if your airline allows it. The Central Market Hall is a good place to shop.
 
+### Is Sofia worth visiting?
+
+For the traveller who wrote this guide, yes: Sofia doesn't try to charm you in the first ten minutes. 3 days are enough for the essentials. Budget: Budget: about €35-45, with a hostel bed, bakery breakfasts, cheap lunches and public transport.
+
 ## Flights and deals
 
 - Flight deals to Sofia: https://www.happylowcost.com/en/destinations/sofia/#deals

@@ -156,6 +156,10 @@ Not for the city. Rent one only for Red Rock Canyon, Valley of Fire or Hoover Da
 
 The Strip is heavily policed and busy. Use common sense: watch your belongings in crowds, avoid empty streets away from the main areas at night, and keep an eye on your drinks.
 
+### Is Las Vegas worth visiting?
+
+For the traveller who wrote this guide, yes: Las Vegas is absurd, and that is the appeal. 4 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Las Vegas: https://www.happylowcost.com/en/destinations/las-vegas/#deals

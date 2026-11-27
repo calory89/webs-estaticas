@@ -135,6 +135,10 @@ Yes, Belgrade tap water is generally drinkable.
 
 3 days are enough to see the essentials of Belgrade without rushing. The route in this guide is organised day by day.
 
+### Is Belgrade worth visiting?
+
+For the traveller who wrote this guide, yes: Belgrade is not pretty in the way Prague or Vienna are. 3 days are enough for the essentials. Budget: Budget: about €35 to 50 with a hostel, bakery breakfasts and simple meals.
+
 ## Flights and deals
 
 - Flight deals to Belgrade: https://www.happylowcost.com/en/destinations/belgrade/#deals

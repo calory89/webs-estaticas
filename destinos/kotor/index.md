@@ -215,6 +215,10 @@ Sí, los autobuses locales hacen el trayecto por la costa en unos 20-25 minutos 
 
 Es más barato que Croacia, aunque el casco antiguo y Perast tienen precios de zona turística. Durmiendo en Dobrota y comiendo fuera de la plaza principal se viaja bien con un presupuesto medio.
 
+### ¿Merece la pena visitar Kotor?
+
+Para quien escribió esta guía, sí: Kotor es un casco antiguo amurallado y diminuto, metido al fondo de una bahía con montañas que caen a pico sobre el agua. Con 3 días ves lo esencial. Presupuesto: Presupuesto ajustado : unos 60-80 € por persona y día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Kotor: https://www.happylowcost.com/destinos/kotor/#chollos

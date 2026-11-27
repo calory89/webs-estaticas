@@ -138,6 +138,10 @@ Poco. La mayoría de sitios aceptan tarjeta, pero algunos puestos de los hawker 
 
 Con 4 días ves lo esencial de Singapur sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Singapur?
+
+Para quien escribió esta guía, sí: Singapur es una ciudad-estado del tamaño de un municipio grande, y aun así cuesta resumirla. Con 4 días ves lo esencial. Presupuesto: Como referencia general, una cama en dormitorio compartido o cápsula ronda los 25-40 euros, un hotel medio entre 100 y 170, y uno de categoría alta supera los 250.
+
 ### ¿Es caro viajar a Singapur?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 250 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

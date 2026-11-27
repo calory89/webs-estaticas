@@ -216,6 +216,10 @@ Entre 6 y 10 € en un local sencillo y 15-25 € en un buen restaurante con vin
 
 Los jóvenes y en hoteles y bares, sí. Muchos entienden también italiano.
 
+### ¿Merece la pena visitar Tirana?
+
+Para quien escribió esta guía, sí: Tirana no es una ciudad bonita en el sentido clásico, y conviene saberlo antes de aterrizar. Con 3 días ves lo esencial. Presupuesto: Ajustado (unos 35-45 € al día) : hostal, byrek y comida local, bus urbano, museos baratos.
+
 ### ¿Es caro viajar a Tirana?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 35-45 € por persona y día, y en el nivel "medio", unos unos 80-110 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

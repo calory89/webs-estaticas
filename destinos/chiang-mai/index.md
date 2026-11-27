@@ -226,6 +226,10 @@ Los españoles pueden entrar sin visado para estancias turísticas cortas. Las n
 
 Ropa ligera, algo que tape hombros y rodillas para los templos y, de noviembre a febrero, una chaqueta para la montaña y las mañanas frescas.
 
+### ¿Merece la pena visitar Chiang Mai?
+
+Para quien escribió esta guía, sí: Chiang Mai no es Bangkok en pequeño. Es una ciudad tranquila del norte de Tailandia, rodeada de montañas, con más de 300 templos, un casco antiguo cuadrado y amurallado por un foso, y una de las mejores cocinas del país. Con 4 días ves lo esencial. Presupuesto: Sin contar vuelos: Presupuesto ajustado : 25-35 € al día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Chiang Mai: https://www.happylowcost.com/destinos/chiang-mai/#chollos

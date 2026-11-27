@@ -122,6 +122,9 @@ TITLE_Q_EN = {
     'bruselas': lambda n, d, y: f'{n} in {d} days: itinerary and what to see ({y})' if d else None,  # "bruselas 3 days" / "brussels 3 days"
     'creta': lambda n, d, y: f'{n} on a budget: {d}-day itinerary, Balos and Elafonissi ({y})' if d else None,  # "elafonissi balos..." pos. 5,8, "crete on a budget"
     'mykonos': lambda n, d, y: f'{n} on a budget: {d}-day itinerary and cheap beaches ({y})' if d else None,  # "cheap beaches mykonos" pos. 13
+    # Ronda 6 (GSC 30-oct a 26-nov)
+    'mauricio': lambda n, d, y: f'{n} travel tips: {d}-day itinerary ({y})' if d else None,  # "mauritius travel tips" 200 impr. pos. 5,2
+    'casablanca': lambda n, d, y: f'Is {n} worth visiting? {d}-day itinerary ({y})' if d else None,  # "is casablanca worth visiting" 12 impr. pos. 9,4
 }
 
 

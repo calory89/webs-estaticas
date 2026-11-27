@@ -105,6 +105,10 @@ No. Swimming and landing are not allowed, to protect the sand. Boat tours pass n
 
 Today the cheapest deal we have to Sardinia is €43 return from Barcelona. Fares change by the hour: check the live price on the deal page.
 
+### Is Sardinia worth visiting?
+
+For the traveller who wrote this guide, yes: Sardinia never quite turned into a package-holiday cliché, even though its beaches could justify one. Budget: On a tight budget, expect about 60-80 euros a day with hostels, bakery lunches and buses.
+
 ## Flights and deals
 
 - Flight deals to Sardinia: https://www.happylowcost.com/en/destinations/sardinia/#deals

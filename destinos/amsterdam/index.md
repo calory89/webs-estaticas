@@ -119,6 +119,10 @@ Solo online y con bastante antelación. Consulta la web oficial en cuanto sepas 
 
 Casi siempre. Muchos establecimientos prefieren tarjeta de débito y algunos no aceptan efectivo, así que lleva una tarjeta sin comisiones por cambio de divisa.
 
+### ¿Merece la pena visitar Ámsterdam?
+
+Para quien escribió esta guía, sí: Ámsterdam es pequeña, plana y se recorre a pie casi entera. Con 3 días ves lo esencial. Presupuesto: Ajustado: 70-100 €, con albergue, comida de mercado y un museo.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ámsterdam: https://www.happylowcost.com/destinos/amsterdam/#chollos

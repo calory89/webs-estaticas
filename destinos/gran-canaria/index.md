@@ -229,6 +229,10 @@ Menos que la media de la península en comida y gasolina, porque Canarias tiene 
 
 En mayo, junio, septiembre y octubre, fuera de festivos. Es cuando hay vuelos y hoteles más baratos y el tiempo sigue siendo bueno.
 
+### ¿Merece la pena visitar Gran Canaria?
+
+Para quien escribió esta guía, sí: Gran Canaria tiene fama de isla de hamaca y bufé libre, y esa parte existe: el sur, de Playa del Inglés a Puerto Rico, es eso y poco más. Con 6 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 60-80 € por persona y día) : apartamento compartido en Las Palmas, guagua, menú del día y cenas sencillas, planes gratis.
+
 ### ¿Es caro viajar a Gran Canaria?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

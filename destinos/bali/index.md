@@ -122,6 +122,10 @@ Sí: Ubud, Nusa Penida y la costa sur de Uluwatu o Canggu caben bien en ese tiem
 
 Con 10 días ves lo esencial de Bali sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Bali?
+
+Para quien escribió esta guía, sí: Bali es una isla pequeña, de unos 150 kilómetros de lado a lado, que reúne arrozales, templos hindúes, playas con olas serias y una cocina que engancha. Con 10 días ves lo esencial. Presupuesto: Hay guesthouses familiares (homestays) desde unos 15-25 € la noche, con desayuno, y villas con piscina por 50-90 €.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bali: https://www.happylowcost.com/destinos/bali/#chollos

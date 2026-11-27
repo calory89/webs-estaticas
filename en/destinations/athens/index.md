@@ -127,6 +127,10 @@ Cards are widely accepted, but carry some euros for bakeries, small tavernas, ki
 
 Today the cheapest deal we have to Athens is €133 return from Zaragoza. Fares change by the hour: check the live price on the deal page.
 
+### Is Athens worth visiting?
+
+For the traveller who wrote this guide, yes: Athens is loud, a bit scruffy, and wonderful. 3 days are enough for the essentials. Budget: Budget: about €60 to €80, with a hostel, street food and walking.
+
 ## Flights and deals
 
 - Flight deals to Athens: https://www.happylowcost.com/en/destinations/athens/#deals

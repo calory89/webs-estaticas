@@ -119,6 +119,10 @@ Yes, Budapest tap water is safe and tastes fine.
 
 Today the cheapest deal we have to Budapest is €59 return from Madrid. Fares change by the hour: check the live price on the deal page.
 
+### Is Budapest worth visiting?
+
+For the traveller who wrote this guide, yes: Budapest is two cities facing each other across the Danube: hilly, quiet Buda and flat, busy Pest. 3 days are enough for the essentials. Budget: Budget: around €40 to €60 (dorm bed, street food, public transport).
+
 ## Flights and deals
 
 - Flight deals to Budapest: https://www.happylowcost.com/en/destinations/budapest/#deals

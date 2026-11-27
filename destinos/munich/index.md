@@ -121,6 +121,10 @@ Sí, en tren hasta Füssen y luego autobús local. Conviene reservar la entrada 
 
 No. En hoteles, museos y restaurantes del centro se maneja inglés con soltura, aunque un par de palabras en alemán siempre se agradecen.
 
+### ¿Merece la pena visitar Múnich?
+
+Para quien escribió esta guía, sí: Múnich tiene fama de ciudad cara y formal, y en parte es verdad, pero también es de las capitales alemanas donde mejor se vive un fin de semana largo. Con 3 días ves lo esencial. Presupuesto: Ajustado: entre 70 y 100 euros, con hostal, comida de mercado y museos gratuitos o baratos.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Múnich: https://www.happylowcost.com/destinos/munich/#chollos

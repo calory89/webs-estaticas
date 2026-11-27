@@ -1,4 +1,4 @@
-# Fez en 3 días: qué ver, comer y dormir en la medina más viva
+# Qué ver en Fez en 3 días: la medina, dónde comer y dormir
 
 > Guía de viaje de Fez de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/fez/
 > Actualizada: 2026-10-21
@@ -128,6 +128,10 @@ Depende. Marrakech es más fácil y preparada para el turismo; Fez es más cerra
 ### ¿Cuántos días hacen falta para ver Fez?
 
 Con 3 días ves lo esencial de Fez sin prisas. La ruta de esta guía está organizada día a día.
+
+### ¿Merece la pena visitar Fez?
+
+Para quien escribió esta guía, sí: Fez es la ciudad de Marruecos que menos se ha maquillado para el visitante. Con 3 días ves lo esencial. Presupuesto: Ajustado (30-40 €): hostal o habitación sencilla, comida en puestos, entradas puntuales y transporte local.
 
 ### ¿Es caro viajar a Fez?
 

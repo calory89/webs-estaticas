@@ -238,6 +238,10 @@ Barcelona has the beach and Gaudí, while Madrid wins on art museums, food price
 
 The cheapest options are the 24-hour Airport Express bus (€5, about 40 minutes) or the Cercanías train from T4. A taxi costs a flat €33.
 
+### Is Madrid worth visiting?
+
+For the traveller who wrote this guide, yes: Madrid is not a postcard city like Paris or Rome. 3 days are enough for the essentials. Budget: Hostel bed €30-40, menú del día lunch, a tapas-and-beer dinner, free museum slots, walking and a 10-trip metro card.
+
 ## Flights and deals
 
 - Flight deals to Madrid: https://www.happylowcost.com/en/destinations/madrid/#deals

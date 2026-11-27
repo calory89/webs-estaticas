@@ -128,6 +128,10 @@ Maafushi si priorizas servicios y variedad. Dhigurah o Ukulhas si prefieres más
 
 Con 7 días ves lo esencial de Maldivas sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Maldivas?
+
+Para quien escribió esta guía, sí: Maldivas tiene fama de destino para recién casados con la tarjeta al rojo vivo, y en parte es verdad: un bungaló sobre el agua en un resort privado cuesta lo que cuesta. Con 7 días ves lo esencial. Presupuesto: Las guesthouses de islas locales suelen costar entre 50 y 120 € la noche en doble, según temporada y categoría.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Maldivas: https://www.happylowcost.com/destinos/maldivas/#chollos

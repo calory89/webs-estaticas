@@ -9,13 +9,13 @@
 - **Escalas:** 0
 - **Precio habitual de la ruta:** 90 €
 - **Ahorro:** 48 %
-- **Comprobado:** 2026-11-26
+- **Comprobado:** 2026-11-27
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Zaragoza a Londres?
 
-47 € ida y vuelta con Ryanair, saliendo el 25 ene 2027 y volviendo el 1 feb 2027. Precio comprobado por última vez el 26 nov 2026.
+47 € ida y vuelta con Ryanair, saliendo el 25 ene 2027 y volviendo el 1 feb 2027. Precio comprobado por última vez el 27 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

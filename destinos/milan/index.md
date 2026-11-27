@@ -111,6 +111,10 @@ Depende de la tarifa. Linate es el más cómodo, Malpensa el más completo y Bé
 
 Sí, con dos días bien organizados ves lo imprescindible, siempre que tengas la Última Cena reservada y no pierdas tiempo en colas.
 
+### ¿Merece la pena visitar Milán?
+
+Para quien escribió esta guía, sí: Milán tiene mala fama entre quienes buscan la Italia de postal: es gris a ratos, trabaja mucho y no presume. Con 3 días ves lo esencial. Presupuesto: Como orientación, un hostal o habitación compartida puede rondar los 30-50 euros por noche, y un hotel sencillo de dos o tres estrellas, entre 90 y 150, con variaciones fuertes según fechas.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Milán: https://www.happylowcost.com/destinos/milan/#chollos

@@ -1,4 +1,4 @@
-# Guía de Cancún en 4 días: qué ver, dónde dormir y cuánto cuesta
+# Qué hacer en Cancún en 4 días: guía low cost con precios
 
 > Guía de viaje de Cancún de Happy Low Cost, itinerario de 4 días. Página original: https://www.happylowcost.com/destinos/cancun/
 > Actualizada: 2026-10-21

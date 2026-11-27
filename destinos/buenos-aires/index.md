@@ -118,6 +118,10 @@ No, nos entendemos perfectamente. Solo hay que acostumbrarse al voseo ("vos ten�
 
 El de tipo I, con dos clavijas planas en V, y a veces el de tipo C. Lleva un adaptador, porque el voltaje de 220 voltios sí es el mismo.
 
+### ¿Merece la pena visitar Buenos Aires?
+
+Para quien escribió esta guía, sí: Buenos Aires se parece a Madrid, a Roma y a París sin ser ninguna de las tres. Con 4 días ves lo esencial. Presupuesto: Como idea general, una cama en dormitorio compartido suele moverse entre 12 y 25 euros.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Buenos Aires: https://www.happylowcost.com/destinos/buenos-aires/#chollos

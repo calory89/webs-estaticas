@@ -112,6 +112,10 @@ Between November and April is the most comfortable. December to March is the bus
 
 4 days are enough to see the essentials of Havana without rushing. The route in this guide is organised day by day.
 
+### Is Havana worth visiting?
+
+For the traveller who wrote this guide, yes: Havana is a city of faded colonial facades, huge American cars from the 1950s and live music leaking out of doorways at all hours. 4 days are enough for the essentials.
+
 ## Flights and deals
 
 - Flight deals to Havana: https://www.happylowcost.com/en/destinations/havana/#deals

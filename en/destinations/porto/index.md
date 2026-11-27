@@ -141,6 +141,10 @@ Cards are widely accepted, but a little cash helps in small cafés and markets.
 
 May, June and September give you pleasant weather and fewer crowds than July and August.
 
+### Is Porto worth visiting?
+
+For the traveller who wrote this guide, yes: Porto is a city of granite, tiles and hills, and it rewards people who walk. 3 days are enough for the essentials. Budget: Budget: about 50 to 70 euros, with a hostel, market lunches and free sights.
+
 ## Flights and deals
 
 - Flight deals to Porto: https://www.happylowcost.com/en/destinations/porto/#deals

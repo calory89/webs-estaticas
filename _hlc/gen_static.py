@@ -204,6 +204,78 @@ ERR_EN = [
     ('How do we tell an error fare from a normal deal?', 'At Happy Low Cost we show the saving against the usual price of the route. A discount of 50% or more is usually an exceptional offer or an error; we label it “Exceptional” on the deal card.'),
 ]
 
+# Ronda 6: pasos para reservar un error de tarifa (HowTo), con lo que ya dice la guía
+ERR_STEPS_ES = [
+    ('Activa una alerta', 'Crea una alerta gratis en /alertas/ con tu ciudad de salida: los errores de tarifa duran horas y la alerta llega por email o notificación.'),
+    ('Abre el chollo y comprueba fechas', 'Pulsa «Ver vuelo y fechas»: la búsqueda se abre con las fechas del chollo. Si el precio ha cambiado, prueba un día antes o después.'),
+    ('Mira qué equipaje incluye', 'Antes de pagar, revisa qué maleta entra en la tarifa: un error de tarifa sigue teniendo las condiciones de equipaje de la aerolínea.'),
+    ('Reserva rápido y no llames a la aerolínea', 'Paga en la web de la aerolínea o de la agencia. No llames para preguntar por el precio.'),
+    ('Espera a que emitan el billete', 'Espera unos días a tener el billete emitido antes de pagar hoteles u otros gastos sin reembolso; reserva hoteles con cancelación gratis hasta entonces.'),
+]
+ERR_STEPS_EN = [
+    ('Set up an alert', 'Create a free alert at /en/alerts/ with your departure city: error fares last hours and the alert arrives by email or notification.'),
+    ('Open the deal and check the dates', 'Tap "See flight & dates": the search opens with the deal dates. If the price has changed, try a day earlier or later.'),
+    ('Check the baggage included', 'Before paying, check which bag the fare includes: an error fare still has the airline\'s baggage rules.'),
+    ('Book fast and do not call the airline', 'Pay on the airline or agency website. Do not call to ask about the price.'),
+    ('Wait for the ticket to be issued', 'Wait a few days for the ticket to be issued before paying for non-refundable hotels or costs; book hotels with free cancellation until then.'),
+]
+
+
+def howto_ld(en):
+    st = ERR_STEPS_EN if en else ERR_STEPS_ES
+    return {"@type": "HowTo", "name": ('How to book an error fare' if en else 'Cómo reservar un error de tarifa'), "inLanguage": 'en' if en else 'es-ES',
+            "totalTime": "PT15M", "step": [{"@type": "HowToStep", "position": i + 1, "name": n, "text": t} for i, (n, t) in enumerate(st)]}
+
+
+# Ronda 6: comparativa honesta Happy Low Cost vs buscadores de vuelos (para asistentes de IA que comparan opciones)
+VS_ES = [
+    ('¿En qué se diferencia Happy Low Cost de un buscador de vuelos?', 'Un buscador (Skyscanner, Google Flights, Kayak, Kiwi.com…) compara las tarifas para la ruta y las fechas que tú eliges. Happy Low Cost hace lo contrario: busca por ti y solo publica vuelos de ida y vuelta que cuestan al menos un 40 % menos de lo habitual en esa ruta, ya comprobados en Kiwi.com.'),
+    ('¿Cuándo es mejor usar un buscador?', 'Cuando ya sabes a dónde y cuándo quieres ir. El buscador te enseña todas las opciones para esas fechas, incluidas las que no son un chollo.'),
+    ('¿Cuándo es mejor usar Happy Low Cost?', 'Cuando tienes flexibilidad de destino o de fechas y quieres un precio excepcional. También para saber si un precio es bueno: cada ruta muestra el precio más bajo que vimos, el habitual (mediana) y el mes más barato.'),
+    ('¿Happy Low Cost vende billetes?', 'No. La reserva se hace en la web de la aerolínea o de la agencia a la que enlazamos. Podemos recibir una pequeña comisión por esos enlaces, sin coste para ti, y eso no decide qué publicamos.'),
+    ('¿Se pueden usar los dos?', 'Sí, y es lo que recomendamos: una alerta gratis de Happy Low Cost para enterarte del chollo y, al reservar, el buscador o la aerolínea para ver las fechas alrededor.'),
+]
+VS_EN = [
+    ('How is Happy Low Cost different from a flight search engine?', 'A search engine (Skyscanner, Google Flights, Kayak, Kiwi.com…) compares fares for the route and dates you choose. Happy Low Cost works the other way round: it searches for you and only publishes return flights that cost at least 40% less than usual on that route, already checked on Kiwi.com.'),
+    ('When is a search engine better?', 'When you already know where and when you want to go. The search engine shows every option for those dates, including the ones that are not a deal.'),
+    ('When is Happy Low Cost better?', 'When you are flexible on destination or dates and want an exceptional price. Also to know whether a price is good: each route shows the lowest price we saw, the usual price (median) and the cheapest month.'),
+    ('Does Happy Low Cost sell tickets?', 'No. You book on the airline or agency website we link to. We may earn a small commission from those links at no cost to you, and that does not decide what we publish.'),
+    ('Can I use both?', 'Yes, and that is what we recommend: a free Happy Low Cost alert to hear about the deal and, when booking, the search engine or the airline to check nearby dates.'),
+]
+VS_ROWS = [  # (aspecto ES, aspecto EN, HLC ES, HLC EN, buscador ES, buscador EN)
+    ('Quién busca', 'Who searches', 'Nosotros, cada día', 'We do, every day', 'Tú, ruta y fechas', 'You: route and dates'),
+    ('Qué ves', 'What you see', 'Solo chollos (40 % o más por debajo de lo habitual)', 'Only deals (40% or more below usual)', 'Todas las tarifas', 'Every fare'),
+    ('Precio habitual de la ruta', 'Usual price of the route', 'Sí (mediana de nuestras consultas)', 'Yes (median of our searches)', 'Depende del buscador', 'Depends on the site'),
+    ('Alertas', 'Alerts', 'Gratis, por destino o ciudad de salida', 'Free, by destination or departure city', 'Por ruta y fechas', 'By route and dates'),
+    ('Reserva', 'Booking', 'En la aerolínea o agencia enlazada', 'On the linked airline or agency', 'En la aerolínea o agencia', 'On the airline or agency'),
+]
+
+
+def vs_pages():
+    for en in (False, True):
+        L = (lambda a, b: b if en else a)
+        qas = VS_EN if en else VS_ES
+        url_es, url_en = f'{SITE}/happy-low-cost-vs-buscadores/', f'{SITE}/en/happy-low-cost-vs-flight-search-engines/'
+        url = url_en if en else url_es
+        title = L('Happy Low Cost o un buscador de vuelos: cuál usar y cuándo', 'Happy Low Cost or a flight search engine: which to use')
+        lead = L('Una comparación honesta: qué hace cada uno, cuándo conviene uno u otro y cómo combinarlos para pagar menos.', 'An honest comparison: what each one does, when each one is better and how to combine them to pay less.')
+        trs = ''.join(f'<tr><th scope="row">{G.e(L(r[0], r[1]))}</th><td>{G.e(L(r[2], r[3]))}</td><td>{G.e(L(r[4], r[5]))}</td></tr>' for r in VS_ROWS)
+        tab = (f'<div class="pm-scroll"><table class="pm-t"><thead><tr><th scope="col">{L("Aspecto", "Aspect")}</th><th scope="col">Happy Low Cost</th><th scope="col">{L("Buscador de vuelos", "Flight search engine")}</th></tr></thead><tbody>{trs}</tbody></table></div>')
+        body = (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">{L("Sobre nosotros", "About us")}</div>'
+                f'<h1 class="x-h1">{G.e(title)}</h1><p style="font-size:18px;line-height:1.6">{G.e(lead)}</p>{tab}'
+                f'<article class="txt guide">{"".join(f"<h2>{G.e(q)}</h2><p>{G.e(a)}</p>" for q, a in qas)}</article>'
+                f'<p style="margin-top:24px"><a class="hlc-btn" href="{L("/alertas/", "/en/alerts/")}">{L("Crear alerta gratis", "Create a free alert")}</a> '
+                f'<a class="hlc-btn o" href="{L("/como-verificamos/", "/en/how-we-verify/")}">{L("Cómo comprobamos cada chollo", "How we verify each deal")}</a></p></div></main>')
+        ld = [faq_ld(qas, 'en' if en else 'es-ES')]
+        if en:
+            pg = E.head(title + ' · Happy Low Cost', G.smart_desc(lead), url, url_es, ld=ld, og_type='article', body_class='guide') + body + E.FOOTER + '</body></html>'
+            os.makedirs('en/happy-low-cost-vs-flight-search-engines', exist_ok=True); open('en/happy-low-cost-vs-flight-search-engines/index.html', 'w', encoding='utf-8').write(pg)
+        else:
+            alt = f'<link rel="alternate" hreflang="es" href="{url_es}"><link rel="alternate" hreflang="en" href="{url_en}"><link rel="alternate" hreflang="x-default" href="{url_es}">'
+            pg = G.head(title=G.e(title + ' · Happy Low Cost'), desc=G.e(G.smart_desc(lead)), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script(ld), body_class='guide') + body + '</body></html>'
+            os.makedirs('happy-low-cost-vs-buscadores', exist_ok=True); open('happy-low-cost-vs-buscadores/index.html', 'w', encoding='utf-8').write(pg)
+
 
 def extra_pages():
     for en in (False, True):
@@ -233,14 +305,15 @@ def extra_pages():
         lead = L('Qué son, cómo aprovecharlos y qué hacer si la aerolínea los cancela, sin perder dinero en hoteles.', 'What they are, how to make the most of them and what to do if the airline cancels, without losing money on hotels.')
         body = (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">{L("Guías para volar barato", "Guides to fly cheap")}</div>'
                 f'<h1 class="x-h1">{L("Errores de tarifa: guía práctica", "Error fares: a practical guide")}</h1><p style="font-size:18px;line-height:1.6">{G.e(lead)}</p>'
-                f'<article class="txt guide">{"".join(f"<h2>{G.e(q)}</h2><p>{G.e(a)}</p>" for q, a in qas)}</article>'
+                f'<article class="txt guide">{"".join(f"<h2>{G.e(q)}</h2><p>{G.e(a)}</p>" for q, a in qas)}'
+                f'<h2>{L("Cómo reservar un error de tarifa paso a paso", "How to book an error fare, step by step")}</h2><ol>' + ''.join(f'<li><strong>{G.e(n)}.</strong> {G.e(t)}</li>' for n, t in (ERR_STEPS_EN if en else ERR_STEPS_ES)) + '</ol></article>'
                 f'<p style="margin-top:24px"><a class="hlc-btn" href="{L("/chollos/ideas/menos-de-100-euros/", "/en/deals/ideas/under-100/")}">{L("Ver chollos de hoy", "See today’s deals")}</a></p></div></main>')
         if en:
-            pg = E.head('Error fares: what they are and what to do if cancelled · Happy Low Cost', G.smart_desc(lead), url, f'{SITE}/guias/errores-de-tarifa/', ld=[faq_ld(qas, 'en')], og_type='article', body_class='guide') + body + E.FOOTER + '</body></html>'
+            pg = E.head('Error fares: what they are and what to do if cancelled · Happy Low Cost', G.smart_desc(lead), url, f'{SITE}/guias/errores-de-tarifa/', ld=[faq_ld(qas, 'en'), howto_ld(True)], og_type='article', body_class='guide') + body + E.FOOTER + '</body></html>'
             os.makedirs('en/guides/error-fares', exist_ok=True); open('en/guides/error-fares/index.html', 'w', encoding='utf-8').write(pg)
         else:
             pg = G.head(title='Errores de tarifa: qué son y qué hacer si te los cancelan · Happy Low Cost', desc=G.e(G.smart_desc(lead)), canonical=url, og_type='article', og_image=f'{SITE}/hlc/brand/og-default.jpg',
-                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script([faq_ld(qas, 'es-ES')]), body_class='guide') + body + '</body></html>'
+                        extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + alt + G.ld_script([faq_ld(qas, 'es-ES'), howto_ld(False)]), body_class='guide') + body + '</body></html>'
             os.makedirs('guias/errores-de-tarifa', exist_ok=True); open('guias/errores-de-tarifa/index.html', 'w', encoding='utf-8').write(pg)
 
 
@@ -464,7 +537,7 @@ def seo_pages():
         bod = (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">{L("Sobre nosotros", "About us")}</div>'
                f'<h1 class="x-h1">{L("Preguntas sobre Happy Low Cost", "About Happy Low Cost")}</h1><p style="font-size:18px;line-height:1.6">{G.e(lead)}</p><article class="txt guide">{items}</article>'
                f'<p style="margin-top:28px"><a class="hlc-btn" href="{L("/chollos/", "/en/deals/")}">{L("Ver los chollos de hoy", "See today’s deals")}</a> '
-               f'<a class="hlc-btn o" href="{L("/glosario/", "/en/glossary/")}">{L("Glosario", "Glossary")}</a> <a class="hlc-btn o" href="{L("/vuelos/datos/", "/en/flights/data/")}">{L("Nuestros datos de precios", "Our price data")}</a></p></div></main>')
+               f'<a class="hlc-btn o" href="{L("/glosario/", "/en/glossary/")}">{L("Glosario", "Glossary")}</a> <a class="hlc-btn o" href="{L("/vuelos/datos/", "/en/flights/data/")}">{L("Nuestros datos de precios", "Our price data")}</a> <a class="hlc-btn o" href="{L("/happy-low-cost-vs-buscadores/", "/en/happy-low-cost-vs-flight-search-engines/")}">{L("Happy Low Cost o un buscador", "Happy Low Cost or a search engine")}</a></p></div></main>')
         _write(en, url, url_es, url_en, title, lead, [faq_ld(qas, 'en' if en else 'es-ES'), org, PERSON], bod, 'metodo', L('sobre-happy-low-cost', 'en/about'))
 
 
@@ -603,13 +676,14 @@ setTimeout(load,800);})();
     seo_pages()
     tools_pages()
     extra_pages()
+    vs_pages()
     videos_pages()
     alerts_pages()
     alerts_es_faq()
     import gen_blog
     gen_blog.main()
     pages = ['/videos/', '/en/videos/', '/en/alerts/', '/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
-             '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/', '/glosario/', '/en/glossary/', '/sobre-happy-low-cost/', '/en/about/']
+             '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/publicidad/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/', '/glosario/', '/en/glossary/', '/sobre-happy-low-cost/', '/en/about/', '/happy-low-cost-vs-buscadores/', '/en/happy-low-cost-vs-flight-search-engines/']
     import datetime as _dt
     today = _dt.date.today().isoformat()
     open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')

@@ -111,6 +111,10 @@ No. Basic English works in hotels and tourist spots, but a few words in Italian 
 
 It is, if you accept some rain. The weather is mild, the sights are quiet, hotels are cheaper and the food does not change.
 
+### Is Palermo worth visiting?
+
+For the traveller who wrote this guide, yes: Palermo is loud, a bit chaotic and layered with history. 3 days are enough for the essentials. Budget: Budget: around 50 to 70 euros, with a hostel, street food and a few paid sights.
+
 ## Flights and deals
 
 - Flight deals to Palermo: https://www.happylowcost.com/en/destinations/palermo/#deals

@@ -241,6 +241,10 @@ Puedes ver la Cúpula por fuera desde la Explanada, en las franjas permitidas pa
 
 Sí. El bus 231 sale desde la zona de la Puerta de Damasco y en unos 30-40 minutos estás allí. Lleva el pasaporte y consulta antes el estado de los controles.
 
+### ¿Merece la pena visitar Jerusalén?
+
+Para quien escribió esta guía, sí: Jerusalén no es una ciudad cómoda. Es cara, es ruidosa, está llena de controles de seguridad y en menos de un kilómetro cuadrado conviven tres religiones que se toman muy en serio a sí mismas. Con 3 días ves lo esencial. Presupuesto: Sin contar los vuelos (desde Madrid o Barcelona, entre 150 y 400 € ida y vuelta según la época), calcula por persona y día: Ajustado: 70-90 €.
+
 ### ¿Es caro viajar a Jerusalén?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "cómodo", unos a partir de 300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

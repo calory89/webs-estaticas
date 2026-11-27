@@ -130,6 +130,10 @@ De mayo a septiembre hace menos calor y llueve menos. Si quieres playa y ambient
 
 Sí. Los restaurantes por quilo, los botecos y los puestos de playa permiten comer bien por poco dinero. Lo caro son los locales turísticos frente al mar.
 
+### ¿Merece la pena visitar Río de Janeiro?
+
+Para quien escribió esta guía, sí: Río es una ciudad con montañas verdes metidas entre los edificios, playas urbanas donde se juega al fútbol-vóley a las ocho de la mañana y una vida de barrio que funciona a cualquier hora. Con 4 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Río de Janeiro: https://www.happylowcost.com/destinos/rio-de-janeiro/#chollos

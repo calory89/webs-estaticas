@@ -128,6 +128,10 @@ El tipo G, el británico, de tres clavijas. Lleva un adaptador, porque los hotel
 
 Con 4 días ves lo esencial de Malta sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Merece la pena visitar Malta?
+
+Para quien escribió esta guía, sí: Malta es una isla pequeña con mucha historia por metro cuadrado. Con 4 días ves lo esencial. Presupuesto: Orientativamente, un albergue ronda los 20-35 € por cama, un hotel de tres estrellas o un apartamento sencillo, 70-110 € la noche en temporada alta, y algo más en La Valeta.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Malta: https://www.happylowcost.com/destinos/malta/#chollos

@@ -1,6 +1,6 @@
 # Happy Low Cost: chollos de vuelos activos (27 nov 2026)
 
-> 17 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-27T01:31:52Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 17 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-27T02:28:17Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
@@ -32,7 +32,7 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Valencia → Luxemburgo (Luxemburgo): 94 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-luxemburgo-94-euros-2027-02-19/), Luxair, directo, 19 feb 2027 a 22 feb 2027. Precio habitual 170 € (−45 %). Comprobado el 26 nov 2026.
 
 ## Desde Zaragoza (España)
-- [Zaragoza → Londres (Reino Unido): 47 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-47-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 1 feb 2027. Precio habitual 90 € (−48 %). Comprobado el 26 nov 2026.
+- [Zaragoza → Londres (Reino Unido): 47 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-47-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 1 feb 2027. Precio habitual 90 € (−48 %). Comprobado el 27 nov 2026.
 - [Zaragoza → Praga (República Checa): 106 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-praga-106-euros-2027-02-16/), Wizz Air Malta, 16 feb 2027 a 19 feb 2027. Precio habitual 180 € (−41 %). Comprobado el 26 nov 2026.
 - [Zaragoza → Vilna (Lituania): 110 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-vilna-110-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 22 feb 2027. Precio habitual 230 € (−52 %). Comprobado el 26 nov 2026.
 - [Zaragoza → Atenas (Grecia): 133 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-atenas-133-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 15 feb 2027. Precio habitual 220 € (−40 %). Comprobado el 26 nov 2026.
@@ -446,6 +446,7 @@ Cada guía tiene qué ver, ruta por días, cuándo ir, dónde dormir, qué comer
 - [Gran Canaria → Venecia](https://www.happylowcost.com/vuelos/gran-canaria-venecia/): desde 55 € ida y vuelta, lo habitual 81 €, directo, Ryanair, consultado el 2026-10-22
 - [Gran Canaria → Nápoles](https://www.happylowcost.com/vuelos/gran-canaria-napoles/): desde 124 € ida y vuelta, lo habitual 138 €, 1 escala(s), Vueling, consultado el 2026-11-26
 - [Gran Canaria → Bolonia](https://www.happylowcost.com/vuelos/gran-canaria-bolonia/): desde 126 € ida y vuelta, lo habitual 159 €, 1 escala(s), Vueling, consultado el 2026-11-25
+- [Gran Canaria → Varsovia](https://www.happylowcost.com/vuelos/gran-canaria-varsovia/): desde 127 € ida y vuelta, lo habitual 181 €, 1 escala(s), Vueling, consultado el 2026-11-27
 - [Gran Canaria → Brujas](https://www.happylowcost.com/vuelos/gran-canaria-brujas/): desde 137 € ida y vuelta, lo habitual 153 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
 - [Gran Canaria → Bruselas](https://www.happylowcost.com/vuelos/gran-canaria-bruselas/): desde 137 € ida y vuelta, lo habitual 153 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
 - [Gran Canaria → Fez](https://www.happylowcost.com/vuelos/gran-canaria-fez/): desde 144 € ida y vuelta, lo habitual 160 €, 1 escala(s), Vueling, consultado el 2026-11-26
@@ -454,7 +455,6 @@ Cada guía tiene qué ver, ruta por días, cuándo ir, dónde dormir, qué comer
 - [Gran Canaria → Oslo](https://www.happylowcost.com/vuelos/gran-canaria-oslo/): desde 176 € ida y vuelta, lo habitual 180 €, 1 escala(s), Ryanair, consultado el 2026-11-26
 - [Gran Canaria → Sofía](https://www.happylowcost.com/vuelos/gran-canaria-sofia/): desde 176 € ida y vuelta, lo habitual 177 €, 1 escala(s), Vueling, consultado el 2026-11-27
 - [Gran Canaria → Chipre](https://www.happylowcost.com/vuelos/gran-canaria-chipre/): desde 179 € ida y vuelta, lo habitual 202 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
-- [Gran Canaria → Varsovia](https://www.happylowcost.com/vuelos/gran-canaria-varsovia/): desde 181 € ida y vuelta, lo habitual 192 €, 1 escala(s), Iberia Express, consultado el 2026-10-22
 - [Gran Canaria → Atenas](https://www.happylowcost.com/vuelos/gran-canaria-atenas/): desde 187 € ida y vuelta, lo habitual 228 €, 1 escala(s), Vueling, consultado el 2026-11-25
 - [Gran Canaria → Riga](https://www.happylowcost.com/vuelos/gran-canaria-riga/): desde 189 € ida y vuelta, lo habitual 216 €, 1 escala(s), Ryanair, consultado el 2026-11-26
 - [Gran Canaria → Azores](https://www.happylowcost.com/vuelos/gran-canaria-azores/): desde 262 € ida y vuelta, lo habitual 272 €, 2 escala(s), Iberia Express, consultado el 2026-11-25

@@ -114,6 +114,10 @@ Pasaporte en vigor y la autorización electrónica ETA. Los requisitos cambian, 
 
 Hoy el chollo más barato que tenemos a Londres cuesta 47 € ida y vuelta desde Zaragoza. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Merece la pena visitar Londres?
+
+Para quien escribió esta guía, sí: Londres es cara, sí, pero también es una de las pocas capitales grandes donde los mejores museos no cobran entrada. Con 4 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Londres: https://www.happylowcost.com/destinos/londres/#chollos

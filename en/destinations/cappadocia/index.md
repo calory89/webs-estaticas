@@ -222,6 +222,10 @@ May and late September to October are best, with warm days, cool nights and freq
 
 Nevşehir Kapadokya (NAV) is the closest, about 40 minutes from Göreme. Kayseri (ASR) has more flights and is about 1 hour 15 minutes away.
 
+### Is Cappadocia worth visiting?
+
+For the traveller who wrote this guide, yes: Cappadocia is not a city. It's a stretch of central Anatolia where volcanic ash eroded into cones, columns and canyons, and people carved homes, churches and entire underground towns into the rock. 4 days are enough for the essentials. Budget: Shoestring: about €45-60 a day.
+
 ## Flights and deals
 
 - Flight deals to Cappadocia: https://www.happylowcost.com/en/destinations/cappadocia/#deals

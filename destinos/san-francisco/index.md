@@ -124,6 +124,10 @@ Con varias semanas de antelación, y más en verano. Hazlo siempre en la web ofi
 
 Capas: camiseta, sudadera y cortavientos, incluso en verano. La niebla y el viento del puente enfrían mucho más de lo que dice el termómetro.
 
+### ¿Merece la pena visitar San Francisco?
+
+Para quien escribió esta guía, sí: San Francisco es una ciudad pequeña para lo que se espera de ella: unos 11 kilómetros de lado a lado, mucha cuesta y un clima que cambia de una calle a la siguiente. Con 4 días ves lo esencial.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Francisco: https://www.happylowcost.com/destinos/san-francisco/#chollos

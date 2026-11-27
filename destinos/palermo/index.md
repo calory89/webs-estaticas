@@ -139,6 +139,10 @@ Sí, Mondello es la más cercana y está a unos 20-30 minutos en autobús. Se di
 
 Tres es lo ideal. Con dos ves lo básico, y con cuatro o cinco puedes sumar Cefalù y otras excursiones.
 
+### ¿Merece la pena visitar Palermo?
+
+Para quien escribió esta guía, sí: Palermo no intenta caerte bien, y por eso engancha. Con 3 días ves lo esencial. Presupuesto: Como referencia, un albergue ronda los 20-30 euros por noche en cama compartida, y una habitación doble sencilla suele moverse entre 60 y 90 euros, con más variación en temporada alta.
+
 ### ¿Es caro viajar a Palermo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos unos 50-60 euros por persona y día, y en el nivel "cómodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

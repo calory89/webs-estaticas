@@ -211,6 +211,10 @@ Not if you stay in town, but it makes bays and day trips much easier.
 
 The tourist areas are generally safe. The biggest risks are the ocean currents and scams.
 
+### Is Los Cabos worth visiting?
+
+For the traveller who wrote this guide, yes: Los Cabos is two very different towns joined by a 30 km strip of resorts. 5 days are enough for the essentials. Budget: Shoestring: €60-90 per day for a basic room or hostel, tacos, buses and free beaches.
+
 ## Flights and deals
 
 - Flight deals to Los Cabos: https://www.happylowcost.com/en/destinations/los-cabos/#deals

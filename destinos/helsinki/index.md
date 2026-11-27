@@ -1,4 +1,4 @@
-# Helsinki en 3 días: qué ver, dónde comer y cuánto cuesta
+# Qué ver en Helsinki en 3 días: guía low cost con precios
 
 > Guía de viaje de Helsinki de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/helsinki/
 > Actualizada: 2026-10-21
