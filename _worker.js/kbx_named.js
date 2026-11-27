@@ -907,6 +907,17 @@ for (const d of ix.devs.values()) { const lm = d.ids.map(i => lastmod(ix, ix.byI
 return jsonOut({ version: 'seo-urls-1', updated: ix.updated, languages: LANGS, note: TB.kbx_named__s.k2,
 counts: { projects: ix.P.length, developers: ix.devs.size, languages: LANGS.length, urls: out.length }, redirects: [{ from: '/p/{id}/', to: '/projects/{slug}/', status: 301 }], urls: out });
 }
+// n40 k65: kbx_seo's list of named pages built from the data itself, not by parsing /api/seo/urls (16.7 MB of JSON parsed into an 18 MB
+// copy on a cold isolate). Same order and values as the English rows of urls(); the other languages only add the /<lang> prefix.
+// With sum, the English summary of each project (only llms.txt reads them, so they are not kept).
+export async function seoNamed(env, sum) {
+const ix = await data(env);
+if (sum) { const tps = await Promise.all(ix.P.map(x => trProject(env, x.id, 'en').catch(() => null))); return new Map(ix.P.map((x, i) => [x.id, quickAnswer(ix, x, 'en', tps[i])])); }
+const rows = [{ url: ORIGIN + pre('en') + '/projects/', type: 'index', lastmod: iso(ix.updated) }];
+for (const x of ix.P) rows.push({ url: pUrl('en', x.s), type: 'project', lastmod: lastmod(ix, x), id: x.id, sm: facts6(ix, x) >= 2 && !(DUP_OF[x.id] && ix.byId.has(DUP_OF[x.id])), name: x.n, developer: x.dv || null, developer_url: x.dvs && ix.devs.has(x.dvs) ? dUrl('en', x.dvs) : null });
+for (const d of ix.devs.values()) { const lm = d.ids.map(i => lastmod(ix, ix.byId.get(i))).sort(); rows.push({ url: dUrl('en', d.s), type: 'developer', lastmod: lm[lm.length - 1], sm: d.ids.length >= 2, name: d.n }); }
+return { rows, langs: LANGS };
+}
 function scanHtml(html) {
 const main = html.replace(/<div class="ugc"[\s\S]*?<\/div>/g, '').replace(/<script[\s\S]*?<\/script>/g, '').replace(/<style[\s\S]*?<\/style>/g, '').replace(/ href="[^"]*"/g, '');
 const text = strip(main), out = { opinion: [], unsourced: 0 };

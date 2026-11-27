@@ -39,26 +39,27 @@ async function file0(env, name, ttl) {
   else try { const r = await env.ASSETS.fetch(new Request(SITE + $q.g + name)); if (r.ok) v = /\.json$/.test(name) ? await r.json() : await r.text(); } catch (e) { v = null; }
   if (v == null && m) v = m.v; MEMO[name] = { t: v == null ? Date.now() - (ttl || 300000) + 15000 : Date.now(), v }; return v;
 }
-const named = inner => NQ || (NQ = named0(inner).finally(() => { NQ = null; }));
+const named = (inner, env) => NQ || (NQ = named0(env).finally(() => { NQ = null; }));
 let NQ = null;
-async function named0(inner) {
+// n40 k65: built straight from kbx_named's data (no /api/seo/urls JSON round trip), and only the English entries are kept: the other
+// languages of an entry differ only by the /<lang> prefix, so N.all makes them when the sitemaps ask (N.n is its length)
+function mkN(en, L, projects, developers, env) {
+  const pfx = (e, l) => ({ loc: SITE + '/' + l + e.loc.slice(SITE.length), lastmod: e.lastmod, type: e.type, id: e.id, lang: l, sm: e.sm });
+  return { projects, developers, n: en.length * L.length, get all() { const a = []; for (const e of en) for (const l of L) a.push(l === 'en' ? e : pfx(e, l)); return a; },
+    sum: async () => { try { return await (await import('./kbx_named.js')).seoNamed(env, true); } catch (e) { return new Map(); } } };
+}
+async function named0(env) {
   const m = MEMO.__named; if (m && Date.now() - m.t < 300000) return m.v;
-  let v = { projects: new Map(), developers: [], all: [] };
+  let v = mkN([], [], new Map(), [], env);
   try {
-    const r = await inner($q.h);
-    if (r && r.ok && /json/.test(r.headers.get($q.i) || '')) {
-      const SI = new Map(), IN = x => x == null ? x : SI.get(x) || (SI.set(x, x), x);
-      const j = await r.json(), list = Array.isArray(j) ? j : (j.urls || j.items || []).concat(j.projects || [], j.developers || []);
-      for (const it of list) {
-        const loc = it.loc || it.url; if (!loc || !/^https:\/\/kolaboro\.com\//.test(loc)) continue;
-        const type = it.type || (/\/developers\//.test(loc) ? $q.j : /\/projects\//.test(loc) ? $q.k : 'page');
-        const e = { loc, lastmod: IN(it.lastmod || it.updated || null), type, id: it.id || it.public_id || it.code || null, name: it.name || it.title || null, developer: it.developer || it.developer_name || null, developer_url: it.developer_url || null, lang: it.lang || 'en', summary: it.summary || null, sm: it.sm !== false };   // n40 d15: no alternates (nothing here reads them), dates shared
-        const inP = type === $q.k && e.id && (e.lang === 'en' || !v.projects.has(e.id)), inD = type === $q.j && e.lang === 'en';
-        v.all.push(inP || inD ? e : { loc, lastmod: e.lastmod, type, id: e.id, lang: e.lang, sm: e.sm });   // n40 d15: other language copies keep only what the sitemaps read
-        if (inP) v.projects.set(e.id, e);
-        if (inD) v.developers.push(e);
-      }
+    const r = await (await import('./kbx_named.js')).seoNamed(env), en = [], projects = new Map(), developers = [];
+    const SI = new Map(), IN = x => x == null ? x : SI.get(x) || (SI.set(x, x), x);
+    for (const it of r.rows) {
+      const loc = it.url; if (!loc || !/^https:\/\/kolaboro\.com\//.test(loc)) continue;
+      const type = it.type, e = { loc, lastmod: IN(it.lastmod || null), type, id: it.id || null, name: it.name || null, developer: it.developer || null, developer_url: it.developer_url || null, lang: 'en', summary: null, sm: it.sm !== false };
+      en.push(e); if (type === $q.k && e.id) projects.set(e.id, e); if (type === $q.j) developers.push(e);
     }
+    v = mkN(en, r.langs, projects, developers, env);
   } catch (e) {}
   MEMO.__named = { t: Date.now(), v }; return v;
 }
@@ -67,7 +68,7 @@ async function base(env, inner) {
   const [delay, ontime, promises, drift, regs, cover, law, lh, regHtml] = await Promise.all([
     file(env, $q.l), file(env, $q.m), file(env, $q.n), file(env, $q.o),
     file(env, $q.p), file(env, $q.q), file(env, $q.r), file(env, $q.s), file(env, $q.t, 900000)]);
-  const N = await named(inner);
+  const N = await named(inner, env);
   const T = await trueLastmod(env).catch(() => null);
   const key = [d, delay, ontime, promises, drift, regs, cover, law, lh, regHtml, N, T];   // n40 d15: the same inputs give the same derived lists: built once, not once per request
   if (BM && BM.k.every((x, i) => x === key[i])) return Object.assign({}, BM.v);
@@ -608,7 +609,7 @@ async function llms(env, B, full) {
     $q.nP + SITE + $q.nQ, $q.nR + SITE + $q.nS, $q.nT + SITE + $q.nU, $q.nV + SITE + $q.nW,
     $q.nX + SITE + $q.nY, $q.nZ + SITE + $q.oa + SITE + $q.ob, $q.oc + SITE + $s.k77,
     $q.od + SITE + $q.oe + SITE + $q.of + SITE + $q.og, $q.oh + SITE + $q.oi + SITE + $q.oj);
-  const np = [...B.N.projects.values()], byId = new Map(B.all.map(c => [c.id, c]));
+  const SMY = await B.N.sum(), np = [...B.N.projects.values()].map(e => Object.assign({}, e, { summary: SMY.get(e.id) || null })), byId = new Map(B.all.map(c => [c.id, c]));
   if (np.length) {
     const cn = new Map(); for (const e of np) { const c = byId.get(e.id); if (c && c.country) cn.set(c.country, (cn.get(c.country) || 0) + 1); }
     L.push('', $q.ok, $q.ol + ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].map(l => '[' + l + '](' + SITE + '/' + l + $q.om).join(', ') + $q.on + SITE + $q.oo + SITE + $q.op, $s.k78 + SITE + $q.oq, $q.or + SITE + $q.os, $q.ot + SITE + $q.ou + SITE + $q.ov, $q.ow + [...cn.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([c, n]) => '[' + c + '](' + SITE + $q.ox + slug(c) + $q.oy + n).join(', '));
@@ -667,7 +668,7 @@ export async function sdSection() {
     tableWrap(['Page', $q.qB, 'Nodes', $q.qC, $q.qD], d.pages.map(x => $q.aR + esc(x.p) + $q.qE + esc(x.p) + $q.qF + x.blocks + $q.aT + x.nodes + $q.aT + esc(Object.entries(x.types).sort((a, b) => b[1] - a[1]).slice(0, 4).map(e => e[0]).join(', ')) + $q.aT + (x.issues.length ? '<b>' + esc(x.issues.join('; ')) + '</b>' : 'pass') + $q.aU));
 }
 async function pSeo(env, B) {   // n40 k50: sitemap counts and the other modules' sitemap sizes kept 10 minutes per isolate (the page rebuilt them on every view)
-  const ck = B.d.updated + '|' + B.N.all.length, cm = MEMO.__seoCnt, audit = await file(env, $q.mk), cnt = cm && cm.k === ck && Date.now() - cm.t < 600000 ? cm.v : (MEMO.__seoCnt = { k: ck, t: Date.now(), v: await sitemaps(env, B, 'stats') }).v, lh = await file(env, $q.qG), inow = await file(env, $q.qH), daily = await file(env, $q.qI);
+  const ck = B.d.updated + '|' + B.N.n, cm = MEMO.__seoCnt, audit = await file(env, $q.mk), cnt = cm && cm.k === ck && Date.now() - cm.t < 600000 ? cm.v : (MEMO.__seoCnt = { k: ck, t: Date.now(), v: await sitemaps(env, B, 'stats') }).v, lh = await file(env, $q.qG), inow = await file(env, $q.qH), daily = await file(env, $q.qI);
   const total = Object.values(cnt).reduce((a, b) => a + b, 0);
   let body = $q.he + fmt(total) + $s.k82 + (audit ? $q.qJ + esc(audit.generated_at) + ': ' + fmt(audit.summary.crawled) + $q.qK + (audit.summary.in_sitemaps ? ' of ' + fmt(audit.summary.in_sitemaps) + $q.qL : '') + ', ' + fmt(audit.summary.indexable) + $q.qM + fmt(audit.summary.schema_valid_pages) + $q.qN + (audit.indexable_estimate_all ? $q.qO + fmt(audit.indexable_estimate_all) + $q.qP : '') + '.' : $q.qQ) + $s.k83;
   const extN = await Promise.all(EXT_MAPS.map(async x => { const m = MEMO['__ext' + x]; if (m && m.v) return [x, m.v]; if (!B.inner) return [x, null];
@@ -734,7 +735,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const nf = async () => { const s = await shell('/404'); return new Response(s.body, { status: 404, headers: { 'content-type': $q.aH } }); };
   if ((m = /^\/embed\/delay\/([a-z0-9-]+)\/$/.exec(p))) { const h = eDelay(B, m[1]); return h ? new Response(h, { headers: EMBED_HDR }) : nf(); }
   if ((m = /^\/embed\/project\/([a-z0-9-]+)\/$/.exec(p))) { const h = eProject(B, m[1]); return h ? new Response(h, { headers: EMBED_HDR }) : nf(); }
-  try { const k = B.d.updated + '|' + ((B.T && B.T.pinned) || '') + '|' + B.N.all.length; if (!MEMO.__hlm || MEMO.__hlm.k !== k) MEMO.__hlm = { k, v: new Map((await hubUrls(B)).map(h => [h.loc.replace(SITE, ''), h.lastmod])) }; HLM = MEMO.__hlm.v; } catch (e) { HLM = null; }
+  try { const k = B.d.updated + '|' + ((B.T && B.T.pinned) || '') + '|' + B.N.n; if (!MEMO.__hlm || MEMO.__hlm.k !== k) MEMO.__hlm = { k, v: new Map((await hubUrls(B)).map(h => [h.loc.replace(SITE, ''), h.lastmod])) }; HLM = MEMO.__hlm.v; } catch (e) { HLM = null; }
   if (!CSS) { const c = await file(env, $q.tU, 864e5); CSS = (c && c.css) || ''; }
   let R = null;
   if (p === $q.bs) R = pCountries(B);

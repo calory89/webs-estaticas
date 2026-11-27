@@ -15,10 +15,18 @@ export function jget(env, key, au, fu, ttl) {
     if (!r.ok) throw new Error(key + ' ' + r.status);
     const et = r.headers.get('etag'), c = SHARED[key];
     if (et && c && c.v != null && c.et === et) { try { r.body && r.body.cancel(); } catch (e) {} c.t = Date.now(); c.a = a; return c; }   // same file: keep the copy we have
-    const v = await r.json(); return (SHARED[key] = { t: Date.now(), v, a, et });
+    const v = await r.json(); if (DUPS.test(key)) intern(v, new Map()); return (SHARED[key] = { t: Date.now(), v, a, et });
   })();
   FLY[key] = p; const d = () => { if (FLY[key] === p) delete FLY[key]; }; p.then(d, d);
   return p;
+}
+// n40 k65: in these files the same source URLs, dates and labels repeat thousands of times, and every copy was its own string after the
+// parse; one shared copy of each value keeps about 7 MB less of named.json, 4 MB of bali-cases.json and 2 MB of price-history.json
+const DUPS = /^(?:named|bali-cases|price-history)\.json$/;
+function intern(v, M) {
+  if (Array.isArray(v)) { for (let i = 0; i < v.length; i++) { const x = v[i]; if (typeof x === 'string') { const c = M.get(x); if (c === undefined) M.set(x, x); else v[i] = c; } else if (x && typeof x === 'object') intern(x, M); } }
+  else for (const k in v) { const x = v[k]; if (typeof x === 'string') { const c = M.get(x); if (c === undefined) M.set(x, x); else v[k] = c; } else if (x && typeof x === 'object') intern(x, M); }
+  return v;
 }
 const IF = (globalThis.__kbIF = globalThis.__kbIF || {});   // same in-flight table as the d12 helpers: one load per key at a time
 export function sf(k, f) { if (IF[k]) return IF[k]; const p = f(); IF[k] = p; const d = () => { if (IF[k] === p) delete IF[k]; }; p.then(d, d); return p; }
