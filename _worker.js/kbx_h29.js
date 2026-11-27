@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_h29__q, $s = TB.kbx_h29__s, $t = TB.kbx_h29__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { facetsData, FA_KIT } from './kbx_facets.js';
+import { jget } from './kbx_jget.js';
 import { trData } from './kbx_tr.js';
 import { TR_PLACES } from './kbx_tr_places.js';
 import { handoverOf, overdueOf, fd, esc, pre, lastmod, okHttp, host } from './kbx_named.js';
@@ -38,19 +39,10 @@ const faqHtml = (lang, Q) => $q.d + te(lang, 'faq_h') + $q.e + Q.map(([q, a]) =>
 const table = (cols, rows, numCols) => $q.j + cols.map(c => $q.k + esc(c) + '</th>').join('') + $q.l +
   rows.map(cells => '<tr>' + cells.map((c, i) => '<td' + (numCols && numCols.includes(i) ? $q.m : '') + $q.n + esc(cols[i]) + '">' + c + '</td>').join('') + '</tr>').join('') + $q.o;
 const srcA = (u, label) => okHttp(u) ? $q.p + esc(u.trim()) + $t.k0 + esc(label || host(u)) + '</a>' : '';
-const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 async function load(env, name) {
 const m = SHARED[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-if (LOADING[name]) return LOADING[name];
-const p = (async () => {
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.q + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + $q.r + name, { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-if (!r || !r.ok) return null;
-const v = await r.json().catch(() => null); if (v) SHARED[name] = { t: Date.now(), v, a }; return v;
-})();
-LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
-return p;
+return jget(env, name, ORIGIN + $q.q + name, ORIGIN + $q.r + name).then(o => o.v || null, () => null);
 }
 const curOf = x => String((x.fx && x.fx.currency) || '').toUpperCase().trim();
 const pmin = x => (x.fx && +x.fx.price_min > 0 && !regSale(x)) ? +x.fx.price_min : null;

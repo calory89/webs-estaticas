@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_fc__q, $s = TB.kbx_fc__s, $t = TB.kbx_fc__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { FT } from './kbx_fc_i18n.js';
+import { jget } from './kbx_jget.js';
 import { LOCALE } from './kbx_named_i18n.js';
 import { placeName } from './kbx_hdate.js';
 import { rpc } from './kolaboro.js';
@@ -36,11 +37,7 @@ let MEMO = {};
 async function file(env, name, ttl) {
   const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < (ttl || 300000))) return m.v;   // n20p: a copy read from this deployment's assets (a) does not expire
   const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && (sh.a || Date.now() - sh.t < (ttl || 300000))) { MEMO[name] = { t: sh.t, v: sh.v, a: sh.a }; return sh.v; }   // n20p: reuse the copy kbx_named.js already parsed
-  let r = null, a = false;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.f + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-  if (!r || !r.ok) r = await fetch(ORIGIN + $q.g + name, { cf: { cacheTtl: 120, cacheEverything: true } });
-  if (!r.ok) throw new Error(name + ' ' + r.status);
-  const v = await r.json(); MEMO[name] = { t: Date.now(), v, a }; return v;
+  const o = await jget(env, name, ORIGIN + $q.f + name, ORIGIN + $q.g + name, 120); MEMO[name] = { t: Date.now(), v: o.v, a: o.a }; return o.v;   // n40 d14: shared parse
 }
 function km(R) {
 const ts = [...new Set(R.filter(r => r.e).map(r => r.t))].sort((a, b) => a - b), steps = [];

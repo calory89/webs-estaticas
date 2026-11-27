@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_e27__q, $s = TB.kbx_e27__s, $t = TB.kbx_e27__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import * as N from './kbx_named.js';
+import { jget } from './kbx_jget.js';
 import { TB } from './kbx_strings.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
 import { E } from './kbx_e27_i18n.js';
@@ -24,10 +25,8 @@ const MEMO = {};
 const file = (env, name) => sf('e27:' + name, () => file0(env, name));
 async function file0(env, name) {
   const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-  let r = null, a = false, v = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.d + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-  try { if (!r || !r.ok) r = await fetch(ORIGIN + $q.e + name, { cf: { cacheTtl: 600, cacheEverything: true } }); if (r.ok) v = await r.json(); } catch (e) { v = null; }
-  MEMO[name] = { t: Date.now(), v, a: a && !!v }; return v;
+  const o = await jget(env, name, ORIGIN + $q.d + name, ORIGIN + $q.e + name, 600).catch(() => null), v = o ? o.v : null;   // n40 d14: shared parse
+  MEMO[name] = { t: Date.now(), v, a: !!(o && o.a && v) }; return v;
 }
 async function extra(env) {
 const [ph, gz, iw] = await Promise.all([file(env, $q.f), file(env, $q.g), file(env, $q.h)]);

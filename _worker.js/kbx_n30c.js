@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_n30c__q, $s = TB.kbx_n30c__s, $t = TB.kbx_n30c__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import * as N from './kbx_named.js';
+import { jget } from './kbx_jget.js';
 import { S, t, esc, num, LANGS, slugMk, pinRecord, phMarkets, PH_MIN } from './kbx_n30c_named.js';
 import { mkName, coName } from './kbx_hdate.js';
 import { TB } from './kbx_strings.js';
@@ -14,8 +15,7 @@ const MEMO = {};
 const file = (env, name, ttl) => sf('n30c:' + name, () => file0(env, name, ttl));
 async function file0(env, name, ttl) {
   const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
-  let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.c + name)); if (r.ok) v = await r.json(); } catch (e) { v = null; }
+  const v = await jget(env, name, ORIGIN + $q.c + name, ORIGIN + '/data/' + name).then(o => o.v, () => null);   // n40 d14: shared parse
   MEMO[name] = { t: Date.now(), v }; return v;
 }
 const quant = (a, q) => { if (!a.length) return null; const s = a.slice().sort((x, y) => x - y), i = (s.length - 1) * q, lo = Math.floor(i), hi = Math.ceil(i); return s[lo] + (s[hi] - s[lo]) * (i - lo); };

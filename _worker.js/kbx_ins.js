@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_ins__q, $s = TB.kbx_ins__s, $t = TB.kbx_ins__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import * as KB from './kolaboro.js';
+import { jget } from './kbx_jget.js';
 import { TB } from './kbx_strings.js';
 const { json, claude, openData, rateLimited, qnorm } = KB;
 export const PATHS = /^\/api\/x\/ins(\/|$)/;
@@ -16,9 +17,7 @@ function out(o, s = 200, maxAge) {
 const MEMO = {};
 async function file(env, name) {
   const m = MEMO[name]; if (m && Date.now() - m.t < 300000) return m.v;
-  let v = null;
-  try { const r = await env.ASSETS.fetch(new Request(SITE + $q.d + name)); if (r.ok) v = await r.json(); } catch (e) {}
-  if (!v) { try { const r = await fetch(SITE + $q.e + name, { cf: { cacheTtl: 300, cacheEverything: true } }); if (r.ok) v = await r.json(); } catch (e) {} }
+  const v = await jget(env, name, SITE + $q.d + name, SITE + $q.e + name).then(o => o.v || null, () => null);   // n40 d14: shared parse
   MEMO[name] = { t: Date.now(), v }; return v;
 }
 let DG = { t: 0, v: null };

@@ -1,11 +1,13 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { T, LOCALE } from './kbx_named_i18n.js';
+import { sf } from './kbx_jget.js';
 import { regSale, rsText } from './kbx_n31d_rs.js';
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
 const tl = (lang, k, v) => { const s = (T[lang] && T[lang][k]) || T.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 let DLD = null, ES = null, PPM_T = 0;
-export async function ppmLoad(env) { if (DLD && Date.now() - PPM_T < 3600000) return true; let v = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + TB.kbx_named_plus__t.k0)); if (r.ok) v = await r.json(); } catch (e) { v = null; } if (!v) { try { const r = await fetch(ORIGIN + '/data/ppm-official.json', { cf: { cacheTtl: 3600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } } if (v && v.dld) { DLD = v.dld; ES = v.es; PPM_T = Date.now(); DIDX = null; MIDX = null; } return !!DLD; }
+export const ppmLoad = env => sf('ppm', () => ppmLoad0(env));   // n40 d14: concurrent requests share one load
+async function ppmLoad0(env) { if (DLD && Date.now() - PPM_T < 3600000) return true; let v = null; try { const r = await env.ASSETS.fetch(new Request(ORIGIN + TB.kbx_named_plus__t.k0)); if (r.ok) v = await r.json(); } catch (e) { v = null; } if (!v) { try { const r = await fetch(ORIGIN + '/data/ppm-official.json', { cf: { cacheTtl: 3600 } }); if (r.ok) v = await r.json(); } catch (e) { v = null; } } if (v && v.dld) { DLD = v.dld; ES = v.es; PPM_T = Date.now(); DIDX = null; MIDX = null; } return !!DLD; }
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const src = (u, label) => ' <a class="src" href="' + esc(u) + '" rel="nofollow noopener" target="_blank">' + esc(label) + '</a>';
 const norm = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();

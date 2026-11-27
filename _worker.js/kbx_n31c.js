@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_n31c__q, $s = TB.kbx_n31c__s, $t = TB.kbx_n31c__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
+import { sf } from './kbx_jget.js';
 const ORIGIN = 'https://kolaboro.com';
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
@@ -129,7 +130,8 @@ return h;
 }
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?stalled\/?$|^\/api\/v1\/stalled$/;
 let S = null;
-async function loadPub(env, name) {
+const loadPub = (env, name) => sf('n31c:' + name, () => loadPub0(env, name));   // n40 d14: concurrent requests share one load
+async function loadPub0(env, name) {
 const c = (globalThis.__kbN31 = globalThis.__kbN31 || {});
 if (c[name] && Date.now() - c[name].t < 600000) return c[name].v;
 let v = null;

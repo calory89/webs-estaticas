@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_n33b__q, $s = TB.kbx_n33b__s, $t = TB.kbx_n33b__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { trData } from './kbx_tr.js';
+import { jget } from './kbx_jget.js';
 import { trustRender, head, crumbLd } from './kbx_trust.js';
 import { TB } from './kbx_strings.js';
 const ORIGIN = 'https://kolaboro.com';
@@ -25,11 +26,7 @@ const t = (lang, k, v) => { const L = (T && T[lang]) || {}, E = (T && T.en) || {
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 async function json(env, name, ttl) {   // name relative to /data/; same shared parse cache as kbx_t27.js / kbx_tr.js
   const m = SHARED[name]; if (m && Date.now() - m.t < (m.a ? 3600000 : ttl || 600000)) return m.v;
-  let r = null, a = false;
-  try { r = await env.ASSETS.fetch(new Request(ORIGIN + $q.f + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-  if (!r || !r.ok) { try { r = await fetch(ORIGIN + $q.g + name, { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-  const v = r && r.ok ? await r.json() : null;
-  SHARED[name] = { t: Date.now(), v, a: a && v != null }; return v;
+  try { return (await jget(env, name, ORIGIN + $q.f + name, ORIGIN + $q.g + name)).v; } catch (e) { SHARED[name] = { t: Date.now(), v: null, a: false }; return null; }
 }
 function months(now) {
 const L = []; let [y, m] = FIRST.split('-').map(Number); const ey = now.getUTCFullYear(), em = now.getUTCMonth() + 1;

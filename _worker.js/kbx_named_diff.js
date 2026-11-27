@@ -1,5 +1,6 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { assemble, esc, fd, pre } from './kbx_named.js';
+import { jget } from './kbx_jget.js';
 import { TB } from './kbx_strings.js';
 const TT = TB.kbx_named_diff_TT ;
 const tt = (l, k) => (TT[l] && TT[l][k]) || TT.en[k] || '';
@@ -13,11 +14,8 @@ const MEMO = {};
 const shard = (env, k) => { const m = MEMO[k]; return m && (m.a || Date.now() - m.t < 600000) ? Promise.resolve(m.v) : sf('ph:' + k, () => shard0(env, k)); };
 async function shard0(env, k) {
 const m = MEMO[k]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/page-history-' + k + '.json')); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) r = await fetch(ORIGIN + '/data/page-history-' + k + '.json', { cf: { cacheTtl: 600, cacheEverything: true } });
-if (!r.ok) throw new Error('page-history ' + r.status);
-const v = await r.json(); MEMO[k] = { t: Date.now(), v, a }; return v;
+const o = await jget(env, 'page-history-' + k + '.json', ORIGIN + '/_s/kolaboro.com/data/page-history-' + k + '.json', ORIGIN + '/data/page-history-' + k + '.json', 600);   // n40 d14: the same copy kbx_e29 reads
+MEMO[k] = { t: Date.now(), v: o.v, a: o.a }; return o.v;
 }
 async function project(env, id) { const s = await shard(env, shardOf(id)); return { p: (s.projects || {})[id] || null, updated: s.updated }; }
 const textOf = (p, v) => v.ix.map(i => p.seg[i]).join('');

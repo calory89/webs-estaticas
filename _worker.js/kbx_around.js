@@ -1,10 +1,12 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_around__q, $s = TB.kbx_around__s, $t = TB.kbx_around__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
+import { sf } from './kbx_jget.js';
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/around(\/|$)/;
 let MEMO = {};
-async function loadOne(env, name) {
+const loadOne = (env, name) => sf('around:' + name, () => loadOne0(env, name));   // n40 d14: concurrent requests share one load
+async function loadOne0(env, name) {
 const m = MEMO[name]; if (m && Date.now() - m.t < 600000) return m.v;
 let r = null;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.a + name)); } catch (e) { r = null; }

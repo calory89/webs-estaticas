@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_trust__q, $s = TB.kbx_trust__s, $t = TB.kbx_trust__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { t31, loadS as loadS31 } from './kbx_n31b_page.js';
+import { jget } from './kbx_jget.js';
 import { e29t } from './kbx_e29_i18n.js';
 import { REVIEWED as E29_REV } from './kbx_e29_lines.js';
 import { TS } from './kbx_trust_i18n.js';
@@ -29,19 +30,10 @@ const nf = (lang, n) => n == null ? '' : Number(n).toLocaleString(LOC[lang] || '
 const fdt = (iso, lang, short) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso || ''); if (!m) return String(iso || ''); try { return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', short ? { day: $q.c, month: 'short', timeZone: 'UTC' } : { day: $q.c, month: 'long', year: $q.c, timeZone: 'UTC' }).format(new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]))); } catch (e) { return iso.slice(0, 10); } };
 const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
 const day = d => d.toISOString().slice(0, 10);
-const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 async function load(env, name) {
 const m = SHARED[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-if (LOADING[name]) return LOADING[name];
-const p = (async () => {
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.d + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) r = await fetch(ORIGIN + $q.e + name, { cf: { cacheTtl: 300, cacheEverything: true } });
-if (!r.ok) throw new Error(name + ' ' + r.status);
-const v = await r.json(); SHARED[name] = { t: Date.now(), v, a }; return v;
-})();
-LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
-return p;
+return (await jget(env, name, ORIGIN + $q.d + name, ORIGIN + $q.e + name)).v;
 }
 const opt = (env, n) => load(env, n).catch(() => null);
 const capped = (p, ms) => Promise.race([p.catch(() => null), new Promise(r => setTimeout(() => r(null), ms))]);

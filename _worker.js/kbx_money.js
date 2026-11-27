@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_money__q, $s = TB.kbx_money__s, $t = TB.kbx_money__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
+import { sf } from './kbx_jget.js';
 import { rulesData, rulesHtml, rulesJson, RULES_CSS } from './kbx_rules.js';
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/money(\/|$)/;
@@ -10,7 +11,8 @@ const ltr = s => $q.b + esc(s) + $q.c;
 const OPINION = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|betrug\w*|arnaque\w*|escroc\w*|oplicht\w*|bedrog\w*)\b|мошен|обман|骗局|诈骗|احتيال/i;
 const MASK = s => String(s || '').replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, $q.d).replace(/\+?\d[\d ()-]{8,}\d/g, m => /\d{1,3}([.,\s]\d{3}){2,}/.test(m) ? m : $q.e);
 let MEMO = {};
-async function loadOne(env, path) {
+const loadOne = (env, path) => sf('money:' + path, () => loadOne0(env, path));   // n40 d14: concurrent requests share one load
+async function loadOne0(env, path) {
 const m = MEMO[path]; if (m && Date.now() - m.t < 600000) return m.v;
 let r = null;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.f + path)); } catch (e) { r = null; }

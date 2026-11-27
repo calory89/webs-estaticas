@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_web__q, $t = TB.kbx_web__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
+import { jget } from './kbx_jget.js';
 import { LOCALE } from './kbx_named_i18n.js';
 import { T as T30 } from './kbx_n30b_i18n.js';
 const ORIGIN = 'https://kolaboro.com';
@@ -9,10 +10,7 @@ let MEMO = null;
 let FZ = {};
 async function loadOne(env, name) {
 const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && (sh.a || Date.now() - sh.t < 600000)) return sh.v;
-let r = null;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.a + name)); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + $q.b + name, { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-return r && r.ok ? await r.json().catch(() => null) : null;
+return jget(env, name, ORIGIN + $q.a + name, ORIGIN + $q.b + name).then(o => o.v, () => null);
 }
 export async function webData(env) {
 if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;

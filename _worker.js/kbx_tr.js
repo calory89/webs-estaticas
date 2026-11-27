@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_tr__q, $s = TB.kbx_tr__s, $t = TB.kbx_tr__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { t31, loadS as loadS31 } from './kbx_n31b_page.js';
+import { jget } from './kbx_jget.js';
 import { TRS } from './kbx_tr_i18n.js';
 import { hdisp, mkName } from './kbx_hdate.js';
 import { TR_PLACES, inPlace } from './kbx_tr_places.js';
@@ -39,19 +40,10 @@ return String(n || '').replace(/\s*\(([^)]*)\)/g, (m, inner) => { const keep = i
 const LF_CS = /(^|[\s,(])(PT|CV|SA|S\.A\.|SL|S\.L\.|SLU|S\.L\.U\.|SAS|S\.A\.S\.?|SARL|AG|BV|B\.V\.|NV|N\.V\.|JSC|PCL|PJSC|P\.J\.S\.C\.?|QPSC|Q\.P\.S\.C\.?|LLC|L\.L\.C\.?|LLP|PLC|FZE|FZCO|FZ-LLC|SpA|S\.p\.A\.?|Srl|S\.r\.l\.?|GmbH|Kft\.?|d\.o\.o\.?|Ltda\.?|K\.K\.|A\.Ş\.?|AŞ)(?=$|[\s,.)])/;
 const LF_CI = /\b(limited|ltd\.?|inc\.?|incorporated|corp\.?|corporation|sdn\.?\s*bhd\.?|berhad|bhd\.?|pty\.?\s*ltd|co\.,?\s*ltd|public company|sociedad|société|gesellschaft)\b/i;
 const legalForm = s => !!s && (LF_CS.test(s) || LF_CI.test(s));
-const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 async function load(env, name) {
 const m = SHARED[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-if (LOADING[name]) return LOADING[name];
-const p = (async () => {
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.f + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) r = await fetch(ORIGIN + $q.g + name, { cf: { cacheTtl: 300, cacheEverything: true } });
-if (!r.ok) throw new Error(name + ' ' + r.status);
-const v = await r.json(); SHARED[name] = { t: Date.now(), v, a }; return v;
-})();
-LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
-return p;
+return (await jget(env, name, ORIGIN + $q.f + name, ORIGIN + $q.g + name)).v;
 }
 let IDX = null;
 export async function trData(env) {

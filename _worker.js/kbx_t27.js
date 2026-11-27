@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_t27__q, $s = TB.kbx_t27__s, $t = TB.kbx_t27__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { t31, loadS as loadS31 } from './kbx_n31b_page.js';
+import { jget } from './kbx_jget.js';
 import { t27 } from './kbx_t27_i18n.js';
 import { mkName } from './kbx_hdate.js';
 import { trData } from './kbx_tr.js';
@@ -31,11 +32,7 @@ const reviewed = lang => $q.n + fill(esc(t27(lang, 'rev')), { d: tm(REVIEWED, la
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 async function load(env, name) {
 const m = SHARED[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.o + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) r = await fetch(ORIGIN + $q.p + name, { cf: { cacheTtl: 300, cacheEverything: true } });
-if (!r.ok) throw new Error(name + ' ' + r.status);
-const v = await r.json(); SHARED[name] = { t: Date.now(), v, a }; return v;
+return (await jget(env, name, ORIGIN + $q.o + name, ORIGIN + $q.p + name)).v;
 }
 const eligible = ix => [...ix.rows.values()].filter(r => !r.sumba && r.score >= BADGE_MIN).sort((a, b) => b.score - a.score || a.n.localeCompare(b.n));
 function corrPage(C, lang, id, SL, pg) {

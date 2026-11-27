@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_lastmod__q, $s = TB.kbx_lastmod__s, $t = TB.kbx_lastmod__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
+import { jget, rawOf } from './kbx_jget.js';
 const ORIGIN = 'https://kolaboro.com';
 const VOL = new Set(['checked', 'invited', 'seen', 'sealed']);
 export const PARTS = ['n', 'c', 'p', 'f', 's'];
@@ -13,7 +14,7 @@ function canon(v, top) {   // stable JSON: sorted keys, volatile date keys dropp
 function fnv(s, seed) { let h = seed >>> 0; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; } return h.toString(16).padStart(8, '0'); }
 export const fingerprint = v => v == null ? '' : (s => fnv(s, 2166136261) + fnv(s, 3735928559))(canon(v, true));
 export const isoDay = d => { const m = /^(\d{4}-\d{2}-\d{2})/.exec(String(d || '')); return m ? m[1] : null; };
-export function compute(files, pin) {
+export function compute(files, pin, raw) {
 const F = files || {}, P = (pin && pin.p) || {};
 const caseBy = new Map(((F.cases && F.cases.cases) || []).map(c => [c.id, c]));
 const part = { n: null, c: id => caseBy.get(id), p: id => ((F.prom && F.prom.projects) || {})[id], f: id => (((F.find && F.find.projects) || {})[id] || {}).f, s: id => ((F.prog && F.prog.projects) || {})[id] };
@@ -21,7 +22,7 @@ const fileDay = { n: isoDay(F.named && F.named.updated), c: isoDay(F.cases && F.
 const today = new Date().toISOString().slice(0, 10), out = new Map(), state = {};
 for (const x of (F.named && F.named.projects) || []) {
 if (!x || !x.id) continue;
-const r = one(x, P, part, fileDay, today);
+const r = one(raw ? raw(x) : x, P, part, fileDay, today);
 state[x.id] = r.st; out.set(x.id, r.d);
 }
 return { byId: out, state, files: fileDay };
@@ -56,10 +57,7 @@ let PINP = null;
 let MEMO = null;
 let NET = false;
 async function json(env, name) {
-  try { const r = await env.ASSETS.fetch(new Request(ORIGIN + $q.e + name)); if (r.ok) return await r.json(); } catch (e) {}
-  NET = true;
-  try { const r = await fetch(ORIGIN + $q.f + name, { cf: { cacheTtl: 300, cacheEverything: true } }); if (r.ok) return await r.json(); } catch (e) {}
-  return null;
+  try { const o = await jget(env, name, ORIGIN + $q.e + name, ORIGIN + $q.f + name); if (!o.a) NET = true; return o.v; } catch (e) { NET = true; return null; }   // n40 d14: shared parse
 }
 export async function trueLastmod(env) {
 if (MEMO && (MEMO.a || Date.now() - MEMO.t < 300000)) return MEMO.v;
@@ -70,7 +68,7 @@ let BUSY = null;
 async function trueLastmod0(env) {
 NET = false;
 const [named, cases, prom, find, prog, pin] = await Promise.all([$q.g, $q.h, $q.i, $q.j, $q.k, $q.d].map(n => json(env, n)));
-const r = compute({ named, cases, prom, find, prog }, pin);
+const r = compute({ named, cases, prom, find, prog }, pin, rawOf);   // fingerprints of the names as published, before kbx_named cleans them
 const dev = new Map(), slug = new Map();
 for (const x of (named && named.projects) || []) { const d = r.byId.get(x.id); if (x.s && d) slug.set(x.s, d); if (x.dvs && d && (!dev.has(x.dvs) || d > dev.get(x.dvs))) dev.set(x.dvs, d); }
 const v = { project: r.byId, slug, developer: dev, state: r.state, files: r.files, pinned: pin ? (pin.updated || null) : null, pinCount: pin && pin.p ? Object.keys(pin.p).length : 0 };

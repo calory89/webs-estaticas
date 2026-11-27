@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_rules__q, $s = TB.kbx_rules__s, $t = TB.kbx_rules__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { TB } from './kbx_strings.js';
+import { sf } from './kbx_jget.js';
 const ORIGIN = 'https://kolaboro.com';
 export const PAGE_RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?guides\/short-let-rules(\/?)$/;
 export const PATHS = /^\/api\/x\/short-let-rules\/?$/;
@@ -10,7 +11,8 @@ const pre = l => l === 'en' ? '' : '/' + l;
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.a, "'": '&#39;' }[c]));
 const CELLS = ['reg', 'cap', 'stay', 'own'];
 let MEMO = null;
-export async function rulesData(env) {
+export const rulesData = env => sf('rules', () => rulesData0(env));   // n40 d14: concurrent requests share one load
+async function rulesData0(env) {
 if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
 let r = null; const path = $q.b;
 try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.c + path)); } catch (e) { r = null; }

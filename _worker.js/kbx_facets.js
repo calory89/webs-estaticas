@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_facets__q, $s = TB.kbx_facets__s, $t = TB.kbx_facets__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { data as namedData, handoverOf, fd, esc, pre, lastmod, okHttp, host, reviewed, overdueOf, OV_MIN } from './kbx_named.js';
+import { jget } from './kbx_jget.js';
 import { stalledLabel } from './kbx_n31c.js';
 import { trData } from './kbx_tr.js';
 import { mkName, placeName, coName, hyear, hkey } from './kbx_hdate.js';
@@ -35,19 +36,10 @@ const fitT = (...c) => c.find(x => clen(x) <= 60) || cutW(c[c.length - 1], 60);
 const fitD = (...c) => { const f = c.find(x => clen(x) <= 155); if (f) return f; let d = c[c.length - 1]; const S = d.split(/(?<=[.。])\s*/).filter(Boolean); while (S.length > 1 && clen(S.join(' ')) > 155) S.pop(); d = S.join(/[。]/.test(d) ? '' : ' '); return clen(d) <= 155 ? d : cutW(d, 154) + '.'; };
 const sn = n => String(n).split(/\s+[-–|:]\s+|\s*\(|,/)[0].trim() || String(n);
 const median = a => { const s = a.slice().sort((x, y) => x - y); return s.length ? (s.length % 2 ? s[(s.length - 1) / 2] : Math.round((s[s.length / 2 - 1] + s[s.length / 2]) / 2)) : null; };
-const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 async function load(env, name) {
 const m = SHARED[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-if (LOADING[name]) return LOADING[name];
-const p = (async () => {
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.h + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) { try { r = await fetch(ORIGIN + $q.i + name, { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
-if (!r || !r.ok) return null;
-const v = await r.json().catch(() => null); if (v) SHARED[name] = { t: Date.now(), v, a }; return v;
-})();
-LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
-return p;
+return jget(env, name, ORIGIN + $q.h + name, ORIGIN + $q.i + name).then(o => o.v || null, () => null);
 }
 const AREA_SKIP = /^(centro|center|centre|city cent(?:re|er)|downtown area|old town|north|south|east|west|beachfront|seafront|off-plan|phase \w+|tower \w+|block \w+|plot \w+|near .*|also listed as.*)$/i;
 const slugAr = v => slugA(String(v || '').replace(/[łŁ]/g, 'l').replace(/ı/g, 'i'));

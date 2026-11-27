@@ -1,5 +1,6 @@
 // comments: _notes/kolaboro-worker-comments.txt
 import { T, LANGS, LOCALE } from './kbx_named_i18n.js';
+import { jget, RAWN } from './kbx_jget.js';
 import { hparse, hdisp, hnote, hkey, coName, mkName, placeName, CO_ISO2 } from './kbx_hdate.js';
 import { rpc } from './kolaboro.js';
 import { watchBox, searchBox, nf28, feedLinks, W9JS, W9CSS } from './kbx_follow.js';
@@ -44,21 +45,10 @@ const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
 const CACHE_V = 'named-v160';   // v160: site.css link marked for site-p.css (n40 d8); v159: overdue, moved and past-first counts from /data/on-time.json on every page; Mevacity Alanya counted in Alanya (n40 k24);
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
-let MEMO = {};
-const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
-function loadJson(env, name, ttl) {
-const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < (ttl || 600000))) return Promise.resolve(m.v);
-if (LOADING[name]) return LOADING[name];
-const p = loadJson0(env, name).then(v => { SHARED[name] = { t: Date.now(), v, a: !!(MEMO[name] && MEMO[name].a) }; return v; });
-LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
-return p;
-}
-async function loadJson0(env, name) {
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } });
-if (!r.ok) throw new Error(name + ' ' + r.status);
-const v = await r.json(); MEMO[name] = { t: Date.now(), v, a }; return v;
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
+function loadJson(env, name, ttl) {   // n40 d14: the shared copy (kbx_jget.js), not a private one
+const m = SHARED[name]; if (m && m.v != null && (m.a || Date.now() - m.t < (ttl || 600000))) return Promise.resolve(m.v);
+return jget(env, name, ORIGIN + '/_s/kolaboro.com/data/' + name, ORIGIN + '/data/' + name).then(o => o.v);
 }
 const COI_MARKETS = new Set(['sumba']);
 const DUP_OF = { 'VNM-008': 'SGN-002', 'KUA-003': 'MYS-017' };
@@ -69,7 +59,6 @@ return keep.length ? ' (' + keep.join(', ') + ')' : '';
 }).trim();
 }
 let IDX = null;
-const RAWN = new WeakMap();
 let STALE = { t: 0, v: false };
 async function staleIsolate(env) {
 if (Date.now() - STALE.t < 30000) return STALE.v;

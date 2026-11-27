@@ -1,6 +1,7 @@
 // comments: _notes/kolaboro-worker-comments.txt
 const $q = TB.kbx_e29__q, $s = TB.kbx_e29__s, $t = TB.kbx_e29__t;   // n40 k46: short names for this module's string tables (strings in /data/i18n/k19s.json, k17s.json, k46s.json)
 import { e29t } from './kbx_e29_i18n.js';
+import { jget } from './kbx_jget.js';
 import { trustRender, head, crumbLd } from './kbx_trust.js';
 import { coName } from './kbx_hdate.js';
 import { REVIEWED, NEXT, METHOD, ACC, FOUNDERS, dots, reviewLine, accLine, errLine } from './kbx_e29_lines.js';
@@ -34,11 +35,7 @@ const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {});
 const load = (env, name, base) => sf('e29:' + (base || '') + name, () => load0(env, name, base));
 async function load0(env, name, base) {
 const key = (base || 'data/') + name, m = SHARED[base ? key : name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;
-let r = null, a = false;
-try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + $q.m + key)); a = !!(r && r.ok); } catch (e) { r = null; }
-if (!r || !r.ok) r = await fetch(ORIGIN + '/' + key, { cf: { cacheTtl: 300, cacheEverything: true } });
-if (!r.ok) throw new Error(name + ' ' + r.status);
-const v = await r.json(); SHARED[base ? key : name] = { t: Date.now(), v, a }; return v;
+return (await jget(env, base ? key : name, ORIGIN + $q.m + key, ORIGIN + '/' + key)).v;
 }
 const HEADS = new Map();
 async function fileDate(env, name) {
