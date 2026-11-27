@@ -3,13 +3,233 @@
 # time (WITA, HH:MM), dateline, kind ("brief" | "guide" | "letter").
 WA = "https://www.waingapu.com/"
 BRIEFS = [
+{'section': 'news',
+ 'slug': 'east-sumba-food-security-index-bapanas-award-2026',
+ 'date': '2026-11-28',
+ 'time': '06:00',
+ 'dateline': 'WAINGAPU',
+ 'kind': 'brief',
+ 'top': True,
+ 'slugs': {'es': 'sumba-oriental-indice-seguridad-alimentaria-premio-bapanas-2026',
+           'id': 'indeks-ketahanan-pangan-sumba-timur-penghargaan-bapanas-2026'},
+ 'keywords': {'en': ['East Sumba food security',
+                     'Bapanas award',
+                     'food security index Indonesia',
+                     'East Sumba regency',
+                     'Waingapu',
+                     'NTT food supply'],
+              'es': ['seguridad alimentaria Sumba Oriental',
+                     'premio Bapanas',
+                     'índice de seguridad alimentaria Indonesia',
+                     'regencia de Sumba Oriental',
+                     'Waingapu',
+                     'suministro de alimentos NTT'],
+              'id': ['ketahanan pangan Sumba Timur',
+                     'penghargaan Bapanas',
+                     'indeks ketahanan pangan 2026',
+                     'Kabupaten Sumba Timur',
+                     'Waingapu',
+                     'pangan NTT']},
+ 'en': {'title': "East Sumba's food security score jumps 17.74 points, wins award",
+        'dek': 'The national food agency Bapanas gave the regency its prize for the best improvement over '
+               '2025, from 56.94 to 74.68 on the annual index.',
+        'answer': "East Sumba's food security index rose from 56.94 in 2025 to 74.68 in 2026, a gain of "
+                  '17.74 points, and the National Food Agency (Bapanas) gave the regency an award for the '
+                  'best improvement in its category, Waingapu.Com reported on Friday 27 November 2026.',
+        'keys': ['The index rose from 56.94 in 2025 to 74.68 in 2026, up 17.74 points in one year, according '
+                 'to Waingapu.Com.',
+                 'Bapanas gave East Sumba its award for the regency or city government with the best '
+                 'improvement compared with 2025, under Decision No. 399 of 2026.',
+                 'The index combines food availability, affordability and utilization, using 11 indicators '
+                 'such as rice stocks, price stability, clean water and stunting.',
+                 'The report does not say what drove the rise, how East Sumba ranks against other regencies, '
+                 'or when the award was handed over.'],
+        'visitors': 'The score is an annual government rating, not a travel advisory, and the report '
+                    'mentions no shortages or price changes for visitors.',
+        'faq': [["How much did East Sumba's food security index rise?",
+                 'From 56.94 in 2025 to 74.68 in 2026, an increase of 17.74 points, according to '
+                 'Waingapu.Com on 27 November 2026.'],
+                ['What does the food security index measure?',
+                 'Bapanas scores food availability, affordability and utilization using 11 indicators, '
+                 'including rice and local food supply, reserves, price stability, household welfare, food '
+                 'consumption, access to clean water and stunting.']],
+        'body': '<p>East Sumba has received a national award for the biggest rise in its food security '
+                'index, after the score climbed from 56.94 in 2025 to 74.68 in 2026, a gain of 17.74 points '
+                'in one year, Waingapu.Com reported on Friday 27 November 2026. The National Food Agency '
+                '(Badan Pangan Nasional, Bapanas) gave the regency the prize in the category of regency and '
+                'city governments with the best improvement compared with 2025, under Decision No. 399 of '
+                "2026 of the agency's head.</p><h2>What the food security index measures</h2><p>Bapanas "
+                'builds the index from three components: food availability, food affordability and food '
+                'utilization. According to the report, it uses 11 indicators, including the supply of rice '
+                'and local foods, food reserves, stability of basic prices, household welfare, adequacy of '
+                'food consumption, access to clean water and the prevalence of stunting, the condition of '
+                'children who are too short for their age.</p><p>The article does not say which of these '
+                'indicators drove the rise in East Sumba, how the regency ranks against others in NTT or '
+                'nationally, or when the award was presented.</p><h2>Who received it</h2><p>The regency is '
+                'led by Regent Umbu Lili Pekuwali and Deputy Regent Yonathan Hani. A photo published with '
+                'the report shows the regent holding the award certificate beside Nicolas Pandarangga, head '
+                "of the regency's agriculture and food office.</p><h2>Food supply and weather in the same "
+                'season</h2><p>The index is an annual government score, not a measure of current stocks or '
+                'prices. The Sumba Times has reported separately that the weather agency expects <a '
+                'href="/en/living/el-nino-late-rainy-season-ntt-sumba-2026/">rains to arrive late in most of '
+                'NTT</a> and that <a '
+                'href="/en/living/bulog-waingapu-2300-tonnes-rice-christmas-new-year-east-sumba-2026/">Bulog '
+                'Waingapu was preparing about 2,300 tonnes of rice</a> for Christmas and New '
+                'Year.</p><p>This report rests on a single outlet. We did not find a Bapanas statement or '
+                'other coverage of the award at the time of writing.</p><h2>What it means for visitors, '
+                'residents and investors</h2><p>Visitors: the score is not a travel advisory, and the report '
+                'mentions no shortages or price changes. Residents: an index built partly on rice stocks, '
+                'price stability, clean water and child stunting is a rough guide to household food '
+                'conditions in the regency, but one yearly score does not show differences between villages. '
+                'Investors: farm and food projects can read the index as one indicator of local conditions; '
+                "the report mentions no funding, programme or target linked to the award, so the regency's "
+                'own figures should be checked directly.</p>'},
+ 'es': {'title': 'Sumba Oriental sube 17,74 puntos su índice de seguridad alimentaria',
+        'dek': 'La agencia alimentaria nacional Bapanas premia a la regencia por la mayor mejora respecto a '
+               '2025: de 56,94 a 74,68 puntos en el índice anual.',
+        'answer': 'El índice de seguridad alimentaria de Sumba Oriental pasó de 56,94 en 2025 a 74,68 en '
+                  '2026, una subida de 17,74 puntos, y la Agencia Nacional de Alimentos (Bapanas) premió a '
+                  'la regencia por la mejor mejora de su categoría, informó Waingapu.Com el viernes 27 de '
+                  'noviembre de 2026.',
+        'keys': ['El índice subió de 56,94 en 2025 a 74,68 en 2026, es decir, 17,74 puntos en un año, según '
+                 'Waingapu.Com.',
+                 'Bapanas entregó a Sumba Oriental el premio al gobierno de regencia o ciudad con la mejor '
+                 'mejora respecto a 2025, según la Decisión n.º 399 de 2026.',
+                 'El índice combina disponibilidad, accesibilidad y aprovechamiento de los alimentos, con 11 '
+                 'indicadores como las reservas de arroz, la estabilidad de precios, el agua potable y el '
+                 'retraso del crecimiento infantil.',
+                 'El reportaje no explica qué impulsó la subida, en qué lugar queda Sumba Oriental frente a '
+                 'otras regencias ni cuándo se entregó el premio.'],
+        'visitors': 'La puntuación es una calificación anual del Gobierno, no una alerta de viaje, y el '
+                    'reportaje no menciona escasez ni cambios de precios que afecten a los visitantes.',
+        'faq': [['¿Cuánto subió el índice de seguridad alimentaria de Sumba Oriental?',
+                 'De 56,94 en 2025 a 74,68 en 2026, un aumento de 17,74 puntos, según Waingapu.Com el 27 de '
+                 'noviembre de 2026.'],
+                ['¿Qué mide el índice de seguridad alimentaria?',
+                 'Bapanas puntúa la disponibilidad, la accesibilidad y el aprovechamiento de los alimentos '
+                 'con 11 indicadores, entre ellos el suministro de arroz y alimentos locales, las reservas, '
+                 'la estabilidad de precios, el bienestar de los hogares, el consumo de alimentos, el acceso '
+                 'a agua potable y el retraso del crecimiento infantil.']],
+        'body': '<p>Sumba Oriental ha recibido un premio nacional por la mayor mejora de su índice de '
+                'seguridad alimentaria: la puntuación pasó de 56,94 en 2025 a 74,68 en 2026, una subida de '
+                '17,74 puntos en un solo año, informó Waingapu.Com el viernes 27 de noviembre de 2026. La '
+                'Agencia Nacional de Alimentos de Indonesia (Badan Pangan Nacional, Bapanas) concedió a la '
+                'regencia el galardón de la categoría de gobiernos de regencia y de ciudad con la mejor '
+                'mejora respecto a 2025, según la Decisión n.º 399 de 2026 del jefe del '
+                'organismo.</p><h2>Qué mide el índice de seguridad alimentaria</h2><p>Bapanas elabora el '
+                'índice con tres componentes: disponibilidad de alimentos, acceso económico a ellos y su '
+                'aprovechamiento. Según el reportaje, emplea 11 indicadores, entre ellos el suministro de '
+                'arroz y de alimentos locales, las reservas, la estabilidad de los precios básicos, el '
+                'bienestar de los hogares, la adecuación del consumo, el acceso a agua potable y la '
+                'prevalencia del retraso del crecimiento infantil, que afecta a los niños con una talla baja '
+                'para su edad.</p><p>El texto no precisa cuál de esos indicadores impulsó la subida en Sumba '
+                'Oriental, en qué puesto queda la regencia en NTT o en el conjunto del país, ni cuándo se '
+                'entregó el premio.</p><h2>Quién recogió el premio</h2><p>La regencia está dirigida por el '
+                'regente Umbu Lili Pekuwali y el vicerregente Yonathan Hani. Una foto publicada con el '
+                'reportaje muestra al regente con el certificado junto a Nicolas Pandarangga, jefe de la '
+                'oficina regional de agricultura y alimentación.</p><h2>Abastecimiento y clima en la misma '
+                'temporada</h2><p>El índice es una puntuación anual del Gobierno, no una medida de las '
+                'existencias ni de los precios actuales. The Sumba Times ha informado por separado de que la '
+                'agencia meteorológica prevé que <a '
+                'href="/en/living/el-nino-late-rainy-season-ntt-sumba-2026/">las lluvias lleguen tarde a '
+                'casi toda NTT</a> y de que <a '
+                'href="/en/living/bulog-waingapu-2300-tonnes-rice-christmas-new-year-east-sumba-2026/">Bulog '
+                'Waingapu preparaba unas 2.300 toneladas de arroz</a> para Navidad y Año Nuevo.</p><p>Esta '
+                'información se apoya en un solo medio. Al redactar el texto no encontramos ningún '
+                'comunicado de Bapanas ni otra cobertura del premio.</p><h2>Qué significa para visitantes, '
+                'residentes e inversores</h2><p>Visitantes: la puntuación no es una alerta de viaje, y el '
+                'reportaje no menciona escasez ni cambios de precios. Residentes: un índice que se apoya en '
+                'parte en las reservas de arroz, la estabilidad de precios, el agua potable y el retraso del '
+                'crecimiento infantil orienta sobre la situación alimentaria de los hogares, aunque una '
+                'cifra anual no muestra las diferencias entre aldeas. Inversores: los proyectos agrícolas y '
+                'alimentarios pueden leer el índice como un indicador más de las condiciones locales; el '
+                'reportaje no cita fondos, programas ni metas vinculados al premio, así que conviene '
+                'consultar directamente las cifras de la regencia.</p>'},
+ 'id': {'title': 'Indeks Ketahanan Pangan Sumba Timur Naik 17,74 Poin, Raih Penghargaan',
+        'dek': 'Badan Pangan Nasional memberi penghargaan peningkatan terbaik dibanding 2025 kepada Sumba '
+               'Timur, dari 56,94 menjadi 74,68 pada indeks tahunan.',
+        'answer': 'Indeks Ketahanan Pangan Sumba Timur naik dari 56,94 pada 2025 menjadi 74,68 pada 2026, '
+                  'bertambah 17,74 poin, dan Badan Pangan Nasional (Bapanas) memberi kabupaten ini '
+                  'penghargaan untuk peningkatan terbaik di kategorinya, demikian laporan Waingapu.Com pada '
+                  'Jumat 27 November 2026.',
+        'keys': ['Indeks naik dari 56,94 pada 2025 menjadi 74,68 pada 2026, atau 17,74 poin dalam setahun, '
+                 'menurut Waingapu.Com.',
+                 'Bapanas memberi Sumba Timur penghargaan untuk pemerintah kabupaten atau kota dengan '
+                 'peningkatan terbaik dibanding 2025, berdasarkan Keputusan Kepala Badan Pangan Nasional '
+                 'Nomor 399 Tahun 2026.',
+                 'Indeks menggabungkan ketersediaan, keterjangkauan, dan pemanfaatan pangan, dengan 11 '
+                 'indikator seperti cadangan beras, stabilitas harga, akses air bersih, dan stunting.',
+                 'Laporan tidak menyebut pendorong kenaikan, peringkat Sumba Timur dibanding kabupaten lain, '
+                 'ataupun waktu penyerahan penghargaan.'],
+        'visitors': 'Skor ini adalah penilaian tahunan pemerintah, bukan imbauan perjalanan, dan laporan '
+                    'tidak menyebut kelangkaan atau perubahan harga bagi pengunjung.',
+        'faq': [['Berapa kenaikan indeks ketahanan pangan Sumba Timur?',
+                 'Dari 56,94 pada 2025 menjadi 74,68 pada 2026, naik 17,74 poin, menurut Waingapu.Com pada '
+                 '27 November 2026.'],
+                ['Apa yang diukur indeks ketahanan pangan?',
+                 'Bapanas menilai ketersediaan, keterjangkauan, dan pemanfaatan pangan lewat 11 indikator, '
+                 'antara lain ketersediaan beras dan pangan lokal, cadangan pangan, stabilitas harga, '
+                 'kesejahteraan rumah tangga, konsumsi pangan, akses air bersih, dan prevalensi stunting.']],
+        'body': '<p>Kabupaten Sumba Timur menerima penghargaan nasional atas kenaikan indeks ketahanan '
+                'pangan terbesar setelah skornya naik dari 56,94 pada 2025 menjadi 74,68 pada 2026, '
+                'bertambah 17,74 poin dalam setahun, lapor Waingapu.Com pada Jumat 27 November 2026. Badan '
+                'Pangan Nasional (Bapanas) memberikan penghargaan untuk kategori pemerintah kabupaten dan '
+                'kota dengan peningkatan terbaik dibanding 2025, berdasarkan Keputusan Kepala Badan Pangan '
+                'Nasional Nomor 399 Tahun 2026.</p><h2>Apa yang diukur indeks ketahanan '
+                'pangan</h2><p>Bapanas menyusun indeks dari tiga komponen: ketersediaan pangan, '
+                'keterjangkauan pangan, dan pemanfaatan pangan. Menurut laporan itu, ada 11 indikator, '
+                'termasuk ketersediaan beras dan pangan lokal, cadangan pangan, stabilitas harga pangan '
+                'pokok, kesejahteraan rumah tangga, kecukupan konsumsi pangan, akses air bersih, serta '
+                'prevalensi stunting, yakni kondisi anak bertubuh pendek untuk usianya.</p><p>Artikel tidak '
+                'menjelaskan indikator mana yang paling mendorong kenaikan di Sumba Timur, peringkat '
+                'kabupaten ini di NTT maupun nasional, atau kapan penghargaan diserahkan.</p><h2>Siapa yang '
+                'menerima</h2><p>Kabupaten ini dipimpin Bupati Umbu Lili Pekuwali dan Wakil Bupati Yonathan '
+                'Hani. Foto yang dimuat bersama laporan memperlihatkan bupati memegang sertifikat '
+                'penghargaan bersama Nicolas Pandarangga, Kepala Dinas Pertanian dan Pangan.</p><h2>Pasokan '
+                'pangan dan cuaca pada musim yang sama</h2><p>Indeks ini adalah skor tahunan pemerintah, '
+                'bukan ukuran stok atau harga saat ini. The Sumba Times telah memberitakan secara terpisah '
+                'bahwa badan cuaca memperkirakan <a '
+                'href="/en/living/el-nino-late-rainy-season-ntt-sumba-2026/">hujan datang terlambat di '
+                'hampir seluruh NTT</a> dan bahwa <a '
+                'href="/en/living/bulog-waingapu-2300-tonnes-rice-christmas-new-year-east-sumba-2026/">Bulog '
+                'Waingapu menyiapkan sekitar 2.300 ton beras</a> untuk Natal dan Tahun Baru.</p><p>Laporan '
+                'ini bertumpu pada satu media. Saat artikel ditulis, kami tidak menemukan pernyataan Bapanas '
+                'maupun pemberitaan lain tentang penghargaan tersebut.</p><h2>Apa artinya bagi pengunjung, '
+                'warga, dan investor</h2><p>Pengunjung: skor ini bukan imbauan perjalanan, dan laporan tidak '
+                'menyebut kelangkaan atau perubahan harga. Warga: indeks yang sebagian bertumpu pada '
+                'cadangan beras, stabilitas harga, air bersih, dan stunting menjadi gambaran kasar kondisi '
+                'pangan rumah tangga di kabupaten ini, tetapi satu skor tahunan tidak menunjukkan perbedaan '
+                'antardesa. Investor: proyek pertanian dan pangan dapat membaca indeks ini sebagai salah '
+                'satu indikator kondisi setempat; laporan tidak menyebut pendanaan, program, atau target '
+                'yang terkait penghargaan, sehingga angka resmi kabupaten perlu dicek langsung.</p>'},
+ 'sources': [['Waingapu.Com: Indeks Ketahanan Pangan Sumba Timur Melonjak 17,74 Poin, Bapanas Beri '
+              'Penghargaan Nasional (27 Nov 2026)',
+              'https://www.waingapu.com/indeks-ketahanan-pangan-sumba-timur-melonjak-1774-poin-bapanas-beri-penghargaan-nasional/'],
+             ['Waingapu.Com: Bulog Waingapu Siapkan 2.300 Ton Beras Jelang Natal dan Tahun Baru (18 Nov '
+              '2026)',
+              'https://www.waingapu.com/bulog-waingapu-siapkan-2-300-ton-beras-jelang-natal-dan-tahun-baru-stok-tambahan-dari-ntb-segera-tiba/']],
+ 'image': {'w': 1280,
+           'h': 853,
+           'credit': 'Farhan Perdana (Blek)',
+           'license': 'CC BY 2.0',
+           'license_url': 'https://creativecommons.org/licenses/by/2.0',
+           'page': 'https://commons.wikimedia.org/wiki/File:The_Land_Named_Sumba_Timur.jpg',
+           'ai': False,
+           'caption': {'en': 'Aerial view of a river valley with a village and farm plots in East Sumba, '
+                             '2017 (cropped). File photo: it does not show the award or any specific '
+                             'village. Photo: Farhan Perdana, CC BY 2.0.',
+                       'es': 'Vista aérea de un valle con una aldea y parcelas de cultivo en Sumba Oriental, '
+                             '2017 (recortada). Foto de archivo: no muestra el premio ni una aldea concreta. '
+                             'Foto: Farhan Perdana, CC BY 2.0.',
+                       'id': 'Foto udara lembah sungai dengan permukiman dan lahan pertanian di Sumba Timur, '
+                             '2017 (dipotong). Foto arsip: tidak menampilkan penghargaan maupun desa '
+                             'tertentu. Foto: Farhan Perdana, CC BY 2.0.'}}},
 {'section': 'travel',
  'slug': 'le-soleal-ponant-expedition-ship-waikelo-sumba-2026',
  'date': '2026-11-27',
  'time': '06:00',
  'dateline': 'WAIKELO',
  'kind': 'brief',
- 'top': True,
  'slugs': {'es': 'barco-expedicion-le-soleal-ponant-waikelo-sumba-2026',
            'id': 'kapal-ekspedisi-le-soleal-ponant-waikelo-sumba-2026'},
  'keywords': {'en': ['Le Soléal Sumba',
