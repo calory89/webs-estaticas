@@ -25,6 +25,15 @@ await loadKP(env);
 if (D && !IX.regs) { const g = new Set(); for (const k in D.rg) for (const x of D.rg[k]) g.add(x[0] + '|' + x[1]); IX.regs = g.size; }
 return !!(T && D);
 }
+// n40 k55 (BL-001): the project's entries in the public corrections log (/data/corrections.json) on its page, 8 languages (log text in English)
+let COD = null, CO = null;
+async function corFor(env, id) { try { const d = await file(env, '/data/corrections.json'); if (d && d !== COD) { COD = d; CO = new Map(); for (const e of d.entries || []) (CO.get(e.id) || CO.set(e.id, []).get(e.id)).push(e); } } catch (e) {} return (CO && CO.get(id)) || []; }
+function corLine(l, L) {
+if (!L.length || !t(l, 'k55c')) return '';
+const en = s => l === 'en' ? bdi(s) : '<bdi lang="en">' + esc(s) + '</bdi>';
+const it = L.slice().sort((a, b) => b.date < a.date ? -1 : 1).map(e => '<li>' + esc(fd(e.date, l)) + ': ' + en(e.what) + (e.after ? ' ' + tf(l, e.before ? 'k55c_ft' : 'k55c_t', { a: en(e.before || ''), b: en(e.after) }) : '') + (e.why ? '. ' + en(e.why) : '') + '</li>').join('');
+return '<div class="k-xs" id="k55-cor"' + dir(l) + '><p style="margin:8px 0 2px"><b>' + esc(tf(l, 'k55c', { n: nf(L.length, l) })) + '</b> <a href="' + pre(l) + '/corrections/">' + esc(t(l, 'k55c_l')) + '</a></p><ul style="margin:0;padding-inline-start:18px">' + it + '</ul></div>';
+}
 let MS = null;
 const slugM = s => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const mBySlug = s => { if (!MS) { MS = new Map(); for (const k in D.mk) MS.set(slugM(k), k); } return MS.get(s); };
@@ -1157,9 +1166,10 @@ else if ((mm = /^developers\/([a-z0-9-]{2,90})\/$/.exec(p))) { const h = devSect
 else if ((mm = /^projects\/([a-z0-9-]{1,90})\/$/.exec(p))) {
 const x = IX.bySlug.get(mm[1]); if (!x) return r;
 const k = cnt(x);
+const cor = corLine(l, await corFor(env, x[0]));   // n40 k55 (BL-001)
 const lc = latestChange(x), lch = lc ? $q.rF + dir(l) + $q.rG + recU(l, x[1]) + $q.iH + esc(tf(l, 'tl_pj', { f: t(l, 'f_' + lc.x.f), a: tv(lc.x.p, l, 70), b: tv(lc.x.v, l, 70), d: fd(lc.x.d, l) })) + '</a>' + (lc.n > 1 ? $q.aD + esc(tf(l, $q.rH, { n: nf(lc.n - 1, l) })) + $q.Q : '') + '</p>' : '';
 add.push([$q.rI, $q.ri, VSC + vsBlock(l, x, actRow(l, x)) + kpBlock(l, x[1], $q.rJ, 'h3')]);
-add.push([$q.rK, $q.ri, $s.STY + $q.rF + dir(l) + $q.rG + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + $t.k164 + pre(l) + $q.j + x[1] + $q.an + esc(t(l, 'a_br')) + $q.aj + lch + devLine(l, x) + buyRow(l, x, '')]);
+add.push([$q.rK, $q.ri, $s.STY + $q.rF + dir(l) + $q.rG + recU(l, x[1]) + '">' + esc(tf(l, 'inj_p', { k: nf(k, l), g: nf(10 - k, l) })) + $t.k164 + pre(l) + $q.j + x[1] + $q.an + esc(t(l, 'a_br')) + $q.aj + lch + cor + devLine(l, x) + buyRow(l, x, '')]);
 if (D.mk[x[3]]) add.push([$q.rL, $q.ri, $q.rF + dir(l) + $q.rG + recU(l, x[1]) + $q.rM + esc(tf(l, 'inj_m', { m: x[3] })) + $q.aj + supplyLine(l, x) + cmpBlock(l, x)]);
 } else if (p === 'data/' || p === $q.rN || p === $q.rO) add.push(['main', $q.ri, $q.hc + dir(l) + '>' + $s.STY + $q.rP + (l === 'en' || p === 'data/' ? '' : $q.n + pre(l) + $q.hp + esc(t(l, $q.rQ)) + $q.lm) + $q.n + pre(l) + $q.aY + esc(t(l, $q.aZ)) + $q.lm + esc(t(l, 's5_s')) + $t.k165 + pre(l) + $q.rR + esc(t(l, 's8_t')) + $t.k166 + pre(l) + $q.ba + esc(t(l, 'ch_h1')) + $t.k167 + pre(l) + $q.bk + esc(t(l, 'mc_h1')) + $t.k168 + pre(l) + $q.me + esc(t(l, 'kr_h1')) + $t.k169 + esc(t(l, 'csv_l')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.fy) + '">' + esc(t(l, 'pl_h1')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.fA) + '">' + esc(t(l, 'dl_h1')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.nj) + '">' + esc(t(l, 'dv_h1')) + '</a>' + $t.DOT + $q.n + n38u(l, $q.rS) + '">' + esc(tf(l, 'ms_h1', { m: 'Dubai' })) + '</a>' + $t.DOT + $q.n + pre(l) + $q.nx + esc(t(l, 'ss_h')) + $q.fp]);
 if (p === 'data/' || p === $q.rN || p === $q.rO || p === $q.rh) { const h = $q.hc + dir(l) + '>' + $s.STY + n39Links(l) + $q.fL, mi = add.find(a => a[0] === 'main'); if (mi) mi[2] += h; else add.push(['main', $q.ri, h]); }
