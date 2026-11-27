@@ -258,6 +258,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Historic centre and
 
 With three days in Santiago, this is the guide's route: Day 1, Historic centre and Lastarria; Day 2, Bellavista, San Cristóbal and Providencia; Day 3, Day trip. The table above has the full plan for each day.
 
+### Where to stay in Santiago?
+
+Las Condes / El Golf: business hotels, malls and very safe streets, but far from the historic centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Canciller - Ex Hotel Presidente (Providencia, score 8.2, from €60 a night); best value: APT Serviced Apartments Santiago (Las Condes, score 9.2, from €66 a night); luxury: Mandarin Oriental, Santiago (Las Condes, score 9.1, from €392 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Santiago?
+
+Arturo Merino Benítez Airport (SCL) is about 17 km west of the centre.
+
+### How do you get around Santiago?
+
+In the city, the metro is clean, fast and the best way to move.
+
+### What are the must-see places in Santiago?
+
+According to this guide: Cerro San Cristóbal and the Parque Metropolitano; Cerro Santa Lucía; Plaza de Armas and the Catedral Metropolitana; Museo Chileno de Arte Precolombino; Palacio de La Moneda; Museo de la Memoria y los Derechos Humanos; Barrio Lastarria; Museo Nacional de Bellas Artes. Each one is explained in the "What to see" section.
+
 ### Is Santiago expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €45-60 per person per day and the "mid-range" level at about €100-160. Flights are extra: this page shows real fares checked by Happy Low Cost.

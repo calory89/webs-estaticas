@@ -274,6 +274,18 @@ If you only have one day, follow day 1 of this itinerary: Cathedral, Petite Fran
 
 With two days in Strasbourg, this is the guide's route: Day 1, Cathedral, Petite France and a winstub; Day 2, Neustadt, Europe and Krutenau. The table above has the full plan for each day.
 
+### Where to stay in Strasbourg?
+
+Grande Île (cathedral, Petite France): the most atmospheric area, and everything is walkable. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Ibis Budget Strasbourg Centre Republique (Quartier Européen - Orangerie, score 8.4, from €73 a night); best value: Residence Inn by Marriott Strasbourg (Quartier Européen - Orangerie, score 8.8, from €93 a night); luxury: Hotel & Spa REGENT PETITE FRANCE By Stay Collection (City-Centre - Petite France, score 9, from €228 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Strasbourg?
+
+A combined train-plus-tram ticket costs about €4-5.
+
+### What are the must-see places in Strasbourg?
+
+According to this guide: Strasbourg Cathedral (Cathédrale Notre-Dame); The cathedral platform; The astronomical clock; Petite France; Ponts Couverts and Barrage Vauban; Palais Rohan; Musée de l'Œuvre Notre-Dame; Musée Alsacien. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Strasbourg: https://www.happylowcost.com/en/destinations/strasbourg/#deals

@@ -249,6 +249,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y m
 
 Con cuatro días en Oaxaca, esta es la ruta de la guía: Día 1, Centro histórico y mercados; Día 2, Monte Albán y barrios; Día 3, Valle de Tlacolula (mejor si es domingo); Día 4, Pueblos artesanos del sur. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Oaxaca?
+
+Centro histórico (entre el Zócalo y Santo Domingo).
+
+### ¿Cómo llegar del aeropuerto al centro de Oaxaca?
+
+El aeropuerto está a unos 10 km al sur y el trayecto dura entre 20 y 30 minutos.
+
+### ¿Cómo moverse por Oaxaca?
+
+Si llegas por tierra desde Ciudad de México, los autobuses de ADO tardan unas 6-7 horas y cuestan entre 30 y 50 €; paran en la terminal de primera clase, a unos 15 minutos a pie del centro.
+
+### ¿Qué lugares imprescindibles ver en Oaxaca?
+
+Según esta guía: Templo de Santo Domingo de Guzmán; Museo de las Culturas de Oaxaca; Jardín Etnobotánico; Monte Albán; Mercado 20 de Noviembre y el pasillo de humo; Mercado Benito Juárez; Zócalo y Catedral; Andador Macedonio Alcalá. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Oaxaca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

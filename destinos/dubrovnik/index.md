@@ -99,7 +99,7 @@ Dentro de la ciudad vieja se anda. Para Lapad, Gruž y Babin Kuk, usa los autobu
 
 Un café ronda los 2-3 € y una cerveza en terraza turística, 5-7 €. Se está en euros desde 2023, así que no hay que cambiar nada.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Dubrovnik
 
 ### ¿Cuántos días hacen falta en Dubrovnik?
 
@@ -136,6 +136,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Murallas a primera ho
 ### ¿Qué hacer en Dubrovnik en 3 días?
 
 Con tres días en Dubrovnik, esta es la ruta de la guía: Día 1, Murallas a primera hora, Stradun, palacios y catedral; Día 2, Barco a Lokrum por la mañana y baño. Vuelta a mediodía; Día 3, Lovrijenac y luego una excursión: islas Elafiti en barco o ruta de vino y ostras por…. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Dubrovnik?
+
+Solo compensa si te lo puedes permitir y quieres vivir el casco a primera hora y de noche. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Splendid (Lapad, nota 8,2, desde 82 € la noche); mejor calidad-precio: Royal Neptun Hotel (Babin Kuk, nota 9,2, desde 122 € la noche); lujo: Hotel Sumratin (Lapad, nota 9,4, desde 182 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Dubrovnik?
+
+Prueba el crni rižot (risotto negro de sepia), la buzara (mejillones o cigalas en salsa de vino y ajo), el pulpo y el pescado a la parrilla vendido al peso.
+
+### ¿Cómo llegar del aeropuerto al centro de Dubrovnik?
+
+El aeropuerto (DBV) está en Čilipi, a unos 20 km.
 
 ## Vuelos y chollos
 

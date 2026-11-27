@@ -249,6 +249,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y L
 
 Con tres días en Santiago de Chile, esta es la ruta de la guía: Día 1, Centro histórico y Lastarria; Día 2, Memoria, Yungay y Bellavista; Día 3, Providencia, Barrio Italia y vino. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Qué comer en Santiago de Chile?
+
+Caldillo de congrio y machas a la parmesana: lo que hay que probar de pescado y marisco.
+
+### ¿Cómo llegar del aeropuerto al centro de Santiago de Chile?
+
+El aeropuerto Arturo Merino Benítez está a unos 17 km del centro.
+
+### ¿Cómo moverse por Santiago de Chile?
+
+Las opciones: Bus Centropuerto o Turbus: unos 2.000-2.500 CLP (2-3 €), entre 30 y 45 minutos hasta Los Héroes o la estación Pajaritos, donde enlazas con metro.
+
+### ¿Qué lugares imprescindibles ver en Santiago de Chile?
+
+Según esta guía: Cerro San Cristóbal y el Parque Metropolitano; Cerro Santa Lucía; Palacio de La Moneda; Plaza de Armas y Catedral Metropolitana; Museo Chileno de Arte Precolombino; Museo de la Memoria y los Derechos Humanos; Barrio Lastarria y Bellas Artes; Bellavista y La Chascona. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santiago de Chile: https://www.happylowcost.com/destinos/santiago-de-chile/#chollos

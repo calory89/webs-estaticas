@@ -250,6 +250,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco histórico y mi
 
 Con tres días en Gdansk, esta es la ruta de la guía: Día 1, Casco histórico y miradores; Día 2, Siglo XX, astilleros y Westerplatte; Día 3, Sopot, Oliwa o Malbork. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Gdansk?
+
+La mejor época es de mayo a septiembre, con temperaturas de 18 a 24 grados, días muy largos y todas las atracciones abiertas, incluidas torres y barcos.
+
+### ¿Dónde alojarse en Gdansk?
+
+Główne Miasto (centro histórico): lo más cómodo para una primera visita; todo se hace andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Bonum Old Town (Gdańsk, nota 8,8, desde 43 € la noche); mejor calidad-precio: The Cloud One Gdansk, part of the Motel One Group (Gdańsk, nota 9,2, desde 63 € la noche); lujo: Podewils Old Town Gdansk (Gdańsk, nota 9,2, desde 116 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Gdansk?
+
+Un plato sale por 6-10 €. Żurek: sopa agria de centeno fermentado con salchicha y huevo, a veces servida dentro de un pan.
+
+### ¿Cómo llegar del aeropuerto al centro de Gdansk?
+
+El aeropuerto Lech Wałęsa (GDN) está a unos 15 km del centro.
+
+### ¿Cómo moverse por Gdansk?
+
+Para Oliwa, Brzeźno o Wrzeszcz usarás tranvía y bus (ZTM Gdańsk), con billetes por tiempo y abonos de 24 horas por unos 4-5 €.
+
+### ¿Qué lugares imprescindibles ver en Gdansk?
+
+Según esta guía: Ulica Długa y Długi Targ (la Ruta Real); Fuente de Neptuno y Corte de Artus; Ayuntamiento del Casco Principal y su torre; Basílica de Santa María (Bazylika Mariacka); Calle Mariacka; Paseo del Motława y la Grúa (Żuraw); Museo de la Segunda Guerra Mundial; Centro Europeo de la Solidaridad (ECS). En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Gdansk: https://www.happylowcost.com/destinos/gdansk/#chollos

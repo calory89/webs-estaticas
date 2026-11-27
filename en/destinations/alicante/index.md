@@ -258,6 +258,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Castle, old town an
 
 With three days in Alicante, this is the guide's route: Day 1, Castle, old town and Explanada; Day 2, Market and San Juan beach; Day 3, Tabarca (or a day trip). The table above has the full plan for each day.
 
+### Where to stay in Alicante?
+
+Old town / El Barrio: everything on foot, full of character, but noisy at weekends until late. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: La Lonja (Capitán Segarra, score 8.3, from €72 a night); best value: B&B HOTEL Alicante Centro (Avenida Salamanca, score 9.0, from €89 a night); luxury: Eurostars Pórtico Alicante (Alicante, score 9.0, from €162 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Alicante?
+
+For San Juan, Villajoyosa and Benidorm, use the TRAM d'Alacant (single fares from about €1.50).
+
+### What are the must-see places in Alicante?
+
+According to this guide: Castillo de Santa Bárbara; Barrio de Santa Cruz; El Barrio (the old town); Explanada de España; Playa del Postiguet; Playa de San Juan; MARQ (Archaeological Museum); MACA (Museum of Contemporary Art). Each one is explained in the "What to see" section.
+
 ### Is Alicante expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -97,7 +97,7 @@ Un detalle práctico: en las Azores hay una hora menos que en Lisboa, es decir, 
 
 Los vuelos entre islas y el alquiler de coche son lo que más sube la factura, sobre todo en verano. Mira con tiempo.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Azores
 
 ### ¿Hace falta coche para visitar las Azores?
 
@@ -126,6 +126,18 @@ Con 7 días ves lo esencial de Azores sin prisas. La ruta de esta guía está or
 ### ¿Qué hacer en Azores en 7 días?
 
 Con siete días en Azores, esta es la ruta de la guía: Días 1-2, Ponta Delgada, Sete Cidades y Ponta da Ferraria al atardecer; Día 3, Lagoa do Fogo, Ribeira Grande y Gorreana por la costa norte; Día 4, Furnas con cozido, Terra Nostra y Caldeira Velha; Día 5, Vuelo a Pico o Faial y paseo por Horta; Días 6-7, Capelinhos, ferry corto Horta–Madalena, viñedos de Pico y, si el clima acompaña. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Azores?
+
+Ponta Delgada (centro): ideal para llegar sin coche, con restaurantes y vida de noche. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: MS Vila Nova (Rua João Francisco Cabral 1 / 3, nota 8,6, desde 58 € la noche); mejor calidad-precio: Hotel Gaivota Azores (The Top-rated Area in Ponta Delgada, nota 9, desde 94 € la noche); lujo: Grand Hotel Açores Atlântico (The Top-rated Area in Ponta Delgada, nota 9,1, desde 123 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Azores?
+
+El plato estrella es el cozido das Furnas, un guiso de carne y verduras cocinado durante horas bajo tierra, aprovechando el calor volcánico.
+
+### ¿Cómo llegar del aeropuerto al centro de Azores?
+
+El aeropuerto de Ponta Delgada (João Paulo II) está a pocos minutos del centro.
 
 ## Vuelos y chollos
 

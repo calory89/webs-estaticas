@@ -257,6 +257,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The French Quarter 
 
 With three days in New Orleans, this is the guide's route: Day 1, The French Quarter and the Marigny; Day 2, The WWII Museum and uptown; Day 3, Mid-City, Tremé and the Bywater. The table above has the full plan for each day.
 
+### Where to stay in New Orleans?
+
+CBD and Warehouse District: big chain hotels, close to the WWII Museum and the Quarter, often better value with good deals. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hilton Garden Inn New Orleans Convention Center (Arts - Warehouse District, score 8.3, from €85 a night); best value: Hampton Inn New Orleans French Quarter Market Area (Faubourg Marigny, score 9, from €111 a night); luxury: Four Seasons New Orleans (French Quarter (Vieux Carré), score 9.1, from €564 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central New Orleans?
+
+Louis Armstrong New Orleans International Airport (MSY) is in Kenner, about 25 km west of the centre.
+
+### How do you get around New Orleans?
+
+In the city, walk the Quarter and Marigny and use the RTA streetcars and buses for everything else.
+
+### What are the must-see places in New Orleans?
+
+According to this guide: Jackson Square and St. Louis Cathedral; The French Quarter beyond Bourbon Street; Frenchmen Street; Preservation Hall; The National WWII Museum; The Garden District; The St. Charles Avenue streetcar; St. Louis Cemetery No. 1. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to New Orleans: https://www.happylowcost.com/en/destinations/new-orleans/#deals

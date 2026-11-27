@@ -106,7 +106,7 @@ Ya en la ciudad, el Metro y el Metrobús son baratísimos, pero hay mucha gente 
 
 La propina habitual en restaurantes es del 10-15 %. Llevar algo de efectivo en pesos ayuda en mercados y puestos.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Ciudad de México
 
 ### ¿Es seguro viajar a Ciudad de México?
 
@@ -143,6 +143,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro Histórico. Z�
 ### ¿Qué hacer en Ciudad de México en 4 días?
 
 Con cuatro días en Ciudad de México, esta es la ruta de la guía: Día 1, Centro Histórico. Zócalo, catedral, Templo Mayor, Palacio Nacional, Bellas Artes; Día 2, Chapultepec. Museo de Antropología por la mañana y castillo por la tarde; Día 3, Coyoacán y Casa Azul por la mañana, UNAM después; Día 4, Teotihuacán a primera hora y de vuelta a mediodía. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Ciudad de México?
+
+Hay buena comida, cafés y vida nocturna, pero los precios son más altos que en el centro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Cadillac Hotel Boutique (José María Izazaga 35, nota 8,1, desde 56 € la noche); mejor calidad-precio: Canada Central (Mexico City Historic Center, nota 9,3, desde 80 € la noche); lujo: Barceló Mexico Reforma (Juarez, nota 8,9, desde 178 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Ciudad de México?
+
+Pide mezcal, no solo tequila, y prueba el pulque al menos una vez.
+
+### ¿Cómo llegar del aeropuerto al centro de Ciudad de México?
+
+El Aeropuerto Internacional Benito Juárez (AICM) tiene dos terminales y está dentro de la ciudad.
+
+### ¿Cómo moverse por Ciudad de México?
+
+La opción barata es el Metrobús Línea 4, que conecta ambas terminales con el centro, o el Metro desde la estación Terminal Aérea (Línea 5), cerca de la Terminal 1.
 
 ## Vuelos y chollos
 

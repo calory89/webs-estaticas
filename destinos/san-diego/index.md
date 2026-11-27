@@ -238,6 +238,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Balboa Park, Little I
 
 Con tres días en San Diego, esta es la ruta de la guía: Día 1, Balboa Park, Little Italy y Gaslamp; Día 2, La Jolla y costa norte; Día 3, Coronado, Point Loma y Ocean Beach. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en San Diego?
+
+Gaslamp y East Village: en el centro, con trolley y vida nocturna. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Comfort Inn San Diego - SeaWorld Area (Midway-Pacific Highway, nota 8,1, desde 111 € la noche); mejor calidad-precio: Humphreys Half Moon Inn (Point Loma, nota 8,7, desde 187 € la noche); lujo: Pantai Inn (La Jolla, nota 8,7, desde 432 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en San Diego?
+
+Aquí se viene a comer mexicano, y el plato estrella es el burrito California: carne asada con patatas fritas dentro, queso y crema.
+
+### ¿Cómo llegar del aeropuerto al centro de San Diego?
+
+El aeropuerto (SAN) está a menos de 10 minutos en coche del centro, algo poco habitual en Estados Unidos.
+
+### ¿Cómo moverse por San Diego?
+
+Para moverte, el trolley (tranvía con líneas Blue, Green y Orange) y los buses MTS funcionan con la tarjeta o la app PRONTO.
+
+### ¿Qué lugares imprescindibles ver en San Diego?
+
+Según esta guía: Balboa Park; San Diego Zoo; La Jolla Cove y Children's Pool; Kayak por las cuevas de La Jolla; Torrey Pines State Natural Reserve; Coronado; Cabrillo National Monument y Point Loma; Sunset Cliffs. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a San Diego?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 110-140 € por persona y día, y en el nivel "presupuesto medio", unos unos 250-350 € en habitación doble. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

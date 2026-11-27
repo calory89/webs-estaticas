@@ -239,6 +239,22 @@ If you only have one day, follow day 1 of this itinerary: Mezquita, Alcázar and
 
 With two days in Cordoba, this is the guide's route: Day 1, Mezquita, Alcázar and the river; Day 2, Patios, Santa Marina and taverns. The table above has the full plan for each day.
 
+### Where to stay in Cordoba?
+
+Judería / around the Mezquita: the most atmospheric area, a minute's walk from the sights and quiet at night once day-trippers leave. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Maestre (Córdoba Old Town, score 8.5, from €49 a night); best value: H10 Palacio Colomera (Córdoba Old Town, score 9.2, from €99 a night); luxury: Eurostars Palace (The Real Heart of Cordoba, score 9.1, from €130 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Cordoba?
+
+Most visitors fly into Seville, Málaga or Madrid and continue by train, because Cordoba airport has very few commercial flights.
+
+### How do you get around Cordoba?
+
+Cordoba's train station is about 20-25 minutes on foot from the Mezquita, an easy walk through the Jardines de la Victoria.
+
+### What are the must-see places in Cordoba?
+
+According to this guide: Mezquita-Catedral; Bell tower of the Mezquita; Alcázar de los Reyes Cristianos; Roman Bridge and the Calahorra Tower; The Judería; Synagogue of Cordoba; Calleja de las Flores; Palacio de Viana. Each one is explained in the "What to see" section.
+
 ### Is Cordoba expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-160. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -134,7 +134,7 @@ On the Strip itself, walking is the main way to get around, supported by the Las
 
 Prices swing wildly depending on events and weekdays. Midweek is almost always cheaper than Friday and Saturday.
 
-## FAQs
+## FAQ about Las Vegas
 
 ### How many days do I need in Las Vegas?
 
@@ -171,6 +171,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Settle in, walk the
 ### What to do in Las Vegas in 4 days?
 
 With four days in Las Vegas, this is the guide's route: Day 1, Settle in, walk the south Strip, see the Bellagio fountains at sunset, then dinner; Day 2, Morning at the pool or sleeping in. Afternoon at the Venetian and Sphere area, then a show; Day 3, Early start for Red Rock Canyon or Valley of Fire; Day 4, Hoover Dam if you have the energy, or a long brunch and a last walk before the airport. The table above has the full plan for each day.
+
+### Where to stay in Las Vegas?
+
+You will want transport to reach the centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Ellis Island Hotel Casino & Brewery (East of the Las Vegas Strip, score 8, from €72 a night); best value: The Carriage House (Las Vegas Strip, score 9, from €83 a night); luxury: Fontainebleau Las Vegas, MICHELIN Key Award Hotel (Las Vegas Strip, score 8.9, from €346 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Las Vegas?
+
+Harry Reid International Airport (LAS) is close to the Strip, usually 10 to 20 minutes by road.
+
+### How do you get around Las Vegas?
+
+On the Strip itself, walking is the main way to get around, supported by the Las Vegas Monorail on the east side.
+
+### What are the must-see places in Las Vegas?
+
+According to this guide: The Strip on foot, at night; Bellagio Fountains and Conservatory; Sphere; Fremont Street Experience; The Neon Museum; The Mob Museum; High Roller; Red Rock Canyon. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

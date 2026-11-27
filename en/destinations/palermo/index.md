@@ -89,7 +89,7 @@ The historic centre is walkable, and the best way to see it. Traffic is chaotic,
 
 - **Comfortable:** 200 euros and up, with a nice hotel, long meals and the odd taxi or private tour.
 
-## FAQs
+## FAQ about Palermo
 
 ### Is Palermo safe for tourists?
 
@@ -126,6 +126,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Palazzo dei Normann
 ### What to do in Palermo in 3 days?
 
 With three days in Palermo, this is the guide's route: Day 1, Palazzo dei Normanni and Cappella Palatina in the morning, then the cathedral; Day 2, Monreale in the morning, back to town for the Capo market; Day 3, The Catacombe, then Mondello for the afternoon. The table above has the full plan for each day.
+
+### When is the best time to visit Palermo?
+
+April to early June and September to October are the best months, with warm days, sea that is swimmable by late May and fewer queues.
+
+### Where to stay in Palermo?
+
+Kalsa and the Quattro Canti area is the most convenient base, close to the main sights and the seafront. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Tonic (Ruggero Settimo, score 8.2, from €58 a night); best value: Palazzo Balsamo Boutique Hotel (La Kalsa, score 9.6, from €223 a night); luxury: Grand Hotel Et Des Palmes (Ruggero Settimo, score 9, from €465 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Palermo?
+
+Try arancine, the fried rice balls, with ragù or butter and ham.
+
+### How do you get from the airport to central Palermo?
+
+Falcone-Borsellino airport (PMO) is about 35 km west of the centre.
+
+### How do you get around Palermo?
+
+The historic centre is walkable, and the best way to see it.
 
 ## Flights and deals
 

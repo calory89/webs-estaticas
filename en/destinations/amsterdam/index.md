@@ -106,7 +106,7 @@ Watch for bikes everywhere, and never stand in a red-surfaced cycle lane.
 
 Museum tickets are typically €20 to €30 each. A Museumkaart pays off only if you plan several visits in a short time. A beer in a bar is around €5 to €7, and a coffee €3 to €4.
 
-## Frequently asked questions
+## FAQ about Amsterdam
 
 ### Is Amsterdam worth visiting for a weekend?
 
@@ -149,6 +149,26 @@ With four days in Amsterdam, this is the guide's route: Day 1, The old centre; D
 ### What to see in Netherlands in 4 days?
 
 With four days in Netherlands, this guide suggests staying in Amsterdam and following its route: Day 1, The old centre; Day 2, Museums and parks; Day 3, Jordaan, Anne Frank and Noord; Day 4, If you have it.
+
+### When is the best time to visit Amsterdam?
+
+November to February is cold and grey, typically 2 to 7°C, but flights and hotels are cheaper, museums are quiet, and the cafés feel at their best.
+
+### Where to stay in Amsterdam?
+
+Noord: trendy, creative and often better value, with a short free ferry ride to the centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Tourist Inn One Amsterdam (Amsterdam City Centre, score 8.0, from €127 a night); best value: Tourist Inn Hotel Amsterdam (Amsterdam City Centre, score 8.8, from €176 a night); luxury: Hotel TwentySeven - Small Luxury Hotels of the World (Amsterdam City Centre, score 9.4, from €952 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Amsterdam?
+
+Herring with onions and pickles is the traditional street-food rite of passage, and the stalls around town do it well.
+
+### How do you get from the airport to central Amsterdam?
+
+Schiphol Airport is one of the easiest in Europe to leave.
+
+### How do you get around Amsterdam?
+
+Buy a ticket at the machines or tap in with a contactless bank card or phone at the gates.
 
 ## Flights and deals
 

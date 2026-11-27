@@ -87,7 +87,7 @@ In the city, the U-Bahn, S-Bahn, trams and buses all work on the same ticket sys
 
 On a tight budget, expect about €70 to 90 a day with a hostel, bakery breakfasts and a sausage or two. Mid-range travellers should plan on €130 to 180 with a hotel, restaurant meals and a museum. If you want comfort without counting, from €250 upwards is realistic. A litre of beer in a beer garden costs about €10, and more at Oktoberfest.
 
-## Frequently asked questions
+## FAQ about Munich
 
 ### Is Munich worth visiting outside Oktoberfest?
 
@@ -122,6 +122,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The old town. Marie
 ### What to do in Munich in 3 days?
 
 With three days in Munich, this is the guide's route: Day 1, The old town; Day 2, Art and park; Day 3, Out of the centre. The table above has the full plan for each day.
+
+### Where to stay in Munich?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: harry's home München hotel & apartments (Moosach, score 8.6, from €292 a night); best value: MAXIMILIAN MUNICH Apartments & Hotel (Altstadt - Lehel, score 8.9, from €424 a night); luxury: Rosewood Munich (Altstadt - Lehel, score 9.2, from €1520 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Munich?
+
+For dessert, try the Schmalznudel, a fried dough pastry, at Café Frischhut near Viktualienmarkt.
+
+### How do you get from the airport to central Munich?
+
+Munich Airport (MUC) is about 40 minutes from the centre by S-Bahn.
+
+### How do you get around Munich?
+
+The centre is compact, so you will walk a lot.
 
 ## Flights and deals
 

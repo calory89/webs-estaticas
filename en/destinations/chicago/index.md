@@ -243,6 +243,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The Loop and the ri
 
 With four days in Chicago, this is the guide's route: Day 1, The Loop and the river; Day 2, Museums and the lakefront; Day 3, North Side neighbourhoods; Day 4, West Side and Pilsen. The table above has the full plan for each day.
 
+### Where to stay in Chicago?
+
+West Loop: the best food area, trendy, near the Loop and well connected. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Club Quarters Hotel Central Loop, Chicago (Chicago Loop, score 8.2, from €103 a night); best value: Riu Plaza Chicago (Magnificent Mile, score 9.1, from €199 a night); luxury: Trump International Hotel & Tower Chicago (Near North Side, score 9.4, from €541 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Chicago?
+
+Deep dish is the famous one, but Chicago's food is much more than pizza.
+
+### How do you get from the airport to central Chicago?
+
+It takes about 45 minutes and costs $5 (about €4.50) from the airport.
+
+### How do you get around Chicago?
+
+Tap a contactless card or phone, or use the Ventra app.
+
+### What are the must-see places in Chicago?
+
+According to this guide: Chicago Architecture Center River Cruise; Art Institute of Chicago; Millennium Park and Cloud Gate (The Bean); Lurie Garden and Maggie Daley Park; Willis Tower Skydeck vs 360 Chicago; Chicago Riverwalk; Lincoln Park Zoo and Lincoln Park; Field Museum. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Chicago: https://www.happylowcost.com/en/destinations/chicago/#deals

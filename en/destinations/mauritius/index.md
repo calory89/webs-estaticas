@@ -94,7 +94,7 @@ Buses connect nearly everywhere and are very cheap, but they are slow and can be
 
 Accommodation is the biggest cost. Food can stay cheap if you eat local, while alcohol and imported goods are pricey. Excursions such as boat trips and diving add up fast.
 
-## FAQs
+## FAQ about Mauritius
 
 ### Is Mauritius safe for tourists?
 
@@ -123,6 +123,26 @@ For the traveller who wrote this guide, yes: Most people book Mauritius for the 
 ### What to do in Mauritius in 7 days?
 
 With seven days in Mauritius, this is the guide's route: Days 1-2, Southeast; Day 3, South and southwest; Days 4-5, West; Days 6-7, North. The table above has the full plan for each day.
+
+### When is the best time to visit Mauritius?
+
+The best months are May, June, September, October and November: good weather and fewer crowds.
+
+### Where to stay in Mauritius?
+
+Grand Baie (north): the most developed area, with restaurants, bars and shops.
+
+### What to eat in Mauritius?
+
+Try the palm heart salad if it's on the menu.
+
+### How do you get from the airport to central Mauritius?
+
+Sir Seewoosagur Ramgoolam International Airport (MRU) is in the southeast near Mahébourg.
+
+### How do you get around Mauritius?
+
+The Metro Express tram runs between Port Louis and Curepipe, handy for a day in the middle of the island but no use for beaches.
 
 ## Flights and deals
 

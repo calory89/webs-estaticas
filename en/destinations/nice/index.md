@@ -224,6 +224,14 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Castle Hi
 
 With three days in Nice, this is the guide's route: Day 1, Old Town, Castle Hill and the Promenade; Day 2, Cimiez, art and the coast; Day 3, Day trip east. The table above has the full plan for each day.
 
+### How do you get around Nice?
+
+The easiest option is tram line 2, which runs from both terminals to the centre and the port in about 25-30 minutes for a standard ticket of around €2.
+
+### What are the must-see places in Nice?
+
+According to this guide: Promenade des Anglais; Vieux Nice (Old Town); Cours Saleya market; Colline du Château (Castle Hill); Musée Matisse and Cimiez; Musée National Marc Chagall; Port Lympia; Coco Beach and the coastal walk. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Nice: https://www.happylowcost.com/en/destinations/nice/#deals

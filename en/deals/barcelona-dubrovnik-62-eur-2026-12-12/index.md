@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Dubrovnik for a trip from Barcelona?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Splendid (Lapad, score 8.2, from €82 a night); best value: Royal Neptun Hotel (Babin Kuk, score 9.2, from €122 a night); luxury: Hotel Sumratin (Lapad, score 9.4, from €182 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

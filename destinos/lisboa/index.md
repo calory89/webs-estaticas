@@ -90,7 +90,7 @@ Para moverte, compra la tarjeta recargable **Navegante** (antes Viva Viagem) en 
 
 Son cifras aproximadas y cambian con la temporada, sobre todo el alojamiento.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Lisboa
 
 ### ¿Es Lisboa una ciudad cara?
 
@@ -131,6 +131,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Baixa, Praça do Com�
 ### ¿Qué hacer en Lisboa en 4 días?
 
 Con cuatro días en Lisboa, esta es la ruta de la guía: Día 1, Baixa, Praça do Comércio, subida por el Chiado y copa en un miradouro del Bairro Alto; Día 2, Mañana en Alfama y el castillo. Tarde en la Graça y la Senhora do Monte; Día 3, Belém por la mañana, pasteles incluidos, y LX Factory por la tarde; Día 4, (opcional). En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Lisboa?
+
+Lo mejor es abril, mayo, junio, septiembre y octubre: temperaturas suaves, mucha luz y menos agobio que en pleno verano.
+
+### ¿Dónde alojarse en Lisboa?
+
+Más tranquilos y residenciales, con buen ambiente de barrio. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: New Style Lisbon Hotel (Arroios, nota 8,8, desde 131 € la noche); mejor calidad-precio: HF Fénix Music (Santo Antonio, nota 9, desde 140 € la noche); lujo: EPIC SANA Lisboa Hotel (Santo Antonio, nota 9,3, desde 232 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Lisboa?
+
+El aeropuerto Humberto Delgado está dentro de la ciudad.
+
+### ¿Cómo moverse por Lisboa?
+
+La línea roja de metro conecta con Oriente, Alameda y São Sebastião, y desde allí enlazas con el centro.
 
 ### ¿Es caro viajar a Lisboa?
 

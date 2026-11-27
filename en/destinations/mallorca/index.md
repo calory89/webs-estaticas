@@ -245,6 +245,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Palma. Morning: See
 
 With six days in Mallorca, this is the guide's route: Day 1, Palma; Day 2, Palma to Sóller; Day 3, Deià and Valldemossa; Day 4, The north; Day 5, The east; Day 6, The south and back. The table above has the full plan for each day.
 
+### Where to stay in Mallorca?
+
+Palma old town and Santa Catalina: best for first trips, foodies and anyone without a car. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Antiguo Brondo Selfcheck-in Smart Rooms (Palma, score 8.7, from €111 a night); best value: Casa Delmonte - Turismo de Interior (Palma, score 9.9, from €198 a night); luxury: Can Alomar Hotel (Calle Sant Feliu, score 9.7, from €353 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Mallorca?
+
+Palma airport is about 8 km from the centre.
+
+### How do you get around Mallorca?
+
+Bus A1 runs to Plaça d'Espanya and the port in about 25 minutes for €5, and you can pay by card.
+
+### What are the must-see places in Mallorca?
+
+According to this guide: Palma Cathedral (La Seu); Palma old town and Santa Catalina; Bellver Castle; Fundació Miró Mallorca; Sóller and Port de Sóller; Valldemossa; Deià; Sa Calobra and Torrent de Pareis. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Mallorca: https://www.happylowcost.com/en/destinations/mallorca/#deals

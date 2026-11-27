@@ -265,6 +265,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Airport to La Fortu
 
 With seven days in Costa Rica, this is the guide's route: Day 1, Airport to La Fortuna; Day 2, Arenal; Day 3, Around Lake Arenal to Monteverde; Day 4, Monteverde; Day 5, Monteverde to Manuel Antonio; Day 6, Manuel Antonio; Day 7, Back to San José. The table above has the full plan for each day.
 
+### Where to stay in Costa Rica?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Novo (Avenida Central y Primera, Calle 14, score 8, from €48 a night); best value: Posada el Quijote (Bello Horizonte, Escazu, San Jose, score 8.8, from €79 a night); luxury: Studio Hotel Boutique (750 metros sur de Fórum 1 , score 9, from €120 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Costa Rica?
+
+Official orange airport taxi: about €30-35, 30-45 minutes.
+
+### What are the must-see places in Costa Rica?
+
+According to this guide: Arenal Volcano and La Fortuna; La Fortuna Waterfall; Arenal Hanging Bridges; Monteverde Cloud Forest Reserve; Santa Elena Cloud Forest Reserve and Curi-Cancha; Manuel Antonio National Park; Río Celeste and Tenorio Volcano National Park; Tortuguero National Park. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Costa Rica: https://www.happylowcost.com/en/destinations/san-jose-costa-rica/#deals

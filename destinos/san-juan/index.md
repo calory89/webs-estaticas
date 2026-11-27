@@ -243,6 +243,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Viejo San Juan. Maña
 
 Con tres días en San Juan, esta es la ruta de la guía: Día 1, Viejo San Juan; Día 2, Santurce y playa; Día 3, Piñones o bahía. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a San Juan?
+
+La mejor época es de diciembre a abril, más seca y fresca, pero también la más cara y con más cruceros.
+
+### ¿Dónde alojarse en San Juan?
+
+Condado: hoteles grandes, playa y restaurantes, a 10 minutos del casco.
+
+### ¿Qué comer en San Juan?
+
+El plato estrella es el mofongo: plátano verde frito majado con ajo y chicharrón, servido solo o relleno de camarones, churrasco o carne frita.
+
+### ¿Cómo llegar del aeropuerto al centro de San Juan?
+
+El aeropuerto Luis Muñoz Marín (SJU) está en Carolina, junto a Isla Verde.
+
+### ¿Qué lugares imprescindibles ver en San Juan?
+
+Según esta guía: Castillo San Felipe del Morro; La explanada de El Morro; Castillo San Cristóbal; Calles del Viejo San Juan; Paseo de la Princesa y Puerta de San Juan; Catedral de San Juan Bautista; La Fortaleza y Casa Blanca; Cementerio de Santa María Magdalena de Pazzis. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Juan: https://www.happylowcost.com/destinos/san-juan/#chollos

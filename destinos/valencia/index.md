@@ -244,6 +244,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Ma
 
 Con tres días en Valencia, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, El Turia y la Valencia moderna; Día 3, El mar y la Albufera. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Valencia?
+
+Tienes el tranvía para ir al centro en 20-25 minutos. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: ibis budget Valencia Centro Puerto (Poblats Maritims, nota 8,1, desde 66 € la noche); mejor calidad-precio: Venecia Plaza Centro (Ciutat Vella, nota 9,2, desde 120 € la noche); lujo: Palacio Vallier by MYR Hotels (Ciutat Vella, nota 9,6, desde 285 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Valencia?
+
+Por la ciudad te moverás andando, en bici, en metro y en tranvía (para la playa).
+
+### ¿Qué lugares imprescindibles ver en Valencia?
+
+Según esta guía: Mercado Central; La Lonja de la Seda; Catedral y el Micalet; Plaza de la Virgen; Barrio del Carmen; Torres de Serranos y Torres de Quart; Jardín del Turia; Ciudad de las Artes y las Ciencias. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Valencia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

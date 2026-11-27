@@ -97,7 +97,7 @@ Para recorrer la isla con libertad, el coche es lo más cómodo. Reserva con ant
 
 El teleférico ronda los 40 € por persona. El alquiler de coche suele salir entre 25 y 40 € al día fuera de temporada alta, y mucho más en agosto o Navidad.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Tenerife
 
 ### ¿Necesito coche en Tenerife?
 
@@ -138,6 +138,10 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Santa Cruz y La Lagun
 ### ¿Qué hacer en Tenerife en 5 días?
 
 Con cinco días en Tenerife, esta es la ruta de la guía: Día 1, Santa Cruz y La Laguna. Mercado, paseo por el centro, cena en La Laguna; Día 2, Anaga. Cruz del Carmen, un sendero corto, Taganana y comida en Benijo; Día 3, Teide. Subida temprano, Roques de García y bajada por Vilaflor; Día 4, Norte oeste. Icod, Garachico y baño en El Caletón; si hay tiempo; Día 5, Masca y Los Gigantes, o playa y barco en el sur antes del vuelo. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cómo moverse por Tenerife?
+
+Desde el Norte hay línea a Santa Cruz y La Laguna, y el tranvía conecta ambas ciudades.
 
 ### ¿Es caro viajar a Tenerife?
 

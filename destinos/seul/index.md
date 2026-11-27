@@ -94,7 +94,7 @@ Dentro de la ciudad, el metro cubre casi todo. Compra una tarjeta T-money en una
 
 Son cifras generales y varían según el cambio y la temporada. Los precios dependen sobre todo del alojamiento.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Seúl
 
 ### ¿Seúl es cara para un viajero español?
 
@@ -139,6 +139,18 @@ Con cuatro días en Seúl, esta es la ruta de la guía: Día 1, Gyeongbokgung po
 ### ¿Qué ver en Corea del Sur en 4 días?
 
 Con cuatro días en Corea del Sur, esta guía propone quedarse en Seúl y seguir su ruta: Día 1, Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong; Día 2, Changdeokgung con Huwon, Gwangjang para comer, Cheonggyecheon y DDP de noche; Día 3, Namsan a pie, Myeongdong o Itaewon, torre al atardecer; Día 4, Hongdae por la mañana, Seongsu o Gangnam por la tarde y paseo junto al Han.
+
+### ¿Dónde alojarse en Seúl?
+
+Hongdae es el barrio joven, con vida nocturna, hostels y conexión directa con el aeropuerto por la línea AREX. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Boutique Hotel Loft (Yeongdeungpo-Gu, nota 8,7, desde 75 € la noche); mejor calidad-precio: Hanok Hotel DAAM Seoul (Jongno-Gu, nota 9,1, desde 92 € la noche); lujo: Signiel Seoul (Songpa-Gu, nota 9,3, desde 559 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Seúl?
+
+El aeropuerto internacional de Incheon (ICN) está a unos 50 km.
+
+### ¿Cómo moverse por Seúl?
+
+Dentro de la ciudad, el metro cubre casi todo.
 
 ## Vuelos y chollos
 

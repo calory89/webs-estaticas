@@ -119,7 +119,7 @@ The centre is compact but hilly, and comfortable shoes matter more than anything
 
 These are rough figures and vary with the season.
 
-## FAQs
+## FAQ about Porto
 
 ### Is Porto walkable?
 
@@ -156,6 +156,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: São Bento station,
 ### What to do in Porto in 3 days?
 
 With three days in Porto, this is the guide's route: Day 1, São Bento station, the cathedral, down to Ribeira; Day 2, Bolhão market in the morning, Clérigos, Livraria Lello and the Baixa; Day 3, Tram to Foz, a long walk on the seafront, then Serralves in the afternoon. The table above has the full plan for each day.
+
+### Where to stay in Porto?
+
+Vila Nova de Gaia: quieter, near the cellars, with river views back towards the old town. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: WOT Porto Soul (União de Freguesias do Centro, score 8.0, from €52 a night); best value: Legends House by Sweet Porto (União de Freguesias do Centro, score 9.3, from €106 a night); luxury: Torel Saboaria (União de Freguesias do Centro, score 9.6, from €459 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Porto?
+
+The signature dish is the francesinha, a sandwich of cured meats and steak, covered in melted cheese and a beer-and-tomato sauce, and often topped with a fried egg.
+
+### How do you get from the airport to central Porto?
+
+Francisco Sá Carneiro Airport is about 11 km from the centre.
+
+### How do you get around Porto?
+
+The simplest option is the metro Line E (violet), which runs to the centre in around 30 minutes for a few euros.
+
+### What are the must-see places in Porto?
+
+According to this guide: Ribeira and the Dom Luís I Bridge; São Bento station; Livraria Lello; Torre dos Clérigos; Palácio da Bolsa; Sé do Porto (cathedral); Port cellars in Vila Nova de Gaia; Serralves. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

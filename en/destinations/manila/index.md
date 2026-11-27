@@ -247,6 +247,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Intramuros and the 
 
 With three days in Manila, this is the guide's route: Day 1, Intramuros and the museums; Day 2, Binondo, Escolta and Quiapo; Day 3, Makati and BGC. The table above has the full plan for each day.
 
+### Where to stay in Manila?
+
+BGC (Bonifacio Global City): clean, modern and the most walkable area, but far from old Manila and a little bland. €60-120. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Red Planet Manila Binondo (Binondo, score 8.2, from €28 a night); best value: Grand Westside Manila Bay (Paranaque, score 8.5, from €65 a night); luxury: Grand Hyatt Manila (Fort Bonifacio, score 9.2, from €300 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Manila?
+
+Jollibee: try the Chickenjoy and the sweet spaghetti once.
+
+### What are the must-see places in Manila?
+
+According to this guide: Intramuros; Fort Santiago; San Agustin Church and Museum; Casa Manila; Manila Cathedral; National Museum of the Philippines; Rizal Park (Luneta); Binondo. Each one is explained in the "What to see" section.
+
 ### Is Manila expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-40 per person per day and the "comfortable" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.

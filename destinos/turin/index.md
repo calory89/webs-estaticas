@@ -228,6 +228,26 @@ Si solo tienes un día, haz el día 1 de esta ruta: El centro histórico. Mañan
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro histórico. Mañana: Museo Egipcio a primera hora, con entrada comprada. Día 2: La Mole y el río. Mañana: mercado de Porta Palazzo y bicerin en la Consolata.
 
+### ¿Cuál es la mejor época para viajar a Turín?
+
+La mejor época es primavera (abril-mayo) y otoño (septiembre-octubre): temperaturas suaves, los Alpes nevados al fondo y, en octubre y noviembre, temporada de trufa blanca en Alba.
+
+### ¿Dónde alojarse en Turín?
+
+Centro (entre Porta Nuova y Piazza Castello): lo más cómodo para una primera visita, todo andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Cascina Fossata & Residence (Ala di Stura, 5, nota 8,7, desde 80 € la noche); mejor calidad-precio: Hotel Torino Porta Susa (Quadrilatero Romano, nota 8,7, desde 94 € la noche); lujo: Principi di Piemonte | UNA Esperienze | Preferred Hotels and Resorts (Turin Historic Centre, nota 9,4, desde 654 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Turín?
+
+Bollito misto: carnes hervidas con salsas, plato de invierno.
+
+### ¿Cómo moverse por Turín?
+
+Dentro de la ciudad, el centro se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Turín?
+
+Según esta guía: Museo Egipcio (Museo Egizio); Mole Antonelliana y Museo Nacional del Cine; Piazza Castello y Palazzo Madama; Musei Reali y Palacio Real; Catedral de Turín (Duomo); Via Roma y Piazza San Carlo; Via Po y Piazza Vittorio Veneto; Monte dei Cappuccini. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Turín?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-90 € por persona y día, y en el nivel "presupuesto medio", unos 120-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

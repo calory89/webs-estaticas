@@ -225,6 +225,14 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Rovaniemi centre. M
 
 With five days in Rovaniemi and Lapland, this is the guide's route: Day 1, Rovaniemi centre; Day 2, Santa Claus Village and huskies; Day 3, Ranua or reindeer; Day 4, Into the wild; Day 5, Ounasvaara and slow down. The table above has the full plan for each day.
 
+### What to eat in Rovaniemi and Lapland?
+
+Try a karjalanpiirakka (Karelian rye pie) with egg butter for breakfast.
+
+### What are the must-see places in Rovaniemi and Lapland?
+
+According to this guide: Arktikum; Pilke Science Centre; Santa Claus Village; SantaPark; Jätkänkynttilä Bridge (Lumberjack's Candle); Ounasvaara; Korundi House of Culture; Alvar Aalto's buildings. Each one is explained in the "What to see" section.
+
 ### Is Rovaniemi and Lapland expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €90-130 per person per day and the "splurge" level at about €600+. Flights are extra: this page shows real fares checked by Happy Low Cost.

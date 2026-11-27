@@ -227,6 +227,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Cabo San Lucas and 
 
 With five days in Los Cabos, this is the guide's route: Day 1, Cabo San Lucas and El Arco; Day 2, The Corridor bays; Day 3, San José del Cabo; Day 4, Todos Santos and Cerritos; Day 5, Cabo Pulmo or La Paz. The table above has the full plan for each day.
 
+### Where to stay in Los Cabos?
+
+Cabo San Lucas centre and Médano: best for nightlife and walking to the beach and marina.
+
+### How do you get from the airport to central Los Cabos?
+
+Los Cabos International Airport (SJD) sits about 13 km from San José and 45-50 km from Cabo San Lucas.
+
+### What are the must-see places in Los Cabos?
+
+According to this guide: El Arco (Land's End); Playa del Amor (Lover's Beach); Playa El Médano; Cabo San Lucas Marina; Bahía Chileno; Bahía Santa María; San José del Cabo historic centre; San José Art Walk. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Los Cabos: https://www.happylowcost.com/en/destinations/los-cabos/#deals

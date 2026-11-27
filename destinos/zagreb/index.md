@@ -233,6 +233,22 @@ Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Alta y Kaptol. Mañan
 
 Con dos días en Zagreb, esta es la ruta de la guía: Día 1, Ciudad Alta y Kaptol; Día 2, Mirogoj y Donji Grad. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Zagreb?
+
+La mejor época para visitar Zagreb es mayo-junio o septiembre-octubre: hace temperaturas agradables, las terrazas están abiertas y hay menos gente.
+
+### ¿Dónde alojarse en Zagreb?
+
+Es la mejor zona para una primera visita: estás a pie de todo y bien conectado en tranvía. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Art Hotel Like (Lower Town, nota 8, desde 100 € la noche); mejor calidad-precio: Hotel Capital (Lower Town, nota 9,1, desde 151 € la noche); lujo: art'otel Zagreb (Lower Town, nota 9,3, desde 162 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Zagreb?
+
+Bus urbano 290 de ZET: va hasta Kvaternikov trg, donde enlazas con tranvía.
+
+### ¿Qué lugares imprescindibles ver en Zagreb?
+
+Según esta guía: Plaza Ban Jelačić; Mercado Dolac; Catedral de Zagreb; Calle Tkalčićeva; Puerta de Piedra (Kamenita vrata); Iglesia de San Marcos; Funicular y torre Lotrščak; Paseo Strossmayer. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Zagreb: https://www.happylowcost.com/destinos/zagreb/#chollos

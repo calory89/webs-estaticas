@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Athens for a trip from Zaragoza?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Casual Kubic Athens by Casual Hoteles (Omonoia, score 8.3, from €58 a night); best value: Evripides Hotel (Athens City Centre, score 9, from €78 a night); luxury: The Pinnacle Athens (Athens City Centre, score 9.4, from €211 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

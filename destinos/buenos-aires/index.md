@@ -96,7 +96,7 @@ En el centro, el subte (líneas A, B, C, D, E y H) es rápido y barato, pero no 
 
 El cambio y la inflación en Argentina varían mucho, así que usa estas cifras como referencia. Antes de viajar, mira cómo está la cotización y cómo se paga mejor con tarjeta o con efectivo.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Buenos Aires
 
 ### ¿Necesito visado los españoles?
 
@@ -137,6 +137,22 @@ Con cuatro días en Buenos Aires, esta es la ruta de la guía: Día 1, Plaza de 
 ### ¿Qué ver en Argentina en 4 días?
 
 Con cuatro días en Argentina, esta guía propone quedarse en Buenos Aires y seguir su ruta: Día 1, Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche; Día 2, San Telmo por la mañana, comida allí, tarde en Puerto Madero y Costanera Sur; Día 3, Recoleta, Ateneo Grand Splendid, MALBA y cena en Palermo; Día 4, La Boca por la mañana, Bosques de Palermo por la tarde, y milonga de noche.
+
+### ¿Dónde alojarse en Buenos Aires?
+
+Villa Crespo y Colegiales: alternativa más barata y con aire de barrio, a un paso de Palermo. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Up Laprida (Recoleta, nota 8,3, desde 76 € la noche); mejor calidad-precio: Tanguero Hotel Boutique Antique (Downtown Buenos Aires, nota 9,3, desde 80 € la noche); lujo: Four Seasons Hotel Buenos Aires (Retiro, nota 9,3, desde 740 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Buenos Aires?
+
+La milanesa napolitana, con jamón, tomate y queso, llena el plato, y de postre un alfajor o helado de dulce de leche.
+
+### ¿Cómo llegar del aeropuerto al centro de Buenos Aires?
+
+El aeropuerto internacional es Ezeiza (EZE), a unos 35 kilómetros del centro.
+
+### ¿Cómo moverse por Buenos Aires?
+
+Para el resto, los colectivos funcionan bien con una tarjeta SUBE, que sirve en ambos medios.
 
 ## Vuelos y chollos
 

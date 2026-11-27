@@ -224,6 +224,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and the ci
 
 With three days in Sarajevo, this is the guide's route: Day 1, Old town and the city's story; Day 2, Siege history and the mountain; Day 3, West Sarajevo and the tunnel. The table above has the full plan for each day.
 
+### Where to stay in Sarajevo?
+
+Baščaršija: the old town, best for a first visit and short stays. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Garni Konak Hotel By Blanket Collection (Baščaršija, score 8.6, from €54 a night); best value: Hotel Sana (Baščaršija, score 9, from €116 a night); luxury: Swissotel Sarajevo (1 Vrbanja, score 9.2, from €254 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Sarajevo?
+
+Other dishes to try: Begova čorba: a creamy chicken and okra soup that is perfect on a cold day.
+
+### How do you get from the airport to central Sarajevo?
+
+Sarajevo International Airport is about 12 km from the centre.
+
+### How do you get around Sarajevo?
+
+Local buses to Ilidža plus tram 3 are cheaper but slow with luggage.
+
+### What are the must-see places in Sarajevo?
+
+According to this guide: Baščaršija and the Sebilj fountain; Gazi Husrev-beg Mosque; Ferhadija and the "Sarajevo Meeting of Cultures" line; Latin Bridge and the Museum Sarajevo 1878-1918; Vijećnica (City Hall); War Childhood Museum; Galerija 11/07/95; Sarajevo Tunnel (Tunel spasa). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Sarajevo: https://www.happylowcost.com/en/destinations/sarajevo/#deals

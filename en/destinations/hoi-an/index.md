@@ -224,6 +224,14 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The Ancient Town. M
 
 With three days in Hoi An, this is the guide's route: Day 1, The Ancient Town; Day 2, Bikes, villages and the beach; Day 3, My Son or the Marble Mountains. The table above has the full plan for each day.
 
+### Where to stay in Hoi An?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Serene Nature Boutique Resort & Spa (Cam Thanh, score 9.5, from €22 a night); best value: Silk River Hoi An Retreat (Cam Chau, score 9.8, from €35 a night); luxury: Grand Sunrise Palace Hoi An- A Luxury Indochine Hotel & Spa (Cam Chau, score 9.8, from €73 a night). The nightly price is indicative and changes with the dates.
+
+### What are the must-see places in Hoi An?
+
+According to this guide: The Ancient Town (and how the ticket works); Japanese Covered Bridge (Chua Cau); Tan Ky Old House; Assembly Hall of the Fujian Chinese (Phuc Kien); Quan Cong Temple; Hoi An Central Market; Thu Bon River and the lantern boats; An Hoi islet and the night market. Each one is explained in the "What to see" section.
+
 ### Is Hoi An expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.

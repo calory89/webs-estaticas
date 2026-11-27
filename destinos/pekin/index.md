@@ -218,6 +218,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El eje imperial. Mañ
 
 Con cuatro días en Pekín, esta es la ruta de la guía: Día 1, El eje imperial; Día 2, La Gran Muralla; Día 3, Templos y barrios del norte; Día 4, El Palacio de Verano y lo moderno. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Pekín?
+
+La mejor época es otoño (septiembre a octubre): cielos limpios, temperaturas suaves y los árboles amarillos en los parques.
+
+### ¿Dónde alojarse en Pekín?
+
+Dongcheng (hutongs alrededor de Dongsi y Nanluoguxiang): la mejor zona para un primer viaje, cerca de casi todo y con hoteles en patios tradicionales. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Zhong An Hotel Beijing Former Residence of Journalist Edgar Snow (Downtown Beijing, nota 8,8, desde 43 € la noche); mejor calidad-precio: Happy Dragon Alley Hotel Beijing Tian An Men Forbidden City (Dongcheng, nota 9,4, desde 73 € la noche); lujo: New World Beijing Hotel (Dongcheng, nota 9,2, desde 143 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Pekín?
+
+El plato estrella es el pato laqueado: piel crujiente que se moja en azúcar, y carne enrollada en tortitas finas con cebolleta, pepino y salsa hoisin.
+
+### ¿Cómo llegar del aeropuerto al centro de Pekín?
+
+Desde el Capital (PEK), el Airport Express llega a Dongzhimen en unos 25 minutos por 25 CNY (unos 3 €); el taxi cuesta entre 100 y 150 CNY (13-20 €) y tarda de 40 a 60 minutos según el tráfico.
+
+### ¿Cómo moverse por Pekín?
+
+Desde Daxing (PKX), la línea exprés de Daxing llega a Caoqiao en unos 20 minutos por unos 35 CNY (4,50 €), y de ahí sigues en metro; el taxi ronda los 150-200 CNY.
+
+### ¿Qué lugares imprescindibles ver en Pekín?
+
+Según esta guía: Ciudad Prohibida; Colina de Jingshan; Templo del Cielo; Palacio de Verano; Gran Muralla en Mutianyu; Plaza de Tiananmén; Museo Nacional de China; Templo de los Lama (Yonghegong). En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Pekín: https://www.happylowcost.com/destinos/pekin/#chollos

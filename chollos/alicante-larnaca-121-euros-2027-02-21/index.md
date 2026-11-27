@@ -33,4 +33,8 @@ La tarifa más barata suele incluir solo un bolso pequeño bajo el asiento. Revi
 
 No se puede saber: tarifas así pueden desaparecer en horas. Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.
 
+### ¿Dónde dormir en Larnaca en un viaje desde Alicante?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Frangiorgio Hotel (Larnaca City Centre, nota 8,4, desde 88 € la noche); mejor calidad-precio: Leonardo Boutique Hotel Larnaca (Larnaca City Centre, nota 9,2, desde 114 € la noche); lujo: Sandy Beach Hotel & Spa (Larnaka-Dekeleia Road, nota 8,8, desde 163 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
 Los precios cambian cada hora: comprueba el precio en la página original antes de reservar.

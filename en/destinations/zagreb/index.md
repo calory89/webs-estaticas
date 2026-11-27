@@ -254,6 +254,22 @@ If you only have one day, follow day 1 of this itinerary: Upper Town, Kaptol and
 
 With two days in Zagreb, this is the guide's route: Day 1, Upper Town, Kaptol and Dolac; Day 2, Mirogoj, the Lower Town and a park. The table above has the full plan for each day.
 
+### Where to stay in Zagreb?
+
+Around the main railway station: This area is practical for early departures and the airport bus, and a little cheaper. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Art Hotel Like (Lower Town, score 8, from €100 a night); best value: Hotel Capital (Lower Town, score 9.1, from €151 a night); luxury: art'otel Zagreb (Lower Town, score 9.3, from €162 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Zagreb?
+
+The easiest way from Zagreb Airport (Franjo Tuđman) to the city is the Pleso Prijevoz airport shuttle bus to the main bus station.
+
+### How do you get around Zagreb?
+
+It runs to Kvaternikov trg, then you take a tram.
+
+### What are the must-see places in Zagreb?
+
+According to this guide: Ban Jelačić Square; Dolac Market; Zagreb Cathedral; Upper Town (Gornji Grad); St Mark's Church; Stone Gate (Kamenita Vrata); Lotršćak Tower and the Strossmayer Promenade; Zagreb Funicular. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Zagreb: https://www.happylowcost.com/en/destinations/zagreb/#deals

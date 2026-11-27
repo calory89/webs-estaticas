@@ -252,6 +252,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old San Juan. Morni
 
 With four days in San Juan, this is the guide's route: Day 1, Old San Juan; Day 2, Santurce, Condado and the lagoon; Day 3, El Yunque and Luquillo; Day 4, Piñones and a slow finish. The table above has the full plan for each day.
 
+### Where to stay in San Juan?
+
+Condado: the easiest all-rounder, with a beach, the lagoon, good restaurants and a 10-minute ride to the old town.
+
+### What to eat in San Juan?
+
+To drink, try Medalla, the local light beer, and Puerto Rican rum.
+
+### How do you get from the airport to central San Juan?
+
+Luis Muñoz Marín Airport (SJU) sits in Isla Verde, about 15-25 minutes from Condado and 20-30 minutes from Old San Juan, traffic permitting.
+
+### How do you get around San Juan?
+
+Uber works across the metro area and is often a little cheaper.
+
+### What are the must-see places in San Juan?
+
+According to this guide: Castillo San Felipe del Morro; Castillo San Cristóbal; The lawn and Paseo del Morro; Paseo de la Princesa and Puerta de San Juan; Catedral de San Juan Bautista; La Fortaleza and Calle Fortaleza's end; Capilla del Cristo and Parque de las Palomas; La Perla. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to San Juan: https://www.happylowcost.com/en/destinations/san-juan/#deals

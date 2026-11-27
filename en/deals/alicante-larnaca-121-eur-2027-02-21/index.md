@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Larnaca for a trip from Alicante?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Frangiorgio Hotel (Larnaca City Centre, score 8.4, from €88 a night); best value: Leonardo Boutique Hotel Larnaca (Larnaca City Centre, score 9.2, from €114 a night); luxury: Sandy Beach Hotel & Spa (Larnaka-Dekeleia Road, score 8.8, from €163 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

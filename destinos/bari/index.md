@@ -237,6 +237,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Bari. Mañana: desayu
 
 Con cinco días en Bari y Puglia, esta es la ruta de la guía: Día 1, Bari; Día 2, Polignano a Mare y Monopoli; Día 3, Alberobello y Locorotondo; Día 4, Lecce; Día 5, Matera. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Bari y Puglia?
+
+La mejor época es mayo, junio y septiembre: 22-28 °C, mar ya templado y precios razonables.
+
+### ¿Dónde alojarse en Bari y Puglia?
+
+Estas son las opciones: Murattiano (Bari): el centro moderno, entre la estación y el casco viejo. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Adria (Bari City Centre, nota 8,7, desde 123 € la noche); mejor calidad-precio: Hotel Moderno (Bari City Centre, nota 9,3, desde 176 € la noche); lujo: Bra Hotel Bari (Bari City Centre, nota 9,7, desde 485 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bari y Puglia?
+
+Nuestro consejo: huye de los restaurantes con carta en seis idiomas y foto de cada plato en la puerta de Polignano.
+
+### ¿Cómo llegar del aeropuerto al centro de Bari y Puglia?
+
+El aeropuerto Karol Wojtyła está a unos 10 km de Bari.
+
+### ¿Qué lugares imprescindibles ver en Bari y Puglia?
+
+Según esta guía: Bari Vecchia; Basílica de San Nicola; Strada Arco Basso y las orecchiette; Castello Normanno-Svevo; Lungomare y Molo San Nicola; Polignano a Mare; Monopoli; Alberobello. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bari y Puglia: https://www.happylowcost.com/destinos/bari/#chollos

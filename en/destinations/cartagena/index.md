@@ -240,6 +240,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The walled city. Mo
 
 With four days in Cartagena, this is the guide's route: Day 1, The walled city; Day 2, Getsemaní and San Felipe; Day 3, Rosario Islands; Day 4, Market, views and San Diego. The table above has the full plan for each day.
 
+### Where to stay in Cartagena?
+
+Centro (inside the walls): For first-timers and couples who want to step out the door into the postcard.
+
+### How do you get from the airport to central Cartagena?
+
+Rafael Núñez International Airport is only about 3 km from the walled city, so arriving is easy.
+
+### How do you get around Cartagena?
+
+The Transcaribe BRT bus connects the old town with Bocagrande and the outer city for about €0.70 a ride with a rechargeable card; there is no tourist pass worth buying.
+
+### What are the must-see places in Cartagena?
+
+According to this guide: The Walled City (Ciudad Amurallada); Getsemaní; Castillo San Felipe de Barajas; The walls at sunset; Palacio de la Inquisición; Iglesia de San Pedro Claver; Plaza de Santo Domingo; Torre del Reloj and Plaza de los Coches. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Cartagena: https://www.happylowcost.com/en/destinations/cartagena/#deals

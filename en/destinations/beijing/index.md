@@ -226,6 +226,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Imperial axis. Morn
 
 With four days in Beijing, this is the guide's route: Day 1, Imperial axis; Day 2, Temples and hutongs; Day 3, The Great Wall; Day 4, Northwest and modern Beijing. The table above has the full plan for each day.
 
+### Where to stay in Beijing?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Zhong An Hotel Beijing Former Residence of Journalist Edgar Snow (Downtown Beijing, score 8.8, from €43 a night); best value: Happy Dragon Alley Hotel Beijing Tian An Men Forbidden City (Dongcheng, score 9.4, from €73 a night); luxury: New World Beijing Hotel (Dongcheng, score 9.2, from €143 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Beijing?
+
+From Capital (PEK), the Airport Express runs to Dongzhimen in about 25 minutes for about €3.50 (25 CNY).
+
+### How do you get around Beijing?
+
+The metro is cheap, clean and signed in English.
+
+### What are the must-see places in Beijing?
+
+According to this guide: The Forbidden City (Palace Museum); Jingshan Park; The Great Wall at Mutianyu; Temple of Heaven; Summer Palace; Tiananmen Square; National Museum of China; Lama Temple (Yonghegong). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Beijing: https://www.happylowcost.com/en/destinations/beijing/#deals

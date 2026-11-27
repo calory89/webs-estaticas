@@ -256,6 +256,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Loop y el río. Ma
 
 Con cuatro días en Chicago, esta es la ruta de la guía: Día 1, El Loop y el río; Día 2, Museum Campus y el sur; Día 3, Barrios del oeste; Día 4, Norte y lago. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Chicago?
+
+La mejor época es de mayo a principios de junio y de septiembre a mediados de octubre: temperaturas de 15-25 °C, terrazas abiertas y precios razonables.
+
+### ¿Dónde alojarse en Chicago?
+
+El centro financiero, al lado de Millennium Park, el Art Institute y casi todas las líneas de metro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Club Quarters Hotel Central Loop, Chicago (Chicago Loop, nota 8,2, desde 103 € la noche); mejor calidad-precio: Riu Plaza Chicago (Magnificent Mile, nota 9,1, desde 199 € la noche); lujo: Trump International Hotel & Tower Chicago (Near North Side, nota 9,4, desde 541 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Chicago?
+
+Desde O'Hare, la línea Blue del metro (la «L») llega al Loop en unos 45 minutos y cuesta 5 $ (unos 4,50 €).
+
+### ¿Qué lugares imprescindibles ver en Chicago?
+
+Según esta guía: Crucero de arquitectura por el río Chicago; Millennium Park y Cloud Gate; Art Institute of Chicago; Chicago Riverwalk; Willis Tower (Skydeck) o 360 Chicago; Field Museum; Museum of Science and Industry; Lincoln Park y su zoo. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Chicago?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 110-150 € por persona y día, y en el nivel "presupuesto medio", unos 220-320 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -257,6 +257,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja a fondo.
 
 Con tres días en Jerusalén, esta es la ruta de la guía: Día 1, Ciudad Vieja a fondo; Día 2, Monte de los Olivos, Ciudad de David y Monte Sión; Día 3, Jerusalén moderna. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Jerusalén?
+
+Ciudad Vieja (sobre todo el barrio cristiano y las casas de huéspedes religiosas): para despertarte a pasos de todo. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: SeaNet Hotel By AFI Hotels (Tel Aviv Promenade, nota 8,2, desde 99 € la noche); mejor calidad-precio: ABBA Hotel (Jaffa, nota 9, desde 146 € la noche); lujo: Carlton Tel Aviv Hotel – Luxury on the Beach (Tel Aviv Promenade, nota 8,5, desde 438 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Jerusalén?
+
+Me'orav yerushalmi: la mezcla jerosolimitana de vísceras de pollo a la plancha en pita, típica de la calle Agripas.
+
+### ¿Cómo llegar del aeropuerto al centro de Jerusalén?
+
+Se vuela al aeropuerto Ben Gurion, a unos 50 km.
+
+### ¿Cómo moverse por Jerusalén?
+
+La estación está muy bajo tierra, con escaleras mecánicas eternas, y conecta con el tranvía.
+
+### ¿Qué lugares imprescindibles ver en Jerusalén?
+
+Según esta guía: La Ciudad Vieja y sus cuatro barrios; Muro de las Lamentaciones; Túneles del Muro Occidental; Basílica del Santo Sepulcro; Vía Dolorosa; Explanada de las Mezquitas (Monte del Templo); Torre de David; Paseo por las murallas (Ramparts Walk). En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Jerusalén?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "cómodo", unos a partir de 300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

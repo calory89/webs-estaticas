@@ -78,7 +78,7 @@ Within the city, the MRT is clean, air-conditioned and easy to follow. Buses cov
 
 - **Comfortable or high-end:** 350 USD and up, mostly driven by hotel and drinks. Alcohol is heavily taxed, so cocktails can cost as much as a hawker dinner.
 
-## FAQs
+## FAQ about Singapore
 
 ### Do I need a visa for Singapore?
 
@@ -115,6 +115,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Chinatown in the mo
 ### What to do in Singapore in 4 days?
 
 With four days in Singapore, this is the guide's route: Day 1, Chinatown in the morning, lunch at Maxwell, Marina Bay at sunset; Day 2, Botanic Gardens early, then Little India for lunch; Day 3, Sentosa or Pulau Ubin, depending on whether you want beaches or bikes; Day 4, (optional). The table above has the full plan for each day.
+
+### When is the best time to visit Singapore?
+
+February to April is usually the driest and most comfortable.
+
+### Where to stay in Singapore?
+
+Chinatown, Little India and the Bugis area have the best hostels and small guesthouses, all near MRT stations. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Rest Bugis Hotel (Kampong Glam, score 8.1, from €95 a night); best value: JEN Singapore Orchardgateway by Shangri-La (Somerset, score 8.8, from €205 a night); luxury: PARKROYAL COLLECTION Pickering, Singapore (Outram, score 9, from €377 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Singapore?
+
+Chicken rice is the national comfort dish; try it at Maxwell Food Centre.
+
+### How do you get from the airport to central Singapore?
+
+Changi Airport is one of the world's best, and it connects directly to the MRT.
+
+### How do you get around Singapore?
+
+You can tap in with a contactless bank card or use an EZ-Link card, so there is no need to buy tickets one by one.
 
 ## Flights and deals
 

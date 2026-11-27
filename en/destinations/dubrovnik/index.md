@@ -95,7 +95,7 @@ The Old Town is pedestrian only, and you will walk a lot, including steep steps.
 
 Prices are higher in July and August. Croatia uses the euro.
 
-## FAQ
+## FAQ about Dubrovnik
 
 ### Is Dubrovnik worth visiting?
 
@@ -132,6 +132,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Walls at opening ti
 ### What to do in Dubrovnik in 3 days?
 
 With three days in Dubrovnik, this is the guide's route: Day 1, Walls at opening time, then Stradun, the fountain and the Franciscan Monastery; Day 2, Morning ferry to Lokrum or the Elaphiti Islands; Day 3, Fort Lovrijenac, then a trip to Cavtat by boat or bus. The table above has the full plan for each day.
+
+### Where to stay in Dubrovnik?
+
+Just east of the Old Town, a short walk from Ploče Gate. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Splendid (Lapad, score 8.2, from €82 a night); best value: Royal Neptun Hotel (Babin Kuk, score 9.2, from €122 a night); luxury: Hotel Sumratin (Lapad, score 9.4, from €182 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Dubrovnik?
+
+Try black risotto (crni rižot, made with cuttlefish ink), buzara (shrimp or mussels in garlic, wine and tomato), grilled fish by weight, and octopus salad.
+
+### How do you get from the airport to central Dubrovnik?
+
+Dubrovnik Airport (DBV) is at Čilipi, about 20 km south of the city.
+
+### How do you get around Dubrovnik?
+
+The Old Town is pedestrian only, and you will walk a lot, including steep steps.
 
 ## Flights and deals
 

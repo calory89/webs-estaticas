@@ -87,7 +87,7 @@ Within the city, you walk. The old town is compact, the sights are close, and th
 
 Prices jump during the festival and at Christmas. Rough figures only, so check current rates before you book.
 
-## FAQ
+## FAQ about Salzburg
 
 ### Is Salzburg worth visiting if I am not into Mozart or classical music?
 
@@ -108,6 +108,18 @@ You can, but it makes for a long day. Munich is closer, at around ninety minutes
 ### What is the best time of year to visit?
 
 Late spring and early autumn offer mild weather and fewer crowds. December is the most atmospheric, though also the busiest and costliest.
+
+### Where to stay in Salzburg?
+
+Slightly cheaper, still a five-to-ten-minute walk to the old town. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Hohenstauffen (Elisabeth-Vorstadt, score 8.7, from €117 a night); best value: Design Hotel zum Hirschen Salzburg (Elisabeth-Vorstadt, score 8.9, from €158 a night); luxury: Hotel Sacher Salzburg (Altstadt, score 9.4, from €388 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Salzburg?
+
+Try Salzburger Nockerl, a huge, airy, sweet soufflé meant for sharing.
+
+### How do you get around Salzburg?
+
+The old town is compact, the sights are close, and the fortress, Mönchsberg and Mirabell connect on foot.
 
 ## Flights and deals
 

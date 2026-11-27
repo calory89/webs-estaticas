@@ -112,7 +112,7 @@ Algunas normas conviene conocerlas: multas por tirar basura, prohibición de vap
 
 El alcohol y las entradas a atracciones dispararán el presupuesto más rápido que la comida. Los precios son aproximados y varían según la temporada.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Singapur
 
 ### ¿Necesito visado para viajar a Singapur desde España?
 
@@ -153,6 +153,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Chinatown por la mañ
 ### ¿Qué hacer en Singapur en 4 días?
 
 Con cuatro días en Singapur, esta es la ruta de la guía: Día 1, Chinatown por la mañana, comida en Maxwell, tarde en Marina Bay y, al anochecer; Día 2, Jardín Botánico temprano, Orchard Road si quieres ver centros comerciales y noche…; Día 3, Little India por la mañana, Kampong Glam después de comer y cena en Arab Street; Día 4, Sentosa o Pulau Ubin, o el Night Safari por la tarde. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Singapur?
+
+Reserva con tiempo y compara, porque un hotel normal en el centro puede costar lo que en Europa uno de categoría superior. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Rest Bugis Hotel (Kampong Glam, nota 8,1, desde 95 € la noche); mejor calidad-precio: JEN Singapore Orchardgateway by Shangri-La (Somerset, nota 8,8, desde 205 € la noche); lujo: PARKROYAL COLLECTION Pickering, Singapore (Outram, nota 9, desde 377 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Singapur?
+
+Chicken rice: arroz con pollo hainanés, el plato nacional no oficial.
+
+### ¿Cómo llegar del aeropuerto al centro de Singapur?
+
+El aeropuerto de Changi está bien conectado.
+
+### ¿Cómo moverse por Singapur?
+
+Puedes pagar con tarjeta bancaria contactless o con una tarjeta recargable; comprueba si la tuya lo admite sin comisión.
 
 ### ¿Es caro viajar a Singapur?
 

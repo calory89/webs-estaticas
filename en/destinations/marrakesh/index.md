@@ -87,7 +87,7 @@ Inside the medina, walk. Cars can't enter most lanes, and porters with carts or 
 
 Museum entries are inexpensive. Day tours and spa treatments are where the budget grows. Carry small notes in dirhams, as change can be hard to come by.
 
-## FAQ
+## FAQ about Marrakesh
 
 ### Is Marrakech safe for tourists?
 
@@ -124,6 +124,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Koutoubia, then the
 ### What to do in Marrakesh in 3 days?
 
 With three days in Marrakesh, this is the guide's route: Day 1, Koutoubia, then the Jemaa el-Fna area, the souks in the afternoon; Day 2, Early start at the Saadian Tombs and Bahia Palace, lunch in the Kasbah area; Day 3, Majorelle and the YSL museum in the morning, lunch in Gueliz. The table above has the full plan for each day.
+
+### When is the best time to visit Marrakesh?
+
+March to May and September to November are the best months, with warm days and comfortable evenings.
+
+### Where to stay in Marrakesh?
+
+Gueliz is the modern, French-built district with cafés, bars, shops and wider streets.
+
+### What to eat in Marrakesh?
+
+Try pastilla, a sweet-savoury pie of pigeon or chicken dusted with sugar and cinnamon, and tanjia, a Marrakech speciality of beef or lamb slow-cooked in an urn.
+
+### How do you get from the airport to central Marrakesh?
+
+Marrakech Menara Airport (RAK) is about 15 minutes from the centre.
 
 ## Flights and deals
 

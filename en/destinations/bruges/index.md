@@ -96,7 +96,7 @@ From Bruges station, the centre is about a 20-minute walk or a short bus ride. O
 
 A combined museum pass can save money if you plan on visiting three or more sights. Beer is cheaper than you might expect, usually 4 to 7 euros a glass.
 
-## FAQs
+## FAQ about Bruges
 
 ### Is one day enough in Bruges?
 
@@ -125,6 +125,26 @@ For the traveller who wrote this guide, yes: Bruges is small enough to walk end 
 ### What to do in Bruges in 2 days?
 
 With two days in Bruges, this is the guide's route: Day 1, Start at the Markt before the crowds, then climb the Belfry first thing; Day 2, Walk the Kruisvest windmills in the morning. The table above has the full plan for each day.
+
+### When is the best time to visit Bruges?
+
+Spring, from April to early June, is the best balance: mild weather, daffodils in the Begijnhof and manageable crowds.
+
+### Where to stay in Bruges?
+
+Sint-Anna is the quiet, residential neighbourhood to the north-east. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Flanders Hotel (Bruges Historic Center, score 8.6, from €130 a night); best value: Canal View Hotel Ter Brughe by CW Hotel Collection (Bruges Historic Center, score 9, from €138 a night); luxury: Dukes' Palace Brugge - by Dukes' Hotel Collection (Bruges Historic Center, score 9.2, from €263 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Bruges?
+
+Next, try moules-frites (mussels and fries) in season, which runs roughly from September to April.
+
+### How do you get from the airport to central Bruges?
+
+The easiest airport is Brussels Airport (Zaventem).
+
+### How do you get around Bruges?
+
+From Bruges station, the centre is about a 20-minute walk or a short bus ride.
 
 ## Flights and deals
 

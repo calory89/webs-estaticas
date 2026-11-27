@@ -253,6 +253,18 @@ If you only have one day, follow day 1 of this itinerary: Cathedral and old town
 
 With two days in Santiago de Compostela, this is the guide's route: Day 1, Cathedral and old town; Day 2, Market, museums and beyond the walls. The table above has the full plan for each day.
 
+### Where to stay in Santiago de Compostela?
+
+For a short trip, stay in or right next to the old town. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Universal (El Ensanche Zona Nueva, score 8.5, from €56 a night); best value: Hotel Altaïr (The Real Heart of Santiago de Compostela, score 9.3, from €69 a night); luxury: Hotel Palacio del Carmen, Autograph Collection (The Real Heart of Santiago de Compostela, score 8.8, from €170 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Santiago de Compostela?
+
+There is no tourist travel pass worth buying for a two-day visit.
+
+### What are the must-see places in Santiago de Compostela?
+
+According to this guide: Santiago de Compostela Cathedral; Cathedral rooftop tour; Praza do Obradoiro; Praza da Quintana and the Holy Door; Mercado de Abastos; Rúa do Franco, Rúa do Vilar and Rúa Nova; Parque da Alameda and Paseo da Ferradura; San Martiño Pinario Monastery. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Santiago de Compostela: https://www.happylowcost.com/en/destinations/santiago-de-compostela/#deals

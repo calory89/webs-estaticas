@@ -105,7 +105,7 @@ In the city, the metro (Metrorex) is quick and cheap, though it does not reach e
 
 The local currency is the leu (RON), not the euro. Cards are widely accepted, but carry a little cash for markets and small cafés.
 
-## FAQs
+## FAQ about Bucharest
 
 ### Is Bucharest safe for tourists?
 
@@ -142,6 +142,30 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Stavropol
 ### What to do in Bucharest in 3 days?
 
 With three days in Bucharest, this is the guide's route: Day 1, Old Town, Stavropoleos, Cărturești Carusel, lunch in Lipscani, then Calea Victoriei; Day 2, Parliament Palace tour in the morning, then walk or ride towards Cișmigiu Gardens; Day 3, Village Museum and Herăstrău Park, then Therme or a day trip to Mogoșoaia or Sinaia. The table above has the full plan for each day.
+
+### When is the best time to visit Bucharest?
+
+Late spring (May to June) and early autumn (September to early October) are the best times: warm, dry and comfortable for walking.
+
+### Where to stay in Bucharest?
+
+Hostels near the Old Town and Gara de Nord have dorm beds at low prices. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: RHUM B07 - Old Town Courtyard (Bucharest, score 8.1, from €49 a night); best value: Hotel Epica (Sector 3, score 9.4, from €98 a night); luxury: Corinthia Grand Hotel du Boulevard Bucharest (Sector 5, score 9.7, from €399 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Bucharest?
+
+Start with sarmale (cabbage rolls) served with mămăligă, then try mici (grilled minced-meat rolls) with mustard and a cold beer.
+
+### How do you get from the airport to central Bucharest?
+
+Henri Coandă International Airport (Otopeni) is about 16 km north of the centre.
+
+### How do you get around Bucharest?
+
+In the city, the metro (Metrorex) is quick and cheap, though it does not reach every area.
+
+### What are the must-see places in Bucharest?
+
+According to this guide: Palace of the Parliament; The Old Town and Lipscani; Stavropoleos Monastery; Cărturești Carusel; Calea Victoriei and the Romanian Athenaeum; Revolution Square; Village Museum and Herăstrău Park; National Museum of the Romanian Peasant. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

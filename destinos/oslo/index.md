@@ -87,7 +87,7 @@ Dentro de la ciudad, la red de **Ruter** cubre metro (T-bane), tranvía, autobú
 
 Son cifras generales; los precios cambian mucho según temporada y tipo de cambio.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Oslo
 
 ### ¿Es Oslo muy cara?
 
@@ -124,6 +124,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y puerto. Ópe
 ### ¿Qué hacer en Oslo en 3 días?
 
 Con tres días en Oslo, esta es la ruta de la guía: Día 1, Centro y puerto; Día 2, Museos y Frogner; Día 3, Fiordo y colinas. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Oslo?
+
+De junio a agosto es la mejor época: unos 18 a 23 grados, días larguísimos y terrazas llenas.
+
+### ¿Dónde alojarse en Oslo?
+
+El centro, alrededor de la estación central (Oslo S), es lo más cómodo si llegas en tren y quieres moverte a pie. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Scandic Go, Grensen 20 (Oslo, nota 8,1, desde 122 € la noche); mejor calidad-precio: Hobo Oslo (Oslo, nota 8,9, desde 206 € la noche); lujo: Hotel Continental (Oslo, nota 9,1, desde 476 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Oslo?
+
+La comida noruega típica es sencilla y contundente.
+
+### ¿Cómo llegar del aeropuerto al centro de Oslo?
+
+El aeropuerto de Oslo-Gardermoen está a unos 45 km.
+
+### ¿Cómo moverse por Oslo?
+
+Dentro de la ciudad, la red de Ruter cubre metro (T-bane), tranvía, autobús y ferri con la misma app.
 
 ## Vuelos y chollos
 

@@ -247,6 +247,22 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y La Caleta. M
 
 Con dos días en Cádiz, esta es la ruta de la guía: Día 1, Casco antiguo y La Caleta; Día 2, Museos, parques y playa. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Cádiz?
+
+La mejor época es mayo-junio y septiembre-octubre: entre 22 y 28 grados, agua aceptable y precios razonables.
+
+### ¿Dónde alojarse en Cádiz?
+
+Casco antiguo (Mina, San Antonio, Catedral): para quien viene 2 días y quiere hacerlo todo andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: La Caleta QE Hotels (Old Town, nota 8,7, desde 64 € la noche); mejor calidad-precio: Hotel Boutique Convento Cádiz (Old Town, nota 9, desde 132 € la noche); lujo: Áurea Casa Palacio Sagasta by Eurostars Hotel Company (Old Town, nota 9,3, desde 154 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Cádiz?
+
+Dentro de la ciudad, el casco antiguo se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Cádiz?
+
+Según esta guía: Playa de La Caleta; Castillo de Santa Catalina; Castillo de San Sebastián; Catedral de Cádiz y Torre de Poniente; Torre Tavira y su cámara oscura; Barrio del Pópulo y Teatro Romano; Barrio de la Viña; Mercado Central de Abastos. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cádiz: https://www.happylowcost.com/destinos/cadiz/#chollos

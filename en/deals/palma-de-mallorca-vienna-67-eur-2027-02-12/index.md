@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €120
 - **Saving:** 44 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Palma de Mallorca to Vienna?
 
-€67 return with Ryanair, leaving 12 Feb 2027 and coming back 19 Feb 2027. Price last checked on 26 Nov 2026.
+€67 return with Ryanair, leaving 12 Feb 2027 and coming back 19 Feb 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 
@@ -32,5 +32,9 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 ### How long will this price last?
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
+
+### Which hotels in Vienna for a trip from Palma de Mallorca?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Bob W Vienna Döbling (19. Döbling, score 9.3, from €68 a night); best value: Exe Vienna (17. Hernals, score 8.7, from €76 a night); luxury: Hotel Sacher Wien (01. Innere Stadt, score 9.6, from €701 a night). The nightly price is indicative and changes with the dates.
 
 Fares change by the hour: check the live price on the original page before booking.

@@ -93,7 +93,7 @@ Dentro de la ciudad todo funciona con la app BudapestGO o con máquinas en las p
 
 Las termas suelen rondar entre 25 y 35 € la entrada y el Parlamento unos 15-25 €. Todo son cifras orientativas y varían según temporada.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Budapest
 
 ### ¿Cuántos días hacen falta para ver Budapest?
 
@@ -115,10 +115,6 @@ Gellért por su belleza interior, Széchenyi por el ambiente de piscina exterior
 
 Pest, y concretamente el distrito VI, por transporte, comida y vida. Buda es más tranquila, pero obliga a moverte más para todo.
 
-### ¿Cuánto cuesta un vuelo barato a Budapest?
-
-Hoy el chollo más barato que tenemos a Budapest cuesta 59 € ida y vuelta desde Madrid. Los precios cambian cada hora: compruébalo en la página del chollo.
-
 ### ¿Merece la pena visitar Budapest?
 
 Para quien escribió esta guía, sí: Budapest funciona como destino de fin de semana largo porque lo tiene todo muy junto y a buen precio. Con 3 días ves lo esencial. Presupuesto: Ajustado (50-70 €): hostal, comida en mercados y canteens, transporte público y una visita de pago.
@@ -138,6 +134,22 @@ Con tres días en Budapest, esta es la ruta de la guía: Día 1, Pest; Día 2, B
 ### ¿Qué ver en Hungría en 3 días?
 
 Con tres días en Hungría, esta guía propone quedarse en Budapest y seguir su ruta: Día 1, Pest; Día 2, Buda; Día 3, Andrássy.
+
+### ¿Cuál es la mejor época para viajar a Budapest?
+
+Primavera (abril a junio) y principios de otoño (septiembre y octubre) son lo mejor: temperaturas suaves y luz larga.
+
+### ¿Qué comer en Budapest?
+
+El plato más conocido es el gulyás, que allí es una sopa con carne, patata y pimentón, no el estofado que imaginas.
+
+### ¿Cómo llegar del aeropuerto al centro de Budapest?
+
+El aeropuerto Liszt Ferenc está a unos 16 km del centro.
+
+### ¿Cómo moverse por Budapest?
+
+También puedes coger el 200E hasta la estación de metro Kőbánya-Kispest y seguir en metro.
 
 ### ¿Es caro viajar a Budapest?
 

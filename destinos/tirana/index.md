@@ -232,6 +232,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y comunismo. M
 
 Con tres días en Tirana, esta es la ruta de la guía: Día 1, Centro y comunismo; Día 2, Montaña y parque; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Tirana?
+
+Pazari i Ri: ambiente de barrio, buenos restaurantes y precios algo mejores. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Central Park Rooms (Rruga Reshit Çollaku, nota 8,3, desde 40 € la noche); mejor calidad-precio: Castle Boutique Hotel (Murat Toptani, nota 9,5, desde 81 € la noche); lujo: Maritim Hotel Plaza Tirana (Tirana, nota 9,2, desde 202 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Tirana?
+
+El aeropuerto Nënë Tereza (Rinas) está a unos 17 km.
+
+### ¿Cómo moverse por Tirana?
+
+En la ciudad todo el centro se hace a pie.
+
+### ¿Qué lugares imprescindibles ver en Tirana?
+
+Según esta guía: Plaza Skanderbeg; Bunk'Art 2; Bunk'Art 1; Mezquita Et'hem Bey; Torre del Reloj; La Pirámide de Tirana; Casa de las Hojas (Shtëpia me Gjethe); Blloku. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Tirana?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 35-45 € por persona y día, y en el nivel "medio", unos unos 80-110 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -163,6 +163,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Duomo y cúpula a pri
 
 Con tres días en Florencia, esta es la ruta de la guía: Día 1, Duomo y cúpula a primera hora, Baptisterio, paseo por Piazza della Signoria; Día 2, Uffizi con reserva a primera hora, Ponte Vecchio, Oltrarno; Día 3, David en la Academia a primera hora, Santa Croce. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Florencia?
+
+Centro histórico (Duomo, Signoria): es lo más cómodo y lo más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Kursaal & Ausonia (Florence Historic Center, nota 8,4, desde 75 € la noche); mejor calidad-precio: Hotel Orcagna (Campo Di Marte, nota 9,1, desde 118 € la noche); lujo: Golden Tower Hotel & Spa (Santa Maria Novella, nota 9,4, desde 446 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Florencia?
+
+El aeropuerto de Florencia (Amerigo Vespucci, también llamado Peretola) está a pocos kilómetros del centro.
+
+### ¿Cómo moverse por Florencia?
+
+Lo más práctico es el tranvía T2, que lo conecta con la ciudad, o el autobús lanzadera hasta la estación de Santa Maria Novella.
+
+### ¿Qué lugares imprescindibles ver en Florencia?
+
+Según esta guía: El Duomo, el Baptisterio y el Campanile; Galería de los Uffizi; Galería de la Academia; Ponte Vecchio; Piazza della Signoria y Palazzo Vecchio; Santa Croce; Piazzale Michelangelo y San Miniato al Monte; Palazzo Pitti y jardines de Boboli. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Florencia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

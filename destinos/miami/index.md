@@ -128,7 +128,7 @@ Dentro de la ciudad, el Metromover (gratis) cubre Downtown y Brickell, y hay tro
 
 Los vuelos y el alojamiento marcan la diferencia. Reserva con tiempo y compara fechas entre semana.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Miami
 
 ### ¿Es seguro Miami para un turista?
 
@@ -165,6 +165,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Art Deco por la maña
 ### ¿Qué hacer en Miami en 4 días?
 
 Con cuatro días en Miami, esta es la ruta de la guía: Día 1, Art Deco por la mañana, playa de South Beach al mediodía, Lincoln Road y cena por la zona; Día 2, Wynwood a primera hora, comida en Little Havana, tarde de Calle Ocho y música por la noche; Día 3, Vizcaya, Coconut Grove y Coral Gables; Día 4, Everglades por la mañana y Key Biscayne o playa por la tarde. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Miami?
+
+De diciembre a abril es la mejor época: poca humedad, temperaturas agradables, cielos limpios y mar fresco pero bañable.
+
+### ¿Dónde alojarse en Miami?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: El Jardin Inn (Little Havana, nota 8,3, desde 101 € la noche); mejor calidad-precio: Hampton Inn Miami-Airport West (Doral, nota 8,7, desde 125 € la noche); lujo: InterContinental Miami by IHG (Downtown Miami, nota 9, desde 482 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Miami?
+
+No te vayas sin probar la tarta de lima de los Cayos (key lime pie).
+
+### ¿Cómo llegar del aeropuerto al centro de Miami?
+
+Desde el aeropuerto internacional de Miami (MIA), tienes varias opciones: Metrorail: el MIA Mover te lleva a Miami Central y de ahí sale la línea Orange hacia el centro.
+
+### ¿Qué lugares imprescindibles ver en Miami?
+
+Según esta guía: South Beach y el distrito Art Deco; Wynwood; Little Havana; Vizcaya Museum and Gardens; Coconut Grove; Coral Gables; Pérez Art Museum Miami (PAMM) y el centro; Key Biscayne. En la sección "Qué ver" tienes cada uno explicado.
 
 ### ¿Es caro viajar a Miami?
 

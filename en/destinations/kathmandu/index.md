@@ -240,6 +240,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Kathmandu and S
 
 With four days in Kathmandu, this is the guide's route: Day 1, Old Kathmandu and Swayambhunath; Day 2, Pashupatinath and Boudhanath; Day 3, Patan; Day 4, Bhaktapur and Changu Narayan. The table above has the full plan for each day.
 
+### Where to stay in Kathmandu?
+
+Thamel: the backpacker district, convenient for first-timers and trekkers, with everything within walking distance. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Yambu kathmandu (Thamel, score 9, from €19 a night); best value: Kathmandu Eco Hotel (Thamel, score 9, from €23 a night); luxury: Basera Boutique Hotel - Kathmandu's Hidden Escape (Singh Durbar, Babar Mahal, score 9.4, from €84 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Kathmandu?
+
+Try them fried or as jhol momos in a spicy broth.
+
+### How do you get from the airport to central Kathmandu?
+
+Tribhuvan International Airport is about 6 km east of Thamel.
+
+### How do you get around Kathmandu?
+
+Getting around, you will mostly walk and take taxis.
+
+### What are the must-see places in Kathmandu?
+
+According to this guide: Boudhanath Stupa; Swayambhunath (the Monkey Temple); Kathmandu Durbar Square; Patan Durbar Square; Patan Museum; Bhaktapur; Pashupatinath; Asan Tole and Indra Chowk. Each one is explained in the "What to see" section.
+
 ### Is Kathmandu expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €20-30 per person per day and the "comfortable" level at about €120+. Flights are extra: this page shows real fares checked by Happy Low Cost.

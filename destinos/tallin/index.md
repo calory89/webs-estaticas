@@ -135,6 +135,22 @@ Con tres días en Tallin, esta es la ruta de la guía: Día 1, Ciudad Vieja; Dí
 
 Con tres días en Estonia, esta guía propone quedarse en Tallin y seguir su ruta: Día 1, Ciudad Vieja; Día 2, Kalamaja y la costa; Día 3, Kadriorg y margen.
 
+### ¿Dónde alojarse en Tallin?
+
+Rotermann y Kesklinn (centro): práctico, bien comunicado y cerca del puerto y de la estación de autobuses. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Rija Old Town Hotel (Tallinn City Center, nota 8,5, desde 53 € la noche); mejor calidad-precio: Hyatt Place Tallinn (Tallinn City Center, nota 9,2, desde 76 € la noche); lujo: Radisson Collection Hotel, Tallinn (Maakri, nota 9,4, desde 166 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Tallin?
+
+Prueba el kiluvõileib, un bocadillo abierto de espadín sobre pan negro.
+
+### ¿Cómo llegar del aeropuerto al centro de Tallin?
+
+El aeropuerto Lennart Meri está muy cerca del centro, a unos 4 kilómetros.
+
+### ¿Cómo moverse por Tallin?
+
+El tranvía línea 4 te deja en el centro en unos 15 minutos por un par de euros, y es lo más sensato.
+
 ### ¿Es caro viajar a Tallin?
 
 Depende de cómo viajes. Según esta guía, en el nivel "mochilero" se gastan unos 50-65 euros por persona y día, y en el nivel "cómodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

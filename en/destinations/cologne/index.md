@@ -247,6 +247,22 @@ If you only have one day, follow day 1 of this itinerary: Dom, old town and the 
 
 With two days in Cologne, this is the guide's route: Day 1, Dom, old town and the Rhine; Day 2, History, neighbourhoods and nightlife. The table above has the full plan for each day.
 
+### Where to stay in Cologne?
+
+Altstadt and around the Dom: This area is best for a first short visit, with everything walkable and the Hauptbahnhof next door. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Steigenberger Hotel Köln (Neustadt-Süd, score 8.3, from €198 a night); best value: Hotel Allegro (Altstadt-Süd, score 8.8, from €311 a night); luxury: Excelsior Hotel Ernst am Dom (Altstadt-Nord, score 8.9, from €440 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Cologne?
+
+Many traditional places are cash-friendly, though cards are now widely accepted.
+
+### How do you get around Cologne?
+
+Within the city, the centre is walkable.
+
+### What are the must-see places in Cologne?
+
+According to this guide: Cologne Cathedral (Kölner Dom); Climbing the Dom tower; KölnTriangle viewing platform; Hohenzollern Bridge; Altstadt and Groß St. Martin; Museum Ludwig; Wallraf-Richartz Museum; NS-Dokumentationszentrum (EL-DE-Haus). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Cologne: https://www.happylowcost.com/en/destinations/cologne/#deals

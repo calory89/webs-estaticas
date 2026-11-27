@@ -92,7 +92,7 @@ Para salir a otras ciudades, Viazul opera autobuses a Viñales, Trinidad y Varad
 
 Lleva efectivo suficiente, preferiblemente euros, porque las tarjetas extranjeras funcionan mal en muchos sitios y los cajeros fallan. Cambia en una casa de cambio oficial o en la banca y evita cambiar en la calle. Las propinas se agradecen mucho.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre La Habana
 
 ### ¿Es segura La Habana?
 
@@ -133,6 +133,22 @@ Con cuatro días en La Habana, esta es la ruta de la guía: Día 1, La Habana Vi
 ### ¿Qué ver en Cuba en 4 días?
 
 Con cuatro días en Cuba, esta guía propone quedarse en La Habana y seguir su ruta: Día 1, La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja; Día 2, Capitolio, Paseo del Prado y Gran Teatro por la mañana; Día 3, Vedado: Cementerio de Colón, Plaza de la Revolución, Coppelia y Hotel Nacional; Día 4, Fusterlandia y Finca Vigía por la mañana, o Callejón de Hamel si cae en domingo.
+
+### ¿Cuál es la mejor época para viajar a La Habana?
+
+La mejor época va de noviembre a abril: temperaturas de unos 25 grados, poca humedad y cielos despejados.
+
+### ¿Dónde alojarse en La Habana?
+
+Centro Habana es más popular y menos turístico, con edificios muy deteriorados y mucho ambiente local; encaja si quieres ver la ciudad real y gastar menos.
+
+### ¿Cómo llegar del aeropuerto al centro de La Habana?
+
+El aeropuerto internacional José Martí (HAV) queda a unos 20 o 25 kilómetros del centro.
+
+### ¿Cómo moverse por La Habana?
+
+Dentro de la ciudad, el centro histórico se hace a pie.
 
 ## Vuelos y chollos
 

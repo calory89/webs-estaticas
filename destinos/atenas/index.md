@@ -87,7 +87,7 @@ Dentro de la ciudad, todo lo importante se hace a pie. Para lo demás, el metro 
 
 La entrada a la Acrópolis ronda los 20-30 € según época y si incluye otros yacimientos. Si vas a visitar varios, el billete combinado suele salir a cuenta.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Atenas
 
 ### ¿Es segura Atenas para turistas?
 
@@ -128,6 +128,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Lo clásico. Acrópol
 ### ¿Qué hacer en Atenas en 3 días?
 
 Con tres días en Atenas, esta es la ruta de la guía: Día 1, Lo clásico; Día 2, Centro y miradores; Día 3, Mercados y escapada. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Atenas?
+
+Está junto a la Acrópolis, es residencial, tiene buenos bares y se llega al centro andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Casual Kubic Athens by Casual Hoteles (Omonoia, nota 8,3, desde 58 € la noche); mejor calidad-precio: Evripides Hotel (Athens City Centre, nota 9, desde 78 € la noche); lujo: The Pinnacle Athens (Athens City Centre, nota 9,4, desde 211 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Atenas?
+
+Una cena en taberna, con ensalada, plato y vino de la casa, ronda los 15-25 € por persona.
+
+### ¿Cómo llegar del aeropuerto al centro de Atenas?
+
+El aeropuerto Eleftherios Venizelos está a unos 30 km.
+
+### ¿Cómo moverse por Atenas?
+
+Lo más cómodo es la línea 3 de metro, que llega a Monastiraki y Syntagma en unos 40 minutos por unos 9-10 €.
 
 ## Vuelos y chollos
 

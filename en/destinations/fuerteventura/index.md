@@ -233,6 +233,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Corralejo and the d
 
 With six days in Fuerteventura, this is the guide's route: Day 1, Corralejo and the dunes; Day 2, Isla de Lobos; Day 3, The northwest; Day 4, Centre of the island; Day 5, Sotavento; Day 6, Cofete. The table above has the full plan for each day.
 
+### Where to stay in Fuerteventura?
+
+Morro Jable: the southern tip, with a long beach, a real town centre and the best base for Cofete.
+
+### What to eat in Fuerteventura?
+
+Cabrito or baifo: slow-stewed goat or kid, the island's classic meat dish.
+
+### How do you get from the airport to central Fuerteventura?
+
+Fuerteventura Airport (FUE) sits about 5 km south of Puerto del Rosario.
+
+### How do you get around Fuerteventura?
+
+Tiadhe sells a rechargeable card (bono) that discounts fares if you rely on buses.
+
+### What are the must-see places in Fuerteventura?
+
+According to this guide: Parque Natural de las Dunas de Corralejo; Isla de Lobos; Cofete beach; Sotavento and Risco del Paso; El Cotillo; Faro del Tostón; Betancuria; Ajuy caves. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Fuerteventura: https://www.happylowcost.com/en/destinations/fuerteventura/#deals

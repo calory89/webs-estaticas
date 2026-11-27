@@ -94,7 +94,7 @@ Dentro de la ciudad, el sistema SL (metro, autobús, tranvía y barcos urbanos) 
 
 Son cifras generales, sin vuelos, y varían mucho según la temporada.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Estocolmo
 
 ### ¿Es Estocolmo una ciudad muy cara?
 
@@ -139,6 +139,22 @@ Con cuatro días en Estocolmo, esta es la ruta de la guía: Día 1, Gamla Stan p
 ### ¿Qué ver en Suecia en 4 días?
 
 Con cuatro días en Suecia, esta guía propone quedarse en Estocolmo y seguir su ruta: Día 1, Gamla Stan por la mañana, almuerzo en la zona; Día 2, Djurgården entero. Vasa a primera hora, Skansen después, y si te queda energía; Día 3, Skeppsholmen y Moderna Museet por la mañana, Fotografiska por la tarde y cena en Södermalm; Día 4, (opcional).
+
+### ¿Cuál es la mejor época para viajar a Estocolmo?
+
+De junio a agosto hay luz casi hasta medianoche, temperaturas agradables (entre 18 y 24 grados, con días más calurosos) y la ciudad está en su mejor momento.
+
+### ¿Dónde alojarse en Estocolmo?
+
+Norrmalm (zona Estación Central): es el más práctico para llegar y moverse, con buenas conexiones. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: ProfilHotels Riddargatan (Östermalm, nota 8,3, desde 191 € la noche); mejor calidad-precio: Thon Hotel Vasa (Norrmalm, nota 8,9, desde 294 € la noche); lujo: Bank Hotel, a Member of Small Luxury Hotels (Norrmalm, nota 9,0, desde 370 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Estocolmo?
+
+Prueba las köttbullar, las albóndigas con puré, salsa de nata y mermelada de arándanos rojos.
+
+### ¿Cómo moverse por Estocolmo?
+
+Dentro de la ciudad, el sistema SL (metro, autobús, tranvía y barcos urbanos) se gestiona con una app o con tarjeta.
 
 ## Vuelos y chollos
 

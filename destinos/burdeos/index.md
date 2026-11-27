@@ -246,6 +246,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y r
 
 Con tres días en Burdeos, esta es la ruta de la guía: Día 1, Centro histórico y río; Día 2, Chartrons, vino y la otra orilla; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Burdeos?
+
+La mejor época es de mayo a junio y en septiembre.
+
+### ¿Qué comer en Burdeos?
+
+Hay cuatro cosas que tienes que probar: Canelé: un pastelito de caramelo crujiente por fuera y tierno por dentro, con ron y vainilla.
+
+### ¿Cómo moverse por Burdeos?
+
+En la ciudad, el centro se recorre andando.
+
+### ¿Qué lugares imprescindibles ver en Burdeos?
+
+Según esta guía: Place de la Bourse y el Miroir d'Eau; Los muelles del Garona; Catedral de Saint-André y Torre Pey-Berland; Basílica de Saint-Michel y su barrio; Rue Sainte-Catherine y la Grosse Cloche; Barrio de Saint-Pierre; Grand Théâtre y Place de la Comédie; Les Chartrons. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Burdeos: https://www.happylowcost.com/destinos/burdeos/#chollos

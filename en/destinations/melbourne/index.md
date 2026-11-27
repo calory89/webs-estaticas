@@ -253,6 +253,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: CBD, laneways and t
 
 With four days in Melbourne, this is the guide's route: Day 1, CBD, laneways and the river; Day 2, Gardens, the MCG and Richmond; Day 3, Market, Carlton and Fitzroy; Day 4, Day trip, or St Kilda. The table above has the full plan for each day.
 
+### Where to stay in Melbourne?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: The Victoria Hotel (Melbourne Central Business District, score 8.2, from €141 a night); best value: Holiday Inn Express Melbourne Little Collins by IHG (Melbourne Central Business District, score 8.5, from €159 a night); luxury: 1 Hotel Melbourne (Docklands, score 9.4, from €422 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Melbourne?
+
+Melbourne food is less about a local dish and more about immigrant cuisines done brilliantly.
+
+### How do you get from the airport to central Melbourne?
+
+The fastest cheap way from Melbourne Airport (Tullamarine) is the SkyBus to Southern Cross Station: about 20-40 minutes, around A$25 (€14) one way, running frequently around the clock.
+
+### How do you get around Melbourne?
+
+Getting around, use trams, trains and buses with a myki card (about A$6 for the card, then top up).
+
+### What are the must-see places in Melbourne?
+
+According to this guide: Hosier Lane and the street art lanes; National Gallery of Victoria (NGV International); Royal Botanic Gardens; Shrine of Remembrance; State Library Victoria; Queen Victoria Market; Melbourne Cricket Ground (MCG); Fitzroy and Collingwood. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Melbourne: https://www.happylowcost.com/en/destinations/melbourne/#deals

@@ -83,7 +83,7 @@ Dentro de la isla, el **bus público (KTEL)** funciona desde dos estaciones: **P
 
 Delos suma unos 40 euros entre barco y entrada. Sombrilla y toalla propias te ahorran bastante.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Mykonos
 
 ### ¿Es Mykonos una isla muy cara?
 
@@ -124,6 +124,14 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Chora de punta a punt
 ### ¿Qué hacer en Mykonos en 3 días?
 
 Con tres días en Mykonos, esta es la ruta de la guía: Día 1, Chora de punta a punta. Mañana temprano por callejuelas; Día 2, Delos. Sal en el primer barco que puedas desde el Puerto Viejo; Día 3, Playa larga (Elia o Paradise) por la mañana. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Mykonos?
+
+Buena opción para familias y para ahorrar algo frente al centro.
+
+### ¿Cómo llegar del aeropuerto al centro de Mykonos?
+
+El aeropuerto de Mykonos (JMK) está a unos 4 km de Chora.
 
 ## Vuelos y chollos
 

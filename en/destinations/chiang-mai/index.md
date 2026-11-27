@@ -241,6 +241,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old City. Morning: 
 
 With four days in Chiang Mai, this is the guide's route: Day 1, Old City; Day 2, Doi Suthep and the west side; Day 3, Cooking class and the river; Day 4, Day trip. The table above has the full plan for each day.
 
+### Where to stay in Chiang Mai?
+
+The quieter northwest corner beats the area around Tha Phae Gate. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: The Opium Chiang Mai (Chang Phueak, score 8.6, from €28 a night); best value: POR Santitham (Si Phum, score 8.8, from €48 a night); luxury: Maladee Rendezvous Hotel Chiang Mai (Chang Khlan, score 9.6, from €311 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Chiang Mai?
+
+Chiang Mai International Airport is only about 4 km from the Old City.
+
+### How do you get around Chiang Mai?
+
+Walking: fine inside the moat, but miserable along the big roads outside it.
+
+### What are the must-see places in Chiang Mai?
+
+According to this guide: Wat Phra That Doi Suthep; Wat Chedi Luang; Wat Phra Singh; Wat Umong; Wat Pha Lat and the Monk's Trail; The Old City walls and moat; Sunday Walking Street; Saturday Walking Street on Wualai Road. Each one is explained in the "What to see" section.
+
 ### Is Chiang Mai expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about about €25-35 per person per day and the "mid-range" level at about about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -138,6 +138,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el
 
 Con cuatro días en Las Vegas, esta es la ruta de la guía: Día 1, Llegada, paseo por el sur del Strip, el cartel de bienvenida y cena; Día 2, Mañana en Venetian y Palazzo, tarde en Caesars Palace y sus tiendas; Día 3, Red Rock Canyon o Valley of Fire por la mañana (mejor con coche alquilado o excursión)…; Día 4, Mob Museum, el Arts District y compras en los outlets, si te quedan ganas. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Las Vegas?
+
+Lo ideal es marzo, abril, mayo, octubre y noviembre, con temperaturas agradables y mucha luz.
+
+### ¿Dónde alojarse en Las Vegas?
+
+Strip sur (Luxor, Excalibur, MGM Grand, Park MGM): es la zona más económica del Strip y está cerca del aeropuerto. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Ellis Island Hotel Casino & Brewery (East of the Las Vegas Strip, nota 8, desde 72 € la noche); mejor calidad-precio: The Carriage House (Las Vegas Strip, nota 9, desde 83 € la noche); lujo: Fontainebleau Las Vegas, MICHELIN Key Award Hotel (Las Vegas Strip, nota 8,9, desde 346 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Las Vegas?
+
+El aeropuerto es el Harry Reid International (LAS), a pocos kilómetros del Strip.
+
+### ¿Cómo moverse por Las Vegas?
+
+Y andar a pie es lo normal, pero con calzado cómodo y botella de agua.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Las Vegas: https://www.happylowcost.com/destinos/las-vegas/#chollos

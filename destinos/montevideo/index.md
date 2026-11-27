@@ -226,6 +226,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja y Centro
 
 Con tres días en Montevideo, esta es la ruta de la guía: Día 1, Ciudad Vieja y Centro; Día 2, Rambla, Punta Carretas y Pocitos; Día 3, Barrios y vida local. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Montevideo?
+
+La mejor época es primavera y principios del verano austral (de octubre a diciembre) o el final del verano y el otoño (marzo y abril): temperaturas entre 18 y 26 grados y menos viento.
+
+### ¿Dónde alojarse en Montevideo?
+
+Barrio residencial junto a la Rambla y la playa, con restaurantes, supermercados y ambiente seguro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Palacio (Ciudad Vieja, nota 8,7, desde 45 € la noche); mejor calidad-precio: Hotel Alvear (Montevideo Centro, nota 8,9, desde 66 € la noche); lujo: Hotel Montevideo - Leading Hotels of the World (Pocitos, nota 9,2, desde 194 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Montevideo?
+
+El aeropuerto de Carrasco está a unos 20 km del centro.
+
+### ¿Cómo moverse por Montevideo?
+
+Un viaje cuesta en torno a 1-1,5 €, algo menos si pagas con la tarjeta STM, que se compra y recarga en kioscos y en Tres Cruces.
+
+### ¿Qué lugares imprescindibles ver en Montevideo?
+
+Según esta guía: Plaza Independencia y el Palacio Salvo; Ciudad Vieja y la peatonal Sarandí; Teatro Solís; Mercado del Puerto; Museo Torres García; Museo del Carnaval; Museo Andes 1972; La Rambla. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montevideo: https://www.happylowcost.com/destinos/montevideo/#chollos

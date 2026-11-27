@@ -250,6 +250,14 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y los calle
 
 Con cuatro días en Melbourne, esta es la ruta de la guía: Día 1, El centro y los callejones; Día 2, Arte, jardines y río; Día 3, Barrios; Día 4, Excursión o playa. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Melbourne?
+
+Es algo más caro y tiene menos vida de barrio: entre 130 y 200 €. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: The Victoria Hotel (Melbourne Central Business District, nota 8,2, desde 141 € la noche); mejor calidad-precio: Holiday Inn Express Melbourne Little Collins by IHG (Melbourne Central Business District, nota 8,5, desde 159 € la noche); lujo: 1 Hotel Melbourne (Docklands, nota 9,4, desde 422 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué lugares imprescindibles ver en Melbourne?
+
+Según esta guía: Los laneways: Degraves Street, Centre Place y Block Arcade; Federation Square y Flinders Street Station; National Gallery of Victoria (NGV International); State Library Victoria; Queen Victoria Market; Royal Botanic Gardens y Shrine of Remembrance; Hosier Lane y AC/DC Lane; Fitzroy y Collingwood. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Melbourne?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos 160-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -248,6 +248,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Palma histórica. Ma�
 
 Con seis días en Mallorca, esta es la ruta de la guía: Día 1, Palma histórica; Día 2, Bellver, arte y bahía; Día 3, Sóller y Fornalutx; Día 4, Costa de la Tramuntana; Día 5, Norte de la isla; Día 6, Calas del sur. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Mallorca?
+
+La mejor época es mayo, junio, septiembre y principios de octubre: el mar ya está bueno (o todavía lo está), hace calor sin agobio y las calas se pueden disfrutar.
+
+### ¿Dónde alojarse en Mallorca?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Antiguo Brondo Selfcheck-in Smart Rooms (Palma, nota 8,7, desde 111 € la noche); mejor calidad-precio: Casa Delmonte - Turismo de Interior (Palma, nota 9,9, desde 198 € la noche); lujo: Can Alomar Hotel (Calle Sant Feliu, nota 9,7, desde 353 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Mallorca?
+
+Los residentes tienen descuentos con tarjeta intermodal; como turista, pagas cada trayecto, normalmente entre 2 y 10 €.
+
+### ¿Qué lugares imprescindibles ver en Mallorca?
+
+Según esta guía: Catedral de Palma (La Seu); Casco antiguo de Palma; Castell de Bellver; Tren de Sóller y el valle; Fornalutx; Valldemossa; Deià y la carretera de la costa; Sa Calobra y el Torrent de Pareis. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Mallorca: https://www.happylowcost.com/destinos/mallorca/#chollos

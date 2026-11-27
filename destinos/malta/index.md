@@ -144,6 +144,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Valeta entera. Con
 
 Con cuatro días en Malta, esta es la ruta de la guía: Día 1, La Valeta entera. Concatedral por la mañana, Upper Barrakka; Día 2, Birgu por la mañana en ferry, y por la tarde Mdina y Rabat; Día 3, Costa sur. Templos de Ħaġar Qim, Gruta Azul y comida en Marsaxlokk; Día 4, Gozo. Ferry desde Ċirkewwa, Victoria, Ġgantija y Dwejra. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Malta?
+
+Si buscas dormir, evita Paceville y elige la zona de Spinola Bay. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Paulos Valletta (Valletta, nota 8,8, desde 118 € la noche); mejor calidad-precio: Battery House (Valletta, nota 9,3, desde 198 € la noche); lujo: Iniala Valletta (Valletta, nota 9,6, desde 428 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Malta?
+
+Entre los platos de cuchara y cazuela, el stuffat tal-fenek, un estofado de conejo, es el plato nacional.
+
+### ¿Cómo llegar del aeropuerto al centro de Malta?
+
+El aeropuerto internacional de Malta está en Luqa, a unos 20-30 minutos de La Valeta y Sliema.
+
+### ¿Cómo moverse por Malta?
+
+Si vas a usarlo mucho, mira la tarjeta Tallinja, que sale rentable en estancias de varios días.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Malta: https://www.happylowcost.com/destinos/malta/#chollos

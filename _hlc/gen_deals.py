@@ -137,6 +137,13 @@ def deal_faq(x, en=False):
         qa.append(('¿Es un vuelo directo?', 'Sí, es un vuelo sin escalas.' if direct else (f'No, tiene {f.get("escalas")} escala(s).' if f.get('escalas') else 'Revisa las escalas en la página de reserva antes de pagar.')))
         qa.append(('¿Incluye maleta?', 'La tarifa más barata suele incluir solo un bolso pequeño bajo el asiento. Revisa el equipaje de tu tarifa antes de pagar: añadir maleta de cabina o facturada cambia el precio final.'))
         qa.append(('¿Hasta cuándo dura este precio?', 'No se puede saber: tarifas así pueden desaparecer en horas. Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.'))
+    # ronda 10: dónde dormir en el destino con los 3 hoteles de top3hotels.com (nota real y precio por noche), igual que en rutas y guías
+    try:
+        hq = T3.hotel_faq(d_, *dest_ll(f), lang='en' if en else 'es', trip_from=o)
+    except Exception:
+        hq = None
+    if hq:
+        qa.append(hq)
     return qa
 
 
@@ -597,7 +604,7 @@ def stops_es(f):
 
 
 
-def guide_extras(gh, lang='es'):
+def guide_extras(gh, lang='es', name=None):
     """Índice con anclas, minutos de lectura y preguntas frecuentes (FAQPage) a partir del HTML de una guía."""
     import html as _h
     used = {}
@@ -611,6 +618,9 @@ def guide_extras(gh, lang='es'):
         toc.append((k, txt))
         return f'<h2 id="{k}">{m.group(1)}</h2>'
     gh = re.sub(r'<h2>(.*?)</h2>', anchor, gh, flags=re.S)
+    # ronda 10: "Preguntas frecuentes sobre X" / "FAQ about X" (el H2 genérico no decía de qué destino)
+    if name:
+        gh = re.sub(r'(<h2 id="[^"]*">)\s*(Preguntas frecuentes|FAQs?|Frequently asked questions)\s*(</h2>)', lambda m_: m_.group(1) + (f'Preguntas frecuentes sobre {e(name)}' if lang == 'es' else f'FAQ about {e(name)}') + m_.group(3), gh, count=1)
     words = len(re.sub('<[^>]+>', ' ', gh).split())
     mins = max(3, round(words / 230))
     faq = []
@@ -620,7 +630,7 @@ def guide_extras(gh, lang='es'):
             q, a = _h.unescape(re.sub('<[^>]+>', '', q)).strip(), _h.unescape(re.sub('<[^>]+>', '', a)).strip()
             if q and a:
                 faq.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
-    faq_ld = {"@type": "FAQPage", "mainEntity": faq[:10]} if len(faq) >= 3 else None
+    faq_ld = {"@type": "FAQPage", "mainEntity": faq[:16]} if len(faq) >= 3 else None  # ronda 10: 16 (antes 10)
     if len(toc) >= 4:
         lab = ('En esta guía', 'min de lectura') if lang == 'es' else ('In this guide', 'min read')
         nav = (f'<nav class="g-toc" aria-label="{lab[0]}"><details open><summary><b>{lab[0]}</b><span>{mins} {lab[1]}</span></summary><ol>'
@@ -698,7 +708,10 @@ def guide_summary(gh, name, days, sub, updated_iso, lang='es', deal_href=None):
     MON = r'enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|primavera|otoño|verano|invierno|January|February|March|April|May|June|July|August|September|October|November|December|spring|autumn|summer|winter'
     for lab_es, lab_en, rx, pref in (('Cuándo ir', 'When to go', r'cu[aá]ndo ir|mejor [eé]poca|when to go|best time', (rf'\b(mejor|ideal|best)\b.*\b({MON})\b|\b({MON})\b.*\b(mejor|ideal|best)\b', rf'^(?!(Es|Hace|It|This|That|Esta|Este)\b).*\b({MON})\b')),
                                      ('Presupuesto', 'Budget', r'presupuesto|cu[aá]nto cuesta|budget|cost', r'\d+\s?(€|euros?|EUR)|€\s?\d+|\d+\s?(\$|USD|£)'),
-                                     ('Desde el aeropuerto', 'From the airport', r'aeropuerto|c[oó]mo llegar|airport|getting', r'aeropuerto|airport')):
+                                     ('Desde el aeropuerto', 'From the airport', r'aeropuerto|c[oó]mo llegar|airport|getting', r'aeropuerto|airport'),
+                                     # ronda 10: zona para dormir en la caja de resumen ("dónde alojarse en X" es una de las preguntas que más hacen los asistentes)
+                                     ('Dónde dormir', 'Where to stay', r'^\s*(d[oó]nde dormir|d[oó]nde alojarse|where to stay)', r'\b(barrio|zona|centro|casco|area|district|neighbou?rhood|old town|centre|center)\b'),
+                                     ('Qué comer', 'What to eat', r'^\s*(qu[eé] comer|gastronom|what to eat|food)', r'\b(prueba|probar|t[ií]pic[oa]s?|plato|try|traditional|dish)\b')):
         t = section_text(gh, rx, pref, fallback=False)
         if t:
             rows.append((lab_es if es else lab_en, t))
@@ -941,6 +954,74 @@ def guide_todo_faq(gh, trip, name, country='', lang='es'):
     if country and _GUIDES_BY_COUNTRY.get(country, 0) == 1 and country.lower() not in name.lower() and not re.search(re.escape(country.lower()), have):
         add.append((f'¿Qué ver en {country} en {n} días?', f'Con {word} días en {country}, esta guía propone quedarse en {name} y seguir su ruta: {plan}') if es else
                    (f'What to see in {country} in {n} days?', f'With {word} days in {country}, this guide suggests staying in {name} and following its route: {plan}'))
+    if not add:
+        return gh
+    h = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in add)
+    mfaq = re.search(r'(<h2>[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>.*?)(?=<h2|$)', gh, re.S | re.I)
+    return (gh[:mfaq.end()] + h + gh[mfaq.end():]) if mfaq else gh + ('<h2>Preguntas frecuentes</h2>' if es else '<h2>FAQs</h2>') + h
+
+
+def _sec_sents(gh, rx):
+    """Frases de la primera sección h2 cuyo título encaja con rx."""
+    for m in re.finditer(r'<h2[^>]*>(.*?)</h2>(.*?)(?=<h2|$)', gh or '', re.S):
+        if re.search(rx, re.sub('<[^>]+>', '', m.group(1)), re.I):
+            txt = html.unescape(re.sub(r'<[^>]+>', ' ', ' '.join(re.findall(r'<(?:p|li)>(.*?)</(?:p|li)>', m.group(2), re.S))))
+            txt = re.sub(r'\s+([,.;:!?])', r'\1', re.sub(r'\s+', ' ', txt)).replace(' — ', ', ').replace('—', ', ')
+            return [x.strip() for x in re.split(r'(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿¡])', txt) if x.strip()]
+    return []
+
+
+def _pick(sents, inc, exc=None, n=240):
+    for pat in (inc if isinstance(inc, tuple) else (inc,)):
+        for x in sents:
+            if 40 <= len(x) <= n and x[-1] in '.!?' and re.search(pat, x, re.I) and not (exc and re.search(exc, x, re.I)):
+                return x
+    return ''
+
+
+def guide_section_faq(gh, name, lang='es', hotels=None):
+    """Ronda 10: preguntas que hacen la gente y los asistentes de IA ("mejor época para viajar a X", "dónde alojarse en X", "qué comer en X",
+    "cómo llegar del aeropuerto", "cómo moverse por X", "qué lugares ver en X") respondidas con frases de las secciones de la propia guía.
+    Todas las guías tienen esas secciones (Cuándo ir, Dónde dormir, Qué comer y dónde, Cómo llegar desde el aeropuerto y moverse, Qué ver),
+    pero la respuesta estaba repartida por la página y no en la FAQ (que es lo que extraen FAQPage, Bing/Copilot y los LLM).
+    Solo se añade la pregunta si la FAQ no la tiene ya y si hay una frase entera que responda. hotels = (pregunta, respuesta) de top3.hotel_faq."""
+    es = lang == 'es'
+    have = ' '.join(re.findall(r'<h3>(.*?)</h3>', gh or '')).lower()
+    MON = r'enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|primavera|otoño|verano|invierno|January|February|March|April|May|June|July|August|September|October|November|December|spring|autumn|summer|winter'
+    add = []
+    if not re.search(r'cu[aá]ndo ir|[eé]poca|best time|when to (go|visit)', have):
+        t = _pick(_sec_sents(gh, r'^\s*(cu[aá]ndo ir|mejor [eé]poca|when to go|best time)'),
+                  (rf'\b(mejor|ideal|best|perfect|recomend|recommend|most comfortable|easy answer|más agradable)\b.*\b({MON})\b|\b({MON})\b.*\b(mejor|ideal|best|perfect|más agradable|most comfortable)\b',))
+        if t:
+            add.append((f'¿Cuál es la mejor época para viajar a {name}?', t) if es else (f'When is the best time to visit {name}?', t))
+    if not re.search(r'dormir|alojar|where to stay|hotel', have):
+        t = _pick(_sec_sents(gh, r'^\s*(d[oó]nde dormir|d[oó]nde alojarse|alojamiento|where to stay)'), (r'\b(barrio|zona|centro|casco|area|district|neighbou?rhood|old town|centre|center)\b',))
+        extra = (' ' + hotels[1]) if hotels else ''
+        if t or hotels:
+            add.append((f'¿Dónde alojarse en {name}?', (t + extra).strip()) if es else (f'Where to stay in {name}?', (t + extra).strip()))
+    if not re.search(r'comer|gastronom|eat|food|dish', have):
+        t = _pick(_sec_sents(gh, r'^\s*(qu[eé] comer|gastronom|what to eat|food)'), (r'\b(prueba|probar|t[ií]pic[oa]s?|plato|try|traditional|dish|signature)\b',))
+        if t:
+            add.append((f'¿Qué comer en {name}?', t) if es else (f'What to eat in {name}?', t))
+    ss = _sec_sents(gh, r'aeropuerto|airport|c[oó]mo llegar|getting')
+    if not re.search(r'aeropuerto|airport', have):
+        t = _pick(ss, (r'aeropuerto|airport',))
+        if t:
+            add.append((f'¿Cómo llegar del aeropuerto al centro de {name}?', t) if es else (f'How do you get from the airport to central {name}?', t))
+    if not re.search(r'moverse|getting around|transporte|transport|get around', have):
+        t = _pick(ss, (r'\b(metro|tranv[ií]a|tram|a pie|andando|caminando|on foot|walk\w*|bici\w*|bike|tarjeta|card|pass)\b',), r'aeropuerto|airport|\bOTP\b|desde el avi[oó]n')
+        if t:
+            add.append((f'¿Cómo moverse por {name}?', t) if es else (f'How do you get around {name}?', t))
+    if not re.search(r'imprescindible|must-see|lugares|places', have):
+        for m in re.finditer(r'<h2[^>]*>(.*?)</h2>(.*?)(?=<h2|$)', gh or '', re.S):
+            if re.match(r'\s*(qu[eé] ver|what to see)', re.sub('<[^>]+>', '', m.group(1)), re.I):
+                pl = [html.unescape(re.sub('<[^>]+>', '', h3)).strip() for h3 in re.findall(r'<h3>(.*?)</h3>', m.group(2), re.S)]
+                pl = [x for x in pl if 2 < len(x) <= 60][:8]
+                if len(pl) >= 3:
+                    lst = '; '.join(pl)
+                    add.append((f'¿Qué lugares imprescindibles ver en {name}?', f'Según esta guía: {lst}. En la sección "Qué ver" tienes cada uno explicado.') if es else
+                               (f'What are the must-see places in {name}?', f'According to this guide: {lst}. Each one is explained in the "What to see" section.'))
+                break
     if not add:
         return gh
     h = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in add)
@@ -1834,7 +1915,7 @@ def main():
 <a class="hlc-btn s" href="/alertas/?d={quote(f.get('destino', ''))}">🔔 Avísame de chollos a {e(f.get('destino'))}</a>
 </aside>
 </div>
-{T3.block(f.get('destino', ''), *dest_ll(f), lang='es', checkin=f.get('ida'), checkout=f.get('vuelta'))}
+{T3.block(f.get('destino', ''), *dest_ll(f), lang='es', checkin=f.get('ida'), checkout=f.get('vuelta'), trip_from=f.get('origen') or None)}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">También te puede interesar</div><h2>Chollos parecidos</h2></div><a class="hlc-btn o" href="/chollos/">Ver todos</a></div><div class="dc-grid">{rel_html}</div></section>
 </div></main></body></html>'''
         page = page.replace('</head>', '<link rel="alternate" type="text/markdown" href="' + url + 'index.md" title="Markdown"></head>', 1)
@@ -2044,10 +2125,11 @@ def main():
         gh, trip_ld = guide_itinerary(gh, p['n'], nd, 'es')
         gh = guide_short_faq(gh, trip_ld, p['n'], 'es')
         gh = guide_todo_faq(gh, trip_ld, p['n'], en_names.COUNTRY_ES_FIX.get(p['c'], p['c']), 'es')
+        gh = guide_section_faq(gh, p['n'], 'es', T3.hotel_faq(p['n'], p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), (), lang='es'))
         gh, bud = guide_budget(gh, 'es')
         gh = guide_cost_faq(gh, p['n'], 'es')
         attr = guide_attractions(gh)
-        gh, g_faq, words = guide_extras(gh, 'es')
+        gh, g_faq, words = guide_extras(gh, 'es', p['n'])
         _pc = PAISES.get(slugify(en_names.COUNTRY_ES_FIX.get(p['c'], p['c'])))  # ronda 5: país en la miga cuando existe su hub de vuelos
         ch, cld = crumbs([('Inicio', '/'), ('Destinos', '/destinos/')] + ([(en_names.COUNTRY_ES_FIX.get(p['c'], p['c']), _pc[0])] if _pc else []) + [(p['n'], None)])
         # título con el año (las consultas que ya posicionan son "qué ver en X en 3 días": la cifra y el año suben el CTR)

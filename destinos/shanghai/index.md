@@ -246,6 +246,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Bund, People's Square
 
 Con cuatro días en Shanghái, esta es la ruta de la guía: Día 1, Bund, People's Square y Pudong; Día 2, Ciudad antigua y Concesión Francesa; Día 3, Templos, arte y West Bund; Día 4, Excursión. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Qué comer en Shanghái?
+
+Estos son los platos que hay que probar: Xiaolongbao: dumplings al vapor con caldo dentro.
+
+### ¿Cómo llegar del aeropuerto al centro de Shanghái?
+
+Desde el aeropuerto de Pudong, la opción con más gracia es el Maglev: unos 8 minutos a más de 300 km/h hasta Longyang Road por unos 6-7 € (50 yuanes), y desde ahí metro.
+
+### ¿Cómo moverse por Shanghái?
+
+La línea 2 de metro va directa al centro por menos de 1 € (unos 7 yuanes), pero tarda más de una hora.
+
+### ¿Qué lugares imprescindibles ver en Shanghái?
+
+Según esta guía: El Bund; Lujiazui y los miradores de Pudong; Jardín Yuyuan y el barrio antiguo; Antigua Concesión Francesa; Museo de Shanghái; Calle Nanjing; Tianzifang; Xintiandi. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Shanghái: https://www.happylowcost.com/destinos/shanghai/#chollos

@@ -103,7 +103,7 @@ Dentro de la ciudad, la medina se recorre a pie. Para ir a Guéliz o Majorelle, 
 
 La moneda es el dírham marroquí. Lleva algo de efectivo, porque en zocos y puestos de comida no suelen aceptar tarjeta. Los cajeros son habituales en Guéliz y cerca de la plaza.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Marrakech
 
 ### ¿Necesito visado para ir a Marrakech desde España?
 
@@ -144,6 +144,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina por la mañana
 ### ¿Qué hacer en Marrakech en 3 días?
 
 Con tres días en Marrakech, esta es la ruta de la guía: Día 1, Medina por la mañana, zocos y madrasa. Comida tranquila y tarde en el Museo de Marrakech; Día 2, Palacio Bahía y Tumbas Saadíes a primera hora, El Badi después; Día 3, Majorelle y Museo YSL a primera hora, paseo por Guéliz y cena en la ciudad nueva. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Marrakech?
+
+Los de la zona de Mouassine y cerca de Yemaa el Fna son cómodos para llegar andando a todo.
+
+### ¿Qué comer en Marrakech?
+
+Menos conocida fuera es la tanjia, un plato local de carne cocinada muy despacio en una vasija de barro, que en Marrakech es casi un símbolo.
+
+### ¿Cómo llegar del aeropuerto al centro de Marrakech?
+
+El aeropuerto Marrakech-Menara (RAK) está a unos 6 kilómetros del centro.
+
+### ¿Cómo moverse por Marrakech?
+
+Dentro de la ciudad, la medina se recorre a pie.
 
 ### ¿Es caro viajar a Marrakech?
 

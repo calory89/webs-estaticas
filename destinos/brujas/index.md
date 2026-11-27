@@ -124,6 +124,22 @@ Con 2 días ves lo esencial de Brujas sin prisas. La ruta de esta guía está or
 
 Con dos días en Brujas, esta es la ruta de la guía: Día 1, El casco histórico; Día 2, Museos, cerveza y muralla. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Brujas?
+
+Centro (Markt y Burg): lo más cómodo y lo más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Flanders Hotel (Bruges Historic Center, nota 8,6, desde 130 € la noche); mejor calidad-precio: Canal View Hotel Ter Brughe by CW Hotel Collection (Bruges Historic Center, nota 9, desde 138 € la noche); lujo: Dukes' Palace Brugge - by Dukes' Hotel Collection (Bruges Historic Center, nota 9,2, desde 263 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Brujas?
+
+La cocina belga es contundente y muy de plato.
+
+### ¿Cómo llegar del aeropuerto al centro de Brujas?
+
+Desde el aeropuerto hay tren a Bruselas y conexión a Brujas, con o sin transbordo, en torno a una hora y media.
+
+### ¿Cómo moverse por Brujas?
+
+Se hace a pie y la bici es un extra para salir al canal de Damme o a los molinos.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Brujas: https://www.happylowcost.com/destinos/brujas/#chollos

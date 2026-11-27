@@ -110,7 +110,7 @@ Dentro de la ciudad, el **TransMilenio** es rápido en sus carriles propios, per
 | Medio | 60-90 euros | Habitación privada o hotel sencillo, comidas en restaurantes, algún taxi y entradas. |
 | Cómodo | 120 euros o más | Buen hotel, restaurantes de nivel, taxis o apps a diario y excursiones guiadas. |
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Bogotá
 
 ### ¿Es seguro Bogotá para un viajero?
 
@@ -147,6 +147,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Candelaria a pie. 
 ### ¿Qué hacer en Bogotá en 4 días?
 
 Con cuatro días en Bogotá, esta es la ruta de la guía: Día 1, La Candelaria a pie. Plaza de Bolívar, Museo del Oro y Museo Botero; Día 2, Monserrate por la mañana, Quinta de Bolívar después y paseo por La Macarena para cenar; Día 3, Paloquemao temprano, Museo Nacional y tarde en Usaquén (domingo; Día 4, Opcional. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Bogotá?
+
+Cómodo para el casco histórico, aunque algo ruidoso y menos recomendable de noche. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Boutique Quinta Camacho (Chapinero, nota 8,6, desde 38 € la noche); mejor calidad-precio: ibis Bogota Museo (Centro Internacional, nota 8,5, desde 47 € la noche); lujo: Cassa Luxury Homes (Chapinero, nota 9,4, desde 182 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bogotá?
+
+El plato que define la ciudad es el ajiaco santafereño: sopa espesa de tres tipos de papa con pollo, mazorca, alcaparras y crema de leche.
+
+### ¿Cómo llegar del aeropuerto al centro de Bogotá?
+
+El aeropuerto internacional El Dorado (BOG) está al oeste de la ciudad, a unos 30-60 minutos del centro según el tráfico.
+
+### ¿Qué lugares imprescindibles ver en Bogotá?
+
+Según esta guía: La Candelaria; Plaza de Bolívar; Museo del Oro; Museo Botero; Cerro de Monserrate; Museo Nacional; Usaquén; Paloquemao. En la sección "Qué ver" tienes cada uno explicado.
 
 ### ¿Es caro viajar a Bogotá?
 

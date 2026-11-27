@@ -101,7 +101,7 @@ Para entrar a Tanzania necesitas visado, que se tramita online antes del viaje. 
 
 Las excursiones y las entradas a parques se pagan casi siempre en dólares. Lleva efectivo, porque los cajeros fuera de Stone Town escasean.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Zanzíbar
 
 ### ¿Es seguro viajar a Zanzíbar?
 
@@ -138,6 +138,26 @@ Con siete días en Zanzíbar, esta es la ruta de la guía: Días 1-2, Stone Town
 ### ¿Qué ver en Tanzania en 7 días?
 
 Con siete días en Tanzania, esta guía propone quedarse en Zanzíbar y seguir su ruta: Días 1-2, Stone Town. Paseo por el casco viejo, mercado, Forodhani al atardecer; Días 3-5, Costa norte (Kendwa o Nungwi). Playa, snorkel en Mnemba; Días 6-7, Costa este (Paje o Jambiani). Parada en Jozani de camino, kitesurf si te animas.
+
+### ¿Cuál es la mejor época para viajar a Zanzíbar?
+
+La mejor época es de junio a octubre: seco, temperaturas agradables y mar tranquilo.
+
+### ¿Dónde alojarse en Zanzíbar?
+
+Lo cómodo es alojarse en el casco viejo, en una casa restaurada con patio y desayuno en la azotea. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Habari House (The Top-rated Area in Zanzibar City, nota 8,8, desde 66 € la noche); mejor calidad-precio: Kisiwa House (The Top-rated Area in Zanzibar City, nota 8,7, desde 122 € la noche); lujo: The Neela Boutique Hotel Stone Town (The Top-rated Area in Zanzibar City, nota 9, desde 392 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Zanzíbar?
+
+Prueba el urojo (la llamada «sopa de Zanzíbar»), un caldo especiado con patata, bolitas fritas y salsas.
+
+### ¿Cómo llegar del aeropuerto al centro de Zanzíbar?
+
+El aeropuerto internacional Abeid Amani Karume está a unos 6 km de Stone Town.
+
+### ¿Cómo moverse por Zanzíbar?
+
+Bicicleta: perfecta para tramos cortos entre playas.
 
 ## Vuelos y chollos
 

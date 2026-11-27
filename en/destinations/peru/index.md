@@ -92,7 +92,7 @@ Within Lima, the Metropolitano bus line is useful on the north-south corridor an
 
 Machu Picchu entry, the train and the shuttle together are often the biggest single expense, so plan for them separately.
 
-## FAQs
+## FAQ about Peru
 
 ### Do I need a visa for Peru?
 
@@ -125,6 +125,22 @@ For the traveller who wrote this guide, yes: Peru packs in more than almost any 
 ### What to do in Peru in 10 days?
 
 With ten days in Peru, this is the guide's route: Days 1-2, Lima. Miraflores, Barranco, the historic centre, a long lunch; Days 3-4, Fly to Cusco. Take it easy on day one, explore the old town on day two; Days 5-6, Sacred Valley, sleeping in Ollantaytambo; Day 7, Train to Aguas Calientes, then Machu Picchu early the next morning; Days 8-9, Back to Cusco, then fly to Arequipa for the colonial centre, or on to Puno for the lake; Day 10, Return to Lima for your flight home. The table above has the full plan for each day.
+
+### Where to stay in Peru?
+
+The historic centre has atmosphere by day, but it feels quieter at night. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Killaqente (Urbanizacion Tawantinsuyo Jiron Atahuallpa 454, score 8.9, from €25 a night); best value: Hotel Rumi Punku (Cusco City Centre, score 9.3, from €99 a night); luxury: Monasterio, A Belmond Hotel, Cusco (Cusco City Centre, score 9.8, from €516 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Peru?
+
+Try ají de gallina, a creamy chilli chicken stew, causa, a cold potato terrine, and anticuchos, grilled beef heart skewers from street grills at night.
+
+### How do you get from the airport to central Peru?
+
+Lima's Jorge Chávez airport is in Callao, roughly 45 minutes to over an hour from Miraflores depending on traffic.
+
+### How do you get around Peru?
+
+To reach Machu Picchu, take PeruRail or Inca Rail from Ollantaytambo or Cusco to Aguas Calientes, then a shuttle bus up, or walk.
 
 ## Flights and deals
 

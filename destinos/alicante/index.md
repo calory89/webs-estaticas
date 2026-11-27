@@ -206,6 +206,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Castillo, Santa Cruz 
 
 Con tres días en Alicante, esta es la ruta de la guía: Día 1, Castillo, Santa Cruz y casco antiguo; Día 2, Mercado, museos y atardecer; Día 3, Tabarca o playa de San Juan. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Alicante?
+
+Centro y casco antiguo: para quien viene pocos días y quiere hacerlo todo andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: La Lonja (Capitán Segarra, nota 8,3, desde 72 € la noche); mejor calidad-precio: B&B HOTEL Alicante Centro (Avenida Salamanca, nota 9,0, desde 89 € la noche); lujo: Eurostars Pórtico Alicante (Alicante, nota 9,0, desde 162 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Alicante?
+
+El autobús C-6 va al centro (Luceros, la Explanada y el puerto) en unos 30 o 40 minutos y cuesta unos 4 €, que se pagan con tarjeta al subir.
+
+### ¿Qué lugares imprescindibles ver en Alicante?
+
+Según esta guía: Castillo de Santa Bárbara; Barrio de Santa Cruz; Explanada de España; Casco antiguo y Basílica de Santa María; Concatedral de San Nicolás; MARQ, Museo Arqueológico; MACA, Museo de Arte Contemporáneo; Mercado Central. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Alicante?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 60 a 80 € por persona y día, y en el nivel "presupuesto medio", unos unos 120 a 170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -104,7 +104,7 @@ Desde la terminal tienes tres opciones: traslado del hotel, taxi oficial con tar
 
 Son cifras generales y cambian mucho según temporada. Las excursiones grandes como Saona suman un buen pellizco, así que cuéntalas aparte en tu presupuesto.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Punta Cana
 
 ### ¿Necesito visado desde España?
 
@@ -145,6 +145,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por la
 ### ¿Qué hacer en Punta Cana en 6 días?
 
 Con seis días en Punta Cana, esta es la ruta de la guía: Día 1, Llegada, paseo por la playa de tu zona y cena sencilla; Día 2, Bávaro y El Cortecito, con comida en un comedor de playa; Día 3, Excursión a Isla Saona desde Bayahibe, saliendo temprano; Día 4, Macao por la mañana y Ojos Indígenas o Hoyo Azul por la tarde; Día 5, Altos de Chavón y Basílica de Higüey, o descanso sin plan; Día 6, (opcional). En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Punta Cana?
+
+Es la zona más práctica: playa, supermercados, restaurantes y excursiones cerca.
+
+### ¿Qué comer en Punta Cana?
+
+Para beber, cerveza Presidente bien fría, ron local como Brugal o Barceló y mamajuana, un licor de hierbas que se prueba una vez con cuidado.
+
+### ¿Cómo llegar del aeropuerto al centro de Punta Cana?
+
+El Aeropuerto Internacional de Punta Cana (PUJ) está a unos 20-30 minutos de Bávaro y algo más de Uvero Alto.
+
+### ¿Cómo moverse por Punta Cana?
+
+Es una terminal con techos de palma muy característica, y el trámite de entrada requiere el formulario electrónico (E-Ticket) y, según el momento, el pago de la tarjeta de turista, que muchas veces va incluida en el billete.
 
 ### ¿Es caro viajar a Punta Cana?
 

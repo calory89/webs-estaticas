@@ -239,6 +239,22 @@ Generally yes, especially for accommodation and food. That's why many travellers
 
 With two days in Pisa, this is the guide's route: Day 1, Piazza dei Miracoli and the old town; Day 2, The river and the other Pisa. The table above has the full plan for each day.
 
+### Where to stay in Pisa?
+
+Centro storico (Borgo Stretto, Piazza dei Cavalieri): our pick. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Terminus & Plaza (Pisa City Centre, score 8.1, from €81 a night); best value: Hotel Di Stefano (Pisa City Centre, score 8.6, from €109 a night); luxury: Smy Pisa Plaza (Via Caduti Del Lavoro 46, score 8.2, from €276 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Pisa?
+
+Pisan cooking is simple, coastal-meets-peasant Tuscan, and the signature is cecina, a thin chickpea-flour flatbread baked in a wood oven.
+
+### How do you get around Pisa?
+
+From the station it is a 20-25 minute walk to the tower, or a short city bus ride.
+
+### What are the must-see places in Pisa?
+
+According to this guide: Leaning Tower (Torre di Pisa); Cathedral (Duomo di Santa Maria Assunta); Baptistery (Battistero); Camposanto Monumentale; Museo dell'Opera del Duomo and Sinopie; Piazza dei Cavalieri; Borgo Stretto and the Mercato delle Vettovaglie; The Lungarni and Santa Maria della Spina. Each one is explained in the "What to see" section.
+
 ### Is Pisa expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about about €60-80 per person per day and the "mid-range" level at about about €150-220 for one, sharing a double. Flights are extra: this page shows real fares checked by Happy Low Cost.

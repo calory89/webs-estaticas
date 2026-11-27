@@ -232,6 +232,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old port and old to
 
 With three days in Marseille, this is the guide's route: Day 1, Old port and old town; Day 2, The Calanques; Day 3, Markets and the coast. The table above has the full plan for each day.
 
+### Where to stay in Marseille?
+
+Endoume and the Corniche: quieter, close to the sea and Malmousque. €90-200, good for couples and swimmers, though it takes longer to reach the centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hôtel Hermès (Vieux Port - La Canebière, score 8.1, from €76 a night); best value: Hôtel Amista Marseille (Vieux Port - La Canebière, score 9, from €126 a night); luxury: Hôtel C2 (Vieux Port - La Canebière, score 8.8, from €213 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Marseille?
+
+Try panisse (chickpea fries), navettes (boat-shaped orange-blossom biscuits) from the Four des Navettes near the Abbaye Saint-Victor, pieds paquets if you are brave, and Marseille's thin wood-fired pizza.
+
+### How do you get from the airport to central Marseille?
+
+Marseille Provence Airport is in Marignane, about 25 km from the centre.
+
+### How do you get around Marseille?
+
+In the city, the RTM network has two metro lines (M1 and M2), three tram lines and buses, including the useful 60 to Notre-Dame, the 83 along the Corniche and the 21 to Luminy.
+
+### What are the must-see places in Marseille?
+
+According to this guide: Vieux-Port; Notre-Dame de la Garde; Le Panier; La Vieille Charité; MuCEM and Fort Saint-Jean; The Calanques; Vallon des Auffes; Corniche Kennedy. Each one is explained in the "What to see" section.
+
 ### Is Marseille expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-80 per person per day and the "mid-range" level at about €150-220. Flights are extra: this page shows real fares checked by Happy Low Cost.

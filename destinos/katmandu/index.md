@@ -244,6 +244,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Katmandú histórica.
 
 Con cuatro días en Katmandú, esta es la ruta de la guía: Día 1, Katmandú histórica; Día 2, Pashupatinath y Boudhanath; Día 3, Patan; Día 4, Bhaktapur y Changu Narayan. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Katmandú?
+
+La mejor época es de octubre a noviembre: cielos limpios, temperaturas suaves (20-25 °C de día) y vistas a las montañas.
+
+### ¿Dónde alojarse en Katmandú?
+
+Patan: casas newari restauradas convertidas en hoteles, ambiente de barrio. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Yambu kathmandu (Thamel, nota 9, desde 19 € la noche); mejor calidad-precio: Kathmandu Eco Hotel (Thamel, nota 9, desde 23 € la noche); lujo: Basera Boutique Hotel - Kathmandu's Hidden Escape (Singh Durbar, Babar Mahal, nota 9,4, desde 84 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Katmandú?
+
+El plato que vas a comer más es el dal bhat: arroz, lentejas, curry de verduras y encurtidos, con repetición gratis.
+
+### ¿Cómo llegar del aeropuerto al centro de Katmandú?
+
+El aeropuerto internacional Tribhuvan está a unos 6 km de Thamel.
+
+### ¿Cómo moverse por Katmandú?
+
+Las opciones reales: Andando: el casco antiguo, Thamel y Durbar Square se hacen a pie.
+
+### ¿Qué lugares imprescindibles ver en Katmandú?
+
+Según esta guía: Kathmandu Durbar Square (Basantapur); Kumari Ghar; Swayambhunath (el templo de los monos); Boudhanath; Pashupatinath; Patan Durbar Square; Museo de Patan; Bhaktapur. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Katmandú?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 25-35 € por persona y día, y en el nivel "presupuesto medio", unos 60-90 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

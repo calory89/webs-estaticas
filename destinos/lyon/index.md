@@ -250,6 +250,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Fourvière y Vieux Ly
 
 Con tres días en Lyon, esta es la ruta de la guía: Día 1, Fourvière y Vieux Lyon; Día 2, Presqu'île y Croix-Rousse; Día 3, Parque, mercado y Confluence. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Lyon?
+
+La mejor época es de mayo a junio y septiembre: temperaturas agradables, terrazas abiertas y precios razonables.
+
+### ¿Dónde alojarse en Lyon?
+
+Es la zona más bonita, pero tiene cuestas y adoquines, y es ruidosa los fines de semana. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Campanile PRIME Lyon Centre Gare Part-Dieu (3rd arr., nota 8,6, desde 78 € la noche); mejor calidad-precio: Hotel De Verdun 1882, BW Signature Collection (2nd arr., nota 8,8, desde 154 € la noche); lujo: Villa Florentine, A Beauvallon Hotel & Spa (5th arr., nota 9,3, desde 337 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Lyon?
+
+El aeropuerto de Lyon-Saint Exupéry está a unos 25 km del centro.
+
+### ¿Cómo moverse por Lyon?
+
+Tienes estas opciones: Rhônexpress: es el tranvía directo a Part-Dieu.
+
+### ¿Qué lugares imprescindibles ver en Lyon?
+
+Según esta guía: Vieux Lyon; Las traboules; Basílica de Notre-Dame de Fourvière; Mirador de Fourvière; Teatros galorromanos de Fourvière; Presqu'île y place Bellecour; Place des Terreaux y el Ayuntamiento; Musée des Beaux-Arts. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Lyon?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

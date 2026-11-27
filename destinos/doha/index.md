@@ -270,6 +270,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Doha clásico. Ma�
 
 Con tres días en Doha, esta es la ruta de la guía: Día 1, El Doha clásico; Día 2, Doha moderna; Día 3, Desierto. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Doha?
+
+La mejor época es de noviembre a marzo: entre 20 y 28 °C, sol y noches agradables.
+
+### ¿Dónde alojarse en Doha?
+
+Souq Waqif y Msheireb: la mejor zona para un primer viaje. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Premier Inn Doha Airport (Saeed Bin Al Aas Street C Ring Road, nota 8,5, desde 41 € la noche); mejor calidad-precio: Four Points by Sheraton Doha (Al Diwan Street, Musheireb, nota 9, desde 93 € la noche); lujo: The Ned Doha (Corniche, nota 9,5, desde 265 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Doha?
+
+Estos son los platos que hay que pedir: Machboos: el plato nacional.
+
+### ¿Cómo llegar del aeropuerto al centro de Doha?
+
+Del aeropuerto Hamad (DOH) al centro, lo mejor es la línea roja del metro: en unos 20 minutos llegas a Msheireb, el gran intercambiador, por unos 0,50 € (2 QAR).
+
+### ¿Cómo moverse por Doha?
+
+Compra la Travel Card en las máquinas de la estación.
+
+### ¿Qué lugares imprescindibles ver en Doha?
+
+Según esta guía: Museo de Arte Islámico (MIA); MIA Park; Souq Waqif; Zoco de los Halcones y Hospital de Halcones; Museo Nacional de Catar; La Corniche; Katara Cultural Village; Msheireb Downtown y sus museos. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Doha: https://www.happylowcost.com/destinos/doha/#chollos

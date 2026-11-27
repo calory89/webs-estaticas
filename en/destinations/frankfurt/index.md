@@ -243,6 +243,26 @@ If you only have one day, follow day 1 of this itinerary: Old town, museums and 
 
 With two days in Frankfurt, this is the guide's route: Day 1, Old town, museums and apple wine; Day 2, Skyline, Goethe and the neighbourhoods. The table above has the full plan for each day.
 
+### Where to stay in Frankfurt?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: City Hotel Frankfurt Central (Frankfurt, score 8.5, from €77 a night); best value: Hotel Schopenhauer Hof (Frankfurt, score 8.7, from €168 a night); luxury: The Westin Grand Frankfurt (Frankfurt, score 8.9, from €323 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Frankfurt?
+
+The signature dish is Grüne Soße, a cold sauce of seven herbs (borage, chervil, cress, parsley, burnet, sorrel and chives) with sour cream, served with boiled eggs and potatoes.
+
+### How do you get from the airport to central Frankfurt?
+
+The fastest way from Frankfurt Airport to the centre is the S-Bahn S8 or S9 from the regional station under Terminal 1, which reaches the Hauptbahnhof in about 12-15 minutes for roughly €6-7.
+
+### How do you get around Frankfurt?
+
+The centre itself is very walkable: Römerberg to the Städel is 15 minutes on foot.
+
+### What are the must-see places in Frankfurt?
+
+According to this guide: Römerberg and the Neue Altstadt; Kaiserdom (St. Bartholomew's Cathedral); Städel Museum; Museumsufer (Museum Embankment); Main Tower; Eiserner Steg and the riverbanks; Kleinmarkthalle; Goethe House. Each one is explained in the "What to see" section.
+
 ### Is Frankfurt expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €70-100 per person per day and the "mid-range" level at about €170-250, sharing a room. Flights are extra: this page shows real fares checked by Happy Low Cost.

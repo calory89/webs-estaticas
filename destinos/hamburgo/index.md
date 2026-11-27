@@ -113,7 +113,7 @@ El transporte público (HVV) incluye metro, S-Bahn, autobús y los ferris urbano
 
 Alemania es más barata que los países nórdicos, pero Hamburgo no es una ciudad low cost por naturaleza: los precios de alojamiento suben con las ferias y los conciertos.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Hamburgo
 
 ### ¿Hamburgo es cara?
 
@@ -150,6 +150,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Rathaus, Jungfernstie
 ### ¿Qué hacer en Hamburgo en 3 días?
 
 Con tres días en Hamburgo, esta es la ruta de la guía: Día 1, Rathaus, Jungfernstieg, Speicherstadt y HafenCity, Elbphilharmonie al atardecer; Día 2, Landungsbrücken, Alter Elbtunnel, ferri 62, Michel y noche por St; Día 3, Planten un Blomen, Schanzenviertel y Karoviertel, o excursión a Blankenese. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Hamburgo?
+
+Algunas calles junto a la estación son algo duras de noche, así que elige bien la zona. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: CAB20 (St. Georg, nota 8,5, desde 56 € la noche); mejor calidad-precio: Superbude Hamburg St Pauli (Altona, nota 8,8, desde 91 € la noche); lujo: Fairmont Hotel Vier Jahreszeiten (Hamburg City Center (New Town), nota 9,5, desde 531 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Hamburgo?
+
+El plato que define la ciudad es el Fischbrötchen, un bocadillo de pescado (arenque, caballa, salmón o gambas) con cebolla y salsa.
+
+### ¿Cómo llegar del aeropuerto al centro de Hamburgo?
+
+El aeropuerto de Hamburgo (Fuhlsbüttel) está bien conectado: la línea S1 de S-Bahn te lleva a la estación central (Hauptbahnhof) en unos 25 minutos por un par de euros.
+
+### ¿Cómo moverse por Hamburgo?
+
+Desde la estación puedes ir a pie o en metro al resto de barrios.
+
+### ¿Qué lugares imprescindibles ver en Hamburgo?
+
+Según esta guía: Speicherstadt y HafenCity; Elbphilharmonie; Landungsbrücken y el puerto; Alter Elbtunnel; Miniatur Wunderland; Rathaus y Jungfernstieg; St. Pauli y la Reeperbahn; St. Michaelis (el Michel). En la sección "Qué ver" tienes cada uno explicado.
 
 ### ¿Es caro viajar a Hamburgo?
 

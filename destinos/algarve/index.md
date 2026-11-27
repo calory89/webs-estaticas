@@ -251,6 +251,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Faro y traslado a Lag
 
 Con seis días en Algarve, esta es la ruta de la guía: Día 1, Faro y traslado a Lagos; Día 2, Lagos desde el agua y Sagres; Día 3, Benagil y los Siete Valles; Día 4, Tavira y su isla; Día 5, Ria Formosa y Olhão; Día 6, Cacela Velha y Praia do Barril. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Algarve?
+
+La mejor época es de mayo a junio y septiembre a principios de octubre: entre 24 y 28 grados, mar ya decente, precios razonables y playas con sitio.
+
+### ¿Cómo llegar del aeropuerto al centro de Algarve?
+
+El aeropuerto de Faro está a 7 km de la ciudad.
+
+### ¿Qué lugares imprescindibles ver en Algarve?
+
+Según esta guía: Ponta da Piedade (Lagos); Cueva de Benagil; Percurso dos Sete Vales Suspensos; Praia da Marinha; Lagos, el casco antiguo; Sagres y el Cabo de São Vicente; Tavira; Ilha de Tavira y Praia do Barril. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Algarve: https://www.happylowcost.com/destinos/algarve/#chollos

@@ -249,6 +249,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, playa y kasba
 
 Con tres días en Agadir, esta es la ruta de la guía: Día 1, Centro, playa y kasbah; Día 2, Zoco, puerto y Medina Polizzi; Día 3, Taghazout y la costa norte. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Agadir?
+
+La mejor época, en nuestra opinión, es de octubre a mayo, con buen tiempo y precios razonables.
+
+### ¿Dónde alojarse en Agadir?
+
+Bahía central y Boulevard du 20 Août: la zona de hoteles de playa, todo a mano.
+
+### ¿Cómo llegar del aeropuerto al centro de Agadir?
+
+El aeropuerto Al Massira está a unos 25 km al sureste del centro.
+
+### ¿Qué lugares imprescindibles ver en Agadir?
+
+Según esta guía: Kasbah de Agadir Oufella; Teleférico de Agadir Oufella; Playa de Agadir y el paseo marítimo; Souk El Had; Puerto pesquero y sus parrillas; Marina de Agadir; Medina de Agadir (Medina Polizzi); Museo del Patrimonio Amazigh. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Agadir: https://www.happylowcost.com/destinos/agadir/#chollos

@@ -265,6 +265,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Universal (Islands of
 
 Con cinco días en Orlando, esta es la ruta de la guía: Día 1, Universal (Islands of Adventure y Universal Studios); Día 2, Magic Kingdom; Día 3, Winter Park, Leu Gardens y centro; Día 4, EPCOT o Hollywood Studios; Día 5, Kennedy Space Center y Cocoa Beach. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Orlando?
+
+La mejor época es de finales de enero a principios de marzo y de mediados de octubre a mediados de noviembre: temperaturas de 20-28 grados, poca lluvia y colas razonables.
+
+### ¿Cómo llegar del aeropuerto al centro de Orlando?
+
+El aeropuerto de Orlando (MCO) está a unos 20 minutos de I-Drive y 25-30 de Disney.
+
+### ¿Cómo moverse por Orlando?
+
+Si conduces, las autopistas de peaje (SR 417, 528) funcionan casi sin cabinas: pregunta en la empresa de alquiler por su sistema de peajes y lo que cobran por él, o te llevarás sorpresas en la tarjeta.
+
+### ¿Qué lugares imprescindibles ver en Orlando?
+
+Según esta guía: Magic Kingdom (Walt Disney World); EPCOT; Disney's Hollywood Studios; Disney's Animal Kingdom; Universal Studios Florida; Universal Islands of Adventure; Epic Universe; Kennedy Space Center. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Orlando: https://www.happylowcost.com/destinos/orlando/#chollos

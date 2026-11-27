@@ -98,7 +98,7 @@ Para ir a Luxor o Asuán hay trenes de día y nocturnos con litera, y para Aleja
 
 Las entradas a los grandes monumentos son lo que más pesa en el presupuesto, y las tarifas para extranjeros suben cada poco. Lleva efectivo en libras egipcias para propinas pequeñas, que se esperan casi en todas partes.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre El Cairo
 
 ### ¿Es seguro viajar a El Cairo?
 
@@ -143,6 +143,26 @@ Con cuatro días en El Cairo, esta es la ruta de la guía: Día 1, Pirámides de
 ### ¿Qué ver en Egipto en 4 días?
 
 Con cuatro días en Egipto, esta guía propone quedarse en El Cairo y seguir su ruta: Día 1, Pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde; Día 2, Cairo Islámico. Ciudadela por la mañana, Ibn Tulun; Día 3, Museo de Tahrir por la mañana, comida en Downtown y paseo en faluca al caer el día; Día 4, Excursión a Saqqara y Dahshur, o Cairo Copto y Museo de la Civilización Egipcia.
+
+### ¿Cuál es la mejor época para viajar a El Cairo?
+
+De octubre a abril es la mejor época: días agradables y noches frescas, sobre todo entre diciembre y febrero, cuando conviene llevar una chaqueta.
+
+### ¿Dónde alojarse en El Cairo?
+
+Downtown (Wust el-Balad): el centro de siempre, con edificios decadentes y mucho ruido. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Locanda Pyramids Hotel (Giza, nota 8,3, desde 20 € la noche); mejor calidad-precio: Royal Hotel (Downtown Cairo, nota 9,1, desde 44 € la noche); lujo: Flower Pyramids Inn (Giza, nota 8,8, desde 49 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en El Cairo?
+
+El plato nacional es el koshari: arroz, lentejas, pasta, garbanzos, salsa de tomate y cebolla frita.
+
+### ¿Cómo llegar del aeropuerto al centro de El Cairo?
+
+El Aeropuerto Internacional de El Cairo está al noreste, cerca de Heliopolis.
+
+### ¿Cómo moverse por El Cairo?
+
+El metro tiene tres líneas, es rápido y muy económico, y los dos primeros vagones están reservados a mujeres, aunque ellas pueden usar cualquiera.
 
 ## Vuelos y chollos
 

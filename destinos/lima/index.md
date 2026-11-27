@@ -101,7 +101,7 @@ Los españoles suelen poder entrar como turistas sin visado, pero confirma siemp
 
 Machu Picchu, el tren y los vuelos internos se llevan buena parte del gasto total, así que conviene reservarlos con tiempo. Lleva soles en efectivo para mercados y taxis, y recuerda que el pago con tarjeta es habitual en ciudades pero no tanto en pueblos.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Perú
 
 ### ¿Cuánto cuesta entrar a Machu Picchu?
 
@@ -130,6 +130,26 @@ Con 14 días ves lo esencial de Perú sin prisas. La ruta de esta guía está or
 ### ¿Merece la pena visitar Perú?
 
 Para quien escribió esta guía, sí: Perú es de esos países donde cada tres días cambias de planeta. Con 14 días ves lo esencial.
+
+### ¿Cuál es la mejor época para viajar a Perú?
+
+En la sierra (Cusco, Machu Picchu, Titicaca) la mejor época es de mayo a septiembre: días soleados, noches frías y cielos limpios.
+
+### ¿Dónde alojarse en Perú?
+
+Dormir en el centro histórico es barato, pero la zona tiene menos vida por la noche. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Killaqente (Urbanizacion Tawantinsuyo Jiron Atahuallpa 454, nota 8,9, desde 25 € la noche); mejor calidad-precio: Hotel Rumi Punku (Cusco City Centre, nota 9,3, desde 99 € la noche); lujo: Monasterio, A Belmond Hotel, Cusco (Cusco City Centre, nota 9,8, desde 516 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Perú?
+
+El lomo saltado es el plato de diario, con la mezcla de chifa y criollo que define la cocina peruana.
+
+### ¿Cómo llegar del aeropuerto al centro de Perú?
+
+El aeropuerto de Lima es el Jorge Chávez, en el Callao.
+
+### ¿Cómo moverse por Perú?
+
+A Machu Picchu se llega en tren desde Ollantaytambo o Cusco (PeruRail o Inca Rail) hasta Aguas Calientes, y de ahí en bus o a pie hasta la ciudadela.
 
 ## Vuelos y chollos
 

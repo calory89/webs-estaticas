@@ -236,6 +236,22 @@ Hoy el chollo más barato que tenemos a Luxemburgo cuesta 94 € ida y vuelta de
 
 Con dos días en Luxemburgo, esta es la ruta de la guía: Día 1, Ville Haute, Corniche y Grund; Día 2, Kirchberg, Pfaffenthal y Clausen. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Luxemburgo?
+
+La mejor época es de mayo a septiembre: días largos, terrazas abiertas y casamatas y visitas funcionando.
+
+### ¿Qué comer en Luxemburgo?
+
+Gromperekichelcher: tortitas de patata fritas, típicas de mercados y fiestas.
+
+### ¿Cómo llegar del aeropuerto al centro de Luxemburgo?
+
+El aeropuerto de Luxemburgo-Findel está a unos 6 km del centro y llegar es gratis en transporte público.
+
+### ¿Qué lugares imprescindibles ver en Luxemburgo?
+
+Según esta guía: Chemin de la Corniche; Casamatas del Bock; Grund; Palacio Gran Ducal; Catedral de Notre-Dame; Place de la Constitution y la Gëlle Fra; Pont Adolphe y valle de la Pétrusse; Ascensor panorámico de Pfaffenthal. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Luxemburgo: https://www.happylowcost.com/destinos/luxemburgo/#chollos

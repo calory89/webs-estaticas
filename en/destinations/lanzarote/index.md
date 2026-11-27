@@ -238,6 +238,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Timanfaya and the w
 
 With five days in Lanzarote, this is the guide's route: Day 1, Timanfaya and the west coast; Day 2, La Geria and the centre; Day 3, The north; Day 4, La Graciosa; Day 5, Papagayo and Teguise. The table above has the full plan for each day.
 
+### Where to stay in Lanzarote?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Checkin Diamar (Avenida Fred Olsen, 8, score 8.1, from €94 a night); best value: Hotel Lancelot (Avenida Mancomunidad, 9, score 8.8, from €126 a night); luxury: Arrecife Gran Hotel & Spa (Parque Islas Canarias, s/n, score 8.6, from €209 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Lanzarote?
+
+César Manrique-Lanzarote Airport (ACE) sits between Arrecife and Puerto del Carmen, which is handy for the whole island.
+
+### How do you get around Lanzarote?
+
+If you rely on buses, a rechargeable bono card makes each ride cheaper than paying cash.
+
+### What are the must-see places in Lanzarote?
+
+According to this guide: Timanfaya National Park (Montañas del Fuego); Ruta de Tremesana (guided walk in Timanfaya); Jameos del Agua; Cueva de los Verdes; Mirador del Río; Fundación César Manrique (Taro de Tahíche); Casa Museo César Manrique, Haría; Jardín de Cactus. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Lanzarote: https://www.happylowcost.com/en/destinations/lanzarote/#deals

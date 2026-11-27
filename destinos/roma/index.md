@@ -130,6 +130,14 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Coliseo, Foro y Palat
 
 Con cuatro días en Roma, esta es la ruta de la guía: Día 1, Coliseo, Foro y Palatino por la mañana. Comida en Monti; Día 2, Vaticano completo a primera hora. Comida rápida por Prati; Día 3, Galería Borghese, Villa Borghese, Pincio y Plaza de España; Día 4, Ghetto, Aventino, Testaccio y, si tienes ganas, la Via Appia Antica. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Roma?
+
+Centro storico (Navona, Panteón): lo más cómodo para andar a todas partes, pero también lo más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Elide (Repubblica, nota 8,1, desde 40 € la noche); mejor calidad-precio: Hotel Emona Aquaeductus (Esquilino, nota 9, desde 120 € la noche); lujo: Harry's Bar Trevi Hotel & Restaurant (Trevi, nota 9,3, desde 506 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Roma?
+
+La metro tiene pocas líneas (A, B y C) y no llega a todos los sitios, así que combínala con el autobús.
+
 ### ¿Es caro viajar a Roma?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

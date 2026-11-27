@@ -88,7 +88,7 @@ Dentro de la ciudad, paga con tarjeta contactless o con el móvil en el metro y 
 
 - **Cómodo:** 250 libras o más. Mejor hotel, teatro, cenas largas y más tiempo en atracciones de pago.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Londres
 
 ### ¿Son gratis los museos de Londres?
 
@@ -129,6 +129,10 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Westminster, St James
 ### ¿Qué hacer en Londres en 4 días?
 
 Con cuatro días en Londres, esta es la ruta de la guía: Día 1, Westminster, St James's Park, Trafalgar Square y National Gallery; Día 2, Tower of London, Tower Bridge, paseo por el sur hasta la Tate Modern y Borough Market; Día 3, British Museum por la mañana, Covent Garden y tarde en Camden o Regent's Canal; Día 4, Greenwich o Notting Hill, según el día que haga, y Sky Garden al final. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Londres?
+
+La zona 2 con buena conexión de metro es una apuesta más sensata. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: The Z Hotel Leicester Square (Westminster, nota 8,5, desde 248 € la noche); mejor calidad-precio: Page8, Page Hotels (Westminster, nota 9,2, desde 447 € la noche); lujo: Haymarket Hotel, Firmdale Hotels (Westminster, nota 9,6, desde 779 € la noche). El precio por noche es orientativo y cambia con las fechas.
 
 ## Vuelos y chollos
 

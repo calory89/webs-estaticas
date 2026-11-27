@@ -96,7 +96,7 @@ Para moverte entre el centro y las playas, los autobuses urbanos R1 y R2 recorre
 
 Las entradas a Chichén Itzá y Tulum, los parques y los ferris son lo que más sube el presupuesto, así que organízalos con cabeza.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Cancún
 
 ### ¿Es seguro Cancún para turistas?
 
@@ -133,6 +133,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el
 ### ¿Qué hacer en Cancún en 4 días?
 
 Con cuatro días en Cancún, esta es la ruta de la guía: Día 1, Llegada, paseo por el centro, cena en el Parque de las Palapas; Día 2, Playa Delfines por la mañana, El Rey, y atardecer en la laguna; Día 3, Ferry a Isla Mujeres, Playa Norte y carrito de golf hasta Punta Sur; Día 4, Chichén Itzá con parada en un cenote, o Tulum y cenotes si prefieres mar. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Cancún?
+
+De noviembre a principios de abril es la mejor época: cielos despejados, calor llevadero (entre 25 y 30 grados) y poca humedad.
+
+### ¿Qué comer en Cancún?
+
+En la Zona Hotelera, lo normal es pagar el doble por el mismo plato, así que come en el centro.
+
+### ¿Cómo llegar del aeropuerto al centro de Cancún?
+
+El Aeropuerto Internacional de Cancún (CUN) está a unos 20 minutos del centro.
 
 ### ¿Es caro viajar a Cancún?
 

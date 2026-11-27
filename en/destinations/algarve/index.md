@@ -259,6 +259,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Lagos and Ponta da 
 
 With six days in The Algarve, this is the guide's route: Day 1, Lagos and Ponta da Piedade; Day 2, Sagres and the wild west; Day 3, Caves and cliffs; Day 4, Silves and Monchique, then east; Day 5, Tavira and its islands; Day 6, Olhão, Ria Formosa and Faro. The table above has the full plan for each day.
 
+### Where to stay in The Algarve?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel 3K Faro Aeroporto (Caixa postal 409-A Estrada nacional 125-10 Montenegro, score 8.3, from €69 a night); best value: Roots Hotel (Faro City Centre, score 9.1, from €97 a night); luxury: 3HB Faro (Faro City Centre, score 9.5, from €233 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in The Algarve?
+
+Lunch is cheapest: a prato do dia (dish of the day) with drink and coffee runs €10-14 in local cafés.
+
+### How do you get from the airport to central The Algarve?
+
+Faro Airport is the gateway, 6 km from Faro town.
+
+### What are the must-see places in The Algarve?
+
+According to this guide: Ponta da Piedade, Lagos; Benagil Cave (Algar de Benagil); Praia da Marinha; Lagos old town; Sagres and Cabo de São Vicente; Tavira; Ilha de Tavira and Praia do Barril; Ria Formosa lagoon. Each one is explained in the "What to see" section.
+
 ### Is The Algarve expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-80/day per person per day and the "mid-range" level at about €130-200/day, sharing. Flights are extra: this page shows real fares checked by Happy Low Cost.

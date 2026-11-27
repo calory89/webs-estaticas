@@ -114,7 +114,7 @@ Between islands, SATA Air Açores flies small planes on short hops, and Atlânti
 
 Whale watching usually costs somewhere around 50-70 euros. Thermal pools cost a few euros to roughly the price of a nice lunch, depending on the venue. Prices rise in July and August.
 
-## FAQ
+## FAQ about The Azores
 
 ### How many islands should I visit on a first trip?
 
@@ -147,6 +147,22 @@ For the traveller who wrote this guide, yes: Nine volcanic islands sit in the mi
 ### What to do in The Azores in 7 days?
 
 With seven days in The Azores, this is the guide's route: Days 1-4, São Miguel. Day one in Ponta Delgada, day two at Sete Cidades and the west; Days 5-7, Fly to Faial or Pico. Whale watching and the Capelinhos drive on Faial. The table above has the full plan for each day.
+
+### Where to stay in The Azores?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: MS Vila Nova (Rua João Francisco Cabral 1 / 3, score 8.6, from €58 a night); best value: Hotel Gaivota Azores (The Top-rated Area in Ponta Delgada, score 9, from €94 a night); luxury: Grand Hotel Açores Atlântico (The Top-rated Area in Ponta Delgada, score 9.1, from €123 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in The Azores?
+
+The signature dish is cozido das Furnas, a stew of meat and vegetables slow-cooked for hours in the hot volcanic ground at Furnas.
+
+### How do you get from the airport to central The Azores?
+
+Ponta Delgada's João Paulo II airport is only a few kilometres from the centre.
+
+### What are the must-see places in The Azores?
+
+According to this guide: Sete Cidades, São Miguel; Lagoa do Fogo, São Miguel; Furnas valley, São Miguel; Nordeste coast, São Miguel; Angra do Heroísmo, Terceira; Mount Pico, Pico; Horta and Capelinhos, Faial; Flores. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

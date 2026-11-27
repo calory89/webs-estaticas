@@ -91,7 +91,7 @@ The centre is easy on foot. For anything further, buy a **Leap Card** for buses,
 
 A pint typically costs somewhere between €6 and €8, more in Temple Bar. Many top museums are free, which helps.
 
-## FAQ
+## FAQ about Dublin
 
 ### Is three days enough for Dublin?
 
@@ -132,6 +132,26 @@ With three days in Dublin, this is the guide's route: Day 1, Trinity College at 
 ### What to see in Ireland in 3 days?
 
 With three days in Ireland, this guide suggests staying in Dublin and following its route: Day 1, Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum; Day 2, Kilmainham Gaol in the morning, Guinness Storehouse after lunch; Day 3, DART to Howth or Dalkey, a long walk and lunch by the water.
+
+### When is the best time to visit Dublin?
+
+Winter is dark and damp but cheap, and pubs feel their best then.
+
+### Where to stay in Dublin?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Dublin One (Dublin City Centre, score 8.2, from €97 a night); best value: Holiday Inn Express Dublin City Centre by IHG (Parnell Square, score 8.9, from €118 a night); luxury: The Fitzwilliam Hotel (Saint Stephen's Green, score 9.1, from €429 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Dublin?
+
+Try boxty, a potato pancake, at Gallagher's Boxty House in Temple Bar.
+
+### How do you get from the airport to central Dublin?
+
+Dublin Airport is about 10 km north of the centre.
+
+### How do you get around Dublin?
+
+For anything further, buy a Leap Card for buses, the Luas tram and the DART coastal train.
 
 ## Flights and deals
 

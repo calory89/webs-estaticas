@@ -221,6 +221,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, mercado y bah
 
 Con tres días en Seattle, esta es la ruta de la guía: Día 1, Centro, mercado y bahía; Día 2, Seattle Center y Queen Anne; Día 3, Barrios del norte. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Seattle?
+
+Downtown (centro): lo más práctico, cerca de Pike Place y del tren al aeropuerto. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Coast Seattle Downtown Hotel by APA (Seattle Central Business District, nota 8,2, desde 106 € la noche); mejor calidad-precio: Ändra Hotel Seattle - MGallery Collection (Belltown, nota 9,1, desde 185 € la noche); lujo: Grand Hyatt Seattle (Seattle Central Business District, nota 8,9, desde 269 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Seattle?
+
+Sale de un aparcamiento conectado a la terminal, se llega andando en 5-10 minutos.
+
+### ¿Qué lugares imprescindibles ver en Seattle?
+
+Según esta guía: Pike Place Market; Kerry Park; Space Needle; Chihuly Garden and Glass; Museum of Pop Culture (MoPOP); Olympic Sculpture Park; Hiram M. Chittenden Locks (Ballard Locks); Pioneer Square y la Underground Tour. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Seattle: https://www.happylowcost.com/destinos/seattle/#chollos

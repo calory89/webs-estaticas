@@ -96,7 +96,7 @@ Para moverte por la isla tienes tres opciones. La moto, con carnet internacional
 
 El vuelo es el mayor gasto y suele rondar los 700-1.100 € ida y vuelta según la fecha. Lleva efectivo en rupias para los warungs y los pequeños pagos, y saca dinero en cajeros de bancos, no en los independientes de la calle.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Bali
 
 ### ¿Es seguro viajar a Bali?
 
@@ -129,6 +129,18 @@ Para quien escribió esta guía, sí: Bali es una isla pequeña, de unos 150 kil
 ### ¿Qué hacer en Bali en 10 días?
 
 Con diez días en Bali, esta es la ruta de la guía: Días 1-4, Ubud; Día 5, Traslado hacia Sanur y barco a Nusa Penida; Días 6-7, Nusa Penida; Días 8-10, Uluwatu o Canggu. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Bali?
+
+Es la zona con más ambiente joven, pero con tráfico denso. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Bali True Living (Imam Bonjol, nota 8,4, desde 24 € la noche); mejor calidad-precio: Aralea Coliving (Jln. Marlboro XXI, Pemecutan Kelod, Denpasar, Bali 80119, nota 8,6, desde 31 € la noche); lujo: b Hotel Bali & Spa (Imam Bonjol, nota 8,5, desde 32 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bali?
+
+Pide nasi campur, un plato de arroz con pequeñas porciones de carne, verdura y sambal, para probar varias cosas a la vez.
+
+### ¿Cómo llegar del aeropuerto al centro de Bali?
+
+El aeropuerto internacional es Ngurah Rai (DPS), cerca de Kuta y al sur de la isla.
 
 ## Vuelos y chollos
 

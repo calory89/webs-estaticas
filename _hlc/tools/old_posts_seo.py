@@ -25,13 +25,13 @@ RETITLE = {
     'que-comer-en-lisboa-11-cosas-que-debes-probar': 'Comida típica de Lisboa: 11 platos que debes probar',  # "comida tipica de lisboa" pos. 17,5
     'visitar-vitoria-un-dia': 'Qué hacer en Vitoria-Gasteiz en un día: ruta por la ciudad',  # "cosas que hacer en vitoria gasteiz" pos. 20,9
     'las-ciudades-mas-bonitas-de-dinamarca': 'Las ciudades más bonitas de Dinamarca para visitar',  # "ciudades mas bonitas de dinamarca" pos. 6,9
-    '100-cosas-que-ver-y-hacer-en-barcelona': 'Qué ver y hacer en Barcelona: 100 cosas imprescindibles',  # "que ver/hacer en barcelona" 254 impr. pos. 29
+    '100-cosas-que-ver-y-hacer-en-barcelona': 'Qué ver, hacer y conocer en Barcelona: 100 cosas',  # ronda 10: "que conocer en barcelona" 14 impr. pos. 19,2  # "que ver/hacer en barcelona" 254 impr. pos. 29
     'islas-maldivas-el-lugar-perfecto-para-una-luna-de-miel': 'Luna de miel en Maldivas: el viaje de novios perfecto',  # "luna de miel maldivas" 197 impr.; "viaje de novios maldivas" 92
     'los-5-mejores-casinos-en-las-vegas': 'Los 5 mejores casinos de Las Vegas',  # "mejor casino de las vegas" pos. 24
     # Ronda 8 (GSC 30-oct a 26-nov, pos. 6-16, 0 clics): la consulta real en el título
     'donde-alojarse-vitoria': 'Dónde alojarse en Vitoria y alrededores: hoteles y rurales con encanto',  # "dormir cerca de vitoria con encanto" 32 impr. pos. 13; "alojamiento cerca de vitoria" 14 pos. 6
     'alojamiento-low-cost-en-copenhague': 'Hoteles baratos en Copenhague: alojamiento low cost',  # "hoteles baratos en copenhague" 14+3 impr. pos. 15-16
-    '5-mejores-heladerias-de-roma': 'Las 5 mejores heladerías de Roma',  # "heladeria roma" 11 impr. pos. 14,6
+    '5-mejores-heladerias-de-roma': 'Heladerías en Roma: las 5 mejores',  # ronda 10: "heladeria roma" 11 impr. pos. 14,6 (empieza por la consulta)  # "heladeria roma" 11 impr. pos. 14,6
     'maimonides-un-ilustre-cordobes': 'Maimónides en Córdoba: el ilustre cordobés',  # "maimonides cordoba" 15+7 impr. pos. 12; 233 impr. en total
     '12-planes-para-hacer-gratis-en-toronto': 'Qué visitar en Toronto gratis: 12 planes',  # "que visitar en toronto gratis" 10 impr. pos. 16,3
     'restaurantes-cafeterias-y-bares-en-malaga': 'Mejores restaurantes, cafeterías y bares en Málaga',  # "mejores restaurantes y cafeterías en málaga" 8 impr. pos. 9

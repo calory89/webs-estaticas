@@ -258,6 +258,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Avenida Paulista an
 
 With four days in Sao Paulo, this is the guide's route: Day 1, Avenida Paulista and Jardins; Day 2, Historic centre and Luz; Day 3, Ibirapuera, Vila Madalena and Pinheiros; Day 4, Liberdade and football. The table above has the full plan for each day.
 
+### Where to stay in Sao Paulo?
+
+Itaim Bibi and Vila Olímpia: polished business district with top restaurants. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Calstar (República, score 8.8, from €40 a night); best value: Sooz Hotel Collection (República, score 8.7, from €57 a night); luxury: Hotel Unique - A Legend Preferred Hotel (Jardim Paulista, score 9.3, from €817 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Sao Paulo?
+
+The metro is clean, efficient and the best way around.
+
+### What are the must-see places in Sao Paulo?
+
+According to this guide: MASP (Museu de Arte de São Paulo); Avenida Paulista; Ibirapuera Park; Pinacoteca de São Paulo; Mercado Municipal (Mercadão); Farol Santander; Historic centre: Sé, Pátio do Colégio and Theatro Municipal; Edifício Copan and Edifício Itália. Each one is explained in the "What to see" section.
+
 ### Is Sao Paulo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "comfort" level at about €250+. Flights are extra: this page shows real fares checked by Happy Low Cost.

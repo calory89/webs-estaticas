@@ -102,7 +102,7 @@ Dentro de cada isla se anda a pie. No hay prisa ni mucho que recorrer.
 
 Los vuelos son la partida más grande, y los traslados inter-isla son el gasto que más se subestima.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Maldivas
 
 ### ¿Se puede ir a Maldivas barato?
 
@@ -139,6 +139,18 @@ Si solo tienes un día, haz el día 1 de esta ruta: Llegada a Velana, noche en H
 ### ¿Qué hacer en Maldivas en 7 días?
 
 Con siete días en Maldivas, esta es la ruta de la guía: Día 1, Llegada a Velana, noche en Hulhumalé o traslado directo a la isla elegida; Días 2-3, Maafushi o una isla de Malé Sur, para aclimatarte y hacer el primer snorkel; Días 4-6, Dhigurah o Ukulhas, en Ari, para ver tiburón ballena o mantas, según la época; Día 7, Vuelta a Malé, paseo por mezquita y mercado, y vuelo. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Maldivas?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: UMET Seaview Hotel with Free Airport Pick up and Drop T&C Apply (Hithigas Magu H. Loajehi Aage, nota 8,2, desde 116 € la noche); mejor calidad-precio: Aina Residency Beachfront Hotel (Aina Residency, nota 9, desde 283 € la noche); lujo: Barceló Nasandhura Male (NPH Investment, PVT LTD,Hotel Apartment Project of Nasandhura Palace,4th Floor Office,Boduthakurufaanu Magu, nota 8, desde 326 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Maldivas?
+
+Un plato de arroz con pescado ronda los 6-10 €.
+
+### ¿Cómo llegar del aeropuerto al centro de Maldivas?
+
+El aeropuerto internacional de Velana está en la isla de Hulhulé, junto a Malé y unido a ella por un puente.
 
 ## Vuelos y chollos
 

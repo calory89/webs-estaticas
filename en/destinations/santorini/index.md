@@ -111,7 +111,7 @@ Fira is the bus hub, with routes to Oia, Perissa, Kamari and Akrotiri. Buses are
 
 Prices spike in July and August and drop noticeably in spring and autumn.
 
-## FAQs
+## FAQ about Santorini
 
 ### Is Santorini worth it with the crowds?
 
@@ -144,6 +144,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Fira in the morning
 ### What to do in Santorini in 3 days?
 
 With three days in Santorini, this is the guide's route: Day 1, Fira in the morning, Imerovigli in the afternoon, sunset from the Skaros path; Day 2, Akrotiri early, then Red Beach or Perissa; Day 3, Oia at sunrise, a volcano boat trip, and dinner at Ammoudi Bay. The table above has the full plan for each day.
+
+### When is the best time to visit Santorini?
+
+May, June, September and early October are the best months.
+
+### Where to stay in Santorini?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Caldera Premium Villas (Oia Caldera, score 8.8, from €136 a night); best value: Fanari Villas (Oia Caldera, score 9.3, from €312 a night); luxury: Aspaki by Art Maisons (Oia Caldera, score 9.8, from €679 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Santorini?
+
+Try white aubergine, caper leaves, and fresh cheese such as chlorotyri.
+
+### How do you get from the airport to central Santorini?
+
+Santorini airport (JTR) is on the east side, near Kamari.
+
+### What are the must-see places in Santorini?
+
+According to this guide: Oia; Fira; Imerovigli and Skaros Rock; Akrotiri archaeological site; Pyrgos and Megalochori; Red Beach and the black sand beaches; Ancient Thera. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

@@ -244,6 +244,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Urgull an
 
 With three days in San Sebastian, this is the guide's route: Day 1, Old Town, Urgull and your first pintxos; Day 2, The bay end to end; Day 3, The coast. The table above has the full plan for each day.
 
+### Where to stay in San Sebastian?
+
+Parte Vieja (Old Town): for first-timers who want to roll out of bed into pintxo bars. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Leonardo Boutique Hotel San Sebastián (Gros, score 8.8, from €71 a night); best value: Zenit Convento San Martin (San Sebastian City Center, score 9.1, from €123 a night); luxury: Hotel Maria Cristina, a Luxury Collection Hotel, San Sebastian (San Sebastian City Center, score 9.3, from €446 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in San Sebastian?
+
+Expect €3-5 for a standard one and €5-10 for a hot dish from the kitchen, with a glass of txakoli (the local sparkling-ish white) or a small beer (zurito) at about €2.50-4.
+
+### How do you get around San Sebastian?
+
+The centre, the Old Town, Gros and La Concha are all within 30 minutes of each other on foot.
+
+### What are the must-see places in San Sebastian?
+
+According to this guide: La Concha beach and promenade; Parte Vieja (Old Town); Monte Urgull; Monte Igueldo; Peine del Viento; San Telmo Museoa; Basilica of Santa María del Coro; Zurriola beach and Gros. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to San Sebastian: https://www.happylowcost.com/en/destinations/san-sebastian/#deals

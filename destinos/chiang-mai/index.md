@@ -242,6 +242,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo. Mañan
 
 Con cuatro días en Chiang Mai, esta es la ruta de la guía: Día 1, Casco antiguo; Día 2, Doi Suthep y Nimman; Día 3, Mercados, río y templo de plata; Día 4, Excursión. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Chiang Mai?
+
+La mejor época es de noviembre a febrero: seco, cielos limpios y noches frescas (en la montaña puede hacer frío de verdad).
+
+### ¿Dónde alojarse en Chiang Mai?
+
+Casco antiguo: para una primera visita, con templos a pie y guesthouses baratas. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: The Opium Chiang Mai (Chang Phueak, nota 8,6, desde 28 € la noche); mejor calidad-precio: POR Santitham (Si Phum, nota 8,8, desde 48 € la noche); lujo: Maladee Rendezvous Hotel Chiang Mai (Chang Khlan, nota 9,6, desde 311 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Chiang Mai?
+
+El plato que hay que comer es el khao soi: fideos de huevo en curry de coco, con pollo o ternera, coronados de fideos fritos y servidos con chalota, mostaza encurtida y lima.
+
+### ¿Cómo llegar del aeropuerto al centro de Chiang Mai?
+
+El aeropuerto de Chiang Mai (CNX) está a solo 4 km del casco antiguo.
+
+### ¿Cómo moverse por Chiang Mai?
+
+Para moverte por la ciudad: A pie: el casco antiguo se recorre andando sin problema.
+
+### ¿Qué lugares imprescindibles ver en Chiang Mai?
+
+Según esta guía: Wat Phra That Doi Suthep; Wat Chedi Luang; Wat Phra Singh; Wat Sri Suphan (el templo de plata); Wat Umong; Wat Suan Dok; Wat Lok Molee; Tha Phae Gate y el foso. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Chiang Mai: https://www.happylowcost.com/destinos/chiang-mai/#chollos

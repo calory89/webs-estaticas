@@ -251,6 +251,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Moorish Malaga and 
 
 With three days in Malaga, this is the guide's route: Day 1, Moorish Malaga and the old town; Day 2, Market, museums, port and beach; Day 3, Day trip. The table above has the full plan for each day.
 
+### Where to stay in Malaga?
+
+Centro Histórico (old town): Best for first-timers who want everything on foot. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hostal Vidamia (Malaga Centro, score 8.0, from €76 a night); best value: LD Convento Cister (Malaga Centro, score 9.2, from €139 a night); luxury: Vincci Selección Posada del Patio (Malaga Centro, score 9.2, from €283 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Malaga?
+
+The station is a short walk from Terminal 3.
+
+### What are the must-see places in Malaga?
+
+According to this guide: Alcazaba; Castillo de Gibralfaro; Roman Theatre; Malaga Cathedral; Picasso Museum; Picasso's Birthplace (Casa Natal); Mercado Central de Atarazanas; Calle Larios and the old town. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Malaga: https://www.happylowcost.com/en/destinations/malaga/#deals

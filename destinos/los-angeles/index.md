@@ -107,7 +107,7 @@ Para moverte por la ciudad, un coche de alquiler da mucha libertad y es casi imp
 
 Lo que más dispara el gasto es el alojamiento y el coche. Comer bien sale razonable si te alejas de las zonas turísticas.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Los Ángeles
 
 ### ¿Es necesario alquilar coche en Los Ángeles?
 
@@ -144,6 +144,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Santa Monica, Venice 
 ### ¿Qué hacer en Los Ángeles en 5 días?
 
 Con cinco días en Los Ángeles, esta es la ruta de la guía: Día 1, Santa Monica, Venice y atardecer en la playa; Día 2, Getty Center por la mañana y Malibu por la tarde; Día 3, Downtown, Grand Central Market, Broad, Little Tokyo y Olvera Street; Día 4, Hollywood, Griffith Park y el Observatorio al atardecer; Día 5, Echo Park, Silver Lake y compras o cena en Koreatown. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Los Ángeles?
+
+La elección del barrio condiciona el viaje más que el hotel. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Olyver Hotel (Koreatown, nota 8,5, desde 120 € la noche); mejor calidad-precio: citizenM Los Angeles Downtown (Downtown LA, nota 8,7, desde 126 € la noche); lujo: Shutters On The Beach (Santa Monica, nota 9,2, desde 838 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Los Ángeles?
+
+El aeropuerto es LAX, y desde España casi siempre se llega con una escala.
+
+### ¿Cómo moverse por Los Ángeles?
+
+Metro: un autobús lanzadera gratuito lleva a la estación LAX/Metro Transit Center, desde donde enlazas con las líneas de metro.
 
 ## Vuelos y chollos
 

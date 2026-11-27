@@ -228,6 +228,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y C
 
 Con tres días en Kuala Lumpur, esta es la ruta de la guía: Día 1, Centro histórico y Chinatown; Día 2, Batu Caves y la zona del lago; Día 3, KL moderno. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Kuala Lumpur?
+
+Bukit Bintang: la mejor zona para una primera visita, con monorraíl, MRT, centros comerciales y Jalan Alor a la puerta.
+
+### ¿Qué comer en Kuala Lumpur?
+
+Banana leaf rice: arroz servido en hoja de plátano con curris y verduras, típico de Brickfields.
+
+### ¿Cómo llegar del aeropuerto al centro de Kuala Lumpur?
+
+Desde el aeropuerto KLIA (terminales 1 y 2), la opción más rápida es el tren KLIA Ekspres: unos 30 minutos hasta KL Sentral por unos 11 € (55 RM).
+
+### ¿Cómo moverse por Kuala Lumpur?
+
+Compra una tarjeta Touch 'n Go recargable o paga con tarjeta bancaria sin contacto en los tornos de muchas líneas.
+
+### ¿Qué lugares imprescindibles ver en Kuala Lumpur?
+
+Según esta guía: Torres Petronas y el parque KLCC; Batu Caves; Plaza Merdeka y el edificio Sultan Abdul Samad; Masjid Jamek; Museo de Arte Islámico; Masjid Negara (Mezquita Nacional); Chinatown, Petaling Street y Kwai Chai Hong; Central Market (Pasar Seni). En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Kuala Lumpur?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

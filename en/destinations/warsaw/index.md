@@ -93,7 +93,7 @@ Inside the city, buy a ZTM ticket and use the metro (two lines), trams and buses
 
 Poland uses the złoty (PLN), not the euro. Museum tickets are usually a few euros, and several museums have a free day each week, so check before you go.
 
-## FAQs
+## FAQ about Warsaw
 
 ### Is Warsaw worth visiting?
 
@@ -126,6 +126,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town and the Ro
 ### What to do in Warsaw in 3 days?
 
 With three days in Warsaw, this is the guide's route: Day 1, Old Town and the Royal Route; Day 2, History and the centre; Day 3, Parks and Praga. The table above has the full plan for each day.
+
+### When is the best time to visit Warsaw?
+
+July and August are also the best months for the riverside and open-air concerts.
+
+### Where to stay in Warsaw?
+
+Śródmieście (city centre): the best base for a first visit. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Level Rooms (Sródmiescie, score 8.1, from €52 a night); best value: PURO Warszawa Centrum (Sródmiescie, score 9.4, from €115 a night); luxury: InterContinental Warszawa by IHG (Sródmiescie, score 9.1, from €157 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Warsaw?
+
+For something cheaper, try a potato pancake (placki ziemniaczane) or a zapiekanka, an open baguette baked with mushrooms and cheese.
+
+### How do you get from the airport to central Warsaw?
+
+Chopin Airport (WAW) is only about 10 km from the centre.
+
+### How do you get around Warsaw?
+
+Inside the city, buy a ZTM ticket and use the metro (two lines), trams and buses on the same fare.
 
 ## Flights and deals
 

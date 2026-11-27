@@ -245,6 +245,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El puerto, Le Panier 
 
 Con tres días en Marsella, esta es la ruta de la guía: Día 1, El puerto, Le Panier y el MuCEM; Día 2, Notre-Dame, la Corniche y el atardecer; Día 3, Las calanques o las islas. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Marsella?
+
+Le Panier: para quien quiere un barrio con personalidad y no le importan las cuestas. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hôtel Hermès (Vieux Port - La Canebière, nota 8,1, desde 76 € la noche); mejor calidad-precio: Hôtel Amista Marseille (Vieux Port - La Canebière, nota 9, desde 126 € la noche); lujo: Hôtel C2 (Vieux Port - La Canebière, nota 8,8, desde 213 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Marsella?
+
+Lo que tienes que probar: Bouillabaisse: la sopa de pescado de roca que se sirve en dos tiempos, primero el caldo con pan tostado y rouille, después el pescado.
+
+### ¿Cómo moverse por Marsella?
+
+Dentro de la ciudad, la red RTM tiene dos líneas de metro, tranvía y muchos buses.
+
+### ¿Qué lugares imprescindibles ver en Marsella?
+
+Según esta guía: Vieux-Port; Notre-Dame de la Garde; Le Panier; La Vieille Charité; MuCEM y el Fuerte Saint-Jean; Catedral de La Major; Abadía de Saint-Victor; Vallon des Auffes. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Marsella: https://www.happylowcost.com/destinos/marsella/#chollos

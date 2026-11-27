@@ -95,7 +95,7 @@ Cruzar la calle exige método: mira, avanza a paso constante y no te detengas. L
 
 Una pizza suele costar entre 5 y 9 €, un café en barra poco más de 1 €, y la entrada a Pompeya ronda los 20 €. Son cifras de referencia que cambian según la temporada.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Nápoles
 
 ### ¿Es seguro Nápoles?
 
@@ -128,6 +128,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Ma
 ### ¿Qué hacer en Nápoles en 3 días?
 
 Con tres días en Nápoles, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Arqueología y mar; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Nápoles?
+
+Centro Storico: el mejor sitio para vivir la ciudad. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Nettuno (Naples Historical Centre, nota 8,1, desde 82 € la noche); mejor calidad-precio: Prêtáloger Verdi 18 (Plebiscito, nota 9,3, desde 142 € la noche); lujo: ROMEO Napoli (Port of Naples, nota 8,5, desde 639 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Nápoles?
+
+Otro plato de la casa es la pasta e patate con provola, contundente y reconfortante.
+
+### ¿Cómo llegar del aeropuerto al centro de Nápoles?
+
+El aeropuerto de Capodichino está bastante cerca del centro.
+
+### ¿Cómo moverse por Nápoles?
+
+En la ciudad, el centro se recorre mayoritariamente a pie, aunque con cuestas.
 
 ### ¿Es caro viajar a Nápoles?
 

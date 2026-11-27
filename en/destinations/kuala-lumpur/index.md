@@ -243,6 +243,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old KL and Chinatow
 
 With three days in Kuala Lumpur, this is the guide's route: Day 1, Old KL and Chinatown; Day 2, Batu Caves, Brickfields and the towers; Day 3, Malay KL or a day trip. The table above has the full plan for each day.
 
+### Where to stay in Kuala Lumpur?
+
+Chinatown: the cheapest and most atmospheric area, with hostels and boutique hotels in old shophouses.
+
+### How do you get from the airport to central Kuala Lumpur?
+
+Airport coach: about an hour to KL Sentral, depending on traffic.
+
+### How do you get around Kuala Lumpur?
+
+Book online or tap a contactless card for a small discount.
+
+### What are the must-see places in Kuala Lumpur?
+
+According to this guide: Petronas Twin Towers and KLCC Park; Batu Caves; Merdeka Square and the Sultan Abdul Samad Building; Masjid Jamek and the River of Life; Chinatown, Petaling Street and Kwai Chai Hong; Central Market (Pasar Seni); Islamic Arts Museum Malaysia; National Mosque (Masjid Negara). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Kuala Lumpur: https://www.happylowcost.com/en/destinations/kuala-lumpur/#deals

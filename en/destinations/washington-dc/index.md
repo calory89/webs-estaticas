@@ -244,6 +244,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Capitol Hill and th
 
 With three days in Washington DC, this is the guide's route: Day 1, Capitol Hill and the east end of the Mall; Day 2, Monuments and the big museums; Day 3, Arlington and Georgetown. The table above has the full plan for each day.
 
+### Where to stay in Washington DC?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: HighRoad Washington DC (Northwest, score 8.8, from €121 a night); best value: Arlo Washington DC (Northwest, score 9.1, from €216 a night); luxury: The Royal Sonesta Washington DC Capitol Hill (Northwest, score 9, from €354 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Washington DC?
+
+Blue or Yellow Line metro to downtown in 15-20 minutes for about €2-3 ($2-3).
+
+### What are the must-see places in Washington DC?
+
+According to this guide: The National Mall and the memorials; Washington Monument; US Capitol and the Library of Congress; National Museum of African American History and Culture; National Museum of Natural History; National Air and Space Museum; National Gallery of Art; United States Holocaust Memorial Museum. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Washington DC: https://www.happylowcost.com/en/destinations/washington-dc/#deals

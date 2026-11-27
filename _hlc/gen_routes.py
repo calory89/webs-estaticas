@@ -88,7 +88,8 @@ def body(c):
     s = ''.join(f'<h2>{e(x.get("h", ""))}</h2><p>{e(x.get("p", ""))}</p>' for x in c.get('sections', []))
     faq = c.get('faq', [])
     if faq:
-        s += '<h2>' + ('Preguntas frecuentes' if c is not None and c.get('_lang') == 'es' else 'FAQ') + '</h2>'
+        _rt = c.get('_route')  # ronda 10: "Preguntas frecuentes sobre el vuelo X-Y" (antes un H2 genérico igual en 6.000 páginas)
+        s += '<h2>' + ((f'Preguntas frecuentes sobre el vuelo {_rt[0]}-{_rt[1]}' if _rt else 'Preguntas frecuentes') if c is not None and c.get('_lang') == 'es' else (f'FAQ: {_rt[0]} to {_rt[1]} flights' if _rt else 'FAQ')) + '</h2>'
         s += ''.join(f'<h3>{e(q.get("q", ""))}</h3><p>{e(q.get("a", ""))}</p>' for q in faq)
     return s
 
@@ -182,10 +183,12 @@ def dest_airport(iata, dest, alts=()):
     return pa[2]
 
 
-def flight_ld(r, f, dest, url):
-    """Ronda 7 (#78): el vuelo de la ruta como schema Flight con su aerolínea (Airline) y aeropuertos IATA."""
-    x = {"@type": "Flight", "@id": url + '#flight', "name": f"{r['origin']} - {dest}",
-         "departureAirport": {"@type": "Airport", "iataCode": r.get('origin_iata'), "name": r['origin']},
+def flight_ld(r, f, dest, url, oname=None):
+    """Ronda 7 (#78): el vuelo de la ruta como schema Flight con su aerolínea (Airline) y aeropuertos IATA.
+    Ronda 10: en inglés, la ciudad de salida en inglés (antes "Bruselas - Buenos Aires" en /en/)."""
+    on = oname or r['origin']
+    x = {"@type": "Flight", "@id": url + '#flight', "name": f"{on} - {dest}",
+         "departureAirport": {"@type": "Airport", "iataCode": r.get('origin_iata'), "name": on},
          "arrivalAirport": {"@type": "Airport", "iataCode": r.get('dest_iata'), "name": dest}}
     if f.get('aerolinea'):
         x["provider"] = {"@type": "Airline", "name": f.get('aerolinea')}
@@ -198,6 +201,23 @@ def flight_ld(r, f, dest, url):
 def page(r, lang, others):
     en = lang == 'en'
     c = dict(r['content'][lang]); c['_lang'] = lang
+    # ronda 10: algunas fichas EN venían con la ciudad de salida en español ("Cheap flights Viena to London", "Estocolmo-Nassau", "Singapur-Copenhagen")
+    if en:
+        _oe = __import__('en_names').city_en(r['origin'])
+        _de = E.NAMES.get(r['dest_slug'], r['dest'])
+        _subs = [(a_, b_) for a_, b_ in ((r['origin'], _oe), (r['dest'], _de)) if b_ and a_ != b_ and a_.lower() not in b_.lower()]
+        if _subs:
+            _rx = re.compile(r'(?<![\w-])(' + '|'.join(re.escape(a_) for a_, _ in _subs) + r')(?![\w])')
+            _map = dict(_subs)
+            def _fix(v):
+                if isinstance(v, str):
+                    return _rx.sub(lambda m_: _map[m_.group(1)], v)
+                if isinstance(v, list):
+                    return [_fix(x) for x in v]
+                if isinstance(v, dict):
+                    return {k: _fix(x) for k, x in v.items()}
+                return v
+            c = {k: (_fix(v) if k != '_lang' else v) for k, v in c.items()}
     f = dict(r['facts'])
     # fechas de ejemplo ya pasadas: se mueven a las mismas fechas de la semana más adelante, para que los enlaces no abran un buscador vacío
     shifted = False
@@ -389,6 +409,13 @@ def page(r, lang, others):
             'q': (f'What is the cheapest month to fly from {o_name} to {dest}?' if en else f'¿Cuál es el mes más barato para volar de {r["origin"]} a {dest}?'),
             'a': (f'In our price calendar the cheapest month in the next six is {bm_txt}, with a return flight from {best_m[1]} €.' if en else
                   f'En nuestro calendario de precios, el mes más barato de los próximos seis es {bm_txt}, con vuelo de ida y vuelta desde {best_m[1]} €.')}]
+    # ronda 10: "hotels in buenos aires for a trip from brussels" (22 impr. pos. 9), "hotels in bogota for a trip from stockholm" (pos. 4,9):
+    # pregunta con los 3 hoteles de top3hotels.com (nota real de huéspedes y precio por noche) y título de la sección de hoteles con la ciudad de salida
+    _ll = G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]})
+    _hq = G.T3.hotel_faq(dest, *_ll, lang=lang, trip_from=o_name)
+    if _hq and not re.search(r'hotel|dormir|alojar', ' '.join(q.get('q', '') for q in c.get('faq', [])).lower()):
+        c['faq'] = list(c.get('faq', [])) + [{'q': _hq[0], 'a': _hq[1]}]
+    c['_route'] = (e(o_name), e(dest))
     chk_ = (f.get('consultado') or '')[:10]
     mt_ = f'<meta property="article:modified_time" content="{e(chk_)}">' if chk_ else ''
     # foto de cabecera: precarga (LCP) y versión de 800 px en móvil
@@ -401,13 +428,13 @@ def page(r, lang, others):
         mt_ += f'<link rel="preload" as="image" href="{hero}" fetchpriority="high">'
     mt_ += '<link rel="alternate" type="text/markdown" href="' + ('/en/flights/routes.md' if en else '/vuelos/rutas.md') + '" title="Markdown">'
     if en:
-        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs, chk_, 'en') + [G.guide_image_ld(ds, dest, 'en'), flight_ld(r, f, dest, url)], robots=rob, body_class='deal', extra_head=mt_, og_alt=f'Photo of {dest}')
+        h = E.head(c.get('title', ''), c.get('meta', ''), url, es_url, og_image=f'{SITE}{hero}', ld=ld(c, url, crumbs, chk_, 'en') + [G.guide_image_ld(ds, dest, 'en'), flight_ld(r, f, dest, url, o_name)], robots=rob, body_class='deal', extra_head=mt_, og_alt=f'Photo of {dest}')
         if not alt:
             h = re.sub(r'<link rel="alternate" hreflang="[^"]+" href="[^"]+">', '', h)
     else:
         h = G.head(title=e(c.get('title', '')), desc=e(c.get('meta', '')), canonical=url, og_image=f'{SITE}{hero}', og_type='article', robots=rob, og_alt=e(f'Foto de {dest}'),
                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + mt_ + alt + G.ld_script(ld(c, url, crumbs, chk_, 'es') + [G.guide_image_ld(ds, dest, 'es'), flight_ld(r, f, dest, url)]), body_class='deal')
-    rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
+    rel = ''.join(f'<a class="hub-l" href="{"/en/flights/" + en_slug(o) if en else "/vuelos/" + o["slug"]}/">{e(__import__('en_names').city_en(o["origin"]) if en else o["origin"])} → {e(E.NAMES.get(o["dest_slug"], o["dest"]) if en else o["dest"])} · {o["price_from"]} €</a>' for o in others[:12])
     L = (lambda es_, en_: en_ if en else es_)
     gpath = f"en/destinations/{G.en_dest_slug(ds)}" if en else f"destinos/{ds}"
     nd_g = GUIDE_DAYS.get(ds) or 0
@@ -431,11 +458,11 @@ def page(r, lang, others):
 <div class="deal-cta"><a class="price-tag" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_precio">{e(f.get("precio_desde_ida_y_vuelta_eur"))} € <small>{L("ida y vuelta", "return")}</small></a><span class="price-was">{L("Lo normal", "Typical price")}: {e(f.get("mediana_ida_y_vuelta_eur"))} €</span><a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos y fechas ✈️", "See flights and dates ✈️")}</a></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt"><h2 class="qa-h">{e(L(f"Vuelo {r_o} {dest}: precio de hoy", f"{o_name} to {dest} flight: today's price"))}</h2>{f'<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px"><b>{L("Respuesta rápida:", "Quick answer:")}</b> {e(quick)}</p>' if quick else ''}{hub_html}{lead_html}<p><strong>{e(c.get("intro", ""))}</strong></p>{body(c)}
+<article class="txt"><h2 class="qa-h">{e(L(f"Vuelo {r_o} {dest}: precio de hoy", f"{o_name} to {dest} flights: today's price"))}</h2>{f'<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px"><b>{L("Respuesta rápida:", "Quick answer:")}</b> {e(quick)}</p>' if quick else ''}{hub_html}{lead_html}<p><strong>{e(c.get("intro", ""))}</strong></p>{body(c)}
 <p class="credit">{L("Foto: Wikimedia Commons. Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com en la fecha indicada; pueden cambiar.", "Photo: Wikimedia Commons. Return economy fares for 1 adult, checked on Kiwi.com on the date shown; they can change.")}</p></article>
 <aside class="deal-card">
 <div class="facts">
-<div><small>{L("Desde", "From")}</small><b>{e(r["origin"])} (<abbr title="{L("Código IATA del aeropuerto de", "IATA airport code of")} {e(r["origin"])}">{e(r["origin_iata"])}</abbr>)</b></div><div><small>{L("Hasta", "To")}</small><b>{e(dest)} (<abbr title="{L("Código IATA del aeropuerto de", "IATA airport code of")} {e(dest)}">{e(r["dest_iata"])}</abbr>)</b></div>
+<div><small>{L("Desde", "From")}</small><b>{e(o_name)} (<abbr title="{L("Código IATA del aeropuerto de", "IATA airport code of")} {e(o_name)}">{e(r["origin_iata"])}</abbr>)</b></div><div><small>{L("Hasta", "To")}</small><b>{e(dest)} (<abbr title="{L("Código IATA del aeropuerto de", "IATA airport code of")} {e(dest)}">{e(r["dest_iata"])}</abbr>)</b></div>
 <div><small>{L("Precio desde", "Price from")}</small><b>{e(f.get("precio_desde_ida_y_vuelta_eur"))} €</b></div><div><small>{L("Lo normal", "Typical")}</small><b>{e(f.get("mediana_ida_y_vuelta_eur"))} €</b></div>
 <div><small>{L("Aerolínea", "Airline")}</small><b>{e(f.get("aerolinea") or L("Varias", "Several"))}</b></div><div><small>{L("Escalas", "Stops")}</small><b>{e(stops_t)}</b></div>
 </div>
@@ -451,8 +478,8 @@ def page(r, lang, others):
 {"" if shifted else f'<div style="font:13px/1.5 Inter,sans-serif;color:#4A5468">{L("Ejemplo de fechas encontradas", "Example dates found")}: {e(fdate(when, en))}</div>'}
 </aside>
 </div>
-<section class="sec rcal" id="calendario" data-route-cal data-slug="{e(slug)}" data-o="{e(r["origin_iata"])}" data-d="{e(r["dest_iata"])}"><div class="sec-h"><div><div class="kicker">{L("Calendario de precios", "Price calendar")}</div><h2>{L("El mes más barato para volar de", "The cheapest month to fly from")} {e(r["origin"])} {L("a", "to")} {e(dest)}</h2><p>{L("Vuelo de ida y vuelta más barato que encontramos en cada mes, consultado en Kiwi.com (se actualiza cada 3 días). Toca un mes para ver esas fechas.", "Cheapest return flight we found in each month, checked on Kiwi.com (refreshed every 3 days). Tap a month to see those dates.")}</p>{f'<p><strong>{e(L(f"Según nuestros datos, el mes más barato para volar de {r_o} a {dest} es {bm_txt}, con {best_m[1]} € ida y vuelta.", f"According to our data, the cheapest month to fly from {o_name} to {dest} is {bm_txt}, at {best_m[1]} € return."))}</strong></p>' if bm_txt else ''}</div></div><div class="rcal-bars" data-rcal-bars><div class="dc-empty"><b>{L("Consultando precios…", "Checking prices…")}</b></div></div><div data-rcal-hist></div></section>
-{G.T3.block(dest, *G.dest_ll({"destino": r["dest"], "destino_iata": r["dest_iata"]}), lang="en" if en else "es", checkin=f.get("ejemplo_ida"), checkout=f.get("ejemplo_vuelta"))}
+<section class="sec rcal" id="calendario" data-route-cal data-slug="{e(slug)}" data-o="{e(r["origin_iata"])}" data-d="{e(r["dest_iata"])}"><div class="sec-h"><div><div class="kicker">{L("Calendario de precios", "Price calendar")}</div><h2>{e(L(f"Vuelos de {r_o} a {dest}: el mes más barato", f"Flights from {o_name} to {dest}: the cheapest month"))}</h2><p>{L("Vuelo de ida y vuelta más barato que encontramos en cada mes, consultado en Kiwi.com (se actualiza cada 3 días). Toca un mes para ver esas fechas.", "Cheapest return flight we found in each month, checked on Kiwi.com (refreshed every 3 days). Tap a month to see those dates.")}</p>{f'<p><strong>{e(L(f"Según nuestros datos, el mes más barato para volar de {r_o} a {dest} es {bm_txt}, con {best_m[1]} € ida y vuelta.", f"According to our data, the cheapest month to fly from {o_name} to {dest} is {bm_txt}, at {best_m[1]} € return."))}</strong></p>' if bm_txt else ''}</div></div><div class="rcal-bars" data-rcal-bars><div class="dc-empty"><b>{L("Consultando precios…", "Checking prices…")}</b></div></div><div data-rcal-hist></div></section>
+{G.T3.block(dest, *_ll, lang="en" if en else "es", checkin=f.get("ejemplo_ida"), checkout=f.get("ejemplo_vuelta"), trip_from=o_name)}
 {(lambda rl: f'<section class="hub"><h2>{L("Seguir buscando", "Keep looking")}</h2><div class="hub-g">' + ''.join(f'<a class="hub-l" href="{u_}">{e(t_)}</a>' for u_, t_ in rl) + '</div></section>' if rl else '')(route_links(r, en))}
 {oc_html}
 {f'<section class="hub"><h2>{L("Más rutas baratas", "More cheap routes")}</h2><div class="hub-g">{rel}</div></section>' if rel else ''}

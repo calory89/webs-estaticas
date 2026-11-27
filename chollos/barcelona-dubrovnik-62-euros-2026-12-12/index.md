@@ -33,4 +33,8 @@ La tarifa más barata suele incluir solo un bolso pequeño bajo el asiento. Revi
 
 No se puede saber: tarifas así pueden desaparecer en horas. Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.
 
+### ¿Dónde dormir en Dubrovnik en un viaje desde Barcelona?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Splendid (Lapad, nota 8,2, desde 82 € la noche); mejor calidad-precio: Royal Neptun Hotel (Babin Kuk, nota 9,2, desde 122 € la noche); lujo: Hotel Sumratin (Lapad, nota 9,4, desde 182 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
 Los precios cambian cada hora: comprueba el precio en la página original antes de reservar.

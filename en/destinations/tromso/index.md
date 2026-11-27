@@ -229,6 +229,14 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The city on foot. M
 
 With three days in Tromso, this is the guide's route: Day 1, The city on foot; Day 2, The big excursion; Day 3, The south of the island and the spare night. The table above has the full plan for each day.
 
+### Where to stay in Tromso?
+
+Sentrum (centre around Storgata and the harbour): best for a first trip. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Moxy Tromso (Huldervegen 2, score 8.6, from €249 a night); best value: Clarion Hotel The Edge (Kaigata 6, score 8.6, from €387 a night); luxury: The Dock 69 39 by Scandic (Skansegata 7, score 9.1, from €373 a night). The nightly price is indicative and changes with the dates.
+
+### What are the must-see places in Tromso?
+
+According to this guide: Fjellheisen cable car and Storsteinen; The Sherpa Stairs; Arctic Cathedral (Ishavskatedralen); Tromso Bridge; Polaria; Polar Museum (Polarmuseet); The Arctic University Museum of Norway; Northern Norway Art Museum (Nordnorsk Kunstmuseum). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Tromso: https://www.happylowcost.com/en/destinations/tromso/#deals

@@ -90,7 +90,7 @@ Once in the city, use the Tube, buses and trains with a contactless card or phon
 
 Flights are often the cheapest part. The city itself is what drains the wallet, so plan your free museums and paid attractions around each other.
 
-## FAQs
+## FAQ about London
 
 ### Is London too expensive for a short trip?
 
@@ -135,6 +135,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Westminster and the
 ### What to do in London in 4 days?
 
 With four days in London, this is the guide's route: Day 1, Westminster and the South Bank; Day 2, The City and the east; Day 3, Bloomsbury, Soho and the West End; Day 4, Choose one. The table above has the full plan for each day.
+
+### Where to stay in London?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: The Z Hotel Leicester Square (Westminster, score 8.5, from €248 a night); best value: Page8, Page Hotels (Westminster, score 9.2, from €447 a night); luxury: Haymarket Hotel, Firmdale Hotels (Westminster, score 9.6, from €779 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in London?
+
+Try a curry on Brick Lane or in Southall, a bowl of ramen in Soho, or Turkish grills in Dalston and Green Lanes.
+
+### How do you get around London?
+
+Once in the city, use the Tube, buses and trains with a contactless card or phone.
 
 ## Flights and deals
 

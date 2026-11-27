@@ -79,7 +79,7 @@ A car is the real answer. Trains and ARST buses link main towns, but they are sl
 
 On a tight budget, expect about 60-80 euros a day with hostels, bakery lunches and buses. Mid-range travellers should plan 120-180 euros for a private room, restaurant meals and some activities. Comfortable trips run 250 euros or more. Add the car: roughly 30-100 euros a day depending on season, plus fuel and parking.
 
-## FAQs
+## FAQ about Sardinia
 
 ### Do I need a car in Sardinia?
 
@@ -108,6 +108,14 @@ Today the cheapest deal we have to Sardinia is €43 return from Barcelona. Fare
 ### Is Sardinia worth visiting?
 
 For the traveller who wrote this guide, yes: Sardinia never quite turned into a package-holiday cliché, even though its beaches could justify one. Budget: On a tight budget, expect about 60-80 euros a day with hostels, bakery lunches and buses.
+
+### When is the best time to visit Sardinia?
+
+Winter is mild, around 10-15°C, ideal for hiking and city stays, though many coastal hotels and restaurants close.
+
+### Where to stay in Sardinia?
+
+Alghero old town: walkable, good restaurants, easy for Capo Caccia.
 
 ## Flights and deals
 

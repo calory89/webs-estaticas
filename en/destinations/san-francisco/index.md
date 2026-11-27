@@ -113,7 +113,7 @@ Inside the city, Muni buses, metro lines and the historic F streetcar cover most
 
 Tipping is expected: around 18 to 20 percent in restaurants. Prices on menus often exclude tax and sometimes a surcharge.
 
-## Frequently asked questions
+## FAQ about San Francisco
 
 ### Is San Francisco safe for tourists?
 
@@ -148,6 +148,30 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Morning at the Ferr
 ### What to do in San Francisco in 3 days?
 
 With three days in San Francisco, this is the guide's route: Day 1, Morning at the Ferry Building, then Chinatown and North Beach on foot, Coit Tower; Day 2, Alcatraz first thing (book the earliest slot), then the Presidio and Golden Gate Bridge; Day 3, Golden Gate Park in the morning, Lands End in the afternoon. The table above has the full plan for each day.
+
+### When is the best time to visit San Francisco?
+
+September and October are the best months.
+
+### Where to stay in San Francisco?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Beresford Arms (Theater District, score 8, from €117 a night); best value: Orchard Hotel (Union Square, score 8.8, from €186 a night); luxury: Four Seasons Hotel San Francisco at Embarcadero (Financial District, score 9, from €981 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in San Francisco?
+
+The Mission burrito is the city's signature dish, big, foil-wrapped and stuffed with rice and beans.
+
+### How do you get from the airport to central San Francisco?
+
+Oakland Airport is also an option, linked by BART and often cheaper to fly into.
+
+### How do you get around San Francisco?
+
+Inside the city, Muni buses, metro lines and the historic F streetcar cover most routes.
+
+### What are the must-see places in San Francisco?
+
+According to this guide: Golden Gate Bridge and the Presidio; Alcatraz; Cable cars; Golden Gate Park; The Mission District; Chinatown and North Beach; The Painted Ladies and Alamo Square; Lands End and Sutro Baths. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

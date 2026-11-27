@@ -97,7 +97,7 @@ En la ciudad, lo mejor es ir andando. Para distancias largas, el tranvía y el m
 
 Para ahorrar, reserva las entradas online, come fuera de las calles más turísticas y usa el ferry gratuito.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Ámsterdam
 
 ### ¿Cuántos días hacen falta en Ámsterdam?
 
@@ -138,6 +138,22 @@ Con tres días en Ámsterdam, esta es la ruta de la guía: Día 1, Llegada, pase
 ### ¿Qué ver en Países Bajos en 3 días?
 
 Con tres días en Países Bajos, esta guía propone quedarse en Ámsterdam y seguir su ruta: Día 1, Llegada, paseo por el centro, Dam, Begijnhof y canales; Día 2, Rijksmuseum por la mañana, Museo Van Gogh después; Día 3, Casa de Ana Frank a primera hora, Negen Straatjes.
+
+### ¿Dónde alojarse en Ámsterdam?
+
+Centro y canales: lo más cómodo y lo más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Tourist Inn One Amsterdam (Amsterdam City Centre, nota 8,0, desde 127 € la noche); mejor calidad-precio: Tourist Inn Hotel Amsterdam (Amsterdam City Centre, nota 8,8, desde 176 € la noche); lujo: Hotel TwentySeven - Small Luxury Hotels of the World (Amsterdam City Centre, nota 9,4, desde 952 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Ámsterdam?
+
+La cocina neerlandesa no es sofisticada, pero hay cosas que merece la pena probar.
+
+### ¿Cómo llegar del aeropuerto al centro de Ámsterdam?
+
+Desde el aeropuerto de Schiphol, el tren a Amsterdam Centraal tarda unos 15-20 minutos y cuesta pocos euros.
+
+### ¿Cómo moverse por Ámsterdam?
+
+Para distancias largas, el tranvía y el metro de GVB funcionan bien, y puedes pagar con tarjeta bancaria sin contacto en la mayoría de validadores.
 
 ## Vuelos y chollos
 

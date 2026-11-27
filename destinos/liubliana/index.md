@@ -229,6 +229,26 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y castillo
 
 Con dos días en Liubliana, esta es la ruta de la guía: Día 1, Centro histórico y castillo; Día 2, Plečnik, Trnovo y Tivoli. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Liubliana?
+
+Centro histórico (Stari trg, Mestni trg): para quien quiere salir del hotel y estar en todo. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Holiday Inn Express - Ljubljana by IHG (Podmilscakova 51, nota 8,8, desde 78 € la noche); mejor calidad-precio: Atelier Hotel (Ljubljana City Centre, nota 8,9, desde 98 € la noche); lujo: Zlata Ladjica Boutique Hotel (Ljubljana City Centre, nota 9,7, desde 420 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Liubliana?
+
+Jota: sopa de judías, chucrut y patata, típica del interior.
+
+### ¿Cómo llegar del aeropuerto al centro de Liubliana?
+
+El aeropuerto Jože Pučnik está en Brnik, a unos 26 km.
+
+### ¿Cómo moverse por Liubliana?
+
+Los autobuses urbanos (LPP) se pagan con la tarjeta Urbana (unos 2 € la tarjeta, recargable); cada viaje cuesta unos 1,30 € y permite transbordos durante 90 minutos.
+
+### ¿Qué lugares imprescindibles ver en Liubliana?
+
+Según esta guía: Plaza Prešeren y el Triple Puente; Iglesia franciscana de la Anunciación; Castillo de Liubliana; Mercado central y los soportales de Plečnik; Puente de los Carniceros y Puente del Dragón; Catedral de San Nicolás; Stari trg y Gornji trg; Biblioteca Nacional y Universitaria (NUK). En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Liubliana?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 60-80 € por persona y día, y en el nivel "medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

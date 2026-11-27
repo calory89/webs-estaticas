@@ -109,7 +109,7 @@ Dentro de la ciudad, el centro se hace a pie. Para Kazimierz, Podgórze o Nowa H
 
 Los precios varían con la temporada, y la moneda es el esloti polaco (zł).
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Cracovia
 
 ### ¿Cuántos días hacen falta en Cracovia?
 
@@ -146,6 +146,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Rynek, Santa María, 
 ### ¿Qué hacer en Cracovia en 3 días?
 
 Con tres días en Cracovia, esta es la ruta de la guía: Día 1, Rynek, Santa María, Collegium Maius y Wawel; Día 2, Fábrica de Schindler, plaza de los Héroes del Gueto y un buen rato en Kazimierz; Día 3, Auschwitz por la mañana. Por la tarde, descanso y paseo por el Planty. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Cracovia?
+
+Primavera (de abril a junio) y principios de otoño (septiembre) son lo mejor: temperaturas suaves y menos gente.
+
+### ¿Dónde alojarse en Cracovia?
+
+Mi recomendación: ambiente, bares, buen precio y a diez minutos andando del centro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Pokoje Gościnne Św. Anny (Old Town, nota 9,0, desde 65 € la noche); mejor calidad-precio: Venetian House Market Square Aparthotel (Old Town, nota 9,4, desde 87 € la noche); lujo: H15 Palace, a Luxury Collection Hotel, Krakow (Old Town, nota 9,4, desde 226 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Cracovia?
+
+En la calle prueba el obwarzanek krakowski, un anillo de pan con sésamo o amapola que venden en puestos por toda la ciudad, y las zapiekanki de la plaza Nowy, una baguette abierta con champiñones, queso y kétchup.
+
+### ¿Cómo llegar del aeropuerto al centro de Cracovia?
+
+El aeropuerto de Cracovia-Balice (Juan Pablo II) recibe vuelos baratos desde varias ciudades españolas.
+
+### ¿Cómo moverse por Cracovia?
+
+Dentro de la ciudad, el centro se hace a pie.
+
+### ¿Qué lugares imprescindibles ver en Cracovia?
+
+Según esta guía: Rynek Główny y la Sukiennice; Basílica de Santa María; Colina de Wawel; Kazimierz; Fábrica de Schindler, en Podgórze; Universidad Jaguelónica y Collegium Maius; Planty, Barbacana y Puerta de San Florián; Nowa Huta. En la sección "Qué ver" tienes cada uno explicado.
 
 ## Vuelos y chollos
 

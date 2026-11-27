@@ -235,6 +235,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Maó y el puerto. Ma�
 
 Con cinco días en Menorca, esta es la ruta de la guía: Día 1, Maó y el puerto; Día 2, Calas del sur (Galdana, Mitjana, Macarella); Día 3, Ciutadella y Turqueta; Día 4, Interior y talayots; Día 5, La costa norte. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Menorca?
+
+La mejor época es junio o septiembre: el agua está buena, hay menos gente y los precios bajan respecto a agosto.
+
+### ¿Qué comer en Menorca?
+
+Para el dulce, prueba la ensaïmada, los formatjades (empanadillas de carne, típicas de Semana Santa pero fáciles de encontrar) y los amargos de almendra.
+
+### ¿Cómo moverse por Menorca?
+
+No hay abono turístico general que compense para una semana: paga billete sencillo o con tarjeta.
+
+### ¿Qué lugares imprescindibles ver en Menorca?
+
+Según esta guía: Ciutadella; Maó y su puerto; Cala Macarella y Macarelleta; Cala Turqueta; Cala Mitjana y Cala Galdana; Cala Pregonda; Naveta des Tudons; Torre d'en Galmés. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Menorca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

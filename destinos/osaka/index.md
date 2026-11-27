@@ -248,6 +248,14 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El sur, Namba y Doton
 
 Con tres días en Osaka, esta es la ruta de la guía: Día 1, El sur, Namba y Dotonbori; Día 2, El castillo y el norte; Día 3, Tennoji, Shinsekai y la bahía. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cómo moverse por Osaka?
+
+Para moverte por la ciudad, el metro es lo más cómodo: las líneas Midosuji (roja) y Chuo cubren casi todo.
+
+### ¿Qué lugares imprescindibles ver en Osaka?
+
+Según esta guía: Dotonbori; Castillo de Osaka; Shinsekai y la torre Tsutenkaku; Mercado de Kuromon; Umeda Sky Building; Abeno Harukas; Templo Shitennoji; Santuario Sumiyoshi Taisha. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Osaka?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-80 €/día por persona y día, y en el nivel "presupuesto medio", unos 120-180 €/día. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

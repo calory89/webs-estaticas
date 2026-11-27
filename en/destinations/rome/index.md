@@ -134,7 +134,7 @@ Around town, walking is the main transport. The metro has three lines (A, B, C) 
 
 Sightseeing tickets for the biggest sights typically run between 15 and 25 euros each, and many cost more with guided tours. Drinking water from the public nasoni fountains is free and safe.
 
-## FAQs
+## FAQ about Rome
 
 ### Is Rome safe?
 
@@ -171,6 +171,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Colosseum, Forum an
 ### What to do in Rome in 4 days?
 
 With four days in Rome, this is the guide's route: Day 1, Colosseum, Forum and Palatine in the morning, lunch in Monti; Day 2, Vatican Museums early, St Peter's; Day 3, Borghese Gallery slot, Villa Borghese, Spanish Steps, then Testaccio for a long dinner; Day 4, San Clemente, the Aventine, then either Ostia Antica or the Appian Way. The table above has the full plan for each day.
+
+### Where to stay in Rome?
+
+Cheapest area, with the best transport links. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Elide (Repubblica, score 8.1, from €40 a night); best value: Hotel Emona Aquaeductus (Esquilino, score 9, from €120 a night); luxury: Harry's Bar Trevi Hotel & Restaurant (Trevi, score 9.3, from €506 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Rome?
+
+Around town, walking is the main transport.
+
+### What are the must-see places in Rome?
+
+According to this guide: Colosseum, Roman Forum and Palatine Hill; Pantheon; Vatican Museums and St Peter's; Piazza Navona and Campo de' Fiori; Trevi Fountain and the Spanish Steps; Trastevere; Borghese Gallery and Villa Borghese; Jewish Ghetto and Teatro di Marcello. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

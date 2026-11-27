@@ -219,6 +219,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Amán. Mañana: Ciuda
 
 Con siete días en Jordania y Petra, esta es la ruta de la guía: Día 1, Amán; Día 2, Jerash y Amán; Día 3, Madaba, Nebo y mar Muerto; Día 4, Carretera del Rey hasta Petra; Día 5, Petra a fondo; Día 6, Monasterio y Pequeña Petra; Día 7, Wadi Rum. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Jordania y Petra?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Zaman Ya Zaman Boutique Hotel (The Top-rated Area in Amman, nota 8,6, desde 30 € la noche); mejor calidad-precio: New MerryLand Hotel (King Hussein Street, nota 9,3, desde 47 € la noche); lujo: Hilton Amman (07 lliya Abu Madi Street , Shmeisani , nota 9,6, desde 145 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Jordania y Petra?
+
+Desde el aeropuerto Queen Alia de Amán sale el Airport Express, un autobús hasta la estación norte de Tabarbour por unos 3-4 JD en 45 minutos a una hora; desde allí, taxi al centro.
+
+### ¿Qué lugares imprescindibles ver en Jordania y Petra?
+
+Según esta guía: Petra: el Siq y el Tesoro; Petra: el Monasterio (Ad Deir); Petra: el Lugar Alto del Sacrificio y las Tumbas Reales; Mirador del Tesoro desde arriba; Pequeña Petra (Siq al-Barid); Wadi Rum; Ciudadela de Amán; Teatro romano de Amán y el downtown. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Jordania y Petra: https://www.happylowcost.com/destinos/jordania/#chollos

@@ -259,6 +259,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El palacio y la ciuda
 
 Con tres días en Split, esta es la ruta de la guía: Día 1, El palacio y la ciudad vieja; Día 2, Marjan, Meštrović y playa; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Split?
+
+La mejor zona para dormir en Split en una primera visita es dentro o junto al palacio, porque todo queda a pie. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Kastel 1700 (Split Old Town, nota 8,7, desde 70 € la noche); mejor calidad-precio: Heritage Hotel Antique Split (Split Old Town, nota 9,7, desde 124 € la noche); lujo: Hotel Ambasador (Marjan, nota 9,5, desde 176 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Split?
+
+Soparnik: torta fina de acelga, cebolla y ajo, típica del interior de Split (Poljica).
+
+### ¿Cómo llegar del aeropuerto al centro de Split?
+
+El aeropuerto de Split está a unos 25 kilómetros, cerca de Trogir, y la forma más cómoda de llegar al centro es el autobús lanzadera del aeropuerto (Pleso Prijevoz), que tarda unos 30-40 minutos y cuesta unos 8-10 €.
+
+### ¿Cómo moverse por Split?
+
+Te deja junto a la estación de autobuses y el puerto, a cinco minutos andando del palacio.
+
+### ¿Qué lugares imprescindibles ver en Split?
+
+Según esta guía: Palacio de Diocleciano; Peristilo; Catedral de San Duje y campanario; Sótanos del palacio; Templo de Júpiter; Riva, el paseo marítimo; Estatua de Grgur Ninski; Plaza del Pueblo (Pjaca) y Plaza de las Frutas. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Split: https://www.happylowcost.com/destinos/split/#chollos

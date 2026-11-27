@@ -244,6 +244,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Isla de Hong Kong. Ma
 
 Con cuatro días en Hong Kong, esta es la ruta de la guía: Día 1, Isla de Hong Kong; Día 2, Kowloon; Día 3, Lantau; Día 4, Naturaleza o isla. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Hong Kong?
+
+Central y Sheung Wan: es la zona más elegante y la más cómoda para salir. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Ibis Hong Kong Central & Sheung Wan (Sheung Wan, nota 8, desde 142 € la noche); mejor calidad-precio: The Luxe Manor (Yau Tsim Mong District, nota 8,6, desde 220 € la noche); lujo: Mondrian Hong Kong (Tsim Sha Tsui, nota 9,1, desde 277 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Hong Kong?
+
+Bo zai fan: arroz en olla de barro con salchicha china, típico del invierno, por unos 8-12 €.
+
+### ¿Cómo llegar del aeropuerto al centro de Hong Kong?
+
+El Airport Express llega a la estación de Hong Kong (Central) en unos 25 minutos y cuesta unos 13-14 €.
+
+### ¿Cómo moverse por Hong Kong?
+
+Para moverte, compra la tarjeta Octopus o añádela al móvil.
+
+### ¿Qué lugares imprescindibles ver en Hong Kong?
+
+Según esta guía: Victoria Peak; Star Ferry; Paseo marítimo de Tsim Sha Tsui y Avenue of Stars; Hollywood Road y el templo Man Mo; Escaleras mecánicas de Central a Mid-Levels; Tian Tan Buddha y monasterio Po Lin; Tai O; Mong Kok. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Hong Kong: https://www.happylowcost.com/destinos/hong-kong/#chollos

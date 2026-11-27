@@ -254,6 +254,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Art and the Retiro.
 
 With three days in Madrid, this is the guide's route: Day 1, Art and the Retiro; Day 2, Old Madrid and the palace; Day 3, Neighbourhoods and markets. The table above has the full plan for each day.
 
+### Where to stay in Madrid?
+
+Sol / Centro: This is the most central area, where you can walk to everything. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: B&B HOTEL Madrid Vallecas La Gavia (Villa de Vallecas, score 8.8, from €65 a night); best value: Aparto-Hotel Rosales (Moncloa-Aravaca, score 9, from €140 a night); luxury: Relais & Châteaux Heritage Hotel (Salamanca, score 9.2, from €450 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Madrid?
+
+The fare is €5, paid by card on board, and the trip takes 35-45 minutes.
+
+### What are the must-see places in Madrid?
+
+According to this guide: Museo del Prado; Museo Reina Sofía; Museo Thyssen-Bornemisza; Parque del Retiro; Royal Palace (Palacio Real); Plaza Mayor and Puerta del Sol; Templo de Debod; Gran Vía and Círculo de Bellas Artes rooftop. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Madrid: https://www.happylowcost.com/en/destinations/madrid/#deals

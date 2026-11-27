@@ -257,6 +257,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: San José del Cabo. M
 
 Con cinco días en Los Cabos, esta es la ruta de la guía: Día 1, San José del Cabo; Día 2, Cabo San Lucas y El Arco; Día 3, Playas del Corredor; Día 4, Todos Santos y Cerritos; Día 5, Ballenas o Cabo Pulmo. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Los Cabos?
+
+La mejor época es de noviembre a abril: cielo despejado, días de 25-28 °C, poca lluvia y ballenas de mediados de diciembre a mediados de abril.
+
+### ¿Qué comer en Los Cabos?
+
+Los platos que no deberías irte sin probar: Tacos de pescado rebozado, con col, crema y salsa.
+
+### ¿Cómo llegar del aeropuerto al centro de Los Cabos?
+
+Se llega al Aeropuerto Internacional de Los Cabos (SJD), a unos 15 minutos de San José y unos 45 minutos de Cabo San Lucas.
+
+### ¿Qué lugares imprescindibles ver en Los Cabos?
+
+Según esta guía: El Arco de Cabo San Lucas; Playa del Amor; Playa Médano; La Marina de Cabo San Lucas; Playa Chileno; Bahía Santa María; Centro histórico de San José del Cabo; Art Walk de San José del Cabo. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Los Cabos: https://www.happylowcost.com/destinos/los-cabos/#chollos

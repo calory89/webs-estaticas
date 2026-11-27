@@ -231,6 +231,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, Stanley Park 
 
 Con cuatro días en Vancouver, esta es la ruta de la guía: Día 1, Centro, Stanley Park y West End; Día 2, Granville Island y Kitsilano; Día 3, North Shore; Día 4, Chinatown, Main Street y Richmond. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Vancouver?
+
+La mejor época es de junio a septiembre: días largos, temperaturas de 20 a 25 °C y apenas lluvia.
+
+### ¿Dónde alojarse en Vancouver?
+
+Para quien prefiere playa y ambiente de barrio. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Atrium Hotel Vancouver (Hastings, nota 8, desde 116 € la noche); mejor calidad-precio: Blue Horizon Hotel (West End, nota 9, desde 142 € la noche); lujo: Wedgewood Hotel & Spa - Relais & Chateaux (Downtown Vancouver, nota 9,4, desde 274 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Vancouver?
+
+Nanaimo bar: dulce de tres capas sin hornear, típico de la Columbia Británica.
+
+### ¿Cómo llegar del aeropuerto al centro de Vancouver?
+
+Cuesta unos 10 CAD (6,5 €) porque incluye un suplemento de aeropuerto; desde la ciudad hacia el aeropuerto no se paga ese recargo.
+
+### ¿Cómo moverse por Vancouver?
+
+Para moverte, el sistema es TransLink: SkyTrain (metro elevado), buses y SeaBus.
+
+### ¿Qué lugares imprescindibles ver en Vancouver?
+
+Según esta guía: Stanley Park y el Seawall; Granville Island; Gastown; Museum of Anthropology (UBC); Lynn Canyon; Grouse Mountain; Chinatown y el jardín Dr. Sun Yat-Sen; English Bay y Kitsilano. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Vancouver?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 110-140 € por persona y día, y en el nivel "presupuesto medio", unos unos 250-330 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

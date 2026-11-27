@@ -127,7 +127,7 @@ Around the island, the shared **songthaews** (open-sided trucks) run between Phu
 
 Boat tours, scooters and drinks in beach clubs are where budgets leak. Phuket is more expensive than Bangkok or Chiang Mai, especially in high season.
 
-## FAQ
+## FAQ about Phuket
 
 ### How many days do I need in Phuket?
 
@@ -160,6 +160,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, settle into
 ### What to do in Phuket in 5 days?
 
 With five days in Phuket, this is the guide's route: Day 1, Arrive, settle into your beach, swim and eat nearby; Day 2, Old Town in the morning, a long lunch, then Wat Chalong and Big Buddha in the afternoon; Day 3, Full-day boat trip, either Phang Nga Bay or Phi Phi; Day 4, Southern beaches: Nai Harn, Kata Noi, then sunset at Promthep Cape; Day 5, A cooking class, Khao Phra Thaeo, or a second island. The table above has the full plan for each day.
+
+### When is the best time to visit Phuket?
+
+December to February is the best stretch: sunny, less humid, calm seas.
+
+### Where to stay in Phuket?
+
+Old Town: No beach, but the best food and character, and cheaper boutique hotels. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: La Moon At Phuket - SHA Extra Plus (The Top-rated Area in Phuket, score 8.2, from €29 a night); best value: The Memory at On On Hotel (Old Town, score 9.3, from €76 a night); luxury: CRAFT Resort & Villas, Phuket Town - scheduled shuttle to Phuket Old Town (25/469 Village No.1, Ratsada, Muang Phuket, Phuket 83000, score 8.8, from €102 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Phuket?
+
+For breakfast, try Old Town dim sum with strong local coffee, and for dessert, oh-aew, a sweet iced jelly drink.
+
+### How do you get from the airport to central Phuket?
+
+Phuket International Airport (HKT) is in the north of the island, about 45 minutes to an hour from Old Town and Kata, and longer to the far south in traffic.
+
+### What are the must-see places in Phuket?
+
+According to this guide: Phuket Old Town; Big Buddha; Wat Chalong; Promthep Cape; Kata, Karon and Kata Noi beaches; Surin and Kamala; Phang Nga Bay; Phi Phi and Coral Islands. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

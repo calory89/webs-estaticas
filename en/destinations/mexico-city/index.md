@@ -90,7 +90,7 @@ Within the city, the **Metro** is cheap and fast but gets crushed at rush hour, 
 
 - **Treat yourself:** US$250 or more with a boutique hotel and a tasting menu.
 
-## FAQ
+## FAQ about Mexico City
 
 ### Is Mexico City safe for tourists?
 
@@ -127,6 +127,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Centro Histórico. 
 ### What to do in Mexico City in 4 days?
 
 With four days in Mexico City, this is the guide's route: Day 1, Centro Histórico; Day 2, Chapultepec; Day 3, South; Day 4, Teotihuacán. The table above has the full plan for each day.
+
+### Where to stay in Mexico City?
+
+Centro Histórico: Handy for the big sights and cheaper. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Cadillac Hotel Boutique (José María Izazaga 35, score 8.1, from €56 a night); best value: Canada Central (Mexico City Historic Center, score 9.3, from €80 a night); luxury: Barceló Mexico Reforma (Juarez, score 8.9, from €178 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Mexico City?
+
+Try suadero and campechanos late at night; Los Cocuyos in the centre is a classic stop.
+
+### How do you get from the airport to central Mexico City?
+
+The main airport is Benito Juárez (AICM).
+
+### How do you get around Mexico City?
+
+Within the city, the Metro is cheap and fast but gets crushed at rush hour, and some carriages are reserved for women and children.
 
 ## Flights and deals
 

@@ -97,7 +97,7 @@ Inside the city, the **subway** is the answer. Lines are numbered and colour-cod
 
 Palaces cost only a few dollars to enter, and a combined ticket for the main ones is worth it. These are approximate figures, so check current rates before you travel.
 
-## FAQs
+## FAQ about Seoul
 
 ### Is Seoul expensive?
 
@@ -142,6 +142,18 @@ With five days in Seoul, this is the guide's route: Day 1, Gyeongbokgung at open
 ### What to see in South Korea in 5 days?
 
 With five days in South Korea, this guide suggests staying in Seoul and following its route: Day 1, Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong; Day 2, Changdeokgung and Huwon, Gwangjang Market for lunch, Dongdaemun Design Plaza at dusk; Day 3, Walk up Namsan in the morning, Myeongdong for street food, Itaewon at night; Day 4, Seongsu-dong for cafes and shops, then Hongdae in the evening; Day 5, Bukhansan or a DMZ tour, or COEX and the Lotte World Tower area for a skyline view.
+
+### Where to stay in Seoul?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Boutique Hotel Loft (Yeongdeungpo-Gu, score 8.7, from €75 a night); best value: Hanok Hotel DAAM Seoul (Jongno-Gu, score 9.1, from €92 a night); luxury: Signiel Seoul (Songpa-Gu, score 9.3, from €559 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Seoul?
+
+Airport limousine buses reach many hotels directly and are comfortable with luggage.
+
+### How do you get around Seoul?
+
+Buy a T-money card at any convenience store, or consider Seoul's tourist transit pass if you plan to ride a lot.
 
 ## Flights and deals
 

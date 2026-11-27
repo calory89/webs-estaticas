@@ -97,7 +97,7 @@ Un apunte de seguridad: no saques el móvil a lo loco, no camines por zonas vac�
 
 Las entradas a Table Mountain, Robben Island y Cape Point son lo que más pesa en el presupuesto. Reserva online para evitar sorpresas. Los precios cambian según temporada y el valor del rand.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Ciudad del Cabo
 
 ### ¿Es seguro viajar a Ciudad del Cabo?
 
@@ -138,6 +138,18 @@ Con cinco días en Ciudad del Cabo, esta es la ruta de la guía: Día 1, Bo-Kaap
 ### ¿Qué ver en Sudáfrica en 5 días?
 
 Con cinco días en Sudáfrica, esta guía propone quedarse en Ciudad del Cabo y seguir su ruta: Día 1, Bo-Kaap, centro, Company's Garden y District Six; Día 2, Table Mountain a primera hora y tarde tranquila en el Waterfront; Día 3, Robben Island por la mañana. Por la tarde, Sea Point o Camps Bay; Día 4, Excursión a la península: Chapman's Peak, Hout Bay, Boulders y Cape Point; Día 5, Kirstenbosch y bodegas de Constantia.
+
+### ¿Dónde alojarse en Ciudad del Cabo?
+
+Pregunta antes por la zona exacta y muévete en Uber de noche. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: HAVN Aparthotel by Totalstay (Cape Town CBD, nota 8, desde 61 € la noche); mejor calidad-precio: Urban Elephant Hotels, The Rose (Bo-Kaap, nota 8,9, desde 112 € la noche); lujo: The Glen Boutique Hotel & Spa (Sea Point, nota 9,4, desde 348 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Ciudad del Cabo?
+
+Pide snoek si lo ves, un pescado local muy típico, y marisco fresco en Kalk Bay o Hout Bay.
+
+### ¿Cómo llegar del aeropuerto al centro de Ciudad del Cabo?
+
+El Aeropuerto Internacional de Ciudad del Cabo (CPT) queda a unos 20 minutos del centro.
 
 ## Vuelos y chollos
 

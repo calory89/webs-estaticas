@@ -238,6 +238,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Göreme and the val
 
 With four days in Cappadocia, this is the guide's route: Day 1, Göreme and the valleys; Day 2, North loop; Day 3, South, underground and Ihlara; Day 4, Uçhisar and spare balloon morning. The table above has the full plan for each day.
 
+### What to eat in Cappadocia?
+
+The local signature is testi kebab, a meat-and-vegetable stew slow-cooked in a sealed clay pot that's cracked open at your table.
+
+### How do you get around Cappadocia?
+
+Museum Pass Cappadocia: covers the main state-run sites (Göreme, Zelve, the underground cities, Ihlara and more).
+
+### What are the must-see places in Cappadocia?
+
+According to this guide: Göreme Open Air Museum; Rose Valley and Red Valley; Uçhisar Castle; Pigeon Valley; Love Valley; Derinkuyu Underground City; Kaymaklı Underground City; Paşabağ (Monks Valley). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Cappadocia: https://www.happylowcost.com/en/destinations/cappadocia/#deals

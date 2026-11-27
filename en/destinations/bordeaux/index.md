@@ -239,6 +239,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The classic centre.
 
 With three days in Bordeaux, this is the guide's route: Day 1, The classic centre; Day 2, Markets, Chartrons and the Cité du Vin; Day 3, Day trip. The table above has the full plan for each day.
 
+### Where to stay in Bordeaux?
+
+Saint-Pierre / Hôtel de Ville: the old town, walkable to everything. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hôtel Bordeaux Clémenceau by Happyculture (Bordeaux City-Centre, score 8.1, from €95 a night); best value: Quality Hotel Bordeaux Centre (Bordeaux City-Centre, score 8.8, from €126 a night); luxury: Yndo Hôtel (Bordeaux City-Centre, score 9.3, from €284 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Bordeaux?
+
+Arriving by train, the Gare Saint-Jean is on tram C, about 10 minutes from the centre.
+
+### What are the must-see places in Bordeaux?
+
+According to this guide: Place de la Bourse and the Miroir d'Eau; Saint-Pierre and the old town; Cathédrale Saint-André and Tour Pey-Berland; La Cité du Vin; Les Chartrons; Marché des Capucins; Saint-Michel; Grosse Cloche and Rue Sainte-Catherine. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Bordeaux: https://www.happylowcost.com/en/destinations/bordeaux/#deals

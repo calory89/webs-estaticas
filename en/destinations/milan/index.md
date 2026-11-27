@@ -123,7 +123,7 @@ In town, the metro (lines M1 red, M2 green, M3 yellow, M4 blue, M5 lilac) plus t
 
 Duomo roof, the Last Supper and the Castello museums usually add up to €40-50 combined, so factor them in early.
 
-## FAQs
+## FAQ about Milan
 
 ### Is three days enough for Milan?
 
@@ -160,6 +160,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Duomo and roof in t
 ### What to do in Milan in 3 days?
 
 With three days in Milan, this is the guide's route: Day 1, Duomo and roof in the morning, Galleria, lunch near Brera, the Pinacoteca; Day 2, Last Supper at your booked slot, Sant'Ambrogio, Castello Sforzesco, Parco Sempione; Day 3, Porta Nuova and Bosco Verticale, Fondazione Prada or the Cimitero Monumentale. The table above has the full plan for each day.
+
+### Where to stay in Milan?
+
+Centro / Duomo: convenient and expensive. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Aparthotel Dei Mercanti (Milan City Centre, score 8.5, from €187 a night); best value: Hotel Milano Castello (Milan City Centre, score 9.3, from €334 a night); luxury: Park Hyatt Milano (Milan City Centre, score 9.3, from €1344 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Milan?
+
+Then try cotoletta alla milanese, a bone-in breaded veal cutlet fried in butter.
+
+### How do you get around Milan?
+
+Linate (LIN) is much closer, and the M4 metro line now connects it to the centre in around 15-20 minutes.
+
+### What are the must-see places in Milan?
+
+According to this guide: Duomo and its roof; Galleria Vittorio Emanuele II; The Last Supper; Castello Sforzesco and Parco Sempione; Brera; Navigli; Basilica di Sant'Ambrogio and San Lorenzo; Porta Nuova and Bosco Verticale. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

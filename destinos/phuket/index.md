@@ -97,7 +97,7 @@ Dentro de la isla no hay metro ni tren. Los tuk-tuks son más caros que un taxi 
 
 Las excursiones de día completo a Phang Nga o Phi Phi suelen costar entre 30 y 60 €, con comida y entradas a veces aparte. Una cerveza ronda los 2-3 €, y los masajes baratos, unos 8-12 € por hora.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Phuket
 
 ### ¿Cuál es la mejor playa de Phuket?
 
@@ -134,6 +134,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, playa cercan
 ### ¿Qué hacer en Phuket en 5 días?
 
 Con cinco días en Phuket, esta es la ruta de la guía: Día 1, Llegada, playa cercana a tu alojamiento; Día 2, Phuket Town. Paseo por el casco antiguo, Thai Hua Museum, comida local y, si es domingo; Día 3, Sur de la isla. Wat Chalong por la mañana, Big Buddha; Día 4, Excursión a Phang Nga o a Phi Phi. Elige una sola, que a las dos no llegas con calma; Día 5, Día libre en la playa que más te haya gustado, masaje y cena de marisco en Rawai. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Phuket?
+
+La mejor época va de noviembre a abril: cielo despejado, mar tranquilo y poca lluvia.
+
+### ¿Dónde alojarse en Phuket?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: La Moon At Phuket - SHA Extra Plus (The Top-rated Area in Phuket, nota 8,2, desde 29 € la noche); mejor calidad-precio: The Memory at On On Hotel (Old Town, nota 9,3, desde 76 € la noche); lujo: CRAFT Resort & Villas, Phuket Town - scheduled shuttle to Phuket Old Town (25/469 Village No.1, Ratsada, Muang Phuket, Phuket 83000, nota 8,8, desde 102 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Phuket?
+
+Prueba el mee hokkien (fideos salteados amarillos con cerdo y marisco), el moo hong (panceta estofada con pimienta y ajo), el oh tao (tortilla crujiente con ostras o mejillones) y los dim sum de desayuno en el casco antiguo.
+
+### ¿Cómo llegar del aeropuerto al centro de Phuket?
+
+El aeropuerto internacional (HKT) está al norte de la isla.
+
+### ¿Cómo moverse por Phuket?
+
+Los españoles pueden entrar a Tailandia sin visado para estancias turísticas cortas, pero comprueba el plazo vigente y si hace falta rellenar la tarjeta digital de llegada antes de volar.
 
 ### ¿Es caro viajar a Phuket?
 

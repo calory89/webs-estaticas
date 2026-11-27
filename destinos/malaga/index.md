@@ -243,6 +243,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Alcazaba, centro y at
 
 Con tres días en Málaga, esta es la ruta de la guía: Día 1, Alcazaba, centro y atardecer; Día 2, Mercado, puerto y playa; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Málaga?
+
+La mejor época es primavera (abril a junio) y otoño (septiembre a noviembre): entre 20 y 28 grados, mar aún templado en otoño y precios razonables.
+
+### ¿Dónde alojarse en Málaga?
+
+Centro histórico: para quien quiere hacerlo todo andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hostal Vidamia (Malaga Centro, nota 8,0, desde 76 € la noche); mejor calidad-precio: LD Convento Cister (Malaga Centro, nota 9,2, desde 139 € la noche); lujo: Vincci Selección Posada del Patio (Malaga Centro, nota 9,2, desde 283 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Málaga?
+
+Metro: dos líneas desde el oeste de la ciudad hasta el centro; poco útil para el turista salvo que duermas en esa zona.
+
+### ¿Qué lugares imprescindibles ver en Málaga?
+
+Según esta guía: Alcazaba; Castillo de Gibralfaro; Teatro Romano; Catedral de la Encarnación; Museo Picasso Málaga; Museo de Málaga (Palacio de la Aduana); Mercado de Atarazanas; Centro histórico y Calle Larios. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Málaga?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos entre 70 y 90 € por persona y día, y en el nivel "presupuesto medio", unos entre 130 y 180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -146,6 +146,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Île de la Cité (Not
 
 Con cuatro días en París, esta es la ruta de la guía: Día 1, Île de la Cité (Notre-Dame, Sainte-Chapelle), Barrio Latino y Jardin du Luxembourg; Día 2, Louvre por la mañana, paseo por las Tullerías y los Campos Elíseos hasta el Arco…; Día 3, Montmartre por la mañana, Orsay por la tarde y Marais de noche; Día 4, Père-Lachaise, Canal Saint-Martin y barrio de Belleville, o Versalles si prefieres. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a París?
+
+La primavera (abril y mayo) y el principio del otoño (septiembre y octubre) son lo mejor: temperaturas suaves, días largos y menos calor en el metro.
+
+### ¿Dónde alojarse en París?
+
+El barrio importa más que el precio de la habitación, porque ahorrarás en transporte y tiempo. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Esmeralda (5th arr., nota 8,0, desde 181 € la noche); mejor calidad-precio: Nestay Les Halles (Paris, nota 9,4, desde 300 € la noche); lujo: Le Grand Mazarin (4th arr., nota 9,3, desde 927 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en París?
+
+Para sentarte, busca la formule del mediodía: entrante y plato, o plato y postre, por bastante menos que a la carta.
+
+### ¿Cómo llegar del aeropuerto al centro de París?
+
+Orly: la línea 14 del metro llega ahora hasta el aeropuerto y conecta con el centro en unos 25-30 minutos.
+
+### ¿Cómo moverse por París?
+
+El tranvía T7 también es una alternativa.
+
 ### ¿Es caro viajar a París?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 euros por persona y día, y en el nivel "cómodo", unos más de 200 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

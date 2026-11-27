@@ -236,6 +236,14 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro histórico.
 
 Con tres días en Catania, esta es la ruta de la guía: Día 1, El centro histórico; Día 2, El Etna; Día 3, Siracusa u Ortigia, o mar. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cómo moverse por Catania?
+
+Por la ciudad todo lo importante se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Catania?
+
+Según esta guía: Piazza del Duomo y la Fontana dell'Elefante; Catedral de Sant'Agata; La Pescheria; Monastero dei Benedettini; Via dei Crociferi; Badia di Sant'Agata; Teatro Romano y Odeón; Castello Ursino. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Catania?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 55 a 70 € por persona y día, y en el nivel "medio", unos unos 110 a 150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

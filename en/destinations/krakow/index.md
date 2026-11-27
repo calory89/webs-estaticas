@@ -83,7 +83,7 @@ The centre is compact enough to walk. For farther trips, use trams and buses, wh
 
 Poland uses the złoty (PLN), not the euro. Cards are accepted almost everywhere, but carry a little cash for markets and small cafés.
 
-## FAQs
+## FAQ about Krakow
 
 ### Is Kraków safe for tourists?
 
@@ -120,6 +120,14 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Main Square, St. Ma
 ### What to do in Krakow in 3 days?
 
 With three days in Krakow, this is the guide's route: Day 1, Main Square, St. Mary's, Cloth Hall, a lunch of pierogi, then Wawel in the afternoon; Day 2, Kazimierz in the morning, a late lunch on Plac Nowy; Day 3, Wieliczka in the morning, back by mid-afternoon. The table above has the full plan for each day.
+
+### Where to stay in Krakow?
+
+Old Town (Stare Miasto): central and walkable, but pricey and noisy on weekends. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Pokoje Gościnne Św. Anny (Old Town, score 9.0, from €65 a night); best value: Venetian House Market Square Aparthotel (Old Town, score 9.4, from €87 a night); luxury: H15 Palace, a Luxury Collection Hotel, Krakow (Old Town, score 9.4, from €226 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Krakow?
+
+Kraków John Paul II International Airport (Balice) is about 11 km west of the centre.
 
 ## Flights and deals
 

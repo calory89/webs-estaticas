@@ -242,6 +242,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Zona Colonial a fondo
 
 Con tres días en Santo Domingo, esta es la ruta de la guía: Día 1, Zona Colonial a fondo; Día 2, Los Tres Ojos y Malecón; Día 3, Botánico, museo y playa. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Santo Domingo?
+
+La mejor época es de diciembre a abril: temporada seca, temperaturas de 25 a 30 °C y menos humedad.
+
+### ¿Qué comer en Santo Domingo?
+
+Estos son los platos que hay que pedir: La Bandera: el plato nacional de mediodía.
+
+### ¿Cómo llegar del aeropuerto al centro de Santo Domingo?
+
+El Aeropuerto Internacional de Las Américas (SDQ) está a unos 30 km del centro, entre 30 y 45 minutos según el tráfico.
+
+### ¿Cómo moverse por Santo Domingo?
+
+Dentro de la ciudad, la Zona Colonial se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Santo Domingo?
+
+Según esta guía: Catedral Primada de América; Parque Colón; Calle de las Damas; Fortaleza Ozama; Panteón Nacional; Museo de las Casas Reales; Alcázar de Colón; Ruinas del Monasterio de San Francisco. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Santo Domingo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

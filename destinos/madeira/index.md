@@ -97,7 +97,7 @@ Para moverse, el coche de alquiler da libertad total, y en una isla con tantas r
 
 El alquiler de coche, el aparcamiento y las excursiones en barco son los gastos que más pesan. Comer bien es relativamente barato.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Madeira
 
 ### ¿Se puede ir a Madeira sin coche?
 
@@ -142,6 +142,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Funchal a pie, Mercad
 ### ¿Qué hacer en Madeira en 5 días?
 
 Con cinco días en Madeira, esta es la ruta de la guía: Día 1, Funchal a pie, Mercado dos Lavradores, Zona Velha y cena con espetada; Día 2, Monte, bajada en cesto y tarde de bodega o jardín botánico; Día 3, Pico do Arieiro al amanecer; Día 4, Oeste de la isla: Cabo Girão, Porto Moniz y Fanal; Día 5, Ponta de São Lourenço por la mañana y tarde libre en Funchal o en Câmara de Lobos. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Madeira?
+
+En general, de abril a octubre hay mejor tiempo para caminar; en verano hace más calor, aunque rara vez agobia por la brisa atlántica.
+
+### ¿Dónde alojarse en Madeira?
+
+Zona Velha (Funchal): la mejor base si quieres vida de noche, bares y restaurantes a pie. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Quinta Da Penha De Franca (Se, nota 8,4, desde 115 € la noche); mejor calidad-precio: Hotel Cajú (Sao Pedro, nota 9,2, desde 124 € la noche); lujo: Quinta Jardins do Lago (Sao Pedro, nota 9,7, desde 498 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Madeira?
+
+El plato de referencia es la espetada: carne de ternera ensartada en una vara de laurel y asada, que llega a la mesa colgando de un gancho.
+
+### ¿Cómo llegar del aeropuerto al centro de Madeira?
+
+El aeropuerto de Funchal (Cristiano Ronaldo) está en Santa Cruz, a unos 20 minutos en coche del centro.
+
+### ¿Cómo moverse por Madeira?
+
+Dentro de Funchal, a pie y con algún taxi puntual te basta.
 
 ## Vuelos y chollos
 

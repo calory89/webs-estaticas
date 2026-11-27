@@ -33,4 +33,8 @@ La tarifa más barata suele incluir solo un bolso pequeño bajo el asiento. Revi
 
 No se puede saber: tarifas así pueden desaparecer en horas. Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.
 
+### ¿Dónde dormir en Atenas en un viaje desde Zaragoza?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Casual Kubic Athens by Casual Hoteles (Omonoia, nota 8,3, desde 58 € la noche); mejor calidad-precio: Evripides Hotel (Athens City Centre, nota 9, desde 78 € la noche); lujo: The Pinnacle Athens (Athens City Centre, nota 9,4, desde 211 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
 Los precios cambian cada hora: comprueba el precio en la página original antes de reservar.

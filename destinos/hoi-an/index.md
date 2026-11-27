@@ -244,6 +244,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El casco antiguo. Ma�
 
 Con tres días en Hoi An, esta es la ruta de la guía: Día 1, El casco antiguo; Día 2, Campo, cocina y playa; Día 3, My Son y despedida. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Hoi An?
+
+La mejor época es de febrero a abril: calor suave, poca lluvia y temperaturas de 25-30 °C.
+
+### ¿Qué comer en Hoi An?
+
+Es el plato de la ciudad y cuesta 1,50-3 €.
+
+### ¿Cómo llegar del aeropuerto al centro de Hoi An?
+
+El aeropuerto más cercano es el de Da Nang (DAD), a unos 30 km.
+
+### ¿Cómo moverse por Hoi An?
+
+El casco antiguo se recorre andando y en algunas franjas horarias está cerrado al tráfico.
+
+### ¿Qué lugares imprescindibles ver en Hoi An?
+
+Según esta guía: El Puente Japonés (Chùa Cầu); Casa antigua Tấn Ký; Casa Phùng Hưng; Sala de Asamblea de Fujian (Phúc Kiến); Sala de Asamblea Cantonesa; Templo de Quan Công; Mercado central de Hoi An; El río Thu Bon al anochecer. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Hoi An?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 60-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

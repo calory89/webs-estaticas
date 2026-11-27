@@ -257,6 +257,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Corralejo y las dunas
 
 Con seis días en Fuerteventura, esta es la ruta de la guía: Día 1, Corralejo y las dunas; Día 2, Isla de Lobos; Día 3, Lajares y El Cotillo; Día 4, El interior camino del sur; Día 5, Cofete y Punta Jandía; Día 6, Sotavento y vuelta. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Qué comer en Fuerteventura?
+
+Pescado fresco a la plancha (vieja, cherne, sama), por peso; un plato sale por 15-25 €.
+
+### ¿Cómo llegar del aeropuerto al centro de Fuerteventura?
+
+El aeropuerto de Fuerteventura está a unos 5 km de Puerto del Rosario y a 10 minutos de Caleta de Fuste.
+
+### ¿Cómo moverse por Fuerteventura?
+
+Con una tarjeta bono el viaje sale más barato.
+
+### ¿Qué lugares imprescindibles ver en Fuerteventura?
+
+Según esta guía: Parque Natural de las Dunas de Corralejo; Isla de Lobos; El Cotillo; Lajares y el volcán Calderón Hondo; Betancuria; Miradores de Morro Velosa y Guise y Ayose; Cuevas de Ajuy; Barranco de las Peñitas. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Fuerteventura?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 70-90 €, en pareja por persona y día, y en el nivel "medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

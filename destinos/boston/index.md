@@ -253,6 +253,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Freedom Trail y North
 
 Con tres días en Boston, esta es la ruta de la guía: Día 1, Freedom Trail y North End; Día 2, Beacon Hill, Back Bay y Fenway; Día 3, Cambridge y Seaport. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Boston?
+
+Downtown y Financial District: práctico para el Freedom Trail y bien comunicado con el aeropuerto. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: The Revolution Hotel (South End, nota 8,5, desde 162 € la noche); mejor calidad-precio: Hyatt Place Boston/Seaport District (South Boston, nota 8,9, desde 198 € la noche); lujo: The Langham, Boston (Financial District, nota 9,2, desde 786 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Boston?
+
+El aeropuerto de Logan está muy cerca del centro, a unos 5 km.
+
+### ¿Cómo moverse por Boston?
+
+Para moverse por la ciudad, el metro, llamado «the T», tiene cuatro líneas (roja, verde, azul y naranja) más la Silver Line, que es un bus.
+
+### ¿Qué lugares imprescindibles ver en Boston?
+
+Según esta guía: Freedom Trail; Boston Common y Public Garden; Beacon Hill; North End; Charlestown: USS Constitution y Bunker Hill; Museum of Fine Arts (MFA); Isabella Stewart Gardner Museum; Boston Public Library. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Boston: https://www.happylowcost.com/destinos/boston/#chollos

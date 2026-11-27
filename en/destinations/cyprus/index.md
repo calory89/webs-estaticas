@@ -93,7 +93,7 @@ The honest advice: rent a car. Public buses exist and connect main towns, but th
 
 Prices go up noticeably in July and August. Archaeological sites generally cost a few euros each.
 
-## FAQ
+## FAQ about Cyprus
 
 ### Do I need a car in Cyprus?
 
@@ -130,6 +130,18 @@ For the traveller who wrote this guide, yes: Cyprus is a small island with a lon
 ### What to do in Cyprus in 7 days?
 
 With seven days in Cyprus, this is the guide's route: Days 1-2, Larnaca and the east; Day 3, Nicosia; Days 4-5, Troodos; Day 6, Limassol and Kourion; Day 7, Paphos. The table above has the full plan for each day.
+
+### Where to stay in Cyprus?
+
+The harbour area (Kato Paphos) is convenient, though touristy. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Frangiorgio Hotel (Larnaca City Centre, score 8.4, from €88 a night); best value: Leonardo Boutique Hotel Larnaca (Larnaca City Centre, score 9.2, from €114 a night); luxury: Sandy Beach Hotel & Spa (Larnaka-Dekeleia Road, score 8.8, from €163 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Cyprus?
+
+Other things to try: souvlaki and sheftalia (grilled minced-meat parcels), kleftiko (lamb baked slowly), koupepia (stuffed vine leaves), and loukoumades (honey doughnuts).
+
+### How do you get from the airport to central Cyprus?
+
+Larnaca airport is about 10 minutes from the town centre by taxi, with fares around €15-25.
 
 ## Flights and deals
 

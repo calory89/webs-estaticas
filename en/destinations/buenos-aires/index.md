@@ -116,7 +116,7 @@ Figures change with the exchange rate, so treat them as approximate and check cu
 
 Ask locally how best to pay, as card and cash rates can differ. A mix of cash and a foreign card is usually the safest approach.
 
-## FAQs
+## FAQ about Buenos Aires
 
 ### Is Buenos Aires safe?
 
@@ -161,6 +161,26 @@ With four days in Buenos Aires, this is the guide's route: Day 1, Plaza de Mayo,
 ### What to see in Argentina in 4 days?
 
 With four days in Argentina, this guide suggests staying in Buenos Aires and following its route: Day 1, Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo; Day 2, Recoleta Cemetery, a walk through Recoleta and the Ateneo bookshop, Teatro Colón tour; Day 3, Palermo parks and MALBA, a leisurely afternoon in Soho, and a milonga at night; Day 4, La Boca in the morning, then Puerto Madero and the Costanera Sur reserve.
+
+### When is the best time to visit Buenos Aires?
+
+Spring (September to November) is the best time, with mild days and jacarandas in flower around November.
+
+### Where to stay in Buenos Aires?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Up Laprida (Recoleta, score 8.3, from €76 a night); best value: Tanguero Hotel Boutique Antique (Downtown Buenos Aires, score 9.3, from €80 a night); luxury: Four Seasons Hotel Buenos Aires (Retiro, score 9.3, from €740 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Buenos Aires?
+
+Ride-hailing apps work too, but pickups at the airport can be awkward.
+
+### How do you get around Buenos Aires?
+
+Both use the SUBE card, which you can buy at kiosks and some stations.
+
+### What are the must-see places in Buenos Aires?
+
+According to this guide: Plaza de Mayo and the Casa Rosada; Recoleta Cemetery; San Telmo; La Boca and Caminito; Teatro Colón; El Ateneo Grand Splendid; Palacio Barolo and Avenida de Mayo; Palermo. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

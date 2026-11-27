@@ -93,7 +93,7 @@ Mi consejo es alquilar coche, sobre todo para Troodos, Akamas y los pueblos. En 
 
 Son cifras generales, y en julio y agosto el alojamiento sube. Muchas ruinas son baratas, y las playas públicas son gratis.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Chipre
 
 ### ¿Se necesita visado para ir a Chipre?
 
@@ -130,6 +130,18 @@ Para quien escribió esta guía, sí: Chipre te da en una semana lo que otros si
 ### ¿Qué hacer en Chipre en 7 días?
 
 Con siete días en Chipre, esta es la ruta de la guía: Días 1-2, Lárnaca, Lefkara y, si hay tiempo, Nicosia; Día 3, Limasol, Kourion y Kolossi; Día 4, Troodos, iglesias pintadas y Omodos. Duerme en la montaña si te apetece fresco; Días 5-6, Pafos, Petra tou Romiou y Akamas; Día 7, Vuelta hacia Lárnaca o desvío por Ayia Napa y Cabo Greco. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Chipre?
+
+Limasol tiene más ambiente nocturno y oferta, y la zona del casco viejo es la más interesante para quien no busca un resort. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Frangiorgio Hotel (Larnaca City Centre, nota 8,4, desde 88 € la noche); mejor calidad-precio: Leonardo Boutique Hotel Larnaca (Larnaca City Centre, nota 9,2, desde 114 € la noche); lujo: Sandy Beach Hotel & Spa (Larnaka-Dekeleia Road, nota 8,8, desde 163 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Chipre?
+
+Otros imprescindibles son el souvlaki (en pita o en plato), el kleftiko (cordero muy cocinado al horno), los koupepia (hojas de parra rellenas) y el halloumi a la plancha, que aquí no es el del súper.
+
+### ¿Cómo llegar del aeropuerto al centro de Chipre?
+
+Los dos aeropuertos principales son Lárnaca (LCA) y Pafos (PFO).
 
 ## Vuelos y chollos
 

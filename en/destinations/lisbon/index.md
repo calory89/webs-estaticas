@@ -111,7 +111,7 @@ Inside the city, a **Navegante** or Viva Viagem card covers the metro, buses, tr
 
 Prices are approximate and rise in summer and around big events. Drinks and public transport remain cheap by Western European standards.
 
-## FAQ
+## FAQ about Lisbon
 
 ### Is Lisbon safe for tourists?
 
@@ -140,6 +140,26 @@ Today the cheapest deal we have to Lisbon is €46 return from Barcelona. Fares 
 ### Is Lisbon worth visiting?
 
 For the traveller who wrote this guide, yes: Lisbon is one of the few European capitals that still feels affordable, walkable (if you like hills) and properly lived-in. 3 days are enough for the essentials. Budget: Budget: about 60 to 80 euros per day with a hostel, simple meals and public transport.
+
+### Where to stay in Lisbon?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: New Style Lisbon Hotel (Arroios, score 8.8, from €131 a night); best value: HF Fénix Music (Santo Antonio, score 9, from €140 a night); luxury: EPIC SANA Lisboa Hotel (Santo Antonio, score 9.3, from €232 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Lisbon?
+
+For a drink, try ginjinha, a cherry liqueur, at the tiny bars near Rossio.
+
+### How do you get from the airport to central Lisbon?
+
+Humberto Delgado airport is close to the centre.
+
+### How do you get around Lisbon?
+
+The red metro line runs from the terminal to Alameda and São Sebastião, and connects to the other lines.
+
+### What are the must-see places in Lisbon?
+
+According to this guide: Alfama and the Castelo de São Jorge; Miradouros; Belém; Baixa and Praça do Comércio; Sé de Lisboa and the Graça side; Museu Nacional do Azulejo; LX Factory; Fundação Calouste Gulbenkian. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

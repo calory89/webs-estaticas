@@ -131,6 +131,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo tempran
 
 Con tres días en Varsovia, esta es la ruta de la guía: Día 1, Casco antiguo temprano, Plaza del Castillo; Día 2, Museo del Levantamiento por la mañana, comida en un bar de leche; Día 3, Łazienki y, después, Praga: Koneser, patios, algún mural y cena allí. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Varsovia?
+
+Śródmieście (centro): lo más cómodo, cerca de la estación central y del metro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Level Rooms (Sródmiescie, nota 8,1, desde 52 € la noche); mejor calidad-precio: PURO Warszawa Centrum (Sródmiescie, nota 9,4, desde 115 € la noche); lujo: InterContinental Warszawa by IHG (Sródmiescie, nota 9,1, desde 157 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Varsovia?
+
+El aeropuerto principal es el Chopin (WAW), a unos 10 kilómetros del centro.
+
+### ¿Cómo moverse por Varsovia?
+
+Dentro de la ciudad, metro, tranvía y autobús funcionan bien con el mismo billete.
+
 ### ¿Es caro viajar a Varsovia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 euros por persona y día, y en el nivel "cómodo", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

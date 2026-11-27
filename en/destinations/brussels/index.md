@@ -109,7 +109,7 @@ The centre is walkable. For anything further, the STIB network of metro, tram an
 
 - **Comfortable:** €250 or more for a good hotel, nice meals and day trips.
 
-## FAQs
+## FAQ about Brussels
 
 ### Is Brussels worth visiting for a weekend?
 
@@ -150,6 +150,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Grand-Place at open
 ### What to do in Brussels in 3 days?
 
 With three days in Brussels, this is the guide's route: Day 1, Grand-Place at opening hours, the Galleries, Manneken Pis, lunch of frites; Day 2, Magritte Museum and Fine Arts in the morning, the Comic Strip Center after lunch; Day 3, Horta Museum, a long lunch in Saint-Gilles or Ixelles, then Flagey and the ponds. The table above has the full plan for each day.
+
+### Where to stay in Brussels?
+
+Centre and Grand-Place: the most convenient for a short visit, noisy at weekends. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Ibis Brussels City Centre (Brussels, score 8.1, from €139 a night); best value: OPO Hotel (Brussels, score 9.2, from €178 a night); luxury: Hotel Amigo, a Rocco Forte Hotel (Brussels, score 9.4, from €512 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Brussels?
+
+From Brussels Airport (Zaventem), trains run to Bruxelles-Central, Midi and Nord in about 15 to 20 minutes for roughly €10 to 12.
+
+### How do you get around Brussels?
+
+For anything further, the STIB network of metro, tram and bus is straightforward, and you can tap in with a contactless card or buy a short-term ticket.
+
+### What are the must-see places in Brussels?
+
+According to this guide: Grand-Place; Royal Galleries of Saint-Hubert; Manneken Pis and Jeanneke Pis; Sablon and the Marolles; Magritte Museum and the Royal Museums of Fine Arts; Belgian Comic Strip Center; Atomium; Cinquantenaire Park and the European Quarter. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

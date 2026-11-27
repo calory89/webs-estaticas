@@ -231,6 +231,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Montreal Viejo y el r
 
 Con tres días en Montreal, esta es la ruta de la guía: Día 1, Montreal Viejo y el río; Día 2, Mont Royal, Plateau y Mile End; Día 3, Mercado, museo y centro. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Montreal?
+
+Centro (Downtown), cerca de Peel o McGill: la opción más práctica para una primera visita, bien conectado y con hoteles de todos los precios. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Spark By Hilton Montreal Midtown (5440 Decarie Blvd, nota 8,1, desde 73 € la noche); mejor calidad-precio: Manoir Sherbrooke (Plateau Mont Royal, nota 9, desde 139 € la noche); lujo: The Ritz-Carlton, Montreal (Golden Square Mile, nota 9,6, desde 583 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Montreal?
+
+El aeropuerto Montréal-Trudeau (YUL) está a unos 20 km del centro.
+
+### ¿Cómo moverse por Montreal?
+
+Dentro de la ciudad, el metro tiene cuatro líneas (verde, naranja, amarilla y azul) y es fiable.
+
+### ¿Qué lugares imprescindibles ver en Montreal?
+
+Según esta guía: Vieux-Montréal (Montreal Viejo); Basílica de Notre-Dame; Mont Royal y el mirador Kondiaronk; Oratorio de San José; Plateau Mont-Royal; Mile End; Marché Jean-Talon; Musée des Beaux-Arts. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montreal: https://www.happylowcost.com/destinos/montreal/#chollos

@@ -240,6 +240,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Wildlife in the sou
 
 With three days in Nairobi, this is the guide's route: Day 1, Wildlife in the south-west; Day 2, City centre and museums; Day 3, Forest, markets and nyama choma. The table above has the full plan for each day.
 
+### Where to stay in Nairobi?
+
+Karen and Lang'ata: green and quiet, with garden cottages and boutique lodges close to the park, the Sheldrick and the Giraffe Centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: La Maison Royale South C (Popo Road La Maison Royale South C, Next to Akila Police Post, score 8.2, from €58 a night); best value: PrideInn Westlands Luxury Boutique Hotel (Westlands, score 8.8, from €98 a night); luxury: Hyatt Place Nairobi Westlands (Westlands, score 9.2, from €161 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Nairobi?
+
+The quickest way from Jomo Kenyatta International Airport (JKIA) into the city is by Uber or Bolt.
+
+### How do you get around Nairobi?
+
+There is no metro and no useful tourist travel pass.
+
+### What are the must-see places in Nairobi?
+
+According to this guide: Nairobi National Park; Sheldrick Wildlife Trust elephant orphanage; Giraffe Centre; Karen Blixen Museum; Nairobi National Museum; KICC rooftop; Karura Forest; Nairobi Railway Museum. Each one is explained in the "What to see" section.
+
 ### Is Nairobi expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €45-70 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.

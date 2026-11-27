@@ -118,7 +118,7 @@ In town, the city is compact. Most of the centre is walkable. For anything else,
 
 Alcohol is the budget killer, since a pint in a bar often costs 8 to 10 €. Museum entry usually costs 15 to 25 € each. Cards are accepted nearly everywhere, and many places are cashless.
 
-## FAQs
+## FAQ about Stockholm
 
 ### Is Stockholm expensive?
 
@@ -163,6 +163,18 @@ With four days in Stockholm, this is the guide's route: Day 1, Gamla Stan in the
 ### What to see in Sweden in 4 days?
 
 With four days in Sweden, this guide suggests staying in Stockholm and following its route: Day 1, Gamla Stan in the morning, the Royal Palace if you like; Day 2, Djurgården. Vasa first, then Skansen, then a long walk along the water; Day 3, City Hall, the Östermalm food hall and a stroll through Östermalm; Day 4, If you have it.
+
+### Where to stay in Stockholm?
+
+Hotel rates are somewhat lower than in the centre. Östermalm: Smart, calm and pricey. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: ProfilHotels Riddargatan (Östermalm, score 8.3, from €191 a night); best value: Thon Hotel Vasa (Norrmalm, score 8.9, from €294 a night); luxury: Bank Hotel, a Member of Small Luxury Hotels (Norrmalm, score 9.0, from €370 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Stockholm?
+
+For anything else, SL covers metro, buses, trams, commuter trains and some ferries, including the one to Djurgården.
+
+### What are the must-see places in Stockholm?
+
+According to this guide: Gamla Stan; Vasa Museum; Skansen; Stadshuset (City Hall); Fotografiska; Moderna Museet on Skeppsholmen; The Royal Palace; Drottningholm Palace. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

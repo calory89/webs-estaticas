@@ -92,7 +92,7 @@ Once you're in the city, use the Métro and your feet. A single ticket costs aro
 
 - **Comfortable:** €250 and up, with a nicer hotel, a good dinner and a boat trip or a show.
 
-## FAQs
+## FAQ about Paris
 
 ### How many days do I need in Paris?
 
@@ -129,6 +129,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Île de la Cité (S
 ### What to do in Paris in 4 days?
 
 With four days in Paris, this is the guide's route: Day 1, Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter; Day 2, Louvre in the morning, a walk through the Tuileries; Day 3, Montmartre at 8 a.m., a long lunch, then the Canal Saint-Martin and a drink on the quays; Day 4, The Marais in the morning, Père Lachaise in the afternoon. The table above has the full plan for each day.
+
+### Where to stay in Paris?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Esmeralda (5th arr., score 8.0, from €181 a night); best value: Nestay Les Halles (Paris, score 9.4, from €300 a night); luxury: Le Grand Mazarin (4th arr., score 9.3, from €927 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Paris?
+
+From Orly, Métro line 14 now connects the airport to central Paris, and the tram and OrlyBus are alternatives.
+
+### How do you get around Paris?
+
+A single ticket costs around two to three euros, and a Navigo weekly pass (valid Monday to Sunday) is a good deal if you arrive early in the week.
 
 ## Flights and deals
 

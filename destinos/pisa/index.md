@@ -232,6 +232,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Torre, plaza y centro histó
 
 Con dos días en Pisa, esta es la ruta de la guía: Día 1, Torre, plaza y centro histórico; Día 2, Pisa tranquila o escapada. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cómo moverse por Pisa?
+
+Desde ahí, la Torre está a 20 minutos andando o a pocos minutos en bus.
+
+### ¿Qué lugares imprescindibles ver en Pisa?
+
+Según esta guía: Torre inclinada; Catedral (Duomo); Baptisterio; Camposanto Monumentale; Museo dell'Opera del Duomo; Piazza dei Cavalieri; Borgo Stretto y los soportales; Piazza delle Vettovaglie. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Pisa: https://www.happylowcost.com/destinos/pisa/#chollos

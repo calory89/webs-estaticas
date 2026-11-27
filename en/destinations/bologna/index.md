@@ -113,7 +113,7 @@ The historic centre is compact and flat, so you will mostly walk. Local buses ru
 
 Day trips by regional train usually cost under €10 each way.
 
-## FAQ
+## FAQ about Bologna
 
 ### Is Bologna worth visiting for a weekend?
 
@@ -150,6 +150,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Piazza Maggiore, Sa
 ### What to do in Bologna in 3 days?
 
 With three days in Bologna, this is the guide's route: Day 1, Piazza Maggiore, San Petronio, Neptune, the Quadrilatero for lunch; Day 2, Morning at Piazza Santo Stefano, wander up Via Zamboni, lunch near the university; Day 3, A day trip. Modena and Parma are about half an hour to an hour away by train. The table above has the full plan for each day.
+
+### Where to stay in Bologna?
+
+The centre is a 15 to 20 minute walk away. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Almarossa (Bologna City Center, score 8.9, from €293 a night); best value: Hotel Brun (Saragozza, score 9.3, from €574 a night); luxury: Grand Hotel Majestic gia' Baglioni (Bologna City Center, score 9.4, from €1164 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Bologna?
+
+Bologna's Guglielmo Marconi airport is about 6 kilometres from the centre.
+
+### How do you get around Bologna?
+
+The historic centre is compact and flat, so you will mostly walk.
+
+### What are the must-see places in Bologna?
+
+According to this guide: Piazza Maggiore and the Basilica di San Petronio; Piazza del Nettuno; The Two Towers; The Quadrilatero; Archiginnasio and its Anatomical Theatre; Piazza Santo Stefano; Portico di San Luca; The little window on Via Piella. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

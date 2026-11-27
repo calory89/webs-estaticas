@@ -215,6 +215,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Sunrise and the sma
 
 With three days in Siem Reap and Angkor, this is the guide's route: Day 1, Sunrise and the small circuit; Day 2, The grand circuit; Day 3, Banteay Srei and the town. The table above has the full plan for each day.
 
+### Where to stay in Siem Reap and Angkor?
+
+Wat Bo area: this area is across the river, quieter, with good restaurants and boutique guesthouses, and still a 10-minute walk to the centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Mango Kesararam (The Real Heart of Siem Reap, score 9.9, from €26 a night); best value: The Urban (The Real Heart of Siem Reap, score 9.6, from €36 a night); luxury: Angkor Village Hotel - Small Luxury Hotels of the World (The Real Heart of Siem Reap, score 9.7, from €260 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Siem Reap and Angkor?
+
+It is the national dish, and versions vary hugely.
+
+### How do you get from the airport to central Siem Reap and Angkor?
+
+Flights land at Siem Reap-Angkor International Airport (SAI), which opened in 2023 about 50 km from town, a lot farther than the old airport.
+
+### How do you get around Siem Reap and Angkor?
+
+There are no public buses or travel passes in town, and the Angkor pass is the only "pass" you need.
+
+### What are the must-see places in Siem Reap and Angkor?
+
+According to this guide: Angkor Wat; Bayon; Ta Prohm; Angkor Thom gates and terraces; Banteay Srei; Preah Khan; Neak Pean and Ta Som; Pre Rup. Each one is explained in the "What to see" section.
+
 ### Is Siem Reap and Angkor expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about about €30-40 per person per day and the "comfort" level at about €150 and up. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -248,6 +248,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown, Stanley P
 
 With four days in Vancouver, this is the guide's route: Day 1, Downtown, Stanley Park and English Bay; Day 2, Granville Island, Kits and UBC; Day 3, North Shore; Day 4, Day trip. The table above has the full plan for each day.
 
+### Where to stay in Vancouver?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Atrium Hotel Vancouver (Hastings, score 8, from €116 a night); best value: Blue Horizon Hotel (West End, score 9, from €142 a night); luxury: Wedgewood Hotel & Spa - Relais & Chateaux (Downtown Vancouver, score 9.4, from €274 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Vancouver?
+
+Try a BC roll (with barbecued salmon skin) and local sockeye.
+
+### How do you get from the airport to central Vancouver?
+
+The Canada Line SkyTrain runs from YVR airport to Waterfront station downtown in about 25 minutes.
+
+### How do you get around Vancouver?
+
+Tap a contactless bank card or a Compass card; a DayPass is about CAD 12 (€8) and pays off after three rides.
+
+### What are the must-see places in Vancouver?
+
+According to this guide: Stanley Park and the Seawall; Granville Island; Gastown; Chinatown and Dr. Sun Yat-Sen Classical Chinese Garden; Museum of Anthropology at UBC; Kitsilano and Kits Beach; English Bay and the West End; Grouse Mountain. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Vancouver: https://www.happylowcost.com/en/destinations/vancouver/#deals

@@ -83,7 +83,7 @@ Dentro de la ciudad, casi todo lo importante se hace a pie. Para Dedinje, Zemun 
 
 Una cerveza ronda los 2-3 euros, un plato de ćevapi, entre 5 y 8, y un café, algo menos de 2. La propina habitual es de un 10% si el servicio ha sido bueno.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Belgrado
 
 ### ¿Es segura Belgrado?
 
@@ -124,6 +124,22 @@ Con tres días en Belgrado, esta es la ruta de la guía: Día 1, Plaza de la Rep
 ### ¿Qué ver en Serbia en 3 días?
 
 Con tres días en Serbia, esta guía propone quedarse en Belgrado y seguir su ruta: Día 1, Plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia; Día 2, Templo de San Sava por la mañana, Museo de Tesla y comida en Vračar; Día 3, Museo de Yugoslavia por la mañana.
+
+### ¿Cuál es la mejor época para viajar a Belgrado?
+
+La primavera (mayo y principios de junio) y el otoño (septiembre y octubre) son lo mejor: temperaturas agradables y la ciudad en marcha.
+
+### ¿Dónde alojarse en Belgrado?
+
+Stari Grad (casco viejo, entre la plaza de la República y Kalemegdan) es lo más cómodo si vienes pocos días: todo a pie, pero algo más caro y ruidoso. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Centar Forever (Stari Grad, nota 8,2, desde 42 € la noche); mejor calidad-precio: Hotel Skadarlija NB (Stari Grad, nota 9,2, desde 75 € la noche); lujo: Prezident Palace Belgrade - Rooftop Pool & Spa Hotel (Stari Grad, nota 9,6, desde 248 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Belgrado?
+
+El aeropuerto Nikola Tesla está a unos 18 km del centro.
+
+### ¿Cómo moverse por Belgrado?
+
+Dentro de la ciudad, casi todo lo importante se hace a pie.
 
 ## Vuelos y chollos
 

@@ -127,6 +127,18 @@ Con tres días en Riga, esta es la ruta de la guía: Día 1, Casco viejo a prime
 
 Con tres días en Letonia, esta guía propone quedarse en Riga y seguir su ruta: Día 1, Casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro); Día 2, Mañana en el Mercado Central y el barrio de Spīķeri, justo detrás; Día 3, Museo de la Ocupación por la mañana. Después.
 
+### ¿Dónde alojarse en Riga?
+
+Casco viejo (Vecrīga): lo más cómodo para moverse a pie, aunque también lo más caro y ruidoso los fines de semana, sobre todo cerca de la calle Kaļķu y las plazas. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Old Riga Plaza Hotel (Centre, nota 8,1, desde 29 € la noche); mejor calidad-precio: Carillon Aparthotel - Keystone Collection, opened December 2025 (Riga, nota 9,6, desde 66 € la noche); lujo: Grand Poet Hotel and SPA by Semarah (Centre, nota 9,4, desde 108 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Riga?
+
+Prueba los guisantes grises con panceta (pelēkie zirņi ar speķi), el pan de centeno oscuro (rupjmaize), los speķa pīrādziņi (empanadillas de panceta y cebolla) y la sopa fría de remolacha en verano.
+
+### ¿Cómo llegar del aeropuerto al centro de Riga?
+
+El aeropuerto internacional de Riga (RIX) está a unos 10 km del centro.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Riga: https://www.happylowcost.com/destinos/riga/#chollos

@@ -221,6 +221,26 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro, medina y mezquita. M
 
 Con dos días en Casablanca, esta es la ruta de la guía: Día 1, Centro, medina y mezquita; Día 2, Habous, museos y Corniche. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Casablanca?
+
+La mejor época es primavera (abril a junio) y otoño (septiembre y octubre): entre 20 y 26 grados, poca lluvia y luz buena.
+
+### ¿Dónde alojarse en Casablanca?
+
+Centro (bulevar Mohammed V y alrededores). Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Relax Hotel Casa Voyageurs (Roches Noires, nota 8,6, desde 51 € la noche); mejor calidad-precio: Kaan Casablanca (Sidi Belyout, nota 9, desde 127 € la noche); lujo: Royal Hideaway Casablanca (Sidi Belyout, nota 9,4, desde 183 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Casablanca?
+
+Cuscús: el plato del viernes; muchos restaurantes populares solo lo preparan ese día.
+
+### ¿Cómo moverse por Casablanca?
+
+Para moverte, el tranvía es la mejor opción.
+
+### ¿Qué lugares imprescindibles ver en Casablanca?
+
+Según esta guía: Mezquita Hassan II; El centro art déco y el bulevar Mohammed V; Plaza Mohammed V; Mercado Central; Barrio Habous; Medina antigua; Corniche de Aïn Diab; Morabito de Sidi Abderrahmane. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Casablanca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

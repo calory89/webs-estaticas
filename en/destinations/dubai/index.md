@@ -124,7 +124,7 @@ Get a rechargeable **Nol card** for the metro, trams, buses and abras. The metro
 
 The big costs are accommodation and attractions. Eating well can be cheap if you skip hotel restaurants.
 
-## FAQs
+## FAQ about Dubai
 
 ### Is Dubai safe for tourists?
 
@@ -165,6 +165,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Dubai. Al Fahid
 ### What to do in Dubai in 4 days?
 
 With four days in Dubai, this is the guide's route: Day 1, Old Dubai; Day 2, Downtown; Day 3, Coast; Day 4, Desert. The table above has the full plan for each day.
+
+### Where to stay in Dubai?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Premier Inn Dubai International Airport - An Emirates Group Company (Garhoud, score 8.7, from €69 a night); best value: Hotel Local Dubai, Jumeirah Village Triangle, Autograph Collection (Street D61, District 7, Jumeirah Village Triangle, score 8.8, from €89 a night); luxury: Mileo Hotel The Palm (Beach & Coast, score 9.5, from €208 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Dubai?
+
+Try machboos, a spiced rice dish with lamb or chicken, and luqaimat, sweet fried dumplings drizzled with date syrup.
+
+### How do you get around Dubai?
+
+The Red Line metro stops at Terminals 1 and 3 and runs to the Burj Khalifa/Dubai Mall station in roughly 25 to 30 minutes for a few dollars.
+
+### What are the must-see places in Dubai?
+
+According to this guide: Burj Khalifa and Downtown; The Dubai Mall; Al Fahidi Historic District; Dubai Creek and the abra boats; Gold Souk and Spice Souk; Jumeirah Mosque; Museum of the Future; Dubai Frame. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

@@ -113,7 +113,7 @@ Dentro de la ciudad se anda casi todo. Para Hellbrunn y las afueras hay buses y 
 
 Estas cifras varían bastante según temporada. Revisa precios antes de reservar.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Salzburgo
 
 ### ¿Cuántos días hacen falta para ver Salzburgo?
 
@@ -142,6 +142,14 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo. Catedral
 ### ¿Qué hacer en Salzburgo en 3 días?
 
 Con tres días en Salzburgo, esta es la ruta de la guía: Día 1, Casco viejo. Catedral, Residenzplatz, San Pedro; Día 2, Mirabell por la mañana, cruzas el río hacia la orilla derecha; Día 3, Hellbrunn por la mañana, o excursión completa a Hallein, Werfen o los lagos. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Salzburgo?
+
+Altstadt (casco viejo): lo más cómodo y lo más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Hohenstauffen (Elisabeth-Vorstadt, nota 8,7, desde 117 € la noche); mejor calidad-precio: Design Hotel zum Hirschen Salzburg (Elisabeth-Vorstadt, nota 8,9, desde 158 € la noche); lujo: Hotel Sacher Salzburg (Altstadt, nota 9,4, desde 388 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Salzburgo?
+
+Prueba el Wiener Schnitzel (ternera empanada), los Käsespätzle (pasta de huevo con queso gratinado y cebolla frita) y el Tafelspitz, un cocido de ternera con salsas.
 
 ### ¿Es caro viajar a Salzburgo?
 

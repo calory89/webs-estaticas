@@ -203,6 +203,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Beach, kasbah and p
 
 With three days in Agadir, this is the guide's route: Day 1, Beach, kasbah and port; Day 2, Souk, fake medina and hammam; Day 3, Taghazout and the coast. The table above has the full plan for each day.
 
+### Where to stay in Agadir?
+
+Talborjt and the city centre: cheaper, more local and full of cafés, a 15-minute walk from the beach.
+
+### What to eat in Agadir?
+
+For breakfast, try amlou (argan oil, almond and honey spread) with msemen or harcha flatbreads, which is a Souss speciality.
+
+### How do you get from the airport to central Agadir?
+
+Agadir Al Massira airport is about 25 km southeast of the centre.
+
+### How do you get around Agadir?
+
+There's no tourist travel pass worth buying: pay per ride.
+
+### What are the must-see places in Agadir?
+
+According to this guide: Agadir Oufella (the kasbah hill); The Agadir Oufella cable car; Souk El Had; The beach and the promenade; Agadir Marina; The fishing port and fish market; Medina Polizzi (Medina d'Agadir); Amazigh Heritage Museum. Each one is explained in the "What to see" section.
+
 ### Is Agadir expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €35-50 per person per day and the "comfortable" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.

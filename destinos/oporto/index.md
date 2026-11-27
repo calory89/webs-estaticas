@@ -99,7 +99,7 @@ Dentro de la ciudad, a pie llegarás a casi todo. El metro funciona bien para tr
 
 Como referencia general: un café cuesta menos de un euro, una caña alrededor de 1,50-2 euros y una francesinha ronda los 12-15.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Oporto
 
 ### ¿Son suficientes dos días en Oporto?
 
@@ -136,6 +136,22 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Empieza e
 ### ¿Qué hacer en Oporto en 3 días?
 
 Con tres días en Oporto, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Baixa y Cedofeita; Día 3, Río y costa. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Oporto?
+
+Cedofeita y Santa Catarina: mi zona favorita para quedarse. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: WOT Porto Soul (União de Freguesias do Centro, nota 8,0, desde 52 € la noche); mejor calidad-precio: Legends House by Sweet Porto (União de Freguesias do Centro, nota 9,3, desde 106 € la noche); lujo: Torel Saboaria (União de Freguesias do Centro, nota 9,6, desde 459 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Oporto?
+
+Las tripas à moda do Porto son el plato local por excelencia, aunque no a todo el mundo le entran.
+
+### ¿Cómo llegar del aeropuerto al centro de Oporto?
+
+El aeropuerto Francisco Sá Carneiro está a unos 11 km del centro y se conecta con la línea E del metro.
+
+### ¿Cómo moverse por Oporto?
+
+Dentro de la ciudad, a pie llegarás a casi todo.
 
 ## Vuelos y chollos
 

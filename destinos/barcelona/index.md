@@ -253,6 +253,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo y mar. 
 
 Con tres días en Barcelona, esta es la ruta de la guía: Día 1, Casco antiguo y mar; Día 2, Gaudí y Gràcia; Día 3, Montjuïc y Sant Antoni. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Barcelona?
+
+Gràcia: ambiente de barrio, buenas terrazas, algo más lejos del mar. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Nouvel (Ciutat Vella, nota 8,1, desde 140 € la noche); mejor calidad-precio: Olivia Plaza Hotel (Ciutat Vella, nota 9,3, desde 232 € la noche); lujo: ME by Meliá Barcelona (Eixample, nota 9,0, desde 378 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Barcelona?
+
+Metro L9 Sud: desde ambas terminales, pero lento y con transbordos.
+
+### ¿Qué lugares imprescindibles ver en Barcelona?
+
+Según esta guía: Sagrada Família; Park Güell; Barri Gòtic; El Born y la basílica de Santa Maria del Mar; Casa Batlló y La Pedrera; Montjuïc; MNAC; Bunkers del Carmel. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Barcelona: https://www.happylowcost.com/destinos/barcelona/#chollos

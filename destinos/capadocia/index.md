@@ -244,6 +244,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Göreme y sus valles.
 
 Con cuatro días en Capadocia, esta es la ruta de la guía: Día 1, Göreme y sus valles; Día 2, Subterráneo e Ihlara; Día 3, Uçhisar, Palomas y Ortahisar; Día 4, Zelve, Paşabağ y Avanos. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Capadocia?
+
+La mejor época es abril-junio y septiembre-octubre: temperaturas suaves para caminar, buena luz y menos cancelaciones de globos.
+
+### ¿Qué comer en Capadocia?
+
+El plato que todo el mundo pide es el testi kebap: carne con verduras cocinada en una vasija de barro sellada que rompen delante de ti.
+
+### ¿Qué lugares imprescindibles ver en Capadocia?
+
+Según esta guía: Museo al Aire Libre de Göreme; Valle del Amor (Love Valley); Valle Rojo y Valle Rosa; Castillo de Uçhisar; Valle de las Palomas; Paşabağ (Valle de los Monjes); Museo al Aire Libre de Zelve; Ciudad subterránea de Derinkuyu. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Capadocia: https://www.happylowcost.com/destinos/capadocia/#chollos

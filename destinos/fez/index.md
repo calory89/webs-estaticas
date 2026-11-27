@@ -103,7 +103,7 @@ Dentro de la ciudad, los **petit taxis** (rojos) van a cualquier barrio y son ba
 
 Una referencia útil: 10 dirhams equivalen aproximadamente a 1 €. Lleva efectivo, porque en la medina muchos sitios no aceptan tarjeta.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Fez
 
 ### ¿Es seguro Fez para turistas?
 
@@ -144,6 +144,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina vieja. Entra p
 ### ¿Qué hacer en Fez en 3 días?
 
 Con tres días en Fez, esta es la ruta de la guía: Día 1, Medina vieja; Día 2, Curtidurías, museos y Fes el-Jdid; Día 3, Excursión o ritmo lento. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Fez?
+
+El barrio moderno, con calles anchas, cafeterías y hoteles de cadena, muy cerca de la estación de tren.
+
+### ¿Qué comer en Fez?
+
+Prueba la pastilla (bastila) de pichón o pollo, con hojaldre fino, almendra, canela y azúcar glas; el contraste dulce y salado desconcierta, pero engancha.
+
+### ¿Cómo llegar del aeropuerto al centro de Fez?
+
+El aeropuerto de Fez-Saïss está a unos 15 km del centro.
 
 ### ¿Es caro viajar a Fez?
 

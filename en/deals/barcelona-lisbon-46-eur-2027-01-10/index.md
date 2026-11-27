@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Lisbon for a trip from Barcelona?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: New Style Lisbon Hotel (Arroios, score 8.8, from €131 a night); best value: HF Fénix Music (Santo Antonio, score 9, from €140 a night); luxury: EPIC SANA Lisboa Hotel (Santo Antonio, score 9.3, from €232 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

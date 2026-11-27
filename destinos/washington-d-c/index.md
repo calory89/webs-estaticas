@@ -249,6 +249,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Capitolio y museos de
 
 Con tres días en Washington D. C., esta es la ruta de la guía: Día 1, Capitolio y museos del Mall; Día 2, Más museos y memoriales al atardecer; Día 3, Arlington y Georgetown. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Washington D. C.?
+
+Shaw y U Street: el barrio más animado, con cocina etíope y bares. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: HighRoad Washington DC (Northwest, nota 8,8, desde 121 € la noche); mejor calidad-precio: Arlo Washington DC (Northwest, nota 9,1, desde 216 € la noche); lujo: The Royal Sonesta Washington DC Capitol Hill (Northwest, nota 9, desde 354 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Washington D. C.?
+
+La línea plateada del metro llega directamente a la terminal: unos 50-60 minutos al centro y alrededor de 6 $.
+
+### ¿Qué lugares imprescindibles ver en Washington D. C.?
+
+Según esta guía: National Mall; Lincoln Memorial y Reflecting Pool; Memoriales de Vietnam, Corea y la Segunda Guerra Mundial; Capitolio; Biblioteca del Congreso; National Air and Space Museum; Museo Nacional de Historia y Cultura Afroamericana; National Gallery of Art. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Washington D. C.?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 90-120 € por persona y día, y en el nivel "medio", unos 180-250 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -237,6 +237,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and fortre
 
 With three days in Kotor, this is the guide's route: Day 1, Old town and fortress; Day 2, Perast and the bay; Day 3, Lovćen and Njeguši. The table above has the full plan for each day.
 
+### Where to stay in Kotor?
+
+Old Town: this is for first-timers who want to step straight into the lanes. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Splendido (The Top-rated Area in Prčanj, score 8.2, from €109 a night); best value: Boutique Hotel Casa del Mare - Vizura (The Real Heart of Kotor, score 9.2, from €115 a night); luxury: Hyatt Regency Kotor Bay Resort (Vrmac bb, score 9, from €188 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Kotor?
+
+Kačamak: a heavy polenta-style dish with cheese and kajmak. Ćevapi and pljeskavica: for a cheap grilled-meat lunch.
+
+### What are the must-see places in Kotor?
+
+According to this guide: Kotor Old Town (Stari Grad); The fortress walls and St John's Fortress (San Giovanni); Church of Our Lady of Remedy; The Ladder of Kotor (back route); Cathedral of St Tryphon; St Nicholas and St Luke's churches; Square of Arms (Trg od Oružja); Maritime Museum of Montenegro. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Kotor: https://www.happylowcost.com/en/destinations/kotor/#deals

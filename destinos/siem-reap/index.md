@@ -257,6 +257,22 @@ Con tres días en Siem Reap y Angkor, esta es la ruta de la guía: Día 1, Circu
 
 Con tres días en Camboya, esta guía propone quedarse en Siem Reap y Angkor y seguir su ruta: Día 1, Circuito pequeño; Día 2, Circuito grande; Día 3, Banteay Srei y Kbal Spean.
 
+### ¿Cuál es la mejor época para viajar a Siem Reap y Angkor?
+
+La mejor época es de noviembre a febrero: seco, cielos limpios y temperaturas de entre 25 y 32 grados.
+
+### ¿Dónde alojarse en Siem Reap y Angkor?
+
+Wat Bo: al otro lado del río, a 10 minutos andando del centro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Mango Kesararam (The Real Heart of Siem Reap, nota 9,9, desde 26 € la noche); mejor calidad-precio: The Urban (The Real Heart of Siem Reap, nota 9,6, desde 36 € la noche); lujo: Angkor Village Hotel - Small Luxury Hotels of the World (The Real Heart of Siem Reap, nota 9,7, desde 260 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Siem Reap y Angkor?
+
+Estos platos son los que hay que probar: Amok: pescado (o pollo) en curry suave de coco, cocinado al vapor en hoja de plátano.
+
+### ¿Qué lugares imprescindibles ver en Siem Reap y Angkor?
+
+Según esta guía: Angkor Wat; El amanecer en Angkor Wat; Bayon (Angkor Thom); Baphuon, Terraza de los Elefantes y del Rey Leproso; Ta Prohm; Preah Khan; Ta Som y Neak Pean; Pre Rup y Mebon Oriental. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Siem Reap y Angkor?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos entre 25 y 35 € por persona y día, y en el nivel "medio", unos entre 60 y 90 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

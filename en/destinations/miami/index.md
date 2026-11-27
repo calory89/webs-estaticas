@@ -124,6 +124,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: South Beach. Early 
 
 With four days in Miami, this is the guide's route: Day 1, South Beach; Day 2, The city; Day 3, Bay and gardens; Day 4, Optional. The table above has the full plan for each day.
 
+### When is the best time to visit Miami?
+
+The best window is November to April: dry, around 24 to 28 °C, and comfortable at night.
+
+### Where to stay in Miami?
+
+Wynwood and the Design District: Good for art lovers and food-focused trips, but you'll need rideshares to reach the sand. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: El Jardin Inn (Little Havana, score 8.3, from €101 a night); best value: Hampton Inn Miami-Airport West (Doral, score 8.7, from €125 a night); luxury: InterContinental Miami by IHG (Downtown Miami, score 9, from €482 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Miami?
+
+The Metrorail Orange Line links the airport area with Brickell and downtown for a couple of dollars.
+
 ## Flights and deals
 
 - Flight deals to Miami: https://www.happylowcost.com/en/destinations/miami/#deals

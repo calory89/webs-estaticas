@@ -245,6 +245,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Ibiza Town. Morning
 
 With five days in Ibiza, this is the guide's route: Day 1, Ibiza Town; Day 2, The south and Ses Salines; Day 3, The west coast and Es Vedrà; Day 4, The north and the villages; Day 5, Formentera. The table above has the full plan for each day.
 
+### Where to stay in Ibiza?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Vibra Vila -3SUP- New Opening 2026 (Ibiza City Centre, score 8.1, from €84 a night); best value: Sud Ibiza Suites (Ibiza City Centre, score 9.3, from €127 a night); luxury: Montesol Experimental Ibiza (Ibiza City Centre, score 8.9, from €205 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Ibiza?
+
+Flaó: a mint-and-cheese tart, the island's signature dessert.
+
+### How do you get from the airport to central Ibiza?
+
+Ibiza airport is about 7 km from Ibiza Town.
+
+### How do you get around Ibiza?
+
+The island buses link the main towns and some beaches (Ses Salines, Cala Comte, Cala Bassa in season), with tickets around €2-4, and a rechargeable card gives cheaper fares.
+
+### What are the must-see places in Ibiza?
+
+According to this guide: Dalt Vila; Es Vedrà from Cala d'Hort; Ses Salines Natural Park; Cala Comte; Santa Gertrudis; Benirràs; Las Dalias and the hippy markets; Puig des Molins. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Ibiza: https://www.happylowcost.com/en/destinations/ibiza/#deals

@@ -108,7 +108,7 @@ Un par de reglas sencillas: no saques el móvil en la calle en zonas solitarias,
 
 Las entradas al Cristo y al Pan de Azúcar son lo más caro de las visitas; conviene reservarlas online y combinarlas para no gastar de más. Cambia dinero con calma, y paga con tarjeta siempre que puedas.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Río de Janeiro
 
 ### ¿Es seguro viajar a Río de Janeiro?
 
@@ -145,6 +145,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Copacabana, paseo has
 ### ¿Qué hacer en Río de Janeiro en 4 días?
 
 Con cuatro días en Río de Janeiro, esta es la ruta de la guía: Día 1, Copacabana, paseo hasta Arpoador, Ipanema y atardecer en la piedra; Día 2, Cristo Redentor a primera hora, comida en Cosme Velho o Laranjeiras; Día 3, Centro histórico por la mañana, Porto Maravilha; Día 4, Pan de Azúcar con tiempo para el atardecer, desayuno antes en la Urca, y cena en Botafogo. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Río de Janeiro?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: ibis Copacabana Posto 2 (Zona Sul, nota 8,3, desde 64 € la noche); mejor calidad-precio: Vila Galé Rio de Janeiro (Lapa, nota 8,7, desde 76 € la noche); lujo: Copacabana Palace, A Belmond Hotel, Rio de Janeiro (Zona Sul, nota 9,5, desde 857 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Río de Janeiro?
+
+Los vuelos internacionales aterrizan en el aeropuerto de Galeão (GIG), a unos 45 minutos o más de la Zona Sul según el tráfico.
+
+### ¿Cómo moverse por Río de Janeiro?
+
+Dentro de la ciudad, el metro es rápido, limpio y seguro, y cubre bien Copacabana, Ipanema, Botafogo, Flamengo y el Centro.
 
 ## Vuelos y chollos
 

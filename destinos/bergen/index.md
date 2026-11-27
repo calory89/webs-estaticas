@@ -233,6 +233,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Puerto, Bryggen y Fl�
 
 Con tres días en Bergen, esta es la ruta de la guía: Día 1, Puerto, Bryggen y Fløyen; Día 2, Museos, Nordnes y Ulriken; Día 3, Fiordo. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Bergen?
+
+La mejor época es de mayo a septiembre: unos 15-20 grados, días larguísimos y todo abierto.
+
+### ¿Dónde alojarse en Bergen?
+
+Zona de la estación y Marken: práctica si llegas en Bybanen o vas a coger el tren a Flåm. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Citybox Bergen Danmarksplass (Årstad, nota 8,2, desde 89 € la noche); mejor calidad-precio: Det Hanseatiske Hotel (Bergenhus, nota 8,5, desde 134 € la noche); lujo: Charmante Skostredet Hôtel (Bergenhus, nota 9,2, desde 648 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bergen?
+
+El plato de la ciudad es la sopa de pescado de Bergen (Bergensk fiskesuppe), cremosa, con pescado blanco, verduras y un toque dulce y ácido.
+
+### ¿Cómo moverse por Bergen?
+
+En la ciudad irás andando casi todo; el centro es pequeño, aunque con muchas cuestas.
+
+### ¿Qué lugares imprescindibles ver en Bergen?
+
+Según esta guía: Bryggen, el muelle hanseático; Museo Hanseático y Schøtstuene; Monte Fløyen y el funicular Fløibanen; Ulriken, la montaña más alta; Fortaleza de Bergenhus: Håkonshallen y torre Rosenkrantz; KODE, los museos de arte; Troldhaugen, la casa de Edvard Grieg; Nordnes y el Acuario. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bergen: https://www.happylowcost.com/destinos/bergen/#chollos

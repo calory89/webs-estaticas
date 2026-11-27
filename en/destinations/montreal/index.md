@@ -241,6 +241,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Montreal and th
 
 With three days in Montreal, this is the guide's route: Day 1, Old Montreal and the Old Port; Day 2, Mile End, the Plateau and Mount Royal; Day 3, Markets, art and the east or west end. The table above has the full plan for each day.
 
+### Where to stay in Montreal?
+
+Downtown (Centre-Ville): chain hotels near McGill and Peel metros, good transport links and underground access in winter. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Spark By Hilton Montreal Midtown (5440 Decarie Blvd, score 8.1, from €73 a night); best value: Manoir Sherbrooke (Plateau Mont Royal, score 9, from €139 a night); luxury: The Ritz-Carlton, Montreal (Golden Square Mile, score 9.6, from €583 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Montreal?
+
+Montréal-Trudeau Airport (YUL) is about 20 km from downtown.
+
+### How do you get around Montreal?
+
+The ticket covers unlimited buses and metro for 24 hours, which makes it the obvious choice.
+
+### What are the must-see places in Montreal?
+
+According to this guide: Old Montreal (Vieux-Montréal); Notre-Dame Basilica; Mount Royal and the Kondiaronk Belvedere; The Plateau Mont-Royal; Mile End; Jean-Talon Market; Saint Joseph's Oratory; Montreal Museum of Fine Arts. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Montreal: https://www.happylowcost.com/en/destinations/montreal/#deals

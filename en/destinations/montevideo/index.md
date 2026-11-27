@@ -254,6 +254,22 @@ With three days in Montevideo, this is the guide's route: Day 1, Ciudad Vieja an
 
 With three days in Uruguay, this guide suggests staying in Montevideo and following its route: Day 1, Ciudad Vieja and Centro; Day 2, The Rambla and the southern neighbourhoods; Day 3, Sunday market or a day trip.
 
+### Where to stay in Montevideo?
+
+Centro: around Avenida 18 de Julio, central and well connected by bus, with good-value hotels. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Palacio (Ciudad Vieja, score 8.7, from €45 a night); best value: Hotel Alvear (Montevideo Centro, score 8.9, from €66 a night); luxury: Hotel Montevideo - Leading Hotels of the World (Pocitos, score 9.2, from €194 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Montevideo?
+
+Carrasco International Airport is about 20 km east of the centre.
+
+### How do you get around Montevideo?
+
+Within the city, buses are the main transport; there is no metro.
+
+### What are the must-see places in Montevideo?
+
+According to this guide: Ciudad Vieja (Old Town); Plaza Independencia and Palacio Salvo; Teatro Solís; Mercado del Puerto; The Rambla; Museo Andes 1972; Museo Torres García; Palacio Legislativo. Each one is explained in the "What to see" section.
+
 ### Is Montevideo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

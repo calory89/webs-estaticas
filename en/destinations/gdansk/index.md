@@ -235,6 +235,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Main Town. Morning:
 
 With three days in Gdansk, this is the guide's route: Day 1, Main Town; Day 2, WWII and Solidarity; Day 3, Westerplatte, Oliwa and Sopot. The table above has the full plan for each day.
 
+### Where to stay in Gdansk?
+
+Old Town (Stare Miasto): just north, near the Market Hall and shipyard, slightly cheaper (€60-110) and still 10 minutes on foot from Long Market. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Bonum Old Town (Gdańsk, score 8.8, from €43 a night); best value: The Cloud One Gdansk, part of the Motel One Group (Gdańsk, score 9.2, from €63 a night); luxury: Podewils Old Town Gdansk (Gdańsk, score 9.2, from €116 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Gdansk?
+
+Start with pierogi: try ruskie (potato and cheese), meat, or seasonal blueberry ones in summer.
+
+### How do you get from the airport to central Gdansk?
+
+Gdańsk Lech Wałęsa Airport is about 12 km west of the centre, and the cheapest route in is public transport for a few euros.
+
+### How do you get around Gdansk?
+
+Trams and buses (ZTM) cover the rest; buy tickets from machines, by contactless card on board, or in apps like Jakdojade.
+
+### What are the must-see places in Gdansk?
+
+According to this guide: Long Lane and Long Market (Ulica Długa and Długi Targ); Neptune's Fountain and Artus Court; Main Town Hall and its tower; St Mary's Basilica; Mariacka Street; The Crane (Żuraw) and the Motława riverfront; Museum of the Second World War; European Solidarity Centre and the shipyard. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Gdansk: https://www.happylowcost.com/en/destinations/gdansk/#deals

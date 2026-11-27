@@ -248,6 +248,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Historic centre and
 
 With three days in Catania, this is the guide's route: Day 1, Historic centre and the market; Day 2, Etna; Day 3, Monastery, castle and the coast. The table above has the full plan for each day.
 
+### Where to stay in Catania?
+
+For a short trip, stay in or right next to the historic centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Biscari (City Centre, score 8.6, from €105 a night); best value: Art & Jazz Hotel (City Centre, score 8.8, from €106 a night); luxury: Palazzo Sangiorgio (City Centre, score 9.4, from €331 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Catania?
+
+Within the city, the centre is walkable.
+
+### What are the must-see places in Catania?
+
+According to this guide: Piazza del Duomo and the Elephant Fountain; Cathedral of Sant'Agata; La Pescheria fish market; Via Etnea; Monastero dei Benedettini; San Nicolò l'Arena; Via dei Crociferi; Badia di Sant'Agata (rooftop). Each one is explained in the "What to see" section.
+
 ### Is Catania expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

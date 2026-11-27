@@ -112,7 +112,7 @@ The city is built around cars, and renting one gives you freedom, especially for
 
 Prices are approximate, and accommodation is the line that moves most. Tax and tips are added on top of menu prices, so allow roughly 18-20% for a tip in restaurants.
 
-## FAQs
+## FAQ about Los Angeles
 
 ### Do I need a car in Los Angeles?
 
@@ -145,6 +145,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown. Union Sta
 ### What to do in Los Angeles in 4 days?
 
 With four days in Los Angeles, this is the guide's route: Day 1, Downtown; Day 2, Hollywood and the hills; Day 3, The Westside; Day 4, Your choice. The table above has the full plan for each day.
+
+### When is the best time to visit Los Angeles?
+
+Spring and autumn are the best seasons, with warm days and little rain.
+
+### Where to stay in Los Angeles?
+
+It is not the prettiest area, but it is practical. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Olyver Hotel (Koreatown, score 8.5, from €120 a night); best value: citizenM Los Angeles Downtown (Downtown LA, score 8.7, from €126 a night); luxury: Shutters On The Beach (Santa Monica, score 9.2, from €838 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Los Angeles?
+
+A free shuttle also connects the terminals to the LAX/Metro Transit Center, where you can pick up the Metro.
 
 ## Flights and deals
 

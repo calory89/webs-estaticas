@@ -243,6 +243,18 @@ If you only have one day, follow day 1 of this itinerary: Old town, cathedral an
 
 With two days in Cadiz, this is the guide's route: Day 1, Old town, cathedral and La Caleta; Day 2, Museums, gardens and the big beach. The table above has the full plan for each day.
 
+### Where to stay in Cadiz?
+
+Old town (Casco Antiguo, around San Francisco and Plaza de Mina): best for first-timers and anyone without a car. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: La Caleta QE Hotels (Old Town, score 8.7, from €64 a night); best value: Hotel Boutique Convento Cádiz (Old Town, score 9, from €132 a night); luxury: Áurea Casa Palacio Sagasta by Eurostars Hotel Company (Old Town, score 9.3, from €154 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Cadiz?
+
+Urban buses (line 1 and line 7 run along the length of the city to Victoria) cost about €1.10 a ride, or less with a rechargeable card.
+
+### What are the must-see places in Cadiz?
+
+According to this guide: Cádiz Cathedral and the Torre de Levante; Torre Tavira; Mercado Central de Abastos; La Caleta beach; Castillo de Santa Catalina; Castillo de San Sebastián; Barrio de la Viña; Barrio del Pópulo and the Roman Theatre. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Cadiz: https://www.happylowcost.com/en/destinations/cadiz/#deals

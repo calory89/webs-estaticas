@@ -116,7 +116,7 @@ Within the island, you have several options. **Dala-dalas** (shared minibuses) a
 
 Cash in US dollars and Tanzanian shillings both work, and cards are accepted in bigger places. Many excursions and park entries are priced in dollars.
 
-## FAQ
+## FAQ about Zanzibar
 
 ### Do I need a visa for Zanzibar?
 
@@ -153,6 +153,26 @@ With seven days in Zanzibar, this is the guide's route: Days 1-2, Stone Town. Wa
 ### What to see in Tanzania in 7 days?
 
 With seven days in Tanzania, this guide suggests staying in Zanzibar and following its route: Days 1-2, Stone Town. Wander, eat at Forodhani, do Prison Island or a spice tour; Days 3-4, East coast (Paje or Jambiani). Jozani on the way, kitesurfing or lazy beach time; Days 5-6, North coast (Nungwi or Kendwa). Snorkelling at Mnemba, sunsets; Day 7, Back to Stone Town or straight to the airport.
+
+### When is the best time to visit Zanzibar?
+
+The driest and most comfortable months run from June to October, with clearer skies and lower humidity.
+
+### Where to stay in Zanzibar?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Habari House (The Top-rated Area in Zanzibar City, score 8.8, from €66 a night); best value: Kisiwa House (The Top-rated Area in Zanzibar City, score 8.7, from €122 a night); luxury: The Neela Boutique Hotel Stone Town (The Top-rated Area in Zanzibar City, score 9, from €392 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Zanzibar?
+
+Try pilau and biryani, fresh grilled kingfish or tuna, and cassava with chilli.
+
+### How do you get from the airport to central Zanzibar?
+
+Abeid Amani Karume International Airport (ZNZ) is about 6 km from Stone Town.
+
+### What are the must-see places in Zanzibar?
+
+According to this guide: Stone Town; Forodhani Gardens; House of Wonders and the Old Fort; Darajani Market; Prison Island (Changuu); Jozani Forest; Nungwi and Kendwa; Paje, Jambiani and the east coast. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

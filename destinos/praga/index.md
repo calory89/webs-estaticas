@@ -103,7 +103,7 @@ La moneda es la corona checa (CZK), no el euro. Casi todo se paga con tarjeta, p
 
 Son cifras de referencia y varían según temporada y tipo de viaje.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Praga
 
 ### ¿Cuántos días hacen falta en Praga?
 
@@ -144,6 +144,22 @@ Con tres días en Praga, esta es la ruta de la guía: Día 1, Ciudad Vieja, Orlo
 ### ¿Qué ver en Chequia en 3 días?
 
 Con tres días en Chequia, esta guía propone quedarse en Praga y seguir su ruta: Día 1, Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde; Día 2, Castillo de Praga a primera hora, Malá Strana, isla de Kampa y subida a Petřín; Día 3, Vyšehrad por la mañana, Casa Danzante, paseo por Náplavka y cerveza en Letná.
+
+### ¿Dónde alojarse en Praga?
+
+Mi favorita para quedarse varios días, con metro directo al centro. Žižkov: más barato y más local, con muchos bares. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Prague Star (Prague 1, nota 8,4, desde 52 € la noche); mejor calidad-precio: Grand Hotel International - Czech Leading Hotels (Prague 6, nota 9,2, desde 66 € la noche); lujo: Old Royal Post Boutique Hotel & Premium Suites (Lesser Quarter (Mala Strana), nota 9,6, desde 82 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Praga?
+
+También puedes probar los chlebíčky, tostas abiertas que se comen de pie en delicatessen clásicas.
+
+### ¿Cómo llegar del aeropuerto al centro de Praga?
+
+El aeropuerto Václav Havel (PRG) está a unos 17 km del centro.
+
+### ¿Cómo moverse por Praga?
+
+La opción más barata es el autobús 119 hasta la estación de metro Nádraží Veleslavín, en la línea A, y de ahí al centro.
 
 ### ¿Es caro viajar a Praga?
 

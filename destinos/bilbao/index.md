@@ -251,6 +251,22 @@ No. La ciudad se recorre andando y en metro o tranvía, y casi todas las excursi
 
 Con dos días en Bilbao, esta es la ruta de la guía: Día 1, Casco Viejo, ría y Artxanda; Día 2, Guggenheim, Bellas Artes y Ensanche. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Bilbao?
+
+La mejor época es de mayo a junio y septiembre a octubre: temperaturas suaves (15-23 °C), días largos y menos gente que en verano.
+
+### ¿Dónde alojarse en Bilbao?
+
+Casco Viejo: para primeras visitas y para quien quiere salir de pintxos y volver andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Bilbao Plaza (Bilbao City Centre, nota 8,5, desde 118 € la noche); mejor calidad-precio: Hotel Tayko Bilbao (Old Town, nota 9,2, desde 213 € la noche); lujo: The Artist Grand Hotel of Art (Ensanche, nota 9,3, desde 297 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Bilbao?
+
+Dentro de la ciudad, lo céntrico se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Bilbao?
+
+Según esta guía: Museo Guggenheim; Puppy y el paseo de Abandoibarra; Casco Viejo y las Siete Calles; Plaza Nueva; Catedral de Santiago; Mercado de la Ribera; Teatro Arriaga y el Arenal; Museo de Bellas Artes. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bilbao: https://www.happylowcost.com/destinos/bilbao/#chollos

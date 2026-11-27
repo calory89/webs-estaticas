@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Vilnius for a trip from Zaragoza?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: CATHEDRAL Old Town Suites (Vilnius Old Town, score 8.9, from €64 a night); best value: CALVARY Hotel & Restaurant Vilnius (Snipiskes, score 9.3, from €92 a night); luxury: Stikliai Hotel - Relais & Châteaux (Vilnius Old Town, score 9.4, from €208 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

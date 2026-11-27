@@ -108,7 +108,7 @@ Para entrar al país necesitas una autorización electrónica de viaje (ETA). Tr
 
 Sigiriya y los safaris pueden suponer el mayor gasto individual. Si el presupuesto aprieta, elige uno de los dos grandes pagos.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Sri Lanka
 
 ### ¿Cuántos días hacen falta para Sri Lanka?
 
@@ -137,6 +137,18 @@ Para quien escribió esta guía, sí: Sri Lanka es una isla del tamaño de Arag�
 ### ¿Qué hacer en Sri Lanka en 10 días?
 
 Con diez días en Sri Lanka, esta es la ruta de la guía: Días 1-2, Llegada, Negombo o Colombo y salida hacia el Triángulo Cultural; Días 3-4, Sigiriya, Dambulla y Polonnaruwa; Día 5, Kandy; Días 6-7, Tren a Nuwara Eliya y Ella; Día 8, Safari en Udawalawe o Yala, camino de la costa; Días 9-10, Mirissa, Galle y vuelo desde Colombo. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Sri Lanka?
+
+Si no quieres tuk-tuk a cada rato, duerme cerca del centro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Sofia Colombo City Hotel (295a Galle Road, nota 8,6, desde 67 € la noche); mejor calidad-precio: Granbell Hotel Colombo (Kollupitiya, nota 8,6, desde 125 € la noche); lujo: Marino Beach Colombo (590 Marine Drive, nota 9,2, desde 97 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Sri Lanka?
+
+El plato de base es el rice and curry: arroz con varios curris de verduras, lentejas (dhal), pescado o pollo, y un sambol de coco.
+
+### ¿Cómo llegar del aeropuerto al centro de Sri Lanka?
+
+El aeropuerto internacional es el Bandaranaike (CMB), en Katunayake, a unos 35 kilómetros al norte de Colombo y muy cerca de Negombo.
 
 ## Vuelos y chollos
 

@@ -262,6 +262,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and the ri
 
 With three days in Bilbao, this is the guide's route: Day 1, Old town and the river; Day 2, Guggenheim and modern Bilbao; Day 3, The coast. The table above has the full plan for each day.
 
+### Where to stay in Bilbao?
+
+Casco Viejo: for atmosphere and pintxos at your door. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Bilbao Plaza (Bilbao City Centre, score 8.5, from €118 a night); best value: Hotel Tayko Bilbao (Old Town, score 9.2, from €213 a night); luxury: The Artist Grand Hotel of Art (Ensanche, score 9.3, from €297 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Bilbao?
+
+For longer rides, the metro (two lines, linking to the coast at Getxo, Sopelana and Portugalete), the tram along the river and the Bilbobus buses all work well.
+
+### What are the must-see places in Bilbao?
+
+According to this guide: Guggenheim Museum Bilbao; Puppy and Maman; Casco Viejo (the Old Town); Plaza Nueva; Mercado de la Ribera; Museo de Bellas Artes; Artxanda Funicular; The Ría walk and Zubizuri bridge. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Bilbao: https://www.happylowcost.com/en/destinations/bilbao/#deals

@@ -235,6 +235,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The historic centre
 
 With four days in Oaxaca, this is the guide's route: Day 1, The historic centre; Day 2, Monte Albán and the southern craft villages; Day 3, The eastern valley (ideally a Sunday); Day 4, Neighbourhoods and food. The table above has the full plan for each day.
 
+### Where to stay in Oaxaca?
+
+Centro (around Santo Domingo and Alcalá).
+
+### What to eat in Oaxaca?
+
+Oaxaca is known as the land of seven moles, and you should try at least three.
+
+### How do you get from the airport to central Oaxaca?
+
+Oaxaca International Airport (OAX) is about 7 km south of the centre, a 20-30 minute drive.
+
+### How do you get around Oaxaca?
+
+The centre is compact and walkable, and you will rarely need transport in town.
+
+### What are the must-see places in Oaxaca?
+
+According to this guide: Templo de Santo Domingo de Guzmán; Museo de las Culturas de Oaxaca; Jardín Etnobotánico; Monte Albán; Mercado 20 de Noviembre and the Pasillo de Humo; Mercado Benito Juárez; Zócalo and the Cathedral; Andador Macedonio Alcalá. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Oaxaca: https://www.happylowcost.com/en/destinations/oaxaca/#deals

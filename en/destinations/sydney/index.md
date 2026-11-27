@@ -230,6 +230,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Harbour and city. M
 
 With four days in Sydney, this is the guide's route: Day 1, Harbour and city; Day 2, Beaches; Day 3, Ferries, Manly and Watsons Bay; Day 4, Blue Mountains or Newtown and the gallery. The table above has the full plan for each day.
 
+### Where to stay in Sydney?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Macleay Hotel (Potts Point, score 8.4, from €174 a night); best value: Hyde Park Inn (Sydney Central Business District, score 8.2, from €232 a night); luxury: Capella Sydney (Sydney Central Business District, score 9.7, from €775 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Sydney?
+
+Try them at the Sydney Fish Market in Pyrmont.
+
+### How do you get around Sydney?
+
+Getting around runs on Opal: tap on and off with a contactless bank card or phone (no need to buy a card) on trains, buses, ferries, light rail and the metro.
+
+### What are the must-see places in Sydney?
+
+According to this guide: Sydney Opera House; Sydney Harbour Bridge; The Rocks; Royal Botanic Garden and Mrs Macquarie's Chair; Bondi Beach; Bondi to Coogee coastal walk; Manly and the Manly ferry; Art Gallery of New South Wales. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Sydney: https://www.happylowcost.com/en/destinations/sydney/#deals

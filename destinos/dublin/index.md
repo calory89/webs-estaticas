@@ -95,7 +95,7 @@ Ni el Luas ni el DART llegan al aeropuerto. Una vez en la ciudad, la mayor parte
 
 Los gastos grandes son el alojamiento y las entradas a las atracciones principales. Muchas se abaratan comprándolas online.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Dublín
 
 ### ¿Es Dublín una ciudad cara?
 
@@ -132,6 +132,18 @@ Con tres días en Dublín, esta es la ruta de la guía: Día 1, Centro y sur; D�
 ### ¿Qué ver en Irlanda en 3 días?
 
 Con tres días en Irlanda, esta guía propone quedarse en Dublín y seguir su ruta: Día 1, Centro y sur; Día 2, La Dublín medieval y la de la cerveza; Día 3, Historia y mar.
+
+### ¿Dónde alojarse en Dublín?
+
+Centro sur (Grafton, St Stephen's Green): cómodo y bien comunicado. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Dublin One (Dublin City Centre, nota 8,2, desde 97 € la noche); mejor calidad-precio: Holiday Inn Express Dublin City Centre by IHG (Parnell Square, nota 8,9, desde 118 € la noche); lujo: The Fitzwilliam Hotel (Saint Stephen's Green, nota 9,1, desde 429 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Dublín?
+
+Prueba también el coddle, un guiso dublinés de salchichas y patatas, y el boxty, una tortita de patata.
+
+### ¿Cómo llegar del aeropuerto al centro de Dublín?
+
+El aeropuerto está a unos 10 kilómetros del centro.
 
 ### ¿Es caro viajar a Dublín?
 

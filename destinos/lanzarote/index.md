@@ -257,6 +257,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Manrique y la capital
 
 Con cinco días en Lanzarote, esta es la ruta de la guía: Día 1, Manrique y la capital; Día 2, El norte; Día 3, Timanfaya y la costa de lava; Día 4, El sur y las playas; Día 5, La Graciosa. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Lanzarote?
+
+Los meses con mejor relación entre clima, precio y gente son mayo, junio, octubre y noviembre: vuelos desde la península por debajo de 60 € ida y vuelta si reservas con tiempo, y Papagayo sin pelearte por aparcar.
+
+### ¿Cómo llegar del aeropuerto al centro de Lanzarote?
+
+El aeropuerto César Manrique está a unos 6 km de Arrecife y a 10 de Puerto del Carmen.
+
+### ¿Cómo moverse por Lanzarote?
+
+Si vas a usarla mucho, pregunta por la tarjeta recargable, que abarata cada viaje frente al billete suelto.
+
+### ¿Qué lugares imprescindibles ver en Lanzarote?
+
+Según esta guía: Parque Nacional de Timanfaya; Jameos del Agua; Cueva de los Verdes; Fundación César Manrique (Taro de Tahíche); Mirador del Río; El Golfo y el Charco de los Clicos; Los Hervideros; Salinas de Janubio. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Lanzarote?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

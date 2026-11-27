@@ -231,6 +231,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y aclimatació
 
 Con cuatro días en Cusco, esta es la ruta de la guía: Día 1, Centro y aclimatación; Día 2, Ruinas de arriba y San Blas; Día 3, Valle Sagrado; Día 4, Machu Picchu. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Cusco?
+
+La mejor época es la estación seca, de mayo a septiembre: cielos azules, días soleados (unos 20 grados) y noches muy frías, que pueden bajar de cero en junio y julio.
+
+### ¿Dónde alojarse en Cusco?
+
+Centro histórico (alrededor de la Plaza de Armas). Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Killaqente (Urbanizacion Tawantinsuyo Jiron Atahuallpa 454, nota 8,9, desde 25 € la noche); mejor calidad-precio: Hotel Rumi Punku (Cusco City Centre, nota 9,3, desde 99 € la noche); lujo: Monasterio, A Belmond Hotel, Cusco (Cusco City Centre, nota 9,8, desde 516 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Cusco?
+
+El plato famoso es el cuy al horno, que se come entero y sabe a algo entre conejo y pollo con más grasa; en restaurante cuesta entre 60 y 90 soles (15-23 €), y en los pueblos de los alrededores, como Tipón, bastante menos.
+
+### ¿Cómo llegar del aeropuerto al centro de Cusco?
+
+El aeropuerto Alejandro Velasco Astete está a unos 5 km del centro, entre 20 y 30 minutos según el tráfico.
+
+### ¿Cómo moverse por Cusco?
+
+Por el centro se va andando, que además es lo más cómodo.
+
+### ¿Qué lugares imprescindibles ver en Cusco?
+
+Según esta guía: Plaza de Armas; Catedral del Cusco; Qorikancha y convento de Santo Domingo; Calle Hatun Rumiyoc y la piedra de los doce ángulos; Barrio de San Blas; Mercado de San Pedro; Sacsayhuamán; Qenqo, Puca Pucara y Tambomachay. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Cusco?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-130 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

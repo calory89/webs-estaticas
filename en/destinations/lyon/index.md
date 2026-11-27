@@ -214,6 +214,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Vieux Lyon and Four
 
 With three days in Lyon, this is the guide's route: Day 1, Vieux Lyon and Fourvière; Day 2, Presqu'île and Croix-Rousse; Day 3, Markets, museums and the rivers. The table above has the full plan for each day.
 
+### Where to stay in Lyon?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Campanile PRIME Lyon Centre Gare Part-Dieu (3rd arr., score 8.6, from €78 a night); best value: Hotel De Verdun 1882, BW Signature Collection (2nd arr., score 8.8, from €154 a night); luxury: Villa Florentine, A Beauvallon Hotel & Spa (5th arr., score 9.3, from €337 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Lyon?
+
+The Rhônexpress tram runs to Part-Dieu in about 30 minutes, at around €17-18 one way.
+
+### What are the must-see places in Lyon?
+
+According to this guide: Basilica of Notre-Dame de Fourvière; Roman theatres and Lugdunum museum; Vieux Lyon; The traboules; Cathédrale Saint-Jean; Place des Terreaux and the Musée des Beaux-Arts; Croix-Rousse and the Mur des Canuts; Maison des Canuts. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Lyon: https://www.happylowcost.com/en/destinations/lyon/#deals

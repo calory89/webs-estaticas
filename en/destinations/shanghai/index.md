@@ -248,6 +248,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The Bund, Yu Garden
 
 With four days in Shanghai, this is the guide's route: Day 1, The Bund, Yu Garden and Pudong; Day 2, People's Square and the French Concession; Day 3, Temples, art and the West Bund; Day 4, Suzhou. The table above has the full plan for each day.
 
+### Where to stay in Shanghai?
+
+Former French Concession (Xuhui/Huangpu border): the best area for first-timers who like walking, cafés and good food. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: KeTangJian Aparthotel (Minhang, score 8.1, from €20 a night); best value: Novotel Atlantis Shanghai (Pudong, score 9, from €88 a night); luxury: SAVHE Hotel on the Bund Nanjing Road Pedestrian Street (Hongkou, score 9.5, from €195 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Shanghai?
+
+Hong shao rou: pork belly braised in soy and sugar, the city's comfort dish.
+
+### How do you get from the airport to central Shanghai?
+
+From Pudong International Airport you have three main options: Maglev: the magnetic train reaches 300 km/h and gets you to Longyang Road in about 8 minutes for ¥50 (€6.50), about ¥40 with a same-day plane ticket.
+
+### How do you get around Shanghai?
+
+You still need to change to metro Line 2 to get central, so it's more fun than fast overall.
+
+### What are the must-see places in Shanghai?
+
+According to this guide: The Bund; Shanghai Tower; Yu Garden; Former French Concession; Shanghai Museum; Jing'an Temple; Jade Buddha Temple; Tianzifang. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Shanghai: https://www.happylowcost.com/en/destinations/shanghai/#deals

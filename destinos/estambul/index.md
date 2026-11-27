@@ -88,7 +88,7 @@ Para moverte, compra una **Istanbulkart** recargable en las máquinas de las est
 
 Las entradas a Santa Sofía y Topkapı pesan en el bolsillo; comprueba el precio actual en las webs oficiales y evita revendedores en la puerta.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Estambul
 
 ### ¿Necesito visado los españoles?
 
@@ -129,6 +129,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Sultanahmet. Santa So
 ### ¿Qué hacer en Estambul en 4 días?
 
 Con cuatro días en Estambul, esta es la ruta de la guía: Día 1, Sultanahmet; Día 2, Topkapı y bazares; Día 3, Cuerno de Oro y Beyoğlu; Día 4, Bósforo y Asia. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Estambul?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Sultanahmet inn Hotel (Fatih, nota 8,6, desde 48 € la noche); mejor calidad-precio: Old Harbour Hotel istanbul (Fatih, nota 9,2, desde 49 € la noche); lujo: Çırağan Palace Kempinski Istanbul (Besiktas, nota 9,5, desde 513 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Estambul?
+
+Prueba también los midye dolma (mejillones rellenos de arroz), el kokoreç si te va lo atrevido, el lahmacun y el pide.
+
+### ¿Cómo llegar del aeropuerto al centro de Estambul?
+
+El Aeropuerto de Estambul (IST) está lejos, al norte, en la parte europea.
+
+### ¿Cómo moverse por Estambul?
+
+Los autobuses Havaist llegan a Taksim y Sultanahmet en alrededor de una hora, según tráfico, y también hay metro (M11) hasta Gayrettepe, con enlace a la línea M2.
 
 ## Vuelos y chollos
 

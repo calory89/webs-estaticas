@@ -91,7 +91,7 @@ En la ciudad, el centro se recorre andando. Para el resto hay metro, tranvías y
 
 Una cerveza en un bar suele rondar los 2-3 euros, y un café, algo menos. Las entradas a museos y a la cripta de la catedral cuestan pocos euros.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Sofía
 
 ### ¿Hace falta visado o pasaporte desde España?
 
@@ -132,6 +132,18 @@ Con tres días en Sofía, esta es la ruta de la guía: Día 1, Free tour, Alejan
 ### ¿Qué ver en Bulgaria en 3 días?
 
 Con tres días en Bulgaria, esta guía propone quedarse en Sofía y seguir su ruta: Día 1, Free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro; Día 2, Rotonda de San Jorge, Serdica, mercados y mezquita; Día 3, Iglesia de Boyana por la mañana y subida al Vitosha por la tarde, si hace buen tiempo.
+
+### ¿Dónde alojarse en Sofía?
+
+Centro (Serdika, calle Vitosha): lo más cómodo para moverte a pie. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Aurora Sofia Hotel (Centrum, nota 9,3, desde 84 € la noche); mejor calidad-precio: Sentro Boutique Hotel (Centrum, nota 9,6, desde 98 € la noche); lujo: Grand Hotel Millennium Sofia (Centrum, nota 9,2, desde 278 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Sofía?
+
+El aeropuerto de Sofía tiene metro propio.
+
+### ¿Cómo moverse por Sofía?
+
+En la ciudad, el centro se recorre andando.
 
 ## Vuelos y chollos
 

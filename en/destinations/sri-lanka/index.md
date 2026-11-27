@@ -105,7 +105,7 @@ Within the country, trains are cheap and scenic but slow, and buses are cheaper 
 
 The big extras are park entry, safari jeeps and the Sigiriya ticket. These are the costs that surprise people, so budget for them on top.
 
-## FAQ
+## FAQ about Sri Lanka
 
 ### Do I need a visa for Sri Lanka?
 
@@ -134,6 +134,18 @@ For the traveller who wrote this guide, yes: Sri Lanka is small, roughly the siz
 ### What to do in Sri Lanka in 14 days?
 
 With 14 days in Sri Lanka, this is the guide's route: Days 1-2, Arrive, a short stay in Colombo or straight to Negombo near the airport if you land late; Days 3-4, Sigiriya, Dambulla and Polonnaruwa, the Cultural Triangle; Day 5, Kandy; Days 6-8, Train to Ella, with a stop in Nuwara Eliya if you like cooler air; Day 9, A safari at Udawalawe or Yala on the way south; Days 10-12, Galle, Mirissa or Unawatuna for the beach; Days 13-14, Back up the Expressway to Colombo and the airport. The table above has the full plan for each day.
+
+### Where to stay in Sri Lanka?
+
+Fort is handy for trains and the old centre, while Colombo 7 (Cinnamon Gardens) is greener and has the better restaurants. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Sofia Colombo City Hotel (295a Galle Road, score 8.6, from €67 a night); best value: Granbell Hotel Colombo (Kollupitiya, score 8.6, from €125 a night); luxury: Marino Beach Colombo (590 Marine Drive, score 9.2, from €97 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Sri Lanka?
+
+In Colombo, try lamprais, rice and curry baked in a banana leaf.
+
+### How do you get from the airport to central Sri Lanka?
+
+Bandaranaike International Airport (CMB) is at Katunayake, about 35 km north of Colombo and close to Negombo.
 
 ## Flights and deals
 

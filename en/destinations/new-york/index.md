@@ -81,7 +81,7 @@ The **subway** runs 24 hours and is the fastest way to get around. A single ride
 
 Tipping is expected: roughly 18 to 20 percent in restaurants. Sales tax is added at the till, so listed prices are never final.
 
-## FAQ
+## FAQ about New York
 
 ### Is five days enough for New York?
 
@@ -118,6 +118,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Midtown. Grand Cent
 ### What to do in New York in 5 days?
 
 With five days in New York, this is the guide's route: Day 1, Midtown; Day 2, Central Park and Upper side; Day 3, Downtown; Day 4, Brooklyn; Day 5, Village and Chelsea. The table above has the full plan for each day.
+
+### When is the best time to visit New York?
+
+Spring (April to early June) and autumn (September to early November) are the best times.
+
+### Where to stay in New York?
+
+Lower Manhattan and the Financial District are quieter at night and often cheaper at weekends. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Pod Times Square (Manhattan, score 8.6, from €208 a night); best value: Hampton Inn Times Square Central (Manhattan, score 8.6, from €301 a night); luxury: The Knickerbocker Hotel (Manhattan, score 8.7, from €627 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in New York?
+
+In Chinatown, try soup dumplings at a place like Joe's Shanghai.
+
+### How do you get around New York?
+
+A single ride costs about $3, and you can tap a contactless card or phone at the turnstile with OMNY.
 
 ## Flights and deals
 

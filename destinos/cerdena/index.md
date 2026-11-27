@@ -106,7 +106,7 @@ Para moverse, el coche de alquiler es casi obligatorio fuera de las ciudades. Re
 
 Son cifras generales: en agosto, cualquier categoría sube con facilidad un tercio o más. El alquiler de coche y el combustible suelen ser lo que más pesa en el presupuesto.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Cerdeña
 
 ### ¿Se puede visitar Cerdeña sin coche?
 
@@ -143,6 +143,14 @@ Para quien escribió esta guía, sí: Cerdeña no es una isla pequeña ni una pl
 ### ¿Qué hacer en Cerdeña en 7 días?
 
 Con siete días en Cerdeña, esta es la ruta de la guía: Días 1-2, Cagliari, Castello, mercado, atardecer y baño en la playa del Poetto; Día 3, Sales hacia Barumini, visitas Su Nuraxi y duermes en Oristano o en Cabras; Día 4, Tharros, Is Arutas y la península del Sinis; Día 5, Bosa y carretera costera hasta Alghero; Día 6, Alghero, Capo Caccia y Escala del Cabirol; Día 7, Stintino y La Pelosa, y vuelo de vuelta desde Alghero. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué comer en Cerdeña?
+
+Pide culurgiones, una pasta rellena de patata y queso típica de Ogliastra, y malloreddus, gnocchetti con salchicha.
+
+### ¿Cómo llegar del aeropuerto al centro de Cerdeña?
+
+Hay tres aeropuertos principales: Cagliari-Elmas, Olbia Costa Smeralda y Alghero-Fertilia.
 
 ### ¿Es caro viajar a Cerdeña?
 

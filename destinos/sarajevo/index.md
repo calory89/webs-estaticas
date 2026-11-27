@@ -243,6 +243,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El bazar y la ciudad 
 
 Con tres días en Sarajevo, esta es la ruta de la guía: Día 1, El bazar y la ciudad austrohúngara; Día 2, La guerra y los miradores; Día 3, Montaña y museos. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Sarajevo?
+
+La mejor época es mayo-junio y septiembre-octubre: temperaturas suaves, días largos y menos gente que en pleno verano.
+
+### ¿Dónde alojarse en Sarajevo?
+
+Para una estancia corta, quédate en el centro histórico o a poca distancia andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Garni Konak Hotel By Blanket Collection (Baščaršija, nota 8,6, desde 54 € la noche); mejor calidad-precio: Hotel Sana (Baščaršija, nota 9, desde 116 € la noche); lujo: Swissotel Sarajevo (1 Vrbanja, nota 9,2, desde 254 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Sarajevo?
+
+El plato estrella es el ćevapi: salchichitas de carne a la brasa dentro de un pan somun esponjoso, con cebolla cruda y kajmak (una nata espesa).
+
+### ¿Cómo llegar del aeropuerto al centro de Sarajevo?
+
+El aeropuerto está a unos 12 kilómetros del centro.
+
+### ¿Cómo moverse por Sarajevo?
+
+El tranvía 3 recorre el eje principal de Baščaršija a Ilidža, pasando por Marijin Dvor y el Museo Nacional.
+
+### ¿Qué lugares imprescindibles ver en Sarajevo?
+
+Según esta guía: Baščaršija; Mezquita de Gazi Husrev-beg; Ferhadija y la línea «Sarajevo Meeting of Cultures»; Puente Latino y Museo Sarajevo 1878-1918; Vijećnica (Ayuntamiento y Biblioteca); Túnel de la Esperanza; Galería 11/07/95; Museo de la Infancia en Guerra. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sarajevo: https://www.happylowcost.com/destinos/sarajevo/#chollos

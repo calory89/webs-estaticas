@@ -95,7 +95,7 @@ Once there, the Old Town is for walking. For longer hops, use buses, trolleybuse
 
 A main course often costs €10-18, a beer around €3-5, and a short ride-hailing trip a few euros. Prices rise a little in the Old Town and in summer.
 
-## FAQ
+## FAQ about Vilnius
 
 ### Is Vilnius safe for tourists?
 
@@ -136,6 +136,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Gate of D
 ### What to do in Vilnius in 3 days?
 
 With three days in Vilnius, this is the guide's route: Day 1, Old Town; Day 2, Užupis and the modern side; Day 3, Trakai. The table above has the full plan for each day.
+
+### Where to stay in Vilnius?
+
+It is a calmer option, and still a short walk from the Old Town. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: CATHEDRAL Old Town Suites (Vilnius Old Town, score 8.9, from €64 a night); best value: CALVARY Hotel & Restaurant Vilnius (Snipiskes, score 9.3, from €92 a night); luxury: Stikliai Hotel - Relais & Châteaux (Vilnius Old Town, score 9.4, from €208 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Vilnius?
+
+With a beer, try kepta duona, fried garlic rye bread with a cheese dip.
+
+### How do you get from the airport to central Vilnius?
+
+Vilnius International Airport (VNO) is about 5 km south of the centre.
+
+### How do you get around Vilnius?
+
+The easiest option is the train, a trip of around seven minutes to the main station, which is a ten-minute walk from the Old Town.
 
 ## Flights and deals
 

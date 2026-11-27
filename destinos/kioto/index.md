@@ -94,7 +94,7 @@ Dentro de la ciudad hay dos líneas de metro, la Karasuma (norte-sur) y la Tozai
 
 Son cifras generales y dependen mucho de la época; en cerezos y arces, súbelas.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Kioto
 
 ### ¿Cuántos días hacen falta para ver Kioto?
 
@@ -127,6 +127,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Higashiyama. Fushimi 
 ### ¿Qué hacer en Kioto en 4 días?
 
 Con cuatro días en Kioto, esta es la ruta de la guía: Día 1, Higashiyama; Día 2, Oeste; Día 3, Centro y norte; Día 4, Nara o Uji. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Kioto?
+
+Kawaramachi y Shijo: el centro vivo, con restaurantes, tiendas y Pontocho a mano. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hop Inn Kyoto Shijo Omiya (Nakagyo Ward, nota 8,4, desde 92 € la noche); mejor calidad-precio: Comfort Hotel ERA Kyoto Toji (Minami Ward, nota 9,1, desde 141 € la noche); lujo: Sowaka (Higashiyama Ward, nota 9,7, desde 2200 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Kioto?
+
+El plato local por excelencia es el kaiseki, un menú de muchos pases pequeños que puede costar una fortuna; el almuerzo suele ser bastante más barato que la cena.
+
+### ¿Cómo llegar del aeropuerto al centro de Kioto?
+
+Desde el aeropuerto de Kansai (KIX), el tren expreso JR Haruka llega a la estación de Kioto en unos 75-80 minutos y cuesta alrededor de 3.000-3.600 yenes, con descuentos para turistas que merece la pena comprobar.
+
+### ¿Cómo moverse por Kioto?
+
+Dentro de la ciudad hay dos líneas de metro, la Karasuma (norte-sur) y la Tozai (este-oeste), pero lo que realmente cubre los templos es la red de autobuses urbanos con tarifa única, que va muy llena en temporada alta.
 
 ## Vuelos y chollos
 

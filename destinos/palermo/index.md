@@ -117,7 +117,7 @@ Dentro de la ciudad, casi todo se hace a pie. Hay autobuses urbanos y algunas l�
 
 Las entradas principales, como la Cappella Palatina o las catacumbas, suelen estar entre 5 y 15 euros según el caso. Mira si hay entradas combinadas antes de comprar.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Palermo
 
 ### ¿Es seguro Palermo?
 
@@ -154,6 +154,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Palazzo dei Normanni 
 ### ¿Qué hacer en Palermo en 3 días?
 
 Con tres días en Palermo, esta es la ruta de la guía: Día 1, Palazzo dei Normanni y Cappella Palatina a primera hora, Catedral, Quattro Canti; Día 2, Monreale por la mañana. Vuelta a Palermo, comida en Ballarò; Día 3, Catacumbas, Palazzo Abatellis, Foro Italico y tarde libre o playa en Mondello. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Palermo?
+
+Centro histórico (Quattro Canti, Vucciria): lo más cómodo para caminar. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Tonic (Ruggero Settimo, nota 8,2, desde 58 € la noche); mejor calidad-precio: Palazzo Balsamo Boutique Hotel (La Kalsa, nota 9,6, desde 223 € la noche); lujo: Grand Hotel Et Des Palmes (Ruggero Settimo, nota 9, desde 465 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Palermo?
+
+El aeropuerto Falcone-Borsellino está a unos 35 km de la ciudad.
+
+### ¿Cómo moverse por Palermo?
+
+Dentro de la ciudad, casi todo se hace a pie.
+
+### ¿Qué lugares imprescindibles ver en Palermo?
+
+Según esta guía: Palazzo dei Normanni y Cappella Palatina; Catedral de Palermo; Quattro Canti y Piazza Pretoria; La Martorana y San Cataldo; Mercado de Ballarò; Teatro Massimo; Catacumbas de los Capuchinos; Monreale. En la sección "Qué ver" tienes cada uno explicado.
 
 ### ¿Es caro viajar a Palermo?
 

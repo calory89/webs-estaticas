@@ -99,7 +99,7 @@ Dentro de la ciudad, el metro funciona las 24 horas y se paga con tarjeta contac
 
 Son cifras generales: el vuelo y el tipo de cambio mueven mucho el total, y las tasas e impuestos suman más de lo que parece.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Nueva York
 
 ### ¿Necesito visado para viajar a Nueva York?
 
@@ -136,6 +136,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Lower Manhattan, ferr
 ### ¿Qué hacer en Nueva York en 5 días?
 
 Con cinco días en Nueva York, esta es la ruta de la guía: Día 1, Lower Manhattan, ferri de Staten Island; Día 2, Central Park por la mañana, Met por la tarde y paseo por el Upper West Side; Día 3, Greenwich Village, SoHo, Chinatown y Little Italy; Día 4, High Line, Chelsea Market, Hudson Yards y mirador al caer la tarde; Día 5, MoMA, Grand Central y, por la tarde, Williamsburg o un partido. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Nueva York?
+
+Upper West Side y Harlem: más vida de barrio y precios algo más bajos. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Pod Times Square (Manhattan, nota 8,6, desde 208 € la noche); mejor calidad-precio: Hampton Inn Times Square Central (Manhattan, nota 8,6, desde 301 € la noche); lujo: The Knickerbocker Hotel (Manhattan, nota 8,7, desde 627 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Nueva York?
+
+El plato más rápido y mejor que puedes comer es un trozo de pizza neoyorquina, fina, grande y que se dobla por la mitad.
+
+### ¿Cómo llegar del aeropuerto al centro de Nueva York?
+
+La ciudad tiene tres aeropuertos: JFK, Newark (Nueva Jersey) y LaGuardia.
+
+### ¿Cómo moverse por Nueva York?
+
+Desde JFK, el AirTrain te lleva a Jamaica o Howard Beach, donde enlazas con el metro o el tren de Long Island; es barato, pero tarda algo menos de una hora hasta Manhattan.
 
 ### ¿Es caro viajar a Nueva York?
 

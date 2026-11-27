@@ -246,6 +246,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Sevilla clásico. 
 
 Con tres días en Sevilla, esta es la ruta de la guía: Día 1, El Sevilla clásico; Día 2, Catedral, centro y Triana; Día 3, El Sevilla de los sevillanos. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Sevilla?
+
+La mejor época es de octubre a noviembre y de febrero a mediados de marzo: entre 18 y 25 grados, poca lluvia y precios razonables.
+
+### ¿Dónde alojarse en Sevilla?
+
+Barrio de Santa Cruz y Arenal: al lado de la Catedral y el Alcázar. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Patio de las Cruces (Santa Cruz, nota 8,3, desde 77 € la noche); mejor calidad-precio: Hotel Amadeus Sevilla (Old Town, nota 9,1, desde 159 € la noche); lujo: Only YOU Hotel Sevilla (Nervión, nota 9,4, desde 198 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Sevilla?
+
+Dentro de la ciudad casi no hace falta transporte: el casco histórico se cruza andando en 25 minutos.
+
+### ¿Qué lugares imprescindibles ver en Sevilla?
+
+Según esta guía: Real Alcázar; Catedral y Giralda; Plaza de España; Parque de María Luisa; Barrio de Santa Cruz; Triana; Setas de Sevilla (Metropol Parasol); Casa de Pilatos. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sevilla: https://www.happylowcost.com/destinos/sevilla/#chollos

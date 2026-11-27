@@ -89,7 +89,7 @@ Dentro de la ciudad, casi todo se hace **a pie**. Para ir más lejos, el transpo
 
 La mayoría de iglesias son gratuitas o piden una entrada pequeña. Lo que más pesa en el presupuesto es el alojamiento y, si lo cuentas, el vuelo.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Vilna
 
 ### ¿Es segura Vilna?
 
@@ -134,6 +134,22 @@ Con tres días en Vilna, esta es la ruta de la guía: Día 1, Puerta del Alba, c
 ### ¿Qué ver en Lituania en 3 días?
 
 Con tres días en Lituania, esta guía propone quedarse en Vilna y seguir su ruta: Día 1, Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral; Día 2, Trakai por la mañana. Por la tarde, Užupis y el paseo junto al río; Día 3, Museo del Genocidio, iglesia de San Pedro y San Pablo, y la colina de las Tres Cruces.
+
+### ¿Dónde alojarse en Vilna?
+
+Casco antiguo (Senamiestis): lo más cómodo, aunque algo más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: CATHEDRAL Old Town Suites (Vilnius Old Town, nota 8,9, desde 64 € la noche); mejor calidad-precio: CALVARY Hotel & Restaurant Vilnius (Snipiskes, nota 9,3, desde 92 € la noche); lujo: Stikliai Hotel - Relais & Châteaux (Vilnius Old Town, nota 9,4, desde 208 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Vilna?
+
+Lo típico son los cepelinai, grandes albóndigas de patata rellenas de carne, con nata y torreznos.
+
+### ¿Cómo llegar del aeropuerto al centro de Vilna?
+
+El aeropuerto de Vilna está a unos 6 km del centro y es muy cómodo.
+
+### ¿Cómo moverse por Vilna?
+
+Dentro de la ciudad, casi todo se hace a pie.
 
 ## Vuelos y chollos
 

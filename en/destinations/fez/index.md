@@ -89,7 +89,7 @@ These are rough numbers for one person, excluding flights.
 
 Carry some cash in dirhams, since small shops and taxis rarely take cards.
 
-## FAQs
+## FAQ about Fez
 
 ### Is Fez safe for tourists?
 
@@ -126,6 +126,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Bab Boujloud, Bou I
 ### What to do in Fez in 3 days?
 
 With three days in Fez, this is the guide's route: Day 1, Bab Boujloud, Bou Inania, Talaa Kebira, the Nejjarine fountain, Al-Attarine; Day 2, Fes el-Jdid, the palace doors, the Mellah and the Jewish cemetery; Day 3, A day trip to Volubilis and Meknes. The table above has the full plan for each day.
+
+### When is the best time to visit Fez?
+
+Spring (March to May) and autumn (late September to November) are the best seasons.
+
+### What to eat in Fez?
+
+Sweet and savoury in the same bite, it is the city's signature dish and worth ordering at least once.
+
+### How do you get from the airport to central Fez?
+
+Fès-Saïs Airport (FEZ) is about 15 km from the centre.
 
 ## Flights and deals
 

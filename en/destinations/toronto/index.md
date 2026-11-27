@@ -246,6 +246,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown and the wa
 
 With three days in Toronto, this is the guide's route: Day 1, Downtown and the waterfront; Day 2, Neighbourhoods and food; Day 3, Islands, uptown and the east. The table above has the full plan for each day.
 
+### Where to stay in Toronto?
+
+Entertainment District / King West: This puts you close to the CN Tower, the theatres and nightlife. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Crowne Plaza Toronto - North York by IHG (North York, score 8, from €142 a night); best value: Pantages Hotel Toronto Centre (Yonge - Dundas, score 8.8, from €183 a night); luxury: SoHo Hotel Toronto (Entertainment District, score 9, from €339 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Toronto?
+
+The fastest route from Pearson Airport is the UP Express train to Union Station.
+
+### How do you get around Toronto?
+
+It takes 25 minutes, runs every 15 minutes, and costs about CAD 12-13 (€8-9) with a contactless card or Presto.
+
+### What are the must-see places in Toronto?
+
+According to this guide: CN Tower; St Lawrence Market; Toronto Islands; Kensington Market; Art Gallery of Ontario (AGO); Royal Ontario Museum (ROM); Distillery District; Casa Loma. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Toronto: https://www.happylowcost.com/en/destinations/toronto/#deals

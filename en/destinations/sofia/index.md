@@ -101,7 +101,7 @@ The city centre is walkable. Beyond it, the metro is clean and fast, and trams a
 
 Bulgaria adopted the euro in 2026, so older price lists in leva are worth double-checking.
 
-## FAQ
+## FAQ about Sofia
 
 ### Is Sofia safe?
 
@@ -138,6 +138,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Alexander Nevsky ea
 ### What to do in Sofia in 3 days?
 
 With three days in Sofia, this is the guide's route: Day 1, Alexander Nevsky early, then Sveta Nedelya, the Serdica ruins, St George Rotunda; Day 2, Boyana Church in the morning, then the National Museum of History if you like museums; Day 3, Vitosha mountain, or a day trip to Rila or Plovdiv. The table above has the full plan for each day.
+
+### Where to stay in Sofia?
+
+Lozenets: a residential district south of the centre, near the mountain. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Aurora Sofia Hotel (Centrum, score 9.3, from €84 a night); best value: Sentro Boutique Hotel (Centrum, score 9.6, from €98 a night); luxury: Grand Hotel Millennium Sofia (Centrum, score 9.2, from €278 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Sofia?
+
+Sofia Airport (SOF) is connected to the centre by metro line M2 from Terminal 2.
+
+### How do you get around Sofia?
+
+Beyond it, the metro is clean and fast, and trams and buses fill in the gaps.
+
+### What are the must-see places in Sofia?
+
+According to this guide: Alexander Nevsky Cathedral; Sveta Nedelya Church and the Serdica ruins; St George Rotunda; Banya Bashi Mosque and the Central Market Hall; Boyana Church; Vitosha Boulevard and Ivan Vazov Theatre; Borisova Gradina; Zhenski Pazar and Lavov Most. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

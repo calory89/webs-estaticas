@@ -237,6 +237,18 @@ Con dos días en Bratislava, esta es la ruta de la guía: Día 1, Casco antiguo,
 
 Con dos días en Eslovaquia, esta guía propone quedarse en Bratislava y seguir su ruta: Día 1, Casco antiguo, castillo y puente; Día 2, Devín, Slavín y Danubio.
 
+### ¿Dónde alojarse en Bratislava?
+
+Alrededores del centro (zona de Obchodná y Námestie slobody). Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Falkensteiner Hotel Bratislava (Stare Mesto, nota 8,9, desde 118 € la noche); mejor calidad-precio: LOFT Hotel Bratislava (Stare Mesto, nota 9,4, desde 129 € la noche); lujo: Marrol's Boutique Hotel (Stare Mesto, nota 9,2, desde 159 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Bratislava?
+
+En la ciudad, el centro se recorre a pie.
+
+### ¿Qué lugares imprescindibles ver en Bratislava?
+
+Según esta guía: Castillo de Bratislava (Bratislavský hrad); Casco antiguo (Staré Mesto) y Hlavné námestie; Puerta de San Miguel (Michalská brána); Catedral de San Martín (Dóm svätého Martina); Palacio Primacial (Primaciálny palác); Antiguo Ayuntamiento (Stará radnica); Iglesia Azul (Kostol svätej Alžbety); Puente SNP y torre UFO. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Bratislava?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

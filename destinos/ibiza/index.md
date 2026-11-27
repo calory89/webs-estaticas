@@ -238,6 +238,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Eivissa y Dalt Vila. 
 
 Con cinco días en Ibiza, esta es la ruta de la guía: Día 1, Eivissa y Dalt Vila; Día 2, Ses Salines y el sur; Día 3, Es Vedrà y el oeste; Día 4, El norte y los pueblos; Día 5, Formentera. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Ibiza?
+
+La mejor época es junio y septiembre: agua caliente, discotecas abiertas, días largos y algo menos de gente que en julio y agosto.
+
+### ¿Dónde alojarse en Ibiza?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Vibra Vila -3SUP- New Opening 2026 (Ibiza City Centre, nota 8,1, desde 84 € la noche); mejor calidad-precio: Sud Ibiza Suites (Ibiza City Centre, nota 9,3, desde 127 € la noche); lujo: Montesol Experimental Ibiza (Ibiza City Centre, nota 8,9, desde 205 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Ibiza?
+
+El plato estrella es el bullit de peix: pescado de roca hervido con patata y alioli, seguido de arròs a banda hecho con el caldo.
+
+### ¿Cómo llegar del aeropuerto al centro de Ibiza?
+
+El aeropuerto está a unos 7 kilómetros de Eivissa ciudad.
+
+### ¿Cómo moverse por Ibiza?
+
+No hay un abono turístico que compense en una estancia corta: paga en el bus con tarjeta.
+
+### ¿Qué lugares imprescindibles ver en Ibiza?
+
+Según esta guía: Dalt Vila; Catedral de Santa María y los baluartes; Necrópolis del Puig des Molins; Cala d'Hort y Es Vedrà; Torre des Savinar; Parque Natural de Ses Salines; Cala Comte; Cala Benirràs. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Ibiza?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-130 € por persona y día, y en el nivel "medio", unos unos 180-250 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

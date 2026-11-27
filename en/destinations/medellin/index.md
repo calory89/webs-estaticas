@@ -245,6 +245,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Centre and Metrocab
 
 With four days in Medellin, this is the guide's route: Day 1, Centre and Metrocable; Day 2, Comuna 13 and Laureles; Day 3, Guatapé; Day 4, Parque Arví and Ciudad del Río. The table above has the full plan for each day.
 
+### Where to stay in Medellin?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Botánica Hotel Manila by HOUSY (El Poblado, score 8.1, from €48 a night); best value: Moabi Hotel (El Poblado, score 9.3, from €75 a night); luxury: The Click Clack Hotel Medellín (El Poblado, score 9, from €200 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Medellin?
+
+In town, the metro is clean, safe and cheap at under €1 a ride.
+
+### What are the must-see places in Medellin?
+
+According to this guide: Comuna 13; Plaza Botero and the Museo de Antioquia; Metrocable Line K to Santo Domingo; Parque Arví; Museo Casa de la Memoria; Jardín Botánico and Parque Explora; Pueblito Paisa on Cerro Nutibara; Museo de Arte Moderno de Medellín (MAMM). Each one is explained in the "What to see" section.
+
 ### Is Medellin expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.

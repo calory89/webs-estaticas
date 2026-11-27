@@ -239,6 +239,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Safari, elefantes y j
 
 Con tres días en Nairobi, esta es la ruta de la guía: Día 1, Safari, elefantes y jirafas; Día 2, Karen, museo y vista desde arriba; Día 3, Bosque, mercado y ciudad real. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Nairobi?
+
+La mejor época es la estación seca de junio a octubre: hay poca lluvia, la vegetación es baja y los animales se ven mejor.
+
+### ¿Dónde alojarse en Nairobi?
+
+Karen: verde, con casas coloniales y lodges, cerca del parque nacional, el Giraffe Centre y el museo Blixen. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: La Maison Royale South C (Popo Road La Maison Royale South C, Next to Akila Police Post, nota 8,2, desde 58 € la noche); mejor calidad-precio: PrideInn Westlands Luxury Boutique Hotel (Westlands, nota 8,8, desde 98 € la noche); lujo: Hyatt Place Nairobi Westlands (Westlands, nota 9,2, desde 161 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Nairobi?
+
+El plato nacional, de hecho, es una masa: el ugali, una polenta compacta de harina de maíz que se come con la mano y sirve para empujar todo lo demás.
+
+### ¿Cómo llegar del aeropuerto al centro de Nairobi?
+
+El aeropuerto internacional Jomo Kenyatta (JKIA) está a unos 18 km del centro.
+
+### ¿Cómo moverse por Nairobi?
+
+Para moverte por la ciudad no hay metro ni abonos turísticos: lo práctico es Bolt o Uber (de 3 a 8 € la mayoría de trayectos).
+
+### ¿Qué lugares imprescindibles ver en Nairobi?
+
+Según esta guía: Parque Nacional de Nairobi; Sheldrick Wildlife Trust (orfanato de elefantes); Giraffe Centre; Karen Blixen Museum; Kazuri Beads; Nairobi National Museum; Karura Forest; KICC y su helipuerto. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Nairobi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

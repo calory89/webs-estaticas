@@ -98,7 +98,7 @@ Dentro de la ciudad, lo más práctico es combinar el **BTS** (tren elevado) y e
 
 Los vuelos son la parte cara. Lo demás, una vez allí, es de lo más económico de cualquier gran ciudad.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Bangkok
 
 ### ¿Necesito visado para ir a Bangkok desde España?
 
@@ -139,6 +139,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo. Gran P
 ### ¿Qué hacer en Bangkok en 4 días?
 
 Con cuatro días en Bangkok, esta es la ruta de la guía: Día 1, Casco antiguo. Gran Palacio por la mañana, Wat Pho; Día 2, Wat Saket de primera hora, paseo por Banglamphu, tarde de masaje y descanso; Día 3, Jim Thompson, Siam y centros comerciales, parque Lumphini al atardecer; Día 4, Excursión a Ayutthaya o jornada de canales y Thonburi, según el cuerpo que te quede. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Bangkok?
+
+De noviembre a febrero es la mejor época: seco, con unos 30 grados y noches más llevaderas.
+
+### ¿Dónde alojarse en Bangkok?
+
+Siam es el centro comercial de la ciudad, con metro y tren elevado justo debajo. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Regent Ramkhamhaeng 22 (Bangkapi, nota 8,4, desde 26 € la noche); mejor calidad-precio: Red Door Samsen Hotel, Bangkok (Bangkok Old Town, nota 8,8, desde 50 € la noche); lujo: Eastin Grand Hotel Sathorn (Sathorn, nota 9,4, desde 133 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bangkok?
+
+Un plato en puesto cuesta entre 1,50 y 3 euros.
+
+### ¿Cómo llegar del aeropuerto al centro de Bangkok?
+
+El Airport Rail Link llega hasta Phaya Thai en unos 30 minutos, con enlace al BTS, y es la forma más rápida y barata de llegar al centro.
+
+### ¿Cómo moverse por Bangkok?
+
+Dentro de la ciudad, lo más práctico es combinar el BTS (tren elevado) y el MRT (metro), que evitan los atascos.
 
 ## Vuelos y chollos
 

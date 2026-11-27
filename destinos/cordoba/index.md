@@ -212,6 +212,22 @@ Si solo tienes un día, haz el día 1 de esta ruta: Mezquita, Judería y río. M
 
 Con dos días en Córdoba, esta es la ruta de la guía: Día 1, Mezquita, Judería y río; Día 2, Medina Azahara y la Córdoba de los cordobeses. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Córdoba?
+
+La mejor época es la primavera, de marzo a mayo, y el otoño, de finales de septiembre a noviembre.
+
+### ¿Cómo llegar del aeropuerto al centro de Córdoba?
+
+El aeropuerto de Córdoba apenas tiene vuelos comerciales regulares, así que en la práctica se llega en tren.
+
+### ¿Cómo moverse por Córdoba?
+
+La estación de tren y la de autobuses están juntas, a unos 20 minutos andando de la Mezquita.
+
+### ¿Qué lugares imprescindibles ver en Córdoba?
+
+Según esta guía: Mezquita-Catedral; Puente Romano y Torre de la Calahorra; Alcázar de los Reyes Cristianos; La Judería y la Sinagoga; Calleja de las Flores; Medina Azahara; Palacio de Viana; Barrio de San Basilio y sus patios. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Córdoba: https://www.happylowcost.com/destinos/cordoba/#chollos

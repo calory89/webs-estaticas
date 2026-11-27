@@ -131,7 +131,7 @@ Once in the city, you walk. A single vaporetto ticket costs around 9 to 10 euros
 
 Prices swing a lot between seasons and with events, so treat these as a guide only.
 
-## FAQs
+## FAQ about Venice
 
 ### Is Venice worth it if it is so crowded?
 
@@ -164,6 +164,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Early St Mark's Squ
 ### What to do in Venice in 3 days?
 
 With three days in Venice, this is the guide's route: Day 1, Early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area; Day 2, Rialto market, Frari and San Rocco, Dorsoduro museums, cicchetti in the evening; Day 3, Boat to Burano and Torcello in the morning, Murano on the way back. The table above has the full plan for each day.
+
+### Where to stay in Venice?
+
+A bit pricier, and the nicest area for an evening walk. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel dalla Mora (Santa Croce, score 8.8, from €82 a night); best value: B&B HOTEL Venezia Laguna (Isola Nova del Tronchetto, score 8.8, from €94 a night); luxury: Hotel Gabrielli Venezia - Starhotels Collezione (Castello, score 9.6, from €545 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Venice?
+
+Marco Polo Airport (VCE) is on the mainland.
+
+### How do you get around Venice?
+
+A single vaporetto ticket costs around 9 to 10 euros, so for more than two or three rides, a 24, 48 or 72-hour pass is better.
+
+### What are the must-see places in Venice?
+
+According to this guide: St Mark's Square and Basilica; Doge's Palace; The Grand Canal by vaporetto; Rialto Bridge and market; Dorsoduro: the Accademia and Peggy Guggenheim; Frari and Scuola Grande di San Rocco; Cannaregio and the Jewish Ghetto; Castello and the Arsenale. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

@@ -230,6 +230,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Amman. Morning: Arr
 
 With six days in Jordan and Petra, this is the guide's route: Day 1, Amman; Day 2, Jerash, then down to the Dead Sea; Day 3, Madaba, Mount Nebo, King's Highway to Petra; Day 4, Petra, the classic route; Day 5, Petra, the quieter side; Day 6, Wadi Rum and out. The table above has the full plan for each day.
 
+### Where to stay in Jordan and Petra?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Zaman Ya Zaman Boutique Hotel (The Top-rated Area in Amman, score 8.6, from €30 a night); best value: New MerryLand Hotel (King Hussein Street, score 9.3, from €47 a night); luxury: Hilton Amman (07 lliya Abu Madi Street , Shmeisani , score 9.6, from €145 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Jordan and Petra?
+
+Queen Alia International Airport is 35 km south of Amman.
+
+### What are the must-see places in Jordan and Petra?
+
+According to this guide: The Siq and the Treasury (Al-Khazneh), Petra; The Monastery (Ad-Deir), Petra; High Place of Sacrifice and the Treasury viewpoint; Royal Tombs and the Colonnaded Street, Petra; Little Petra (Siq al-Barid); Wadi Rum; Amman Citadel (Jabal al-Qal'a); Roman Theatre and downtown Amman (Al-Balad). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Jordan and Petra: https://www.happylowcost.com/en/destinations/jordan-and-petra/#deals

@@ -100,7 +100,7 @@ Check current rules before you fly. Most visitors need a visa on arrival or an e
 
 These are broad figures. Activities such as volcano treks, boat trips and surf lessons add up, and prices rise in peak season.
 
-## FAQs
+## FAQ about Bali
 
 ### How many days do I need in Bali?
 
@@ -129,6 +129,18 @@ For the traveller who wrote this guide, yes: Bali works because it packs a lot i
 ### What to do in Bali in 7 days?
 
 With seven days in Bali, this is the guide's route: Days 1-2, Uluwatu or Sanur; Days 3-5, Ubud; Day 6, Mount Batur sunrise; Day 7, Sidemen or the east coast. The table above has the full plan for each day.
+
+### Where to stay in Bali?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Bali True Living (Imam Bonjol, score 8.4, from €24 a night); best value: Aralea Coliving (Jln. Marlboro XXI, Pemecutan Kelod, Denpasar, Bali 80119, score 8.6, from €31 a night); luxury: b Hotel Bali & Spa (Imam Bonjol, score 8.5, from €32 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Bali?
+
+Ngurah Rai International Airport (DPS) is in the south, near Kuta.
+
+### How do you get around Bali?
+
+Grab and Gojek work in many areas, though some local taxi groups restrict pickups near the terminal and certain towns, so you may have to walk to a designated spot.
 
 ### Is Bali expensive?
 

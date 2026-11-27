@@ -243,6 +243,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Gothic Quarter, El 
 
 With four days in Barcelona, this is the guide's route: Day 1, Gothic Quarter, El Born and Barceloneta; Day 2, Sagrada Família, Sant Pau, Park Güell and Gràcia; Day 3, Eixample, Raval and Poble Sec; Day 4, Montjuïc and the beach. The table above has the full plan for each day.
 
+### Where to stay in Barcelona?
+
+Raval: cheapest central area, with plenty of hostels (dorm beds €30-50), but some streets feel rough at night. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Nouvel (Ciutat Vella, score 8.1, from €140 a night); best value: Olivia Plaza Hotel (Ciutat Vella, score 9.3, from €232 a night); luxury: ME by Meliá Barcelona (Eixample, score 9.0, from €378 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Barcelona?
+
+El Prat airport is 15 km from the centre, with four good options: Aerobús: express bus to Plaça Espanya and Plaça de Catalunya, about 35 minutes, about €7-8 one way.
+
+### How do you get around Barcelona?
+
+In the city, the metro is fast and covers almost everything.
+
+### What are the must-see places in Barcelona?
+
+According to this guide: Sagrada Família; Park Güell; Gothic Quarter (Barri Gòtic); El Born and Santa Maria del Mar; Picasso Museum; Casa Batlló and Casa Milà (La Pedrera); Sant Pau Recinte Modernista; Palau de la Música Catalana. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Barcelona: https://www.happylowcost.com/en/destinations/barcelona/#deals

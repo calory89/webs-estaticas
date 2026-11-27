@@ -127,6 +127,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Duomo (terrazas a pri
 
 Con tres días en Milán, esta es la ruta de la guía: Día 1, Duomo (terrazas a primera hora), Galleria, paseo hasta La Scala y Brera; Día 2, Última Cena (con reserva), Sant'Ambrogio, Castello Sforzesco y Parco Sempione; Día 3, San Lorenzo, Navigli y Darsena de día, Porta Nuova por la tarde. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Milán?
+
+Primavera (abril, mayo) y principios de otoño (septiembre, octubre) son lo mejor: temperaturas suaves y luz buena.
+
+### ¿Dónde alojarse en Milán?
+
+De noche la zona de la estación no es la más agradable, pero está bien comunicada y es segura si usas el sentido común. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Aparthotel Dei Mercanti (Milan City Centre, nota 8,5, desde 187 € la noche); mejor calidad-precio: Hotel Milano Castello (Milan City Centre, nota 9,3, desde 334 € la noche); lujo: Park Hyatt Milano (Milan City Centre, nota 9,3, desde 1344 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Milán?
+
+Si tienes un presupuesto algo mayor, prueba una cena de aperitivo larga en lugar de un restaurante formal: sale mejor de precio.
+
+### ¿Cómo moverse por Milán?
+
+Linate está muy cerca de la ciudad y se conecta con la línea M4 del metro y con autobús.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Milán: https://www.happylowcost.com/destinos/milan/#chollos

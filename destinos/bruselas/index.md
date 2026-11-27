@@ -95,7 +95,7 @@ El centro se hace a pie. Para lo demás, el metro, los tranvías y los autobuses
 
 Una cerveza ronda los 4-6 €, un menú sencillo entre 15 y 25 € y un cucurucho de patatas unos 4-5 €. Son precios aproximados y suben en zonas turísticas.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Bruselas
 
 ### ¿Bruselas es cara?
 
@@ -132,6 +132,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Grand-Place, Manneken
 ### ¿Qué hacer en Bruselas en 3 días?
 
 Con tres días en Bruselas, esta es la ruta de la guía: Día 1, Grand-Place, Manneken Pis, Galerías Saint-Hubert, catedral y paseo por Sainte-Catherine; Día 2, Mañana en el Mont des Arts y el Museo Magritte, Sablon a mediodía; Día 3, Cinquantenaire, Casa Horta o Atomium, según gustos. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Bruselas?
+
+Centro y Grand-Place: todo a pie, pero ruidoso y más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Ibis Brussels City Centre (Brussels, nota 8,1, desde 139 € la noche); mejor calidad-precio: OPO Hotel (Brussels, nota 9,2, desde 178 € la noche); lujo: Hotel Amigo, a Rocco Forte Hotel (Brussels, nota 9,4, desde 512 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bruselas?
+
+Los moules-frites son el plato nacional, aunque de septiembre a abril salen mejor por temporada.
+
+### ¿Cómo moverse por Bruselas?
+
+Para lo demás, el metro, los tranvías y los autobuses de STIB cubren bien la ciudad.
 
 ## Vuelos y chollos
 

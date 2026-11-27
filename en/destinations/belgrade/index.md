@@ -109,7 +109,7 @@ The centre is walkable. For longer distances there are buses, trams and trolleyb
 
 - **Comfortable:** €150 and up, with a nicer hotel, taxis and nights out.
 
-## FAQ
+## FAQ about Belgrade
 
 ### Is Belgrade safe for tourists?
 
@@ -154,6 +154,30 @@ With three days in Belgrade, this is the guide's route: Day 1, Republic Square, 
 ### What to see in Serbia in 3 days?
 
 With three days in Serbia, this guide suggests staying in Belgrade and following its route: Day 1, Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija; Day 2, Church of Saint Sava in the morning, Tesla Museum, lunch in Vračar; Day 3, Zemun and Gardoš Tower, a fish lunch on the quay, and Ada Ciganlija if it is warm.
+
+### When is the best time to visit Belgrade?
+
+Spring (April to June) and early autumn (September to October) are the best compromise: mild days and terraces open.
+
+### Where to stay in Belgrade?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Centar Forever (Stari Grad, score 8.2, from €42 a night); best value: Hotel Skadarlija NB (Stari Grad, score 9.2, from €75 a night); luxury: Prezident Palace Belgrade - Rooftop Pool & Spa Hotel (Stari Grad, score 9.6, from €248 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Belgrade?
+
+Try karađorđeva šnicla, a rolled breaded cutlet stuffed with kajmak, sarma (cabbage rolls) in winter and gibanica (cheese pie) for something lighter.
+
+### How do you get from the airport to central Belgrade?
+
+Nikola Tesla Airport (BEG) is about 12 km west of the centre.
+
+### How do you get around Belgrade?
+
+For longer distances there are buses, trams and trolleybuses, which are cheap, and a rechargeable card is easier than buying single tickets.
+
+### What are the must-see places in Belgrade?
+
+According to this guide: Kalemegdan Fortress and park; Knez Mihailova and Republic Square; Skadarlija; Church of Saint Sava; Nikola Tesla Museum; Zemun and Gardoš Tower; House of Flowers and the Museum of Yugoslavia; Belgrade Cathedral and the Sava waterfront. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

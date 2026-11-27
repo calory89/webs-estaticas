@@ -249,6 +249,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Balboa Park and dow
 
 With three days in San Diego, this is the guide's route: Day 1, Balboa Park and downtown; Day 2, La Jolla and the beaches; Day 3, The bay, Coronado and Point Loma. The table above has the full plan for each day.
 
+### Where to stay in San Diego?
+
+It's far from the centre and loud at night. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Comfort Inn San Diego - SeaWorld Area (Midway-Pacific Highway, score 8.1, from €111 a night); best value: Humphreys Half Moon Inn (Point Loma, score 8.7, from €187 a night); luxury: Pantai Inn (La Jolla, score 8.7, from €432 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central San Diego?
+
+San Diego International Airport is only about 5 km (3 miles) from downtown, one of the closest in the US.
+
+### How do you get around San Diego?
+
+A single fare costs about €2.50 ($2.50) and a day pass about €6 ($6), both via the PRONTO app or card.
+
+### What are the must-see places in San Diego?
+
+According to this guide: Balboa Park; San Diego Zoo; La Jolla Cove; Torrey Pines State Natural Reserve; Coronado; USS Midway Museum; Old Town San Diego State Historic Park; Cabrillo National Monument. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to San Diego: https://www.happylowcost.com/en/destinations/san-diego/#deals

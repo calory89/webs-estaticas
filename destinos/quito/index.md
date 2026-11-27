@@ -244,6 +244,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Ma
 
 Con tres días en Quito, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Alturas y vistas; Día 3, Mitad del Mundo y Guayasamín. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Quito?
+
+La mejor época es la temporada seca, de junio a septiembre, con más cielos despejados para ver volcanes.
+
+### ¿Qué comer en Quito?
+
+Humitas y quimbolitos: pasteles de maíz al vapor, típicos del desayuno.
+
+### ¿Cómo llegar del aeropuerto al centro de Quito?
+
+El aeropuerto Mariscal Sucre está en Tababela, a unos 40 km.
+
+### ¿Cómo moverse por Quito?
+
+Dentro de la ciudad, el Metro de Quito (una sola línea de norte a sur, de El Labrador a Quitumbe) es rápido y limpio, y tiene parada en San Francisco y en La Carolina.
+
+### ¿Qué lugares imprescindibles ver en Quito?
+
+Según esta guía: Centro Histórico y Plaza Grande; Iglesia de la Compañía de Jesús; Iglesia y convento de San Francisco; Basílica del Voto Nacional; Calle La Ronda; El Panecillo; TelefériQo y Cruz Loma; Capilla del Hombre y Casa Museo Guayasamín. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Quito?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

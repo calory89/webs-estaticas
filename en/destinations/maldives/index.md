@@ -101,7 +101,7 @@ Always confirm the boat or plane timing around your flight home. Leave a buffer 
 
 Government taxes, a per-night green tax and service charges are added to most bills. Excursions and diving usually cost extra, so ask before you book.
 
-## FAQs
+## FAQ about The Maldives
 
 ### Do I need a visa?
 
@@ -126,6 +126,14 @@ Generally yes in lagoons, but currents can be strong outside them. Use a guide f
 ### Is The Maldives worth visiting?
 
 For the traveller who wrote this guide, yes: Because the water really does look like that.
+
+### What to eat in The Maldives?
+
+Try kandu kukulhu (tuna curry) at a local café, where a plate costs a few dollars.
+
+### How do you get from the airport to central The Maldives?
+
+Velana International Airport sits on its own island, Hulhulé, next to Malé.
 
 ## Flights and deals
 

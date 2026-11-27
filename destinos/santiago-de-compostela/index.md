@@ -231,6 +231,26 @@ Si solo tienes un día, haz el día 1 de esta ruta: Catedral, zona vieja y Alame
 
 Con dos días en Santiago de Compostela, esta es la ruta de la guía: Día 1, Catedral, zona vieja y Alameda; Día 2, Mercado, Bonaval y Sar. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Santiago de Compostela?
+
+La mejor época es mayo-junio y septiembre-octubre: menos lluvia, temperaturas agradables (entre 15 y 25 °C) y precios razonables.
+
+### ¿Dónde alojarse en Santiago de Compostela?
+
+Santiago es tan compacto que casi cualquier zona céntrica sirve. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Universal (El Ensanche Zona Nueva, nota 8,5, desde 56 € la noche); mejor calidad-precio: Hotel Altaïr (The Real Heart of Santiago de Compostela, nota 9,3, desde 69 € la noche); lujo: Hotel Palacio del Carmen, Autograph Collection (The Real Heart of Santiago de Compostela, nota 8,8, desde 170 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Santiago de Compostela?
+
+El aeropuerto Rosalía de Castro (Lavacolla) está a unos 12 km del centro.
+
+### ¿Cómo moverse por Santiago de Compostela?
+
+La estación de tren de Santiago está a unos 15 minutos andando de la zona vieja y recibe trenes de alta velocidad desde Madrid en algo más de tres horas.
+
+### ¿Qué lugares imprescindibles ver en Santiago de Compostela?
+
+Según esta guía: Catedral de Santiago; Cubiertas de la Catedral; Praza do Obradoiro; Praza da Quintana y Praza das Praterías; Mercado de Abastos; Parque da Alameda y Paseo da Ferradura; Museo do Pobo Galego y su escalera de caracol; Parque de San Domingos de Bonaval. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Santiago de Compostela?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

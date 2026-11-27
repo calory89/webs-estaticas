@@ -254,6 +254,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Las Palmas. Mor
 
 With five days in Gran Canaria, this is the guide's route: Day 1, Old Las Palmas; Day 2, Las Canteras and the port; Day 3, The mountains (car); Day 4, The south; Day 5, The north coast (car). The table above has the full plan for each day.
 
+### Where to stay in Gran Canaria?
+
+Meloneras / Maspalomas: a polished resort area near the dunes, with big hotels and a nice promenade. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Villa Rosaura (Las Palmas de Gran Canaria, score 8.2, from €70 a night); best value: La Palmera Hotel Boutique (Las Palmas de Gran Canaria, score 9.4, from €139 a night); luxury: Santa Catalina, a Royal Hideaway Hotel - Gran Lujo (León y Castillo, score 9.0, from €238 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Gran Canaria?
+
+Gran Canaria Airport (LPA) is on the east coast, roughly halfway between Las Palmas and the south.
+
+### How do you get around Gran Canaria?
+
+Global sells a rechargeable card that gives discounts on fares, and many buses take contactless payment, so check current fares when you arrive.
+
+### What are the must-see places in Gran Canaria?
+
+According to this guide: Vegueta, Las Palmas; Casa de Colón; Museo Canario; Playa de Las Canteras; Triana; Roque Nublo; Pico de las Nieves and Roque Bentayga; Tejeda. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Gran Canaria: https://www.happylowcost.com/en/destinations/gran-canaria/#deals

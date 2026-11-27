@@ -238,6 +238,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The old town. Morni
 
 With three days in Valencia, this is the guide's route: Day 1, The old town; Day 2, The Turia and the City of Arts and Sciences; Day 3, Beach and Albufera. The table above has the full plan for each day.
 
+### Where to stay in Valencia?
+
+Ciutat Vella (old town, including El Carmen): best for first-timers who want to walk everywhere. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: ibis budget Valencia Centro Puerto (Poblats Maritims, score 8.1, from €66 a night); best value: Venecia Plaza Centro (Ciutat Vella, score 9.2, from €120 a night); luxury: Palacio Vallier by MYR Hotels (Ciutat Vella, score 9.6, from €285 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Valencia?
+
+Also try all i pebre, an eel and potato stew from the Albufera; esgarraet, roasted red pepper with salt cod; clóchinas, small local mussels in season from May to August; and horchata with fartons.
+
+### How do you get around Valencia?
+
+Get a rechargeable SUMA card for metro, tram and bus.
+
+### What are the must-see places in Valencia?
+
+According to this guide: Mercado Central; La Lonja de la Seda; Valencia Cathedral and the Miguelete; Plaza de la Virgen; Torres de Serranos and Torres de Quart; Barrio del Carmen; Jardín del Turia; City of Arts and Sciences. Each one is explained in the "What to see" section.
+
 ### Is Valencia expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

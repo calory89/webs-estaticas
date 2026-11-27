@@ -97,7 +97,7 @@ Safety, briefly: stay aware in the city centre after dark, don't leave valuables
 
 Car hire, Robben Island and big-name wine lunches are the biggest extras.
 
-## FAQs
+## FAQ about Cape Town
 
 ### Is Cape Town safe for tourists?
 
@@ -142,6 +142,22 @@ With five days in Cape Town, this is the guide's route: Day 1, Table Mountain in
 ### What to see in South Africa in 5 days?
 
 With five days in South Africa, this guide suggests staying in Cape Town and following its route: Day 1, Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon; Day 2, Robben Island in the morning, then the Waterfront and Zeitz MOCAA; Day 3, The peninsula loop: Muizenberg, Kalk Bay, Boulders Beach, Cape Point; Day 4, Kirstenbosch in the morning, then Constantia wine estates; Day 5, Stellenbosch or Franschhoek, or a buffer day if weather wrecked an earlier plan.
+
+### Where to stay in Cape Town?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: HAVN Aparthotel by Totalstay (Cape Town CBD, score 8, from €61 a night); best value: Urban Elephant Hotels, The Rose (Bo-Kaap, score 8.9, from €112 a night); luxury: The Glen Boutique Hotel & Spa (Sea Point, score 9.4, from €348 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Cape Town?
+
+Start with a Cape Malay curry or bobotie, a spiced minced-meat dish with an egg topping, in Bo-Kaap.
+
+### How do you get from the airport to central Cape Town?
+
+Cape Town International Airport (CPT) is about 20 to 30 minutes from the centre without traffic.
+
+### How do you get around Cape Town?
+
+Safety, briefly: stay aware in the city centre after dark, don't leave valuables in parked cars, don't hike remote trails alone, and avoid walking between neighbourhoods at night.
 
 ## Flights and deals
 

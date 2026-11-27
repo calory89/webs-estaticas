@@ -236,6 +236,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Bryggen, Fløyen an
 
 With three days in Bergen, this is the guide's route: Day 1, Bryggen, Fløyen and the harbour; Day 2, Ulriken or museums, then Nordnes; Day 3, A fjord day. The table above has the full plan for each day.
 
+### Where to stay in Bergen?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Citybox Bergen Danmarksplass (Årstad, score 8.2, from €89 a night); best value: Det Hanseatiske Hotel (Bergenhus, score 8.5, from €134 a night); luxury: Charmante Skostredet Hôtel (Bergenhus, score 9.2, from €648 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Bergen?
+
+The Bergen Card (from about NOK 400 for 24 hours) includes city buses and Bybanen plus free or discounted entry to many museums.
+
+### What are the must-see places in Bergen?
+
+According to this guide: Bryggen; Mount Fløyen and the Fløibanen funicular; Mount Ulriken; Fisketorget, the Fish Market; Bergenhus Fortress, Haakon's Hall and Rosenkrantz Tower; KODE art museums; The Hanseatic Museum and Schøtstuene; St Mary's Church (Mariakirken). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Bergen: https://www.happylowcost.com/en/destinations/bergen/#deals

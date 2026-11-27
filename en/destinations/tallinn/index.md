@@ -91,7 +91,7 @@ The Old Town is entirely walkable. For Kadriorg, Telliskivi and Pirita, use the 
 
 These are only rough figures, and prices climb in summer and around Christmas.
 
-## FAQs
+## FAQ about Tallinn
 
 ### Is Tallinn expensive?
 
@@ -128,6 +128,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Start at 
 ### What to do in Tallinn in 3 days?
 
 With three days in Tallinn, this is the guide's route: Day 1, Old Town; Day 2, Beyond the walls; Day 3, Your choice. The table above has the full plan for each day.
+
+### Where to stay in Tallinn?
+
+Old Town: the most atmospheric option and the most expensive. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Rija Old Town Hotel (Tallinn City Center, score 8.5, from €53 a night); best value: Hyatt Place Tallinn (Tallinn City Center, score 9.2, from €76 a night); luxury: Radisson Collection Hotel, Tallinn (Maakri, score 9.4, from €166 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Tallinn?
+
+Try kama, a mix of roasted grain flours stirred into buttermilk or yoghurt, and marinated herring on dark bread.
+
+### How do you get from the airport to central Tallinn?
+
+Lennart Meri Tallinn Airport is only about four kilometres from the centre.
+
+### How do you get around Tallinn?
+
+Tram line 4 runs from the terminal to the city centre in roughly fifteen minutes, and it's the simplest option.
 
 ## Flights and deals
 

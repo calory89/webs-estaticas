@@ -255,6 +255,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Mindelo. Morning: w
 
 With seven days in Cape Verde, this is the guide's route: Day 1, Mindelo; Day 2, Around São Vicente; Day 3, Santo Antão, Cova to Paul; Day 4, Ponta do Sol, Fontainhas, Cruzinha; Day 5, Back to Mindelo and fly to Sal; Day 6, Sal island loop; Day 7, Beach and water. The table above has the full plan for each day.
 
+### What to eat in Cape Verde?
+
+Cachupa is the national dish: a slow-cooked stew of hominy corn, beans, vegetables and fish or meat.
+
+### How do you get from the airport to central Cape Verde?
+
+There are four international airports: Sal, Boa Vista, Praia (Santiago) and São Vicente.
+
+### What are the must-see places in Cape Verde?
+
+According to this guide: Mindelo (São Vicente); Mercado Municipal and the fish market, Mindelo; Monte Verde (São Vicente); Cova, Paul and Ribeira do Paul (Santo Antão); Ponta do Sol to Fontainhas and Cruzinha (Santo Antão); Pedra de Lume salt crater (Sal); Buracona and the Blue Eye (Sal); Santa Maria beach and pier (Sal). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Cape Verde: https://www.happylowcost.com/en/destinations/cape-verde/#deals

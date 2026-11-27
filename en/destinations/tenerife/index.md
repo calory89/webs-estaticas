@@ -99,7 +99,7 @@ If you want Teide, Masca, Anaga and the northwest, rent a car. Expect roughly 25
 
 These are approximate and exclude flights. The cable car, boat trips and theme parks are the budget breakers.
 
-## FAQ
+## FAQ about Tenerife
 
 ### Is Tenerife better in the north or the south?
 
@@ -140,6 +140,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive and settle i
 ### What to do in Tenerife in 7 days?
 
 With seven days in Tenerife, this is the guide's route: Day 1, Arrive and settle in the south. Walk the coast, eat fish at Los Abrigos or Los Cristianos; Day 2, Teide at sunrise or early morning; Day 3, Northwest loop: Masca viewpoint, Garachico, Icod de los Vinos; Day 4, Anaga hike, then La Laguna in the evening; Days 5-7, (if you have them). The table above has the full plan for each day.
+
+### Where to stay in Tenerife?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Mapango Small Rooms (Santa Cruz de Tenerife, score 7.5, from €65 a night); best value: Emblemático F24-Only Adults B&B (Santa Cruz de Tenerife, score 9.2, from €107 a night); luxury: Iberostar Heritage Grand Mencey (Dr. José Naveiras, score 8.9, from €163 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Tenerife?
+
+Goat stew (carne de cabra) and rabbit in salmorejo are the heartier, traditional dishes.
+
+### How do you get from the airport to central Tenerife?
+
+From the south airport, TITSA buses run to Los Cristianos, Playa de las Américas and Costa Adeje, and there is a direct express to Santa Cruz.
+
+### How do you get around Tenerife?
+
+The island bus network (TITSA) is cheap and reliable, and a rechargeable card cuts fares further.
 
 ## Flights and deals
 

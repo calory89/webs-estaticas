@@ -233,6 +233,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The old city and th
 
 With three days in Abu Dhabi, this is the guide's route: Day 1, The old city and the Corniche; Day 2, Saadiyat Island; Day 3, Mangroves and Yas Island. The table above has the full plan for each day.
 
+### Where to stay in Abu Dhabi?
+
+Pick your area based on what you will do most, because taxis between islands add up. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Grand Villaggio Hotel Abu Dhabi (Airport Road, score 8.3, from €95 a night); best value: Doubletree By Hilton Abu Dhabi Yas Island Residences (Yas Island, score 9, from €162 a night); luxury: Shangri-La Qaryat Al Beri, Abu Dhabi (Between The Bridges, score 9, from €283 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Abu Dhabi?
+
+Dedicated Emirati restaurants and hotel Ramadan buffets are the easiest places to try them.
+
+### How do you get from the airport to central Abu Dhabi?
+
+Zayed International Airport is about 30-40 minutes from the Corniche.
+
+### How do you get around Abu Dhabi?
+
+You pay with a rechargeable Hafilat card (bought at the bus station or at machines) and the Darb app helps with routes.
+
+### What are the must-see places in Abu Dhabi?
+
+According to this guide: Sheikh Zayed Grand Mosque; Louvre Abu Dhabi; Qasr Al Watan; Qasr Al Hosn; The Corniche; Emirates Palace; Abrahamic Family House; Saadiyat Beach. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Abu Dhabi: https://www.happylowcost.com/en/destinations/abu-dhabi/#deals

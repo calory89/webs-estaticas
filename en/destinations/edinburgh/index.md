@@ -127,7 +127,7 @@ Once in town, you'll rarely need transport. The centre is walkable, though hilly
 
 These are broad estimates. Castle entry and day tours add noticeably to the total, while the national museums and parks cost nothing.
 
-## FAQs
+## FAQ about Edinburgh
 
 ### Is three days enough for Edinburgh?
 
@@ -164,6 +164,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Castle at opening, 
 ### What to do in Edinburgh in 3 days?
 
 With three days in Edinburgh, this is the guide's route: Day 1, Castle at opening, then walk the Royal Mile down to Holyrood; Day 2, Climb Arthur's Seat in the morning; Day 3, Walk the Water of Leith from Dean Village to Stockbridge. The table above has the full plan for each day.
+
+### When is the best time to visit Edinburgh?
+
+May and June are the best compromise, with long evenings and fewer crowds.
+
+### Where to stay in Edinburgh?
+
+This is a village-like neighbourhood with independent shops, cafés and good pubs. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: KM Hotel (Edinburgh, score 8.2, from €122 a night); best value: ibis Styles Edinburgh St Andrew Square (Edinburgh, score 8.8, from €243 a night); luxury: Gleneagles Townhouse (Edinburgh, score 9.4, from €742 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Edinburgh?
+
+Edinburgh Airport is about 8 miles west of the centre.
+
+### How do you get around Edinburgh?
+
+The tram runs to St Andrew Square and York Place in roughly 30 minutes and is the simplest option.
+
+### What are the must-see places in Edinburgh?
+
+According to this guide: Edinburgh Castle; The Royal Mile; Palace of Holyroodhouse and the Scottish Parliament; Arthur's Seat; Calton Hill; Greyfriars Kirkyard and Victoria Street; National Museum of Scotland; Dean Village and the Water of Leith. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

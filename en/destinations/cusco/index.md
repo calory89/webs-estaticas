@@ -261,6 +261,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive slowly. Morn
 
 With four days in Cusco, this is the guide's route: Day 1, Arrive slowly; Day 2, Centre, San Blas and Sacsayhuamán; Day 3, Sacred Valley; Day 4, Maras, Moray or a big trip. The table above has the full plan for each day.
 
+### Where to stay in Cusco?
+
+Historic centre (around the Plaza de Armas): the most convenient for first-timers and flat enough on arrival day. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Killaqente (Urbanizacion Tawantinsuyo Jiron Atahuallpa 454, score 8.9, from €25 a night); best value: Hotel Rumi Punku (Cusco City Centre, score 9.3, from €99 a night); luxury: Monasterio, A Belmond Hotel, Cusco (Cusco City Centre, score 9.8, from €516 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Cusco?
+
+Alejandro Velasco Astete airport is only about 15-20 minutes from the Plaza de Armas.
+
+### How do you get around Cusco?
+
+There is no metro or useful travel pass for transport.
+
+### What are the must-see places in Cusco?
+
+According to this guide: Plaza de Armas; Cusco Cathedral; Qorikancha (Convento de Santo Domingo); Sacsayhuamán; San Blas; Hatun Rumiyoc and the Twelve-Angled Stone; Mercado San Pedro; Museo de Arte Precolombino (MAP). Each one is explained in the "What to see" section.
+
 ### Is Cusco expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-40 per person per day and the "mid-range" level at about €80-130. Flights are extra: this page shows real fares checked by Happy Low Cost.

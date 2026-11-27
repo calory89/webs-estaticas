@@ -95,7 +95,7 @@ In the city, trains and metro do everything. Get a Suica or Pasmo card, or add o
 
 These are broad figures. Hotels in cherry blossom season cost noticeably more.
 
-## FAQs
+## FAQ about Tokyo
 
 ### Is Tokyo expensive?
 
@@ -132,6 +132,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: East side. Asakusa 
 ### What to do in Tokyo in 5 days?
 
 With five days in Tokyo, this is the guide's route: Day 1, East side; Day 2, Shibuya and Harajuku; Day 3, Shinjuku; Day 4, Tsukiji and Ginza, then the palace; Day 5, Flexible. The table above has the full plan for each day.
+
+### Where to stay in Tokyo?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Best Hotel (Shinjuku Ward, score 8.1, from €80 a night); best value: Onyado Nono Asakusa Annex - Natural Hot Spring (Taito, score 9.3, from €181 a night); luxury: Hotel Chinzanso Tokyo (Bunkyo, score 9.4, from €394 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Tokyo?
+
+Conveyor-belt sushi is a good introduction; a counter sushi meal costs far more, but lunch sets are the way to try it without a huge bill.
+
+### How do you get around Tokyo?
+
+In the city, trains and metro do everything.
 
 ## Flights and deals
 

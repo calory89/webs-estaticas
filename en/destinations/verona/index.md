@@ -239,6 +239,22 @@ If you only have one day, follow day 1 of this itinerary: Roman and medieval cen
 
 With two days in Verona, this is the guide's route: Day 1, Roman and medieval centre; Day 2, Castles, San Zeno and the river. The table above has the full plan for each day.
 
+### Where to stay in Verona?
+
+Città Antica (the historic centre): Everything is on foot and the evenings are lovely. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Cavour rooms (Verona Historical Centre, score 8.1, from €79 a night); best value: Opera Relais De Charme - Aparthotel (Verona Historical Centre, score 9.5, from €144 a night); luxury: VISTA Verona (Verona Historical Centre, score 9.4, from €660 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Verona?
+
+Verona Villafranca airport (Valerio Catullo) is about 12 km from the city.
+
+### How do you get around Verona?
+
+From the station, walk 15 minutes to Piazza Bra or take a city bus.
+
+### What are the must-see places in Verona?
+
+According to this guide: Arena di Verona; Piazza delle Erbe; Torre dei Lamberti; Piazza dei Signori and the Scaliger Tombs; Casa di Giulietta (Juliet's House); Basilica di San Zeno Maggiore; Castelvecchio and Ponte Scaligero; Ponte Pietra. Each one is explained in the "What to see" section.
+
 ### Is Verona expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €150-250. Flights are extra: this page shows real fares checked by Happy Low Cost.

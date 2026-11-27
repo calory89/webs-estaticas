@@ -234,6 +234,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Amurallada. Ma
 
 Con cuatro días en Cartagena, esta es la ruta de la guía: Día 1, Ciudad Amurallada; Día 2, San Felipe, La Popa y Getsemaní; Día 3, Bazurto, San Diego y manglares; Día 4, Islas del Rosario o Playa Blanca. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Cartagena?
+
+La mejor época es de diciembre a abril, la temporada seca: poca lluvia, algo de brisa y unos 30 °C.
+
+### ¿Qué comer en Cartagena?
+
+Pescado frito con arroz con coco y patacones: el plato de la costa.
+
+### ¿Cómo llegar del aeropuerto al centro de Cartagena?
+
+El Aeropuerto Rafael Núñez está a unos 15 minutos del centro, así que llegar es fácil.
+
+### ¿Cómo moverse por Cartagena?
+
+Por la ciudad: el centro, San Diego y Getsemaní se recorren andando.
+
+### ¿Qué lugares imprescindibles ver en Cartagena?
+
+Según esta guía: Ciudad Amurallada y Torre del Reloj; Murallas y Baluarte de Santo Domingo; Castillo de San Felipe de Barajas; Getsemaní; Cerro de La Popa; Palacio de la Inquisición; Museo del Oro Zenú; Iglesia y Claustro de San Pedro Claver. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Cartagena?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "presupuesto medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

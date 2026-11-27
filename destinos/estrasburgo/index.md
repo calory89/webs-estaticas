@@ -243,6 +243,26 @@ Para quien escribió esta guía, sí: Estrasburgo es una ciudad pequeña, cómod
 
 Con dos días en Estrasburgo, esta es la ruta de la guía: Día 1, Catedral y centro histórico; Día 2, Petite France, Neustadt y barrio europeo. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Estrasburgo?
+
+La mejor época es de mayo a septiembre, o en primavera y principios de otoño para evitar gente.
+
+### ¿Dónde alojarse en Estrasburgo?
+
+Grande Île (centro histórico): para tenerlo todo a pie y salir a pasear de noche. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Ibis Budget Strasbourg Centre Republique (Quartier Européen - Orangerie, nota 8,4, desde 73 € la noche); mejor calidad-precio: Residence Inn by Marriott Strasbourg (Quartier Européen - Orangerie, nota 8,8, desde 93 € la noche); lujo: Hotel & Spa REGENT PETITE FRANCE By Stay Collection (City-Centre - Petite France, nota 9, desde 228 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Estrasburgo?
+
+Platos que tienes que probar: Choucroute garnie: chucrut con salchichas, panceta y codillo.
+
+### ¿Cómo moverse por Estrasburgo?
+
+En la ciudad, el centro se recorre andando.
+
+### ¿Qué lugares imprescindibles ver en Estrasburgo?
+
+Según esta guía: Catedral de Notre-Dame; Reloj astronómico; Plataforma de la catedral; Petite France; Ponts Couverts y Barrage Vauban; Palais Rohan; Musée de l'Œuvre Notre-Dame; Musée Alsacien. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Estrasburgo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 90-120 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

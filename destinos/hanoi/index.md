@@ -101,7 +101,7 @@ Los españoles pueden entrar sin visado durante un periodo limitado (45 días en
 
 Estas cifras no incluyen el vuelo internacional, que es lo más caro del viaje.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Vietnam
 
 ### ¿Cuántos días necesito para Vietnam?
 
@@ -130,6 +130,22 @@ Para quien escribió esta guía, sí: Vietnam es largo, estrecho y muy variado. 
 ### ¿Qué hacer en Vietnam en 14 días?
 
 Con 14 días en Vietnam, esta es la ruta de la guía: Días 1-3, Hanói y Casco Antiguo, con un día de excursión a Ninh Binh; Días 4-5, Lan Ha o Ha Long con noche en barco; Días 6-7, Vuelo a Hue, ciudadela y tumbas; Días 8-10, Hoi An, con media jornada en Da Nang o Hai Van de camino; Días 11-14, Vuelo a Saigón, Mekong y túneles de Cu Chi. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Vietnam?
+
+Si solo puedes ir una vez, marzo y abril es la mejor apuesta global; octubre-noviembre es buena para el norte, pero arriesgada en el centro.
+
+### ¿Dónde alojarse en Vietnam?
+
+El Casco Antiguo es práctico y ruidoso: ideal para primera vez. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hanoi Apartment Lac Long Quan (Cau Giay, nota 9,1, desde 18 € la noche); mejor calidad-precio: Sao Mai Boutique Hotel (Dong Da, nota 9,4, desde 33 € la noche); lujo: Classyc Hotel Hang Thung (Hoan Kiem, nota 9,6, desde 138 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Vietnam?
+
+Y en Hanói, no te vayas sin probar el café de huevo (cà phê trứng): parece postre y resulta adictivo.
+
+### ¿Cómo llegar del aeropuerto al centro de Vietnam?
+
+Los aeropuertos principales son Noi Bai (Hanói), Tan Son Nhat (Saigón) y Da Nang.
 
 ## Vuelos y chollos
 

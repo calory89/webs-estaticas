@@ -235,6 +235,18 @@ Con tres días en Kotor, esta es la ruta de la guía: Día 1, Casco antiguo y fo
 
 Con tres días en Montenegro, esta guía propone quedarse en Kotor y seguir su ruta: Día 1, Casco antiguo y fortaleza; Día 2, Perast y la bahía; Día 3, Lovćen y Njeguši (o Budva).
 
+### ¿Cuál es la mejor época para viajar a Kotor?
+
+La mejor época es mayo, junio y septiembre: temperaturas de 22 a 28 grados, agua buena para bañarse y menos gente que en pleno verano.
+
+### ¿Dónde alojarse en Kotor?
+
+Casco antiguo: para estar dentro de todo y disfrutarlo de noche cuando se van los grupos. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Splendido (The Top-rated Area in Prčanj, nota 8,2, desde 109 € la noche); mejor calidad-precio: Boutique Hotel Casa del Mare - Vizura (The Real Heart of Kotor, nota 9,2, desde 115 € la noche); lujo: Hyatt Regency Kotor Bay Resort (Vrmac bb, nota 9, desde 188 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué lugares imprescindibles ver en Kotor?
+
+Según esta guía: Fortaleza de San Juan (San Giovanni); Iglesia de Nuestra Señora de la Salud; Catedral de San Trifón; Puerta del Mar y Plaza de Armas; Iglesias de San Lucas y San Nicolás; Museo Marítimo; Iglesia de Santa María Collegiata y la Puerta del Río; Puerta Sur (Gurdić). En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Kotor: https://www.happylowcost.com/destinos/kotor/#chollos

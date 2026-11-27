@@ -243,6 +243,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo, colina y
 
 Con tres días en Niza, esta es la ruta de la guía: Día 1, Casco viejo, colina y puerto; Día 2, Cimiez, museos y Promenade; Día 3, Excursión en tren. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Niza?
+
+La regla es simple: cuanto más cerca del mar y del casco viejo, más pagas. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hôtel Helvétique (Nice, nota 8,1, desde 79 € la noche); mejor calidad-precio: Hotel Aparthotel AMMI Nice Lafayette (Nice, nota 9,3, desde 112 € la noche); lujo: Maison Albar - Le Victoria (Nice, nota 9,2, desde 350 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Niza?
+
+Dentro de la ciudad casi todo se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Niza?
+
+Según esta guía: Promenade des Anglais; Vieux Nice (casco antiguo); Cours Saleya y su mercado; Colline du Château; Port Lympia; Musée Matisse y Cimiez; Musée Marc Chagall; Place Masséna y Promenade du Paillon. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Niza: https://www.happylowcost.com/destinos/niza/#chollos

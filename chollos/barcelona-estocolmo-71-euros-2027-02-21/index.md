@@ -33,4 +33,8 @@ La tarifa más barata suele incluir solo un bolso pequeño bajo el asiento. Revi
 
 No se puede saber: tarifas así pueden desaparecer en horas. Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.
 
+### ¿Dónde dormir en Estocolmo en un viaje desde Barcelona?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: ProfilHotels Riddargatan (Östermalm, nota 8,3, desde 191 € la noche); mejor calidad-precio: Thon Hotel Vasa (Norrmalm, nota 8,9, desde 294 € la noche); lujo: Bank Hotel, a Member of Small Luxury Hotels (Norrmalm, nota 9,0, desde 370 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
 Los precios cambian cada hora: comprueba el precio en la página original antes de reservar.

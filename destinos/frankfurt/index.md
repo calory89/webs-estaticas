@@ -227,6 +227,26 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo, mercado y sid
 
 Con dos días en Fráncfort, esta es la ruta de la guía: Día 1, Casco antiguo, mercado y sidra; Día 2, Museos del Meno y barrios. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Fráncfort?
+
+La mejor época es de mayo a septiembre: días largos, terrazas abiertas y orillas del Meno llenas.
+
+### ¿Dónde alojarse en Fráncfort?
+
+Altstadt y centro (Römer, Zeil): para quien quiere todo andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: City Hotel Frankfurt Central (Frankfurt, nota 8,5, desde 77 € la noche); mejor calidad-precio: Hotel Schopenhauer Hof (Frankfurt, nota 8,7, desde 168 € la noche); lujo: The Westin Grand Frankfurt (Frankfurt, nota 8,9, desde 323 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Fráncfort?
+
+Lo que hay que probar: Grüne Soße: salsa fría de siete hierbas con huevo duro y patatas.
+
+### ¿Cómo moverse por Fráncfort?
+
+Dentro de la ciudad, el centro se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Fráncfort?
+
+Según esta guía: Römerberg y el Römer; Nueva Altstadt (DomRömer); Catedral (Kaiserdom St. Bartholomäus); Main Tower; Museumsufer: Städel Museum; Eiserner Steg; Sachsenhausen; Kleinmarkthalle. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Fráncfort?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80 a 100 € por persona y día, y en el nivel "presupuesto medio", unos unos 150 a 200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

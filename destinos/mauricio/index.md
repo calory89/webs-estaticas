@@ -95,7 +95,7 @@ Para moverte: los **autobuses** son baratísimos y cubren casi todo, aunque van 
 
 No incluyen vuelos. El mayor gasto suele ser el alojamiento y las excursiones en barco.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Isla Mauricio
 
 ### ¿Cuántos días hacen falta?
 
@@ -124,6 +124,22 @@ Para quien escribió esta guía, sí: Mauricio vende postales de resort con lagu
 ### ¿Qué hacer en Isla Mauricio en 7 días?
 
 Con siete días en Isla Mauricio, esta es la ruta de la guía: Días 1-2, Norte; Día 3, Port Louis y Pamplemousses; Días 4-5, Oeste y suroeste; Día 6, Interior; Día 7, Este y salida. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Isla Mauricio?
+
+Grand Baie (norte): la zona con más oferta, restaurantes y vida nocturna.
+
+### ¿Qué comer en Isla Mauricio?
+
+Prueba el dholl puri, una crepe fina de legumbre con curry de alubias y chutney que cuesta céntimos.
+
+### ¿Cómo llegar del aeropuerto al centro de Isla Mauricio?
+
+El aeropuerto internacional Sir Seewoosagur Ramgoolam está en el sureste, cerca de Mahébourg.
+
+### ¿Cómo moverse por Isla Mauricio?
+
+Hay una línea de Metro Express que conecta Port Louis con ciudades del centro como Rose Hill, Quatre Bornes y Curepipe.
 
 ## Vuelos y chollos
 

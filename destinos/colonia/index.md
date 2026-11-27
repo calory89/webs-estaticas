@@ -231,6 +231,26 @@ Si solo tienes un día, haz el día 1 de esta ruta: Catedral, casco viejo y el R
 
 Con dos días en Colonia, esta es la ruta de la guía: Día 1, Catedral, casco viejo y el Rin; Día 2, Historia, barrios y cerveza local. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Colonia?
+
+La mejor época es de mayo a septiembre: temperaturas de 18 a 25 grados, terrazas abiertas y vida en el río, aunque llueve con frecuencia todo el año.
+
+### ¿Dónde alojarse en Colonia?
+
+La zona justo detrás de la estación es menos agradable de noche. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Steigenberger Hotel Köln (Neustadt-Süd, nota 8,3, desde 198 € la noche); mejor calidad-precio: Hotel Allegro (Altstadt-Süd, nota 8,8, desde 311 € la noche); lujo: Excelsior Hotel Ernst am Dom (Altstadt-Nord, nota 8,9, desde 440 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Colonia?
+
+Comer un menú del día o un plato en una Brauhaus sale por 15-25 € con una cerveza.
+
+### ¿Cómo moverse por Colonia?
+
+En la ciudad, el centro se hace a pie y para lo demás tienes tranvía, metro ligero y autobuses de la KVB.
+
+### ¿Qué lugares imprescindibles ver en Colonia?
+
+Según esta guía: Catedral de Colonia (Kölner Dom); Torre de la catedral; Puente Hohenzollern y la orilla de Deutz; Mirador KölnTriangle; Altstadt, Alter Markt y Groß St. Martin; Museo Ludwig; Museo Romano-Germánico (sede temporal); Kolumba. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Colonia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -89,7 +89,7 @@ In town, use the BTS and MRT for long distances, boats for the river and Grab or
 
 Backpackers can manage on roughly 1,000 to 1,500 baht a day, which is about 25 to 40 euros. A comfortable mid-range day, with a decent hotel, taxis and restaurant meals, comes to about 3,000 to 4,500 baht. Add more for luxury hotels, rooftop cocktails and private tours. Prices are approximate and shift with exchange rates.
 
-## FAQ
+## FAQ about Bangkok
 
 ### Is Bangkok safe for tourists?
 
@@ -130,6 +130,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old city. Grand Pal
 ### What to do in Bangkok in 3 days?
 
 With three days in Bangkok, this is the guide's route: Day 1, Old city; Day 2, Modern Bangkok; Day 3, Local side. The table above has the full plan for each day.
+
+### When is the best time to visit Bangkok?
+
+The best months are November to February, when it's dry and days sit around 30°C with pleasant evenings.
+
+### Where to stay in Bangkok?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Regent Ramkhamhaeng 22 (Bangkapi, score 8.4, from €26 a night); best value: Red Door Samsen Hotel, Bangkok (Bangkok Old Town, score 8.8, from €50 a night); luxury: Eastin Grand Hotel Sathorn (Sathorn, score 9.4, from €133 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Bangkok?
+
+Try som tam (green papaya salad) and ask for it less spicy unless you're confident.
+
+### How do you get from the airport to central Bangkok?
+
+The Airport Rail Link takes around 30 minutes to Phaya Thai, where you can change to the BTS Skytrain.
 
 ## Flights and deals
 

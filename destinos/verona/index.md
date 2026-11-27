@@ -235,6 +235,18 @@ Sí, es muy tranquila, también de noche. Lo único es vigilar la cartera en las
 
 Con dos días en Verona, esta es la ruta de la guía: Día 1, Centro histórico y Arena; Día 2, San Zeno, el río y el mirador. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Verona?
+
+El centro es pequeño, así que casi cualquier zona dentro de las murallas sirve. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Cavour rooms (Verona Historical Centre, nota 8,1, desde 79 € la noche); mejor calidad-precio: Opera Relais De Charme - Aparthotel (Verona Historical Centre, nota 9,5, desde 144 € la noche); lujo: VISTA Verona (Verona Historical Centre, nota 9,4, desde 660 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por Verona?
+
+Desde allí, el centro está a 15 minutos andando o a cinco en autobús urbano.
+
+### ¿Qué lugares imprescindibles ver en Verona?
+
+Según esta guía: Arena di Verona; Piazza delle Erbe; Torre dei Lamberti; Piazza dei Signori y Arche Scaligere; Casa de Julieta; Ponte Pietra; Castel San Pietro; Teatro Romano y Museo Archeologico. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Verona?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

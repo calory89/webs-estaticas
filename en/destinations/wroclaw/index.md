@@ -237,6 +237,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town and Cathed
 
 With three days in Wroclaw, this is the guide's route: Day 1, Old Town and Cathedral Island; Day 2, Panorama, Centennial Hall and the east; Day 3, Four Denominations, Nadodrze and the river. The table above has the full plan for each day.
 
+### Where to stay in Wroclaw?
+
+Old Town (Stare Miasto): the obvious choice for a short trip, walking distance to everything. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: B&B HOTEL Wrocław Centrum (Stare Miasto, score 8.6, from €50 a night); best value: B&B HOTEL Wrocław Old Town (Wroclaw Old Town, score 9.4, from €68 a night); luxury: The Bridge Wroclaw - MGallery (Śródmieście, score 9.4, from €103 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Wroclaw?
+
+Order pierogi (try ruskie with potato and cheese, or meat), żurek (sour rye soup, ideally served in a bread bowl), placki ziemniaczane (potato pancakes), gołąbki (cabbage rolls) and kotlet schabowy (breaded pork chop).
+
+### How do you get around Wroclaw?
+
+Buy from the machine at the stop or on board with a card.
+
+### What are the must-see places in Wroclaw?
+
+According to this guide: Market Square (Rynek) and the Old Town Hall; Cathedral Island (Ostrów Tumski); Cathedral of St John the Baptist; Racławice Panorama; The dwarfs (krasnale); Centennial Hall and the Multimedia Fountain; Japanese Garden (Ogród Japoński); St Elizabeth's Church tower. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Wroclaw: https://www.happylowcost.com/en/destinations/wroclaw/#deals

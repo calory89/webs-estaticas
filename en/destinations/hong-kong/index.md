@@ -246,6 +246,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Central, Sheung Wan
 
 With four days in Hong Kong, this is the guide's route: Day 1, Central, Sheung Wan and the Peak; Day 2, Kowloon; Day 3, Lantau Island; Day 4, Hike and beach. The table above has the full plan for each day.
 
+### Where to stay in Hong Kong?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Ibis Hong Kong Central & Sheung Wan (Sheung Wan, score 8, from €142 a night); best value: The Luxe Manor (Yau Tsim Mong District, score 8.6, from €220 a night); luxury: Mondrian Hong Kong (Tsim Sha Tsui, score 9.1, from €277 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Hong Kong?
+
+The fastest route is the Airport Express: 24 minutes to Hong Kong station in Central, about €13 (HK$115) one way, with a free shuttle bus to many hotels.
+
+### How do you get around Hong Kong?
+
+Get an Octopus card, or just tap a contactless credit card or phone at MTR gates.
+
+### What are the must-see places in Hong Kong?
+
+According to this guide: Victoria Peak; Star Ferry; Tsim Sha Tsui Promenade; Tian Tan Buddha and Po Lin Monastery; Tai O fishing village; Man Mo Temple and Hollywood Road; Central-Mid-Levels Escalator; Temple Street Night Market. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Hong Kong: https://www.happylowcost.com/en/destinations/hong-kong/#deals

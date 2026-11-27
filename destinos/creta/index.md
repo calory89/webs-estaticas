@@ -123,7 +123,7 @@ Para moverte, el **coche de alquiler** es lo más práctico. La autovía del nor
 
 El coche de alquiler cuesta mucho menos fuera de verano. La gasolina es cara comparada con España, así que cuenta con ella.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Creta
 
 ### ¿Cuántos días hacen falta para ver Creta?
 
@@ -152,6 +152,22 @@ Para quien escribió esta guía, sí: Creta no es una isla, es casi un país peq
 ### ¿Qué hacer en Creta en 7 días?
 
 Con siete días en Creta, esta es la ruta de la guía: Días 1-2, Heraclión; Día 3, Rethymno; Días 4-5, La Canea; Día 6, Samaria o Imbros, según fuerzas; Día 7, Vuelta por el sur (Preveli o Matala) y regreso a Heraclión. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Creta?
+
+De mayo a junio y de septiembre a mediados de octubre es lo mejor: mar templado, calor llevadero, gargantas abiertas y precios más bajos.
+
+### ¿Dónde alojarse en Creta?
+
+Rethymno, casco antiguo: buenas opciones medias y pensiones sencillas. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Athinaikon Hotel (Leof. Eth. Antistaseos 89, nota 8,3, desde 58 € la noche); mejor calidad-precio: Kipos Boutique Suites (Giampoudi 12, nota 9,4, desde 64 € la noche); lujo: Ethereal White Resort Hotel & Spa - Adults Only (Heralkio City Centre, nota 9,3, desde 141 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Creta?
+
+En La Canea prueba el boureki chaniotiko, de calabacín, patata y queso con miel.
+
+### ¿Cómo llegar del aeropuerto al centro de Creta?
+
+La isla tiene dos aeropuertos grandes: Heraclión y La Canea.
 
 ### ¿Es caro viajar a Creta?
 

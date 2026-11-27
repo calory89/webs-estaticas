@@ -104,7 +104,7 @@ Para el centro y barrios cercanos, camina o alquila bicicleta: hay carriles bici
 
 Son cifras generales; varían con la temporada y el tipo de viaje. Para ahorrar, aprovecha lo gratuito (cúpula del Reichstag, Topografía del Terror, East Side Gallery, parques) y reserva los museos de pago con antelación.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Berlín
 
 ### ¿Cuántos días hacen falta para ver Berlín?
 
@@ -141,6 +141,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Tour a pie por el cen
 ### ¿Qué hacer en Berlín en 4 días?
 
 Con cuatro días en Berlín, esta es la ruta de la guía: Día 1, Tour a pie por el centro, Puerta de Brandeburgo, Memorial del Holocausto; Día 2, Bernauer Straße y Mauerpark por la mañana; Isla de los Museos y Alexanderplatz por…; Día 3, East Side Gallery, cruce a Kreuzberg a pie; Día 4, Tempelhofer Feld, el palacio de Charlottenburg o una excursión en tren a Potsdam. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué comer en Berlín?
+
+El plato local por excelencia es la currywurst: salchicha cortada con salsa de tomate especiado y curry en polvo.
+
+### ¿Cómo llegar del aeropuerto al centro de Berlín?
+
+El aeropuerto es el BER (Brandeburgo), al sureste de la ciudad.
+
+### ¿Cómo moverse por Berlín?
+
+Dentro de la ciudad, la red de metro (U-Bahn), S-Bahn, tranvías y autobuses es muy completa.
 
 ## Vuelos y chollos
 

@@ -248,6 +248,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Morning: 
 
 With three days in Quito, this is the guide's route: Day 1, Old Town; Day 2, The heights and the north; Day 3, The equator and Panecillo. The table above has the full plan for each day.
 
+### Where to stay in Quito?
+
+Centro Histórico (Old Town): Best for first-timers who want atmosphere and walking access to the sights. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Rincón Familiar Hotel Boutique (Centro Histórico, score 8.5, from €40 a night); best value: Chakana Hotel Boutique Centro (The Real Heart of Quito, score 9.3, from €48 a night); luxury: JW Marriott Quito (Avenida Orellana 1172 y Avenida Amazonas, score 9.3, from €219 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Quito?
+
+The Quito Metro, opened at the end of 2023, runs one line from Quitumbe in the south to El Labrador in the north.
+
+### What are the must-see places in Quito?
+
+According to this guide: Plaza Grande (Plaza de la Independencia); La Compañía de Jesús; Iglesia y Convento de San Francisco; Basílica del Voto Nacional; La Ronda; Casa del Alabado; El Panecillo; TelefériQo. Each one is explained in the "What to see" section.
+
 ### Is Quito expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about $35-50 (€32-45) per person per day and the "mid-range" level at about $90-150 (€80-135). Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -158,6 +158,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Al Fahidi, museo, abr
 
 Con cuatro días en Dubái, esta es la ruta de la guía: Día 1, Al Fahidi, museo, abra por el Creek y zocos de Deira; Día 2, Mezquita de Jumeirah por la mañana, Dubai Frame o Museo del Futuro; Día 3, Playa por la mañana en Kite Beach o JBR; Día 4, Marina y Palm Jumeirah si te interesa. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Dubái?
+
+De noviembre a marzo es la mejor época: días de 25 a 30 grados, noches frescas y sol casi garantizado.
+
+### ¿Dónde alojarse en Dubái?
+
+Deira y Bur Dubái: la zona más económica y bien comunicada por metro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Premier Inn Dubai International Airport - An Emirates Group Company (Garhoud, nota 8,7, desde 69 € la noche); mejor calidad-precio: Hotel Local Dubai, Jumeirah Village Triangle, Autograph Collection (Street D61, District 7, Jumeirah Village Triangle, nota 8,8, desde 89 € la noche); lujo: Mileo Hotel The Palm (Beach & Coast, nota 9,5, desde 208 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Dubái?
+
+Machboos: plato emiratí de arroz especiado con carne o pescado, perfecto para probar la cocina local.
+
+### ¿Cómo llegar del aeropuerto al centro de Dubái?
+
+El aeropuerto internacional (DXB) está bien conectado: la línea roja del metro llega desde las terminales 1 y 3 y te deja en el centro en pocos minutos.
+
+### ¿Cómo moverse por Dubái?
+
+Para moverte, compra una tarjeta Nol: sirve en metro, tranvía, autobús y abra.
+
+### ¿Qué lugares imprescindibles ver en Dubái?
+
+Según esta guía: Burj Khalifa y la Fuente de Dubái; Dubai Mall; Al Fahidi (Bastakiya); El Creek en abra y los zocos de Deira; Mezquita de Jumeirah; Museo del Futuro; Dubai Frame; Playa de Kite Beach y La Mer. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Dubái: https://www.happylowcost.com/destinos/dubai/#chollos

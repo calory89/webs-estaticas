@@ -95,7 +95,7 @@ Zurich is one of the priciest cities in Europe, so plan accordingly. These are r
 
 A coffee costs around 5 to 6 francs and a main course in a normal restaurant often runs 30 to 50. Free pleasures such as the lake, the river, the hills and the fountains help a lot.
 
-## FAQs
+## FAQ about Zurich
 
 ### Is Zurich worth visiting for a weekend?
 
@@ -132,6 +132,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Lindenhof, the old 
 ### What to do in Zurich in 3 days?
 
 With three days in Zurich, this is the guide's route: Day 1, Lindenhof, the old town, Grossmünster, Fraumünster and St; Day 2, Kunsthaus in the morning, then Zurich West for lunch and a wander; Day 3, Uetliberg early, a swim or lake walk in the afternoon. The table above has the full plan for each day.
+
+### When is the best time to visit Zurich?
+
+Summer is the best time for swimming, with temperatures often in the mid-20s °C and occasional hot spells above 30.
+
+### Where to stay in Zurich?
+
+The Langstrasse area is livelier and a bit rougher, though generally safe. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Leonardo Boutique Hotel Rigihof Zurich (Oberstrass, score 8, from €178 a night); best value: Motel One Zürich (Enge, score 8.4, from €210 a night); luxury: The Dolder Grand - City and Spa Resort Zurich (Zürichberg, score 9.1, from €886 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Zurich?
+
+The signature dish is Zürcher Geschnetzeltes: sliced veal in a cream and mushroom sauce, usually served with rösti.
+
+### How do you get from the airport to central Zurich?
+
+Zurich Airport sits in Kloten, about ten to fifteen minutes by train from the Hauptbahnhof.
+
+### How do you get around Zurich?
+
+A day pass for the city zone costs about 9 to 10 francs and is usually better value than buying individual tickets.
 
 ## Flights and deals
 

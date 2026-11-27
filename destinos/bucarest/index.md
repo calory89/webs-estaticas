@@ -101,7 +101,7 @@ Dentro de la ciudad, el metro (Metrorex) es rápido y económico, con viajes por
 
 La moneda es el leu rumano (RON), no el euro. Muchos sitios aceptan tarjeta, pero conviene llevar algo de efectivo para mercados y locales pequeños. Mejor sacar dinero en cajeros de un banco y rechazar la conversión automática a euros.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Bucarest
 
 ### ¿Necesito visado o pasaporte?
 
@@ -138,6 +138,22 @@ Con tres días en Bucarest, esta es la ruta de la guía: Día 1, Casco antiguo p
 ### ¿Qué ver en Rumanía en 3 días?
 
 Con tres días en Rumanía, esta guía propone quedarse en Bucarest y seguir su ruta: Día 1, Casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel); Día 2, Visita al Parlamento a primera hora; Día 3, Parque Herăstrău con el Museo de la Aldea y Arcul de Triumf.
+
+### ¿Dónde alojarse en Bucarest?
+
+Dorobanți y Floreasca: zona residencial y más cara, con cafeterías y restaurantes de moda. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: RHUM B07 - Old Town Courtyard (Bucharest, nota 8,1, desde 49 € la noche); mejor calidad-precio: Hotel Epica (Sector 3, nota 9,4, desde 98 € la noche); lujo: Corinthia Grand Hotel du Boulevard Bucharest (Sector 5, nota 9,7, desde 399 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bucarest?
+
+Para beber, prueba țuică, el aguardiente de ciruela.
+
+### ¿Cómo llegar del aeropuerto al centro de Bucarest?
+
+El aeropuerto Henri Coandă (OTP), en Otopeni, está a unos 16-18 km del centro.
+
+### ¿Cómo moverse por Bucarest?
+
+Dentro de la ciudad, el metro (Metrorex) es rápido y económico, con viajes por menos de un euro.
 
 ### ¿Es caro viajar a Bucarest?
 

@@ -99,7 +99,7 @@ Dentro de la ciudad, el metro (U-Bahn), el tranvía y las cercanías (S-Bahn) fo
 
 Son cifras generales, y todo depende de la temporada y de cuándo reserves.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Múnich
 
 ### ¿Cuántos días hacen falta para ver Múnich?
 
@@ -136,6 +136,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Marienplatz, Frauenki
 ### ¿Qué hacer en Múnich en 3 días?
 
 Con tres días en Múnich, esta es la ruta de la guía: Día 1, Marienplatz, Frauenkirche, Viktualienmarkt, Residenz y paseo hasta el Hofgarten; Día 2, Mañana de museos en Maxvorstadt, comida ligera por la zona; Día 3, Excursión a Neuschwanstein, o Nymphenburg y Olympiapark si prefieres quedarte en la ciudad. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Múnich?
+
+De mayo a septiembre es la mejor época para la vida de biergarten, con días largos y temperaturas agradables que a veces se calientan bastante en julio y agosto.
+
+### ¿Dónde alojarse en Múnich?
+
+Barrio de bares y terrazas, con gente joven y mucha vida nocturna. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: harry's home München hotel & apartments (Moosach, nota 8,6, desde 292 € la noche); mejor calidad-precio: MAXIMILIAN MUNICH Apartments & Hotel (Altstadt - Lehel, nota 8,9, desde 424 € la noche); lujo: Rosewood Munich (Altstadt - Lehel, nota 9,2, desde 1520 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Múnich?
+
+Para comer en cervecería, puedes probar el Augustiner-Keller, con jardín grande, o el Hofbräuhaus, que es muy turístico pero sigue siendo un espectáculo si vas con la expectativa correcta.
+
+### ¿Cómo llegar del aeropuerto al centro de Múnich?
+
+El aeropuerto Franz Josef Strauß está a unos 40 kilómetros del centro.
+
+### ¿Cómo moverse por Múnich?
+
+Dentro de la ciudad, el metro (U-Bahn), el tranvía y las cercanías (S-Bahn) forman una red del MVV con un sistema de billetes por zonas.
 
 ## Vuelos y chollos
 

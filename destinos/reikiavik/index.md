@@ -89,7 +89,7 @@ Para recorrer el país lo normal es alquilar coche. Un utilitario sirve para la 
 
 El coche suele ser lo más pesado del presupuesto, y se amortiza si lo compartes entre cuatro.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Islandia
 
 ### ¿Necesito visado los españoles?
 
@@ -130,6 +130,14 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, Reikiavik a 
 ### ¿Qué hacer en Islandia en 7 días?
 
 Con siete días en Islandia, esta es la ruta de la guía: Día 1, Llegada, Reikiavik a pie y piscina por la tarde; Día 2, Círculo Dorado: Þingvellir, Geysir, Gullfoss; Día 3, Seljalandsfoss, Skógafoss y noche en Vík; Día 4, Reynisfjara, Skaftafell y Jökulsárlón; Día 5, Diamond Beach y vuelta hacia el oeste con calma; Día 6, Snæfellsnes o baño termal; Día 7, Última mañana en Reikiavik y vuelo. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Islandia?
+
+En Reikiavik, el centro (el código postal 101) es lo cómodo: todo a pie, con bares y restaurantes, pero con precios altos y algo de ruido los fines de semana. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Vera (Reykjavík, nota 8,4, desde 107 € la noche); mejor calidad-precio: CityHub Reykjavik (Reykjavík, nota 9,1, desde 130 € la noche); lujo: Reykjavik Konsulat Hotel, Curio Collection By Hilton (Reykjavík, nota 9,0, desde 322 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Islandia?
+
+La kjötsúpa, sopa de cordero con verduras, es el plato casero que mejor sienta tras un día de lluvia.
 
 ## Vuelos y chollos
 

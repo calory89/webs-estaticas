@@ -123,7 +123,7 @@ Dentro de la ciudad, el sistema de tranvías, autobuses y trenes de cercanías e
 
 Son cifras generales: varían bastante según la temporada y el cambio del franco suizo.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Zúrich
 
 ### ¿Cuántos días hacen falta para ver Zúrich?
 
@@ -160,6 +160,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Mañana en el casco v
 ### ¿Qué hacer en Zúrich en 3 días?
 
 Con tres días en Zúrich, esta es la ruta de la guía: Día 1, Mañana en el casco viejo (Grossmünster, Lindenhof, Fraumünster), comida en Niederdorf; Día 2, Subida al Uetliberg por la mañana; Día 3, (opcional). En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Zúrich?
+
+Kreis 4 y Langstrasse: el barrio más animado de noche, con bares, restaurantes de todo el mundo y precios algo más contenidos. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Leonardo Boutique Hotel Rigihof Zurich (Oberstrass, nota 8, desde 178 € la noche); mejor calidad-precio: Motel One Zürich (Enge, nota 8,4, desde 210 € la noche); lujo: The Dolder Grand - City and Spa Resort Zurich (Zürichberg, nota 9,1, desde 886 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Zúrich?
+
+El plato de la casa es el Zürcher Geschnetzeltes: tiras de ternera con salsa cremosa de champiñones, que se sirve casi siempre con rösti (una tortilla crujiente de patata rallada).
+
+### ¿Cómo llegar del aeropuerto al centro de Zúrich?
+
+El aeropuerto de Zúrich (ZRH) está conectado con la estación central (Hauptbahnhof) por tren, y el trayecto dura unos 10 a 15 minutos con salidas muy frecuentes.
+
+### ¿Cómo moverse por Zúrich?
+
+El centro histórico se hace perfectamente a pie.
+
+### ¿Qué lugares imprescindibles ver en Zúrich?
+
+Según esta guía: Altstadt y el barrio de Niederdorf; Grossmünster; Fraumünster y las vidrieras de Chagall; Lindenhof; Bahnhofstrasse; El lago y los Badi; Uetliberg; Zürich West. En la sección "Qué ver" tienes cada uno explicado.
 
 ## Vuelos y chollos
 

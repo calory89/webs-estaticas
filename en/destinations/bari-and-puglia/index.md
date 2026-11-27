@@ -254,6 +254,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Bari. Morning: Star
 
 With five days in Bari and Puglia, this is the guide's route: Day 1, Bari; Day 2, Polignano a Mare and Monopoli; Day 3, Valle d'Itria; Day 4, Lecce; Day 5, Matera or Trani. The table above has the full plan for each day.
 
+### Where to stay in Bari and Puglia?
+
+Lecce centro storico: base for the Salento and the southern beaches. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Adria (Bari City Centre, score 8.7, from €123 a night); best value: Hotel Moderno (Bari City Centre, score 9.3, from €176 a night); luxury: Bra Hotel Bari (Bari City Centre, score 9.7, from €485 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Bari and Puglia?
+
+Riso, patate e cozze: a baked layered dish of rice, potatoes and mussels.
+
+### How do you get around Bari and Puglia?
+
+Inside Bari you walk almost everywhere; the old town and Murat sit next to each other.
+
+### What are the must-see places in Bari and Puglia?
+
+According to this guide: Bari Vecchia; Basilica di San Nicola; Strada Arco Basso (the orecchiette street); Castello Normanno-Svevo; Cattedrale di San Sabino; Lungomare and Molo San Nicola; Polignano a Mare; Monopoli. Each one is explained in the "What to see" section.
+
 ### Is Bari and Puglia expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.

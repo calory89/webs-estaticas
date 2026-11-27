@@ -89,7 +89,7 @@ From Noi Bai, public bus 86 runs to the Old Quarter and train station in about a
 
 Flights, Ha Long cruises and big excursions are the main budget swingers.
 
-## FAQs
+## FAQ about Vietnam
 
 ### Is Vietnam safe for tourists?
 
@@ -110,6 +110,26 @@ In hotels, malls and many restaurants, yes. Street stalls, markets and small sho
 ### Is it worth visiting both north and south?
 
 If you have two weeks or more, absolutely. The food, climate and mood differ so much that they feel like two countries. With less time, stick to one region.
+
+### When is the best time to visit Vietnam?
+
+North (Hanoi, Sapa, Ha Long): October to April is the best window.
+
+### Where to stay in Vietnam?
+
+Hoi An: Stay in or near the Old Town if you want atmosphere. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hanoi Apartment Lac Long Quan (Cau Giay, score 9.1, from €18 a night); best value: Sao Mai Boutique Hotel (Dong Da, score 9.4, from €33 a night); luxury: Classyc Hotel Hang Thung (Hoan Kiem, score 9.6, from €138 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Vietnam?
+
+In Hanoi, try Phở Gia Truyền on Bát Đàn, where there is often a queue.
+
+### How do you get from the airport to central Vietnam?
+
+In Saigon the airport is close to the centre: Grab takes around 20 to 40 minutes, and public buses (such as 109 and 152) are cheaper.
+
+### How do you get around Vietnam?
+
+Crossing the road takes practice: walk steadily and let scooters flow around you.
 
 ## Flights and deals
 

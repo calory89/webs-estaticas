@@ -251,6 +251,22 @@ With three days in Tunis, this is the guide's route: Day 1, Medina and the colon
 
 With three days in Tunisia, this guide suggests staying in Tunis and following its route: Day 1, Medina and the colonial centre; Day 2, Carthage and Sidi Bou Said; Day 3, Bardo and La Marsa (or a day trip).
 
+### Where to stay in Tunis?
+
+It is 30-40 minutes from the centre by TGM. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel karim Tunis (La Medina, score 8.6, from €44 a night); best value: Dar El Médina (La Medina, score 9, from €93 a night); luxury: Dar El Jeld Hotel and Spa (La Medina, score 9.4, from €193 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Tunis?
+
+Tunis-Carthage Airport is only about 8 km from the centre.
+
+### How do you get around Tunis?
+
+Yellow taxis waiting outside often quote much more, so insist on the meter or walk to the departures level and flag one being dropped off.
+
+### What are the must-see places in Tunis?
+
+According to this guide: The Medina of Tunis; Zitouna Mosque; The souks: Attarine, Chechias and Trouk; Rooftop views over the medina; Dar Ben Abdallah and Tourbet el Bey; Bardo National Museum; Avenue Habib Bourguiba; Cathedral of St Vincent de Paul. Each one is explained in the "What to see" section.
+
 ### Is Tunis expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "comfort" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.

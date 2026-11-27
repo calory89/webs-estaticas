@@ -59,7 +59,30 @@ def _e(x):
     return html.escape(str(x if x is not None else ''))
 
 
-def block(city_name, lat, lng, names=(), weak=(), lang='es', checkin=None, checkout=None):
+def hotel_faq(city_name, lat, lng, names=(), weak=(), lang='es', trip_from=None):
+    """Ronda 10 (GSC: "hotels in buenos aires for a trip from brussels" 22 impr. pos. 9, "hotels in bogota for a trip from stockholm" pos. 4,9):
+    pregunta y respuesta con los 3 hoteles de top3hotels.com (nombre, zona, nota de huéspedes y precio orientativo por noche). Nada inventado."""
+    c = find(lat, lng, names, weak)
+    if not c:
+        return None
+    es = lang == 'es'
+    parts = []
+    for name, cat, area, score, cnt, stars, nightly, burl, img in c[6]:
+        det = ', '.join(x for x in ((f'{area}' if area else ''), (f'nota {str(score).replace(".", ",")}' if es else f'score {score}') if score else '',
+                                    (f'desde {nightly} € la noche' if es else f'from €{nightly} a night') if nightly else '') if x)
+        parts.append(f'{CAT[lang][cat].lower()}: {name}' + (f' ({det})' if det else ''))
+    if len(parts) < 2:
+        return None
+    if es:
+        q = f'¿Dónde dormir en {city_name}' + (f' en un viaje desde {trip_from}?' if trip_from else '?')
+        a = 'Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son ' + '; '.join(parts) + '. El precio por noche es orientativo y cambia con las fechas.'
+    else:
+        q = f'Which hotels in {city_name} for a trip from {trip_from}?' if trip_from else f'Which are the best hotels in {city_name}?'
+        a = 'The 3 hotels with the best real guest scores, according to top3hotels.com, are ' + '; '.join(parts) + '. The nightly price is indicative and changes with the dates.'
+    return q, a
+
+
+def block(city_name, lat, lng, names=(), weak=(), lang='es', checkin=None, checkout=None, trip_from=None):
     c = find(lat, lng, names, weak)
     if not c:
         return ''
@@ -86,12 +109,12 @@ def block(city_name, lat, lng, names=(), weak=(), lang='es', checkin=None, check
             + (f'<div class="t3-m">{" ".join(meta)}</div>' if meta else '') + price
             + f'<span class="t3-go">{go} →</span></div></a>')
     if lang == 'es':
-        h = f'Dónde dormir en {_e(city_name)}: los 3 mejores hoteles'
+        h = (f'Hoteles en {_e(city_name)} para un viaje desde {_e(trip_from)}: los 3 mejores' if trip_from else f'Dónde dormir en {_e(city_name)}: los 3 mejores hoteles')
         k = 'Recomendados por top3hotels.com'
         more = f'Ver el análisis completo en top3hotels.com'
         note = 'Un hotel económico, uno con la mejor relación calidad-precio y uno de lujo, elegidos por nota real de huéspedes. Precio orientativo por noche.'
     else:
-        h = f'Where to stay in {_e(city_name)}: the 3 best hotels'
+        h = (f'Hotels in {_e(city_name)} for a trip from {_e(trip_from)}: the 3 best' if trip_from else f'Where to stay in {_e(city_name)}: the 3 best hotels')
         k = 'Picked by top3hotels.com'
         more = 'Read the full analysis on top3hotels.com'
         note = 'One budget hotel, one best-value and one luxury pick, chosen on real guest scores. Indicative price per night.'

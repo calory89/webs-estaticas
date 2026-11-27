@@ -113,7 +113,7 @@ The centre is easy on foot. For the rest, the **tram** network is the best way t
 
 Alcohol is expensive, so drinks add up quickly. Tap water is excellent, and you can tip lightly or not at all.
 
-## FAQ
+## FAQ about Helsinki
 
 ### Is three days enough for Helsinki?
 
@@ -150,6 +150,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Central Station, Oo
 ### What to do in Helsinki in 3 days?
 
 With three days in Helsinki, this is the guide's route: Day 1, Central Station, Oodi, Kiasma or Ateneum, Senate Square and the cathedral; Day 2, Morning ferry to Suomenlinna, a long lunch on the island; Day 3, Temppeliaukio Church, the Sibelius Monument, a coffee stop at Regatta in Töölö. The table above has the full plan for each day.
+
+### Where to stay in Helsinki?
+
+Kamppi and the centre: the most practical base, close to trains, trams and the airport link. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Senate Hotel (Kruununhaka, score 8.0, from €68 a night); best value: Hotel Bastian (Kamppi, score 9.2, from €133 a night); luxury: Lapland Hotels Bulevardi (Kamppi, score 9.4, from €224 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Helsinki?
+
+Try karjalanpiirakka, a rye pastry filled with rice porridge and topped with egg butter, and korvapuusti, a cinnamon bun that deserves its reputation.
+
+### How do you get around Helsinki?
+
+A ticket valid for zones ABC costs a few euros and also works on trams, buses, the metro and the Suomenlinna ferry.
+
+### What are the must-see places in Helsinki?
+
+According to this guide: Suomenlinna; Senate Square and Helsinki Cathedral; Uspenski Cathedral; Temppeliaukio Church; Oodi Central Library; Kiasma and Ateneum; Helsinki Central Station; Design District and Punavuori. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

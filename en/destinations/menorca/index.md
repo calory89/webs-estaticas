@@ -246,6 +246,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Ciutadella. Morning
 
 With five days in Menorca, this is the guide's route: Day 1, Ciutadella; Day 2, Southwest coves; Day 3, North coast; Day 4, Centre and the move east; Day 5, Mahón and the southeast. The table above has the full plan for each day.
 
+### Where to stay in Menorca?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Catalonia Mirador des Port (Vilanova, 1, score 8.8, from €87 a night); best value: Senator Port Mahon (Avinguda Port De Maó, s/n, score 8.8, from €146 a night); luxury: ARTIEM Capri (Sant Esteve, 8, score 9.3, from €91 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Menorca?
+
+Menorca Airport (MAH) is about 5 km from Maó.
+
+### How do you get around Menorca?
+
+There's no tourist travel pass worth buying.
+
+### What are the must-see places in Menorca?
+
+According to this guide: Ciutadella old town; Mahón (Maó) and its harbour; Cala Macarella and Macarelleta; Cala Turqueta; Cala Mitjana and Cala Galdana; Cala Pregonda; Fornells; Naveta des Tudons. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Menorca: https://www.happylowcost.com/en/destinations/menorca/#deals

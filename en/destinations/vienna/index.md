@@ -131,7 +131,7 @@ In the city, buy a Wiener Linien pass (24, 48 or 72 hours) and use the U-Bahn, t
 
 These are approximate figures. Palace tickets and cake add up fast.
 
-## FAQ
+## FAQ about Vienna
 
 ### Is Vienna expensive?
 
@@ -172,6 +172,30 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: (old centre). Steph
 ### What to do in Vienna in 3 days?
 
 With three days in Vienna, this is the guide's route: Day 1, (old centre); Day 2, (palaces); Day 3, (museums and play). The table above has the full plan for each day.
+
+### When is the best time to visit Vienna?
+
+The best months are April to June and September to October, when days are mild and the parks are at their best.
+
+### Where to stay in Vienna?
+
+It is the priciest area and a bit sleepy at night. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Bob W Vienna Döbling (19. Döbling, score 9.3, from €68 a night); best value: Exe Vienna (17. Hernals, score 8.7, from €76 a night); luxury: Hotel Sacher Wien (01. Innere Stadt, score 9.6, from €701 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Vienna?
+
+For a drink, try a glass of Grüner Veltliner or a Gemischter Satz, the local field-blend white.
+
+### How do you get from the airport to central Vienna?
+
+Vienna Airport (VIE) is in Schwechat, about 20 minutes from the centre.
+
+### How do you get around Vienna?
+
+In the city, buy a Wiener Linien pass (24, 48 or 72 hours) and use the U-Bahn, trams and buses.
+
+### What are the must-see places in Vienna?
+
+According to this guide: Stephansdom and the Innere Stadt; The Hofburg; Schönbrunn Palace; The Belvedere; Kunsthistorisches Museum; Karlskirche; Prater and the Riesenrad; Naschmarkt. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

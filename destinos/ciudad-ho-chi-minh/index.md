@@ -236,6 +236,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro colonial y gue
 
 Con tres días en Ciudad Ho Chi Minh, esta es la ruta de la guía: Día 1, Centro colonial y guerra; Día 2, Excursión a Cu Chi y barrio chino; Día 3, Templos, mercados y río. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Ciudad Ho Chi Minh?
+
+Distrito 1 (centro, entre Ben Thanh y el río): lo más práctico para una primera visita, todo andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Linh Dan Hotel Phan Xich Long By Urban B - Addr 12-7 Cù Lao (Phu Nhuan, nota 8,7, desde 25 € la noche); mejor calidad-precio: Triple E Hotel Metro Ben Thanh (District 1, nota 8,7, desde 52 € la noche); lujo: La Siesta Premium Saigon (District 1, nota 9,4, desde 155 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Ciudad Ho Chi Minh?
+
+El aeropuerto de Tan Son Nhat está dentro de la ciudad, a unos 7 km del centro.
+
+### ¿Cómo moverse por Ciudad Ho Chi Minh?
+
+El metro línea 1 es útil sobre todo para ir hacia Thao Dien; el billete cuesta menos de 1 €.
+
+### ¿Qué lugares imprescindibles ver en Ciudad Ho Chi Minh?
+
+Según esta guía: Museo de los Restos de la Guerra; Palacio de la Independencia; Oficina Central de Correos y catedral de Notre Dame; Calle peatonal Nguyen Hue y el edificio de los cafés; Calle de los libros Nguyen Van Binh; Pagoda del Emperador de Jade; Cholon: el barrio chino; Mercado de Ben Thanh. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Ciudad Ho Chi Minh?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

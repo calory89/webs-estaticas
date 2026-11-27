@@ -243,6 +243,22 @@ Para quien escribió esta guía, sí: Madrid no tiene playa ni una postal tan re
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Madrid de los Austrias y Palacio Real. Mañana: empieza en la Puerta del Sol, baja por la calle Mayor hasta la Plaza Mayor y sigue hasta la Plaza de la Villa. Día 2: Museos y Retiro. Mañana: Museo del Prado a primera hora, cuando hay menos gente.
 
+### ¿Cuál es la mejor época para viajar a Madrid?
+
+La mejor época es primavera (abril a junio) y otoño (septiembre a noviembre): temperaturas suaves, terrazas abiertas y luz buena.
+
+### ¿Qué comer en Madrid?
+
+Lo básico que conviene probar: Cocido madrileño: garbanzos, carnes y verduras, servido en dos o tres vuelcos.
+
+### ¿Cómo moverse por Madrid?
+
+Desde Barajas hay varias formas de llegar al centro, y la más barata depende de tu terminal: Metro línea 8: llega a Nuevos Ministerios en unos 15-20 minutos, y desde ahí enlazas.
+
+### ¿Qué lugares imprescindibles ver en Madrid?
+
+Según esta guía: Museo del Prado; Museo Reina Sofía; Museo Thyssen-Bornemisza; Parque del Retiro; Palacio Real y Plaza de Oriente; Catedral de la Almudena; Plaza Mayor y Madrid de los Austrias; Puerta del Sol y Gran Vía. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Madrid: https://www.happylowcost.com/destinos/madrid/#chollos

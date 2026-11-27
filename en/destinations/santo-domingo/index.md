@@ -245,6 +245,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Zona Colonial. Morn
 
 With three days in Santo Domingo, this is the guide's route: Day 1, Zona Colonial; Day 2, Caves, Malecón and the modern city; Day 3, Beach day. The table above has the full plan for each day.
 
+### Where to stay in Santo Domingo?
+
+This leafy, older residential area just west of the Zona is quieter, more local and cheaper, at €30-60 a night. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Class Colonial (Colonial Zone, score 8.6, from €56 a night); best value: Hotel Villa Colonial (Colonial Zone, score 9.5, from €179 a night); luxury: Aston Rubi City Suites (Downtown Santo Domingo, score 9, from €95 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Santo Domingo?
+
+Presidente beer (ask for it "vestida de novia", ice-cold), morir soñando (orange juice and milk, better than it sounds) and mamajuana, rum steeped in bark and herbs, which you only need to try once.
+
+### How do you get from the airport to central Santo Domingo?
+
+Las Américas International Airport (SDQ) is about 30 km east of the centre, 30-45 minutes by car without traffic.
+
+### How do you get around Santo Domingo?
+
+Pickup at the terminal can be awkward, so message the driver and be ready to walk to the car park.
+
+### What are the must-see places in Santo Domingo?
+
+According to this guide: Zona Colonial and Calle El Conde; Catedral Primada de América; Calle Las Damas; Fortaleza Ozama; Alcázar de Colón and Plaza España; Museo de las Casas Reales; Ruinas del Monasterio de San Francisco; Parque Colón. Each one is explained in the "What to see" section.
+
 ### Is Santo Domingo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "mid-range" level at about €90-140. Flights are extra: this page shows real fares checked by Happy Low Cost.

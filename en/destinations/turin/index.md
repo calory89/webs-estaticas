@@ -238,6 +238,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Royal Turin and the
 
 With three days in Turin, this is the guide's route: Day 1, Royal Turin and the centre; Day 2, Egypt, cinema and the view; Day 3, Markets, river and hills. The table above has the full plan for each day.
 
+### Where to stay in Turin?
+
+Centro (around Piazza Castello and Via Roma): best for first-timers. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Cascina Fossata & Residence (Ala di Stura, 5, score 8.7, from €80 a night); best value: Hotel Torino Porta Susa (Quadrilatero Romano, score 8.7, from €94 a night); luxury: Principi di Piemonte | UNA Esperienze | Preferred Hotels and Resorts (Turin Historic Centre, score 9.4, from €654 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Turin?
+
+Turin Caselle Airport (TRN) is about 16km north of the city.
+
+### How do you get around Turin?
+
+The centre is very walkable, and you may not need transport at all.
+
+### What are the must-see places in Turin?
+
+According to this guide: Museo Egizio (Egyptian Museum); Mole Antonelliana and the National Cinema Museum; Piazza Castello, Palazzo Madama and the Musei Reali; Turin Cathedral and the Shroud Chapel; Piazza San Carlo and Via Roma; Via Po, Piazza Vittorio Veneto and the Murazzi; Monte dei Cappuccini; Basilica di Superga. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Turin: https://www.happylowcost.com/en/destinations/turin/#deals

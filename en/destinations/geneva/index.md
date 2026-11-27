@@ -243,6 +243,22 @@ If you only have one day, follow day 1 of this itinerary: Old Town, the lake and
 
 With two days in Geneva, this is the guide's route: Day 1, Old Town, the lake and Pâquis; Day 2, International Geneva and Carouge. The table above has the full plan for each day.
 
+### Where to stay in Geneva?
+
+Pâquis: between the train station and the lake, cheapest central area, great food, a little rough around the edges at night (it's also the red-light district). The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: ibis budget Genève Aéroport (Avenue Louis Casaï 26 Cointrin, score 8, from €99 a night); best value: B&B HOTEL Geneva Airport (73 Avenue de l'Etang, score 8.6, from €125 a night); luxury: Hôtel Les Armures (Cité, score 9.4, from €742 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Geneva?
+
+They're the classic lake dish, though most perch now comes from elsewhere; ask if it's from the lake if that matters to you.
+
+### How do you get from the airport to central Geneva?
+
+Geneva Airport is only 4 km from the centre, which makes it one of Europe's easiest airports to get out of.
+
+### What are the must-see places in Geneva?
+
+According to this guide: Jet d'Eau; Old Town (Vieille Ville); St. Pierre Cathedral and its towers; Maison Tavel; Parc des Bastions and the Reformation Wall; Palais des Nations (UN Office at Geneva); Broken Chair; International Red Cross and Red Crescent Museum. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Geneva: https://www.happylowcost.com/en/destinations/geneva/#deals

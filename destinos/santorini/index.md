@@ -97,7 +97,7 @@ La alternativa es alquilar un coche o un quad. El quad es divertido pero poco se
 
 Estas cifras varían bastante con la temporada. Los meses de verano disparan los precios; fuera de ellos puedes ahorrar mucho.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Santorini
 
 ### ¿Cuántos días hacen falta en Santorini?
 
@@ -134,6 +134,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Fira por la mañana, 
 ### ¿Qué hacer en Santorini en 3 días?
 
 Con tres días en Santorini, esta es la ruta de la guía: Día 1, Fira por la mañana, paseo por Firostefani e Imerovigli y atardecer en Imerovigli; Día 2, Oia a primera hora, sendero de vuelta a Fira si te apetece o bus, y comida en Ammoudi; Día 3, Akrotiri por la mañana, playa por la tarde (Perissa o Kamari) y cena en Pyrgos…. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Santorini?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Caldera Premium Villas (Oia Caldera, nota 8,8, desde 136 € la noche); mejor calidad-precio: Fanari Villas (Oia Caldera, nota 9,3, desde 312 € la noche); lujo: Aspaki by Art Maisons (Oia Caldera, nota 9,8, desde 679 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Santorini?
+
+Pide tomatokeftedes, buñuelos de tomate cherry local, y fava de Santorini, un puré de legumbre amarilla que aquí es casi un plato nacional.
+
+### ¿Cómo llegar del aeropuerto al centro de Santorini?
+
+El aeropuerto (JTR) está en el este de la isla, cerca de Kamari.
 
 ## Vuelos y chollos
 

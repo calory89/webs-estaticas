@@ -112,7 +112,7 @@ In the city, the network of U-Bahn, S-Bahn, trams and buses run by BVG is excell
 
 These are rough numbers and do not include flights. A döner or currywurst typically costs 5 to 8 euros, a beer in a bar 4 to 6, and most major museums 10 to 20.
 
-## Frequently asked questions
+## FAQ about Berlin
 
 ### Is Berlin expensive?
 
@@ -151,6 +151,30 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Brandenburg Gate, R
 ### What to do in Berlin in 4 days?
 
 With four days in Berlin, this is the guide's route: Day 1, Brandenburg Gate, Reichstag, Holocaust Memorial, Topography of Terror; Day 2, Museum Island in the morning, Berlin Cathedral, lunch in Mitte; Day 3, East Side Gallery, a wander through Kreuzberg, a döner, canal-side drinks; Day 4, Tempelhofer Feld, the Jewish Museum, or Charlottenburg Palace, and a slow final afternoon. The table above has the full plan for each day.
+
+### When is the best time to visit Berlin?
+
+Spring and early autumn are milder and a little cheaper, and for many people they are the best compromise.
+
+### Where to stay in Berlin?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: ibis budget Berlin Alexanderplatz (Friedrichshain, score 8, from €89 a night); best value: Locke at East Side Gallery (Friedrichshain, score 8.9, from €125 a night); luxury: Wilmina Hotel (Charlottenburg, score 9.4, from €177 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Berlin?
+
+The döner kebab is arguably Berlin's real signature dish.
+
+### How do you get from the airport to central Berlin?
+
+The fastest option is the Airport Express (FEX) or the regional trains RE7 and RE9, which reach central stations in around 30 minutes.
+
+### How do you get around Berlin?
+
+A day or multi-day pass pays off quickly.
+
+### What are the must-see places in Berlin?
+
+According to this guide: Brandenburg Gate and the Reichstag; Holocaust Memorial and Topography of Terror; Museum Island; Berlin Wall Memorial, Bernauer Strasse; East Side Gallery; Gendarmenmarkt and Unter den Linden; Charlottenburg Palace; Tempelhofer Feld. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

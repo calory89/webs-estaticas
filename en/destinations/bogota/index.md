@@ -91,7 +91,7 @@ Take the altitude seriously on arrival. Drink water, go easy on alcohol the firs
 
 These are approximate and depend on exchange rates, which can shift a lot.
 
-## FAQs
+## FAQ about Bogota
 
 ### Is Bogotá safe for tourists?
 
@@ -128,6 +128,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Morning in La Cande
 ### What to do in Bogota in 3 days?
 
 With three days in Bogota, this is the guide's route: Day 1, Morning in La Candelaria, then Plaza de Bolívar, Museo del Oro and Museo Botero; Day 2, Monserrate early, then Paloquemao market for lunch, afternoon on the street art route; Day 3, Ciclovía if it is Sunday, otherwise Quinta de Bolívar and the botanical garden. The table above has the full plan for each day.
+
+### Where to stay in Bogota?
+
+It has restaurants, cafés, good nightlife and plenty of apartment rentals, and the Chapinero Alto and Zona G areas are especially good for food. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Boutique Quinta Camacho (Chapinero, score 8.6, from €38 a night); best value: ibis Bogota Museo (Centro Internacional, score 8.5, from €47 a night); luxury: Cassa Luxury Homes (Chapinero, score 9.4, from €182 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Bogota?
+
+Start with ajiaco santafereño, the capital's signature soup.
+
+### How do you get from the airport to central Bogota?
+
+El Dorado International Airport (BOG) is about 12 to 15 kilometres west of the centre.
+
+### How do you get around Bogota?
+
+Candelaria and Chapinero are best on foot, within reason, and always with your phone tucked away.
 
 ## Flights and deals
 

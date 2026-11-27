@@ -247,6 +247,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Doha and the wa
 
 With three days in Doha, this is the guide's route: Day 1, Old Doha and the waterfront; Day 2, Museums and modern Doha; Day 3, Desert. The table above has the full plan for each day.
 
+### Where to stay in Doha?
+
+Souq Waqif and Msheireb: the best area for first-timers. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Premier Inn Doha Airport (Saeed Bin Al Aas Street C Ring Road, score 8.5, from €41 a night); best value: Four Points by Sheraton Doha (Al Diwan Street, Musheireb, score 9, from €93 a night); luxury: The Ned Doha (Corniche, score 9.5, from €265 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Doha?
+
+Look out for these dishes: Machboos: spiced rice with chicken, lamb or fish, the national dish.
+
+### How do you get from the airport to central Doha?
+
+Hamad International Airport is about 15-20 minutes from the centre.
+
+### How do you get around Doha?
+
+A standard day pass is about QAR 6 (€1.50).
+
+### What are the must-see places in Doha?
+
+According to this guide: Museum of Islamic Art; National Museum of Qatar; Souq Waqif; Falcon Souq and the Falcon Hospital; The Corniche; MIA Park; Katara Cultural Village; Msheireb Downtown and Msheireb Museums. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Doha: https://www.happylowcost.com/en/destinations/doha/#deals

@@ -243,6 +243,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y el río. 
 
 Con cinco días en Rovaniemi y Laponia, esta es la ruta de la guía: Día 1, El centro y el río; Día 2, Aldea de Papá Noel y renos; Día 3, Huskies y auroras; Día 4, Naturaleza fuera de la ciudad; Día 5, Ounasvaara y el río. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Rovaniemi y Laponia?
+
+Hoteles junto al río, a pocos minutos del centro, con vistas al puente y mejor cielo para auroras. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Scandic Rovaniemi City (Koskikatu 23, nota 8,2, desde 196 € la noche); mejor calidad-precio: Arctic Light Hotel (Valtakatu 18, nota 9,3, desde 278 € la noche); lujo: Aino Private Island Hotel - Adults Only (Kuusamontie 900, nota 9,5, desde 1041 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Rovaniemi y Laponia?
+
+El plato estrella es el poronkäristys, reno salteado en finas láminas, con puré de patata, pepinillos y mermelada de arándano rojo.
+
+### ¿Cómo llegar del aeropuerto al centro de Rovaniemi y Laponia?
+
+El aeropuerto está a unos 10 km del centro y a 2 km de la Aldea de Papá Noel.
+
+### ¿Cómo moverse por Rovaniemi y Laponia?
+
+En la ciudad se va andando: el centro es pequeño.
+
+### ¿Qué lugares imprescindibles ver en Rovaniemi y Laponia?
+
+Según esta guía: Arktikum; Aldea de Papá Noel (Santa Claus Village); Puente Jätkänkynttilä; Paseo del río Kemijoki (Rantakatu); Colina de Ounasvaara; Korundi, casa de cultura; Pilke, centro de ciencia forestal; Iglesia de Rovaniemi. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Rovaniemi y Laponia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 120-150 € por persona y día, y en el nivel "medio", unos unos 250-350 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

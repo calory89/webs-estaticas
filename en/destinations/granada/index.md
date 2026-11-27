@@ -242,6 +242,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The Alhambra. Morni
 
 With three days in Granada, this is the guide's route: Day 1, The Alhambra; Day 2, The Albaicín and Sacromonte; Day 3, The centre or a day trip. The table above has the full plan for each day.
 
+### Where to stay in Granada?
+
+Centro (around the cathedral and Plaza Nueva): best for first-timers and short stays, close to everything and to the Alhambra buses. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Posada del Toro (Granada City Center, score 9.1, from €64 a night); best value: Boutique Hotel Luna Granada Centro (The Real Heart of Granada, score 9.2, from €79 a night); luxury: Palacio Gran Vía, a Royal Hideaway Hotel (Granada City Center, score 9.6, from €591 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Granada?
+
+Remojón granadino: a salad of salt cod, orange, olives and onion, a dish with Moorish roots.
+
+### How do you get from the airport to central Granada?
+
+The Federico García Lorca Granada airport is about 15km west of the city.
+
+### How do you get around Granada?
+
+A single costs about €1.50, and you can pay by contactless card on board.
+
+### What are the must-see places in Granada?
+
+According to this guide: The Alhambra and the Nasrid Palaces; The Generalife gardens; The Alcazaba; Mirador de San Nicolás; The Albaicín; Carrera del Darro and Paseo de los Tristes; El Bañuelo; Sacromonte and the Cave Museum. Each one is explained in the "What to see" section.
+
 ### Is Granada expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.

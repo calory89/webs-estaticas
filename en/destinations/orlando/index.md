@@ -240,6 +240,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Magic Kingdom. Morn
 
 With five days in Orlando, this is the guide's route: Day 1, Magic Kingdom; Day 2, EPCOT and Disney Springs; Day 3, Real Orlando; Day 4, Universal; Day 5, Space or springs. The table above has the full plan for each day.
 
+### Where to stay in Orlando?
+
+Disney resort area and Lake Buena Vista: best for Disney-focused trips. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Fairfield Inn & Suites, Lake Buena Vista - Orlando Marriott Village - Trundle Bunkbed Suites! (Lake Buena Vista, score 8.1, from €69 a night); best value: Holiday Inn Orlando International Dr-ICON by IHG (Universal Orlando Resort Area, score 8.7, from €93 a night); luxury: ette hotel Orlando (Celebration, score 9.3, from €352 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Orlando?
+
+Orlando doesn't have one signature dish, but Florida and its immigrant communities eat well.
+
+### How do you get from the airport to central Orlando?
+
+Orlando International Airport (MCO) is about 25 minutes from downtown and 30 minutes from the Disney and Universal areas.
+
+### How do you get around Orlando?
+
+Your options: Rental car: the most practical choice for most visitors, from €35-60 ($40-70) a day, plus tolls (get a SunPass or the rental company's toll pass) and hotel parking of €15-35 ($17-40) a night.
+
+### What are the must-see places in Orlando?
+
+According to this guide: Magic Kingdom; EPCOT; Universal Studios Florida and Islands of Adventure; Epic Universe; Disney's Animal Kingdom and Hollywood Studios; Disney Springs; Lake Eola Park; Winter Park. Each one is explained in the "What to see" section.
+
 ### Is Orlando expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €110-160 / $125-185 on non-park days per person per day and the "mid-range" level at about €220-350 / $250-400 on park days. Flights are extra: this page shows real fares checked by Happy Low Cost.

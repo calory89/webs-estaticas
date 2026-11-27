@@ -234,6 +234,22 @@ Si solo tienes un día, haz el día 1 de esta ruta: Parte Vieja, Urgull y La Con
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Parte Vieja, Urgull y La Concha. Mañana: mercado de la Bretxa, Parte Vieja con Santa María del Coro y la Plaza de la Constitución, y subida a Urgull desde el puerto. Día 2: Igueldo, Ondarreta y Gros. Mañana: paseo hasta Ondarreta y el Peine del Viento.
 
+### ¿Cuál es la mejor época para viajar a San Sebastián?
+
+La mejor época es de junio a septiembre, con septiembre como el mes ideal: el agua está templada, hace sol y ya no hay tanta gente como en agosto.
+
+### ¿Dónde alojarse en San Sebastián?
+
+Centro: la mejor opción para una primera visita. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Leonardo Boutique Hotel San Sebastián (Gros, nota 8,8, desde 71 € la noche); mejor calidad-precio: Zenit Convento San Martin (San Sebastian City Center, nota 9,1, desde 123 € la noche); lujo: Hotel Maria Cristina, a Luxury Collection Hotel, San Sebastian (San Sebastian City Center, nota 9,3, desde 446 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo moverse por San Sebastián?
+
+Para las distancias largas, los buses urbanos de Dbus cuestan unos 2 € el billete sencillo, y menos con la tarjeta Mugi, que también vale para buses interurbanos y para Euskotren.
+
+### ¿Qué lugares imprescindibles ver en San Sebastián?
+
+Según esta guía: Playa de La Concha y su paseo; Parte Vieja; Monte Urgull; Monte Igueldo y su funicular; Peine del Viento; Playa de Ondarreta y Palacio de Miramar; Gros y la playa de Zurriola; Isla de Santa Clara. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a San Sebastián?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 200-280 € en habitación doble. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

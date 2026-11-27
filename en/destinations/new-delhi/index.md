@@ -267,6 +267,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Delhi. Morning:
 
 With four days in New Delhi, this is the guide's route: Day 1, Old Delhi; Day 2, Lutyens' Delhi; Day 3, Tombs and Sufi music; Day 4, South Delhi, or Agra. The table above has the full plan for each day.
 
+### Where to stay in New Delhi?
+
+Karol Bagh: busy Indian shopping district on the Blue Line, popular with domestic travellers. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Belwood By Signature StayZ Near Delhi Airport (Aerocity, score 9, from €14 a night); best value: Hotel Ajanta - Colonial Charm Award Winning Luxury Hotel in the Heart of the City (Paharganj, score 8.8, from €41 a night); luxury: Taj Mahal, New Delhi (No 1 Mansingh Road, score 9.4, from €355 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in New Delhi?
+
+Momos: Tibetan dumplings, Delhi's favourite snack; try them at Majnu ka Tilla, the Tibetan quarter.
+
+### How do you get from the airport to central New Delhi?
+
+The fastest route from Indira Gandhi International Airport is the Airport Express metro (Orange Line) from Terminal 3 (and Terminal 1 via Aerocity) to New Delhi station in about 20 minutes, for roughly ₹60-75 (under €1).
+
+### How do you get around New Delhi?
+
+Delhi Metro: clean, cheap and air-conditioned, the best way to beat traffic.
+
+### What are the must-see places in New Delhi?
+
+According to this guide: Humayun's Tomb; Sunder Nursery; Red Fort (Lal Qila); Jama Masjid; Chandni Chowk and Old Delhi; Gurudwara Bangla Sahib; Qutub Minar and Mehrauli; India Gate and Kartavya Path. Each one is explained in the "What to see" section.
+
 ### Is New Delhi expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.

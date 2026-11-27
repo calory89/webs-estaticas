@@ -255,6 +255,30 @@ Si solo tienes un día, haz el día 1 de esta ruta: French Quarter. Mañana: bei
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: French Quarter. Mañana: beignets temprano, Jackson Square, la catedral y el paseo del río. Día 2: Museo y Marigny. Mañana: National WWII Museum, en el Warehouse District, a 15 minutos andando de Canal Street.
 
+### ¿Cuál es la mejor época para viajar a Nueva Orleans?
+
+La mejor época es de finales de febrero a mayo y de octubre a noviembre: temperaturas de 18 a 27 grados y agenda llena.
+
+### ¿Dónde alojarse en Nueva Orleans?
+
+Las calles cerca de Bourbon son ruidosas hasta tarde; busca hacia Esplanade o la parte baja del barrio. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hilton Garden Inn New Orleans Convention Center (Arts - Warehouse District, nota 8,3, desde 85 € la noche); mejor calidad-precio: Hampton Inn New Orleans French Quarter Market Area (Faubourg Marigny, nota 9, desde 111 € la noche); lujo: Four Seasons New Orleans (French Quarter (Vieux Carré), nota 9,1, desde 564 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Nueva Orleans?
+
+Lo que hay que probar: Po'boy: bocadillo en pan francés crujiente, de gambas fritas, ostras o roast beef con salsa.
+
+### ¿Cómo llegar del aeropuerto al centro de Nueva Orleans?
+
+El aeropuerto Louis Armstrong (MSY) está a unos 25 km del centro.
+
+### ¿Cómo moverse por Nueva Orleans?
+
+En la ciudad, el French Quarter, el Marigny y el Warehouse District se recorren andando.
+
+### ¿Qué lugares imprescindibles ver en Nueva Orleans?
+
+Según esta guía: Jackson Square y la catedral de San Luis; El French Quarter (y Royal Street en particular); Frenchmen Street; Preservation Hall; The National WWII Museum; Garden District; El tranvía de St. Charles; Cementerio St. Louis n.º 1. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Nueva Orleans?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 120-150 € por persona y día, y en el nivel "medio", unos unos 220-300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

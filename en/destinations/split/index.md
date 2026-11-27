@@ -231,6 +231,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Diocletian's Palace
 
 With three days in Split, this is the guide's route: Day 1, Diocletian's Palace and the old town; Day 2, Markets, Marjan and the beach; Day 3, Day trip and a final evening. The table above has the full plan for each day.
 
+### Where to stay in Split?
+
+Old town (inside or next to the palace): for first-timers who want to walk everywhere. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Kastel 1700 (Split Old Town, score 8.7, from €70 a night); best value: Heritage Hotel Antique Split (Split Old Town, score 9.7, from €124 a night); luxury: Hotel Ambasador (Marjan, score 9.5, from €176 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Split?
+
+Look for places called konoba (traditional taverns) and check the daily board.
+
+### How do you get around Split?
+
+In town, you will walk almost everywhere.
+
+### What are the must-see places in Split?
+
+According to this guide: Diocletian's Palace; The Peristyle and the Vestibule; Cathedral of St Domnius and the bell tower; Temple of Jupiter; Palace substructures (the cellars); Gregory of Nin statue and the Golden Gate; Narodni trg (Pjaca) and Fruit Square; The Riva. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Split: https://www.happylowcost.com/en/destinations/split/#deals

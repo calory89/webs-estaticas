@@ -235,6 +235,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Old Delhi. Mañana: m
 
 Con cuatro días en Nueva Delhi, esta es la ruta de la guía: Día 1, Old Delhi; Día 2, Nueva Delhi colonial; Día 3, Mausoleos y Nizamuddin; Día 4, El sur. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Nueva Delhi?
+
+Karol Bagh: barrio comercial indio, menos turístico, con metro en la línea azul. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Belwood By Signature StayZ Near Delhi Airport (Aerocity, nota 9, desde 14 € la noche); mejor calidad-precio: Hotel Ajanta - Colonial Charm Award Winning Luxury Hotel in the Heart of the City (Paharganj, nota 8,8, desde 41 € la noche); lujo: Taj Mahal, New Delhi (No 1 Mansingh Road, nota 9,4, desde 355 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Nueva Delhi?
+
+Parathas rellenos: en Paranthe Wali Gali, de patata, coliflor o paneer, fritos en ghee. 1-2 € el plato.
+
+### ¿Cómo llegar del aeropuerto al centro de Nueva Delhi?
+
+La mejor opción desde el aeropuerto Indira Gandhi es el Airport Express (línea naranja del metro): sale de la Terminal 3, tarda unos 20 minutos hasta la estación New Delhi y cuesta menos de 1 €.
+
+### ¿Cómo moverse por Nueva Delhi?
+
+Por la ciudad, el metro es limpio, rápido y barato, con trayectos de entre 0,10 y 0,60 €.
+
+### ¿Qué lugares imprescindibles ver en Nueva Delhi?
+
+Según esta guía: Tumba de Humayun; Old Delhi y Chandni Chowk; Jama Masjid; Fuerte Rojo; Qutub Minar; Parque Arqueológico de Mehrauli; Gurudwara Bangla Sahib; India Gate y Kartavya Path. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Nueva Delhi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 25-35 € por persona y día, y en el nivel "presupuesto medio", unos 60-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

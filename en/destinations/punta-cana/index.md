@@ -105,7 +105,7 @@ Before you fly, complete the official online entry and exit form, which is requi
 
 Day trips such as Saona commonly run from around US$70-120 per person. US dollars are widely accepted, but pay in pesos at local places for fairer prices.
 
-## FAQ
+## FAQ about Punta Cana
 
 ### Is Punta Cana safe?
 
@@ -142,6 +142,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, swim, sunse
 ### What to do in Punta Cana in 5 days?
 
 With five days in Punta Cana, this is the guide's route: Day 1, Arrive, swim, sunset walk on Bávaro, dinner at El Cortecito; Day 2, Macao Beach in the morning, buggy tour in the afternoon; Day 3, Isla Saona full day, or a catamaran trip if you want something shorter; Day 4, Scape Park or Indigenous Eyes, then Cap Cana marina for dinner; Day 5, La Romana and Altos de Chavón, or Higüey basilica, or simply sleep in and read. The table above has the full plan for each day.
+
+### Where to stay in Punta Cana?
+
+Punta Cana Resort area (upper mid-range to luxury).
+
+### What to eat in Punta Cana?
+
+Try sancocho (a thick meat-and-root-vegetable stew) on a Sunday, mangú (mashed plantain with fried onions and eggs or cheese) for breakfast, and pescado con coco if you see it.
+
+### How do you get around Punta Cana?
+
+Punta Cana International (PUJ) is unusual: open-air terminal buildings with palm-thatched roofs, a short walk from the plane.
 
 ## Flights and deals
 

@@ -111,7 +111,7 @@ The public bus network covers most of the island and is cheap, but it is slow an
 
 Prices rise noticeably in July and August, so shoulder season gives better value.
 
-## FAQ
+## FAQ about Malta
 
 ### Is Malta good for a short break?
 
@@ -152,6 +152,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Valletta on foot, w
 ### What to do in Malta in 5 days?
 
 With five days in Malta, this is the guide's route: Day 1, Valletta on foot, with the Upper Barrakka at noon and a harbour ferry in the evening; Day 2, Mdina and Rabat in the morning, Dingli Cliffs at sunset; Day 3, Three Cities, then Marsaxlokk for a late fish lunch; Day 4, Gozo by ferry, covering Victoria, the Citadel and a swim; Day 5, Temples in the morning, beach in the afternoon, or Comino if the weather is calm. The table above has the full plan for each day.
+
+### Where to stay in Malta?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Paulos Valletta (Valletta, score 8.8, from €118 a night); best value: Battery House (Valletta, score 9.3, from €198 a night); luxury: Iniala Valletta (Valletta, score 9.6, from €428 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Malta?
+
+Stuffat tal-fenek is a slow-cooked rabbit stew, the national dish.
+
+### How do you get from the airport to central Malta?
+
+Malta International Airport is in Luqa, in the south.
+
+### What are the must-see places in Malta?
+
+According to this guide: Valletta; Mdina and Rabat; The Three Cities; Ħal Saflieni Hypogeum and the temples; Marsaxlokk; Dingli Cliffs and the Blue Grotto; Gozo; Comino. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

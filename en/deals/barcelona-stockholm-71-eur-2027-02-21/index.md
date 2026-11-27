@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Stockholm for a trip from Barcelona?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: ProfilHotels Riddargatan (Östermalm, score 8.3, from €191 a night); best value: Thon Hotel Vasa (Norrmalm, score 8.9, from €294 a night); luxury: Bank Hotel, a Member of Small Luxury Hotels (Norrmalm, score 9.0, from €370 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

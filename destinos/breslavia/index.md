@@ -238,6 +238,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo y río.
 
 Con tres días en Breslavia, esta es la ruta de la guía: Día 1, Casco antiguo y río; Día 2, Panorama, Hala Stulecia y Nadodrze; Día 3, Excursión o ciudad sin prisa. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Breslavia?
+
+La mejor época es de mayo a septiembre: temperaturas de 18 a 25 grados, terrazas abiertas, fuente multimedia funcionando y vida en el río.
+
+### ¿Dónde alojarse en Breslavia?
+
+Casco antiguo (Stare Miasto), alrededores del Rynek: la opción obvia para una primera visita, todo andando. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: B&B HOTEL Wrocław Centrum (Stare Miasto, nota 8,6, desde 50 € la noche); mejor calidad-precio: B&B HOTEL Wrocław Old Town (Wroclaw Old Town, nota 9,4, desde 68 € la noche); lujo: The Bridge Wroclaw - MGallery (Śródmieście, nota 9,4, desde 103 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Breslavia?
+
+Para comer barato, los bares de leche (bar mleczny) son cantinas subvencionadas de la época comunista donde comes un plato y sopa por 5-7 €.
+
+### ¿Cómo moverse por Breslavia?
+
+Dentro de la ciudad, el centro se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Breslavia?
+
+Según esta guía: Rynek, la plaza del mercado; Ayuntamiento gótico (Ratusz); Torre de la iglesia de Santa Isabel; Puente de las Penitentes (Mostek Pokutnic); Ostrów Tumski, la isla de la catedral; Universidad: Aula Leopoldina y Torre Matemática; Panorama de Racławice; Hala Stulecia y la fuente multimedia. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Breslavia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 45-60 € por persona y día, y en el nivel "medio", unos unos 90-130 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

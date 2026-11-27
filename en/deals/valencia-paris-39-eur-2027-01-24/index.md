@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Paris for a trip from Valencia?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Esmeralda (5th arr., score 8.0, from €181 a night); best value: Nestay Les Halles (Paris, score 9.4, from €300 a night); luxury: Le Grand Mazarin (4th arr., score 9.3, from €927 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

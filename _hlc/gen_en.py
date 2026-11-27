@@ -333,7 +333,7 @@ def main():
 <div class="share"><button class="hlc-btn o" type="button" data-share data-title="{e(title)}" data-url="{url}">📤 Share</button><a class="hlc-btn o" href="https://wa.me/?text={share}" target="_blank" rel="noopener">WhatsApp</a><a class="hlc-btn o" href="https://www.facebook.com/sharer/sharer.php?u={quote(url)}" target="_blank" rel="noopener">Facebook</a><button class="hlc-btn o" type="button" data-copy="{url}">Copy link</button></div>
 </aside>
 </div>
-{T3.block(d, *G.dest_ll(f), lang='en', checkin=f.get('ida'), checkout=f.get('vuelta'))}
+{T3.block(d, *G.dest_ll(f), lang='en', checkin=f.get('ida'), checkout=f.get('vuelta'), trip_from=o or None)}
 <section class="sec" style="padding-top:10px"><div class="sec-h"><div><div class="kicker">You might also like</div><h2>Similar deals</h2></div><a class="hlc-btn o" href="/en/deals/">See all</a></div><div class="dc-grid">{''.join(card(y) for y in rel)}</div></section>
 </div></main>{FOOTER}</body></html>'''
         write(f'en/deals/{eslug}', page.replace('</head>', '<link rel="alternate" type="text/markdown" href="' + url + 'index.md" title="Markdown"></head>', 1))
@@ -603,10 +603,11 @@ def main():
         gh, trip_ld = G.guide_itinerary(gh, n, nd_i if 2 <= nd_i <= 21 else 0, 'en')
         gh = G.guide_short_faq(gh, trip_ld, n, 'en')
         gh = G.guide_todo_faq(gh, trip_ld, n, en_names.country_en(p['c']), 'en')
+        gh = G.guide_section_faq(gh, n, 'en', T3.hotel_faq(n, p.get('y'), p.get('x'), [p['s']] + list(p.get('a') or []), (), lang='en'))
         gh, bud = G.guide_budget(gh, 'en')
         gh = G.guide_cost_faq(gh, n, 'en')
         attr = G.guide_attractions(gh)
-        gh, faq_ld, _w = G.guide_extras(gh, 'en')
+        gh, faq_ld, _w = G.guide_extras(gh, 'en', n)
         upd_en = g.get('updated_en') or g.get('updated_at')
         summ = G.guide_summary(gh, n, nd_, sub, upd_en, 'en', deal_href=lambda x_: f'/en/deals/{G.en_deal_slug(x_)}/' if G.en_deal_slug(x_) in hechos else '/en/deals/')
         img_ld = G.guide_image_ld(p['s'], n, 'en')

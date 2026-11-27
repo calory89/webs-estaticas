@@ -256,6 +256,18 @@ If you only have one day, follow day 1 of this itinerary: Old town and fortifica
 
 With two days in Luxembourg, this is the guide's route: Day 1, Old town and fortifications; Day 2, Valleys, bridges and Kirchberg. The table above has the full plan for each day.
 
+### Where to stay in Luxembourg?
+
+Ville Haute (old town): This is the most convenient area, with everything walkable. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Ibis Luxembourg Airport (Route de Trèves, score 8.2, from €101 a night); best value: Hotel Empire (Gare, score 8.1, from €171 a night); luxury: Le Royal Hotels & Resorts Luxembourg (Ville Haute, score 9, from €297 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Luxembourg?
+
+Luxembourg Airport (Findel) is only about 6 km from the city, and the trip is free by public transport.
+
+### What are the must-see places in Luxembourg?
+
+According to this guide: Chemin de la Corniche; Bock Casemates; Grund; Neumünster Abbey; Place Guillaume II and the Grand Ducal Palace; Notre-Dame Cathedral; Pfaffenthal panoramic lift; Adolphe Bridge and the Pétrusse Valley. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Luxembourg: https://www.happylowcost.com/en/destinations/luxembourg/#deals

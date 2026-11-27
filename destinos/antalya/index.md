@@ -230,6 +230,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Kaleiçi y el atardec
 
 Con cuatro días en Antalya, esta es la ruta de la guía: Día 1, Kaleiçi y el atardecer; Día 2, Museo, Konyaaltı y teleférico; Día 3, Perge, Aspendos y Side; Día 4, Termessos o Düden y hammam. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Antalya?
+
+Alrededores de Kaleiçi (Muratpaşa, zona de Işıklar). Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Golden Orange Hotel (Gürsu Mah.304 Sok.no:52, Konyaalti, nota 8,6, desde 100 € la noche); mejor calidad-precio: Mai İnci Otel (The Real Heart of Antalya, nota 9,4, desde 202 € la noche); lujo: Sealife Family Resort Hotel (Konyaalti Sahil Seridi, nota 9,3, desde 309 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Antalya?
+
+El plato de la ciudad es el şiş köfte con piyaz: albóndigas alargadas a la brasa con una ensalada de alubias blancas aliñada con tahini, que es como se hace aquí y en ningún otro sitio.
+
+### ¿Cómo llegar del aeropuerto al centro de Antalya?
+
+El aeropuerto está a unos 15 km del centro y hay tres formas razonables de llegar: Tranvía AntRay.
+
+### ¿Cómo moverse por Antalya?
+
+Dentro de la ciudad se paga con la tarjeta AntalyaKart, recargable en máquinas de las paradas, y en muchas líneas ya aceptan tarjeta bancaria sin contacto.
+
+### ¿Qué lugares imprescindibles ver en Antalya?
+
+Según esta guía: Kaleiçi, el casco antiguo; Puerta de Adriano (Üç Kapılar); Minarete Acanalado (Yivli Minare); El puerto viejo (Yat Limanı); Torre Hıdırlık y parque Karaalioğlu; Minarete Truncado (Kesik Minare); Museo de Antalya; Museo Suna e İnan Kıraç. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Antalya?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

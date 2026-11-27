@@ -102,7 +102,7 @@ Camina siempre que puedas, pero cuenta con las cuestas. No alquiles coche salvo 
 
 Cuenta siempre impuestos y propinas por encima del precio de carta: suman fácilmente un 25 por ciento.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre San Francisco
 
 ### ¿Cuántos días hacen falta en San Francisco?
 
@@ -139,6 +139,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Union Square, Chinato
 ### ¿Qué hacer en San Francisco en 4 días?
 
 Con cuatro días en San Francisco, esta es la ruta de la guía: Día 1, Union Square, Chinatown, North Beach y puesta de sol en Coit Tower o Telegraph Hill; Día 2, Alcatraz a primera hora, Fisherman's Wharf, Pier 39 y paseo hasta el Ferry Building; Día 3, Presidio, Golden Gate Bridge, Sausalito en bici y ferry de vuelta; Día 4, Mission District, Dolores Park, Alamo Square, Haight-Ashbury y Golden Gate Park. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a San Francisco?
+
+El mejor momento es septiembre y octubre: los días más soleados y menos niebla.
+
+### ¿Dónde alojarse en San Francisco?
+
+Albergues: hay opciones de Hostelling International cerca de Fisherman's Wharf y del centro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Beresford Arms (Theater District, nota 8, desde 117 € la noche); mejor calidad-precio: Orchard Hotel (Union Square, nota 8,8, desde 186 € la noche); lujo: Four Seasons Hotel San Francisco at Embarcadero (Financial District, nota 9, desde 981 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en San Francisco?
+
+El burrito de la Misión es el plato barato por excelencia: grande, con arroz, frijoles y carne, por unos 10 a 14 dólares.
+
+### ¿Cómo llegar del aeropuerto al centro de San Francisco?
+
+Desde el aeropuerto internacional (SFO) lo más práctico es el BART, que tiene estación en la terminal y llega al centro (Powell Street, Embarcadero) en unos 30 minutos por unos 10 dólares.
+
+### ¿Cómo moverse por San Francisco?
+
+Dentro de la ciudad, el Muni (autobuses, tranvías y metro ligero) lo cubre todo.
 
 ## Vuelos y chollos
 

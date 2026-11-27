@@ -133,6 +133,26 @@ With three days in Prague, this is the guide's route: Day 1, Old Town Square, th
 
 With three days in Czechia, this guide suggests staying in Prague and following its route: Day 1, Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river; Day 2, Castle first thing, then Strahov for lunch; Day 3, Vyšehrad in the morning, a stroll along the Náplavka riverbank.
 
+### When is the best time to visit Prague?
+
+April, May, September and early October are the best months: mild days, long light and manageable queues.
+
+### Where to stay in Prague?
+
+Staré Město (Old Town): Everything is on your doorstep, but it is noisy at night and pricey for what you get. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Prague Star (Prague 1, score 8.4, from €52 a night); best value: Grand Hotel International - Czech Leading Hotels (Prague 6, score 9.2, from €66 a night); luxury: Old Royal Post Boutique Hotel & Premium Suites (Lesser Quarter (Mala Strana), score 9.6, from €82 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Prague?
+
+Try svíčková (beef sirloin in a creamy root-vegetable sauce with bread dumplings), guláš with dumplings, and smažený sýr, fried cheese in breadcrumbs with tartare sauce.
+
+### How do you get from the airport to central Prague?
+
+Václav Havel Airport (PRG) is about 17 km west of the centre.
+
+### How do you get around Prague?
+
+The cheapest option is bus 119 to Nádraží Veleslavín, where you hop on metro line A.
+
 ## Flights and deals
 
 - Flight deals to Prague: https://www.happylowcost.com/en/destinations/prague/#deals

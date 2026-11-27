@@ -239,6 +239,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Intramuros y la bahí
 
 Con tres días en Manila, esta es la ruta de la guía: Día 1, Intramuros y la bahía; Día 2, Quiapo, Binondo y Makati; Día 3, El Manila moderno. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Manila?
+
+La mejor época es de diciembre a febrero: seco, con temperaturas de 25-30 grados y menos humedad.
+
+### ¿Qué comer en Manila?
+
+Para probar cocina filipina en sitio cómodo, Manam tiene locales en Makati y BGC.
+
+### ¿Cómo llegar del aeropuerto al centro de Manila?
+
+El aeropuerto de Manila (NAIA) tiene varias terminales separadas, así que mira bien la tuya.
+
+### ¿Cómo moverse por Manila?
+
+Para moverte, el metro ligero tiene tres líneas: LRT-1 (de Pasay a Ermita, Intramuros y Carriedo para Quiapo), LRT-2 (este-oeste) y MRT-3 (por la avenida EDSA, pasando por Makati).
+
+### ¿Qué lugares imprescindibles ver en Manila?
+
+Según esta guía: Intramuros; Fuerte Santiago; Iglesia y museo de San Agustín; Catedral de Manila; Casa Manila; Museos Nacionales de Filipinas; Parque Rizal (Luneta); Binondo. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Manila: https://www.happylowcost.com/destinos/manila/#chollos

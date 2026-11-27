@@ -97,7 +97,7 @@ Dentro de la ciudad, el metro (U-Bahn), los tranvías y los autobuses de Wiener 
 
 Los palacios y museos principales suelen costar entre 15 y 30 euros cada uno. Si vas a visitar varios, compara el precio de los pases de la ciudad con las entradas sueltas antes de comprarlos.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Viena
 
 ### ¿Es cara Viena?
 
@@ -138,6 +138,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. St
 ### ¿Qué hacer en Viena en 3 días?
 
 Con tres días en Viena, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Palacios y arte; Día 3, Museos y barrios. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Viena?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Bob W Vienna Döbling (19. Döbling, nota 9,3, desde 68 € la noche); mejor calidad-precio: Exe Vienna (17. Hernals, nota 8,7, desde 76 € la noche); lujo: Hotel Sacher Wien (01. Innere Stadt, nota 9,6, desde 701 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Viena?
+
+El plato obligado es el Wiener Schnitzel, filete de ternera empanado y fino como un plato.
+
+### ¿Cómo llegar del aeropuerto al centro de Viena?
+
+El aeropuerto de Viena-Schwechat está a unos 18 km del centro.
+
+### ¿Cómo moverse por Viena?
+
+Dentro de la ciudad, el metro (U-Bahn), los tranvías y los autobuses de Wiener Linien funcionan con un mismo billete.
 
 ### ¿Es caro viajar a Viena?
 

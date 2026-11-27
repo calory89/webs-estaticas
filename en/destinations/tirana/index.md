@@ -238,6 +238,22 @@ With three days in Tirana, this is the guide's route: Day 1, The centre and the 
 
 With three days in Albania, this guide suggests staying in Tirana and following its route: Day 1, The centre and the communist past; Day 2, Markets, bunkers and the mountain; Day 3, Day trip.
 
+### Where to stay in Tirana?
+
+Blloku: This area suits nightlife lovers and first-timers who want cafés on the doorstep. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Central Park Rooms (Rruga Reshit Çollaku, score 8.3, from €40 a night); best value: Castle Boutique Hotel (Murat Toptani, score 9.5, from €81 a night); luxury: Maritim Hotel Plaza Tirana (Tirana, score 9.2, from €202 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Tirana?
+
+Tavë kosi: Baked lamb with a rice and yoghurt-egg custard, and the national dish.
+
+### How do you get around Tirana?
+
+The centre is walkable, and city buses cost 40 lek per ride, paid to the conductor on board.
+
+### What are the must-see places in Tirana?
+
+According to this guide: Skanderbeg Square; Et'hem Bey Mosque; Bunk'Art 2; Bunk'Art 1; House of Leaves (Museum of Secret Surveillance); The Pyramid of Tirana; Blloku; New Bazaar (Pazari i Ri). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Tirana: https://www.happylowcost.com/en/destinations/tirana/#deals

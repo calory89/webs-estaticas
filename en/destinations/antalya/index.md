@@ -204,6 +204,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Kaleiçi and the cl
 
 With four days in Antalya, this is the guide's route: Day 1, Kaleiçi and the cliffs; Day 2, Museum and Konyaaltı; Day 3, Perge and Aspendos; Day 4, Termessos or Side. The table above has the full plan for each day.
 
+### Where to stay in Antalya?
+
+It has modern hotels and apartments near the sea at €60-150, and the T2 tram runs to the centre. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Golden Orange Hotel (Gürsu Mah.304 Sok.no:52, Konyaalti, score 8.6, from €100 a night); best value: Mai İnci Otel (The Real Heart of Antalya, score 9.4, from €202 a night); luxury: Sealife Family Resort Hotel (Konyaalti Sahil Seridi, score 9.3, from €309 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Antalya?
+
+Try hibeş, a spicy tahini and cumin spread, plus tandır (slow-roasted lamb) and gözleme with spinach and cheese.
+
+### How do you get around Antalya?
+
+In the city, the T1 tram line crosses the centre and the old nostalgic tram (T2) runs along the coast towards Konyaaltı.
+
+### What are the must-see places in Antalya?
+
+According to this guide: Kaleiçi (the old town); Hadrian's Gate (Üçkapılar); The Old Harbour (Yat Limanı); Yivli Minare (the Fluted Minaret); Hıdırlık Tower and Karaalioğlu Park; Antalya Museum; Suna and İnan Kıraç Kaleiçi Museum; Lower Düden Waterfall. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Antalya: https://www.happylowcost.com/en/destinations/antalya/#deals

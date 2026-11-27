@@ -129,7 +129,7 @@ In Funchal, you can manage on foot, local buses and taxis. For the rest of the i
 
 Rental car prices swing a lot by season, so book early if you travel in peak months.
 
-## FAQs
+## FAQ about Madeira
 
 ### Is Madeira good for a first-time visit to Portugal?
 
@@ -174,6 +174,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Funchal, with the m
 ### What to do in Madeira in 5 days?
 
 With five days in Madeira, this is the guide's route: Day 1, Funchal, with the market in the morning, Zona Velha, and dinner in the old town; Day 2, Monte and its garden, then Câmara de Lobos and Cabo Girão in the afternoon; Day 3, Pico do Arieiro at sunrise; Day 4, North coast loop: Santana, São Vicente, Seixal and Porto Moniz; Day 5, Ponta de São Lourenço in the morning, then an easy afternoon. The table above has the full plan for each day.
+
+### When is the best time to visit Madeira?
+
+Spring (March-May): Flowers are at their best, and the Flower Festival usually takes place around April or May.
+
+### Where to stay in Madeira?
+
+Funchal Old Town and centre: Best for walking to restaurants, with small guesthouses and apartments. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Quinta Da Penha De Franca (Se, score 8.4, from €115 a night); best value: Hotel Cajú (Sao Pedro, score 9.2, from €124 a night); luxury: Quinta Jardins do Lago (Sao Pedro, score 9.7, from €498 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Madeira?
+
+Funchal's Cristiano Ronaldo Airport (FNC) is about 20 minutes from the city.
+
+### How do you get around Madeira?
+
+In Funchal, you can manage on foot, local buses and taxis.
+
+### What are the must-see places in Madeira?
+
+According to this guide: Funchal's Zona Velha; Mercado dos Lavradores; Monte and the Tropical Garden; Cabo Girão; Pico do Arieiro to Pico Ruivo; Ponta de São Lourenço; Porto Moniz and the north coast; Santana and the laurel forest. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

@@ -131,6 +131,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro histórico.
 
 Con tres días en Bolonia, esta es la ruta de la guía: Día 1, El centro histórico; Día 2, Universidad, arte y colina; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Bolonia?
+
+Primavera (abril-junio) y principios de otoño (septiembre-octubre) son lo mejor: temperaturas suaves, buena luz y mucha vida en la calle.
+
+### ¿Dónde alojarse en Bolonia?
+
+Centro histórico y Quadrilatero: lo más cómodo y lo más caro. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Almarossa (Bologna City Center, nota 8,9, desde 293 € la noche); mejor calidad-precio: Hotel Brun (Saragozza, nota 9,3, desde 574 € la noche); lujo: Grand Hotel Majestic gia' Baglioni (Bologna City Center, nota 9,4, desde 1164 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Bolonia?
+
+Pide también tortellini in brodo, un plato de invierno por excelencia, o los tortelloni con burro e salvia si prefieres algo más ligero.
+
+### ¿Cómo llegar del aeropuerto al centro de Bolonia?
+
+El aeropuerto Guglielmo Marconi está a unos 6 km del centro.
+
+### ¿Cómo moverse por Bolonia?
+
+El centro se recorre a pie sin problema, y es lo mejor.
+
 ### ¿Es caro viajar a Bolonia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

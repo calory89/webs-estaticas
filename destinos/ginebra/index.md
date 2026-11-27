@@ -255,6 +255,26 @@ Si solo tienes un día, haz el día 1 de esta ruta: Lago y casco antiguo. Mañan
 
 Con dos días en Ginebra, esta es la ruta de la guía: Día 1, Lago y casco antiguo; Día 2, La Ginebra internacional y Carouge. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Ginebra?
+
+La mejor época es de mayo a septiembre: temperaturas entre 20 y 28 grados, buvettes abiertas, baño en el lago y días largos.
+
+### ¿Dónde alojarse en Ginebra?
+
+Lo positivo: cualquier alojamiento de pago incluye transporte público gratis, así que no hace falta estar en el centro exacto. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: ibis budget Genève Aéroport (Avenue Louis Casaï 26 Cointrin, nota 8, desde 99 € la noche); mejor calidad-precio: B&B HOTEL Geneva Airport (73 Avenue de l'Etang, nota 8,6, desde 125 € la noche); lujo: Hôtel Les Armures (Cité, nota 9,4, desde 742 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Ginebra?
+
+Longeole, salchicha ginebrina con hinojo, típica del invierno, con lentejas o gratinado de cardo.
+
+### ¿Cómo moverse por Ginebra?
+
+Dentro de la ciudad, el centro se recorre andando.
+
+### ¿Qué lugares imprescindibles ver en Ginebra?
+
+Según esta guía: Jet d'Eau; Vieille Ville (casco antiguo); Catedral de Saint-Pierre; Place du Bourg-de-Four; Parc des Bastions y Muro de los Reformadores; Bains des Pâquis; Palacio de las Naciones (ONU); Broken Chair. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Ginebra?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-120 € por persona y día, y en el nivel "medio", unos unos 200-260 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

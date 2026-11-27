@@ -243,6 +243,18 @@ If you only have one day, follow day 1 of this itinerary: Mosque, medina and the
 
 With two days in Casablanca, this is the guide's route: Day 1, Mosque, medina and the sea; Day 2, Habous, parks and modern Casa. The table above has the full plan for each day.
 
+### Where to stay in Casablanca?
+
+Centre ville (around Boulevard Mohammed V and Place des Nations Unies): This area is best for first-timers without a car. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Relax Hotel Casa Voyageurs (Roches Noires, score 8.6, from €51 a night); best value: Kaan Casablanca (Sidi Belyout, score 9, from €127 a night); luxury: Royal Hideaway Casablanca (Sidi Belyout, score 9.4, from €183 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get around Casablanca?
+
+In town, the tram network covers the centre, Ain Diab, Casa Voyageurs and the suburbs, with several lines.
+
+### What are the must-see places in Casablanca?
+
+According to this guide: Hassan II Mosque; The Corniche at Ain Diab; Marabout of Sidi Abderrahmane; Quartier Habous (New Medina); Mahkama du Pacha; Old Medina; La Sqala; Art Deco downtown: Boulevard Mohammed V and around. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Casablanca: https://www.happylowcost.com/en/destinations/casablanca/#deals

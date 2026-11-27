@@ -377,6 +377,39 @@ try:
         errors.append(f'{len(_sin)} guía(s) con "N días" en el título pero sin días detectados (gen_deals.guide_days): ' + ', '.join(_sin[:5]))
 except Exception as _ex:
     warns.append(f'no se pudo revisar destinos/dias.json: {_ex}')
+# ronda 10: preguntas repetidas en el marcado FAQPage (dos generadores añadiendo la misma pregunta) y FAQPage con más de 16 preguntas
+try:
+    import glob as _glob
+    _dup, _big = [], []
+    for _f in _glob.glob('destinos/*/index.html') + _glob.glob('en/destinations/*/index.html') + _glob.glob('vuelos/a/*/index.html') + _glob.glob('en/flights/to/*/index.html'):
+        _h = open(_f, encoding='utf-8', errors='ignore').read()
+        for _m in re.finditer(r'"@type":\s*"FAQPage".*?"mainEntity":\s*\[(.*?)\]\s*\}', _h, re.S):
+            _qs = [q.strip().lower() for q in re.findall(r'"@type":\s*"Question",\s*"name":\s*"(.*?)"', _m.group(1))]
+            if len(_qs) != len(set(_qs)):
+                _dup.append(_f)
+            if len(_qs) > 16:
+                _big.append(_f)
+    if _dup:
+        errors.append(f'{len(_dup)} página(s) con preguntas repetidas en FAQPage: ' + ', '.join(_dup[:5]))
+    if _big:
+        warns.append(f'{len(_big)} página(s) con más de 16 preguntas en FAQPage: ' + ', '.join(_big[:5]))
+except Exception as _ex:
+    warns.append(f'no se pudo revisar FAQPage: {_ex}')
+# ronda 10: títulos de rutas EN con la ciudad en español ("Cheap flights Viena to London", "Estocolmo-Nassau")
+try:
+    sys.path.insert(0, '_hlc')
+    import en_names as _en
+    _es_only = [k for k, v in _en.CITY_EN.items() if k != v and k.lower() not in v.lower()]
+    _rxn = re.compile(r'(?<![\w-])(' + '|'.join(re.escape(k) for k in sorted(_es_only, key=len, reverse=True)) + r')(?![\w])')
+    _bad_en = []
+    for _f in _glob.glob('en/flights/*/index.html'):
+        _t = re.search(r'<title>(.*?)</title>', open(_f, encoding='utf-8', errors='ignore').read(6000), re.S)
+        if _t and _rxn.search(_t.group(1)) and 'noindex' not in open(_f, encoding='utf-8', errors='ignore').read(6000):
+            _bad_en.append(_f)
+    if _bad_en:
+        errors.append(f'{len(_bad_en)} ruta(s) EN con la ciudad en español en el título: ' + ', '.join(_bad_en[:5]))
+except Exception as _ex:
+    warns.append(f'no se pudo revisar nombres EN: {_ex}')
 print(json.dumps({'paginas': len(set(scope)), 'ficheros': nfiles, 'reglas': nrules, 'errores': len(errors), 'avisos': len(warns), 'profundidad': DEPTH_STATS}, ensure_ascii=False))
 for w in warns:
     print('AVISO', w)

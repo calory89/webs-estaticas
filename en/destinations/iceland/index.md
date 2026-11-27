@@ -81,7 +81,7 @@ In Reykjavik, the centre is easy on foot and city buses (Strætó) cover the res
 
 A pint of beer typically costs €10 to €12 and a restaurant main course €25 to €40. Tap water is excellent and free, so bring a bottle.
 
-## FAQs
+## FAQ about Iceland
 
 ### Is Iceland worth it if I only have three days?
 
@@ -106,6 +106,22 @@ The króna (ISK). Cards, including contactless, are accepted almost everywhere, 
 ### How many days do you need in Iceland?
 
 7 days are enough to see the essentials of Iceland without rushing. The route in this guide is organised day by day.
+
+### Where to stay in Iceland?
+
+Reykjavik, 101 area: the centre, around Laugavegur and the harbour, is walkable and lively at night, which also means some noise on weekends. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Vera (Reykjavík, score 8.4, from €107 a night); best value: CityHub Reykjavik (Reykjavík, score 9.1, from €130 a night); luxury: Reykjavik Konsulat Hotel, Curio Collection By Hilton (Reykjavík, score 9.0, from €322 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Iceland?
+
+Try plokkfiskur, a creamy mashed fish stew eaten with rye bread, and skyr, the thick dairy product that is far better in Iceland than abroad.
+
+### How do you get from the airport to central Iceland?
+
+Keflavík Airport (KEF) is about 50 km from Reykjavik, roughly 45 minutes by road.
+
+### How do you get around Iceland?
+
+In Reykjavik, the centre is easy on foot and city buses (Strætó) cover the rest.
 
 ## Flights and deals
 

@@ -101,7 +101,7 @@ In the city, the compact core is very walkable, though hills and heat can wear y
 
 Ticket combos covering several archaeological sites usually save money if you plan to see four or five. Check current prices before you go.
 
-## FAQs
+## FAQ about Athens
 
 ### Is three days enough for Athens?
 
@@ -142,6 +142,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Acropolis at openin
 ### What to do in Athens in 3 days?
 
 With three days in Athens, this is the guide's route: Day 1, Acropolis at opening, Acropolis Museum, lunch in Koukaki, then Anafiotika and Plaka; Day 2, Ancient Agora in the morning, Monastiraki market, the Central Market; Day 3, Panathenaic Stadium, Temple of Olympian Zeus. The table above has the full plan for each day.
+
+### When is the best time to visit Athens?
+
+April to early June and September to October are the best windows: warm, bright, and comfortable for climbing.
+
+### Where to stay in Athens?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Casual Kubic Athens by Casual Hoteles (Omonoia, score 8.3, from €58 a night); best value: Evripides Hotel (Athens City Centre, score 9, from €78 a night); luxury: The Pinnacle Athens (Athens City Centre, score 9.4, from €211 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Athens?
+
+Try spanakopita from a bakery for breakfast, or a koulouri sesame ring from a street vendor.
+
+### How do you get around Athens?
+
+Your options: Metro Line 3: Direct to Syntagma and Monastiraki in about 40 minutes.
 
 ## Flights and deals
 

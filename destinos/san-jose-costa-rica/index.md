@@ -256,6 +256,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: San José. Mañana: T
 
 Con siete días en Costa Rica, esta es la ruta de la guía: Día 1, San José; Día 2, A La Fortuna; Día 3, Arenal; Día 4, Río Celeste; Día 5, Monteverde; Día 6, Monteverde y bajada a Manuel Antonio; Día 7, Manuel Antonio. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Costa Rica?
+
+La Fortuna (centro del pueblo): para moverte andando y con buses. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel Novo (Avenida Central y Primera, Calle 14, nota 8, desde 48 € la noche); mejor calidad-precio: Posada el Quijote (Bello Horizonte, Escazu, San Jose, nota 8,8, desde 79 € la noche); lujo: Studio Hotel Boutique (750 metros sur de Fórum 1 , nota 9, desde 120 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Costa Rica?
+
+Un plato en soda cuesta entre 6 y 9 € (unos 3.500-5.500 colones); en restaurante turístico, el doble.
+
+### ¿Cómo llegar del aeropuerto al centro de Costa Rica?
+
+El aeropuerto principal es el Juan Santamaría (SJO), en Alajuela, a unos 20 km de San José.
+
+### ¿Qué lugares imprescindibles ver en Costa Rica?
+
+Según esta guía: Volcán Arenal y La Fortuna; Catarata Río Fortuna; Puentes colgantes de Místico; Reserva Bosque Nuboso de Monteverde; Reserva Santa Elena; Tour nocturno en Monteverde; Parque Nacional Manuel Antonio; Río Celeste (Parque Nacional Volcán Tenorio). En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Costa Rica?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 140-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

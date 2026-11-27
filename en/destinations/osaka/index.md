@@ -250,6 +250,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Castle, Umeda and N
 
 With three days in Osaka, this is the guide's route: Day 1, Castle, Umeda and Namba at night; Day 2, South Osaka, old and new; Day 3, Nara day trip. The table above has the full plan for each day.
 
+### Where to stay in Osaka?
+
+Umeda (Kita): business district with the main JR station, the best option if you plan lots of day trips to Kyoto and Kobe. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Ark Hotel Osaka Shinsaibashi -ROUTE INN HOTELS- (Chuo Ward, score 8.4, from €42 a night); best value: Via Inn Prime Shinsaibashi Yotsubashi (Nishi Ward, score 9.1, from €56 a night); luxury: Imperial Hotel Osaka (Osaka Station, Umeda, Yodoyabashi, Hommachi, score 9.2, from €197 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Osaka?
+
+Most international flights land at Kansai International Airport (KIX), about 50 km out on an artificial island.
+
+### How do you get around Osaka?
+
+Get an ICOCA card (or add one to your phone) and tap in everywhere, including on convenience store purchases.
+
+### What are the must-see places in Osaka?
+
+According to this guide: Dotonbori; Osaka Castle; Shinsekai and Tsutenkaku; Kuromon Market; Umeda Sky Building; Abeno Harukas; Shitennoji; Sumiyoshi Taisha. Each one is explained in the "What to see" section.
+
 ### Is Osaka expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.

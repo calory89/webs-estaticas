@@ -122,7 +122,7 @@ In town, buy an **Istanbulkart** and use it on everything: the T1 tram (Sultanah
 
 Prices are approximate and move with the lira, so treat these as a guide only.
 
-## FAQs
+## FAQ about Istanbul
 
 ### Is Istanbul safe for tourists?
 
@@ -163,6 +163,30 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old city. Hagia Sop
 ### What to do in Istanbul in 4 days?
 
 With four days in Istanbul, this is the guide's route: Day 1, Old city; Day 2, Markets and Golden Horn; Day 3, Beyoğlu and Bosphorus; Day 4, Dolmabahçe, a Bosphorus ferry trip, or simply a slow day in Moda. The table above has the full plan for each day.
+
+### When is the best time to visit Istanbul?
+
+Winter is grey and wet, with the occasional snowfall, but it is cheap, quiet and ideal for museums and hammams.
+
+### Where to stay in Istanbul?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Sultanahmet inn Hotel (Fatih, score 8.6, from €48 a night); best value: Old Harbour Hotel istanbul (Fatih, score 9.2, from €49 a night); luxury: Çırağan Palace Kempinski Istanbul (Besiktas, score 9.5, from €513 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Istanbul?
+
+At Eminönü, try a balık ekmek, a grilled fish sandwich, though the boat-side ones are more about the experience than the best fish in town.
+
+### How do you get from the airport to central Istanbul?
+
+Istanbul Airport (IST) is far out on the European side.
+
+### How do you get around Istanbul?
+
+The M11 metro runs to Gayrettepe, where you can transfer, and Havaist buses go to Taksim and Sultanahmet.
+
+### What are the must-see places in Istanbul?
+
+According to this guide: Hagia Sophia; Blue Mosque; Topkapı Palace; Basilica Cistern; Süleymaniye Mosque; Grand Bazaar and Spice Bazaar; Galata Tower and the Karaköy slope; Balat and Fener. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

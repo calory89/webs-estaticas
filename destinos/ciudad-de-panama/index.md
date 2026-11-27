@@ -248,6 +248,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco Viejo y Cinta C
 
 Con tres días en Ciudad de Panamá, esta es la ruta de la guía: Día 1, Casco Viejo y Cinta Costera; Día 2, Canal y Amador; Día 3, Panamá Viejo y naturaleza. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Ciudad de Panamá?
+
+La mejor época es la estación seca, de mediados de diciembre a abril, que en Panamá llaman verano.
+
+### ¿Qué comer en Ciudad de Panamá?
+
+Es el plato nacional, perfecto si te pilla un día de lluvia.
+
+### ¿Cómo moverse por Ciudad de Panamá?
+
+Para moverte por la ciudad, compra la tarjeta del Metro, recargable, que sirve también para los MetroBus.
+
+### ¿Qué lugares imprescindibles ver en Ciudad de Panamá?
+
+Según esta guía: Casco Viejo (Casco Antiguo); Plaza de la Independencia y Catedral Metropolitana; Museo del Canal Interoceánico; Iglesia de San José y su altar de oro; Plaza de Francia y Paseo Esteban Huertas; Esclusas de Miraflores; Panamá Viejo; Cerro Ancón. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Ciudad de Panamá?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado: 50-70 €" se gastan unos 55-75 $ por persona y día, y en el nivel "medio: 110-170 €", unos 120-185 $. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

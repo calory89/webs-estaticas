@@ -1,6 +1,6 @@
 # Happy Low Cost: rutas de vuelos baratos con precios reales
 
-> 891 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T05:27Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
+> 891 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T06:35Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
 
 - [Alicante → Milán](https://www.happylowcost.com/vuelos/alicante-milan/): desde 38 € ida y vuelta, lo habitual 39 €, directo, Wizz Air Malta. 1.130 km, consultado el 2026-11-22
 - [Alicante → Venecia](https://www.happylowcost.com/vuelos/alicante-venecia/): desde 40 € ida y vuelta, lo habitual 48 €, directo, Ryanair, aeropuerto de Venice. 1.330 km, consultado el 2026-11-23
@@ -542,10 +542,10 @@
 - [Palma → Venecia](https://www.happylowcost.com/vuelos/palma-venecia/): desde 55 € ida y vuelta, lo habitual 58 €, directo, Ryanair, aeropuerto de Venice. 1.030 km, consultado el 2026-10-22
 - [Palma → Bruselas](https://www.happylowcost.com/vuelos/palma-bruselas/): desde 76 € ida y vuelta, lo habitual 90 €, directo, Ryanair, aeropuerto de Brussels. 1.270 km, consultado el 2026-10-22
 - [Palma → Varsovia](https://www.happylowcost.com/vuelos/palma-varsovia/): desde 82 € ida y vuelta, lo habitual 93 €, directo, Ryanair, aeropuerto de Warsaw. 1.980 km, consultado el 2026-10-22
-- [Palma → Agadir](https://www.happylowcost.com/vuelos/palma-agadir/): desde 94 € ida y vuelta, lo habitual 122 €, 1 escala(s), Vueling. 1.510 km, consultado el 2026-10-22
 - [Palma → Cracovia](https://www.happylowcost.com/vuelos/palma-cracovia/): desde 98 € ida y vuelta, lo habitual 138 €, 1 escala(s), Vueling. 1.780 km, consultado el 2026-10-22
 - [Palma → Nápoles](https://www.happylowcost.com/vuelos/palma-napoles/): desde 102 € ida y vuelta, lo habitual 112 €, 1 escala(s), Vueling, aeropuerto de Naples. 990 km, consultado el 2026-10-22
 - [Palma → Fez](https://www.happylowcost.com/vuelos/palma-fez/): desde 112 € ida y vuelta, lo habitual 117 €, 1 escala(s), Wizz Air Malta, aeropuerto de Fes. 930 km, consultado el 2026-10-22
+- [Palma → Agadir](https://www.happylowcost.com/vuelos/palma-agadir/): desde 115 € ida y vuelta, lo habitual 116 €, 1 escala(s), Iberia Express. 1.510 km, consultado el 2026-11-27
 - [Palma → Dubrovnik](https://www.happylowcost.com/vuelos/palma-dubrovnik/): desde 116 € ida y vuelta, lo habitual 126 €, 1 escala(s), Vueling. 1.340 km, consultado el 2026-10-22
 - [Palma → Belgrado](https://www.happylowcost.com/vuelos/palma-belgrado/): desde 133 € ida y vuelta, lo habitual 143 €, 1 escala(s), Vueling, aeropuerto de Belgrade. 1.560 km, consultado el 2026-10-22
 - [Palma → Praga](https://www.happylowcost.com/vuelos/palma-praga/): desde 141 € ida y vuelta, lo habitual 147 €, directo, Smartwings, aeropuerto de Prague. 1.480 km, consultado el 2026-10-22

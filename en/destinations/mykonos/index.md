@@ -125,7 +125,7 @@ The local buses run from Chora's two stations (Fabrika and the Old Port) to the 
 
 Sunbeds at the famous beaches can be very expensive; quieter beaches are cheaper, and some are free if you bring your own towel.
 
-## FAQs
+## FAQ about Mykonos
 
 ### Is Mykonos worth visiting if I am not into partying?
 
@@ -158,6 +158,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Early walk through 
 ### What to do in Mykonos in 3 days?
 
 With three days in Mykonos, this is the guide's route: Day 1, Early walk through Chora, then Paraportiani, the windmills and lunch; Day 2, Morning ferry to Delos, back by early afternoon; Day 3, Rent a car or take a water taxi to the south coast, pick one or two beaches. The table above has the full plan for each day.
+
+### When is the best time to visit Mykonos?
+
+Late May, June and September are the best compromise: warm sea, open venues, fewer people, and lower prices than the summer peak.
+
+### What to eat in Mykonos?
+
+Niko's Taverna and Joanna's Nikos Place are classic Chora tavernas with traditional dishes.
+
+### How do you get from the airport to central Mykonos?
+
+Mykonos Airport (JMK) is about 3 to 4 kilometres from Chora.
+
+### What are the must-see places in Mykonos?
+
+According to this guide: Chora (Mykonos Town); Little Venice; The Windmills (Kato Mili); Paraportiani Church; Delos; Armenistis Lighthouse; Ano Mera and Panagia Tourliani; Aegean Maritime Museum and the Archaeological Museum. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

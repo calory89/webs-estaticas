@@ -239,6 +239,26 @@ If you only have one day, follow day 1 of this itinerary: Old Town and castle. M
 
 With two days in Bratislava, this is the guide's route: Day 1, Old Town and castle; Day 2, Devín, the Danube and the UFO. The table above has the full plan for each day.
 
+### Where to stay in Bratislava?
+
+Old Town (Staré Mesto): best for first-timers and short stays, since you can walk everywhere. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Falkensteiner Hotel Bratislava (Stare Mesto, score 8.9, from €118 a night); best value: LOFT Hotel Bratislava (Stare Mesto, score 9.4, from €129 a night); luxury: Marrol's Boutique Hotel (Stare Mesto, score 9.2, from €159 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Bratislava?
+
+This is the national dish, so order it at least once.
+
+### How do you get from the airport to central Bratislava?
+
+From Bratislava Airport (BTS): bus 61 runs to the main train station in about 25 minutes.
+
+### How do you get around Bratislava?
+
+A single ticket costs about €1-1.50 from the machine, and you can also tap a contactless card on board.
+
+### What are the must-see places in Bratislava?
+
+According to this guide: Old Town (Staré Mesto); Bratislava Castle; St Martin's Cathedral; Michael's Gate; Main Square and the Old Town Hall; Primate's Palace; The Blue Church (Church of St Elizabeth); UFO Bridge (Most SNP). Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Bratislava: https://www.happylowcost.com/en/destinations/bratislava/#deals

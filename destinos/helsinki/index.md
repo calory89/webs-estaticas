@@ -89,7 +89,7 @@ Dentro de la ciudad, el transporte público de HSL (tranvía, metro, tren de cer
 
 Los precios varían según la temporada, así que sirven solo como orientación.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Helsinki
 
 ### ¿Es Helsinki una ciudad cara?
 
@@ -126,6 +126,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Estación central, Oo
 ### ¿Qué hacer en Helsinki en 3 días?
 
 Con tres días en Helsinki, esta es la ruta de la guía: Día 1, Estación central, Oodi, Kiasma, Plaza del Senado y Catedral; Día 2, Ferry a Suomenlinna por la mañana, comida allí o de vuelta en Kauppatori; Día 3, Iglesia de la Roca, Sibelius. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Cuál es la mejor época para viajar a Helsinki?
+
+El verano (de junio a agosto) es la mejor época para la mayoría: temperaturas suaves, de 18 a 22 grados de media, y días larguísimos en los que anochece muy tarde.
+
+### ¿Dónde alojarse en Helsinki?
+
+Centro y Kamppi: lo más cómodo si es tu primera vez, con todo a pie y transporte a mano. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Senate Hotel (Kruununhaka, nota 8,0, desde 68 € la noche); mejor calidad-precio: Hotel Bastian (Kamppi, nota 9,2, desde 133 € la noche); lujo: Lapland Hotels Bulevardi (Kamppi, nota 9,4, desde 224 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Helsinki?
+
+Un munkki (buñuelo) en Kauppatori es el tentempié clásico, y no te marches sin probar el regaliz salado, salmiakki, aunque solo sea para reírte con la cara que pones.
+
+### ¿Cómo llegar del aeropuerto al centro de Helsinki?
+
+El aeropuerto de Helsinki-Vantaa está a unos 18 km del centro.
 
 ## Vuelos y chollos
 

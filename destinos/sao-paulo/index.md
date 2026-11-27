@@ -256,6 +256,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y L
 
 Con tres días en São Paulo, esta es la ruta de la guía: Día 1, Centro histórico y Luz; Día 2, Paulista e Ibirapuera; Día 3, Liberdade, Pompeia y Vila Madalena. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a São Paulo?
+
+La mejor época es de abril a junio y de agosto a octubre: temperaturas suaves, entre 15 y 25 grados, y poca lluvia.
+
+### ¿Cómo llegar del aeropuerto al centro de São Paulo?
+
+Airport Bus Service: autobuses directos a Paulista, la Praça da República y el aeropuerto de Congonhas.
+
+### ¿Cómo moverse por São Paulo?
+
+El tren te deja en el centro con transbordo al metro.
+
+### ¿Qué lugares imprescindibles ver en São Paulo?
+
+Según esta guía: Avenida Paulista; MASP (Museu de Arte de São Paulo); Parque Ibirapuera; Mercado Municipal (Mercadão); Pinacoteca de São Paulo; Estação da Luz y Museu da Língua Portuguesa; Centro histórico: Sé, Pátio do Colégio y Theatro Municipal; Edifício Copan e Edifício Itália. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a São Paulo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

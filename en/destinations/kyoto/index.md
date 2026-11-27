@@ -86,7 +86,7 @@ In the city, buses reach most temples but crowd heavily at peak times. The subwa
 
 Most temples charge a few hundred yen. Fushimi Inari is free. These figures are approximate and rise in the busy seasons.
 
-## FAQs
+## FAQ about Kyoto
 
 ### How many days do I need in Kyoto?
 
@@ -123,6 +123,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: East. Fushimi Inari
 ### What to do in Kyoto in 4 days?
 
 With four days in Kyoto, this is the guide's route: Day 1, East; Day 2, West and north; Day 3, Centre and northeast; Day 4, Optional. The table above has the full plan for each day.
+
+### Where to stay in Kyoto?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hop Inn Kyoto Shijo Omiya (Nakagyo Ward, score 8.4, from €92 a night); best value: Comfort Hotel ERA Kyoto Toji (Minami Ward, score 9.1, from €141 a night); luxury: Sowaka (Higashiyama Ward, score 9.7, from €2200 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Kyoto?
+
+Airport limousine buses also run, and they're cheaper but slower.
+
+### How do you get around Kyoto?
+
+A rechargeable IC card (ICOCA or Suica) works on all of them and on most buses.
 
 ## Flights and deals
 

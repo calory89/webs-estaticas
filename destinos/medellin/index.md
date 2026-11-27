@@ -247,6 +247,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro. Mañana: f
 
 Con cuatro días en Medellín, esta es la ruta de la guía: Día 1, El centro; Día 2, Metrocable y Parque Arví; Día 3, Comuna 13 y Laureles; Día 4, Guatapé. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Qué comer en Medellín?
+
+El plato estrella es la bandeja paisa: frijoles, arroz, carne molida, chicharrón, chorizo, huevo frito, plátano maduro, aguacate y arepa.
+
+### ¿Cómo llegar del aeropuerto al centro de Medellín?
+
+El aeropuerto José María Córdova está en Rionegro, a unos 35 km y una montaña de distancia.
+
+### ¿Cómo moverse por Medellín?
+
+Dentro de la ciudad, el metro es la columna vertebral: línea A (norte-sur), línea B (hacia San Javier), tranvía de Ayacucho y varias líneas de Metrocable integradas.
+
+### ¿Qué lugares imprescindibles ver en Medellín?
+
+Según esta guía: Comuna 13; Metrocable de Santo Domingo (línea K); Parque Arví; Plaza Botero y Museo de Antioquia; Palacio de la Cultura Rafael Uribe Uribe; Parque de las Luces y Biblioteca EPM; Museo Casa de la Memoria; Pueblito Paisa (Cerro Nutibara). En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Medellín?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

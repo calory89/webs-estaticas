@@ -246,6 +246,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada a Sal y Santa
 
 Con siete días en Cabo Verde, esta es la ruta de la guía: Día 1, Llegada a Sal y Santa Maria; Día 2, Vuelta a la isla de Sal; Día 3, Vuelo a São Vicente y Mindelo; Día 4, Ferry a Santo Antão y Estrada da Corda; Día 5, Cova y bajada por Paul; Día 6, Fontainhas y vuelta a Mindelo; Día 7, Monte Verde o Baía das Gatas. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Cabo Verde?
+
+Centro de Mindelo (São Vicente): para quien quiere ciudad, música y restaurantes.
+
+### ¿Qué comer en Cabo Verde?
+
+El plato nacional es la cachupa: un guiso lento de maíz, alubias, verduras y, según la versión, pescado, chorizo o carne.
+
+### ¿Cómo llegar del aeropuerto al centro de Cabo Verde?
+
+En Sal, el aeropuerto Amílcar Cabral está junto a Espargos.
+
+### ¿Qué lugares imprescindibles ver en Cabo Verde?
+
+Según esta guía: Santa Maria y su pontón (Sal); Salinas de Pedra de Lume (Sal); Buracona y el Olho Azul (Sal); Baía da Parda, la «Shark Bay» (Sal); Mindelo (São Vicente); Monte Verde (São Vicente); Ribeira do Paul (Santo Antão); Sendero Ponta do Sol–Fontainhas–Cruzinha (Santo Antão). En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Cabo Verde?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

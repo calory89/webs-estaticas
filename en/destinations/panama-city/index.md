@@ -268,6 +268,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Casco Viejo and the
 
 With three days in Panama City, this is the guide's route: Day 1, Casco Viejo and the waterfront; Day 2, Ancon Hill and the canal; Day 3, Panamá Viejo and Amador. The table above has the full plan for each day.
 
+### Where to stay in Panama City?
+
+Business district with big chain hotels, often discounted on weekends. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Mio Panamá (Bella Vista, score 8.4, from €51 a night); best value: Plaza Paitilla Inn (Punta Paitilla, score 8.9, from €111 a night); luxury: Sofitel Legend Casco Viejo, Panama City (Casco Viejo, score 9.5, from €369 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Panama City?
+
+Tocumen International Airport (PTY) is about 25 km east of the centre.
+
+### How do you get around Panama City?
+
+Getting around: the metro (Lines 1 and 2) is clean, air-conditioned and cheap, but does not reach Casco Viejo directly.
+
+### What are the must-see places in Panama City?
+
+According to this guide: Miraflores Locks (Panama Canal); Casco Viejo (Casco Antiguo); Paseo Esteban Huertas and Plaza de Francia; Iglesia de San José and its golden altar; Museo del Canal Interoceánico; Panamá Viejo; Cerro Ancón (Ancon Hill); Biomuseo. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Panama City: https://www.happylowcost.com/en/destinations/panama-city/#deals

@@ -248,6 +248,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina y centro. Mañ
 
 Con tres días en Túnez, esta es la ruta de la guía: Día 1, Medina y centro; Día 2, Cartago y Sidi Bou Said; Día 3, Bardo y costa. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Túnez?
+
+La mejor época es primavera (abril-junio) y otoño (septiembre-octubre): entre 20 y 28 grados y mar caliente en otoño.
+
+### ¿Dónde alojarse en Túnez?
+
+Centro (Habib Bourguiba y Ville Nouvelle). Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel karim Tunis (La Medina, nota 8,6, desde 44 € la noche); mejor calidad-precio: Dar El Médina (La Medina, nota 9, desde 93 € la noche); lujo: Dar El Jeld Hotel and Spa (La Medina, nota 9,4, desde 193 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Túnez?
+
+Los viernes es el plato familiar. 15-30 TND en restaurante.
+
+### ¿Cómo llegar del aeropuerto al centro de Túnez?
+
+El aeropuerto de Túnez-Cartago está a unos 8 km del centro.
+
+### ¿Cómo moverse por Túnez?
+
+Metro ligero: son tranvías verdes, con varias líneas; la 4 va al Bardo.
+
+### ¿Qué lugares imprescindibles ver en Túnez?
+
+Según esta guía: La medina de Túnez; Mezquita Zitouna; Zocos de la medina; Museo Nacional del Bardo; Cartago; Sidi Bou Said; Dar Ben Abdallah; Tourbet el Bey. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Túnez?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -1,14 +1,14 @@
 # Happy Low Cost: live flight deals and travel guides in English (27 Nov 2026)
 
-> 16 verified return flight deals, each at least 40% below the usual price of its route, and 173 travel guides with day-by-day itineraries. Prices change by the hour: always check the deal page. Same data as JSON: https://www.happylowcost.com/chollos/feed.json. Spanish version: https://www.happylowcost.com/llms-full.txt
+> 15 verified return flight deals, each at least 40% below the usual price of its route, and 173 travel guides with day-by-day itineraries. Prices change by the hour: always check the deal page. Same data as JSON: https://www.happylowcost.com/chollos/feed.json. Spanish version: https://www.happylowcost.com/llms-full.txt
 
 Happy Low Cost has published flight deals since 2012. How we verify deals: https://www.happylowcost.com/en/how-we-verify/
 
 ## This month in numbers (as of 27 Nov 2026)
-- Live deals: 16, from 7 departure cities.
-- Median deal price: €69 return (cheapest: Valencia to Paris for €39).
+- Live deals: 15, from 7 departure cities.
+- Median deal price: €71 return (cheapest: Valencia to Paris for €39).
 - Median saving against the usual fare: 45%.
-- Deals with a nonstop flight: 12 of 16.
+- Deals with a nonstop flight: 11 of 15.
 
 ## Latest changes
 
@@ -26,19 +26,18 @@ Happy Low Cost has published flight deals since 2012. How we verify deals: https
 - [Barcelona to Cagliari: €43 return](https://www.happylowcost.com/en/deals/barcelona-cagliari-43-eur-2027-01-21/), Vueling, nonstop, 21 Jan – 30 Jan 2027. Usual price €80 (-46%). Checked 26 Nov 2026.
 - [Barcelona to Stockholm: €71 return](https://www.happylowcost.com/en/deals/barcelona-stockholm-71-eur-2027-02-21/), Vueling, nonstop, 21 Feb – 22 Feb 2027. Usual price €130 (-45%). Checked 26 Nov 2026.
 - [Alicante to Larnaca: €121 return](https://www.happylowcost.com/en/deals/alicante-larnaca-121-eur-2027-02-21/), Wizz Air Malta, 21 Feb – 23 Feb 2027. Usual price €200 (-40%). Checked 26 Nov 2026.
-- [Valencia to Brussels: €65 return](https://www.happylowcost.com/en/deals/valencia-brussels-65-eur-2027-02-19/), Vueling, nonstop, 19 Feb – 21 Feb 2027. Usual price €130 (-50%). Checked 26 Nov 2026.
+- [Valencia to Brussels: €65 return](https://www.happylowcost.com/en/deals/valencia-brussels-65-eur-2027-02-19/), Vueling, nonstop, 19 Feb – 21 Feb 2027. Usual price €130 (-50%). Checked 27 Nov 2026.
 - [Zaragoza to Athens: €133 return](https://www.happylowcost.com/en/deals/zaragoza-athens-133-eur-2027-02-13/), Wizz Air Malta, 13 Feb – 15 Feb 2027. Usual price €220 (-40%). Checked 26 Nov 2026.
 - [Gran Canaria to Madeira: €111 return](https://www.happylowcost.com/en/deals/gran-canaria-madeira-111-eur-2027-02-19/), Binter Canarias, nonstop, 19 Feb – 23 Feb 2027. Usual price €190 (-42%). Checked 27 Nov 2026.
 - [Valencia to Paris: €39 return](https://www.happylowcost.com/en/deals/valencia-paris-39-eur-2027-01-24/), Ryanair, nonstop, 24 Jan – 29 Jan 2027. Usual price €90 (-57%). Checked 26 Nov 2026.
-- [Valencia to Luxembourg: €94 return](https://www.happylowcost.com/en/deals/valencia-luxembourg-94-eur-2027-02-19/), Luxair, nonstop, 19 Feb – 22 Feb 2027. Usual price €170 (-45%). Checked 26 Nov 2026.
+- [Valencia to Luxembourg: €94 return](https://www.happylowcost.com/en/deals/valencia-luxembourg-94-eur-2027-02-19/), Luxair, nonstop, 19 Feb – 22 Feb 2027. Usual price €170 (-45%). Checked 27 Nov 2026.
 - [Madrid to Brussels: €81 return](https://www.happylowcost.com/en/deals/madrid-brussels-81-eur-2027-02-16/), Ryanair, nonstop, 16 Feb – 18 Feb 2027. Usual price €150 (-46%). Checked 26 Nov 2026.
 - [Zaragoza to Vilnius: €110 return](https://www.happylowcost.com/en/deals/zaragoza-vilnius-110-eur-2027-02-13/), Wizz Air Malta, 13 Feb – 22 Feb 2027. Usual price €230 (-52%). Checked 26 Nov 2026.
-- [Madrid to Budapest: €59 return](https://www.happylowcost.com/en/deals/madrid-budapest-59-eur-2027-02-13/), Ryanair, nonstop, 13 Feb – 17 Feb 2027. Usual price €120 (-51%). Checked 26 Nov 2026.
 - [Zaragoza to Prague: €106 return](https://www.happylowcost.com/en/deals/zaragoza-prague-106-eur-2027-02-16/), Wizz Air Malta, 16 Feb – 19 Feb 2027. Usual price €180 (-41%). Checked 27 Nov 2026.
 - [Zaragoza to London: €47 return](https://www.happylowcost.com/en/deals/zaragoza-london-47-eur-2027-01-25/), Ryanair, nonstop, 25 Jan – 1 Feb 2027. Usual price €90 (-48%). Checked 27 Nov 2026.
 - [Barcelona to Lisbon: €46 return](https://www.happylowcost.com/en/deals/barcelona-lisbon-46-eur-2027-01-10/), Ryanair, nonstop, 10 Jan – 14 Jan 2027. Usual price €80 (-43%). Checked 26 Nov 2026.
 - [Barcelona to Dubrovnik: €62 return](https://www.happylowcost.com/en/deals/barcelona-dubrovnik-62-eur-2026-12-12/), Vueling, nonstop, 12 Dec – 19 Dec 2026. Usual price €140 (-56%). Checked 26 Nov 2026.
-- [Palma de Mallorca to Vienna: €67 return](https://www.happylowcost.com/en/deals/palma-de-mallorca-vienna-67-eur-2027-02-12/), Ryanair, nonstop, 12 Feb – 19 Feb 2027. Usual price €120 (-44%). Checked 26 Nov 2026.
+- [Palma de Mallorca to Vienna: €67 return](https://www.happylowcost.com/en/deals/palma-de-mallorca-vienna-67-eur-2027-02-12/), Ryanair, nonstop, 12 Feb – 19 Feb 2027. Usual price €120 (-44%). Checked 27 Nov 2026.
 
 ## Travel guides (173 destinations)
 

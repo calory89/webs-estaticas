@@ -99,7 +99,7 @@ Within the city, Ruter runs trams, buses, the T-bane (metro) and ferries on one 
 
 Cards are accepted almost everywhere, including small kiosks; you hardly need cash. Tap water is excellent, so bring a bottle.
 
-## FAQ
+## FAQ about Oslo
 
 ### Is Oslo worth visiting for a weekend?
 
@@ -136,6 +136,18 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: City centre. Start 
 ### What to do in Oslo in 3 days?
 
 With three days in Oslo, this is the guide's route: Day 1, City centre; Day 2, West and parks; Day 3, Outdoors. The table above has the full plan for each day.
+
+### Where to stay in Oslo?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Scandic Go, Grensen 20 (Oslo, score 8.1, from €122 a night); best value: Hobo Oslo (Oslo, score 8.9, from €206 a night); luxury: Hotel Continental (Oslo, score 9.1, from €476 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Oslo?
+
+Reindeer and cured fish show up at traditional restaurants, but they're pricey.
+
+### How do you get around Oslo?
+
+Within the city, Ruter runs trams, buses, the T-bane (metro) and ferries on one ticketing system.
 
 ## Flights and deals
 

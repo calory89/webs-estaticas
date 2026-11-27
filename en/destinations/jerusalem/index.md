@@ -251,6 +251,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The Old City. Morni
 
 With three days in Jerusalem, this is the guide's route: Day 1, The Old City; Day 2, Temple Mount, City of David, Mount of Olives; Day 3, Museums and modern Jerusalem. The table above has the full plan for each day.
 
+### Where to stay in Jerusalem?
+
+City Centre (Jaffa Road, Ben Yehuda): best for first-timers who want restaurants, the light rail and a 15-minute walk to Jaffa Gate. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: SeaNet Hotel By AFI Hotels (Tel Aviv Promenade, score 8.2, from €99 a night); best value: ABBA Hotel (Jaffa, score 9, from €146 a night); luxury: Carlton Tel Aviv Hotel – Luxury on the Beach (Tel Aviv Promenade, score 8.5, from €438 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Jerusalem?
+
+Rugelach: try the chocolate ones from the market bakeries, especially warm on a Friday morning.
+
+### How do you get from the airport to central Jerusalem?
+
+Ben Gurion Airport (TLV) is about 50 km away.
+
+### How do you get around Jerusalem?
+
+Payment: buy a Rav-Kav card at the station, or pay with contactless or a transit app.
+
+### What are the must-see places in Jerusalem?
+
+According to this guide: The Old City and its four quarters; Western Wall (Kotel); Western Wall Tunnels; Church of the Holy Sepulchre; Temple Mount / Haram al-Sharif; Tower of David Museum; Ramparts Walk; Mount of Olives. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Jerusalem: https://www.happylowcost.com/en/destinations/jerusalem/#deals

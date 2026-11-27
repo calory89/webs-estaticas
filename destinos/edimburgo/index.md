@@ -95,7 +95,7 @@ En la ciudad, lo mejor son tus pies. Para trayectos más largos hay **Lothian Bu
 
 La moneda es la libra esterlina y se paga con tarjeta en casi todas partes. Son cifras generales y cambian con la temporada.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Edimburgo
 
 ### ¿Necesito algún trámite para viajar desde España?
 
@@ -132,6 +132,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Old Town. Castillo a 
 ### ¿Qué hacer en Edimburgo en 3 días?
 
 Con tres días en Edimburgo, esta es la ruta de la guía: Día 1, Old Town; Día 2, Holyrood y colinas; Día 3, New Town y alrededores. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Edimburgo?
+
+Old Town: es lo más cómodo para ver todo a pie y lo más caro por habitación. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: KM Hotel (Edinburgh, nota 8,2, desde 122 € la noche); mejor calidad-precio: ibis Styles Edinburgh St Andrew Square (Edinburgh, nota 8,8, desde 243 € la noche); lujo: Gleneagles Townhouse (Edinburgh, nota 9,4, desde 742 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Edimburgo?
+
+El plato nacional es el haggis, con neeps and tatties (puré de nabo y patata).
+
+### ¿Cómo llegar del aeropuerto al centro de Edimburgo?
+
+El aeropuerto de Edimburgo (EDI) está a unos 13 kilómetros del centro.
+
+### ¿Cómo moverse por Edimburgo?
+
+Tienes dos opciones baratas: el tranvía, que llega a la zona de Princes Street y York Place en unos 30-35 minutos, y el autobús Airlink 100, que para junto a la estación Waverley en una media hora.
 
 ## Vuelos y chollos
 

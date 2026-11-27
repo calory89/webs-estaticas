@@ -255,6 +255,22 @@ With two days in Ljubljana, this is the guide's route: Day 1, Old town, castle a
 
 With two days in Slovenia, this guide suggests staying in Ljubljana and following its route: Day 1, Old town, castle and river; Day 2, Parks, art and alternative Ljubljana.
 
+### Where to stay in Ljubljana?
+
+Old Town (Stari trg, Mestni trg): beautiful and central, with everything a walk away. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Holiday Inn Express - Ljubljana by IHG (Podmilscakova 51, score 8.8, from €78 a night); best value: Atelier Hotel (Ljubljana City Centre, score 8.9, from €98 a night); luxury: Zlata Ladjica Boutique Hotel (Ljubljana City Centre, score 9.7, from €420 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Ljubljana?
+
+Ljubljana Jože Pučnik Airport is at Brnik, about 26 km north of the city.
+
+### How do you get around Ljubljana?
+
+In the city you'll walk almost everywhere.
+
+### What are the must-see places in Ljubljana?
+
+According to this guide: Prešeren Square and the Triple Bridge; Ljubljana Castle; Central Market and Plečnik's Colonnade; Dragon Bridge; Ljubljana Cathedral (St Nicholas); Metelkova; Tivoli Park; Nebotičnik. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Ljubljana: https://www.happylowcost.com/en/destinations/ljubljana/#deals

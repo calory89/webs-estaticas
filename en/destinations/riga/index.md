@@ -109,7 +109,7 @@ The Old Town is walkable, and so is most of the Art Nouveau district. For anywhe
 
 A coffee costs around €3, a beer in the Old Town €5 to €7, and a main course at a mid-range restaurant €12 to €20. Prices are approximate and change by season.
 
-## FAQs
+## FAQ about Riga
 
 ### Is Riga safe for tourists?
 
@@ -146,6 +146,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town in the mor
 ### What to do in Riga in 3 days?
 
 With three days in Riga, this is the guide's route: Day 1, Old Town in the morning, the Cathedral, St; Day 2, Art Nouveau streets in the morning, the Central Market for lunch; Day 3, Take a day trip. Jūrmala, with its wooden villas and wide sandy beach. The table above has the full plan for each day.
+
+### Where to stay in Riga?
+
+Old Town: the most convenient and the most touristy. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Old Riga Plaza Hotel (Centre, score 8.1, from €29 a night); best value: Carillon Aparthotel - Keystone Collection, opened December 2025 (Riga, score 9.6, from €66 a night); luxury: Grand Poet Hotel and SPA by Semarah (Centre, score 9.4, from €108 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Riga?
+
+Try pelēkie zirņi ar speķi, grey peas with fried bacon bits, which is simple and better than it sounds.
+
+### How do you get from the airport to central Riga?
+
+Riga International Airport (RIX) is about 10 km southwest of the centre.
+
+### How do you get around Riga?
+
+The Old Town is walkable, and so is most of the Art Nouveau district.
+
+### What are the must-see places in Riga?
+
+According to this guide: Old Town (Vecrīga); Riga Cathedral (Doma); St. Peter's Church tower; House of the Blackheads and the Three Brothers; Art Nouveau district; Central Market; Freedom Monument and Bastejkalns; Academy of Sciences viewing platform. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

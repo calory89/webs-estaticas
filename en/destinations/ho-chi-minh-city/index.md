@@ -248,6 +248,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Colonial centre and
 
 With three days in Ho Chi Minh City, this is the guide's route: Day 1, Colonial centre and war history; Day 2, Cu Chi Tunnels and Thao Dien; Day 3, Cholon, markets and temples. The table above has the full plan for each day.
 
+### Where to stay in Ho Chi Minh City?
+
+District 1 (Ben Nghe and Dong Khoi area). The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Linh Dan Hotel Phan Xich Long By Urban B - Addr 12-7 Cù Lao (Phu Nhuan, score 8.7, from €25 a night); best value: Triple E Hotel Metro Ben Thanh (District 1, score 8.7, from €52 a night); luxury: La Siesta Premium Saigon (District 1, score 9.4, from €155 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Ho Chi Minh City?
+
+Tan Son Nhat Airport (SGN) is right inside the city, about 7 km from District 1.
+
+### How do you get around Ho Chi Minh City?
+
+Metro Line 1 runs from Ben Thanh to Thao Dien and on to Suoi Tien, with fares around 7,000-20,000 VND.
+
+### What are the must-see places in Ho Chi Minh City?
+
+According to this guide: War Remnants Museum; Independence Palace; Saigon Notre-Dame Cathedral and Central Post Office; Ben Thanh Market; Cholon and Binh Tay Market; Thien Hau Temple; Jade Emperor Pagoda; Nguyen Hue Walking Street and The Café Apartments. Each one is explained in the "What to see" section.
+
 ### Is Ho Chi Minh City expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.

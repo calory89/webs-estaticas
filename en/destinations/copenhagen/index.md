@@ -111,7 +111,7 @@ Within the city, use a combination of walking, bikes, the Metro and S-trains. Ti
 
 Alcohol is expensive in bars, so a supermarket beer by the harbour is a local habit and a decent saving.
 
-## FAQ
+## FAQ about Copenhagen
 
 ### Is Copenhagen expensive?
 
@@ -152,6 +152,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Nyhavn early, Amali
 ### What to do in Copenhagen in 3 days?
 
 With three days in Copenhagen, this is the guide's route: Day 1, Nyhavn early, Amalienborg, the waterfront walk, lunch at Torvehallerne; Day 2, Christiansborg and the Round Tower, a wander along Strøget (skip the shops; Day 3, Christianshavn and Christiania in the morning, a canal boat. The table above has the full plan for each day.
+
+### Where to stay in Copenhagen?
+
+Indre By (Old Town): the most central option, walkable to everything. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Wakeup Copenhagen - Borgergade (Copenhagen, score 8.0, from €81 a night); best value: Kanalhuset (Christianshavn, score 9.4, from €207 a night); luxury: 1 Hotel Copenhagen (Copenhagen, score 9.1, from €301 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Copenhagen?
+
+Try a flæskesteg sandwich (roast pork with crackling) and a pølse from a hot dog stand, the proper budget meal here.
+
+### How do you get from the airport to central Copenhagen?
+
+Copenhagen Airport (Kastrup) is unusually close.
+
+### How do you get around Copenhagen?
+
+The Metro (M2) reaches Kongens Nytorv and Nørreport in about 15 minutes, running day and night.
+
+### What are the must-see places in Copenhagen?
+
+According to this guide: Nyhavn; Tivoli Gardens; Rosenborg Castle and the King's Garden; Christiansborg Palace and the Round Tower; Amalienborg and the Little Mermaid; Ny Carlsberg Glyptotek; Designmuseum Denmark; Christianshavn and Freetown Christiania. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

@@ -240,6 +240,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y W
 
 Con cuatro días en Taipéi, esta es la ruta de la guía: Día 1, Centro histórico y Wanhua; Día 2, Este de la ciudad y Taipei 101; Día 3, Norte: museo y aguas termales; Día 4, Excursión a Jiufen o Shifen. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Taipéi?
+
+Xinyi: la zona del 101, moderna y de centros comerciales. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Queens Hotel II (Datong District , nota 8,3, desde 42 € la noche); mejor calidad-precio: Two Tails Hotel Taipei (Luzhou District , nota 9,2, desde 81 € la noche); lujo: Grand Mayfull Taipei (Zhongshan District, nota 9,4, desde 222 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Cómo llegar del aeropuerto al centro de Taipéi?
+
+La forma más fácil de llegar desde el aeropuerto de Taoyuan es el Airport MRT (línea morada): el tren exprés tarda unos 35-40 minutos a Taipei Main Station y cuesta unos 5 € (160 TWD).
+
+### ¿Cómo moverse por Taipéi?
+
+Si aterrizas en Songshan, estás prácticamente en la ciudad y tienes metro en la terminal.
+
+### ¿Qué lugares imprescindibles ver en Taipéi?
+
+Según esta guía: Taipei 101; Elephant Mountain (Xiangshan); Museo Nacional del Palacio; Memorial de Chiang Kai-shek; Templo Longshan; Dadaocheng y la calle Dihua; Ximending; Beitou. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Taipéi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-60 € por persona y día, y en el nivel "medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

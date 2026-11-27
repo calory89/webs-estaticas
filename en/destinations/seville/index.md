@@ -266,6 +266,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: The big three and S
 
 With three days in Seville, this is the guide's route: Day 1, The big three and Santa Cruz; Day 2, Parks, palaces and the river; Day 3, Triana and the slow side. The table above has the full plan for each day.
 
+### Where to stay in Seville?
+
+Santa Cruz / Cathedral area: ideal for first-timers who want to walk everywhere. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Patio de las Cruces (Santa Cruz, score 8.3, from €77 a night); best value: Hotel Amadeus Sevilla (Old Town, score 9.1, from €159 a night); luxury: Only YOU Hotel Sevilla (Nervión, score 9.4, from €198 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Seville?
+
+The EA airport bus is the cheapest way into town.
+
+### How do you get around Seville?
+
+A rechargeable card brings the cost down, and the tourist card covers 1 or 3 days.
+
+### What are the must-see places in Seville?
+
+According to this guide: Real Alcázar; Seville Cathedral and the Giralda; Plaza de España; Parque de María Luisa; Barrio Santa Cruz; Metropol Parasol (Las Setas); Triana; Casa de Pilatos. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Seville: https://www.happylowcost.com/en/destinations/seville/#deals

@@ -230,6 +230,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y lago. Mañan
 
 Con cuatro días en Toronto, esta es la ruta de la guía: Día 1, Centro y lago; Día 2, Barrios del oeste; Día 3, Museos, castillo e islas; Día 4, Cataratas del Niágara. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Toronto?
+
+Downtown / Entertainment District: junto a la CN Tower y Union Station. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Crowne Plaza Toronto - North York by IHG (North York, nota 8, desde 142 € la noche); mejor calidad-precio: Pantages Hotel Toronto Centre (Yonge - Dundas, nota 8,8, desde 183 € la noche); lujo: SoHo Hotel Toronto (Entertainment District, nota 9, desde 339 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Toronto?
+
+La cocina canadiense típica es corta, pero en Toronto se come muy bien gracias a la inmigración.
+
+### ¿Cómo llegar del aeropuerto al centro de Toronto?
+
+Desde el aeropuerto Pearson (YYZ), la mejor opción es el UP Express, un tren que llega a Union Station en 25 minutos.
+
+### ¿Cómo moverse por Toronto?
+
+Cuesta unos 12-13 CAD (8 €) con tarjeta de crédito contactless o PRESTO, algo más con billete de papel.
+
+### ¿Qué lugares imprescindibles ver en Toronto?
+
+Según esta guía: CN Tower; St. Lawrence Market; Distillery District; Kensington Market; Toronto Islands; Royal Ontario Museum (ROM); Art Gallery of Ontario (AGO); Casa Loma. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Toronto: https://www.happylowcost.com/destinos/toronto/#chollos

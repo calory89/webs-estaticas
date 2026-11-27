@@ -107,7 +107,7 @@ These are general figures per person, and prices rise in July and August.
 
 - **Comfortable:** €200 and up with boutique stays or resorts, boat trips and long dinners.
 
-## FAQs
+## FAQ about Crete
 
 ### How many days do you need in Crete?
 
@@ -136,6 +136,22 @@ For the traveller who wrote this guide, yes: Crete is not an island you "do" in 
 ### What to do in Crete in 7 days?
 
 With seven days in Crete, this is the guide's route: Days 1-3, Chania. Old town on day one, Elafonissi or Balos on day two; Day 4, Drive east to Rethymno, stopping at Arkadi, and spend the evening in the old town; Day 5, Preveli and Plakias or Agia Galini on the south coast; Day 6, Phaistos and Matala, then continue to Heraklion for Knossos and the museum the next…; Day 7, Knossos, museum, then fly out or continue to Agios Nikolaos and Spinalonga if you have…. The table above has the full plan for each day.
+
+### Where to stay in Crete?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Athinaikon Hotel (Leof. Eth. Antistaseos 89, score 8.3, from €58 a night); best value: Kipos Boutique Suites (Giampoudi 12, score 9.4, from €64 a night); luxury: Ethereal White Resort Hotel & Spa - Adults Only (Heralkio City Centre, score 9.3, from €141 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Crete?
+
+Try kalitsounia, small cheese or herb pies, gamopilafo, a rich wedding rice, and antikristo, lamb cooked slowly beside the fire.
+
+### How do you get from the airport to central Crete?
+
+Crete has two main airports: Heraklion (HER) and Chania (CHQ), plus a small one at Sitia.
+
+### What are the must-see places in Crete?
+
+According to this guide: Knossos; Chania Old Town and Venetian Harbour; Rethymno and the Fortezza; Samaria Gorge; Elafonissi and Balos; Preveli and the south coast; Spinalonga; Phaistos and Agia Triada. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

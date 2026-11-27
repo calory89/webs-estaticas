@@ -101,7 +101,7 @@ Para moverte por la ciudad, consigue una tarjeta **Suica** o **Pasmo**, o añád
 
 El vuelo y los desplazamientos largos (como el Shinkansen a Kioto) se calculan aparte. Son cifras generales: varían bastante según la temporada y el tipo de cambio.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Tokio
 
 ### ¿Necesito visado para viajar a Japón desde España?
 
@@ -142,6 +142,18 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Asakusa por la mañan
 ### ¿Qué hacer en Tokio en 5 días?
 
 Con cinco días en Tokio, esta es la ruta de la guía: Día 1, Asakusa por la mañana, Skytree si el cielo está despejado; Día 2, Ueno y Yanaka por la mañana, Akihabara por la tarde y noche en Shinjuku; Día 3, Meiji Jingu, Harajuku y Omotesando por la mañana, Shibuya al atardecer; Día 4, Tsukiji temprano, Ginza, jardines del Palacio Imperial y teamLab Planets por la tarde; Día 5, Kamakura o Shimokitazawa, según el ritmo que lleves. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Tokio?
+
+Elige barrio por la línea de tren que te conviene, no por el nombre. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Best Hotel (Shinjuku Ward, nota 8,1, desde 80 € la noche); mejor calidad-precio: Onyado Nono Asakusa Annex - Natural Hot Spring (Taito, nota 9,3, desde 181 € la noche); lujo: Hotel Chinzanso Tokyo (Bunkyo, nota 9,4, desde 394 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Tokio?
+
+Prueba el ramen en una máquina de tickets: eliges el plato, pagas, entregas el ticket y a comer en cinco minutos.
+
+### ¿Cómo moverse por Tokio?
+
+Para moverte por la ciudad, consigue una tarjeta Suica o Pasmo, o añádela a tu móvil si tienes un iPhone o un Android compatible.
 
 ### ¿Es caro viajar a Tokio?
 

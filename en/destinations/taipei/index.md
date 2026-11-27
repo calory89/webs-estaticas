@@ -256,6 +256,22 @@ With four days in Taipei, this is the guide's route: Day 1, Old Taipei and Xinyi
 
 With four days in Taiwan, this guide suggests staying in Taipei and following its route: Day 1, Old Taipei and Xinyi; Day 2, Museum, Dadaocheng and Ningxia; Day 3, Hot springs and mountain tea; Day 4, Jiufen and the northeast coast.
 
+### Where to stay in Taipei?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Queens Hotel II (Datong District , score 8.3, from €42 a night); best value: Two Tails Hotel Taipei (Luzhou District , score 9.2, from €81 a night); luxury: Grand Mayfull Taipei (Zhongshan District, score 9.4, from €222 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Taipei?
+
+From Taoyuan International Airport, the Airport MRT express train reaches Taipei Main Station in about 35-40 minutes and costs about €4.50 (NT$160).
+
+### How do you get around Taipei?
+
+Buy an EasyCard at any station for about €3 (NT$100), top it up, and use it on the metro, buses, YouBike bicycles and even at convenience stores.
+
+### What are the must-see places in Taipei?
+
+According to this guide: Elephant Mountain (Xiangshan); Taipei 101; National Palace Museum; Longshan Temple; Chiang Kai-shek Memorial Hall; Dihua Street and Dadaocheng; Beitou Hot Springs; Maokong Gondola. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Taipei: https://www.happylowcost.com/en/destinations/taipei/#deals

@@ -151,6 +151,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Duomo and dome clim
 
 With three days in Florence, this is the guide's route: Day 1, Duomo and dome climb early, Baptistery, lunch near San Lorenzo, Medici Chapels; Day 2, Uffizi in the morning, Accademia after lunch, then evening drinks in Santo Spirito; Day 3, Santa Croce, then cross to Pitti and Boboli, finishing with San Miniato at sunset. The table above has the full plan for each day.
 
+### When is the best time to visit Florence?
+
+April, May, late September and October are best, with mild days and manageable but real crowds.
+
+### Where to stay in Florence?
+
+Historic centre (around the Duomo): the most convenient and the most expensive, and also the noisiest. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Kursaal & Ausonia (Florence Historic Center, score 8.4, from €75 a night); best value: Hotel Orcagna (Campo Di Marte, score 9.1, from €118 a night); luxury: Golden Tower Hotel & Spa (Santa Maria Novella, score 9.4, from €446 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Florence?
+
+Try it once, even if only for the story.
+
+### What are the must-see places in Florence?
+
+According to this guide: 1. The Duomo complex; 2. The Uffizi Gallery; 3. The Accademia and Michelangelo's David; 4. Ponte Vecchio and the Arno; 5. Palazzo Vecchio and Piazza della Signoria; 6. Santa Croce; 7. Palazzo Pitti and the Boboli Gardens; 8. San Miniato al Monte and Piazzale Michelangelo. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Florence: https://www.happylowcost.com/en/destinations/florence/#deals

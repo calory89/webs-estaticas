@@ -99,7 +99,7 @@ Dentro de la ciudad, lo habitual es ir a pie. El vaporetto (transporte público 
 
 Lo que más sube la cuenta son el alojamiento y las entradas. La comida se puede controlar mucho.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Venecia
 
 ### ¿Es Venecia tan cara como dicen?
 
@@ -132,6 +132,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por Ca
 ### ¿Qué hacer en Venecia en 3 días?
 
 Con tres días en Venecia, esta es la ruta de la guía: Día 1, Llegada, paseo por Cannaregio y el Gueto; Día 2, San Marcos a primera hora, Palacio Ducal; Día 3, Mercado de Rialto por la mañana, Frari y San Rocco, y por la tarde Burano y Torcello. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Venecia?
+
+Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Hotel dalla Mora (Santa Croce, nota 8,8, desde 82 € la noche); mejor calidad-precio: B&B HOTEL Venezia Laguna (Isola Nova del Tronchetto, nota 8,8, desde 94 € la noche); lujo: Hotel Gabrielli Venezia - Starhotels Collezione (Castello, nota 9,6, desde 545 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Venecia?
+
+Prueba Cantina Do Mori, cerca de Rialto, All'Arco, también cerca del mercado, o Al Timon en Cannaregio, donde la gente se sienta junto al canal.
+
+### ¿Cómo llegar del aeropuerto al centro de Venecia?
+
+El aeropuerto Marco Polo está en tierra firme.
+
+### ¿Cómo moverse por Venecia?
+
+Dentro de la ciudad, lo habitual es ir a pie.
 
 ### ¿Es caro viajar a Venecia?
 

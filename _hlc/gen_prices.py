@@ -318,10 +318,11 @@ def dest_page(d, lst, meses, en, en_slug, guide):
         a0 = ((ra.get('facts') or {}).get('aerolinea') or '').strip()
         top_ = sorted(_air.items(), key=lambda kv: (-len(kv[1]), min(x['price_from'] for x in kv[1])))[:4]
         if en:
-            qas.append((f'Which is the cheapest airline to {name}?', (f'In our latest search, the cheapest return to {name} from {oname(ra)} was with {a0} ({ra["price_from"]} €). ' if a0 else '')
+            qas.append((f'Which airlines usually have the cheapest fares to {name}?',  # ronda 10: "which airlines usually have the cheapest fares to las vegas?" 21 impr. pos. 6,5
+                         (f'In our latest search, the cheapest return to {name} from {oname(ra)} was with {a0} ({ra["price_from"]} €). ' if a0 else '')
                         + 'Airlines with the cheapest fares across the cities we track: ' + ', '.join(f'{k} ({len(v)} route{"s" if len(v) != 1 else ""}, from {min(x["price_from"] for x in v)} €)' for k, v in top_) + '.'))
         else:
-            qas.append((f'¿Qué aerolínea es la más barata para volar a {name}?', (f'En nuestra última consulta, el vuelo de ida y vuelta más barato a {name} era con {a0} ({ra["price_from"]} € desde {oname(ra)}). ' if a0 else '')
+            qas.append((f'¿Qué aerolíneas suelen tener los vuelos más baratos a {name}?', (f'En nuestra última consulta, el vuelo de ida y vuelta más barato a {name} era con {a0} ({ra["price_from"]} € desde {oname(ra)}). ' if a0 else '')
                         + 'Aerolíneas con los precios más bajos en las ciudades que vigilamos: ' + ', '.join(f'{k} ({len(v)} ruta{"s" if len(v) != 1 else ""}, desde {min(x["price_from"] for x in v)} €)' for k, v in top_) + '.'))
     # ronda 6: "vuelos a roma ryanair", "flights to tenerife ryanair", "who is cheaper for flights to dubrovnik, tui or ryanair?" (113 impr. pos. 4,6)
     # solo con vuelo directo de Ryanair: con escalas, Kiwi.com combina un primer tramo de Ryanair con otra aerolínea y no significa que Ryanair vuele allí
@@ -361,6 +362,25 @@ def dest_page(d, lst, meses, en, en_slug, guide):
             qas.append((f'Are there last-minute cheap flights to {name}?', f'In our data, the cheap fare departing soonest after the search was from {oname(_r0)}: {_r0["price_from"]} € return, departing {_d0} day{"s" if _d0 != 1 else ""} after we checked ({fd((_r0.get("facts") or {}).get("consultado"), True)}). Last-minute prices change fast: set a free alert.'))
         else:
             qas.append((f'¿Hay vuelos baratos de última hora a {name}?', f'En nuestros datos, la salida barata más próxima a la consulta era desde {oname(_r0)}: {_r0["price_from"]} € ida y vuelta, con salida {_d0} día{"s" if _d0 != 1 else ""} después de consultarla ({fd((_r0.get("facts") or {}).get("consultado"))}). Los precios de última hora cambian rápido: crea una alerta gratis.'))
+    # ronda 10: "¿Qué ver en X?" en el hub de vuelos, con los lugares de la propia guía (respuesta que ya está en la FAQ de la guía) y enlace a ella
+    if guide:
+        try:
+            _gf = (f'en/destinations/{slug_en}/index.html' if en else f'destinos/{d}/index.html')
+            _gh = open(_gf, encoding='utf-8').read()
+            _m = re.search(r'<h3>(?:¿Qué lugares imprescindibles ver en|What are the must-see places in)[^<]*</h3><p>(?:Según esta guía|According to this guide): (.*?)\. ', _gh)
+            if _m:
+                _pl = html.unescape(_m.group(1))
+                qas.append((f'What to see in {name}?', f'Must-see places in our {name} travel guide: {_pl}. The guide has a day-by-day itinerary, where to stay and what to eat.') if en else
+                           (f'¿Qué ver en {name}?', f'Los imprescindibles de nuestra guía de {name}: {_pl}. La guía tiene la ruta día a día, dónde dormir y qué comer.'))
+        except Exception:
+            pass
+    # ronda 10: "hotels in X for a trip from Y" / "dónde dormir en X": los 3 hoteles de top3hotels.com (nota real y precio por noche)
+    try:
+        _hq = G.T3.hotel_faq(name, *G.dest_ll({"destino": r0['dest'], "destino_iata": r0.get('dest_iata')}), lang='en' if en else 'es')
+    except Exception:
+        _hq = None
+    if _hq:
+        qas.append(_hq)
     # descripción para el clic (CTR): precio, ciudades, directos, mes más barato y fecha de consulta
     if en:
         desc = (f'{name} flights from €{r1["price_from"]} return ({oname(r1)})' + (f' and €{r0["price_from"]} from {oname(r0)}' if r0 is not r1 else '')
@@ -463,7 +483,8 @@ def orig_extra_faq(o, lst, en, oname, dname):
             bya.setdefault(re.sub(r'\s+(UK|Malta|Sweden|France|Air Shuttle)$', '', a), []).append(r)
     top = sorted(bya.items(), key=lambda kv: -len(kv[1]))[:4]
     if top:
-        qas.append((T(f'¿Qué aerolíneas low cost vuelan desde {oname} y a dónde?', f'Which budget airlines fly from {oname}, and where to?'),
+        qas.append((T(f'¿Qué aerolíneas low cost vuelan desde {oname} y a qué destinos?', f'What destinations do budget airlines from {oname} serve?')  # ronda 10: "what destinations do budget airlines from london serve?" 21 impr. pos. 6,2
+                    ,
                     T('Aerolíneas low cost con la tarifa más barata en nuestras rutas desde ', 'Budget airlines with the cheapest fare on our routes from ') + oname + ': '
                     + '; '.join(f'{a}: ' + ', '.join(f'{dname(r)} ({r["price_from"]} €)' for r in l[:3]) for a, l in top) + '.'))
     return qas

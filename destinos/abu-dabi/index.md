@@ -268,6 +268,30 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y C
 
 Con tres días en Abu Dabi, esta es la ruta de la guía: Día 1, Centro histórico y Corniche; Día 2, Saadiyat y Breakwater; Día 3, Yas Island o desierto. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Abu Dabi?
+
+La mejor época es de noviembre a marzo, con temperaturas entre 20 y 30 grados y noches agradables.
+
+### ¿Dónde alojarse en Abu Dabi?
+
+Corniche y Al Markaziyah (centro): lo más práctico para moverte en bus y taxi y lo más barato. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Grand Villaggio Hotel Abu Dhabi (Airport Road, nota 8,3, desde 95 € la noche); mejor calidad-precio: Doubletree By Hilton Abu Dhabi Yas Island Residences (Yas Island, nota 9, desde 162 € la noche); lujo: Shangri-La Qaryat Al Beri, Abu Dhabi (Between The Bridges, nota 9, desde 283 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Abu Dabi?
+
+También vale la pena probar dátiles frescos y la leche de camella.
+
+### ¿Cómo llegar del aeropuerto al centro de Abu Dabi?
+
+El aeropuerto internacional Zayed está a unos 30 km del centro.
+
+### ¿Cómo moverse por Abu Dabi?
+
+Para moverte por la ciudad, la tarjeta Hafilat se recarga en máquinas y estaciones de bus y sirve en toda la red.
+
+### ¿Qué lugares imprescindibles ver en Abu Dabi?
+
+Según esta guía: Gran Mezquita Sheikh Zayed; Louvre Abu Dabi; Qasr Al Watan; Qasr Al Hosn; La Corniche; Heritage Village y el Breakwater; Emirates Palace; Mirador de las Etihad Towers. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Abu Dabi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos de 60 a 90 € por persona y día, y en el nivel "presupuesto medio", unos de 130 a 200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -84,7 +84,7 @@ Once in town, public buses on the R-1 and R-2 routes link downtown with the Hote
 
 Tours, ferries and entry fees add up. Bring pesos for small purchases, though many places quote in dollars.
 
-## FAQs
+## FAQ about Cancun
 
 ### Is Cancún safe for tourists?
 
@@ -121,6 +121,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, swim at Pla
 ### What to do in Cancun in 4 days?
 
 With four days in Cancun, this is the guide's route: Day 1, Arrive, swim at Playa Langosta or Tortugas, dinner downtown near Parque de las Palapas; Day 2, Ferry to Isla Mujeres early, golf cart, Playa Norte, back in the late afternoon; Day 3, Day trip to Chichén Itzá (about 2.5 hours each way) or Tulum; Day 4, Morning at El Rey and Playa Delfines, a slow lunch, then the airport. The table above has the full plan for each day.
+
+### When is the best time to visit Cancun?
+
+December to April is the best window: dry, sunny and warm, but also the most expensive, especially around Christmas and Easter.
+
+### Where to stay in Cancun?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Palette Hotel Batab, Cancun (Downtown Cancun, score 8.5, from €43 a night); best value: Sina Suites Cancun - Adults Only (Hotel Zone, score 8.8, from €72 a night); luxury: Jungala Hotel at VidantaWorld Riviera Maya (Playa del Carmen, score 9, from €432 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Cancun?
+
+Cochinita pibil (slow-roasted pork in achiote) is the signature dish, usually in tacos or tortas.
+
+### How do you get from the airport to central Cancun?
+
+Official airport taxis are expensive but straightforward.
 
 ## Flights and deals
 

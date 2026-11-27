@@ -235,6 +235,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y el telef�
 
 Con tres días en Tromsø, esta es la ruta de la guía: Día 1, El centro y el teleférico; Día 2, Naturaleza y caza de auroras; Día 3, Fiordos. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Dónde alojarse en Tromsø?
+
+Alrededores del centro (Strandvegen y la zona de Skansen). Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Moxy Tromso (Huldervegen 2, nota 8,6, desde 249 € la noche); mejor calidad-precio: Clarion Hotel The Edge (Kaigata 6, nota 8,6, desde 387 € la noche); lujo: The Dock 69 39 by Scandic (Skansegata 7, nota 9,1, desde 373 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Tromsø?
+
+Comer fuera en Noruega duele: un plato principal en restaurante cuesta entre 30 y 45 €, una hamburguesa entre 20 y 25 €, y una cerveza unos 11-13 €.
+
+### ¿Cómo llegar del aeropuerto al centro de Tromsø?
+
+El aeropuerto de Tromsø (Langnes) está a solo 5 km del centro, en la misma isla.
+
+### ¿Cómo moverse por Tromsø?
+
+Dentro de la ciudad se va andando a casi todo.
+
+### ¿Qué lugares imprescindibles ver en Tromsø?
+
+Según esta guía: Catedral del Ártico (Ishavskatedralen); Teleférico Fjellheisen y monte Storsteinen; Polaria; Museo Polar (Polarmuseet); Storgata, la calle principal; Catedral de Tromsø (Tromsø domkirke); Perspektivet Museum y Museo de Arte del Norte de Noruega; Mack Brewery (Mack Ølbryggeri). En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tromsø: https://www.happylowcost.com/destinos/tromso/#chollos

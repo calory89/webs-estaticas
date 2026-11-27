@@ -33,4 +33,8 @@ The cheapest fare usually includes only a small bag under the seat. Check the ba
 
 Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.
 
+### Which hotels in Prague for a trip from Zaragoza?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Prague Star (Prague 1, score 8.4, from €52 a night); best value: Grand Hotel International - Czech Leading Hotels (Prague 6, score 9.2, from €66 a night); luxury: Old Royal Post Boutique Hotel & Premium Suites (Lesser Quarter (Mala Strana), score 9.6, from €82 a night). The nightly price is indicative and changes with the dates.
+
 Fares change by the hour: check the live price on the original page before booking.

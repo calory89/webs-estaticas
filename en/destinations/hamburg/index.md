@@ -127,7 +127,7 @@ Inside the city, the HVV network ties together U-Bahn, S-Bahn, buses and ferries
 
 Many of the best things here cost nothing: the Plaza, the ferry rides on a transport ticket, the Speicherstadt walks and the Alster paths.
 
-## FAQs
+## FAQ about Hamburg
 
 ### Is Hamburg worth visiting for a weekend?
 
@@ -164,6 +164,30 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Rathaus, Jungfernst
 ### What to do in Hamburg in 3 days?
 
 With three days in Hamburg, this is the guide's route: Day 1, Rathaus, Jungfernstieg, Kontorhaus District and Chilehaus; Day 2, Michel, Landungsbrücken, the Old Elbe Tunnel, ferry 62, then dinner and drinks in St; Day 3, Schanzenviertel in the morning, Miniatur Wunderland or Planten un Blomen after lunch. The table above has the full plan for each day.
+
+### When is the best time to visit Hamburg?
+
+May to September is the best window: long days, outdoor terraces, and highs around 20 to 24°C.
+
+### Where to stay in Hamburg?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: CAB20 (St. Georg, score 8.5, from €56 a night); best value: Superbude Hamburg St Pauli (Altona, score 8.8, from €91 a night); luxury: Fairmont Hotel Vier Jahreszeiten (Hamburg City Center (New Town), score 9.5, from €531 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Hamburg?
+
+The signature quick bite is the Fischbrötchen, a bread roll with herring, smoked salmon or crab.
+
+### How do you get from the airport to central Hamburg?
+
+Hamburg Airport (HAM) is connected by the S1 line, which goes straight to the Hauptbahnhof in roughly 25 minutes.
+
+### How do you get around Hamburg?
+
+Day tickets are inexpensive and the Hamburg Card bundles transport with museum discounts.
+
+### What are the must-see places in Hamburg?
+
+According to this guide: Elbphilharmonie and its Plaza; Speicherstadt and HafenCity; Miniatur Wunderland; Landungsbrücken and the Old Elbe Tunnel; St. Michaelis (the Michel); Kontorhaus District and Chilehaus; Rathaus and the Alster; Reeperbahn and St. Pauli. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

@@ -95,7 +95,7 @@ Dentro de la ciudad, la mayoría de las visitas se hacen a pie o en bici. El met
 
 Estos importes son orientativos y cambian según la temporada. La moneda es la corona danesa, y casi todo se paga con tarjeta, así que apenas necesitarás efectivo.
 
-## Preguntas frecuentes
+## Preguntas frecuentes sobre Copenhague
 
 ### ¿Es Copenhague muy cara?
 
@@ -136,6 +136,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Ny
 ### ¿Qué hacer en Copenhague en 3 días?
 
 Con tres días en Copenhague, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Barrios y puerto; Día 3, Museos o excursión. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Dónde alojarse en Copenhague?
+
+Nørrebro: más local, con buena comida de barrio, algo más barato y con muy buena conexión en bici. Los 3 hoteles mejor valorados por huéspedes reales según top3hotels.com son económico: Wakeup Copenhagen - Borgergade (Copenhagen, nota 8,0, desde 81 € la noche); mejor calidad-precio: Kanalhuset (Christianshavn, nota 9,4, desde 207 € la noche); lujo: 1 Hotel Copenhagen (Copenhagen, nota 9,1, desde 301 € la noche). El precio por noche es orientativo y cambia con las fechas.
+
+### ¿Qué comer en Copenhague?
+
+Para ahorrar, prueba los puestos de pølser (salchichas) en la calle, que son baratos, o el bocadillo de flæskesteg, de cerdo asado con costra.
+
+### ¿Cómo llegar del aeropuerto al centro de Copenhague?
+
+El aeropuerto de Kastrup (CPH) está muy bien conectado.
+
+### ¿Cómo moverse por Copenhague?
+
+El metro M2 va al centro en unos 15 minutos, y funciona las 24 horas.
 
 ### ¿Es caro viajar a Copenhague?
 

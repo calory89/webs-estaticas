@@ -254,6 +254,22 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La bahía. Mañana: e
 
 Con cuatro días en Sídney, esta es la ruta de la guía: Día 1, La bahía; Día 2, Costa este; Día 3, Ferris y Manly; Día 4, Blue Mountains. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Qué comer en Sídney?
+
+Sídney no tiene un gran plato propio, pero come muy bien gracias a la inmigración asiática y mediterránea.
+
+### ¿Cómo llegar del aeropuerto al centro de Sídney?
+
+El aeropuerto de Sídney (SYD) está a unos 10 km del centro.
+
+### ¿Cómo moverse por Sídney?
+
+Para moverte, el sistema Opal integra trenes, metro, buses, tranvía y ferris.
+
+### ¿Qué lugares imprescindibles ver en Sídney?
+
+Según esta guía: Ópera de Sídney; Harbour Bridge; Circular Quay y The Rocks; Royal Botanic Garden y Mrs Macquarie's Chair; Art Gallery of New South Wales; Paseo costero de Bondi a Coogee; Bondi Beach; Ferry a Manly. En la sección "Qué ver" tienes cada uno explicado.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sídney: https://www.happylowcost.com/destinos/sidney/#chollos

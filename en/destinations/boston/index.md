@@ -249,6 +249,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Freedom Trail, Nort
 
 With three days in Boston, this is the guide's route: Day 1, Freedom Trail, North End and Charlestown; Day 2, Back Bay, museums and Fenway; Day 3, Cambridge and the water. The table above has the full plan for each day.
 
+### Where to stay in Boston?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: The Revolution Hotel (South End, score 8.5, from €162 a night); best value: Hyatt Place Boston/Seaport District (South Boston, score 8.9, from €198 a night); luxury: The Langham, Boston (Financial District, score 9.2, from €786 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Boston?
+
+For dessert, try Boston cream pie at the Omni Parker House, where it was invented, and a cannoli in the North End.
+
+### How do you get around Boston?
+
+You can tap a contactless bank card or phone at the gates.
+
+### What are the must-see places in Boston?
+
+According to this guide: The Freedom Trail; Boston Common and the Public Garden; Beacon Hill; The North End; Charlestown: USS Constitution and Bunker Hill; Isabella Stewart Gardner Museum; Museum of Fine Arts; Boston Public Library and Copley Square. Each one is explained in the "What to see" section.
+
 ## Flights and deals
 
 - Flight deals to Boston: https://www.happylowcost.com/en/destinations/boston/#deals

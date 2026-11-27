@@ -86,7 +86,7 @@ Within the city, Habana Vieja and parts of Centro Habana are best on foot. For l
 
 These figures are approximate. Cuba's currency situation is unusual, with official and informal rates that differ. Bring enough hard cash, usually euros or US dollars, since foreign bank cards often do not work.
 
-## FAQs
+## FAQ about Havana
 
 ### Do I need a visa for Cuba?
 
@@ -127,6 +127,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Habana Vieja on foo
 ### What to do in Havana in 4 days?
 
 With four days in Havana, this is the guide's route: Day 1, Habana Vieja on foot: the four main plazas, lunch in a paladar; Day 2, Morning at the Cementerio de Colón, then Plaza de la Revolución; Day 3, Cross the bay to La Cabaña and El Morro, then Regla; Day 4, Day trip to Viñales, or a slow morning in Centro Habana. The table above has the full plan for each day.
+
+### When is the best time to visit Havana?
+
+The dry season, from November to April, is the best time: warm days, lower humidity and the sea calm enough for beaches.
+
+### Where to stay in Havana?
+
+Centro Habana is rougher and cheaper, with more local life.
+
+### How do you get from the airport to central Havana?
+
+José Martí International Airport sits roughly 15 km south of the centre.
+
+### How do you get around Havana?
+
+Within the city, Habana Vieja and parts of Centro Habana are best on foot.
 
 ## Flights and deals
 

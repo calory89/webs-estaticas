@@ -126,7 +126,7 @@ Within the city, Uber and Careem are the best tools. They cost little by Western
 
 Entry tickets for foreigners have gone up in recent years and are priced separately from local rates, so check current costs before you go. Carry small notes for tips, as baksheesh is part of daily life.
 
-## FAQ
+## FAQ about Cairo
 
 ### Is Cairo safe for tourists?
 
@@ -163,6 +163,26 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Giza plateau at ope
 ### What to do in Cairo in 4 days?
 
 With four days in Cairo, this is the guide's route: Day 1, Giza plateau at opening time, then the Grand Egyptian Museum in the afternoon; Day 2, The Citadel, Sultan Hassan, then Al-Muizz Street and Khan el-Khalili at dusk; Day 3, Egyptian Museum or the Civilization Museum, Coptic Cairo, felucca at sunset; Day 4, Saqqara and Dahshur with a driver, back in time for dinner. The table above has the full plan for each day.
+
+### Where to stay in Cairo?
+
+It is the easiest area for first-timers and has plenty of mid-range hotels and apartments. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Locanda Pyramids Hotel (Giza, score 8.3, from €20 a night); best value: Royal Hotel (Downtown Cairo, score 9.1, from €44 a night); luxury: Flower Pyramids Inn (Giza, score 8.8, from €49 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Cairo?
+
+Start with koshary, the national dish: rice, lentils, macaroni and chickpeas topped with fried onions and a spicy tomato sauce.
+
+### How do you get from the airport to central Cairo?
+
+Cairo International Airport (CAI) is about 20 to 25 km from the centre.
+
+### How do you get around Cairo?
+
+The metro is fast, cheap and useful on Line 1 and Line 2 for Downtown, Coptic Cairo and Giza.
+
+### What are the must-see places in Cairo?
+
+According to this guide: The Pyramids of Giza and the Sphinx; Grand Egyptian Museum; Egyptian Museum in Tahrir; Islamic Cairo and Al-Muizz Street; Khan el-Khalili; The Citadel of Saladin; Coptic Cairo; Saqqara and Dahshur. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

@@ -126,7 +126,7 @@ In town, the city centre is walkable, though hilly in places. Metro Lines 1 and 
 
 Pizza is among the best-value meals in Italy, often under ten euros. Archaeological sites and museums are the main extra cost.
 
-## FAQs
+## FAQ about Naples
 
 ### Is Naples safe for tourists?
 
@@ -163,6 +163,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Spaccanapoli, Cappe
 ### What to do in Naples in 4 days?
 
 With four days in Naples, this is the guide's route: Day 1, Spaccanapoli, Cappella Sansevero, Duomo, Santa Chiara, then pizza on Via dei Tribunali; Day 2, MANN in the morning, then Via Toledo, Galleria Umberto I, Plebiscito and the Royal Palace; Day 3, Pompeii or Herculaneum by train. Herculaneum is smaller and better preserved; Day 4, (optional). The table above has the full plan for each day.
+
+### Where to stay in Naples?
+
+Centro Storico: the most atmospheric option, with everything on foot. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: Hotel Nettuno (Naples Historical Centre, score 8.1, from €82 a night); best value: Prêtáloger Verdi 18 (Plebiscito, score 9.3, from €142 a night); luxury: ROMEO Napoli (Port of Naples, score 8.5, from €639 a night). The nightly price is indicative and changes with the dates.
+
+### How do you get from the airport to central Naples?
+
+Naples Capodichino airport is close to the centre.
+
+### How do you get around Naples?
+
+In town, the city centre is walkable, though hilly in places.
+
+### What are the must-see places in Naples?
+
+According to this guide: Centro Storico and Spaccanapoli; Cappella Sansevero; Museo Archeologico Nazionale (MANN); Napoli Sotterranea; Duomo and Santa Chiara; Piazza del Plebiscito, Royal Palace and Teatro San Carlo; Castel dell'Ovo and the seafront; Certosa di San Martino and Castel Sant'Elmo. Each one is explained in the "What to see" section.
 
 ## Flights and deals
 

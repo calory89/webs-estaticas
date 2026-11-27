@@ -88,7 +88,7 @@ A quick safety note: keep your phone out of sight on the street, leave valuables
 
 Cristo and Sugarloaf tickets are the main extras, and both cost noticeably more than a typical lunch. Prices shift with the exchange rate, so check close to your trip.
 
-## Frequently asked questions
+## FAQ about Rio de Janeiro
 
 ### Is Rio de Janeiro safe for tourists?
 
@@ -127,6 +127,22 @@ With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, walk Ipanem
 ### What to do in Rio de Janeiro in 4 days?
 
 With four days in Rio de Janeiro, this is the guide's route: Day 1, Arrive, walk Ipanema, sunset at Arpoador, dinner in Ipanema or Leblon; Day 2, Cristo first thing, Jardim Botânico or Parque Lage, then the Lagoa in the evening; Day 3, Centro in the morning, lunch at a traditional bar, Santa Teresa, then samba in Lapa; Day 4, Beach morning in Copacabana, Sugarloaf at golden hour, farewell caipirinha in Urca. The table above has the full plan for each day.
+
+### Where to stay in Rio de Janeiro?
+
+The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: ibis Copacabana Posto 2 (Zona Sul, score 8.3, from €64 a night); best value: Vila Galé Rio de Janeiro (Lapa, score 8.7, from €76 a night); luxury: Copacabana Palace, A Belmond Hotel, Rio de Janeiro (Zona Sul, score 9.5, from €857 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Rio de Janeiro?
+
+On Saturdays, feijoada, the black bean and pork stew with farofa and orange slices, is the dish to order.
+
+### How do you get from the airport to central Rio de Janeiro?
+
+Options are app-based rides (Uber and 99 both work), regular taxis from official counters, or airport buses serving Zona Sul and Centro.
+
+### How do you get around Rio de Janeiro?
+
+In town, the metro is clean, cheap and reliable.
 
 ## Flights and deals
 

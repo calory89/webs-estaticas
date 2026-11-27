@@ -93,7 +93,7 @@ Once in town, the centre is walkable. The metro has four lines (M1 to M4); the l
 
 Széchenyi entry is roughly €25 to €30, and a Parliament tour is cheaper for EU citizens. A pint of beer in a local bar is often €2 to €3. Always pay in forints; euro exchange booths near tourist spots give poor rates.
 
-## FAQs
+## FAQ about Budapest
 
 ### Is Budapest safe for tourists?
 
@@ -115,10 +115,6 @@ Széchenyi for the experience, Gellért for the architecture, Rudas for the view
 
 Yes, Budapest tap water is safe and tastes fine.
 
-### How much is a cheap flight to Budapest?
-
-Today the cheapest deal we have to Budapest is €59 return from Madrid. Fares change by the hour: check the live price on the deal page.
-
 ### Is Budapest worth visiting?
 
 For the traveller who wrote this guide, yes: Budapest is two cities facing each other across the Danube: hilly, quiet Buda and flat, busy Pest. 3 days are enough for the essentials. Budget: Budget: around €40 to €60 (dorm bed, street food, public transport).
@@ -138,6 +134,26 @@ With three days in Budapest, this is the guide's route: Day 1, Buda; Day 2, Pest
 ### What to see in Hungary in 3 days?
 
 With three days in Hungary, this guide suggests staying in Budapest and following its route: Day 1, Buda; Day 2, Pest; Day 3, City Park.
+
+### When is the best time to visit Budapest?
+
+April to June and September to October are the best months: mild days, terraces open, no real heat.
+
+### Where to stay in Budapest?
+
+District V (Belváros-Lipótváros): central and walkable, close to the Parliament and the river. The 3 hotels with the best real guest scores, according to top3hotels.com, are budget: AnVa House (Budapest, score 8.0, from €55 a night); best value: Damas Suites Budapest (Budapest, score 9.4, from €144 a night); luxury: Aria Hotel Budapest by Library Hotel Collection (Budapest, score 9.6, from €373 a night). The nightly price is indicative and changes with the dates.
+
+### What to eat in Budapest?
+
+Try lángos, deep-fried dough with sour cream and cheese.
+
+### How do you get from the airport to central Budapest?
+
+Budapest Ferenc Liszt International Airport (BUD) is about 16 km from the centre.
+
+### How do you get around Budapest?
+
+Alternatively, the 200E goes to the Kőbánya-Kispest metro stop.
 
 ## Flights and deals
 

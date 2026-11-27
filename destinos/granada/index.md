@@ -234,6 +234,26 @@ Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Alhambra. Mañana:
 
 Con tres días en Granada, esta es la ruta de la guía: Día 1, La Alhambra; Día 2, Albaicín y Sacromonte; Día 3, Centro y monasterios. En la tabla de arriba tienes el plan completo de cada día.
 
+### ¿Cuál es la mejor época para viajar a Granada?
+
+La mejor época es primavera (marzo a mayo) y otoño (octubre y noviembre): temperaturas agradables y los jardines del Generalife en su mejor momento.
+
+### ¿Qué comer en Granada?
+
+Habas con jamón: el plato granadino por excelencia, mejor en primavera.
+
+### ¿Cómo llegar del aeropuerto al centro de Granada?
+
+El aeropuerto Federico García Lorca Granada-Jaén está a unos 15 km.
+
+### ¿Cómo moverse por Granada?
+
+Dentro de la ciudad casi todo se hace andando.
+
+### ¿Qué lugares imprescindibles ver en Granada?
+
+Según esta guía: La Alhambra y el Generalife; Palacio de Carlos V y Museo de la Alhambra; El Albaicín; Mirador de San Nicolás; Carrera del Darro y Paseo de los Tristes; Sacromonte; Catedral y Capilla Real; Alcaicería y Corral del Carbón. En la sección "Qué ver" tienes cada uno explicado.
+
 ### ¿Es caro viajar a Granada?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 55 a 70 € por persona y día, y en el nivel "medio", unos unos 100 a 140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
