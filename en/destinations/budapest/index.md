@@ -131,6 +131,14 @@ If you only have one day, follow day 1 of this itinerary: Buda. Castle District 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Buda. Castle District in the morning, Fisherman's Bastion, lunch on the hill, then Gellért Hill and a late-afternoon soak at Rudas or Gellért. Day 2: Pest. Parliament, the Shoes on the Danube, St Stephen's Basilica, lunch at the Great Market Hall, the Dohány Street Synagogue and an evening in the Jewish Quarter.
 
+### What to do in Budapest in 3 days?
+
+With three days in Budapest, this is the guide's route: Day 1, Buda; Day 2, Pest; Day 3, City Park. The table above has the full plan for each day.
+
+### What to see in Hungary in 3 days?
+
+With three days in Hungary, this guide suggests staying in Budapest and following its route: Day 1, Buda; Day 2, Pest; Day 3, City Park.
+
 ## Flights and deals
 
 - Flight deals to Budapest: https://www.happylowcost.com/en/destinations/budapest/#deals

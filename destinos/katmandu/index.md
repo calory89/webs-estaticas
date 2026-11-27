@@ -240,6 +240,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Katmandú histórica. Mañan
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Katmandú histórica. Mañana: sal de Thamel andando hacia el sur por Asan Tole e Indra Chowk, con parada en Kathesimbhu. Día 2: Pashupatinath y Boudhanath. Mañana: Narayanhiti Palace Museum y paseo por el Garden of Dreams.
 
+### ¿Qué hacer en Katmandú en 4 días?
+
+Con cuatro días en Katmandú, esta es la ruta de la guía: Día 1, Katmandú histórica; Día 2, Pashupatinath y Boudhanath; Día 3, Patan; Día 4, Bhaktapur y Changu Narayan. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Katmandú?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 25-35 € por persona y día, y en el nivel "presupuesto medio", unos 60-90 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

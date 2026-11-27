@@ -229,6 +229,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Puerto, Bryggen y Fløyen. M
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Puerto, Bryggen y Fløyen. Mañana: empieza temprano en Bryggen, antes de los cruceros. Día 2: Museos, Nordnes y Ulriken. Mañana: KODE (si llueve, tómatelo con calma) y vuelta por Byparken y el lago.
 
+### ¿Qué hacer en Bergen en 3 días?
+
+Con tres días en Bergen, esta es la ruta de la guía: Día 1, Puerto, Bryggen y Fløyen; Día 2, Museos, Nordnes y Ulriken; Día 3, Fiordo. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bergen: https://www.happylowcost.com/destinos/bergen/#chollos

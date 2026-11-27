@@ -136,6 +136,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Union Square, Chinatown, Nor
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Union Square, Chinatown, North Beach y puesta de sol en Coit Tower o Telegraph Hill. Día 2: Alcatraz a primera hora, Fisherman's Wharf, Pier 39 y paseo hasta el Ferry Building.
 
+### ¿Qué hacer en San Francisco en 4 días?
+
+Con cuatro días en San Francisco, esta es la ruta de la guía: Día 1, Union Square, Chinatown, North Beach y puesta de sol en Coit Tower o Telegraph Hill; Día 2, Alcatraz a primera hora, Fisherman's Wharf, Pier 39 y paseo hasta el Ferry Building; Día 3, Presidio, Golden Gate Bridge, Sausalito en bici y ferry de vuelta; Día 4, Mission District, Dolores Park, Alamo Square, Haight-Ashbury y Golden Gate Park. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Francisco: https://www.happylowcost.com/destinos/san-francisco/#chollos

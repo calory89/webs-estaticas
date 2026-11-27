@@ -245,6 +245,10 @@ If you only have one day, follow day 1 of this itinerary: Balboa Park and downto
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Balboa Park and downtown. Morning: Get to the San Diego Zoo when it opens and stay until lunch. Day 2: La Jolla and the beaches. Morning: Go to La Jolla Cove early for the sea lions, then kayak the caves or walk to La Jolla Shores.
 
+### What to do in San Diego in 3 days?
+
+With three days in San Diego, this is the guide's route: Day 1, Balboa Park and downtown; Day 2, La Jolla and the beaches; Day 3, The bay, Coronado and Point Loma. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to San Diego: https://www.happylowcost.com/en/destinations/san-diego/#deals

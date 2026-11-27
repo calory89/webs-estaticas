@@ -241,6 +241,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Las Palmas. Mañana: Vegueta
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Las Palmas. Mañana: Vegueta, catedral con torre y Casa de Colón. Día 2: El norte. Mañana: Arucas (iglesia y destilería) y Firgas, con su paseo de azulejos y cascada artificial.
 
+### ¿Qué hacer en Gran Canaria en 6 días?
+
+Con seis días en Gran Canaria, esta es la ruta de la guía: Día 1, Las Palmas; Día 2, El norte; Día 3, Agaete y Tamadaba; Día 4, La cumbre; Día 5, Guayadeque y Fataga; Día 6, El sur. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Gran Canaria?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

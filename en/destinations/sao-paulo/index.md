@@ -254,6 +254,10 @@ If you only have one day, follow day 1 of this itinerary: Avenida Paulista and J
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Avenida Paulista and Jardins. Morning: MASP when it opens, then a coffee and a walk through Parque Trianon across the avenue. Day 2: Historic centre and Luz. Morning: metro to Sé, see the cathedral and Pátio do Colégio, then climb Farol Santander.
 
+### What to do in Sao Paulo in 4 days?
+
+With four days in Sao Paulo, this is the guide's route: Day 1, Avenida Paulista and Jardins; Day 2, Historic centre and Luz; Day 3, Ibirapuera, Vila Madalena and Pinheiros; Day 4, Liberdade and football. The table above has the full plan for each day.
+
 ### Is Sao Paulo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "comfort" level at about €250+. Flights are extra: this page shows real fares checked by Happy Low Cost.

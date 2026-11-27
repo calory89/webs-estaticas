@@ -160,6 +160,10 @@ If you only have one day, follow day 1 of this itinerary: Old city. Hagia Sophia
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old city. Hagia Sophia at opening, Blue Mosque, Basilica Cistern, Topkapı in the afternoon, sunset around Sultanahmet park. Day 2: Markets and Golden Horn. Süleymaniye, the Spice Bazaar, Grand Bazaar, then Balat in the afternoon and a fish sandwich by the water.
 
+### What to do in Istanbul in 4 days?
+
+With four days in Istanbul, this is the guide's route: Day 1, Old city; Day 2, Markets and Golden Horn; Day 3, Beyoğlu and Bosphorus; Day 4, Dolmabahçe, a Bosphorus ferry trip, or simply a slow day in Moda. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Istanbul: https://www.happylowcost.com/en/destinations/istanbul/#deals

@@ -233,6 +233,10 @@ If you only have one day, follow day 1 of this itinerary: Old town and fortress.
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and fortress. Morning: start the wall climb as soon as it opens, with water and a snack from the market. Day 2: Perast and the bay. Morning: take the bus to Perast (about 25 minutes).
 
+### What to do in Kotor in 3 days?
+
+With three days in Kotor, this is the guide's route: Day 1, Old town and fortress; Day 2, Perast and the bay; Day 3, Lovćen and Njeguši. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Kotor: https://www.happylowcost.com/en/destinations/kotor/#deals

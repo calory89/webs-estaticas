@@ -123,6 +123,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Duomo (terrazas a primera ho
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Duomo (terrazas a primera hora), Galleria, paseo hasta La Scala y Brera. Día 2: Última Cena (con reserva), Sant'Ambrogio, Castello Sforzesco y Parco Sempione.
 
+### ¿Qué hacer en Milán en 3 días?
+
+Con tres días en Milán, esta es la ruta de la guía: Día 1, Duomo (terrazas a primera hora), Galleria, paseo hasta La Scala y Brera; Día 2, Última Cena (con reserva), Sant'Ambrogio, Castello Sforzesco y Parco Sempione; Día 3, San Lorenzo, Navigli y Darsena de día, Porta Nuova por la tarde. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Milán: https://www.happylowcost.com/destinos/milan/#chollos

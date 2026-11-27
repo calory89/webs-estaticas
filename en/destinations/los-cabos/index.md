@@ -223,6 +223,10 @@ If you only have one day, follow day 1 of this itinerary: Cabo San Lucas and El 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Cabo San Lucas and El Arco. Morning: early panga to El Arco and Lover's Beach, then a couple of hours on the sand. Day 2: The Corridor bays. Morning: head to Santa María by 9am to snorkel.
 
+### What to do in Los Cabos in 5 days?
+
+With five days in Los Cabos, this is the guide's route: Day 1, Cabo San Lucas and El Arco; Day 2, The Corridor bays; Day 3, San José del Cabo; Day 4, Todos Santos and Cerritos; Day 5, Cabo Pulmo or La Paz. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Los Cabos: https://www.happylowcost.com/en/destinations/los-cabos/#deals

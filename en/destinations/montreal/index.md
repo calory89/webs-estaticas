@@ -237,6 +237,10 @@ If you only have one day, follow day 1 of this itinerary: Old Montreal and the O
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Montreal and the Old Port. Morning: start at Place d'Armes (metro), visit Notre-Dame Basilica early, then walk Rue Saint-Paul and Place Jacques-Cartier. Day 2: Mile End, the Plateau and Mount Royal. Morning: bagels in Mile End, coffee on Rue Bernard, then walk south down Boulevard Saint-Laurent for the murals.
 
+### What to do in Montreal in 3 days?
+
+With three days in Montreal, this is the guide's route: Day 1, Old Montreal and the Old Port; Day 2, Mile End, the Plateau and Mount Royal; Day 3, Markets, art and the east or west end. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Montreal: https://www.happylowcost.com/en/destinations/montreal/#deals

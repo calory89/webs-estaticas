@@ -118,6 +118,10 @@ If you only have one day, follow day 1 of this itinerary: Arrive, swim at Playa 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, swim at Playa Langosta or Tortugas, dinner downtown near Parque de las Palapas. Day 2: Ferry to Isla Mujeres early, golf cart, Playa Norte, back in the late afternoon.
 
+### What to do in Cancun in 4 days?
+
+With four days in Cancun, this is the guide's route: Day 1, Arrive, swim at Playa Langosta or Tortugas, dinner downtown near Parque de las Palapas; Day 2, Ferry to Isla Mujeres early, golf cart, Playa Norte, back in the late afternoon; Day 3, Day trip to Chichén Itzá (about 2.5 hours each way) or Tulum; Day 4, Morning at El Rey and Playa Delfines, a slow lunch, then the airport. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cancun: https://www.happylowcost.com/en/destinations/cancun/#deals

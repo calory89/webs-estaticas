@@ -241,6 +241,10 @@ If you only have one day, follow day 1 of this itinerary: Ibiza Town. Morning: c
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Ibiza Town. Morning: coffee and an ensaimada around Vara de Rey, the elegant boulevard of the new town, then walk the Marina port district. Day 2: The south and Ses Salines. Morning: beach early at Ses Salines, walk the salt flats.
 
+### What to do in Ibiza in 5 days?
+
+With five days in Ibiza, this is the guide's route: Day 1, Ibiza Town; Day 2, The south and Ses Salines; Day 3, The west coast and Es Vedrà; Day 4, The north and the villages; Day 5, Formentera. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Ibiza: https://www.happylowcost.com/en/destinations/ibiza/#deals

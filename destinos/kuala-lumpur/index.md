@@ -224,6 +224,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y Chinatow
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Chinatown. Mañana: empieza en la plaza Merdeka y el edificio Sultan Abdul Samad, cruza a la Masjid Jamek y baja andando hasta Central Market. Día 2: Batu Caves y la zona del lago. Mañana: tren KTM Komuter temprano desde KL Sentral a Batu Caves (30 minutos).
 
+### ¿Qué hacer en Kuala Lumpur en 3 días?
+
+Con tres días en Kuala Lumpur, esta es la ruta de la guía: Día 1, Centro histórico y Chinatown; Día 2, Batu Caves y la zona del lago; Día 3, KL moderno. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Kuala Lumpur?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

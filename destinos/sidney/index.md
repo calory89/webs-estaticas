@@ -250,6 +250,10 @@ En la ciudad no los verás sueltos. Para verlos, el Taronga Zoo o el Featherdale
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La bahía. Mañana: empieza en Mrs Macquarie's Chair temprano y atraviesa el jardín botánico hasta la Ópera. Día 2: Costa este. Mañana: bus o tren a Bondi y paseo costero hasta Coogee, con baño en Bronte o Clovelly.
 
+### ¿Qué hacer en Sídney en 4 días?
+
+Con cuatro días en Sídney, esta es la ruta de la guía: Día 1, La bahía; Día 2, Costa este; Día 3, Ferris y Manly; Día 4, Blue Mountains. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sídney: https://www.happylowcost.com/destinos/sidney/#chollos

@@ -149,6 +149,10 @@ If you only have one day, follow day 1 of this itinerary: Valletta on foot, with
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Valletta on foot, with the Upper Barrakka at noon and a harbour ferry in the evening. Day 2: Mdina and Rabat in the morning, Dingli Cliffs at sunset.
 
+### What to do in Malta in 5 days?
+
+With five days in Malta, this is the guide's route: Day 1, Valletta on foot, with the Upper Barrakka at noon and a harbour ferry in the evening; Day 2, Mdina and Rabat in the morning, Dingli Cliffs at sunset; Day 3, Three Cities, then Marsaxlokk for a late fish lunch; Day 4, Gozo by ferry, covering Victoria, the Citadel and a swim; Day 5, Temples in the morning, beach in the afternoon, or Comino if the weather is calm. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Malta: https://www.happylowcost.com/en/destinations/malta/#deals

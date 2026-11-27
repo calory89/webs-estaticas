@@ -244,6 +244,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Palma histórica. Mañana: c
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Palma histórica. Mañana: catedral a primera hora, luego Palacio de la Almudaina por fuera y casco antiguo hacia los Baños Árabes. Día 2: Bellver, arte y bahía. Mañana: subida al Castell de Bellver desde El Terreno.
 
+### ¿Qué hacer en Mallorca en 6 días?
+
+Con seis días en Mallorca, esta es la ruta de la guía: Día 1, Palma histórica; Día 2, Bellver, arte y bahía; Día 3, Sóller y Fornalutx; Día 4, Costa de la Tramuntana; Día 5, Norte de la isla; Día 6, Calas del sur. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Mallorca: https://www.happylowcost.com/destinos/mallorca/#chollos

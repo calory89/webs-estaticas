@@ -225,6 +225,10 @@ If you only have one day, follow day 1 of this itinerary: The city on foot. Morn
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The city on foot. Morning : start at the Polar Museum on the harbour, then walk Storgata past the cathedral. Day 2: The big excursion. Morning : dog sledding or a reindeer visit (most leave early with hotel pickup), or a whale safari in early winter, which takes the whole day.
 
+### What to do in Tromso in 3 days?
+
+With three days in Tromso, this is the guide's route: Day 1, The city on foot; Day 2, The big excursion; Day 3, The south of the island and the spare night. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Tromso: https://www.happylowcost.com/en/destinations/tromso/#deals

@@ -160,6 +160,10 @@ If you only have one day, follow day 1 of this itinerary: Giza plateau at openin
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Giza plateau at opening time, then the Grand Egyptian Museum in the afternoon. Day 2: The Citadel, Sultan Hassan, then Al-Muizz Street and Khan el-Khalili at dusk.
 
+### What to do in Cairo in 4 days?
+
+With four days in Cairo, this is the guide's route: Day 1, Giza plateau at opening time, then the Grand Egyptian Museum in the afternoon; Day 2, The Citadel, Sultan Hassan, then Al-Muizz Street and Khan el-Khalili at dusk; Day 3, Egyptian Museum or the Civilization Museum, Coptic Cairo, felucca at sunset; Day 4, Saqqara and Dahshur with a driver, back in time for dinner. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cairo: https://www.happylowcost.com/en/destinations/cairo/#deals

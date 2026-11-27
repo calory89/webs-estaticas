@@ -131,6 +131,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Pest. Mercado Central por la
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Pest. Mercado Central por la mañana, Zapatos en el Danubio, Parlamento (visita reservada), Basílica y cena en el barrio judío. Día 2: Buda. Bastión de los Pescadores y Matías temprano, Castillo, comida en Buda, subida a la Colina Gellért y termas Gellért o Rudas al final.
 
+### ¿Qué hacer en Budapest en 3 días?
+
+Con tres días en Budapest, esta es la ruta de la guía: Día 1, Pest; Día 2, Buda; Día 3, Andrássy. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Hungría en 3 días?
+
+Con tres días en Hungría, esta guía propone quedarse en Budapest y seguir su ruta: Día 1, Pest; Día 2, Buda; Día 3, Andrássy.
+
 ### ¿Es caro viajar a Budapest?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -124,6 +124,10 @@ If you only have one day, follow day 1 of this itinerary: Centro Histórico. Zó
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Centro Histórico. Zócalo, cathedral, Templo Mayor, Bellas Artes, then dinner nearby. Day 2: Chapultepec. Anthropology museum in the morning, the castle after lunch, and an evening in Polanco or Condesa.
 
+### What to do in Mexico City in 4 days?
+
+With four days in Mexico City, this is the guide's route: Day 1, Centro Histórico; Day 2, Chapultepec; Day 3, South; Day 4, Teotihuacán. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Mexico City: https://www.happylowcost.com/en/destinations/mexico-city/#deals

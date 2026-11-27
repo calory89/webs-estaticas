@@ -240,6 +240,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Isla de Hong Kong. Mañana: 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Isla de Hong Kong. Mañana: desayuno de dim sum en Central, tranvía hacia Sheung Wan, Man Mo y Hollywood Road. Día 2: Kowloon. Mañana: Wong Tai Sin y Chi Lin Nunnery. Tarde: Sham Shui Po para comer barato y después los mercados de Mong Kok.
 
+### ¿Qué hacer en Hong Kong en 4 días?
+
+Con cuatro días en Hong Kong, esta es la ruta de la guía: Día 1, Isla de Hong Kong; Día 2, Kowloon; Día 3, Lantau; Día 4, Naturaleza o isla. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Hong Kong: https://www.happylowcost.com/destinos/hong-kong/#chollos

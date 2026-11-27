@@ -169,6 +169,10 @@ If you only have one day, follow day 1 of this itinerary: (old centre). Stephans
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: (old centre). Stephansdom, Graben, Hofburg, a long coffee break, then a tram loop around the Ringstrasse. Day 2: (palaces). Schönbrunn early, then Naschmarkt for a quick bite, Karlskirche, and the Belvedere in the afternoon light.
 
+### What to do in Vienna in 3 days?
+
+With three days in Vienna, this is the guide's route: Day 1, (old centre); Day 2, (palaces); Day 3, (museums and play). The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Vienna: https://www.happylowcost.com/en/destinations/vienna/#deals

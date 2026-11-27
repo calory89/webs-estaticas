@@ -16,6 +16,7 @@ SPAIN = ['Madrid', 'Barcelona', 'Málaga', 'Valencia', 'Sevilla', 'Bilbao', 'Ali
 # salia de Malaga, y la pagina llevaba 304 impresiones y cero clics.
 EN_HOME = ['London', 'Manchester', 'Dublin', 'New York', 'Toronto', 'Sydney', 'Singapore', 'Dubai',
            'Londres', 'Dublín', 'Nueva York', 'Sídney', 'Singapur', 'Dubái']
+UKIE = {'Londres', 'London', 'Manchester', 'Dublín', 'Dublin', 'Edimburgo', 'Edinburgh', 'Glasgow', 'Bristol', 'Birmingham', 'Liverpool', 'Leeds', 'Newcastle', 'Belfast', 'Cork', 'Shannon'}
 PREF = ['Madrid', 'Barcelona', 'Londres', 'París', 'Nueva York', 'Málaga', 'Valencia', 'Ámsterdam', 'Berlín', 'Milán', 'Roma', 'Lisboa', 'Dublín', 'Toronto', 'Sídney', 'Singapur', 'Dubái']
 MES_ES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 MES_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -262,6 +263,7 @@ def dest_page(d, lst, meses, en, en_slug, guide):
         # ciudad de habla inglesa mas barata, y el mas barato de todos se dice
         # igualmente, con su ciudad, en la misma frase.
         en_lst = [r for r in lst if r['origin'] in EN_HOME]
+        uk_lst = [r for r in lst if r['origin'] in UKIE]  # ronda 9: "from the UK or Ireland" solo con salidas de Reino Unido e Irlanda (antes salían Dubái o Singapur)
         r1 = en_lst[0] if en_lst else r0
         f1 = r1.get('facts') or {}
         # Search Console (28 días): las consultas que traen estos hubs son "flight deals to X" (Sri Lanka, Stockholm, Munich, Krakow, en posición 4-9)
@@ -271,12 +273,17 @@ def dest_page(d, lst, meses, en, en_slug, guide):
                 + (f'The usual price across the {len(lst)} cities we track is about {int(statistics.median(meds))} € (median).' if meds else ''))
         qas = [(f'How much is a flight to {name}?', f'From {oname(r1)}, the cheapest return we found was {r1["price_from"]} € (search on {fd(f1.get("consultado"), True)}). ' + (f'Across all {len(lst)} cities we track the cheapest was {r0["price_from"]} € from {oname(r0)}, and the usual price is about {int(statistics.median(meds))} € (median).' if meds else '')),
                (f'Which city has the cheapest flights to {name}?', 'Cheapest departures: ' + ', '.join(f'{oname(r)} ({r["price_from"]} €)' for r in lst[:3]) + '.')]
-        if en_lst:
-            qas.append((f'How much is a flight to {name} from the UK or Ireland?', 'Cheapest from the English-speaking cities we track: ' + ', '.join(f'{oname(r)} ({r["price_from"]} €)' for r in en_lst[:4]) + '.'))
+        if uk_lst:
+            qas.append((f'How much is a flight to {name} from the UK or Ireland?', 'Cheapest from the UK and Irish cities we track: ' + ', '.join(f'{oname(r)} ({r["price_from"]} €)' for r in uk_lst[:4]) + '.'))
         if direct:
             qas.append((f'Are there direct flights to {name}?', f'Yes, we found direct flights from {len(direct)} of the cities we track: ' + ', '.join(oname(r) for r in direct[:8]) + ('…' if len(direct) > 8 else '.')))
         else:
             qas.append((f'Are there direct flights to {name}?', f'In our last search, none of the {len(lst)} cities we track had a direct flight in the cheapest options; all had at least one stop.'))
+        # ronda 9: "flights to mauritius from ireland", "cheapest flights from the uk to ponta delgada": directos desde Reino Unido e Irlanda
+        if uk_lst:
+            dr_en = [r for r in uk_lst if (r.get('facts') or {}).get('escalas_ida') == 0]
+            qas.append((f'Are there direct flights to {name} from the UK or Ireland?', (f'Yes: in our latest search the cheapest option was a direct flight from ' + ', '.join(f'{oname(r)} ({r["price_from"]} €' + (f', {(r.get("facts") or {}).get("aerolinea")}' if (r.get('facts') or {}).get('aerolinea') else '') + ')' for r in dr_en[:4]) + '.') if dr_en else
+                        (f'In our latest search, the cheapest options from ' + ', '.join(oname(r) for r in uk_lst[:4]) + f' to {name} all had at least one stop. A direct flight may exist but cost more.')))
         if best:
             qas.append((f'What is the cheapest month to fly to {name}?', f'From {oname(best[0])}, the cheapest month in the next six months is {mname(best[1], True)}, at {best[2]} € return.'))
         crumbs = [('Home', '/en/'), ('Flight routes', '/en/flights/'), (f'Flights to {name}', None)]
@@ -292,6 +299,11 @@ def dest_page(d, lst, meses, en, en_slug, guide):
             qas.append((f'¿Hay vuelos directos a {name}?', f'Sí, encontramos vuelos directos desde {len(direct)} de las ciudades que vigilamos: ' + ', '.join(r['origin'] for r in direct[:8]) + ('…' if len(direct) > 8 else '.')))
         else:
             qas.append((f'¿Hay vuelos directos a {name}?', f'En nuestra última consulta, ninguna de las {len(lst)} ciudades que vigilamos tenía vuelo directo entre las opciones más baratas: todas hacían al menos una escala.'))
+        # ronda 9: "vuelos directos a brujas desde españa", "vuelos directos a chipre": directos desde ciudades españolas
+        if es_lst:
+            dr_es = [r for r in es_lst if (r.get('facts') or {}).get('escalas_ida') == 0]
+            qas.append((f'¿Hay vuelos directos a {name} desde España?', (f'Sí: en nuestra última consulta la opción más barata era un vuelo directo desde ' + ', '.join(f'{r["origin"]} ({r["price_from"]} €' + (f', {(r.get("facts") or {}).get("aerolinea")}' if (r.get('facts') or {}).get('aerolinea') else '') + ')' for r in dr_es[:5]) + '.') if dr_es else
+                        (f'En nuestra última consulta, las opciones más baratas desde ' + ', '.join(r['origin'] for r in es_lst[:4]) + f' a {name} hacían al menos una escala. Puede haber vuelo directo, pero más caro.')))
         if best:
             qas.append((f'¿Cuál es el mes más barato para volar a {name}?', f'Desde {oname(best[0])}, el mes más barato de los próximos seis es {mname(best[1])}, con {best[2]} € ida y vuelta.'))
         crumbs = [('Inicio', '/'), ('Rutas de vuelos', '/vuelos/'), (f'Vuelos a {name}', None)]
@@ -365,11 +377,12 @@ def dest_page(d, lst, meses, en, en_slug, guide):
     # respuesta rápida: 2-3 frases citables con precio, directos y mes más barato
     if en:
         lm1 = local_money(r1['origin'], r1['price_from'])
-        qa_ = (f'Cheapest return flight to {name} we found from {oname(r1)}: {r1["price_from"]} €' + (f' (about {lm1})' if lm1 else '') + f' (search on {fd(f1.get("consultado"), True)})' + (f'; from any city, {r0["price_from"]} € from {oname(r0)}. ' if r1 is not r0 else '. ')
+        # ronda 9: "lowest fares to new york" 19 impr. pos. 13,4: la frase con la que preguntan
+        qa_ = (f'Lowest fares to {name} right now. Cheapest return flight we found from {oname(r1)}: {r1["price_from"]} €' + (f' (about {lm1})' if lm1 else '') + f' (search on {fd(f1.get("consultado"), True)})' + (f'; from any city, {r0["price_from"]} € from {oname(r0)}. ' if r1 is not r0 else '. ')
                + (f'Direct flights from {len(direct)} of the {len(lst)} cities we track. ' if direct else f'None of the {len(lst)} cities we track had a direct flight among the cheapest options. ')
                + (f'Cheapest month: {mname(best[1], True)} ({best[2]} € from {oname(best[0])}).' if best else ''))
     else:
-        qa_ = (f'El vuelo de ida y vuelta más barato a {name} que encontramos: {r0["price_from"]} € desde {oname(r0)} (consulta del {fd(f0.get("consultado"))}). '
+        qa_ = (f'Los vuelos más baratos a {name} ahora mismo. El de ida y vuelta más barato que encontramos: {r0["price_from"]} € desde {oname(r0)} (consulta del {fd(f0.get("consultado"))}). '
                + (f'Hay vuelo directo desde {len(direct)} de las {len(lst)} ciudades que vigilamos. ' if direct else f'Ninguna de las {len(lst)} ciudades que vigilamos tenía vuelo directo entre las opciones más baratas. ')
                + (f'Mes más barato: {mname(best[1])} ({best[2]} € desde {oname(best[0])}).' if best else ''))
     hot = (f'<a class="hlc-btn t" href="{e(G.BK.with_dates(_hotel(r0["dest"], en), f0.get("ejemplo_ida"), f0.get("ejemplo_vuelta")))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="precios_hotel" data-tvcity="{e(name)}">'
@@ -437,6 +450,11 @@ def orig_extra_faq(o, lst, en, oname, dname):
         qas.append((T(f'¿Qué ciudades europeas tienen los vuelos más baratos desde {oname}?', f'Which European cities have the cheapest flights from {oname}?'),
                     ', '.join(f'{dname(r)} ({r["price_from"]} €' + (T(', directo', ', direct') if (r.get('facts') or {}).get('escalas_ida') == 0 else '') + ')' for r in eu)
                     + T(', ida y vuelta, en nuestra última consulta.', ' return, in our latest search.')))
+    # ronda 9: "cheapest destinations from dubai" (pos. 15,4): los destinos más baratos, con directo si lo es
+    if len(ok) >= 4:
+        qas.append((T(f'¿Cuáles son los destinos más baratos desde {oname}?', f'What are the cheapest destinations from {oname}?'),
+                    T('Los vuelos de ida y vuelta más baratos en nuestra última consulta: ', 'The cheapest return flights in our latest search: ')
+                    + ', '.join(f'{dname(r)} ({r["price_from"]} €' + (T(', directo', ', direct') if (r.get('facts') or {}).get('escalas_ida') == 0 else '') + ')' for r in ok[:6]) + '.'))
     # aerolíneas low cost y sus destinos
     bya = {}
     for r in ok:

@@ -199,6 +199,10 @@ If you only have one day, follow day 1 of this itinerary: Beach, kasbah and port
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Beach, kasbah and port. Morning: walk the promenade from the southern hotels to the marina, with a coffee stop on the way. Day 2: Souk, fake medina and hammam. Morning: Souk El Had, ideally before 11am when it's cooler and less crowded (remember it's closed Mondays).
 
+### What to do in Agadir in 3 days?
+
+With three days in Agadir, this is the guide's route: Day 1, Beach, kasbah and port; Day 2, Souk, fake medina and hammam; Day 3, Taghazout and the coast. The table above has the full plan for each day.
+
 ### Is Agadir expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €35-50 per person per day and the "comfortable" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.

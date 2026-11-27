@@ -246,6 +246,10 @@ If you only have one day, follow day 1 of this itinerary: Castle, Umeda and Namb
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Castle, Umeda and Namba at night. Morning: Osaka Castle park early, before tour groups. Day 2: South Osaka, old and new. Morning: the Hankai tram or Nankai line to Sumiyoshi Taisha, then back towards Tennoji for Shitennoji.
 
+### What to do in Osaka in 3 days?
+
+With three days in Osaka, this is the guide's route: Day 1, Castle, Umeda and Namba at night; Day 2, South Osaka, old and new; Day 3, Nara day trip. The table above has the full plan for each day.
+
 ### Is Osaka expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.

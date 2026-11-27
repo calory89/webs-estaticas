@@ -226,6 +226,10 @@ Sí. Es el teatro romano más completo que vas a ver, y si coincide con el festi
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Kaleiçi y el atardecer. Mañana: entra por la Puerta de Adriano, baja por Kaleiçi, para en el museo Suna e İnan Kıraç y sigue hasta la torre Hıdırlık. Día 2: Museo, Konyaaltı y teleférico. Mañana: tranvía nostálgico hasta el Museo de Antalya.
 
+### ¿Qué hacer en Antalya en 4 días?
+
+Con cuatro días en Antalya, esta es la ruta de la guía: Día 1, Kaleiçi y el atardecer; Día 2, Museo, Konyaaltı y teleférico; Día 3, Perge, Aspendos y Side; Día 4, Termessos o Düden y hammam. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Antalya?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -229,6 +229,10 @@ If you only have one day, follow day 1 of this itinerary: Corralejo and the dune
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Corralejo and the dunes. Morning: settle into Corralejo and walk the seafront along Avenida Marítima. Day 2: Isla de Lobos. Morning: early ferry to Lobos, walk to the lighthouse and climb the caldera.
 
+### What to do in Fuerteventura in 6 days?
+
+With six days in Fuerteventura, this is the guide's route: Day 1, Corralejo and the dunes; Day 2, Isla de Lobos; Day 3, The northwest; Day 4, Centre of the island; Day 5, Sotavento; Day 6, Cofete. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Fuerteventura: https://www.happylowcost.com/en/destinations/fuerteventura/#deals

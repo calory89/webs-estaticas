@@ -227,6 +227,10 @@ Para quien escribió esta guía, sí: Santiago de Compostela es una ciudad peque
 
 Si solo tienes un día, haz el día 1 de esta ruta: Catedral, zona vieja y Alameda. Mañana: entra en la catedral a primera hora, luego el Pórtico da Gloria y el museo si has reservado.
 
+### ¿Qué hacer en Santiago de Compostela en 2 días?
+
+Con dos días en Santiago de Compostela, esta es la ruta de la guía: Día 1, Catedral, zona vieja y Alameda; Día 2, Mercado, Bonaval y Sar. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Santiago de Compostela?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

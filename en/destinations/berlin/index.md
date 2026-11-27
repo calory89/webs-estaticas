@@ -148,6 +148,10 @@ If you only have one day, follow day 1 of this itinerary: Brandenburg Gate, Reic
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Brandenburg Gate, Reichstag, Holocaust Memorial, Topography of Terror, then Gendarmenmarkt and an evening around Hackescher Markt. Day 2: Museum Island in the morning, Berlin Cathedral, lunch in Mitte, then Bernauer Strasse and Mauerpark (on Sunday) in the afternoon.
 
+### What to do in Berlin in 4 days?
+
+With four days in Berlin, this is the guide's route: Day 1, Brandenburg Gate, Reichstag, Holocaust Memorial, Topography of Terror; Day 2, Museum Island in the morning, Berlin Cathedral, lunch in Mitte; Day 3, East Side Gallery, a wander through Kreuzberg, a döner, canal-side drinks; Day 4, Tempelhofer Feld, the Jewish Museum, or Charlottenburg Palace, and a slow final afternoon. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Berlin: https://www.happylowcost.com/en/destinations/berlin/#deals

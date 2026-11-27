@@ -161,6 +161,10 @@ If you only have one day, follow day 1 of this itinerary: Rathaus, Jungfernstieg
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Rathaus, Jungfernstieg, Kontorhaus District and Chilehaus, then Speicherstadt and Elbphilharmonie at sunset. Day 2: Michel, Landungsbrücken, the Old Elbe Tunnel, ferry 62, then dinner and drinks in St.
 
+### What to do in Hamburg in 3 days?
+
+With three days in Hamburg, this is the guide's route: Day 1, Rathaus, Jungfernstieg, Kontorhaus District and Chilehaus; Day 2, Michel, Landungsbrücken, the Old Elbe Tunnel, ferry 62, then dinner and drinks in St; Day 3, Schanzenviertel in the morning, Miniatur Wunderland or Planten un Blomen after lunch. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Hamburg: https://www.happylowcost.com/en/destinations/hamburg/#deals

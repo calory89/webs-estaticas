@@ -154,6 +154,34 @@ def airport_km(a, b):
     return int(round(km / 10.0) * 10) if km >= 50 else 0
 
 
+def _norm9(t):
+    import unicodedata as _u
+    return re.sub(r'[^a-z]+', ' ', _u.normalize('NFD', t or '').encode('ascii', 'ignore').decode().lower()).strip()
+
+
+def no_rail(a, b):
+    """Ronda 9: "trains from brussels to bogota" (14 impr. pos. 7,6), "trains from dublin/stockholm to bogota": solo decimos que no hay tren
+    cuando la ruta cruza un océano sin duda posible (un extremo en América y el otro no, o un extremo en Oceanía y el otro no)."""
+    pa, pb = _AP.get((a or '').upper()), _AP.get((b or '').upper())
+    if not pa or not pb:
+        return False
+    am = lambda p_: p_[1] < -30
+    oc = lambda p_: p_[1] > 110 and p_[0] < -10
+    return am(pa) != am(pb) or oc(pa) != oc(pb)
+
+
+def dest_airport(iata, dest, alts=()):
+    """Ronda 9: "vuelos sevilla ponta delgada", "vuelos directos bilbao alghero", "cheapest flights from the uk to ponta delgada", "vuelos a callao":
+    nombre de la ciudad del aeropuerto cuando no coincide con el destino (islas y regiones)."""
+    pa = _AP.get((iata or '').upper())
+    if not pa or not pa[2]:
+        return ''
+    c = _norm9(pa[2])
+    if not c or c in _norm9(dest) or _norm9(dest) in c or any(c in _norm9(a_) for a_ in alts):
+        return ''
+    return pa[2]
+
+
 def flight_ld(r, f, dest, url):
     """Ronda 7 (#78): el vuelo de la ruta como schema Flight con su aerolínea (Airline) y aeropuertos IATA."""
     x = {"@type": "Flight", "@id": url + '#flight', "name": f"{r['origin']} - {dest}",
@@ -290,6 +318,21 @@ def page(r, lang, others):
                       f'Unos {kmt} km en línea recta entre los aeropuertos de {r["origin_iata"]} y {r["dest_iata"]}.')}]
     if _cty_t and _cty_t.lower() not in dest.lower():
         qa_parts.append(f'{dest} is in {"the " if _cty_t in R8_THE else ""}{_cty_t}.' if en else f'{dest} está en {_cty_t}.')
+    # ronda 9: aeropuerto de llegada cuando no se llama como el destino (Azores → Ponta Delgada, Cerdeña → Alghero/Cagliari)
+    _apt = dest_airport(r.get('dest_iata'), dest, R8_ALIAS.get(dest, ()))
+    if _apt:
+        qa_parts.append(f'You fly into {_apt} airport ({r["dest_iata"]}).' if en else f'Se vuela al aeropuerto de {_apt} ({r["dest_iata"]}).')
+        if not re.search(r'airport|aeropuerto', ' '.join(q.get('q', '') for q in c.get('faq', [])).lower()):
+            c['faq'] = list(c.get('faq', [])) + [{
+                'q': (f'Which airport do you fly into for {dest}?' if en else f'¿A qué aeropuerto se vuela para ir a {dest}?'),
+                'a': (f'The cheapest flight from {o_name} we found lands at {_apt} ({r["dest_iata"]}).' if en else
+                      f'El vuelo más barato desde {r["origin"]} que encontramos llega al aeropuerto de {_apt} ({r["dest_iata"]}).')}]
+    # ronda 9: "trains from brussels to bogota": no hay tren cuando la ruta cruza un océano
+    if no_rail(r.get('origin_iata'), r.get('dest_iata')) and not re.search(r'\btren|\btrain', ' '.join(q.get('q', '') for q in c.get('faq', [])).lower()):
+        c['faq'] = list(c.get('faq', [])) + [{
+            'q': (f'Is there a train from {o_name} to {dest}?' if en else f'¿Se puede ir en tren de {r["origin"]} a {dest}?'),
+            'a': (f'No. There is an ocean between {o_name} and {dest}' + (f' (about {kmt} km between the airports)' if km_ else '') + ', so the practical way to get there is by plane.' if en else
+                  f'No. Entre {r["origin"]} y {dest} hay un océano' + (f' (unos {kmt} km entre los aeropuertos)' if km_ else '') + ', así que la forma práctica de llegar es en avión.')}]
     if _alts:
         qa_parts.append(' '.join((f'{nm_} is also known as {" or ".join(al_)}.' if en else f'{nm_} también se conoce como {" o ".join(al_)}.') for nm_, al_ in _alts))
     # "¿qué aerolíneas vuelan de barcelona a varsovia y cuál ofrece la mejor relación calidad-precio?" 20 impr. pos. 6,6: respuesta con nuestros datos
@@ -388,7 +431,7 @@ def page(r, lang, others):
 <div class="deal-cta"><a class="price-tag" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_precio">{e(f.get("precio_desde_ida_y_vuelta_eur"))} € <small>{L("ida y vuelta", "return")}</small></a><span class="price-was">{L("Lo normal", "Typical price")}: {e(f.get("mediana_ida_y_vuelta_eur"))} €</span><a class="hlc-btn" href="{e(flight_link(f, "en-gb" if en else "es"))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="ruta_vuelo" style="min-height:56px;font-size:17px">{L("Ver vuelos y fechas ✈️", "See flights and dates ✈️")}</a></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt">{f'<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px"><b>{L("Respuesta rápida:", "Quick answer:")}</b> {e(quick)}</p>' if quick else ''}{hub_html}{lead_html}<p><strong>{e(c.get("intro", ""))}</strong></p>{body(c)}
+<article class="txt"><h2 class="qa-h">{e(L(f"Vuelo {r_o} {dest}: precio de hoy", f"{o_name} to {dest} flight: today's price"))}</h2>{f'<p class="qa" style="background:#FFF6E0;border-left:4px solid #FFC531;padding:12px 14px;border-radius:10px"><b>{L("Respuesta rápida:", "Quick answer:")}</b> {e(quick)}</p>' if quick else ''}{hub_html}{lead_html}<p><strong>{e(c.get("intro", ""))}</strong></p>{body(c)}
 <p class="credit">{L("Foto: Wikimedia Commons. Precios de ida y vuelta en clase turista para 1 adulto, consultados en Kiwi.com en la fecha indicada; pueden cambiar.", "Photo: Wikimedia Commons. Return economy fares for 1 adult, checked on Kiwi.com on the date shown; they can change.")}</p></article>
 <aside class="deal-card">
 <div class="facts">
@@ -500,15 +543,22 @@ def write_md_and_feeds(rows):
                   "price_from_eur_return": r['price_from'], "usual_price_eur_return": f.get('mediana_ida_y_vuelta_eur'), "stops_cheapest": f.get('escalas_ida'),
                   "airline_cheapest": f.get('aerolinea'), "checked_on": (f.get('consultado') or '')[:10], "cheapest_month": bm[0] if bm else None,
                   "cheapest_month_price_eur": bm[1] if bm else None, "url": url}
+            # ronda 9: aeropuerto de llegada cuando no se llama como el destino (Azores → Ponta Delgada) y distancia entre aeropuertos
+            _ap = dest_airport(r.get('dest_iata'), dest, R8_ALIAS.get(dest, ()))
+            if _ap:
+                it["destination_airport_city"] = _ap
+            _km = airport_km(r.get('origin_iata'), r.get('dest_iata'))
+            if _km:
+                it["distance_km"] = _km
             items.append(it)
             st = f.get('escalas_ida')
             st_t = ('' if st is None else (('nonstop' if st == 0 else f'{st} stop(s)') if en else ('directo' if st == 0 else f'{st} escala(s)')))
             if en:
                 md.append(f"- [{org} → {dest}]({url}): from {r['price_from']} € return" + (f", usual {f.get('mediana_ida_y_vuelta_eur')} €" if f.get('mediana_ida_y_vuelta_eur') else '')
-                          + (f", {st_t}" if st_t else '') + (f", {f.get('aerolinea')}" if f.get('aerolinea') else '') + (f", cheapest month {bm[0]} ({bm[1]} €)" if bm else '') + f", checked {it['checked_on']}")
+                          + (f", {st_t}" if st_t else '') + (f", {f.get('aerolinea')}" if f.get('aerolinea') else '') + (f", cheapest month {bm[0]} ({bm[1]} €)" if bm else '') + (f", airport {_ap}" if _ap else '') + (f", {_km:,} km" if _km else '') + f", checked {it['checked_on']}")
             else:
                 md.append(f"- [{org} → {dest}]({url}): desde {r['price_from']} € ida y vuelta" + (f", lo habitual {f.get('mediana_ida_y_vuelta_eur')} €" if f.get('mediana_ida_y_vuelta_eur') else '')
-                          + (f", {st_t}" if st_t else '') + (f", {f.get('aerolinea')}" if f.get('aerolinea') else '') + (f", mes más barato {bm[0]} ({bm[1]} €)" if bm else '') + f", consultado el {it['checked_on']}")
+                          + (f", {st_t}" if st_t else '') + (f", {f.get('aerolinea')}" if f.get('aerolinea') else '') + (f", mes más barato {bm[0]} ({bm[1]} €)" if bm else '') + (f", aeropuerto de {_ap}" if _ap else '') + (f", {_km:,} km".replace(',', '.') if _km else '') + f", consultado el {it['checked_on']}")
         lic = "https://creativecommons.org/licenses/by/4.0/"
         feed = {"name": "Happy Low Cost flight routes" if en else "Rutas de vuelos de Happy Low Cost", "publisher": "Happy Low Cost", "home": SITE + ('/en/flights/' if en else '/vuelos/'),
                 "license": lic, "attribution": "Happy Low Cost (happylowcost.com)", "generated": now,

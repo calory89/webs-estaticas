@@ -252,6 +252,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: San José. Mañana: Teatro N
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: San José. Mañana: Teatro Nacional y Museo del Oro Precolombino. Día 2: A La Fortuna. Mañana: 3 horas de viaje en coche o shuttle.
 
+### ¿Qué hacer en Costa Rica en 7 días?
+
+Con siete días en Costa Rica, esta es la ruta de la guía: Día 1, San José; Día 2, A La Fortuna; Día 3, Arenal; Día 4, Río Celeste; Día 5, Monteverde; Día 6, Monteverde y bajada a Manuel Antonio; Día 7, Manuel Antonio. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Costa Rica?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 140-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

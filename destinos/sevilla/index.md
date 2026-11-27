@@ -242,6 +242,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El Sevilla clásico. Mañana
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Sevilla clásico. Mañana: Real Alcázar en el primer turno, luego paseo por el barrio de Santa Cruz y los Jardines de Murillo. Día 2: Catedral, centro y Triana. Mañana: Catedral y Giralda a primera hora, Archivo de Indias y paseo por el Arenal hasta la Torre del Oro.
 
+### ¿Qué hacer en Sevilla en 3 días?
+
+Con tres días en Sevilla, esta es la ruta de la guía: Día 1, El Sevilla clásico; Día 2, Catedral, centro y Triana; Día 3, El Sevilla de los sevillanos. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sevilla: https://www.happylowcost.com/destinos/sevilla/#chollos

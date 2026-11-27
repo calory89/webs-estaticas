@@ -120,6 +120,10 @@ Sí, es la mejor opción. Hay trenes frecuentes y el trayecto dura aproximadamen
 
 Con 2 días ves lo esencial de Brujas sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Qué hacer en Brujas en 2 días?
+
+Con dos días en Brujas, esta es la ruta de la guía: Día 1, El casco histórico; Día 2, Museos, cerveza y muralla. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Brujas: https://www.happylowcost.com/destinos/brujas/#chollos

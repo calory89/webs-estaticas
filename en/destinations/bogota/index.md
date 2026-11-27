@@ -125,6 +125,10 @@ If you only have one day, follow day 1 of this itinerary: Morning in La Candelar
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Morning in La Candelaria, then Plaza de Bolívar, Museo del Oro and Museo Botero. Day 2: Monserrate early, then Paloquemao market for lunch, afternoon on the street art route, evening in Chapinero.
 
+### What to do in Bogota in 3 days?
+
+With three days in Bogota, this is the guide's route: Day 1, Morning in La Candelaria, then Plaza de Bolívar, Museo del Oro and Museo Botero; Day 2, Monserrate early, then Paloquemao market for lunch, afternoon on the street art route; Day 3, Ciclovía if it is Sunday, otherwise Quinta de Bolívar and the botanical garden. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bogota: https://www.happylowcost.com/en/destinations/bogota/#deals

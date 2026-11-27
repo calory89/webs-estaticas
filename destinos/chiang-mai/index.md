@@ -238,6 +238,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo. Mañana : Wat
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo. Mañana : Wat Phra Singh a primera hora, luego Wat Chedi Luang y el Centro Cultural. Día 2: Doi Suthep y Nimman. Mañana : Grab o songthaew hasta Doi Suthep temprano.
 
+### ¿Qué hacer en Chiang Mai en 4 días?
+
+Con cuatro días en Chiang Mai, esta es la ruta de la guía: Día 1, Casco antiguo; Día 2, Doi Suthep y Nimman; Día 3, Mercados, río y templo de plata; Día 4, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Chiang Mai: https://www.happylowcost.com/destinos/chiang-mai/#chollos

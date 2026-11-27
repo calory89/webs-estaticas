@@ -243,6 +243,10 @@ No. La ciudad se recorre a pie y hay tren, bus y catamarán para las excursiones
 
 Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y La Caleta. Mañana: empieza en el Mercado Central para verlo con todo el pescado.
 
+### ¿Qué hacer en Cádiz en 2 días?
+
+Con dos días en Cádiz, esta es la ruta de la guía: Día 1, Casco antiguo y La Caleta; Día 2, Museos, parques y playa. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cádiz: https://www.happylowcost.com/destinos/cadiz/#chollos

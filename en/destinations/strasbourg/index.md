@@ -270,6 +270,10 @@ Easily. Tram D crosses the Rhine to Kehl in about 20 minutes, and Baden-Baden is
 
 If you only have one day, follow day 1 of this itinerary: Cathedral, Petite France and a winstub. Morning: Be at the cathedral when it opens.
 
+### What to do in Strasbourg in 2 days?
+
+With two days in Strasbourg, this is the guide's route: Day 1, Cathedral, Petite France and a winstub; Day 2, Neustadt, Europe and Krutenau. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Strasbourg: https://www.happylowcost.com/en/destinations/strasbourg/#deals

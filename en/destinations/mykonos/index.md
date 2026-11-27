@@ -155,6 +155,10 @@ If you only have one day, follow day 1 of this itinerary: Early walk through Cho
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Early walk through Chora, then Paraportiani, the windmills and lunch. Day 2: Morning ferry to Delos, back by early afternoon.
 
+### What to do in Mykonos in 3 days?
+
+With three days in Mykonos, this is the guide's route: Day 1, Early walk through Chora, then Paraportiani, the windmills and lunch; Day 2, Morning ferry to Delos, back by early afternoon; Day 3, Rent a car or take a water taxi to the south coast, pick one or two beaches. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Mykonos: https://www.happylowcost.com/en/destinations/mykonos/#deals

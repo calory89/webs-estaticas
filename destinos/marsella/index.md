@@ -241,6 +241,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El puerto, Le Panier y el Mu
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El puerto, Le Panier y el MuCEM. Mañana: empieza temprano en el Vieux-Port con el mercado de pescado, cruza en el Ferry Boat y sube a Le Panier por la Montée des Accoules. Día 2: Notre-Dame, la Corniche y el atardecer. Mañana: pasa por Saint-Victor y Le Four des Navettes y sube a Notre-Dame de la Garde a pie (o en el bus 60).
 
+### ¿Qué hacer en Marsella en 3 días?
+
+Con tres días en Marsella, esta es la ruta de la guía: Día 1, El puerto, Le Panier y el MuCEM; Día 2, Notre-Dame, la Corniche y el atardecer; Día 3, Las calanques o las islas. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Marsella: https://www.happylowcost.com/destinos/marsella/#chollos

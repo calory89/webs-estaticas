@@ -220,6 +220,10 @@ If you only have one day, follow day 1 of this itinerary: The Ancient Town. Morn
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The Ancient Town. Morning: Be on Tran Phu by 6:30am. Walk to the Japanese Covered Bridge, then the Central Market for breakfast, and use your coupons on the Fujian Assembly Hall and Quan Cong Temple before the groups arrive. Day 2: Bikes, villages and the beach. Morning: Cycle through the rice fields to Tra Que, then continue to An Bang Beach for a swim and a seafood lunch.
 
+### What to do in Hoi An in 3 days?
+
+With three days in Hoi An, this is the guide's route: Day 1, The Ancient Town; Day 2, Bikes, villages and the beach; Day 3, My Son or the Marble Mountains. The table above has the full plan for each day.
+
 ### Is Hoi An expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.

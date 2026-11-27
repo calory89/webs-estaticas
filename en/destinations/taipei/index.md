@@ -248,6 +248,14 @@ If you only have one day, follow day 1 of this itinerary: Old Taipei and Xinyi. 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Taipei and Xinyi. Morning: Breakfast at Fuhang Soy Milk, then walk to Chiang Kai-shek Memorial Hall for the changing of the guard. Day 2: Museum, Dadaocheng and Ningxia. Morning: National Palace Museum when it opens.
 
+### What to do in Taipei in 4 days?
+
+With four days in Taipei, this is the guide's route: Day 1, Old Taipei and Xinyi; Day 2, Museum, Dadaocheng and Ningxia; Day 3, Hot springs and mountain tea; Day 4, Jiufen and the northeast coast. The table above has the full plan for each day.
+
+### What to see in Taiwan in 4 days?
+
+With four days in Taiwan, this guide suggests staying in Taipei and following its route: Day 1, Old Taipei and Xinyi; Day 2, Museum, Dadaocheng and Ningxia; Day 3, Hot springs and mountain tea; Day 4, Jiufen and the northeast coast.
+
 ## Flights and deals
 
 - Flight deals to Taipei: https://www.happylowcost.com/en/destinations/taipei/#deals

@@ -208,6 +208,10 @@ El salmorejo, sin discusión, seguido del flamenquín y el rabo de toro. Acompá
 
 Si solo tienes un día, haz el día 1 de esta ruta: Mezquita, Judería y río. Mañana: entra a la Mezquita a primera hora.
 
+### ¿Qué hacer en Córdoba en 2 días?
+
+Con dos días en Córdoba, esta es la ruta de la guía: Día 1, Mezquita, Judería y río; Día 2, Medina Azahara y la Córdoba de los cordobeses. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Córdoba: https://www.happylowcost.com/destinos/cordoba/#chollos

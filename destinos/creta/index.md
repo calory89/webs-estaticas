@@ -149,6 +149,10 @@ La Canea, si buscas ambiente y belleza. Heraclión, si priorizas conexiones, Kno
 
 Para quien escribió esta guía, sí: Creta no es una isla, es casi un país pequeño. Con 7 días ves lo esencial. Presupuesto: Hay casas venecianas convertidas en alojamientos, y alrededor de 60-100 euros la noche en temporada alta.
 
+### ¿Qué hacer en Creta en 7 días?
+
+Con siete días en Creta, esta es la ruta de la guía: Días 1-2, Heraclión; Día 3, Rethymno; Días 4-5, La Canea; Día 6, Samaria o Imbros, según fuerzas; Día 7, Vuelta por el sur (Preveli o Matala) y regreso a Heraclión. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Creta?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos más de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

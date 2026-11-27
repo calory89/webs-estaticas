@@ -255,6 +255,10 @@ If you only have one day, follow day 1 of this itinerary: Lagos and Ponta da Pie
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Lagos and Ponta da Piedade. Morning: Fly into Faro and drive 1 hour west, or take the bus. Day 2: Sagres and the wild west. Morning: Drive to Sagres (35 minutes) and see the fortress, then go to Praia do Beliche or Tonel.
 
+### What to do in The Algarve in 6 days?
+
+With six days in The Algarve, this is the guide's route: Day 1, Lagos and Ponta da Piedade; Day 2, Sagres and the wild west; Day 3, Caves and cliffs; Day 4, Silves and Monchique, then east; Day 5, Tavira and its islands; Day 6, Olhão, Ria Formosa and Faro. The table above has the full plan for each day.
+
 ### Is The Algarve expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-80/day per person per day and the "mid-range" level at about €130-200/day, sharing. Flights are extra: this page shows real fares checked by Happy Low Cost.

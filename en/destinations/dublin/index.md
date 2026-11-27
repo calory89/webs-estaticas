@@ -125,6 +125,14 @@ If you only have one day, follow day 1 of this itinerary: Trinity College at ope
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum, then Dublin Castle and the Chester Beatty. Day 2: Kilmainham Gaol in the morning, Guinness Storehouse after lunch, then dinner in Smithfield or Stoneybatter.
 
+### What to do in Dublin in 3 days?
+
+With three days in Dublin, this is the guide's route: Day 1, Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum; Day 2, Kilmainham Gaol in the morning, Guinness Storehouse after lunch; Day 3, DART to Howth or Dalkey, a long walk and lunch by the water. The table above has the full plan for each day.
+
+### What to see in Ireland in 3 days?
+
+With three days in Ireland, this guide suggests staying in Dublin and following its route: Day 1, Trinity College at opening time, Grafton Street, St Stephen's Green, the National Museum; Day 2, Kilmainham Gaol in the morning, Guinness Storehouse after lunch; Day 3, DART to Howth or Dalkey, a long walk and lunch by the water.
+
 ## Flights and deals
 
 - Flight deals to Dublin: https://www.happylowcost.com/en/destinations/dublin/#deals

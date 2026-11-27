@@ -123,6 +123,10 @@ If you only have one day, follow day 1 of this itinerary: Bab Boujloud, Bou Inan
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Bab Boujloud, Bou Inania, Talaa Kebira, the Nejjarine fountain, Al-Attarine. Day 2: Fes el-Jdid, the palace doors, the Mellah and the Jewish cemetery.
 
+### What to do in Fez in 3 days?
+
+With three days in Fez, this is the guide's route: Day 1, Bab Boujloud, Bou Inania, Talaa Kebira, the Nejjarine fountain, Al-Attarine; Day 2, Fes el-Jdid, the palace doors, the Mellah and the Jewish cemetery; Day 3, A day trip to Volubilis and Meknes. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Fez: https://www.happylowcost.com/en/destinations/fez/#deals

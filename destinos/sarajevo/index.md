@@ -239,6 +239,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El bazar y la ciudad austroh
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El bazar y la ciudad austrohúngara. Mañana: Baščaršija temprano, Sebilj, mezquita de Gazi Husrev-beg y la calle Kazandžiluk. Día 2: La guerra y los miradores. Mañana: Túnel de la Esperanza en taxi o tour (lo más práctico) y vuelta al centro.
 
+### ¿Qué hacer en Sarajevo en 3 días?
+
+Con tres días en Sarajevo, esta es la ruta de la guía: Día 1, El bazar y la ciudad austrohúngara; Día 2, La guerra y los miradores; Día 3, Montaña y museos. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sarajevo: https://www.happylowcost.com/destinos/sarajevo/#chollos

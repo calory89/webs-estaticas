@@ -247,6 +247,10 @@ If you only have one day, follow day 1 of this itinerary: Moorish Malaga and the
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Moorish Malaga and the old town. Morning: Be at the Alcazaba when it opens, then walk or take bus 35 up to Gibralfaro. Day 2: Market, museums, port and beach. Morning: Coffee at Café Central, then Atarazanas market for a mid-morning snack.
 
+### What to do in Malaga in 3 days?
+
+With three days in Malaga, this is the guide's route: Day 1, Moorish Malaga and the old town; Day 2, Market, museums, port and beach; Day 3, Day trip. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Malaga: https://www.happylowcost.com/en/destinations/malaga/#deals

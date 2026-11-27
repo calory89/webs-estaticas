@@ -125,6 +125,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Lo clásico. Acrópolis a pr
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Lo clásico. Acrópolis a primera hora, Museo de la Acrópolis, comida en Koukaki y tarde en el Ágora antigua. Día 2: Centro y miradores. Mañana en el Museo Arqueológico Nacional.
 
+### ¿Qué hacer en Atenas en 3 días?
+
+Con tres días en Atenas, esta es la ruta de la guía: Día 1, Lo clásico; Día 2, Centro y miradores; Día 3, Mercados y escapada. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Atenas: https://www.happylowcost.com/destinos/atenas/#chollos

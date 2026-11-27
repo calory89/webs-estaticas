@@ -142,6 +142,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por la playa 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por la playa de tu zona y cena sencilla. Día 2: Bávaro y El Cortecito, con comida en un comedor de playa.
 
+### ¿Qué hacer en Punta Cana en 6 días?
+
+Con seis días en Punta Cana, esta es la ruta de la guía: Día 1, Llegada, paseo por la playa de tu zona y cena sencilla; Día 2, Bávaro y El Cortecito, con comida en un comedor de playa; Día 3, Excursión a Isla Saona desde Bayahibe, saliendo temprano; Día 4, Macao por la mañana y Ojos Indígenas o Hoyo Azul por la tarde; Día 5, Altos de Chavón y Basílica de Higüey, o descanso sin plan; Día 6, (opcional). En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Punta Cana?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-60 € por persona y día, y en el nivel "todo incluido", unos 120-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

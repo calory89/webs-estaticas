@@ -131,6 +131,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo por la mañana
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel), comida en la zona y tarde por Calea Victoriei hasta Piața Revoluției. Día 2: Visita al Parlamento a primera hora, paseo por Bulevardul Unirii y tarde en el Museo del Campesino.
 
+### ¿Qué hacer en Bucarest en 3 días?
+
+Con tres días en Bucarest, esta es la ruta de la guía: Día 1, Casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel); Día 2, Visita al Parlamento a primera hora; Día 3, Parque Herăstrău con el Museo de la Aldea y Arcul de Triumf. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Rumanía en 3 días?
+
+Con tres días en Rumanía, esta guía propone quedarse en Bucarest y seguir su ruta: Día 1, Casco antiguo por la mañana (Lipscani, Stavropoleos, Cărturești Carusel); Día 2, Visita al Parlamento a primera hora; Día 3, Parque Herăstrău con el Museo de la Aldea y Arcul de Triumf.
+
 ### ¿Es caro viajar a Bucarest?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 euros por persona y día, y en el nivel "holgado", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

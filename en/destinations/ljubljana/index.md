@@ -247,6 +247,14 @@ Only if you'll visit the castle, two or more museums and take the boat ride with
 
 If you only have one day, follow day 1 of this itinerary: Old town, castle and river. Morning: Start at Prešeren Square and the Triple Bridge, then go to the Central Market while it's in full swing.
 
+### What to do in Ljubljana in 2 days?
+
+With two days in Ljubljana, this is the guide's route: Day 1, Old town, castle and river; Day 2, Parks, art and alternative Ljubljana. The table above has the full plan for each day.
+
+### What to see in Slovenia in 2 days?
+
+With two days in Slovenia, this guide suggests staying in Ljubljana and following its route: Day 1, Old town, castle and river; Day 2, Parks, art and alternative Ljubljana.
+
 ## Flights and deals
 
 - Flight deals to Ljubljana: https://www.happylowcost.com/en/destinations/ljubljana/#deals

@@ -162,6 +162,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Art Deco por la mañana, pla
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Art Deco por la mañana, playa de South Beach al mediodía, Lincoln Road y cena por la zona. Día 2: Wynwood a primera hora, comida en Little Havana, tarde de Calle Ocho y música por la noche.
 
+### ¿Qué hacer en Miami en 4 días?
+
+Con cuatro días en Miami, esta es la ruta de la guía: Día 1, Art Deco por la mañana, playa de South Beach al mediodía, Lincoln Road y cena por la zona; Día 2, Wynwood a primera hora, comida en Little Havana, tarde de Calle Ocho y música por la noche; Día 3, Vizcaya, Coconut Grove y Coral Gables; Día 4, Everglades por la mañana y Key Biscayne o playa por la tarde. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Miami?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 100-150 $ por persona y día, y en el nivel "cómodo", unos 400 $ o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

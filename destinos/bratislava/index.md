@@ -229,6 +229,14 @@ Gratis, Slavín y las terrazas del castillo. De pago, el mirador UFO del Puente 
 
 Para quien escribió esta guía, sí: Bratislava es una capital pequeña que mucha gente visita como apéndice de Viena y luego se arrepiente de haberle dado solo una tarde. Con 2 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 50-70 € al día): hostal 25 €, menú del día y cena sencilla 20 €, transporte 5 €, alguna entrada 5-10 €, cervezas 5 €.
 
+### ¿Qué hacer en Bratislava en 2 días?
+
+Con dos días en Bratislava, esta es la ruta de la guía: Día 1, Casco antiguo, castillo y puente; Día 2, Devín, Slavín y Danubio. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Eslovaquia en 2 días?
+
+Con dos días en Eslovaquia, esta guía propone quedarse en Bratislava y seguir su ruta: Día 1, Casco antiguo, castillo y puente; Día 2, Devín, Slavín y Danubio.
+
 ### ¿Es caro viajar a Bratislava?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

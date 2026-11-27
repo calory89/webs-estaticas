@@ -226,6 +226,10 @@ If you only have one day, follow day 1 of this itinerary: Harbour and city. Morn
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Harbour and city. Morning: Start at Mrs Macquarie's Chair early, walk through the Botanic Garden to the Opera House and take the tour. Day 2: Beaches. Morning: Bus to Bondi, a swim and coffee, then the coastal walk to Coogee.
 
+### What to do in Sydney in 4 days?
+
+With four days in Sydney, this is the guide's route: Day 1, Harbour and city; Day 2, Beaches; Day 3, Ferries, Manly and Watsons Bay; Day 4, Blue Mountains or Newtown and the gallery. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Sydney: https://www.happylowcost.com/en/destinations/sydney/#deals

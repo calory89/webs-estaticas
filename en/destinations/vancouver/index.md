@@ -244,6 +244,10 @@ If you only have one day, follow day 1 of this itinerary: Downtown, Stanley Park
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown, Stanley Park and English Bay. Morning: start at Canada Place, walk through Gastown and see the steam clock, then Chinatown and the Sun Yat-Sen garden. Day 2: Granville Island, Kits and UBC. Morning: Aquabus to Granville Island, early market breakfast.
 
+### What to do in Vancouver in 4 days?
+
+With four days in Vancouver, this is the guide's route: Day 1, Downtown, Stanley Park and English Bay; Day 2, Granville Island, Kits and UBC; Day 3, North Shore; Day 4, Day trip. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Vancouver: https://www.happylowcost.com/en/destinations/vancouver/#deals

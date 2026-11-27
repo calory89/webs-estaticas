@@ -127,6 +127,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo temprano, Plaz
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo temprano, Plaza del Castillo, Barbacana y paseo por la Ruta Real hasta Nowy Świat. Día 2: Museo del Levantamiento por la mañana, comida en un bar de leche, POLIN por la tarde y mirador del Palacio de la Cultura al final.
 
+### ¿Qué hacer en Varsovia en 3 días?
+
+Con tres días en Varsovia, esta es la ruta de la guía: Día 1, Casco antiguo temprano, Plaza del Castillo; Día 2, Museo del Levantamiento por la mañana, comida en un bar de leche; Día 3, Łazienki y, después, Praga: Koneser, patios, algún mural y cena allí. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Varsovia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 euros por persona y día, y en el nivel "cómodo", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -242,6 +242,10 @@ If you only have one day, follow day 1 of this itinerary: Ciutadella. Morning: W
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Ciutadella. Morning: Walk the old town: the cathedral, Ses Voltes, Plaça des Born and the market. Day 2: Southwest coves. Morning: Take an early bus or drive to Macarella, then walk to Macarelleta.
 
+### What to do in Menorca in 5 days?
+
+With five days in Menorca, this is the guide's route: Day 1, Ciutadella; Day 2, Southwest coves; Day 3, North coast; Day 4, Centre and the move east; Day 5, Mahón and the southeast. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Menorca: https://www.happylowcost.com/en/destinations/menorca/#deals

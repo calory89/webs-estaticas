@@ -127,6 +127,10 @@ Hoy el chollo más barato que tenemos a Chipre cuesta 121 € ida y vuelta desde
 
 Para quien escribió esta guía, sí: Chipre te da en una semana lo que otros sitios reparten en tres países: playas de agua clara, mosaicos romanos, monasterios bizantinos pintados y montañas con pueblos de piedra. Con 7 días ves lo esencial. Presupuesto: Orientativamente, una habitación sencilla o un apartahotel económico ronda los 45 a 80 euros por noche en temporada media, y sube bastante en verano.
 
+### ¿Qué hacer en Chipre en 7 días?
+
+Con siete días en Chipre, esta es la ruta de la guía: Días 1-2, Lárnaca, Lefkara y, si hay tiempo, Nicosia; Día 3, Limasol, Kourion y Kolossi; Día 4, Troodos, iglesias pintadas y Omodos. Duerme en la montaña si te apetece fresco; Días 5-6, Pafos, Petra tou Romiou y Akamas; Día 7, Vuelta hacia Lárnaca o desvío por Ayia Napa y Cabo Greco. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Chipre: https://www.happylowcost.com/destinos/chipre/#chollos

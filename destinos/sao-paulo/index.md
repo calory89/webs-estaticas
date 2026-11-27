@@ -252,6 +252,10 @@ Para quien escribió esta guía, sí: São Paulo no es bonita a primera vista. E
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Luz. Mañana: empieza en la Pinacoteca y la Estação da Luz (metro Luz). Día 2: Paulista e Ibirapuera. Mañana: Parque Ibirapuera, con el Museu Afro Brasil y los edificios de Niemeyer.
 
+### ¿Qué hacer en São Paulo en 3 días?
+
+Con tres días en São Paulo, esta es la ruta de la guía: Día 1, Centro histórico y Luz; Día 2, Paulista e Ibirapuera; Día 3, Liberdade, Pompeia y Vila Madalena. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a São Paulo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

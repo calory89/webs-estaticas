@@ -161,6 +161,10 @@ If you only have one day, follow day 1 of this itinerary: Castle at opening, the
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Castle at opening, then walk the Royal Mile down to Holyrood. Day 2: Climb Arthur's Seat in the morning, then spend the afternoon at the National Museum and Greyfriars.
 
+### What to do in Edinburgh in 3 days?
+
+With three days in Edinburgh, this is the guide's route: Day 1, Castle at opening, then walk the Royal Mile down to Holyrood; Day 2, Climb Arthur's Seat in the morning; Day 3, Walk the Water of Leith from Dean Village to Stockbridge. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Edinburgh: https://www.happylowcost.com/en/destinations/edinburgh/#deals

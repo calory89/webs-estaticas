@@ -127,6 +127,10 @@ If you only have one day, follow day 1 of this itinerary: Old city. Grand Palace
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old city. Grand Palace in the morning, Wat Pho, then the ferry to Wat Arun at sunset. Day 2: Modern Bangkok. Jim Thompson House, then Siam's malls and the BTS elevated walkways, then Lumphini Park in the late afternoon.
 
+### What to do in Bangkok in 3 days?
+
+With three days in Bangkok, this is the guide's route: Day 1, Old city; Day 2, Modern Bangkok; Day 3, Local side. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bangkok: https://www.happylowcost.com/en/destinations/bangkok/#deals

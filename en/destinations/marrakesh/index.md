@@ -121,6 +121,10 @@ If you only have one day, follow day 1 of this itinerary: Koutoubia, then the Je
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Koutoubia, then the Jemaa el-Fna area, the souks in the afternoon, and dinner on the square at dusk. Day 2: Early start at the Saadian Tombs and Bahia Palace, lunch in the Kasbah area, El Badi in the afternoon, then a hammam to recover.
 
+### What to do in Marrakesh in 3 days?
+
+With three days in Marrakesh, this is the guide's route: Day 1, Koutoubia, then the Jemaa el-Fna area, the souks in the afternoon; Day 2, Early start at the Saadian Tombs and Bahia Palace, lunch in the Kasbah area; Day 3, Majorelle and the YSL museum in the morning, lunch in Gueliz. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Marrakesh: https://www.happylowcost.com/en/destinations/marrakesh/#deals

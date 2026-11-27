@@ -137,6 +137,10 @@ If you only have one day, follow day 1 of this itinerary: Arrive and settle in t
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive and settle in the south. Walk the coast, eat fish at Los Abrigos or Los Cristianos. Day 2: Teide at sunrise or early morning, then a slow afternoon in Vilaflor or La Orotava on the way down.
 
+### What to do in Tenerife in 7 days?
+
+With seven days in Tenerife, this is the guide's route: Day 1, Arrive and settle in the south. Walk the coast, eat fish at Los Abrigos or Los Cristianos; Day 2, Teide at sunrise or early morning; Day 3, Northwest loop: Masca viewpoint, Garachico, Icod de los Vinos; Day 4, Anaga hike, then La Laguna in the evening; Days 5-7, (if you have them). The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Tenerife: https://www.happylowcost.com/en/destinations/tenerife/#deals

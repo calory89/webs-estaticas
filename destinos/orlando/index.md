@@ -261,6 +261,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Universal (Islands of Advent
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Universal (Islands of Adventure y Universal Studios). Mañana: Islands of Adventure a la apertura, Hagrid's y VelociCoaster primero. Día 2: Magic Kingdom. Mañana: entra pronto y haz las montañas rusas.
 
+### ¿Qué hacer en Orlando en 5 días?
+
+Con cinco días en Orlando, esta es la ruta de la guía: Día 1, Universal (Islands of Adventure y Universal Studios); Día 2, Magic Kingdom; Día 3, Winter Park, Leu Gardens y centro; Día 4, EPCOT o Hollywood Studios; Día 5, Kennedy Space Center y Cocoa Beach. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Orlando: https://www.happylowcost.com/destinos/orlando/#chollos

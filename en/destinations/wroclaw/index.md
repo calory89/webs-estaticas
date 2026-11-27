@@ -233,6 +233,10 @@ You can see the Rynek, the university and Cathedral Island in one long day. You 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town and Cathedral Island. Morning: start at the Rynek before 9am, then Salt Square and the Jaś and Małgosia houses. Day 2: Panorama, Centennial Hall and the east. Morning: book the first slot at the Racławice Panorama, then use the same ticket for the National Museum next door if you like art.
 
+### What to do in Wroclaw in 3 days?
+
+With three days in Wroclaw, this is the guide's route: Day 1, Old Town and Cathedral Island; Day 2, Panorama, Centennial Hall and the east; Day 3, Four Denominations, Nadodrze and the river. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Wroclaw: https://www.happylowcost.com/en/destinations/wroclaw/#deals

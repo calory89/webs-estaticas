@@ -227,6 +227,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y fortaleza. M
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo y fortaleza. Mañana: empieza muy temprano con la subida a la fortaleza de San Juan, antes del calor y de los cruceros. Día 2: Perast y la bahía. Mañana: autobús a Perast (unos 20-25 minutos).
 
+### ¿Qué hacer en Kotor en 3 días?
+
+Con tres días en Kotor, esta es la ruta de la guía: Día 1, Casco antiguo y fortaleza; Día 2, Perast y la bahía; Día 3, Lovćen y Njeguši (o Budva). En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Montenegro en 3 días?
+
+Con tres días en Montenegro, esta guía propone quedarse en Kotor y seguir su ruta: Día 1, Casco antiguo y fortaleza; Día 2, Perast y la bahía; Día 3, Lovćen y Njeguši (o Budva).
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Kotor: https://www.happylowcost.com/destinos/kotor/#chollos

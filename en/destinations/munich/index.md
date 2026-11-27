@@ -119,6 +119,10 @@ If you only have one day, follow day 1 of this itinerary: The old town. Marienpl
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The old town. Marienplatz, Alter Peter, Viktualienmarkt for lunch, the Asamkirche, then the Residenz and dinner in a traditional Wirtshaus. Day 2: Art and park. A museum in the morning, the Englischer Garten and the Eisbach in the afternoon, and a beer at the Chinese Tower.
 
+### What to do in Munich in 3 days?
+
+With three days in Munich, this is the guide's route: Day 1, The old town; Day 2, Art and park; Day 3, Out of the centre. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Munich: https://www.happylowcost.com/en/destinations/munich/#deals

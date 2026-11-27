@@ -231,6 +231,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El centro y el teleférico. 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y el teleférico. Mañana: café en el centro y paseo por Storgata, la catedral de madera y el muelle. Día 2: Naturaleza y caza de auroras. Mañana: trineo de perros o visita a los renos (las agencias recogen en el centro).
 
+### ¿Qué hacer en Tromsø en 3 días?
+
+Con tres días en Tromsø, esta es la ruta de la guía: Día 1, El centro y el teleférico; Día 2, Naturaleza y caza de auroras; Día 3, Fiordos. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tromsø: https://www.happylowcost.com/destinos/tromso/#chollos

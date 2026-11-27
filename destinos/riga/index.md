@@ -1,4 +1,4 @@
-# Qué ver en Riga en 3 días: guía de viaje barata y sin prisas
+# Qué ver y hacer en Riga en 3 días: guía barata y sin prisas
 
 > Guía de viaje de Riga de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/riga/
 > Actualizada: 2026-10-21
@@ -118,6 +118,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco viejo a primera hora (
 ### ¿Qué ver en Riga en 2 días?
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro). Día 2: Mañana en el Mercado Central y el barrio de Spīķeri, justo detrás.
+
+### ¿Qué hacer en Riga en 3 días?
+
+Con tres días en Riga, esta es la ruta de la guía: Día 1, Casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro); Día 2, Mañana en el Mercado Central y el barrio de Spīķeri, justo detrás; Día 3, Museo de la Ocupación por la mañana. Después. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Letonia en 3 días?
+
+Con tres días en Letonia, esta guía propone quedarse en Riga y seguir su ruta: Día 1, Casco viejo a primera hora (Ayuntamiento, Cabezas Negras, Doms, San Pedro); Día 2, Mañana en el Mercado Central y el barrio de Spīķeri, justo detrás; Día 3, Museo de la Ocupación por la mañana. Después.
 
 ## Vuelos y chollos
 

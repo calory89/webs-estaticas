@@ -645,6 +645,11 @@ def guide_days(title, gh):
     m = re.search(r'\b(?:en|in)\s+(\d{1,2})\s+(?:d[ií]as|days)\b', title or '', re.I)
     if m and 1 <= int(m.group(1)) <= 21:
         return int(m.group(1))
+    # ronda 9: "Zanzíbar: guía práctica para 7 días…" no decía "en 7 días" y la guía se quedaba sin días (sin título por consulta,
+    # sin tabla de itinerario ni FAQ de 1/2 días). Cualquier "N días"/"N-day" del título vale.
+    m = re.search(r'\b(\d{1,2})[\s-]+(?:d[ií]as|days?)\b', title or '', re.I)
+    if m and 2 <= int(m.group(1)) <= 21:
+        return int(m.group(1))
     nd = 0
     for m_ in re.finditer(r'\b(?:d[ií]a|day)\s*(\d{1,2})\b', gh or '', re.I):
         nd = max(nd, int(m_.group(1)))
@@ -689,7 +694,7 @@ def guide_summary(gh, name, days, sub, updated_iso, lang='es', deal_href=None):
     es = lang == 'es'
     rows = []
     if days:
-        rows.append((('Cuántos días' if es else 'How many days'), (f'{days} días para ver lo esencial de {name}; abajo tienes la ruta día a día.' if es else f'{days} days to see the essentials of {name}; the day-by-day route is below.')))
+        rows.append(((f'Cuántos días para ver {name}' if es else f'How many days in {name}'), (f'{days} días para ver lo esencial de {name}; abajo tienes la ruta día a día.' if es else f'{days} days to see the essentials of {name}; the day-by-day route is below.')))
     MON = r'enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|primavera|otoño|verano|invierno|January|February|March|April|May|June|July|August|September|October|November|December|spring|autumn|summer|winter'
     for lab_es, lab_en, rx, pref in (('Cuándo ir', 'When to go', r'cu[aá]ndo ir|mejor [eé]poca|when to go|best time', (rf'\b(mejor|ideal|best)\b.*\b({MON})\b|\b({MON})\b.*\b(mejor|ideal|best)\b', rf'^(?!(Es|Hace|It|This|That|Esta|Este)\b).*\b({MON})\b')),
                                      ('Presupuesto', 'Budget', r'presupuesto|cu[aá]nto cuesta|budget|cost', r'\d+\s?(€|euros?|EUR)|€\s?\d+|\d+\s?(\$|USD|£)'),
@@ -880,6 +885,69 @@ def guide_short_faq(gh, trip, name, lang='es'):
     return (gh[:mfaq.end()] + h + gh[mfaq.end():]) if mfaq else gh + ('<h2>Preguntas frecuentes</h2>' if es else '<h2>FAQs</h2>') + h
 
 
+_NUM_ES = {2: 'dos', 3: 'tres', 4: 'cuatro', 5: 'cinco', 6: 'seis', 7: 'siete', 8: 'ocho', 9: 'nueve', 10: 'diez'}
+_NUM_EN = {2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine', 10: 'ten'}
+_GUIDES_BY_COUNTRY = {}
+
+
+def _clip9(t, n=90):
+    """Corta en la última coma (o en el último espacio, con …) para no dejar palabras a medias."""
+    t = t.strip().rstrip(' ,;.')
+    if len(t) <= n:
+        return t
+    k = t.rfind(',', 0, n)
+    if k >= 25:
+        return t[:k]
+    k = t.rfind(' ', 0, n)
+    return re.sub(r'\s+(y|e|o|de|del|la|el|en|a|con|and|the|of|to|in|with|for)$', '', t[:k]) + '…'
+
+
+def guide_todo_faq(gh, trip, name, country='', lang='es'):
+    """Ronda 9 (GSC 31-oct a 27-nov): "que hacer en bucarest en 3 dias" (20 impr.), "que hacer en varsovia en 3 dias", "que hacer en zanzibar 7 dias",
+    "que hacer en oslo/helsinki/zurich…", "what to do in turin for 3 days", "que ver en hamburgo en tres dias", "bruselas three days" y
+    "que ver en estonia en 3 días" (19 impr. en la guía de Tallin). Dos preguntas con la ruta de la propia guía:
+    "¿Qué hacer en X en N días?" (con el número también en letra) y, si es la única guía de su país, "¿Qué ver en <país> en N días?"."""
+    es = lang == 'es'
+    if not trip:
+        return gh
+    its = (trip.get('itinerary') or {}).get('itemListElement') or []
+    if len(its) < 2:
+        return gh
+    m_ = re.search(r'(\d{1,2})', trip.get('name', ''))
+    n = int(m_.group(1)) if m_ else 0
+    if not 2 <= n <= 21:
+        return gh
+    have = ' '.join(re.findall(r'<h3>(.*?)</h3>', gh or '')).lower()
+    word = (_NUM_ES if es else _NUM_EN).get(n, str(n))
+    parts = []
+    for i in its:
+        nm = i.get('name', '')
+        if ':' in nm:
+            d_, lab = nm.split(':', 1)
+            parts.append(f'{d_.strip()}, {_clip9(lab.strip())}')
+        else:
+            parts.append(f'{nm}, {_clip9(_first_sentence(i.get("description") or "", 300).rstrip("."))}')
+    if any(len(x_) < 8 for x_ in parts):
+        return gh
+    plan = '; '.join(parts) + '.'
+    add = []
+    if not re.search(r'qu[eé] hacer en .* en \d|what to do in .* in \d', have):
+        add.append((f'¿Qué hacer en {name} en {n} días?', f'Con {word} días en {name}, esta es la ruta de la guía: {plan} En la tabla de arriba tienes el plan completo de cada día.') if es else
+                   (f'What to do in {name} in {n} days?', f'With {word} days in {name}, this is the guide\'s route: {plan} The table above has the full plan for each day.'))
+    if not _GUIDES_BY_COUNTRY:
+        for q_ in DLIB:
+            for k_ in {en_names.COUNTRY_ES_FIX.get(q_['c'], q_['c']), en_names.country_en(q_['c'])}:
+                _GUIDES_BY_COUNTRY[k_] = _GUIDES_BY_COUNTRY.get(k_, 0) + 1
+    if country and _GUIDES_BY_COUNTRY.get(country, 0) == 1 and country.lower() not in name.lower() and not re.search(re.escape(country.lower()), have):
+        add.append((f'¿Qué ver en {country} en {n} días?', f'Con {word} días en {country}, esta guía propone quedarse en {name} y seguir su ruta: {plan}') if es else
+                   (f'What to see in {country} in {n} days?', f'With {word} days in {country}, this guide suggests staying in {name} and following its route: {plan}'))
+    if not add:
+        return gh
+    h = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in add)
+    mfaq = re.search(r'(<h2>[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>.*?)(?=<h2|$)', gh, re.S | re.I)
+    return (gh[:mfaq.end()] + h + gh[mfaq.end():]) if mfaq else gh + ('<h2>Preguntas frecuentes</h2>' if es else '<h2>FAQs</h2>') + h
+
+
 def llms_month_blocks(deals, lang='es', namer=None):
     """Ronda 7 (#76, #72): "Datos del mes" y "Últimos cambios" fechados al principio de llms-full (ES y EN).
     Todo sale de los chollos vivos: nada inventado."""
@@ -921,7 +989,7 @@ def llms_month_blocks(deals, lang='es', namer=None):
 
 
 IDEA_T_ES = {'directos': 'Chollos de vuelos directos', 'fin-de-semana': 'Escapadas de fin de semana baratas', 'larga-distancia': 'Vuelos de larga distancia por menos de 600 €',
-             'menos-de-100-euros': 'Vuelos por menos de 100 € ida y vuelta', 'menos-de-50-euros': 'Vuelos por menos de 50 € ida y vuelta'}
+             'menos-de-100-euros': 'Vuelos por menos de 100 euros ida y vuelta', 'menos-de-50-euros': 'Vuelos por menos de 50 euros ida y vuelta'}  # ronda 9: "vuelos por menos de 50/100 euros" pos. 8-10
 IDEA_T_EN = {'nonstop': 'Nonstop flight deals', 'weekend-getaways': 'Cheap weekend getaways', 'long-haul': 'Long-haul flights under €600',
              'under-100': 'Flights under €100 return', 'under-50': 'Flights under €50 return'}
 _MES_L = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
@@ -980,10 +1048,11 @@ def deal_route_p(f, lang='es'):
     if not r:
         return ''
     u = r['url'].replace(SITE, '')
+    # ronda 9: "vuelo sevilla edimburgo", "vuelo ibiza helsinki", "vuelos gran canaria hong kong" en chollos (pos. 17-18): H2 con la consulta literal
     if es:
-        return (f'<p><b>¿Y si este chollo se acaba?</b> En <a href="{u}">vuelos baratos {e(r["origin"])}-{e(r["destination"])}</a> tienes el precio más bajo que hemos visto en esta ruta '
+        return (f'<h2>Vuelo {e(r["origin"])} {e(r["destination"])}: precio de hoy en la ruta</h2><p><b>¿Y si este chollo se acaba?</b> En <a href="{u}">vuelos baratos {e(r["origin"])}-{e(r["destination"])}</a> tienes el precio más bajo que hemos visto en esta ruta '
                 f'({r["price_from_eur_return"]} € ida y vuelta), el mes más barato y el calendario de precios.</p>')
-    return (f'<p><b>What if this deal ends?</b> Our <a href="{u}">cheap flights {e(r["origin"])} to {e(r["destination"])}</a> page shows the lowest fare we have seen on this route '
+    return (f'<h2>{e(r["origin"])} to {e(r["destination"])} flight: today\'s price on the route</h2><p><b>What if this deal ends?</b> Our <a href="{u}">cheap flights {e(r["origin"])} to {e(r["destination"])}</a> page shows the lowest fare we have seen on this route '
             f'(€{r["price_from_eur_return"]} return), the cheapest month and the price calendar.</p>')
 
 
@@ -1048,16 +1117,16 @@ def guide_meta(name, nd, attr, bud, lang='es'):
 # Ronda 5: título y H1 con la consulta exacta que trae impresiones en Search Console (28 días, pos. 8-20, 0 clics)
 TITLE_Q_ES = {
     'bruselas': lambda n, d: f'Qué ver en {n} en {d} días: qué comer y cuánto cuesta',  # "que ver en bruselas en 3 dias" 38 impr. pos. 19
-    'sofia': lambda n, d: f'Qué ver en {n} en {d} días: guía low cost con precios',  # "que ver en sofia 3 dias" 33 impr. pos. 10
+    'sofia': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía low cost con precios',  # ronda 9: + "que hacer en sofia en 3 dias" pos. 10,6  # "que ver en sofia 3 dias" 33 impr. pos. 10
     'punta-cana': lambda n, d: f'{n} en {d} días: guía para viajar barato por tu cuenta',  # "7 días en punta cana" pos. 11,5 (la guía tiene 6)
     'maldivas': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía low cost',  # "que hacer en maldivas 7 días" 33 impr. pos. 7,9
-    'estocolmo': lambda n, d: f'Qué ver en {n} en {d} días: guía práctica low cost',  # "que ver en estocolmo en 3 dias" 26 impr. pos. 11
+    'estocolmo': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía práctica low cost',  # ronda 9: + "que hacer en estocolmo en 3 dias" pos. 9,2  # "que ver en estocolmo en 3 dias" 26 impr. pos. 11
     # Ronda 6 (GSC 30-oct a 26-nov)
     'zanzibar': lambda n, d: f'Qué ver en {n} en {d} días: playa, Stone Town y precios',  # "que ver/que hacer en zanzibar 7 dias" 71 impr. pos. 9,6
     'cerdena': lambda n, d: f'{n} barato: qué ver en {d} días y cuánto cuesta',  # "cerdeña barato" 23 impr. pos. 22,5
     'cancun': lambda n, d: f'Qué hacer en {n} en {d} días: guía low cost con precios',  # "que hacer en cancun en 4 dias" 15 impr. pos. 9,6
     'fez': lambda n, d: f'Qué ver en {n} en {d} días: la medina, dónde comer y dormir',  # "que ver en fez en 3 dias" 16 impr. pos. 9,2
-    'las-vegas': lambda n, d: f'Qué hacer en {n} en {d} días: guía low cost con precios',  # "que hacer en las vegas en 4 dias" 15 impr. pos. 5,9
+    'las-vegas': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía low cost',  # ronda 9: "que ver en las vegas" 35 impr. pos. 21 y "que ver en las vegas en 4 dias" pos. 5,9  # "que hacer en las vegas en 4 dias" 15 impr. pos. 5,9
     # Ronda 7 (GSC 31-oct a 27-nov): "qué hacer" y variantes que no estaban en el título
     'varsovia': lambda n, d: f'Qué ver en {n} en {d} días: qué hacer y cuánto cuesta',  # "que ver..." 189 impr. pos. 10,6 + "que hacer en varsovia en 3 dias" 17 pos. 9,5
     'helsinki': lambda n, d: f'Qué ver en {n} en {d} días: qué hacer y cuánto cuesta',  # + "que hacer en helsinki 3 dias" 12 pos. 10,1
@@ -1073,6 +1142,9 @@ TITLE_Q_ES = {
     'chipre': lambda n, d: f'Qué ver en {n} en {d} días: una semana en coche',  # "que ver en chipre en una semana" 10 pos. 11,3
     'tallin': lambda n, d: f'Qué ver en {n} en {d} días: Estonia low cost con precios',  # "que ver en estonia en 3 días" 19 pos. 10,2
 
+    # Ronda 9 (GSC 31-oct a 27-nov): "qué hacer" junto a "qué ver"
+    'belgrado': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía de un viajero low cost',  # "que hacer en belgrado 3 dias" pos. 8,4 + "que ver" 77 impr. pos. 7,5
+    'riga': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía barata y sin prisas',  # "que hacer en riga en 3 dias" pos. 7,7 + "que ver" 64 impr. pos. 8,2
 }
 
 try:
@@ -1499,6 +1571,21 @@ def _air_qa(sub, hl, L, pr):
              L('En los chollos de hoy: ', 'In today\'s deals: ') + ', '.join(f'{k} ({len(v)} {L("chollo" if len(v) == 1 else "chollos", "deal" if len(v) == 1 else "deals")}, {L("desde", "from")} {pr(min(v))})' for k, v in top) + '.')]
 
 
+def _nye_qa(sub, h1, L, nm):
+    """Ronda 9: "cheap flights for new years 2026" (pos. 5) en la página de Navidad: chollos vivos que pasan la Nochevieja fuera
+    (ida hasta el 31 de diciembre y vuelta el 1 de enero o después)."""
+    if not re.search(r'navidad|christmas', h1, re.I):
+        return []
+    ny = sorted([x for x in sub if (x['facts'].get('ida') or '')[:10] <= '2026-12-31' and (x['facts'].get('vuelta') or '')[:10] >= '2027-01-01'], key=lambda x: x.get('price') or 99999)
+    if not ny:
+        return [(L('¿Hay vuelos baratos para Nochevieja y Año Nuevo?', 'Are there cheap flights for New Year\'s Eve?'),
+                 L('Ahora mismo ningún chollo activo pasa la Nochevieja fuera (ida hasta el 31 de diciembre y vuelta en enero). Crea una alerta gratis y te avisamos.',
+                   'Right now no live deal covers New Year\'s Eve (out by 31 December, back in January). Set a free alert and we will tell you.'))]
+    return [(L('¿Hay vuelos baratos para Nochevieja y Año Nuevo?', 'Are there cheap flights for New Year\'s Eve?'),
+             L(f'Sí, {len(ny)} de estos chollos pasan la Nochevieja fuera: ', f'Yes, {len(ny)} of these deals cover New Year\'s Eve: ')
+             + ', '.join(f'{nm(x)[0]} → {nm(x)[1]} ({L(str(x["price"]) + " €", "€" + str(x["price"]))})' for x in ny[:5]) + '.')]
+
+
 def ideas_faq(sub, h1, en=False, budget=None):
     """FAQ con datos reales de los chollos de una página de ideas + enlaces a los hubs de precios del mismo presupuesto (ronda SEO 3)."""
     if not sub:
@@ -1525,6 +1612,7 @@ def ideas_faq(sub, h1, en=False, budget=None):
           (L('¿A qué destinos hay chollos?', 'Which destinations have deals?'),
            ', '.join(f'{k} ({L("desde", "from")} {pr(v)})' for k, v in list(dests.items())[:8]) + '.'),
           *_air_qa(sub, hl, L, pr),
+          *_nye_qa(sub, h1, L, nm),
           (L('¿Cada cuánto se actualizan?', 'How often are they updated?'),
            L('Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.', 'We re-check every live deal once a day and remove it if it has gone up more than 10%.'))]
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": L('es-ES', 'en'), "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
@@ -1899,7 +1987,9 @@ def main():
         intro = (f"{len(sub)} chollos de vuelos desde {city} comprobados" + (f", desde {cheapest} €" if cheapest else "") + (f": {tops[:150]}." if tops else ".") +
                  " Cada precio se comprueba antes de publicarlo y se vuelve a comprobar cada día.") if sub else f"Ahora mismo no hay chollos desde {city}. Crea una alerta gratis y te avisamos en cuanto salga uno."
         list_page(f'chollos/desde/{pk}/{ck}', f'Vuelos baratos desde {city}: chollos de hoy · Happy Low Cost', f'Chollos de vuelos desde {city}', f'{flag(cc)} Salidas desde {city}', intro, sub,
-                  f'{SITE}/chollos/desde/{pk}/{ck}/', [('Inicio', '/'), ('Chollos', '/chollos/'), (f'Desde {pais}', f'/chollos/desde/{pk}/'), (city, None)], extra_links=hub, noindex=not sub)
+                  f'{SITE}/chollos/desde/{pk}/{ck}/', [('Inicio', '/'), ('Chollos', '/chollos/'), (f'Desde {pais}', f'/chollos/desde/{pk}/'), (city, None)], extra_links=hub, noindex=not sub,
+                  # ronda 9: "cheapest flights" en chollos desde Santiago de Chile (pos. 4,6): enlace a la página de todas las rutas desde la ciudad
+                  seo_html=(f'<section class="sec" style="padding-top:6px"><p><a class="hlc-btn o" href="/vuelos/desde/{ck}/">Vuelos más baratos desde {e(city)}: todos los destinos y precios</a></p></section>' if os.path.isfile(f'vuelos/desde/{ck}/index.html') else ''))
         gen.add(f'desde/{pk}/{ck}')
 
     # ---------- ideas: temporadas, puentes y presupuestos (se actualizan solas) ----------
@@ -1913,8 +2003,8 @@ def main():
         ('navidad-2026', 'Navidad y fin de año 2026', 'Chollos de vuelos con salida entre el 18 de diciembre de 2026 y el 6 de enero de 2027.', lambda f_: '2026-12-18' <= (f_.get('ida') or '')[:10] <= '2027-01-06'),
         ('semana-santa-2027', 'Semana Santa 2027', 'Chollos con salida entre el 19 y el 28 de marzo de 2027 (Semana Santa: 25 al 28 de marzo).', lambda f_: '2027-03-19' <= (f_.get('ida') or '')[:10] <= '2027-03-28'),
         ('fin-de-semana', 'Escapadas de fin de semana baratas', 'Vuelos baratos para una escapada: viajes de ida y vuelta de 2 a 4 noches con salida jueves, viernes o sábado, del más barato al más caro.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
-        ('menos-de-50-euros', 'Vuelos por menos de 50 € ida y vuelta', 'Vuelos por 50 euros o menos, ida y vuelta: chollos comprobados.', lambda f_: (f_.get('precio') or 999) <= 50),
-        ('menos-de-100-euros', 'Vuelos por menos de 100 € ida y vuelta', 'Vuelos por menos de 100 euros, ida y vuelta: chollos comprobados.', lambda f_: (f_.get('precio') or 999) <= 100),
+        ('menos-de-50-euros', 'Vuelos por menos de 50 euros ida y vuelta', 'Vuelos por 50 euros o menos, ida y vuelta: chollos comprobados.', lambda f_: (f_.get('precio') or 999) <= 50),
+        ('menos-de-100-euros', 'Vuelos por menos de 100 euros ida y vuelta', 'Vuelos por menos de 100 euros, ida y vuelta: chollos comprobados.', lambda f_: (f_.get('precio') or 999) <= 100),
         ('larga-distancia', 'Larga distancia por menos de 600 €', 'Chollos a otro continente por 600 € o menos, ida y vuelta.', lambda f_: (f_.get('precio') or 9999) <= 600 and f_.get('continente') and REAL_CONT.get(f_.get('continente')) != REAL_CONT.get(f_.get('origen_continente') or '', f_.get('origen_continente'))),
         ('directos', 'Chollos de vuelos directos', 'Vuelos directos baratos, sin escalas, de ida y vuelta.', lambda f_: f_.get('escalas') == 0),
     ]
@@ -1953,6 +2043,7 @@ def main():
             gh = (gh[:mfaq.end()] + add + gh[mfaq.end():]) if mfaq else gh + '<h2>Preguntas frecuentes</h2>' + add
         gh, trip_ld = guide_itinerary(gh, p['n'], nd, 'es')
         gh = guide_short_faq(gh, trip_ld, p['n'], 'es')
+        gh = guide_todo_faq(gh, trip_ld, p['n'], en_names.COUNTRY_ES_FIX.get(p['c'], p['c']), 'es')
         gh, bud = guide_budget(gh, 'es')
         gh = guide_cost_faq(gh, p['n'], 'es')
         attr = guide_attractions(gh)

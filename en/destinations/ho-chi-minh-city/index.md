@@ -244,6 +244,10 @@ If you only have one day, follow day 1 of this itinerary: Colonial centre and wa
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Colonial centre and war history. Morning: Be at the War Remnants Museum when it opens, then walk 10 minutes to Independence Palace. Day 2: Cu Chi Tunnels and Thao Dien. Morning: Leave early for the Cu Chi Tunnels (see Day trips).
 
+### What to do in Ho Chi Minh City in 3 days?
+
+With three days in Ho Chi Minh City, this is the guide's route: Day 1, Colonial centre and war history; Day 2, Cu Chi Tunnels and Thao Dien; Day 3, Cholon, markets and temples. The table above has the full plan for each day.
+
 ### Is Ho Chi Minh City expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.

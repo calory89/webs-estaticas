@@ -145,6 +145,10 @@ If you only have one day, follow day 1 of this itinerary: Morning at the Ferry B
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Morning at the Ferry Building, then Chinatown and North Beach on foot, Coit Tower, and a cable car down to the waterfront. Day 2: Alcatraz first thing (book the earliest slot), then the Presidio and Golden Gate Bridge.
 
+### What to do in San Francisco in 3 days?
+
+With three days in San Francisco, this is the guide's route: Day 1, Morning at the Ferry Building, then Chinatown and North Beach on foot, Coit Tower; Day 2, Alcatraz first thing (book the earliest slot), then the Presidio and Golden Gate Bridge; Day 3, Golden Gate Park in the morning, Lands End in the afternoon. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to San Francisco: https://www.happylowcost.com/en/destinations/san-francisco/#deals

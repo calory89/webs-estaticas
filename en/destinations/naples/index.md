@@ -160,6 +160,10 @@ If you only have one day, follow day 1 of this itinerary: Spaccanapoli, Cappella
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Spaccanapoli, Cappella Sansevero, Duomo, Santa Chiara, then pizza on Via dei Tribunali. Day 2: MANN in the morning, then Via Toledo, Galleria Umberto I, Plebiscito and the Royal Palace.
 
+### What to do in Naples in 4 days?
+
+With four days in Naples, this is the guide's route: Day 1, Spaccanapoli, Cappella Sansevero, Duomo, Santa Chiara, then pizza on Via dei Tribunali; Day 2, MANN in the morning, then Via Toledo, Galleria Umberto I, Plebiscito and the Royal Palace; Day 3, Pompeii or Herculaneum by train. Herculaneum is smaller and better preserved; Day 4, (optional). The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Naples: https://www.happylowcost.com/en/destinations/naples/#deals

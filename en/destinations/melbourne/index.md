@@ -249,6 +249,10 @@ If you only have one day, follow day 1 of this itinerary: CBD, laneways and the 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: CBD, laneways and the river. Morning: start with coffee on Degraves Street, then walk Centre Place, the Block Arcade and the Royal Arcade. Day 2: Gardens, the MCG and Richmond. Morning: the Shrine of Remembrance balcony, then the Royal Botanic Gardens.
 
+### What to do in Melbourne in 4 days?
+
+With four days in Melbourne, this is the guide's route: Day 1, CBD, laneways and the river; Day 2, Gardens, the MCG and Richmond; Day 3, Market, Carlton and Fitzroy; Day 4, Day trip, or St Kilda. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Melbourne: https://www.happylowcost.com/en/destinations/melbourne/#deals

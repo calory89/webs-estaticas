@@ -227,6 +227,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Montreal Viejo y el río. Ma
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Montreal Viejo y el río. Mañana: empieza en la Place d'Armes y entra en la basílica de Notre-Dame nada más abrir. Día 2: Mont Royal, Plateau y Mile End. Mañana: sube al Mont Royal desde el centro, para en el mirador Kondiaronk y baja por el lado este hacia el Plateau.
 
+### ¿Qué hacer en Montreal en 3 días?
+
+Con tres días en Montreal, esta es la ruta de la guía: Día 1, Montreal Viejo y el río; Día 2, Mont Royal, Plateau y Mile End; Día 3, Mercado, museo y centro. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montreal: https://www.happylowcost.com/destinos/montreal/#chollos

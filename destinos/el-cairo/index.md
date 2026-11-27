@@ -136,6 +136,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Pirámides de Guiza a primer
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde. Día 2: Cairo Islámico. Ciudadela por la mañana, Ibn Tulun, Al-Muizz y Khan el-Khalili al atardecer.
 
+### ¿Qué hacer en El Cairo en 4 días?
+
+Con cuatro días en El Cairo, esta es la ruta de la guía: Día 1, Pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde; Día 2, Cairo Islámico. Ciudadela por la mañana, Ibn Tulun; Día 3, Museo de Tahrir por la mañana, comida en Downtown y paseo en faluca al caer el día; Día 4, Excursión a Saqqara y Dahshur, o Cairo Copto y Museo de la Civilización Egipcia. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Egipto en 4 días?
+
+Con cuatro días en Egipto, esta guía propone quedarse en El Cairo y seguir su ruta: Día 1, Pirámides de Guiza a primera hora y Gran Museo Egipcio por la tarde; Día 2, Cairo Islámico. Ciudadela por la mañana, Ibn Tulun; Día 3, Museo de Tahrir por la mañana, comida en Downtown y paseo en faluca al caer el día; Día 4, Excursión a Saqqara y Dahshur, o Cairo Copto y Museo de la Civilización Egipcia.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a El Cairo: https://www.happylowcost.com/destinos/el-cairo/#chollos

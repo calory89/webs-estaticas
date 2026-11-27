@@ -1,4 +1,4 @@
-# Qué hacer en Las Vegas en 4 días: guía low cost con precios
+# Qué ver y hacer en Las Vegas en 4 días: guía low cost
 
 > Guía de viaje de Las Vegas de Happy Low Cost, itinerario de 4 días. Página original: https://www.happylowcost.com/destinos/las-vegas/
 > Actualizada: 2026-10-21
@@ -133,6 +133,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por el sur de
 ### ¿Qué ver en Las Vegas en 2 días?
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el sur del Strip, el cartel de bienvenida y cena. Día 2: Mañana en Venetian y Palazzo, tarde en Caesars Palace y sus tiendas, y noche en el LINQ o en un espectáculo.
+
+### ¿Qué hacer en Las Vegas en 4 días?
+
+Con cuatro días en Las Vegas, esta es la ruta de la guía: Día 1, Llegada, paseo por el sur del Strip, el cartel de bienvenida y cena; Día 2, Mañana en Venetian y Palazzo, tarde en Caesars Palace y sus tiendas; Día 3, Red Rock Canyon o Valley of Fire por la mañana (mejor con coche alquilado o excursión)…; Día 4, Mob Museum, el Arts District y compras en los outlets, si te quedan ganas. En la tabla de arriba tienes el plan completo de cada día.
 
 ## Vuelos y chollos
 

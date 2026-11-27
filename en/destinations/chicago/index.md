@@ -239,6 +239,10 @@ If you only have one day, follow day 1 of this itinerary: The Loop and the river
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The Loop and the river. Morning: Start at Millennium Park early, see the Bean and the Lurie Garden, then pop into the Chicago Cultural Center for the Tiffany dome. Day 2: Museums and the lakefront. Morning: Head to the Field Museum (or the Shedd if you have kids) on the Museum Campus.
 
+### What to do in Chicago in 4 days?
+
+With four days in Chicago, this is the guide's route: Day 1, The Loop and the river; Day 2, Museums and the lakefront; Day 3, North Side neighbourhoods; Day 4, West Side and Pilsen. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Chicago: https://www.happylowcost.com/en/destinations/chicago/#deals

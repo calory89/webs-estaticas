@@ -142,6 +142,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Copacabana, paseo hasta Arpo
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Copacabana, paseo hasta Arpoador, Ipanema y atardecer en la piedra. Día 2: Cristo Redentor a primera hora, comida en Cosme Velho o Laranjeiras, tarde en el Jardim Botânico y Parque Lage.
 
+### ¿Qué hacer en Río de Janeiro en 4 días?
+
+Con cuatro días en Río de Janeiro, esta es la ruta de la guía: Día 1, Copacabana, paseo hasta Arpoador, Ipanema y atardecer en la piedra; Día 2, Cristo Redentor a primera hora, comida en Cosme Velho o Laranjeiras; Día 3, Centro histórico por la mañana, Porto Maravilha; Día 4, Pan de Azúcar con tiempo para el atardecer, desayuno antes en la Urca, y cena en Botafogo. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Río de Janeiro: https://www.happylowcost.com/destinos/rio-de-janeiro/#chollos

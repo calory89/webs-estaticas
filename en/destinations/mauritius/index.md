@@ -120,6 +120,10 @@ Five to seven days is ideal for seeing the island and still relaxing. A long wee
 
 For the traveller who wrote this guide, yes: Most people book Mauritius for the lagoons, and the lagoons are every bit as good as the photos. 3 days are enough for the essentials. Budget: Budget: around 40 to 60 euros a day, with a guesthouse, street food and buses.
 
+### What to do in Mauritius in 7 days?
+
+With seven days in Mauritius, this is the guide's route: Days 1-2, Southeast; Day 3, South and southwest; Days 4-5, West; Days 6-7, North. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Mauritius: https://www.happylowcost.com/en/destinations/mauritius/#deals

@@ -230,6 +230,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Amurallada. Mañana: 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Amurallada. Mañana: entra por la Torre del Reloj, Plaza de los Coches, Plaza de la Aduana e Iglesia de San Pedro Claver. Día 2: San Felipe, La Popa y Getsemaní. Mañana: taxi temprano al Castillo de San Felipe y de ahí a La Popa con el mismo taxi.
 
+### ¿Qué hacer en Cartagena en 4 días?
+
+Con cuatro días en Cartagena, esta es la ruta de la guía: Día 1, Ciudad Amurallada; Día 2, San Felipe, La Popa y Getsemaní; Día 3, Bazurto, San Diego y manglares; Día 4, Islas del Rosario o Playa Blanca. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Cartagena?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "presupuesto medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

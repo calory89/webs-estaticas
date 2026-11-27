@@ -245,6 +245,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y Lastarri
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Lastarria. Mañana: empieza en La Moneda, sube por la calle Bandera o Ahumada hasta la Plaza de Armas y entra al Museo de Arte Precolombino. Día 2: Memoria, Yungay y Bellavista. Mañana: metro hasta Quinta Normal y Museo de la Memoria.
 
+### ¿Qué hacer en Santiago de Chile en 3 días?
+
+Con tres días en Santiago de Chile, esta es la ruta de la guía: Día 1, Centro histórico y Lastarria; Día 2, Memoria, Yungay y Bellavista; Día 3, Providencia, Barrio Italia y vino. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santiago de Chile: https://www.happylowcost.com/destinos/santiago-de-chile/#chollos

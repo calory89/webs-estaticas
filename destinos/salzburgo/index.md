@@ -139,6 +139,10 @@ Sí, si te centras en fortaleza, casco viejo y Mirabell. Sales con una buena ide
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo. Catedral, Residenzplatz, San Pedro, subida a la fortaleza y paseo por Getreidegasse al final del día. Día 2: Mirabell por la mañana, cruzas el río hacia la orilla derecha, comes por Linzer Gasse y subes al Mönchsberg o al Kapuzinerberg al atardecer.
 
+### ¿Qué hacer en Salzburgo en 3 días?
+
+Con tres días en Salzburgo, esta es la ruta de la guía: Día 1, Casco viejo. Catedral, Residenzplatz, San Pedro; Día 2, Mirabell por la mañana, cruzas el río hacia la orilla derecha; Día 3, Hellbrunn por la mañana, o excursión completa a Hallein, Werfen o los lagos. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Salzburgo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "económico" se gastan unos 70-95 € por persona y día, y en el nivel "cómodo", unos 250 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

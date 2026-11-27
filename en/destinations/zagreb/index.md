@@ -250,6 +250,10 @@ Yes, widely, especially younger people and anyone working in hospitality. Learni
 
 If you only have one day, follow day 1 of this itinerary: Upper Town, Kaptol and Dolac. Morning: Start at Ban Jelačić Square, then walk up to Dolac Market around 8:30am for cheese, fruit and burek from a nearby bakery.
 
+### What to do in Zagreb in 2 days?
+
+With two days in Zagreb, this is the guide's route: Day 1, Upper Town, Kaptol and Dolac; Day 2, Mirogoj, the Lower Town and a park. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Zagreb: https://www.happylowcost.com/en/destinations/zagreb/#deals

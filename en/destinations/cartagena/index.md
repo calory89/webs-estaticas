@@ -236,6 +236,10 @@ If you only have one day, follow day 1 of this itinerary: The walled city. Morni
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The walled city. Morning: Enter through the Torre del Reloj at 7.30am, then walk to Plaza de Santo Domingo, Plaza de Bolívar and the Palacio de la Inquisición. Day 2: Getsemaní and San Felipe. Morning: Walk to Castillo San Felipe for opening time.
 
+### What to do in Cartagena in 4 days?
+
+With four days in Cartagena, this is the guide's route: Day 1, The walled city; Day 2, Getsemaní and San Felipe; Day 3, Rosario Islands; Day 4, Market, views and San Diego. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cartagena: https://www.happylowcost.com/en/destinations/cartagena/#deals

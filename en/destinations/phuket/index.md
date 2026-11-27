@@ -157,6 +157,10 @@ If you only have one day, follow day 1 of this itinerary: Arrive, settle into yo
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, settle into your beach, swim and eat nearby. Day 2: Old Town in the morning, a long lunch, then Wat Chalong and Big Buddha in the afternoon.
 
+### What to do in Phuket in 5 days?
+
+With five days in Phuket, this is the guide's route: Day 1, Arrive, settle into your beach, swim and eat nearby; Day 2, Old Town in the morning, a long lunch, then Wat Chalong and Big Buddha in the afternoon; Day 3, Full-day boat trip, either Phang Nga Bay or Phi Phi; Day 4, Southern beaches: Nai Harn, Kata Noi, then sunset at Promthep Cape; Day 5, A cooking class, Khao Phra Thaeo, or a second island. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Phuket: https://www.happylowcost.com/en/destinations/phuket/#deals

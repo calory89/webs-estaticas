@@ -132,6 +132,10 @@ If you only have one day, follow day 1 of this itinerary: Westminster and the So
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Westminster and the South Bank. Parliament, the Abbey, a walk along the river, the Tate Modern, then Borough Market for lunch or an early dinner. Day 2: The City and the east. St Paul's, the Tower of London, Tower Bridge, then Shoreditch and Brick Lane for the evening.
 
+### What to do in London in 4 days?
+
+With four days in London, this is the guide's route: Day 1, Westminster and the South Bank; Day 2, The City and the east; Day 3, Bloomsbury, Soho and the West End; Day 4, Choose one. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to London: https://www.happylowcost.com/en/destinations/london/#deals

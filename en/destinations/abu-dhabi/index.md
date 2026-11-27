@@ -229,6 +229,10 @@ If you only have one day, follow day 1 of this itinerary: The old city and the C
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The old city and the Corniche. Morning: Start at Al Mina Fish Market and the Iranian Souk, then go to Qasr Al Hosn while it is still cool. Day 2: Saadiyat Island. Morning: Be at the Louvre Abu Dhabi at opening.
 
+### What to do in Abu Dhabi in 3 days?
+
+With three days in Abu Dhabi, this is the guide's route: Day 1, The old city and the Corniche; Day 2, Saadiyat Island; Day 3, Mangroves and Yas Island. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Abu Dhabi: https://www.happylowcost.com/en/destinations/abu-dhabi/#deals

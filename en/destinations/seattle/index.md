@@ -255,6 +255,10 @@ If you only have one day, follow day 1 of this itinerary: Downtown, Pike Place a
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown, Pike Place and the waterfront. Morning: Pike Place Market at 9am, with breakfast from a bakery and a stop at the gum wall in Post Alley (quick look, it's gross). Day 2: Seattle Center, Queen Anne and Lake Union. Morning: the Monorail from Westlake Center to Seattle Center (about €3 / $3.50).
 
+### What to do in Seattle in 3 days?
+
+With three days in Seattle, this is the guide's route: Day 1, Downtown, Pike Place and the waterfront; Day 2, Seattle Center, Queen Anne and Lake Union; Day 3, Ballard and the water. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Seattle: https://www.happylowcost.com/en/destinations/seattle/#deals

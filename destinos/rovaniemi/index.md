@@ -239,6 +239,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El centro y el río. Mañana
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y el río. Mañana: Arktikum con calma, y si te queda energía, Pilke al lado. Día 2: Aldea de Papá Noel y renos. Mañana: bus 8 a la Aldea de Papá Noel nada más abrir, antes de que lleguen los grupos.
 
+### ¿Qué hacer en Rovaniemi y Laponia en 5 días?
+
+Con cinco días en Rovaniemi y Laponia, esta es la ruta de la guía: Día 1, El centro y el río; Día 2, Aldea de Papá Noel y renos; Día 3, Huskies y auroras; Día 4, Naturaleza fuera de la ciudad; Día 5, Ounasvaara y el río. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Rovaniemi y Laponia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 120-150 € por persona y día, y en el nivel "medio", unos unos 250-350 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

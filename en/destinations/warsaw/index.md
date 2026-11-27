@@ -123,6 +123,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town and the Royal
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town and the Royal Route. Start in the Old Town before the tour groups arrive, visit the Royal Castle, then walk down Krakowskie Předmieście and Nowy Świat. Day 2: History and the centre. Spend the morning at POLIN and the Ghetto Heroes monument, then head to the Palace of Culture for the view.
 
+### What to do in Warsaw in 3 days?
+
+With three days in Warsaw, this is the guide's route: Day 1, Old Town and the Royal Route; Day 2, History and the centre; Day 3, Parks and Praga. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Warsaw: https://www.happylowcost.com/en/destinations/warsaw/#deals

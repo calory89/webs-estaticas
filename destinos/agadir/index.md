@@ -245,6 +245,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro, playa y kasbah. Mañ
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, playa y kasbah. Mañana: empieza en el Museo del Patrimonio Amazigh y sigue con el Valle de los Pájaros y el Jardín de Olhão, que están a pocos minutos andando. Día 2: Zoco, puerto y Medina Polizzi. Mañana: Souk El Had con calma (recuerda que el lunes está cerrado).
 
+### ¿Qué hacer en Agadir en 3 días?
+
+Con tres días en Agadir, esta es la ruta de la guía: Día 1, Centro, playa y kasbah; Día 2, Zoco, puerto y Medina Polizzi; Día 3, Taghazout y la costa norte. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Agadir: https://www.happylowcost.com/destinos/agadir/#chollos

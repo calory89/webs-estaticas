@@ -202,6 +202,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Castillo, Santa Cruz y casco
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Castillo, Santa Cruz y casco antiguo. Mañana: sube en el ascensor al castillo de Santa Bárbara a primera hora. Día 2: Mercado, museos y atardecer. Mañana: Mercado Central y compra de salazones.
 
+### ¿Qué hacer en Alicante en 3 días?
+
+Con tres días en Alicante, esta es la ruta de la guía: Día 1, Castillo, Santa Cruz y casco antiguo; Día 2, Mercado, museos y atardecer; Día 3, Tabarca o playa de San Juan. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Alicante?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 60 a 80 € por persona y día, y en el nivel "presupuesto medio", unos unos 120 a 170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

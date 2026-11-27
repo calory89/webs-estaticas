@@ -243,6 +243,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El centro. Mañana: free tou
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro. Mañana: free tour por el centro, que pasa por la Plaza Botero, el Palacio de la Cultura y el Parque Berrío. Día 2: Metrocable y Parque Arví. Mañana: metro hasta Acevedo, línea K hasta Santo Domingo y línea L hasta Parque Arví.
 
+### ¿Qué hacer en Medellín en 4 días?
+
+Con cuatro días en Medellín, esta es la ruta de la guía: Día 1, El centro; Día 2, Metrocable y Parque Arví; Día 3, Comuna 13 y Laureles; Día 4, Guatapé. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Medellín?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

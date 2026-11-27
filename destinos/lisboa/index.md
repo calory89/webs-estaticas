@@ -128,6 +128,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Baixa, Praça do Comércio, 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Baixa, Praça do Comércio, subida por el Chiado y copa en un miradouro del Bairro Alto. Día 2: Mañana en Alfama y el castillo. Tarde en la Graça y la Senhora do Monte.
 
+### ¿Qué hacer en Lisboa en 4 días?
+
+Con cuatro días en Lisboa, esta es la ruta de la guía: Día 1, Baixa, Praça do Comércio, subida por el Chiado y copa en un miradouro del Bairro Alto; Día 2, Mañana en Alfama y el castillo. Tarde en la Graça y la Senhora do Monte; Día 3, Belém por la mañana, pasteles incluidos, y LX Factory por la tarde; Día 4, (opcional). En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Lisboa?
 
 Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "más relajado", unos a partir de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

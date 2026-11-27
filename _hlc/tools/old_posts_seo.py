@@ -40,6 +40,13 @@ RETITLE = {
     'jardin-de-los-sentidos': 'Jardín de los Sentidos (Altea): jardín, hotel y precios',  # "precios de jardin de los sentidos altea" 9 impr. pos. 8,7 (el post da los precios de 2019)
     'conoce-el-misterio-de-la-facultad-de-filosofia-y-letras': 'Facultad de Filosofía y Letras de Córdoba: su misterio',  # "facultad de filosofia y letras" pos. 12; 144 impr.
     'conoce-la-facultad-de-derecho-de-cordoba': 'Facultad de Derecho de Córdoba: historia y edificio',  # "facultad de derecho cordoba" pos. 16
+    # Ronda 9 (GSC 31-oct a 27-nov): la consulta real, sin esconder que el chollo es antiguo
+    'vuelos-directos-a-nueva-york-desde-solo-389e-i-v': 'Vuelos baratos a Nueva York: directo por 389 € (chollo de 2023)',  # "vuelos baratos a nueva york" 19+18+10 impr. pos. 9-14
+    'vuelos-directos-a-islas-maldivas-por-solo-339e-i-v': 'Vuelos baratos a Maldivas desde Milán por 339 € (chollo de 2019)',  # "vuelos baratos a maldivas" pos. 16,6 (el vuelo sale de Milán, no de España)
+    'vuelos-a-moscu-rusia-desde-solo-93e-i-v': 'Vuelos baratos a Moscú, Rusia, desde 93 € (chollo de 2019)',  # "vuelos para rusia" 14 impr., "vuelos baratos a moscu" pos. 16-20
+    'paraisos-irresistibles-tahiti': 'Qué hacer en Tahití: qué ver en el paraíso de la Polinesia',  # "qué hacer en tahití" pos. 15
+    'los-cinco-mejores-safaris-en-africa': 'Safaris por África: los cinco mejores',  # "safaris por africa" pos. 9,3
+    'museos-interesantes-que-visitar-en-dinamarca': 'Museos de Dinamarca: los más interesantes que visitar',  # "museo dinamarca" pos. 7,2
     'las-cinco-plazas-de-buenos-aires-mas-bonitas': 'Las 5 plazas más bonitas de Buenos Aires',  # "plazas de buenos aires" pos. 13-25; 154 impr.
 }
 

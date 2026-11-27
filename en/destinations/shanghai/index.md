@@ -244,6 +244,10 @@ If you only have one day, follow day 1 of this itinerary: The Bund, Yu Garden an
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The Bund, Yu Garden and Pudong. Morning: Start at Yu Garden as it opens, then walk 20 minutes north to the Bund. Day 2: People's Square and the French Concession. Morning: Shanghai Museum at People's Square (book ahead).
 
+### What to do in Shanghai in 4 days?
+
+With four days in Shanghai, this is the guide's route: Day 1, The Bund, Yu Garden and Pudong; Day 2, People's Square and the French Concession; Day 3, Temples, art and the West Bund; Day 4, Suzhou. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Shanghai: https://www.happylowcost.com/en/destinations/shanghai/#deals

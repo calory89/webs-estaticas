@@ -1,6 +1,6 @@
-# Zanzíbar: guía práctica para 7 días entre playa y Stone Town
+# Qué ver en Zanzíbar en 7 días: playa, Stone Town y precios
 
-> Guía de viaje de Zanzíbar de Happy Low Cost. Página original: https://www.happylowcost.com/destinos/zanzibar/
+> Guía de viaje de Zanzíbar de Happy Low Cost, itinerario de 7 días. Página original: https://www.happylowcost.com/destinos/zanzibar/
 > Actualizada: 2026-10-21
 
 ## Por qué ir a Zanzíbar
@@ -123,9 +123,21 @@ Consulta con un centro de vacunación internacional antes de ir. La malaria exis
 
 El chelín tanzano es la moneda oficial, pero los precios turísticos se dan en dólares. Lleva billetes recientes y en buen estado, porque los antiguos a veces se rechazan.
 
+### ¿Cuántos días hacen falta para ver Zanzíbar?
+
+Con 7 días ves lo esencial de Zanzíbar sin prisas. La ruta de esta guía está organizada día a día.
+
 ### ¿Merece la pena visitar Zanzíbar?
 
-Para quien escribió esta guía, sí: Zanzíbar tiene fama de postal de lujo, y es verdad que hay resorts de cinco cifras la noche. Presupuesto: Hay opciones económicas desde unos 25-40 euros la doble, y casas con más encanto por encima de los 80.
+Para quien escribió esta guía, sí: Zanzíbar tiene fama de postal de lujo, y es verdad que hay resorts de cinco cifras la noche. Con 7 días ves lo esencial. Presupuesto: Hay opciones económicas desde unos 25-40 euros la doble, y casas con más encanto por encima de los 80.
+
+### ¿Qué hacer en Zanzíbar en 7 días?
+
+Con siete días en Zanzíbar, esta es la ruta de la guía: Días 1-2, Stone Town. Paseo por el casco viejo, mercado, Forodhani al atardecer; Días 3-5, Costa norte (Kendwa o Nungwi). Playa, snorkel en Mnemba; Días 6-7, Costa este (Paje o Jambiani). Parada en Jozani de camino, kitesurf si te animas. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Tanzania en 7 días?
+
+Con siete días en Tanzania, esta guía propone quedarse en Zanzíbar y seguir su ruta: Días 1-2, Stone Town. Paseo por el casco viejo, mercado, Forodhani al atardecer; Días 3-5, Costa norte (Kendwa o Nungwi). Playa, snorkel en Mnemba; Días 6-7, Costa este (Paje o Jambiani). Parada en Jozani de camino, kitesurf si te animas.
 
 ## Vuelos y chollos
 

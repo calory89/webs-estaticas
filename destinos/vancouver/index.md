@@ -227,6 +227,10 @@ Para la ciudad no, el transporte público y la bici bastan. Solo compensa para W
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, Stanley Park y West End. Mañana: Canada Place y paseo por Coal Harbour hasta la entrada de Stanley Park. Día 2: Granville Island y Kitsilano. Mañana: Aquabus a Granville Island, desayuno y compras en el Public Market.
 
+### ¿Qué hacer en Vancouver en 4 días?
+
+Con cuatro días en Vancouver, esta es la ruta de la guía: Día 1, Centro, Stanley Park y West End; Día 2, Granville Island y Kitsilano; Día 3, North Shore; Día 4, Chinatown, Main Street y Richmond. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Vancouver?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 110-140 € por persona y día, y en el nivel "presupuesto medio", unos unos 250-330 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

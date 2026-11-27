@@ -239,6 +239,10 @@ El idioma es el francés, aunque muchos mayores hablan alsaciano y bastante gent
 
 Para quien escribió esta guía, sí: Estrasburgo es una ciudad pequeña, cómoda y muy bonita. Con 2 días ves lo esencial. Presupuesto: Presupuesto ajustado (unos 90-120 € al día por persona): hotel junto a la estación o en Kehl compartiendo, menús del día, bretzels, entradas gratis o con el primer domingo, todo a pie.
 
+### ¿Qué hacer en Estrasburgo en 2 días?
+
+Con dos días en Estrasburgo, esta es la ruta de la guía: Día 1, Catedral y centro histórico; Día 2, Petite France, Neustadt y barrio europeo. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Estrasburgo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 90-120 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

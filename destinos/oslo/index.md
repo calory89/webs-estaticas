@@ -121,6 +121,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro y puerto. Ópera, Mus
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y puerto. Ópera, Museo Munch, fortaleza de Akershus, paseo por Aker Brygge y cena temprana en Mathallen o en alguna zona de Grønland. Día 2: Museos y Frogner. Museo Nacional por la mañana, Parque Vigeland después y tarde libre en Grünerløkka, con paseo por el Akerselva.
 
+### ¿Qué hacer en Oslo en 3 días?
+
+Con tres días en Oslo, esta es la ruta de la guía: Día 1, Centro y puerto; Día 2, Museos y Frogner; Día 3, Fiordo y colinas. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Oslo: https://www.happylowcost.com/destinos/oslo/#chollos

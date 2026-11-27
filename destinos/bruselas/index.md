@@ -129,6 +129,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Grand-Place, Manneken Pis, G
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Grand-Place, Manneken Pis, Galerías Saint-Hubert, catedral y paseo por Sainte-Catherine. Día 2: Mañana en el Mont des Arts y el Museo Magritte, Sablon a mediodía, Marolles y mercadillo por la tarde.
 
+### ¿Qué hacer en Bruselas en 3 días?
+
+Con tres días en Bruselas, esta es la ruta de la guía: Día 1, Grand-Place, Manneken Pis, Galerías Saint-Hubert, catedral y paseo por Sainte-Catherine; Día 2, Mañana en el Mont des Arts y el Museo Magritte, Sablon a mediodía; Día 3, Cinquantenaire, Casa Horta o Atomium, según gustos. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bruselas: https://www.happylowcost.com/destinos/bruselas/#chollos

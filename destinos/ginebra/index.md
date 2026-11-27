@@ -251,6 +251,10 @@ Si te interesa la ciencia, sí: el centro de visitantes es gratis y está a medi
 
 Si solo tienes un día, haz el día 1 de esta ruta: Lago y casco antiguo. Mañana. Empieza desayunando en Bains des Pâquis.
 
+### ¿Qué hacer en Ginebra en 2 días?
+
+Con dos días en Ginebra, esta es la ruta de la guía: Día 1, Lago y casco antiguo; Día 2, La Ginebra internacional y Carouge. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Ginebra?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-120 € por persona y día, y en el nivel "medio", unos unos 200-260 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

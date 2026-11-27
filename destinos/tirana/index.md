@@ -228,6 +228,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro y comunismo. Mañana:
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y comunismo. Mañana: desayuno de byrek y café, plaza Skanderbeg, mezquita Et'hem Bey y Torre del Reloj. Día 2: Montaña y parque. Mañana: bus urbano hacia Bunk'Art 1 y, tras la visita, el teleférico del Dajti.
 
+### ¿Qué hacer en Tirana en 3 días?
+
+Con tres días en Tirana, esta es la ruta de la guía: Día 1, Centro y comunismo; Día 2, Montaña y parque; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Tirana?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 35-45 € por persona y día, y en el nivel "medio", unos unos 80-110 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

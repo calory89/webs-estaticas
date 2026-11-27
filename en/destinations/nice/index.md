@@ -220,6 +220,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town, Castle Hill 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Castle Hill and the Promenade. Morning: start at Cours Saleya market, then wander the Old Town lanes, Sainte-Réparate and Place Rossetti. Day 2: Cimiez, art and the coast. Morning: bus up to Cimiez for the Matisse Museum, Roman ruins and monastery gardens, then walk down to the Chagall Museum.
 
+### What to do in Nice in 3 days?
+
+With three days in Nice, this is the guide's route: Day 1, Old Town, Castle Hill and the Promenade; Day 2, Cimiez, art and the coast; Day 3, Day trip east. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Nice: https://www.happylowcost.com/en/destinations/nice/#deals

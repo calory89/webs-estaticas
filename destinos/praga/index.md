@@ -137,6 +137,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja, Orloj, Josefov
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde. Día 2: Castillo de Praga a primera hora, Malá Strana, isla de Kampa y subida a Petřín.
 
+### ¿Qué hacer en Praga en 3 días?
+
+Con tres días en Praga, esta es la ruta de la guía: Día 1, Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde; Día 2, Castillo de Praga a primera hora, Malá Strana, isla de Kampa y subida a Petřín; Día 3, Vyšehrad por la mañana, Casa Danzante, paseo por Náplavka y cerveza en Letná. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Chequia en 3 días?
+
+Con tres días en Chequia, esta guía propone quedarse en Praga y seguir su ruta: Día 1, Ciudad Vieja, Orloj, Josefov y Puente de Carlos al caer la tarde; Día 2, Castillo de Praga a primera hora, Malá Strana, isla de Kampa y subida a Petřín; Día 3, Vyšehrad por la mañana, Casa Danzante, paseo por Náplavka y cerveza en Letná.
+
 ### ¿Es caro viajar a Praga?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

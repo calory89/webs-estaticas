@@ -226,6 +226,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro y lago. Mañana: desa
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y lago. Mañana: desayuno en St. Lawrence Market y paseo hasta Distillery District. Día 2: Barrios del oeste. Mañana: AGO (si es miércoles, déjalo para la tarde).
 
+### ¿Qué hacer en Toronto en 4 días?
+
+Con cuatro días en Toronto, esta es la ruta de la guía: Día 1, Centro y lago; Día 2, Barrios del oeste; Día 3, Museos, castillo e islas; Día 4, Cataratas del Niágara. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Toronto: https://www.happylowcost.com/destinos/toronto/#chollos

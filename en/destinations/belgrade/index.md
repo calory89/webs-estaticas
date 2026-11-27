@@ -147,6 +147,14 @@ If you only have one day, follow day 1 of this itinerary: Republic Square, Knez 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija. Day 2: Church of Saint Sava in the morning, Tesla Museum, lunch in Vračar, then the House of Flowers.
 
+### What to do in Belgrade in 3 days?
+
+With three days in Belgrade, this is the guide's route: Day 1, Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija; Day 2, Church of Saint Sava in the morning, Tesla Museum, lunch in Vračar; Day 3, Zemun and Gardoš Tower, a fish lunch on the quay, and Ada Ciganlija if it is warm. The table above has the full plan for each day.
+
+### What to see in Serbia in 3 days?
+
+With three days in Serbia, this guide suggests staying in Belgrade and following its route: Day 1, Republic Square, Knez Mihailova, Kalemegdan at sunset, dinner in Dorćol or Skadarlija; Day 2, Church of Saint Sava in the morning, Tesla Museum, lunch in Vračar; Day 3, Zemun and Gardoš Tower, a fish lunch on the quay, and Ada Ciganlija if it is warm.
+
 ## Flights and deals
 
 - Flight deals to Belgrade: https://www.happylowcost.com/en/destinations/belgrade/#deals

@@ -124,6 +124,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Higashiyama. Fushimi Inari d
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Higashiyama. Fushimi Inari de madrugada, después Kiyomizu-dera, Sannenzaka y Ninenzaka, Yasaka y Gion al atardecer. Día 2: Oeste. Arashiyama temprano (bambú, Tenryu-ji, puente) y por la tarde Kinkaku-ji, con Ryoan-ji cerca si te gusta el jardín seco.
 
+### ¿Qué hacer en Kioto en 4 días?
+
+Con cuatro días en Kioto, esta es la ruta de la guía: Día 1, Higashiyama; Día 2, Oeste; Día 3, Centro y norte; Día 4, Nara o Uji. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Kioto: https://www.happylowcost.com/destinos/kioto/#chollos

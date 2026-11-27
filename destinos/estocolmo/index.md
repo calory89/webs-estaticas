@@ -1,4 +1,4 @@
-# Qué ver en Estocolmo en 3 días: guía práctica low cost
+# Qué ver y hacer en Estocolmo en 3 días: guía práctica low cost
 
 > Guía de viaje de Estocolmo de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/estocolmo/
 > Actualizada: 2026-10-21
@@ -131,6 +131,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Gamla Stan por la mañana, a
 ### ¿Qué ver en Estocolmo en 2 días?
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Gamla Stan por la mañana, almuerzo en la zona, tarde en Stadshuset y paseo por Södermalm hasta Monteliusvägen al atardecer. Día 2: Djurgården entero. Vasa a primera hora, Skansen después, y si te queda energía, el paseo junto al agua.
+
+### ¿Qué hacer en Estocolmo en 4 días?
+
+Con cuatro días en Estocolmo, esta es la ruta de la guía: Día 1, Gamla Stan por la mañana, almuerzo en la zona; Día 2, Djurgården entero. Vasa a primera hora, Skansen después, y si te queda energía; Día 3, Skeppsholmen y Moderna Museet por la mañana, Fotografiska por la tarde y cena en Södermalm; Día 4, (opcional). En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Suecia en 4 días?
+
+Con cuatro días en Suecia, esta guía propone quedarse en Estocolmo y seguir su ruta: Día 1, Gamla Stan por la mañana, almuerzo en la zona; Día 2, Djurgården entero. Vasa a primera hora, Skansen después, y si te queda energía; Día 3, Skeppsholmen y Moderna Museet por la mañana, Fotografiska por la tarde y cena en Södermalm; Día 4, (opcional).
 
 ## Vuelos y chollos
 

@@ -242,6 +242,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y río. Ma
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y río. Mañana: sube a la Torre Pey-Berland al abrir, visita la catedral y baja por Sainte-Catherine hasta la Grosse Cloche. Día 2: Chartrons, vino y la otra orilla. Mañana: si es fin de semana, ostras en el Marché des Capucins.
 
+### ¿Qué hacer en Burdeos en 3 días?
+
+Con tres días en Burdeos, esta es la ruta de la guía: Día 1, Centro histórico y río; Día 2, Chartrons, vino y la otra orilla; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Burdeos: https://www.happylowcost.com/destinos/burdeos/#chollos

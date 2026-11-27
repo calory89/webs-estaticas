@@ -246,6 +246,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El centro y los callejones. 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro y los callejones. Mañana: café en Degraves Street, Block Arcade y Royal Arcade, y luego State Library. Día 2: Arte, jardines y río. Mañana: NGV International a primera hora.
 
+### ¿Qué hacer en Melbourne en 4 días?
+
+Con cuatro días en Melbourne, esta es la ruta de la guía: Día 1, El centro y los callejones; Día 2, Arte, jardines y río; Día 3, Barrios; Día 4, Excursión o playa. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Melbourne?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos 160-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -126,6 +126,10 @@ No. Use bottled or filtered water, including for brushing your teeth if you have
 
 For the traveller who wrote this guide, yes: Bali works because it packs a lot into a small island. 7 days are enough for the essentials.
 
+### What to do in Bali in 7 days?
+
+With seven days in Bali, this is the guide's route: Days 1-2, Uluwatu or Sanur; Days 3-5, Ubud; Day 6, Mount Batur sunrise; Day 7, Sidemen or the east coast. The table above has the full plan for each day.
+
 ### Is Bali expensive?
 
 It depends on how you travel. This guide puts the "budget" level at about $30-50 per person per day and the "comfortable" level at about $200 and up. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -231,6 +231,10 @@ If you only have one day, follow day 1 of this itinerary: The historic centre. M
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The historic centre. Morning: Breakfast at Mercado Benito Juárez with hot chocolate. Day 2: Monte Albán and the southern craft villages. Morning: Take the first shuttle up to Monte Albán and be on the Gran Plaza before the crowds.
 
+### What to do in Oaxaca in 4 days?
+
+With four days in Oaxaca, this is the guide's route: Day 1, The historic centre; Day 2, Monte Albán and the southern craft villages; Day 3, The eastern valley (ideally a Sunday); Day 4, Neighbourhoods and food. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Oaxaca: https://www.happylowcost.com/en/destinations/oaxaca/#deals

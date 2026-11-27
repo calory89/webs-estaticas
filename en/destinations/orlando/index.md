@@ -236,6 +236,10 @@ If you only have one day, follow day 1 of this itinerary: Magic Kingdom. Morning
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Magic Kingdom. Morning: be at the gates before opening, ride Space Mountain, Seven Dwarfs Mine Train or TRON first. Day 2: EPCOT and Disney Springs. Morning: Cosmic Rewind and Test Track while it's quiet.
 
+### What to do in Orlando in 5 days?
+
+With five days in Orlando, this is the guide's route: Day 1, Magic Kingdom; Day 2, EPCOT and Disney Springs; Day 3, Real Orlando; Day 4, Universal; Day 5, Space or springs. The table above has the full plan for each day.
+
 ### Is Orlando expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €110-160 / $125-185 on non-park days per person per day and the "mid-range" level at about €220-350 / $250-400 on park days. Flights are extra: this page shows real fares checked by Happy Low Cost.

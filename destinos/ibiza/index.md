@@ -234,6 +234,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Eivissa y Dalt Vila. Mañana
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Eivissa y Dalt Vila. Mañana: Necrópolis del Puig des Molins y paseo por el barrio de La Marina. Día 2: Ses Salines y el sur. Mañana: bus hasta Ses Salines y playa temprano.
 
+### ¿Qué hacer en Ibiza en 5 días?
+
+Con cinco días en Ibiza, esta es la ruta de la guía: Día 1, Eivissa y Dalt Vila; Día 2, Ses Salines y el sur; Día 3, Es Vedrà y el oeste; Día 4, El norte y los pueblos; Día 5, Formentera. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Ibiza?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-130 € por persona y día, y en el nivel "medio", unos unos 180-250 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

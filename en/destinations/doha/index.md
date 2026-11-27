@@ -243,6 +243,10 @@ If you only have one day, follow day 1 of this itinerary: Old Doha and the water
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Doha and the waterfront. Morning: Get to the Museum of Islamic Art first thing, while you still have energy for three floors. Day 2: Museums and modern Doha. Morning: Visit the National Museum of Qatar, which is walkable from Souq Waqif or one metro stop away (National Museum station, Red Line).
 
+### What to do in Doha in 3 days?
+
+With three days in Doha, this is the guide's route: Day 1, Old Doha and the waterfront; Day 2, Museums and modern Doha; Day 3, Desert. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Doha: https://www.happylowcost.com/en/destinations/doha/#deals

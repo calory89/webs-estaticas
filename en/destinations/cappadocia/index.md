@@ -234,6 +234,10 @@ If you only have one day, follow day 1 of this itinerary: Göreme and the valley
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Göreme and the valleys. Morning: balloon flight, or balloon watching from the hill if you're not flying. Day 2: North loop. Morning: Paşabağ early, then Zelve. Afternoon: Avanos, with lunch by the river and a pottery workshop.
 
+### What to do in Cappadocia in 4 days?
+
+With four days in Cappadocia, this is the guide's route: Day 1, Göreme and the valleys; Day 2, North loop; Day 3, South, underground and Ihlara; Day 4, Uçhisar and spare balloon morning. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cappadocia: https://www.happylowcost.com/en/destinations/cappadocia/#deals

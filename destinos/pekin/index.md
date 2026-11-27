@@ -214,6 +214,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El eje imperial. Mañana: Ti
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El eje imperial. Mañana: Tiananmén temprano y Ciudad Prohibida (con reserva hecha). Día 2: La Gran Muralla. Mañana: sal temprano hacia Mutianyu (tour en bus o coche privado).
 
+### ¿Qué hacer en Pekín en 4 días?
+
+Con cuatro días en Pekín, esta es la ruta de la guía: Día 1, El eje imperial; Día 2, La Gran Muralla; Día 3, Templos y barrios del norte; Día 4, El Palacio de Verano y lo moderno. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Pekín: https://www.happylowcost.com/destinos/pekin/#chollos

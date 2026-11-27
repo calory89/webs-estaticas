@@ -139,6 +139,10 @@ If you only have one day, follow day 1 of this itinerary: Arrive, swim, sunset w
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, swim, sunset walk on Bávaro, dinner at El Cortecito. Day 2: Macao Beach in the morning, buggy tour in the afternoon.
 
+### What to do in Punta Cana in 5 days?
+
+With five days in Punta Cana, this is the guide's route: Day 1, Arrive, swim, sunset walk on Bávaro, dinner at El Cortecito; Day 2, Macao Beach in the morning, buggy tour in the afternoon; Day 3, Isla Saona full day, or a catamaran trip if you want something shorter; Day 4, Scape Park or Indigenous Eyes, then Cap Cana marina for dinner; Day 5, La Romana and Altos de Chavón, or Higüey basilica, or simply sleep in and read. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Punta Cana: https://www.happylowcost.com/en/destinations/punta-cana/#deals

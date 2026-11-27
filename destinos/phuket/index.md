@@ -131,6 +131,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Llegada, playa cercana a tu 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, playa cercana a tu alojamiento, cena sencilla y cama temprana si vienes de un vuelo largo. Día 2: Phuket Town. Paseo por el casco antiguo, Thai Hua Museum, comida local y, si es domingo, Lard Yai.
 
+### ¿Qué hacer en Phuket en 5 días?
+
+Con cinco días en Phuket, esta es la ruta de la guía: Día 1, Llegada, playa cercana a tu alojamiento; Día 2, Phuket Town. Paseo por el casco antiguo, Thai Hua Museum, comida local y, si es domingo; Día 3, Sur de la isla. Wat Chalong por la mañana, Big Buddha; Día 4, Excursión a Phang Nga o a Phi Phi. Elige una sola, que a las dos no llegas con calma; Día 5, Día libre en la playa que más te haya gustado, masaje y cena de marisco en Rawai. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Phuket?
 
 Depende de cómo viajes. Según esta guía, en el nivel "mochilero" se gastan unos 35-50 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

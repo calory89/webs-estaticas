@@ -126,6 +126,10 @@ Con 10 días ves lo esencial de Bali sin prisas. La ruta de esta guía está org
 
 Para quien escribió esta guía, sí: Bali es una isla pequeña, de unos 150 kilómetros de lado a lado, que reúne arrozales, templos hindúes, playas con olas serias y una cocina que engancha. Con 10 días ves lo esencial. Presupuesto: Hay guesthouses familiares (homestays) desde unos 15-25 € la noche, con desayuno, y villas con piscina por 50-90 €.
 
+### ¿Qué hacer en Bali en 10 días?
+
+Con diez días en Bali, esta es la ruta de la guía: Días 1-4, Ubud; Día 5, Traslado hacia Sanur y barco a Nusa Penida; Días 6-7, Nusa Penida; Días 8-10, Uluwatu o Canggu. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bali: https://www.happylowcost.com/destinos/bali/#chollos

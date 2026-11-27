@@ -245,6 +245,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y mercados
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y mercados. Mañana: desayuno en el Mercado 20 de Noviembre (chocolate con pan de yema), Zócalo y Catedral, y subida por el Andador Macedonio Alcalá hasta Santo Domingo. Día 2: Monte Albán y barrios. Mañana: autobús temprano a Monte Albán y vuelta hacia mediodía.
 
+### ¿Qué hacer en Oaxaca en 4 días?
+
+Con cuatro días en Oaxaca, esta es la ruta de la guía: Día 1, Centro histórico y mercados; Día 2, Monte Albán y barrios; Día 3, Valle de Tlacolula (mejor si es domingo); Día 4, Pueblos artesanos del sur. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Oaxaca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

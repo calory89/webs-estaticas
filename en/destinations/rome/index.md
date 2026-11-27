@@ -168,6 +168,10 @@ If you only have one day, follow day 1 of this itinerary: Colosseum, Forum and P
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Colosseum, Forum and Palatine in the morning, lunch in Monti, then the Jewish Ghetto and Trastevere for dinner. Day 2: Vatican Museums early, St Peter's, then an afternoon on foot through Prati and across the river to Piazza Navona, the Pantheon and Trevi at dusk.
 
+### What to do in Rome in 4 days?
+
+With four days in Rome, this is the guide's route: Day 1, Colosseum, Forum and Palatine in the morning, lunch in Monti; Day 2, Vatican Museums early, St Peter's; Day 3, Borghese Gallery slot, Villa Borghese, Spanish Steps, then Testaccio for a long dinner; Day 4, San Clemente, the Aventine, then either Ostia Antica or the Appian Way. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Rome: https://www.happylowcost.com/en/destinations/rome/#deals

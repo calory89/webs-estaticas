@@ -254,6 +254,10 @@ If you only have one day, follow day 1 of this itinerary: Castle, old town and E
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Castle, old town and Explanada. Morning: take the lift up to Santa Bárbara early, before the heat and the tour groups. Day 2: Market and San Juan beach. Morning: Mercado Central for coffee and a browse, then the tram from Mercado or Luceros to Playa de San Juan.
 
+### What to do in Alicante in 3 days?
+
+With three days in Alicante, this is the guide's route: Day 1, Castle, old town and Explanada; Day 2, Market and San Juan beach; Day 3, Tabarca (or a day trip). The table above has the full plan for each day.
+
 ### Is Alicante expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

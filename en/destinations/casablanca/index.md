@@ -239,6 +239,10 @@ Yes, at the Ain Diab beaches, though the Atlantic is cool and the currents can b
 
 If you only have one day, follow day 1 of this itinerary: Mosque, medina and the sea. Morning: Start at the Hassan II Mosque for an early guided tour.
 
+### What to do in Casablanca in 2 days?
+
+With two days in Casablanca, this is the guide's route: Day 1, Mosque, medina and the sea; Day 2, Habous, parks and modern Casa. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Casablanca: https://www.happylowcost.com/en/destinations/casablanca/#deals

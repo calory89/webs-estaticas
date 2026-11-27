@@ -228,6 +228,10 @@ If you only have one day, follow day 1 of this itinerary: Old port and old town.
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old port and old town. Morning: fish market on the Quai des Belges, then climb into Le Panier and the Vieille Charité before the crowds. Day 2: The Calanques. Morning: leave early on bus 21 to Luminy and hike to Sugiton (book in summer), or take the bus to Sormiou.
 
+### What to do in Marseille in 3 days?
+
+With three days in Marseille, this is the guide's route: Day 1, Old port and old town; Day 2, The Calanques; Day 3, Markets and the coast. The table above has the full plan for each day.
+
 ### Is Marseille expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-80 per person per day and the "mid-range" level at about €150-220. Flights are extra: this page shows real fares checked by Happy Low Cost.

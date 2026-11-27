@@ -149,6 +149,10 @@ If you only have one day, follow day 1 of this itinerary: Nyhavn early, Amalienb
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Nyhavn early, Amalienborg, the waterfront walk, lunch at Torvehallerne, Rosenborg and the King's Garden, then Tivoli in the evening. Day 2: Christiansborg and the Round Tower, a wander along Strøget (skip the shops, enjoy the side streets), Glyptotek or Designmuseum, then dinner in Vesterbro.
 
+### What to do in Copenhagen in 3 days?
+
+With three days in Copenhagen, this is the guide's route: Day 1, Nyhavn early, Amalienborg, the waterfront walk, lunch at Torvehallerne; Day 2, Christiansborg and the Round Tower, a wander along Strøget (skip the shops; Day 3, Christianshavn and Christiania in the morning, a canal boat. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Copenhagen: https://www.happylowcost.com/en/destinations/copenhagen/#deals

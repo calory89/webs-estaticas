@@ -242,6 +242,10 @@ If you only have one day, follow day 1 of this itinerary: Downtown and the water
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown and the waterfront. Morning: Start at St Lawrence Market for a peameal bacon sandwich, then walk five minutes to the Distillery District. Day 2: Neighbourhoods and food. Morning: Visit the AGO, then walk west to Kensington Market and Chinatown for lunch.
 
+### What to do in Toronto in 3 days?
+
+With three days in Toronto, this is the guide's route: Day 1, Downtown and the waterfront; Day 2, Neighbourhoods and food; Day 3, Islands, uptown and the east. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Toronto: https://www.happylowcost.com/en/destinations/toronto/#deals

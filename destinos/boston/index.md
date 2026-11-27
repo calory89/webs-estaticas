@@ -249,6 +249,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Freedom Trail y North End. M
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Freedom Trail y North End. Mañana: empieza en Boston Common y sigue la línea roja del suelo: State House, Granary Burying Ground (donde están enterrados Paul Revere y Samuel Adams), Old State House y Faneuil Hall. Día 2: Beacon Hill, Back Bay y Fenway. Mañana: Acorn Street temprano, Charles Street para un café y Public Garden.
 
+### ¿Qué hacer en Boston en 3 días?
+
+Con tres días en Boston, esta es la ruta de la guía: Día 1, Freedom Trail y North End; Día 2, Beacon Hill, Back Bay y Fenway; Día 3, Cambridge y Seaport. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Boston: https://www.happylowcost.com/destinos/boston/#chollos

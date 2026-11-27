@@ -140,6 +140,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro Histórico. Zócalo, 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro Histórico. Zócalo, catedral, Templo Mayor, Palacio Nacional, Bellas Artes. Día 2: Chapultepec. Museo de Antropología por la mañana y castillo por la tarde.
 
+### ¿Qué hacer en Ciudad de México en 4 días?
+
+Con cuatro días en Ciudad de México, esta es la ruta de la guía: Día 1, Centro Histórico. Zócalo, catedral, Templo Mayor, Palacio Nacional, Bellas Artes; Día 2, Chapultepec. Museo de Antropología por la mañana y castillo por la tarde; Día 3, Coyoacán y Casa Azul por la mañana, UNAM después; Día 4, Teotihuacán a primera hora y de vuelta a mediodía. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad de México: https://www.happylowcost.com/destinos/ciudad-de-mexico/#chollos

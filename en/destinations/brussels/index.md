@@ -147,6 +147,10 @@ If you only have one day, follow day 1 of this itinerary: Grand-Place at opening
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Grand-Place at opening hours, the Galleries, Manneken Pis, lunch of frites, then Sablon and the Marolles, finishing with beers around Saint-Géry. Day 2: Magritte Museum and Fine Arts in the morning, the Comic Strip Center after lunch, then walk through Dansaert and the canal area.
 
+### What to do in Brussels in 3 days?
+
+With three days in Brussels, this is the guide's route: Day 1, Grand-Place at opening hours, the Galleries, Manneken Pis, lunch of frites; Day 2, Magritte Museum and Fine Arts in the morning, the Comic Strip Center after lunch; Day 3, Horta Museum, a long lunch in Saint-Gilles or Ixelles, then Flagey and the ponds. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Brussels: https://www.happylowcost.com/en/destinations/brussels/#deals

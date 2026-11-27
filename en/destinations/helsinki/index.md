@@ -147,6 +147,10 @@ If you only have one day, follow day 1 of this itinerary: Central Station, Oodi,
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Central Station, Oodi, Kiasma or Ateneum, Senate Square and the cathedral, lunch in the Old Market Hall, Uspenski in the afternoon, then an evening sauna at Allas or Löyly. Day 2: Morning ferry to Suomenlinna, a long lunch on the island, then back to Punavuori for design shops and dinner.
 
+### What to do in Helsinki in 3 days?
+
+With three days in Helsinki, this is the guide's route: Day 1, Central Station, Oodi, Kiasma or Ateneum, Senate Square and the cathedral; Day 2, Morning ferry to Suomenlinna, a long lunch on the island; Day 3, Temppeliaukio Church, the Sibelius Monument, a coffee stop at Regatta in Töölö. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Helsinki: https://www.happylowcost.com/en/destinations/helsinki/#deals

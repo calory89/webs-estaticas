@@ -126,6 +126,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Westminster, St James's Park
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Westminster, St James's Park, Trafalgar Square y National Gallery. Día 2: Tower of London, Tower Bridge, paseo por el sur hasta la Tate Modern y Borough Market.
 
+### ¿Qué hacer en Londres en 4 días?
+
+Con cuatro días en Londres, esta es la ruta de la guía: Día 1, Westminster, St James's Park, Trafalgar Square y National Gallery; Día 2, Tower of London, Tower Bridge, paseo por el sur hasta la Tate Modern y Borough Market; Día 3, British Museum por la mañana, Covent Garden y tarde en Camden o Regent's Canal; Día 4, Greenwich o Notting Hill, según el día que haga, y Sky Garden al final. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Londres: https://www.happylowcost.com/destinos/londres/#chollos

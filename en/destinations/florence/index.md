@@ -147,6 +147,10 @@ If you only have one day, follow day 1 of this itinerary: Duomo and dome climb e
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Duomo and dome climb early, Baptistery, lunch near San Lorenzo, Medici Chapels, then Piazza della Signoria and Ponte Vecchio at golden hour. Day 2: Uffizi in the morning, Accademia after lunch, then evening drinks in Santo Spirito.
 
+### What to do in Florence in 3 days?
+
+With three days in Florence, this is the guide's route: Day 1, Duomo and dome climb early, Baptistery, lunch near San Lorenzo, Medici Chapels; Day 2, Uffizi in the morning, Accademia after lunch, then evening drinks in Santo Spirito; Day 3, Santa Croce, then cross to Pitti and Boboli, finishing with San Miniato at sunset. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Florence: https://www.happylowcost.com/en/destinations/florence/#deals

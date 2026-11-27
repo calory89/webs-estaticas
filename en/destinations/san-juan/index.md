@@ -248,6 +248,10 @@ If you only have one day, follow day 1 of this itinerary: Old San Juan. Morning:
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old San Juan. Morning: El Morro at opening, then the lawn and the cemetery viewpoint over La Perla. Day 2: Santurce, Condado and the lagoon. Morning: mural walk around Calle Cerra, then the Museo de Arte de Puerto Rico.
 
+### What to do in San Juan in 4 days?
+
+With four days in San Juan, this is the guide's route: Day 1, Old San Juan; Day 2, Santurce, Condado and the lagoon; Day 3, El Yunque and Luquillo; Day 4, Piñones and a slow finish. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to San Juan: https://www.happylowcost.com/en/destinations/san-juan/#deals

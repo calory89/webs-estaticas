@@ -239,6 +239,10 @@ Use Swiss francs or a card. Euros are often accepted, but the exchange rate is p
 
 If you only have one day, follow day 1 of this itinerary: Old Town, the lake and Pâquis. Morning: Start at Parc des Bastions and the Reformation Wall, then walk up into the Old Town.
 
+### What to do in Geneva in 2 days?
+
+With two days in Geneva, this is the guide's route: Day 1, Old Town, the lake and Pâquis; Day 2, International Geneva and Carouge. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Geneva: https://www.happylowcost.com/en/destinations/geneva/#deals

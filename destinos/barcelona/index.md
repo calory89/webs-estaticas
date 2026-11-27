@@ -249,6 +249,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo y mar. Mañana
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo y mar. Mañana: empieza en plaça de Catalunya, baja por las Ramblas solo hasta la Boqueria y gira hacia el Gòtic: catedral, carrer del Bisbe, plaça Sant Felip Neri y plaça del Rei. Día 2: Gaudí y Gràcia. Mañana: Park Güell a primera hora. Baja andando por Gràcia hasta passeig de Gràcia (unos 40 minutos con paradas en las plazas).
 
+### ¿Qué hacer en Barcelona en 3 días?
+
+Con tres días en Barcelona, esta es la ruta de la guía: Día 1, Casco antiguo y mar; Día 2, Gaudí y Gràcia; Día 3, Montjuïc y Sant Antoni. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Barcelona: https://www.happylowcost.com/destinos/barcelona/#chollos

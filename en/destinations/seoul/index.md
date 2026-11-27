@@ -135,6 +135,14 @@ If you only have one day, follow day 1 of this itinerary: Gyeongbokgung at openi
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong. Day 2: Changdeokgung and Huwon, Gwangjang Market for lunch, Dongdaemun Design Plaza at dusk.
 
+### What to do in Seoul in 5 days?
+
+With five days in Seoul, this is the guide's route: Day 1, Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong; Day 2, Changdeokgung and Huwon, Gwangjang Market for lunch, Dongdaemun Design Plaza at dusk; Day 3, Walk up Namsan in the morning, Myeongdong for street food, Itaewon at night; Day 4, Seongsu-dong for cafes and shops, then Hongdae in the evening; Day 5, Bukhansan or a DMZ tour, or COEX and the Lotte World Tower area for a skyline view. The table above has the full plan for each day.
+
+### What to see in South Korea in 5 days?
+
+With five days in South Korea, this guide suggests staying in Seoul and following its route: Day 1, Gyeongbokgung at opening, Bukchon, Insadong, then dinner in Ikseon-dong; Day 2, Changdeokgung and Huwon, Gwangjang Market for lunch, Dongdaemun Design Plaza at dusk; Day 3, Walk up Namsan in the morning, Myeongdong for street food, Itaewon at night; Day 4, Seongsu-dong for cafes and shops, then Hongdae in the evening; Day 5, Bukhansan or a DMZ tour, or COEX and the Lotte World Tower area for a skyline view.
+
 ## Flights and deals
 
 - Flight deals to Seoul: https://www.happylowcost.com/en/destinations/seoul/#deals

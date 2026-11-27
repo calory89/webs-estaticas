@@ -127,6 +127,10 @@ Si buscas paisaje y frescor, el norte con Hanói, Ninh Binh y Lan Ha. Si prefier
 
 Para quien escribió esta guía, sí: Vietnam es largo, estrecho y muy variado. Presupuesto: En general, hostales con cama en dormitorio desde unos 6-10 €, habitaciones privadas sencillas desde 15-25 € y hoteles muy buenos de 40-70 €, mucho más baratos que en Europa.
 
+### ¿Qué hacer en Vietnam en 14 días?
+
+Con 14 días en Vietnam, esta es la ruta de la guía: Días 1-3, Hanói y Casco Antiguo, con un día de excursión a Ninh Binh; Días 4-5, Lan Ha o Ha Long con noche en barco; Días 6-7, Vuelo a Hue, ciudadela y tumbas; Días 8-10, Hoi An, con media jornada en Da Nang o Hai Van de camino; Días 11-14, Vuelo a Saigón, Mekong y túneles de Cu Chi. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Vietnam: https://www.happylowcost.com/destinos/hanoi/#chollos

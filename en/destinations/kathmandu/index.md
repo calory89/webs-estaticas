@@ -236,6 +236,10 @@ If you only have one day, follow day 1 of this itinerary: Old Kathmandu and Sway
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Kathmandu and Swayambhunath. Morning: walk from Thamel south through Asan Tole and Indra Chowk to Kathmandu Durbar Square. Day 2: Pashupatinath and Boudhanath. Morning: take a taxi to Pashupatinath. Afternoon: walk to Boudhanath, about 30-40 minutes along local roads, or take a short taxi.
 
+### What to do in Kathmandu in 4 days?
+
+With four days in Kathmandu, this is the guide's route: Day 1, Old Kathmandu and Swayambhunath; Day 2, Pashupatinath and Boudhanath; Day 3, Patan; Day 4, Bhaktapur and Changu Narayan. The table above has the full plan for each day.
+
 ### Is Kathmandu expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €20-30 per person per day and the "comfortable" level at about €120+. Flights are extra: this page shows real fares checked by Happy Low Cost.

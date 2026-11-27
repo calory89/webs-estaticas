@@ -139,6 +139,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town, Stavropoleos
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Stavropoleos, Cărturești Carusel, lunch in Lipscani, then Calea Victoriei, Revolution Square and the Athenaeum. Day 2: Parliament Palace tour in the morning, then walk or ride towards Cișmigiu Gardens.
 
+### What to do in Bucharest in 3 days?
+
+With three days in Bucharest, this is the guide's route: Day 1, Old Town, Stavropoleos, Cărturești Carusel, lunch in Lipscani, then Calea Victoriei; Day 2, Parliament Palace tour in the morning, then walk or ride towards Cișmigiu Gardens; Day 3, Village Museum and Herăstrău Park, then Therme or a day trip to Mogoșoaia or Sinaia. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bucharest: https://www.happylowcost.com/en/destinations/bucharest/#deals

@@ -153,6 +153,10 @@ If you only have one day, follow day 1 of this itinerary: São Bento station, th
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: São Bento station, the cathedral, down to Ribeira, across the bridge to Gaia for a cellar visit, and sunset at the Jardim do Morro. Day 2: Bolhão market in the morning, Clérigos, Livraria Lello and the Baixa, then the Palácio da Bolsa.
 
+### What to do in Porto in 3 days?
+
+With three days in Porto, this is the guide's route: Day 1, São Bento station, the cathedral, down to Ribeira; Day 2, Bolhão market in the morning, Clérigos, Livraria Lello and the Baixa; Day 3, Tram to Foz, a long walk on the seafront, then Serralves in the afternoon. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Porto: https://www.happylowcost.com/en/destinations/porto/#deals

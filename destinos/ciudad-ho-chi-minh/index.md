@@ -232,6 +232,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro colonial y guerra. Ma
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro colonial y guerra. Mañana: Museo de los Restos de la Guerra a primera hora y, a diez minutos andando, el Palacio de la Independencia. Día 2: Excursión a Cu Chi y barrio chino. Mañana: túneles de Cu Chi; sal temprano para volver antes de comer.
 
+### ¿Qué hacer en Ciudad Ho Chi Minh en 3 días?
+
+Con tres días en Ciudad Ho Chi Minh, esta es la ruta de la guía: Día 1, Centro colonial y guerra; Día 2, Excursión a Cu Chi y barrio chino; Día 3, Templos, mercados y río. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Ciudad Ho Chi Minh?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

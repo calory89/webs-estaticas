@@ -133,6 +133,10 @@ The west, with Chania as a base. It combines a beautiful old town with Elafoniss
 
 For the traveller who wrote this guide, yes: Crete is not an island you "do" in a weekend. 7 days are enough for the essentials. Budget: Budget: about €60-80 a day with hostels or simple rooms, bakery breakfasts, gyros or taverna lunches, and buses.
 
+### What to do in Crete in 7 days?
+
+With seven days in Crete, this is the guide's route: Days 1-3, Chania. Old town on day one, Elafonissi or Balos on day two; Day 4, Drive east to Rethymno, stopping at Arkadi, and spend the evening in the old town; Day 5, Preveli and Plakias or Agia Galini on the south coast; Day 6, Phaistos and Matala, then continue to Heraklion for Knossos and the museum the next…; Day 7, Knossos, museum, then fly out or continue to Agios Nikolaos and Spinalonga if you have…. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Crete: https://www.happylowcost.com/en/destinations/crete/#deals

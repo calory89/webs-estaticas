@@ -232,6 +232,10 @@ Suele montarse desde finales de noviembre hasta finales de diciembre o principio
 
 Hoy el chollo más barato que tenemos a Luxemburgo cuesta 94 € ida y vuelta desde Valencia. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Qué hacer en Luxemburgo en 2 días?
+
+Con dos días en Luxemburgo, esta es la ruta de la guía: Día 1, Ville Haute, Corniche y Grund; Día 2, Kirchberg, Pfaffenthal y Clausen. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Luxemburgo: https://www.happylowcost.com/destinos/luxemburgo/#chollos

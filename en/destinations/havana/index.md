@@ -124,6 +124,10 @@ If you only have one day, follow day 1 of this itinerary: Habana Vieja on foot: 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Habana Vieja on foot: the four main plazas, lunch in a paladar, then the Capitolio and the Prado. Day 2: Morning at the Cementerio de Colón, then Plaza de la Revolución.
 
+### What to do in Havana in 4 days?
+
+With four days in Havana, this is the guide's route: Day 1, Habana Vieja on foot: the four main plazas, lunch in a paladar; Day 2, Morning at the Cementerio de Colón, then Plaza de la Revolución; Day 3, Cross the bay to La Cabaña and El Morro, then Regla; Day 4, Day trip to Viñales, or a slow morning in Centro Habana. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Havana: https://www.happylowcost.com/en/destinations/havana/#deals

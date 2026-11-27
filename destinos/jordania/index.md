@@ -215,6 +215,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Amán. Mañana: Ciudadela y 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Amán. Mañana: Ciudadela y bajada a pie hasta el teatro romano. Día 2: Jerash y Amán. Mañana: recoge el coche y llega a Jerash a primera hora.
 
+### ¿Qué hacer en Jordania y Petra en 7 días?
+
+Con siete días en Jordania y Petra, esta es la ruta de la guía: Día 1, Amán; Día 2, Jerash y Amán; Día 3, Madaba, Nebo y mar Muerto; Día 4, Carretera del Rey hasta Petra; Día 5, Petra a fondo; Día 6, Monasterio y Pequeña Petra; Día 7, Wadi Rum. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Jordania y Petra: https://www.happylowcost.com/destinos/jordania/#chollos

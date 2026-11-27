@@ -247,6 +247,10 @@ Para quien escribió esta guía, sí: El Algarve son unos 150 kilómetros de cos
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Faro y traslado a Lagos. Mañana : al aterrizar, Cidade Velha de Faro, la torre de la Sé y la Capela dos Ossos. Día 2: Lagos desde el agua y Sagres. Mañana : kayak por las grutas de la Ponta da Piedade y baño en la Praia do Camilo.
 
+### ¿Qué hacer en Algarve en 6 días?
+
+Con seis días en Algarve, esta es la ruta de la guía: Día 1, Faro y traslado a Lagos; Día 2, Lagos desde el agua y Sagres; Día 3, Benagil y los Siete Valles; Día 4, Tavira y su isla; Día 5, Ria Formosa y Olhão; Día 6, Cacela Velha y Praia do Barril. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Algarve: https://www.happylowcost.com/destinos/algarve/#chollos

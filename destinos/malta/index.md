@@ -140,6 +140,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: La Valeta entera. Concatedra
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Valeta entera. Concatedral por la mañana, Upper Barrakka, paseo sin rumbo y atardecer desde las murallas. Día 2: Birgu por la mañana en ferry, y por la tarde Mdina y Rabat.
 
+### ¿Qué hacer en Malta en 4 días?
+
+Con cuatro días en Malta, esta es la ruta de la guía: Día 1, La Valeta entera. Concatedral por la mañana, Upper Barrakka; Día 2, Birgu por la mañana en ferry, y por la tarde Mdina y Rabat; Día 3, Costa sur. Templos de Ħaġar Qim, Gruta Azul y comida en Marsaxlokk; Día 4, Gozo. Ferry desde Ċirkewwa, Victoria, Ġgantija y Dwejra. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Malta: https://www.happylowcost.com/destinos/malta/#chollos

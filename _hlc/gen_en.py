@@ -135,6 +135,9 @@ TITLE_Q_EN = {
     'zurich': lambda n, d, y: f'{d} days in {n}: itinerary and what to see ({y})' if d else None,  # "zurich 3 day itinerary" 18, "3 days in zurich" 17
     'brujas': lambda n, d, y: f'{n} short break on a budget: {d}-day itinerary' if d else None,  # "short breaks bruges" pos. 17, "cheap trips to bruges" 7
     'bolonia': lambda n, d, y: f'{n} on a budget: {d}-day itinerary ({y})' if d else None,  # "bologna on a budget" 10, "is bologna expensive" 6
+    # Ronda 9 (GSC 31-oct a 27-nov)
+    'verona': lambda n, d, y: f'Things to do in {n}: {d}-day itinerary ({y})' if d else None,  # "things to do in verona" 17 + "what to do in verona" 14, pos. 20
+    'vilna': lambda n, d, y: f'{n} itinerary: {d} days and travel guide ({y})' if d else None,  # "vilnius itinerary 3 days" 33 impr. pos. 8,5
     'oaxaca': lambda n, d, y: f'Things to do in {n}: {d}-day itinerary ({y})' if d else None,  # "things to do in oaxaca" 9 impr. pos. 17,8
 }
 
@@ -375,6 +378,7 @@ def main():
 {ch_}
 <div class="sec-h"><div><div class="kicker">{flag(cc)} Departures from {e(cn)}</div><h1 class="x-h1">Flight deals from {e(cn)}</h1><p>{e(intro_)}</p></div></div>
 <div class="dc-grid">{''.join(card(x) for x in sub)}</div>
+{f'<p style="margin-top:16px"><a class="hlc-btn o" href="/en/flights/from/{ck}/">Cheapest flights from {e(cn)}: every destination and fare</a></p>' if os.path.isfile(f'en/flights/from/{ck}/index.html') else ''}
 </div></main>{FOOTER}</body></html>'''
         write(f'en/deals/from/{ck}', pg)
         city_links.append((ck, cn, len(sub)))
@@ -598,6 +602,7 @@ def main():
         nd_i = nd_ or max([int(m_.group(1)) for m_ in re.finditer(r'\bday\s*(\d{1,2})\b', gh, re.I)] + [0])
         gh, trip_ld = G.guide_itinerary(gh, n, nd_i if 2 <= nd_i <= 21 else 0, 'en')
         gh = G.guide_short_faq(gh, trip_ld, n, 'en')
+        gh = G.guide_todo_faq(gh, trip_ld, n, en_names.country_en(p['c']), 'en')
         gh, bud = G.guide_budget(gh, 'en')
         gh = G.guide_cost_faq(gh, n, 'en')
         attr = G.guide_attractions(gh)

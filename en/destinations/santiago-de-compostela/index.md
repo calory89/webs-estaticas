@@ -249,6 +249,10 @@ No, it is one of Spain's more affordable cities. A menú del día costs €12-16
 
 If you only have one day, follow day 1 of this itinerary: Cathedral and old town. Morning: Start at Praza do Obradoiro before the groups arrive, then go into the cathedral and visit the Pórtico da Gloria on your pre-booked slot.
 
+### What to do in Santiago de Compostela in 2 days?
+
+With two days in Santiago de Compostela, this is the guide's route: Day 1, Cathedral and old town; Day 2, Market, museums and beyond the walls. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Santiago de Compostela: https://www.happylowcost.com/en/destinations/santiago-de-compostela/#deals

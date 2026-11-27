@@ -135,6 +135,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Santa Cruz y La Laguna. Merc
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Santa Cruz y La Laguna. Mercado, paseo por el centro, cena en La Laguna. Día 2: Anaga. Cruz del Carmen, un sendero corto, Taganana y comida en Benijo.
 
+### ¿Qué hacer en Tenerife en 5 días?
+
+Con cinco días en Tenerife, esta es la ruta de la guía: Día 1, Santa Cruz y La Laguna. Mercado, paseo por el centro, cena en La Laguna; Día 2, Anaga. Cruz del Carmen, un sendero corto, Taganana y comida en Benijo; Día 3, Teide. Subida temprano, Roques de García y bajada por Vilaflor; Día 4, Norte oeste. Icod, Garachico y baño en El Caletón; si hay tiempo; Día 5, Masca y Los Gigantes, o playa y barco en el sur antes del vuelo. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Tenerife?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "cómodo", unos 200 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

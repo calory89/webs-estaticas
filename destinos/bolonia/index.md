@@ -127,6 +127,10 @@ Para quien escribió esta guía, sí: Bolonia es la ciudad italiana que menos pr
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro histórico. Por la mañana, Piazza Maggiore, San Petronio y Neptuno. Día 2: Universidad, arte y colina. Via Zamboni, Pinacoteca o museo según gustos, y comida tranquila.
 
+### ¿Qué hacer en Bolonia en 3 días?
+
+Con tres días en Bolonia, esta es la ruta de la guía: Día 1, El centro histórico; Día 2, Universidad, arte y colina; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Bolonia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

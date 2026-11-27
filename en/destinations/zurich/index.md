@@ -129,6 +129,10 @@ If you only have one day, follow day 1 of this itinerary: Lindenhof, the old tow
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Lindenhof, the old town, Grossmünster, Fraumünster and St. Day 2: Kunsthaus in the morning, then Zurich West for lunch and a wander.
 
+### What to do in Zurich in 3 days?
+
+With three days in Zurich, this is the guide's route: Day 1, Lindenhof, the old town, Grossmünster, Fraumünster and St; Day 2, Kunsthaus in the morning, then Zurich West for lunch and a wander; Day 3, Uetliberg early, a swim or lake walk in the afternoon. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Zurich: https://www.happylowcost.com/en/destinations/zurich/#deals

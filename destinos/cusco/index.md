@@ -227,6 +227,10 @@ Sí. En temporada alta las entradas se agotan con semanas o meses de margen, y l
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro y aclimatación. Por la mañana, nada de esfuerzos: Plaza de Armas, Catedral y el muro de Hatun Rumiyoc, con mate de coca en el hotel antes de salir. Día 2: Ruinas de arriba y San Blas. A primera hora, taxi a Tambomachay y bajada andando por Puca Pucara, Qenqo y Sacsayhuamán.
 
+### ¿Qué hacer en Cusco en 4 días?
+
+Con cuatro días en Cusco, esta es la ruta de la guía: Día 1, Centro y aclimatación; Día 2, Ruinas de arriba y San Blas; Día 3, Valle Sagrado; Día 4, Machu Picchu. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Cusco?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-130 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

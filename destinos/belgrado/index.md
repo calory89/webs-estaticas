@@ -1,4 +1,4 @@
-# Qué ver en Belgrado en 3 días: guía de un viajero low cost
+# Qué ver y hacer en Belgrado en 3 días: guía de un viajero low cost
 
 > Guía de viaje de Belgrado de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/belgrado/
 > Actualizada: 2026-10-21
@@ -116,6 +116,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Plaza de la República, Knez
 ### ¿Qué ver en Belgrado en 2 días?
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia. Día 2: Templo de San Sava por la mañana, Museo de Tesla y comida en Vračar.
+
+### ¿Qué hacer en Belgrado en 3 días?
+
+Con tres días en Belgrado, esta es la ruta de la guía: Día 1, Plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia; Día 2, Templo de San Sava por la mañana, Museo de Tesla y comida en Vračar; Día 3, Museo de Yugoslavia por la mañana. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Serbia en 3 días?
+
+Con tres días en Serbia, esta guía propone quedarse en Belgrado y seguir su ruta: Día 1, Plaza de la República, Knez Mihailova, Kalemegdan y atardecer en la confluencia; Día 2, Templo de San Sava por la mañana, Museo de Tesla y comida en Vračar; Día 3, Museo de Yugoslavia por la mañana.
 
 ## Vuelos y chollos
 

@@ -129,6 +129,10 @@ If you only have one day, follow day 1 of this itinerary: Walls at opening time,
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Walls at opening time, then Stradun, the fountain and the Franciscan Monastery. Day 2: Morning ferry to Lokrum or the Elaphiti Islands.
 
+### What to do in Dubrovnik in 3 days?
+
+With three days in Dubrovnik, this is the guide's route: Day 1, Walls at opening time, then Stradun, the fountain and the Franciscan Monastery; Day 2, Morning ferry to Lokrum or the Elaphiti Islands; Day 3, Fort Lovrijenac, then a trip to Cavtat by boat or bus. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Dubrovnik: https://www.happylowcost.com/en/destinations/dubrovnik/#deals

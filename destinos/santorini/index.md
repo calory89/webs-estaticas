@@ -131,6 +131,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Fira por la mañana, paseo p
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Fira por la mañana, paseo por Firostefani e Imerovigli y atardecer en Imerovigli. Día 2: Oia a primera hora, sendero de vuelta a Fira si te apetece o bus, y comida en Ammoudi.
 
+### ¿Qué hacer en Santorini en 3 días?
+
+Con tres días en Santorini, esta es la ruta de la guía: Día 1, Fira por la mañana, paseo por Firostefani e Imerovigli y atardecer en Imerovigli; Día 2, Oia a primera hora, sendero de vuelta a Fira si te apetece o bus, y comida en Ammoudi; Día 3, Akrotiri por la mañana, playa por la tarde (Perissa o Kamari) y cena en Pyrgos…. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santorini: https://www.happylowcost.com/destinos/santorini/#chollos

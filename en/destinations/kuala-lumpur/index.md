@@ -239,6 +239,10 @@ If you only have one day, follow day 1 of this itinerary: Old KL and Chinatown. 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old KL and Chinatown. Morning: start at the Islamic Arts Museum, then walk to the National Mosque and through the Perdana Botanical Gardens. Day 2: Batu Caves, Brickfields and the towers. Morning: take the early KTM train from KL Sentral to Batu Caves and climb before 9am.
 
+### What to do in Kuala Lumpur in 3 days?
+
+With three days in Kuala Lumpur, this is the guide's route: Day 1, Old KL and Chinatown; Day 2, Batu Caves, Brickfields and the towers; Day 3, Malay KL or a day trip. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Kuala Lumpur: https://www.happylowcost.com/en/destinations/kuala-lumpur/#deals

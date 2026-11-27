@@ -246,6 +246,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco histórico y miradores
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco histórico y miradores. Mañana: empieza temprano en la Puerta Dorada y baja por la calle Długa hasta Długi Targ antes de que lleguen los grupos. Día 2: Siglo XX, astilleros y Westerplatte. Mañana: Museo de la Segunda Guerra Mundial a primera hora (3-4 horas).
 
+### ¿Qué hacer en Gdansk en 3 días?
+
+Con tres días en Gdansk, esta es la ruta de la guía: Día 1, Casco histórico y miradores; Día 2, Siglo XX, astilleros y Westerplatte; Día 3, Sopot, Oliwa o Malbork. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Gdansk: https://www.happylowcost.com/destinos/gdansk/#chollos

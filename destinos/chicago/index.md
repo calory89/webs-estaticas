@@ -252,6 +252,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El Loop y el río. Mañana: 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Loop y el río. Mañana: Millennium Park temprano, el Bean y la Crown Fountain, y de ahí al Chicago Cultural Center. Día 2: Museum Campus y el sur. Mañana: Field Museum, y paseo por la península del Adler Planetarium para la mejor vista del skyline desde el sur.
 
+### ¿Qué hacer en Chicago en 4 días?
+
+Con cuatro días en Chicago, esta es la ruta de la guía: Día 1, El Loop y el río; Día 2, Museum Campus y el sur; Día 3, Barrios del oeste; Día 4, Norte y lago. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Chicago?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 110-150 € por persona y día, y en el nivel "presupuesto medio", unos 220-320 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

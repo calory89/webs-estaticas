@@ -264,6 +264,10 @@ If you only have one day, follow day 1 of this itinerary: Casco Viejo and the wa
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Casco Viejo and the waterfront. Morning: start at Plaza de la Independencia, visit the cathedral and then the Museo del Canal Interoceánico while it is still cool. Day 2: Ancon Hill and the canal. Morning: Uber to Cerro Ancón at 7am, hike to the flag, then come down and do a quick lap of Mi Pueblito.
 
+### What to do in Panama City in 3 days?
+
+With three days in Panama City, this is the guide's route: Day 1, Casco Viejo and the waterfront; Day 2, Ancon Hill and the canal; Day 3, Panamá Viejo and Amador. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Panama City: https://www.happylowcost.com/en/destinations/panama-city/#deals

@@ -231,6 +231,10 @@ If you only have one day, follow day 1 of this itinerary: Main Town. Morning: St
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Main Town. Morning: Start at the Golden Gate and walk Long Lane to Long Market. Day 2: WWII and Solidarity. Morning: Museum of the Second World War, arriving at opening.
 
+### What to do in Gdansk in 3 days?
+
+With three days in Gdansk, this is the guide's route: Day 1, Main Town; Day 2, WWII and Solidarity; Day 3, Westerplatte, Oliwa and Sopot. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Gdansk: https://www.happylowcost.com/en/destinations/gdansk/#deals

@@ -1,4 +1,4 @@
-# Qué ver en Sofía en 3 días: guía low cost con precios
+# Qué ver y hacer en Sofía en 3 días: guía low cost con precios
 
 > Guía de viaje de Sofía de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/sofia/
 > Actualizada: 2026-10-21
@@ -124,6 +124,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Free tour, Alejandro Nevski,
 ### ¿Qué ver en Sofía en 2 días?
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro. Día 2: Rotonda de San Jorge, Serdica, mercados y mezquita.
+
+### ¿Qué hacer en Sofía en 3 días?
+
+Con tres días en Sofía, esta es la ruta de la guía: Día 1, Free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro; Día 2, Rotonda de San Jorge, Serdica, mercados y mezquita; Día 3, Iglesia de Boyana por la mañana y subida al Vitosha por la tarde, si hace buen tiempo. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Bulgaria en 3 días?
+
+Con tres días en Bulgaria, esta guía propone quedarse en Sofía y seguir su ruta: Día 1, Free tour, Alejandro Nevski, Santa Sofía, calle Vitosha y cena en el centro; Día 2, Rotonda de San Jorge, Serdica, mercados y mezquita; Día 3, Iglesia de Boyana por la mañana y subida al Vitosha por la tarde, si hace buen tiempo.
 
 ## Vuelos y chollos
 

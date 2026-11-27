@@ -157,6 +157,10 @@ If you only have one day, follow day 1 of this itinerary: Duomo and roof in the 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Duomo and roof in the morning, Galleria, lunch near Brera, the Pinacoteca, then an evening drink around San Lorenzo. Day 2: Last Supper at your booked slot, Sant'Ambrogio, Castello Sforzesco, Parco Sempione, and dinner and canals in Navigli.
 
+### What to do in Milan in 3 days?
+
+With three days in Milan, this is the guide's route: Day 1, Duomo and roof in the morning, Galleria, lunch near Brera, the Pinacoteca; Day 2, Last Supper at your booked slot, Sant'Ambrogio, Castello Sforzesco, Parco Sempione; Day 3, Porta Nuova and Bosco Verticale, Fondazione Prada or the Cimitero Monumentale. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Milan: https://www.happylowcost.com/en/destinations/milan/#deals

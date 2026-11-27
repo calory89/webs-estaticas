@@ -141,6 +141,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Santa Monica, Venice y atard
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Santa Monica, Venice y atardecer en la playa. Día 2: Getty Center por la mañana y Malibu por la tarde.
 
+### ¿Qué hacer en Los Ángeles en 5 días?
+
+Con cinco días en Los Ángeles, esta es la ruta de la guía: Día 1, Santa Monica, Venice y atardecer en la playa; Día 2, Getty Center por la mañana y Malibu por la tarde; Día 3, Downtown, Grand Central Market, Broad, Little Tokyo y Olvera Street; Día 4, Hollywood, Griffith Park y el Observatorio al atardecer; Día 5, Echo Park, Silver Lake y compras o cena en Koreatown. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Los Ángeles: https://www.happylowcost.com/destinos/los-angeles/#chollos

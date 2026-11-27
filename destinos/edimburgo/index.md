@@ -129,6 +129,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Old Town. Castillo a primera
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Old Town. Castillo a primera hora, Royal Mile andando, St Giles, Victoria Street y Grassmarket. Día 2: Holyrood y colinas. Museo Nacional por la mañana, Palacio de Holyrood al mediodía y Arthur's Seat por la tarde si el cielo ayuda.
 
+### ¿Qué hacer en Edimburgo en 3 días?
+
+Con tres días en Edimburgo, esta es la ruta de la guía: Día 1, Old Town; Día 2, Holyrood y colinas; Día 3, New Town y alrededores. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Edimburgo: https://www.happylowcost.com/destinos/edimburgo/#chollos

@@ -146,6 +146,14 @@ Light cotton clothes, a cover-up for Stone Town, reef-safe sunscreen, a hat, ins
 
 For the traveller who wrote this guide, yes: Zanzibar is two things at once. One is a maze of coral-stone alleys where Swahili, Arab, Indian and European history is stacked on top of itself. 7 days are enough for the essentials.
 
+### What to do in Zanzibar in 7 days?
+
+With seven days in Zanzibar, this is the guide's route: Days 1-2, Stone Town. Wander, eat at Forodhani, do Prison Island or a spice tour; Days 3-4, East coast (Paje or Jambiani). Jozani on the way, kitesurfing or lazy beach time; Days 5-6, North coast (Nungwi or Kendwa). Snorkelling at Mnemba, sunsets; Day 7, Back to Stone Town or straight to the airport. The table above has the full plan for each day.
+
+### What to see in Tanzania in 7 days?
+
+With seven days in Tanzania, this guide suggests staying in Zanzibar and following its route: Days 1-2, Stone Town. Wander, eat at Forodhani, do Prison Island or a spice tour; Days 3-4, East coast (Paje or Jambiani). Jozani on the way, kitesurfing or lazy beach time; Days 5-6, North coast (Nungwi or Kendwa). Snorkelling at Mnemba, sunsets; Day 7, Back to Stone Town or straight to the airport.
+
 ## Flights and deals
 
 - Flight deals to Zanzibar: https://www.happylowcost.com/en/destinations/zanzibar/#deals

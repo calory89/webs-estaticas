@@ -123,6 +123,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Estación central, Oodi, Kia
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Estación central, Oodi, Kiasma, Plaza del Senado y Catedral, paseo por Esplanadi y cena en el mercado o en Kallio. Día 2: Ferry a Suomenlinna por la mañana, comida allí o de vuelta en Kauppatori, tarde en Katajanokka con Uspenski y sauna al final del día.
 
+### ¿Qué hacer en Helsinki en 3 días?
+
+Con tres días en Helsinki, esta es la ruta de la guía: Día 1, Estación central, Oodi, Kiasma, Plaza del Senado y Catedral; Día 2, Ferry a Suomenlinna por la mañana, comida allí o de vuelta en Kauppatori; Día 3, Iglesia de la Roca, Sibelius. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Helsinki: https://www.happylowcost.com/destinos/helsinki/#chollos

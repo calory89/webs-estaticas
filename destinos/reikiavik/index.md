@@ -127,6 +127,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Llegada, Reikiavik a pie y p
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, Reikiavik a pie y piscina por la tarde. Día 2: Círculo Dorado: Þingvellir, Geysir, Gullfoss.
 
+### ¿Qué hacer en Islandia en 7 días?
+
+Con siete días en Islandia, esta es la ruta de la guía: Día 1, Llegada, Reikiavik a pie y piscina por la tarde; Día 2, Círculo Dorado: Þingvellir, Geysir, Gullfoss; Día 3, Seljalandsfoss, Skógafoss y noche en Vík; Día 4, Reynisfjara, Skaftafell y Jökulsárlón; Día 5, Diamond Beach y vuelta hacia el oeste con calma; Día 6, Snæfellsnes o baño termal; Día 7, Última mañana en Reikiavik y vuelo. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Islandia: https://www.happylowcost.com/destinos/reikiavik/#chollos

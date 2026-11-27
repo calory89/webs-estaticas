@@ -135,6 +135,14 @@ If you only have one day, follow day 1 of this itinerary: Table Mountain in the 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon, sunset on Signal Hill. Day 2: Robben Island in the morning, then the Waterfront and Zeitz MOCAA.
 
+### What to do in Cape Town in 5 days?
+
+With five days in Cape Town, this is the guide's route: Day 1, Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon; Day 2, Robben Island in the morning, then the Waterfront and Zeitz MOCAA; Day 3, The peninsula loop: Muizenberg, Kalk Bay, Boulders Beach, Cape Point; Day 4, Kirstenbosch in the morning, then Constantia wine estates; Day 5, Stellenbosch or Franschhoek, or a buffer day if weather wrecked an earlier plan. The table above has the full plan for each day.
+
+### What to see in South Africa in 5 days?
+
+With five days in South Africa, this guide suggests staying in Cape Town and following its route: Day 1, Table Mountain in the morning, Company's Garden and Bo-Kaap in the afternoon; Day 2, Robben Island in the morning, then the Waterfront and Zeitz MOCAA; Day 3, The peninsula loop: Muizenberg, Kalk Bay, Boulders Beach, Cape Point; Day 4, Kirstenbosch in the morning, then Constantia wine estates; Day 5, Stellenbosch or Franschhoek, or a buffer day if weather wrecked an earlier plan.
+
 ## Flights and deals
 
 - Flight deals to Cape Town: https://www.happylowcost.com/en/destinations/cape-town/#deals

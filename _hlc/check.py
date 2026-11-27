@@ -364,6 +364,19 @@ try:
 except Exception as _ex:
     errors.append(f'no se pudo leer sitemap_index.xml: {_ex}')
 
+# ronda 9: guía cuyo título dice "N días" pero se quedó sin días (Zanzíbar perdió el título por la consulta, la tabla de itinerario y las FAQ de 1/2 días)
+try:
+    _dias = json.load(open('destinos/dias.json', encoding='utf-8'))
+    _sin = []
+    for _s, _d in _dias.items():
+        if not _d and os.path.isfile(f'destinos/{_s}/index.html'):
+            _t = re.search(r'<title>(.*?)</title>', open(f'destinos/{_s}/index.html', encoding='utf-8', errors='ignore').read(20000), re.S)
+            if _t and re.search(r'\b\d{1,2}\s+d[ií]as\b', _t.group(1)):
+                _sin.append(_s)
+    if _sin:
+        errors.append(f'{len(_sin)} guía(s) con "N días" en el título pero sin días detectados (gen_deals.guide_days): ' + ', '.join(_sin[:5]))
+except Exception as _ex:
+    warns.append(f'no se pudo revisar destinos/dias.json: {_ex}')
 print(json.dumps({'paginas': len(set(scope)), 'ficheros': nfiles, 'reglas': nrules, 'errores': len(errors), 'avisos': len(warns), 'profundidad': DEPTH_STATS}, ensure_ascii=False))
 for w in warns:
     print('AVISO', w)

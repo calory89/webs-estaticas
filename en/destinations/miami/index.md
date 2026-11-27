@@ -120,6 +120,10 @@ If you only have one day, follow day 1 of this itinerary: South Beach. Early wal
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: South Beach. Early walk on Ocean Drive, Art Deco tour, beach time, then dinner and a stroll on Lincoln Road. Day 2: The city. Wynwood in the morning, Design District for lunch, Little Havana for the late afternoon and dinner.
 
+### What to do in Miami in 4 days?
+
+With four days in Miami, this is the guide's route: Day 1, South Beach; Day 2, The city; Day 3, Bay and gardens; Day 4, Optional. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Miami: https://www.happylowcost.com/en/destinations/miami/#deals

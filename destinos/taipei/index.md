@@ -236,6 +236,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico y Wanhua. 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico y Wanhua. Mañana: desayuno en Fu Hang Dou Jiang (hay cola, pero avanza rápido) y Memorial de Chiang Kai-shek, que está cerca. Día 2: Este de la ciudad y Taipei 101. Mañana: Daan Forest Park temprano y desayuno o brunch en Yongkang Street.
 
+### ¿Qué hacer en Taipéi en 4 días?
+
+Con cuatro días en Taipéi, esta es la ruta de la guía: Día 1, Centro histórico y Wanhua; Día 2, Este de la ciudad y Taipei 101; Día 3, Norte: museo y aguas termales; Día 4, Excursión a Jiufen o Shifen. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Taipéi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-60 € por persona y día, y en el nivel "medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

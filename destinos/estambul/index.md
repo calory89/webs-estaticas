@@ -126,6 +126,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Sultanahmet. Santa Sofía a 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Sultanahmet. Santa Sofía a primera hora, Mezquita Azul, Cisterna Basílica y paseo por el Hipódromo. Día 2: Topkapı y bazares. Palacio por la mañana, Süleymaniye después y tarde en el Gran Bazar y el Bazar de las Especias.
 
+### ¿Qué hacer en Estambul en 4 días?
+
+Con cuatro días en Estambul, esta es la ruta de la guía: Día 1, Sultanahmet; Día 2, Topkapı y bazares; Día 3, Cuerno de Oro y Beyoğlu; Día 4, Bósforo y Asia. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Estambul: https://www.happylowcost.com/destinos/estambul/#chollos

@@ -266,6 +266,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El Doha clásico. Mañana: M
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El Doha clásico. Mañana: Museo de Arte Islámico nada más abrir, cuando hay menos gente y menos calor fuera. Día 2: Doha moderna. Mañana: Msheireb Museums y paseo por Msheireb.
 
+### ¿Qué hacer en Doha en 3 días?
+
+Con tres días en Doha, esta es la ruta de la guía: Día 1, El Doha clásico; Día 2, Doha moderna; Día 3, Desierto. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Doha: https://www.happylowcost.com/destinos/doha/#chollos

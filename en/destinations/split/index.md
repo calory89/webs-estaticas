@@ -227,6 +227,10 @@ If you only have one day, follow day 1 of this itinerary: Diocletian's Palace an
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Diocletian's Palace and the old town. Morning: Be at the Peristyle by 7:30 before the cruise groups arrive. Day 2: Markets, Marjan and the beach. Morning: Fish market and Green Market, then buy a picnic.
 
+### What to do in Split in 3 days?
+
+With three days in Split, this is the guide's route: Day 1, Diocletian's Palace and the old town; Day 2, Markets, Marjan and the beach; Day 3, Day trip and a final evening. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Split: https://www.happylowcost.com/en/destinations/split/#deals

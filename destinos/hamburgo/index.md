@@ -147,6 +147,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Rathaus, Jungfernstieg, Spei
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Rathaus, Jungfernstieg, Speicherstadt y HafenCity, Elbphilharmonie al atardecer. Día 2: Landungsbrücken, Alter Elbtunnel, ferri 62, Michel y noche por St.
 
+### ¿Qué hacer en Hamburgo en 3 días?
+
+Con tres días en Hamburgo, esta es la ruta de la guía: Día 1, Rathaus, Jungfernstieg, Speicherstadt y HafenCity, Elbphilharmonie al atardecer; Día 2, Landungsbrücken, Alter Elbtunnel, ferri 62, Michel y noche por St; Día 3, Planten un Blomen, Schanzenviertel y Karoviertel, o excursión a Blankenese. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Hamburgo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 euros por persona y día, y en el nivel "cómodo", unos más de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -235,6 +235,10 @@ Take bus 29 from the stop under the UFO bridge, which takes about 30 minutes. In
 
 If you only have one day, follow day 1 of this itinerary: Old Town and castle. Morning: Start at Michael's Gate and climb it before the crowds.
 
+### What to do in Bratislava in 2 days?
+
+With two days in Bratislava, this is the guide's route: Day 1, Old Town and castle; Day 2, Devín, the Danube and the UFO. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bratislava: https://www.happylowcost.com/en/destinations/bratislava/#deals

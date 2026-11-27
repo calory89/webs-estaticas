@@ -242,6 +242,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Bund, People's Square y Pudo
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Bund, People's Square y Pudong. Mañana: Bund a primera hora y después metro a People's Square para el Museo de Shanghái. Día 2: Ciudad antigua y Concesión Francesa. Mañana: Jardín Yuyuan nada más abrir, con xiaolongbao para comer por la zona (fuera del bazar).
 
+### ¿Qué hacer en Shanghái en 4 días?
+
+Con cuatro días en Shanghái, esta es la ruta de la guía: Día 1, Bund, People's Square y Pudong; Día 2, Ciudad antigua y Concesión Francesa; Día 3, Templos, arte y West Bund; Día 4, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Shanghái: https://www.happylowcost.com/destinos/shanghai/#chollos

@@ -237,6 +237,10 @@ If you only have one day, follow day 1 of this itinerary: Old City. Morning: sta
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old City. Morning: start at the Lanna Folklife Museum, then walk to Wat Chedi Luang and Wat Phan Tao. Day 2: Doi Suthep and the west side. Morning: hike the Monk's Trail to Wat Pha Lat early, then carry on up to Doi Suthep by red truck or on foot.
 
+### What to do in Chiang Mai in 4 days?
+
+With four days in Chiang Mai, this is the guide's route: Day 1, Old City; Day 2, Doi Suthep and the west side; Day 3, Cooking class and the river; Day 4, Day trip. The table above has the full plan for each day.
+
 ### Is Chiang Mai expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about about €25-35 per person per day and the "mid-range" level at about about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.

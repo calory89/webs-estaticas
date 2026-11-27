@@ -136,6 +136,10 @@ Para quien escribió esta guía, sí: Maldivas tiene fama de destino para recié
 
 Si solo tienes un día, haz el día 1 de esta ruta: Llegada a Velana, noche en Hulhumalé o traslado directo a la isla elegida.
 
+### ¿Qué hacer en Maldivas en 7 días?
+
+Con siete días en Maldivas, esta es la ruta de la guía: Día 1, Llegada a Velana, noche en Hulhumalé o traslado directo a la isla elegida; Días 2-3, Maafushi o una isla de Malé Sur, para aclimatarte y hacer el primer snorkel; Días 4-6, Dhigurah o Ukulhas, en Ari, para ver tiburón ballena o mantas, según la época; Día 7, Vuelta a Malé, paseo por mezquita y mercado, y vuelo. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Maldivas: https://www.happylowcost.com/destinos/maldivas/#chollos

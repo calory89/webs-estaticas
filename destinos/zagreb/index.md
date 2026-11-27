@@ -229,6 +229,10 @@ Sí, mucho, sobre todo entre los jóvenes y en hostelería. Un «hvala» (gracia
 
 Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Alta y Kaptol. Mañana: empieza en la plaza Ban Jelačić y sube a Dolac antes de las 10.
 
+### ¿Qué hacer en Zagreb en 2 días?
+
+Con dos días en Zagreb, esta es la ruta de la guía: Día 1, Ciudad Alta y Kaptol; Día 2, Mirogoj y Donji Grad. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Zagreb: https://www.happylowcost.com/destinos/zagreb/#chollos

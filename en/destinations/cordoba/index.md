@@ -235,6 +235,10 @@ Walk 20-25 minutes through the Jardines de la Victoria, take bus line 3 (about �
 
 If you only have one day, follow day 1 of this itinerary: Mezquita, Alcázar and the river. Morning: Be at the Mezquita for the free early slot, then climb the bell tower (book it the day before).
 
+### What to do in Cordoba in 2 days?
+
+With two days in Cordoba, this is the guide's route: Day 1, Mezquita, Alcázar and the river; Day 2, Patios, Santa Marina and taverns. The table above has the full plan for each day.
+
 ### Is Cordoba expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-160. Flights are extra: this page shows real fares checked by Happy Low Cost.

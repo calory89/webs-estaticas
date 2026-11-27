@@ -230,6 +230,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: La Alhambra. Mañana: entra 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Alhambra. Mañana: entra pronto a la Alhambra, con pase de Nazaríes temprano. Día 2: Albaicín y Sacromonte. Mañana: desde Plaza Nueva, Carrera del Darro, El Bañuelo y Paseo de los Tristes.
 
+### ¿Qué hacer en Granada en 3 días?
+
+Con tres días en Granada, esta es la ruta de la guía: Día 1, La Alhambra; Día 2, Albaicín y Sacromonte; Día 3, Centro y monasterios. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Granada?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 55 a 70 € por persona y día, y en el nivel "medio", unos unos 100 a 140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

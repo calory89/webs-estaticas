@@ -239,6 +239,10 @@ If you only have one day, follow day 1 of this itinerary: Gothic Quarter, El Bor
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Gothic Quarter, El Born and Barceloneta. Morning: start at Plaça de Catalunya, walk down La Rambla quickly (look, don't eat), detour into La Boqueria before 10am, then cross into the Gothic Quarter and the Cathedral. Day 2: Sagrada Família, Sant Pau, Park Güell and Gràcia. Morning: Sagrada Família at your booked slot, then walk Avinguda de Gaudí to Sant Pau.
 
+### What to do in Barcelona in 4 days?
+
+With four days in Barcelona, this is the guide's route: Day 1, Gothic Quarter, El Born and Barceloneta; Day 2, Sagrada Família, Sant Pau, Park Güell and Gràcia; Day 3, Eixample, Raval and Poble Sec; Day 4, Montjuïc and the beach. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Barcelona: https://www.happylowcost.com/en/destinations/barcelona/#deals

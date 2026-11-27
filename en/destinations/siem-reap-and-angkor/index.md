@@ -211,6 +211,10 @@ If you only have one day, follow day 1 of this itinerary: Sunrise and the small 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Sunrise and the small circuit. Morning: buy your pass at the official ticket office (or online), then sunrise at Angkor Wat. Day 2: The grand circuit. Morning: leave at 7am for Preah Khan, Neak Pean, Ta Som and East Mebon.
 
+### What to do in Siem Reap and Angkor in 3 days?
+
+With three days in Siem Reap and Angkor, this is the guide's route: Day 1, Sunrise and the small circuit; Day 2, The grand circuit; Day 3, Banteay Srei and the town. The table above has the full plan for each day.
+
 ### Is Siem Reap and Angkor expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about about €30-40 per person per day and the "comfort" level at about €150 and up. Flights are extra: this page shows real fares checked by Happy Low Cost.

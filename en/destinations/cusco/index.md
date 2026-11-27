@@ -257,6 +257,10 @@ If you only have one day, follow day 1 of this itinerary: Arrive slowly. Morning
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive slowly. Morning: land, check in, drink coca tea and do nothing for two hours. Day 2: Centre, San Blas and Sacsayhuamán. Morning: breakfast at San Pedro market, then the Cathedral and MAP.
 
+### What to do in Cusco in 4 days?
+
+With four days in Cusco, this is the guide's route: Day 1, Arrive slowly; Day 2, Centre, San Blas and Sacsayhuamán; Day 3, Sacred Valley; Day 4, Maras, Moray or a big trip. The table above has the full plan for each day.
+
 ### Is Cusco expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-40 per person per day and the "mid-range" level at about €80-130. Flights are extra: this page shows real fares checked by Happy Low Cost.

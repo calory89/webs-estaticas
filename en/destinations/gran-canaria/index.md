@@ -250,6 +250,10 @@ If you only have one day, follow day 1 of this itinerary: Old Las Palmas. Mornin
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Las Palmas. Morning: Mercado de Vegueta for breakfast, then the cathedral and its tower, and Casa de Colón. Day 2: Las Canteras and the port. Morning: swim and snorkel at La Barra at low tide.
 
+### What to do in Gran Canaria in 5 days?
+
+With five days in Gran Canaria, this is the guide's route: Day 1, Old Las Palmas; Day 2, Las Canteras and the port; Day 3, The mountains (car); Day 4, The south; Day 5, The north coast (car). The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Gran Canaria: https://www.happylowcost.com/en/destinations/gran-canaria/#deals

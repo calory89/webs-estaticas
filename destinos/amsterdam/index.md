@@ -131,6 +131,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por el centro
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el centro, Dam, Begijnhof y canales. Día 2: Rijksmuseum por la mañana, Museo Van Gogh después, Vondelpark para descansar y cena en De Pijp.
 
+### ¿Qué hacer en Ámsterdam en 3 días?
+
+Con tres días en Ámsterdam, esta es la ruta de la guía: Día 1, Llegada, paseo por el centro, Dam, Begijnhof y canales; Día 2, Rijksmuseum por la mañana, Museo Van Gogh después; Día 3, Casa de Ana Frank a primera hora, Negen Straatjes. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Países Bajos en 3 días?
+
+Con tres días en Países Bajos, esta guía propone quedarse en Ámsterdam y seguir su ruta: Día 1, Llegada, paseo por el centro, Dam, Begijnhof y canales; Día 2, Rijksmuseum por la mañana, Museo Van Gogh después; Día 3, Casa de Ana Frank a primera hora, Negen Straatjes.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ámsterdam: https://www.happylowcost.com/destinos/amsterdam/#chollos

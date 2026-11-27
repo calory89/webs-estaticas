@@ -235,6 +235,10 @@ Entry to the Duomo is free, but you need a timed coupon from the ticket office, 
 
 Generally yes, especially for accommodation and food. That's why many travellers sleep in Pisa and day-trip to Florence by train.
 
+### What to do in Pisa in 2 days?
+
+With two days in Pisa, this is the guide's route: Day 1, Piazza dei Miracoli and the old town; Day 2, The river and the other Pisa. The table above has the full plan for each day.
+
 ### Is Pisa expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about about €60-80 per person per day and the "mid-range" level at about about €150-220 for one, sharing a double. Flights are extra: this page shows real fares checked by Happy Low Cost.

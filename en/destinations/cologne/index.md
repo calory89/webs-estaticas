@@ -243,6 +243,10 @@ The street carnival runs from Weiberfastnacht, the Thursday before Lent, to Rose
 
 If you only have one day, follow day 1 of this itinerary: Dom, old town and the Rhine. Morning: Be at the cathedral when it opens, then climb the south tower before the queue builds.
 
+### What to do in Cologne in 2 days?
+
+With two days in Cologne, this is the guide's route: Day 1, Dom, old town and the Rhine; Day 2, History, neighbourhoods and nightlife. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cologne: https://www.happylowcost.com/en/destinations/cologne/#deals

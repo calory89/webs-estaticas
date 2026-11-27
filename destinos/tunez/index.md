@@ -244,6 +244,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Medina y centro. Mañana: en
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina y centro. Mañana: entra por Bab el Bhar, sube por la calle Jamaa Ez Zitouna hasta la Gran Mezquita y recorre los zocos de alrededor (Attarine, Chaouachia, Berka). Día 2: Cartago y Sidi Bou Said. Mañana: TGM desde la estación Tunis Marine hasta Carthage Hannibal, colina de Byrsa y museo, y luego bajada a las Termas de Antonino.
 
+### ¿Qué hacer en Túnez en 3 días?
+
+Con tres días en Túnez, esta es la ruta de la guía: Día 1, Medina y centro; Día 2, Cartago y Sidi Bou Said; Día 3, Bardo y costa. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Túnez?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

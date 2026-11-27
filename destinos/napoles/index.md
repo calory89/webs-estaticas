@@ -125,6 +125,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Mañana e
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Mañana en Spaccanapoli, Cappella Sansevero, Duomo y San Gregorio Armeno. Día 2: Arqueología y mar. Mañana en el MANN. Después, Piazza del Plebiscito, Galleria Umberto I y Castel dell'Ovo.
 
+### ¿Qué hacer en Nápoles en 3 días?
+
+Con tres días en Nápoles, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Arqueología y mar; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Nápoles?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 45-65 € por persona y día, y en el nivel "cómodo", unos 180 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

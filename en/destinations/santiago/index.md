@@ -254,6 +254,10 @@ If you only have one day, follow day 1 of this itinerary: Historic centre and La
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Historic centre and Lastarria. Morning: Start at La Moneda, walk up to the Plaza de Armas and the cathedral, then spend a couple of hours in the Museo Precolombino. Day 2: Bellavista, San Cristóbal and Providencia. Morning: Visit La Chascona early, then take the funicular up Cerro San Cristóbal.
 
+### What to do in Santiago in 3 days?
+
+With three days in Santiago, this is the guide's route: Day 1, Historic centre and Lastarria; Day 2, Bellavista, San Cristóbal and Providencia; Day 3, Day trip. The table above has the full plan for each day.
+
 ### Is Santiago expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €45-60 per person per day and the "mid-range" level at about €100-160. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -121,6 +121,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Chora de punta a punta. Mañ
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Chora de punta a punta. Mañana temprano por callejuelas, Paraportiani y molinos; comida en el puerto viejo; atardecer en Little Venice y cena en el centro. Día 2: Delos. Sal en el primer barco que puedas desde el Puerto Viejo, porque a mediodía el calor es duro.
 
+### ¿Qué hacer en Mykonos en 3 días?
+
+Con tres días en Mykonos, esta es la ruta de la guía: Día 1, Chora de punta a punta. Mañana temprano por callejuelas; Día 2, Delos. Sal en el primer barco que puedas desde el Puerto Viejo; Día 3, Playa larga (Elia o Paradise) por la mañana. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Mykonos: https://www.happylowcost.com/destinos/mykonos/#chollos

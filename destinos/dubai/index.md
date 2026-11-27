@@ -154,6 +154,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Al Fahidi, museo, abra por e
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Al Fahidi, museo, abra por el Creek y zocos de Deira. Día 2: Mezquita de Jumeirah por la mañana, Dubai Frame o Museo del Futuro, y por la tarde Downtown con Burj Khalifa y fuente.
 
+### ¿Qué hacer en Dubái en 4 días?
+
+Con cuatro días en Dubái, esta es la ruta de la guía: Día 1, Al Fahidi, museo, abra por el Creek y zocos de Deira; Día 2, Mezquita de Jumeirah por la mañana, Dubai Frame o Museo del Futuro; Día 3, Playa por la mañana en Kite Beach o JBR; Día 4, Marina y Palm Jumeirah si te interesa. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Dubái: https://www.happylowcost.com/destinos/dubai/#chollos

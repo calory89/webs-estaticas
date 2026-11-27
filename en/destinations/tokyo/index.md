@@ -129,6 +129,10 @@ If you only have one day, follow day 1 of this itinerary: East side. Asakusa ear
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: East side. Asakusa early, Ueno Park and the museums, Yanaka in the late afternoon, dinner in Ueno. Day 2: Shibuya and Harajuku. Meiji Jingu in the morning, Takeshita Street if you must, lunch near Omotesando, Shibuya Sky at sunset.
 
+### What to do in Tokyo in 5 days?
+
+With five days in Tokyo, this is the guide's route: Day 1, East side; Day 2, Shibuya and Harajuku; Day 3, Shinjuku; Day 4, Tsukiji and Ginza, then the palace; Day 5, Flexible. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Tokyo: https://www.happylowcost.com/en/destinations/tokyo/#deals

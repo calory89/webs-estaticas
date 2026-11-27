@@ -247,6 +247,10 @@ Sí, en autobús desde la Intermodal en aproximadamente una hora y cuarto, con s
 
 No. La ciudad se recorre andando y en metro o tranvía, y casi todas las excursiones tienen autobús o tren. El coche solo compensa para recorrer la costa con calma.
 
+### ¿Qué hacer en Bilbao en 2 días?
+
+Con dos días en Bilbao, esta es la ruta de la guía: Día 1, Casco Viejo, ría y Artxanda; Día 2, Guggenheim, Bellas Artes y Ensanche. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bilbao: https://www.happylowcost.com/destinos/bilbao/#chollos

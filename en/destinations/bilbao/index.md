@@ -258,6 +258,10 @@ If you only have one day, follow day 1 of this itinerary: Old town and the river
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and the river. Morning: start at Mercado de la Ribera, then wander the Casco Viejo, Santiago Cathedral and the Basque Museum. Day 2: Guggenheim and modern Bilbao. Morning: the Guggenheim first thing, plus Puppy and Maman.
 
+### What to do in Bilbao in 3 days?
+
+With three days in Bilbao, this is the guide's route: Day 1, Old town and the river; Day 2, Guggenheim and modern Bilbao; Day 3, The coast. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bilbao: https://www.happylowcost.com/en/destinations/bilbao/#deals

@@ -232,6 +232,10 @@ If you only have one day, follow day 1 of this itinerary: Bryggen, Fløyen and t
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Bryggen, Fløyen and the harbour. Morning: Start early at Bryggen before the cruise passengers arrive, then explore the back alleys and Schøtstuene. Day 2: Ulriken or museums, then Nordnes. Morning: If it is clear, take Ulriken643 and either come back down or hike Vidden to Fløyen (in which case it becomes a full day).
 
+### What to do in Bergen in 3 days?
+
+With three days in Bergen, this is the guide's route: Day 1, Bryggen, Fløyen and the harbour; Day 2, Ulriken or museums, then Nordnes; Day 3, A fjord day. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bergen: https://www.happylowcost.com/en/destinations/bergen/#deals

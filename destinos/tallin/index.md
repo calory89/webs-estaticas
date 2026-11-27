@@ -127,6 +127,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja. Empieza en Too
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja. Empieza en Toompea con Kohtuotsa y la catedral Nevski, baja a la plaza del Ayuntamiento, pasa por Katariina käik, y sigue por las murallas hasta la puerta Viru. Día 2: Kalamaja y la costa. Telliskivi por la mañana, comida en F-Hoone o en el mercado de Balti Jaama Turg, y por la tarde Noblessner y Lennusadam.
 
+### ¿Qué hacer en Tallin en 3 días?
+
+Con tres días en Tallin, esta es la ruta de la guía: Día 1, Ciudad Vieja; Día 2, Kalamaja y la costa; Día 3, Kadriorg y margen. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Estonia en 3 días?
+
+Con tres días en Estonia, esta guía propone quedarse en Tallin y seguir su ruta: Día 1, Ciudad Vieja; Día 2, Kalamaja y la costa; Día 3, Kadriorg y margen.
+
 ### ¿Es caro viajar a Tallin?
 
 Depende de cómo viajes. Según esta guía, en el nivel "mochilero" se gastan unos 50-65 euros por persona y día, y en el nivel "cómodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

@@ -126,6 +126,10 @@ If you only have one day, follow day 1 of this itinerary: Île de la Cité (Sain
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter, afternoon at the Luxembourg Gardens, evening along the Seine. Day 2: Louvre in the morning, a walk through the Tuileries, then Orsay in the afternoon or the Eiffel Tower at sunset.
 
+### What to do in Paris in 4 days?
+
+With four days in Paris, this is the guide's route: Day 1, Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter; Day 2, Louvre in the morning, a walk through the Tuileries; Day 3, Montmartre at 8 a.m., a long lunch, then the Canal Saint-Martin and a drink on the quays; Day 4, The Marais in the morning, Père Lachaise in the afternoon. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Paris: https://www.happylowcost.com/en/destinations/paris/#deals

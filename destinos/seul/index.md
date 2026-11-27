@@ -132,6 +132,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Gyeongbokgung por la mañana
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong. Día 2: Changdeokgung con Huwon, Gwangjang para comer, Cheonggyecheon y DDP de noche.
 
+### ¿Qué hacer en Seúl en 4 días?
+
+Con cuatro días en Seúl, esta es la ruta de la guía: Día 1, Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong; Día 2, Changdeokgung con Huwon, Gwangjang para comer, Cheonggyecheon y DDP de noche; Día 3, Namsan a pie, Myeongdong o Itaewon, torre al atardecer; Día 4, Hongdae por la mañana, Seongsu o Gangnam por la tarde y paseo junto al Han. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Corea del Sur en 4 días?
+
+Con cuatro días en Corea del Sur, esta guía propone quedarse en Seúl y seguir su ruta: Día 1, Gyeongbokgung por la mañana, Bukchon, Insadong y cena en Ikseon-dong; Día 2, Changdeokgung con Huwon, Gwangjang para comer, Cheonggyecheon y DDP de noche; Día 3, Namsan a pie, Myeongdong o Itaewon, torre al atardecer; Día 4, Hongdae por la mañana, Seongsu o Gangnam por la tarde y paseo junto al Han.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Seúl: https://www.happylowcost.com/destinos/seul/#chollos

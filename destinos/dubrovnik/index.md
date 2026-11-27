@@ -133,6 +133,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Murallas a primera hora, Str
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Murallas a primera hora, Stradun, palacios y catedral. Día 2: Barco a Lokrum por la mañana y baño. Vuelta a mediodía, y por la tarde subes a Srđ para ver la puesta de sol.
 
+### ¿Qué hacer en Dubrovnik en 3 días?
+
+Con tres días en Dubrovnik, esta es la ruta de la guía: Día 1, Murallas a primera hora, Stradun, palacios y catedral; Día 2, Barco a Lokrum por la mañana y baño. Vuelta a mediodía; Día 3, Lovrijenac y luego una excursión: islas Elafiti en barco o ruta de vino y ostras por…. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Dubrovnik: https://www.happylowcost.com/destinos/dubrovnik/#chollos

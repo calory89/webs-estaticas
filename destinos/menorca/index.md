@@ -231,6 +231,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Maó y el puerto. Mañana: c
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Maó y el puerto. Mañana: casco antiguo, Santa María y Mercat des Claustre. Día 2: Calas del sur (Galdana, Mitjana, Macarella). Mañana: llega temprano a Cala Galdana y camina a Mitjana para el primer baño.
 
+### ¿Qué hacer en Menorca en 5 días?
+
+Con cinco días en Menorca, esta es la ruta de la guía: Día 1, Maó y el puerto; Día 2, Calas del sur (Galdana, Mitjana, Macarella); Día 3, Ciutadella y Turqueta; Día 4, Interior y talayots; Día 5, La costa norte. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Menorca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

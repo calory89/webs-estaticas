@@ -261,6 +261,10 @@ If you only have one day, follow day 1 of this itinerary: Airport to La Fortuna.
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Airport to La Fortuna. Morning: pick up your car or shuttle and drive about 3 hours north. Day 2: Arenal. Morning: start at La Fortuna Waterfall at opening time, then walk the lava trails in Arenal Volcano National Park.
 
+### What to do in Costa Rica in 7 days?
+
+With seven days in Costa Rica, this is the guide's route: Day 1, Airport to La Fortuna; Day 2, Arenal; Day 3, Around Lake Arenal to Monteverde; Day 4, Monteverde; Day 5, Monteverde to Manuel Antonio; Day 6, Manuel Antonio; Day 7, Back to San José. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Costa Rica: https://www.happylowcost.com/en/destinations/san-jose-costa-rica/#deals

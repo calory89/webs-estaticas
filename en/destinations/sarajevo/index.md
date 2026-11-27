@@ -220,6 +220,10 @@ If you only have one day, follow day 1 of this itinerary: Old town and the city'
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old town and the city's story. Morning: Start at the Sebilj before the crowds, then visit Gazi Husrev-beg Mosque and walk Ferhadija to the Meeting of Cultures line and the cathedral. Day 2: Siege history and the mountain. Morning: Visit the War Childhood Museum, then Svrzo's House nearby.
 
+### What to do in Sarajevo in 3 days?
+
+With three days in Sarajevo, this is the guide's route: Day 1, Old town and the city's story; Day 2, Siege history and the mountain; Day 3, West Sarajevo and the tunnel. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Sarajevo: https://www.happylowcost.com/en/destinations/sarajevo/#deals

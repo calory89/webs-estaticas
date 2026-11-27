@@ -127,6 +127,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Puerta del Alba, calle Pilie
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral. Día 2: Trakai por la mañana. Por la tarde, Užupis y el paseo junto al río.
 
+### ¿Qué hacer en Vilna en 3 días?
+
+Con tres días en Vilna, esta es la ruta de la guía: Día 1, Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral; Día 2, Trakai por la mañana. Por la tarde, Užupis y el paseo junto al río; Día 3, Museo del Genocidio, iglesia de San Pedro y San Pablo, y la colina de las Tres Cruces. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Lituania en 3 días?
+
+Con tres días en Lituania, esta guía propone quedarse en Vilna y seguir su ruta: Día 1, Puerta del Alba, calle Pilies, universidad, Santa Ana y plaza de la Catedral; Día 2, Trakai por la mañana. Por la tarde, Užupis y el paseo junto al río; Día 3, Museo del Genocidio, iglesia de San Pedro y San Pablo, y la colina de las Tres Cruces.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Vilna: https://www.happylowcost.com/destinos/vilna/#chollos

@@ -241,6 +241,10 @@ If you only have one day, follow day 1 of this itinerary: Centre and Metrocable.
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Centre and Metrocable. Morning: Do a free walking tour of the centre or go to Plaza Botero and the Museo de Antioquia on your own. Day 2: Comuna 13 and Laureles. Morning: Get to Comuna 13 early. Afternoon: Head to the Museo Casa de la Memoria, then take a taxi up to Pueblito Paisa for late-afternoon views.
 
+### What to do in Medellin in 4 days?
+
+With four days in Medellin, this is the guide's route: Day 1, Centre and Metrocable; Day 2, Comuna 13 and Laureles; Day 3, Guatapé; Day 4, Parque Arví and Ciudad del Río. The table above has the full plan for each day.
+
 ### Is Medellin expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.

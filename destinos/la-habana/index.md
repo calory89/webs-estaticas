@@ -126,6 +126,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: La Habana Vieja a pie: Plaza
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja, Obispo y Castillo de la Real Fuerza. Día 2: Capitolio, Paseo del Prado y Gran Teatro por la mañana.
 
+### ¿Qué hacer en La Habana en 4 días?
+
+Con cuatro días en La Habana, esta es la ruta de la guía: Día 1, La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja; Día 2, Capitolio, Paseo del Prado y Gran Teatro por la mañana; Día 3, Vedado: Cementerio de Colón, Plaza de la Revolución, Coppelia y Hotel Nacional; Día 4, Fusterlandia y Finca Vigía por la mañana, o Callejón de Hamel si cae en domingo. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Cuba en 4 días?
+
+Con cuatro días en Cuba, esta guía propone quedarse en La Habana y seguir su ruta: Día 1, La Habana Vieja a pie: Plaza de la Catedral, Plaza Vieja; Día 2, Capitolio, Paseo del Prado y Gran Teatro por la mañana; Día 3, Vedado: Cementerio de Colón, Plaza de la Revolución, Coppelia y Hotel Nacional; Día 4, Fusterlandia y Finca Vigía por la mañana, o Callejón de Hamel si cae en domingo.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a La Habana: https://www.happylowcost.com/destinos/la-habana/#chollos

@@ -250,6 +250,10 @@ If you only have one day, follow day 1 of this itinerary: Bari. Morning: Start a
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Bari. Morning: Start at Basilica di San Nicola, then the cathedral and Strada Arco Basso. Day 2: Polignano a Mare and Monopoli. Morning: Train to Polignano, early. Walk the old town and the cliff viewpoints, swim at Lama Monachile before it fills.
 
+### What to do in Bari and Puglia in 5 days?
+
+With five days in Bari and Puglia, this is the guide's route: Day 1, Bari; Day 2, Polignano a Mare and Monopoli; Day 3, Valle d'Itria; Day 4, Lecce; Day 5, Matera or Trani. The table above has the full plan for each day.
+
 ### Is Bari and Puglia expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.

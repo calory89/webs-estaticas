@@ -236,6 +236,10 @@ If you only have one day, follow day 1 of this itinerary: Wildlife in the south-
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Wildlife in the south-west. Morning: enter Nairobi National Park at opening time for a 4-hour game drive. Day 2: City centre and museums. Morning: start at the Nairobi National Museum on Museum Hill.
 
+### What to do in Nairobi in 3 days?
+
+With three days in Nairobi, this is the guide's route: Day 1, Wildlife in the south-west; Day 2, City centre and museums; Day 3, Forest, markets and nyama choma. The table above has the full plan for each day.
+
 ### Is Nairobi expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €45-70 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.

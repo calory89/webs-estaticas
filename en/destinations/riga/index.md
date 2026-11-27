@@ -143,6 +143,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town in the mornin
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town in the morning, the Cathedral, St. Day 2: Art Nouveau streets in the morning, the Central Market for lunch, then the Latvian National Museum of Art or the Academy of Sciences tower at sunset.
 
+### What to do in Riga in 3 days?
+
+With three days in Riga, this is the guide's route: Day 1, Old Town in the morning, the Cathedral, St; Day 2, Art Nouveau streets in the morning, the Central Market for lunch; Day 3, Take a day trip. Jūrmala, with its wooden villas and wide sandy beach. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Riga: https://www.happylowcost.com/en/destinations/riga/#deals

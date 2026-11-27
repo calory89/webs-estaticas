@@ -243,6 +243,14 @@ Light, modest clothes covering shoulders and knees for the medina and mosques. B
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Medina and the colonial centre. Morning: Have lablabi or coffee near the Marché Central, then walk up Avenue Habib Bourguiba to Bab el Bhar. Day 2: Carthage and Sidi Bou Said. Morning: Take the TGM from Tunis Marine to Carthage Salammbô.
 
+### What to do in Tunis in 3 days?
+
+With three days in Tunis, this is the guide's route: Day 1, Medina and the colonial centre; Day 2, Carthage and Sidi Bou Said; Day 3, Bardo and La Marsa (or a day trip). The table above has the full plan for each day.
+
+### What to see in Tunisia in 3 days?
+
+With three days in Tunisia, this guide suggests staying in Tunis and following its route: Day 1, Medina and the colonial centre; Day 2, Carthage and Sidi Bou Said; Day 3, Bardo and La Marsa (or a day trip).
+
 ### Is Tunis expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "comfort" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -140,6 +140,10 @@ Hoy el chollo más barato que tenemos a Cerdeña cuesta 43 € ida y vuelta desd
 
 Para quien escribió esta guía, sí: Cerdeña no es una isla pequeña ni una playa con extras. Con 7 días ves lo esencial. Presupuesto: Como orientación, una habitación doble sencilla puede rondar los 60-90 euros fuera de temporada y subir mucho por encima de los 130 en agosto.
 
+### ¿Qué hacer en Cerdeña en 7 días?
+
+Con siete días en Cerdeña, esta es la ruta de la guía: Días 1-2, Cagliari, Castello, mercado, atardecer y baño en la playa del Poetto; Día 3, Sales hacia Barumini, visitas Su Nuraxi y duermes en Oristano o en Cabras; Día 4, Tharros, Is Arutas y la península del Sinis; Día 5, Bosa y carretera costera hasta Alghero; Día 6, Alghero, Capo Caccia y Escala del Cabirol; Día 7, Stintino y La Pelosa, y vuelo de vuelta desde Alghero. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Cerdeña?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 euros por persona y día, y en el nivel "comodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

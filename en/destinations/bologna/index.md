@@ -147,6 +147,10 @@ If you only have one day, follow day 1 of this itinerary: Piazza Maggiore, San P
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Piazza Maggiore, San Petronio, Neptune, the Quadrilatero for lunch, then the Archiginnasio and the Two Towers in the late afternoon. Day 2: Morning at Piazza Santo Stefano, wander up Via Zamboni, lunch near the university, then walk the Portico di San Luca in the afternoon and head back for an evening aperitivo.
 
+### What to do in Bologna in 3 days?
+
+With three days in Bologna, this is the guide's route: Day 1, Piazza Maggiore, San Petronio, Neptune, the Quadrilatero for lunch; Day 2, Morning at Piazza Santo Stefano, wander up Via Zamboni, lunch near the university; Day 3, A day trip. Modena and Parma are about half an hour to an hour away by train. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bologna: https://www.happylowcost.com/en/destinations/bologna/#deals

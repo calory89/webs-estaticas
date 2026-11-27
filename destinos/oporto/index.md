@@ -133,6 +133,10 @@ Para quien escribió esta guía, sí: Oporto es de esas ciudades que se abarcan 
 
 Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Empieza en São Bento, sube a la Sé, baja a la Ribeira y cruza el puente hacia Gaia para la cata y la cena con vistas.
 
+### ¿Qué hacer en Oporto en 3 días?
+
+Con tres días en Oporto, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Baixa y Cedofeita; Día 3, Río y costa. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Oporto: https://www.happylowcost.com/destinos/oporto/#chollos

@@ -142,6 +142,14 @@ If you only have one day, follow day 1 of this itinerary: The old centre. Early 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The old centre. Early canal walk, Begijnhof, the Nine Streets, lunch near Spui, then a canal cruise or the Rembrandthuis. Day 2: Museums and parks. Rijksmuseum at opening, a walk through Vondelpark, Van Gogh Museum in the afternoon.
 
+### What to do in Amsterdam in 4 days?
+
+With four days in Amsterdam, this is the guide's route: Day 1, The old centre; Day 2, Museums and parks; Day 3, Jordaan, Anne Frank and Noord; Day 4, If you have it. The table above has the full plan for each day.
+
+### What to see in Netherlands in 4 days?
+
+With four days in Netherlands, this guide suggests staying in Amsterdam and following its route: Day 1, The old centre; Day 2, Museums and parks; Day 3, Jordaan, Anne Frank and Noord; Day 4, If you have it.
+
 ## Flights and deals
 
 - Flight deals to Amsterdam: https://www.happylowcost.com/en/destinations/amsterdam/#deals

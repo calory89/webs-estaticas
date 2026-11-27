@@ -245,6 +245,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Capitolio y museos del Mall.
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Capitolio y museos del Mall. Mañana: visita guiada al Capitolio a primera hora y túnel a la Biblioteca del Congreso. Día 2: Más museos y memoriales al atardecer. Mañana: Air and Space o Historia Natural en cuanto abran, y después Archivos Nacionales.
 
+### ¿Qué hacer en Washington D. C. en 3 días?
+
+Con tres días en Washington D. C., esta es la ruta de la guía: Día 1, Capitolio y museos del Mall; Día 2, Más museos y memoriales al atardecer; Día 3, Arlington y Georgetown. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Washington D. C.?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 90-120 € por persona y día, y en el nivel "medio", unos 180-250 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

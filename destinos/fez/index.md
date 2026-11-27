@@ -141,6 +141,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Medina vieja. Entra por Bab 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina vieja. Entra por Bab Boujloud, visita Bou Inania y Attarine, y pasea por los zocos de los metales y las especias. Día 2: Curtidurías, museos y Fes el-Jdid. Por la mañana, las curtidurías de Chouara y el Nejjarine.
 
+### ¿Qué hacer en Fez en 3 días?
+
+Con tres días en Fez, esta es la ruta de la guía: Día 1, Medina vieja; Día 2, Curtidurías, museos y Fes el-Jdid; Día 3, Excursión o ritmo lento. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Fez?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "cómodo", unos 120 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

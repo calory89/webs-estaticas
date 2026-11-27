@@ -139,6 +139,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Funchal a pie, Mercado dos L
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Funchal a pie, Mercado dos Lavradores, Zona Velha y cena con espetada. Día 2: Monte, bajada en cesto y tarde de bodega o jardín botánico.
 
+### ¿Qué hacer en Madeira en 5 días?
+
+Con cinco días en Madeira, esta es la ruta de la guía: Día 1, Funchal a pie, Mercado dos Lavradores, Zona Velha y cena con espetada; Día 2, Monte, bajada en cesto y tarde de bodega o jardín botánico; Día 3, Pico do Arieiro al amanecer; Día 4, Oeste de la isla: Cabo Girão, Porto Moniz y Fanal; Día 5, Ponta de São Lourenço por la mañana y tarde libre en Funchal o en Câmara de Lobos. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Madeira: https://www.happylowcost.com/destinos/madeira/#chollos

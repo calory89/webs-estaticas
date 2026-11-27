@@ -246,6 +246,14 @@ If you only have one day, follow day 1 of this itinerary: Ciudad Vieja and Centr
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Ciudad Vieja and Centro. Morning: start at Plaza Independencia, look up at the Palacio Salvo, walk through the Puerta de la Ciudadela and down Peatonal Sarandí. Day 2: The Rambla and the southern neighbourhoods. Morning: bus to the Palacio Legislativo for a tour, then on to the Estadio Centenario and its museum if you like football.
 
+### What to do in Montevideo in 3 days?
+
+With three days in Montevideo, this is the guide's route: Day 1, Ciudad Vieja and Centro; Day 2, The Rambla and the southern neighbourhoods; Day 3, Sunday market or a day trip. The table above has the full plan for each day.
+
+### What to see in Uruguay in 3 days?
+
+With three days in Uruguay, this guide suggests staying in Montevideo and following its route: Day 1, Ciudad Vieja and Centro; Day 2, The Rambla and the southern neighbourhoods; Day 3, Sunday market or a day trip.
+
 ### Is Montevideo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -249,6 +249,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Circuito pequeño. Mañana: 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Circuito pequeño. Mañana: amanecer en Angkor Wat, visita completa del templo al salir el resto de la gente y Ta Prohm después. Día 2: Circuito grande. Mañana: amanecer en Srah Srang, Banteay Kdei, Ta Som, Neak Pean y Preah Khan.
 
+### ¿Qué hacer en Siem Reap y Angkor en 3 días?
+
+Con tres días en Siem Reap y Angkor, esta es la ruta de la guía: Día 1, Circuito pequeño; Día 2, Circuito grande; Día 3, Banteay Srei y Kbal Spean. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Camboya en 3 días?
+
+Con tres días en Camboya, esta guía propone quedarse en Siem Reap y Angkor y seguir su ruta: Día 1, Circuito pequeño; Día 2, Circuito grande; Día 3, Banteay Srei y Kbal Spean.
+
 ### ¿Es caro viajar a Siem Reap y Angkor?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos entre 25 y 35 € por persona y día, y en el nivel "medio", unos entre 60 y 90 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

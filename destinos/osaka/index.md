@@ -244,6 +244,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El sur, Namba y Dotonbori. M
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El sur, Namba y Dotonbori. Mañana: Kuromon a primera hora para desayunar fruta y algo de marisco. Día 2: El castillo y el norte. Mañana: castillo de Osaka y su parque a primera hora, antes de que lleguen los grupos.
 
+### ¿Qué hacer en Osaka en 3 días?
+
+Con tres días en Osaka, esta es la ruta de la guía: Día 1, El sur, Namba y Dotonbori; Día 2, El castillo y el norte; Día 3, Tennoji, Shinsekai y la bahía. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Osaka?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-80 €/día por persona y día, y en el nivel "presupuesto medio", unos 120-180 €/día. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

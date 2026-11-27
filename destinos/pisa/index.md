@@ -228,6 +228,10 @@ Sí, en tren hasta La Spezia y desde allí el tren costero. Sal temprano porque 
 
 Si solo tienes un día, haz el día 1 de esta ruta: Torre, plaza y centro histórico. Mañana: llega a la Piazza dei Miracoli temprano, sube a la Torre en uno de los primeros turnos y entra después en la catedral y el baptisterio.
 
+### ¿Qué hacer en Pisa en 2 días?
+
+Con dos días en Pisa, esta es la ruta de la guía: Día 1, Torre, plaza y centro histórico; Día 2, Pisa tranquila o escapada. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Pisa: https://www.happylowcost.com/destinos/pisa/#chollos

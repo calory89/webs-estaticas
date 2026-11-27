@@ -117,6 +117,10 @@ If you only have one day, follow day 1 of this itinerary: Main Square, St. Mary'
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Main Square, St. Mary's, Cloth Hall, a lunch of pierogi, then Wawel in the afternoon. Day 2: Kazimierz in the morning, a late lunch on Plac Nowy, then cross the river to Schindler's Factory.
 
+### What to do in Krakow in 3 days?
+
+With three days in Krakow, this is the guide's route: Day 1, Main Square, St. Mary's, Cloth Hall, a lunch of pierogi, then Wawel in the afternoon; Day 2, Kazimierz in the morning, a late lunch on Plac Nowy; Day 3, Wieliczka in the morning, back by mid-afternoon. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Krakow: https://www.happylowcost.com/en/destinations/krakow/#deals

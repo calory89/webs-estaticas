@@ -240,6 +240,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Mañana: 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Mañana: empieza tranquilo por la altura. Plaza Grande, Catedral e Iglesia de la Compañía, todo a pocos pasos. Día 2: Alturas y vistas. Mañana: TelefériQo a primera hora, antes de que entren las nubes (taxi desde el centro, unos 5 €).
 
+### ¿Qué hacer en Quito en 3 días?
+
+Con tres días en Quito, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Alturas y vistas; Día 3, Mitad del Mundo y Guayasamín. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Quito?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

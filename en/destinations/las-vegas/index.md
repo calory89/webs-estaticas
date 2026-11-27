@@ -168,6 +168,10 @@ If you only have one day, follow day 1 of this itinerary: Settle in, walk the so
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Settle in, walk the south Strip, see the Bellagio fountains at sunset, then dinner. Day 2: Morning at the pool or sleeping in. Afternoon at the Venetian and Sphere area, then a show.
 
+### What to do in Las Vegas in 4 days?
+
+With four days in Las Vegas, this is the guide's route: Day 1, Settle in, walk the south Strip, see the Bellagio fountains at sunset, then dinner; Day 2, Morning at the pool or sleeping in. Afternoon at the Venetian and Sphere area, then a show; Day 3, Early start for Red Rock Canyon or Valley of Fire; Day 4, Hoover Dam if you have the energy, or a long brunch and a last walk before the airport. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Las Vegas: https://www.happylowcost.com/en/destinations/las-vegas/#deals

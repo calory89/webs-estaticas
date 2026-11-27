@@ -141,6 +141,10 @@ If you only have one day, follow day 1 of this itinerary: Fira in the morning, I
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Fira in the morning, Imerovigli in the afternoon, sunset from the Skaros path. Day 2: Akrotiri early, then Red Beach or Perissa, and an evening in Pyrgos or Megalochori with wine.
 
+### What to do in Santorini in 3 days?
+
+With three days in Santorini, this is the guide's route: Day 1, Fira in the morning, Imerovigli in the afternoon, sunset from the Skaros path; Day 2, Akrotiri early, then Red Beach or Perissa; Day 3, Oia at sunrise, a volcano boat trip, and dinner at Ammoudi Bay. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Santorini: https://www.happylowcost.com/en/destinations/santorini/#deals

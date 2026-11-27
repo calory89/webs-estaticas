@@ -235,6 +235,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Safari, elefantes y jirafas.
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Safari, elefantes y jirafas. Mañana: safari en el Parque Nacional de Nairobi desde que abre, parando en el Ivory Burning Site. Día 2: Karen, museo y vista desde arriba. Mañana: Karen Blixen Museum y Kazuri Beads, uno al lado del otro.
 
+### ¿Qué hacer en Nairobi en 3 días?
+
+Con tres días en Nairobi, esta es la ruta de la guía: Día 1, Safari, elefantes y jirafas; Día 2, Karen, museo y vista desde arriba; Día 3, Bosque, mercado y ciudad real. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Nairobi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

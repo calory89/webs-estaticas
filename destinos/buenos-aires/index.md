@@ -130,6 +130,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Plaza de Mayo, Avenida de Ma
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche. Día 2: San Telmo por la mañana, comida allí, tarde en Puerto Madero y Costanera Sur.
 
+### ¿Qué hacer en Buenos Aires en 4 días?
+
+Con cuatro días en Buenos Aires, esta es la ruta de la guía: Día 1, Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche; Día 2, San Telmo por la mañana, comida allí, tarde en Puerto Madero y Costanera Sur; Día 3, Recoleta, Ateneo Grand Splendid, MALBA y cena en Palermo; Día 4, La Boca por la mañana, Bosques de Palermo por la tarde, y milonga de noche. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Argentina en 4 días?
+
+Con cuatro días en Argentina, esta guía propone quedarse en Buenos Aires y seguir su ruta: Día 1, Plaza de Mayo, Avenida de Mayo (Tortoni y Barolo), Obelisco y Corrientes por la noche; Día 2, San Telmo por la mañana, comida allí, tarde en Puerto Madero y Costanera Sur; Día 3, Recoleta, Ateneo Grand Splendid, MALBA y cena en Palermo; Día 4, La Boca por la mañana, Bosques de Palermo por la tarde, y milonga de noche.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Buenos Aires: https://www.happylowcost.com/destinos/buenos-aires/#chollos

@@ -171,6 +171,10 @@ If you only have one day, follow day 1 of this itinerary: Funchal, with the mark
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Funchal, with the market in the morning, Zona Velha, and dinner in the old town. Day 2: Monte and its garden, then Câmara de Lobos and Cabo Girão in the afternoon.
 
+### What to do in Madeira in 5 days?
+
+With five days in Madeira, this is the guide's route: Day 1, Funchal, with the market in the morning, Zona Velha, and dinner in the old town; Day 2, Monte and its garden, then Câmara de Lobos and Cabo Girão in the afternoon; Day 3, Pico do Arieiro at sunrise; Day 4, North coast loop: Santana, São Vicente, Seixal and Porto Moniz; Day 5, Ponta de São Lourenço in the morning, then an easy afternoon. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Madeira: https://www.happylowcost.com/en/destinations/madeira/#deals

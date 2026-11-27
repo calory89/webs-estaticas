@@ -253,6 +253,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Corralejo y las dunas. Maña
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Corralejo y las dunas. Mañana: recoge el coche en el aeropuerto y sube al norte (unos 35 minutos). Día 2: Isla de Lobos. Mañana: primer ferry a Lobos (con la autorización ya pedida), sendero hasta el faro antes de que apriete el calor.
 
+### ¿Qué hacer en Fuerteventura en 6 días?
+
+Con seis días en Fuerteventura, esta es la ruta de la guía: Día 1, Corralejo y las dunas; Día 2, Isla de Lobos; Día 3, Lajares y El Cotillo; Día 4, El interior camino del sur; Día 5, Cofete y Punta Jandía; Día 6, Sotavento y vuelta. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Fuerteventura?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 70-90 €, en pareja por persona y día, y en el nivel "medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

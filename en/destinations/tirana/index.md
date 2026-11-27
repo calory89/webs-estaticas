@@ -230,6 +230,14 @@ If you only have one day, follow day 1 of this itinerary: The centre and the com
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The centre and the communist past. Morning: Start at Skanderbeg Square, step into the Et'hem Bey Mosque, then join a free walking tour or go straight into Bunk'Art 2. Day 2: Markets, bunkers and the mountain. Morning: Breakfast and browsing at Pazari i Ri, then walk past Tanners' Bridge and the castle walls.
 
+### What to do in Tirana in 3 days?
+
+With three days in Tirana, this is the guide's route: Day 1, The centre and the communist past; Day 2, Markets, bunkers and the mountain; Day 3, Day trip. The table above has the full plan for each day.
+
+### What to see in Albania in 3 days?
+
+With three days in Albania, this guide suggests staying in Tirana and following its route: Day 1, The centre and the communist past; Day 2, Markets, bunkers and the mountain; Day 3, Day trip.
+
 ## Flights and deals
 
 - Flight deals to Tirana: https://www.happylowcost.com/en/destinations/tirana/#deals

@@ -242,6 +242,10 @@ If you only have one day, follow day 1 of this itinerary: Central, Sheung Wan an
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Central, Sheung Wan and the Peak. Morning: dim sum, then walk from Central to Sheung Wan via the Mid-Levels Escalator, Tai Kwun, Hollywood Road and Man Mo Temple. Day 2: Kowloon. Morning: Star Ferry to Tsim Sha Tsui, then MTR to Diamond Hill for Chi Lin Nunnery and Nan Lian Garden, plus Wong Tai Sin.
 
+### What to do in Hong Kong in 4 days?
+
+With four days in Hong Kong, this is the guide's route: Day 1, Central, Sheung Wan and the Peak; Day 2, Kowloon; Day 3, Lantau Island; Day 4, Hike and beach. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Hong Kong: https://www.happylowcost.com/en/destinations/hong-kong/#deals

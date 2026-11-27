@@ -226,6 +226,10 @@ April, October and November are best, with mild days and good light. March and l
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Amman. Morning: Arrive and drop your bags in downtown or Jabal Amman. Day 2: Jerash, then down to the Dead Sea. Morning: Leave early for Jerash and spend three hours there.
 
+### What to do in Jordan and Petra in 6 days?
+
+With six days in Jordan and Petra, this is the guide's route: Day 1, Amman; Day 2, Jerash, then down to the Dead Sea; Day 3, Madaba, Mount Nebo, King's Highway to Petra; Day 4, Petra, the classic route; Day 5, Petra, the quieter side; Day 6, Wadi Rum and out. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Jordan and Petra: https://www.happylowcost.com/en/destinations/jordan-and-petra/#deals

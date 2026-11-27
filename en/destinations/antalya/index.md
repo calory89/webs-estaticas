@@ -200,6 +200,10 @@ If you only have one day, follow day 1 of this itinerary: Kaleiçi and the cliff
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Kaleiçi and the cliffs. Morning: Start at Hadrian's Gate, walk down through Kaleiçi to the Fluted Minaret and the Kaleiçi Museum, then end at the Old Harbour. Day 2: Museum and Konyaaltı. Morning: Take the nostalgic tram west to the Antalya Museum.
 
+### What to do in Antalya in 4 days?
+
+With four days in Antalya, this is the guide's route: Day 1, Kaleiçi and the cliffs; Day 2, Museum and Konyaaltı; Day 3, Perge and Aspendos; Day 4, Termessos or Side. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Antalya: https://www.happylowcost.com/en/destinations/antalya/#deals

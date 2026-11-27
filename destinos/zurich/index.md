@@ -157,6 +157,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Mañana en el casco viejo (G
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Mañana en el casco viejo (Grossmünster, Lindenhof, Fraumünster), comida en Niederdorf, tarde por Bahnhofstrasse y paseo junto al lago hasta el atardecer. Día 2: Subida al Uetliberg por la mañana, comida en Zürich West y tarde en el Kunsthaus o en un Badi, según estación.
 
+### ¿Qué hacer en Zúrich en 3 días?
+
+Con tres días en Zúrich, esta es la ruta de la guía: Día 1, Mañana en el casco viejo (Grossmünster, Lindenhof, Fraumünster), comida en Niederdorf; Día 2, Subida al Uetliberg por la mañana; Día 3, (opcional). En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Zúrich: https://www.happylowcost.com/destinos/zurich/#chollos

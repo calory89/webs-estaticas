@@ -135,6 +135,10 @@ If you only have one day, follow day 1 of this itinerary: Alexander Nevsky early
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Alexander Nevsky early, then Sveta Nedelya, the Serdica ruins, St George Rotunda, Banya Bashi and the Central Market Hall. Day 2: Boyana Church in the morning, then the National Museum of History if you like museums.
 
+### What to do in Sofia in 3 days?
+
+With three days in Sofia, this is the guide's route: Day 1, Alexander Nevsky early, then Sveta Nedelya, the Serdica ruins, St George Rotunda; Day 2, Boyana Church in the morning, then the National Museum of History if you like museums; Day 3, Vitosha mountain, or a day trip to Rila or Plovdiv. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Sofia: https://www.happylowcost.com/en/destinations/sofia/#deals

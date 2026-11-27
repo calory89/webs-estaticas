@@ -124,6 +124,10 @@ If you only have one day, follow day 1 of this itinerary: Arrive, walk Ipanema, 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Arrive, walk Ipanema, sunset at Arpoador, dinner in Ipanema or Leblon. Day 2: Cristo first thing, Jardim Botânico or Parque Lage, then the Lagoa in the evening.
 
+### What to do in Rio de Janeiro in 4 days?
+
+With four days in Rio de Janeiro, this is the guide's route: Day 1, Arrive, walk Ipanema, sunset at Arpoador, dinner in Ipanema or Leblon; Day 2, Cristo first thing, Jardim Botânico or Parque Lage, then the Lagoa in the evening; Day 3, Centro in the morning, lunch at a traditional bar, Santa Teresa, then samba in Lapa; Day 4, Beach morning in Copacabana, Sugarloaf at golden hour, farewell caipirinha in Urca. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Rio de Janeiro: https://www.happylowcost.com/en/destinations/rio-de-janeiro/#deals

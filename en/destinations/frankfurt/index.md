@@ -239,6 +239,10 @@ The Altstadt and Innenstadt for convenience, Sachsenhausen for museums and taver
 
 If you only have one day, follow day 1 of this itinerary: Old town, museums and apple wine. Morning: start at Römerberg early, walk through the Neue Altstadt to the Kaiserdom and climb the tower.
 
+### What to do in Frankfurt in 2 days?
+
+With two days in Frankfurt, this is the guide's route: Day 1, Old town, museums and apple wine; Day 2, Skyline, Goethe and the neighbourhoods. The table above has the full plan for each day.
+
 ### Is Frankfurt expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €70-100 per person per day and the "mid-range" level at about €170-250, sharing a room. Flights are extra: this page shows real fares checked by Happy Low Cost.

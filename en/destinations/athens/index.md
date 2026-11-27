@@ -139,6 +139,10 @@ If you only have one day, follow day 1 of this itinerary: Acropolis at opening, 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Acropolis at opening, Acropolis Museum, lunch in Koukaki, then Anafiotika and Plaka. Day 2: Ancient Agora in the morning, Monastiraki market, the Central Market, then the National Archaeological Museum.
 
+### What to do in Athens in 3 days?
+
+With three days in Athens, this is the guide's route: Day 1, Acropolis at opening, Acropolis Museum, lunch in Koukaki, then Anafiotika and Plaka; Day 2, Ancient Agora in the morning, Monastiraki market, the Central Market; Day 3, Panathenaic Stadium, Temple of Olympian Zeus. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Athens: https://www.happylowcost.com/en/destinations/athens/#deals

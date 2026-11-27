@@ -125,6 +125,14 @@ If you only have one day, follow day 1 of this itinerary: Old Town Square, then 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river. Day 2: Castle first thing, then Strahov for lunch, then walk down through Petřín to Malá Strana and Kampa.
 
+### What to do in Prague in 3 days?
+
+With three days in Prague, this is the guide's route: Day 1, Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river; Day 2, Castle first thing, then Strahov for lunch; Day 3, Vyšehrad in the morning, a stroll along the Náplavka riverbank. The table above has the full plan for each day.
+
+### What to see in Czechia in 3 days?
+
+With three days in Czechia, this guide suggests staying in Prague and following its route: Day 1, Old Town Square, then Josefov, then a slow afternoon in the lanes towards the river; Day 2, Castle first thing, then Strahov for lunch; Day 3, Vyšehrad in the morning, a stroll along the Náplavka riverbank.
+
 ## Flights and deals
 
 - Flight deals to Prague: https://www.happylowcost.com/en/destinations/prague/#deals

@@ -133,6 +133,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Lower Manhattan, ferri de St
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Lower Manhattan, ferri de Staten Island, Memorial del 11-S y puente de Brooklyn al atardecer con cena en DUMBO. Día 2: Central Park por la mañana, Met por la tarde y paseo por el Upper West Side.
 
+### ¿Qué hacer en Nueva York en 5 días?
+
+Con cinco días en Nueva York, esta es la ruta de la guía: Día 1, Lower Manhattan, ferri de Staten Island; Día 2, Central Park por la mañana, Met por la tarde y paseo por el Upper West Side; Día 3, Greenwich Village, SoHo, Chinatown y Little Italy; Día 4, High Line, Chelsea Market, Hudson Yards y mirador al caer la tarde; Día 5, MoMA, Grand Central y, por la tarde, Williamsburg o un partido. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Nueva York?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-150 euros por persona y día, y en el nivel "cómodo", unos más de 350 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

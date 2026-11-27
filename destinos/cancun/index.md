@@ -130,6 +130,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Llegada, paseo por el centro
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por el centro, cena en el Parque de las Palapas. Día 2: Playa Delfines por la mañana, El Rey, y atardecer en la laguna.
 
+### ¿Qué hacer en Cancún en 4 días?
+
+Con cuatro días en Cancún, esta es la ruta de la guía: Día 1, Llegada, paseo por el centro, cena en el Parque de las Palapas; Día 2, Playa Delfines por la mañana, El Rey, y atardecer en la laguna; Día 3, Ferry a Isla Mujeres, Playa Norte y carrito de golf hasta Punta Sur; Día 4, Chichén Itzá con parada en un cenote, o Tulum y cenotes si prefieres mar. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Cancún?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

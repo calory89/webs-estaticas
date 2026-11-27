@@ -241,6 +241,10 @@ If you only have one day, follow day 1 of this itinerary: Zona Colonial. Morning
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Zona Colonial. Morning: Start at Parque Colón and the cathedral, then walk down Calle Las Damas past the Panteón to Fortaleza Ozama for the tower view. Day 2: Caves, Malecón and the modern city. Morning: Take an Uber early to Los Tres Ojos, then Faro a Colón next door.
 
+### What to do in Santo Domingo in 3 days?
+
+With three days in Santo Domingo, this is the guide's route: Day 1, Zona Colonial; Day 2, Caves, Malecón and the modern city; Day 3, Beach day. The table above has the full plan for each day.
+
 ### Is Santo Domingo expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "mid-range" level at about €90-140. Flights are extra: this page shows real fares checked by Happy Low Cost.

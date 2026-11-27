@@ -139,6 +139,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Asakusa por la mañana, Skyt
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Asakusa por la mañana, Skytree si el cielo está despejado, paseo por el río Sumida y cena en el barrio. Día 2: Ueno y Yanaka por la mañana, Akihabara por la tarde y noche en Shinjuku.
 
+### ¿Qué hacer en Tokio en 5 días?
+
+Con cinco días en Tokio, esta es la ruta de la guía: Día 1, Asakusa por la mañana, Skytree si el cielo está despejado; Día 2, Ueno y Yanaka por la mañana, Akihabara por la tarde y noche en Shinjuku; Día 3, Meiji Jingu, Harajuku y Omotesando por la mañana, Shibuya al atardecer; Día 4, Tsukiji temprano, Ginza, jardines del Palacio Imperial y teamLab Planets por la tarde; Día 5, Kamakura o Shimokitazawa, según el ritmo que lleves. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Tokio?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

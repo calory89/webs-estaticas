@@ -159,6 +159,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Duomo y cúpula a primera ho
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Duomo y cúpula a primera hora, Baptisterio, paseo por Piazza della Signoria, comida en el Mercato Centrale y tarde en Santa Maria Novella y San Lorenzo. Día 2: Uffizi con reserva a primera hora, Ponte Vecchio, Oltrarno, Boboli por la tarde y atardecer en Piazzale Michelangelo con San Miniato.
 
+### ¿Qué hacer en Florencia en 3 días?
+
+Con tres días en Florencia, esta es la ruta de la guía: Día 1, Duomo y cúpula a primera hora, Baptisterio, paseo por Piazza della Signoria; Día 2, Uffizi con reserva a primera hora, Ponte Vecchio, Oltrarno; Día 3, David en la Academia a primera hora, Santa Croce. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Florencia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

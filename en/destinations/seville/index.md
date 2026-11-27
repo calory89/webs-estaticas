@@ -262,6 +262,10 @@ If you only have one day, follow day 1 of this itinerary: The big three and Sant
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The big three and Santa Cruz. Morning: take the first Alcázar slot, then walk out through Santa Cruz while it's still calm. Day 2: Parks, palaces and the river. Morning: start at Plaza de España before it gets hot, then walk through Parque de María Luisa.
 
+### What to do in Seville in 3 days?
+
+With three days in Seville, this is the guide's route: Day 1, The big three and Santa Cruz; Day 2, Parks, palaces and the river; Day 3, Triana and the slow side. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Seville: https://www.happylowcost.com/en/destinations/seville/#deals

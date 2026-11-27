@@ -133,6 +133,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Marienplatz, Frauenkirche, V
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Marienplatz, Frauenkirche, Viktualienmarkt, Residenz y paseo hasta el Hofgarten. Día 2: Mañana de museos en Maxvorstadt, comida ligera por la zona, tarde en el Englischer Garten con el Eisbach y cena en Haidhausen o Glockenbach.
 
+### ¿Qué hacer en Múnich en 3 días?
+
+Con tres días en Múnich, esta es la ruta de la guía: Día 1, Marienplatz, Frauenkirche, Viktualienmarkt, Residenz y paseo hasta el Hofgarten; Día 2, Mañana de museos en Maxvorstadt, comida ligera por la zona; Día 3, Excursión a Neuschwanstein, o Nymphenburg y Olympiapark si prefieres quedarte en la ciudad. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Múnich: https://www.happylowcost.com/destinos/munich/#chollos

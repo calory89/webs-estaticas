@@ -239,6 +239,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco viejo, colina y puerto
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco viejo, colina y puerto. Mañana: mercado de Cours Saleya temprano, desayuno con socca y paseo por el Vieux Nice (rue Droite, Sainte-Réparate, place Rossetti). Día 2: Cimiez, museos y Promenade. Mañana: bus a Cimiez, Musée Matisse, ruinas romanas y jardines del monasterio.
 
+### ¿Qué hacer en Niza en 3 días?
+
+Con tres días en Niza, esta es la ruta de la guía: Día 1, Casco viejo, colina y puerto; Día 2, Cimiez, museos y Promenade; Día 3, Excursión en tren. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Niza: https://www.happylowcost.com/destinos/niza/#chollos

@@ -133,6 +133,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Nyhavn a 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Nyhavn a primera hora, Amalienborg, Marmorkirken, Rosenborg y Rundetårn. Día 2: Barrios y puerto. Bici hacia Nørrebro, paseo por Assistens y Superkilen, Christiania a mediodía, barco de canales por la tarde y Tivoli de noche.
 
+### ¿Qué hacer en Copenhague en 3 días?
+
+Con tres días en Copenhague, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Barrios y puerto; Día 3, Museos o excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Copenhague?
 
 Depende de cómo viajes. Según esta guía, en el nivel "mochilero ajustado" se gastan unos 80-110 euros por persona y día, y en el nivel "más cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

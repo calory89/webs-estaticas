@@ -235,6 +235,10 @@ Roughly June to early September at the Arena. Book ahead for popular nights, and
 
 If you only have one day, follow day 1 of this itinerary: Roman and medieval centre. Morning: Be at the Arena when it opens, then walk up Via Mazzini to Piazza delle Erbe.
 
+### What to do in Verona in 2 days?
+
+With two days in Verona, this is the guide's route: Day 1, Roman and medieval centre; Day 2, Castles, San Zeno and the river. The table above has the full plan for each day.
+
 ### Is Verona expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €150-250. Flights are extra: this page shows real fares checked by Happy Low Cost.

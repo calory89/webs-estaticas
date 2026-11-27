@@ -131,6 +131,10 @@ Yes, it is enough for the main sights and a few beach days at a relaxed pace. Ev
 
 For the traveller who wrote this guide, yes: Sri Lanka is small, roughly the size of Ireland, yet in a single week you can climb a rock fortress at sunrise, watch elephants at a waterhole, ride a train through tea country and end up on a surf beach. 9 days are enough for the essentials.
 
+### What to do in Sri Lanka in 14 days?
+
+With 14 days in Sri Lanka, this is the guide's route: Days 1-2, Arrive, a short stay in Colombo or straight to Negombo near the airport if you land late; Days 3-4, Sigiriya, Dambulla and Polonnaruwa, the Cultural Triangle; Day 5, Kandy; Days 6-8, Train to Ella, with a stop in Nuwara Eliya if you like cooler air; Day 9, A safari at Udawalawe or Yala on the way south; Days 10-12, Galle, Mirissa or Unawatuna for the beach; Days 13-14, Back up the Expressway to Colombo and the airport. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Sri Lanka: https://www.happylowcost.com/en/destinations/sri-lanka/#deals

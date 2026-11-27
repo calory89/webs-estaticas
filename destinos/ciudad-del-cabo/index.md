@@ -131,6 +131,14 @@ Si solo tienes un día, haz el día 1 de esta ruta: Bo-Kaap, centro, Company's G
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Bo-Kaap, centro, Company's Garden y District Six. Día 2: Table Mountain a primera hora y tarde tranquila en el Waterfront.
 
+### ¿Qué hacer en Ciudad del Cabo en 5 días?
+
+Con cinco días en Ciudad del Cabo, esta es la ruta de la guía: Día 1, Bo-Kaap, centro, Company's Garden y District Six; Día 2, Table Mountain a primera hora y tarde tranquila en el Waterfront; Día 3, Robben Island por la mañana. Por la tarde, Sea Point o Camps Bay; Día 4, Excursión a la península: Chapman's Peak, Hout Bay, Boulders y Cape Point; Día 5, Kirstenbosch y bodegas de Constantia. En la tabla de arriba tienes el plan completo de cada día.
+
+### ¿Qué ver en Sudáfrica en 5 días?
+
+Con cinco días en Sudáfrica, esta guía propone quedarse en Ciudad del Cabo y seguir su ruta: Día 1, Bo-Kaap, centro, Company's Garden y District Six; Día 2, Table Mountain a primera hora y tarde tranquila en el Waterfront; Día 3, Robben Island por la mañana. Por la tarde, Sea Point o Camps Bay; Día 4, Excursión a la península: Chapman's Peak, Hout Bay, Boulders y Cape Point; Día 5, Kirstenbosch y bodegas de Constantia.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad del Cabo: https://www.happylowcost.com/destinos/ciudad-del-cabo/#chollos

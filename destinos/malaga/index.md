@@ -239,6 +239,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Alcazaba, centro y atardecer
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Alcazaba, centro y atardecer. Mañana: Alcazaba a primera hora y subida a Gibralfaro. Día 2: Mercado, puerto y playa. Mañana: Mercado de Atarazanas, Museo de Málaga y el Soho.
 
+### ¿Qué hacer en Málaga en 3 días?
+
+Con tres días en Málaga, esta es la ruta de la guía: Día 1, Alcazaba, centro y atardecer; Día 2, Mercado, puerto y playa; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Málaga?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos entre 70 y 90 € por persona y día, y en el nivel "presupuesto medio", unos entre 130 y 180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

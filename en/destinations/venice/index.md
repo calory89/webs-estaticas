@@ -161,6 +161,10 @@ If you only have one day, follow day 1 of this itinerary: Early St Mark's Square
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area, sunset on the Zattere. Day 2: Rialto market, Frari and San Rocco, Dorsoduro museums, cicchetti in the evening, Cannaregio for dinner.
 
+### What to do in Venice in 3 days?
+
+With three days in Venice, this is the guide's route: Day 1, Early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area; Day 2, Rialto market, Frari and San Rocco, Dorsoduro museums, cicchetti in the evening; Day 3, Boat to Burano and Torcello in the morning, Murano on the way back. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Venice: https://www.happylowcost.com/en/destinations/venice/#deals

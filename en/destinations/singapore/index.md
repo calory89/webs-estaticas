@@ -112,6 +112,10 @@ If you only have one day, follow day 1 of this itinerary: Chinatown in the morni
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Chinatown in the morning, lunch at Maxwell, Marina Bay at sunset, Gardens by the Bay after dark. Day 2: Botanic Gardens early, then Little India for lunch, then Kampong Glam in the late afternoon.
 
+### What to do in Singapore in 4 days?
+
+With four days in Singapore, this is the guide's route: Day 1, Chinatown in the morning, lunch at Maxwell, Marina Bay at sunset; Day 2, Botanic Gardens early, then Little India for lunch; Day 3, Sentosa or Pulau Ubin, depending on whether you want beaches or bikes; Day 4, (optional). The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Singapore: https://www.happylowcost.com/en/destinations/singapore/#deals

@@ -133,6 +133,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town. Gate of Dawn
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Gate of Dawn, St. Anne's, the university, Pilies street, Cathedral Square and Gediminas Hill at sunset. Day 2: Užupis and the modern side. Užupis in the morning, Three Crosses Hill, then the KGB museum in the afternoon.
 
+### What to do in Vilnius in 3 days?
+
+With three days in Vilnius, this is the guide's route: Day 1, Old Town; Day 2, Užupis and the modern side; Day 3, Trakai. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Vilnius: https://www.happylowcost.com/en/destinations/vilnius/#deals

@@ -239,6 +239,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Viejo San Juan. Mañana: El 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Viejo San Juan. Mañana: El Morro a primera hora, luego el cementerio desde arriba y bajada por la Calle Norzagaray hasta el Castillo San Cristóbal. Día 2: Santurce y playa. Mañana: Museo de Arte de Puerto Rico y paseo por los murales de Calle Cerra.
 
+### ¿Qué hacer en San Juan en 3 días?
+
+Con tres días en San Juan, esta es la ruta de la guía: Día 1, Viejo San Juan; Día 2, Santurce y playa; Día 3, Piñones o bahía. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Juan: https://www.happylowcost.com/destinos/san-juan/#chollos

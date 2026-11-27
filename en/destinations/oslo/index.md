@@ -133,6 +133,10 @@ If you only have one day, follow day 1 of this itinerary: City centre. Start at 
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: City centre. Start at the Opera House, walk to MUNCH, then cross to Akershus Fortress. Day 2: West and parks. Vigeland Park in the morning, then lunch around Frogner.
 
+### What to do in Oslo in 3 days?
+
+With three days in Oslo, this is the guide's route: Day 1, City centre; Day 2, West and parks; Day 3, Outdoors. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Oslo: https://www.happylowcost.com/en/destinations/oslo/#deals

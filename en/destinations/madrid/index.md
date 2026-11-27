@@ -250,6 +250,10 @@ If you only have one day, follow day 1 of this itinerary: Art and the Retiro. Mo
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Art and the Retiro. Morning: Be at the Prado at opening and spend 3 hours there. Day 2: Old Madrid and the palace. Morning: Walk from Sol to Plaza Mayor (a squid sandwich counts as breakfast), then on to the Royal Palace with a pre-booked ticket, and Almudena Cathedral next door.
 
+### What to do in Madrid in 3 days?
+
+With three days in Madrid, this is the guide's route: Day 1, Art and the Retiro; Day 2, Old Madrid and the palace; Day 3, Neighbourhoods and markets. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Madrid: https://www.happylowcost.com/en/destinations/madrid/#deals

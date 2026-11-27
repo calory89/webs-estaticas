@@ -244,6 +244,10 @@ If you only have one day, follow day 1 of this itinerary: Historic centre and th
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Historic centre and the market. Morning: Granita and brioche, then straight to the Pescheria before 10am. Day 2: Etna. Morning: Take the early AST bus from the station to Rifugio Sapienza, or join a tour.
 
+### What to do in Catania in 3 days?
+
+With three days in Catania, this is the guide's route: Day 1, Historic centre and the market; Day 2, Etna; Day 3, Monastery, castle and the coast. The table above has the full plan for each day.
+
 ### Is Catania expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

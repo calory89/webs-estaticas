@@ -255,6 +255,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El palacio y la ciudad vieja
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El palacio y la ciudad vieja. Mañana: entra al palacio temprano por la Puerta de Bronce, desde la Riva. Día 2: Marjan, Meštrović y playa. Mañana: sube desde Varoš al mirador de Vidilica y sigue por los senderos de Marjan.
 
+### ¿Qué hacer en Split en 3 días?
+
+Con tres días en Split, esta es la ruta de la guía: Día 1, El palacio y la ciudad vieja; Día 2, Marjan, Meštrović y playa; Día 3, Excursión. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Split: https://www.happylowcost.com/destinos/split/#chollos

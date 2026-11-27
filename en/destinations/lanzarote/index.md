@@ -234,6 +234,10 @@ If you only have one day, follow day 1 of this itinerary: Timanfaya and the west
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Timanfaya and the west coast. Morning: Timanfaya at opening time, then the Tremesana walk if you have a booking. Day 2: La Geria and the centre. Morning: the Montaña Colorada loop, then a coffee in Uga.
 
+### What to do in Lanzarote in 5 days?
+
+With five days in Lanzarote, this is the guide's route: Day 1, Timanfaya and the west coast; Day 2, La Geria and the centre; Day 3, The north; Day 4, La Graciosa; Day 5, Papagayo and Teguise. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Lanzarote: https://www.happylowcost.com/en/destinations/lanzarote/#deals

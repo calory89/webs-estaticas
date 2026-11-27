@@ -210,6 +210,10 @@ If you only have one day, follow day 1 of this itinerary: Vieux Lyon and Fourvi�
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Vieux Lyon and Fourvière. Morning: Start at Cathédrale Saint-Jean, then walk through Saint-Jean and Saint-Paul and duck into the open traboules. Day 2: Presqu'île and Croix-Rousse. Morning: Start at Place Bellecour, then walk rue de la République and rue Victor Hugo to Place des Terreaux.
 
+### What to do in Lyon in 3 days?
+
+With three days in Lyon, this is the guide's route: Day 1, Vieux Lyon and Fourvière; Day 2, Presqu'île and Croix-Rousse; Day 3, Markets, museums and the rivers. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Lyon: https://www.happylowcost.com/en/destinations/lyon/#deals

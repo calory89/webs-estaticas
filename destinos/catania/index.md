@@ -232,6 +232,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El centro histórico. Mañan
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El centro histórico. Mañana: empieza en la Pescheria antes de las 10, luego la Piazza del Duomo, la catedral y la subida a la Badia di Sant'Agata. Día 2: El Etna. Mañana: autobús AST desde la estación hacia el Rifugio Sapienza, que sale temprano (comprueba la hora el día antes).
 
+### ¿Qué hacer en Catania en 3 días?
+
+Con tres días en Catania, esta es la ruta de la guía: Día 1, El centro histórico; Día 2, El Etna; Día 3, Siracusa u Ortigia, o mar. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Catania?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 55 a 70 € por persona y día, y en el nivel "medio", unos unos 110 a 150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

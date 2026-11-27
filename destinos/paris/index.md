@@ -142,6 +142,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Île de la Cité (Notre-Dame
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Île de la Cité (Notre-Dame, Sainte-Chapelle), Barrio Latino y Jardin du Luxembourg. Día 2: Louvre por la mañana, paseo por las Tullerías y los Campos Elíseos hasta el Arco del Triunfo.
 
+### ¿Qué hacer en París en 4 días?
+
+Con cuatro días en París, esta es la ruta de la guía: Día 1, Île de la Cité (Notre-Dame, Sainte-Chapelle), Barrio Latino y Jardin du Luxembourg; Día 2, Louvre por la mañana, paseo por las Tullerías y los Campos Elíseos hasta el Arco…; Día 3, Montmartre por la mañana, Orsay por la tarde y Marais de noche; Día 4, Père-Lachaise, Canal Saint-Martin y barrio de Belleville, o Versalles si prefieres. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a París?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 euros por persona y día, y en el nivel "cómodo", unos más de 200 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

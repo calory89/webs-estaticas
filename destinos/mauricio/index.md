@@ -121,6 +121,10 @@ Las playas públicas son de acceso libre. Puedes bañarte en Mont Choisy, Pereyb
 
 Para quien escribió esta guía, sí: Mauricio vende postales de resort con laguna turquesa, y es verdad que las hay. Con 7 días ves lo esencial. Presupuesto: Una habitación sencilla puede costar entre 35 y 70 € la noche según temporada.
 
+### ¿Qué hacer en Isla Mauricio en 7 días?
+
+Con siete días en Isla Mauricio, esta es la ruta de la guía: Días 1-2, Norte; Día 3, Port Louis y Pamplemousses; Días 4-5, Oeste y suroeste; Día 6, Interior; Día 7, Este y salida. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Isla Mauricio: https://www.happylowcost.com/destinos/mauricio/#chollos

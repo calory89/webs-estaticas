@@ -241,6 +241,10 @@ If you only have one day, follow day 1 of this itinerary: Palma. Morning: See th
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Palma. Morning: See the cathedral at opening, then walk the old town and Plaça Major. Day 2: Palma to Sóller. Morning: Take the vintage train to Sóller.
 
+### What to do in Mallorca in 6 days?
+
+With six days in Mallorca, this is the guide's route: Day 1, Palma; Day 2, Palma to Sóller; Day 3, Deià and Valldemossa; Day 4, The north; Day 5, The east; Day 6, The south and back. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Mallorca: https://www.happylowcost.com/en/destinations/mallorca/#deals

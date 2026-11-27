@@ -138,6 +138,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Tour a pie por el centro, Pu
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Tour a pie por el centro, Puerta de Brandeburgo, Memorial del Holocausto, Reichstag y Topografía del Terror. Día 2: Bernauer Straße y Mauerpark por la mañana; Isla de los Museos y Alexanderplatz por la tarde.
 
+### ¿Qué hacer en Berlín en 4 días?
+
+Con cuatro días en Berlín, esta es la ruta de la guía: Día 1, Tour a pie por el centro, Puerta de Brandeburgo, Memorial del Holocausto; Día 2, Bernauer Straße y Mauerpark por la mañana; Isla de los Museos y Alexanderplatz por…; Día 3, East Side Gallery, cruce a Kreuzberg a pie; Día 4, Tempelhofer Feld, el palacio de Charlottenburg o una excursión en tren a Potsdam. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Berlín: https://www.happylowcost.com/destinos/berlin/#chollos

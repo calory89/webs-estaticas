@@ -143,6 +143,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Rynek, Santa María, Collegi
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Rynek, Santa María, Collegium Maius y Wawel. Día 2: Fábrica de Schindler, plaza de los Héroes del Gueto y un buen rato en Kazimierz.
 
+### ¿Qué hacer en Cracovia en 3 días?
+
+Con tres días en Cracovia, esta es la ruta de la guía: Día 1, Rynek, Santa María, Collegium Maius y Wawel; Día 2, Fábrica de Schindler, plaza de los Héroes del Gueto y un buen rato en Kazimierz; Día 3, Auschwitz por la mañana. Por la tarde, descanso y paseo por el Planty. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cracovia: https://www.happylowcost.com/destinos/cracovia/#chollos

@@ -142,6 +142,10 @@ If you only have one day, follow day 1 of this itinerary: Downtown. Union Statio
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Downtown. Union Station, Olvera Street, Grand Central Market for lunch, the Broad and the Disney Hall, then the Arts District for dinner. Day 2: Hollywood and the hills. Griffith Observatory in the morning, a quick look at Hollywood Boulevard, lunch in Los Feliz or Silver Lake, then Melrose.
 
+### What to do in Los Angeles in 4 days?
+
+With four days in Los Angeles, this is the guide's route: Day 1, Downtown; Day 2, Hollywood and the hills; Day 3, The Westside; Day 4, Your choice. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Los Angeles: https://www.happylowcost.com/en/destinations/los-angeles/#deals

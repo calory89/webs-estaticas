@@ -253,6 +253,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: San José del Cabo. Mañana:
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: San José del Cabo. Mañana: llegada al aeropuerto (está al lado de San José) y paseo por el Estero. Día 2: Cabo San Lucas y El Arco. Mañana: bus o coche a Cabo San Lucas (unos 40 minutos) y lancha temprano al Arco con parada en Playa del Amor.
 
+### ¿Qué hacer en Los Cabos en 5 días?
+
+Con cinco días en Los Cabos, esta es la ruta de la guía: Día 1, San José del Cabo; Día 2, Cabo San Lucas y El Arco; Día 3, Playas del Corredor; Día 4, Todos Santos y Cerritos; Día 5, Ballenas o Cabo Pulmo. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Los Cabos: https://www.happylowcost.com/destinos/los-cabos/#chollos

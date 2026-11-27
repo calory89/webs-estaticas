@@ -240,6 +240,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Göreme y sus valles. Mañan
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Göreme y sus valles. Mañana: globos al amanecer (desde el aire o desde la colina) y después Museo al Aire Libre de Göreme, a 1,5 km andando del pueblo. Día 2: Subterráneo e Ihlara. Es el día de alquilar coche o coger el famoso «Green Tour» (unos 40-60 € con comida).
 
+### ¿Qué hacer en Capadocia en 4 días?
+
+Con cuatro días en Capadocia, esta es la ruta de la guía: Día 1, Göreme y sus valles; Día 2, Subterráneo e Ihlara; Día 3, Uçhisar, Palomas y Ortahisar; Día 4, Zelve, Paşabağ y Avanos. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Capadocia: https://www.happylowcost.com/destinos/capadocia/#chollos

@@ -240,6 +240,10 @@ Te compensa si usas el metro desde el aeropuerto y entras a varios museos o monu
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Mañana: empieza en el Mercado Central con un almuerzo, cruza a la Lonja y sigue hasta la Plaza Redonda y la catedral. Día 2: El Turia y la Valencia moderna. Mañana: Museo de Bellas Artes y Jardines del Real.
 
+### ¿Qué hacer en Valencia en 3 días?
+
+Con tres días en Valencia, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, El Turia y la Valencia moderna; Día 3, El mar y la Albufera. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Valencia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

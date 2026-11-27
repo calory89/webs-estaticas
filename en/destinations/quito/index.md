@@ -244,6 +244,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town. Morning: Tak
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Morning: Take a free walking tour from Plaza Grande, or do it yourself: Plaza Grande, La Compañía, then San Francisco and Casa del Alabado. Day 2: The heights and the north. Morning: Go to the TelefériQo first thing for clear views.
 
+### What to do in Quito in 3 days?
+
+With three days in Quito, this is the guide's route: Day 1, Old Town; Day 2, The heights and the north; Day 3, The equator and Panecillo. The table above has the full plan for each day.
+
 ### Is Quito expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about $35-50 (€32-45) per person per day and the "mid-range" level at about $90-150 (€80-135). Flights are extra: this page shows real fares checked by Happy Low Cost.

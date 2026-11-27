@@ -122,6 +122,10 @@ Peruvian soles. Cards work in hotels and bigger restaurants, but carry cash for 
 
 For the traveller who wrote this guide, yes: Peru packs in more than almost any country its size. 10 days are enough for the essentials.
 
+### What to do in Peru in 10 days?
+
+With ten days in Peru, this is the guide's route: Days 1-2, Lima. Miraflores, Barranco, the historic centre, a long lunch; Days 3-4, Fly to Cusco. Take it easy on day one, explore the old town on day two; Days 5-6, Sacred Valley, sleeping in Ollantaytambo; Day 7, Train to Aguas Calientes, then Machu Picchu early the next morning; Days 8-9, Back to Cusco, then fly to Arequipa for the colonial centre, or on to Puno for the lake; Day 10, Return to Lima for your flight home. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Peru: https://www.happylowcost.com/en/destinations/peru/#deals

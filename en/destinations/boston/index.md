@@ -245,6 +245,10 @@ If you only have one day, follow day 1 of this itinerary: Freedom Trail, North E
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Freedom Trail, North End and Charlestown. Morning: Start at Boston Common, walk the Public Garden, then loop up through Beacon Hill and Acorn Street. Day 2: Back Bay, museums and Fenway. Morning: Copley Square, the Public Library and Trinity Church, then a walk down Newbury Street and Commonwealth Avenue's tree-lined mall.
 
+### What to do in Boston in 3 days?
+
+With three days in Boston, this is the guide's route: Day 1, Freedom Trail, North End and Charlestown; Day 2, Back Bay, museums and Fenway; Day 3, Cambridge and the water. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Boston: https://www.happylowcost.com/en/destinations/boston/#deals

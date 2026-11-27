@@ -234,6 +234,10 @@ If you only have one day, follow day 1 of this itinerary: The old town. Morning:
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The old town. Morning: start at Mercado Central for breakfast, cross to La Lonja, then walk to the cathedral and climb the Miguelete. Day 2: The Turia and the City of Arts and Sciences. Morning: Museo de Bellas Artes when it opens, then rent bikes and ride the Turia south.
 
+### What to do in Valencia in 3 days?
+
+With three days in Valencia, this is the guide's route: Day 1, The old town; Day 2, The Turia and the City of Arts and Sciences; Day 3, Beach and Albufera. The table above has the full plan for each day.
+
 ### Is Valencia expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.

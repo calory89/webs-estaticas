@@ -136,9 +136,17 @@ Yes, mostly in summer. Many swimming spots are rocky natural pools or small beac
 
 It's cheaper than much of Western Europe, especially for food. Car rental and accommodation are the main costs, particularly in peak summer.
 
+### How many days do you need in The Azores?
+
+7 days are enough to see the essentials of The Azores without rushing. The route in this guide is organised day by day.
+
 ### Is The Azores worth visiting?
 
-For the traveller who wrote this guide, yes: Nine volcanic islands sit in the middle of the Atlantic, about a three-hour flight from Lisbon and a little over four from Boston.
+For the traveller who wrote this guide, yes: Nine volcanic islands sit in the middle of the Atlantic, about a three-hour flight from Lisbon and a little over four from Boston. 7 days are enough for the essentials.
+
+### What to do in The Azores in 7 days?
+
+With seven days in The Azores, this is the guide's route: Days 1-4, São Miguel. Day one in Ponta Delgada, day two at Sete Cidades and the west; Days 5-7, Fly to Faial or Pico. Whale watching and the Capelinhos drive on Faial. The table above has the full plan for each day.
 
 ## Flights and deals
 

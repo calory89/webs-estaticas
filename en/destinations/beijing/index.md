@@ -222,6 +222,10 @@ If you only have one day, follow day 1 of this itinerary: Imperial axis. Morning
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Imperial axis. Morning: Cross Tiananmen Square (reserved) and enter the Forbidden City at opening. Day 2: Temples and hutongs. Morning: Be at Temple of Heaven by 8am for the park life.
 
+### What to do in Beijing in 4 days?
+
+With four days in Beijing, this is the guide's route: Day 1, Imperial axis; Day 2, Temples and hutongs; Day 3, The Great Wall; Day 4, Northwest and modern Beijing. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Beijing: https://www.happylowcost.com/en/destinations/beijing/#deals

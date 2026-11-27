@@ -233,6 +233,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Bari. Mañana: desayuno de c
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Bari. Mañana: desayuno de cornetto en el Murattiano y paseo a Bari Vecchia por Arco Basso mientras las señoras hacen pasta. Día 2: Polignano a Mare y Monopoli. Mañana: tren temprano a Polignano y mirador de Lama Monachile antes de que lleguen los grupos.
 
+### ¿Qué hacer en Bari y Puglia en 5 días?
+
+Con cinco días en Bari y Puglia, esta es la ruta de la guía: Día 1, Bari; Día 2, Polignano a Mare y Monopoli; Día 3, Alberobello y Locorotondo; Día 4, Lecce; Día 5, Matera. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bari y Puglia: https://www.happylowcost.com/destinos/bari/#chollos

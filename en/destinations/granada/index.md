@@ -238,6 +238,10 @@ If you only have one day, follow day 1 of this itinerary: The Alhambra. Morning:
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The Alhambra. Morning: take the C30 or C32 minibus from Plaza Isabel la Católica to the Alhambra, or walk up the Cuesta de Gomérez from Plaza Nueva (20-25 minutes, steep). Day 2: The Albaicín and Sacromonte. Morning: start at Plaza Nueva, walk Carrera del Darro, visit El Bañuelo, then climb into the Albaicín.
 
+### What to do in Granada in 3 days?
+
+With three days in Granada, this is the guide's route: Day 1, The Alhambra; Day 2, The Albaicín and Sacromonte; Day 3, The centre or a day trip. The table above has the full plan for each day.
+
 ### Is Granada expensive?
 
 It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.

@@ -150,6 +150,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Chinatown por la mañana, co
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Chinatown por la mañana, comida en Maxwell, tarde en Marina Bay y, al anochecer, Gardens by the Bay con los Supertrees iluminados. Día 2: Jardín Botánico temprano, Orchard Road si quieres ver centros comerciales y noche en Clarke Quay.
 
+### ¿Qué hacer en Singapur en 4 días?
+
+Con cuatro días en Singapur, esta es la ruta de la guía: Día 1, Chinatown por la mañana, comida en Maxwell, tarde en Marina Bay y, al anochecer; Día 2, Jardín Botánico temprano, Orchard Road si quieres ver centros comerciales y noche…; Día 3, Little India por la mañana, Kampong Glam después de comer y cena en Arab Street; Día 4, Sentosa o Pulau Ubin, o el Night Safari por la tarde. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Singapur?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 250 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

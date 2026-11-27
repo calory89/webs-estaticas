@@ -134,6 +134,10 @@ De diciembre a marzo suele ser lo más estable para el sur, el oeste y las monta
 
 Para quien escribió esta guía, sí: Sri Lanka es una isla del tamaño de Aragón y poco más, pero en ella caben ruinas de reinos de hace dos mil años, plantaciones de té a más de mil metros, elefantes en libertad, surf y una costa con fuertes coloniales. Con 10 días ves lo esencial.
 
+### ¿Qué hacer en Sri Lanka en 10 días?
+
+Con diez días en Sri Lanka, esta es la ruta de la guía: Días 1-2, Llegada, Negombo o Colombo y salida hacia el Triángulo Cultural; Días 3-4, Sigiriya, Dambulla y Polonnaruwa; Día 5, Kandy; Días 6-7, Tren a Nuwara Eliya y Ella; Día 8, Safari en Udawalawe o Yala, camino de la costa; Días 9-10, Mirissa, Galle y vuelo desde Colombo. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Sri Lanka: https://www.happylowcost.com/destinos/sri-lanka/#chollos

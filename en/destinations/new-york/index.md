@@ -115,6 +115,10 @@ If you only have one day, follow day 1 of this itinerary: Midtown. Grand Central
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Midtown. Grand Central, Fifth Avenue, Top of the Rock at sunset, Times Square after dark. Day 2: Central Park and Upper side. Central Park in the morning, the Met after lunch, dinner on the Upper West Side.
 
+### What to do in New York in 5 days?
+
+With five days in New York, this is the guide's route: Day 1, Midtown; Day 2, Central Park and Upper side; Day 3, Downtown; Day 4, Brooklyn; Day 5, Village and Chelsea. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to New York: https://www.happylowcost.com/en/destinations/new-york/#deals

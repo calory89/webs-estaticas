@@ -122,6 +122,10 @@ Yes. Trains run frequently and take about an hour. Take an early one and you wil
 
 For the traveller who wrote this guide, yes: Bruges is small enough to walk end to end in under an hour, and that is the point. 2 days are enough for the essentials. Budget: Backpacker: about 70 to 100 euros, with a dorm bed, frites and supermarket lunches, and one museum.
 
+### What to do in Bruges in 2 days?
+
+With two days in Bruges, this is the guide's route: Day 1, Start at the Markt before the crowds, then climb the Belfry first thing; Day 2, Walk the Kruisvest windmills in the morning. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bruges: https://www.happylowcost.com/en/destinations/bruges/#deals

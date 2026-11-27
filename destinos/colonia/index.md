@@ -227,6 +227,10 @@ Para una primera escapada, Colonia, por la catedral y los museos. Están a menos
 
 Si solo tienes un día, haz el día 1 de esta ruta: Catedral, casco viejo y el Rin. Mañana: catedral a primera hora y, si tienes piernas, la torre.
 
+### ¿Qué hacer en Colonia en 2 días?
+
+Con dos días en Colonia, esta es la ruta de la guía: Día 1, Catedral, casco viejo y el Rin; Día 2, Historia, barrios y cerveza local. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Colonia?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

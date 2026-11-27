@@ -251,6 +251,10 @@ If you only have one day, follow day 1 of this itinerary: Mindelo. Morning: walk
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Mindelo. Morning: walk the centre, Praça Nova and Rua de Lisboa, then the fish market. Day 2: Around São Vicente. Morning: take a taxi up Monte Verde before the clouds come in.
 
+### What to do in Cape Verde in 7 days?
+
+With seven days in Cape Verde, this is the guide's route: Day 1, Mindelo; Day 2, Around São Vicente; Day 3, Santo Antão, Cova to Paul; Day 4, Ponta do Sol, Fontainhas, Cruzinha; Day 5, Back to Mindelo and fly to Sal; Day 6, Sal island loop; Day 7, Beach and water. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cape Verde: https://www.happylowcost.com/en/destinations/cape-verde/#deals

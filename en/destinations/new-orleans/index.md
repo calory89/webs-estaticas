@@ -253,6 +253,10 @@ If you only have one day, follow day 1 of this itinerary: The French Quarter and
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The French Quarter and the Marigny. Morning: beignets early at Café du Monde before the queue, then Jackson Square, St. Day 2: The WWII Museum and uptown. Morning: the National WWII Museum when it opens.
 
+### What to do in New Orleans in 3 days?
+
+With three days in New Orleans, this is the guide's route: Day 1, The French Quarter and the Marigny; Day 2, The WWII Museum and uptown; Day 3, Mid-City, Tremé and the Bywater. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to New Orleans: https://www.happylowcost.com/en/destinations/new-orleans/#deals

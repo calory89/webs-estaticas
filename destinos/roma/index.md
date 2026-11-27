@@ -126,6 +126,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Coliseo, Foro y Palatino por
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Coliseo, Foro y Palatino por la mañana. Comida en Monti. Día 2: Vaticano completo a primera hora. Comida rápida por Prati, y por la tarde Castel Sant'Angelo y Plaza Navona.
 
+### ¿Qué hacer en Roma en 4 días?
+
+Con cuatro días en Roma, esta es la ruta de la guía: Día 1, Coliseo, Foro y Palatino por la mañana. Comida en Monti; Día 2, Vaticano completo a primera hora. Comida rápida por Prati; Día 3, Galería Borghese, Villa Borghese, Pincio y Plaza de España; Día 4, Ghetto, Aventino, Testaccio y, si tienes ganas, la Via Appia Antica. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Roma?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

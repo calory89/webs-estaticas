@@ -217,6 +217,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro, mercado y bahía. Ma
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro, mercado y bahía. Mañana: Pike Place Market a primera hora, desayuno ahí mismo. Día 2: Seattle Center y Queen Anne. Mañana: monorraíl desde Westlake a Seattle Center.
 
+### ¿Qué hacer en Seattle en 3 días?
+
+Con tres días en Seattle, esta es la ruta de la guía: Día 1, Centro, mercado y bahía; Día 2, Seattle Center y Queen Anne; Día 3, Barrios del norte. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Seattle: https://www.happylowcost.com/destinos/seattle/#chollos

@@ -144,6 +144,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: La Candelaria a pie. Plaza d
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: La Candelaria a pie. Plaza de Bolívar, Museo del Oro y Museo Botero, comida en el centro y tarde tranquila para aclimatarte a la altura. Día 2: Monserrate por la mañana, Quinta de Bolívar después y paseo por La Macarena para cenar.
 
+### ¿Qué hacer en Bogotá en 4 días?
+
+Con cuatro días en Bogotá, esta es la ruta de la guía: Día 1, La Candelaria a pie. Plaza de Bolívar, Museo del Oro y Museo Botero; Día 2, Monserrate por la mañana, Quinta de Bolívar después y paseo por La Macarena para cenar; Día 3, Paloquemao temprano, Museo Nacional y tarde en Usaquén (domingo; Día 4, Opcional. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Bogotá?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-45 euros por persona y día, y en el nivel "cómodo", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

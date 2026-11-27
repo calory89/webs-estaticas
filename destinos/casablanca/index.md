@@ -217,6 +217,10 @@ No para estancias turísticas de hasta 90 días con pasaporte español en vigor.
 
 Si solo tienes un día, haz el día 1 de esta ruta: Centro, medina y mezquita. Mañana: empieza en la plaza Mohammed V y recorre el bulevar Mohammed V mirando las fachadas art déco.
 
+### ¿Qué hacer en Casablanca en 2 días?
+
+Con dos días en Casablanca, esta es la ruta de la guía: Día 1, Centro, medina y mezquita; Día 2, Habous, museos y Corniche. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Casablanca?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

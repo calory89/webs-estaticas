@@ -252,6 +252,10 @@ Today the cheapest deal we have to Luxembourg is €94 return from Valencia. Far
 
 If you only have one day, follow day 1 of this itinerary: Old town and fortifications. Morning: Start at Place d'Armes, then walk to Place Guillaume II and the Grand Ducal Palace.
 
+### What to do in Luxembourg in 2 days?
+
+With two days in Luxembourg, this is the guide's route: Day 1, Old town and fortifications; Day 2, Valleys, bridges and Kirchberg. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Luxembourg: https://www.happylowcost.com/en/destinations/luxembourg/#deals

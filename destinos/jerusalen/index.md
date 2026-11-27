@@ -253,6 +253,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja a fondo. Mañan
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja a fondo. Mañana: entra por la Puerta de Jaffa muy temprano y ve directo al Santo Sepulcro antes de las colas. Día 2: Monte de los Olivos, Ciudad de David y Monte Sión. Mañana: taxi al Monte de los Olivos y bajada a pie hasta Getsemaní.
 
+### ¿Qué hacer en Jerusalén en 3 días?
+
+Con tres días en Jerusalén, esta es la ruta de la guía: Día 1, Ciudad Vieja a fondo; Día 2, Monte de los Olivos, Ciudad de David y Monte Sión; Día 3, Jerusalén moderna. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Jerusalén?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "cómodo", unos a partir de 300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

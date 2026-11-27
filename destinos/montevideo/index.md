@@ -222,6 +222,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Ciudad Vieja y Centro. Maña
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Ciudad Vieja y Centro. Mañana: empieza en la Plaza Independencia, baja al mausoleo de Artigas y visita el Palacio Salvo. Día 2: Rambla, Punta Carretas y Pocitos. Mañana: bus o taxi al Palacio Legislativo para la visita guiada.
 
+### ¿Qué hacer en Montevideo en 3 días?
+
+Con tres días en Montevideo, esta es la ruta de la guía: Día 1, Ciudad Vieja y Centro; Día 2, Rambla, Punta Carretas y Pocitos; Día 3, Barrios y vida local. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Montevideo: https://www.happylowcost.com/destinos/montevideo/#chollos

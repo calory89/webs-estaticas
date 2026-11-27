@@ -120,6 +120,10 @@ If you only have one day, follow day 1 of this itinerary: East. Fushimi Inari at
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: East. Fushimi Inari at opening, then Kiyomizu-dera, Ninenzaka, Sannenzaka and Gion at dusk. Day 2: West and north. Arashiyama first thing, then Ryoan-ji and Kinkaku-ji, and finish with the Nishiki area and Pontocho for dinner.
 
+### What to do in Kyoto in 4 days?
+
+With four days in Kyoto, this is the guide's route: Day 1, East; Day 2, West and north; Day 3, Centre and northeast; Day 4, Optional. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Kyoto: https://www.happylowcost.com/en/destinations/kyoto/#deals

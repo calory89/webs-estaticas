@@ -240,6 +240,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: El casco antiguo. Mañana: l
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: El casco antiguo. Mañana: llega al Puente Japonés a las 7 y luego visita la casa Phùng Hưng, la Sala Cantonesa y la de Fujian. Día 2: Campo, cocina y playa. Mañana: clase de cocina con visita al mercado, o paseo en bici a Trà Quế.
 
+### ¿Qué hacer en Hoi An en 3 días?
+
+Con tres días en Hoi An, esta es la ruta de la guía: Día 1, El casco antiguo; Día 2, Campo, cocina y playa; Día 3, My Son y despedida. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Hoi An?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 60-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

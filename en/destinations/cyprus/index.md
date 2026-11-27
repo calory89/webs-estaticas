@@ -127,6 +127,10 @@ Today the cheapest deal we have to Cyprus is €121 return from Alicante. Fares 
 
 For the traveller who wrote this guide, yes: Cyprus is a small island with a long memory. 7 days are enough for the essentials. Budget: Budget: about €60-90 per person: hostel or simple apartment, souvlaki and bakery lunches, buses and the odd taxi.
 
+### What to do in Cyprus in 7 days?
+
+With seven days in Cyprus, this is the guide's route: Days 1-2, Larnaca and the east; Day 3, Nicosia; Days 4-5, Troodos; Day 6, Limassol and Kourion; Day 7, Paphos. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cyprus: https://www.happylowcost.com/en/destinations/cyprus/#deals

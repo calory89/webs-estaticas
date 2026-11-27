@@ -235,6 +235,10 @@ If you only have one day, follow day 1 of this itinerary: The classic centre. Mo
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The classic centre. Morning: Start at Place de la Bourse and the Miroir d'Eau before the crowds, then wander Saint-Pierre and Place du Parlement. Day 2: Markets, Chartrons and the Cité du Vin. Morning: Oysters at the Marché des Capucins (ideally on a weekend), then a short look at Saint-Michel and its spire.
 
+### What to do in Bordeaux in 3 days?
+
+With three days in Bordeaux, this is the guide's route: Day 1, The classic centre; Day 2, Markets, Chartrons and the Cité du Vin; Day 3, Day trip. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Bordeaux: https://www.happylowcost.com/en/destinations/bordeaux/#deals

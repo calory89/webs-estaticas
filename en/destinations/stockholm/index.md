@@ -156,6 +156,14 @@ If you only have one day, follow day 1 of this itinerary: Gamla Stan in the morn
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Gamla Stan in the morning, the Royal Palace if you like, then lunch near Slussen and sunset at Monteliusvägen. Day 2: Djurgården. Vasa first, then Skansen, then a long walk along the water.
 
+### What to do in Stockholm in 4 days?
+
+With four days in Stockholm, this is the guide's route: Day 1, Gamla Stan in the morning, the Royal Palace if you like; Day 2, Djurgården. Vasa first, then Skansen, then a long walk along the water; Day 3, City Hall, the Östermalm food hall and a stroll through Östermalm; Day 4, If you have it. The table above has the full plan for each day.
+
+### What to see in Sweden in 4 days?
+
+With four days in Sweden, this guide suggests staying in Stockholm and following its route: Day 1, Gamla Stan in the morning, the Royal Palace if you like; Day 2, Djurgården. Vasa first, then Skansen, then a long walk along the water; Day 3, City Hall, the Östermalm food hall and a stroll through Östermalm; Day 4, If you have it.
+
 ## Flights and deals
 
 - Flight deals to Stockholm: https://www.happylowcost.com/en/destinations/stockholm/#deals

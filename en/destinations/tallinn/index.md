@@ -125,6 +125,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town. Start at Tow
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town. Start at Town Hall Square, climb Toompea, see the cathedral and the two viewpoints, then come back down for lunch. Day 2: Beyond the walls. Take the tram to Kadriorg for the palace and park, then KUMU.
 
+### What to do in Tallinn in 3 days?
+
+With three days in Tallinn, this is the guide's route: Day 1, Old Town; Day 2, Beyond the walls; Day 3, Your choice. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Tallinn: https://www.happylowcost.com/en/destinations/tallinn/#deals

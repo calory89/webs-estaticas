@@ -154,6 +154,14 @@ If you only have one day, follow day 1 of this itinerary: Plaza de Mayo, Avenida
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo, then San Telmo for the evening. Day 2: Recoleta Cemetery, a walk through Recoleta and the Ateneo bookshop, Teatro Colón tour, then dinner in Palermo.
 
+### What to do in Buenos Aires in 4 days?
+
+With four days in Buenos Aires, this is the guide's route: Day 1, Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo; Day 2, Recoleta Cemetery, a walk through Recoleta and the Ateneo bookshop, Teatro Colón tour; Day 3, Palermo parks and MALBA, a leisurely afternoon in Soho, and a milonga at night; Day 4, La Boca in the morning, then Puerto Madero and the Costanera Sur reserve. The table above has the full plan for each day.
+
+### What to see in Argentina in 4 days?
+
+With four days in Argentina, this guide suggests staying in Buenos Aires and following its route: Day 1, Plaza de Mayo, Avenida de Mayo, Café Tortoni, Palacio Barolo; Day 2, Recoleta Cemetery, a walk through Recoleta and the Ateneo bookshop, Teatro Colón tour; Day 3, Palermo parks and MALBA, a leisurely afternoon in Soho, and a milonga at night; Day 4, La Boca in the morning, then Puerto Madero and the Costanera Sur reserve.
+
 ## Flights and deals
 
 - Flight deals to Buenos Aires: https://www.happylowcost.com/en/destinations/buenos-aires/#deals

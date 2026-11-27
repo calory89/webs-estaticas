@@ -247,6 +247,10 @@ If you only have one day, follow day 1 of this itinerary: The Old City. Morning:
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: The Old City. Morning: enter at Jaffa Gate and walk straight to the Church of the Holy Sepulchre before the crowds arrive. Day 2: Temple Mount, City of David, Mount of Olives. Morning: queue early at the Mughrabi Bridge for Temple Mount.
 
+### What to do in Jerusalem in 3 days?
+
+With three days in Jerusalem, this is the guide's route: Day 1, The Old City; Day 2, Temple Mount, City of David, Mount of Olives; Day 3, Museums and modern Jerusalem. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Jerusalem: https://www.happylowcost.com/en/destinations/jerusalem/#deals

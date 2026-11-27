@@ -240,6 +240,10 @@ If you only have one day, follow day 1 of this itinerary: Old Town, Urgull and y
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Old Town, Urgull and your first pintxos. Morning: Start in the Parte Vieja, see Santa María del Coro and Plaza de la Constitución, then visit San Telmo Museoa. Day 2: The bay end to end. Morning: Walk La Concha promenade to the Miramar Palace gardens, then on to Ondarreta for a swim.
 
+### What to do in San Sebastian in 3 days?
+
+With three days in San Sebastian, this is the guide's route: Day 1, Old Town, Urgull and your first pintxos; Day 2, The bay end to end; Day 3, The coast. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to San Sebastian: https://www.happylowcost.com/en/destinations/san-sebastian/#deals

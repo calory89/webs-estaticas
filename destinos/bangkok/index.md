@@ -136,6 +136,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Casco antiguo. Gran Palacio 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Casco antiguo. Gran Palacio por la mañana, Wat Pho, ferry a Wat Arun al atardecer y cena en Yaowarat. Día 2: Wat Saket de primera hora, paseo por Banglamphu, tarde de masaje y descanso.
 
+### ¿Qué hacer en Bangkok en 4 días?
+
+Con cuatro días en Bangkok, esta es la ruta de la guía: Día 1, Casco antiguo. Gran Palacio por la mañana, Wat Pho; Día 2, Wat Saket de primera hora, paseo por Banglamphu, tarde de masaje y descanso; Día 3, Jim Thompson, Siam y centros comerciales, parque Lumphini al atardecer; Día 4, Excursión a Ayutthaya o jornada de canales y Thonburi, según el cuerpo que te quede. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bangkok: https://www.happylowcost.com/destinos/bangkok/#chollos

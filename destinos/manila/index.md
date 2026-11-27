@@ -235,6 +235,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Intramuros y la bahía. Mañ
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Intramuros y la bahía. Mañana: entra en Intramuros temprano. Fuerte Santiago, Catedral, San Agustín y Casa Manila, en ese orden. Día 2: Quiapo, Binondo y Makati. Mañana: LRT-1 hasta Carriedo, Iglesia de Quiapo y paseo hasta San Sebastián.
 
+### ¿Qué hacer en Manila en 3 días?
+
+Con tres días en Manila, esta es la ruta de la guía: Día 1, Intramuros y la bahía; Día 2, Quiapo, Binondo y Makati; Día 3, El Manila moderno. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Manila: https://www.happylowcost.com/destinos/manila/#chollos

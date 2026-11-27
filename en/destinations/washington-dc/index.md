@@ -240,6 +240,10 @@ If you only have one day, follow day 1 of this itinerary: Capitol Hill and the e
 
 With two days, follow days 1 and 2 of this itinerary. Day 1: Capitol Hill and the east end of the Mall. Morning: Capitol tour (booked ahead), then the tunnel to the Library of Congress. Day 2: Monuments and the big museums. Morning: Washington Monument at opening, then the African American History museum right next door.
 
+### What to do in Washington DC in 3 days?
+
+With three days in Washington DC, this is the guide's route: Day 1, Capitol Hill and the east end of the Mall; Day 2, Monuments and the big museums; Day 3, Arlington and Georgetown. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Washington DC: https://www.happylowcost.com/en/destinations/washington-dc/#deals

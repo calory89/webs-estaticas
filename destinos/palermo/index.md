@@ -151,6 +151,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Palazzo dei Normanni y Cappe
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Palazzo dei Normanni y Cappella Palatina a primera hora, Catedral, Quattro Canti, Piazza Pretoria y Martorana. Día 2: Monreale por la mañana. Vuelta a Palermo, comida en Ballarò, Teatro Massimo y paseo por la Kalsa.
 
+### ¿Qué hacer en Palermo en 3 días?
+
+Con tres días en Palermo, esta es la ruta de la guía: Día 1, Palazzo dei Normanni y Cappella Palatina a primera hora, Catedral, Quattro Canti; Día 2, Monreale por la mañana. Vuelta a Palermo, comida en Ballarò; Día 3, Catacumbas, Palazzo Abatellis, Foro Italico y tarde libre o playa en Mondello. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Palermo?
 
 Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos unos 50-60 euros por persona y día, y en el nivel "cómodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

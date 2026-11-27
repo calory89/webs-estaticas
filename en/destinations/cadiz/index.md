@@ -239,6 +239,10 @@ No. The city is walkable, and the train, buses and catamarans cover the main day
 
 If you only have one day, follow day 1 of this itinerary: Old town, cathedral and La Caleta. Morning: Start at the Mercado Central for breakfast or an early tapa.
 
+### What to do in Cadiz in 2 days?
+
+With two days in Cadiz, this is the guide's route: Day 1, Old town, cathedral and La Caleta; Day 2, Museums, gardens and the big beach. The table above has the full plan for each day.
+
 ## Flights and deals
 
 - Flight deals to Cadiz: https://www.happylowcost.com/en/destinations/cadiz/#deals

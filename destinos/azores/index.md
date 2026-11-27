@@ -123,6 +123,10 @@ Hay que ir con una empresa autorizada que salga del puerto, y se reserva en el m
 
 Con 7 días ves lo esencial de Azores sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Qué hacer en Azores en 7 días?
+
+Con siete días en Azores, esta es la ruta de la guía: Días 1-2, Ponta Delgada, Sete Cidades y Ponta da Ferraria al atardecer; Día 3, Lagoa do Fogo, Ribeira Grande y Gorreana por la costa norte; Día 4, Furnas con cozido, Terra Nostra y Caldeira Velha; Día 5, Vuelo a Pico o Faial y paseo por Horta; Días 6-7, Capelinhos, ferry corto Horta–Madalena, viñedos de Pico y, si el clima acompaña. En la tabla de arriba tienes el plan completo de cada día.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Azores: https://www.happylowcost.com/destinos/azores/#chollos

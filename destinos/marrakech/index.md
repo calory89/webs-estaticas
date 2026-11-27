@@ -141,6 +141,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Medina por la mañana, zocos
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Medina por la mañana, zocos y madrasa. Comida tranquila y tarde en el Museo de Marrakech. Día 2: Palacio Bahía y Tumbas Saadíes a primera hora, El Badi después.
 
+### ¿Qué hacer en Marrakech en 3 días?
+
+Con tres días en Marrakech, esta es la ruta de la guía: Día 1, Medina por la mañana, zocos y madrasa. Comida tranquila y tarde en el Museo de Marrakech; Día 2, Palacio Bahía y Tumbas Saadíes a primera hora, El Badi después; Día 3, Majorelle y Museo YSL a primera hora, paseo por Guéliz y cena en la ciudad nueva. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Marrakech?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

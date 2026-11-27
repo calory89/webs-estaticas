@@ -135,6 +135,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Centro histórico. Stephansd
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Centro histórico. Stephansdom por la mañana, paseo por Graben y Kohlmarkt, Hofburg y tarde de café. Día 2: Palacios y arte. Schönbrunn temprano, con jardines y Gloriette.
 
+### ¿Qué hacer en Viena en 3 días?
+
+Con tres días en Viena, esta es la ruta de la guía: Día 1, Centro histórico; Día 2, Palacios y arte; Día 3, Museos y barrios. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Viena?
 
 Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

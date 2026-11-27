@@ -231,6 +231,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Old Delhi. Mañana: metro a 
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Old Delhi. Mañana: metro a Chandni Chowk, paseo por los bazares y Khari Baoli antes de que llegue el calor y el tráfico. Día 2: Nueva Delhi colonial. Mañana: Agrasen ki Baoli a primera hora y Gurudwara Bangla Sahib, quedándote a comer en el langar.
 
+### ¿Qué hacer en Nueva Delhi en 4 días?
+
+Con cuatro días en Nueva Delhi, esta es la ruta de la guía: Día 1, Old Delhi; Día 2, Nueva Delhi colonial; Día 3, Mausoleos y Nizamuddin; Día 4, El sur. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Nueva Delhi?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 25-35 € por persona y día, y en el nivel "presupuesto medio", unos 60-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

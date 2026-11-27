@@ -253,6 +253,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Manrique y la capital. Maña
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Manrique y la capital. Mañana: Fundación César Manrique en Tahíche y después Teguise, con subida al castillo de Santa Bárbara. Día 2: El norte. Mañana: Jameos del Agua a primera hora y Cueva de los Verdes justo después.
 
+### ¿Qué hacer en Lanzarote en 5 días?
+
+Con cinco días en Lanzarote, esta es la ruta de la guía: Día 1, Manrique y la capital; Día 2, El norte; Día 3, Timanfaya y la costa de lava; Día 4, El sur y las playas; Día 5, La Graciosa. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Lanzarote?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.

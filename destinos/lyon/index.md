@@ -246,6 +246,10 @@ Si solo tienes un día, haz el día 1 de esta ruta: Fourvière y Vieux Lyon. Ma�
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Fourvière y Vieux Lyon. Mañana: sube en funicular desde la estación Vieux Lyon hasta Fourvière. Día 2: Presqu'île y Croix-Rousse. Mañana: mercado del Quai Saint-Antoine, place Bellecour y paseo hacia el norte hasta la place des Terreaux.
 
+### ¿Qué hacer en Lyon en 3 días?
+
+Con tres días en Lyon, esta es la ruta de la guía: Día 1, Fourvière y Vieux Lyon; Día 2, Presqu'île y Croix-Rousse; Día 3, Parque, mercado y Confluence. En la tabla de arriba tienes el plan completo de cada día.
+
 ### ¿Es caro viajar a Lyon?
 
 Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
