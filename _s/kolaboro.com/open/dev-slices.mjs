@@ -3,10 +3,13 @@
 // cuts both files into 64 bucket files, /data/dv/<00..63>.json (bucket = FNV-1a of the developer slug, mod 64): for every developer its
 // rows of named.json exactly as published (every row with that slug, in file order), its rows of bali-cases.json, and the developer
 // ranking and comparison links that kbx_h29.js linksFor() shows on the page, computed by the worker's own code (bundled with esbuild).
-// The worker uses a bucket only when every file the bucket was built from is unchanged in the deployment, and the month matches; otherwise
+// The worker uses a bucket only when every file the bucket was built from is unchanged in the deployment; otherwise
 // the page is built from the full files as before. k64 (R01-49): each bucket also carries "et", the tag Cloudflare Pages gives each of
 // those files (its ETag: BLAKE3 over the base64 text of the file plus its extension, first 32 hex), so the worker compares the deployed
 // files' tags (HEAD requests, no bodies) instead of hashing 27 MB; a file without a tag, or another tag format, falls back to SHA-256. Deterministic: the same files always give byte-identical buckets.
+// k66 (27 Nov 2026): no month stamp. Nothing in a bucket depends on the date (the ranking and comparison links depend only on project
+// counts per developer and market; overdue counts, handover status and every date are computed by the worker per request), so a bucket
+// stays valid across month changes; checked by building the buckets with the clock at 1 Dec 2026 and 15 Jan 2027 (identical files).
 // Run: node open/dev-slices.mjs [kolaboro dir, default: the folder above open/]   (needs npx esbuild; writes data/dv/*.json)
 //      --check   exit 1 when data/dv/index.json was not built from the current files (nothing written)
 // Called by open/catalog-refresh.py when the buckets are behind the files.
@@ -79,11 +82,11 @@ for (const [s, d] of dev) { d.wn = Object.fromEntries([...(byDev.get(s) || [])].
 for (const [s, d] of dev) { d.dr = (D.drOfDev.get(s) || []).map(k => [k, D.DR.get(k).mk]); d.vs = (D.vsOfDev.get(s) || []).map(pr => [pr.k, pr.a.dv, pr.b.dv, pr.mk]); }
 // 3. the file hashes the worker checks, the top-level fields its index needs, then the buckets
 const files = Object.fromEntries([...used].sort((a, b) => a[0] < b[0] ? -1 : 1)), et = Object.fromEntries(Object.keys(files).map(f => [f, pagesTag(fs.readFileSync(path.join(DATA, f)), path.extname(f).slice(1))]));
-const g = { version: named.version, updated: named.updated, count: named.count, aliases: named.aliases, cupdated: cases.updated, pn: D.ix.P.length, month: D.month, mk: Object.fromEntries([...D.ix.mk].sort((a, b) => a[0] < b[0] ? -1 : 1)) };   // mk: project counts per market (kbx_n33l.js picks the language prefix by it)
+const g = { version: named.version, updated: named.updated, count: named.count, aliases: named.aliases, cupdated: cases.updated, pn: D.ix.P.length, mk: Object.fromEntries([...D.ix.mk].sort((a, b) => a[0] < b[0] ? -1 : 1)) };   // mk: project counts per market (kbx_n33l.js picks the language prefix by it)
 const B = Array.from({ length: NB }, () => ({}));
 for (const s of [...dev.keys()].sort()) B[bucket(s)][s] = dev.get(s);
 fs.mkdirSync(OUT, { recursive: true });
 let bytes = 0;
 for (let i = 0; i < NB; i++) { const t = JSON.stringify({ v: 1, sha: srcSha, files, et, g, d: B[i] }); bytes += t.length; fs.writeFileSync(path.join(OUT, String(i).padStart(2, '0') + '.json'), t); }
-fs.writeFileSync(path.join(OUT, 'index.json'), JSON.stringify({ v: 1, sha: srcSha, buckets: NB, developers: dev.size, month: D.month, files, et, note: 'Bucket files for /developers/<slug>/ pages, built by /open/dev-slices.mjs from /data/named.json and /data/bali-cases.json.' }, null, 1) + '\n');
+fs.writeFileSync(path.join(OUT, 'index.json'), JSON.stringify({ v: 1, sha: srcSha, buckets: NB, developers: dev.size, files, et, note: 'Bucket files for /developers/<slug>/ pages, built by /open/dev-slices.mjs from /data/named.json and /data/bali-cases.json.' }, null, 1) + '\n');
 console.log('developer slices', dev.size, 'developers in', NB, 'buckets,', (bytes / 1e6).toFixed(1), 'MB; checked files', Object.keys(files).length);

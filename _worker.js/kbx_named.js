@@ -71,7 +71,7 @@ const [named, cases] = await Promise.all([loadJson(env, 'named.json'), loadJson(
 if (IDX && IDX.named === named && IDX.cases === cases) return IDX;
 const ix = await build(env, named, cases); IDX = ix; return ix;
 }
-// n40 k61 (R01-49): developer slices /data/dv/ (open/dev-slices.mjs), used only when the source files (asset tags, else SHA-256) and the month match
+// n40 k61 (R01-49): developer slices /data/dv/ (open/dev-slices.mjs), used only when the source files (asset tags, else SHA-256) match; k66: no month check, bucket data is date-free (dates computed per request)
 export const dvBucket = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; } return String(h % 64).padStart(2, '0'); };
 const DVOK = new Map(), DVB = new Map(), DVIX = new WeakMap(); let DVHOW = '';
 function dvFilesOk(env, files, tags) {   // once per isolate; k64: Pages asset tags (ETag, HEAD) first
@@ -86,7 +86,7 @@ export async function dvSlice(env, s) {
 const nm = SHARED['named.json']; if (IDX || (nm && nm.v != null) || !env || !env.ASSETS || !/^[a-z0-9-]{1,90}$/.test(String(s || ''))) return null;
 const n = dvBucket(s); let p = DVB.get(n);
 if (!p) { p = env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/dv/' + n + '.json')).then(r => r.ok ? r.json() : null).catch(() => null); DVB.set(n, p); while (DVB.size > 3) DVB.delete(DVB.keys().next().value); }
-const b = await p; if (!b || b.v !== 1 || !b.d || !b.files || !b.g || !Object.prototype.hasOwnProperty.call(b.d, s) || b.g.month !== new Date().toISOString().slice(0, 7)) return null;
+const b = await p; if (!b || b.v !== 1 || !b.d || !b.files || !b.g || !Object.prototype.hasOwnProperty.call(b.d, s)) return null;
 return (await dvFilesOk(env, b.files, b.et)) ? { g: b.g, d: b.d[s] } : null;
 }
 export async function dvIx(env, s) {
