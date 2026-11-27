@@ -12,7 +12,8 @@
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function norm(s){ s = String(s || '').toLowerCase().trim(); try { s = s.normalize('NFD').replace(/[̀-ͯ]/g, ''); } catch (e) {} return s.replace(/[-_+]+/g, ' ').replace(/\s+/g, ' '); }
   function pct(x){ return Math.round(x * 100) + '%'; }
-  function fmt(n){ return (n || 0).toLocaleString('en'); }
+  var NF = window.Intl && Intl.NumberFormat ? new Intl.NumberFormat('en') : null, CO = window.Intl && Intl.Collator ? new Intl.Collator('en', { sensitivity: 'base' }) : null;   // n40 k52: one formatter and one collator (a new one per call was 46 ms of the first render on a phone)
+  function fmt(n){ return NF && typeof n === 'number' && n === n ? NF.format(n) : (n || 0).toLocaleString('en'); }
   function ok(c, k){ var x = c.checks || {}; return k === 'permit' ? x.permit === 2 : k === 'escrow' ? x.escrow === true : k === 'progress' ? x.progress != null : !!x[k]; }
   function share(C, k){ return C.length ? C.filter(function(c){ return ok(c, k); }).length / C.length : 0; }
   function mlink(m){ return '/m/' + encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-')) + '/'; }   // n33a: clean market path (the ?market= form answers 301 to it)
@@ -113,7 +114,7 @@
       var s = C.filter(pass).sort(byScore); if (mode === 'asc') s.reverse();
       if (mode === 'conf') s.sort(function(a, b){ return (b.vscore || 0) - (a.vscore || 0) || byScore(a, b); });
       if (mode === 'moved') s.sort(function(a, b){ return (b.delay || 0) - (a.delay || 0) || (b.overdue || 0) - (a.overdue || 0) || byScore(a, b); });
-      if (mode === 'name') s.sort(function(a, b){ var x = nm(a) || a.id, y = nm(b) || b.id; return x.localeCompare(y, 'en', { sensitivity: 'base' }); });
+      if (mode === 'name') s.sort(function(a, b){ var x = nm(a) || a.id, y = nm(b) || b.id; return CO ? CO.compare(x, y) : x.localeCompare(y, 'en', { sensitivity: 'base' }); });
       R = s; shown = 0;   // n40 d10: rows are built 50 at a time, when shown
       var el = $('mk-list');
       // n40 d9: 50 rows at first and on each "Show more" (Dubai rendered all 1,154 rows, 62,000 px); the header row stays on screen while the list scrolls
@@ -138,14 +139,17 @@
   }
   var setMode = function(){};
   function wireSort(draw){
-    var mode = 'desc';
-    setMode = function(m){ mode = m; document.querySelectorAll('.mk-sort').forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.s === m ? 'true' : 'false'); }); draw(mode); };
+    var mode = 'desc', pend = 0;
+    // n40 k52: a sort or filter change paints the pressed button first and rebuilds the list in the next task (the tap answered after the whole
+    // list was rebuilt, 160 to 370 ms on a phone); quick repeated taps draw once, with the last choice
+    var drawSoon = function(){ var t = ++pend, go = function(){ setTimeout(function(){ if (t === pend) draw(mode); }, 0); }; if (document.hidden || !window.requestAnimationFrame) go(); else requestAnimationFrame(go); };
+    setMode = function(m){ mode = m; document.querySelectorAll('.mk-sort').forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.s === m ? 'true' : 'false'); }); drawSoon(); };
     draw(mode);
     ['mk-hy', 'mk-pn'].forEach(function(id){ var el = $(id); if (el) el.addEventListener('change', function(){
       FIL[id === 'mk-hy' ? 'hy' : 'pn'] = el.value;
       var q = new URLSearchParams(location.search); ['hy', 'pn'].forEach(function(k){ if (FIL[k]) q.set(k, FIL[k]); else q.delete(k); });
       try { history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : '') + location.hash); } catch (e) {}
-      draw(mode);
+      drawSoon();
     }); });
     document.querySelectorAll('.mk-sort').forEach(function(b){ b.addEventListener('click', function(){ setMode(b.dataset.s); }); });
   }

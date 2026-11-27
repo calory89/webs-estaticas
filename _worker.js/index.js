@@ -275,15 +275,24 @@ const KB_SPEC = '<script type="speculationrules" nonce="{N}">' + JSON.stringify(
   prefetch: [{ source: 'document', where: { and: [{ href_matches: '/*' }, { not: { selector_matches: KB_SPEC_NO } }] }, eagerness: 'moderate' }] }) +
   '</script><style id="kb-vt">@view-transition{navigation:auto}::view-transition-old(root),::view-transition-new(root){animation-duration:.18s}@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}</style>';
 const KB_SPEC_OK = p => !/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:check|portal|admin|account|acct|pay|book|login|confirm|x)(?:\/|$)/.test(p);
-const KB_LATE = "(function(w,d){var q=[],done=0,ev=['pointerdown','keydown','touchstart','scroll','wheel','mousemove'],o={passive:true,capture:true};" +
-  "function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,o)});var f;while((f=q.shift()))try{f()}catch(x){}}" +
+// n40 k52: (1) after a tap the queue waits 4 s and then runs one item per idle period, so the reader's next taps never wait behind
+// gtag or Clarity (they were 0.6 to 0.9 s of main-thread work right after the first tap); (2) the tags (kbLate: gtag, Zaraz/Clarity) run only
+// with consent: stored "yes", or a visitor outside the consent region of the banner; in that region they wait for "yes" on the banner, and a
+// stored "no" or a failed lookup keeps them off. Other late work (kbIdle) is not gated.
+const KB_LATE = "(function(w,d){var q=[],r=[],done=0,ok=-1,gd=0,EU='AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB CH'.split(' '),ev=['pointerdown','keydown','touchstart','scroll','wheel','mousemove'],o={passive:true,capture:true};" +
+  "function idle(f){(w.requestIdleCallback||function(c){setTimeout(c,1)})(f,{timeout:2000})}function drain(a){var f=a.shift();if(!f)return;try{f()}catch(x){}if(a.length)idle(function(){drain(a)})}" +
+  "function allow(y){if(y)w.kbCY=1;if(ok===1)return;ok=1;drain(q);if(y){var n=0,t=setInterval(function(){if(w.clarity){clearInterval(t);try{w.clarity('consent')}catch(x){}}else if(++n>40)clearInterval(t)},250)}}" +
+  "function gate(){gd=1;var c;try{c=localStorage.getItem('kb-consent')}catch(x){}if(c==='yes')return allow(1);if(c==='no'){ok=0;return}" +
+  "fetch('/api/geo').then(function(x){return x.json()}).then(function(g){if(g&&g.country&&EU.indexOf(g.country)<0)allow()}).catch(function(){})}" +
+  "function go(e){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,o)});setTimeout(function(){idle(function(){drain(r);gate()})},e?4000:0)}" +
   "ev.forEach(function(e){w.addEventListener(e,go,o)});function arm(){setTimeout(go,8000)}d.readyState==='complete'?arm():w.addEventListener('load',arm);" +
-  "w.kbLate=function(f){done?setTimeout(f,0):q.push(f)};" +
+  "w.kbLate=function(f){q.push(f);if(ok===1&&q.length===1)idle(function(){drain(q)})};w.kbIdle=function(f){done?setTimeout(f,0):r.push(f)};" +
+  "d.addEventListener('click',function(e){var t=e.target&&e.target.closest&&e.target.closest('[data-cc=\\'yes\\']');if(t&&gd)setTimeout(function(){allow(1)},0)});" +
   // n20s: the last inline handlers became data attributes, so the enforced policy can forbid inline handlers (script-src-attr 'none')
   "d.addEventListener('click',function(e){var t=e.target&&e.target.closest&&e.target.closest('[data-kb-reload]');if(t)location.reload()});" +
   "d.addEventListener('submit',function(e){var f=e.target;if(f&&f.hasAttribute&&f.hasAttribute('data-kb-nosubmit'))e.preventDefault()},true);" +
-  "var z,held;try{Object.defineProperty(w,'zaraz',{configurable:true,enumerable:true,get:function(){return z},set:function(v){z=v;if(done||held||!v||typeof v!=='object')return;held=v;var real;" +
-  "try{Object.defineProperty(v,'init',{configurable:true,enumerable:true,get:function(){return done?real:function(){var a=arguments;w.kbLate(function(){real&&real.apply(v,a)})}},set:function(fn){real=fn}})}catch(x){}}})}catch(x){}" +
+  "var z,held;try{Object.defineProperty(w,'zaraz',{configurable:true,enumerable:true,get:function(){return z},set:function(v){z=v;if(ok===1||held||!v||typeof v!=='object')return;held=v;var real;" +
+  "try{Object.defineProperty(v,'init',{configurable:true,enumerable:true,get:function(){return ok===1?real:function(){var a=arguments;w.kbLate(function(){real&&real.apply(v,a)})}},set:function(fn){real=fn}})}catch(x){}}})}catch(x){}" +
   // n28a: a table wider than its box scrolls sideways, so keyboard users must be able to focus it (axe scrollable-region-focusable); read after load, off the critical path
   "w.addEventListener('load',function(){setTimeout(function(){d.querySelectorAll('pre,[class*=\"tw\"],[class*=\"scroll\"],[class*=\"table\"],[class*=\"code\"]').forEach(function(t){if(t.hasAttribute('tabindex')||t.scrollWidth<=t.clientWidth+1)return;var o=getComputedStyle(t).overflowX;if(o==='auto'||o==='scroll')t.tabIndex=0})},600)});" +
   "})(window,document);";

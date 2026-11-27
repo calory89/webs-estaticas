@@ -106,15 +106,25 @@
   var items = [], ready = false, meta = { n: 0, markets: 0, updated: '', offline: false, verified: null };
   PAGES.forEach(function (p) { items.push({ t: 'page', title: p[0], sub: p[3] + ' · kolaboro.com' + p[1], href: p[1], h: norm(p[0] + ' ' + p[2] + ' ' + p[1].replace(/[\/-]/g, ' ')), w: 3 }); });
   var pageCount = items.length;
+  // n40 k52: when the palette is closed (the background copy for offline search) the 2,000 project rows are built 100 at a time, yielding
+  // between slices (it was one 110 to 330 ms task on a phone); the finished list replaces the old one in one step. Open: built at once, as before.
+  var BGN = 0;
+  function nextSlice(f) { if (window.scheduler && scheduler.yield) scheduler.yield().then(f); else setTimeout(f, 0); }
   function build(ix) {
-    items.length = pageCount; LASTIX = ix;
-    (ix.m || []).forEach(function (m) { items.push({ t: 'market', title: TL ? pl(m[0]) : m[0], sub: (TL ? TL.mk + ' · ' + m[2] + ' ' + pn(m[2], TL.pj) + (m[3] && m[3] !== m[0] ? ' · ' + pl(m[3]) : '') : 'Market · ' + m[2] + ' project' + (m[2] === 1 ? '' : 's') + (m[3] && m[3] !== m[0] ? ' · ' + m[3] : '')), href: '/m/' + m[1] + '/', h: norm(m[0] + ' ' + m[3] + ' market' + (TL ? ' ' + pl(m[0]) + ' ' + pl(m[3]) : '')), w: 2 }); });
-    (ix.p || []).forEach(function (p) {
-      var id = p[0], idn = norm(id), sub = TL ? [pl(p[1]) + (p[2] && p[2] !== p[1] ? (LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ') + pl(p[2]) : ''), pl(p[3]), TL.st[p[4]] || p[4], p[5] != null ? p[5] + (LG === 'zh' ? '' : ' ') + TL.ck : '', p[7] ? p[7] + ' ' + pn(p[7], TL.pr) : ''].filter(Boolean).join(' · ') : [p[1] + (p[2] && p[2] !== p[1] ? ', ' + p[2] : ''), p[3], p[4], p[5] != null ? p[5] + ' of 6 checks public' : '', p[7] ? p[7] + ' public problem' + (p[7] > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
-      items.push({ t: 'project', title: id, sub: sub, href: '/p/' + encodeURIComponent(id) + '/', flags: p[7], h: norm(id + ' ' + idn.replace(/-/g, '') + ' ' + idn.replace(/-0*/g, ' ') + ' ' + p[1] + ' ' + p[2] + ' ' + p[3] + ' ' + p[4] + ' ' + p[8] + ' ' + p[9] + (p[7] ? ' flags problems' : '')), w: 1 });
-    });
-    meta.n = (ix.p || []).length; meta.markets = (ix.m || []).length; meta.updated = ix.updated || ''; ready = true;
-    if (NX) named(NX);
+    var g = ++BGN, bg = !(root && root.classList.contains('on')), out = items.slice(0, pageCount), P = ix.p || [], i = 0; LASTIX = ix;
+    (ix.m || []).forEach(function (m) { out.push({ t: 'market', title: TL ? pl(m[0]) : m[0], sub: (TL ? TL.mk + ' · ' + m[2] + ' ' + pn(m[2], TL.pj) + (m[3] && m[3] !== m[0] ? ' · ' + pl(m[3]) : '') : 'Market · ' + m[2] + ' project' + (m[2] === 1 ? '' : 's') + (m[3] && m[3] !== m[0] ? ' · ' + m[3] : '')), href: '/m/' + m[1] + '/', h: norm(m[0] + ' ' + m[3] + ' market' + (TL ? ' ' + pl(m[0]) + ' ' + pl(m[3]) : '')), w: 2 }); });
+    (function step() {
+      if (g !== BGN) return;
+      for (var end = bg ? Math.min(P.length, i + 100) : P.length; i < end; i++) { var p = P[i];
+        var id = p[0], idn = norm(id), sub = TL ? [pl(p[1]) + (p[2] && p[2] !== p[1] ? (LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ') + pl(p[2]) : ''), pl(p[3]), TL.st[p[4]] || p[4], p[5] != null ? p[5] + (LG === 'zh' ? '' : ' ') + TL.ck : '', p[7] ? p[7] + ' ' + pn(p[7], TL.pr) : ''].filter(Boolean).join(' · ') : [p[1] + (p[2] && p[2] !== p[1] ? ', ' + p[2] : ''), p[3], p[4], p[5] != null ? p[5] + ' of 6 checks public' : '', p[7] ? p[7] + ' public problem' + (p[7] > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
+        out.push({ t: 'project', title: id, sub: sub, href: '/p/' + encodeURIComponent(id) + '/', flags: p[7], h: norm(id + ' ' + idn.replace(/-/g, '') + ' ' + idn.replace(/-0*/g, ' ') + ' ' + p[1] + ' ' + p[2] + ' ' + p[3] + ' ' + p[4] + ' ' + p[8] + ' ' + p[9] + (p[7] ? ' flags problems' : '')), w: 1 });
+      }
+      if (i < P.length) { nextSlice(step); return; }
+      items = out;
+      meta.n = (ix.p || []).length; meta.markets = (ix.m || []).length; meta.updated = ix.updated || ''; ready = true;
+      if (NX) named(NX);
+      if (bg && root && root.classList.contains('on')) render();
+    })();
   }
   // 6 Nov 2026 (b9a): named projects and developers. /api/v1/search-index gives the public name, developer and named page of every
   // project except the anonymous ones (Sumba, conflict of interest); project rows get their name and open the named page in the page language.

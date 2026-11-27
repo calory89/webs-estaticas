@@ -1,7 +1,7 @@
 /* Kolaboro shared script: nav, events, sticky CTA, lead forms */
 /* on-demand modules: kbLoad(name) loads a versioned script once; kbVerifyLoad() resolves to window.KBVerify (k/verify-badge.js) */
 (function () {
-  var V = { palette: '/k/palette.js?v=n35a2', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
+  var V = { palette: '/k/palette.js?v=n40k52a', verify: '/k/verify-badge.js?v=n28c1' }, P = {};
   window.kbLoad = function (n) {
     return P[n] || (P[n] = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = V[n]; s.async = true; s.onload = ok; s.onerror = function () { delete P[n]; no(new Error('load ' + n)); }; document.head.appendChild(s); }));
   };
@@ -726,7 +726,7 @@
   // index of 2,000 projects was a 150 ms task on a phone
   if (!has && !save && !priv) window.kbWhenActive(function () {
     var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { setTimeout(warm, 2500); }, { timeout: 4000 }); };
-    var late = window.kbLate || function (f) { addEventListener('load', function () { setTimeout(f, 8000); }, { once: true }); };
+    var late = window.kbIdle || window.kbLate || function (f) { addEventListener('load', function () { setTimeout(f, 8000); }, { once: true }); };   // n40 k52: kbIdle, not the consent-gated tag queue
     late(go);
   });
 })();
