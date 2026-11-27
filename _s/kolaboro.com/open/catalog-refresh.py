@@ -103,7 +103,8 @@ try:
     DI = os.path.join(ROOT, 'data', 'dv', 'index.json'); NJ = os.path.join(ROOT, 'data', 'named.json')
     if os.path.isfile(DI) and os.path.isfile(BC) and os.path.isfile(NJ):
         h = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()[:16]
-        if json.load(open(DI)).get('sha') != h(NJ) + h(BC):
+        dj = json.load(open(DI)); DD = os.path.join(ROOT, 'data')   # k64: any of the files a bucket was built from, and the asset tags (et)
+        if dj.get('sha') != h(NJ) + h(BC) or not dj.get('et') or any(not os.path.isfile(os.path.join(DD, f)) or h(os.path.join(DD, f)) != v for f, v in (dj.get('files') or {}).items()):
             import subprocess
             r = subprocess.run(['node', os.path.join(ROOT, 'open', 'dev-slices.mjs'), ROOT], capture_output=True, text=True, timeout=300)
             sys.stderr.write((r.stdout or r.stderr).strip()[-300:] + '\n')

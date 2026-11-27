@@ -22,5 +22,23 @@
   "similar.json": "435f121dc939a158",
   "web-health.json": "dd4ec733d37f3a7c"
  },
+ "et": {
+  "around.json": "d6bd02bc35f3d70c13309f931661b747",
+  "bali-cases.json": "a825b9955470d3d41f5e5f8347ff3737",
+  "delay-index.json": "a4ccbd3a1e05df53799b7736629a951c",
+  "dev-links.json": "f51ecd9489841afab46de45f3033bde9",
+  "domain-age.json": "e2d5afd0fb54bd6dd3cf35ac953607bf",
+  "findings-by-project.json": "f34d73e4b3ae43fd0715f045491df6bf",
+  "gleif-family.json": "7340c7c198d99b5a32eb7a9414a58dac",
+  "lookalikes.json": "7dfd29d30eaa9b4417e637a16187b210",
+  "named.json": "784739f0735d1e3a2ad3104babfae67d",
+  "on-time.json": "d3245352f3caf3eb687367f8c00f4cb1",
+  "promise-drift.json": "90fc824c8630284291adda935dae3867",
+  "promises.json": "39da207136210a82099e5d0bc6755f10",
+  "register-checks.json": "0ae3513749f12f29671b1477e6003c1f",
+  "sanctions.json": "e71a74b1e48ce72806435d3dfadd9a52",
+  "similar.json": "86a6c2a6c3751fb7a0ec5dfdea1a8348",
+  "web-health.json": "c30778cbfa98f38fe9ecd2971e79524c"
+ },
  "note": "Bucket files for /developers/<slug>/ pages, built by /open/dev-slices.mjs from /data/named.json and /data/bali-cases.json."
 }

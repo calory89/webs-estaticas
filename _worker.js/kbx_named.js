@@ -71,13 +71,15 @@ const [named, cases] = await Promise.all([loadJson(env, 'named.json'), loadJson(
 if (IDX && IDX.named === named && IDX.cases === cases) return IDX;
 const ix = await build(env, named, cases); IDX = ix; return ix;
 }
-// n40 k61 (R01-49): developer slices /data/dv/ (open/dev-slices.mjs), used only when the source files' SHA-256 and the month match
+// n40 k61 (R01-49): developer slices /data/dv/ (open/dev-slices.mjs), used only when the source files (asset tags, else SHA-256) and the month match
 export const dvBucket = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; } return String(h % 64).padStart(2, '0'); };
-const DVOK = new Map(), DVB = new Map(), DVIX = new WeakMap();
-function dvFilesOk(env, files) {   // once per isolate
-const k = JSON.stringify(files); if (DVOK.has(k)) return DVOK.get(k);
-const hx = b => [...new Uint8Array(b)].slice(0, 8).map(v => v.toString(16).padStart(2, '0')).join('');
-const p = Promise.all(Object.keys(files).map(f => env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + f)).then(r => r.ok ? r.arrayBuffer() : null).then(b => b ? crypto.subtle.digest('SHA-256', b) : null).then(d => !!d && hx(d) === files[f], () => false))).then(a => a.every(Boolean), () => false);
+const DVOK = new Map(), DVB = new Map(), DVIX = new WeakMap(); let DVHOW = '';
+function dvFilesOk(env, files, tags) {   // once per isolate; k64: Pages asset tags (ETag, HEAD) first
+const k = JSON.stringify(files) + JSON.stringify(tags || 0); if (DVOK.has(k)) return DVOK.get(k);
+const hx = b => [...new Uint8Array(b)].slice(0, 8).map(v => v.toString(16).padStart(2, '0')).join(''), F = Object.keys(files), at = f => ORIGIN + '/_s/kolaboro.com/data/' + f;
+const sha = () => Promise.all(F.map(f => env.ASSETS.fetch(new Request(at(f))).then(r => r.ok ? r.arrayBuffer() : null).then(b => b ? crypto.subtle.digest('SHA-256', b) : null).then(d => !!d && hx(d) === files[f], () => false))).then(a => { DVHOW = 'sha'; return a.every(Boolean); }, () => false);
+const tag = f => env.ASSETS.fetch(new Request(at(f), { method: 'HEAD' })).then(r => { const e = r.ok ? String(r.headers.get('etag') || '').replace(/^W\//, '').replace(/"/g, '') : ''; try { if (r.body) r.body.cancel(); } catch (x) {} return /^[0-9a-f]{32}$/.test(e) ? e === tags[f] : null; }, () => null);
+const p = (tags && F.every(f => typeof tags[f] === 'string') ? Promise.all(F.map(tag)) : Promise.resolve([null])).then(a => a.every(v => v === true) ? (DVHOW = 'tag', true) : a.some(v => v === false) ? (DVHOW = 'tag-changed', false) : sha());
 DVOK.set(k, p); return p;
 }
 export async function dvSlice(env, s) {
@@ -85,7 +87,7 @@ const nm = SHARED['named.json']; if (IDX || (nm && nm.v != null) || !env || !env
 const n = dvBucket(s); let p = DVB.get(n);
 if (!p) { p = env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/dv/' + n + '.json')).then(r => r.ok ? r.json() : null).catch(() => null); DVB.set(n, p); while (DVB.size > 3) DVB.delete(DVB.keys().next().value); }
 const b = await p; if (!b || b.v !== 1 || !b.d || !b.files || !b.g || !Object.prototype.hasOwnProperty.call(b.d, s) || b.g.month !== new Date().toISOString().slice(0, 7)) return null;
-return (await dvFilesOk(env, b.files)) ? { g: b.g, d: b.d[s] } : null;
+return (await dvFilesOk(env, b.files, b.et)) ? { g: b.g, d: b.d[s] } : null;
 }
 export async function dvIx(env, s) {
 const sl = await dvSlice(env, s); if (!sl) return null;
@@ -855,7 +857,7 @@ return new Response(await assemble(nf, lang, sh), { status: 404, headers: { 'con
 }
 const html = await assemble(pg, lang, sh), lm = new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString(), t3 = Date.now();
 if (!pg.nocache) try { const put = fastPut(fk, html, await dataVer(ix, env, kind, key), lm); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
-return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + (ix.slice ? ';desc=slice' : '') + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) + (pg.tm ? ', ' + pg.tm : '') } });
+return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + (ix.slice ? ';desc=slice' : '') + (DVHOW ? ', dv;desc=' + DVHOW : '') + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) + (pg.tm ? ', ' + pg.tm : '') } });
 }
 function updLine(pg) {
 if (!pg || !pg.upd || !pg.lastmod || !iso(pg.lastmod)) return;
