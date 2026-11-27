@@ -1164,7 +1164,7 @@
    "places": {
     "pages": 710,
     "twins": 710,
-    "words": 1674146,
+    "words": 1674034,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1179,7 +1179,7 @@
    "content": {
     "pages": 592,
     "twins": 591,
-    "words": 458422,
+    "words": 458418,
     "english": 0,
     "by_hand": 42,
     "spanish_pct": 100
@@ -1198,7 +1198,7 @@
    "checked": 4832,
    "indexable": 4290,
    "max_depth": 3,
-   "titles_changed_since_last_build": 229,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 335,
    "no_text_without_javascript": 9,
    "click_handler_instead_of_link": 1410,
@@ -1206,7 +1206,6 @@
    "keyword_stuffing": 8,
    "year_in_title": 2,
    "near_identical_pages": 542,
-   "title_changed_twice_in_28_days": 215,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1327,49 +1326,6 @@
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
     "... 502 more"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/deal/bg-pomorie-60k-1630398: Sold or withdrawn: 2-bedroom flat in Sunset Resort · €59,900",
-    "/deal/ch-brig-55k-63824: Not confirmed: Bright as-new tiny house · €59,300 · RealHunt",
-    "/deal/ch-brig-55k-63831: Not confirmed: Wooden tiny house · €59,300 · RealHunt",
-    "/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684: Sold or withdrawn: 2-bedroom flat in Mesa Chorio · €195,000",
-    "/deal/es-alpujarra-de-la-sierra-38k-35809: Not confirmed: house in Alpujarra de la Sierra · €38,000",
-    "/deal/es-cadalso-de-los-vidrios-155k-995484: Off the market: duplex in Cadalso de los Vidrios · €155,000",
-    "/deal/es-capellades-165k-203609: Sold or withdrawn: 4-bed townhouse in Capellades · €165,000",
-    "/deal/es-condado-alhama-golf-129k-190939296: Off the market: 3-bed house in Condado de Alhama · €129,000",
-    "/deal/es-costa-del-silencio-240k-479658: Off the market: 1-bed flat in Costa del Silencio · €240,000",
-    "/deal/es-cumbres-de-san-bartolome-43k-76551: Off the market: house in Cumbres de San Bartolomé · €43,000",
-    "/deal/es-denia-219k-283381: Sold or withdrawn: 2-bed penthouse in Les Bovetes · €219,000",
-    "/deal/es-gironella-139k-934028: Sold or withdrawn: 2-bedroom duplex in Gironella · €139,000",
-    "/deal/es-godelleta-178k-277470: Sold or withdrawn: 4-bedroom chalet in Godelleta · €178,000",
-    "/deal/es-los-palacios-pool-145k-190022882: Off the market: house in Urbanización El Cuzco · €145,000",
-    "/deal/es-mecina-bombaron-75k-riayjs: Sold or withdrawn: 2-bed home in Mecina Bombarón · €75,000",
-    "/deal/es-riba-roja-d-ebre-85k-99837: Not confirmed: 2-bedroom flat in Riba-roja d'Ebre · €85,000",
-    "/deal/es-roquetas-de-mar-82k-66798: Sold or withdrawn: 3-bed house in Roquetas de Mar · €82,900",
-    "/deal/es-san-martin-del-rey-aurelio-85k-66374: Off the market: flat in San Martín del Rey Aurelio · €85,000",
-    "/deal/es-tavernes-de-la-valldigna-90k-27013: Off the market: flat in Tavernes de la Valldigna · €90,000",
-    "/deal/es-torremanzanas-la-torre-de-les-macanes-99k-04350: Off the market: flat in Torremanzanas / La Torre de les Maçanes · €99,000",
-    "/deal/fr-auzances-69k-3pkknx: Sold or withdrawn: 3-bedroom townhouse in Auzances · €69,000",
-    "/deal/fr-durban-corbieres-80k-ke4gw6: Sold or withdrawn: 2-bed house in Durban-Corbières · €80,000",
-    "/deal/fr-encausse-les-thermes-85k-vjwr3w: Off the market: duplex in Encausse-les-Thermes · €85,000",
-    "/deal/fr-rogny-les-sept-ecluses-65k-2p3e04: Off the market: house in Rogny-les-Sept-Écluses · €65,000",
-    "/deal/galdar-mountain-cave-99500: Sold or withdrawn: 2-bed house in Barranco Hondo · €99,500",
-    "/deal/grotte-santo-stefano-13000: Not confirmed: 1-bed house in Grotte Santo Stefano · €13,000",
-    "/deal/it-lake-como-gravedona-lake-view-195k: Not confirmed: 1-bed flat in Gravedona ed Uniti · €195,000",
-    "/deal/jp-matsue-yakumo-modern-2015-house-garden-125k: Not confirmed: 3-bed house in Yakumo-cho Hiyoshi · €125,400",
-    "/deal/jp-matsumoto-azusagawa-house-irori-hearth-old-timbers-160k: Not confirmed: 4-bedroom house in Azusagawa-Ueno · €159,600",
-    "/deal/jp-miura-misaki-four-bed-house-2004-80k: Not confirmed: 4-bed house in Misaki-machi Moroiso · €79,500",
-    "/deal/jp-nasushiobara-refreshed-2009-house-105k: Not confirmed: 3-bedroom house in Higashi-Mishima · €104,600",
-    "/deal/mckees-rocks-65428: Not confirmed: 3-bedroom townhouse in McKees Rocks · €65,428",
-    "/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m: Sold or withdrawn: 3-bed house in Puerto Vallarta · €160,200",
-    "/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m: Sold or withdrawn: 3-bedroom house in El Marqués · €152,100",
-    "/deal/mx-tuxcueca-el-tepehuaje-lake-chapala-view-house-4-08m: Sold or withdrawn: 5-bed house in El Tepehuaje · €195,300",
-    "/deal/pt-castelo-de-vide-145k-284590: Sold or withdrawn: 2-bed house in Castelo de Vide · €145,000",
-    "/deal/pt-miranda-do-douro-100k-350867: Off the market: 5-bed house in São Pedro da Silva · €100,000",
-    "/deal/san-pedro-tlaquepaque-50575: Not confirmed: 2-bed flat in San Pedro Tlaquepaque · €50,575",
-    "/deal/si-kozjak-kungota-renovated-country-house-2ha-245k: Off the market: 2-bed house in Kozjak nad Pesnico · €245,000",
-    "/deal/us-pennsylvania-lake-cabin-200k: Not confirmed: 2-bedroom cabin in Canadohta Lake · €177,700",
-    "... 175 more"
    ]
   },
   "depth": {
@@ -1499,23 +1455,23 @@
     "listing": {
      "limit_kb": 100,
      "pages": 1705,
-     "over": 228,
+     "over": 226,
      "biggest": [
-      {
-       "path": "/es/homes/united-states",
-       "kb": 134.3
-      },
       {
        "path": "/es/homes/italy",
        "kb": 133.9
       },
       {
-       "path": "/homes/united-states",
-       "kb": 127.6
+       "path": "/es/homes/united-states",
+       "kb": 133.3
       },
       {
        "path": "/homes/italy",
        "kb": 127.5
+      },
+      {
+       "path": "/homes/united-states",
+       "kb": 126.7
       },
       {
        "path": "/es/homes/spain",
@@ -1525,28 +1481,28 @@
     },
     "languages": {
      "limit_kb": 100,
-     "pages": 2856,
-     "over": 125,
+     "pages": 2848,
+     "over": 106,
      "biggest": [
       {
-       "path": "/ru/homes/united-states",
-       "kb": 123.1
-      },
-      {
        "path": "/ru/homes/italy",
-       "kb": 117.8
+       "kb": 117.7
       },
       {
        "path": "/ru/homes/spain",
        "kb": 115.6
       },
       {
-       "path": "/ru/homes/united-states/under-300000",
-       "kb": 115.2
-      },
-      {
        "path": "/ru/homes/italy/under-150000",
        "kb": 114.1
+      },
+      {
+       "path": "/ru/homes/italy/village-houses",
+       "kb": 113.7
+      },
+      {
+       "path": "/ru/homes/france",
+       "kb": 113.1
       }
      ]
     },
@@ -1557,23 +1513,23 @@
      "biggest": [
       {
        "path": "/es/deal/us-aventura-2750-2404-259k",
-       "kb": 54.8
+       "kb": 54.2
       },
       {
        "path": "/es/deal/us-aventura-18041-1201-260k",
-       "kb": 54.5
+       "kb": 54
       },
       {
        "path": "/es/deal/us-aventura-18011-1904-350k",
-       "kb": 54.4
+       "kb": 53.9
       },
       {
        "path": "/es/deal/us-aventura-20301-523-299k",
-       "kb": 54.2
+       "kb": 53.7
       },
       {
        "path": "/es/deal/us-aventura-20335-2302-265k",
-       "kb": 54.2
+       "kb": 53.7
       }
      ]
     }

@@ -2,7 +2,7 @@
  "noindex_copies": 8,
  "written_by_hand": {
   "pages": 838,
-  "words": 1388519,
+  "words": 1388479,
   "english": 35,
   "failed": [
    {
@@ -118,6 +118,14 @@
     ]
    },
    {
+    "url": "https://realhunt.co/es/deal/DbbD15oDKLz",
+    "english": 1,
+    "words": 1644,
+    "hits": [
+     "map"
+    ]
+   },
+   {
     "url": "https://realhunt.co/es/deal/jp-miura-misaki-four-bed-house-2004-80k",
     "english": 1,
     "words": 1931,
@@ -129,14 +137,6 @@
     "url": "https://realhunt.co/es/deal/jp-nasushiobara-refreshed-2009-house-105k",
     "english": 1,
     "words": 1958,
-    "hits": [
-     "map"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/DbbD15oDKLz",
-    "english": 1,
-    "words": 1644,
     "hits": [
      "map"
     ]
@@ -302,7 +302,7 @@
   "places": {
    "pages": 710,
    "twins": 710,
-   "words": 1674146,
+   "words": 1674034,
    "english": 0,
    "spanish_pct": 100
   },
@@ -317,7 +317,7 @@
   "content": {
    "pages": 592,
    "twins": 591,
-   "words": 458422,
+   "words": 458418,
    "english": 0,
    "by_hand": 42,
    "spanish_pct": 100

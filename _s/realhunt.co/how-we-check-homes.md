@@ -11,9 +11,9 @@ Updated 27 November 2026
 What | Homes
 Homes on RealHunt today | 726
 Advert confirmed online in the last 30 days | 525
-Last reading: advert online | 434
-Last reading: advert removed | 119
-Last reading: the portal blocked the program | 137
+Last reading: advert online | 427
+Last reading: advert removed | 122
+Last reading: the portal blocked the program | 141
 Last reading: no answer | 1
 Not read by the program yet, or not readable (social posts) | 35
 Marked as no longer for sale | 73

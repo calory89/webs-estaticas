@@ -498,7 +498,7 @@ Casa independiente de 3 dormitorios y 2 baños en lote en esquina con gran jard�
 
 https://realhunt.co/es/deal/us-boca-raton-8315-490k
 
-### Condo renovado de 0 dormitorios en Little River, Carolina del Sur
+### Condo renovado en Little River, Carolina del Sur
 
 88.800 € · Little River, South Carolina · 63 m² · nota RealHunt 81 · añadida el 2026-09-23
 

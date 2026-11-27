@@ -1,33 +1,32 @@
 {
- "total": 2856,
+ "total": 2848,
  "max_total": 3200,
  "langs": {
   "de": {
    "pages": 641,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
-    "gfeature": 37,
-    "ccyBand": 14,
-    "band": 60,
-    "feature": 220,
-    "setting": 22,
-    "combo": 55,
-    "ptype": 13,
+    "gfeature": 34,
+    "ccyBand": 13,
+    "band": 58,
+    "feature": 218,
+    "setting": 23,
+    "combo": 54,
+    "ptype": 12,
     "beds": 31,
-    "area": 22,
+    "area": 23,
     "near": 13,
-    "regionBand": 64,
-    "region": 56,
-    "town": 5
+    "regionBand": 66,
+    "region": 62,
+    "town": 6
    },
    "by_country": {
-    "spain": 99,
+    "spain": 105,
     "italy": 97,
-    "united-states": 44,
     "france": 42,
     "denmark": 34,
-    "sweden": 37,
+    "sweden": 40,
     "japan": 48,
     "poland": 14,
     "greece": 40,
@@ -38,74 +37,75 @@
     "mexico": 9,
     "portugal": 13,
     "bulgaria": 5,
-    "united-kingdom": 7,
+    "united-kingdom": 10,
     "cyprus": 5,
     "dominican-republic": 6,
     "ireland": 5,
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 61
+    "all countries": 57,
+    "united-states": 36
    },
    "homes": 653,
-   "homes_with_title": 653,
+   "homes_with_title": 652,
    "not_published": 16,
    "not_published_sample": [
     {
-     "path": "/homes/spain/costa-de-almeria",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/huelva",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/malaga",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/tenerife/costa-del-silencio",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-50000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/valencia/under-100000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/sweden/gavleborg",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/sweden/kronoberg",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/sweden/varmland/under-80000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-kingdom/northern-ireland",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-kingdom/under-150000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-kingdom/village-houses",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-states/arkansas",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-300000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
      "path": "/homes/united-states/by-the-sea",
-     "why": "over the page budget of the language (640)"
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/good-weather",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool-under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
      "path": "/homes/united-states/maine",
@@ -119,14 +119,14 @@
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 332,
+   "pages": 324,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
-    "ccyBand": 14,
-    "band": 62,
-    "setting": 24,
-    "ptype": 13,
+    "ccyBand": 13,
+    "band": 58,
+    "setting": 23,
+    "ptype": 12,
     "beds": 31,
     "area": 23,
     "regionBand": 67,
@@ -136,7 +136,6 @@
    "by_country": {
     "spain": 69,
     "italy": 55,
-    "united-states": 26,
     "france": 20,
     "denmark": 17,
     "sweden": 19,
@@ -157,40 +156,73 @@
     "uruguay": 2,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 8
+    "all countries": 8,
+    "united-states": 18
    },
    "homes": 653,
-   "homes_with_title": 653,
-   "not_published": 0,
-   "not_published_sample": [],
+   "homes_with_title": 652,
+   "not_published": 8,
+   "not_published_sample": [
+    {
+     "path": "/homes/united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-300000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    }
+   ],
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
    "pages": 641,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
-    "gfeature": 37,
-    "ccyBand": 14,
-    "band": 60,
-    "feature": 220,
-    "setting": 22,
-    "combo": 55,
-    "ptype": 13,
+    "gfeature": 34,
+    "ccyBand": 13,
+    "band": 58,
+    "feature": 218,
+    "setting": 23,
+    "combo": 54,
+    "ptype": 12,
     "beds": 31,
-    "area": 22,
+    "area": 23,
     "near": 13,
-    "regionBand": 64,
-    "region": 56,
-    "town": 5
+    "regionBand": 66,
+    "region": 62,
+    "town": 6
    },
    "by_country": {
-    "spain": 99,
+    "spain": 105,
     "italy": 97,
-    "united-states": 44,
     "france": 42,
     "denmark": 34,
-    "sweden": 37,
+    "sweden": 40,
     "japan": 48,
     "poland": 14,
     "greece": 40,
@@ -201,74 +233,75 @@
     "mexico": 9,
     "portugal": 13,
     "bulgaria": 5,
-    "united-kingdom": 7,
+    "united-kingdom": 10,
     "cyprus": 5,
     "dominican-republic": 6,
     "ireland": 5,
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 61
+    "all countries": 57,
+    "united-states": 36
    },
    "homes": 653,
-   "homes_with_title": 653,
+   "homes_with_title": 652,
    "not_published": 16,
    "not_published_sample": [
     {
-     "path": "/homes/spain/costa-de-almeria",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/huelva",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/malaga",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/tenerife/costa-del-silencio",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-50000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/spain/valencia/under-100000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/sweden/gavleborg",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/sweden/kronoberg",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/sweden/varmland/under-80000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-kingdom/northern-ireland",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-kingdom/under-150000",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-kingdom/village-houses",
-     "why": "over the page budget of the language (640)"
-    },
-    {
-     "path": "/homes/united-states/arkansas",
-     "why": "over the page budget of the language (640)"
+     "path": "/homes/united-states/under-300000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
      "path": "/homes/united-states/by-the-sea",
-     "why": "over the page budget of the language (640)"
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/good-weather",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool-under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
      "path": "/homes/united-states/maine",
@@ -284,103 +317,107 @@
   "nl": {
    "pages": 621,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
-    "gfeature": 37,
-    "ccyBand": 14,
-    "band": 55,
-    "feature": 220,
-    "setting": 21,
-    "combo": 55,
-    "ptype": 13,
+    "gfeature": 34,
+    "ccyBand": 13,
+    "band": 54,
+    "feature": 218,
+    "setting": 22,
+    "combo": 54,
+    "ptype": 12,
     "beds": 31,
     "area": 22,
     "near": 13,
-    "regionBand": 58,
-    "region": 49,
+    "regionBand": 63,
+    "region": 53,
     "town": 4
    },
    "by_country": {
     "spain": 94,
-    "italy": 92,
-    "united-states": 44,
+    "italy": 97,
     "france": 42,
     "denmark": 34,
     "sweden": 37,
-    "japan": 45,
-    "poland": 11,
+    "japan": 48,
+    "poland": 13,
     "greece": 40,
     "germany": 18,
-    "netherlands": 7,
+    "netherlands": 8,
     "canada": 27,
     "switzerland": 13,
-    "mexico": 8,
+    "mexico": 9,
     "portugal": 12,
     "bulgaria": 5,
     "united-kingdom": 7,
     "cyprus": 5,
     "dominican-republic": 6,
-    "ireland": 4,
+    "ireland": 5,
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 61
+    "all countries": 57,
+    "united-states": 35
    },
    "homes": 653,
-   "homes_with_title": 653,
+   "homes_with_title": 652,
    "not_published": 36,
    "not_published_sample": [
     {
-     "path": "/homes/ireland/by-the-sea",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/abruzzo",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/lombardy/under-150000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/sardinia/under-100000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/tuscany/under-50000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-300000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/umbria/under-50000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/japan/gifu",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/japan/under-15000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/with-pool-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/japan/wakayama/under-30000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/cheapest-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/mexico/under-80000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/under-100000-dollars-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/netherlands/under-300000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/poland/lodz",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/with-pool",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/poland/lower-silesia",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/good-weather",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool-under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
      "path": "/homes/poland/under-60000",
@@ -460,10 +497,6 @@
     },
     {
      "path": "/homes/united-states/arkansas",
-     "why": "over the page budget of the language (620)"
-    },
-    {
-     "path": "/homes/united-states/by-the-sea",
      "why": "over the page budget of the language (620)"
     },
     {
@@ -480,103 +513,107 @@
   "pl": {
    "pages": 621,
    "by_kind": {
-    "country": 23,
+    "country": 22,
     "gband": 5,
-    "gfeature": 37,
-    "ccyBand": 14,
-    "band": 55,
-    "feature": 220,
-    "setting": 21,
-    "combo": 55,
-    "ptype": 13,
+    "gfeature": 34,
+    "ccyBand": 13,
+    "band": 54,
+    "feature": 218,
+    "setting": 22,
+    "combo": 54,
+    "ptype": 12,
     "beds": 31,
     "area": 22,
     "near": 13,
-    "regionBand": 58,
-    "region": 49,
+    "regionBand": 63,
+    "region": 53,
     "town": 4
    },
    "by_country": {
     "spain": 94,
-    "italy": 92,
-    "united-states": 44,
+    "italy": 97,
     "france": 42,
     "denmark": 34,
     "sweden": 37,
-    "japan": 45,
-    "poland": 11,
+    "japan": 48,
+    "poland": 13,
     "greece": 40,
     "germany": 18,
-    "netherlands": 7,
+    "netherlands": 8,
     "canada": 27,
     "switzerland": 13,
-    "mexico": 8,
+    "mexico": 9,
     "portugal": 12,
     "bulgaria": 5,
     "united-kingdom": 7,
     "cyprus": 5,
     "dominican-republic": 6,
-    "ireland": 4,
+    "ireland": 5,
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 61
+    "all countries": 57,
+    "united-states": 35
    },
    "homes": 653,
-   "homes_with_title": 653,
+   "homes_with_title": 652,
    "not_published": 36,
    "not_published_sample": [
     {
-     "path": "/homes/ireland/by-the-sea",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/abruzzo",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/lombardy/under-150000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/sardinia/under-100000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/tuscany/under-50000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/under-300000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/italy/umbria/under-50000",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/japan/gifu",
-     "why": "over the page budget of the language (620)"
+     "path": "/homes/united-states/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/japan/under-15000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/with-pool-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/japan/wakayama/under-30000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/cheapest-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/mexico/under-80000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/under-100000-dollars-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/netherlands/under-300000",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/poland/lodz",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/with-pool",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/poland/lower-silesia",
-     "why": "over the page budget of the language (620)"
+     "path": "/cheap-houses/good-weather",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool-under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
      "path": "/homes/poland/under-60000",
@@ -659,10 +696,6 @@
      "why": "over the page budget of the language (620)"
     },
     {
-     "path": "/homes/united-states/by-the-sea",
-     "why": "over the page budget of the language (620)"
-    },
-    {
      "path": "/homes/united-states/maine",
      "why": "over the page budget of the language (620)"
     },
@@ -675,9 +708,9 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 657,
-  "spanish_pages_linked": 657
+  "english_pages_linked": 643,
+  "spanish_pages_linked": 643
  },
- "home_pages_linked": 1288,
+ "home_pages_linked": 1166,
  "failures": []
 }

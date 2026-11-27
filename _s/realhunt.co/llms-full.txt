@@ -19546,11 +19546,11 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Three-bedroom brick townhouse with a garden near the south coast in Skivarp | Sweden | €62,300 | 102 m² | 93 | https://realhunt.co/deal/se-skivarp-62k-1795989
 - Bright 130 m² villa with a big garden in Døjringe, Mid-Zealand | Denmark | €93,000 | 130 m² | 93 | https://realhunt.co/deal/dk-munke-bjergby-93k-1947
 - Furnished two-bedroom flat with a sea-view terrace 300 m from the beach in Kavarna | Bulgaria | €70,000 | 99 m² | 93 | https://realhunt.co/deal/bg-kavarna-70k-1672825
-- Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia | United States | €223,300 | 289 m² | 93 | https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k
 - Three-room flat with a 14 m² south terrace next to Reigersbos metro | Netherlands | €299,000 | 72 m² | 93 | https://realhunt.co/deal/nl-amsterdam-299k-968188
 - Designer attic flat with wooden beams and air conditioning in Bytom | Poland | €68,316 | 74 m² | 93 | https://realhunt.co/deal/pl-bytom-68k-687710
 - Town house a few minutes' walk from the harbour and beach | Denmark | €73,500 | 100 m² | 93 | https://realhunt.co/deal/dk-asaa-73k-6623fe
 - Cosy villa with sauna, 100 m from the river | Sweden | €25,960 | size n/a | 93 | https://realhunt.co/deal/DdPBLT2CLlb
+- Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia | United States | €223,300 | 289 m² | 93 | https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k
 - 2-bedroom flat with terrace in Cartagena | Spain | €73,000 | 85 m² | 93 | https://realhunt.co/deal/es-cartagena-73k-74761
 - Extensively renovated 1945 house on 2,800 m² of garden and woodland | Sweden | €78,000 | 800 m² | 93 | https://realhunt.co/deal/Dce2FjbIxt8
 - Cottage on 6,148 m² of garden and woodland near two lakes | Sweden | €54,000 | 148 m² | 93 | https://realhunt.co/deal/DcNI1r5oM57
@@ -19650,12 +19650,12 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 93 m² four-room flat with a 13.5 m² balcony by Nelson Mandela Park | Netherlands | €335,000 | 93 m² | 90 | https://realhunt.co/deal/nl-amsterdam-335k-962495
 - Top-floor flat under the eaves with skylights near the Gaasperplas | Netherlands | €300,000 | 72 m² | 90 | https://realhunt.co/deal/nl-amsterdam-300k-930369
 - Four-room 71 m² flat with two balconies in Mulhouse | France | €51,800 | 71 m² | 90 | https://realhunt.co/deal/fr-mulhouse-52k-754748
-- Renovated red wooden villa with wide valley views near Fränsta, Västernorrland | Sweden | €68,000 | 116 m² | 90 | https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek
 - Spacious 89 m² townhouse flat with wood floors in Wałbrzych | Poland | €72,885 | 89 m² | 90 | https://realhunt.co/deal/pl-walbrzych-73k-831228
 - Restored two-level loft with brick walls and beams in Ostróda | Poland | €68,316 | 60 m² | 90 | https://realhunt.co/deal/pl-ostroda-68k-805099
-- Updated 1886 house with a fenced garden and an oversized garage in La Crosse, Wisconsin | United States | €195,800 | 142 m² | 90 | https://realhunt.co/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k
 - Villa among rolling hills near the beach at Øster Hurup | Denmark | €80,300 | 136 m² | 90 | https://realhunt.co/deal/dk-skelund-80k-e23be1
 - Red cottage with underfloor heating and a heat pump on Funen | Denmark | €79,800 | 101 m² | 90 | https://realhunt.co/deal/dk-brenderup-79k-f64a6f
+- Renovated red wooden villa with wide valley views near Fränsta, Västernorrland | Sweden | €68,000 | 116 m² | 90 | https://realhunt.co/deal/se-fransta-romback-red-wooden-villa-valley-view-750k-sek
+- Updated 1886 house with a fenced garden and an oversized garage in La Crosse, Wisconsin | United States | €195,800 | 142 m² | 90 | https://realhunt.co/deal/us-la-crosse-wi-1886-house-fenced-garden-big-garage-215k
 - Victorian house with original oak woodwork opposite a park in Marietta, Ohio | United States | €200,000 | 191 m² | 90 | https://realhunt.co/deal/us-marietta-oh-victorian-oak-woodwork-220k
 - 3-bedroom country house with terrace in Sorbas | Spain | €89,000 | 97 m² | 90 | https://realhunt.co/deal/es-sorbas-89k-70321
 - 5-bedroom house with mountain views in Parres | Spain | €90,000 | 355 m² | 90 | https://realhunt.co/deal/es-parres-90k-15042
@@ -19669,12 +19669,11 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Beautifully styled two-bed home with an open fireplace | United Kingdom | €82,600 | 72 m² | 89 | https://realhunt.co/deal/uk-shildon-82k-780165
 - Renovated detached stone house with courtyard in Andriani, Messinia | Greece | €180,000 | 148 m² | 89 | https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k
 - Furnished front-line flat in Juan Dolio with a sea-view balcony | Dominican Republic | €187,800 | 82 m² | 89 | https://realhunt.co/deal/dr-juan-dolio-188k-425359
+- Fully restored 1940s cottage with a deep front porch on a corner lot in Hot Springs | United States | €182,100 | 117 m² | 89 | https://realhunt.co/deal/us-hot-springs-ar-restored-1940s-cottage-porch-200k
 - Chalet on a 1,526 m² plot with pool, fireplace and fruit trees | Spain | €155,000 | 176 m² | 89 | https://realhunt.co/deal/es-turis-155k-068943
 - Fully renovated 227 m² house with a 70 m² patio and barbecue | Spain | €145,000 | 227 m² | 89 | https://realhunt.co/deal/es-alzira-145k-482015
-- Fully restored 1940s cottage with a deep front porch on a corner lot in Hot Springs | United States | €182,100 | 117 m² | 89 | https://realhunt.co/deal/us-hot-springs-ar-restored-1940s-cottage-porch-200k
 - Thatched half-timbered village house opposite the church in Ørslev | Denmark | €86,300 | 91 m² | 89 | https://realhunt.co/deal/dk-orslev-ringsted-86k-1643
 - Stone island house with blue doors and a sea view over to Skiathos | Greece | €150,000 | 110 m² | 89 | https://realhunt.co/deal/gr-skopelos-sea-view-150k
-- Three-bedroom house with a big fenced yard near the Mississippi in Red Wing | United States | €209,600 | 137 m² | 89 | https://realhunt.co/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k
 - Country house with a veranda near the Saint-Rémy lake, Thiers | France | €49,900 | 120 m² | 89 | https://realhunt.co/deal/fr-thiers-49k-mo1869
 - Top-floor four-room flat with energy label A and green views, Gein | Netherlands | €305,000 | 70 m² | 89 | https://realhunt.co/deal/nl-amsterdam-305k-988747
 - 80 m² three-bedroom flat with a lift and balcony on Plein 40-45 | Netherlands | €330,000 | 81 m² | 89 | https://realhunt.co/deal/nl-amsterdam-330k-999230
@@ -19684,6 +19683,7 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - One-bedroom escape with 360-degree rooftop views towards the coast | Spain | €99,000 | size n/a | 89 | https://realhunt.co/deal/DcazSjCjUUx
 - Japanese home with a sakura garden | Japan | €19,320 | size n/a | 89 | https://realhunt.co/deal/DbbD15oDKLz
 - Updated 3-bed house in Clairton, Pennsylvania | United States | €85,929 | 116 m² | 89 | https://realhunt.co/deal/clairton-85929
+- Three-bedroom house with a big fenced yard near the Mississippi in Red Wing | United States | €209,600 | 137 m² | 89 | https://realhunt.co/deal/us-red-wing-mn-house-big-fenced-yard-near-mississippi-230k
 - Four-bedroom village house with a sea-view roof terrace in Othos, Karpathos | Greece | €170,000 | 165 m² | 89 | https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k
 - 3-bedroom house with terrace in Íllora | Spain | €55,000 | 120 m² | 89 | https://realhunt.co/deal/es-illora-55k-41725
 - 2-bedroom ground-floor flat with garden in Águilas | Spain | €80,000 | 79 m² | 89 | https://realhunt.co/deal/es-aguilas-80k-19039
@@ -19700,7 +19700,6 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Renovated 220 m² town house with a roof terrace with views and a wine cellar | Spain | €165,000 | 220 m² | 88 | https://realhunt.co/deal/es-capellades-165k-203609
 - Fairy-tale house with a gazebo and stone BBQ in the Pelion forest | Greece | €95,000 | 68 m² | 88 | https://realhunt.co/deal/gr-pelion-fairytale-house-95k
 - Renovated stone house with a Libyan Sea view in Agios Vasileios, Crete | Greece | €76,000 | 61 m² | 88 | https://realhunt.co/deal/gr-crete-viannos-76k-20595936
-- Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia | Canada | €124,000 | 106 m² | 88 | https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k
 - Premium townhouse fully renovated in 2025 in Jijona | Spain | €149,000 | 232 m² | 88 | https://realhunt.co/deal/es-jijona-renovated-149k-189102956
 - Five-bedroom village house in move-in condition with a roof terrace and solar panels | Spain | €149,950 | 180 m² | 88 | https://realhunt.co/deal/es-hondon-frailes-5bed-150k-188921317
 - Never-lived-in ground-floor flat with a communal pool in Albatera | Spain | €135,000 | 139 m² | 88 | https://realhunt.co/deal/es-albatera-pool-new-135k-190471633
@@ -19708,8 +19707,6 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Renovated stone house with a sea view in Marathokampos, Samos | Greece | €80,000 | 64 m² | 88 | https://realhunt.co/deal/gr-samos-marathokampos-80k-19741965
 - Top-floor corner flat with three bedrooms in Venserpolder | Netherlands | €315,000 | 75 m² | 88 | https://realhunt.co/deal/nl-amsterdam-315k-980579
 - Three-room flat with a 15 m² south balcony and free views in Nellestein | Netherlands | €325,000 | 75 m² | 88 | https://realhunt.co/deal/nl-amsterdam-325k-562301
-- Updated four-bedroom house with a new kitchen in La Crosse, Wisconsin | United States | €214,100 | 127 m² | 88 | https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k
-- Well-kept 1899 house with a new double garage near Chester Park in Duluth | United States | €232,400 | 148 m² | 88 | https://realhunt.co/deal/us-duluth-mn-renewed-1899-house-double-garage-255k
 - Four-room flat with a balcony and cellar in Bielsk Podlaski | Poland | €55,978 | 61 m² | 88 | https://realhunt.co/deal/pl-bielsk-podlaski-56k-483418
 - Traditional corner house in Agiasos, Lesbos' mountain village | Greece | €70,000 | size n/a | 88 | https://realhunt.co/deal/gr-agiasos-70k-s5k3nl
 - Spacious two-story four-bedroom house with split floor plan in Buffalo Estates, Tampa | United States | €291,200 | 210 m² | 88 | https://realhunt.co/deal/us-tampa-8105-325k
@@ -19717,6 +19714,9 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Lake-view house six minutes from the lake | Italy | €32,000 | size n/a | 88 | https://realhunt.co/deal/DdUZvbGkTvh
 - Whitewashed house 25 minutes from the beach | Italy | €28,000 | size n/a | 88 | https://realhunt.co/deal/Dc1cyxRDM9Y
 - Historic lakeside farm on 1.1 hectares | Sweden | €54,000 | size n/a | 88 | https://realhunt.co/deal/DclLv7qjKAR
+- Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia | Canada | €124,000 | 106 m² | 88 | https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k
+- Updated four-bedroom house with a new kitchen in La Crosse, Wisconsin | United States | €214,100 | 127 m² | 88 | https://realhunt.co/deal/us-la-crosse-wi-updated-four-bed-house-235k
+- Well-kept 1899 house with a new double garage near Chester Park in Duluth | United States | €232,400 | 148 m² | 88 | https://realhunt.co/deal/us-duluth-mn-renewed-1899-house-double-garage-255k
 - 3-bedroom house with garden in Gáldar | Spain | €70,000 | 54 m² | 88 | https://realhunt.co/deal/es-galdar-70k-15615
 - 5-bedroom house with terrace in Cehegín | Spain | €59,900 | 200 m² | 88 | https://realhunt.co/deal/es-cehegin-59k-77832
 - 3-bedroom house with terrace in Castalla | Spain | €85,000 | 90 m² | 88 | https://realhunt.co/deal/es-castalla-85k-41639
@@ -19754,10 +19754,8 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Fully renovated three-bedroom house with an 80 m² roof terrace in Alzira | Spain | €91,000 | 113 m² | 87 | https://realhunt.co/deal/es-alzira-renovated-91k-189401106
 - Ground-floor home with terraces and a communal pool on the Condado de Alhama golf resort | Spain | €129,000 | 106 m² | 87 | https://realhunt.co/deal/es-condado-alhama-golf-129k-190939296
 - Move-in ready three-bedroom ground-floor home with its own entrance in San Isidro | Spain | €144,997 | 152 m² | 87 | https://realhunt.co/deal/es-san-isidro-move-in-145k-190990586
-- Character 1888 house with harbour views and a koi pond garden in Pictou, Nova Scotia | Canada | €159,000 | 171 m² | 87 | https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k
 - Fully renovated stone house with beams and a fireplace near Valladolid | Spain | €138,000 | 124 m² | 87 | https://realhunt.co/deal/es-velliza-stone-house-138k-189374812
 - Family townhouse with a garden and a glass room in Eslöv | Sweden | €94,100 | 117 m² | 87 | https://realhunt.co/deal/se-eslov-townhouse-94k-1789899
-- 1927 brick house with a three-season room and pergola garden in Manitowoc, Wisconsin | United States | €227,700 | 146 m² | 87 | https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k
 - Three-room flat with a sunny roof terrace by Reigersbos market | Netherlands | €310,000 | 71 m² | 87 | https://realhunt.co/deal/nl-amsterdam-310k-950790
 - Sunny attic flat with a balcony for €40,000 in Chemnitz | Germany | €40,000 | 54 m² | 87 | https://realhunt.co/deal/de-chemnitz-40k-931045
 - Four-room flat with a balcony in an insulated block in Bielsk Podlaski | Poland | €67,402 | 62 m² | 87 | https://realhunt.co/deal/pl-bielsk-podlaski-67k-382768
@@ -19769,6 +19767,8 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Sea-view house five minutes from the beach | Italy | €35,000 | size n/a | 87 | https://realhunt.co/deal/Dc32k2tDKLf
 - Corner three-bed condo with three balconies in Downtown Hollywood | United States | €259,800 | 141 m² | 87 | https://realhunt.co/deal/us-hollywood-140-501-290k
 - Apartment with sea view in Falconara Albanese, Cosenza | Italy | €41,000 | 86 m² | 87 | https://realhunt.co/deal/falconara-albanese-41000
+- Character 1888 house with harbour views and a koi pond garden in Pictou, Nova Scotia | Canada | €159,000 | 171 m² | 87 | https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k
+- 1927 brick house with a three-season room and pergola garden in Manitowoc, Wisconsin | United States | €227,700 | 146 m² | 87 | https://realhunt.co/deal/us-manitowoc-wi-1927-brick-house-pergola-garden-250k
 - Renovated stone village house with courtyards in Karydi, eastern Crete | Greece | €175,000 | 160 m² | 87 | https://realhunt.co/deal/gr-crete-karydi-renovated-stone-house-175k
 - 1920s villa with geothermal heating and a private garden in central Vansbro, Dalarna | Sweden | €77,000 | 122 m² | 87 | https://realhunt.co/deal/se-vansbro-1920s-villa-geothermal-850k-sek
 - Renovated single-storey country house among olive groves near Gytheio | Greece | €85,000 | 82 m² | 87 | https://realhunt.co/deal/gr-laconia-gytheio-renovated-country-house-85k
@@ -19794,14 +19794,11 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - New 2-bed condo with rooftop and terrace in Mazatlán, ready now | Mexico | €86,100 | 68 m² | 86 | https://realhunt.co/deal/mx-mazatlan-86k-809756
 - Thatched island cottage, ready to move in, on Strynø | Denmark | €93,200 | 93 m² | 86 | https://realhunt.co/deal/dk-stryno-93k-eb6b42
 - Sea-view flat between two seas in La Manga, with pool and parking | Spain | €179,900 | 104 m² | 86 | https://realhunt.co/deal/es-la-manga-veneziola-sea-view-pool-180k
-- Colonial house with a pool and garden in Barrio de Santiago, Mérida centre | Mexico | €216,600 | 160 m² | 86 | https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m
-- Fully remodelled three-bedroom house in a gated complex with pool, Santa Marta | Colombia | €165,200 | 120 m² | 86 | https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m
 - Remodelled three-bedroom penthouse with a 40 m² private roof terrace in Santomera | Spain | €145,000 | 145 m² | 86 | https://realhunt.co/deal/es-santomera-penthouse-145k-161987047
 - Spacious 150 m² three-bedroom flat with a lift and parking in Bigastro | Spain | €145,000 | 150 m² | 86 | https://realhunt.co/deal/es-bigastro-150m2-145k-190315743
 - Brand-new four-bedroom flat of 135 m² in Agualada, Galicia | Spain | €116,900 | 135 m² | 86 | https://realhunt.co/deal/es-coristanco-new-4bed-117k-190697887
 - Bright 1929 flat with three bedrooms near the centre of Landskrona | Sweden | €98,100 | 110 m² | 86 | https://realhunt.co/deal/se-landskrona-98k-1673127
 - Bright three-room flat with two balconies in Venserpolder | Netherlands | €310,000 | 70 m² | 86 | https://realhunt.co/deal/nl-amsterdam-310k-984361
-- Renovated hillside house with big terraces near Castellino Tanaro, Piedmont | Italy | €115,000 | 180 m² | 86 | https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k
 - 79 m² flat with an 11 m² balcony and open views in Amsterdam-Noord | Netherlands | €335,000 | 79 m² | 86 | https://realhunt.co/deal/nl-amsterdam-335k-535568
 - Ground-floor flat with tropical front and back gardens in Gein | Netherlands | €325,000 | 73 m² | 86 | https://realhunt.co/deal/nl-amsterdam-325k-982731
 - 72 m² flat in a listed building near the university, vacant | Germany | €50,000 | 72 m² | 86 | https://realhunt.co/deal/de-chemnitz-50k-665910
@@ -19811,6 +19808,9 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Acadian coast house with 4 bedrooms and a new bathroom | Canada | €99,500 | 107 m² | 86 | https://realhunt.co/deal/ca-grande-anse-99k-148091
 - 3-bedroom stone house with Lake Como views | Italy | €89,000 | 160 m² | 86 | https://realhunt.co/deal/lake-como-plesio-89000
 - 2-bed house 10 minutes from the lake | Italy | €45,000 | 82 m² | 86 | https://realhunt.co/deal/Dc82VcSjAIe
+- Colonial house with a pool and garden in Barrio de Santiago, Mérida centre | Mexico | €216,600 | 160 m² | 86 | https://realhunt.co/deal/mx-merida-centro-colonial-house-pool-barrio-santiago-4-45m
+- Fully remodelled three-bedroom house in a gated complex with pool, Santa Marta | Colombia | €165,200 | 120 m² | 86 | https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m
+- Renovated hillside house with big terraces near Castellino Tanaro, Piedmont | Italy | €115,000 | 180 m² | 86 | https://realhunt.co/deal/it-piedmont-castellino-tanaro-renovated-hill-house-115k
 - Cottage-style house with a new kitchen near the waterfront in Pictou, Nova Scotia | Canada | €127,100 | 132 m² | 86 | https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k
 - Fully renovated four-bedroom house with balcony and garden in Bergerac, Dordogne | France | €139,000 | 150 m² | 86 | https://realhunt.co/deal/fr-bergerac-stone-house-balcony-garden-139k
 - Fully renovated brick rowhouse with a fenced yard in Lancaster, Pennsylvania | United States | €213,600 | 127 m² | 86 | https://realhunt.co/deal/us-lancaster-pa-renovated-brick-rowhouse-235k
@@ -19845,8 +19845,8 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 127 m² period house with an extra outbuilding, 73 min from Copenhagen | Denmark | €99,900 | 127 m² | 85 | https://realhunt.co/deal/dk-skorpinge-100k-07992d
 - Maintained brick house with a heat pump and garden in Lomnička near Plesná, Cheb | Czech Republic | €130,900 | 120 m² | 85 | https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k
 - Fully renovated 2-bed flat in a palm-lined pool complex near Corralejo | Spain | €185,000 | 72 m² | 85 | https://realhunt.co/deal/es-la-caleta-185k-063013
-- Renovated flat 100 m from the sea with a garden terrace and pool | Spain | €240,000 | 81 m² | 85 | https://realhunt.co/deal/es-costa-del-silencio-240k-479658
 - Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma | Uruguay | €150,300 | 100 m² | 85 | https://realhunt.co/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k
+- Renovated flat 100 m from the sea with a garden terrace and pool | Spain | €240,000 | 81 m² | 85 | https://realhunt.co/deal/es-costa-del-silencio-240k-479658
 - Sea-view four-bed flat on the 16th floor one block from Marbella beach, Cartagena | Colombia | €203,500 | 132 m² | 85 | https://realhunt.co/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m
 - Beachfront flat on the Mar Menor with a tourist licence | Spain | €116,500 | 70 m² | 85 | https://realhunt.co/deal/es-los-urrutias-beachfront-tourist-licence-116k
 - Top-floor loft with an 82 m² cathedral living room in Lodève | France | €285,000 | 215 m² | 85 | https://realhunt.co/deal/fr-lodeve-top-floor-loft-terrace-285k
@@ -19855,23 +19855,23 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Scandinavian-style log cabin with a stone fireplace on 10 acres | United States | €159,100 | 133 m² | 85 | https://realhunt.co/deal/us-wisconsin-scandi-log-cabin-179k
 - Stone-and-beam Tuscan home with a 70 m² terrace and high-end finishes | Italy | €158,000 | 220 m² | 85 | https://realhunt.co/deal/it-tuscany-roccastrada-stone-loft-158k
 - Medieval-village house with a terrace above a sea of clouds in Tuscany | Italy | €150,000 | 148 m² | 85 | https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k
-- Three-bedroom house in a gated estate with pool and tennis in El Marqués, Querétaro | Mexico | €152,100 | 146 m² | 85 | https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m
 - Well-kept A-frame on 2.5 acres in Michigan's Upper Peninsula | United States | €173,100 | 102 m² | 85 | https://realhunt.co/deal/us-michigan-a-frame-2-5-acres-160k
 - Stylish three-bedroom flat with a 2023 kitchen in central Eslöv | Sweden | €98,100 | 90 m² | 85 | https://realhunt.co/deal/se-eslov-98k-1701202
 - Furnished two-bedroom flat with a sea view in Pefki, North Evia | Greece | €80,000 | 50 m² | 85 | https://realhunt.co/deal/gr-evia-pefki-80k-19672601
 - Four-room flat with energy label A and a south balcony in Zuidoost | Netherlands | €330,000 | 77 m² | 85 | https://realhunt.co/deal/nl-amsterdam-330k-529886
-- Move-in ready three-bedroom house a short walk from downtown Bedford, Virginia | United States | €227,700 | 109 m² | 85 | https://realhunt.co/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k
 - Bright south-west three-room flat with a lift in Le Havre | France | €59,990 | 70 m² | 85 | https://realhunt.co/deal/fr-le-havre-60k-595133
 - 66 m² flat with open views and a lift in Dijon | France | €57,000 | 66 m² | 85 | https://realhunt.co/deal/fr-dijon-57k-969671
 - Five-room flat with four bedrooms in Amsterdam Zuidoost | Netherlands | €339,500 | 82 m² | 85 | https://realhunt.co/deal/nl-amsterdam-340k-564864
-- Updated character house with a wood stove and workshop in Liverpool, Nova Scotia | Canada | €140,000 | 155 m² | 85 | https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k
-- Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, Marche | Italy | €120,000 | 130 m² | 85 | https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k
 - Two-bed village house with terrace in Portugal's Dão wine country | Portugal | €76,500 | 134 m² | 85 | https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q
 - Skagen-yellow 1877 house with energy label A | Denmark | €99,900 | 124 m² | 85 | https://realhunt.co/deal/dk-fjerritslev-99k-69e4a9
 - Modernised villa at the end of a quiet lane, new windows 2026 | Denmark | €99,900 | 115 m² | 85 | https://realhunt.co/deal/dk-dybvad-99k-f51461
 - Stone house with a swimming pool in a Tuscan village | Italy | €24,000 | 76 m² | 85 | https://realhunt.co/deal/Dc6Y4UKDLyc
 - 5-bed house with a terrace and courtyard | Italy | €34,000 | size n/a | 85 | https://realhunt.co/deal/Dc8TyIDkexU
 - Restored stone home with two panoramic terraces near a lake in Abruzzo | Italy | €59,000 | size n/a | 85 | https://realhunt.co/deal/DdOGB56ABXI
+- Three-bedroom house in a gated estate with pool and tennis in El Marqués, Querétaro | Mexico | €152,100 | 146 m² | 85 | https://realhunt.co/deal/mx-queretaro-el-marques-three-bed-house-pool-tennis-3-1m
+- Move-in ready three-bedroom house a short walk from downtown Bedford, Virginia | United States | €227,700 | 109 m² | 85 | https://realhunt.co/deal/us-bedford-va-move-in-ready-house-walk-to-downtown-250k
+- Updated character house with a wood stove and workshop in Liverpool, Nova Scotia | Canada | €140,000 | 155 m² | 85 | https://realhunt.co/deal/ca-liverpool-ns-updated-character-house-workshop-220k
+- Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, Marche | Italy | €120,000 | 130 m² | 85 | https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k
 - Fully renovated 150 m² semi-detached house with garden in Neudau, Styrian spa country | Austria | €149,000 | 150 m² | 85 | https://realhunt.co/deal/at-neudau-renovated-semi-detached-house-149k
 - Renovated stone house with Douro valley views in Samodães, Lamego, sold furnished | Portugal | €99,000 | 70 m² | 85 | https://realhunt.co/deal/pt-douro-lamego-samodaes-river-view-house-99k
 - Restored 1881 stone mansion with castle views in Volissos, Chios | Greece | €175,000 | 129 m² | 85 | https://realhunt.co/deal/gr-chios-volissos-1881-stone-house-175k
@@ -19902,7 +19902,6 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 1917 Forest Cottage with a swimming lake five minutes away | Sweden | €75,440 | size n/a | 85 | https://realhunt.co/deal/DbQ_FfViI4l
 - Move-in ready 2-bed house in Shearstown, Newfoundland | Canada | €99,323 | 79 m² | 85 | https://realhunt.co/deal/shearstown-99323
 - Updated 2-bed house in Minto, New Brunswick | Canada | €99,323 | 83 m² | 85 | https://realhunt.co/deal/minto-99323
-- Renovated country house with garden and vineyard views near Acqui Terme | Italy | €180,000 | 200 m² | 84 | https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k
 - Renovated red wooden house on a big countryside plot near Ingelstad, Småland | Sweden | €187,400 | 117 m² | 84 | https://realhunt.co/deal/se-ingelstad-red-wooden-house-countryside-plot-187k
 - Renovated 1920s villa with a glazed veranda and double garage in Lenhovda, Småland | Sweden | €178,900 | 138 m² | 84 | https://realhunt.co/deal/se-lenhovda-renovated-1920s-villa-glazed-veranda-179k
 - Renovated single-storey house with a 50 m² terrace and big garden in Častohostice | Czech Republic | €159,600 | 109 m² | 84 | https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k
@@ -19913,21 +19912,17 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Sea-view flat by the marina with a corner terrace and heated pool | Spain | €250,000 | 91 m² | 84 | https://realhunt.co/deal/es-golf-del-sur-250k-061726
 - Terraced house with a private pool, two patios and a garage | Spain | €155,000 | 136 m² | 84 | https://realhunt.co/deal/es-zarza-de-tajo-155k-531208
 - Porch cottage on a big lot next to the park in the Ozarks | United States | €88,600 | 81 m² | 84 | https://realhunt.co/deal/us-oxford-88k-030224
-- Single-storey 138 m² home with garden below the mountains in Zupci, near Bar | Montenegro | €175,000 | 138 m² | 84 | https://realhunt.co/deal/me-zupci-single-storey-home-mountain-view-175k
 - Brand-new 2025 cottage with a pergola deck 400 m from the sea in Halkidiki | Greece | €159,990 | 72 m² | 84 | https://realhunt.co/deal/gr-halkidiki-new-house-160k
-- Restored three-bed stone house with roof terrace in Kritsa village, Crete | Greece | €199,000 | 105 m² | 84 | https://realhunt.co/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k
 - Freshly painted three-bedroom village house near the Sabor lakes | Portugal | €48,000 | 100 m² | 84 | https://realhunt.co/deal/pt-mogadouro-48k-19109522
 - Renovated two-room flat for €39,000 in Saint-Étienne | France | €39,000 | 45 m² | 84 | https://realhunt.co/deal/fr-saint-etienne-39k-705662
 - 12th-floor flat with sweeping views and a covered balcony, Nieuw-West | Netherlands | €325,000 | 72 m² | 84 | https://realhunt.co/deal/nl-amsterdam-325k-565328
 - Three-room flat with energy label A and a south balcony over the water | Netherlands | €315,000 | 70 m² | 84 | https://realhunt.co/deal/nl-amsterdam-315k-576658
 - Three-room flat with a balcony, cellar and parking in Mulhouse | France | €60,000 | 60 m² | 84 | https://realhunt.co/deal/fr-mulhouse-60k-377472
 - Charming furnished two-room flat near the universities, Saint-Étienne | France | €48,000 | 45 m² | 84 | https://realhunt.co/deal/fr-saint-etienne-48k-108807
-- Two-bedroom 85 m² pool-view condo from 2012 near Khao Takiab beach, Hua Hin | Thailand | €139,500 | 85 m² | 84 | https://realhunt.co/deal/th-hua-hin-seacraze-two-bed-pool-view-condo-140k
 - 65 m² attic flat with skylights and a balcony in Chemnitz-Gablenz | Germany | €55,000 | 65 m² | 84 | https://realhunt.co/deal/de-chemnitz-55k-462680
 - Three-room 71 m² flat with new floors, 10 km from Saarbrücken | Germany | €55,000 | 71 m² | 84 | https://realhunt.co/deal/de-quierschied-55k-581809
 - Just-renovated three bedrooms plus living room near Manufaktura in Łódź | Poland | €76,084 | 47 m² | 84 | https://realhunt.co/deal/pl-lodz-76k-708515
 - Ready-to-live 72 m² family flat with a balcony in Olecko | Poland | €77,683 | 72 m² | 84 | https://realhunt.co/deal/pl-olecko-78k-864749
-- Move-in ready 1700s stone village house of 180 m² near La Rochefoucauld, Charente | France | €189,000 | 180 m² | 84 | https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k
 - Fully renovated four rooms with 3.3 m ceilings in central Łódź | Poland | €77,455 | 47 m² | 84 | https://realhunt.co/deal/pl-lodz-77k-629717
 - Four-room flat with a cellar on a quiet estate in Jarocin | Poland | €72,885 | 62 m² | 84 | https://realhunt.co/deal/pl-jarocin-73k-877413
 - Hilltop village house with a sunny terrace in Bourmont | France | €55,000 | size n/a | 84 | https://realhunt.co/deal/fr-bourmont-60k-q27mnf
@@ -19942,7 +19937,12 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 1-bed house 11 minutes from Lake Como | Italy | €38,000 | size n/a | 84 | https://realhunt.co/deal/DcjBmxJjKHY
 - Sea-view studio five minutes from the beach | Italy | €45,000 | size n/a | 84 | https://realhunt.co/deal/DcyzSIdjOz6
 - Sea-view home with a panoramic terrace | Italy | €49,000 | 87 m² | 84 | https://realhunt.co/deal/Dclv5CJDdhi
+- Renovated country house with garden and vineyard views near Acqui Terme | Italy | €180,000 | 200 m² | 84 | https://realhunt.co/deal/it-piedmont-acqui-terme-country-house-garden-180k
 - Three-bedroom seaside house with a paved courtyard in Torremezzo di Falconara, Calabria | Italy | €85,000 | 101 m² | 84 | https://realhunt.co/deal/it-calabria-torremezzo-three-bed-courtyard-85k
+- Single-storey 138 m² home with garden below the mountains in Zupci, near Bar | Montenegro | €175,000 | 138 m² | 84 | https://realhunt.co/deal/me-zupci-single-storey-home-mountain-view-175k
+- Restored three-bed stone house with roof terrace in Kritsa village, Crete | Greece | €199,000 | 105 m² | 84 | https://realhunt.co/deal/gr-crete-kritsa-restored-stone-house-roof-terrace-199k
+- Two-bedroom 85 m² pool-view condo from 2012 near Khao Takiab beach, Hua Hin | Thailand | €139,500 | 85 m² | 84 | https://realhunt.co/deal/th-hua-hin-seacraze-two-bed-pool-view-condo-140k
+- Move-in ready 1700s stone village house of 180 m² near La Rochefoucauld, Charente | France | €189,000 | 180 m² | 84 | https://realhunt.co/deal/fr-yvrac-et-malleyrand-1700s-stone-house-180m2-189k
 - Two-bedroom flat with a balcony and shared pool near Playa Dorada, Puerto Plata | Dominican Republic | €150,000 | 103 m² | 84 | https://realhunt.co/deal/do-puerto-plata-two-bed-flat-pool-near-playa-dorada-165k
 - Red wooden three-bedroom house with conservatory and greenhouse in Arbrå, Hälsingland | Sweden | €72,000 | 108 m² | 84 | https://realhunt.co/deal/se-arbra-red-wooden-house-conservatory-795k-sek
 - Sea-view one-bedroom flat with pool and no maintenance fee in Sveti Vlas | Bulgaria | €89,000 | 64 m² | 84 | https://realhunt.co/deal/bg-sveti-vlas-sea-view-89k-92034
@@ -19979,19 +19979,17 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Fully renovated penthouse with a sunny terrace over the pools | Spain | €239,000 | 87 m² | 83 | https://realhunt.co/deal/es-costa-del-silencio-239k-481637
 - Renovated, furnished flat in a garden resort with pool near Tavira | Portugal | €183,000 | 68 m² | 83 | https://realhunt.co/deal/pt-tavira-183k-300012
 - 1920 house on the main square of Corpa with four bedrooms and a terrace | Spain | €173,000 | 145 m² | 83 | https://realhunt.co/deal/es-corpa-173k-599473
-- Four-bedroom duplex with fireplace and a private patio in the Sierra Oeste | Spain | €155,000 | 116 m² | 83 | https://realhunt.co/deal/es-cadalso-de-los-vidrios-155k-995484
 - Country house renovated 2020-2025 with 2 ha of land in Kozjak near Maribor | Slovenia | €245,000 | 112 m² | 83 | https://realhunt.co/deal/si-kozjak-kungota-renovated-country-house-2ha-245k
+- Four-bedroom duplex with fireplace and a private patio in the Sierra Oeste | Spain | €155,000 | 116 m² | 83 | https://realhunt.co/deal/es-cadalso-de-los-vidrios-155k-995484
 - Restored 1925 village house with beams, fireplace and a private patio | Spain | €169,000 | 118 m² | 83 | https://realhunt.co/deal/es-villa-del-prado-169k-315730
 - Well-kept three-bed semi-detached house with solar panels in Enniskillen, Fermanagh | United Kingdom | €161,000 | 107 m² | 83 | https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k
 - Character house with panoramic views in Treignac | France | €66,600 | 88 m² | 83 | https://realhunt.co/deal/fr-treignac-66k-6l5r27
 - Brand-new 2024 log cabin surrounded by farmland in Kentucky | United States | €155,500 | 114 m² | 83 | https://realhunt.co/deal/us-kentucky-new-log-cabin-175k
 - Wooden island-style house with a BBQ terrace hanging over the Pagasetic Gulf | Greece | €120,000 | 54 m² | 83 | https://realhunt.co/deal/gr-trikeri-sea-terrace-120k
-- Refurbished period townhouse with a double garage in Lack village, County Fermanagh | United Kingdom | €198,400 | 107 m² | 83 | https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k
 - Three-room flat with a modern kitchen and two balconies in Reigersbos | Netherlands | €330,000 | 74 m² | 83 | https://realhunt.co/deal/nl-amsterdam-330k-474793
 - Renovated two-room flat with a new kitchen and garden in the Kaßberg | Germany | €45,000 | 49 m² | 83 | https://realhunt.co/deal/de-chemnitz-45k-234628
 - Fully renovated period flat with a south balcony | Germany | €55,000 | 66 m² | 83 | https://realhunt.co/deal/de-chemnitz-55k-893563
 - Four-room flat with a balcony and old-town views in Kwidzyn | Poland | €79,740 | 60 m² | 83 | https://realhunt.co/deal/pl-kwidzyn-80k-100014
-- Two-storey stone house facing the Libyan Sea in Koutsounari, south Crete | Greece | €195,000 | 88 m² | 83 | https://realhunt.co/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k
 - Sunny four-room flat in central Suwałki | Poland | €71,971 | 58 m² | 83 | https://realhunt.co/deal/pl-suwalki-72k-050290
 - Bright pre-war flat with three bedrooms and a garden in Boguszów-Gorce | Poland | €75,398 | 70 m² | 83 | https://realhunt.co/deal/pl-boguszow-gorce-75k-675678
 - Fully renovated flat with a fireplace and three bedrooms in Lubsko | Poland | €75,170 | 67 m² | 83 | https://realhunt.co/deal/pl-lubsko-75k-060638
@@ -20001,6 +19999,8 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Vaulted house near the Puglia coast | Italy | €49,000 | size n/a | 83 | https://realhunt.co/deal/DceAZ_xjMzt
 - Stone house with a terrace and mountain views | Italy | €59,000 | 119 m² | 83 | https://realhunt.co/deal/Dc_kLRrDKqS
 - Duplex in Acquedolci, Messina | Italy | €49,000 | 81 m² | 83 | https://realhunt.co/deal/acquedolci-49000
+- Refurbished period townhouse with a double garage in Lack village, County Fermanagh | United Kingdom | €198,400 | 107 m² | 83 | https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k
+- Two-storey stone house facing the Libyan Sea in Koutsounari, south Crete | Greece | €195,000 | 88 m² | 83 | https://realhunt.co/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k
 - Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff | United Kingdom | €126,500 | 70 m² | 83 | https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k
 - Four-bedroom village house with a guest flat and covered terrace in Secinaro, Abruzzo | Italy | €95,000 | 171 m² | 83 | https://realhunt.co/deal/it-abruzzo-secinaro-four-bed-guest-flat-95k
 - Three-bedroom townhouse with two terraces in La Marina, Costa Blanca | Spain | €160,000 | 116 m² | 83 | https://realhunt.co/deal/es-costa-blanca-la-marina-townhouse-160k
@@ -20032,20 +20032,16 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Renovated beachfront bungalow with a corner terrace and fireplace | Spain | €249,000 | 80 m² | 82 | https://realhunt.co/deal/es-denia-249k-235125
 - Renovated 2-bed flat with a glazed sun room and a private roof terrace | Spain | €199,000 | 79 m² | 82 | https://realhunt.co/deal/es-puerto-de-la-cruz-199k-329542
 - Sea-view penthouse 2 minutes' walk from the beach in Dénia | Spain | €219,000 | 85 m² | 82 | https://realhunt.co/deal/es-denia-219k-283381
-- 2-bed flat between Jávea and Moraira with lagoon pools, 700 m from the cove | Spain | €190,000 | 85 m² | 82 | https://realhunt.co/deal/es-cumbre-del-sol-190k-503985
 - Renovated stone house inside the walls of Gaglietole Castle, Umbria | Italy | €125,000 | 125 m² | 82 | https://realhunt.co/deal/it-umbria-collazzone-castle-stone-house-125k
+- 2-bed flat between Jávea and Moraira with lagoon pools, 700 m from the cove | Spain | €190,000 | 85 m² | 82 | https://realhunt.co/deal/es-cumbre-del-sol-190k-503985
 - Renovated, furnished studio in Golf del Sur with pool and gardens | Spain | €158,000 | 55 m² | 82 | https://realhunt.co/deal/es-golf-del-sur-158k-368775
 - Two-level beach flat in Antigua Bay, freshly done up, with pool and sea views | Spain | €180,000 | 59 m² | 82 | https://realhunt.co/deal/es-caleta-de-fuste-180k-465927
 - 134 m² flat a few steps from Chinchón's famous Plaza Mayor | Spain | €165,000 | 134 m² | 82 | https://realhunt.co/deal/es-chinchon-165k-004043
 - Forest house with a 45 m² terrace, hot tub and fireplace | Spain | €179,000 | 115 m² | 82 | https://realhunt.co/deal/es-mediona-179k-850907
 - Log-and-stone mountain house among pines, sold furnished | Spain | €174,000 | 110 m² | 82 | https://realhunt.co/deal/es-piera-174k-821120
-- Restored stone courtyard house with a sea-view roof terrace in Gytheio | Greece | €195,000 | 85 m² | 82 | https://realhunt.co/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k
 - Summer cottage on a 980 m² garden plot 2 km from the beach | Greece | €158,000 | 62 m² | 82 | https://realhunt.co/deal/gr-gargaliani-garden-sea-158k
 - Log cabin at Canadohta Lake with a duck pond out front | United States | €177,700 | 93 m² | 82 | https://realhunt.co/deal/us-pennsylvania-lake-cabin-200k
 - Cosy mountain townhouse near the Abetone ski slopes, sold furnished | Italy | €159,000 | 127 m² | 82 | https://realhunt.co/deal/it-tuscany-cutigliano-ski-house-159k
-- Renovated period flat with vaulted ceilings in central Acqui Terme, Piedmont | Italy | €140,000 | 120 m² | 82 | https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k
-- Fully renovated two-bedroom townhouse with title deeds in Paralimni, Famagusta | Cyprus | €187,000 | 74 m² | 82 | https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k
-- Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern Ireland | United Kingdom | €195,400 | 80 m² | 82 | https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k
 - 50 m² flat with city views on the tram line in Le Mans | France | €55,000 | 51 m² | 82 | https://realhunt.co/deal/fr-le-mans-55k-949995
 - Move-in-ready three-room flat with a loggia over the city park in Chemnitz | Germany | €50,000 | 56 m² | 82 | https://realhunt.co/deal/de-chemnitz-50k-950618
 - Three-room flat with a balcony over the green, no buyer's commission | Germany | €50,000 | 57 m² | 82 | https://realhunt.co/deal/de-chemnitz-50k-484380
@@ -20055,6 +20051,10 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Easy-living garden townhouse in quiet Herborg | Denmark | €89,100 | 79 m² | 82 | https://realhunt.co/deal/dk-herborg-89k-d18595
 - Old railway house in the forest on a 2,080 m² plot | Denmark | €80,300 | 70 m² | 82 | https://realhunt.co/deal/dk-tylstrup-80k-3cfe80
 - Two-bedroom apartment with terrace in a historic Tuscan village | Italy | €16,000 | 51 m² | 82 | https://realhunt.co/deal/DdSm-JkiJem
+- Restored stone courtyard house with a sea-view roof terrace in Gytheio | Greece | €195,000 | 85 m² | 82 | https://realhunt.co/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k
+- Renovated period flat with vaulted ceilings in central Acqui Terme, Piedmont | Italy | €140,000 | 120 m² | 82 | https://realhunt.co/deal/it-piedmont-acqui-terme-vaulted-period-flat-140k
+- Fully renovated two-bedroom townhouse with title deeds in Paralimni, Famagusta | Cyprus | €187,000 | 74 m² | 82 | https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k
+- Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern Ireland | United Kingdom | €195,400 | 80 m² | 82 | https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k
 - Three-bedroom house with a barbecue patio near the rambla in Colonia del Sacramento | Uruguay | €186,300 | 113 m² | 82 | https://realhunt.co/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k
 - Four-bedroom house on about five acres in Saint Andrews, New Brunswick | Canada | €190,700 | 150 m² | 82 | https://realhunt.co/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k
 - Three-bedroom house in a gated complex with a pool in Puerto Vallarta, Jalisco | Mexico | €160,200 | 94 m² | 82 | https://realhunt.co/deal/mx-puerto-vallarta-three-bed-house-pool-condo-3-25m
@@ -20083,19 +20083,19 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 2012 house with 4 bedrooms, renovated, near the coast in Shizuoka | Japan | €81,900 | 92 m² | 81 | https://realhunt.co/deal/jp-shimizu-81k-591487
 - Studio with communal pool 950 m from La Mata beach, Torrevieja | Spain | €99,000 | 29 m² | 81 | https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k
 - Sea-view villa with two covered verandas 1 km from Vignola beach | Italy | €160,000 | 86 m² | 81 | https://realhunt.co/deal/it-sardinia-vignola-sea-view-160k
-- Renovated townhouse with new kitchen and air conditioning in Masseube, Gers | France | €69,500 | 70 m² | 81 | https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k
 - Renovated Umbrian country home with an annexe, vines and an orchard | Italy | €160,000 | 114 m² | 81 | https://realhunt.co/deal/it-umbria-citta-della-pieve-orchard-160k
 - Recently renovated through flat with a heat pump in Saint-Étienne | France | €60,000 | 52 m² | 81 | https://realhunt.co/deal/fr-saint-etienne-60k-772580
 - Furnished studio with a balcony near the Palais des Congrès, Perpignan | France | €57,000 | 35 m² | 81 | https://realhunt.co/deal/fr-perpignan-57k-t-9872
 - Town house with a mezzanine in historic Saint-Mathieu, Perpignan | France | €60,000 | 50 m² | 81 | https://realhunt.co/deal/fr-perpignan-60k-990769
 - Art nouveau studio with a lift, fitted kitchen and carport in Chemnitz | Germany | €45,000 | 41 m² | 81 | https://realhunt.co/deal/de-chemnitz-45k-168857
 - Modernised three-room flat with a green-view balcony in Chemnitz | Germany | €55,000 | 57 m² | 81 | https://realhunt.co/deal/de-chemnitz-55k-650355
-- Renovated country house with panoramic porch and olive grove near Arpino, Lazio | Italy | €180,000 | 147 m² | 81 | https://realhunt.co/deal/it-lazio-arpino-renovated-country-house-olive-grove-180k
 - Renovated, furnished four-room flat with a balcony in Suwałki | Poland | €79,740 | 60 m² | 81 | https://realhunt.co/deal/pl-suwalki-80k-028116
 - Furnished four-room flat with a 2020 bathroom in Koło | Poland | €79,740 | 58 m² | 81 | https://realhunt.co/deal/pl-kolo-80k-024273
 - Whitewashed cave home with a sunny courtyard near Lake Negratin | Spain | €89,000 | 50 m² | 81 | https://realhunt.co/deal/freila-cave-courtyard-89000
 - Stone-village home near Viterbo, 1h30 from Rome | Italy | €13,000 | 25 m² | 81 | https://realhunt.co/deal/grotte-santo-stefano-13000
 - Stone house in a medieval Tuscan village | Italy | €45,000 | 65 m² | 81 | https://realhunt.co/deal/DclJGYkDf8l
+- Renovated townhouse with new kitchen and air conditioning in Masseube, Gers | France | €69,500 | 70 m² | 81 | https://realhunt.co/deal/fr-masseube-gers-renovated-townhouse-70k
+- Renovated country house with panoramic porch and olive grove near Arpino, Lazio | Italy | €180,000 | 147 m² | 81 | https://realhunt.co/deal/it-lazio-arpino-renovated-country-house-olive-grove-180k
 - Three-bedroom house in a gated community with a pool in Mazatlán, Sinaloa | Mexico | €143,000 | 75 m² | 81 | https://realhunt.co/deal/mx-mazatlan-three-bed-house-gated-pool-2-9m
 - Renovated town house with a central patio in the centre of La Charité-sur-Loire, Burgundy | France | €119,500 | 156 m² | 81 | https://realhunt.co/deal/fr-la-charite-sur-loire-town-house-patio-119k
 - Beamed stone duplex with a lake-view garden and garage above Lake Iseo, Parzanica | Italy | €100,000 | 80 m² | 81 | https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k
@@ -20118,7 +20118,7 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Rustic stone house with courtyard, balcony and several outbuildings | Italy | €64,000 | size n/a | 81 | https://realhunt.co/deal/Dc26pZMj0VD
 - Move-in ready 2-bed house in Marion, Indiana | United States | €118,300 | 71 m² | 81 | https://realhunt.co/deal/marion-87150
 - Renovated 2-bed house in Beeville, Texas | United States | €95,089 | 74 m² | 81 | https://realhunt.co/deal/beeville-95089
-- Renovated 0-bed condo in Little River, South Carolina | United States | €88,800 | 63 m² | 81 | https://realhunt.co/deal/little-river-92471
+- Renovated condo in Little River, South Carolina | United States | €88,800 | 63 m² | 81 | https://realhunt.co/deal/little-river-92471
 - Updated 2-bed house in Hughes Brook, Newfoundland | Canada | €92,552 | 62 m² | 81 | https://realhunt.co/deal/hughes-brook-92552
 - Corbières village house with a modern kitchen | France | €80,000 | 58 m² | 80 | https://realhunt.co/deal/fr-durban-corbieres-80k-ke4gw6
 - Stone townhouse with beamed rooms in the old centre of Montecatini Val di Cecina, Tuscany | Italy | €100,000 | 110 m² | 80 | https://realhunt.co/deal/it-montecatini-val-di-cecina-stone-townhouse-centre-100k
@@ -20130,10 +20130,7 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Corralejo flat with a sunny terrace over three pools and palm gardens | Spain | €199,950 | 57 m² | 80 | https://realhunt.co/deal/es-corralejo-200k-385108
 - Modern 2009 duplex in the mountains of the Sierra Oeste, ready to move in | Spain | €169,000 | 96 m² | 80 | https://realhunt.co/deal/es-robledondo-169k-614624
 - Renovated granite stazzo with flower boxes in a Sardinian village | Italy | €97,000 | 70 m² | 80 | https://realhunt.co/deal/it-sardinia-luras-stazzo-97k
-- Furnished two-bedroom flat with sea views in Nea Fokea, Kassandra, Halkidiki | Greece | €170,000 | 60 m² | 80 | https://realhunt.co/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k
-- Top-floor two-bedroom flat with private roof terrace in Cabo Blanco, Tenerife | Spain | €196,000 | 82 m² | 80 | https://realhunt.co/deal/es-tenerife-cabo-blanco-top-floor-flat-roof-terrace-196k
 - Hillside house with a sea-view veranda 1 km from Porto Ottiolu beach | Italy | €158,000 | 64 m² | 80 | https://realhunt.co/deal/it-sardinia-budoni-sea-view-158k
-- Three-bed marina-view apartment with roof terrace and boat berth in Leitrim Village | Ireland | €230,000 | 121 m² | 80 | https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k
 - Studio with a view over the port of Marseille, gated residence | France | €54,000 | 28 m² | 80 | https://realhunt.co/deal/fr-marseille-54k-r-4563
 - Renovated one-bedroom flat in central Roubaix, near Lille | France | €57,000 | 43 m² | 80 | https://realhunt.co/deal/fr-roubaix-57k-230014
 - Modern two-room flat with an open kitchen near the universities, Saint-Étienne | France | €54,000 | 40 m² | 80 | https://realhunt.co/deal/fr-saint-etienne-54k-729815
@@ -20141,6 +20138,9 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Four-room flat with open kitchen and city views in Wałbrzych | Poland | €79,740 | 57 m² | 80 | https://realhunt.co/deal/pl-walbrzych-80k-970297
 - Bright renovated three-bedroom flat with modern kitchen in Bellavista, Sevilla | Spain | €199,000 | 100 m² | 80 | https://realhunt.co/deal/live-pisos-huy007
 - Move-in-ready alpine chalet at 1,000 m with private land | Italy | €39,000 | 30 m² | 80 | https://realhunt.co/deal/DdVwBL7DVl0
+- Furnished two-bedroom flat with sea views in Nea Fokea, Kassandra, Halkidiki | Greece | €170,000 | 60 m² | 80 | https://realhunt.co/deal/gr-halkidiki-nea-fokea-two-bed-flat-sea-view-170k
+- Top-floor two-bedroom flat with private roof terrace in Cabo Blanco, Tenerife | Spain | €196,000 | 82 m² | 80 | https://realhunt.co/deal/es-tenerife-cabo-blanco-top-floor-flat-roof-terrace-196k
+- Three-bed marina-view apartment with roof terrace and boat berth in Leitrim Village | Ireland | €230,000 | 121 m² | 80 | https://realhunt.co/deal/ie-leitrim-village-marina-view-apartment-berth-230k
 - Renovated detached house with open hill views in the eastern Algarve, near Alcoutim | Portugal | €130,000 | 77 m² | 80 | https://realhunt.co/deal/pt-algarve-alcoutim-renovated-hill-house-130k
 - Fully renovated three-bedroom granite house in a quiet village near Tábua | Portugal | €169,000 | 125 m² | 80 | https://realhunt.co/deal/pt-central-tabua-renovated-granite-house-169k
 - Four-level town house ready to live in at Collesano, in the Madonie hills near Cefalù | Italy | €115,000 | 200 m² | 80 | https://realhunt.co/deal/it-sicily-collesano-madonie-four-bed-house-115k
@@ -20159,18 +20159,18 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Move-in ready 2-bed house in Marion, Indiana | United States | €95,874 | 78 m² | 80 | https://realhunt.co/deal/marion-95874
 - Stone country house with a garden and three bathrooms near Chiusi della Verna, Tuscany | Italy | €165,000 | 145 m² | 79 | https://realhunt.co/deal/it-chiusi-della-verna-stone-country-house-garden-165k
 - Four-bedroom 2016 house of 132 m² on a corner plot in Takashima, Otaru, Hokkaido | Japan | €116,800 | 132 m² | 79 | https://realhunt.co/deal/jp-otaru-takashima-2016-four-bed-house-corner-plot-117k
-- 114 m² town house with a courtyard near Limoux | France | €86,400 | 114 m² | 79 | https://realhunt.co/deal/fr-esperaza-86k-sxd5p3
 - Restored 14th-century stone house with two terraces in Rocchetta di Fazio, Tuscany | Italy | €160,000 | 118 m² | 79 | https://realhunt.co/deal/it-rocchetta-di-fazio-restored-14th-century-stone-house-160k
+- 114 m² town house with a courtyard near Limoux | France | €86,400 | 114 m² | 79 | https://realhunt.co/deal/fr-esperaza-86k-sxd5p3
 - Japanese country house with an irori hearth and old timber beams near Matsumoto, Nagano | Japan | €159,600 | 167 m² | 79 | https://realhunt.co/deal/jp-matsumoto-azusagawa-house-irori-hearth-old-timbers-160k
 - Fully renovated three-room house with a wide view in Altruppersdorf, Weinviertel | Austria | €197,000 | 81 m² | 79 | https://realhunt.co/deal/at-altruppersdorf-renovated-house-view-weinviertel-197k
 - Two-bedroom house with fenced garden and river views near Marvão, Alentejo | Portugal | €140,000 | 70 m² | 79 | https://realhunt.co/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k
 - Tastefully renovated flat steps from Montaña Amarilla | Spain | €199,000 | 58 m² | 79 | https://realhunt.co/deal/es-costa-del-silencio-199k-024468
 - Bright duplex with a 13 m² terrace and open views in Terrassa | Spain | €169,000 | 80 m² | 79 | https://realhunt.co/deal/es-terrassa-169k-923454
 - Stylish renovated flat with a fireplace and terrace in Montaione, Tuscany | Italy | €140,000 | 78 m² | 79 | https://realhunt.co/deal/it-tuscany-montaione-renovated-140k
-- Renovated stone house on the Canal du Nivernais in Champvert, Burgundy | France | €188,000 | 160 m² | 79 | https://realhunt.co/deal/fr-burgundy-champvert-canal-stone-house-188k
-- Detached town house with three en-suite bedrooms in old Iglesias, Sardinia | Italy | €155,000 | 104 m² | 79 | https://realhunt.co/deal/it-sardinia-iglesias-three-ensuite-town-house-155k
 - Furnished loft-style studio with a new bathroom in the hyper-centre, Saint-Étienne | France | €55,500 | 35 m² | 79 | https://realhunt.co/deal/fr-saint-etienne-56k-284554
 - Small cortijo with 7,000 m² of almond trees in the Alpujarra | Spain | €75,000 | 60 m² | 79 | https://realhunt.co/deal/es-mecina-bombaron-75k-riayjs
+- Renovated stone house on the Canal du Nivernais in Champvert, Burgundy | France | €188,000 | 160 m² | 79 | https://realhunt.co/deal/fr-burgundy-champvert-canal-stone-house-188k
+- Detached town house with three en-suite bedrooms in old Iglesias, Sardinia | Italy | €155,000 | 104 m² | 79 | https://realhunt.co/deal/it-sardinia-iglesias-three-ensuite-town-house-155k
 - Two-bedroom duplex with private garden and shared pool in Costa de Antigua | Spain | €178,000 | 61 m² | 79 | https://realhunt.co/deal/es-fuerteventura-costa-antigua-duplex-pool-180k
 - House built in 2018 on a 1,181 m² plot near the sea in Shima, Mie | Japan | €84,500 | 106 m² | 79 | https://realhunt.co/deal/jp-shima-2018-house-large-plot-85k-596606
 - Furnished one-bedroom ground-floor flat with a private yard in Elounda, Crete | Greece | €125,000 | 35 m² | 79 | https://realhunt.co/deal/gr-crete-elounda-one-bed-private-yard-125k
@@ -20181,18 +20181,18 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 2-bed country cottage in a lovely hamlet | France | €56,000 | size n/a | 79 | https://realhunt.co/deal/DdEOA5_llrJ
 - 1909 house in an old leafy garden | Sweden | €73,000 | size n/a | 79 | https://realhunt.co/deal/Db7aSFMoNPo
 - Ground-floor flat with a 225 m2 south-facing garden in Savignone, Liguria | Italy | €104,000 | 75 m² | 78 | https://realhunt.co/deal/it-liguria-savignone-garden-flat-mountain-views-104k
+- Renovated studio with a balcony by the Bagatelle metro, Toulouse | France | €59,500 | 30 m² | 78 | https://realhunt.co/deal/fr-toulouse-60k-120948
+- Renovated studio with a big balcony and lift in Krefeld | Germany | €50,000 | 30 m² | 78 | https://realhunt.co/deal/de-krefeld-50k-993543
+- Furnished flat in a listed 1890 landmark on the Kaßberg, Chemnitz | Germany | €50,000 | 41 m² | 78 | https://realhunt.co/deal/de-chemnitz-50k-826803
+- Furnished four-room flat with two loggias in Łobez | Poland | €79,968 | 56 m² | 78 | https://realhunt.co/deal/pl-lobez-80k-191746
 - Renovated Luberon village house with vaulted cellar in Saint-Martin-de-Castillon | France | €210,000 | 90 m² | 78 | https://realhunt.co/deal/fr-provence-saint-martin-de-castillon-village-house-210k
 - Fully renovated townhouse with no community fees in Roquetes, near Tortosa | Spain | €120,000 | 82 m² | 78 | https://realhunt.co/deal/es-catalonia-roquetes-renovated-townhouse-no-fees-120k
 - Renovated 112 m² town-centre flat with energy rating A in Marche-en-Famenne | Belgium | €249,900 | 112 m² | 78 | https://realhunt.co/deal/be-marche-en-famenne-renovated-112m2-flat-energy-a-250k
 - Stone farmhouse with four bedrooms and 3 hectares of land near Gubbio, Umbria | Italy | €148,000 | 110 m² | 78 | https://realhunt.co/deal/it-umbria-gubbio-stone-farmhouse-3-hectares-148k
-- Renovated studio with a balcony by the Bagatelle metro, Toulouse | France | €59,500 | 30 m² | 78 | https://realhunt.co/deal/fr-toulouse-60k-120948
 - Four-bedroom house from 2004 in Misaki on the Miura peninsula, Kanagawa | Japan | €79,500 | 83 m² | 78 | https://realhunt.co/deal/jp-miura-misaki-four-bed-house-2004-80k
 - Breton stone house with a conservatory near the Térénez beaches in Plouezoc'h | France | €178,500 | 88 m² | 78 | https://realhunt.co/deal/fr-plouezoch-stone-house-conservatory-near-terenez-178k
-- Renovated studio with a big balcony and lift in Krefeld | Germany | €50,000 | 30 m² | 78 | https://realhunt.co/deal/de-krefeld-50k-993543
 - Renovated village house with energy rating B in the centre of Riez, Verdon | France | €159,000 | 91 m² | 78 | https://realhunt.co/deal/fr-provence-riez-renovated-village-house-dpe-b-159k
-- Furnished flat in a listed 1890 landmark on the Kaßberg, Chemnitz | Germany | €50,000 | 41 m² | 78 | https://realhunt.co/deal/de-chemnitz-50k-826803
 - Renovated furnished cottage on 860 m2 of land in Lajes do Pico, Azores | Portugal | €179,000 | 84 m² | 78 | https://realhunt.co/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k
-- Furnished four-room flat with two loggias in Łobez | Poland | €79,968 | 56 m² | 78 | https://realhunt.co/deal/pl-lobez-80k-191746
 - Furnished two-bedroom flat with private yard and shared pool in Mesa Chorio, Paphos | Cyprus | €195,000 | 74 m² | 78 | https://realhunt.co/deal/cy-paphos-mesa-chorio-pool-flat-195k-502684
 - Restored brick house with courtyard in the old centre of Amandola, Le Marche | Italy | €109,000 | 85 m² | 78 | https://realhunt.co/deal/it-marche-amandola-restored-brick-house-109k
 - Detached stone house with garden and valley views near Cascia, Umbria | Italy | €130,000 | 84 m² | 78 | https://realhunt.co/deal/it-umbria-cascia-stone-house-valley-view-130k
@@ -20204,12 +20204,12 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - Ground-floor two-bed flat with an en suite, a walk from Tramore beach, Waterford | Ireland | €220,000 | 76 m² | 77 | https://realhunt.co/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k
 - Flat renovated less than a year ago in central Aranjuez | Spain | €160,000 | 60 m² | 77 | https://realhunt.co/deal/es-aranjuez-160k-937996
 - New 2025 detached house on a 1,500 m² flat plot near the San Juan reservoir | Spain | €175,000 | 70 m² | 77 | https://realhunt.co/deal/es-san-martin-de-valdeiglesias-175k-710397
-- Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord | Germany | €199,000 | 60 m² | 77 | https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k
-- Renovated top-floor flat facing the ocean and Teide in Mesa del Mar, Tenerife | Spain | €185,980 | 51 m² | 77 | https://realhunt.co/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k
-- Newly renovated two-bed flat with sea-view terrace in Castellaro, Liguria | Italy | €197,000 | 76 m² | 77 | https://realhunt.co/deal/it-liguria-castellaro-renovated-sea-view-flat-no-fees-197k
 - Furnished studio on a quiet street in Wuppertal-Langerfeld | Germany | €50,000 | 34 m² | 77 | https://realhunt.co/deal/de-wuppertal-50k-248035
 - Two-room flat in a red-brick period building in Chemnitz-Altendorf | Germany | €55,000 | 51 m² | 77 | https://realhunt.co/deal/de-chemnitz-55k-074122
 - Three-floor village home with a panoramic balcony over the rooftops | Italy | €45,000 | size n/a | 77 | https://realhunt.co/deal/Dc-oopNDU4y
+- Garden-level flat with a south terrace steps from the beach on the Flensburg Fjord | Germany | €199,000 | 60 m² | 77 | https://realhunt.co/deal/de-wassersleben-flensburg-fjord-beach-flat-terrace-199k
+- Renovated top-floor flat facing the ocean and Teide in Mesa del Mar, Tenerife | Spain | €185,980 | 51 m² | 77 | https://realhunt.co/deal/es-tenerife-mesa-del-mar-penthouse-ocean-teide-view-186k
+- Newly renovated two-bed flat with sea-view terrace in Castellaro, Liguria | Italy | €197,000 | 76 m² | 77 | https://realhunt.co/deal/it-liguria-castellaro-renovated-sea-view-flat-no-fees-197k
 - Sea-view flat with two balconies near the Aregai marina in Cipressa, Liguria | Italy | €170,000 | 73 m² | 77 | https://realhunt.co/deal/it-liguria-cipressa-sea-view-flat-aregai-170k
 - Renovated village home with sea views below the castle in Rosignano Marittimo, Tuscany | Italy | €125,000 | 58 m² | 77 | https://realhunt.co/deal/it-rosignano-marittimo-sea-view-village-flat-125k
 - Renovated two-bedroom whitewashed cottage in Alcaria Ruiva, near Mértola, Alentejo | Portugal | €95,000 | 46 m² | 77 | https://realhunt.co/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k
@@ -20219,11 +20219,11 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 1922 homestead with four bedrooms, orchard garden and workshop barn | Sweden | €91,000 | 35 m² | 77 | https://realhunt.co/deal/DdVLmcvoz1P
 - Historic hilltop home with medieval cellars, terraces and valley views | Italy | €80,000 | size n/a | 77 | https://realhunt.co/deal/DcdKWJrleVQ
 - House in Ventimiglia di Sicilia, Palermo | Italy | €35,000 | 48 m² | 77 | https://realhunt.co/deal/ventimiglia-di-sicilia-35000
-- Stone house with a private riverbank and outbuildings in Vendeuvre, Normandy | France | €205,000 | 100 m² | 76 | https://realhunt.co/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k
-- Renovated village house with its own pool in Benijófar, Costa Blanca | Spain | €195,000 | 66 m² | 76 | https://realhunt.co/deal/es-benijofar-renovated-village-house-private-pool-195k
 - Tuscan cottage with an olive-tree garden 5 minutes from Saturnia hot springs | Italy | €139,000 | 76 m² | 76 | https://realhunt.co/deal/it-tuscany-montemerano-saturnia-139k
 - One-bedroom flat four minutes' walk from Grenoble station | France | €59,000 | 33 m² | 76 | https://realhunt.co/deal/fr-grenoble-59k-973013
 - Two-room flat with a balcony and underground parking in Chemnitz | Germany | €60,000 | 57 m² | 76 | https://realhunt.co/deal/de-chemnitz-60k-885916
+- Stone house with a private riverbank and outbuildings in Vendeuvre, Normandy | France | €205,000 | 100 m² | 76 | https://realhunt.co/deal/fr-normandy-vendeuvre-stone-house-river-garden-205k
+- Renovated village house with its own pool in Benijófar, Costa Blanca | Spain | €195,000 | 66 m² | 76 | https://realhunt.co/deal/es-benijofar-renovated-village-house-private-pool-195k
 - Fully restored granite house with a private garden in Bravães, Ponte da Barca | Portugal | €156,000 | 74 m² | 76 | https://realhunt.co/deal/pt-minho-bravaes-restored-stone-house-156k
 - Mobile home with 120 m² garden, gazebo and pellet heating in Valais | Switzerland | €85,900 | 34 m² | 76 | https://realhunt.co/deal/ch-raron-80k-63919
 - 1-bedroom country house with fireplace in O Saviñao | Spain | €80,000 | 50 m² | 76 | https://realhunt.co/deal/es-o-savinao-80k-20772
@@ -20231,8 +20231,8 @@ These listings come from redfin.ca (5). RealHunt is not an estate agent and does
 - 2009 duplex house with a private garden in a spa village | France | €85,000 | 66 m² | 75 | https://realhunt.co/deal/fr-encausse-les-thermes-85k-vjwr3w
 - Whitewashed stone house in Locorotondo, Puglia, ready to move into | Italy | €75,000 | 45 m² | 75 | https://realhunt.co/deal/it-locorotondo-75k-3me3r0
 - Vaulted stone home with terrace in Cisternino's old town | Italy | €65,000 | 45 m² | 75 | https://realhunt.co/deal/it-cisternino-65k-4hcrku
-- Restored medieval hamlet home with two en-suite bedrooms near Spoleto, Umbria | Italy | €155,000 | 73 m² | 75 | https://realhunt.co/deal/it-umbria-spoleto-la-torretta-restored-hamlet-house-155k
 - Bright renovated studio in a period building on the Kaßberg, Chemnitz | Germany | €55,000 | 38 m² | 75 | https://realhunt.co/deal/de-chemnitz-55k-536019
+- Restored medieval hamlet home with two en-suite bedrooms near Spoleto, Umbria | Italy | €155,000 | 73 m² | 75 | https://realhunt.co/deal/it-umbria-spoleto-la-torretta-restored-hamlet-house-155k
 - Refreshed three-bedroom house from 2009 with parking for two in Nasushiobara, Tochigi | Japan | €104,600 | 98 m² | 75 | https://realhunt.co/deal/jp-nasushiobara-refreshed-2009-house-105k
 - Mt. Fuji cabin with sauna deck, cold plunge and a guest cabin | Japan | €44,160 | size n/a | 75 | https://realhunt.co/deal/DdL76VHCMsm
 - Three-bedroom hilltop home with two fireplaces and a panoramic mountain terrace | Italy | €85,000 | size n/a | 75 | https://realhunt.co/deal/DdLhHoAESiS

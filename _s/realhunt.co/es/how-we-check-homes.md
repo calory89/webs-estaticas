@@ -11,9 +11,9 @@ Actualizado el 27 de noviembre de 2026
 Qué | Casas
 Casas en RealHunt hoy | 726
 Anuncio confirmado en los últimos 30 días | 525
-Última lectura: anuncio publicado | 434
-Última lectura: anuncio retirado | 119
-Última lectura: el portal bloqueó el programa | 137
+Última lectura: anuncio publicado | 427
+Última lectura: anuncio retirado | 122
+Última lectura: el portal bloqueó el programa | 141
 Última lectura: sin respuesta | 1
 Aún sin leer por el programa, o ilegibles (publicaciones en redes) | 35
 Marcadas como que ya no están a la venta | 73

@@ -95,7 +95,7 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de 3 dormitorios actualizada en Clairton, Pensilvania](https://realhunt.co/es/deal/clairton-85929) | Clairton, Pensilvania | 85.929 € | 116 m² | 741 €/m² | 3 | 89 | 23 sept 2026
 [Cabaña rústica moderna en los Ozarks, a minutos del río](https://realhunt.co/es/deal/us-dora-84k-329130) | Dora, Missouri | 86.500 € | 104 m² | 832 €/m² | 2 | 88 | 5 oct 2026
 [Casita con porche y parcela grande junto al parque, en los Ozarks](https://realhunt.co/es/deal/us-oxford-88k-030224) | Oxford, Arkansas | 88.600 € | 81 m² | 1.094 €/m² | 2 | 84 | 5 oct 2026
-[Condo renovado de 0 dormitorios en Little River, Carolina del Sur](https://realhunt.co/es/deal/little-river-92471) | Little River, Carolina del Sur | 88.800 € | 63 m² | 1.410 €/m² | · | 81 | 23 sept 2026
+[Condo renovado en Little River, Carolina del Sur](https://realhunt.co/es/deal/little-river-92471) | Little River, Carolina del Sur | 88.800 € | 63 m² | 1.410 €/m² | · | 81 | 23 sept 2026
 [Casa de 1 dormitorio reformada en Perryville, Arkansas](https://realhunt.co/es/deal/perryville-91599) | Perryville, Arkansas | 91.599 € | 75 m² | 1.221 €/m² | 1 | 83 | 23 sept 2026
 [Casa de 2 dormitorios reformada en Beeville, Texas](https://realhunt.co/es/deal/beeville-95089) | Beeville, Texas | 95.089 € | 74 m² | 1.285 €/m² | 2 | 81 | 23 sept 2026
 [Casa de 2 dormitorios lista para entrar a vivir en Marion, Indiana](https://realhunt.co/es/deal/marion-95874) | Marion, Indiana | 95.874 € | 78 m² | 1.229 €/m² | 2 | 80 | 23 sept 2026

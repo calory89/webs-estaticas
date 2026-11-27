@@ -498,7 +498,7 @@ A detached 3-bed, 2-bath house on a corner lot with a large fenced back garden f
 
 https://realhunt.co/deal/us-boca-raton-8315-490k
 
-### Renovated 0-bed condo in Little River, South Carolina
+### Renovated condo in Little River, South Carolina
 
 €88,800 · Little River, South Carolina · 63 m² · RealHunt score 81 · added 2026-09-23
 

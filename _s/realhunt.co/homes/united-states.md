@@ -95,7 +95,7 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Updated 3-bed house in Clairton, Pennsylvania](https://realhunt.co/deal/clairton-85929) | Clairton, Pennsylvania | €85,929 | 116 m² | €741/m² | 3 | 89 | 23 Sep 2026
 [Modern rustic Ozarks cabin minutes from the river](https://realhunt.co/deal/us-dora-84k-329130) | Dora, Missouri | €86,500 | 104 m² | €832/m² | 2 | 88 | 5 Oct 2026
 [Porch cottage on a big lot next to the park in the Ozarks](https://realhunt.co/deal/us-oxford-88k-030224) | Oxford, Arkansas | €88,600 | 81 m² | €1,094/m² | 2 | 84 | 5 Oct 2026
-[Renovated 0-bed condo in Little River, South Carolina](https://realhunt.co/deal/little-river-92471) | Little River, South Carolina | €88,800 | 63 m² | €1,410/m² | · | 81 | 23 Sep 2026
+[Renovated condo in Little River, South Carolina](https://realhunt.co/deal/little-river-92471) | Little River, South Carolina | €88,800 | 63 m² | €1,410/m² | · | 81 | 23 Sep 2026
 [Renovated 1-bed house in Perryville, Arkansas](https://realhunt.co/deal/perryville-91599) | Perryville, Arkansas | €91,599 | 75 m² | €1,221/m² | 1 | 83 | 23 Sep 2026
 [Renovated 2-bed house in Beeville, Texas](https://realhunt.co/deal/beeville-95089) | Beeville, Texas | €95,089 | 74 m² | €1,285/m² | 2 | 81 | 23 Sep 2026
 [Move-in ready 2-bed house in Marion, Indiana](https://realhunt.co/deal/marion-95874) | Marion, Indiana | €95,874 | 78 m² | €1,229/m² | 2 | 80 | 23 Sep 2026
