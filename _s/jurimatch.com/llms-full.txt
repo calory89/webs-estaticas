@@ -2865,11 +2865,17 @@ URL: https://jurimatch.com/es/guias/cuota-litis
 
 La cuota litis es el acuerdo por el que el abogado cobra un porcentaje de lo que se obtenga en el asunto. En España está permitida y es habitual en reclamaciones de dinero. Bien entendida, permite reclamar sin pagar grandes cantidades por adelantado.
 
-Q: ¿Es legal que el abogado cobre un porcentaje de lo que gane?
-A: Sí. Desde la sentencia del Tribunal Supremo de 4 de noviembre de 2008 se puede pactar la cuota litis en España.
+Q: ¿Qué significa cuota litis?
+A: Es el pacto por el que el abogado cobra una parte, normalmente un porcentaje, de lo que el cliente obtenga en el asunto.
+
+Q: ¿Es legal la cuota litis en España?
+A: Sí. El Tribunal Supremo declaró en 2008 que prohibirla iba contra la libre competencia, y el Estatuto General de la Abogacía de 2021 dice que los honorarios se pactan libremente entre cliente y abogado.
 
 Q: ¿Qué porcentaje es normal?
 A: No hay un porcentaje fijo: depende del tipo de caso, el riesgo y la parte fija. Compare varias propuestas por escrito.
+
+Q: ¿Cuota litis u honorarios fijos?
+A: Con honorarios fijos o por horas se paga se gane o se pierda. Con cuota litis se paga sobre todo si se gana, pero en un caso grande el porcentaje puede costar más. Pida las dos propuestas por escrito y compárelas.
 
 Q: Si pierdo con un abogado a éxito, ¿pago algo?
 A: Normalmente no paga el porcentaje, pero puede deber la parte fija pactada y, si el juez le condena en costas, las de la otra parte.
