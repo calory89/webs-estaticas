@@ -1,6 +1,6 @@
 Title: Houses for sale in Greece (26, from €68,000) · RealHunt
 URL: https://realhunt.co/homes/greece
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in Greece
@@ -223,4 +223,4 @@ These listings come from green-acres.gr (22), spitogatos.gr (4). RealHunt is not
 [Email me new homes in Greece](https://realhunt.co/alerts?country=Greece) · [Filter and sort these homes](https://realhunt.co/?country=Greece#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Greece](https://realhunt.co/sitemap/greece)
 
 ---
-Source: https://realhunt.co/homes/greece (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/greece (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

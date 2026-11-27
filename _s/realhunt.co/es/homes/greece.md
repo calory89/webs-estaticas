@@ -1,6 +1,6 @@
 Título: Casas en venta en Grecia (26, desde 68.000 €) · RealHunt
 URL: https://realhunt.co/es/homes/greece
-Actualizado: 2026-11-26
+Actualizado: 2026-11-27
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Grecia
@@ -223,4 +223,4 @@ Estos anuncios proceden de green-acres.gr (22), spitogatos.gr (4). RealHunt no e
 [Avísame por correo de viviendas nuevas en Grecia](https://realhunt.co/es/alerts?country=Greece) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Greece#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Grecia](https://realhunt.co/es/sitemap/greece)
 
 ---
-Fuente: https://realhunt.co/es/homes/greece (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/greece (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.

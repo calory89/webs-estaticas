@@ -1,4 +1,4 @@
 Contact: mailto:carlos@equinoxinvestmentgroup.com
-Expires: 2027-05-25T00:00:00.000Z
+Expires: 2027-05-26T00:00:00.000Z
 Preferred-Languages: en, es
 Canonical: https://realhunt.co/.well-known/security.txt

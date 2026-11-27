@@ -1,6 +1,6 @@
 Título: Casas en venta en Uruguay (4, desde 150.300 €) · RealHunt
 URL: https://realhunt.co/es/homes/uruguay
-Actualizado: 2026-11-26
+Actualizado: 2026-11-27
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Uruguay
@@ -125,4 +125,4 @@ Estos anuncios proceden de infocasas.com.uy (4). RealHunt no es una inmobiliaria
 [Avísame por correo de viviendas nuevas en Uruguay](https://realhunt.co/es/alerts?country=Uruguay) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Uruguay#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Uruguay](https://realhunt.co/es/sitemap/uruguay)
 
 ---
-Fuente: https://realhunt.co/es/homes/uruguay (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/uruguay (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.

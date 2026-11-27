@@ -1,6 +1,6 @@
 Title: Houses for sale in Canada (16, from €55,842) · RealHunt
 URL: https://realhunt.co/homes/canada
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in Canada
@@ -183,4 +183,4 @@ These listings come from redfin.ca (9), remax.ca (7). RealHunt is not an estate 
 [Email me new homes in Canada](https://realhunt.co/alerts?country=Canada) · [Filter and sort these homes](https://realhunt.co/?country=Canada#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Canada](https://realhunt.co/sitemap/canada)
 
 ---
-Source: https://realhunt.co/homes/canada (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/canada (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

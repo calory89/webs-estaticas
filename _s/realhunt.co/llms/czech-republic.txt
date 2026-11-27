@@ -1,6 +1,6 @@
 # RealHunt: Czech Republic
 
-> Homes for sale in Czech Republic on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-26. 3 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
+> Homes for sale in Czech Republic on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-27. 3 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
 
 
 ---
@@ -115,9 +115,9 @@ Source: https://realhunt.co/data/countries/czech-republic.md
 
 # Cheap homes in the Czech Republic: key facts and every home on RealHunt
 
-On 26 November 2026, RealHunt lists 3 homes for sale in the Czech Republic, each one checked by a person. In the Czech Republic, the median asking price of those 3 homes is €159,600 (€1,464 per m², from the 3 homes with a known size); the cheapest costs €130,900 and the most expensive €179,700. With 3 homes this is a small sample, so the median for the Czech Republic is a rough guide.
+On 27 November 2026, RealHunt lists 3 homes for sale in the Czech Republic, each one checked by a person. In the Czech Republic, the median asking price of those 3 homes is €159,600 (€1,464 per m², from the 3 homes with a known size); the cheapest costs €130,900 and the most expensive €179,700. With 3 homes this is a small sample, so the median for the Czech Republic is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/czech-republic · Updated 26 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/czech-republic · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/czech-republic.json · PDF: https://realhunt.co/data/countries/czech-republic.pdf
 
 ## Key facts
@@ -132,7 +132,7 @@ Also as JSON: https://realhunt.co/data/countries/czech-republic.json · PDF: htt
 | Median RealHunt score (70 to 98) | 84 |
 | Can foreigners buy? | Yes. Foreigners can buy homes and land in the Czech Republic on the same terms as Czechs: the limits on homes ended on 1 May 2009 and those on farmland and forest on 1 May 2011. |
 | Yearly property tax | Owners pay a yearly tax on land and buildings (daň z nemovitých věcí); from 2024 the rates rose to 1.8 times their old level on average, and each municipality can multiply the tax by a local coefficient between 0.5 and 5. The return is due by 31 January and the tax by 31 May. |
-| Date of these figures | 26 November 2026 |
+| Date of these figures | 27 November 2026 |
 
 ## Costs and taxes
 

@@ -1,6 +1,6 @@
 Title: Houses for sale in Portugal (8, from €48,000) · RealHunt
 URL: https://realhunt.co/homes/portugal
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in Portugal
@@ -149,4 +149,4 @@ These listings come from green-acres.pt (6), imovirtual.com (2). RealHunt is not
 [Email me new homes in Portugal](https://realhunt.co/alerts?country=Portugal) · [Filter and sort these homes](https://realhunt.co/?country=Portugal#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Portugal](https://realhunt.co/sitemap/portugal)
 
 ---
-Source: https://realhunt.co/homes/portugal (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/portugal (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

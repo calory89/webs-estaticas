@@ -4,7 +4,7 @@ How RealHunt works
 
 A person looks at every home before it goes up. A home is turned down when it is not a whole home for sale, when its price is not good for its area, when it needs more than light work, when its photos are poor, when it sits next to noise or industry, when the advert leaves out the basic facts, or when its running costs are too high for the price. All the rules below must hold.
 
-Updated 26 November 2026
+Updated 27 November 2026
 
 ### A whole home, for sale, at a stated price
 
@@ -67,4 +67,4 @@ We do not keep a count of the homes we turn down, so we give none. What we do pu
 - [Editorial policy](https://realhunt.co/editorial-policy)
 
 ---
-Source: https://realhunt.co/what-we-reject (RealHunt, 2026-11-26)
+Source: https://realhunt.co/what-we-reject (RealHunt, 2026-11-27)

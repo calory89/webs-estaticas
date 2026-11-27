@@ -1,6 +1,6 @@
 Título: Casas en venta en la República Checa (3, desde 130.900 €)
 URL: https://realhunt.co/es/homes/czech-republic
-Actualizado: 2026-11-26
+Actualizado: 2026-11-27
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en la República Checa
@@ -107,4 +107,4 @@ Estos anuncios proceden de bezrealitky.cz (3). RealHunt no es una inmobiliaria y
 [Avísame por correo de viviendas nuevas en la República Checa](https://realhunt.co/es/alerts?country=Czech%20Republic) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Czech+Republic#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en la República Checa](https://realhunt.co/es/sitemap/czech-republic)
 
 ---
-Fuente: https://realhunt.co/es/homes/czech-republic (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/czech-republic (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.

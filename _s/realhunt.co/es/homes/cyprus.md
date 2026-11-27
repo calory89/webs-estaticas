@@ -1,6 +1,6 @@
 Título: Pisos en venta en Chipre (5, desde 130.000 €) · RealHunt
 URL: https://realhunt.co/es/homes/cyprus
-Actualizado: 2026-11-26
+Actualizado: 2026-11-27
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Pisos en venta en Chipre
@@ -145,4 +145,4 @@ Estos anuncios proceden de rightmove.co.uk (4), cy.green-acres.com (1). RealHunt
 [Avísame por correo de viviendas nuevas en Chipre](https://realhunt.co/es/alerts?country=Cyprus) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Cyprus#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Chipre](https://realhunt.co/es/sitemap/cyprus)
 
 ---
-Fuente: https://realhunt.co/es/homes/cyprus (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/cyprus (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.

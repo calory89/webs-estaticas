@@ -1,6 +1,6 @@
 Title: Apartments for sale in Poland (31, from €53,693) · RealHunt
 URL: https://realhunt.co/homes/poland
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Apartments for sale in Poland
@@ -220,4 +220,4 @@ These listings come from morizon.pl (31). RealHunt is not an estate agent and do
 [Email me new homes in Poland](https://realhunt.co/alerts?country=Poland) · [Filter and sort these homes](https://realhunt.co/?country=Poland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Poland](https://realhunt.co/sitemap/poland)
 
 ---
-Source: https://realhunt.co/homes/poland (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/poland (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

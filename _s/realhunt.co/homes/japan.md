@@ -1,6 +1,6 @@
 Title: Houses for sale in Japan (36, from €7,400) · RealHunt
 URL: https://realhunt.co/homes/japan
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in Japan
@@ -235,4 +235,4 @@ These listings come from athome.co.jp (11), instagram.com (10), homes.co.jp (6),
 [Email me new homes in Japan](https://realhunt.co/alerts?country=Japan) · [Filter and sort these homes](https://realhunt.co/?country=Japan#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Japan](https://realhunt.co/sitemap/japan)
 
 ---
-Source: https://realhunt.co/homes/japan (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/japan (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

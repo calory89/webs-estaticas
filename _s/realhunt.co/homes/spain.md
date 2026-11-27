@@ -1,6 +1,6 @@
 Title: Homes for sale in Spain (151, from €38,000) · RealHunt
 URL: https://realhunt.co/homes/spain
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Homes for sale in Spain
@@ -251,4 +251,4 @@ These listings come from fotocasa.es (112), pisos.com (17), green-acres.es (10),
 [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain) · [Filter and sort these homes](https://realhunt.co/?country=Spain#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Spain](https://realhunt.co/sitemap/spain)
 
 ---
-Source: https://realhunt.co/homes/spain (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/spain (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

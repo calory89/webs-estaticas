@@ -8,7 +8,7 @@ Open data used: OpenStreetMap contributors (ODbL), OurAirports (public domain), 
 Official sources of each rule and tax: https://realhunt.co/guide and https://realhunt.co/costs
 
 /* SITE */
-Last update: 2026-11-26
+Last update: 2026-11-27
 Language: English, Spanish (and German, French, Dutch, Polish, Russian listings)
 Standards: HTML, schema.org, JSON Feed, OpenAPI 3.1
 Data licence: CC BY 4.0, https://realhunt.co/data/README.md

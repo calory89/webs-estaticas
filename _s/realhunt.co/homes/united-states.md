@@ -1,6 +1,6 @@
 Title: Houses for sale in the United States (61, from €65,428)
 URL: https://realhunt.co/homes/united-states
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in the United States
@@ -271,4 +271,4 @@ These listings come from coldwellbanker.com (38), redfin.com (15), estately.com 
 [Email me new homes in the United States](https://realhunt.co/alerts?country=United%20States) · [Filter and sort these homes](https://realhunt.co/?country=United+States#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the United States](https://realhunt.co/sitemap/united-states)
 
 ---
-Source: https://realhunt.co/homes/united-states (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/united-states (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

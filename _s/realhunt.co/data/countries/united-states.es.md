@@ -1,8 +1,8 @@
 # Casas baratas en Estados Unidos: datos clave y todas las casas de RealHunt
 
-A 26 de noviembre de 2026, RealHunt publica 62 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 62 casas es de 214.900 € (1.570 € por m², calculado con las 62 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
+A 27 de noviembre de 2026, RealHunt publica 62 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 62 casas es de 214.900 € (1.570 € por m², calculado con las 62 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
 
-Fuente: RealHunt, https://realhunt.co/es/homes/united-states · Actualizado el 26 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
+Fuente: RealHunt, https://realhunt.co/es/homes/united-states · Actualizado el 27 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.es.pdf
 
 ## Datos clave
@@ -18,7 +18,7 @@ También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: 
 | Impuestos y gastos de compra | 2–5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay una prohibición federal sobre que extranjeros compren viviendas, pero unos 30 estados han añadido algunos límites, y Texas y Florida restringen a compradores de ciertos países como China. |
 | Impuesto anual sobre la vivienda | El impuesto sobre la propiedad se fija localmente y en 2024 fue de media alrededor del 1,22% del valor en la mayor ciudad de cada estado, desde el 0,30% en Honolulu hasta el 3,02% en Detroit. |
-| Fecha de estas cifras | 26 de noviembre de 2026 |
+| Fecha de estas cifras | 27 de noviembre de 2026 |
 
 ## Gastos e impuestos
 

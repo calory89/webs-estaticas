@@ -1,6 +1,6 @@
 Title: Houses for sale in the Czech Republic (3, from €130,900)
 URL: https://realhunt.co/homes/czech-republic
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in the Czech Republic
@@ -107,4 +107,4 @@ These listings come from bezrealitky.cz (3). RealHunt is not an estate agent and
 [Email me new homes in the Czech Republic](https://realhunt.co/alerts?country=Czech%20Republic) · [Filter and sort these homes](https://realhunt.co/?country=Czech+Republic#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the Czech Republic](https://realhunt.co/sitemap/czech-republic)
 
 ---
-Source: https://realhunt.co/homes/czech-republic (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/czech-republic (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

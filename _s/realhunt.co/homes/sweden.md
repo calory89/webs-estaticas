@@ -1,6 +1,6 @@
 Title: Houses for sale in Sweden (41, from €22,000) · RealHunt
 URL: https://realhunt.co/homes/sweden
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in Sweden
@@ -254,4 +254,4 @@ These listings come from hemnet.se (20), instagram.com (8), svenskfast.se (5), f
 [Email me new homes in Sweden](https://realhunt.co/alerts?country=Sweden) · [Filter and sort these homes](https://realhunt.co/?country=Sweden#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Sweden](https://realhunt.co/sitemap/sweden)
 
 ---
-Source: https://realhunt.co/homes/sweden (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/sweden (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

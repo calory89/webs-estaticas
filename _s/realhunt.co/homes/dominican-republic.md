@@ -1,6 +1,6 @@
 Title: Apartments for sale in the Dominican Republic (5) · RealHunt
 URL: https://realhunt.co/homes/dominican-republic
-Updated: 2026-11-26
+Updated: 2026-11-27
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Apartments for sale in the Dominican Republic
@@ -139,4 +139,4 @@ These listings come from supercasas.com (5). RealHunt is not an estate agent and
 [Email me new homes in the Dominican Republic](https://realhunt.co/alerts?country=Dominican%20Republic) · [Filter and sort these homes](https://realhunt.co/?country=Dominican+Republic#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the Dominican Republic](https://realhunt.co/sitemap/dominican-republic)
 
 ---
-Source: https://realhunt.co/homes/dominican-republic (RealHunt, 2026-11-26). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/dominican-republic (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.

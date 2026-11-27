@@ -7,8 +7,8 @@
   "duplicate_homes": 2,
   "title_over_60": 295,
   "desc_over_155": 0,
-  "desc_under_120": 70,
-  "desc_out_of_range": 70,
+  "desc_under_120": 7,
+  "desc_out_of_range": 7,
   "duplicate_titles": 0,
   "duplicate_descriptions": 0,
   "h1_not_one": 0,
@@ -51,7 +51,7 @@
    "noindex": 0,
    "median_words": 0,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/alerts": {
@@ -69,7 +69,7 @@
    "noindex": 0,
    "median_words": 423,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/blog": {
@@ -78,7 +78,7 @@
    "noindex": 0,
    "median_words": 665,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/blog/*": {
@@ -87,7 +87,7 @@
    "noindex": 0,
    "median_words": 1211,
    "title_over_60": 9,
-   "desc_out_of_range": 7,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/buying-costs": {
@@ -150,7 +150,7 @@
    "noindex": 0,
    "median_words": 28,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/corrections": {
@@ -222,7 +222,7 @@
    "noindex": 0,
    "median_words": 0,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/editorial-policy": {
@@ -285,7 +285,7 @@
    "noindex": 0,
    "median_words": 514,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/blog": {
@@ -294,7 +294,7 @@
    "noindex": 0,
    "median_words": 737,
    "title_over_60": 1,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/blog/*": {
@@ -303,7 +303,7 @@
    "noindex": 0,
    "median_words": 1337,
    "title_over_60": 13,
-   "desc_out_of_range": 6,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/buying-costs": {
@@ -366,7 +366,7 @@
    "noindex": 0,
    "median_words": 15,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/corrections": {
@@ -501,7 +501,7 @@
    "noindex": 7,
    "median_words": 2832,
    "title_over_60": 0,
-   "desc_out_of_range": 13,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/homes/*/*": {
@@ -537,7 +537,7 @@
    "noindex": 0,
    "median_words": 62,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/es/method": {
@@ -735,7 +735,7 @@
    "noindex": 0,
    "median_words": 247,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/guide/*": {
@@ -762,7 +762,7 @@
    "noindex": 0,
    "median_words": 0,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/homes": {
@@ -780,7 +780,7 @@
    "noindex": 7,
    "median_words": 2459,
    "title_over_60": 0,
-   "desc_out_of_range": 17,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/homes/*/*": {
@@ -843,7 +843,7 @@
    "noindex": 0,
    "median_words": 61,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/method": {
@@ -861,7 +861,7 @@
    "noindex": 0,
    "median_words": 43,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/network/*": {
@@ -870,7 +870,7 @@
    "noindex": 3,
    "median_words": 0,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/new": {
@@ -879,7 +879,7 @@
    "noindex": 0,
    "median_words": 1288,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/new-builds": {
@@ -888,7 +888,7 @@
    "noindex": 0,
    "median_words": 0,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/new-builds/*": {
@@ -933,7 +933,7 @@
    "noindex": 0,
    "median_words": 661,
    "title_over_60": 0,
-   "desc_out_of_range": 1,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/research/*": {
@@ -1005,7 +1005,7 @@
    "noindex": 0,
    "median_words": 853,
    "title_over_60": 0,
-   "desc_out_of_range": 3,
+   "desc_out_of_range": 0,
    "inlinks_under_3": 0
   },
   "/top": {
@@ -1179,69 +1179,6 @@
    "/es/sitemap/czech-republic",
    "/es/sitemap/uruguay"
   ],
-  "desc_under_120": [
-   "/agents",
-   "/best",
-   "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
-   "/blog/best-new-builds-bali-scored-2026",
-   "/blog/best-new-builds-batumi-scored-2026",
-   "/blog/best-new-builds-phuket-scored-2026",
-   "/blog/best-new-builds-tulum-scored-2026",
-   "/blog/cheap-houses-japan-move-in-ready",
-   "/blog",
-   "/blog/property-scams-buying-abroad",
-   "/contact",
-   "/deal/DclLv7qjKAR",
-   "/deal/es-murcia-80k-47450",
-   "/deal/es-murcia-85k-23435",
-   "/deal/es-roses-97k-57061",
-   "/deal/galera-hillside-cave-84000",
-   "/deal/little-river-92471",
-   "/ecobeachcity",
-   "/es/best",
-   "/es/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
-   "/es/blog/best-new-builds-bali-scored-2026",
-   "/es/blog/best-new-builds-batumi-scored-2026",
-   "/es/blog/best-new-builds-phuket-scored-2026",
-   "/es/blog/best-new-builds-tulum-scored-2026",
-   "/es/blog/cheap-houses-sweden-under-100000",
-   "/es/blog",
-   "/es/contact",
-   "/es/deal/es-roses-97k-57061",
-   "/es/homes/bulgaria",
-   "/es/homes/canada",
-   "/es/homes/cyprus",
-   "/es/homes/denmark",
-   "/es/homes/france",
-   "/es/homes/germany",
-   "/es/homes/greece",
-   "/es/homes/italy",
-   "/es/homes/japan",
-   "/es/homes/poland",
-   "/es/homes/portugal",
-   "/es/homes/switzerland",
-   "/es/homes/uruguay",
-   "/es/map",
-   "/guide",
-   "/help-buying",
-   "/homes/bulgaria",
-   "/homes/canada",
-   "/homes/colombia",
-   "/homes/cyprus",
-   "/homes/denmark",
-   "/homes/france",
-   "/homes/germany",
-   "/homes/greece",
-   "/homes/ireland",
-   "/homes/italy",
-   "/homes/japan",
-   "/homes/poland",
-   "/homes/portugal",
-   "/homes/sweden",
-   "/homes/switzerland",
-   "/homes/united-kingdom",
-   "... 10 more"
-  ],
   "title_over_60": [
    "/blog/bali-phuket-tulum-batumi-400-new-builds-scored",
    "/blog/best-home-deals-this-week-2026-w45",
@@ -1308,6 +1245,15 @@
   "title_under_20": [
    "/contact",
    "/sitemap"
+  ],
+  "desc_under_120": [
+   "/deal/DclLv7qjKAR",
+   "/deal/es-murcia-80k-47450",
+   "/deal/es-murcia-85k-23435",
+   "/deal/es-roses-97k-57061",
+   "/deal/galera-hillside-cave-84000",
+   "/deal/little-river-92471",
+   "/es/deal/es-roses-97k-57061"
   ]
  },
  "spanish": {
@@ -1358,7 +1304,7 @@
    "checked": 4832,
    "indexable": 4290,
    "max_depth": 3,
-   "titles_changed_since_last_build": 283,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 335,
    "no_text_without_javascript": 9,
    "click_handler_instead_of_link": 1410,
@@ -1366,7 +1312,6 @@
    "keyword_stuffing": 8,
    "year_in_title": 2,
    "near_identical_pages": 542,
-   "title_changed_twice_in_28_days": 9,
    "fixed_here": 2,
    "links_pointed_past_a_redirect": 2
   },
@@ -1487,17 +1432,6 @@
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/dutch-in-dominican-republic (97%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
     "... 502 more"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/blog: RealHunt blog: data and guides on cheap homes worldwide",
-    "/es/blog: Blog de RealHunt: datos y guías sobre casas baratas por el mundo",
-    "/es/cheap-houses/near-an-airport-in-sweden: Casas a menos de 30 km de un aeropuerto en Suecia (7)",
-    "/es/cheap-houses/near-the-beach-in-dominican-republic: Pisos a menos de 500 m del mar en la República Dominicana",
-    "/es/cheap-houses/turnkey-in-dominican-republic: Pisos para entrar a vivir en la República Dominicana (4)",
-    "/es/cheap-houses/with-a-terrace-in-dominican-republic: Pisos con terraza o balcón en la República Dominicana (4)",
-    "/es/homes/dominican-republic/under-300000: Pisos en la República Dominicana por menos de 300.000 € (5)",
-    "/es/homes/spain/murcia/under-100000: Casas baratas en Murcia (España) por menos de 100.000 € (14)",
-    "/es/homes/spain/murcia/under-80000: Casas baratas en Murcia (España) por menos de 80.000 € (7)"
    ]
   },
   "depth": {
@@ -1643,7 +1577,7 @@
       },
       {
        "path": "/homes/italy",
-       "kb": 127.3
+       "kb": 127.4
       },
       {
        "path": "/es/homes/spain",

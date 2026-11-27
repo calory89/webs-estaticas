@@ -1,6 +1,6 @@
 Título: Casas en venta en el Reino Unido (6, desde 88.500 €)
 URL: https://realhunt.co/es/homes/united-kingdom
-Actualizado: 2026-11-26
+Actualizado: 2026-11-27
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en el Reino Unido
@@ -148,4 +148,4 @@ Estos anuncios proceden de propertypal.com (3), onthemarket.com (2), rightmove.c
 [Avísame por correo de viviendas nuevas en el Reino Unido](https://realhunt.co/es/alerts?country=United%20Kingdom) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+Kingdom#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en el Reino Unido](https://realhunt.co/es/sitemap/united-kingdom)
 
 ---
-Fuente: https://realhunt.co/es/homes/united-kingdom (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/united-kingdom (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.

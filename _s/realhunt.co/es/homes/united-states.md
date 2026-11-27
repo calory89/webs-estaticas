@@ -1,6 +1,6 @@
 Título: Casas en venta en Estados Unidos (61, desde 65.428 €)
 URL: https://realhunt.co/es/homes/united-states
-Actualizado: 2026-11-26
+Actualizado: 2026-11-27
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Estados Unidos
@@ -271,4 +271,4 @@ Estos anuncios proceden de coldwellbanker.com (38), redfin.com (15), estately.co
 [Avísame por correo de viviendas nuevas en Estados Unidos](https://realhunt.co/es/alerts?country=United%20States) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+States#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Estados Unidos](https://realhunt.co/es/sitemap/united-states)
 
 ---
-Fuente: https://realhunt.co/es/homes/united-states (RealHunt, 2026-11-26). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/united-states (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.

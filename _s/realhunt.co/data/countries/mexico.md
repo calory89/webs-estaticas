@@ -1,8 +1,8 @@
 # Cheap homes in Mexico: key facts and every home on RealHunt
 
-On 26 November 2026, RealHunt lists 14 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 14 homes is €97,100 (€1,266 per m², from the 14 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
+On 27 November 2026, RealHunt lists 14 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 14 homes is €97,100 (€1,266 per m², from the 14 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
 
-Source: RealHunt, https://realhunt.co/homes/mexico · Updated 26 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/mexico · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://realhunt.co/data/countries/mexico.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/mexico.json · PDF: https://rea
 | Taxes and fees to buy | 3.5–8% of the price (as of 2026) |
 | Can foreigners buy? | Yes, but in the Restricted Zone (within 50 km of the coast or 100 km of borders, which covers Tulum and Playa del Carmen) only through a fideicomiso bank trust or a Mexican company; direct ownership elsewhere. |
 | Yearly property tax | Municipal predial, set locally on cadastral value; usually small, often less than HOA fees. |
-| Date of these figures | 26 November 2026 |
+| Date of these figures | 27 November 2026 |
 
 ## Costs and taxes
 
