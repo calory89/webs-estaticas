@@ -19,12 +19,14 @@ const ORIGIN = 'https://kolaboro.com';
 const L7 = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'], LANGS = ['en'].concat(L7);
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar-u-nu-latn' };   // Arabic with Latin digits, as the rest of the site
 export const N32T_V = 'n32t10';   // n32t10: hub styles pruned to the classes used (n40 k43); n32t9: how-to-check titles in the h1 wording (n40 k43); n32t8: rebuilt from the current English page (n40 k39); n32t7: country titles with the permit share, and the translated country page cache key (index.js __seoc/n31b.<v>) follows this version (n40 k39); n32t6: country pages (n40 k35); n32t5: numbers in the page locale on the server (n38 d5)
-export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers(?:\/[a-z0-9-]{2,40}\/how-to-read)?|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law|delayed-handover)|rankings\/(?:most-delayed(?:\/[a-z0-9-]{2,60})?|changed-promises)|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|courts|developers\/benchmark|transparency-index|index\/(?:delays|prices)|compare\/markets|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
+export const PATHS = /^\/(?:es|de|fr|nl|ru|zh|ar)\/(?:tools\/[a-z-]{3,30}|new|vs|m|registers(?:\/[a-z0-9-]{2,40}\/how-to-read)?|countries\/[a-z0-9-]{2,60}\/(?:how-to-check|is-it-safe|buyer-protection-law|delayed-handover)|rankings\/(?:most-delayed(?:\/[a-z0-9-]{2,60})?|changed-promises)|report\/state-of-off-plan-2026|guides\/(?:off-plan-payments|bali-land-titles|contract-clauses|questions-to-ask-a-developer)|courts|developers\/benchmark|transparency-index|index\/(?:delays|prices)|compare\/markets|press\/delivery-index\/\d{4}-\d{2}|bali|dubai|phuket|tulum|algarve|lombok)\/?$/;
 const SOP = 'report/state-of-off-plan-2026';
 // n40 L1: the country guides and the delay rankings (kbx_seo.js) share one dictionary per language, /data/n32t/<lang>/guides.json, on top of the registers one
 // n40 L2: the buyer-protection-law pages: guides.json plus /data/n32t/<lang>/law.json (the rule texts), listed as 'law' in the manifest
 const FAM = k => /^countries\/[a-z0-9-]+\/(?:buyer-protection-law|delayed-handover)$/.test(k) ? 'law' : /^countries\/[a-z0-9-]+$/.test(k) ? $q.a : /^(?:countries\/[a-z0-9-]+\/(?:how-to-check|is-it-safe)|rankings\/most-delayed(?:\/[a-z0-9-]+)?)$/.test(k) ? $q.b : k === $q.c ? $q.d : null;
 const pre = l => l === 'en' ? '' : '/' + l;
+// n40 k58 (BL-005): the monthly Delivery Index editions share one dictionary (/data/n32t/<lang>/press-delivery-index.json); a month is served where the manifest lists it
+const DI = /^press\/delivery-index\/\d{4}-\d{2}$/, dk = k => DI.test(k) ? 'press-delivery-index' : k.replace(/\//g, '-');
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': $q.e, "'": '&#39;' }[c]));
 
 const MEMO = new Map();
@@ -72,7 +74,7 @@ const encA = s => enc(s).replace(/"/g, $q.e);
 const SEP = /^[\s/·|›>]+/;
 const DCACHE = new Map();
 async function dict(env, lang, key) {
-  const fm = FAM(key), f = fm === 'law' || fm === $q.a ? $q.b : fm || key.replace(/\//g, '-'), k = lang + ':' + (fm || f), c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
+  const fm = FAM(key), f = fm === 'law' || fm === $q.a ? $q.b : fm || dk(key), k = lang + ':' + (fm || f), c = DCACHE.get(k); if (c && Date.now() - c.t < 600000) return c.v;
   const [a, b, r, x] = await Promise.all([asset(env, $q.m + lang + $q.n, true), asset(env, $q.m + lang + '/' + f + '.json', true), fm ? asset(env, $q.m + lang + $q.o, true) : null, fm === 'law' || fm === $q.a ? asset(env, $q.m + lang + '/' + fm + '.json', true) : null]);
   let v = null;
   if (b && b.s && ((fm !== 'law' && fm !== $q.a) || (x && x.s))) {
@@ -132,7 +134,7 @@ export function trHtml(html, D, LS) {
 
 // ------------------------------------------------------------------------------------------------ page assembly
 async function englishOf(env, key, inner, q) {
-  if (key === 'new' || key === 'vs' || FAM(key)) { const r = await inner('/' + key + '/' + q); return r && r.status === 200 ? await r.text() : null; }
+  if (key === 'new' || key === 'vs' || FAM(key) || DI.test(key)) { const r = await inner('/' + key + '/' + q); return r && r.status === 200 ? await r.text() : null; }
   if (key === SOP) return await asset(env, $q.r, false);   // n40 L3: the report in 7 languages is a summary (key findings, method, tables), built from /data/n32t/sop-summary.txt
   const h = await asset(env, '/' + key + '/', false); return key === 'registers' && h ? regCounts(h) : h;
 }
@@ -171,7 +173,7 @@ async function render(env, lang, key, D, body, shTxt, extra) {
   // function replacements: page scripts can hold "$'" or "$&" (e.g. 'US$'), which a replacement string would expand
   // longer words in de/nl/ru can widen a grid track past a 390 px screen: let cards shrink and wrap
   const c = (extra && extra.css ? extra.css : '') + $q.Q; html = html.replace($q.s, () => c);
-  const tail = (extra && extra.js ? extra.js : '') + (FAM(key) ? '' : $q.R + N32T_V + $q.S + esc(key.replace(/\//g, '-')) + $q.T) + $q.U;
+  const tail = (extra && extra.js ? extra.js : '') + (FAM(key) || DI.test(key) ? '' : $q.R + N32T_V + $q.S + esc(key.replace(/\//g, '-')) + $q.T) + $q.U;
   html = html.replace($q.U, () => tail);
   return new Response(html, { status: 200, headers: { 'content-type': $q.V, 'cache-control': $q.W } });
 }
@@ -209,9 +211,10 @@ async function build(env, lang, key, D, shell, inner, q) {
   if (key === 'm') return render(env, lang, key, D, await marketsBody(env, lang, D), shTxt, null);
   const src = await englishOf(env, key, inner, q); if (!src) return null;
   const P = parts(src, shTxt); if (!P) return null;
-  if (FAM(key)) P.main = P.main.replace(/<nav class="wrap" id="n40-cg"[\s\S]*?<\/nav>/, '').replace(/<style>\.n33-ms[\s\S]*?<\/style><nav class="n33-ms"[\s\S]*?<\/nav>/, '').replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: English credit and cite blocks
+  if (FAM(key) || DI.test(key)) P.main = P.main.replace(/<nav class="wrap" id="n40-cg"[\s\S]*?<\/nav>/, '').replace(/<style>\.n33-ms[\s\S]*?<\/style><nav class="n33-ms"[\s\S]*?<\/nav>/, '').replace(/<section id="how-to-cite"[\s\S]*?<\/section>/, '').replace(/<div class="wrap"><p class="k-xs n33-by"[\s\S]*?<\/p><\/div>/, '');   // n40 L1: English credit and cite blocks
+  if (DI.test(key)) P.main = diPre(P.main, D, lang);
   let body = trHtml(P.main, D, LS);
-  if (FAM(key)) {   // n40 L1: title, description and h1 of the English page, translated with the same dictionary
+  if (FAM(key) || DI.test(key)) {   // n40 L1: title, description and h1 of the English page, translated with the same dictionary
     const g = rx => dec((rx.exec(src) || [])[1] || '').trim(), h1 = g(/<h1[^>]*>([^<]+)<\/h1>/), tt = g(/<title>([^<]+)<\/title>/).replace(/ \| Kolaboro$/, ''), ds = g(/<meta name="description" content="([^"]+)"/);
     D = Object.assign({}, D, { t: T(D, tt) || T(D, h1) || tt, d: T(D, ds) || ds, h: T(D, h1) || h1 });
     if (lang === 'ru') body = ruPlaces(body);
@@ -223,6 +226,7 @@ async function build(env, lang, key, D, shell, inner, q) {
   const kn = /"num":\s*"([^"]+)"/.exec(shTxt);
   if (kn && !/^(en|zh)/.test(kn[1])) { try { const NF = new Intl.NumberFormat(kn[1]);
     body = body.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/).map(tok => !tok || tok[0] === '<' ? tok : tok.replace(/(^|[^\d.,])(\d{1,3}(?:,\d{3})+)(?![\d,]|\.\d)/g, (_, x, y) => x + NF.format(+y.replace(/,/g, '')))).join(''); } catch (e) {} }
+  if (DI.test(key)) { body = diNum(body, lang); D = Object.assign({}, D, { t: diNum(D.t, lang, 1), d: diNum(D.d, lang, 1), h: diNum(D.h, lang, 1) }); }
   // n40 L3: the ranking's ItemList (mainEntity of the English page) in the translated page too, project links pointed at the page language
   let il = null;
   if ((FAM(key) === $q.b && key.startsWith($q.aJ)) || FAM(key) === $q.a) { try { for (const m of src.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) { const j = JSON.parse(m[1]); for (const o of [].concat(j[$q.G] || j)) if (o && o.mainEntity && o.mainEntity['@type'] === $q.aK) il = o.mainEntity; } } catch (e) { il = null; }
@@ -230,6 +234,17 @@ async function build(env, lang, key, D, shell, inner, q) {
   return render(env, lang, key, D, body, shTxt, { css: P.css, js: P.js, il, q });
 }
 
+// n40 k58: the Delivery Index list of highest shares (place names, "3 of 8"), and its decimals, percentages and snapshot date in the page format
+export function diPre(h, D, lang) {
+  return h.replace(/(<p>)(Highest shares among markets with at least 5 dated projects:) ([^<]+)\.(<\/p>)/, (z, a, l, x, b) => a + enc((D.s[l] || l) + ' ' + x.split(', ').map(it => { const m = /^(.+) ([\d.]+%) \((\d+) of (\d+)\)$/.exec(dec(it)); return m ? (place(m[1], lang) || m[1]) + ' ' + m[2] + ' (' + (D.s['di:of'] || '{a} of {b}').replace('{a}', m[3]).replace('{b}', m[4]) + ')' : dec(it); }).join(D.s['di:sep'] || ', ') + (D.s['di:end'] || '.')) + b);
+}
+export function diNum(h, lang, plain) {
+  let P, N, F; try { P = new Intl.NumberFormat(LOC[lang], { style: 'percent', maximumFractionDigits: 1 }); N = new Intl.NumberFormat(LOC[lang], { maximumFractionDigits: 1 }); F = new Intl.DateTimeFormat(LOC[lang], { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); } catch (e) { return h; }
+  const f = t => t.replace(/CC BY 4\.0/g, '\u0001').replace(/(\d+(?:\.\d+)?)%/g, (z, n) => P.format(n / 100)).replace(/(^|[^\w.\/-])(\d+\.\d+)(?![\w.\/%-])/g, (z, a, n) => a + N.format(+n))
+    .replace(/\b(20\d\d)-(\d\d)-(\d\d)\b/g, (z, y, m, d) => F.format(new Date(Date.UTC(+y, m - 1, +d, 12)))).replace(/\u0001/g, 'CC BY 4.0');
+  if (plain) return h && f(h);
+  return h.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<!--[\s\S]*?-->|<[^>]+>)/).map(t => !t || t[0] === '<' ? t : f(t)).join('');
+}
 // English pages with translations: hreflang alternates and the language menu pointed at the translated page
 export async function enAlt(u, r, env) {
   const key = u.pathname.slice(1, -1); if (key === 'registers') { try { const hd = new Headers(r.headers); hd.delete('content-length'); r = new Response(regCounts(await r.text()), { status: r.status, headers: hd }); } catch (e) {} }
