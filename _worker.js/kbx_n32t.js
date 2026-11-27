@@ -236,7 +236,7 @@ async function build(env, lang, key, D, shell, inner, q) {
 
 // n40 k58: the Delivery Index list of highest shares (place names, "3 of 8"), and its decimals, percentages and snapshot date in the page format
 export function diPre(h, D, lang) {
-  return h.replace(/(<p>)(Highest shares among markets with at least 5 dated projects:) ([^<]+)\.(<\/p>)/, (z, a, l, x, b) => a + enc((D.s[l] || l) + ' ' + x.split(', ').map(it => { const m = /^(.+) ([\d.]+%) \((\d+) of (\d+)\)$/.exec(dec(it)); return m ? (place(m[1], lang) || m[1]) + ' ' + m[2] + ' (' + (D.s['di:of'] || '{a} of {b}').replace('{a}', m[3]).replace('{b}', m[4]) + ')' : dec(it); }).join(D.s['di:sep'] || ', ') + (D.s['di:end'] || '.')) + b);
+  return h.replace(/(<p>)(Highest shares among markets with at least 5 dated projects:) ([^<]+)\.(<\/p>)/, (z, a, l, x, b) => a + enc((D.s[l] || l) + (D.s['di:sp'] != null ? D.s['di:sp'] : ' ') + x.split(', ').map(it => { const m = /^(.+) ([\d.]+%) \((\d+) of (\d+)\)$/.exec(dec(it)); return m ? (place(m[1], lang) || m[1]) + ' ' + m[2] + ' ' + (D.s['di:of'] || '({a} of {b})').replace('{a}', m[3]).replace('{b}', m[4]) : dec(it); }).join(D.s['di:sep'] || ', ') + (D.s['di:end'] || '.')) + b);
 }
 export function diNum(h, lang, plain) {
   let P, N, F; try { P = new Intl.NumberFormat(LOC[lang], { style: 'percent', maximumFractionDigits: 1 }); N = new Intl.NumberFormat(LOC[lang], { maximumFractionDigits: 1 }); F = new Intl.DateTimeFormat(LOC[lang], { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); } catch (e) { return h; }
