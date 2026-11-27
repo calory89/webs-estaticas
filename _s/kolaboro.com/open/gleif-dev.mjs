@@ -1,13 +1,18 @@
 // n40 k57: gleif-dev.json, the GLEIF name search (and, for a match, its level 2 relationships) for every tracked developer, run the same way the
 // developer page runs it live, so a page rendered on a cold edge does not wait 0.8 to 1.2 s for api.gleif.org. The worker uses a row only when
 // the developer's name is unchanged and the row is under 60 days old, and refreshes its edge copy from the live API in the background.
-// usage: node gleif-dev.mjs <devs.json: [{s, n}]> <out gleif-dev.json> [max requests, default 3000]   resumes from <out> (rows under 21 days are kept)
+// usage: node gleif-dev.mjs <devs.json: [{s, n, c: [ISO country codes of the developer's projects]}]> <out gleif-dev.json> [max requests, default 3000]   resumes from <out> (rows under 21 days are kept)
+// n40 k62: tighter name rule (single letters kept unless they spell a legal form) and relationships only for the first match whose jurisdiction is one of c, the same rule as
+// core() and glJur() in _worker.js/kbx_named.js, which shows other same-name entries as possible matches, not confirmed
 import fs from 'node:fs';
 const [devF, outF, maxQ = '3000'] = process.argv.slice(2);
 const API = 'https://api.gleif.org/api/v1/lei-records', H = { accept: 'application/vnd.api+json', 'user-agent': 'RegisterCheck/1.0' };
-const SUFFIX = new Set('llc l c ltd limited inc incorporated pjsc pjs psc p j s sa slu sl plc bhd berhad sdn co company corp corporation pt tbk jsc gmbh ag bv nv srl spa sas sarl doo as ab oy kft zrt fz fze fzco fzllc soc sole proprietorship pvt pte private public sae sab de cv sapi ooo sociedad anonima'.split(' '));
+const SUFFIX = new Set('llc lc ltd limited inc incorporated pjsc pjs psc sa slu sl plc bhd berhad sdn co company corp corporation pt tbk jsc gmbh ag bv nv srl spa sas sarl doo as ab oy kft zrt fz fze fzco fzllc soc sole proprietorship pvt pte private public sae sab cv sapi ooo sociedad anonima'.split(' '));
 const normN = s => String(s || '').normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9Ѐ-ӿ؀-ۿ一-鿿]+/g, ' ').trim();
-const core = s => normN(s).split(' ').filter(w => w && !SUFFIX.has(w)).join(' ');
+const core = s => { const t = []; let run = false; for (const w of normN(s).split(' ')) { if (!w) continue; const one = /^[a-z]$/.test(w); if (one && run) t[t.length - 1] += w; else t.push(w); run = one; }
+  return t.filter((w, i) => !SUFFIX.has(w) && !(w === 'de' && /^(cv|rl)$/.test(t[i + 1] || '')) && !(w === 'rl' && t[i - 1] === 'de') && !(w === 's' && t[i + 1] === 'de' && t[i + 2] === 'rl')).join(' '); };
+const glJur = m => { const j = String(m.jur || '').toUpperCase(); return j === 'US-PR' ? 'PR' : j.slice(0, 2); };
+const sure = (x, r) => r.matches.find(m => (x.c || []).includes(glJur(m)));   // first confirmed match
 const today = new Date().toISOString().slice(0, 10), age = d => (Date.parse(today) - Date.parse(d)) / 864e5;
 let last = 0, nq = 0;
 async function get(u) {   // at most about 55 requests a minute (GLEIF allows 60); retries on 429 and 5xx
@@ -35,22 +40,22 @@ async function net(lei) {   // same calls and fields as gleifNet() in _worker.js
 const devs = JSON.parse(fs.readFileSync(devF, 'utf8'));
 let old = {}; try { old = JSON.parse(fs.readFileSync(outF, 'utf8')); } catch (e) {}
 const D = {}, N = {}, oD = old.d || {}, oN = old.net || {};
-const save = () => { const o = { version: 1, updated: today, source: 'GLEIF API, ' + API + ' (CC0 1.0)', rule: 'Exact legal name after normalising case, accents, punctuation and legal-form words; at most 3 matches; relationships for the first match.', d: {}, net: {} };
+const save = () => { const o = { version: 1, updated: today, source: 'GLEIF API, ' + API + ' (CC0 1.0)', rule: 'Exact legal name after normalising case, accents and punctuation and dropping legal-form words (single letters are kept unless they spell a legal form, such as L.L.C. or S.A.); at most 3 matches. A match is confirmed only when its jurisdiction is a country where the developer has a project here; other same-name entries are possible matches, not confirmed. Relationships for the first confirmed match.', d: {}, net: {} };
   for (const x of devs) if (D[x.s]) o.d[x.s] = D[x.s];
   for (const k of Object.keys(N).sort()) o.net[k] = N[k];
   fs.writeFileSync(outF + '.tmp', JSON.stringify(o)); fs.renameSync(outF + '.tmp', outF); };
-for (const x of devs) { const o = oD[x.s]; if (o && o[0] === x.n && o[1] && o[1].ok && age(o[1].at) < 21) D[x.s] = o; }
+for (const x of devs) { const o = oD[x.s]; if (o && o[0] === x.n && o[1] && o[1].ok && age(o[1].at) < 21) { const w = core(x.n); o[1].matches = o[1].matches.filter(m => w.length >= 3 && core(m.legal) === w); D[x.s] = o; } }   // kept rows follow the current rule
 for (const k of Object.keys(oN)) if (oN[k].ok && age(oN[k].at) < 21) N[k] = oN[k];
 let i = 0, q = devs.slice();
 async function worker() {   // three requests in flight at most, still one slot every 1.1 s
   for (let x; (x = q.shift()) && nq < +maxQ;) {
     try {
       if (!D[x.s]) D[x.s] = [x.n, await search(x.n)];
-      const m0 = D[x.s][1].matches[0]; if (m0 && /^[A-Z0-9]{20}$/.test(m0.lei) && !N[m0.lei]) N[m0.lei] = await net(m0.lei);
+      const m0 = sure(x, D[x.s][1]); if (m0 && /^[A-Z0-9]{20}$/.test(m0.lei) && !N[m0.lei]) N[m0.lei] = await net(m0.lei);
     } catch (e) { console.error(x.s, String(e)); }
     if (++i % 50 === 0) { save(); console.log(i, nq); }
   }
 }
 await Promise.all([worker(), worker(), worker()]);
-const want = new Set(Object.values(D).map(o => (o[1].matches[0] || {}).lei).filter(Boolean)); for (const k of Object.keys(N)) if (!want.has(k)) delete N[k];
+const want = new Set(devs.map(x => D[x.s] && (sure(x, D[x.s][1]) || {}).lei).filter(Boolean)); for (const k of Object.keys(N)) if (!want.has(k)) delete N[k];
 save(); console.log('done', Object.keys(D).length, 'of', devs.length, 'net', Object.keys(N).length, 'requests', nq);
