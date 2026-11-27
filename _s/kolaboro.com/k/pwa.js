@@ -55,7 +55,9 @@
   function urls() {
     var W0 = []; try { W0 = JSON.parse(ls('kb_watch') || '[]') || []; } catch (e) {}
     var C0 = []; try { C0 = JSON.parse(ls('kb-pwa-cmp') || '[]') || []; } catch (e) {}
-    var base = [pre + '/', pre + '/offline/', '/offline/'].concat(W0.length ? ['/watchlist/'] : []).concat(C0)   // n34b: the watchlist page and its change alerts open offline too.filter(function (x, i, A) { return A.indexOf(x) === i; });
+    // n34b: the watchlist page and its change alerts open offline too; n40 k54: the duplicate filter now runs (it sat inside this comment,
+    // so the English offline page was fetched twice)
+    var base = [pre + '/', pre + '/offline/', '/offline/'].concat(W0.length ? ['/watchlist/'] : []).concat(C0).filter(function (x, i, A) { return typeof x === 'string' && A.indexOf(x) === i; });
     if (!W0.length) return Promise.resolve(base);
     return ids().then(function (M) {
       var P = []; W0.slice(0, 25).forEach(function (x) { var s = x && M[String(x.id || '').toUpperCase()]; if (s) P.push(pre + '/projects/' + s + '/', '/api/v1/projects/' + s); });
