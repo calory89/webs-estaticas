@@ -48,6 +48,14 @@ const areaKey = a => String(a || '').split(/[,(/;]/)[0].trim().replace(/^the\s+/
 const yearOf = (ix, x) => { const h = handoverOf(ix, x); if (!h) return null; const y = hyear(h.d) || +((/(20\d\d)/.exec(String(h.d)) || [])[1] || 0); return y || null; };
 const handP = (ix, x) => (ix.prom[x.id] || []).find(p => p.k === $q.j) || null;
 let FIX = null, FLY = null;   // n40 k57: one build at a time
+export async function facetsLite(env, ix) {   // n40 k61: what devFacets() reads, for a developer slice
+const [regs, dage, ot] = await Promise.all([load(env, $q.m), load(env, $q.l), load(env, $q.n)]);
+const P = ix.P.filter(x => !COI_RX.test(String(x.n || '')) && !COI_RX.test(String(x.dv || '')));
+const OT = (ot && ot.projects) || {}, done = x => { const c = ix.caseBy.get(x.id) || {}, o = OT[x.id]; return c.stage === $q.o || (o && /^(done_|completed_)/.test(o.s)); };
+const dev = new Map();
+for (const x of P) { if (!x.dvs) continue; const d = dev.get(x.dvs) || { k: 0, done: 0 }; d.k++; if (done(x)) d.done++; dev.set(x.dvs, d); }
+return { ix, P, dev, done, OT, REG: (regs && regs.registers) || [], regDate: regs && regs.updated, DA: (dage && dage.projects) || {}, daDate: dage && dage.updated, otDate: ot && ot.generated, lite: true };
+}
 export function facetsData(env) { return FLY || (FLY = facetsData0(env).finally(() => { FLY = null; })); }
 async function facetsData0(env) {
 const ix = await namedData(env);

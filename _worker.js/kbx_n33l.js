@@ -47,7 +47,7 @@ const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?developers\/([a-z0-9-]{1,90})\/$/.exe
 if (!m || req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get($q.H) || '')) return r;
 const lang = m[1] || 'en';
 if (!(await load(env))) return r;
-let ix; try { ix = await (await import('./kbx_named.js')).data(env); } catch (e) { return r; }
+let ix; try { const N = await import('./kbx_named.js'); ix = (await N.dvIx(env, m[2]).catch(() => null)) || await N.data(env); } catch (e) { return r; }   // n40 k61
 const d = ix.devs && ix.devs.get(m[2]); if (!d || !d.ids || !d.ids.length) return r;
 const c = new Map(); for (const id of d.ids) { const x = ix.byId.get(id); if (x && x.mk && !/sumba/i.test(x.mk)) c.set(x.mk, (c.get(x.mk) || 0) + 1); }
 if (!c.size) return r;

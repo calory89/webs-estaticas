@@ -17,6 +17,17 @@ export async function webData(env) {
 if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
 return FLY || (FLY = webData0(env).finally(() => { FLY = null; }));
 }
+export async function webLite(env, wn) {   // n40 k61: webData() for a developer slice
+if (MEMO && Date.now() - MEMO.t < 600000) return MEMO.v;
+const [health, links, forensics] = await Promise.all([loadOne(env, $q.c), loadOne(env, $q.d), loadOne(env, $q.f)]);
+FZ = (forensics && forensics.d) || {};
+const byDev = new Map();
+for (const g of ((links && links.groups) || [])) for (const s of g.dv || []) { if (!byDev.has(s)) byDev.set(s, []); byDev.get(s).push(g); }
+const domDev = new Map(); for (const [d, h] of Object.entries((health && health.d) || {})) domDev.set(d, h.dv);
+const devName = new Map(Object.entries(wn || {})), devDoms = new Map();
+for (const [d, s] of domDev) { if (!devDoms.has(s)) devDoms.set(s, []); devDoms.get(s).push(d); }
+return { health, links, forensics, byDev, devName, devDoms, named: null, v: ((health && health.generated_at) || '') + '/' + ((links && links.updated) || '') };
+}
 async function webData0(env) {
 const [health, links, named, forensics] = await Promise.all([loadOne(env, $q.c), loadOne(env, $q.d), loadOne(env, $q.e), loadOne(env, $q.f)]);
 FZ = (forensics && forensics.d) || {};

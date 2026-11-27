@@ -4,7 +4,7 @@ import { facetsData, FA_KIT } from './kbx_facets.js';
 import { jget } from './kbx_jget.js';
 import { trData } from './kbx_tr.js';
 import { TR_PLACES } from './kbx_tr_places.js';
-import { handoverOf, overdueOf, fd, esc, pre, lastmod, okHttp, host } from './kbx_named.js';
+import { handoverOf, overdueOf, fd, esc, pre, lastmod, okHttp, host, dvSlice } from './kbx_named.js';
 import { mkName, placeName, coName } from './kbx_hdate.js';
 import { NT } from './kbx_buy_notes.js';
 import { H } from './kbx_h29_i18n.js';
@@ -481,6 +481,8 @@ const box = (lang, title, L) => L.length ? $t.k5 + esc(title) + $s.k3 + L.map(([
 export async function linksFor(env, pathname) {
 const m = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(.*)$/.exec(pathname); if (!m) return '';
 const lang = m[1] || 'en', p = '/' + m[2].replace(/\/?$/, '/');
+{ const dm = /^\/developers\/([a-z0-9-]+)\/$/.exec(p); if (dm && !/-vs-/.test(dm[1])) { const sl = await dvSlice(env, dm[1]).catch(() => null);   // n40 k61: links from the slice
+if (sl) return box(lang, t(lang, 'l_vs'), sl.d.dr.map(([s, mk]) => [t(lang, 'l_dr') + ': ' + mkName(mk, lang), $q.af + s + '/']).concat(sl.d.vs.map(([k, a, b, mk]) => [t(lang, 'vs_t', { a, b, p: mkName(mk, lang) }), $q.A + k + '/']))); } }
 let D; try { D = await h29Data(env); } catch (e) { return ''; }
 const hubs = () => $t.o_HUBS.map(([k, q]) => [t(lang, k, { mo: fd(D.month, lang) }), q]);
 let x;

@@ -9,7 +9,7 @@ import { diffRoute, phSummary } from './kbx_named_diff.js';
 import { ppmSection, ppmLoad, gleifNet, networkHtml, NET_CSS, NET_JS, familyData, famNet, familyHtml } from './kbx_named_plus.js';
 import { satData, satSection, satToc, satHeading, satLine } from './kbx_named_sat.js';
 import { fcData, fcProjectHtml, fcDevGroup, rsData, rsDevHtml, rsHeading } from './kbx_fc.js';
-import { webData, webProjectHtml, webDevHealthHtml, webDevLinksHtml, webHeading } from './kbx_web.js';
+import { webData, webLite, webProjectHtml, webDevHealthHtml, webDevLinksHtml, webHeading } from './kbx_web.js';
 import { watchData, watchDevHtml, watchHeading } from './kbx_watch.js';
 import { gazDevHtml, gazHeading } from './kbx_gaz.js';
 import { cohortCard, cohortKey } from './kbx_cohort.js';
@@ -23,7 +23,7 @@ import { calHtml, CAL_CSS } from './kbx_cal.js';
 import { aroundData, aroundPin, aroundSum, aroundHtml, climateHtml, aroundToc, aroundHeading, climateToc, climateHeading } from './kbx_around.js';
 import { trProject } from './kbx_tr.js';
 import { q as qa, qaTitle, qaDesc, words, QA_CSS, months } from './kbx_named_qa.js';
-import { facetsData, projFacets, devFacets, facetT } from './kbx_facets.js';
+import { facetsData, facetsLite, projFacets, devFacets, facetT } from './kbx_facets.js';
 import { leadMap, leadify, dlLine, devDash } from './kbx_n27lead.js';
 import { ctaHtml } from './kbx_n31a.js';
 import { secZ, lightHtml, checklistHtml, Z_CSS, U27V, t27 } from './kbx_u27.js';
@@ -69,6 +69,31 @@ STALE = { t: Date.now(), v }; return v;
 async function data(env) {
 const [named, cases] = await Promise.all([loadJson(env, 'named.json'), loadJson(env, 'bali-cases.json')]);
 if (IDX && IDX.named === named && IDX.cases === cases) return IDX;
+const ix = await build(env, named, cases); IDX = ix; return ix;
+}
+// n40 k61 (R01-49): developer slices /data/dv/ (open/dev-slices.mjs), used only when the source files' SHA-256 and the month match
+export const dvBucket = s => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; } return String(h % 64).padStart(2, '0'); };
+const DVOK = new Map(), DVB = new Map(), DVIX = new WeakMap();
+function dvFilesOk(env, files) {   // once per isolate
+const k = JSON.stringify(files); if (DVOK.has(k)) return DVOK.get(k);
+const hx = b => [...new Uint8Array(b)].slice(0, 8).map(v => v.toString(16).padStart(2, '0')).join('');
+const p = Promise.all(Object.keys(files).map(f => env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + f)).then(r => r.ok ? r.arrayBuffer() : null).then(b => b ? crypto.subtle.digest('SHA-256', b) : null).then(d => !!d && hx(d) === files[f], () => false))).then(a => a.every(Boolean), () => false);
+DVOK.set(k, p); return p;
+}
+export async function dvSlice(env, s) {
+const nm = SHARED['named.json']; if (IDX || (nm && nm.v != null) || !env || !env.ASSETS || !/^[a-z0-9-]{1,90}$/.test(String(s || ''))) return null;
+const n = dvBucket(s); let p = DVB.get(n);
+if (!p) { p = env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/dv/' + n + '.json')).then(r => r.ok ? r.json() : null).catch(() => null); DVB.set(n, p); while (DVB.size > 3) DVB.delete(DVB.keys().next().value); }
+const b = await p; if (!b || b.v !== 1 || !b.d || !b.files || !b.g || !Object.prototype.hasOwnProperty.call(b.d, s) || b.g.month !== new Date().toISOString().slice(0, 7)) return null;
+return (await dvFilesOk(env, b.files)) ? { g: b.g, d: b.d[s] } : null;
+}
+export async function dvIx(env, s) {
+const sl = await dvSlice(env, s); if (!sl) return null;
+let ix = DVIX.get(sl.d); if (ix) return ix;
+const g = sl.g, named = { version: g.version, updated: g.updated, count: g.count, aliases: g.aliases, projects: sl.d.p }, cases = { updated: g.cupdated, cases: sl.d.c };
+ix = await build(env, named, cases); ix.Pn = g.pn; ix.wn = sl.d.wn; ix.mk = new Map(Object.entries(g.mk || {})); ix.slice = true; DVIX.set(sl.d, ix); return ix;
+}
+async function build(env, named, cases) {
 const opt = n => loadJson(env, n).catch(() => ({}));
 const [prom, find, sim, delay, ot] = await Promise.all([opt('promises.json'), opt('findings-by-project.json'), opt('similar.json'), opt('delay-index.json'), opt('on-time.json')]);
 const caseBy = new Map((cases.cases || []).map(c => [c.id, c]));
@@ -84,8 +109,7 @@ m.k++; if (reviewed(c)) m.rv = (m.rv || 0) + 1; if ((c.checks || {}).permit === 
 for (const d of devs.values()) { const c = new Map(); for (const id of d.ids) { const v = byId.get(id).dv; if (v) c.set(v, (c.get(v) || 0) + 1); } let b = d.n, bn = 0; for (const [v, k] of c) if (k > bn) { b = v; bn = k; } d.n = b; }
 const dmk = new Map(((delay && delay.markets) || []).map(m => [m.market, m]));
 aliasLive(named.aliases);
-IDX = { named, cases, P, byId, bySlug, devs, caseBy, mk, dmk, byAr, sat: null, prom: (prom && prom.projects) || {}, find: (find && find.projects) || {}, sim: (sim && sim.projects) || {}, ot: (ot && ot.projects) || {}, otAsOf: (ot && ot.as_of_month) || '', updated: cases.updated || named.updated };
-return IDX;
+return { named, cases, P, byId, bySlug, devs, caseBy, mk, dmk, byAr, sat: null, prom: (prom && prom.projects) || {}, find: (find && find.projects) || {}, sim: (sim && sim.projects) || {}, ot: (ot && ot.projects) || {}, otAsOf: (ot && ot.as_of_month) || '', updated: cases.updated || named.updated };
 }
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const strip = h => String(h).replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
@@ -774,7 +798,7 @@ const [gn, rs, web, fam, watch, fil, fac, cc] = await Promise.all([
 (async () => { const gd = await gleifDev(env), gl = await viaPre(gKey(dv.n), gd && gd.d && gd.d[dv.s] && gd.d[dv.s][0] === dv.n ? gd.d[dv.s][1] : null, () => gleif(dv.n, ctx), ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => TB.kbx_named__t.o_COUNTRY_ISO[x.co] || x.co));
 const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await viaPre(new Request(ORIGIN + '/__named_gleifnet/v1/' + m0.lei), gd && gd.net && gd.net[m0.lei], () => gleifNet(m0.lei, ctx), ctx) : null;
 return { gl, netOk, net }; })(),
-softD(() => rsData(env)), softD(() => webData(env)), softD(() => familyData(env)), softD(() => watchData(env)), softD(() => filingsData(env)), softD(() => facetsData(env)), softD(() => ccData33(env))]);
+softD(() => rsData(env)), softD(() => ix.slice ? webLite(env, ix.wn) : webData(env)), softD(() => familyData(env)), softD(() => watchData(env)), softD(() => filingsData(env)), softD(() => ix.slice ? facetsLite(env, ix) : facetsData(env)), softD(() => ccData33(env))]);
 const gl = gn.gl, netOk = gn.netOk, net = gn.net;
 return devPage(ix, dv, lang, { gleif: gl, net, netOk, rs, web, fam, fm: netOk ? null : famNet(fam, dv.s), watch, fil, fac, cc });
 }
@@ -814,7 +838,7 @@ return new Response(old.body, { status: 200, headers: hh });
 }
 } catch (e) {}
 const shP = shell(pre(lang) + '/how-we-score/'); shP.catch(() => {}); if (kind === 'developers' && key) warmDev(env);
-let ix; try { ix = await data(env); } catch (e) { return null; }
+let ix; try { ix = (kind === 'developers' && key && await dvIx(env, key).catch(() => null)) || await data(env); } catch (e) { return null; }
 const t1 = Date.now();
 const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
 if (pg && key) try { await seoLd(pg, env, kind, key, await lmFiles(ix, env)); } catch (e) {}
@@ -827,7 +851,7 @@ return new Response(await assemble(nf, lang, sh), { status: 404, headers: { 'con
 }
 const html = await assemble(pg, lang, sh), lm = new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString(), t3 = Date.now();
 if (!pg.nocache) try { const put = fastPut(fk, html, await dataVer(ix, env, kind, key), lm); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
-return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) + (pg.tm ? ', ' + pg.tm : '') } });
+return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + (ix.slice ? ';desc=slice' : '') + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) + (pg.tm ? ', ' + pg.tm : '') } });
 }
 function updLine(pg) {
 if (!pg || !pg.upd || !pg.lastmod || !iso(pg.lastmod)) return;
@@ -846,11 +870,11 @@ const FAST_FRESH = 60000, FAST_TTL = 259200, REFRESHING = new Set();
 async function dataVer(ix, env, kind, key) {
 const pj = key && kind === 'projects', dv = key && kind === 'developers', nul = () => null;
 const [rp, sd, se, la, fa, ao] = await Promise.all([pj ? repliesPublished() : 0, pj ? satData(env).catch(nul) : null, pj ? seeData(env).catch(nul) : null, pj ? landData(env).catch(nul) : null, dv ? familyData(env).catch(nul) : null, pj ? aroundData(env).catch(nul) : null]);
-return (pj ? new Date().toISOString().slice(0, 10) + '|' : '') + ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + rp + '|s' + (pj ? ((sd || {}).updated || '') + '|' + (((sd || {}).space || {}).v || '') + '|g' + ((se || {}).v || '') + '|l' + ((la || {}).v || '') + '|a' + ((ao || {}).v || '') : '') + (dv ? '|f' + ((fa || {}).updated || '') : '');
+return (pj ? new Date().toISOString().slice(0, 10) + '|' : '') + ix.updated + '|' + (ix.named.count || 0) + '|' + (ix.Pn != null ? ix.Pn : ix.P.length) + '|' + (ix.named.updated || '') + '|r' + rp + '|s' + (pj ? ((sd || {}).updated || '') + '|' + (((sd || {}).space || {}).v || '') + '|g' + ((se || {}).v || '') + '|l' + ((la || {}).v || '') + '|a' + ((ao || {}).v || '') : '') + (dv ? '|f' + ((fa || {}).updated || '') : '');
 }
 const fastPut = (fk, html, ver, lm) => caches.default.put(fk, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=' + FAST_TTL, 'x-at': String(Date.now()), 'x-ver': encodeURIComponent(ver), 'x-lm': lm || '' } }));
 async function refresh(copy, fk, p, kind, key, lang, env, ctx, shell) {
-const ix = await data(env), ver = await dataVer(ix, env, kind, key);
+const ix = (kind === 'developers' && key && await dvIx(env, key).catch(() => null)) || await data(env), ver = await dataVer(ix, env, kind, key);
 if (copy.headers.get('x-ver') === encodeURIComponent(ver)) return fastPut(fk, await copy.text(), ver, copy.headers.get('x-lm'));
 const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
 if (!pg) return caches.default.delete(fk);

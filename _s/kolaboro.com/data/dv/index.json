@@ -1,0 +1,26 @@
+{
+ "v": 1,
+ "sha": "b23ddd504bd6d772e78508c20085d54f",
+ "buckets": 64,
+ "developers": 2530,
+ "month": "2026-11",
+ "files": {
+  "around.json": "ea14b2353870da86",
+  "bali-cases.json": "e78508c20085d54f",
+  "delay-index.json": "a9ba33ff372705c8",
+  "dev-links.json": "adee283440b2cc11",
+  "domain-age.json": "595ef3054a6cf9ed",
+  "findings-by-project.json": "051a184424dd8162",
+  "gleif-family.json": "944dd3a2a72994a1",
+  "lookalikes.json": "ebc473e75780637e",
+  "named.json": "b23ddd504bd6d772",
+  "on-time.json": "692b504467b7dc31",
+  "promise-drift.json": "b9f42e6155aee140",
+  "promises.json": "cd6b77b746693116",
+  "register-checks.json": "e12c20dcc4a6339e",
+  "sanctions.json": "ca3f87a7d5d13c18",
+  "similar.json": "435f121dc939a158",
+  "web-health.json": "dd4ec733d37f3a7c"
+ },
+ "note": "Bucket files for /developers/<slug>/ pages, built by /open/dev-slices.mjs from /data/named.json and /data/bali-cases.json."
+}
