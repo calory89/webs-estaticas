@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €150
 - **Saving:** 46 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Madrid to Brussels?
 
-€81 return with Ryanair, leaving 16 Feb 2027 and coming back 18 Feb 2027. Price last checked on 26 Nov 2026.
+€81 return with Ryanair, leaving 16 Feb 2027 and coming back 18 Feb 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

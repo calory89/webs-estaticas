@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €90
 - **Saving:** 57 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Valencia to Paris?
 
-€39 return with Ryanair, leaving 24 Jan 2027 and coming back 29 Jan 2027. Price last checked on 26 Nov 2026.
+€39 return with Ryanair, leaving 24 Jan 2027 and coming back 29 Jan 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

@@ -9,13 +9,13 @@
 - **Stops:** 1
 - **Usual price on this route:** €230
 - **Saving:** 52 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Zaragoza to Vilnius?
 
-€110 return with Wizz Air Malta, leaving 13 Feb 2027 and coming back 22 Feb 2027. Price last checked on 26 Nov 2026.
+€110 return with Wizz Air Malta, leaving 13 Feb 2027 and coming back 22 Feb 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

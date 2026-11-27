@@ -112,10 +112,6 @@ Casi en todas partes. Aun así, lleva algo de efectivo para tascas pequeñas y m
 
 Tres para lo esencial y cuatro si quieres añadir Sintra sin correr. Si sumas playa en Cascais, cinco van bien.
 
-### ¿Cuánto cuesta un vuelo barato a Lisboa?
-
-Hoy el chollo más barato que tenemos a Lisboa cuesta 46 € ida y vuelta desde Barcelona. Los precios cambian cada hora: compruébalo en la página del chollo.
-
 ### ¿Merece la pena visitar Lisboa?
 
 Para quien escribió esta guía, sí: Lisboa es una de las pocas capitales europeas a la que se puede ir un fin de semana con poco dinero sin sentir que te estás perdiendo algo. Con 3 días ves lo esencial. Presupuesto: Como orientación general, una cama en dormitorio compartido cuesta entre 25 y 40 euros por noche, y una habitación doble sencilla suele moverse entre 80 y 130 euros, según la temporada.

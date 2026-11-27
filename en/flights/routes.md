@@ -1,6 +1,6 @@
 # Happy Low Cost: cheap flight routes with real prices
 
-> 982 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T06:35Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
+> 982 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T13:51Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
 
 - [Alicante → Milan](https://www.happylowcost.com/en/flights/alicante-milan/): from 38 € return, usual 39 €, nonstop, Wizz Air Malta, 1,130 km, checked 2026-11-22
 - [Alicante → Venice](https://www.happylowcost.com/en/flights/alicante-venice/): from 40 € return, usual 48 €, nonstop, Ryanair, 1,330 km, checked 2026-11-23
@@ -579,7 +579,7 @@
 - [Palma → Malta](https://www.happylowcost.com/en/flights/palma-malta/): from 38 € return, usual 38 €, nonstop, Ryanair, 1,110 km, checked 2026-10-22
 - [Palma → Milan](https://www.happylowcost.com/en/flights/palma-milan/): from 40 € return, usual 42 €, nonstop, Ryanair, 840 km, checked 2026-10-22
 - [Palma → Paris](https://www.happylowcost.com/en/flights/palma-paris/): from 51 € return, usual 60 €, nonstop, Vueling, 1,040 km, checked 2026-10-22
-- [Palma → Bruges](https://www.happylowcost.com/en/flights/palma-bruges/): from 76 € return, usual 90 €, nonstop, Ryanair, airport Brussels, 1,270 km, checked 2026-10-22
+- [Palma → Bruges](https://www.happylowcost.com/en/flights/palma-bruges/): from 68 € return, usual 71 €, nonstop, Ryanair, airport Brussels, 1,270 km, checked 2026-11-27
 - [Palma → Hamburg](https://www.happylowcost.com/en/flights/palma-hamburg/): from 92 € return, usual 102 €, nonstop, Ryanair, 1,660 km, checked 2026-10-22
 - [Palma → Krakow](https://www.happylowcost.com/en/flights/palma-krakow/): from 98 € return, usual 138 €, 1 stop(s), Vueling, 1,780 km, checked 2026-10-22
 - [Palma → Rome](https://www.happylowcost.com/en/flights/palma-rome/): from 100 € return, usual 106 €, 1 stop(s), Vueling, 860 km, checked 2026-10-22
@@ -588,14 +588,14 @@
 - [Palma → Riga](https://www.happylowcost.com/en/flights/palma-riga/): from 154 € return, usual 160 €, 2 stop(s), Ryanair, 2,470 km, checked 2026-10-22
 - [Palma → Iceland](https://www.happylowcost.com/en/flights/palma-iceland/): from 179 € return, usual 199 €, 1 stop(s), easyJet, airport Keflavik, 3,180 km, checked 2026-10-22
 - [Palma → Seoul](https://www.happylowcost.com/en/flights/palma-seoul/): from 621 € return, usual 677 €, 1 stop(s), Vueling, 9,700 km, checked 2026-10-22
-- [Palma → Bali](https://www.happylowcost.com/en/flights/palma-bali/): from 638 € return, usual 734 €, 2 stop(s), Ryanair, airport Denpasar, 12,540 km, checked 2026-10-22
 - [Palma → Sri Lanka](https://www.happylowcost.com/en/flights/palma-sri-lanka/): from 668 € return, usual 751 €, 3 stop(s), Wizz Air Malta, airport Colombo, 8,400 km, checked 2026-10-22
 - [Palma → Nairobi](https://www.happylowcost.com/en/flights/palma-nairobi/): from 730 € return, usual 737 €, 2 stop(s), Ryanair, 5,720 km, checked 2026-10-22
+- [Palma → Bali](https://www.happylowcost.com/en/flights/palma-bali/): from 734 € return, usual 1135 €, 3 stop(s), Iberia Express, airport Denpasar, 12,540 km, checked 2026-11-27
 - [Palma → San Juan](https://www.happylowcost.com/en/flights/palma-san-juan/): from 736 € return, usual 768 €, 3 stop(s), Wizz Air Malta, 6,910 km, checked 2026-10-22
 - [Palma → Jacksonville](https://www.happylowcost.com/en/flights/palma-jacksonville/): from 751 € return, usual 766 €, 3 stop(s), Air Europa, 7,470 km, checked 2026-10-22
 - [Palma → Fort Lauderdale](https://www.happylowcost.com/en/flights/palma-fort-lauderdale/): from 803 € return, usual 811 €, 3 stop(s), Wizz Air Malta, 7,620 km, checked 2026-10-22
 - [Palma → Tokyo](https://www.happylowcost.com/en/flights/palma-tokyo/): from 905 € return, usual 906 €, 1 stop(s), Swiss International Air Lines, 10,560 km, checked 2026-10-22
-- [Palma → Buenos Aires](https://www.happylowcost.com/en/flights/palma-buenos-aires/): from 1096 € return, usual 1135 €, 2 stop(s), Air Europa, 10,360 km, checked 2026-10-22
+- [Palma → Buenos Aires](https://www.happylowcost.com/en/flights/palma-buenos-aires/): from 1048 € return, usual 1496 €, 2 stop(s), Iberia Express, 10,360 km, checked 2026-11-27
 - [Paris → Dublin](https://www.happylowcost.com/en/flights/paris-dublin/): from 38 € return, usual 41 €, nonstop, Ryanair, 790 km, checked 2026-10-22
 - [Paris → Milan](https://www.happylowcost.com/en/flights/paris-milan/): from 42 € return, usual 44 €, nonstop, Ryanair, cheapest month 2027-01 (39 €), 640 km, checked 2026-10-22
 - [Paris → Fez](https://www.happylowcost.com/en/flights/paris-fez/): from 43 € return, usual 58 €, nonstop, Ryanair, airport Fes, 1,770 km, checked 2026-10-22

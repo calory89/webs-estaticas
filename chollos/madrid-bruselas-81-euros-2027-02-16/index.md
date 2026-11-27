@@ -9,13 +9,13 @@
 - **Escalas:** 0
 - **Precio habitual de la ruta:** 150 €
 - **Ahorro:** 46 %
-- **Comprobado:** 2026-11-26
+- **Comprobado:** 2026-11-27
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Madrid a Bruselas?
 
-81 € ida y vuelta con Ryanair, saliendo el 16 feb 2027 y volviendo el 18 feb 2027. Precio comprobado por última vez el 26 nov 2026.
+81 € ida y vuelta con Ryanair, saliendo el 16 feb 2027 y volviendo el 18 feb 2027. Precio comprobado por última vez el 27 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

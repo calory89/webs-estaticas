@@ -115,6 +115,10 @@ Gellért por su belleza interior, Széchenyi por el ambiente de piscina exterior
 
 Pest, y concretamente el distrito VI, por transporte, comida y vida. Buda es más tranquila, pero obliga a moverte más para todo.
 
+### ¿Cuánto cuesta un vuelo barato a Budapest?
+
+Hoy el chollo más barato que tenemos a Budapest cuesta 64 € ida y vuelta desde Madrid. Los precios cambian cada hora: compruébalo en la página del chollo.
+
 ### ¿Merece la pena visitar Budapest?
 
 Para quien escribió esta guía, sí: Budapest funciona como destino de fin de semana largo porque lo tiene todo muy junto y a buen precio. Con 3 días ves lo esencial. Presupuesto: Ajustado (50-70 €): hostal, comida en mercados y canteens, transporte público y una visita de pago.

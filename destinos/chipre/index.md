@@ -121,7 +121,7 @@ Con 7 días ves lo esencial de Chipre sin prisas. La ruta de esta guía está or
 
 ### ¿Cuánto cuesta un vuelo barato a Chipre?
 
-Hoy el chollo más barato que tenemos a Chipre cuesta 121 € ida y vuelta desde Alicante. Los precios cambian cada hora: compruébalo en la página del chollo.
+Hoy el chollo más barato que tenemos a Chipre cuesta 105 € ida y vuelta desde Madrid. Los precios cambian cada hora: compruébalo en la página del chollo.
 
 ### ¿Merece la pena visitar Chipre?
 

@@ -9,13 +9,13 @@
 - **Stops:** 1
 - **Usual price on this route:** €200
 - **Saving:** 40 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Alicante to Larnaca?
 
-€121 return with Wizz Air Malta, leaving 21 Feb 2027 and coming back 23 Feb 2027. Price last checked on 26 Nov 2026.
+€121 return with Wizz Air Malta, leaving 21 Feb 2027 and coming back 23 Feb 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

@@ -133,10 +133,6 @@ Yes, Portugal uses the euro and cards are accepted almost everywhere. Carry a fe
 
 Yes, if you accept some rain. Temperatures are mild, crowds are lighter and hotel prices drop. Bring a waterproof jacket and shoes with good grip.
 
-### How much is a cheap flight to Lisbon?
-
-Today the cheapest deal we have to Lisbon is €46 return from Barcelona. Fares change by the hour: check the live price on the deal page.
-
 ### Is Lisbon worth visiting?
 
 For the traveller who wrote this guide, yes: Lisbon is one of the few European capitals that still feels affordable, walkable (if you like hills) and properly lived-in. 3 days are enough for the essentials. Budget: Budget: about 60 to 80 euros per day with a hostel, simple meals and public transport.
