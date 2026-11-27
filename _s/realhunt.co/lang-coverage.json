@@ -10,7 +10,7 @@
     "gfeature": 34,
     "ccyBand": 13,
     "band": 58,
-    "feature": 218,
+    "feature": 219,
     "setting": 23,
     "combo": 54,
     "ptype": 12,
@@ -18,11 +18,11 @@
     "area": 23,
     "near": 13,
     "regionBand": 66,
-    "region": 62,
+    "region": 61,
     "town": 6
    },
    "by_country": {
-    "spain": 105,
+    "spain": 106,
     "italy": 97,
     "france": 42,
     "denmark": 34,
@@ -45,11 +45,11 @@
     "colombia": 2,
     "czech-republic": 2,
     "all countries": 57,
-    "united-states": 36
+    "united-states": 35
    },
-   "homes": 653,
-   "homes_with_title": 652,
-   "not_published": 16,
+   "homes": 654,
+   "homes_with_title": 653,
+   "not_published": 17,
    "not_published_sample": [
     {
      "path": "/homes/united-states",
@@ -106,6 +106,10 @@
     {
      "path": "/cheap-houses/with-pool-under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/arkansas",
+     "why": "over the page budget of the language (640)"
     },
     {
      "path": "/homes/united-states/maine",
@@ -159,8 +163,8 @@
     "all countries": 8,
     "united-states": 18
    },
-   "homes": 653,
-   "homes_with_title": 652,
+   "homes": 654,
+   "homes_with_title": 653,
    "not_published": 8,
    "not_published_sample": [
     {
@@ -206,7 +210,7 @@
     "gfeature": 34,
     "ccyBand": 13,
     "band": 58,
-    "feature": 218,
+    "feature": 219,
     "setting": 23,
     "combo": 54,
     "ptype": 12,
@@ -214,11 +218,11 @@
     "area": 23,
     "near": 13,
     "regionBand": 66,
-    "region": 62,
+    "region": 61,
     "town": 6
    },
    "by_country": {
-    "spain": 105,
+    "spain": 106,
     "italy": 97,
     "france": 42,
     "denmark": 34,
@@ -241,11 +245,11 @@
     "colombia": 2,
     "czech-republic": 2,
     "all countries": 57,
-    "united-states": 36
+    "united-states": 35
    },
-   "homes": 653,
-   "homes_with_title": 652,
-   "not_published": 16,
+   "homes": 654,
+   "homes_with_title": 653,
+   "not_published": 17,
    "not_published_sample": [
     {
      "path": "/homes/united-states",
@@ -302,6 +306,10 @@
     {
      "path": "/cheap-houses/with-pool-under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/arkansas",
+     "why": "over the page budget of the language (640)"
     },
     {
      "path": "/homes/united-states/maine",
@@ -322,7 +330,7 @@
     "gfeature": 34,
     "ccyBand": 13,
     "band": 54,
-    "feature": 218,
+    "feature": 219,
     "setting": 22,
     "combo": 54,
     "ptype": 12,
@@ -330,17 +338,17 @@
     "area": 22,
     "near": 13,
     "regionBand": 63,
-    "region": 53,
+    "region": 52,
     "town": 4
    },
    "by_country": {
-    "spain": 94,
+    "spain": 95,
     "italy": 97,
     "france": 42,
     "denmark": 34,
     "sweden": 37,
     "japan": 48,
-    "poland": 13,
+    "poland": 12,
     "greece": 40,
     "germany": 18,
     "netherlands": 8,
@@ -359,9 +367,9 @@
     "all countries": 57,
     "united-states": 35
    },
-   "homes": 653,
-   "homes_with_title": 652,
-   "not_published": 36,
+   "homes": 654,
+   "homes_with_title": 653,
+   "not_published": 37,
    "not_published_sample": [
     {
      "path": "/homes/united-states",
@@ -418,6 +426,10 @@
     {
      "path": "/cheap-houses/with-pool-under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/lower-silesia",
+     "why": "over the page budget of the language (620)"
     },
     {
      "path": "/homes/poland/under-60000",
@@ -518,7 +530,7 @@
     "gfeature": 34,
     "ccyBand": 13,
     "band": 54,
-    "feature": 218,
+    "feature": 219,
     "setting": 22,
     "combo": 54,
     "ptype": 12,
@@ -526,17 +538,17 @@
     "area": 22,
     "near": 13,
     "regionBand": 63,
-    "region": 53,
+    "region": 52,
     "town": 4
    },
    "by_country": {
-    "spain": 94,
+    "spain": 95,
     "italy": 97,
     "france": 42,
     "denmark": 34,
     "sweden": 37,
     "japan": 48,
-    "poland": 13,
+    "poland": 12,
     "greece": 40,
     "germany": 18,
     "netherlands": 8,
@@ -555,9 +567,9 @@
     "all countries": 57,
     "united-states": 35
    },
-   "homes": 653,
-   "homes_with_title": 652,
-   "not_published": 36,
+   "homes": 654,
+   "homes_with_title": 653,
+   "not_published": 37,
    "not_published_sample": [
     {
      "path": "/homes/united-states",
@@ -614,6 +626,10 @@
     {
      "path": "/cheap-houses/with-pool-under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/lower-silesia",
+     "why": "over the page budget of the language (620)"
     },
     {
      "path": "/homes/poland/under-60000",
@@ -708,9 +724,9 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 643,
-  "spanish_pages_linked": 643
+  "english_pages_linked": 644,
+  "spanish_pages_linked": 644
  },
- "home_pages_linked": 1166,
+ "home_pages_linked": 1168,
  "failures": []
 }

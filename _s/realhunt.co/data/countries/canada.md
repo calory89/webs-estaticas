@@ -65,7 +65,7 @@ https://realhunt.co/deal/glace-bay-86962
 
 €90,400 · Mulgrave, Nova Scotia · 215 m² · 3 bedrooms · RealHunt score 92 · added 2026-10-05
 
-A well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso. Updated kitchen, 200-amp electrics and new plumbing; about 215 m² in total. Asking price CAD 144,500. That is about €90,400. Canada's ban on foreign buyers applies in cities and towns of 10,000+ people until 1 January 2027; ask the agent whether it applies here.
+A well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso. Updated kitchen, 200-amp electrics and new plumbing; about 215 m² in total. Asking price CAD 144,500. Canada's ban on foreign buyers applies in cities and towns of 10,000+ people until 1 January 2027; ask the agent whether it applies here.
 
 https://realhunt.co/deal/ca-mulgrave-90k-623450
 
@@ -121,7 +121,7 @@ https://realhunt.co/deal/astle-93111
 
 €99,500 · Grande-Anse, New Brunswick · 107 m² · 4 bedrooms · RealHunt score 86 · added 2026-10-05
 
-A 1.5-storey house of about 107 m² in Grande-Anse on New Brunswick's Acadian coast, by the Bay of Chaleur. The main floor has been updated, with a bright living room, a big kitchen and a fully renovated bathroom; two of the four bedrooms keep their original character upstairs. Asking price CAD 159,000. That is about €99,500. Canada's ban on foreign buyers applies in cities and towns of 10,000+ people until 1 January 2027; ask the agent whether it applies here.
+A 1.5-storey house of about 107 m² in Grande-Anse on New Brunswick's Acadian coast, by the Bay of Chaleur. The main floor has been updated, with a bright living room, a big kitchen and a fully renovated bathroom; two of the four bedrooms keep their original character upstairs. Asking price CAD 159,000. Canada's ban on foreign buyers applies in cities and towns of 10,000+ people until 1 January 2027; ask the agent whether it applies here.
 
 https://realhunt.co/deal/ca-grande-anse-99k-148091
 

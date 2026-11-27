@@ -102,7 +102,7 @@ https://realhunt.co/deal/mazatlan-83298
 
 €86,100 · Mazatlán, Sinaloa · 68 m² · 2 bedrooms · RealHunt score 86 · added 2026-10-05
 
-A 68 m² apartment in La Rocca, a gated complex of eight towers on Av. Delfines in Mazatlán's Alarcón area: living and dining room, two bedrooms with wardrobes, a bathroom, laundry, terrace and parking. Equipped rooftop, sports court, play area and 24-hour access control. Immediate delivery. Asking price MXN 1,772,566. That is about €86,100. Within 50 km of the coast, foreigners buy through a bank trust (fideicomiso).
+A 68 m² apartment in La Rocca, a gated complex of eight towers on Av. Delfines in Mazatlán's Alarcón area: living and dining room, two bedrooms with wardrobes, a bathroom, laundry, terrace and parking. Equipped rooftop, sports court, play area and 24-hour access control. Immediate delivery. Asking price MXN 1,772,566. Within 50 km of the coast, foreigners buy through a bank trust (fideicomiso).
 
 https://realhunt.co/deal/mx-mazatlan-86k-809756
 
@@ -142,7 +142,7 @@ https://realhunt.co/deal/mazatlan-83448
 
 €97,100 · Mazatlán, Sinaloa · 65 m² · 2 bedrooms · RealHunt score 84 · added 2026-10-05
 
-A 65 m² apartment in Adora Residencial, a private gated community in Mazatlán: two bedrooms, two bathrooms and covered parking, with a pool, barbecue area, gardens and 24-hour security. In excellent condition. Asking price MXN 1,999,000. That is about €97,100. Within 50 km of the coast, foreigners buy through a bank trust (fideicomiso).
+A 65 m² apartment in Adora Residencial, a private gated community in Mazatlán: two bedrooms, two bathrooms and covered parking, with a pool, barbecue area, gardens and 24-hour security. In excellent condition. Asking price MXN 1,999,000. Within 50 km of the coast, foreigners buy through a bank trust (fideicomiso).
 
 https://realhunt.co/deal/mx-mazatlan-97k-889034
 

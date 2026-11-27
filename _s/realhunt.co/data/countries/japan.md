@@ -255,7 +255,7 @@ https://realhunt.co/deal/DcEQh3AjBbN
 
 €66,700 · Fuji, Shizuoka · 88 m² · 3 bedrooms · RealHunt score 83 · added 2026-10-05
 
-Built in 2001 and renovated inside and out: 3 bedrooms plus a storage room in 87.6 m², on a 199 m² plot in Fuji city, Shizuoka, with Mount Fuji visible from the first floor. Parking for three cars. Asking price ¥11,800,000. That is about €66,700. Foreigners can buy homes in Japan with no restrictions.
+Built in 2001 and renovated inside and out: 3 bedrooms plus a storage room in 87.6 m², on a 199 m² plot in Fuji city, Shizuoka, with Mount Fuji visible from the first floor. Parking for three cars. Asking price ¥11,800,000. Foreigners can buy homes in Japan with no restrictions.
 
 https://realhunt.co/deal/jp-fuji-66k-852751
 
@@ -279,7 +279,7 @@ https://realhunt.co/deal/Dc56aI-icMP
 
 €81,900 · Shimizu, Shizuoka · 92 m² · 4 bedrooms · RealHunt score 81 · added 2026-10-05
 
-Only 14 years old and renovated: a 4-bedroom house of 91.5 m² on a 122 m² plot in Shimizu, Shizuoka, with a fitted kitchen, a new bathroom and a tatami room. A short bus ride to JR Okitsu station on the coast. Asking price ¥14,500,000. That is about €81,900. Foreigners can buy homes in Japan with no restrictions.
+Only 14 years old and renovated: a 4-bedroom house of 91.5 m² on a 122 m² plot in Shimizu, Shizuoka, with a fitted kitchen, a new bathroom and a tatami room. A short bus ride to JR Okitsu station on the coast. Asking price ¥14,500,000. Foreigners can buy homes in Japan with no restrictions.
 
 https://realhunt.co/deal/jp-shimizu-81k-591487
 

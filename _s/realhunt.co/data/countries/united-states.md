@@ -126,7 +126,7 @@ https://realhunt.co/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron
 
 €79,200 · Freeport, Illinois · 83 m² · 2 bedrooms · RealHunt score 89 · added 2026-10-05
 
-A 1907 cottage with two bedrooms in about 83 m², freshly painted outside, with 9-foot ceilings, open beams, brand-new flooring and an open kitchen and dining area. Covered porch, private back yard and a detached garage, in Freeport, Illinois. That is about €83,700.
+A 1907 cottage with two bedrooms in about 83 m², freshly painted outside, with 9-foot ceilings, open beams, brand-new flooring and an open kitchen and dining area. Covered porch, private back yard and a detached garage, in Freeport, Illinois.
 
 https://realhunt.co/deal/us-freeport-83k-605154
 
@@ -166,7 +166,7 @@ https://realhunt.co/deal/mckeesport-82875
 
 €86,500 · Dora, Missouri · 104 m² · 2 bedrooms · RealHunt score 88 · added 2026-10-05
 
-Built in 2008: a two-bedroom cabin of about 104 m² with knotty-pine walls, an open living and dining room and a fitted kitchen, on open land minutes from the North Fork of the White River, Bryant Creek and the Mark Twain National Forest. Full-time home or weekend retreat. That is about €84,500.
+Built in 2008: a two-bedroom cabin of about 104 m² with knotty-pine walls, an open living and dining room and a fitted kitchen, on open land minutes from the North Fork of the White River, Bryant Creek and the Mark Twain National Forest. Full-time home or weekend retreat.
 
 https://realhunt.co/deal/us-dora-84k-329130
 
@@ -206,7 +206,7 @@ https://realhunt.co/deal/us-tampa-8105-325k
 
 €72,800 · Ashland, Maine · 96 m² · 3 bedrooms · RealHunt score 87 · added 2026-10-05
 
-Three bedrooms and two bathrooms in about 96 m², with hardwood floors, an eat-in kitchen and updated bathrooms. The big jobs are done: metal roof and an efficient heat pump. Green lot in Ashland, in the woods and lakes of northern Maine. That is about €89,000.
+Three bedrooms and two bathrooms in about 96 m², with hardwood floors, an eat-in kitchen and updated bathrooms. The big jobs are done: metal roof and an efficient heat pump. Green lot in Ashland, in the woods and lakes of northern Maine.
 
 https://realhunt.co/deal/us-ashland-89k-672054
 
@@ -214,7 +214,7 @@ https://realhunt.co/deal/us-ashland-89k-672054
 
 €77,300 · Madawaska, Maine · 124 m² · 3 bedrooms · RealHunt score 87 · added 2026-10-05
 
-A 1943 house with three bedrooms and 1.5 baths in about 124 m². Recent updates: new flooring, new furnace and water heater, new stainless kitchen appliances. Pretty garden with an arbor and a detached garage, near the school and sports fields in Madawaska, Maine, across the river from Canada. That is about €79,300.
+A 1943 house with three bedrooms and 1.5 baths in about 124 m². Recent updates: new flooring, new furnace and water heater, new stainless kitchen appliances. Pretty garden with an arbor and a detached garage, near the school and sports fields in Madawaska, Maine, across the river from Canada.
 
 https://realhunt.co/deal/us-madawaska-79k-677888
 
@@ -382,7 +382,7 @@ https://realhunt.co/deal/us-boca-raton-10308-460k
 
 €88,600 · Oxford, Arkansas · 81 m² · 2 bedrooms · RealHunt score 84 · added 2026-10-05
 
-Two bedrooms and one bath in about 81 m² on a 0.65-acre lot in the middle of Oxford, Arkansas. Move-in ready: new flooring and a new water heater, a covered front porch, a carport and a storage shed. The town park is next door and the shops are a walk away. That is about €88,600.
+Two bedrooms and one bath in about 81 m² on a 0.65-acre lot in the middle of Oxford, Arkansas. Move-in ready: new flooring and a new water heater, a covered front porch, a carport and a storage shed. The town park is next door and the shops are a walk away.
 
 https://realhunt.co/deal/us-oxford-88k-030224
 

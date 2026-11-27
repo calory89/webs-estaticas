@@ -16,8 +16,8 @@ Anuncio confirmado en los últimos 30 días | 525
 Última lectura: el portal bloqueó el programa | 141
 Última lectura: sin respuesta | 1
 Aún sin leer por el programa, o ilegibles (publicaciones en redes) | 35
-Marcadas como que ya no están a la venta | 73
-Con el aviso «no hemos podido confirmar que siga a la venta» | 175
+Marcadas como que ya no están a la venta | 72
+Con el aviso «no hemos podido confirmar que siga a la venta» | 178
 Con una revisión fechada por una persona en su página | 6
 
 Calculado con las casas de la web a 27 de noviembre de 2026. «Última lectura» es el resultado de la última vez que el programa abrió el anuncio.

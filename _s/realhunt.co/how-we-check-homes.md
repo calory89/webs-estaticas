@@ -16,8 +16,8 @@ Last reading: advert removed | 122
 Last reading: the portal blocked the program | 141
 Last reading: no answer | 1
 Not read by the program yet, or not readable (social posts) | 35
-Marked as no longer for sale | 73
-With the notice "we could not confirm this home is still for sale" | 175
+Marked as no longer for sale | 72
+With the notice "we could not confirm this home is still for sale" | 178
 With a dated check by a person on their page | 6
 
 Computed from the homes on the site on 27 November 2026. "Last reading" is the result of the last time the program opened the advert.
