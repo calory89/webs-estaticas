@@ -4,15 +4,23 @@
 <link href="https://kolaboro.com/shipping/feed.xml" rel="self"/>
 <link href="https://kolaboro.com/shipping/"/>
 <id>https://kolaboro.com/shipping/</id>
-<updated>2026-11-26T08:53:28Z</updated>
+<updated>2026-11-27T09:03:45Z</updated>
 <author><name>Kolaboro</name></author>
 <entry>
-<title>26 November 2026: 18 changes shipped so far</title>
-<link href="https://kolaboro.com/shipping/#d-2026-11-26"/>
+<title>27 November 2026: 96 changes shipped so far</title>
+<link href="https://kolaboro.com/shipping/#d-2026-11-27"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-27</id>
+<published>2026-11-27T00:00:00Z</published>
+<updated>2026-11-27T04:16:08Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro.com n40 k55 (BL-026): search titles with city, handover date and permit status for the 8 Search Console project pages; description overrides (en.dd40) for 2&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 k54: pwa.js urls(): the duplicate-URL filter sat inside a // comment and never ran (English offline page fetched twice); filter restored&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 L14: step-by-step guide to Japanese building confirmation (building plan summary) and a registers entry for it, in 8 languages&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 k60: /data/gleif-dev.json now covers 2526 of 2527 developers (was 1451), 120 relationship records; data only, no worker change&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 k63: a page whose build throws serves its last edge copy (x-kb-cache: stale-error) or the 503 retry notice, not error 1101&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 k58: Delivery Index translations, list of highest shares with page-language punctuation (zh full-width brackets)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>26 November 2026: 577 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-26/"/>
 <id>https://kolaboro.com/shipping/#d-2026-11-26</id>
 <published>2026-11-26T00:00:00Z</published>
-<updated>2026-11-26T08:51:57Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro.com n40 r1b: /data/ copy without tool names, /m/ and tool descriptions under 160, per-market Atom feed on /m/, neutral conflict-of-interest line on country pages&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1a: singular fix on country guides, contract check renamed, shorter /check/ descriptions, plainer about text, shipped lists moved to JSON&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1c: /faq/ in 8 languages, 40 buyer questions answered from the open data with source and date (R01-08)&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1b: shipped rows for 26 Nov (data page wording, market snippets, shorter snippets, Atom per market)&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1a: byline with check date on country guides, verb agreement after singular fix&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 r1a: catalog refresh after rebase&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
+<updated>2026-11-26T23:58:00Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro.com n40 r1b: /data/ copy without tool names, /m/ and tool descriptions under 160, per-market Atom feed on /m/, neutral conflict-of-interest line on country pages&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 L5: /guides/off-plan-payments/ in es, fr, de, nl, ru, zh, ar (hreflang 8, sitemap, Article schema); questions guide title says 20 questions like the list&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 k2: hreflang on /developers/ and /compare/ (R02-31), other developers block (R02-32), footer hubs per language (R02-33), method box on rankings (R02-40)&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 d8: header with a visible search field (suggestions), full-height phone menu with focus trap, quieter footer; ds-site.css Cyrillic display font restored&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 k28: India buyer protection law page in 8 languages (RERA Act 2016 sections 3(1), 4(2)(l)(D), 13(1), 18(1) quoted from India Code, read 26 Nov) (R12-09)&lt;/li&gt;&lt;li&gt;Kolaboro.com n40 k10: named-page styles in one cached /k/kp.css (25 KB less per project page, worker -24 KB); home live-activity script as cached files, no AI label&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>25 November 2026: 28 changes shipped</title>
