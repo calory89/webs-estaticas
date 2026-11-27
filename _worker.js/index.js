@@ -530,8 +530,30 @@ async function kbEdge(req, u, env, ctx, make) {
   return keep(await make());
 }
 let kTick = null, kbots = null, kg27 = null;
+// n40 k63: a kolaboro.com page whose build throws anywhere in the handler gets the last edge copy of the page (x-kb-cache: stale-error)
+// or the short 503 retry notice (Retry-After, no-store), never the platform error page (1101). Other sites go straight to fetch1.
+const KBG_PG = /^\/(api|mcp|__)|\.(?!html$)[a-z0-9]+$/;
+async function kbgStale(u, env, why) {
+  if (!kbClean(u) || typeof caches === 'undefined') return null; let hit = null;
+  for (const k of [kbFinKey(u), new Request('https://kolaboro.com/__edge/v1' + u.pathname)]) { try { hit = await caches.default.match(k); } catch (e) {} if (hit) break; }
+  if (!hit || hit.status !== 200 || !why) return hit && hit.status === 200 ? true : null;
+  const h = new Headers(hit.headers), old = ((h.get('content-security-policy') || '') + ' ' + (h.get('content-security-policy-report-only') || '')).match(/'nonce-([A-Za-z0-9+/=]{8,})'/); let t = kbLateFix(await hit.text());
+  if (old) { const nw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16)))); t = t.split(old[1]).join(nw); for (const k of ['content-security-policy', 'content-security-policy-report-only']) if (h.has(k)) h.set(k, h.get(k).split(old[1]).join(nw)); }
+  ['x-built', 'x-sha', 'x-cc', 'x-edge-cache', 'x-fin-cache'].forEach(k => h.delete(k)); h.set('cache-control', 'no-cache'); h.set('x-kb-cache', why);
+  return new Response(t, { status: 200, headers: h });
+}
+async function kbgBusy(u, env, why, e) {
+  try { const s = await kbgStale(u, env, 'stale-' + why); if (s) return s; } catch (e2) {}
+  try { await kbStrings(env); if (!kn37u) kn37u = await import('./kbx_n37u.js'); const er = await kn37u.errPage(u); er.headers.set('x-kb-cache', why); if (e) er.headers.set('x-kb-err', String(e && e.message || e).slice(0, 120).replace(/[^\x20-\x7e]/g, '')); return er; } catch (e3) {}
+  return new Response('<!doctype html><meta charset="utf-8"><title>Kolaboro</title><p>Please try again in a few seconds.</p>', { status: 503, headers: { 'content-type': 'text/html; charset=utf-8', 'retry-after': '5', 'cache-control': 'no-store', 'x-kb-fallback': '1', 'x-kb-cache': why } });
+}
 export default {
   async fetch(req, env, ctx) {
+    let u = null; try { u = new URL(req.url); } catch (e) {}
+    if (!u || req.method !== 'GET' || !/^(www\.)?kolaboro\.com$/.test(u.hostname) || KBG_PG.test(u.pathname)) return this.fetch1(req, env, ctx);
+    try { return await this.fetch1(req, env, ctx); } catch (e) { return kbgBusy(u, env, 'error', e); }
+  },
+  async fetch1(req, env, ctx) {
     const t0 = Date.now();   // n31t (batch 31, item 258)
     if (env && env.ASSETS && !env.__kbA) { const A = env.ASSETS; try { env.ASSETS = { async fetch(q, i) { if (!(q instanceof Request)) q = new Request(q, i); if (q.method !== 'GET' && q.method !== 'HEAD') return A.fetch(q); let x; for (let n = 0; n < 3; n++) { try { x = await A.fetch(q.clone()); if (x.status < 500) return x; } catch (e) { if (n > 1) throw e; } await new Promise(s => setTimeout(s, 40 * n + 40)); } return x; } }; env.__kbA = 1; } catch (e) {} }   // n40 k21: a static file read that fails under load (5xx or throw) is tried twice more: worker time to response headers, sent as Server-Timing on kolaboro.com HTML
     if (KB_CSSBR_ON && /^\/k\/(?:site|site-p|ds-site|ds)\.css$/.test(new URL(req.url).pathname) && /^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname) && (KB_CSSBR_ON === 2 || req.headers.get('x-kolaboro-br-test') === '1')) { try { if (!kcbr) kcbr = await import('./kbx_cssbr.js'); const r = await kcbr.serve(req, new URL(req.url), env); if (r) return r; } catch (e) {} }   // n40 d12: KB_CSSBR_ON 2 on, 1 test header, 0 off
