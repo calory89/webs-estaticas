@@ -31,7 +31,19 @@
 "/ar/tools/contract-addendum/": "منشئ ملحق العقد لشراء العقارات على الخارطة | Kolaboro",
 "/ar/tools/insolvency-check/": "فحص إعسار المطور في السجلات الرسمية | Kolaboro",
 "/ar/tools/permit-photo/": "قارئ صور التصاريح على لافتات المشاريع | Kolaboro",
-"/projects/the-landmark-mermaid-beach-aniko/": "The Landmark Mermaid Beach, Gold Coast: 2028, works approved"
+"/projects/the-landmark-mermaid-beach-aniko/": "The Landmark Mermaid Beach, Gold Coast: 2028, works approved",
+"/projects/palmera-residences-central-equity/": "Palmera Residences, Gold Coast: due 2029, permit unpublished",
+"/projects/luna-marina-pointe-bti-partners/": "Luna at Marina Pointe, Tampa: Q4 2028, permit unpublished",
+"/projects/sobha-siniya-island-villas-sobha-realty/": "Sobha Siniya Island Villas, Umm Al Quwain: due Q4 2028",
+"/projects/south-beach-surfers-paradise-andrews/": "South Beach, Gold Coast: due Q1 2029, permit unpublished",
+"/projects/lumara-broadbeach-5point-bourke/": "Lumara, Broadbeach, Gold Coast: due 2028, permit unpublished",
+"/projects/como-varsity-lakes-red-co/": "COMO Varsity Lakes, Gold Coast: due 2028, permit unpublished",
+"/projects/incontro-subiaco-cedar-woods/": "Incontro Apartments, Perth: June 2027, permit unpublished",
+"/projects/waterstone-st-leonards-sekisui-house/": "Waterstone, Sydney: due Q4 2027, permit unpublished"
+},
+"dd40": {
+"/projects/the-landmark-mermaid-beach-aniko/": "Operational works approval OPW/2025/665 from the City of Gold Coast. The Landmark, Mermaid Beach: completion 2028 as published, price from AUD 1,495,000.",
+"/projects/sobha-siniya-island-villas-sobha-realty/": "Permit number not published and handover date moved once. Sobha Siniya Island Villas (Phase 1), Umm Al Quwain: completion Q4 2028 as published, price from AED 10,600,000."
 },
 "dt": "Dated public facts: {list}.",
 "dt_i": "{p}, handover {h} as published ({src}, read {d})",
