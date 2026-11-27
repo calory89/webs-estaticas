@@ -101756,6 +101756,3240 @@ var PATHS15 = (L) => [
 	"/tools",
 	...L === "en" ? ["/status", "/for-hotels"] : ["/imprint"]
 ];
+var OV = {
+	"A 5-star hotel in Al Ghubra, rated 9.2 from 1,377 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Al Ghubra, vurderet til 9,2 fra 1.377 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Al Ghubra, bewertet mit 9,2 aus 1.377 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Al Ghubra, con una puntuación de 9,2 a partir de 1377 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Al Ghubra, noté 9,2 sur 1 377 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Al Ghubra, con valutazione 9,2 da 1.377 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Al Ghubra, com classificação de 9,2 com base em 1377 avaliações do Booking.com."
+	},
+	"A 5-star hotel in BBD Bagh, rated 8.1 from 1,055 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i BBD Bagh, vurderet til 8,1 fra 1.055 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in BBD Bagh, bewertet mit 8,1 aus 1.055 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en BBD Bagh, con una puntuación de 8,1 a partir de 1055 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à BBD Bagh, noté 8,1 sur 1 055 avis Booking.com.",
+		"it": "Un hotel 5 stelle a BBD Bagh, con valutazione 8,1 da 1.055 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em BBD Bagh, com classificação de 8,1 com base em 1055 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Barrio Tournón, rated 8.1 from 2,668 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Barrio Tournón, vurderet til 8,1 fra 2.668 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Barrio Tournón, bewertet mit 8,1 aus 2.668 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Barrio Tournón, con una puntuación de 8,1 a partir de 2668 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Barrio Tournón, noté 8,1 sur 2 668 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Barrio Tournón, con valutazione 8,1 da 2.668 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Barrio Tournón, com classificação de 8,1 com base em 2668 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Bostandyk, rated 8.9 from 911 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Bostandyk, vurderet til 8,9 fra 911 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Bostandyk, bewertet mit 8,9 aus 911 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Bostandyk, con una puntuación de 8,9 a partir de 911 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Bostandyk, noté 8,9 sur 911 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Bostandyk, con valutazione 8,9 da 911 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Bostandyk, com classificação de 8,9 com base em 911 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Braga, rated 8.8 from 1,817 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Braga, vurderet til 8,8 fra 1.817 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Braga, bewertet mit 8,8 aus 1.817 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Braga, con una puntuación de 8,8 a partir de 1817 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Braga, noté 8,8 sur 1 817 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Braga, con valutazione 8,8 da 1.817 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Braga, com classificação de 8,8 com base em 1817 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Centro Histórico, rated 8.6 from 254 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Centro Histórico, vurderet til 8,6 fra 254 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Centro Histórico, bewertet mit 8,6 aus 254 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Centro Histórico, con una puntuación de 8,6 a partir de 254 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Centro Histórico, noté 8,6 sur 254 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Centro Histórico, con valutazione 8,6 da 254 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Centro Histórico, com classificação de 8,6 com base em 254 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Centro Histórico, rated 9.3 from 62 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Centro Histórico, vurderet til 9,3 fra 62 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Centro Histórico, bewertet mit 9,3 aus 62 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Centro Histórico, con una puntuación de 9,3 a partir de 62 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Centro Histórico, noté 9,3 sur 62 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Centro Histórico, con valutazione 9,3 da 62 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Centro Histórico, com classificação de 9,3 com base em 62 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Corniche, rated 9.1 from 12,559 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Corniche, vurderet til 9,1 fra 12.559 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Corniche, bewertet mit 9,1 aus 12.559 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Corniche, con una puntuación de 9,1 a partir de 12 559 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Corniche, noté 9,1 sur 12 559 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Corniche, con valutazione 9,1 da 12.559 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Corniche, com classificação de 9,1 com base em 12 559 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Da Lat Centre, rated 8.7 from 177 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Da Lat Centre, vurderet til 8,7 fra 177 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Da Lat Centre, bewertet mit 8,7 aus 177 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Da Lat Centre, con una puntuación de 8,7 a partir de 177 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Da Lat Centre, noté 8,7 sur 177 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Da Lat Centre, con valutazione 8,7 da 177 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Da Lat Centre, com classificação de 8,7 com base em 177 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Dahar, rated 8.0 from 230 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Dahar, vurderet til 8,0 fra 230 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Dahar, bewertet mit 8,0 aus 230 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Dahar, con una puntuación de 8,0 a partir de 230 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Dahar, noté 8,0 sur 230 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Dahar, con valutazione 8,0 da 230 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Dahar, com classificação de 8,0 com base em 230 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Dayan Old Town, rated 9.3 from 77 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Dayan Old Town, vurderet til 9,3 fra 77 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Dayan Old Town, bewertet mit 9,3 aus 77 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Dayan Old Town, con una puntuación de 9,3 a partir de 77 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Dayan Old Town, noté 9,3 sur 77 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Dayan Old Town, con valutazione 9,3 da 77 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Dayan Old Town, com classificação de 9,3 com base em 77 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Downtown Austin, rated 9.2 from 96 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Downtown Austin, vurderet til 9,2 fra 96 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Downtown Austin, bewertet mit 9,2 aus 96 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Downtown Austin, con una puntuación de 9,2 a partir de 96 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Downtown Austin, noté 9,2 sur 96 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Downtown Austin, con valutazione 9,2 da 96 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Downtown Austin, com classificação de 9,2 com base em 96 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Downtown Houston, rated 9 from 60 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Downtown Houston, vurderet til 9 fra 60 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Downtown Houston, bewertet mit 9 aus 60 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Downtown Houston, con una puntuación de 9 a partir de 60 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Downtown Houston, noté 9 sur 60 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Downtown Houston, con valutazione 9 da 60 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Downtown Houston, com classificação de 9 com base em 60 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Downtown Los Angeles, rated 8.7 from 188 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Downtown Los Angeles, vurderet til 8,7 fra 188 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Downtown Los Angeles, bewertet mit 8,7 aus 188 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Downtown Los Angeles, con una puntuación de 8,7 a partir de 188 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Downtown Los Angeles, noté 8,7 sur 188 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Downtown Los Angeles, con valutazione 8,7 da 188 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Downtown Los Angeles, com classificação de 8,7 com base em 188 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Downtown Phoenix, rated 7.6 from 100 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Downtown Phoenix, vurderet til 7,6 fra 100 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Downtown Phoenix, bewertet mit 7,6 aus 100 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Downtown Phoenix, con una puntuación de 7,6 a partir de 100 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Downtown Phoenix, noté 7,6 sur 100 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Downtown Phoenix, con valutazione 7,6 da 100 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Downtown Phoenix, com classificação de 7,6 com base em 100 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Downtown San Diego, rated 8.2 from 222 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Downtown San Diego, vurderet til 8,2 fra 222 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Downtown San Diego, bewertet mit 8,2 aus 222 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Downtown San Diego, con una puntuación de 8,2 a partir de 222 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Downtown San Diego, noté 8,2 sur 222 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Downtown San Diego, con valutazione 8,2 da 222 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Downtown San Diego, com classificação de 8,2 com base em 222 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Ermita, Manila, rated 8.8 from 807 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Ermita, Manila, vurderet til 8,8 fra 807 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Ermita, Manila, bewertet mit 8,8 aus 807 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Ermita, Manila, con una puntuación de 8,8 a partir de 807 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Ermita, Manila, noté 8,8 sur 807 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Ermita, Manila, con valutazione 8,8 da 807 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Ermita, Manila, com classificação de 8,8 com base em 807 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Garden City, rated 8.6 from 2,926 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Garden City, vurderet til 8,6 fra 2.926 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Garden City, bewertet mit 8,6 aus 2.926 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Garden City, con una puntuación de 8,6 a partir de 2926 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Garden City, noté 8,6 sur 2 926 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Garden City, con valutazione 8,6 da 2.926 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Garden City, com classificação de 8,6 com base em 2926 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Historic Centre Salvador, rated 9.0 from 659 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Historic Centre Salvador, vurderet til 9,0 fra 659 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Historic Centre Salvador, bewertet mit 9,0 aus 659 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Historic Centre Salvador, con una puntuación de 9,0 a partir de 659 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Historic Centre Salvador, noté 9,0 sur 659 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Historic Centre Salvador, con valutazione 9,0 da 659 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Historic Centre Salvador, com classificação de 9,0 com base em 659 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Historic centre, rated 9.0 from 840 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Historic centre, vurderet til 9,0 fra 840 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Historic centre, bewertet mit 9,0 aus 840 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Historic centre, con una puntuación de 9,0 a partir de 840 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Historic centre, noté 9,0 sur 840 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Historic centre, con valutazione 9,0 da 840 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Historic centre, com classificação de 9,0 com base em 840 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Hussain Sagar, rated 8.2 from 715 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Hussain Sagar, vurderet til 8,2 fra 715 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Hussain Sagar, bewertet mit 8,2 aus 715 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Hussain Sagar, con una puntuación de 8,2 a partir de 715 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Hussain Sagar, noté 8,2 sur 715 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Hussain Sagar, con valutazione 8,2 da 715 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Hussain Sagar, com classificação de 8,2 com base em 715 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Jung-gu, Seoul, rated 9 from 2,069 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Jung-gu, Seoul, vurderet til 9 fra 2.069 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Jung-gu, Seoul, bewertet mit 9 aus 2.069 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Jung-gu, Seoul, con una puntuación de 9 a partir de 2069 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Jung-gu, Seoul, noté 9 sur 2 069 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Jung-gu, Seoul, con valutazione 9 da 2.069 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Jung-gu, Seoul, com classificação de 9 com base em 2069 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Kalibukbuk, Lovina, rated 9 from 378 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Kalibukbuk, Lovina, vurderet til 9 fra 378 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Kalibukbuk, Lovina, bewertet mit 9 aus 378 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Kalibukbuk, Lovina, con una puntuación de 9 a partir de 378 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Kalibukbuk, Lovina, noté 9 sur 378 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Kalibukbuk, Lovina, con valutazione 9 da 378 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Kalibukbuk, Lovina, com classificação de 9 com base em 378 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Larnaca, rated 8.5 from 1,552 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Larnaca, vurderet til 8,5 fra 1.552 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Larnaca, bewertet mit 8,5 aus 1.552 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Larnaca, con una puntuación de 8,5 a partir de 1552 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Larnaca, noté 8,5 sur 1 552 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Larnaca, con valutazione 8,5 da 1.552 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Larnaca, com classificação de 8,5 com base em 1552 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Le Plateau, rated 7.5 from 123 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Le Plateau, vurderet til 7,5 fra 123 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Le Plateau, bewertet mit 7,5 aus 123 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Le Plateau, con una puntuación de 7,5 a partir de 123 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Le Plateau, noté 7,5 sur 123 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Le Plateau, con valutazione 7,5 da 123 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Le Plateau, com classificação de 7,5 com base em 123 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Mall Road, rated 8.5 from 869 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Mall Road, vurderet til 8,5 fra 869 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Mall Road, bewertet mit 8,5 aus 869 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Mall Road, con una puntuación de 8,5 a partir de 869 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Mall Road, noté 8,5 sur 869 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Mall Road, con valutazione 8,5 da 869 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Mall Road, com classificação de 8,5 com base em 869 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Rambagh, rated 9.2 from 131 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Rambagh, vurderet til 9,2 fra 131 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Rambagh, bewertet mit 9,2 aus 131 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Rambagh, con una puntuación de 9,2 a partir de 131 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Rambagh, noté 9,2 sur 131 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Rambagh, con valutazione 9,2 da 131 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Rambagh, com classificação de 9,2 com base em 131 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Seomyeon, rated 8.9 from 2,746 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Seomyeon, vurderet til 8,9 fra 2.746 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Seomyeon, bewertet mit 8,9 aus 2.746 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Seomyeon, con una puntuación de 8,9 a partir de 2746 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Seomyeon, noté 8,9 sur 2 746 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Seomyeon, con valutazione 8,9 da 2.746 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Seomyeon, com classificação de 8,9 com base em 2746 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Shimla, rated 9.5 from 256 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Shimla, vurderet til 9,5 fra 256 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Shimla, bewertet mit 9,5 aus 256 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Shimla, con una puntuación de 9,5 a partir de 256 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Shimla, noté 9,5 sur 256 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Shimla, con valutazione 9,5 da 256 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Shimla, com classificação de 9,5 com base em 256 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Songdo, rated 8.6 from 366 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Songdo, vurderet til 8,6 fra 366 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Songdo, bewertet mit 8,6 aus 366 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Songdo, con una puntuación de 8,6 a partir de 366 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Songdo, noté 8,6 sur 366 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Songdo, con valutazione 8,6 da 366 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Songdo, com classificação de 8,6 com base em 366 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Sukhbaatar, rated 8.4 from 118 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Sukhbaatar, vurderet til 8,4 fra 118 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Sukhbaatar, bewertet mit 8,4 aus 118 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Sukhbaatar, con una puntuación de 8,4 a partir de 118 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Sukhbaatar, noté 8,4 sur 118 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Sukhbaatar, con valutazione 8,4 da 118 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Sukhbaatar, com classificação de 8,4 com base em 118 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Tampico, rated 8.6 from 270 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Tampico, vurderet til 8,6 fra 270 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Tampico, bewertet mit 8,6 aus 270 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Tampico, con una puntuación de 8,6 a partir de 270 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Tampico, noté 8,6 sur 270 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Tampico, con valutazione 8,6 da 270 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Tampico, com classificação de 8,6 com base em 270 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Tulum Centre, rated 9.1 from 337 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Tulum Centre, vurderet til 9,1 fra 337 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Tulum Centre, bewertet mit 9,1 aus 337 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Tulum Centre, con una puntuación de 9,1 a partir de 337 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Tulum Centre, noté 9,1 sur 337 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Tulum Centre, con valutazione 9,1 da 337 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Tulum Centre, com classificação de 9,1 com base em 337 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Victory Beach, rated 9.4 from 193 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Victory Beach, vurderet til 9,4 fra 193 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Victory Beach, bewertet mit 9,4 aus 193 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Victory Beach, con una puntuación de 9,4 a partir de 193 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Victory Beach, noté 9,4 sur 193 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Victory Beach, con valutazione 9,4 da 193 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Victory Beach, com classificação de 9,4 com base em 193 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Westcliff, rated 9.1 from 465 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Westcliff, vurderet til 9,1 fra 465 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Westcliff, bewertet mit 9,1 aus 465 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Westcliff, con una puntuación de 9,1 a partir de 465 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Westcliff, noté 9,1 sur 465 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Westcliff, con valutazione 9,1 da 465 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Westcliff, com classificação de 9,1 com base em 465 avaliações do Booking.com."
+	},
+	"A 5-star hotel in Zona Hotelera (north), rated 8.8 from 3,407 Booking.com reviews.": {
+		"da": "Et 5-stjernet hotel i Zona Hotelera (north), vurderet til 8,8 fra 3.407 anmeldelser på Booking.com.",
+		"de": "Ein 5-Sterne-Hotel in Zona Hotelera (north), bewertet mit 8,8 aus 3.407 Booking.com-Bewertungen.",
+		"es": "Un hotel de 5 estrellas en Zona Hotelera (north), con una puntuación de 8,8 a partir de 3407 reseñas de Booking.com.",
+		"fr": "Un hôtel 5 étoiles à Zona Hotelera (north), noté 8,8 sur 3 407 avis Booking.com.",
+		"it": "Un hotel 5 stelle a Zona Hotelera (north), con valutazione 8,8 da 3.407 recensioni su Booking.com.",
+		"pt": "Um hotel de 5 estrelas em Zona Hotelera (north), com classificação de 8,8 com base em 3407 avaliações do Booking.com."
+	},
+	"A central Odense hotel with a rooftop terrace, rated 7.9 from more than 2,900 Booking.com reviews, for well under the price of our upscale pick. Hosted stay: the hotel is hosting our team on 25 October 2026.": {
+		"da": "Et centralt hotel i Odense med tagterrasse, vurderet til 7,9 fra mere end 2.900 anmeldelser på Booking.com, til en pris langt under vores eksklusive valg. Opholdet er stillet til rådighed af hotellet: hotellet er vært for vores team den 25. oktober 2026.",
+		"de": "Ein zentrales Hotel in Odense mit Dachterrasse, bewertet mit 7,9 aus mehr als 2.900 Booking.com-Bewertungen, zu einem Preis deutlich unter dem unserer gehobenen Wahl. Aufenthalt auf Einladung des Hotels: Das Hotel beherbergt unser Team am 25. Oktober 2026.",
+		"es": "Un hotel céntrico de Odense con terraza en la azotea, con una puntuación de 7,9 a partir de más de 2900 reseñas de Booking.com, por un precio muy inferior al de nuestra opción superior. Estancia por invitación del hotel: el hotel aloja a nuestro equipo el 25 de octubre de 2026.",
+		"fr": "Un hôtel central à Odense avec terrasse sur le toit, noté 7,9 sur plus de 2 900 avis Booking.com, à un prix bien inférieur à celui de notre choix haut de gamme. Séjour à l'invitation de l'hôtel : l'hôtel accueille notre équipe le 25 octobre 2026.",
+		"it": "Un hotel centrale a Odense con terrazza sul tetto, con valutazione 7,9 da più di 2.900 recensioni su Booking.com, a un prezzo ben inferiore a quello della nostra scelta di pregio. Soggiorno su invito dell'hotel: l'hotel ospita il nostro team il 25 ottobre 2026.",
+		"pt": "Um hotel central em Odense com terraço na cobertura, com classificação de 7,9 com base em mais de 2900 avaliações do Booking.com, por um preço bem inferior ao da nossa opção superior. Estadia a convite do hotel: o hotel está a alojar a nossa equipa a 25 de outubro de 2026."
+	},
+	"A central budget pick in Aalst centre, rated 8.8 from 359 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Aalst centre, vurderet til 8,8 fra 359 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Aalst centre, bewertet mit 8,8 aus 359 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Aalst centre, con una puntuación de 8,8 a partir de 359 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Aalst centre, notée 8,8 sur 359 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Aalst centre, con valutazione 8,8 da 359 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Aalst centre, com classificação de 8,8 com base em 359 avaliações do Booking.com."
+	},
+	"A central budget pick in Aix-en-Provence centre, rated 8.7 from 1,630 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Aix-en-Provence centre, vurderet til 8,7 fra 1.630 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Aix-en-Provence centre, bewertet mit 8,7 aus 1.630 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Aix-en-Provence centre, con una puntuación de 8,7 a partir de 1630 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Aix-en-Provence centre, notée 8,7 sur 1 630 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Aix-en-Provence centre, con valutazione 8,7 da 1.630 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Aix-en-Provence centre, com classificação de 8,7 com base em 1630 avaliações do Booking.com."
+	},
+	"A central budget pick in Al Muntazah, rated 8.8 from 3,519 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Al Muntazah, vurderet til 8,8 fra 3.519 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Al Muntazah, bewertet mit 8,8 aus 3.519 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Al Muntazah, con una puntuación de 8,8 a partir de 3519 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Al Muntazah, notée 8,8 sur 3 519 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Al Muntazah, con valutazione 8,8 da 3.519 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Al Muntazah, com classificação de 8,8 com base em 3519 avaliações do Booking.com."
+	},
+	"A central budget pick in Al Olaya, Riyadh, rated 8.9 from 1,463 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Al Olaya, Riyadh, vurderet til 8,9 fra 1.463 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Al Olaya, Riyadh, bewertet mit 8,9 aus 1.463 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Al Olaya, Riyadh, con una puntuación de 8,9 a partir de 1463 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Al Olaya, Riyadh, notée 8,9 sur 1 463 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Al Olaya, Riyadh, con valutazione 8,9 da 1.463 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Al Olaya, Riyadh, com classificação de 8,9 com base em 1463 avaliações do Booking.com."
+	},
+	"A central budget pick in Al Sharafiah, rated 8.9 from 955 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Al Sharafiah, vurderet til 8,9 fra 955 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Al Sharafiah, bewertet mit 8,9 aus 955 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Al Sharafiah, con una puntuación de 8,9 a partir de 955 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Al Sharafiah, notée 8,9 sur 955 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Al Sharafiah, con valutazione 8,9 da 955 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Al Sharafiah, com classificação de 8,9 com base em 955 avaliações do Booking.com."
+	},
+	"A central budget pick in Al Wasl, rated 9.1 from 8,452 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Al Wasl, vurderet til 9,1 fra 8.452 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Al Wasl, bewertet mit 9,1 aus 8.452 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Al Wasl, con una puntuación de 9,1 a partir de 8452 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Al Wasl, notée 9,1 sur 8 452 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Al Wasl, con valutazione 9,1 da 8.452 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Al Wasl, com classificação de 9,1 com base em 8452 avaliações do Booking.com."
+	},
+	"A central budget pick in Alba old town, rated 8.1 from 1,134 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Alba old town, vurderet til 8,1 fra 1.134 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Alba old town, bewertet mit 8,1 aus 1.134 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Alba old town, con una puntuación de 8,1 a partir de 1134 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Alba old town, notée 8,1 sur 1 134 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Alba old town, con valutazione 8,1 da 1.134 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Alba old town, com classificação de 8,1 com base em 1134 avaliações do Booking.com."
+	},
+	"A central budget pick in Albufeira centre, rated 8.2 from 1,258 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Albufeira centre, vurderet til 8,2 fra 1.258 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Albufeira centre, bewertet mit 8,2 aus 1.258 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Albufeira centre, con una puntuación de 8,2 a partir de 1258 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Albufeira centre, notée 8,2 sur 1 258 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Albufeira centre, con valutazione 8,2 da 1.258 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Albufeira centre, com classificação de 8,2 com base em 1258 avaliações do Booking.com."
+	},
+	"A central budget pick in Antequera centre, rated 8.3 from 3,788 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Antequera centre, vurderet til 8,3 fra 3.788 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Antequera centre, bewertet mit 8,3 aus 3.788 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Antequera centre, con una puntuación de 8,3 a partir de 3788 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Antequera centre, notée 8,3 sur 3 788 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Antequera centre, con valutazione 8,3 da 3.788 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Antequera centre, com classificação de 8,3 com base em 3788 avaliações do Booking.com."
+	},
+	"A central budget pick in Auckland Park, rated 8.0 from 2,826 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Auckland Park, vurderet til 8,0 fra 2.826 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Auckland Park, bewertet mit 8,0 aus 2.826 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Auckland Park, con una puntuación de 8,0 a partir de 2826 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Auckland Park, notée 8,0 sur 2 826 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Auckland Park, con valutazione 8,0 da 2.826 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Auckland Park, com classificação de 8,0 com base em 2826 avaliações do Booking.com."
+	},
+	"A central budget pick in Badajoz old town, rated 9.1 from 1,435 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Badajoz old town, vurderet til 9,1 fra 1.435 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Badajoz old town, bewertet mit 9,1 aus 1.435 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Badajoz old town, con una puntuación de 9,1 a partir de 1435 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Badajoz old town, notée 9,1 sur 1 435 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Badajoz old town, con valutazione 9,1 da 1.435 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Badajoz old town, com classificação de 9,1 com base em 1435 avaliações do Booking.com."
+	},
+	"A central budget pick in Bangkok Old Town, rated 7.9 from 6,022 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Bangkok Old Town, vurderet til 7,9 fra 6.022 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Bangkok Old Town, bewertet mit 7,9 aus 6.022 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Bangkok Old Town, con una puntuación de 7,9 a partir de 6022 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Bangkok Old Town, notée 7,9 sur 6 022 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Bangkok Old Town, con valutazione 7,9 da 6.022 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Bangkok Old Town, com classificação de 7,9 com base em 6022 avaliações do Booking.com."
+	},
+	"A central budget pick in Banyuwangi Centre, rated 7.7 from 351 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Banyuwangi Centre, vurderet til 7,7 fra 351 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Banyuwangi Centre, bewertet mit 7,7 aus 351 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Banyuwangi Centre, con una puntuación de 7,7 a partir de 351 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Banyuwangi Centre, notée 7,7 sur 351 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Banyuwangi Centre, con valutazione 7,7 da 351 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Banyuwangi Centre, com classificação de 7,7 com base em 351 avaliações do Booking.com."
+	},
+	"A central budget pick in Benevento Centre, rated 7.9 from 489 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Benevento Centre, vurderet til 7,9 fra 489 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Benevento Centre, bewertet mit 7,9 aus 489 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Benevento Centre, con una puntuación de 7,9 a partir de 489 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Benevento Centre, notée 7,9 sur 489 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Benevento Centre, con valutazione 7,9 da 489 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Benevento Centre, com classificação de 7,9 com base em 489 avaliações do Booking.com."
+	},
+	"A central budget pick in Bethlehem, rated 8.5 from 418 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Bethlehem, vurderet til 8,5 fra 418 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Bethlehem, bewertet mit 8,5 aus 418 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Bethlehem, con una puntuación de 8,5 a partir de 418 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Bethlehem, notée 8,5 sur 418 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Bethlehem, con valutazione 8,5 da 418 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Bethlehem, com classificação de 8,5 com base em 418 avaliações do Booking.com."
+	},
+	"A central budget pick in Bikaner old city, rated 8.9 from 39 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Bikaner old city, vurderet til 8,9 fra 39 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Bikaner old city, bewertet mit 8,9 aus 39 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Bikaner old city, con una puntuación de 8,9 a partir de 39 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Bikaner old city, notée 8,9 sur 39 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Bikaner old city, con valutazione 8,9 da 39 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Bikaner old city, com classificação de 8,9 com base em 39 avaliações do Booking.com."
+	},
+	"A central budget pick in Biloxi, rated 7.9 from 741 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Biloxi, vurderet til 7,9 fra 741 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Biloxi, bewertet mit 7,9 aus 741 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Biloxi, con una puntuación de 7,9 a partir de 741 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Biloxi, notée 7,9 sur 741 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Biloxi, con valutazione 7,9 da 741 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Biloxi, com classificação de 7,9 com base em 741 avaliações do Booking.com."
+	},
+	"A central budget pick in Binz, rated 8.6 from 467 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Binz, vurderet til 8,6 fra 467 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Binz, bewertet mit 8,6 aus 467 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Binz, con una puntuación de 8,6 a partir de 467 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Binz, notée 8,6 sur 467 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Binz, con valutazione 8,6 da 467 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Binz, com classificação de 8,6 com base em 467 avaliações do Booking.com."
+	},
+	"A central budget pick in Bournemouth City Centre, rated 8.8 from 1,620 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Bournemouth City Centre, vurderet til 8,8 fra 1.620 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Bournemouth City Centre, bewertet mit 8,8 aus 1.620 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Bournemouth City Centre, con una puntuación de 8,8 a partir de 1620 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Bournemouth City Centre, notée 8,8 sur 1 620 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Bournemouth City Centre, con valutazione 8,8 da 1.620 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Bournemouth City Centre, com classificação de 8,8 com base em 1620 avaliações do Booking.com."
+	},
+	"A central budget pick in Brentwood, rated 8.4 from 191 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Brentwood, vurderet til 8,4 fra 191 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Brentwood, bewertet mit 8,4 aus 191 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Brentwood, con una puntuación de 8,4 a partir de 191 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Brentwood, notée 8,4 sur 191 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Brentwood, con valutazione 8,4 da 191 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Brentwood, com classificação de 8,4 com base em 191 avaliações do Booking.com."
+	},
+	"A central budget pick in Bupyeong-gu, rated 8.4 from 2,091 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Bupyeong-gu, vurderet til 8,4 fra 2.091 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Bupyeong-gu, bewertet mit 8,4 aus 2.091 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Bupyeong-gu, con una puntuación de 8,4 a partir de 2091 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Bupyeong-gu, notée 8,4 sur 2 091 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Bupyeong-gu, con valutazione 8,4 da 2.091 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Bupyeong-gu, com classificação de 8,4 com base em 2091 avaliações do Booking.com."
+	},
+	"A central budget pick in Burbank, rated 8.1 from 130 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Burbank, vurderet til 8,1 fra 130 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Burbank, bewertet mit 8,1 aus 130 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Burbank, con una puntuación de 8,1 a partir de 130 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Burbank, notée 8,1 sur 130 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Burbank, con valutazione 8,1 da 130 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Burbank, com classificação de 8,1 com base em 130 avaliações do Booking.com."
+	},
+	"A central budget pick in Caldas Novas centre, rated 9.1 from 649 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Caldas Novas centre, vurderet til 9,1 fra 649 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Caldas Novas centre, bewertet mit 9,1 aus 649 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Caldas Novas centre, con una puntuación de 9,1 a partir de 649 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Caldas Novas centre, notée 9,1 sur 649 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Caldas Novas centre, con valutazione 9,1 da 649 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Caldas Novas centre, com classificação de 9,1 com base em 649 avaliações do Booking.com."
+	},
+	"A central budget pick in Cape Town CBD, rated 7.6 from 1,314 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Cape Town CBD, vurderet til 7,6 fra 1.314 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Cape Town CBD, bewertet mit 7,6 aus 1.314 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Cape Town CBD, con una puntuación de 7,6 a partir de 1314 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Cape Town CBD, notée 7,6 sur 1 314 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Cape Town CBD, con valutazione 7,6 da 1.314 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Cape Town CBD, com classificação de 7,6 com base em 1314 avaliações do Booking.com."
+	},
+	"A central budget pick in Capitole, Toulouse, rated 8.8 from 837 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Capitole, Toulouse, vurderet til 8,8 fra 837 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Capitole, Toulouse, bewertet mit 8,8 aus 837 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Capitole, Toulouse, con una puntuación de 8,8 a partir de 837 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Capitole, Toulouse, notée 8,8 sur 837 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Capitole, Toulouse, con valutazione 8,8 da 837 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Capitole, Toulouse, com classificação de 8,8 com base em 837 avaliações do Booking.com."
+	},
+	"A central budget pick in Cascais centre, rated 7.9 from 1,439 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Cascais centre, vurderet til 7,9 fra 1.439 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Cascais centre, bewertet mit 7,9 aus 1.439 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Cascais centre, con una puntuación de 7,9 a partir de 1439 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Cascais centre, notée 7,9 sur 1 439 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Cascais centre, con valutazione 7,9 da 1.439 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Cascais centre, com classificação de 7,9 com base em 1439 avaliações do Booking.com."
+	},
+	"A central budget pick in Castelldefels centre, rated 8 from 2,563 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Castelldefels centre, vurderet til 8 fra 2.563 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Castelldefels centre, bewertet mit 8 aus 2.563 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Castelldefels centre, con una puntuación de 8 a partir de 2563 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Castelldefels centre, notée 8 sur 2 563 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Castelldefels centre, con valutazione 8 da 2.563 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Castelldefels centre, com classificação de 8 com base em 2563 avaliações do Booking.com."
+	},
+	"A central budget pick in Centro, Madrid, rated 9.1 from 2,817 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Centro, Madrid, vurderet til 9,1 fra 2.817 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Centro, Madrid, bewertet mit 9,1 aus 2.817 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Centro, Madrid, con una puntuación de 9,1 a partir de 2817 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Centro, Madrid, notée 9,1 sur 2 817 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Centro, Madrid, con valutazione 9,1 da 2.817 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Centro, Madrid, com classificação de 9,1 com base em 2817 avaliações do Booking.com."
+	},
+	"A central budget pick in Channel District, rated 8.9 from 503 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Channel District, vurderet til 8,9 fra 503 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Channel District, bewertet mit 8,9 aus 503 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Channel District, con una puntuación de 8,9 a partir de 503 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Channel District, notée 8,9 sur 503 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Channel District, con valutazione 8,9 da 503 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Channel District, com classificação de 8,9 com base em 503 avaliações do Booking.com."
+	},
+	"A central budget pick in Chesterfield, rated 8.3 from 995 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Chesterfield, vurderet til 8,3 fra 995 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Chesterfield, bewertet mit 8,3 aus 995 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Chesterfield, con una puntuación de 8,3 a partir de 995 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Chesterfield, notée 8,3 sur 995 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Chesterfield, con valutazione 8,3 da 995 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Chesterfield, com classificação de 8,3 com base em 995 avaliações do Booking.com."
+	},
+	"A central budget pick in Church-Wellesley Village, rated 7.3 from 103 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Church-Wellesley Village, vurderet til 7,3 fra 103 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Church-Wellesley Village, bewertet mit 7,3 aus 103 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Church-Wellesley Village, con una puntuación de 7,3 a partir de 103 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Church-Wellesley Village, notée 7,3 sur 103 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Church-Wellesley Village, con valutazione 7,3 da 103 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Church-Wellesley Village, com classificação de 7,3 com base em 103 avaliações do Booking.com."
+	},
+	"A central budget pick in Cincinnati Riverfront, rated 8.7 from 905 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Cincinnati Riverfront, vurderet til 8,7 fra 905 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Cincinnati Riverfront, bewertet mit 8,7 aus 905 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Cincinnati Riverfront, con una puntuación de 8,7 a partir de 905 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Cincinnati Riverfront, notée 8,7 sur 905 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Cincinnati Riverfront, con valutazione 8,7 da 905 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Cincinnati Riverfront, com classificação de 8,7 com base em 905 avaliações do Booking.com."
+	},
+	"A central budget pick in City Centre, rated 7.7 from 80 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i City Centre, vurderet til 7,7 fra 80 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in City Centre, bewertet mit 7,7 aus 80 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en City Centre, con una puntuación de 7,7 a partir de 80 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à City Centre, notée 7,7 sur 80 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a City Centre, con valutazione 7,7 da 80 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em City Centre, com classificação de 7,7 com base em 80 avaliações do Booking.com."
+	},
+	"A central budget pick in Concepción centre, rated 8.3 from 2,257 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Concepción centre, vurderet til 8,3 fra 2.257 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Concepción centre, bewertet mit 8,3 aus 2.257 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Concepción centre, con una puntuación de 8,3 a partir de 2257 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Concepción centre, notée 8,3 sur 2 257 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Concepción centre, con valutazione 8,3 da 2.257 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Concepción centre, com classificação de 8,3 com base em 2257 avaliações do Booking.com."
+	},
+	"A central budget pick in Daytona Beach Shores, rated 8.6 from 411 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Daytona Beach Shores, vurderet til 8,6 fra 411 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Daytona Beach Shores, bewertet mit 8,6 aus 411 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Daytona Beach Shores, con una puntuación de 8,6 a partir de 411 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Daytona Beach Shores, notée 8,6 sur 411 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Daytona Beach Shores, con valutazione 8,6 da 411 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Daytona Beach Shores, com classificação de 8,6 com base em 411 avaliações do Booking.com."
+	},
+	"A central budget pick in Deccan Gymkhana, rated 7.9 from 127 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Deccan Gymkhana, vurderet til 7,9 fra 127 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Deccan Gymkhana, bewertet mit 7,9 aus 127 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Deccan Gymkhana, con una puntuación de 7,9 a partir de 127 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Deccan Gymkhana, notée 7,9 sur 127 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Deccan Gymkhana, con valutazione 7,9 da 127 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Deccan Gymkhana, com classificação de 7,9 com base em 127 avaliações do Booking.com."
+	},
+	"A central budget pick in Desenzano lakefront, rated 9 from 1,608 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Desenzano lakefront, vurderet til 9 fra 1.608 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Desenzano lakefront, bewertet mit 9 aus 1.608 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Desenzano lakefront, con una puntuación de 9 a partir de 1608 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Desenzano lakefront, notée 9 sur 1 608 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Desenzano lakefront, con valutazione 9 da 1.608 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Desenzano lakefront, com classificação de 9 com base em 1608 avaliações do Booking.com."
+	},
+	"A central budget pick in Dijon Old Town, rated 8.1 from 2,343 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Dijon Old Town, vurderet til 8,1 fra 2.343 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Dijon Old Town, bewertet mit 8,1 aus 2.343 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Dijon Old Town, con una puntuación de 8,1 a partir de 2343 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Dijon Old Town, notée 8,1 sur 2 343 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Dijon Old Town, con valutazione 8,1 da 2.343 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Dijon Old Town, com classificação de 8,1 com base em 2343 avaliações do Booking.com."
+	},
+	"A central budget pick in Doncaster Centre, rated 7.4 from 559 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Doncaster Centre, vurderet til 7,4 fra 559 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Doncaster Centre, bewertet mit 7,4 aus 559 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Doncaster Centre, con una puntuación de 7,4 a partir de 559 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Doncaster Centre, notée 7,4 sur 559 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Doncaster Centre, con valutazione 7,4 da 559 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Doncaster Centre, com classificação de 7,4 com base em 559 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Ann Arbor, rated 8.3 from 56 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Ann Arbor, vurderet til 8,3 fra 56 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Ann Arbor, bewertet mit 8,3 aus 56 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Ann Arbor, con una puntuación de 8,3 a partir de 56 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Ann Arbor, notée 8,3 sur 56 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Ann Arbor, con valutazione 8,3 da 56 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Ann Arbor, com classificação de 8,3 com base em 56 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Atlanta, rated 8.3 from 432 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Atlanta, vurderet til 8,3 fra 432 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Atlanta, bewertet mit 8,3 aus 432 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Atlanta, con una puntuación de 8,3 a partir de 432 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Atlanta, notée 8,3 sur 432 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Atlanta, con valutazione 8,3 da 432 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Atlanta, com classificação de 8,3 com base em 432 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Boise, rated 8.8 from 465 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Boise, vurderet til 8,8 fra 465 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Boise, bewertet mit 8,8 aus 465 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Boise, con una puntuación de 8,8 a partir de 465 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Boise, notée 8,8 sur 465 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Boise, con valutazione 8,8 da 465 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Boise, com classificação de 8,8 com base em 465 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Bradenton, rated 8.2 from 278 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Bradenton, vurderet til 8,2 fra 278 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Bradenton, bewertet mit 8,2 aus 278 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Bradenton, con una puntuación de 8,2 a partir de 278 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Bradenton, notée 8,2 sur 278 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Bradenton, con valutazione 8,2 da 278 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Bradenton, com classificação de 8,2 com base em 278 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Calgary, rated 7.5 from 2,782 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Calgary, vurderet til 7,5 fra 2.782 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Calgary, bewertet mit 7,5 aus 2.782 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Calgary, con una puntuación de 7,5 a partir de 2782 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Calgary, notée 7,5 sur 2 782 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Calgary, con valutazione 7,5 da 2.782 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Calgary, com classificação de 7,5 com base em 2782 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Columbia, rated 9.0 from 281 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Columbia, vurderet til 9,0 fra 281 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Columbia, bewertet mit 9,0 aus 281 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Columbia, con una puntuación de 9,0 a partir de 281 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Columbia, notée 9,0 sur 281 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Columbia, con valutazione 9,0 da 281 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Columbia, com classificação de 9,0 com base em 281 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Columbus, rated 7.7 from 585 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Columbus, vurderet til 7,7 fra 585 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Columbus, bewertet mit 7,7 aus 585 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Columbus, con una puntuación de 7,7 a partir de 585 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Columbus, notée 7,7 sur 585 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Columbus, con valutazione 7,7 da 585 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Columbus, com classificação de 7,7 com base em 585 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Corpus Christi, rated 8.2 from 548 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Corpus Christi, vurderet til 8,2 fra 548 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Corpus Christi, bewertet mit 8,2 aus 548 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Corpus Christi, con una puntuación de 8,2 a partir de 548 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Corpus Christi, notée 8,2 sur 548 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Corpus Christi, con valutazione 8,2 da 548 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Corpus Christi, com classificação de 8,2 com base em 548 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Dallas, rated 8.4 from 734 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Dallas, vurderet til 8,4 fra 734 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Dallas, bewertet mit 8,4 aus 734 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Dallas, con una puntuación de 8,4 a partir de 734 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Dallas, notée 8,4 sur 734 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Dallas, con valutazione 8,4 da 734 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Dallas, com classificação de 8,4 com base em 734 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Des Moines, rated 8.6 from 279 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Des Moines, vurderet til 8,6 fra 279 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Des Moines, bewertet mit 8,6 aus 279 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Des Moines, con una puntuación de 8,6 a partir de 279 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Des Moines, notée 8,6 sur 279 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Des Moines, con valutazione 8,6 da 279 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Des Moines, com classificação de 8,6 com base em 279 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Hamilton, rated 8.0 from 491 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Hamilton, vurderet til 8,0 fra 491 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Hamilton, bewertet mit 8,0 aus 491 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Hamilton, con una puntuación de 8,0 a partir de 491 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Hamilton, notée 8,0 sur 491 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Hamilton, con valutazione 8,0 da 491 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Hamilton, com classificação de 8,0 com base em 491 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Houston, rated 8.5 from 902 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Houston, vurderet til 8,5 fra 902 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Houston, bewertet mit 8,5 aus 902 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Houston, con una puntuación de 8,5 a partir de 902 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Houston, notée 8,5 sur 902 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Houston, con valutazione 8,5 da 902 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Houston, com classificação de 8,5 com base em 902 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Indianapolis, rated 7.4 from 501 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Indianapolis, vurderet til 7,4 fra 501 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Indianapolis, bewertet mit 7,4 aus 501 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Indianapolis, con una puntuación de 7,4 a partir de 501 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Indianapolis, notée 7,4 sur 501 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Indianapolis, con valutazione 7,4 da 501 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Indianapolis, com classificação de 7,4 com base em 501 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Louisville, rated 8.4 from 653 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Louisville, vurderet til 8,4 fra 653 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Louisville, bewertet mit 8,4 aus 653 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Louisville, con una puntuación de 8,4 a partir de 653 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Louisville, notée 8,4 sur 653 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Louisville, con valutazione 8,4 da 653 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Louisville, com classificação de 8,4 com base em 653 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Madison, rated 9.0 from 477 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Madison, vurderet til 9,0 fra 477 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Madison, bewertet mit 9,0 aus 477 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Madison, con una puntuación de 9,0 a partir de 477 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Madison, notée 9,0 sur 477 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Madison, con valutazione 9,0 da 477 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Madison, com classificação de 9,0 com base em 477 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Naples, rated 8.0 from 2,232 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Naples, vurderet til 8,0 fra 2.232 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Naples, bewertet mit 8,0 aus 2.232 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Naples, con una puntuación de 8,0 a partir de 2232 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Naples, notée 8,0 sur 2 232 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Naples, con valutazione 8,0 da 2.232 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Naples, com classificação de 8,0 com base em 2232 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Omaha, rated 8.3 from 296 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Omaha, vurderet til 8,3 fra 296 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Omaha, bewertet mit 8,3 aus 296 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Omaha, con una puntuación de 8,3 a partir de 296 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Omaha, notée 8,3 sur 296 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Omaha, con valutazione 8,3 da 296 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Omaha, com classificação de 8,3 com base em 296 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Phoenix, rated 7.9 from 379 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Phoenix, vurderet til 7,9 fra 379 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Phoenix, bewertet mit 7,9 aus 379 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Phoenix, con una puntuación de 7,9 a partir de 379 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Phoenix, notée 7,9 sur 379 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Phoenix, con valutazione 7,9 da 379 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Phoenix, com classificação de 7,9 com base em 379 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Regina, rated 7.7 from 545 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Regina, vurderet til 7,7 fra 545 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Regina, bewertet mit 7,7 aus 545 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Regina, con una puntuación de 7,7 a partir de 545 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Regina, notée 7,7 sur 545 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Regina, con valutazione 7,7 da 545 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Regina, com classificação de 7,7 com base em 545 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Richmond, rated 8.0 from 633 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Richmond, vurderet til 8,0 fra 633 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Richmond, bewertet mit 8,0 aus 633 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Richmond, con una puntuación de 8,0 a partir de 633 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Richmond, notée 8,0 sur 633 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Richmond, con valutazione 8,0 da 633 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Richmond, com classificação de 8,0 com base em 633 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Salt Lake City, rated 7.0 from 502 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Salt Lake City, vurderet til 7,0 fra 502 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Salt Lake City, bewertet mit 7,0 aus 502 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Salt Lake City, con una puntuación de 7,0 a partir de 502 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Salt Lake City, notée 7,0 sur 502 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Salt Lake City, con valutazione 7,0 da 502 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Salt Lake City, com classificação de 7,0 com base em 502 avaliações do Booking.com."
+	},
+	"A central budget pick in Downtown Tucson, rated 7.3 from 407 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Downtown Tucson, vurderet til 7,3 fra 407 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Downtown Tucson, bewertet mit 7,3 aus 407 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Downtown Tucson, con una puntuación de 7,3 a partir de 407 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Downtown Tucson, notée 7,3 sur 407 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Downtown Tucson, con valutazione 7,3 da 407 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Downtown Tucson, com classificação de 7,3 com base em 407 avaliações do Booking.com."
+	},
+	"A central budget pick in East Akron, rated 8.3 from 291 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i East Akron, vurderet til 8,3 fra 291 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in East Akron, bewertet mit 8,3 aus 291 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en East Akron, con una puntuación de 8,3 a partir de 291 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à East Akron, notée 8,3 sur 291 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a East Akron, con valutazione 8,3 da 291 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em East Akron, com classificação de 8,3 com base em 291 avaliações do Booking.com."
+	},
+	"A central budget pick in Farnborough centre, rated 7.1 from 768 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Farnborough centre, vurderet til 7,1 fra 768 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Farnborough centre, bewertet mit 7,1 aus 768 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Farnborough centre, con una puntuación de 7,1 a partir de 768 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Farnborough centre, notée 7,1 sur 768 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Farnborough centre, con valutazione 7,1 da 768 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Farnborough centre, com classificação de 7,1 com base em 768 avaliações do Booking.com."
+	},
+	"A central budget pick in Faro City Centre, rated 8.1 from 5,025 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Faro City Centre, vurderet til 8,1 fra 5.025 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Faro City Centre, bewertet mit 8,1 aus 5.025 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Faro City Centre, con una puntuación de 8,1 a partir de 5025 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Faro City Centre, notée 8,1 sur 5 025 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Faro City Centre, con valutazione 8,1 da 5.025 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Faro City Centre, com classificação de 8,1 com base em 5025 avaliações do Booking.com."
+	},
+	"A central budget pick in Fass, Dakar, rated 8.4 from 102 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Fass, Dakar, vurderet til 8,4 fra 102 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Fass, Dakar, bewertet mit 8,4 aus 102 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Fass, Dakar, con una puntuación de 8,4 a partir de 102 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Fass, Dakar, notée 8,4 sur 102 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Fass, Dakar, con valutazione 8,4 da 102 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Fass, Dakar, com classificação de 8,4 com base em 102 avaliações do Booking.com."
+	},
+	"A central budget pick in Florianópolis City Centre, rated 8.7 from 2,664 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Florianópolis City Centre, vurderet til 8,7 fra 2.664 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Florianópolis City Centre, bewertet mit 8,7 aus 2.664 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Florianópolis City Centre, con una puntuación de 8,7 a partir de 2664 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Florianópolis City Centre, notée 8,7 sur 2 664 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Florianópolis City Centre, con valutazione 8,7 da 2.664 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Florianópolis City Centre, com classificação de 8,7 com base em 2664 avaliações do Booking.com."
+	},
+	"A central budget pick in Futian, rated 8.5 from 40 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Futian, vurderet til 8,5 fra 40 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Futian, bewertet mit 8,5 aus 40 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Futian, con una puntuación de 8,5 a partir de 40 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Futian, notée 8,5 sur 40 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Futian, con valutazione 8,5 da 40 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Futian, com classificação de 8,5 com base em 40 avaliações do Booking.com."
+	},
+	"A central budget pick in Gare, rated 8.1 from 2,026 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Gare, vurderet til 8,1 fra 2.026 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Gare, bewertet mit 8,1 aus 2.026 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Gare, con una puntuación de 8,1 a partir de 2026 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Gare, notée 8,1 sur 2 026 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Gare, con valutazione 8,1 da 2.026 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Gare, com classificação de 8,1 com base em 2026 avaliações do Booking.com."
+	},
+	"A central budget pick in Garki, Abuja, rated 8.4 from 49 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Garki, Abuja, vurderet til 8,4 fra 49 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Garki, Abuja, bewertet mit 8,4 aus 49 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Garki, Abuja, con una puntuación de 8,4 a partir de 49 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Garki, Abuja, notée 8,4 sur 49 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Garki, Abuja, con valutazione 8,4 da 49 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Garki, Abuja, com classificação de 8,4 com base em 49 avaliações do Booking.com."
+	},
+	"A central budget pick in Garrison, Bridgetown, rated 8 from 390 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Garrison, Bridgetown, vurderet til 8 fra 390 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Garrison, Bridgetown, bewertet mit 8 aus 390 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Garrison, Bridgetown, con una puntuación de 8 a partir de 390 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Garrison, Bridgetown, notée 8 sur 390 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Garrison, Bridgetown, con valutazione 8 da 390 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Garrison, Bridgetown, com classificação de 8 com base em 390 avaliações do Booking.com."
+	},
+	"A central budget pick in Gateway Park, rated 8.1 from 1,640 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Gateway Park, vurderet til 8,1 fra 1.640 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Gateway Park, bewertet mit 8,1 aus 1.640 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Gateway Park, con una puntuación de 8,1 a partir de 1640 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Gateway Park, notée 8,1 sur 1 640 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Gateway Park, con valutazione 8,1 da 1.640 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Gateway Park, com classificação de 8,1 com base em 1640 avaliações do Booking.com."
+	},
+	"A central budget pick in Grenoble centre, rated 8 from 484 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Grenoble centre, vurderet til 8 fra 484 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Grenoble centre, bewertet mit 8 aus 484 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Grenoble centre, con una puntuación de 8 a partir de 484 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Grenoble centre, notée 8 sur 484 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Grenoble centre, con valutazione 8 da 484 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Grenoble centre, com classificação de 8 com base em 484 avaliações do Booking.com."
+	},
+	"A central budget pick in Historic Savannah, rated 8.6 from 1,081 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Historic Savannah, vurderet til 8,6 fra 1.081 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Historic Savannah, bewertet mit 8,6 aus 1.081 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Historic Savannah, con una puntuación de 8,6 a partir de 1081 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Historic Savannah, notée 8,6 sur 1 081 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Historic Savannah, con valutazione 8,6 da 1.081 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Historic Savannah, com classificação de 8,6 com base em 1081 avaliações do Booking.com."
+	},
+	"A central budget pick in Hoan Kiem Old Quarter, rated 9 from 2,805 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Hoan Kiem Old Quarter, vurderet til 9 fra 2.805 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Hoan Kiem Old Quarter, bewertet mit 9 aus 2.805 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Hoan Kiem Old Quarter, con una puntuación de 9 a partir de 2805 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Hoan Kiem Old Quarter, notée 9 sur 2 805 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Hoan Kiem Old Quarter, con valutazione 9 da 2.805 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Hoan Kiem Old Quarter, com classificação de 9 com base em 2805 avaliações do Booking.com."
+	},
+	"A central budget pick in Horta, rated 8.1 from 1,073 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Horta, vurderet til 8,1 fra 1.073 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Horta, bewertet mit 8,1 aus 1.073 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Horta, con una puntuación de 8,1 a partir de 1073 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Horta, notée 8,1 sur 1 073 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Horta, con valutazione 8,1 da 1.073 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Horta, com classificação de 8,1 com base em 1073 avaliações do Booking.com."
+	},
+	"A central budget pick in Huangpu, rated 8.8 from 300 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Huangpu, vurderet til 8,8 fra 300 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Huangpu, bewertet mit 8,8 aus 300 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Huangpu, con una puntuación de 8,8 a partir de 300 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Huangpu, notée 8,8 sur 300 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Huangpu, con valutazione 8,8 da 300 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Huangpu, com classificação de 8,8 com base em 300 avaliações do Booking.com."
+	},
+	"A central budget pick in Kemer centre, rated 8.6 from 225 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Kemer centre, vurderet til 8,6 fra 225 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Kemer centre, bewertet mit 8,6 aus 225 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Kemer centre, con una puntuación de 8,6 a partir de 225 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Kemer centre, notée 8,6 sur 225 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Kemer centre, con valutazione 8,6 da 225 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Kemer centre, com classificação de 8,6 com base em 225 avaliações do Booking.com."
+	},
+	"A central budget pick in Kisutu, rated 8.1 from 319 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Kisutu, vurderet til 8,1 fra 319 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Kisutu, bewertet mit 8,1 aus 319 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Kisutu, con una puntuación de 8,1 a partir de 319 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Kisutu, notée 8,1 sur 319 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Kisutu, con valutazione 8,1 da 319 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Kisutu, com classificação de 8,1 com base em 319 avaliações do Booking.com."
+	},
+	"A central budget pick in Krynica Zdrój Centre, rated 8.6 from 463 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Krynica Zdrój Centre, vurderet til 8,6 fra 463 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Krynica Zdrój Centre, bewertet mit 8,6 aus 463 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Krynica Zdrój Centre, con una puntuación de 8,6 a partir de 463 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Krynica Zdrój Centre, notée 8,6 sur 463 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Krynica Zdrój Centre, con valutazione 8,6 da 463 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Krynica Zdrój Centre, com classificação de 8,6 com base em 463 avaliações do Booking.com."
+	},
+	"A central budget pick in Labone, rated 8.5 from 27 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Labone, vurderet til 8,5 fra 27 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Labone, bewertet mit 8,5 aus 27 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Labone, con una puntuación de 8,5 a partir de 27 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Labone, notée 8,5 sur 27 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Labone, con valutazione 8,5 da 27 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Labone, com classificação de 8,5 com base em 27 avaliações do Booking.com."
+	},
+	"A central budget pick in Latina, rated 7.2 from 501 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Latina, vurderet til 7,2 fra 501 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Latina, bewertet mit 7,2 aus 501 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Latina, con una puntuación de 7,2 a partir de 501 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Latina, notée 7,2 sur 501 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Latina, con valutazione 7,2 da 501 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Latina, com classificação de 7,2 com base em 501 avaliações do Booking.com."
+	},
+	"A central budget pick in Le Mans centre, rated 7.9 from 1,078 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Le Mans centre, vurderet til 7,9 fra 1.078 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Le Mans centre, bewertet mit 7,9 aus 1.078 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Le Mans centre, con una puntuación de 7,9 a partir de 1078 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Le Mans centre, notée 7,9 sur 1 078 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Le Mans centre, con valutazione 7,9 da 1.078 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Le Mans centre, com classificação de 7,9 com base em 1078 avaliações do Booking.com."
+	},
+	"A central budget pick in Le Plateau, rated 8.2 from 481 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Le Plateau, vurderet til 8,2 fra 481 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Le Plateau, bewertet mit 8,2 aus 481 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Le Plateau, con una puntuación de 8,2 a partir de 481 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Le Plateau, notée 8,2 sur 481 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Le Plateau, con valutazione 8,2 da 481 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Le Plateau, com classificação de 8,2 com base em 481 avaliações do Booking.com."
+	},
+	"A central budget pick in Liepāja centre, rated 8.6 from 7,045 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Liepāja centre, vurderet til 8,6 fra 7.045 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Liepāja centre, bewertet mit 8,6 aus 7.045 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Liepāja centre, con una puntuación de 8,6 a partir de 7045 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Liepāja centre, notée 8,6 sur 7 045 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Liepāja centre, con valutazione 8,6 da 7.045 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Liepāja centre, com classificação de 8,6 com base em 7045 avaliações do Booking.com."
+	},
+	"A central budget pick in Lille Centre, rated 7.9 from 3,592 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Lille Centre, vurderet til 7,9 fra 3.592 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Lille Centre, bewertet mit 7,9 aus 3.592 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Lille Centre, con una puntuación de 7,9 a partir de 3592 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Lille Centre, notée 7,9 sur 3 592 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Lille Centre, con valutazione 7,9 da 3.592 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Lille Centre, com classificação de 7,9 com base em 3592 avaliações do Booking.com."
+	},
+	"A central budget pick in Limassol city, rated 9 from 1,772 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Limassol city, vurderet til 9 fra 1.772 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Limassol city, bewertet mit 9 aus 1.772 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Limassol city, con una puntuación de 9 a partir de 1772 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Limassol city, notée 9 sur 1 772 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Limassol city, con valutazione 9 da 1.772 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Limassol city, com classificação de 9 com base em 1772 avaliações do Booking.com."
+	},
+	"A central budget pick in Limenas Hersonissou, rated 9.1 from 439 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Limenas Hersonissou, vurderet til 9,1 fra 439 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Limenas Hersonissou, bewertet mit 9,1 aus 439 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Limenas Hersonissou, con una puntuación de 9,1 a partir de 439 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Limenas Hersonissou, notée 9,1 sur 439 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Limenas Hersonissou, con valutazione 9,1 da 439 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Limenas Hersonissou, com classificação de 9,1 com base em 439 avaliações do Booking.com."
+	},
+	"A central budget pick in Llanes old town, rated 8.6 from 368 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Llanes old town, vurderet til 8,6 fra 368 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Llanes old town, bewertet mit 8,6 aus 368 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Llanes old town, con una puntuación de 8,6 a partir de 368 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Llanes old town, notée 8,6 sur 368 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Llanes old town, con valutazione 8,6 da 368 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Llanes old town, com classificação de 8,6 com base em 368 avaliações do Booking.com."
+	},
+	"A central budget pick in Ludwigsvorstadt, Munich, rated 9 from 4,588 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Ludwigsvorstadt, Munich, vurderet til 9 fra 4.588 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Ludwigsvorstadt, Munich, bewertet mit 9 aus 4.588 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Ludwigsvorstadt, Munich, con una puntuación de 9 a partir de 4588 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Ludwigsvorstadt, Munich, notée 9 sur 4 588 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Ludwigsvorstadt, Munich, con valutazione 9 da 4.588 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Ludwigsvorstadt, Munich, com classificação de 9 com base em 4588 avaliações do Booking.com."
+	},
+	"A central budget pick in Luton Town Centre, rated 7.8 from 7,010 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Luton Town Centre, vurderet til 7,8 fra 7.010 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Luton Town Centre, bewertet mit 7,8 aus 7.010 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Luton Town Centre, con una puntuación de 7,8 a partir de 7010 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Luton Town Centre, notée 7,8 sur 7 010 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Luton Town Centre, con valutazione 7,8 da 7.010 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Luton Town Centre, com classificação de 7,8 com base em 7010 avaliações do Booking.com."
+	},
+	"A central budget pick in Malé, rated 8.0 from 1,081 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Malé, vurderet til 8,0 fra 1.081 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Malé, bewertet mit 8,0 aus 1.081 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Malé, con una puntuación de 8,0 a partir de 1081 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Malé, notée 8,0 sur 1 081 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Malé, con valutazione 8,0 da 1.081 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Malé, com classificação de 8,0 com base em 1081 avaliações do Booking.com."
+	},
+	"A central budget pick in Marmaris centre, rated 8.1 from 465 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Marmaris centre, vurderet til 8,1 fra 465 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Marmaris centre, bewertet mit 8,1 aus 465 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Marmaris centre, con una puntuación de 8,1 a partir de 465 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Marmaris centre, notée 8,1 sur 465 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Marmaris centre, con valutazione 8,1 da 465 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Marmaris centre, com classificação de 8,1 com base em 465 avaliações do Booking.com."
+	},
+	"A central budget pick in Medan, rated 8.0 from 242 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Medan, vurderet til 8,0 fra 242 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Medan, bewertet mit 8,0 aus 242 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Medan, con una puntuación de 8,0 a partir de 242 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Medan, notée 8,0 sur 242 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Medan, con valutazione 8,0 da 242 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Medan, com classificação de 8,0 com base em 242 avaliações do Booking.com."
+	},
+	"A central budget pick in Melbourne, rated 8.2 from 273 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Melbourne, vurderet til 8,2 fra 273 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Melbourne, bewertet mit 8,2 aus 273 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Melbourne, con una puntuación de 8,2 a partir de 273 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Melbourne, notée 8,2 sur 273 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Melbourne, con valutazione 8,2 da 273 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Melbourne, com classificação de 8,2 com base em 273 avaliações do Booking.com."
+	},
+	"A central budget pick in Milan City Centre, rated 8.7 from 2,310 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Milan City Centre, vurderet til 8,7 fra 2.310 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Milan City Centre, bewertet mit 8,7 aus 2.310 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Milan City Centre, con una puntuación de 8,7 a partir de 2310 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Milan City Centre, notée 8,7 sur 2 310 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Milan City Centre, con valutazione 8,7 da 2.310 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Milan City Centre, com classificação de 8,7 com base em 2310 avaliações do Booking.com."
+	},
+	"A central budget pick in Miskolc centre, rated 8.2 from 524 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Miskolc centre, vurderet til 8,2 fra 524 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Miskolc centre, bewertet mit 8,2 aus 524 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Miskolc centre, con una puntuación de 8,2 a partir de 524 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Miskolc centre, notée 8,2 sur 524 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Miskolc centre, con valutazione 8,2 da 524 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Miskolc centre, com classificação de 8,2 com base em 524 avaliações do Booking.com."
+	},
+	"A central budget pick in Montpellier City-Centre, rated 8.2 from 1,093 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Montpellier City-Centre, vurderet til 8,2 fra 1.093 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Montpellier City-Centre, bewertet mit 8,2 aus 1.093 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Montpellier City-Centre, con una puntuación de 8,2 a partir de 1093 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Montpellier City-Centre, notée 8,2 sur 1 093 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Montpellier City-Centre, con valutazione 8,2 da 1.093 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Montpellier City-Centre, com classificação de 8,2 com base em 1093 avaliações do Booking.com."
+	},
+	"A central budget pick in Mulhouse centre, rated 8.1 from 1,461 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Mulhouse centre, vurderet til 8,1 fra 1.461 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Mulhouse centre, bewertet mit 8,1 aus 1.461 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Mulhouse centre, con una puntuación de 8,1 a partir de 1461 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Mulhouse centre, notée 8,1 sur 1 461 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Mulhouse centre, con valutazione 8,1 da 1.461 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Mulhouse centre, com classificação de 8,1 com base em 1461 avaliações do Booking.com."
+	},
+	"A central budget pick in Myeongdong, Seoul, rated 8.6 from 1,778 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Myeongdong, Seoul, vurderet til 8,6 fra 1.778 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Myeongdong, Seoul, bewertet mit 8,6 aus 1.778 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Myeongdong, Seoul, con una puntuación de 8,6 a partir de 1778 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Myeongdong, Seoul, notée 8,6 sur 1 778 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Myeongdong, Seoul, con valutazione 8,6 da 1.778 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Myeongdong, Seoul, com classificação de 8,6 com base em 1778 avaliações do Booking.com."
+	},
+	"A central budget pick in Old town, rated 9.1 from 482 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Old town, vurderet til 9,1 fra 482 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Old town, bewertet mit 9,1 aus 482 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Old town, con una puntuación de 9,1 a partir de 482 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Old town, notée 9,1 sur 482 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Old town, con valutazione 9,1 da 482 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Old town, com classificação de 9,1 com base em 482 avaliações do Booking.com."
+	},
+	"A central budget pick in Orvieto old town, rated 8.3 from 898 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Orvieto old town, vurderet til 8,3 fra 898 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Orvieto old town, bewertet mit 8,3 aus 898 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Orvieto old town, con una puntuación de 8,3 a partir de 898 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Orvieto old town, notée 8,3 sur 898 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Orvieto old town, con valutazione 8,3 da 898 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Orvieto old town, com classificação de 8,3 com base em 898 avaliações do Booking.com."
+	},
+	"A central budget pick in Osijek, rated 8.2 from 294 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Osijek, vurderet til 8,2 fra 294 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Osijek, bewertet mit 8,2 aus 294 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Osijek, con una puntuación de 8,2 a partir de 294 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Osijek, notée 8,2 sur 294 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Osijek, con valutazione 8,2 da 294 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Osijek, com classificação de 8,2 com base em 294 avaliações do Booking.com."
+	},
+	"A central budget pick in Paharganj, rated 8.8 from 622 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Paharganj, vurderet til 8,8 fra 622 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Paharganj, bewertet mit 8,8 aus 622 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Paharganj, con una puntuación de 8,8 a partir de 622 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Paharganj, notée 8,8 sur 622 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Paharganj, con valutazione 8,8 da 622 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Paharganj, com classificação de 8,8 com base em 622 avaliações do Booking.com."
+	},
+	"A central budget pick in Pau, rated 8.5 from 1,057 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Pau, vurderet til 8,5 fra 1.057 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Pau, bewertet mit 8,5 aus 1.057 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Pau, con una puntuación de 8,5 a partir de 1057 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Pau, notée 8,5 sur 1 057 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Pau, con valutazione 8,5 da 1.057 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Pau, com classificação de 8,5 com base em 1057 avaliações do Booking.com."
+	},
+	"A central budget pick in Perret, Le Havre, rated 7.7 from 170 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Perret, Le Havre, vurderet til 7,7 fra 170 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Perret, Le Havre, bewertet mit 7,7 aus 170 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Perret, Le Havre, con una puntuación de 7,7 a partir de 170 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Perret, Le Havre, notée 7,7 sur 170 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Perret, Le Havre, con valutazione 7,7 da 170 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Perret, Le Havre, com classificação de 7,7 com base em 170 avaliações do Booking.com."
+	},
+	"A central budget pick in Rainey Street, Downtown Austin, rated 8.9 from 67 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Rainey Street, Downtown Austin, vurderet til 8,9 fra 67 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Rainey Street, Downtown Austin, bewertet mit 8,9 aus 67 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Rainey Street, Downtown Austin, con una puntuación de 8,9 a partir de 67 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Rainey Street, Downtown Austin, notée 8,9 sur 67 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Rainey Street, Downtown Austin, con valutazione 8,9 da 67 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Rainey Street, Downtown Austin, com classificação de 8,9 com base em 67 avaliações do Booking.com."
+	},
+	"A central budget pick in Rennes centre, rated 8.3 from 2,792 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Rennes centre, vurderet til 8,3 fra 2.792 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Rennes centre, bewertet mit 8,3 aus 2.792 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Rennes centre, con una puntuación de 8,3 a partir de 2792 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Rennes centre, notée 8,3 sur 2 792 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Rennes centre, con valutazione 8,3 da 2.792 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Rennes centre, com classificação de 8,3 com base em 2792 avaliações do Booking.com."
+	},
+	"A central budget pick in Saint-Gervais / Les Grottes, rated 7.7 from 2,385 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Saint-Gervais / Les Grottes, vurderet til 7,7 fra 2.385 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Saint-Gervais / Les Grottes, bewertet mit 7,7 aus 2.385 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Saint-Gervais / Les Grottes, con una puntuación de 7,7 a partir de 2385 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Saint-Gervais / Les Grottes, notée 7,7 sur 2 385 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Saint-Gervais / Les Grottes, con valutazione 7,7 da 2.385 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Saint-Gervais / Les Grottes, com classificação de 7,7 com base em 2385 avaliações do Booking.com."
+	},
+	"A central budget pick in Salalah centre, rated 7.9 from 409 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Salalah centre, vurderet til 7,9 fra 409 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Salalah centre, bewertet mit 7,9 aus 409 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Salalah centre, con una puntuación de 7,9 a partir de 409 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Salalah centre, notée 7,9 sur 409 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Salalah centre, con valutazione 7,9 da 409 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Salalah centre, com classificação de 7,9 com base em 409 avaliações do Booking.com."
+	},
+	"A central budget pick in Salou City Centre, rated 8.3 from 1,934 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Salou City Centre, vurderet til 8,3 fra 1.934 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Salou City Centre, bewertet mit 8,3 aus 1.934 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Salou City Centre, con una puntuación de 8,3 a partir de 1934 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Salou City Centre, notée 8,3 sur 1 934 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Salou City Centre, con valutazione 8,3 da 1.934 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Salou City Centre, com classificação de 8,3 com base em 1934 avaliações do Booking.com."
+	},
+	"A central budget pick in Salvador, rated 8.3 from 1,603 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Salvador, vurderet til 8,3 fra 1.603 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Salvador, bewertet mit 8,3 aus 1.603 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Salvador, con una puntuación de 8,3 a partir de 1603 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Salvador, notée 8,3 sur 1 603 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Salvador, con valutazione 8,3 da 1.603 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Salvador, com classificação de 8,3 com base em 1603 avaliações do Booking.com."
+	},
+	"A central budget pick in Santa Fe centre, rated 8.4 from 1,554 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Santa Fe centre, vurderet til 8,4 fra 1.554 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Santa Fe centre, bewertet mit 8,4 aus 1.554 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Santa Fe centre, con una puntuación de 8,4 a partir de 1554 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Santa Fe centre, notée 8,4 sur 1 554 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Santa Fe centre, con valutazione 8,4 da 1.554 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Santa Fe centre, com classificação de 8,4 com base em 1554 avaliações do Booking.com."
+	},
+	"A central budget pick in Sarandë centre, rated 9.2 from 439 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Sarandë centre, vurderet til 9,2 fra 439 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Sarandë centre, bewertet mit 9,2 aus 439 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Sarandë centre, con una puntuación de 9,2 a partir de 439 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Sarandë centre, notée 9,2 sur 439 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Sarandë centre, con valutazione 9,2 da 439 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Sarandë centre, com classificação de 9,2 com base em 439 avaliações do Booking.com."
+	},
+	"A central budget pick in Sector 8, rated 7.8 from 250 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Sector 8, vurderet til 7,8 fra 250 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Sector 8, bewertet mit 7,8 aus 250 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Sector 8, con una puntuación de 7,8 a partir de 250 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Sector 8, notée 7,8 sur 250 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Sector 8, con valutazione 7,8 da 250 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Sector 8, com classificação de 7,8 com base em 250 avaliações do Booking.com."
+	},
+	"A central budget pick in Shyamala Hills, Bhopal, rated 9 from 9 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Shyamala Hills, Bhopal, vurderet til 9 fra 9 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Shyamala Hills, Bhopal, bewertet mit 9 aus 9 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Shyamala Hills, Bhopal, con una puntuación de 9 a partir de 9 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Shyamala Hills, Bhopal, notée 9 sur 9 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Shyamala Hills, Bhopal, con valutazione 9 da 9 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Shyamala Hills, Bhopal, com classificação de 9 com base em 9 avaliações do Booking.com."
+	},
+	"A central budget pick in Slough, rated 7.9 from 3,247 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Slough, vurderet til 7,9 fra 3.247 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Slough, bewertet mit 7,9 aus 3.247 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Slough, con una puntuación de 7,9 a partir de 3247 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Slough, notée 7,9 sur 3 247 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Slough, con valutazione 7,9 da 3.247 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Slough, com classificação de 7,9 com base em 3247 avaliações do Booking.com."
+	},
+	"A central budget pick in Southampton, rated 8.1 from 2,920 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Southampton, vurderet til 8,1 fra 2.920 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Southampton, bewertet mit 8,1 aus 2.920 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Southampton, con una puntuación de 8,1 a partir de 2920 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Southampton, notée 8,1 sur 2 920 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Southampton, con valutazione 8,1 da 2.920 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Southampton, com classificação de 8,1 com base em 2920 avaliações do Booking.com."
+	},
+	"A central budget pick in Southwest Cedar Rapids, rated 7.7 from 81 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Southwest Cedar Rapids, vurderet til 7,7 fra 81 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Southwest Cedar Rapids, bewertet mit 7,7 aus 81 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Southwest Cedar Rapids, con una puntuación de 7,7 a partir de 81 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Southwest Cedar Rapids, notée 7,7 sur 81 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Southwest Cedar Rapids, con valutazione 7,7 da 81 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Southwest Cedar Rapids, com classificação de 7,7 com base em 81 avaliações do Booking.com."
+	},
+	"A central budget pick in Stresa centre, rated 8.2 from 94 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Stresa centre, vurderet til 8,2 fra 94 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Stresa centre, bewertet mit 8,2 aus 94 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Stresa centre, con una puntuación de 8,2 a partir de 94 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Stresa centre, notée 8,2 sur 94 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Stresa centre, con valutazione 8,2 da 94 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Stresa centre, com classificação de 8,2 com base em 94 avaliações do Booking.com."
+	},
+	"A central budget pick in Tilburg, rated 8.0 from 493 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Tilburg, vurderet til 8,0 fra 493 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Tilburg, bewertet mit 8,0 aus 493 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Tilburg, con una puntuación de 8,0 a partir de 493 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Tilburg, notée 8,0 sur 493 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Tilburg, con valutazione 8,0 da 493 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Tilburg, com classificação de 8,0 com base em 493 avaliações do Booking.com."
+	},
+	"A central budget pick in Trabzon City Center, rated 8.3 from 372 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Trabzon City Center, vurderet til 8,3 fra 372 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Trabzon City Center, bewertet mit 8,3 aus 372 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Trabzon City Center, con una puntuación de 8,3 a partir de 372 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Trabzon City Center, notée 8,3 sur 372 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Trabzon City Center, con valutazione 8,3 da 372 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Trabzon City Center, com classificação de 8,3 com base em 372 avaliações do Booking.com."
+	},
+	"A central budget pick in Trapani City Centre, rated 8.6 from 745 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Trapani City Centre, vurderet til 8,6 fra 745 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Trapani City Centre, bewertet mit 8,6 aus 745 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Trapani City Centre, con una puntuación de 8,6 a partir de 745 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Trapani City Centre, notée 8,6 sur 745 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Trapani City Centre, con valutazione 8,6 da 745 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Trapani City Centre, com classificação de 8,6 com base em 745 avaliações do Booking.com."
+	},
+	"A central budget pick in Trieste Old Town, rated 8.5 from 1,299 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Trieste Old Town, vurderet til 8,5 fra 1.299 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Trieste Old Town, bewertet mit 8,5 aus 1.299 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Trieste Old Town, con una puntuación de 8,5 a partir de 1299 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Trieste Old Town, notée 8,5 sur 1 299 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Trieste Old Town, con valutazione 8,5 da 1.299 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Trieste Old Town, com classificação de 8,5 com base em 1299 avaliações do Booking.com."
+	},
+	"A central budget pick in Uptown Charlotte, rated 8.4 from 452 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Uptown Charlotte, vurderet til 8,4 fra 452 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Uptown Charlotte, bewertet mit 8,4 aus 452 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Uptown Charlotte, con una puntuación de 8,4 a partir de 452 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Uptown Charlotte, notée 8,4 sur 452 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Uptown Charlotte, con valutazione 8,4 da 452 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Uptown Charlotte, com classificação de 8,4 com base em 452 avaliações do Booking.com."
+	},
+	"A central budget pick in Valdosta, rated 8.6 from 238 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Valdosta, vurderet til 8,6 fra 238 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Valdosta, bewertet mit 8,6 aus 238 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Valdosta, con una puntuación de 8,6 a partir de 238 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Valdosta, notée 8,6 sur 238 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Valdosta, con valutazione 8,6 da 238 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Valdosta, com classificação de 8,6 com base em 238 avaliações do Booking.com."
+	},
+	"A central budget pick in Vals-près-le-Puy, rated 8.6 from 1,337 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Vals-près-le-Puy, vurderet til 8,6 fra 1.337 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Vals-près-le-Puy, bewertet mit 8,6 aus 1.337 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Vals-près-le-Puy, con una puntuación de 8,6 a partir de 1337 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Vals-près-le-Puy, notée 8,6 sur 1 337 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Vals-près-le-Puy, con valutazione 8,6 da 1.337 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Vals-près-le-Puy, com classificação de 8,6 com base em 1337 avaliações do Booking.com."
+	},
+	"A central budget pick in Vancouver Waterfront, rated 9 from 104 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Vancouver Waterfront, vurderet til 9 fra 104 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Vancouver Waterfront, bewertet mit 9 aus 104 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Vancouver Waterfront, con una puntuación de 9 a partir de 104 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Vancouver Waterfront, notée 9 sur 104 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Vancouver Waterfront, con valutazione 9 da 104 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Vancouver Waterfront, com classificação de 9 com base em 104 avaliações do Booking.com."
+	},
+	"A central budget pick in Versailles centre, rated 8.5 from 1,343 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Versailles centre, vurderet til 8,5 fra 1.343 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Versailles centre, bewertet mit 8,5 aus 1.343 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Versailles centre, con una puntuación de 8,5 a partir de 1343 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Versailles centre, notée 8,5 sur 1 343 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Versailles centre, con valutazione 8,5 da 1.343 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Versailles centre, com classificação de 8,5 com base em 1343 avaliações do Booking.com."
+	},
+	"A central budget pick in Vichy centre, rated 8.5 from 883 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Vichy centre, vurderet til 8,5 fra 883 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Vichy centre, bewertet mit 8,5 aus 883 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Vichy centre, con una puntuación de 8,5 a partir de 883 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Vichy centre, notée 8,5 sur 883 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Vichy centre, con valutazione 8,5 da 883 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Vichy centre, com classificação de 8,5 com base em 883 avaliações do Booking.com."
+	},
+	"A central budget pick in Victoria Island, rated 7.8 from 245 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Victoria Island, vurderet til 7,8 fra 245 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Victoria Island, bewertet mit 7,8 aus 245 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Victoria Island, con una puntuación de 7,8 a partir de 245 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Victoria Island, notée 7,8 sur 245 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Victoria Island, con valutazione 7,8 da 245 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Victoria Island, com classificação de 7,8 com base em 245 avaliações do Booking.com."
+	},
+	"A central budget pick in Victoria Park, rated 8.6 from 994 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Victoria Park, vurderet til 8,6 fra 994 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Victoria Park, bewertet mit 8,6 aus 994 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Victoria Park, con una puntuación de 8,6 a partir de 994 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Victoria Park, notée 8,6 sur 994 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Victoria Park, con valutazione 8,6 da 994 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Victoria Park, com classificação de 8,6 com base em 994 avaliações do Booking.com."
+	},
+	"A central budget pick in Weavering, Maidstone, rated 8.0 from 5,096 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Weavering, Maidstone, vurderet til 8,0 fra 5.096 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Weavering, Maidstone, bewertet mit 8,0 aus 5.096 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Weavering, Maidstone, con una puntuación de 8,0 a partir de 5096 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Weavering, Maidstone, notée 8,0 sur 5 096 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Weavering, Maidstone, con valutazione 8,0 da 5.096 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Weavering, Maidstone, com classificação de 8,0 com base em 5096 avaliações do Booking.com."
+	},
+	"A central budget pick in Windsor City Centre, rated 8.6 from 476 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Windsor City Centre, vurderet til 8,6 fra 476 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Windsor City Centre, bewertet mit 8,6 aus 476 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Windsor City Centre, con una puntuación de 8,6 a partir de 476 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Windsor City Centre, notée 8,6 sur 476 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Windsor City Centre, con valutazione 8,6 da 476 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Windsor City Centre, com classificação de 8,6 com base em 476 avaliações do Booking.com."
+	},
+	"A central budget pick in Zhifu, Yantai, rated 9.4 from 6 Booking.com reviews.": {
+		"da": "Et centralt budgetvalg i Zhifu, Yantai, vurderet til 9,4 fra 6 anmeldelser på Booking.com.",
+		"de": "Eine zentral gelegene günstige Wahl in Zhifu, Yantai, bewertet mit 9,4 aus 6 Booking.com-Bewertungen.",
+		"es": "Una opción económica céntrica en Zhifu, Yantai, con una puntuación de 9,4 a partir de 6 reseñas de Booking.com.",
+		"fr": "Une option centrale petit budget à Zhifu, Yantai, notée 9,4 sur 6 avis Booking.com.",
+		"it": "Una scelta economica in posizione centrale a Zhifu, Yantai, con valutazione 9,4 da 6 recensioni su Booking.com.",
+		"pt": "Uma opção económica central em Zhifu, Yantai, com classificação de 9,4 com base em 6 avaliações do Booking.com."
+	},
+	"An 18th-century manor house in the old town, rated 9.2 by guests, for well under the price of the luxury pick.": {
+		"da": "Et herregård fra det 18. århundrede i den gamle bydel, vurderet til 9,2 af gæster, til en pris langt under luksus-valget.",
+		"de": "Ein Herrenhaus aus dem 18. Jahrhundert in der Altstadt, von Gästen mit 9,2 bewertet, zu einem Preis deutlich unter dem der Luxus-Wahl.",
+		"es": "Una casa señorial del siglo XVIII en el casco antiguo, con una puntuación de 9,2 según los huéspedes, por un precio muy inferior al de la opción de lujo.",
+		"fr": "Un manoir du XVIIIe siècle dans la vieille ville, noté 9,2 par les clients, à un prix bien inférieur à celui du choix luxe.",
+		"it": "Una dimora padronale del XVIII secolo nel centro storico, con valutazione 9,2 da parte degli ospiti, a un prezzo ben inferiore a quello della scelta lusso.",
+		"pt": "Uma casa senhorial do século XVIII na cidade velha, com classificação de 9,2 dada pelos hóspedes, por um preço bem inferior ao da opção de luxo."
+	},
+	"Central Al Ghubra hotel rated 8.7 from 6,246 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Al Ghubra vurderet til 8,7 fra 6.246 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Al Ghubra, bewertet mit 8,7 aus 6.246 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Al Ghubra con una puntuación de 8,7 a partir de 6246 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Al Ghubra noté 8,7 sur 6 246 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Al Ghubra con valutazione 8,7 da 6.246 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Al Ghubra com classificação de 8,7 com base em 6246 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Al Rawda hotel rated 9.1 from 2,107 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Al Rawda vurderet til 9,1 fra 2.107 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Al Rawda, bewertet mit 9,1 aus 2.107 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Al Rawda con una puntuación de 9,1 a partir de 2107 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Al Rawda noté 9,1 sur 2 107 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Al Rawda con valutazione 9,1 da 2.107 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Al Rawda com classificação de 9,1 com base em 2107 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Almaty centre hotel rated 8.2 from 426 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Almaty centre vurderet til 8,2 fra 426 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Almaty centre, bewertet mit 8,2 aus 426 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Almaty centre con una puntuación de 8,2 a partir de 426 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Almaty centre noté 8,2 sur 426 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Almaty centre con valutazione 8,2 da 426 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Almaty centre com classificação de 8,2 com base em 426 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Alnwick hotel rated 8.5 from 1,570 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Alnwick vurderet til 8,5 fra 1.570 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Alnwick, bewertet mit 8,5 aus 1.570 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Alnwick con una puntuación de 8,5 a partir de 1570 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Alnwick noté 8,5 sur 1 570 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Alnwick con valutazione 8,5 da 1.570 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Alnwick com classificação de 8,5 com base em 1570 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Altstadt-Lehel, Munich hotel rated 8.9 from 3,048 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Altstadt-Lehel, Munich vurderet til 8,9 fra 3.048 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Altstadt-Lehel, Munich, bewertet mit 8,9 aus 3.048 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Altstadt-Lehel, Munich con una puntuación de 8,9 a partir de 3048 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Altstadt-Lehel, Munich noté 8,9 sur 3 048 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Altstadt-Lehel, Munich con valutazione 8,9 da 3.048 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Altstadt-Lehel, Munich com classificação de 8,9 com base em 3048 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Amsterdam City Centre hotel rated 9.1 from 3,377 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Amsterdam City Centre vurderet til 9,1 fra 3.377 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Amsterdam City Centre, bewertet mit 9,1 aus 3.377 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Amsterdam City Centre con una puntuación de 9,1 a partir de 3377 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Amsterdam City Centre noté 9,1 sur 3 377 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Amsterdam City Centre con valutazione 9,1 da 3.377 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Amsterdam City Centre com classificação de 9,1 com base em 3377 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Bahnstadt, Heidelberg hotel rated 8.8 from 4,523 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Bahnstadt, Heidelberg vurderet til 8,8 fra 4.523 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Bahnstadt, Heidelberg, bewertet mit 8,8 aus 4.523 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Bahnstadt, Heidelberg con una puntuación de 8,8 a partir de 4523 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Bahnstadt, Heidelberg noté 8,8 sur 4 523 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Bahnstadt, Heidelberg con valutazione 8,8 da 4.523 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Bahnstadt, Heidelberg com classificação de 8,8 com base em 4523 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Banyuwangi hotel rated 8.3 from 157 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Banyuwangi vurderet til 8,3 fra 157 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Banyuwangi, bewertet mit 8,3 aus 157 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Banyuwangi con una puntuación de 8,3 a partir de 157 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Banyuwangi noté 8,3 sur 157 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Banyuwangi con valutazione 8,3 da 157 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Banyuwangi com classificação de 8,3 com base em 157 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Basingstoke hotel rated 7.4 from 923 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Basingstoke vurderet til 7,4 fra 923 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Basingstoke, bewertet mit 7,4 aus 923 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Basingstoke con una puntuación de 7,4 a partir de 923 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Basingstoke noté 7,4 sur 923 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Basingstoke con valutazione 7,4 da 923 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Basingstoke com classificação de 7,4 com base em 923 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Bayfront hotel rated 8.8 from 899 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Bayfront vurderet til 8,8 fra 899 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Bayfront, bewertet mit 8,8 aus 899 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Bayfront con una puntuación de 8,8 a partir de 899 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Bayfront noté 8,8 sur 899 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Bayfront con valutazione 8,8 da 899 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Bayfront com classificação de 8,8 com base em 899 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Bielsko-Biała centre hotel rated 8.6 from 627 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Bielsko-Biała centre vurderet til 8,6 fra 627 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Bielsko-Biała centre, bewertet mit 8,6 aus 627 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Bielsko-Biała centre con una puntuación de 8,6 a partir de 627 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Bielsko-Biała centre noté 8,6 sur 627 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Bielsko-Biała centre con valutazione 8,6 da 627 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Bielsko-Biała centre com classificação de 8,6 com base em 627 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Bogor Tengah hotel rated 8.3 from 93 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Bogor Tengah vurderet til 8,3 fra 93 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Bogor Tengah, bewertet mit 8,3 aus 93 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Bogor Tengah con una puntuación de 8,3 a partir de 93 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Bogor Tengah noté 8,3 sur 93 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Bogor Tengah con valutazione 8,3 da 93 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Bogor Tengah com classificação de 8,3 com base em 93 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Bozeman hotel rated 8.8 from 223 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Bozeman vurderet til 8,8 fra 223 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Bozeman, bewertet mit 8,8 aus 223 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Bozeman con una puntuación de 8,8 a partir de 223 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Bozeman noté 8,8 sur 223 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Bozeman con valutazione 8,8 da 223 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Bozeman com classificação de 8,8 com base em 223 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Bryan hotel rated 8.5 from 182 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Bryan vurderet til 8,5 fra 182 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Bryan, bewertet mit 8,5 aus 182 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Bryan con una puntuación de 8,5 a partir de 182 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Bryan noté 8,5 sur 182 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Bryan con valutazione 8,5 da 182 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Bryan com classificação de 8,5 com base em 182 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Bytom hotel rated 8.6 from 1,183 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Bytom vurderet til 8,6 fra 1.183 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Bytom, bewertet mit 8,6 aus 1.183 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Bytom con una puntuación de 8,6 a partir de 1183 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Bytom noté 8,6 sur 1 183 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Bytom con valutazione 8,6 da 1.183 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Bytom com classificação de 8,6 com base em 1183 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Canik hotel rated 7.6 from 270 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Canik vurderet til 7,6 fra 270 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Canik, bewertet mit 7,6 aus 270 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Canik con una puntuación de 7,6 a partir de 270 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Canik noté 7,6 sur 270 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Canik con valutazione 7,6 da 270 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Canik com classificação de 7,6 com base em 270 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Cape Coral hotel rated 7.8 from 285 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Cape Coral vurderet til 7,8 fra 285 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Cape Coral, bewertet mit 7,8 aus 285 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Cape Coral con una puntuación de 7,8 a partir de 285 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Cape Coral noté 7,8 sur 285 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Cape Coral con valutazione 7,8 da 285 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Cape Coral com classificação de 7,8 com base em 285 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Casper hotel rated 8.5 from 136 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Casper vurderet til 8,5 fra 136 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Casper, bewertet mit 8,5 aus 136 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Casper con una puntuación de 8,5 a partir de 136 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Casper noté 8,5 sur 136 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Casper con valutazione 8,5 da 136 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Casper com classificação de 8,5 com base em 136 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Castelldefels centre hotel rated 8.4 from 6,212 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Castelldefels centre vurderet til 8,4 fra 6.212 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Castelldefels centre, bewertet mit 8,4 aus 6.212 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Castelldefels centre con una puntuación de 8,4 a partir de 6212 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Castelldefels centre noté 8,4 sur 6 212 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Castelldefels centre con valutazione 8,4 da 6.212 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Castelldefels centre com classificação de 8,4 com base em 6212 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Centre, Riga hotel rated 8.7 from 5,629 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Centre, Riga vurderet til 8,7 fra 5.629 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Centre, Riga, bewertet mit 8,7 aus 5.629 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Centre, Riga con una puntuación de 8,7 a partir de 5629 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Centre, Riga noté 8,7 sur 5 629 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Centre, Riga con valutazione 8,7 da 5.629 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Centre, Riga com classificação de 8,7 com base em 5629 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Centro, Madrid hotel rated 9.4 from 5,834 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Centro, Madrid vurderet til 9,4 fra 5.834 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Centro, Madrid, bewertet mit 9,4 aus 5.834 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Centro, Madrid con una puntuación de 9,4 a partir de 5834 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Centro, Madrid noté 9,4 sur 5 834 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Centro, Madrid con valutazione 9,4 da 5.834 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Centro, Madrid com classificação de 9,4 com base em 5834 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Chapinero hotel rated 9.0 from 953 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Chapinero vurderet til 9,0 fra 953 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Chapinero, bewertet mit 9,0 aus 953 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Chapinero con una puntuación de 9,0 a partir de 953 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Chapinero noté 9,0 sur 953 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Chapinero con valutazione 9,0 da 953 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Chapinero com classificação de 9,0 com base em 953 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Chowringhee, Kolkata hotel rated 7.8 from 725 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Chowringhee, Kolkata vurderet til 7,8 fra 725 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Chowringhee, Kolkata, bewertet mit 7,8 aus 725 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Chowringhee, Kolkata con una puntuación de 7,8 a partir de 725 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Chowringhee, Kolkata noté 7,8 sur 725 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Chowringhee, Kolkata con valutazione 7,8 da 725 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Chowringhee, Kolkata com classificação de 7,8 com base em 725 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central City Centre hotel rated 9.1 from 2,970 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i City Centre vurderet til 9,1 fra 2.970 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in City Centre, bewertet mit 9,1 aus 2.970 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en City Centre con una puntuación de 9,1 a partir de 2970 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de City Centre noté 9,1 sur 2 970 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a City Centre con valutazione 9,1 da 2.970 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em City Centre com classificação de 9,1 com base em 2970 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central City centre hotel rated 8.4 from 4,099 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i City centre vurderet til 8,4 fra 4.099 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in City centre, bewertet mit 8,4 aus 4.099 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en City centre con una puntuación de 8,4 a partir de 4099 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de City centre noté 8,4 sur 4 099 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a City centre con valutazione 8,4 da 4.099 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em City centre com classificação de 8,4 com base em 4099 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Cluj-Napoca centre hotel rated 9.2 from 527 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Cluj-Napoca centre vurderet til 9,2 fra 527 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Cluj-Napoca centre, bewertet mit 9,2 aus 527 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Cluj-Napoca centre con una puntuación de 9,2 a partir de 527 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Cluj-Napoca centre noté 9,2 sur 527 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Cluj-Napoca centre con valutazione 9,2 da 527 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Cluj-Napoca centre com classificação de 9,2 com base em 527 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Cochabamba hotel rated 8.4 from 31 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Cochabamba vurderet til 8,4 fra 31 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Cochabamba, bewertet mit 8,4 aus 31 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Cochabamba con una puntuación de 8,4 a partir de 31 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Cochabamba noté 8,4 sur 31 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Cochabamba con valutazione 8,4 da 31 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Cochabamba com classificação de 8,4 com base em 31 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Deganwy hotel rated 8.9 from 3,103 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Deganwy vurderet til 8,9 fra 3.103 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Deganwy, bewertet mit 8,9 aus 3.103 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Deganwy con una puntuación de 8,9 a partir de 3103 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Deganwy noté 8,9 sur 3 103 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Deganwy con valutazione 8,9 da 3.103 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Deganwy com classificação de 8,9 com base em 3103 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Abu Dhabi hotel rated 8.2 from 6,090 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Abu Dhabi vurderet til 8,2 fra 6.090 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Abu Dhabi, bewertet mit 8,2 aus 6.090 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Abu Dhabi con una puntuación de 8,2 a partir de 6090 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Abu Dhabi noté 8,2 sur 6 090 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Abu Dhabi con valutazione 8,2 da 6.090 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Abu Dhabi com classificação de 8,2 com base em 6090 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Akron hotel rated 8.1 from 154 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Akron vurderet til 8,1 fra 154 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Akron, bewertet mit 8,1 aus 154 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Akron con una puntuación de 8,1 a partir de 154 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Akron noté 8,1 sur 154 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Akron con valutazione 8,1 da 154 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Akron com classificação de 8,1 com base em 154 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Bradenton hotel rated 8.6 from 359 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Bradenton vurderet til 8,6 fra 359 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Bradenton, bewertet mit 8,6 aus 359 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Bradenton con una puntuación de 8,6 a partir de 359 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Bradenton noté 8,6 sur 359 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Bradenton con valutazione 8,6 da 359 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Bradenton com classificação de 8,6 com base em 359 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Burbank hotel rated 8.5 from 2,259 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Burbank vurderet til 8,5 fra 2.259 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Burbank, bewertet mit 8,5 aus 2.259 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Burbank con una puntuación de 8,5 a partir de 2259 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Burbank noté 8,5 sur 2 259 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Burbank con valutazione 8,5 da 2.259 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Burbank com classificação de 8,5 com base em 2259 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Calgary hotel rated 8.1 from 199 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Calgary vurderet til 8,1 fra 199 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Calgary, bewertet mit 8,1 aus 199 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Calgary con una puntuación de 8,1 a partir de 199 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Calgary noté 8,1 sur 199 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Calgary con valutazione 8,1 da 199 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Calgary com classificação de 8,1 com base em 199 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Cancun hotel rated 8.6 from 4,135 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Cancun vurderet til 8,6 fra 4.135 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Cancun, bewertet mit 8,6 aus 4.135 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Cancun con una puntuación de 8,6 a partir de 4135 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Cancun noté 8,6 sur 4 135 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Cancun con valutazione 8,6 da 4.135 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Cancun com classificação de 8,6 com base em 4135 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Colorado Springs hotel rated 8.0 from 119 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Colorado Springs vurderet til 8,0 fra 119 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Colorado Springs, bewertet mit 8,0 aus 119 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Colorado Springs con una puntuación de 8,0 a partir de 119 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Colorado Springs noté 8,0 sur 119 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Colorado Springs con valutazione 8,0 da 119 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Colorado Springs com classificação de 8,0 com base em 119 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Houston hotel rated 8.4 from 1,846 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Houston vurderet til 8,4 fra 1.846 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Houston, bewertet mit 8,4 aus 1.846 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Houston con una puntuación de 8,4 a partir de 1846 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Houston noté 8,4 sur 1 846 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Houston con valutazione 8,4 da 1.846 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Houston com classificação de 8,4 com base em 1846 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Melbourne hotel rated 8.6 from 404 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Melbourne vurderet til 8,6 fra 404 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Melbourne, bewertet mit 8,6 aus 404 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Melbourne con una puntuación de 8,6 a partir de 404 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Melbourne noté 8,6 sur 404 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Melbourne con valutazione 8,6 da 404 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Melbourne com classificação de 8,6 com base em 404 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Naples hotel rated 8.8 from 2,388 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Naples vurderet til 8,8 fra 2.388 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Naples, bewertet mit 8,8 aus 2.388 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Naples con una puntuación de 8,8 a partir de 2388 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Naples noté 8,8 sur 2 388 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Naples con valutazione 8,8 da 2.388 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Naples com classificação de 8,8 com base em 2388 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Phoenix hotel rated 8.8 from 766 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Phoenix vurderet til 8,8 fra 766 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Phoenix, bewertet mit 8,8 aus 766 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Phoenix con una puntuación de 8,8 a partir de 766 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Phoenix noté 8,8 sur 766 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Phoenix con valutazione 8,8 da 766 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Phoenix com classificação de 8,8 com base em 766 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Richmond hotel rated 8.0 from 215 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Richmond vurderet til 8,0 fra 215 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Richmond, bewertet mit 8,0 aus 215 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Richmond con una puntuación de 8,0 a partir de 215 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Richmond noté 8,0 sur 215 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Richmond con valutazione 8,0 da 215 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Richmond com classificação de 8,0 com base em 215 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown San Diego hotel rated 8.3 from 652 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown San Diego vurderet til 8,3 fra 652 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown San Diego, bewertet mit 8,3 aus 652 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown San Diego con una puntuación de 8,3 a partir de 652 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown San Diego noté 8,3 sur 652 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown San Diego con valutazione 8,3 da 652 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown San Diego com classificação de 8,3 com base em 652 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown San Jose hotel rated 8.7 from 379 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown San Jose vurderet til 8,7 fra 379 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown San Jose, bewertet mit 8,7 aus 379 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown San Jose con una puntuación de 8,7 a partir de 379 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown San Jose noté 8,7 sur 379 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown San Jose con valutazione 8,7 da 379 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown San Jose com classificação de 8,7 com base em 379 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Tampa hotel rated 8.3 from 3,134 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Tampa vurderet til 8,3 fra 3.134 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Tampa, bewertet mit 8,3 aus 3.134 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Tampa con una puntuación de 8,3 a partir de 3134 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Tampa noté 8,3 sur 3 134 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Tampa con valutazione 8,3 da 3.134 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Tampa com classificação de 8,3 com base em 3134 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Downtown Tucson hotel rated 8.8 from 242 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Downtown Tucson vurderet til 8,8 fra 242 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Downtown Tucson, bewertet mit 8,8 aus 242 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Downtown Tucson con una puntuación de 8,8 a partir de 242 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Downtown Tucson noté 8,8 sur 242 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Downtown Tucson con valutazione 8,8 da 242 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Downtown Tucson com classificação de 8,8 com base em 242 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Duke / West Main hotel rated 8.6 from 127 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Duke / West Main vurderet til 8,6 fra 127 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Duke / West Main, bewertet mit 8,6 aus 127 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Duke / West Main con una puntuación de 8,6 a partir de 127 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Duke / West Main noté 8,6 sur 127 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Duke / West Main con valutazione 8,6 da 127 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Duke / West Main com classificação de 8,6 com base em 127 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Eastside, Birmingham hotel rated 8.7 from 3,229 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Eastside, Birmingham vurderet til 8,7 fra 3.229 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Eastside, Birmingham, bewertet mit 8,7 aus 3.229 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Eastside, Birmingham con una puntuación de 8,7 a partir de 3229 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Eastside, Birmingham noté 8,7 sur 3 229 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Eastside, Birmingham con valutazione 8,7 da 3.229 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Eastside, Birmingham com classificação de 8,7 com base em 3229 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Enniskillen hotel rated 8.8 from 822 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Enniskillen vurderet til 8,8 fra 822 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Enniskillen, bewertet mit 8,8 aus 822 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Enniskillen con una puntuación de 8,8 a partir de 822 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Enniskillen noté 8,8 sur 822 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Enniskillen con valutazione 8,8 da 822 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Enniskillen com classificação de 8,8 com base em 822 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Erfurt Old Town hotel rated 8.5 from 3,211 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Erfurt Old Town vurderet til 8,5 fra 3.211 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Erfurt Old Town, bewertet mit 8,5 aus 3.211 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Erfurt Old Town con una puntuación de 8,5 a partir de 3211 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Erfurt Old Town noté 8,5 sur 3 211 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Erfurt Old Town con valutazione 8,5 da 3.211 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Erfurt Old Town com classificação de 8,5 com base em 3211 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Fann hotel rated 8.1 from 765 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Fann vurderet til 8,1 fra 765 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Fann, bewertet mit 8,1 aus 765 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Fann con una puntuación de 8,1 a partir de 765 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Fann noté 8,1 sur 765 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Fann con valutazione 8,1 da 765 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Fann com classificação de 8,1 com base em 765 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Farnborough hotel rated 8.5 from 949 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Farnborough vurderet til 8,5 fra 949 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Farnborough, bewertet mit 8,5 aus 949 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Farnborough con una puntuación de 8,5 a partir de 949 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Farnborough noté 8,5 sur 949 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Farnborough con valutazione 8,5 da 949 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Farnborough com classificação de 8,5 com base em 949 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Fribourg Old Town hotel rated 8 from 1,793 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Fribourg Old Town vurderet til 8 fra 1.793 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Fribourg Old Town, bewertet mit 8 aus 1.793 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Fribourg Old Town con una puntuación de 8 a partir de 1793 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Fribourg Old Town noté 8 sur 1 793 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Fribourg Old Town con valutazione 8 da 1.793 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Fribourg Old Town com classificação de 8 com base em 1793 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Glasgow City Centre hotel rated 8.7 from 10,299 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Glasgow City Centre vurderet til 8,7 fra 10.299 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Glasgow City Centre, bewertet mit 8,7 aus 10.299 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Glasgow City Centre con una puntuación de 8,7 a partir de 10 299 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Glasgow City Centre noté 8,7 sur 10 299 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Glasgow City Centre con valutazione 8,7 da 10.299 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Glasgow City Centre com classificação de 8,7 com base em 10 299 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Health District hotel rated 7.1 from 417 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Health District vurderet til 7,1 fra 417 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Health District, bewertet mit 7,1 aus 417 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Health District con una puntuación de 7,1 a partir de 417 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Health District noté 7,1 sur 417 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Health District con valutazione 7,1 da 417 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Health District com classificação de 7,1 com base em 417 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Ifield, Crawley hotel rated 8.2 from 1,449 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Ifield, Crawley vurderet til 8,2 fra 1.449 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Ifield, Crawley, bewertet mit 8,2 aus 1.449 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Ifield, Crawley con una puntuación de 8,2 a partir de 1449 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Ifield, Crawley noté 8,2 sur 1 449 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Ifield, Crawley con valutazione 8,2 da 1.449 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Ifield, Crawley com classificação de 8,2 com base em 1449 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Ipswich hotel rated 8 from 1,404 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Ipswich vurderet til 8 fra 1.404 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Ipswich, bewertet mit 8 aus 1.404 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Ipswich con una puntuación de 8 a partir de 1404 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Ipswich noté 8 sur 1 404 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Ipswich con valutazione 8 da 1.404 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Ipswich com classificação de 8 com base em 1404 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Jalna Road hotel rated 7.6 from 150 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Jalna Road vurderet til 7,6 fra 150 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Jalna Road, bewertet mit 7,6 aus 150 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Jalna Road con una puntuación de 7,6 a partir de 150 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Jalna Road noté 7,6 sur 150 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Jalna Road con valutazione 7,6 da 150 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Jalna Road com classificação de 7,6 com base em 150 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Kandy City Centre hotel rated 8.6 from 760 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Kandy City Centre vurderet til 8,6 fra 760 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Kandy City Centre, bewertet mit 8,6 aus 760 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Kandy City Centre con una puntuación de 8,6 a partir de 760 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Kandy City Centre noté 8,6 sur 760 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Kandy City Centre con valutazione 8,6 da 760 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Kandy City Centre com classificação de 8,6 com base em 760 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Kemer centre hotel rated 8.5 from 175 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Kemer centre vurderet til 8,5 fra 175 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Kemer centre, bewertet mit 8,5 aus 175 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Kemer centre con una puntuación de 8,5 a partir de 175 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Kemer centre noté 8,5 sur 175 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Kemer centre con valutazione 8,5 da 175 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Kemer centre com classificação de 8,5 com base em 175 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Kleparz, Kraków hotel rated 9.3 from 3,091 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Kleparz, Kraków vurderet til 9,3 fra 3.091 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Kleparz, Kraków, bewertet mit 9,3 aus 3.091 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Kleparz, Kraków con una puntuación de 9,3 a partir de 3091 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Kleparz, Kraków noté 9,3 sur 3 091 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Kleparz, Kraków con valutazione 9,3 da 3.091 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Kleparz, Kraków com classificação de 9,3 com base em 3091 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Le Havre centre hotel rated 8.2 from 564 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Le Havre centre vurderet til 8,2 fra 564 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Le Havre centre, bewertet mit 8,2 aus 564 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Le Havre centre con una puntuación de 8,2 a partir de 564 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Le Havre centre noté 8,2 sur 564 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Le Havre centre con valutazione 8,2 da 564 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Le Havre centre com classificação de 8,2 com base em 564 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Leicester City Centre hotel rated 8.8 from 2,994 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Leicester City Centre vurderet til 8,8 fra 2.994 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Leicester City Centre, bewertet mit 8,8 aus 2.994 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Leicester City Centre con una puntuación de 8,8 a partir de 2994 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Leicester City Centre noté 8,8 sur 2 994 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Leicester City Centre con valutazione 8,8 da 2.994 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Leicester City Centre com classificação de 8,8 com base em 2994 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Llanes hotel rated 8.4 from 3,338 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Llanes vurderet til 8,4 fra 3.338 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Llanes, bewertet mit 8,4 aus 3.338 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Llanes con una puntuación de 8,4 a partir de 3338 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Llanes noté 8,4 sur 3 338 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Llanes con valutazione 8,4 da 3.338 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Llanes com classificação de 8,4 com base em 3338 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Luton hotel rated 7.2 from 1,377 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Luton vurderet til 7,2 fra 1.377 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Luton, bewertet mit 7,2 aus 1.377 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Luton con una puntuación de 7,2 a partir de 1377 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Luton noté 7,2 sur 1 377 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Luton con valutazione 7,2 da 1.377 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Luton com classificação de 7,2 com base em 1377 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Main Street District, Dallas hotel rated 8.4 from 1,181 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Main Street District, Dallas vurderet til 8,4 fra 1.181 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Main Street District, Dallas, bewertet mit 8,4 aus 1.181 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Main Street District, Dallas con una puntuación de 8,4 a partir de 1181 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Main Street District, Dallas noté 8,4 sur 1 181 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Main Street District, Dallas con valutazione 8,4 da 1.181 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Main Street District, Dallas com classificação de 8,4 com base em 1181 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Mitte, Leipzig hotel rated 8.6 from 4,250 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Mitte, Leipzig vurderet til 8,6 fra 4.250 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Mitte, Leipzig, bewertet mit 8,6 aus 4.250 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Mitte, Leipzig con una puntuación de 8,6 a partir de 4250 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Mitte, Leipzig noté 8,6 sur 4 250 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Mitte, Leipzig con valutazione 8,6 da 4.250 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Mitte, Leipzig com classificação de 8,6 com base em 4250 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Namur centre hotel rated 8.1 from 1,823 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Namur centre vurderet til 8,1 fra 1.823 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Namur centre, bewertet mit 8,1 aus 1.823 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Namur centre con una puntuación de 8,1 a partir de 1823 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Namur centre noté 8,1 sur 1 823 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Namur centre con valutazione 8,1 da 1.823 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Namur centre com classificação de 8,1 com base em 1823 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Nha Trang centre hotel rated 8.8 from 1,425 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Nha Trang centre vurderet til 8,8 fra 1.425 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Nha Trang centre, bewertet mit 8,8 aus 1.425 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Nha Trang centre con una puntuación de 8,8 a partir de 1425 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Nha Trang centre noté 8,8 sur 1 425 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Nha Trang centre con valutazione 8,8 da 1.425 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Nha Trang centre com classificação de 8,8 com base em 1425 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Nice City Centre hotel rated 8.6 from 801 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Nice City Centre vurderet til 8,6 fra 801 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Nice City Centre, bewertet mit 8,6 aus 801 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Nice City Centre con una puntuación de 8,6 a partir de 801 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Nice City Centre noté 8,6 sur 801 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Nice City Centre con valutazione 8,6 da 801 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Nice City Centre com classificação de 8,6 com base em 801 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Northeast Cedar Rapids hotel rated 8.2 from 100 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Northeast Cedar Rapids vurderet til 8,2 fra 100 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Northeast Cedar Rapids, bewertet mit 8,2 aus 100 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Northeast Cedar Rapids con una puntuación de 8,2 a partir de 100 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Northeast Cedar Rapids noté 8,2 sur 100 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Northeast Cedar Rapids con valutazione 8,2 da 100 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Northeast Cedar Rapids com classificação de 8,2 com base em 100 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Nîmes centre hotel rated 8.5 from 414 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Nîmes centre vurderet til 8,5 fra 414 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Nîmes centre, bewertet mit 8,5 aus 414 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Nîmes centre con una puntuación de 8,5 a partir de 414 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Nîmes centre noté 8,5 sur 414 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Nîmes centre con valutazione 8,5 da 414 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Nîmes centre com classificação de 8,5 com base em 414 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Olhão hotel rated 8.3 from 2,090 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Olhão vurderet til 8,3 fra 2.090 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Olhão, bewertet mit 8,3 aus 2.090 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Olhão con una puntuación de 8,3 a partir de 2090 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Olhão noté 8,3 sur 2 090 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Olhão con valutazione 8,3 da 2.090 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Olhão com classificação de 8,3 com base em 2090 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Parma City Centre hotel rated 8.4 from 3,421 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Parma City Centre vurderet til 8,4 fra 3.421 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Parma City Centre, bewertet mit 8,4 aus 3.421 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Parma City Centre con una puntuación de 8,4 a partir de 3421 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Parma City Centre noté 8,4 sur 3 421 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Parma City Centre con valutazione 8,4 da 3.421 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Parma City Centre com classificação de 8,4 com base em 3421 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Passetto hotel rated 8.8 from 967 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Passetto vurderet til 8,8 fra 967 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Passetto, bewertet mit 8,8 aus 967 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Passetto con una puntuación de 8,8 a partir de 967 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Passetto noté 8,8 sur 967 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Passetto con valutazione 8,8 da 967 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Passetto com classificação de 8,8 com base em 967 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Porto Moniz hotel rated 8.7 from 1,780 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Porto Moniz vurderet til 8,7 fra 1.780 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Porto Moniz, bewertet mit 8,7 aus 1.780 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Porto Moniz con una puntuación de 8,7 a partir de 1780 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Porto Moniz noté 8,7 sur 1 780 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Porto Moniz con valutazione 8,7 da 1.780 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Porto Moniz com classificação de 8,7 com base em 1780 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Regina hotel rated 8.7 from 244 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Regina vurderet til 8,7 fra 244 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Regina, bewertet mit 8,7 aus 244 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Regina con una puntuación de 8,7 a partir de 244 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Regina noté 8,7 sur 244 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Regina con valutazione 8,7 da 244 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Regina com classificação de 8,7 com base em 244 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Sabadell centre hotel rated 7.6 from 1,255 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Sabadell centre vurderet til 7,6 fra 1.255 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Sabadell centre, bewertet mit 7,6 aus 1.255 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Sabadell centre con una puntuación de 7,6 a partir de 1255 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Sabadell centre noté 7,6 sur 1 255 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Sabadell centre con valutazione 7,6 da 1.255 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Sabadell centre com classificação de 7,6 com base em 1255 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Saint-Gervais / Les Grottes hotel rated 7.8 from 2,036 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Saint-Gervais / Les Grottes vurderet til 7,8 fra 2.036 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Saint-Gervais / Les Grottes, bewertet mit 7,8 aus 2.036 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Saint-Gervais / Les Grottes con una puntuación de 7,8 a partir de 2036 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Saint-Gervais / Les Grottes noté 7,8 sur 2 036 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Saint-Gervais / Les Grottes con valutazione 7,8 da 2.036 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Saint-Gervais / Les Grottes com classificação de 7,8 com base em 2036 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Sambiase hotel rated 8.1 from 309 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Sambiase vurderet til 8,1 fra 309 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Sambiase, bewertet mit 8,1 aus 309 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Sambiase con una puntuación de 8,1 a partir de 309 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Sambiase noté 8,1 sur 309 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Sambiase con valutazione 8,1 da 309 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Sambiase com classificação de 8,1 com base em 309 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Santiago City Centre hotel rated 8.8 from 4,049 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Santiago City Centre vurderet til 8,8 fra 4.049 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Santiago City Centre, bewertet mit 8,8 aus 4.049 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Santiago City Centre con una puntuación de 8,8 a partir de 4049 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Santiago City Centre noté 8,8 sur 4 049 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Santiago City Centre con valutazione 8,8 da 4.049 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Santiago City Centre com classificação de 8,8 com base em 4049 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Seomyeon hotel rated 8.7 from 888 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Seomyeon vurderet til 8,7 fra 888 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Seomyeon, bewertet mit 8,7 aus 888 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Seomyeon con una puntuación de 8,7 a partir de 888 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Seomyeon noté 8,7 sur 888 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Seomyeon con valutazione 8,7 da 888 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Seomyeon com classificação de 8,7 com base em 888 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Shobra hotel rated 9.0 from 992 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Shobra vurderet til 9,0 fra 992 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Shobra, bewertet mit 9,0 aus 992 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Shobra con una puntuación de 9,0 a partir de 992 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Shobra noté 9,0 sur 992 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Shobra con valutazione 9,0 da 992 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Shobra com classificação de 9,0 com base em 992 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Songdo hotel rated 8.7 from 753 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Songdo vurderet til 8,7 fra 753 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Songdo, bewertet mit 8,7 aus 753 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Songdo con una puntuación de 8,7 a partir de 753 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Songdo noté 8,7 sur 753 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Songdo con valutazione 8,7 da 753 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Songdo com classificação de 8,7 com base em 753 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Songshan hotel rated 9.0 from 477 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Songshan vurderet til 9,0 fra 477 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Songshan, bewertet mit 9,0 aus 477 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Songshan con una puntuación de 9,0 a partir de 477 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Songshan noté 9,0 sur 477 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Songshan con valutazione 9,0 da 477 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Songshan com classificação de 9,0 com base em 477 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central South Bethlehem hotel rated 8.7 from 420 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i South Bethlehem vurderet til 8,7 fra 420 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in South Bethlehem, bewertet mit 8,7 aus 420 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en South Bethlehem con una puntuación de 8,7 a partir de 420 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de South Bethlehem noté 8,7 sur 420 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a South Bethlehem con valutazione 8,7 da 420 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em South Bethlehem com classificação de 8,7 com base em 420 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central South Temple hotel rated 7.0 from 121 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i South Temple vurderet til 7,0 fra 121 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in South Temple, bewertet mit 7,0 aus 121 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en South Temple con una puntuación de 7,0 a partir de 121 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de South Temple noté 7,0 sur 121 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a South Temple con valutazione 7,0 da 121 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em South Temple com classificação de 7,0 com base em 121 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Taos hotel rated 8.0 from 243 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Taos vurderet til 8,0 fra 243 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Taos, bewertet mit 8,0 aus 243 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Taos con una puntuación de 8,0 a partir de 243 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Taos noté 8,0 sur 243 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Taos con valutazione 8,0 da 243 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Taos com classificação de 8,0 com base em 243 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Tarifa old town hotel rated 9 from 807 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Tarifa old town vurderet til 9 fra 807 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Tarifa old town, bewertet mit 9 aus 807 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Tarifa old town con una puntuación de 9 a partir de 807 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Tarifa old town noté 9 sur 807 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Tarifa old town con valutazione 9 da 807 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Tarifa old town com classificação de 9 com base em 807 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Toulon centre hotel rated 8.3 from 1,152 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Toulon centre vurderet til 8,3 fra 1.152 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Toulon centre, bewertet mit 8,3 aus 1.152 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Toulon centre con una puntuación de 8,3 a partir de 1152 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Toulon centre noté 8,3 sur 1 152 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Toulon centre con valutazione 8,3 da 1.152 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Toulon centre com classificação de 8,3 com base em 1152 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Trabzon City Center hotel rated 8.8 from 1,042 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Trabzon City Center vurderet til 8,8 fra 1.042 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Trabzon City Center, bewertet mit 8,8 aus 1.042 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Trabzon City Center con una puntuación de 8,8 a partir de 1042 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Trabzon City Center noté 8,8 sur 1 042 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Trabzon City Center con valutazione 8,8 da 1.042 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Trabzon City Center com classificação de 8,8 com base em 1042 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Trade Centre, Dubai hotel rated 8.3 from 4,794 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Trade Centre, Dubai vurderet til 8,3 fra 4.794 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Trade Centre, Dubai, bewertet mit 8,3 aus 4.794 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Trade Centre, Dubai con una puntuación de 8,3 a partir de 4794 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Trade Centre, Dubai noté 8,3 sur 4 794 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Trade Centre, Dubai con valutazione 8,3 da 4.794 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Trade Centre, Dubai com classificação de 8,3 com base em 4794 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central University of Dayton hotel rated 9.0 from 139 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i University of Dayton vurderet til 9,0 fra 139 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in University of Dayton, bewertet mit 9,0 aus 139 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en University of Dayton con una puntuación de 9,0 a partir de 139 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de University of Dayton noté 9,0 sur 139 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a University of Dayton con valutazione 9,0 da 139 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em University of Dayton com classificação de 9,0 com base em 139 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Upanga East hotel rated 8.3 from 929 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Upanga East vurderet til 8,3 fra 929 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Upanga East, bewertet mit 8,3 aus 929 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Upanga East con una puntuación de 8,3 a partir de 929 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Upanga East noté 8,3 sur 929 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Upanga East con valutazione 8,3 da 929 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Upanga East com classificação de 8,3 com base em 929 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Verona Historical Centre hotel rated 9.2 from 1,916 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Verona Historical Centre vurderet til 9,2 fra 1.916 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Verona Historical Centre, bewertet mit 9,2 aus 1.916 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Verona Historical Centre con una puntuación de 9,2 a partir de 1916 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Verona Historical Centre noté 9,2 sur 1 916 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Verona Historical Centre con valutazione 9,2 da 1.916 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Verona Historical Centre com classificação de 9,2 com base em 1916 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Vitoria-Gasteiz centre hotel rated 8.8 from 9,303 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Vitoria-Gasteiz centre vurderet til 8,8 fra 9.303 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Vitoria-Gasteiz centre, bewertet mit 8,8 aus 9.303 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Vitoria-Gasteiz centre con una puntuación de 8,8 a partir de 9303 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Vitoria-Gasteiz centre noté 8,8 sur 9 303 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Vitoria-Gasteiz centre con valutazione 8,8 da 9.303 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Vitoria-Gasteiz centre com classificação de 8,8 com base em 9303 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Watford centre hotel rated 7.1 from 3,296 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Watford centre vurderet til 7,1 fra 3.296 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Watford centre, bewertet mit 7,1 aus 3.296 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Watford centre con una puntuación de 7,1 a partir de 3296 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Watford centre noté 7,1 sur 3 296 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Watford centre con valutazione 7,1 da 3.296 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Watford centre com classificação de 7,1 com base em 3296 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central Wuse, Abuja hotel rated 8 from 538 Booking.com reviews: good value close to the sights.": {
+		"da": "Centralt hotel i Wuse, Abuja vurderet til 8 fra 538 anmeldelser på Booking.com: god værdi for pengene tæt på seværdighederne.",
+		"de": "Zentrales Hotel in Wuse, Abuja, bewertet mit 8 aus 538 Booking.com-Bewertungen: gutes Preis-Leistungs-Verhältnis in der Nähe der Sehenswürdigkeiten.",
+		"es": "Hotel céntrico en Wuse, Abuja con una puntuación de 8 a partir de 538 reseñas de Booking.com: buena relación calidad-precio y cerca de los lugares de interés.",
+		"fr": "Hôtel central de Wuse, Abuja noté 8 sur 538 avis Booking.com : bon rapport qualité-prix, proche des sites touristiques.",
+		"it": "Hotel centrale a Wuse, Abuja con valutazione 8 da 538 recensioni su Booking.com: buon rapporto qualità-prezzo, vicino alle attrazioni.",
+		"pt": "Hotel central em Wuse, Abuja com classificação de 8 com base em 538 avaliações do Booking.com: boa relação qualidade-preço e perto dos locais de interesse."
+	},
+	"Central, rated 8.3 from more than 2,400 reviews, and priced between our budget and upscale picks.": {
+		"da": "Centralt, vurderet til 8,3 fra mere end 2.400 anmeldelser, og prissat mellem vores budgetvalg og vores eksklusive valg.",
+		"de": "Zentral gelegen, bewertet mit 8,3 aus mehr als 2.400 Bewertungen, preislich zwischen unserer günstigen und unserer gehobenen Wahl.",
+		"es": "Céntrico, con una puntuación de 8,3 a partir de más de 2400 reseñas, y con un precio intermedio entre nuestras opciones económica y superior.",
+		"fr": "Central, noté 8,3 sur plus de 2 400 avis, et dont le prix se situe entre nos choix petit budget et haut de gamme.",
+		"it": "Centrale, con valutazione 8,3 da più di 2.400 recensioni, e con un prezzo compreso tra le nostre scelte economico e di pregio.",
+		"pt": "Central, com classificação de 8,3 com base em mais de 2400 avaliações, e com um preço intermédio entre as nossas opções económica e superior."
+	},
+	"Frankfurt's classic grand hotel on Kaiserplatz, an official 5-star in the very centre, rated 8.6/10 by 2,656 guests on Booking.com.": {
+		"da": "Frankfurts klassiske grand hotel på Kaiserplatz, et officielt 5-stjernet hotel i selve centrum, vurderet til 8,6/10 af 2.656 gæster på Booking.com.",
+		"de": "Frankfurts klassisches Grandhotel am Kaiserplatz, ein offizielles 5-Sterne-Hotel mitten im Zentrum, mit 8,6/10 von 2.656 Gästen auf Booking.com bewertet.",
+		"es": "El gran hotel clásico de Frankfurt en Kaiserplatz, un 5 estrellas oficial en pleno centro, con una puntuación de 8,6/10 según 2656 huéspedes en Booking.com.",
+		"fr": "Le grand hôtel classique de Francfort sur la Kaiserplatz, un 5 étoiles officiel en plein centre, noté 8,6/10 par 2 656 clients sur Booking.com.",
+		"it": "Il grand hotel classico di Francoforte sulla Kaiserplatz, un 5 stelle ufficiale nel pieno centro, con valutazione 8,6/10 da parte di 2.656 ospiti su Booking.com.",
+		"pt": "O clássico grande hotel de Frankfurt na Kaiserplatz, um 5 estrelas oficial mesmo no centro, com classificação de 8,6/10 dada por 2656 hóspedes no Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Altoona rated 8.3/10 from 412 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 3-stjernet hotel i Downtown Altoona vurderet til 8,3/10 fra 412 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 3-Sterne-Hotel in Downtown Altoona, bewertet mit 8,3/10 aus 412 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 3 estrellas en Downtown Altoona con una puntuación de 8,3/10 a partir de 412 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 3 étoiles à Downtown Altoona noté 8,3/10 sur 412 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 3 stelle a Downtown Altoona con valutazione 8,3/10 da 412 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 3 estrelas em Downtown Altoona com classificação de 8,3/10 com base em 412 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Bryan rated 9.3/10 from 29 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 3-stjernet hotel i Downtown Bryan vurderet til 9,3/10 fra 29 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 3-Sterne-Hotel in Downtown Bryan, bewertet mit 9,3/10 aus 29 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 3 estrellas en Downtown Bryan con una puntuación de 9,3/10 a partir de 29 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 3 étoiles à Downtown Bryan noté 9,3/10 sur 29 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 3 stelle a Downtown Bryan con valutazione 9,3/10 da 29 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 3 estrelas em Downtown Bryan com classificação de 9,3/10 com base em 29 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Lefkada Town rated 8/10 from 968 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 3-stjernet hotel i Lefkada Town vurderet til 8/10 fra 968 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 3-Sterne-Hotel in Lefkada Town, bewertet mit 8/10 aus 968 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 3 estrellas en Lefkada Town con una puntuación de 8/10 a partir de 968 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 3 étoiles à Lefkada Town noté 8/10 sur 968 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 3 stelle a Lefkada Town con valutazione 8/10 da 968 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 3 estrelas em Lefkada Town com classificação de 8/10 com base em 968 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bay area rated 9.0/10 from 1,171 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Bay area vurderet til 9,0/10 fra 1.171 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Bay area, bewertet mit 9,0/10 aus 1.171 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Bay area con una puntuación de 9,0/10 a partir de 1171 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Bay area noté 9,0/10 sur 1 171 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Bay area con valutazione 9,0/10 da 1.171 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Bay area com classificação de 9,0/10 com base em 1171 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bento Gonçalves centre rated 8.8/10 from 2,382 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Bento Gonçalves centre vurderet til 8,8/10 fra 2.382 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Bento Gonçalves centre, bewertet mit 8,8/10 aus 2.382 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Bento Gonçalves centre con una puntuación de 8,8/10 a partir de 2382 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Bento Gonçalves centre noté 8,8/10 sur 2 382 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Bento Gonçalves centre con valutazione 8,8/10 da 2.382 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Bento Gonçalves centre com classificação de 8,8/10 com base em 2382 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bogor Timur rated 8.4/10 from 106 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Bogor Timur vurderet til 8,4/10 fra 106 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Bogor Timur, bewertet mit 8,4/10 aus 106 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Bogor Timur con una puntuación de 8,4/10 a partir de 106 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Bogor Timur noté 8,4/10 sur 106 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Bogor Timur con valutazione 8,4/10 da 106 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Bogor Timur com classificação de 8,4/10 com base em 106 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Braganca rated 8.1/10 from 1,341 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Braganca vurderet til 8,1/10 fra 1.341 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Braganca, bewertet mit 8,1/10 aus 1.341 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Braganca con una puntuación de 8,1/10 a partir de 1341 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Braganca noté 8,1/10 sur 1 341 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Braganca con valutazione 8,1/10 da 1.341 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Braganca com classificação de 8,1/10 com base em 1341 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Caldas Novas centre rated 8.8/10 from 287 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Caldas Novas centre vurderet til 8,8/10 fra 287 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Caldas Novas centre, bewertet mit 8,8/10 aus 287 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Caldas Novas centre con una puntuación de 8,8/10 a partir de 287 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Caldas Novas centre noté 8,8/10 sur 287 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Caldas Novas centre con valutazione 8,8/10 da 287 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Caldas Novas centre com classificação de 8,8/10 com base em 287 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Centro Storico rated 9.3/10 from 641 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Centro Storico vurderet til 9,3/10 fra 641 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Centro Storico, bewertet mit 9,3/10 aus 641 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Centro Storico con una puntuación de 9,3/10 a partir de 641 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Centro Storico noté 9,3/10 sur 641 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Centro Storico con valutazione 9,3/10 da 641 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Centro Storico com classificação de 9,3/10 com base em 641 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chemnitz rated 8.3/10 from 1,986 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Chemnitz vurderet til 8,3/10 fra 1.986 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Chemnitz, bewertet mit 8,3/10 aus 1.986 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Chemnitz con una puntuación de 8,3/10 a partir de 1986 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Chemnitz noté 8,3/10 sur 1 986 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Chemnitz con valutazione 8,3/10 da 1.986 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Chemnitz com classificação de 8,3/10 com base em 1986 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Cherkasy centre rated 8.8/10 from 1,312 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Cherkasy centre vurderet til 8,8/10 fra 1.312 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Cherkasy centre, bewertet mit 8,8/10 aus 1.312 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Cherkasy centre con una puntuación de 8,8/10 a partir de 1312 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Cherkasy centre noté 8,8/10 sur 1 312 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Cherkasy centre con valutazione 8,8/10 da 1.312 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Cherkasy centre com classificação de 8,8/10 com base em 1312 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chesterfield town centre rated 8.7/10 from 550 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Chesterfield town centre vurderet til 8,7/10 fra 550 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Chesterfield town centre, bewertet mit 8,7/10 aus 550 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Chesterfield town centre con una puntuación de 8,7/10 a partir de 550 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Chesterfield town centre noté 8,7/10 sur 550 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Chesterfield town centre con valutazione 8,7/10 da 550 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Chesterfield town centre com classificação de 8,7/10 com base em 550 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City Centre rated 8.8/10 from 1,043 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i City Centre vurderet til 8,8/10 fra 1.043 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in City Centre, bewertet mit 8,8/10 aus 1.043 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en City Centre con una puntuación de 8,8/10 a partir de 1043 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à City Centre noté 8,8/10 sur 1 043 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a City Centre con valutazione 8,8/10 da 1.043 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em City Centre com classificação de 8,8/10 com base em 1043 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City centre rated 8.5/10 from 702 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i City centre vurderet til 8,5/10 fra 702 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in City centre, bewertet mit 8,5/10 aus 702 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en City centre con una puntuación de 8,5/10 a partir de 702 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à City centre noté 8,5/10 sur 702 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a City centre con valutazione 8,5/10 da 702 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em City centre com classificação de 8,5/10 com base em 702 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darlington rated 8.1/10 from 1,751 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Darlington vurderet til 8,1/10 fra 1.751 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Darlington, bewertet mit 8,1/10 aus 1.751 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Darlington con una puntuación de 8,1/10 a partir de 1751 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Darlington noté 8,1/10 sur 1 751 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Darlington con valutazione 8,1/10 da 1.751 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Darlington com classificação de 8,1/10 com base em 1751 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darmstadt centre rated 8/10 from 1,222 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Darmstadt centre vurderet til 8/10 fra 1.222 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Darmstadt centre, bewertet mit 8/10 aus 1.222 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Darmstadt centre con una puntuación de 8/10 a partir de 1222 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Darmstadt centre noté 8/10 sur 1 222 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Darmstadt centre con valutazione 8/10 da 1.222 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Darmstadt centre com classificação de 8/10 com base em 1222 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Daytona Beach oceanfront rated 8.6/10 from 1,807 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Daytona Beach oceanfront vurderet til 8,6/10 fra 1.807 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Daytona Beach oceanfront, bewertet mit 8,6/10 aus 1.807 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Daytona Beach oceanfront con una puntuación de 8,6/10 a partir de 1807 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Daytona Beach oceanfront noté 8,6/10 sur 1 807 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Daytona Beach oceanfront con valutazione 8,6/10 da 1.807 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Daytona Beach oceanfront com classificação de 8,6/10 com base em 1807 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Denizli Centre rated 8.5/10 from 86 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Denizli Centre vurderet til 8,5/10 fra 86 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Denizli Centre, bewertet mit 8,5/10 aus 86 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Denizli Centre con una puntuación de 8,5/10 a partir de 86 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Denizli Centre noté 8,5/10 sur 86 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Denizli Centre con valutazione 8,5/10 da 86 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Denizli Centre com classificação de 8,5/10 com base em 86 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Akron rated 8.5/10 from 58 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Akron vurderet til 8,5/10 fra 58 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Akron, bewertet mit 8,5/10 aus 58 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Akron con una puntuación de 8,5/10 a partir de 58 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Akron noté 8,5/10 sur 58 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Akron con valutazione 8,5/10 da 58 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Akron com classificação de 8,5/10 com base em 58 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Kingston rated 8.5/10 from 494 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Kingston vurderet til 8,5/10 fra 494 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Kingston, bewertet mit 8,5/10 aus 494 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Kingston con una puntuación de 8,5/10 a partir de 494 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Kingston noté 8,5/10 sur 494 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Kingston con valutazione 8,5/10 da 494 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Kingston com classificação de 8,5/10 com base em 494 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Lynchburg rated 9.2/10 from 154 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Lynchburg vurderet til 9,2/10 fra 154 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Lynchburg, bewertet mit 9,2/10 aus 154 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Lynchburg con una puntuación de 9,2/10 a partir de 154 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Lynchburg noté 9,2/10 sur 154 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Lynchburg con valutazione 9,2/10 da 154 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Lynchburg com classificação de 9,2/10 com base em 154 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Madison rated 8.8/10 from 148 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Madison vurderet til 8,8/10 fra 148 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Madison, bewertet mit 8,8/10 aus 148 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Madison con una puntuación de 8,8/10 a partir de 148 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Madison noté 8,8/10 sur 148 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Madison con valutazione 8,8/10 da 148 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Madison com classificação de 8,8/10 com base em 148 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Naples rated 9.1/10 from 261 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Naples vurderet til 9,1/10 fra 261 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Naples, bewertet mit 9,1/10 aus 261 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Naples con una puntuación de 9,1/10 a partir de 261 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Naples noté 9,1/10 sur 261 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Naples con valutazione 9,1/10 da 261 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Naples com classificação de 9,1/10 com base em 261 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Shreveport rated 8.3/10 from 284 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Shreveport vurderet til 8,3/10 fra 284 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Shreveport, bewertet mit 8,3/10 aus 284 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Shreveport con una puntuación de 8,3/10 a partir de 284 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Shreveport noté 8,3/10 sur 284 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Shreveport con valutazione 8,3/10 da 284 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Shreveport com classificação de 8,3/10 com base em 284 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Spokane rated 8.7/10 from 553 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Spokane vurderet til 8,7/10 fra 553 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Spokane, bewertet mit 8,7/10 aus 553 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Spokane con una puntuación de 8,7/10 a partir de 553 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Spokane noté 8,7/10 sur 553 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Spokane con valutazione 8,7/10 da 553 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Spokane com classificação de 8,7/10 com base em 553 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tampa rated 8.1/10 from 235 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Tampa vurderet til 8,1/10 fra 235 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Tampa, bewertet mit 8,1/10 aus 235 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Tampa con una puntuación de 8,1/10 a partir de 235 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Tampa noté 8,1/10 sur 235 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Tampa con valutazione 8,1/10 da 235 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Tampa com classificação de 8,1/10 com base em 235 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tucson rated 8.9/10 from 129 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown Tucson vurderet til 8,9/10 fra 129 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown Tucson, bewertet mit 8,9/10 aus 129 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown Tucson con una puntuación de 8,9/10 a partir de 129 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown Tucson noté 8,9/10 sur 129 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown Tucson con valutazione 8,9/10 da 129 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown Tucson com classificação de 8,9/10 com base em 129 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown rated 8.5/10 from 120 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Downtown vurderet til 8,5/10 fra 120 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Downtown, bewertet mit 8,5/10 aus 120 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Downtown con una puntuación de 8,5/10 a partir de 120 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Downtown noté 8,5/10 sur 120 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Downtown con valutazione 8,5/10 da 120 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Downtown com classificação de 8,5/10 com base em 120 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Five Points South rated 8.9/10 from 197 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Five Points South vurderet til 8,9/10 fra 197 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Five Points South, bewertet mit 8,9/10 aus 197 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Five Points South con una puntuación de 8,9/10 a partir de 197 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Five Points South noté 8,9/10 sur 197 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Five Points South con valutazione 8,9/10 da 197 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Five Points South com classificação de 8,9/10 com base em 197 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Forlì rated 8.6/10 from 482 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Forlì vurderet til 8,6/10 fra 482 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Forlì, bewertet mit 8,6/10 aus 482 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Forlì con una puntuación de 8,6/10 a partir de 482 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Forlì noté 8,6/10 sur 482 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Forlì con valutazione 8,6/10 da 482 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Forlì com classificação de 8,6/10 com base em 482 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Geelong waterfront rated 7.7/10 from 1,760 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Geelong waterfront vurderet til 7,7/10 fra 1.760 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Geelong waterfront, bewertet mit 7,7/10 aus 1.760 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Geelong waterfront con una puntuación de 7,7/10 a partir de 1760 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Geelong waterfront noté 7,7/10 sur 1 760 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Geelong waterfront con valutazione 7,7/10 da 1.760 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Geelong waterfront com classificação de 7,7/10 com base em 1760 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Giri rated 8.0/10 from 201 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Giri vurderet til 8,0/10 fra 201 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Giri, bewertet mit 8,0/10 aus 201 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Giri con una puntuación de 8,0/10 a partir de 201 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Giri noté 8,0/10 sur 201 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Giri con valutazione 8,0/10 da 201 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Giri com classificação de 8,0/10 com base em 201 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Golden Mile rated 8.5/10 from 19,528 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Golden Mile vurderet til 8,5/10 fra 19.528 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Golden Mile, bewertet mit 8,5/10 aus 19.528 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Golden Mile con una puntuación de 8,5/10 a partir de 19 528 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Golden Mile noté 8,5/10 sur 19 528 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Golden Mile con valutazione 8,5/10 da 19.528 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Golden Mile com classificação de 8,5/10 com base em 19 528 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Kielce centre rated 8.8/10 from 795 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Kielce centre vurderet til 8,8/10 fra 795 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Kielce centre, bewertet mit 8,8/10 aus 795 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Kielce centre con una puntuación de 8,8/10 a partir de 795 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Kielce centre noté 8,8/10 sur 795 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Kielce centre con valutazione 8,8/10 da 795 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Kielce centre com classificação de 8,8/10 com base em 795 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Llanes centre rated 8.4/10 from 1,638 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Llanes centre vurderet til 8,4/10 fra 1.638 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Llanes centre, bewertet mit 8,4/10 aus 1.638 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Llanes centre con una puntuación de 8,4/10 a partir de 1638 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Llanes centre noté 8,4/10 sur 1 638 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Llanes centre con valutazione 8,4/10 da 1.638 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Llanes centre com classificação de 8,4/10 com base em 1638 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Lleida Centre rated 8.5/10 from 2,644 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Lleida Centre vurderet til 8,5/10 fra 2.644 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Lleida Centre, bewertet mit 8,5/10 aus 2.644 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Lleida Centre con una puntuación de 8,5/10 a partir de 2644 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Lleida Centre noté 8,5/10 sur 2 644 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Lleida Centre con valutazione 8,5/10 da 2.644 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Lleida Centre com classificação de 8,5/10 com base em 2644 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Luton Town Centre rated 8.4/10 from 1,747 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Luton Town Centre vurderet til 8,4/10 fra 1.747 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Luton Town Centre, bewertet mit 8,4/10 aus 1.747 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Luton Town Centre con una puntuación de 8,4/10 a partir de 1747 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Luton Town Centre noté 8,4/10 sur 1 747 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Luton Town Centre con valutazione 8,4/10 da 1.747 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Luton Town Centre com classificação de 8,4/10 com base em 1747 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Maidstone rated 8.0/10 from 1,232 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Maidstone vurderet til 8,0/10 fra 1.232 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Maidstone, bewertet mit 8,0/10 aus 1.232 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Maidstone con una puntuación de 8,0/10 a partir de 1232 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Maidstone noté 8,0/10 sur 1 232 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Maidstone con valutazione 8,0/10 da 1.232 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Maidstone com classificação de 8,0/10 com base em 1232 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Medieval town rated 8.3/10 from 713 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Medieval town vurderet til 8,3/10 fra 713 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Medieval town, bewertet mit 8,3/10 aus 713 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Medieval town con una puntuación de 8,3/10 a partir de 713 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Medieval town noté 8,3/10 sur 713 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Medieval town con valutazione 8,3/10 da 713 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Medieval town com classificação de 8,3/10 com base em 713 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Mytilene centre rated 9.2/10 from 579 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Mytilene centre vurderet til 9,2/10 fra 579 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Mytilene centre, bewertet mit 9,2/10 aus 579 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Mytilene centre con una puntuación de 9,2/10 a partir de 579 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Mytilene centre noté 9,2/10 sur 579 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Mytilene centre con valutazione 9,2/10 da 579 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Mytilene centre com classificação de 9,2/10 com base em 579 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Namur Old Town rated 8.6/10 from 2,007 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Namur Old Town vurderet til 8,6/10 fra 2.007 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Namur Old Town, bewertet mit 8,6/10 aus 2.007 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Namur Old Town con una puntuación de 8,6/10 a partir de 2007 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Namur Old Town noté 8,6/10 sur 2 007 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Namur Old Town con valutazione 8,6/10 da 2.007 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Namur Old Town com classificação de 8,6/10 com base em 2007 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Narbonne Centre rated 8.8/10 from 607 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Narbonne Centre vurderet til 8,8/10 fra 607 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Narbonne Centre, bewertet mit 8,8/10 aus 607 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Narbonne Centre con una puntuación de 8,8/10 a partir de 607 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Narbonne Centre noté 8,8/10 sur 607 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Narbonne Centre con valutazione 8,8/10 da 607 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Narbonne Centre com classificação de 8,8/10 com base em 607 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nicastro rated 8.0/10 from 133 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Nicastro vurderet til 8,0/10 fra 133 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Nicastro, bewertet mit 8,0/10 aus 133 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Nicastro con una puntuación de 8,0/10 a partir de 133 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Nicastro noté 8,0/10 sur 133 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Nicastro con valutazione 8,0/10 da 133 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Nicastro com classificação de 8,0/10 com base em 133 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Norwich rated 8.1/10 from 1,516 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Norwich vurderet til 8,1/10 fra 1.516 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Norwich, bewertet mit 8,1/10 aus 1.516 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Norwich con una puntuación de 8,1/10 a partir de 1516 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Norwich noté 8,1/10 sur 1 516 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Norwich con valutazione 8,1/10 da 1.516 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Norwich com classificação de 8,1/10 com base em 1516 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nyali rated 8.4/10 from 466 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Nyali vurderet til 8,4/10 fra 466 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Nyali, bewertet mit 8,4/10 aus 466 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Nyali con una puntuación de 8,4/10 a partir de 466 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Nyali noté 8,4/10 sur 466 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Nyali con valutazione 8,4/10 da 466 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Nyali com classificação de 8,4/10 com base em 466 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Olsztyn rated 9.0/10 from 757 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Olsztyn vurderet til 9,0/10 fra 757 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Olsztyn, bewertet mit 9,0/10 aus 757 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Olsztyn con una puntuación de 9,0/10 a partir de 757 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Olsztyn noté 9,0/10 sur 757 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Olsztyn con valutazione 9,0/10 da 757 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Olsztyn com classificação de 9,0/10 com base em 757 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Osijek Centre rated 9.2/10 from 398 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Osijek Centre vurderet til 9,2/10 fra 398 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Osijek Centre, bewertet mit 9,2/10 aus 398 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Osijek Centre con una puntuación de 9,2/10 a partir de 398 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Osijek Centre noté 9,2/10 sur 398 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Osijek Centre con valutazione 9,2/10 da 398 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Osijek Centre com classificação de 9,2/10 com base em 398 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Palmetto riverfront rated 8.8/10 from 130 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Palmetto riverfront vurderet til 8,8/10 fra 130 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Palmetto riverfront, bewertet mit 8,8/10 aus 130 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Palmetto riverfront con una puntuación de 8,8/10 a partir de 130 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Palmetto riverfront noté 8,8/10 sur 130 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Palmetto riverfront con valutazione 8,8/10 da 130 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Palmetto riverfront com classificação de 8,8/10 com base em 130 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Passau Old Town rated 9/10 from 1,865 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Passau Old Town vurderet til 9/10 fra 1.865 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Passau Old Town, bewertet mit 9/10 aus 1.865 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Passau Old Town con una puntuación de 9/10 a partir de 1865 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Passau Old Town noté 9/10 sur 1 865 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Passau Old Town con valutazione 9/10 da 1.865 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Passau Old Town com classificação de 9/10 com base em 1865 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Ped rated 9.6/10 from 269 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Ped vurderet til 9,6/10 fra 269 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Ped, bewertet mit 9,6/10 aus 269 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Ped con una puntuación de 9,6/10 a partir de 269 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Ped noté 9,6/10 sur 269 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Ped con valutazione 9,6/10 da 269 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Ped com classificação de 9,6/10 com base em 269 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Peterborough City Centre rated 8.4/10 from 2,405 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Peterborough City Centre vurderet til 8,4/10 fra 2.405 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Peterborough City Centre, bewertet mit 8,4/10 aus 2.405 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Peterborough City Centre con una puntuación de 8,4/10 a partir de 2405 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Peterborough City Centre noté 8,4/10 sur 2 405 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Peterborough City Centre con valutazione 8,4/10 da 2.405 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Peterborough City Centre com classificação de 8,4/10 com base em 2405 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Plymouth rated 8.2/10 from 119 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Plymouth vurderet til 8,2/10 fra 119 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Plymouth, bewertet mit 8,2/10 aus 119 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Plymouth con una puntuación de 8,2/10 a partir de 119 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Plymouth noté 8,2/10 sur 119 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Plymouth con valutazione 8,2/10 da 119 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Plymouth com classificação de 8,2/10 com base em 119 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Portsmouth rated 8.3/10 from 2,403 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Portsmouth vurderet til 8,3/10 fra 2.403 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Portsmouth, bewertet mit 8,3/10 aus 2.403 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Portsmouth con una puntuación de 8,3/10 a partir de 2403 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Portsmouth noté 8,3/10 sur 2 403 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Portsmouth con valutazione 8,3/10 da 2.403 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Portsmouth com classificação de 8,3/10 com base em 2403 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Punta Arenas centre rated 8.3/10 from 1,452 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Punta Arenas centre vurderet til 8,3/10 fra 1.452 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Punta Arenas centre, bewertet mit 8,3/10 aus 1.452 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Punta Arenas centre con una puntuación de 8,3/10 a partir de 1452 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Punta Arenas centre noté 8,3/10 sur 1 452 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Punta Arenas centre con valutazione 8,3/10 da 1.452 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Punta Arenas centre com classificação de 8,3/10 com base em 1452 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Rovaniemi centre rated 8.7/10 from 743 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Rovaniemi centre vurderet til 8,7/10 fra 743 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Rovaniemi centre, bewertet mit 8,7/10 aus 743 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Rovaniemi centre con una puntuación de 8,7/10 a partir de 743 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Rovaniemi centre noté 8,7/10 sur 743 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Rovaniemi centre con valutazione 8,7/10 da 743 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Rovaniemi centre com classificação de 8,7/10 com base em 743 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Santa Margarida, Roses rated 8.5/10 from 3,516 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Santa Margarida, Roses vurderet til 8,5/10 fra 3.516 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Santa Margarida, Roses, bewertet mit 8,5/10 aus 3.516 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Santa Margarida, Roses con una puntuación de 8,5/10 a partir de 3516 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Santa Margarida, Roses noté 8,5/10 sur 3 516 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Santa Margarida, Roses con valutazione 8,5/10 da 3.516 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Santa Margarida, Roses com classificação de 8,5/10 com base em 3516 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Shihar, Taif rated 9.9/10 from 1,223 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Shihar, Taif vurderet til 9,9/10 fra 1.223 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Shihar, Taif, bewertet mit 9,9/10 aus 1.223 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Shihar, Taif con una puntuación de 9,9/10 a partir de 1223 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Shihar, Taif noté 9,9/10 sur 1 223 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Shihar, Taif con valutazione 9,9/10 da 1.223 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Shihar, Taif com classificação de 9,9/10 com base em 1223 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Slough centre rated 7.8/10 from 3,392 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Slough centre vurderet til 7,8/10 fra 3.392 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Slough centre, bewertet mit 7,8/10 aus 3.392 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Slough centre con una puntuación de 7,8/10 a partir de 3392 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Slough centre noté 7,8/10 sur 3 392 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Slough centre con valutazione 7,8/10 da 3.392 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Slough centre com classificação de 7,8/10 com base em 3392 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Stadtkern rated 8.6/10 from 3,015 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Stadtkern vurderet til 8,6/10 fra 3.015 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Stadtkern, bewertet mit 8,6/10 aus 3.015 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Stadtkern con una puntuación de 8,6/10 a partir de 3015 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Stadtkern noté 8,6/10 sur 3 015 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Stadtkern con valutazione 8,6/10 da 3.015 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Stadtkern com classificação de 8,6/10 com base em 3015 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Swakopmund Centre rated 9.0/10 from 472 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Swakopmund Centre vurderet til 9,0/10 fra 472 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Swakopmund Centre, bewertet mit 9,0/10 aus 472 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Swakopmund Centre con una puntuación de 9,0/10 a partir de 472 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Swakopmund Centre noté 9,0/10 sur 472 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Swakopmund Centre con valutazione 9,0/10 da 472 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Swakopmund Centre com classificação de 9,0/10 com base em 472 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Taranto Old Town rated 9.1/10 from 1,547 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Taranto Old Town vurderet til 9,1/10 fra 1.547 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Taranto Old Town, bewertet mit 9,1/10 aus 1.547 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Taranto Old Town con una puntuación de 9,1/10 a partir de 1547 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Taranto Old Town noté 9,1/10 sur 1 547 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Taranto Old Town con valutazione 9,1/10 da 1.547 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Taranto Old Town com classificação de 9,1/10 com base em 1547 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in The Forks rated 8.6/10 from 210 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i The Forks vurderet til 8,6/10 fra 210 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in The Forks, bewertet mit 8,6/10 aus 210 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en The Forks con una puntuación de 8,6/10 a partir de 210 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à The Forks noté 8,6/10 sur 210 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a The Forks con valutazione 8,6/10 da 210 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em The Forks com classificação de 8,6/10 com base em 210 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Vodice rated 9/10 from 662 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Vodice vurderet til 9/10 fra 662 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Vodice, bewertet mit 9/10 aus 662 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Vodice con una puntuación de 9/10 a partir de 662 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Vodice noté 9/10 sur 662 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Vodice con valutazione 9/10 da 662 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Vodice com classificação de 9/10 com base em 662 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Windsor City Centre rated 8.4/10 from 1,828 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op tæt på centrum, så dette er vores eksklusive alternativ: et 4-stjernet hotel i Windsor City Centre vurderet til 8,4/10 fra 1.828 anmeldelser på Booking.com.",
+		"de": "Es wurde kein geeignetes 5-Sterne-Hotel in Zentrumsnähe gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel in Windsor City Centre, bewertet mit 8,4/10 aus 1.828 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto cerca del centro, así que esta es nuestra alternativa superior: un 4 estrellas en Windsor City Centre con una puntuación de 8,4/10 a partir de 1828 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu près du centre, voici donc notre alternative haut de gamme : un 4 étoiles à Windsor City Centre noté 8,4/10 sur 1 828 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso vicino al centro, quindi questa è la nostra alternativa di pregio: un 4 stelle a Windsor City Centre con valutazione 8,4/10 da 1.828 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível perto do centro, por isso esta é a nossa alternativa superior: um 4 estrelas em Windsor City Centre com classificação de 8,4/10 com base em 1828 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Arezzo, so this is our upscale alternative: a 4-star rated 8.7/10 from 279 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Arezzo, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,7/10 fra 279 anmeldelser på Booking.com.",
+		"de": "In Arezzo wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,7/10 aus 279 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Arezzo, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,7/10 a partir de 279 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Arezzo, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,7/10 sur 279 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Arezzo, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,7/10 da 279 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Arezzo, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,7/10 com base em 279 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Ascona, so this is our upscale alternative: a 4-star rated 9.2/10 from 246 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Ascona, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,2/10 fra 246 anmeldelser på Booking.com.",
+		"de": "In Ascona wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,2/10 aus 246 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Ascona, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,2/10 a partir de 246 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Ascona, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,2/10 sur 246 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Ascona, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,2/10 da 246 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Ascona, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,2/10 com base em 246 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Basingstoke, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,5/10 fra 2.554 anmeldelser på Booking.com.",
+		"de": "In Basingstoke wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,5/10 aus 2.554 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Basingstoke, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,5/10 a partir de 2554 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Basingstoke, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,5/10 sur 2 554 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Basingstoke, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,5/10 da 2.554 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Basingstoke, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,5/10 com base em 2554 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Bauru, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,800 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Bauru, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,8/10 fra 1.800 anmeldelser på Booking.com.",
+		"de": "In Bauru wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,8/10 aus 1.800 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Bauru, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,8/10 a partir de 1800 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Bauru, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,8/10 sur 1 800 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Bauru, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,8/10 da 1.800 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Bauru, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,8/10 com base em 1800 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Boca Raton, so this is our upscale alternative: a 4-star rated 8.6/10 from 125 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Boca Raton, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,6/10 fra 125 anmeldelser på Booking.com.",
+		"de": "In Boca Raton wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,6/10 aus 125 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Boca Raton, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,6/10 a partir de 125 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Boca Raton, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,6/10 sur 125 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Boca Raton, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,6/10 da 125 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Boca Raton, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,6/10 com base em 125 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Boise, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,7/10 fra 101 anmeldelser på Booking.com.",
+		"de": "In Boise wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,7/10 aus 101 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Boise, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,7/10 a partir de 101 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Boise, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,7/10 sur 101 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Boise, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,7/10 da 101 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Boise, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,7/10 com base em 101 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Bristol, so this is our upscale alternative: a 4-star rated 9.0/10 from 7,006 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Bristol, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,0/10 fra 7.006 anmeldelser på Booking.com.",
+		"de": "In Bristol wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,0/10 aus 7.006 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Bristol, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,0/10 a partir de 7006 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Bristol, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,0/10 sur 7 006 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Bristol, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,0/10 da 7.006 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Bristol, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,0/10 com base em 7006 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Carmel, so this is our upscale alternative: a 4-star rated 9.1/10 from 174 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Carmel, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,1/10 fra 174 anmeldelser på Booking.com.",
+		"de": "In Carmel wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,1/10 aus 174 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Carmel, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,1/10 a partir de 174 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Carmel, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,1/10 sur 174 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Carmel, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,1/10 da 174 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Carmel, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,1/10 com base em 174 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Chattanooga, so this is our upscale alternative: a 4-star rated 9.0/10 from 247 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Chattanooga, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,0/10 fra 247 anmeldelser på Booking.com.",
+		"de": "In Chattanooga wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,0/10 aus 247 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Chattanooga, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,0/10 a partir de 247 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Chattanooga, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,0/10 sur 247 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Chattanooga, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,0/10 da 247 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Chattanooga, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,0/10 com base em 247 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Chernivtsi, so this is our upscale alternative: a 4-star rated 8.6/10 from 2,748 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Chernivtsi, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,6/10 fra 2.748 anmeldelser på Booking.com.",
+		"de": "In Chernivtsi wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,6/10 aus 2.748 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Chernivtsi, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,6/10 a partir de 2748 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Chernivtsi, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,6/10 sur 2 748 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Chernivtsi, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,6/10 da 2.748 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Chernivtsi, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,6/10 com base em 2748 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Cordoba, so this is our upscale alternative: a 4-star rated 9.5/10 from 117 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Cordoba, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,5/10 fra 117 anmeldelser på Booking.com.",
+		"de": "In Cordoba wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,5/10 aus 117 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Cordoba, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,5/10 a partir de 117 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Cordoba, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,5/10 sur 117 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Cordoba, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,5/10 da 117 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Cordoba, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,5/10 com base em 117 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Den Bosch, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,929 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Den Bosch, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,5/10 fra 2.929 anmeldelser på Booking.com.",
+		"de": "In Den Bosch wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,5/10 aus 2.929 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Den Bosch, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,5/10 a partir de 2929 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Den Bosch, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,5/10 sur 2 929 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Den Bosch, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,5/10 da 2.929 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Den Bosch, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,5/10 com base em 2929 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Grosseto, so this is our upscale alternative: a 4-star rated 8.6/10 from 1,026 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Grosseto, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,6/10 fra 1.026 anmeldelser på Booking.com.",
+		"de": "In Grosseto wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,6/10 aus 1.026 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Grosseto, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,6/10 a partir de 1026 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Grosseto, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,6/10 sur 1 026 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Grosseto, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,6/10 da 1.026 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Grosseto, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,6/10 com base em 1026 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Ierapetra, so this is our upscale alternative: a 4-star rated 9.4/10 from 388 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Ierapetra, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,4/10 fra 388 anmeldelser på Booking.com.",
+		"de": "In Ierapetra wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,4/10 aus 388 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Ierapetra, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,4/10 a partir de 388 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Ierapetra, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,4/10 sur 388 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Ierapetra, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,4/10 da 388 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Ierapetra, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,4/10 com base em 388 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Innsbruck, so this is our upscale alternative: a 4-star rated 9.1/10 from 5,270 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Innsbruck, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,1/10 fra 5.270 anmeldelser på Booking.com.",
+		"de": "In Innsbruck wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,1/10 aus 5.270 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Innsbruck, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,1/10 a partir de 5270 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Innsbruck, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,1/10 sur 5 270 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Innsbruck, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,1/10 da 5.270 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Innsbruck, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,1/10 com base em 5270 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Klagenfurt, so this is our upscale alternative: a 4-star rated 8.8/10 from 1,456 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Klagenfurt, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,8/10 fra 1.456 anmeldelser på Booking.com.",
+		"de": "In Klagenfurt wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,8/10 aus 1.456 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Klagenfurt, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,8/10 a partir de 1456 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Klagenfurt, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,8/10 sur 1 456 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Klagenfurt, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,8/10 da 1.456 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Klagenfurt, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,8/10 com base em 1456 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Kosice, so this is our upscale alternative: a 4-star rated 8.6/10 from 812 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Kosice, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,6/10 fra 812 anmeldelser på Booking.com.",
+		"de": "In Kosice wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,6/10 aus 812 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Kosice, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,6/10 a partir de 812 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Kosice, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,6/10 sur 812 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Kosice, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,6/10 da 812 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Kosice, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,6/10 com base em 812 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Lugo, so this is our upscale alternative: a 4-star rated 9.1/10 from 803 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Lugo, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,1/10 fra 803 anmeldelser på Booking.com.",
+		"de": "In Lugo wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,1/10 aus 803 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Lugo, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,1/10 a partir de 803 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Lugo, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,1/10 sur 803 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Lugo, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,1/10 da 803 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Lugo, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,1/10 com base em 803 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Malmö, so this is our upscale alternative: a 4-star rated 9.0/10 from 175 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Malmö, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,0/10 fra 175 anmeldelser på Booking.com.",
+		"de": "In Malmö wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,0/10 aus 175 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Malmö, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,0/10 a partir de 175 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Malmö, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,0/10 sur 175 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Malmö, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,0/10 da 175 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Malmö, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,0/10 com base em 175 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Menton, so this is our upscale alternative: a 4-star rated 8.6/10 from 742 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Menton, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,6/10 fra 742 anmeldelser på Booking.com.",
+		"de": "In Menton wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,6/10 aus 742 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Menton, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,6/10 a partir de 742 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Menton, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,6/10 sur 742 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Menton, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,6/10 da 742 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Menton, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,6/10 com base em 742 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Miskolc, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,9/10 fra 1.323 anmeldelser på Booking.com.",
+		"de": "In Miskolc wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,9/10 aus 1.323 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Miskolc, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,9/10 a partir de 1323 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Miskolc, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,9/10 sur 1 323 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Miskolc, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,9/10 da 1.323 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Miskolc, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,9/10 com base em 1323 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Oban, so this is our upscale alternative: a 4-star rated 9.5/10 from 487 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Oban, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,5/10 fra 487 anmeldelser på Booking.com.",
+		"de": "In Oban wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,5/10 aus 487 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Oban, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,5/10 a partir de 487 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Oban, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,5/10 sur 487 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Oban, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,5/10 da 487 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Oban, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,5/10 com base em 487 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Olomouc, so this is our upscale alternative: a 4-star rated 9.5/10 from 602 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Olomouc, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,5/10 fra 602 anmeldelser på Booking.com.",
+		"de": "In Olomouc wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,5/10 aus 602 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Olomouc, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,5/10 a partir de 602 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Olomouc, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,5/10 sur 602 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Olomouc, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,5/10 da 602 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Olomouc, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,5/10 com base em 602 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Pompei, so this is our upscale alternative: a 4-star rated 9.1/10 from 380 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Pompei, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,1/10 fra 380 anmeldelser på Booking.com.",
+		"de": "In Pompei wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,1/10 aus 380 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Pompei, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,1/10 a partir de 380 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Pompei, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,1/10 sur 380 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Pompei, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,1/10 da 380 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Pompei, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,1/10 com base em 380 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Quedlinburg, so this is our upscale alternative: a 4-star rated 8.6/10 from 802 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Quedlinburg, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,6/10 fra 802 anmeldelser på Booking.com.",
+		"de": "In Quedlinburg wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,6/10 aus 802 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Quedlinburg, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,6/10 a partir de 802 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Quedlinburg, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,6/10 sur 802 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Quedlinburg, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,6/10 da 802 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Quedlinburg, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,6/10 com base em 802 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Quimper, so this is our upscale alternative: a 4-star rated 8.7/10 from 543 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Quimper, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,7/10 fra 543 anmeldelser på Booking.com.",
+		"de": "In Quimper wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,7/10 aus 543 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Quimper, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,7/10 a partir de 543 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Quimper, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,7/10 sur 543 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Quimper, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,7/10 da 543 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Quimper, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,7/10 com base em 543 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Soria, so this is our upscale alternative: a 4-star rated 9.6/10 from 244 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Soria, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,6/10 fra 244 anmeldelser på Booking.com.",
+		"de": "In Soria wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,6/10 aus 244 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Soria, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,6/10 a partir de 244 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Soria, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,6/10 sur 244 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Soria, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,6/10 da 244 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Soria, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,6/10 com base em 244 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Tartu, so this is our upscale alternative: a 4-star rated 9.2/10 from 3,777 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Tartu, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 9,2/10 fra 3.777 anmeldelser på Booking.com.",
+		"de": "In Tartu wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 9,2/10 aus 3.777 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Tartu, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 9,2/10 a partir de 3777 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Tartu, voici donc notre alternative haut de gamme : un 4 étoiles noté 9,2/10 sur 3 777 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Tartu, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 9,2/10 da 3.777 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Tartu, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 9,2/10 com base em 3777 avaliações do Booking.com."
+	},
+	"No eligible 5-star hotel came up in Whitstable, so this is our upscale alternative: a 4-star rated 8.9/10 from 592 Booking.com reviews.": {
+		"da": "Der kom intet egnet 5-stjernet hotel op i Whitstable, så dette er vores eksklusive alternativ: et 4-stjernet hotel vurderet til 8,9/10 fra 592 anmeldelser på Booking.com.",
+		"de": "In Whitstable wurde kein geeignetes 5-Sterne-Hotel gefunden, daher ist dies unsere gehobene Alternative: ein 4-Sterne-Hotel, bewertet mit 8,9/10 aus 592 Booking.com-Bewertungen.",
+		"es": "No apareció ningún hotel de 5 estrellas apto en Whitstable, así que esta es nuestra alternativa superior: un 4 estrellas con una puntuación de 8,9/10 a partir de 592 reseñas de Booking.com.",
+		"fr": "Aucun hôtel 5 étoiles éligible n'est apparu à Whitstable, voici donc notre alternative haut de gamme : un 4 étoiles noté 8,9/10 sur 592 avis Booking.com.",
+		"it": "Nessun hotel 5 stelle idoneo è emerso a Whitstable, quindi questa è la nostra alternativa di pregio: un 4 stelle con valutazione 8,9/10 da 592 recensioni su Booking.com.",
+		"pt": "Não surgiu nenhum hotel de 5 estrelas elegível em Whitstable, por isso esta é a nossa alternativa superior: um 4 estrelas com classificação de 8,9/10 com base em 592 avaliações do Booking.com."
+	},
+	"The best-rated official 5-star hotel we found in Alanya on Booking.com: 8.8/10 from 787 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Alanya på Booking.com: 8,8/10 fra 787 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Alanya auf Booking.com gefunden haben: 8,8/10 aus 787 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Alanya en Booking.com: 8,8/10 a partir de 787 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Alanya sur Booking.com : 8,8/10 sur 787 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Alanya su Booking.com: 8,8/10 da 787 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Alanya no Booking.com: 8,8/10 com base em 787 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Anaheim on Booking.com: 8.8/10 from 378 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Anaheim på Booking.com: 8,8/10 fra 378 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Anaheim auf Booking.com gefunden haben: 8,8/10 aus 378 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Anaheim en Booking.com: 8,8/10 a partir de 378 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Anaheim sur Booking.com : 8,8/10 sur 378 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Anaheim su Booking.com: 8,8/10 da 378 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Anaheim no Booking.com: 8,8/10 com base em 378 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Annecy on Booking.com: 8.6/10 from 599 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Annecy på Booking.com: 8,6/10 fra 599 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Annecy auf Booking.com gefunden haben: 8,6/10 aus 599 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Annecy en Booking.com: 8,6/10 a partir de 599 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Annecy sur Booking.com : 8,6/10 sur 599 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Annecy su Booking.com: 8,6/10 da 599 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Annecy no Booking.com: 8,6/10 com base em 599 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Apia on Booking.com: 7.8/10 from 1,104 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Apia på Booking.com: 7,8/10 fra 1.104 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Apia auf Booking.com gefunden haben: 7,8/10 aus 1.104 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Apia en Booking.com: 7,8/10 a partir de 1104 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Apia sur Booking.com : 7,8/10 sur 1 104 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Apia su Booking.com: 7,8/10 da 1.104 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Apia no Booking.com: 7,8/10 com base em 1104 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Balneario Camboriu on Booking.com: 8.9/10 from 35 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Balneario Camboriu på Booking.com: 8,9/10 fra 35 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Balneario Camboriu auf Booking.com gefunden haben: 8,9/10 aus 35 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Balneario Camboriu en Booking.com: 8,9/10 a partir de 35 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Balneario Camboriu sur Booking.com : 8,9/10 sur 35 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Balneario Camboriu su Booking.com: 8,9/10 da 35 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Balneario Camboriu no Booking.com: 8,9/10 com base em 35 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Bastia on Booking.com: 9.5/10 from 36 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Bastia på Booking.com: 9,5/10 fra 36 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Bastia auf Booking.com gefunden haben: 9,5/10 aus 36 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Bastia en Booking.com: 9,5/10 a partir de 36 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Bastia sur Booking.com : 9,5/10 sur 36 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Bastia su Booking.com: 9,5/10 da 36 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Bastia no Booking.com: 9,5/10 com base em 36 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Bentonville on Booking.com: 9.4/10 from 32 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Bentonville på Booking.com: 9,4/10 fra 32 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Bentonville auf Booking.com gefunden haben: 9,4/10 aus 32 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Bentonville en Booking.com: 9,4/10 a partir de 32 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Bentonville sur Booking.com : 9,4/10 sur 32 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Bentonville su Booking.com: 9,4/10 da 32 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Bentonville no Booking.com: 9,4/10 com base em 32 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Brescia on Booking.com: 7.9/10 from 1,535 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Brescia på Booking.com: 7,9/10 fra 1.535 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Brescia auf Booking.com gefunden haben: 7,9/10 aus 1.535 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Brescia en Booking.com: 7,9/10 a partir de 1535 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Brescia sur Booking.com : 7,9/10 sur 1 535 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Brescia su Booking.com: 7,9/10 da 1.535 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Brescia no Booking.com: 7,9/10 com base em 1535 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Campeche on Booking.com: 8.9/10 from 121 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Campeche på Booking.com: 8,9/10 fra 121 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Campeche auf Booking.com gefunden haben: 8,9/10 aus 121 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Campeche en Booking.com: 8,9/10 a partir de 121 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Campeche sur Booking.com : 8,9/10 sur 121 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Campeche su Booking.com: 8,9/10 da 121 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Campeche no Booking.com: 8,9/10 com base em 121 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Canggu on Booking.com: 9.1/10 from 799 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Canggu på Booking.com: 9,1/10 fra 799 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Canggu auf Booking.com gefunden haben: 9,1/10 aus 799 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Canggu en Booking.com: 9,1/10 a partir de 799 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Canggu sur Booking.com : 9,1/10 sur 799 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Canggu su Booking.com: 9,1/10 da 799 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Canggu no Booking.com: 9,1/10 com base em 799 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Colima on Booking.com: 8.1/10 from 74 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Colima på Booking.com: 8,1/10 fra 74 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Colima auf Booking.com gefunden haben: 8,1/10 aus 74 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Colima en Booking.com: 8,1/10 a partir de 74 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Colima sur Booking.com : 8,1/10 sur 74 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Colima su Booking.com: 8,1/10 da 74 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Colima no Booking.com: 8,1/10 com base em 74 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Constanta on Booking.com: 9.7/10 from 118 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Constanta på Booking.com: 9,7/10 fra 118 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Constanta auf Booking.com gefunden haben: 9,7/10 aus 118 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Constanta en Booking.com: 9,7/10 a partir de 118 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Constanta sur Booking.com : 9,7/10 sur 118 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Constanta su Booking.com: 9,7/10 da 118 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Constanta no Booking.com: 9,7/10 com base em 118 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Conwy på Booking.com: 9,0/10 fra 546 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Conwy auf Booking.com gefunden haben: 9,0/10 aus 546 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Conwy en Booking.com: 9,0/10 a partir de 546 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Conwy sur Booking.com : 9,0/10 sur 546 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Conwy su Booking.com: 9,0/10 da 546 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Conwy no Booking.com: 9,0/10 com base em 546 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Dakar på Booking.com: 8,1/10 fra 265 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Dakar auf Booking.com gefunden haben: 8,1/10 aus 265 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Dakar en Booking.com: 8,1/10 a partir de 265 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Dakar sur Booking.com : 8,1/10 sur 265 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Dakar su Booking.com: 8,1/10 da 265 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Dakar no Booking.com: 8,1/10 com base em 265 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Ferrara on Booking.com: 8.5/10 from 528 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Ferrara på Booking.com: 8,5/10 fra 528 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Ferrara auf Booking.com gefunden haben: 8,5/10 aus 528 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Ferrara en Booking.com: 8,5/10 a partir de 528 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Ferrara sur Booking.com : 8,5/10 sur 528 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Ferrara su Booking.com: 8,5/10 da 528 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Ferrara no Booking.com: 8,5/10 com base em 528 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Gaborone on Booking.com: 7.5/10 from 69 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Gaborone på Booking.com: 7,5/10 fra 69 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Gaborone auf Booking.com gefunden haben: 7,5/10 aus 69 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Gaborone en Booking.com: 7,5/10 a partir de 69 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Gaborone sur Booking.com : 7,5/10 sur 69 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Gaborone su Booking.com: 7,5/10 da 69 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Gaborone no Booking.com: 7,5/10 com base em 69 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Georgetown on Booking.com: 7.5/10 from 107 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Georgetown på Booking.com: 7,5/10 fra 107 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Georgetown auf Booking.com gefunden haben: 7,5/10 aus 107 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Georgetown en Booking.com: 7,5/10 a partir de 107 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Georgetown sur Booking.com : 7,5/10 sur 107 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Georgetown su Booking.com: 7,5/10 da 107 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Georgetown no Booking.com: 7,5/10 com base em 107 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Haarlem on Booking.com: 9.0/10 from 1,119 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Haarlem på Booking.com: 9,0/10 fra 1.119 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Haarlem auf Booking.com gefunden haben: 9,0/10 aus 1.119 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Haarlem en Booking.com: 9,0/10 a partir de 1119 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Haarlem sur Booking.com : 9,0/10 sur 1 119 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Haarlem su Booking.com: 9,0/10 da 1.119 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Haarlem no Booking.com: 9,0/10 com base em 1119 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Horta på Booking.com: 9,6/10 fra 38 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Horta auf Booking.com gefunden haben: 9,6/10 aus 38 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Horta en Booking.com: 9,6/10 a partir de 38 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Horta sur Booking.com : 9,6/10 sur 38 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Horta su Booking.com: 9,6/10 da 38 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Horta no Booking.com: 9,6/10 com base em 38 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Iași on Booking.com: 9.3/10 from 1,385 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Iași på Booking.com: 9,3/10 fra 1.385 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Iași auf Booking.com gefunden haben: 9,3/10 aus 1.385 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Iași en Booking.com: 9,3/10 a partir de 1385 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Iași sur Booking.com : 9,3/10 sur 1 385 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Iași su Booking.com: 9,3/10 da 1.385 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Iași no Booking.com: 9,3/10 com base em 1385 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Indianapolis på Booking.com: 8,3/10 fra 131 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Indianapolis auf Booking.com gefunden haben: 8,3/10 aus 131 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Indianapolis en Booking.com: 8,3/10 a partir de 131 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Indianapolis sur Booking.com : 8,3/10 sur 131 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Indianapolis su Booking.com: 8,3/10 da 131 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Indianapolis no Booking.com: 8,3/10 com base em 131 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Kelowna on Booking.com: 8.3/10 from 452 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Kelowna på Booking.com: 8,3/10 fra 452 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Kelowna auf Booking.com gefunden haben: 8,3/10 aus 452 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Kelowna en Booking.com: 8,3/10 a partir de 452 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Kelowna sur Booking.com : 8,3/10 sur 452 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Kelowna su Booking.com: 8,3/10 da 452 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Kelowna no Booking.com: 8,3/10 com base em 452 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Legian on Booking.com: 9.1/10 from 1,597 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Legian på Booking.com: 9,1/10 fra 1.597 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Legian auf Booking.com gefunden haben: 9,1/10 aus 1.597 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Legian en Booking.com: 9,1/10 a partir de 1597 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Legian sur Booking.com : 9,1/10 sur 1 597 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Legian su Booking.com: 9,1/10 da 1.597 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Legian no Booking.com: 9,1/10 com base em 1597 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Mahón on Booking.com: 9.2/10 from 232 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Mahón på Booking.com: 9,2/10 fra 232 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Mahón auf Booking.com gefunden haben: 9,2/10 aus 232 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Mahón en Booking.com: 9,2/10 a partir de 232 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Mahón sur Booking.com : 9,2/10 sur 232 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Mahón su Booking.com: 9,2/10 da 232 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Mahón no Booking.com: 9,2/10 com base em 232 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Monterey on Booking.com: 9.1/10 from 530 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Monterey på Booking.com: 9,1/10 fra 530 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Monterey auf Booking.com gefunden haben: 9,1/10 aus 530 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Monterey en Booking.com: 9,1/10 a partir de 530 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Monterey sur Booking.com : 9,1/10 sur 530 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Monterey su Booking.com: 9,1/10 da 530 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Monterey no Booking.com: 9,1/10 com base em 530 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Mui Ne on Booking.com: 9.5/10 from 546 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Mui Ne på Booking.com: 9,5/10 fra 546 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Mui Ne auf Booking.com gefunden haben: 9,5/10 aus 546 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Mui Ne en Booking.com: 9,5/10 a partir de 546 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Mui Ne sur Booking.com : 9,5/10 sur 546 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Mui Ne su Booking.com: 9,5/10 da 546 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Mui Ne no Booking.com: 9,5/10 com base em 546 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Nafplio on Booking.com: 7.7/10 from 153 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Nafplio på Booking.com: 7,7/10 fra 153 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Nafplio auf Booking.com gefunden haben: 7,7/10 aus 153 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Nafplio en Booking.com: 7,7/10 a partir de 153 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Nafplio sur Booking.com : 7,7/10 sur 153 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Nafplio su Booking.com: 7,7/10 da 153 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Nafplio no Booking.com: 7,7/10 com base em 153 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Oklahoma City on Booking.com: 9.3/10 from 43 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Oklahoma City på Booking.com: 9,3/10 fra 43 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Oklahoma City auf Booking.com gefunden haben: 9,3/10 aus 43 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Oklahoma City en Booking.com: 9,3/10 a partir de 43 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Oklahoma City sur Booking.com : 9,3/10 sur 43 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Oklahoma City su Booking.com: 9,3/10 da 43 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Oklahoma City no Booking.com: 9,3/10 com base em 43 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Ponte de Lima on Booking.com: 8.8/10 from 227 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Ponte de Lima på Booking.com: 8,8/10 fra 227 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Ponte de Lima auf Booking.com gefunden haben: 8,8/10 aus 227 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Ponte de Lima en Booking.com: 8,8/10 a partir de 227 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Ponte de Lima sur Booking.com : 8,8/10 sur 227 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Ponte de Lima su Booking.com: 8,8/10 da 227 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Ponte de Lima no Booking.com: 8,8/10 com base em 227 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Preston on Booking.com: 8.8/10 from 478 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Preston på Booking.com: 8,8/10 fra 478 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Preston auf Booking.com gefunden haben: 8,8/10 aus 478 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Preston en Booking.com: 8,8/10 a partir de 478 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Preston sur Booking.com : 8,8/10 sur 478 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Preston su Booking.com: 8,8/10 da 478 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Preston no Booking.com: 8,8/10 com base em 478 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Salalah på Booking.com: 8,9/10 fra 337 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Salalah auf Booking.com gefunden haben: 8,9/10 aus 337 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Salalah en Booking.com: 8,9/10 a partir de 337 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Salalah sur Booking.com : 8,9/10 sur 337 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Salalah su Booking.com: 8,9/10 da 337 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Salalah no Booking.com: 8,9/10 com base em 337 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in St. John's on Booking.com: 8.3/10 from 112 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i St. John's på Booking.com: 8,3/10 fra 112 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in St. John's auf Booking.com gefunden haben: 8,3/10 aus 112 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en St. John's en Booking.com: 8,3/10 a partir de 112 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à St. John's sur Booking.com : 8,3/10 sur 112 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a St. John's su Booking.com: 8,3/10 da 112 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em St. John's no Booking.com: 8,3/10 com base em 112 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Sunderland on Booking.com: 9.4/10 from 245 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Sunderland på Booking.com: 9,4/10 fra 245 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Sunderland auf Booking.com gefunden haben: 9,4/10 aus 245 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Sunderland en Booking.com: 9,4/10 a partir de 245 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Sunderland sur Booking.com : 9,4/10 sur 245 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Sunderland su Booking.com: 9,4/10 da 245 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Sunderland no Booking.com: 9,4/10 com base em 245 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Torquay on Booking.com: 9.3/10 from 266 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Torquay på Booking.com: 9,3/10 fra 266 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Torquay auf Booking.com gefunden haben: 9,3/10 aus 266 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Torquay en Booking.com: 9,3/10 a partir de 266 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Torquay sur Booking.com : 9,3/10 sur 266 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Torquay su Booking.com: 9,3/10 da 266 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Torquay no Booking.com: 9,3/10 com base em 266 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Tours on Booking.com: 9.2/10 from 310 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Tours på Booking.com: 9,2/10 fra 310 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Tours auf Booking.com gefunden haben: 9,2/10 aus 310 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Tours en Booking.com: 9,2/10 a partir de 310 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Tours sur Booking.com : 9,2/10 sur 310 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Tours su Booking.com: 9,2/10 da 310 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Tours no Booking.com: 9,2/10 com base em 310 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Valence on Booking.com: 9.4/10 from 160 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Valence på Booking.com: 9,4/10 fra 160 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Valence auf Booking.com gefunden haben: 9,4/10 aus 160 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Valence en Booking.com: 9,4/10 a partir de 160 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Valence sur Booking.com : 9,4/10 sur 160 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Valence su Booking.com: 9,4/10 da 160 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Valence no Booking.com: 9,4/10 com base em 160 avaliações de hóspedes."
+	},
+	"The best-rated official 5-star hotel we found in Whistler on Booking.com: 9.5/10 from 382 guest reviews.": {
+		"da": "Det bedst bedømte officielle 5-stjernede hotel, vi fandt i Whistler på Booking.com: 9,5/10 fra 382 gæsteanmeldelser.",
+		"de": "Das bestbewertete offizielle 5-Sterne-Hotel, das wir in Whistler auf Booking.com gefunden haben: 9,5/10 aus 382 Gästebewertungen.",
+		"es": "El hotel oficial de 5 estrellas mejor valorado que encontramos en Whistler en Booking.com: 9,5/10 a partir de 382 reseñas de huéspedes.",
+		"fr": "L'hôtel 5 étoiles officiel le mieux noté que nous ayons trouvé à Whistler sur Booking.com : 9,5/10 sur 382 avis de clients.",
+		"it": "L'hotel 5 stelle ufficiale con la valutazione più alta che abbiamo trovato a Whistler su Booking.com: 9,5/10 da 382 recensioni degli ospiti.",
+		"pt": "O hotel oficial de 5 estrelas mais bem classificado que encontrámos em Whistler no Booking.com: 9,5/10 com base em 382 avaliações de hóspedes."
+	},
+	"The cheapest well-reviewed private room we found in central Lisbon: rated 8.0 from more than 2,800 reviews, a short metro ride from Baixa.": {
+		"da": "Det billigste velanmeldte privatværelse, vi fandt i det centrale Lissabon: vurderet til 8,0 fra mere end 2.800 anmeldelser, en kort metrotur fra Baixa.",
+		"de": "Das günstigste gut bewertete Privatzimmer, das wir im zentralen Lissabon gefunden haben: bewertet mit 8,0 aus mehr als 2.800 Bewertungen, eine kurze Metrofahrt von Baixa entfernt.",
+		"es": "La habitación privada bien valorada más barata que encontramos en el centro de Lisboa: puntuación de 8,0 a partir de más de 2800 reseñas, a poca distancia en metro de Baixa.",
+		"fr": "La chambre privée bien notée la moins chère que nous ayons trouvée dans le centre de Lisbonne : notée 8,0 sur plus de 2 800 avis, à quelques minutes de métro de Baixa.",
+		"it": "La camera privata ben recensita più economica che abbiamo trovato nel centro di Lisbona: valutazione 8,0 da più di 2.800 recensioni, a pochi minuti di metropolitana da Baixa.",
+		"pt": "O quarto privado bem avaliado mais barato que encontrámos no centro de Lisboa: classificação de 8,0 com base em mais de 2800 avaliações, a uma curta viagem de metro da Baixa."
+	},
+	"The closest well-rated hotel without an airport name, in Lake Mary, rated 8.1 from 184 Booking.com reviews.": {
+		"da": "Det nærmeste velanmeldte hotel uden lufthavnsnavn, i Lake Mary, vurderet til 8,1 fra 184 anmeldelser på Booking.com.",
+		"de": "Das nächstgelegene gut bewertete Hotel ohne Flughafennamen, in Lake Mary, bewertet mit 8,1 aus 184 Booking.com-Bewertungen.",
+		"es": "El hotel bien valorado más cercano sin nombre de aeropuerto, en Lake Mary, con una puntuación de 8,1 a partir de 184 reseñas de Booking.com.",
+		"fr": "L'hôtel bien noté le plus proche sans nom d'aéroport, à Lake Mary, noté 8,1 sur 184 avis Booking.com.",
+		"it": "L'hotel ben valutato più vicino senza il nome dell'aeroporto, a Lake Mary, con valutazione 8,1 da 184 recensioni su Booking.com.",
+		"pt": "O hotel bem classificado mais próximo sem nome de aeroporto, em Lake Mary, com classificação de 8,1 com base em 184 avaliações do Booking.com."
+	},
+	"The closest well-rated hotel without an airport name, in Reigate, rated 7.7 from 950 Booking.com reviews.": {
+		"da": "Det nærmeste velanmeldte hotel uden lufthavnsnavn, i Reigate, vurderet til 7,7 fra 950 anmeldelser på Booking.com.",
+		"de": "Das nächstgelegene gut bewertete Hotel ohne Flughafennamen, in Reigate, bewertet mit 7,7 aus 950 Booking.com-Bewertungen.",
+		"es": "El hotel bien valorado más cercano sin nombre de aeropuerto, en Reigate, con una puntuación de 7,7 a partir de 950 reseñas de Booking.com.",
+		"fr": "L'hôtel bien noté le plus proche sans nom d'aéroport, à Reigate, noté 7,7 sur 950 avis Booking.com.",
+		"it": "L'hotel ben valutato più vicino senza il nome dell'aeroporto, a Reigate, con valutazione 7,7 da 950 recensioni su Booking.com.",
+		"pt": "O hotel bem classificado mais próximo sem nome de aeroporto, em Reigate, com classificação de 7,7 com base em 950 avaliações do Booking.com."
+	},
+	"The closest well-rated hotel without an airport name, in Turners Hill, rated 7.8 from 470 Booking.com reviews.": {
+		"da": "Det nærmeste velanmeldte hotel uden lufthavnsnavn, i Turners Hill, vurderet til 7,8 fra 470 anmeldelser på Booking.com.",
+		"de": "Das nächstgelegene gut bewertete Hotel ohne Flughafennamen, in Turners Hill, bewertet mit 7,8 aus 470 Booking.com-Bewertungen.",
+		"es": "El hotel bien valorado más cercano sin nombre de aeropuerto, en Turners Hill, con una puntuación de 7,8 a partir de 470 reseñas de Booking.com.",
+		"fr": "L'hôtel bien noté le plus proche sans nom d'aéroport, à Turners Hill, noté 7,8 sur 470 avis Booking.com.",
+		"it": "L'hotel ben valutato più vicino senza il nome dell'aeroporto, a Turners Hill, con valutazione 7,8 da 470 recensioni su Booking.com.",
+		"pt": "O hotel bem classificado mais próximo sem nome de aeroporto, em Turners Hill, com classificação de 7,8 com base em 470 avaliações do Booking.com."
+	}
+};
 var LOC = {
 	es: "es-ES",
 	de: "de-DE",
@@ -101995,7 +105229,137 @@ var T = {
 		}
 	}
 };
+var SHORT = {
+	"Lowest eligible reference rate": {
+		es: "El precio de referencia más bajo entre los elegibles",
+		de: "Niedrigster passender Referenzpreis",
+		fr: "Prix de référence le plus bas parmi les hôtels éligibles",
+		it: "Prezzo di riferimento più basso tra gli hotel idonei",
+		pt: "O preço de referência mais baixo entre os elegíveis",
+		da: "Laveste referencepris blandt de egnede"
+	},
+	"Highest-rated upscale option": {
+		es: "La opción superior mejor valorada",
+		de: "Die am besten bewertete gehobene Option",
+		fr: "L'option haut de gamme la mieux notée",
+		it: "L'opzione di pregio con la valutazione più alta",
+		pt: "A opção superior mais bem avaliada",
+		da: "Det bedst bedømte eksklusive valg"
+	}
+};
+var SFAC = {
+	"family rooms": {
+		es: "habitaciones familiares",
+		de: "Familienzimmer",
+		fr: "chambres familiales",
+		it: "camere familiari",
+		pt: "quartos familiares",
+		da: "familieværelser"
+	},
+	"free wi-fi": {
+		es: "wi-fi gratis",
+		de: "kostenloses WLAN",
+		fr: "wi-fi gratuit",
+		it: "wi-fi gratuito",
+		pt: "wi-fi grátis",
+		da: "gratis wi-fi"
+	},
+	"air conditioning": {
+		es: "aire acondicionado",
+		de: "Klimaanlage",
+		fr: "climatisation",
+		it: "aria condizionata",
+		pt: "ar condicionado",
+		da: "aircondition"
+	},
+	"free parking": {
+		es: "aparcamiento gratis",
+		de: "kostenlose Parkplätze",
+		fr: "parking gratuit",
+		it: "parcheggio gratuito",
+		pt: "estacionamento grátis",
+		da: "gratis parkering"
+	},
+	gym: {
+		es: "gimnasio",
+		de: "Fitnessraum",
+		fr: "salle de sport",
+		it: "palestra",
+		pt: "ginásio",
+		da: "fitnessrum"
+	},
+	restaurant: {
+		es: "restaurante",
+		de: "Restaurant",
+		fr: "restaurant",
+		it: "ristorante",
+		pt: "restaurante",
+		da: "restaurant"
+	},
+	beachfront: {
+		es: "frente a la playa",
+		de: "direkt am Strand",
+		fr: "en bord de plage",
+		it: "fronte spiaggia",
+		pt: "em frente à praia",
+		da: "ved stranden"
+	},
+	spa: {
+		es: "spa",
+		de: "Spa",
+		fr: "spa",
+		it: "spa",
+		pt: "spa",
+		da: "spa"
+	},
+	pool: {
+		es: "piscina",
+		de: "Pool",
+		fr: "piscine",
+		it: "piscina",
+		pt: "piscina",
+		da: "pool"
+	},
+	"swimming pool": {
+		es: "piscina",
+		de: "Schwimmbad",
+		fr: "piscine",
+		it: "piscina",
+		pt: "piscina",
+		da: "svømmebassin"
+	},
+	"free airport shuttle": {
+		es: "traslado gratis al aeropuerto",
+		de: "kostenloser Flughafentransfer",
+		fr: "navette aéroport gratuite",
+		it: "navetta aeroportuale gratuita",
+		pt: "transfer gratuito para o aeroporto",
+		da: "gratis lufthavnsbus"
+	},
+	"pets allowed": {
+		es: "se admiten mascotas",
+		de: "Haustiere erlaubt",
+		fr: "animaux acceptés",
+		it: "animali ammessi",
+		pt: "animais permitidos",
+		da: "kæledyr tilladt"
+	},
+	garden: {
+		es: "jardín",
+		de: "Garten",
+		fr: "jardin",
+		it: "giardino",
+		pt: "jardim",
+		da: "have"
+	}
+};
 function reasonL(r, L) {
+	if (L !== "en" && OV[r]?.[L]) return OV[r][L];
+	const sm = L !== "en" ? r.match(/^(Lowest eligible reference rate|Highest-rated upscale option)(?: · (.+?))?\.?$/) : null;
+	if (sm && SHORT[sm[1]]?.[L]) {
+		const fs = sm[2] ? sm[2].split(", ") : [];
+		if (fs.every((f) => SFAC[f]?.[L])) return SHORT[sm[1]][L] + (fs.length ? " · " + fs.map((f) => SFAC[f][L]).join(", ") : "") + ".";
+	}
 	const t = T[L];
 	if (!t) return r;
 	let m;
@@ -162762,7 +166126,10 @@ function card(h, city, i, L, sights, cityImg, review, extra = "", x4 = {}) {
 <p class="bestfor"><b>${esc(X[L].bestFor)}</b>${esc(bestFor(h, i, L, sights).join(" · "))}</p>
 ${why.length ? `<ul class="why">${why.map((w) => `<li>${h.candidateCount && w === y.whyFrom(h.candidateCount) ? `<a href="${P(L, "/how-we-choose")}#sample">${esc(w)}</a>` : esc(w)}</li>`).join("")}</ul>` : ""}${extra}
 <div class="trust"><span><b>${intL(b.count, L)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M$1[L].live(fmtLiveL(isoDay(b.checked), L)))}</span></div>
-${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)} · Booking.com</small><span${L === "en" ? "" : " lang=\"en\""}>${esc(ex.pros[0])}</span></li>${ex.cons?.[0] ? `<li class="con"${L === "en" ? "" : " lang=\"en\""}>${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
+${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)} · Booking.com</small><span${L === "en" ? "" : " lang=\"en\""}>${esc(ex.pros[0])}</span></li>${ex.cons?.[0] ? `<li class="con"${L === "en" ? "" : " lang=\"en\""}>${esc(ex.cons[0])}</li>` : ""}</ul>` : ((r0) => {
+		const r1 = reasonL(r0, L);
+		return `<p style="margin:0;font-size:14px"${L !== "en" && r1 === r0 && r0 ? " lang=\"en\"" : ""}>${esc(r1)}</p>`;
+	})(h.evidence?.shortReason ?? h.reason ?? "")}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
 ${o.nightly ? `<div class="price"><span>${esc(t.refRate)}</span><span class="total" data-total="${o.nightly}" hidden></span></div>` : ""}
 ${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout, L)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.category === "Luxury" && b.stars != null && b.stars < 5 ? `<p class="cnote">${esc(NO5[L] ?? NO5["en"] ?? "")}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
@@ -165291,6 +168658,20 @@ async function sitemapFor(L) {
 	for (const c of index) if ((await cityData(c.id))?.extras?.hero?.img) heroImg.set("/" + c.slug, `${SITE}/api/img/${c.id}/big`);
 	return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${paths.map((p) => `<url><loc>${SITE}${P(L, p)}</loc><lastmod>${CONTENT_DATE}</lastmod>${LANGS.map((l) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${P(l, p)}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${p}"/>${heroImg.has(p) ? `<image:image><image:loc>${heroImg.get(p)}</image:loc></image:image>` : ""}</url>`).join("\n")}\n${extra}${enes}${growth}${t14u ? t14u + "\n" : ""}${t15u ? t15u + "\n" : ""}</urlset>\n`;
 }
+var SM_CACHE = /* @__PURE__ */ new Map();
+var smMemo = (k, f) => {
+	const hit = SM_CACHE.get(k);
+	if (hit && Date.now() - hit.t < 36e5) return hit.v;
+	const v = f().catch((e) => {
+		SM_CACHE.delete(k);
+		throw e;
+	});
+	SM_CACHE.set(k, {
+		t: Date.now(),
+		v
+	});
+	return v;
+};
 var sitemapIndex = () => `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${LANGS.map((l) => `<sitemap><loc>${SITE}/sitemap-${l}.xml</loc><lastmod>${CONTENT_DATE}</lastmod></sitemap>`).join("\n")}\n<sitemap><loc>${SITE}/sitemap-hotels.xml</loc><lastmod>${CONTENT_DATE}</lastmod></sitemap>\n</sitemapindex>\n`;
 var ROBOTS = `# Search and AI answer engines are welcome: the picks, prices and data are meant to be cited with a link.\nUser-agent: Googlebot\nUser-agent: Bingbot\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: GPTBot\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: ClaudeBot\nUser-agent: Google-Extended\nUser-agent: Applebot\nUser-agent: Applebot-Extended\nUser-agent: DuckDuckBot\nUser-agent: YandexBot\nAllow: /\nAllow: /api/img\nDisallow: /api/\n\nUser-agent: *\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# AI assistants and AI search engines are welcome to crawl and cite us (please credit \"Top3Hotels\" with a link).\nUser-agent: GPTBot\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: ClaudeBot\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: anthropic-ai\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Google-Extended\nUser-agent: Applebot-Extended\nUser-agent: Amazonbot\nUser-agent: DuckAssistBot\nUser-agent: Meta-ExternalAgent\nUser-agent: CCBot\nAllow: /\nAllow: /api/img/\nDisallow: /api/\n\n# Summary for AI assistants: ${SITE}/llms.txt\n# Every pick in plain text: ${SITE}/llms-full.txt\n# Open data (CC BY 4.0): ${SITE}/open-data\nSitemap: ${SITE}/sitemap.xml\n`;
 var SB_URL = "https://gmdalfsvtfhzepyrdmjj.supabase.co";
@@ -165369,12 +168750,12 @@ async function handleSeo(request, env) {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
 	} });
-	if (p === "/sitemap-hotels.xml") return new Response(await hotelSitemap(), { headers: {
+	if (p === "/sitemap-hotels.xml") return new Response(await smMemo("hotels", hotelSitemap), { headers: {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
 	} });
 	const sm = p.match(/^\/sitemap-([a-z]{2})\.xml$/);
-	if (sm && isLang(sm[1])) return new Response(await sitemapFor(sm[1]), { headers: {
+	if (sm && isLang(sm[1])) return new Response(await smMemo(sm[1], () => sitemapFor(sm[1])), { headers: {
 		"content-type": "application/xml; charset=utf-8",
 		"cache-control": "public, max-age=3600"
 	} });
@@ -165800,7 +169181,7 @@ Policy: https://www.top3hotels.com/terms
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-DrUWHdrz.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-CQdyfVkK.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
