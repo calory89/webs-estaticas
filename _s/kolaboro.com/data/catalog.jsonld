@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-27T03:21:08Z",
+  "@value": "2026-11-27T03:25:52Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -9429,7 +9429,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "213753",
+      "@value": "218591",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -9443,7 +9443,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "29abf5711c84f0ecfce99ddb261ae0612e6818e2a92a2308976f1acbd6c98782"
+      "spdx:checksumValue": "ae55329d8186bee90b227f22c8d3a3bf4ee8faf30581974da53192ea390cd5d4"
      }
     }
    ],
@@ -26534,7 +26534,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "1251282",
+      "@value": "1256443",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -26548,7 +26548,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "9666cb823c6d8394e9b39672650e94eb77e30b1b2ec8155cfaefb0c1652e308d"
+      "spdx:checksumValue": "5b2fd7e2a42c74933424c237e2460ae6fe050ce957fefb0db514fac6f217596c"
      }
     }
    ],
