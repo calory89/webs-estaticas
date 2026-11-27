@@ -226,6 +226,10 @@ It is worth it if you take the metro to and from the airport and use public tran
 
 Locals often head to El Palmar in the Albufera or to long-established beachfront restaurants such as Casa Carmela. Book ahead, especially for Sunday lunch.
 
+### Is Valencia expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Valencia: https://www.happylowcost.com/en/destinations/valencia/#deals

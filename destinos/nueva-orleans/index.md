@@ -247,6 +247,10 @@ Sí, si eliges una empresa con barcas pequeñas en lugar de las lanchas con hél
 
 Música en directo en Frenchmen Street, un cóctel en el Carousel Bar y, si te pilla en domingo o martes, algún concierto de brass band en un bar de Uptown o del Tremé.
 
+### ¿Es caro viajar a Nueva Orleans?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 120-150 € por persona y día, y en el nivel "medio", unos unos 220-300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Nueva Orleans: https://www.happylowcost.com/destinos/nueva-orleans/#chollos

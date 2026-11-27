@@ -223,6 +223,10 @@ Mucho. Es el transporte más rápido de la ciudad, cuesta céntimos y llega a ca
 
 Ropa ligera y holgada que cubra hombros y rodillas, sobre todo para templos y mezquitas. En diciembre y enero, una chaqueta para las mañanas, y siempre calzado fácil de quitar.
 
+### ¿Es caro viajar a Nueva Delhi?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 25-35 € por persona y día, y en el nivel "presupuesto medio", unos 60-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Nueva Delhi: https://www.happylowcost.com/destinos/nueva-delhi/#chollos

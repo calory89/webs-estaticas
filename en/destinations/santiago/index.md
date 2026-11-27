@@ -246,6 +246,10 @@ Yes. It's the most rewarding day trip, cheap and easy by bus, and very different
 
 March-April and October-November, for mild weather, clearer skies and the grape harvest in autumn.
 
+### Is Santiago expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €45-60 per person per day and the "mid-range" level at about €100-160. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Santiago: https://www.happylowcost.com/en/destinations/santiago/#deals

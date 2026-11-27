@@ -220,6 +220,10 @@ Solo si vas a entrar en tres o más museos de pago en pocos días, por ejemplo E
 
 Turín es de las mejores ciudades para un día de lluvia: tiene más de 18 km de soportales y museos grandes como el Egipcio, el del Cine y el del Automóvil para pasar el día bajo techo.
 
+### ¿Es caro viajar a Turín?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-90 € por persona y día, y en el nivel "presupuesto medio", unos 120-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Turín: https://www.happylowcost.com/destinos/turin/#chollos

@@ -219,6 +219,10 @@ El Paseo da Ferradura, en la Alameda, para la vista clásica de la catedral. El 
 
 Sí, el acceso está limitado. En temporada alta conviene reservar online con varios días de antelación.
 
+### ¿Es caro viajar a Santiago de Compostela?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santiago de Compostela: https://www.happylowcost.com/destinos/santiago-de-compostela/#chollos

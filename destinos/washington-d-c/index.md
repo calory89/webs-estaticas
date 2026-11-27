@@ -237,6 +237,10 @@ Sí, son unas 3 horas en tren Amtrak o entre 4 y 5 en bus, desde unos 20-30 $. I
 
 Normalmente entre finales de marzo y principios de abril, aunque varía cada año según el tiempo. El Servicio de Parques Nacionales publica la previsión del pico de floración unas semanas antes.
 
+### ¿Es caro viajar a Washington D. C.?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 90-120 € por persona y día, y en el nivel "medio", unos 180-250 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Washington D. C.: https://www.happylowcost.com/destinos/washington-d-c/#chollos

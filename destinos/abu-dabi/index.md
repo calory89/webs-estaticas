@@ -256,6 +256,10 @@ El dírham emiratí (AED); un euro equivale aproximadamente a 4 dírhams. Se pag
 
 Sí, si tienes más de ocho horas. Te da tiempo a ir a la Gran Mezquita y pasear por la Corniche, y volver al aeropuerto con margen.
 
+### ¿Es caro viajar a Abu Dabi?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos de 60 a 90 € por persona y día, y en el nivel "presupuesto medio", unos de 130 a 200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Abu Dabi: https://www.happylowcost.com/destinos/abu-dabi/#chollos

@@ -129,6 +129,10 @@ Sí, pero con restricciones. Se sirve en algunos hoteles, bares y restaurantes d
 
 Con 3 días ves lo esencial de Marrakech sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Marrakech?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Marrakech: https://www.happylowcost.com/destinos/marrakech/#chollos

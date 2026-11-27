@@ -235,6 +235,10 @@ Take a Grab car for about €4-9, which takes 30-90 minutes depending on traffic
 
 The National Museum of the Philippines, which is three free museums next to Rizal Park. Combine it with a sunset on Manila Bay.
 
+### Is Manila expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €30-40 per person per day and the "comfortable" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Manila: https://www.happylowcost.com/en/destinations/manila/#deals

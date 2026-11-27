@@ -121,6 +121,10 @@ Casi siempre. Lleva algo de efectivo para propinas pequeñas y carritos callejer
 
 Solo si vas a visitar muchas atracciones de pago. Calcula qué entradas quieres de verdad y compara con el precio del pase antes de decidir.
 
+### ¿Es caro viajar a Nueva York?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-150 euros por persona y día, y en el nivel "cómodo", unos más de 350 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Nueva York: https://www.happylowcost.com/destinos/nueva-york/#chollos

@@ -191,6 +191,10 @@ Swimwear and shorts are fine on the beach and in the hotel zone. Cover shoulders
 
 No. English is widely spoken in hotels and tourist areas, but a few words of French or Darija help in taxis and markets.
 
+### Is Agadir expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €35-50 per person per day and the "comfortable" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Agadir: https://www.happylowcost.com/en/destinations/agadir/#deals

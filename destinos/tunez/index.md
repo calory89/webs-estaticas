@@ -236,6 +236,10 @@ Sí, pero solo en hoteles, bares y restaurantes con licencia, sobre todo en el c
 
 Sí, es la visita más potente de Túnez y muy barata. Si solo tienes tiempo para un museo, que sea este.
 
+### ¿Es caro viajar a Túnez?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Túnez: https://www.happylowcost.com/destinos/tunez/#chollos

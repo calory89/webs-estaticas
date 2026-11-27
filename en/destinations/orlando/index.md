@@ -224,6 +224,10 @@ The tourist areas are generally safe. Use normal city caution at night downtown,
 
 Cocoa Beach and New Smyrna Beach on the Atlantic are both about an hour's drive. The Gulf Coast beaches near Tampa are about two hours away.
 
+### Is Orlando expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €110-160 / $125-185 on non-park days per person per day and the "mid-range" level at about €220-350 / $250-400 on park days. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Orlando: https://www.happylowcost.com/en/destinations/orlando/#deals

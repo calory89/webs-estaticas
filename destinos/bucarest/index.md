@@ -123,6 +123,10 @@ No, aunque algunos sitios turísticos los admiten con mal cambio. Lo mejor es pa
 
 Si te gustan los castillos o los paisajes de montaña, sí, combinándolo con Brașov. Si vas justo de tiempo, la capital te dará más por menos esfuerzo.
 
+### ¿Es caro viajar a Bucarest?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 euros por persona y día, y en el nivel "holgado", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bucarest: https://www.happylowcost.com/destinos/bucarest/#chollos

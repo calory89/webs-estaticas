@@ -223,6 +223,10 @@ En diciembre sí, por los mercadillos de Navidad, aunque haga frío y haya mucha
 
 Para una primera escapada, Colonia, por la catedral y los museos. Están a menos de una hora en tren, así que puedes ver las dos en un mismo viaje.
 
+### ¿Es caro viajar a Colonia?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Colonia: https://www.happylowcost.com/destinos/colonia/#chollos

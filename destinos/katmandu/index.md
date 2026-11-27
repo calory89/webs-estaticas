@@ -232,6 +232,10 @@ Hombros y rodillas cubiertos, y calzado fácil de quitar. En invierno, abrigo pa
 
 Sí. El valle tiene siete sitios patrimonio de la Unesco y da para cuatro días completos sin pisar un sendero de montaña.
 
+### ¿Es caro viajar a Katmandú?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 25-35 € por persona y día, y en el nivel "presupuesto medio", unos 60-90 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Katmandú: https://www.happylowcost.com/destinos/katmandu/#chollos

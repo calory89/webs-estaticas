@@ -236,6 +236,10 @@ En el Nankai Airport Express, en unos 45 minutos por unos 6 €. El Rapi:t es m�
 
 Sí, lleva algo. La tarjeta funciona en casi todas partes, pero muchos puestos, bares pequeños y templos solo aceptan yenes.
 
+### ¿Es caro viajar a Osaka?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-80 €/día por persona y día, y en el nivel "presupuesto medio", unos 120-180 €/día. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Osaka: https://www.happylowcost.com/destinos/osaka/#chollos

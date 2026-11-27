@@ -132,6 +132,10 @@ Los ciudadanos españoles no necesitan visado para estancias turísticas cortas,
 
 En hoteles, centros comerciales y restaurantes medios, sí. En mercados, taxis y puestos callejeros necesitarás efectivo en pesos colombianos, así que saca dinero en cajeros de bancos o centros comerciales.
 
+### ¿Es caro viajar a Bogotá?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-45 euros por persona y día, y en el nivel "cómodo", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bogotá: https://www.happylowcost.com/destinos/bogota/#chollos

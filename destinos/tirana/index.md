@@ -216,6 +216,10 @@ Entre 6 y 10 € en un local sencillo y 15-25 € en un buen restaurante con vin
 
 Los jóvenes y en hoteles y bares, sí. Muchos entienden también italiano.
 
+### ¿Es caro viajar a Tirana?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 35-45 € por persona y día, y en el nivel "medio", unos unos 80-110 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tirana: https://www.happylowcost.com/destinos/tirana/#chollos

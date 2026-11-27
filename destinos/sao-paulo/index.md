@@ -244,6 +244,10 @@ Para una primera visita, Paulista o Jardins, por metro, seguridad y cercanía a 
 
 El inglés es limitado fuera de hoteles y restaurantes de gama alta. Hablando español despacio te entenderán bastante, y aprender cuatro palabras de portugués ayuda mucho.
 
+### ¿Es caro viajar a São Paulo?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a São Paulo: https://www.happylowcost.com/destinos/sao-paulo/#chollos

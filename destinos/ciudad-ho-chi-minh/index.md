@@ -224,6 +224,10 @@ No es obligatoria. En restaurantes y masajes se agradece dejar un 5-10 %, y en t
 
 De diciembre a marzo, en la temporada seca. Evita las fechas del Tet si quieres encontrar todo abierto.
 
+### ¿Es caro viajar a Ciudad Ho Chi Minh?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad Ho Chi Minh: https://www.happylowcost.com/destinos/ciudad-ho-chi-minh/#chollos

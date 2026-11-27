@@ -228,6 +228,10 @@ It is worth at least two or three days. Few cities let you see rhinos, lions and
 
 Non-residents pay about KSh 1,500, roughly €10. Prices change, so check before you go.
 
+### Is Nairobi expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €45-70 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Nairobi: https://www.happylowcost.com/en/destinations/nairobi/#deals

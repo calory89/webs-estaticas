@@ -236,6 +236,10 @@ El Casco Viejo si quieres hacerlo todo andando y El Cangrejo si buscas mejor pre
 
 En la capital el agua del grifo es potable y mucha gente local la bebe. Si tienes el estómago delicado, bebe embotellada los primeros días.
 
+### ¿Es caro viajar a Ciudad de Panamá?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado: 50-70 €" se gastan unos 55-75 $ por persona y día, y en el nivel "medio: 110-170 €", unos 120-185 $. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ciudad de Panamá: https://www.happylowcost.com/destinos/ciudad-de-panama/#chollos

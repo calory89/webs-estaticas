@@ -238,6 +238,10 @@ Street food (takoyaki, okonomiyaki and kushikatsu), Dotonbori's neon, Osaka Cast
 
 Yes. It is 40 minutes by Kintetsu train from Namba, and the main sights in Nara Park are close together. Go early to beat the crowds.
 
+### Is Osaka expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Osaka: https://www.happylowcost.com/en/destinations/osaka/#deals

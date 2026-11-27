@@ -240,6 +240,10 @@ En Tortuguero, la tortuga verde desova de julio a octubre. Para ver tortuga laú
 
 En la mayor parte del país, sí, incluidos San José, La Fortuna y Monteverde. En zonas rurales y en algunas partes del Caribe es mejor preguntar.
 
+### ¿Es caro viajar a Costa Rica?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "presupuesto medio", unos 140-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Costa Rica: https://www.happylowcost.com/destinos/san-jose-costa-rica/#chollos

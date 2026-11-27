@@ -236,6 +236,10 @@ A taxi or app ride takes 45-90 minutes and costs about $25-35. The cheaper optio
 
 Yes. Mitad del Mundo and Museo Intiñan are about an hour north by taxi, and you need half a day for the round trip.
 
+### Is Quito expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about $35-50 (€32-45) per person per day and the "mid-range" level at about $90-150 (€80-135). Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Quito: https://www.happylowcost.com/en/destinations/quito/#deals

@@ -135,6 +135,10 @@ En general sí. Usa el sentido común en la zona de la Reeperbahn de noche y en 
 
 No. En hoteles, restaurantes y transporte se maneja bien el inglés, aunque un «danke» y un «moin», el saludo típico del norte, siempre cae bien.
 
+### ¿Es caro viajar a Hamburgo?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 euros por persona y día, y en el nivel "cómodo", unos más de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Hamburgo: https://www.happylowcost.com/destinos/hamburgo/#chollos

@@ -244,6 +244,10 @@ Pequod's para la versión con borde caramelizado, Lou Malnati's para la clásica
 
 Sí. La Blue Line conecta O'Hare con el centro en unos 45 minutos por 5 $, y la Orange Line une Midway con el Loop en unos 25 minutos.
 
+### ¿Es caro viajar a Chicago?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 110-150 € por persona y día, y en el nivel "presupuesto medio", unos 220-320 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Chicago: https://www.happylowcost.com/destinos/chicago/#chollos

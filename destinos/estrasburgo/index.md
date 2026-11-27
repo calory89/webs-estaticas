@@ -235,6 +235,10 @@ Normalmente el EuroAirport de Basilea-Mulhouse o Baden-Baden. Desde ambos llegas
 
 El idioma es el francés, aunque muchos mayores hablan alsaciano y bastante gente entiende alemán. En el centro te arreglas en inglés sin problema.
 
+### ¿Es caro viajar a Estrasburgo?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 90-120 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Estrasburgo: https://www.happylowcost.com/destinos/estrasburgo/#chollos

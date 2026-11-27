@@ -238,6 +238,10 @@ Se celebra durante cuatro noches alrededor del 8 de diciembre. Reserva alojamien
 
 Sí, en unas dos horas de tren o de bus. Es la excursión más popular y compensa si sales temprano.
 
+### ¿Es caro viajar a Lyon?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Lyon: https://www.happylowcost.com/destinos/lyon/#chollos

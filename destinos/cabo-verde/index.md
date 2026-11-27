@@ -230,6 +230,10 @@ Entre octubre y junio para sol seguro, con más viento en invierno. Mayo, junio 
 
 En avión con Bestfly o en ferry con CV Interilhas. El ferry Mindelo-Porto Novo es el más útil y fiable; los vuelos conviene reservarlos con margen por los retrasos.
 
+### ¿Es caro viajar a Cabo Verde?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cabo Verde: https://www.happylowcost.com/destinos/cabo-verde/#chollos

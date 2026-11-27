@@ -127,6 +127,10 @@ Con 3 días ves lo esencial de Viena sin prisas. La ruta de esta guía está org
 
 Hoy el chollo más barato que tenemos a Viena cuesta 67 € ida y vuelta desde Palma de Mallorca. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Es caro viajar a Viena?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Viena: https://www.happylowcost.com/destinos/viena/#chollos

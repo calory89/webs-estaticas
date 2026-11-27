@@ -108,7 +108,21 @@ def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', 
     return h
 
 
-TRAVEL_GUIDE_Q = {'cancun', 'dubrovnik', 'el-cairo', 'bogota'}
+TRAVEL_GUIDE_Q = {'cancun', 'dubrovnik', 'el-cairo', 'bogota', 'vilna', 'fez'}  # ronda 5: "vilnius travel guide", "travel to fez"
+# Ronda 5: título y H1 con la consulta real de Search Console (28 días). d = días del itinerario (0 si no hay).
+TITLE_Q_EN = {
+    'turin': lambda n, d, y: f'Things to do in {n}: {d}-day itinerary ({y})' if d else None,  # "things to do in turin" pos. 17
+    'rovaniemi': lambda n, d, y: f'Things to do in {n}: {d}-day itinerary ({y})' if d else None,  # "things to do in rovaniemi" pos. 18
+    'los-angeles': lambda n, d, y: f'Places to visit in {n}: {d}-day itinerary ({y})' if d else None,  # "places to visit in los angeles" pos. 5,8
+    'salzburgo': lambda n, d, y: f'Is {n} expensive? 2-day travel guide with real costs',  # "is salzburg expensive" 49 impr. pos. 20
+    'munich': lambda n, d, y: f'{n} itinerary: {d} days and is it expensive? ({y})' if d else None,  # "is munich expensive" pos. 25
+    'maldivas': lambda n, d, y: 'How expensive are the Maldives? Travel guide and real costs',  # "how expensive is it to go to the maldives"
+    'las-vegas': lambda n, d, y: f'{n} on a budget: {d}-day itinerary ({y})' if d else None,  # "...ideal destination for budget travelers" pos. 8,5
+    'praga': lambda n, d, y: f'{n} in {d} days: itinerary and what to see ({y})' if d else None,  # "prague in 3 days"
+    'bruselas': lambda n, d, y: f'{n} in {d} days: itinerary and what to see ({y})' if d else None,  # "bruselas 3 days" / "brussels 3 days"
+    'creta': lambda n, d, y: f'{n} on a budget: {d}-day itinerary, Balos and Elafonissi ({y})' if d else None,  # "elafonissi balos..." pos. 5,8, "crete on a budget"
+    'mykonos': lambda n, d, y: f'{n} on a budget: {d}-day itinerary and cheap beaches ({y})' if d else None,  # "cheap beaches mykonos" pos. 13
+}
 
 
 def dates_en(f):
@@ -238,7 +252,7 @@ def main():
         title = G.clean_title(en.get('title') or f'{o} → {d} from €{x["price"]} {trip(f)}')
         qa = G.deal_faq(x, True)
         seo_t = G.deal_seo_title(dict(f, origen=o, destino=d, periodo_en=(datetime.date.fromisoformat(f['ida'][:10]).strftime('%b %Y') if re.match(r'\d{4}-\d\d-\d\d', f.get('ida') or '') else '')), x['price'], True, trip(f))
-        desc = en.get('meta_description') or en.get('excerpt') or title
+        desc = G.deal_meta(x, True, o, d) or en.get('meta_description') or en.get('excerpt') or title
         ls_ = G.lib_slug(f)
         hero = f'/hlc/img/cities/{ls_}.jpg' if ls_ else (f'/chollos/{slug}/foto.jpg' if os.path.exists(f'chollos/{slug}/foto.jpg') else (x.get('image_url') or ''))
         og = f'{SITE}/chollos/{slug}/og.jpg'
@@ -421,12 +435,13 @@ def main():
         except Exception:
             return 99
     IDEAS_EN = [
-        ('weekend-getaways', 'Weekend getaways', 'Trips of 2 to 4 nights leaving on a Thursday, Friday or Saturday.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
+        ('weekend-getaways', 'Cheap weekend getaways', 'Affordable airfare for a weekend escape: return trips of 2 to 4 nights leaving on a Thursday, Friday or Saturday, cheapest first.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
         ('under-50', 'Flights under €50', 'Return deals for €50 or less.', lambda f_: (f_.get('precio') or 999) <= 50),
         ('under-100', 'Flights under €100', 'Return deals for €100 or less.', lambda f_: (f_.get('precio') or 999) <= 100),
         ('long-haul', 'Long-haul under €600', 'Deals to another continent for €600 or less, return.', lambda f_: (f_.get('precio') or 9999) <= 600 and f_.get('continente') and G.REAL_CONT.get(f_.get('continente')) != G.REAL_CONT.get(f_.get('origen_continente') or '', f_.get('origen_continente'))),
         ('nonstop', 'Nonstop flight deals', 'Only flights with no stops.', lambda f_: f_.get('escalas') == 0),
         ('christmas-2026', 'Christmas and New Year 2026', 'Deals departing between 18 December 2026 and 6 January 2027.', lambda f_: '2026-12-18' <= (f_.get('ida') or '')[:10] <= '2027-01-06'),
+        ('easter-2027', 'Easter 2027', 'Deals departing between 19 and 28 March 2027 (Easter weekend: 25 to 28 March).', lambda f_: '2027-03-19' <= (f_.get('ida') or '')[:10] <= '2027-03-28'),
     ]
     ideas_en = []
     for k_, h1_, desc_, fn_ in IDEAS_EN:
@@ -554,13 +569,15 @@ def main():
         nd_i = nd_ or max([int(m_.group(1)) for m_ in re.finditer(r'\bday\s*(\d{1,2})\b', gh, re.I)] + [0])
         gh, trip_ld = G.guide_itinerary(gh, n, nd_i if 2 <= nd_i <= 21 else 0, 'en')
         gh, bud = G.guide_budget(gh, 'en')
+        gh = G.guide_cost_faq(gh, n, 'en')
         attr = G.guide_attractions(gh)
         gh, faq_ld, _w = G.guide_extras(gh, 'en')
         upd_en = g.get('updated_en') or g.get('updated_at')
         summ = G.guide_summary(gh, n, nd_, sub, upd_en, 'en', deal_href=lambda x_: f'/en/deals/{G.en_deal_slug(x_)}/' if G.en_deal_slug(x_) in hechos else '/en/deals/')
         img_ld = G.guide_image_ld(p['s'], n, 'en')
         hub_en = f"/en/flights/to/{G.en_dest_slug(p['s'])}/" if os.path.isfile(f"en/flights/to/{G.en_dest_slug(p['s'])}/index.html") else ''
-        ch, cld = crumbs([('Home', '/en/'), ('Destinations', '/en/destinations/'), (n, None)])
+        _pc = G.PAISES.get(G.slugify(en_names.COUNTRY_ES_FIX.get(p['c'], p['c'])))
+        ch, cld = crumbs([('Home', '/en/'), ('Destinations', '/en/destinations/')] + ([(en_names.country_en(p['c']), _pc[1])] if _pc else []) + [(n, None)])
         dest_ld = {"@type": "TouristDestination", "@id": url + '#dest', "name": n, "url": url, "image": {"@id": img_ld["@id"]},
                    **({"geo": {"@type": "GeoCoordinates", "latitude": p['y'], "longitude": p['x']}} if p.get('y') is not None else {}),
                    "containedInPlace": {"@type": "Country", "name": en_names.country_en(p['c'])}}
@@ -592,6 +609,12 @@ def main():
                 ttl_ = f'{n} travel guide: {nd_}-day itinerary ({datetime.date.today().year})'
             if 'itinerar' not in dsc_.lower() and 'day by day' not in dsc_.lower() and not re.search(r'\b\d+[ -]days?\b|\b(three|four|five|seven)[ -]days?\b', dsc_, re.I):
                 dsc_ = f'{nd_} days in {n}, day by day: ' + dsc_[:1].lower() + dsc_[1:]
+        h1_ov = None
+        if p['s'] in TITLE_Q_EN:
+            t_ov = TITLE_Q_EN[p['s']](n, nd_ if 2 <= nd_ <= 21 else 0, datetime.date.today().year)
+            if t_ov:
+                ttl_ = t_ov
+                h1_ov = re.sub(r'\s*\(\d{4}\)$', '', t_ov)
         if bud and 'budget' not in dsc_.lower():
             add_ = f' Budget: {bud} a day.'
             if len(dsc_.rstrip()) + len(add_) <= 200:
@@ -608,7 +631,7 @@ def main():
 <section class="deal-hero" style="background-image:url(/hlc/img/cities/{p['s']}.jpg)"{G.photos_attr(p['s'])}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
 <div class="kicker" style="color:#FFC531">Travel guide</div>
-<h1>{e(ttl_.rsplit(' (', 1)[0] if 2 <= nd_ <= 21 else (g.get('seo_title_en') or 'What to see in ' + n))}</h1>
+<h1>{e(h1_ov or (ttl_.rsplit(' (', 1)[0] if 2 <= nd_ <= 21 else (g.get('seo_title_en') or 'What to see in ' + n)))}</h1>
 <div class="deal-cta">{f'<a class="hlc-btn" href="#deals">🔥 {len(sub)} deal{"s" if len(sub) != 1 else ""} to {e(n)}</a>' if sub else ''}<a class="hlc-btn t" href="{hotels(n)}" target="_blank" rel="sponsored nofollow noopener">🏨 Hotels in {e(n)}</a>{f'<a class="hlc-btn o" href="{hub_en}" style="background:#fff">✈️ Cheap flights to {e(n)}</a>' if hub_en else ''}</div>
 </div></section>
 <div class="wrap"><div class="deal-body">

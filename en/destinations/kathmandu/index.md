@@ -228,6 +228,10 @@ October and November bring the clearest skies and the big festivals. March and A
 
 Hotels and larger restaurants take cards, often with a surcharge. Carry rupees for taxis, tickets and local food.
 
+### Is Kathmandu expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €20-30 per person per day and the "comfortable" level at about €120+. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Kathmandu: https://www.happylowcost.com/en/destinations/kathmandu/#deals

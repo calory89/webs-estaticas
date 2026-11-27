@@ -246,6 +246,10 @@ Yes, Uber and the local app 99 are widely used, cheap and the safest way to get 
 
 The CPTM Line 13-Jade train costs about R$5 (€1), with a free shuttle from the terminals. It is the cheapest option, but Uber or the Airport Bus Service is easier with luggage.
 
+### Is Sao Paulo expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "comfort" level at about €250+. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Sao Paulo: https://www.happylowcost.com/en/destinations/sao-paulo/#deals

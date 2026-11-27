@@ -246,6 +246,10 @@ Alicante is very safe. The main risks are petty theft on beaches and in crowds, 
 
 For culture, food and a local feel, Alicante wins easily. Benidorm is a purpose-built resort of high-rises and nightlife; it is worth seeing as a curiosity on the tram, but not as a base.
 
+### Is Alicante expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Alicante: https://www.happylowcost.com/en/destinations/alicante/#deals

@@ -225,6 +225,10 @@ Los jóvenes y el personal de hoteles y restaurantes del centro, sí. En los mer
 
 Gratis, Slavín y las terrazas del castillo. De pago, el mirador UFO del Puente SNP, sobre todo al atardecer.
 
+### ¿Es caro viajar a Bratislava?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bratislava: https://www.happylowcost.com/destinos/bratislava/#chollos

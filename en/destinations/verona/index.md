@@ -231,6 +231,10 @@ The historic centre is best for a short visit. Veronetta and San Zeno give bette
 
 Roughly June to early September at the Arena. Book ahead for popular nights, and bring a cushion if you buy the stone seats.
 
+### Is Verona expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €150-250. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Verona: https://www.happylowcost.com/en/destinations/verona/#deals

@@ -117,6 +117,10 @@ No. El centro es peatonal en buena parte, el tráfico es caótico y aparcar es c
 
 Abril-junio y septiembre-octubre. Hace buen tiempo, hay menos calor y menos agobio que en pleno verano.
 
+### ¿Es caro viajar a Nápoles?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 45-65 € por persona y día, y en el nivel "cómodo", unos 180 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Nápoles: https://www.happylowcost.com/destinos/napoles/#chollos

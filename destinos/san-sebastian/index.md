@@ -226,6 +226,10 @@ A los dos, si puedes. Urgull es gratis y está a cinco minutos de la Parte Vieja
 
 El de Hondarribia, a 30 minutos en bus, pero tiene pocos vuelos. Casi siempre sale más barato volar a Bilbao y coger el bus directo, de aproximadamente 1 hora y cuarto, o mirar vuelos a Biarritz.
 
+### ¿Es caro viajar a San Sebastián?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 200-280 € en habitación doble. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Sebastián: https://www.happylowcost.com/destinos/san-sebastian/#chollos

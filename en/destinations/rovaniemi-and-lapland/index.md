@@ -213,6 +213,10 @@ Yes, on strong nights, especially by the river. Heading 15-30 minutes out of tow
 
 It is only a few kilometres away, so a taxi takes 5-10 minutes. Bus line 8 also connects the village with the city centre.
 
+### Is Rovaniemi and Lapland expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €90-130 per person per day and the "splurge" level at about €600+. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Rovaniemi and Lapland: https://www.happylowcost.com/en/destinations/rovaniemi-and-lapland/#deals

@@ -145,6 +145,10 @@ No, comparada con otras islas griegas. Se come bien por poco y hay alojamiento p
 
 La Canea, si buscas ambiente y belleza. Heraclión, si priorizas conexiones, Knossos y el museo.
 
+### ¿Es caro viajar a Creta?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos más de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Creta: https://www.happylowcost.com/destinos/creta/#chollos

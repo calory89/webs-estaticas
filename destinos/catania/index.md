@@ -224,6 +224,10 @@ Sí, La Playa, al sur, con arena y lidos de pago, y la costa de rocas volcánica
 
 Mayo, junio, septiembre y octubre: buen tiempo, mar templado y menos calor que en verano. Si buscas vuelos baratos, el invierno fuera de la fiesta de Sant'Agata es la época más económica.
 
+### ¿Es caro viajar a Catania?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 55 a 70 € por persona y día, y en el nivel "medio", unos unos 110 a 150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Catania: https://www.happylowcost.com/destinos/catania/#chollos

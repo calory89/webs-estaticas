@@ -222,6 +222,10 @@ Sí, si eliges bien el tour: pocas paradas y tiempo real en el agua. Los tours m
 
 Getsemaní para ambiente y precio; la Ciudad Amurallada o San Diego si quieres tranquilidad y estética colonial y puedes pagarla.
 
+### ¿Es caro viajar a Cartagena?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "presupuesto medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cartagena: https://www.happylowcost.com/destinos/cartagena/#chollos

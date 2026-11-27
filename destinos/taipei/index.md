@@ -228,6 +228,10 @@ El nuevo dólar taiwanés (TWD). Un euro equivale a unos 35 TWD.
 
 De octubre a diciembre, por temperatura y menos lluvia. Evita julio a septiembre si te preocupan los tifones.
 
+### ¿Es caro viajar a Taipéi?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-60 € por persona y día, y en el nivel "medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Taipéi: https://www.happylowcost.com/destinos/taipei/#chollos

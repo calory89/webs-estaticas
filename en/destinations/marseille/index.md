@@ -220,6 +220,10 @@ Yes, if you like real cities and the sea. It is rougher than Nice but cheaper, m
 
 The Plage des Catalans is closest to the centre, Malmousque has rocks and clear water, and the Calanques are the most beautiful.
 
+### Is Marseille expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €60-80 per person per day and the "mid-range" level at about €150-220. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Marseille: https://www.happylowcost.com/en/destinations/marseille/#deals

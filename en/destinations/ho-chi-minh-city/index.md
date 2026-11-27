@@ -236,6 +236,10 @@ Yes, especially paired with the War Remnants Museum. Choose Ben Duoc over Ben Di
 
 Com tam (broken rice) is the city's signature dish, followed by banh mi, banh xeo and seafood on Vinh Khanh Street. The iced coffee with condensed milk is a close second to all of them.
 
+### Is Ho Chi Minh City expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Ho Chi Minh City: https://www.happylowcost.com/en/destinations/ho-chi-minh-city/#deals

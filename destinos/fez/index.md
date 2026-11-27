@@ -129,6 +129,10 @@ Depende. Marrakech es más fácil y preparada para el turismo; Fez es más cerra
 
 Con 3 días ves lo esencial de Fez sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Fez?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "cómodo", unos 120 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Fez: https://www.happylowcost.com/destinos/fez/#chollos

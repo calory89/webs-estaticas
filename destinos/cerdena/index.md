@@ -136,6 +136,10 @@ Con 7 días ves lo esencial de Cerdeña sin prisas. La ruta de esta guía está 
 
 Hoy el chollo más barato que tenemos a Cerdeña cuesta 43 € ida y vuelta desde Barcelona. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Es caro viajar a Cerdeña?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 euros por persona y día, y en el nivel "comodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cerdeña: https://www.happylowcost.com/destinos/cerdena/#chollos

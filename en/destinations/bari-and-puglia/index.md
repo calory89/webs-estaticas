@@ -242,6 +242,10 @@ The Ferrotramviaria train reaches Bari Centrale in about 20 minutes for around �
 
 Yes, the Ferrovie del Sud Est train takes about 1.5 hours. Add Locorotondo on the same line to make the day worth it.
 
+### Is Bari and Puglia expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €60-90 per person per day and the "mid-range" level at about €120-200. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Bari and Puglia: https://www.happylowcost.com/en/destinations/bari-and-puglia/#deals

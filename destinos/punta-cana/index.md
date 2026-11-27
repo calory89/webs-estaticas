@@ -1,4 +1,4 @@
-# Punta Cana por tu cuenta: guía práctica para viajar barato
+# Punta Cana en 6 días: guía para viajar barato por tu cuenta
 
 > Guía de viaje de Punta Cana de Happy Low Cost, itinerario de 6 días. Página original: https://www.happylowcost.com/destinos/punta-cana/
 > Actualizada: 2026-10-21
@@ -129,6 +129,10 @@ Es un alga que algunos años llega a la costa, sobre todo entre primavera y vera
 ### ¿Cuántos días hacen falta para ver Punta Cana?
 
 Con 6 días ves lo esencial de Punta Cana sin prisas. La ruta de esta guía está organizada día a día.
+
+### ¿Es caro viajar a Punta Cana?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-60 € por persona y día, y en el nivel "todo incluido", unos 120-200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
 
 ## Vuelos y chollos
 

@@ -119,6 +119,10 @@ Pest, y concretamente el distrito VI, por transporte, comida y vida. Buda es má
 
 Hoy el chollo más barato que tenemos a Budapest cuesta 59 € ida y vuelta desde Madrid. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Es caro viajar a Budapest?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Budapest: https://www.happylowcost.com/destinos/budapest/#chollos

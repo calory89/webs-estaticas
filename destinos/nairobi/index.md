@@ -227,6 +227,10 @@ Menos de lo que esperas. Por la altitud las mañanas y noches son frescas todo e
 
 Es precioso y carísimo, con noches que pasan de los 1.000 € y lista de espera. Para dar de comer a las jirafas, el Giraffe Centre de al lado cuesta unos 12 €.
 
+### ¿Es caro viajar a Nairobi?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Nairobi: https://www.happylowcost.com/destinos/nairobi/#chollos

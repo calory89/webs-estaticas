@@ -139,6 +139,10 @@ Sí, Mondello es la más cercana y está a unos 20-30 minutos en autobús. Se di
 
 Tres es lo ideal. Con dos ves lo básico, y con cuatro o cinco puedes sumar Cefalù y otras excursiones.
 
+### ¿Es caro viajar a Palermo?
+
+Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos unos 50-60 euros por persona y día, y en el nivel "cómodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Palermo: https://www.happylowcost.com/destinos/palermo/#chollos

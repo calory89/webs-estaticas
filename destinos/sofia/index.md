@@ -1,4 +1,4 @@
-# Qué ver en Sofía: guía low cost con ruta de 3 días y precios
+# Qué ver en Sofía en 3 días: guía low cost con precios
 
 > Guía de viaje de Sofía de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/sofia/
 > Actualizada: 2026-10-21

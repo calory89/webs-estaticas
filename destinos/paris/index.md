@@ -130,6 +130,10 @@ No es imprescindible, pero un "bonjour" al entrar en un comercio o restaurante c
 
 Hoy el chollo más barato que tenemos a París cuesta 39 € ida y vuelta desde Valencia. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Es caro viajar a París?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 euros por persona y día, y en el nivel "cómodo", unos más de 200 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a París: https://www.happylowcost.com/destinos/paris/#chollos

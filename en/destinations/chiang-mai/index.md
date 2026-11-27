@@ -229,6 +229,10 @@ Very safe by most standards. The real risks are traffic, scooter accidents and t
 
 Yes. Red trucks run up from near Chiang Mai University, or you can take a Grab, or hike the Monk's Trail. You do not need a guide.
 
+### Is Chiang Mai expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about about €25-35 per person per day and the "mid-range" level at about about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Chiang Mai: https://www.happylowcost.com/en/destinations/chiang-mai/#deals

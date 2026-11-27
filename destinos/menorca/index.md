@@ -219,6 +219,10 @@ No, todas las playas son públicas. En las más visitadas pagas el parking en te
 
 Es la bebida típica de Menorca: ginebra local Xoriguer con limonada. Se toma sobre todo en fiestas y en verano.
 
+### ¿Es caro viajar a Menorca?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80-110 € por persona y día, y en el nivel "presupuesto medio", unos unos 150-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Menorca: https://www.happylowcost.com/destinos/menorca/#chollos

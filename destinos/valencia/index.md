@@ -236,6 +236,10 @@ En metro, con las líneas 3 o 5, en unos 20-25 minutos y por unos 5 €. El taxi
 
 Te compensa si usas el metro desde el aeropuerto y entras a varios museos o monumentos de pago. Si vas a ir andando y a museos gratuitos, no.
 
+### ¿Es caro viajar a Valencia?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "medio", unos 110-160 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Valencia: https://www.happylowcost.com/destinos/valencia/#chollos

@@ -115,6 +115,10 @@ En general sí. Aplica el sentido común habitual en estaciones y transporte, y 
 
 Mayo, junio y septiembre, por el clima agradable. Si prefieres precios más bajos y ambiente navideño, diciembre merece la pena.
 
+### ¿Es caro viajar a Varsovia?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 euros por persona y día, y en el nivel "cómodo", unos 120 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Varsovia: https://www.happylowcost.com/destinos/varsovia/#chollos

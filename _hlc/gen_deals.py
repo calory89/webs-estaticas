@@ -853,6 +853,50 @@ def guide_attractions(gh):
     return []
 
 
+# Ronda 5: título y H1 con la consulta exacta que trae impresiones en Search Console (28 días, pos. 8-20, 0 clics)
+TITLE_Q_ES = {
+    'bruselas': lambda n, d: f'Qué ver en {n} en {d} días: qué comer y cuánto cuesta',  # "que ver en bruselas en 3 dias" 38 impr. pos. 19
+    'sofia': lambda n, d: f'Qué ver en {n} en {d} días: guía low cost con precios',  # "que ver en sofia 3 dias" 33 impr. pos. 10
+    'punta-cana': lambda n, d: f'{n} en {d} días: guía para viajar barato por tu cuenta',  # "7 días en punta cana" pos. 11,5 (la guía tiene 6)
+    'maldivas': lambda n, d: f'Qué ver y hacer en {n} en {d} días: guía low cost',  # "que hacer en maldivas 7 días" 33 impr. pos. 7,9
+    'estocolmo': lambda n, d: f'Qué ver en {n} en {d} días: guía práctica low cost',  # "que ver en estocolmo en 3 dias" 26 impr. pos. 11
+}
+
+try:
+    PAISES = json.load(open(os.path.join('vuelos', 'paises.json'), encoding='utf-8'))  # slug de país -> (hub ES, hub EN), lo escribe gen_prices
+except Exception:
+    PAISES = {}
+
+BUD_ROWS = []  # filas (nivel, importe, qué incluye) de la última tabla de presupuesto construida
+
+
+def guide_cost_faq(gh, name, lang='es'):
+    """Ronda 5: FAQ "¿Es caro X?" / "Is X expensive?" con las cifras de la propia tabla de presupuesto.
+    Search Console (28 días): "is salzburg expensive" 49 impresiones en pos. 20, "is munich expensive" 17 en pos. 25,
+    "how expensive is it to go to the maldives"... y la guía no lo respondía en una frase."""
+    es = lang == 'es'
+    rows = list(BUD_ROWS)
+    BUD_ROWS[:] = []
+    if len(rows) < 2:
+        return gh
+    have = ' '.join(re.findall(r'<h3>(.*?)</h3>', gh or '')).lower()
+    if re.search(r'\bcaro\b|expensive|pricey', have):
+        return gh
+    clean = lambda v: re.sub(r'(?i)\s*(al d[ií]a|por d[ií]a|por persona( y d[ií]a)?|a day|per day|per person( per day)?|pp)\b\.?', '', v).strip(' ,.')
+    lo, hi = rows[0], rows[-1]
+    if es:
+        q = f'¿Es caro viajar a {name}?'
+        a = (f'Depende de cómo viajes. Según esta guía, en el nivel "{lo[0].lower()}" se gastan unos {clean(lo[1])} por persona y día, '
+             f'y en el nivel "{hi[0].lower()}", unos {clean(hi[1])}. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.')
+    else:
+        q = f'Is {name} expensive?'
+        a = (f'It depends on how you travel. This guide puts the "{lo[0].lower()}" level at about {clean(lo[1])} per person per day '
+             f'and the "{hi[0].lower()}" level at about {clean(hi[1])}. Flights are extra: this page shows real fares checked by Happy Low Cost.')
+    add = f'<h3>{e(q)}</h3><p>{e(a)}</p>'
+    mfaq = re.search(r'(<h2>[^<]*(?:Preguntas frecuentes|FAQ)[^<]*</h2>.*?)(?=<h2|$)', gh, re.S | re.I)
+    return (gh[:mfaq.end()] + add + gh[mfaq.end():]) if mfaq else gh + ('<h2>Preguntas frecuentes</h2>' if es else '<h2>FAQs</h2>') + add
+
+
 def guide_budget(gh, lang='es'):
     """Sección de presupuesto por día en tabla (Nivel | Por día | Qué incluye) con las cifras de la guía.
     Devuelve (gh, importe del nivel más barato en texto o '')."""
@@ -882,6 +926,7 @@ def guide_budget(gh, lang='es'):
         sec = m.group(2)[:ul.start()] + tbl + m.group(2)[ul.end():]
         gh = gh[:m.start(2)] + sec + gh[m.end(2):]
         amt = re.sub(r'(?i)\s*(al d[ií]a|por d[ií]a|por persona|a day|per day|per person|pp)\b\.?', '', rows[0][1]).strip(' ,.')
+        BUD_ROWS[:] = rows
         return gh, amt
     return gh, ''
 
@@ -1057,6 +1102,28 @@ def ics_link(f, title, url):
            f'SUMMARY:{title[:70]}\r\nDESCRIPTION:{url}\r\nURL:{url}\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n')
     return 'data:text/calendar;charset=utf-8,' + _q(ics)
 
+def deal_meta(x, en=False, o=None, d=None):
+    """Ronda 5: meta description del chollo con los datos que deciden el clic: precio, fechas, aerolínea, escalas y fecha de comprobación."""
+    f = x.get('facts') or {}
+    o, d = o or f.get('origen'), d or f.get('destino')
+    p_ = x.get('price') or f.get('precio')
+    if not (o and d and p_):
+        return ''
+    ck = checked(x)[:10]
+    air = f.get('aerolinea') if f.get('aerolinea') and len(f.get('aerolinea')) < 26 else ''
+    sc = f.get('escalas')
+    if en:
+        import gen_en as _E
+        dates = f" {_E.date_en(f.get('ida'))} to {_E.date_en(f.get('vuelta'))}" if f.get('vuelta') else ''
+        s_ = f'✓ {o} to {d} for €{p_} return' + (f',{dates}' if dates else '') + (f', {air}' if air else '') + (', nonstop' if sc == 0 else '') + '.'
+        s_ += f' Price checked {_E.date_en(ck)}.' if ck else ''
+    else:
+        dates = f" del {fecha(f.get('ida'))} al {fecha(f.get('vuelta'))}" if f.get('vuelta') else ''
+        s_ = f'✓ {o} → {d} por {p_} € ida y vuelta' + (f',{dates}' if dates else '') + (f', con {air}' if air else '') + (', directo' if sc == 0 else '') + '.'
+        s_ += f' Precio comprobado el {fecha(ck)}.' if ck else ''
+    return smart_desc(s_, 160)
+
+
 def checked(x):
     """Última comprobación del precio: la revalidación diaria (facts.checked_at) o la publicación."""
     a, c = x.get('approved_at') or '', (x.get('facts') or {}).get('checked_at') or ''
@@ -1205,6 +1272,20 @@ def filters_html(deals):
 </div>'''
 
 
+def _air_qa(sub, hl, L, pr):
+    """Ronda 5: "which airlines provide good-value fares for weekend getaways?" (78 impr., pos. 6,4): respuesta con las aerolíneas de los chollos vivos."""
+    airs = {}
+    for x in sub:
+        a = ((x.get('facts') or {}).get('aerolinea') or '').strip()
+        if a and len(a) < 40:
+            airs.setdefault(a, []).append(x.get('price') or 0)
+    if not airs:
+        return []
+    top = sorted(airs.items(), key=lambda kv: (-len(kv[1]), min(kv[1])))[:5]
+    return [(L(f'¿Qué aerolíneas tienen los chollos más baratos de {hl}?', f'Which airlines have good-value fares for {hl}?'),
+             L('En los chollos de hoy: ', 'In today\'s deals: ') + ', '.join(f'{k} ({len(v)} {L("chollo" if len(v) == 1 else "chollos", "deal" if len(v) == 1 else "deals")}, {L("desde", "from")} {pr(min(v))})' for k, v in top) + '.')]
+
+
 def ideas_faq(sub, h1, en=False, budget=None):
     """FAQ con datos reales de los chollos de una página de ideas + enlaces a los hubs de precios del mismo presupuesto (ronda SEO 3)."""
     if not sub:
@@ -1230,6 +1311,7 @@ def ideas_faq(sub, h1, en=False, budget=None):
            ', '.join(f'{k} ({v})' for k, v in sorted(orig.items(), key=lambda kv: -kv[1])[:8]) + '.'),
           (L('¿A qué destinos hay chollos?', 'Which destinations have deals?'),
            ', '.join(f'{k} ({L("desde", "from")} {pr(v)})' for k, v in list(dests.items())[:8]) + '.'),
+          *_air_qa(sub, hl, L, pr),
           (L('¿Cada cuánto se actualizan?', 'How often are they updated?'),
            L('Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.', 'We re-check every live deal once a day and remove it if it has gone up more than 10%.'))]
     ld = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": L('es-ES', 'en'), "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
@@ -1247,7 +1329,7 @@ def ideas_faq(sub, h1, en=False, budget=None):
             + ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in qa) + f'</div><script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></section>')
 
 
-IDEAS_EN = {'fin-de-semana': 'weekend-getaways', 'menos-de-50-euros': 'under-50', 'menos-de-100-euros': 'under-100', 'larga-distancia': 'long-haul', 'directos': 'nonstop', 'navidad-2026': 'christmas-2026'}
+IDEAS_EN = {'fin-de-semana': 'weekend-getaways', 'menos-de-50-euros': 'under-50', 'menos-de-100-euros': 'under-100', 'larga-distancia': 'long-haul', 'directos': 'nonstop', 'navidad-2026': 'christmas-2026', 'semana-santa-2027': 'easter-2027'}
 EN_ALT = {'chollos': '/en/deals/', **{f'chollos/ideas/{k}': f'/en/deals/ideas/{v}/' for k, v in IDEAS_EN.items()}}
 
 
@@ -1412,7 +1494,7 @@ def main():
         rel = related(x, deals)
         rel_html = ''.join(card(y) for y in rel)
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
-        page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
+        page = head(title=e(seo_t), desc=e(deal_meta(x) or excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
                     extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + hero_preload(hero, dls if lp else None) + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer, faq_ld(qa, 'es-ES')] + ([guide_image_ld(dls, f.get('destino') or '', 'es')] if lp and dls else [])), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}" data-deal-pub="{e((x.get('approved_at') or '')[:19])}Z">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
@@ -1611,7 +1693,7 @@ def main():
         ('puente-diciembre-2026', 'Puente de diciembre 2026', 'Chollos para el puente de la Constitución y la Inmaculada, con salida entre el 3 y el 8 de diciembre de 2026.', lambda f_: '2026-12-03' <= (f_.get('ida') or '')[:10] <= '2026-12-08'),
         ('navidad-2026', 'Navidad y fin de año 2026', 'Chollos de vuelos con salida entre el 18 de diciembre de 2026 y el 6 de enero de 2027.', lambda f_: '2026-12-18' <= (f_.get('ida') or '')[:10] <= '2027-01-06'),
         ('semana-santa-2027', 'Semana Santa 2027', 'Chollos con salida entre el 19 y el 28 de marzo de 2027 (Semana Santa: 25 al 28 de marzo).', lambda f_: '2027-03-19' <= (f_.get('ida') or '')[:10] <= '2027-03-28'),
-        ('fin-de-semana', 'Escapadas de fin de semana', 'Viajes de 2 a 4 noches con salida jueves, viernes o sábado.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
+        ('fin-de-semana', 'Escapadas de fin de semana baratas', 'Vuelos baratos para una escapada: viajes de ida y vuelta de 2 a 4 noches con salida jueves, viernes o sábado, del más barato al más caro.', lambda f_: f_.get('vuelta') and 2 <= nights(f_) <= 4 and datetime.date.fromisoformat(f_['ida'][:10]).weekday() in (3, 4, 5)),
         ('menos-de-50-euros', 'Vuelos por menos de 50 €', 'Chollos de ida y vuelta por 50 € o menos.', lambda f_: (f_.get('precio') or 999) <= 50),
         ('menos-de-100-euros', 'Vuelos por menos de 100 €', 'Chollos de ida y vuelta por 100 € o menos.', lambda f_: (f_.get('precio') or 999) <= 100),
         ('larga-distancia', 'Larga distancia por menos de 600 €', 'Chollos a otro continente por 600 € o menos, ida y vuelta.', lambda f_: (f_.get('precio') or 9999) <= 600 and f_.get('continente') and REAL_CONT.get(f_.get('continente')) != REAL_CONT.get(f_.get('origen_continente') or '', f_.get('origen_continente'))),
@@ -1643,6 +1725,8 @@ def main():
         gh = re.sub(r'<(h2|h3|p|ul|li|strong)\b[^>]*>', r'<\1>', gh)
         ttl0 = g.get('seo_title') or f"Qué ver en {p['n']}"
         nd = guide_days(ttl0, gh)
+        if p['s'] in TITLE_Q_ES and nd:
+            ttl0 = TITLE_Q_ES[p['s']](p['n'], nd) or ttl0
         xq = guide_extra_faq(gh, p['n'], nd, sub, 'es')
         if xq:
             add = ''.join(f'<h3>{e(q)}</h3><p>{e(a)}</p>' for q, a in xq)
@@ -1650,9 +1734,11 @@ def main():
             gh = (gh[:mfaq.end()] + add + gh[mfaq.end():]) if mfaq else gh + '<h2>Preguntas frecuentes</h2>' + add
         gh, trip_ld = guide_itinerary(gh, p['n'], nd, 'es')
         gh, bud = guide_budget(gh, 'es')
+        gh = guide_cost_faq(gh, p['n'], 'es')
         attr = guide_attractions(gh)
         gh, g_faq, words = guide_extras(gh, 'es')
-        ch, cld = crumbs([('Inicio', '/'), ('Destinos', '/destinos/'), (p['n'], None)])
+        _pc = PAISES.get(slugify(en_names.COUNTRY_ES_FIX.get(p['c'], p['c'])))  # ronda 5: país en la miga cuando existe su hub de vuelos
+        ch, cld = crumbs([('Inicio', '/'), ('Destinos', '/destinos/')] + ([(en_names.COUNTRY_ES_FIX.get(p['c'], p['c']), _pc[0])] if _pc else []) + [(p['n'], None)])
         # título con el año (las consultas que ya posicionan son "qué ver en X en 3 días": la cifra y el año suben el CTR)
         yr = str(datetime.date.today().year)
         ttl = ttl0 if yr in ttl0 else re.sub(r'(\ben \d{1,2} d[ií]as)', r'\1 (' + yr + ')', ttl0, count=1)

@@ -238,6 +238,10 @@ The ferry is the classic route: Buquebus runs direct ferries in about 2-3 hours,
 
 Tap water is generally considered safe, though many locals prefer bottled for the taste. Follow local advice if there are notices about supply quality.
 
+### Is Montevideo expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Montevideo: https://www.happylowcost.com/en/destinations/montevideo/#deals

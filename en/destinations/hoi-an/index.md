@@ -212,6 +212,10 @@ Yes, if you allow at least two or three days for fittings and choose a well-revi
 
 Yes, it's the best beach near Hoi An and an easy bike ride from town. Go in the morning, and use sunbeds free in exchange for buying food or drinks.
 
+### Is Hoi An expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €60-100. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Hoi An: https://www.happylowcost.com/en/destinations/hoi-an/#deals

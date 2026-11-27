@@ -236,6 +236,10 @@ Palermo has more big-name monuments, while Catania is a better base for Etna, Ta
 
 Yes. North of the centre you swim off black lava rocks at the Lungomare and Aci Castello, while La Playa to the south is a long sandy beach with lidos.
 
+### Is Catania expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €110-170. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Catania: https://www.happylowcost.com/en/destinations/catania/#deals

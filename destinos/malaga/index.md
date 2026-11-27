@@ -231,6 +231,10 @@ Comer sigue siendo barato si te alejas de Larios, pero el alojamiento ha subido 
 
 Sí, es de las ciudades más templadas de Europa en invierno, con temperaturas que suelen rondar los 15 a 18 grados de día. No es tiempo de playa, pero sí de terraza y museos sin colas.
 
+### ¿Es caro viajar a Málaga?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos entre 70 y 90 € por persona y día, y en el nivel "presupuesto medio", unos entre 130 y 180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Málaga: https://www.happylowcost.com/destinos/malaga/#chollos

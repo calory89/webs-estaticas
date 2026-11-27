@@ -235,6 +235,10 @@ No te lo recomendamos. El Museo Casa de la Memoria explica esa época con más r
 
 Basta con una chaqueta ligera para las noches y para Parque Arví, que está más alto y fresco. Lo que no puede faltar es un paraguas pequeño.
 
+### ¿Es caro viajar a Medellín?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Medellín: https://www.happylowcost.com/destinos/medellin/#chollos

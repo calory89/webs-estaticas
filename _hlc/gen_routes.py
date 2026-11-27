@@ -128,6 +128,23 @@ def en_slug(r):
     return G.slugify(en_names.city_en(r['origin'])) + '-' + G.en_dest_slug(r['dest_slug'])
 
 
+try:
+    _AP = json.load(open(os.path.join('hlc', 'airports.json'), encoding='utf-8'))
+except Exception:
+    _AP = {}
+
+
+def airport_km(a, b):
+    import math
+    pa, pb = _AP.get((a or '').upper()), _AP.get((b or '').upper())
+    if not pa or not pb or a == b:
+        return 0
+    la1, lo1, la2, lo2 = map(math.radians, (pa[0], pa[1], pb[0], pb[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    km = 2 * 6371 * math.asin(math.sqrt(h))
+    return int(round(km / 10.0) * 10) if km >= 50 else 0
+
+
 def page(r, lang, others):
     en = lang == 'en'
     c = dict(r['content'][lang]); c['_lang'] = lang
@@ -182,10 +199,10 @@ def page(r, lang, others):
             c['title'] = _t
     if p_:
         if en:
-            c['meta'] = (f"Flights {__import__('en_names').city_en(r['origin'])} to {dest} from €{p_} return" + (', nonstop' if stops == 0 else '') + (f' with {air_}' if air_ else '') + '. '
+            c['meta'] = (f"✓ Flights {__import__('en_names').city_en(r['origin'])} to {dest} from €{p_} return" + (', nonstop' if stops == 0 else '') + (f' with {air_}' if air_ else '') + '. '
                          + (f"The usual price is about €{med_}. " if med_ and med_ > p_ else '') + f"Cheapest month, price calendar and fares checked on {fdate(f.get('consultado'), True)}.")
         else:
-            c['meta'] = (f"Vuelos {r['origin']}-{dest} desde {p_} € ida y vuelta" + (', directo' if stops == 0 else '') + (f' con {air_}' if air_ else '') + '. '
+            c['meta'] = (f"✓ Vuelos {r['origin']}-{dest} desde {p_} € ida y vuelta" + (', directo' if stops == 0 else '') + (f' con {air_}' if air_ else '') + '. '
                          + (f"Lo normal son unos {med_} €. " if med_ and med_ > p_ else '') + f"Mes más barato, calendario de precios y tarifas consultadas el {fdate(f.get('consultado'))}.")
     # ---- datos propios citables: respuesta rápida, mes más barato, pregunta de vuelo directo ----
     o_name = __import__('en_names').city_en(r['origin']) if en else r['origin']
@@ -214,6 +231,17 @@ def page(r, lang, others):
             qa_parts.append((('Es vuelo directo' if stops == 0 else f'Hace {stops_t}') + (f' con {air_}' if air_ else '') + '.') if stops is not None else '')
             if bm_txt:
                 qa_parts.append(f'El mes más barato de los próximos seis es {bm_txt}, con {best_m[1]} €.')
+    # distancia entre aeropuertos (hlc/airports.json, gran círculo): "distancia bruselas orlando" 13 impr. pos. 15,7 sin respuesta en la página
+    km_ = airport_km(r.get('origin_iata'), r.get('dest_iata'))
+    if km_:
+        kmt = f'{km_:,}'.replace(',', '.') if not en else f'{km_:,}'
+        qa_parts.append(f'The distance between the airports ({r["origin_iata"]} and {r["dest_iata"]}) is about {kmt} km in a straight line.' if en else
+                        f'La distancia entre los aeropuertos ({r["origin_iata"]} y {r["dest_iata"]}) es de unos {kmt} km en línea recta.')
+        if not re.search(r'distan|how far|qu[eé] tan lejos', ' '.join(q.get('q', '') for q in c.get('faq', [])).lower()):
+            c['faq'] = list(c.get('faq', [])) + [{
+                'q': (f'How far is {dest} from {o_name}?' if en else f'¿Qué distancia hay entre {r["origin"]} y {dest}?'),
+                'a': (f'About {kmt} km in a straight line between {r["origin_iata"]} and {r["dest_iata"]} airports.' if en else
+                      f'Unos {kmt} km en línea recta entre los aeropuertos de {r["origin_iata"]} y {r["dest_iata"]}.')}]
     quick = ' '.join(x for x in qa_parts if x)
     # cuándo comprar, con nuestros propios datos: semanas entre la consulta y la salida del precio más barato (ruta y media del destino)
     def _lead(fx):

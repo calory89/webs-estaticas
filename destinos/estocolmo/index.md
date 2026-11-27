@@ -1,4 +1,4 @@
-# Estocolmo en 3 días: guía práctica de un viajero low cost
+# Qué ver en Estocolmo en 3 días: guía práctica low cost
 
 > Guía de viaje de Estocolmo de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/estocolmo/
 > Actualizada: 2026-10-21

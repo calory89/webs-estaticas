@@ -237,6 +237,10 @@ Mezcal artesanal, mole en pasta, chocolate de molino, barro negro y textiles. Co
 
 Hablar español es una ventaja enorme, sobre todo en mercados y pueblos. Hoteles y restaurantes aceptan tarjeta, pero mercados, colectivos y puestos solo efectivo en pesos.
 
+### ¿Es caro viajar a Oaxaca?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Oaxaca: https://www.happylowcost.com/destinos/oaxaca/#chollos

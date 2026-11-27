@@ -251,6 +251,10 @@ Light, loose clothing covering shoulders and knees, plus a scarf for temples and
 
 From late October to January it can be severe, especially in November. Check the AQI daily, carry an N95 mask and plan indoor time on bad days.
 
+### Is New Delhi expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €25-35 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to New Delhi: https://www.happylowcost.com/en/destinations/new-delhi/#deals

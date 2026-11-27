@@ -119,6 +119,10 @@ Sí, y tiene su gracia: menos turistas, precios más bajos y los platos típicos
 
 Con 3 días ves lo esencial de Bolonia sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Bolonia?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Bolonia: https://www.happylowcost.com/destinos/bolonia/#chollos

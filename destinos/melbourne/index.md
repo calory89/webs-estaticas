@@ -234,6 +234,10 @@ El SkyBus es lo más cómodo, porque te deja en Southern Cross en unos 30-40 min
 
 Marzo-abril y octubre-noviembre, por clima templado y menos gente. Para pagar menos de vuelo, el invierno austral (junio a agosto).
 
+### ¿Es caro viajar a Melbourne?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos 160-220 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Melbourne: https://www.happylowcost.com/destinos/melbourne/#chollos

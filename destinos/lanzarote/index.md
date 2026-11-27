@@ -245,6 +245,10 @@ Sí, con unos 20-22 °C de día y poca lluvia. El agua está fresca, así que el
 
 Sí, y es lo más habitual: el ferry desde Órzola tarda menos de media hora. Revisa el horario del último barco de vuelta antes de alejarte de Caleta de Sebo.
 
+### ¿Es caro viajar a Lanzarote?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Lanzarote: https://www.happylowcost.com/destinos/lanzarote/#chollos

@@ -247,6 +247,10 @@ En tren, en unos 7 minutos hasta Cornavin. Es gratis con el billete que da la m�
 
 Si te interesa la ciencia, sí: el centro de visitantes es gratis y está a media hora en tranvía. Si buscas ver el acelerador por dentro, piensa que las visitas a instalaciones son limitadas y hay que reservar con antelación.
 
+### ¿Es caro viajar a Ginebra?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 100-120 € por persona y día, y en el nivel "medio", unos unos 200-260 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Ginebra: https://www.happylowcost.com/destinos/ginebra/#chollos

@@ -230,6 +230,10 @@ Málaga has far more flights and cheaper fares, and it is only about 2 hours awa
 
 Yes, Granada is safe. Watch for pickpockets in crowded spots and ignore the rosemary sellers.
 
+### Is Granada expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €50-70 per person per day and the "mid-range" level at about €120-180. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Granada: https://www.happylowcost.com/en/destinations/granada/#deals

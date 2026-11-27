@@ -135,6 +135,10 @@ Es muy bonita, pero está saturada. Si tienes poco tiempo, mejor una zona más t
 
 Sí, si te centras en fortaleza, casco viejo y Mirabell. Sales con una buena idea, pero con prisa y sin tiempo para sentarte en un café.
 
+### ¿Es caro viajar a Salzburgo?
+
+Depende de cómo viajes. Según esta guía, en el nivel "económico" se gastan unos 70-95 € por persona y día, y en el nivel "cómodo", unos 250 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Salzburgo: https://www.happylowcost.com/destinos/salzburgo/#chollos

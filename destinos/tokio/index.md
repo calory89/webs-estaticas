@@ -127,6 +127,10 @@ En la mayoría de hoteles, tiendas y grandes cadenas, sí. Para bares pequeños,
 
 Con 5 días ves lo esencial de Tokio sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Tokio?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tokio: https://www.happylowcost.com/destinos/tokio/#chollos

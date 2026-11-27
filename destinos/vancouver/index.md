@@ -223,6 +223,10 @@ El dólar canadiense (CAD); 1 CAD equivale aproximadamente a 0,65 €. Se paga c
 
 Para la ciudad no, el transporte público y la bici bastan. Solo compensa para Whistler, Squamish o si vas a recorrer la provincia.
 
+### ¿Es caro viajar a Vancouver?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 110-140 € por persona y día, y en el nivel "presupuesto medio", unos unos 250-330 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Vancouver: https://www.happylowcost.com/destinos/vancouver/#chollos

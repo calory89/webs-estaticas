@@ -194,6 +194,10 @@ De noviembre a marzo, sin contar Navidad y Semana Santa. Hay vuelos y hoteles mu
 
 Sí, si vas en el primer barco o fuera de julio y agosto. En pleno verano a mediodía se llena y pierde gracia.
 
+### ¿Es caro viajar a Alicante?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 60 a 80 € por persona y día, y en el nivel "presupuesto medio", unos unos 120 a 170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Alicante: https://www.happylowcost.com/destinos/alicante/#chollos

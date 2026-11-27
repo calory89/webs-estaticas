@@ -223,6 +223,10 @@ Capas: de día puedes ir en camiseta y de noche necesitas abrigo de verdad. Aña
 
 Sí. En temporada alta las entradas se agotan con semanas o meses de margen, y los trenes también. Reserva ambas cosas antes de cerrar el resto del viaje.
 
+### ¿Es caro viajar a Cusco?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-130 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cusco: https://www.happylowcost.com/destinos/cusco/#chollos

@@ -249,6 +249,10 @@ May and September offer dry weather with slightly smaller crowds than June to Au
 
 Yes. Markets, colectivos, small restaurants and tips are cash only in soles. Cards work in hotels and mid-range restaurants.
 
+### Is Cusco expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €30-40 per person per day and the "mid-range" level at about €80-130. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Cusco: https://www.happylowcost.com/en/destinations/cusco/#deals

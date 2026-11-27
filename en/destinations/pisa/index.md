@@ -235,6 +235,10 @@ Entry to the Duomo is free, but you need a timed coupon from the ticket office, 
 
 Generally yes, especially for accommodation and food. That's why many travellers sleep in Pisa and day-trip to Florence by train.
 
+### Is Pisa expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about about €60-80 per person per day and the "mid-range" level at about about €150-220 for one, sharing a double. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Pisa: https://www.happylowcost.com/en/destinations/pisa/#deals

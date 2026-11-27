@@ -219,6 +219,10 @@ Suele abrir a finales de noviembre y terminar unos días antes de Navidad, en el
 
 Cada vez más, pero muchas tabernas, puestos de mercado y panaderías siguen pidiendo efectivo. Lleva siempre unos 30 o 40 € en billetes.
 
+### ¿Es caro viajar a Fráncfort?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 80 a 100 € por persona y día, y en el nivel "presupuesto medio", unos unos 150 a 200 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Fráncfort: https://www.happylowcost.com/destinos/frankfurt/#chollos

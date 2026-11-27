@@ -233,6 +233,10 @@ For a first visit, the Zona Colonial, because you can walk to nearly every main 
 
 For culture, food and music, yes, as Santo Domingo is the country's real capital. For pure beach time, Punta Cana wins, so many people do two or three nights in each.
 
+### Is Santo Domingo expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €40-55 per person per day and the "mid-range" level at about €90-140. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Santo Domingo: https://www.happylowcost.com/en/destinations/santo-domingo/#deals

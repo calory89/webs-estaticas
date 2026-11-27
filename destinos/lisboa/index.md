@@ -116,6 +116,10 @@ Tres para lo esencial y cuatro si quieres añadir Sintra sin correr. Si sumas pl
 
 Hoy el chollo más barato que tenemos a Lisboa cuesta 46 € ida y vuelta desde Barcelona. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Es caro viajar a Lisboa?
+
+Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos 60-80 euros por persona y día, y en el nivel "más relajado", unos a partir de 180 euros. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Lisboa: https://www.happylowcost.com/destinos/lisboa/#chollos

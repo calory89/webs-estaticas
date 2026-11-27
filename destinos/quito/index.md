@@ -228,6 +228,10 @@ Sí, hay vuelos directos o con escala en Guayaquil a las islas. Cuenta con pagar
 
 La Floresta para la mayoría de viajeros, por equilibrio entre seguridad, comida y ubicación. El centro histórico si solo vas dos o tres noches y quieres tenerlo todo a pie.
 
+### ¿Es caro viajar a Quito?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 35-50 € por persona y día, y en el nivel "presupuesto medio", unos 80-120 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Quito: https://www.happylowcost.com/destinos/quito/#chollos

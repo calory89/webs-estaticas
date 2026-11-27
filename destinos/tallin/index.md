@@ -119,6 +119,10 @@ Sí, casi en todas partes, incluso para importes pequeños y en el transporte. C
 
 Si tienes cuatro días o más, sí. El ferry dura unas dos horas y es fácil, pero vas a pasar medio día en el barco; con solo dos o tres días, mejor quédate en Tallin.
 
+### ¿Es caro viajar a Tallin?
+
+Depende de cómo viajes. Según esta guía, en el nivel "mochilero" se gastan unos 50-65 euros por persona y día, y en el nivel "cómodo", unos 150 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tallin: https://www.happylowcost.com/destinos/tallin/#chollos

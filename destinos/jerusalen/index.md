@@ -241,6 +241,10 @@ Puedes ver la Cúpula por fuera desde la Explanada, en las franjas permitidas pa
 
 Sí. El bus 231 sale desde la zona de la Puerta de Damasco y en unos 30-40 minutos estás allí. Lleva el pasaporte y consulta antes el estado de los controles.
 
+### ¿Es caro viajar a Jerusalén?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 70-90 € por persona y día, y en el nivel "cómodo", unos a partir de 300 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Jerusalén: https://www.happylowcost.com/destinos/jerusalen/#chollos

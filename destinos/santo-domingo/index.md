@@ -230,6 +230,10 @@ Si solo quieres playa y resort, Punta Cana. Si te interesa la historia y la vida
 
 La Zona Colonial para una primera visita, porque lo tienes todo a pie. Gazcue si buscas algo más barato y tranquilo a diez minutos andando.
 
+### ¿Es caro viajar a Santo Domingo?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 40-55 € por persona y día, y en el nivel "medio", unos 90-140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Santo Domingo: https://www.happylowcost.com/destinos/santo-domingo/#chollos

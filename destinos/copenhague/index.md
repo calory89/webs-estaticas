@@ -121,6 +121,10 @@ De mayo a septiembre, por el clima y las horas de luz. Si buscas precios más ba
 
 Con 3 días ves lo esencial de Copenhague sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Copenhague?
+
+Depende de cómo viajes. Según esta guía, en el nivel "mochilero ajustado" se gastan unos 80-110 euros por persona y día, y en el nivel "más cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Copenhague: https://www.happylowcost.com/destinos/copenhague/#chollos

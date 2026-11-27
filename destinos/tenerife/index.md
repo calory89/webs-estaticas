@@ -123,6 +123,10 @@ Sí, pero el acceso está regulado y conviene reservar. Comprueba el estado del 
 
 Con 5 días ves lo esencial de Tenerife sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Tenerife?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-80 € por persona y día, y en el nivel "cómodo", unos 200 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Tenerife: https://www.happylowcost.com/destinos/tenerife/#chollos

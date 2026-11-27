@@ -226,6 +226,10 @@ Sí, si te gustan los zoos: es de los mejor diseñados que hay. Con poco tiempo 
 
 De septiembre a principios de noviembre, con buen tiempo, agua templada y menos gente. Evita la semana de la Comic-Con si buscas hotel barato.
 
+### ¿Es caro viajar a San Diego?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 110-140 € por persona y día, y en el nivel "presupuesto medio", unos unos 250-350 € en habitación doble. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a San Diego: https://www.happylowcost.com/destinos/san-diego/#chollos

@@ -203,6 +203,10 @@ Siem Reap is generally safe. Petty theft (bag snatching from tuk-tuks) is the ma
 
 Wear clothing that covers your shoulders and knees, and bring comfortable shoes with grip for steep stairs. A light long-sleeved shirt also helps against sun and mosquitoes.
 
+### Is Siem Reap and Angkor expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about about €30-40 per person per day and the "comfort" level at about €150 and up. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Siem Reap and Angkor: https://www.happylowcost.com/en/destinations/siem-reap-and-angkor/#deals

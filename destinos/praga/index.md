@@ -129,6 +129,10 @@ Depende de cuánto quieras ver por dentro. Si solo te interesa la catedral y los
 
 Hoy el chollo más barato que tenemos a Praga cuesta 106 € ida y vuelta desde Zaragoza. Los precios cambian cada hora: compruébalo en la página del chollo.
 
+### ¿Es caro viajar a Praga?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Praga: https://www.happylowcost.com/destinos/praga/#chollos

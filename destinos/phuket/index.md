@@ -123,6 +123,10 @@ Con presupuesto ajustado, unos 250-350 € en alojamiento, comida y transporte l
 
 Con 5 días ves lo esencial de Phuket sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Phuket?
+
+Depende de cómo viajes. Según esta guía, en el nivel "mochilero" se gastan unos 35-50 € por persona y día, y en el nivel "cómodo", unos 150 € o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Phuket: https://www.happylowcost.com/destinos/phuket/#chollos

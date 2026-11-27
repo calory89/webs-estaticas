@@ -150,6 +150,10 @@ Prácticamente sí, incluso en sitios pequeños. Lleva algo de efectivo para pro
 
 Los españoles viajan con ESTA, que se tramita online y cuesta unos 20 dólares. Hazlo con antelación y comprueba que tu pasaporte sea electrónico.
 
+### ¿Es caro viajar a Miami?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 100-150 $ por persona y día, y en el nivel "cómodo", unos 400 $ o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Miami: https://www.happylowcost.com/destinos/miami/#chollos

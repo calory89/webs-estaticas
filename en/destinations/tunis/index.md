@@ -239,6 +239,10 @@ The currency is the Tunisian dinar (roughly 3.3-3.5 TND to €1). Cards work in 
 
 Light, modest clothes covering shoulders and knees for the medina and mosques. Beachwear is fine at La Marsa and Gammarth.
 
+### Is Tunis expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "comfort" level at about €180+. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Tunis: https://www.happylowcost.com/en/destinations/tunis/#deals

@@ -227,6 +227,10 @@ En enero, pasado Reyes, y en septiembre durante la ruska. Diciembre es con difer
 
 Sí, en Finlandia se paga con tarjeta hasta un café. No hace falta llevar efectivo.
 
+### ¿Es caro viajar a Rovaniemi y Laponia?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 120-150 € por persona y día, y en el nivel "medio", unos unos 250-350 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Rovaniemi y Laponia: https://www.happylowcost.com/destinos/rovaniemi/#chollos

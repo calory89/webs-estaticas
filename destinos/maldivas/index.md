@@ -1,4 +1,4 @@
-# Qué ver en Maldivas en 7 días: guía de un viajero low cost
+# Qué ver y hacer en Maldivas en 7 días: guía low cost
 
 > Guía de viaje de Maldivas de Happy Low Cost, itinerario de 7 días. Página original: https://www.happylowcost.com/destinos/maldivas/
 > Actualizada: 2026-10-21

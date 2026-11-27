@@ -1,6 +1,6 @@
 # Happy Low Cost: rutas de vuelos baratos con precios reales
 
-> 875 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T00:50Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
+> 875 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-27T01:34Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
 
 - [Alicante → Milán](https://www.happylowcost.com/vuelos/alicante-milan/): desde 38 € ida y vuelta, lo habitual 39 €, directo, Wizz Air Malta, consultado el 2026-11-22
 - [Alicante → Venecia](https://www.happylowcost.com/vuelos/alicante-venecia/): desde 40 € ida y vuelta, lo habitual 48 €, directo, Ryanair, consultado el 2026-11-23
@@ -251,13 +251,13 @@
 - [Gran Canaria → San Francisco](https://www.happylowcost.com/vuelos/gran-canaria-san-francisco/): desde 622 € ida y vuelta, lo habitual 689 €, 2 escala(s), Iberia Express, consultado el 2026-11-26
 - [Gran Canaria → Las Vegas](https://www.happylowcost.com/vuelos/gran-canaria-las-vegas/): desde 658 € ida y vuelta, lo habitual 685 €, 3 escala(s), Iberia Express, consultado el 2026-11-26
 - [Gran Canaria → Seúl](https://www.happylowcost.com/vuelos/gran-canaria-seul/): desde 684 € ida y vuelta, lo habitual 1099 €, 1 escala(s), Vueling, consultado el 2026-11-26
-- [Gran Canaria → Sri Lanka](https://www.happylowcost.com/vuelos/gran-canaria-sri-lanka/): desde 703 € ida y vuelta, lo habitual 777 €, 3 escala(s), Iberia Express, consultado el 2026-10-22
 - [Gran Canaria → Hong Kong](https://www.happylowcost.com/vuelos/gran-canaria-hong-kong/): desde 730 € ida y vuelta, lo habitual 855 €, 2 escala(s), Ryanair, consultado el 2026-11-26
 - [Gran Canaria → Zanzíbar](https://www.happylowcost.com/vuelos/gran-canaria-zanzibar/): desde 780 € ida y vuelta, lo habitual 821 €, 2 escala(s), easyJet, consultado el 2026-10-22
 - [Gran Canaria → Phuket](https://www.happylowcost.com/vuelos/gran-canaria-phuket/): desde 788 € ida y vuelta, lo habitual 807 €, 2 escala(s), Vueling, consultado el 2026-11-26
 - [Gran Canaria → Punta Cana](https://www.happylowcost.com/vuelos/gran-canaria-punta-cana/): desde 788 € ida y vuelta, lo habitual 794 €, 1 escala(s), Iberia Express, consultado el 2026-11-26
 - [Gran Canaria → Kioto](https://www.happylowcost.com/vuelos/gran-canaria-kioto/): desde 826 € ida y vuelta, lo habitual 894 €, 2 escala(s), Iberia Express, consultado el 2026-11-26
 - [Gran Canaria → Cancún](https://www.happylowcost.com/vuelos/gran-canaria-cancun/): desde 835 € ida y vuelta, lo habitual 948 €, 1 escala(s), Iberia Express, consultado el 2026-11-25
+- [Gran Canaria → Sri Lanka](https://www.happylowcost.com/vuelos/gran-canaria-sri-lanka/): desde 839 € ida y vuelta, lo habitual 1348 €, 2 escala(s), Ryanair, consultado el 2026-11-27
 - [Gran Canaria → Ciudad de México](https://www.happylowcost.com/vuelos/gran-canaria-ciudad-de-mexico/): desde 895 € ida y vuelta, lo habitual 1241 €, 3 escala(s), Iberia Express, consultado el 2026-11-25
 - [Gran Canaria → Maldivas](https://www.happylowcost.com/vuelos/gran-canaria-maldivas/): desde 904 € ida y vuelta, lo habitual 1045 €, 2 escala(s), Iberia Express, consultado el 2026-11-26
 - [Gran Canaria → Isla Mauricio](https://www.happylowcost.com/vuelos/gran-canaria-mauricio/): desde 986 € ida y vuelta, lo habitual 1305 €, 3 escala(s), Air Europa, consultado el 2026-11-26

@@ -125,6 +125,10 @@ Abril, mayo, septiembre y principios de octubre por el clima. Para precios bajos
 
 Con 3 días ves lo esencial de Venecia sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Venecia?
+
+Depende de cómo viajes. Según esta guía, en el nivel "muy ajustado" se gastan unos 45-70 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Venecia: https://www.happylowcost.com/destinos/venecia/#chollos

@@ -138,6 +138,10 @@ Poco. La mayoría de sitios aceptan tarjeta, pero algunos puestos de los hawker 
 
 Con 4 días ves lo esencial de Singapur sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Singapur?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 250 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Singapur: https://www.happylowcost.com/destinos/singapur/#chollos

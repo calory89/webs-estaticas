@@ -222,6 +222,10 @@ Sí, es una ciudad turística tranquila. Los problemas habituales son pequeños 
 
 Sí. Es el teatro romano más completo que vas a ver, y si coincide con el festival de verano, una función allí compensa el viaje.
 
+### ¿Es caro viajar a Antalya?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 50-70 € por persona y día, y en el nivel "presupuesto medio", unos 100-150 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Antalya: https://www.happylowcost.com/destinos/antalya/#chollos

@@ -122,6 +122,10 @@ El ferry ida y vuelta ronda entre 15 y 25 euros según el operador. Añade el al
 
 Con 4 días ves lo esencial de Cancún sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Es caro viajar a Cancún?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 35-50 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Cancún: https://www.happylowcost.com/destinos/cancun/#chollos

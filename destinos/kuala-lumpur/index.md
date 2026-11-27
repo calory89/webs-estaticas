@@ -216,6 +216,10 @@ En tren KTM Komuter desde KL Sentral, unos 30 minutos y menos de 1 €. La estac
 
 Ropa ligera para la calle, pero con hombros y rodillas cubiertos en templos y mezquitas. Lleva una chaqueta fina: el aire acondicionado del metro y de los centros comerciales está muy fuerte.
 
+### ¿Es caro viajar a Kuala Lumpur?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "medio", unos 70-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Kuala Lumpur: https://www.happylowcost.com/destinos/kuala-lumpur/#chollos

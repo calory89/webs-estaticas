@@ -241,6 +241,10 @@ Es una ciudad bastante tranquila. El riesgo principal son los tirones de bolso d
 
 Pantalón o falda por debajo de la rodilla y camiseta que cubra hombros, de tejido fino. Añade calzado cómodo con suela que agarre, porque las escaleras son muy empinadas.
 
+### ¿Es caro viajar a Siem Reap y Angkor?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos entre 25 y 35 € por persona y día, y en el nivel "medio", unos entre 60 y 90 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Siem Reap y Angkor: https://www.happylowcost.com/destinos/siem-reap/#chollos

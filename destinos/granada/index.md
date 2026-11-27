@@ -222,6 +222,10 @@ Sí, en julio y agosto son habituales los 35 a 40 °C a mediodía. Visita la Alh
 
 Una zambra en cueva sí merece la pena por el ambiente y la cercanía. Mira reseñas recientes antes de reservar, porque hay espectáculos muy buenos y otros pensados para autobuses de turistas.
 
+### ¿Es caro viajar a Granada?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 55 a 70 € por persona y día, y en el nivel "medio", unos unos 100 a 140 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Granada: https://www.happylowcost.com/destinos/granada/#chollos

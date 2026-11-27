@@ -1,4 +1,4 @@
-# Bruselas en 3 días: qué ver, comer y cuánto cuesta (guía real)
+# Qué ver en Bruselas en 3 días: qué comer y cuánto cuesta
 
 > Guía de viaje de Bruselas de Happy Low Cost, itinerario de 3 días. Página original: https://www.happylowcost.com/destinos/bruselas/
 > Actualizada: 2026-10-21

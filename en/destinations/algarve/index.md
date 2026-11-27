@@ -243,6 +243,10 @@ June and September give the best balance of warm sea, sun, fewer crowds and lowe
 
 Praia da Marinha usually wins for cliffs and clear water. For space and wildness, Bordeira on the west coast and Praia do Barril in the east are hard to beat.
 
+### Is The Algarve expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €60-80/day per person per day and the "mid-range" level at about €130-200/day, sharing. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to The Algarve: https://www.happylowcost.com/en/destinations/algarve/#deals

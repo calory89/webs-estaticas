@@ -147,6 +147,10 @@ Casi todo, sí. El centro es pequeño y plano. Solo el Piazzale Michelangelo tie
 
 Abril, mayo, septiembre y octubre tienen buen clima y la ciudad se mantiene manejable. Evita julio y agosto si no soportas el calor.
 
+### ¿Es caro viajar a Florencia?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos 60-90 euros por persona y día, y en el nivel "cómodo", unos 200 euros o más. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Florencia: https://www.happylowcost.com/destinos/florencia/#chollos

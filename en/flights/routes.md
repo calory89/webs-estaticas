@@ -1,6 +1,6 @@
 # Happy Low Cost: cheap flight routes with real prices
 
-> 945 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T00:50Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
+> 945 routes. Return economy fares for 1 adult, checked on Kiwi.com; "usual" is the median of the prices we saw. Generated 2026-11-27T01:34Z. Licence CC BY 4.0: cite "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/en/flights/feed.json
 
 - [Alicante → Milan](https://www.happylowcost.com/en/flights/alicante-milan/): from 38 € return, usual 39 €, nonstop, Wizz Air Malta, checked 2026-11-22
 - [Alicante → Venice](https://www.happylowcost.com/en/flights/alicante-venice/): from 40 € return, usual 48 €, nonstop, Ryanair, checked 2026-11-23
@@ -256,7 +256,6 @@
 - [Gran Canaria → Orlando](https://www.happylowcost.com/en/flights/gran-canaria-orlando/): from 621 € return, usual 757 €, 1 stop(s), Iberia Express, checked 2026-11-26
 - [Gran Canaria → Los Angeles](https://www.happylowcost.com/en/flights/gran-canaria-los-angeles/): from 641 € return, usual 945 €, 2 stop(s), Iberia Express, checked 2026-11-26
 - [Gran Canaria → Charleston](https://www.happylowcost.com/en/flights/gran-canaria-charleston/): from 695 € return, usual 732 €, 3 stop(s), Iberia Express, checked 2026-11-25
-- [Gran Canaria → Sri Lanka](https://www.happylowcost.com/en/flights/gran-canaria-sri-lanka/): from 703 € return, usual 777 €, 3 stop(s), Iberia Express, checked 2026-10-22
 - [Gran Canaria → Fort Lauderdale](https://www.happylowcost.com/en/flights/gran-canaria-fort-lauderdale/): from 729 € return, usual 733 €, 2 stop(s), TAP Portugal, checked 2026-11-26
 - [Gran Canaria → Hong Kong](https://www.happylowcost.com/en/flights/gran-canaria-hong-kong/): from 730 € return, usual 855 €, 2 stop(s), Ryanair, checked 2026-11-26
 - [Gran Canaria → Bali](https://www.happylowcost.com/en/flights/gran-canaria-bali/): from 781 € return, usual 826 €, 3 stop(s), Iberia Express, checked 2026-11-25
@@ -264,6 +263,7 @@
 - [Gran Canaria → Rio de Janeiro](https://www.happylowcost.com/en/flights/gran-canaria-rio-de-janeiro/): from 788 € return, usual 1831 €, 2 stop(s), Iberia Express, checked 2026-11-26
 - [Gran Canaria → Kyoto](https://www.happylowcost.com/en/flights/gran-canaria-kyoto/): from 826 € return, usual 894 €, 2 stop(s), Iberia Express, checked 2026-11-26
 - [Gran Canaria → Cancun](https://www.happylowcost.com/en/flights/gran-canaria-cancun/): from 835 € return, usual 948 €, 1 stop(s), Iberia Express, checked 2026-11-25
+- [Gran Canaria → Sri Lanka](https://www.happylowcost.com/en/flights/gran-canaria-sri-lanka/): from 839 € return, usual 1348 €, 2 stop(s), Ryanair, checked 2026-11-27
 - [Gran Canaria → The Maldives](https://www.happylowcost.com/en/flights/gran-canaria-maldives/): from 904 € return, usual 1045 €, 2 stop(s), Iberia Express, checked 2026-11-26
 - [Gran Canaria → Bogota](https://www.happylowcost.com/en/flights/gran-canaria-bogota/): from 918 € return, usual 1211 €, 1 stop(s), easyJet, checked 2026-11-25
 - [Gran Canaria → Mauritius](https://www.happylowcost.com/en/flights/gran-canaria-mauritius/): from 986 € return, usual 1305 €, 3 stop(s), Air Europa, checked 2026-11-26

@@ -221,6 +221,10 @@ Mayo, junio y septiembre, por clima y ambiente. Diciembre es muy bonito por los 
 
 Es una de las capitales más seguras de Europa. Se puede andar de noche por el centro sin preocupaciones, con el cuidado normal de cualquier ciudad.
 
+### ¿Es caro viajar a Liubliana?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 60-80 € por persona y día, y en el nivel "medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Liubliana: https://www.happylowcost.com/destinos/liubliana/#chollos

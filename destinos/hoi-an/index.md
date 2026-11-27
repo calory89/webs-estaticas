@@ -232,6 +232,10 @@ Cada mes en luna llena, según el calendario lunar. Comprueba la fecha antes de 
 
 Es muy seguro. Lo peor que te puede pasar es pagar de más por algo, así que pregunta siempre el precio antes.
 
+### ¿Es caro viajar a Hoi An?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos 30-40 € por persona y día, y en el nivel "presupuesto medio", unos 60-100 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Hoi An: https://www.happylowcost.com/destinos/hoi-an/#chollos

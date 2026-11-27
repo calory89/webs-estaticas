@@ -231,6 +231,10 @@ El de la propia Verona es el más cómodo, a 20 minutos del centro. Si el vuelo 
 
 Sí, es muy tranquila, también de noche. Lo único es vigilar la cartera en las aglomeraciones de la Casa de Julieta y la Piazza delle Erbe.
 
+### ¿Es caro viajar a Verona?
+
+Depende de cómo viajes. Según esta guía, en el nivel "presupuesto ajustado" se gastan unos unos 70-90 € por persona y día, y en el nivel "presupuesto medio", unos unos 130-180 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Verona: https://www.happylowcost.com/destinos/verona/#chollos

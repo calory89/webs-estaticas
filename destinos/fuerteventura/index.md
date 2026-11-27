@@ -241,6 +241,10 @@ Menos que muchas zonas de playa de la península: gasolina y alcohol son más ba
 
 En agosto y septiembre, con máximas en torno a 28-30 °C. En invierno ronda los 20-22 °C, suficiente para playa en días sin viento.
 
+### ¿Es caro viajar a Fuerteventura?
+
+Depende de cómo viajes. Según esta guía, en el nivel "ajustado" se gastan unos unos 70-90 €, en pareja por persona y día, y en el nivel "medio", unos unos 120-170 €. El vuelo va aparte: en esta página tienes los precios reales comprobados por Happy Low Cost.
+
 ## Vuelos y chollos
 
 - Chollos de vuelos a Fuerteventura: https://www.happylowcost.com/destinos/fuerteventura/#chollos

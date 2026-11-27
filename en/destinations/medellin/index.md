@@ -233,6 +233,10 @@ It is spring-like all year, about 22-28°C by day. Expect afternoon rain, especi
 
 Yes, it is the best day trip from the city. Go early on a weekday to beat the queues at El Peñol.
 
+### Is Medellin expensive?
+
+It depends on how you travel. This guide puts the "shoestring" level at about €30-45 per person per day and the "mid-range" level at about €70-120. Flights are extra: this page shows real fares checked by Happy Low Cost.
+
 ## Flights and deals
 
 - Flight deals to Medellin: https://www.happylowcost.com/en/destinations/medellin/#deals
