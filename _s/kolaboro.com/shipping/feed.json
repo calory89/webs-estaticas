@@ -14,16 +14,16 @@
  "items": [
   {
    "id": "https://kolaboro.com/shipping/#d-2026-11-27",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-27",
-   "title": "27 November 2026: 96 changes shipped so far",
-   "content_text": "- Kolaboro.com n40 k55 (BL-026): search titles with city, handover date and permit status for the 8 Search Console project pages; description overrides (en.dd40) for 2\n- Kolaboro.com n40 k54: pwa.js urls(): the duplicate-URL filter sat inside a // comment and never ran (English offline page fetched twice); filter restored\n- Kolaboro.com n40 L14: step-by-step guide to Japanese building confirmation (building plan summary) and a registers entry for it, in 8 languages\n- Kolaboro.com n40 k60: /data/gleif-dev.json now covers 2526 of 2527 developers (was 1451), 120 relationship records; data only, no worker change\n- Kolaboro.com n40 k63: a page whose build throws serves its last edge copy (x-kb-cache: stale-error) or the 503 retry notice, not error 1101\n- Kolaboro.com n40 k58: Delivery Index translations, list of highest shares with page-language punctuation (zh full-width brackets)\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Kolaboro.com n40 k55 (BL-026): search titles with city, handover date and permit status for the 8 Search Console project pages; description overrides (en.dd40) for 2</li><li>Kolaboro.com n40 k54: pwa.js urls(): the duplicate-URL filter sat inside a // comment and never ran (English offline page fetched twice); filter restored</li><li>Kolaboro.com n40 L14: step-by-step guide to Japanese building confirmation (building plan summary) and a registers entry for it, in 8 languages</li><li>Kolaboro.com n40 k60: /data/gleif-dev.json now covers 2526 of 2527 developers (was 1451), 120 relationship records; data only, no worker change</li><li>Kolaboro.com n40 k63: a page whose build throws serves its last edge copy (x-kb-cache: stale-error) or the 503 retry notice, not error 1101</li><li>Kolaboro.com n40 k58: Delivery Index translations, list of highest shares with page-language punctuation (zh full-width brackets)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "url": "https://kolaboro.com/changelog/2026-11-27/",
+   "title": "27 November 2026: 96 changes shipped",
+   "content_text": "- Kolaboro.com n40 k55 (BL-026): search titles with city, handover date and permit status for the 8 Search Console project pages; description overrides (en.dd40) for 2\n- Kolaboro.com n40 k54: pwa.js urls(): the duplicate-URL filter sat inside a // comment and never ran (English offline page fetched twice); filter restored\n- Kolaboro.com n40 L14: step-by-step guide to Japanese building confirmation (building plan summary) and a registers entry for it, in 8 languages\n- Kolaboro.com n40 k60: /data/gleif-dev.json now covers 2526 of 2527 developers (was 1451), 120 relationship records; data only, no worker change\n- Kolaboro.com n40 k63: a page whose build throws serves its last edge copy (x-kb-cache: stale-error) or the 503 retry notice, not error 1101\n- Kolaboro.com n40 k58: Delivery Index translations, list of highest shares with page-language punctuation (zh full-width brackets)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro.com n40 k55 (BL-026): search titles with city, handover date and permit status for the 8 Search Console project pages; description overrides (en.dd40) for 2</li><li>Kolaboro.com n40 k54: pwa.js urls(): the duplicate-URL filter sat inside a // comment and never ran (English offline page fetched twice); filter restored</li><li>Kolaboro.com n40 L14: step-by-step guide to Japanese building confirmation (building plan summary) and a registers entry for it, in 8 languages</li><li>Kolaboro.com n40 k60: /data/gleif-dev.json now covers 2526 of 2527 developers (was 1451), 120 relationship records; data only, no worker change</li><li>Kolaboro.com n40 k63: a page whose build throws serves its last edge copy (x-kb-cache: stale-error) or the 503 retry notice, not error 1101</li><li>Kolaboro.com n40 k58: Delivery Index translations, list of highest shares with page-language punctuation (zh full-width brackets)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
    "date_published": "2026-11-27T00:00:00Z",
-   "date_modified": "2026-11-27T04:16:08Z",
+   "date_modified": "2026-11-27T19:31:24Z",
    "_kolaboro": {
     "ships": 96,
-    "data_updates": 0,
-    "method": "so-far"
+    "data_updates": 10,
+    "method": "deterministic"
    }
   },
   {
