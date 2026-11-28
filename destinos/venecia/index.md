@@ -125,6 +125,10 @@ Abril, mayo, septiembre y principios de octubre por el clima. Para precios bajos
 
 Con 3 días ves lo esencial de Venecia sin prisas. La ruta de esta guía está organizada día a día.
 
+### ¿Cuánto cuesta un vuelo barato a Venecia?
+
+Hoy el chollo más barato que tenemos a Venecia cuesta 34 € ida y vuelta desde Madrid. Los precios cambian cada hora: compruébalo en la página del chollo.
+
 ### ¿Qué ver en Venecia en 2 días?
 
 Con dos días, sigue los días 1 y 2 de esta ruta. Día 1: Llegada, paseo por Cannaregio y el Gueto, vaporetto línea 1 por el Gran Canal al atardecer y cena de cicchetti cerca de Rialto. Día 2: San Marcos a primera hora, Palacio Ducal, comida tranquila en Castello y tarde en Dorsoduro con Zattere y Salute.

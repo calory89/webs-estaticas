@@ -9,13 +9,13 @@
 - **Escalas:** 0
 - **Precio habitual de la ruta:** 130 €
 - **Ahorro:** 45 %
-- **Comprobado:** 2026-11-26
+- **Comprobado:** 2026-11-27
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Barcelona a Estocolmo?
 
-71 € ida y vuelta con Vueling, saliendo el 21 feb 2027 y volviendo el 22 feb 2027. Precio comprobado por última vez el 26 nov 2026.
+71 € ida y vuelta con Vueling, saliendo el 21 feb 2027 y volviendo el 22 feb 2027. Precio comprobado por última vez el 27 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

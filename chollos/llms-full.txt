@@ -1,17 +1,18 @@
-# Happy Low Cost: chollos de vuelos activos (27 nov 2026)
+# Happy Low Cost: chollos de vuelos activos (28 nov 2026)
 
-> 19 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-27T13:50:10Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 20 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-28T00:02:27Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
-## Datos del mes (a 27 nov 2026)
-- Chollos activos: 19, desde 8 ciudades de salida.
-- Precio mediano de un chollo: 81 € ida y vuelta (el más barato: Valencia → París por 39 €).
+## Datos del mes (a 28 nov 2026)
+- Chollos activos: 20, desde 8 ciudades de salida.
+- Precio mediano de un chollo: 77 € ida y vuelta (el más barato: Madrid → Venecia por 34 €).
 - Descuento mediano frente al precio habitual: 45 %.
-- Chollos con vuelo directo: 12 de 19.
+- Chollos con vuelo directo: 13 de 20.
 
 ## Últimos cambios
 
+- 27 nov 2026: nuevo chollo Madrid → Venecia por 34 € (https://www.happylowcost.com/chollos/madrid-venecia-34-euros-2027-01-25/)
 - 27 nov 2026: nuevo chollo Madrid → Larnaca por 105 € (https://www.happylowcost.com/chollos/madrid-larnaca-105-euros-2027-02-20/)
 - 27 nov 2026: nuevo chollo Madrid → Budapest por 64 € (https://www.happylowcost.com/chollos/madrid-budapest-64-euros-2027-02-21/)
 - 27 nov 2026: nuevo chollo Zaragoza → Belgrado por 111 € (https://www.happylowcost.com/chollos/zaragoza-belgrado-111-euros-2027-02-18/)
@@ -19,20 +20,20 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - 27 nov 2026: nuevo chollo Zaragoza → Cracovia por 74 € (https://www.happylowcost.com/chollos/zaragoza-cracovia-74-euros-2027-02-13/)
 - 26 nov 2026: nuevo chollo Barcelona → Cagliari por 43 € (https://www.happylowcost.com/chollos/barcelona-cagliari-43-euros-2027-01-21/)
 - 26 nov 2026: nuevo chollo Barcelona → Estocolmo por 71 € (https://www.happylowcost.com/chollos/barcelona-estocolmo-71-euros-2027-02-21/)
-- 26 nov 2026: nuevo chollo Alicante → Larnaca por 121 € (https://www.happylowcost.com/chollos/alicante-larnaca-121-euros-2027-02-21/)
 
 ## Desde Alicante (España)
 - [Alicante → Larnaca (Chipre): 121 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-larnaca-121-euros-2027-02-21/), Wizz Air Malta, 21 feb 2027 a 23 feb 2027. Precio habitual 200 € (−40 %). Comprobado el 27 nov 2026.
 
 ## Desde Barcelona (España)
-- [Barcelona → Cagliari (Italia): 43 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-cagliari-43-euros-2027-01-21/), Vueling, directo, 21 ene 2027 a 30 ene 2027. Precio habitual 80 € (−46 %). Comprobado el 26 nov 2026.
-- [Barcelona → Dubrovnik (Croacia): 62 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-dubrovnik-62-euros-2026-12-12/), Vueling, directo, 12 dic 2026 a 19 dic 2026. Precio habitual 140 € (−56 %). Comprobado el 26 nov 2026.
-- [Barcelona → Estocolmo (Suecia): 71 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-estocolmo-71-euros-2027-02-21/), Vueling, directo, 21 feb 2027 a 22 feb 2027. Precio habitual 130 € (−45 %). Comprobado el 26 nov 2026.
+- [Barcelona → Cagliari (Italia): 43 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-cagliari-43-euros-2027-01-21/), Vueling, directo, 21 ene 2027 a 30 ene 2027. Precio habitual 80 € (−46 %). Comprobado el 27 nov 2026.
+- [Barcelona → Dubrovnik (Croacia): 62 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-dubrovnik-62-euros-2026-12-12/), Vueling, directo, 12 dic 2026 a 19 dic 2026. Precio habitual 140 € (−56 %). Comprobado el 27 nov 2026.
+- [Barcelona → Estocolmo (Suecia): 71 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-estocolmo-71-euros-2027-02-21/), Vueling, directo, 21 feb 2027 a 22 feb 2027. Precio habitual 130 € (−45 %). Comprobado el 27 nov 2026.
 
 ## Desde Gran Canaria (España)
 - [Gran Canaria → Madeira (Portugal): 111 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-madeira-111-euros-2027-02-19/), Binter Canarias, directo, 19 feb 2027 a 23 feb 2027. Precio habitual 190 € (−42 %). Comprobado el 27 nov 2026.
 
 ## Desde Madrid (España)
+- [Madrid → Venecia (Italia): 34 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-venecia-34-euros-2027-01-25/), Wizz Air Malta, directo, 25 ene 2027 a 3 feb 2027. Precio habitual 60 € (−43 %). Comprobado el 27 nov 2026.
 - [Madrid → Budapest (Hungría): 64 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-budapest-64-euros-2027-02-21/), Wizz Air, directo, 21 feb 2027 a 25 feb 2027. Precio habitual 150 € (−57 %). Comprobado el 27 nov 2026.
 - [Madrid → Bruselas (Bélgica): 81 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-bruselas-81-euros-2027-02-16/), Ryanair, directo, 16 feb 2027 a 18 feb 2027. Precio habitual 150 € (−46 %). Comprobado el 27 nov 2026.
 - [Madrid → Larnaca (Chipre): 105 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-larnaca-105-euros-2027-02-20/), Wizz Air, directo, 20 feb 2027 a 23 feb 2027. Precio habitual 180 € (−42 %). Comprobado el 27 nov 2026.
@@ -46,12 +47,12 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Valencia → Luxemburgo (Luxemburgo): 94 € ida y vuelta](https://www.happylowcost.com/chollos/valencia-luxemburgo-94-euros-2027-02-19/), Luxair, directo, 19 feb 2027 a 22 feb 2027. Precio habitual 170 € (−45 %). Comprobado el 27 nov 2026.
 
 ## Desde Zaragoza (España)
-- [Zaragoza → Londres (Reino Unido): 47 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-47-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 1 feb 2027. Precio habitual 90 € (−48 %). Comprobado el 27 nov 2026.
+- [Zaragoza → Londres (Reino Unido): 47 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-londres-47-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 1 feb 2027. Precio habitual 90 € (−48 %). Comprobado el 28 nov 2026.
 - [Zaragoza → Cracovia (Polonia): 74 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-cracovia-74-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 19 feb 2027. Precio habitual 180 € (−59 %). Comprobado el 27 nov 2026.
 - [Zaragoza → Praga (República Checa): 106 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-praga-106-euros-2027-02-16/), Wizz Air Malta, 16 feb 2027 a 19 feb 2027. Precio habitual 180 € (−41 %). Comprobado el 27 nov 2026.
 - [Zaragoza → Vilna (Lituania): 110 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-vilna-110-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 22 feb 2027. Precio habitual 230 € (−52 %). Comprobado el 27 nov 2026.
 - [Zaragoza → Belgrado (Serbia): 111 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-belgrado-111-euros-2027-02-18/), Wizz Air Malta, 18 feb 2027 a 24 feb 2027. Precio habitual 190 € (−42 %). Comprobado el 27 nov 2026.
-- [Zaragoza → Atenas (Grecia): 133 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-atenas-133-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 15 feb 2027. Precio habitual 220 € (−40 %). Comprobado el 26 nov 2026.
+- [Zaragoza → Atenas (Grecia): 133 € ida y vuelta](https://www.happylowcost.com/chollos/zaragoza-atenas-133-euros-2027-02-13/), Wizz Air Malta, 13 feb 2027 a 15 feb 2027. Precio habitual 220 € (−40 %). Comprobado el 27 nov 2026.
 
 ## Desde Lisboa (Portugal)
 - [Lisboa → Santo Tomé (Santo Tomé y Príncipe): 319 € ida y vuelta](https://www.happylowcost.com/chollos/lisboa-santo-tome-319-euros-2027-02-04/), TAAG Angola Airlines, 4 feb 2027 a 12 feb 2027. Precio habitual 540 € (−41 %). Comprobado el 27 nov 2026.
@@ -681,7 +682,6 @@ Cada guía tiene qué ver, ruta por días, cuándo ir, dónde dormir, qué comer
 - [Málaga → Marrakech](https://www.happylowcost.com/vuelos/malaga-marrakech/): desde 36 € ida y vuelta, lo habitual 40 €, directo, Ryanair. 650 km, consultado el 2026-11-16
 - [Málaga → Lisboa](https://www.happylowcost.com/vuelos/malaga-lisboa/): desde 38 € ida y vuelta, lo habitual 45 €, directo, Ryanair, aeropuerto de Lisbon. 470 km, consultado el 2026-11-16
 - [Málaga → Brujas](https://www.happylowcost.com/vuelos/malaga-brujas/): desde 61 € ida y vuelta, lo habitual 79 €, directo, Ryanair, aeropuerto de Brussels. 1.740 km, consultado el 2026-11-15
-- [Málaga → Hamburgo](https://www.happylowcost.com/vuelos/malaga-hamburgo/): desde 75 € ida y vuelta, lo habitual 85 €, directo, Ryanair. 2.190 km, consultado el 2026-11-16
 - [Málaga → Bucarest](https://www.happylowcost.com/vuelos/malaga-bucarest/): desde 78 € ida y vuelta, lo habitual 105 €, directo, Ryanair, aeropuerto de Bucharest. 2.710 km, consultado el 2026-11-15
 - [Málaga → Ámsterdam](https://www.happylowcost.com/vuelos/malaga-amsterdam/): desde 91 € ida y vuelta, lo habitual 116 €, directo, Vueling. 1.880 km, consultado el 2026-11-15
 - [Málaga → Chipre](https://www.happylowcost.com/vuelos/malaga-chipre/): desde 150 € ida y vuelta, lo habitual 162 €, 1 escala(s), Wizz Air Malta, aeropuerto de Larnaca. 3.420 km, consultado el 2026-11-16
@@ -774,23 +774,23 @@ Cada guía tiene qué ver, ruta por días, cuándo ir, dónde dormir, qué comer
 - [Palma → Malta](https://www.happylowcost.com/vuelos/palma-malta/): desde 38 € ida y vuelta, lo habitual 38 €, directo, Ryanair. 1.110 km, consultado el 2026-10-22
 - [Palma → Milán](https://www.happylowcost.com/vuelos/palma-milan/): desde 40 € ida y vuelta, lo habitual 42 €, directo, Ryanair. 840 km, consultado el 2026-10-22
 - [Palma → París](https://www.happylowcost.com/vuelos/palma-paris/): desde 51 € ida y vuelta, lo habitual 60 €, directo, Vueling. 1.040 km, consultado el 2026-10-22
+- [Palma → Hamburgo](https://www.happylowcost.com/vuelos/palma-hamburgo/): desde 55 € ida y vuelta, lo habitual 104 €, directo, Ryanair. 1.660 km, consultado el 2026-11-27
 - [Palma → Venecia](https://www.happylowcost.com/vuelos/palma-venecia/): desde 55 € ida y vuelta, lo habitual 58 €, directo, Ryanair, aeropuerto de Venice. 1.030 km, consultado el 2026-10-22
 - [Palma → Bruselas](https://www.happylowcost.com/vuelos/palma-bruselas/): desde 68 € ida y vuelta, lo habitual 71 €, directo, Ryanair, aeropuerto de Brussels. 1.270 km, consultado el 2026-11-27
 - [Palma → Varsovia](https://www.happylowcost.com/vuelos/palma-varsovia/): desde 82 € ida y vuelta, lo habitual 93 €, directo, Ryanair, aeropuerto de Warsaw. 1.980 km, consultado el 2026-10-22
-- [Palma → Cracovia](https://www.happylowcost.com/vuelos/palma-cracovia/): desde 98 € ida y vuelta, lo habitual 138 €, 1 escala(s), Vueling. 1.780 km, consultado el 2026-10-22
+- [Palma → Cracovia](https://www.happylowcost.com/vuelos/palma-cracovia/): desde 92 € ida y vuelta, lo habitual 109 €, 1 escala(s), Vueling. 1.780 km, consultado el 2026-11-27
 - [Palma → Nápoles](https://www.happylowcost.com/vuelos/palma-napoles/): desde 102 € ida y vuelta, lo habitual 112 €, 1 escala(s), Vueling, aeropuerto de Naples. 990 km, consultado el 2026-10-22
 - [Palma → Belgrado](https://www.happylowcost.com/vuelos/palma-belgrado/): desde 112 € ida y vuelta, lo habitual 123 €, 1 escala(s), Vueling, aeropuerto de Belgrade. 1.560 km, consultado el 2026-11-27
-- [Palma → Fez](https://www.happylowcost.com/vuelos/palma-fez/): desde 112 € ida y vuelta, lo habitual 117 €, 1 escala(s), Wizz Air Malta, aeropuerto de Fes. 930 km, consultado el 2026-10-22
 - [Palma → Agadir](https://www.happylowcost.com/vuelos/palma-agadir/): desde 115 € ida y vuelta, lo habitual 116 €, 1 escala(s), Iberia Express. 1.510 km, consultado el 2026-11-27
-- [Palma → Dubrovnik](https://www.happylowcost.com/vuelos/palma-dubrovnik/): desde 116 € ida y vuelta, lo habitual 126 €, 1 escala(s), Vueling. 1.340 km, consultado el 2026-10-22
+- [Palma → Fez](https://www.happylowcost.com/vuelos/palma-fez/): desde 116 € ida y vuelta, lo habitual 124 €, 1 escala(s), Vueling, aeropuerto de Fes. 930 km, consultado el 2026-11-27
+- [Palma → Dubrovnik](https://www.happylowcost.com/vuelos/palma-dubrovnik/): desde 137 € ida y vuelta, lo habitual 163 €, 1 escala(s), Vueling. 1.340 km, consultado el 2026-11-27
 - [Palma → Praga](https://www.happylowcost.com/vuelos/palma-praga/): desde 141 € ida y vuelta, lo habitual 147 €, directo, Smartwings, aeropuerto de Prague. 1.480 km, consultado el 2026-10-22
 - [Palma → Tallin](https://www.happylowcost.com/vuelos/palma-tallin/): desde 144 € ida y vuelta, lo habitual 163 €, 1 escala(s), Ryanair. 2.700 km, consultado el 2026-10-22
 - [Palma → Riga](https://www.happylowcost.com/vuelos/palma-riga/): desde 154 € ida y vuelta, lo habitual 160 €, 2 escala(s), Ryanair. 2.470 km, consultado el 2026-10-22
 - [Palma → Salzburgo](https://www.happylowcost.com/vuelos/palma-salzburgo/): desde 159 € ida y vuelta, lo habitual 170 €, 1 escala(s), Ryanair. 1.230 km, consultado el 2026-10-22
 - [Palma → Santorini](https://www.happylowcost.com/vuelos/palma-santorini/): desde 225 € ida y vuelta, lo habitual 233 €, 2 escala(s), Ryanair, aeropuerto de Thira. 2.020 km, consultado el 2026-10-22
-- [Palma → El Cairo](https://www.happylowcost.com/vuelos/palma-el-cairo/): desde 247 € ida y vuelta, lo habitual 287 €, 1 escala(s), Wizz Air Malta. 2.800 km, consultado el 2026-10-22
+- [Palma → El Cairo](https://www.happylowcost.com/vuelos/palma-el-cairo/): desde 227 € ida y vuelta, lo habitual 234 €, 1 escala(s), Vueling. 2.800 km, consultado el 2026-11-27
 - [Palma → Nueva York](https://www.happylowcost.com/vuelos/palma-nueva-york/): desde 435 € ida y vuelta, lo habitual 585 €, 1 escala(s), Lufthansa. 6.300 km, consultado el 2026-10-22
-- [Palma → Ciudad del Cabo](https://www.happylowcost.com/vuelos/palma-ciudad-del-cabo/): desde 631 € ida y vuelta, lo habitual 781 €, 1 escala(s), Ryanair, aeropuerto de Cape Town. 8.340 km, consultado el 2026-10-22
 - [Palma → Orlando](https://www.happylowcost.com/vuelos/palma-orlando/): desde 651 € ida y vuelta, lo habitual 653 €, 1 escala(s), Wizz Air Malta. 7.570 km, consultado el 2026-10-22
 - [Palma → Sri Lanka](https://www.happylowcost.com/vuelos/palma-sri-lanka/): desde 668 € ida y vuelta, lo habitual 751 €, 3 escala(s), Wizz Air Malta, aeropuerto de Colombo. 8.400 km, consultado el 2026-10-22
 - [Palma → Bali](https://www.happylowcost.com/vuelos/palma-bali/): desde 734 € ida y vuelta, lo habitual 1135 €, 3 escala(s), Iberia Express, aeropuerto de Denpasar. 12.540 km, consultado el 2026-11-27
@@ -799,6 +799,7 @@ Cada guía tiene qué ver, ruta por días, cuándo ir, dónde dormir, qué comer
 - [Palma → Nassau](https://www.happylowcost.com/vuelos/palma-nassau/): desde 809 € ida y vuelta, lo habitual 892 €, 2 escala(s), Wizz Air Malta. 7.470 km, consultado el 2026-10-22
 - [Palma → Maldivas](https://www.happylowcost.com/vuelos/palma-maldivas/): desde 818 € ida y vuelta, lo habitual 940 €, 3 escala(s), easyJet, aeropuerto de Male. 8.070 km, consultado el 2026-10-22
 - [Palma → Bogotá](https://www.happylowcost.com/vuelos/palma-bogota/): desde 892 € ida y vuelta, lo habitual 981 €, 1 escala(s), Wizz Air Malta. 8.550 km, consultado el 2026-11-27
+- [Palma → Ciudad del Cabo](https://www.happylowcost.com/vuelos/palma-ciudad-del-cabo/): desde 1041 € ida y vuelta, lo habitual 1139 €, 2 escala(s), Vueling, aeropuerto de Cape Town. 8.340 km, consultado el 2026-11-27
 - [París → Dublín](https://www.happylowcost.com/vuelos/paris-dublin/): desde 38 € ida y vuelta, lo habitual 41 €, directo, Ryanair. 790 km, consultado el 2026-10-22
 - [París → Milán](https://www.happylowcost.com/vuelos/paris-milan/): desde 42 € ida y vuelta, lo habitual 44 €, directo, Ryanair, mes más barato 2027-01 (39 €). 640 km, consultado el 2026-10-22
 - [París → Marrakech](https://www.happylowcost.com/vuelos/paris-marrakech/): desde 43 € ida y vuelta, lo habitual 53 €, directo, Ryanair. 2.110 km, consultado el 2026-10-22

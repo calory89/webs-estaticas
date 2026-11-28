@@ -153,6 +153,10 @@ St Mark's Basilica and the Doge's Palace are worth booking, as are any popular d
 
 It is a pleasant splurge but not essential. A traghetto crossing or a vaporetto along the Grand Canal gives you much of the feeling for a few euros.
 
+### How much is a cheap flight to Venice?
+
+Today the cheapest deal we have to Venice is €34 return from Madrid. Fares change by the hour: check the live price on the deal page.
+
 ### What to see in Venice in one day?
 
 If you only have one day, follow day 1 of this itinerary: Early St Mark's Square, Doge's Palace, lunch in Castello, afternoon in the Arsenale area, sunset on the Zattere.

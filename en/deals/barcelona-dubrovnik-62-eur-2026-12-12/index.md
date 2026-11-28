@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €140
 - **Saving:** 56 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Barcelona to Dubrovnik?
 
-€62 return with Vueling, leaving 12 Dec 2026 and coming back 19 Dec 2026. Price last checked on 26 Nov 2026.
+€62 return with Vueling, leaving 12 Dec 2026 and coming back 19 Dec 2026. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

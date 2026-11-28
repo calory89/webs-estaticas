@@ -9,13 +9,13 @@
 - **Escalas:** 0
 - **Precio habitual de la ruta:** 140 €
 - **Ahorro:** 56 %
-- **Comprobado:** 2026-11-26
+- **Comprobado:** 2026-11-27
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Barcelona a Dubrovnik?
 
-62 € ida y vuelta con Vueling, saliendo el 12 dic 2026 y volviendo el 19 dic 2026. Precio comprobado por última vez el 26 nov 2026.
+62 € ida y vuelta con Vueling, saliendo el 12 dic 2026 y volviendo el 19 dic 2026. Precio comprobado por última vez el 27 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

@@ -1,37 +1,39 @@
-# Happy Low Cost: live flight deals and travel guides in English (27 Nov 2026)
+# Happy Low Cost: live flight deals and travel guides in English (28 Nov 2026)
 
-> 18 verified return flight deals, each at least 40% below the usual price of its route, and 173 travel guides with day-by-day itineraries. Prices change by the hour: always check the deal page. Same data as JSON: https://www.happylowcost.com/chollos/feed.json. Spanish version: https://www.happylowcost.com/llms-full.txt
+> 20 verified return flight deals, each at least 40% below the usual price of its route, and 173 travel guides with day-by-day itineraries. Prices change by the hour: always check the deal page. Same data as JSON: https://www.happylowcost.com/chollos/feed.json. Spanish version: https://www.happylowcost.com/llms-full.txt
 
 Happy Low Cost has published flight deals since 2012. How we verify deals: https://www.happylowcost.com/en/how-we-verify/
 
-## This month in numbers (as of 27 Nov 2026)
-- Live deals: 18, from 8 departure cities.
-- Median deal price: €77 return (cheapest: Valencia to Paris for €39).
+## This month in numbers (as of 28 Nov 2026)
+- Live deals: 20, from 8 departure cities.
+- Median deal price: €77 return (cheapest: Madrid to Venice for €34).
 - Median saving against the usual fare: 45%.
-- Deals with a nonstop flight: 11 of 18.
+- Deals with a nonstop flight: 13 of 20.
 
 ## Latest changes
 
+- 2026-11-27: new deal Madrid to Venice for €34 (https://www.happylowcost.com/en/deals/madrid-venice-34-eur-2027-01-25/)
+- 2026-11-27: new deal Madrid to Larnaca for €105 (https://www.happylowcost.com/en/deals/madrid-larnaca-105-eur-2027-02-20/)
 - 2026-11-27: new deal Madrid to Budapest for €64 (https://www.happylowcost.com/en/deals/madrid-budapest-64-eur-2027-02-21/)
 - 2026-11-27: new deal Zaragoza to Belgrade for €111 (https://www.happylowcost.com/en/deals/zaragoza-belgrade-111-eur-2027-02-18/)
 - 2026-11-27: new deal Lisbon to São Tomé for €319 (https://www.happylowcost.com/en/deals/lisbon-sao-tome-319-eur-2027-02-04/)
 - 2026-11-27: new deal Zaragoza to Krakow for €74 (https://www.happylowcost.com/en/deals/zaragoza-krakow-74-eur-2027-02-13/)
 - 2026-11-26: new deal Barcelona to Cagliari for €43 (https://www.happylowcost.com/en/deals/barcelona-cagliari-43-eur-2027-01-21/)
 - 2026-11-26: new deal Barcelona to Stockholm for €71 (https://www.happylowcost.com/en/deals/barcelona-stockholm-71-eur-2027-02-21/)
-- 2026-11-26: new deal Alicante to Larnaca for €121 (https://www.happylowcost.com/en/deals/alicante-larnaca-121-eur-2027-02-21/)
-- 2026-11-26: new deal Valencia to Brussels for €65 (https://www.happylowcost.com/en/deals/valencia-brussels-65-eur-2027-02-19/)
 
 ## Live flight deals
 
+- [Madrid to Venice: €34 return](https://www.happylowcost.com/en/deals/madrid-venice-34-eur-2027-01-25/), Wizz Air Malta, nonstop, 25 Jan – 3 Feb 2027. Usual price €60 (-43%). Checked 27 Nov 2026.
+- [Madrid to Larnaca: €105 return](https://www.happylowcost.com/en/deals/madrid-larnaca-105-eur-2027-02-20/), Wizz Air, nonstop, 20 Feb – 23 Feb 2027. Usual price €180 (-42%). Checked 27 Nov 2026.
 - [Madrid to Budapest: €64 return](https://www.happylowcost.com/en/deals/madrid-budapest-64-eur-2027-02-21/), Wizz Air, nonstop, 21 Feb – 25 Feb 2027. Usual price €150 (-57%). Checked 27 Nov 2026.
 - [Zaragoza to Belgrade: €111 return](https://www.happylowcost.com/en/deals/zaragoza-belgrade-111-eur-2027-02-18/), Wizz Air Malta, 18 Feb – 24 Feb 2027. Usual price €190 (-42%). Checked 27 Nov 2026.
 - [Lisbon to São Tomé: €319 return](https://www.happylowcost.com/en/deals/lisbon-sao-tome-319-eur-2027-02-04/), TAAG Angola Airlines, 4 Feb – 12 Feb 2027. Usual price €540 (-41%). Checked 27 Nov 2026.
 - [Zaragoza to Krakow: €74 return](https://www.happylowcost.com/en/deals/zaragoza-krakow-74-eur-2027-02-13/), Wizz Air Malta, 13 Feb – 19 Feb 2027. Usual price €180 (-59%). Checked 27 Nov 2026.
-- [Barcelona to Cagliari: €43 return](https://www.happylowcost.com/en/deals/barcelona-cagliari-43-eur-2027-01-21/), Vueling, nonstop, 21 Jan – 30 Jan 2027. Usual price €80 (-46%). Checked 26 Nov 2026.
-- [Barcelona to Stockholm: €71 return](https://www.happylowcost.com/en/deals/barcelona-stockholm-71-eur-2027-02-21/), Vueling, nonstop, 21 Feb – 22 Feb 2027. Usual price €130 (-45%). Checked 26 Nov 2026.
+- [Barcelona to Cagliari: €43 return](https://www.happylowcost.com/en/deals/barcelona-cagliari-43-eur-2027-01-21/), Vueling, nonstop, 21 Jan – 30 Jan 2027. Usual price €80 (-46%). Checked 27 Nov 2026.
+- [Barcelona to Stockholm: €71 return](https://www.happylowcost.com/en/deals/barcelona-stockholm-71-eur-2027-02-21/), Vueling, nonstop, 21 Feb – 22 Feb 2027. Usual price €130 (-45%). Checked 27 Nov 2026.
 - [Alicante to Larnaca: €121 return](https://www.happylowcost.com/en/deals/alicante-larnaca-121-eur-2027-02-21/), Wizz Air Malta, 21 Feb – 23 Feb 2027. Usual price €200 (-40%). Checked 27 Nov 2026.
 - [Valencia to Brussels: €65 return](https://www.happylowcost.com/en/deals/valencia-brussels-65-eur-2027-02-19/), Vueling, nonstop, 19 Feb – 21 Feb 2027. Usual price €130 (-50%). Checked 27 Nov 2026.
-- [Zaragoza to Athens: €133 return](https://www.happylowcost.com/en/deals/zaragoza-athens-133-eur-2027-02-13/), Wizz Air Malta, 13 Feb – 15 Feb 2027. Usual price €220 (-40%). Checked 26 Nov 2026.
+- [Zaragoza to Athens: €133 return](https://www.happylowcost.com/en/deals/zaragoza-athens-133-eur-2027-02-13/), Wizz Air Malta, 13 Feb – 15 Feb 2027. Usual price €220 (-40%). Checked 27 Nov 2026.
 - [Gran Canaria to Madeira: €111 return](https://www.happylowcost.com/en/deals/gran-canaria-madeira-111-eur-2027-02-19/), Binter Canarias, nonstop, 19 Feb – 23 Feb 2027. Usual price €190 (-42%). Checked 27 Nov 2026.
 - [Valencia to Paris: €39 return](https://www.happylowcost.com/en/deals/valencia-paris-39-eur-2027-01-24/), Ryanair, nonstop, 24 Jan – 29 Jan 2027. Usual price €90 (-57%). Checked 27 Nov 2026.
 - [Valencia to Luxembourg: €94 return](https://www.happylowcost.com/en/deals/valencia-luxembourg-94-eur-2027-02-19/), Luxair, nonstop, 19 Feb – 22 Feb 2027. Usual price €170 (-45%). Checked 27 Nov 2026.
@@ -39,7 +41,7 @@ Happy Low Cost has published flight deals since 2012. How we verify deals: https
 - [Zaragoza to Vilnius: €110 return](https://www.happylowcost.com/en/deals/zaragoza-vilnius-110-eur-2027-02-13/), Wizz Air Malta, 13 Feb – 22 Feb 2027. Usual price €230 (-52%). Checked 27 Nov 2026.
 - [Zaragoza to Prague: €106 return](https://www.happylowcost.com/en/deals/zaragoza-prague-106-eur-2027-02-16/), Wizz Air Malta, 16 Feb – 19 Feb 2027. Usual price €180 (-41%). Checked 27 Nov 2026.
 - [Zaragoza to London: €47 return](https://www.happylowcost.com/en/deals/zaragoza-london-47-eur-2027-01-25/), Ryanair, nonstop, 25 Jan – 1 Feb 2027. Usual price €90 (-48%). Checked 27 Nov 2026.
-- [Barcelona to Dubrovnik: €62 return](https://www.happylowcost.com/en/deals/barcelona-dubrovnik-62-eur-2026-12-12/), Vueling, nonstop, 12 Dec – 19 Dec 2026. Usual price €140 (-56%). Checked 26 Nov 2026.
+- [Barcelona to Dubrovnik: €62 return](https://www.happylowcost.com/en/deals/barcelona-dubrovnik-62-eur-2026-12-12/), Vueling, nonstop, 12 Dec – 19 Dec 2026. Usual price €140 (-56%). Checked 27 Nov 2026.
 - [Palma de Mallorca to Vienna: €67 return](https://www.happylowcost.com/en/deals/palma-de-mallorca-vienna-67-eur-2027-02-12/), Ryanair, nonstop, 12 Feb – 19 Feb 2027. Usual price €120 (-44%). Checked 27 Nov 2026.
 
 ## Travel guides (173 destinations)
@@ -221,7 +223,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Panama City in 3 Days: Canal, Casco Viejo and Ceviche](https://www.happylowcost.com/en/destinations/panama-city/). Markdown: https://www.happylowcost.com/en/destinations/panama-city/index.md
 
 <!-- rutas -->
-## Flight routes with real prices (982 routes, fares checked on Kiwi.com on the date shown)
+## Flight routes with real prices (981 routes, fares checked on Kiwi.com on the date shown)
 
 - [Alicante → Milan](https://www.happylowcost.com/en/flights/alicante-milan/): from 38 € return, usual 39 €, nonstop, Wizz Air Malta, 1,130 km, checked 2026-11-22
 - [Alicante → Venice](https://www.happylowcost.com/en/flights/alicante-venice/): from 40 € return, usual 48 €, nonstop, Ryanair, 1,330 km, checked 2026-11-23
@@ -611,7 +613,7 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Madrid → Sri Lanka](https://www.happylowcost.com/en/flights/madrid-sri-lanka/): from 669 € return, usual 766 €, 1 stop(s), Etihad Airways, cheapest month 2027-01 (681 €), airport Colombo, 8,940 km, checked 2026-11-15
 - [Madrid → Mexico City](https://www.happylowcost.com/en/flights/madrid-mexico-city/): from 689 € return, usual 777 €, nonstop, Iberia Airlines, cheapest month 2027-02 (675 €), 9,070 km, checked 2026-11-14
 - [Madrid → Kyoto](https://www.happylowcost.com/en/flights/madrid-kyoto/): from 716 € return, usual 932 €, 1 stop(s), China Eastern Airlines, cheapest month 2027-01 (713 €), airport Osaka, 10,660 km, checked 2026-11-14
-- [Madrid → Buenos Aires](https://www.happylowcost.com/en/flights/madrid-buenos-aires/): from 971 € return, usual 1068 €, 1 stop(s), Lufthansa, cheapest month 2027-03 (738 €), 10,060 km, checked 2026-11-14
+- [Madrid → Buenos Aires](https://www.happylowcost.com/en/flights/madrid-buenos-aires/): from 971 € return, usual 1068 €, 1 stop(s), Lufthansa, cheapest month 2027-04 (748 €), 10,060 km, checked 2026-11-14
 - [Manchester → Bruges](https://www.happylowcost.com/en/flights/manchester-bruges/): from 42 € return, usual 42 €, nonstop, Ryanair, airport Brussels, 530 km, checked 2026-10-23
 - [Manchester → Brussels](https://www.happylowcost.com/en/flights/manchester-brussels/): from 42 € return, usual 42 €, nonstop, Ryanair, 530 km, checked 2026-10-23
 - [Manchester → Copenhagen](https://www.happylowcost.com/en/flights/manchester-copenhagen/): from 42 € return, usual 49 €, nonstop, Ryanair UK, 990 km, checked 2026-10-23
@@ -674,7 +676,6 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Málaga → Lisbon](https://www.happylowcost.com/en/flights/malaga-lisbon/): from 38 € return, usual 45 €, nonstop, Ryanair, 470 km, checked 2026-11-16
 - [Málaga → Venice](https://www.happylowcost.com/en/flights/malaga-venice/): from 46 € return, usual 49 €, nonstop, Ryanair, 1,710 km, checked 2026-11-17
 - [Málaga → Vienna](https://www.happylowcost.com/en/flights/malaga-vienna/): from 70 € return, usual 70 €, nonstop, Ryanair, 2,140 km, checked 2026-11-17
-- [Málaga → Hamburg](https://www.happylowcost.com/en/flights/malaga-hamburg/): from 75 € return, usual 85 €, nonstop, Ryanair, 2,190 km, checked 2026-11-16
 - [Málaga → Bologna](https://www.happylowcost.com/en/flights/malaga-bologna/): from 77 € return, usual 90 €, nonstop, Ryanair, 1,590 km, checked 2026-11-15
 - [Málaga → Budapest](https://www.happylowcost.com/en/flights/malaga-budapest/): from 79 € return, usual 93 €, nonstop, Wizz Air, 2,280 km, checked 2026-11-15
 - [Málaga → Oslo](https://www.happylowcost.com/en/flights/malaga-oslo/): from 85 € return, usual 103 €, nonstop, Norwegian Air Sweden, 2,840 km, checked 2026-11-17
@@ -800,21 +801,21 @@ Each guide has what to see, a day-by-day route, when to go, where to stay, what 
 - [Palma → Malta](https://www.happylowcost.com/en/flights/palma-malta/): from 38 € return, usual 38 €, nonstop, Ryanair, 1,110 km, checked 2026-10-22
 - [Palma → Milan](https://www.happylowcost.com/en/flights/palma-milan/): from 40 € return, usual 42 €, nonstop, Ryanair, 840 km, checked 2026-10-22
 - [Palma → Paris](https://www.happylowcost.com/en/flights/palma-paris/): from 51 € return, usual 60 €, nonstop, Vueling, 1,040 km, checked 2026-10-22
+- [Palma → Hamburg](https://www.happylowcost.com/en/flights/palma-hamburg/): from 55 € return, usual 104 €, nonstop, Ryanair, 1,660 km, checked 2026-11-27
 - [Palma → Bruges](https://www.happylowcost.com/en/flights/palma-bruges/): from 68 € return, usual 71 €, nonstop, Ryanair, airport Brussels, 1,270 km, checked 2026-11-27
-- [Palma → Hamburg](https://www.happylowcost.com/en/flights/palma-hamburg/): from 92 € return, usual 102 €, nonstop, Ryanair, 1,660 km, checked 2026-10-22
-- [Palma → Krakow](https://www.happylowcost.com/en/flights/palma-krakow/): from 98 € return, usual 138 €, 1 stop(s), Vueling, 1,780 km, checked 2026-10-22
+- [Palma → Krakow](https://www.happylowcost.com/en/flights/palma-krakow/): from 92 € return, usual 109 €, 1 stop(s), Vueling, 1,780 km, checked 2026-11-27
 - [Palma → Rome](https://www.happylowcost.com/en/flights/palma-rome/): from 100 € return, usual 106 €, 1 stop(s), Vueling, 860 km, checked 2026-10-22
 - [Palma → Zurich](https://www.happylowcost.com/en/flights/palma-zurich/): from 142 € return, usual 143 €, nonstop, Swiss International Air Lines, 1,000 km, checked 2026-10-22
-- [Palma → Helsinki](https://www.happylowcost.com/en/flights/palma-helsinki/): from 148 € return, usual 177 €, 1 stop(s), Ryanair, 2,770 km, checked 2026-10-22
+- [Palma → Helsinki](https://www.happylowcost.com/en/flights/palma-helsinki/): from 149 € return, usual 198 €, 1 stop(s), Ryanair, 2,770 km, checked 2026-11-28
 - [Palma → Riga](https://www.happylowcost.com/en/flights/palma-riga/): from 154 € return, usual 160 €, 2 stop(s), Ryanair, 2,470 km, checked 2026-10-22
 - [Palma → Iceland](https://www.happylowcost.com/en/flights/palma-iceland/): from 179 € return, usual 199 €, 1 stop(s), easyJet, airport Keflavik, 3,180 km, checked 2026-10-22
 - [Palma → Seoul](https://www.happylowcost.com/en/flights/palma-seoul/): from 621 € return, usual 677 €, 1 stop(s), Vueling, 9,700 km, checked 2026-10-22
+- [Palma → Fort Lauderdale](https://www.happylowcost.com/en/flights/palma-fort-lauderdale/): from 658 € return, usual 807 €, 3 stop(s), Wizz Air Malta, 7,620 km, checked 2026-11-27
 - [Palma → Sri Lanka](https://www.happylowcost.com/en/flights/palma-sri-lanka/): from 668 € return, usual 751 €, 3 stop(s), Wizz Air Malta, airport Colombo, 8,400 km, checked 2026-10-22
 - [Palma → Nairobi](https://www.happylowcost.com/en/flights/palma-nairobi/): from 730 € return, usual 737 €, 2 stop(s), Ryanair, 5,720 km, checked 2026-10-22
 - [Palma → Bali](https://www.happylowcost.com/en/flights/palma-bali/): from 734 € return, usual 1135 €, 3 stop(s), Iberia Express, airport Denpasar, 12,540 km, checked 2026-11-27
 - [Palma → San Juan](https://www.happylowcost.com/en/flights/palma-san-juan/): from 736 € return, usual 768 €, 3 stop(s), Wizz Air Malta, 6,910 km, checked 2026-10-22
 - [Palma → Jacksonville](https://www.happylowcost.com/en/flights/palma-jacksonville/): from 751 € return, usual 766 €, 3 stop(s), Air Europa, 7,470 km, checked 2026-10-22
-- [Palma → Fort Lauderdale](https://www.happylowcost.com/en/flights/palma-fort-lauderdale/): from 803 € return, usual 811 €, 3 stop(s), Wizz Air Malta, 7,620 km, checked 2026-10-22
 - [Palma → Tokyo](https://www.happylowcost.com/en/flights/palma-tokyo/): from 905 € return, usual 906 €, 1 stop(s), Swiss International Air Lines, 10,560 km, checked 2026-10-22
 - [Palma → Buenos Aires](https://www.happylowcost.com/en/flights/palma-buenos-aires/): from 1048 € return, usual 1496 €, 2 stop(s), Iberia Express, 10,360 km, checked 2026-11-27
 - [Paris → Dublin](https://www.happylowcost.com/en/flights/paris-dublin/): from 38 € return, usual 41 €, nonstop, Ryanair, 790 km, checked 2026-10-22

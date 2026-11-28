@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €80
 - **Saving:** 46 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Barcelona to Cagliari?
 
-€43 return with Vueling, leaving 21 Jan 2027 and coming back 30 Jan 2027. Price last checked on 26 Nov 2026.
+€43 return with Vueling, leaving 21 Jan 2027 and coming back 30 Jan 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €130
 - **Saving:** 45 %
-- **Checked:** 2026-11-26
+- **Checked:** 2026-11-27
 
 ## FAQ
 
 ### How much is the flight from Barcelona to Stockholm?
 
-€71 return with Vueling, leaving 21 Feb 2027 and coming back 22 Feb 2027. Price last checked on 26 Nov 2026.
+€71 return with Vueling, leaving 21 Feb 2027 and coming back 22 Feb 2027. Price last checked on 27 Nov 2026.
 
 ### How much do I save?
 

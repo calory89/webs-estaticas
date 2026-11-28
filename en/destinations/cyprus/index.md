@@ -121,7 +121,7 @@ June to October is the most reliable. September is often the best, with warm sea
 
 ### How much is a cheap flight to Cyprus?
 
-Today the cheapest deal we have to Cyprus is €121 return from Alicante. Fares change by the hour: check the live price on the deal page.
+Today the cheapest deal we have to Cyprus is €105 return from Madrid. Fares change by the hour: check the live price on the deal page.
 
 ### Is Cyprus worth visiting?
 
