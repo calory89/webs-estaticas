@@ -90,7 +90,7 @@ body.soldout .soldmsg{display:block}body.soldout #f,body.soldout .tools{display:
 .route h3{margin:0 0 8px;font-size:22px}.route p{color:#cfc8bb;max-width:760px}
 .route>svg{width:100%;height:auto;margin:14px 0 4px;display:block}
 .route .note{font-size:13px;color:var(--mute);margin:0}
-.cstats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:18px 0}
+.cstats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:18px 0}
 .cstats div{background:#17171a;border:1px solid #2a2a2e;border-radius:12px;padding:12px}
 .cstats b{display:block;font-size:22px;color:#ffcf6b;font-family:inherit}
 .cstats span{font-size:12px;color:#aaa498;text-transform:uppercase;letter-spacing:.06em}
@@ -102,7 +102,7 @@ body.soldout .soldmsg{display:block}body.soldout #f,body.soldout .tools{display:
 .rbtn{background:rgba(11,11,12,.85);color:#f4efe6;border:1px solid #333;border-radius:999px;padding:8px 13px;font:600 13px/1 inherit;cursor:pointer;text-decoration:none}
 .rbtn:hover,.rbtn.on{background:#ffcf6b;color:#0b0b0c}
 .rhud{position:absolute;left:12px;bottom:28px;z-index:600;background:rgba(11,11,12,.85);color:#f4efe6;border-radius:10px;padding:9px 12px;font-size:14px}
-.rhud b{color:#ffcf6b;font-size:18px}
+.rhud b{color:#ffcf6b;font-size:18px}.hplace{font-size:12px;color:#cfc8bb;margin-top:3px}
 .kmk{background:#0b0b0c;color:#ffcf6b;border:2px solid #ffcf6b;border-radius:999px;font:700 11px/18px inherit;text-align:center;min-width:26px;padding:0 4px;box-shadow:0 2px 6px rgba(0,0,0,.5)}
 .pin{border-radius:50%;border:3px solid #0b0b0c}
 .pin.s{width:20px;height:20px;background:#ff4d3d;box-shadow:0 0 0 5px rgba(255,77,61,.35)}
@@ -119,7 +119,7 @@ body.soldout .soldmsg{display:block}body.soldout #f,body.soldout .tools{display:
 .splits{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;margin-top:12px}
 .splits div{background:#17171a;border-radius:8px;padding:8px 10px;font-size:13px;color:#cfc8bb}
 .splits b{display:block;color:#fff;font-size:15px}
-@media(max-width:700px){.cstats{grid-template-columns:repeat(2,1fr)}.cstats div:last-child{grid-column:span 2}.rmap{height:420px}.rtools{max-width:90%}.rbtn{padding:7px 10px;font-size:12px}.prof{height:140px}}
+@media(max-width:700px){.cstats{grid-template-columns:repeat(2,1fr)}.rmap{height:420px}.rtools{max-width:90%}.rbtn{padding:7px 10px;font-size:12px}.prof{height:140px}}
 
 /* live ticker */
 .tick{position:sticky;top:0;height:37px;z-index:50;background:var(--red);color:#fff;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase;overflow:hidden;white-space:nowrap}
@@ -319,9 +319,10 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
           <button type="button" id="rPlay" class="rbtn">▶ Fly the course</button>
           <button type="button" id="rLayer" class="rbtn">🗺 Map view</button>
           <button type="button" id="rFull" class="rbtn">⛶ Full screen</button>
+          <button type="button" id="rShare" class="rbtn">🔗 Share this km</button>
           <a id="rGpx" class="rbtn" download="sumba-marathon-course.gpx" href="#">⬇ GPX</a>
         </div>
-        <div class="rhud" id="rhud"><b id="hKm">0.0</b> km · <span id="hEl">–</span> m · <span id="hLeft">42.2</span> km to go</div>
+        <div class="rhud" id="rhud"><b id="hKm">0.0</b> km · <span id="hEl">–</span> m · <span id="hLeft">42.2</span> km to go<div class="hplace" id="hPlace"></div></div>
       </div>
       <div class="prof" id="prof" aria-label="Elevation profile, drag to explore"><svg id="profSvg" viewBox="0 0 1000 170" preserveAspectRatio="none"></svg><div class="pcur" id="pcur"></div><div class="ptip" id="ptip"></div></div>
       <div class="pace">
@@ -643,7 +644,7 @@ function hms(s){s=Math.round(s);var h=Math.floor(s/3600),m=Math.floor(s%3600/60)
 function idxAt(km){var m=OFF+km*1000,i=0;while(i<D.length-2&&D[i+1]<m)i++;var f=(m-D[i])/Math.max(1,D[i+1]-D[i]);f=Math.max(0,Math.min(1,f));return{lat:P[i][0]+(P[i+1][0]-P[i][0])*f,lon:P[i][1]+(P[i+1][1]-P[i][1])*f,el:E[i]+(E[i+1]-E[i])*f}}
 function smooth(a,w){return a.map(function(_,i){var s=0,n=0;for(var k=-w;k<=w;k++){var j=i+k;if(j>=0&&j<a.length){s+=a[j];n++}}return s/n})}
 function stats(){var s=0,i0=D.findIndex(function(d){return d>=OFF}),g=0,l=0,mx=-1e9,mn=1e9;var se=smooth(E,3);for(var i=i0;i<E.length;i++){mx=Math.max(mx,se[i]);mn=Math.min(mn,se[i]);if(i>i0){var d=se[i]-se[i-1];if(d>0)g+=d;else l-=d}}
- root.querySelector('#cstats').innerHTML=[['42.195',t('km, point to point','km, punto a punto')],['↑ '+Math.round(g),t('m climb (approx.)','m de subida (aprox.)')],['↓ '+Math.round(l),t('m descent (approx.)','m de bajada (aprox.)')],[Math.round(mx)+' m',t('highest point','punto más alto')],[Math.round(se[se.length-1])+' m',t('finish, by the sea','meta, junto al mar')]].map(function(x){return'<div><b>'+x[0].replace('.',es()?',':'.')+'</b><span>'+x[1]+'</span></div>'}).join('')}
+ root.querySelector('#cstats').innerHTML=[['42.195',t('km, point to point','km, punto a punto')],['↑ '+Math.round(g),t('m climb (approx.)','m de subida (aprox.)')],['↓ '+Math.round(l),t('m descent (approx.)','m de bajada (aprox.)')],[Math.round(mx)+' m',t('highest point','punto más alto')],[Math.round(se[se.length-1])+' m',t('finish, by the sea','meta, junto al mar')],['3',t('of Sumba\'s 4 regencies crossed','de las 4 regencias de Sumba')]].map(function(x){return'<div><b>'+x[0].replace('.',es()?',':'.')+'</b><span>'+x[1]+'</span></div>'}).join('')}
 function profile(){var svg=root.querySelector('#profSvg'),i0=D.findIndex(function(d){return d>=OFF}),se=smooth(E,3),xs=[],ys=[],mx=Math.max.apply(null,se.slice(i0))+20,mn=0;for(var i=i0;i<E.length;i++){xs.push((D[i]-OFF)/TOT*1000);ys.push(160-(se[i]-mn)/(mx-mn)*140)}
  var d='M'+xs[0]+',170 '+xs.map(function(x,i){return'L'+x.toFixed(1)+','+ys[i].toFixed(1)}).join(' ')+' L1000,170 Z',ln='M'+xs.map(function(x,i){return x.toFixed(1)+','+ys[i].toFixed(1)}).join(' L');
  var g='';for(var k=5;k<42;k+=5){var x=k*1000/TOT*1000;g+='<line x1="'+x+'" y1="0" x2="'+x+'" y2="170" stroke="#2a2a2e"/><text x="'+(x+3)+'" y="14" fill="#6b665e" font-size="11">'+k+'</text>'}
@@ -653,7 +654,7 @@ function profile(){var svg=root.querySelector('#profSvg'),i0=D.findIndex(functio
  ['mousemove','touchmove','touchstart'].forEach(function(e){pr.addEventListener(e,function(ev){at(ev);if(e!=='mousemove')ev.preventDefault()},{passive:false})});
  pr.addEventListener('mouseleave',function(){cur.style.opacity=tip.style.opacity=0})}
 function setPos(km){pos=Math.max(0,Math.min(TOT/1000,km));var p=idxAt(pos);if(runner){runner.setLatLng([p.lat,p.lon])}
- root.querySelector('#hKm').textContent=fmt(pos,1);root.querySelector('#hEl').textContent=Math.round(p.el);root.querySelector('#hLeft').textContent=fmt(TOT/1000-pos,1);
+ root.querySelector('#hKm').textContent=fmt(pos,1);if(C&&C.places){var pl=C.places[0];C.places.forEach(function(q){if(q[0]<=pos+.01)pl=q});var hp=root.querySelector('#hPlace');if(hp)hp.textContent='📍 '+t('near ','cerca de ')+pl[1]+' · '+pl[2]}root.querySelector('#hEl').textContent=Math.round(p.el);root.querySelector('#hLeft').textContent=fmt(TOT/1000-pos,1);
  var tip=root.querySelector('#ptip');tip.textContent=t('km ','km ')+fmt(pos,1)+' · '+Math.round(p.el)+' m';var cur=root.querySelector('#pcur');cur.style.left=tip.style.left=(pos/(TOT/1000)*100)+'%'}
 function stop(){playing=false;cancelAnimationFrame(raf);var b=root.querySelector('#rPlay');b.classList.remove('on');b.textContent=t('▶ Fly the course','▶ Recorrerlo')}
 function play(){if(playing)return stop();playing=true;var b=root.querySelector('#rPlay');b.classList.add('on');b.textContent=t('❚❚ Pause','❚❚ Pausa');if(pos>=TOT/1000-.05)pos=0;var last=performance.now();root.querySelector('#pcur').style.opacity=root.querySelector('#ptip').style.opacity=1;
@@ -666,7 +667,7 @@ function splits(){var sel=root.querySelector('#goal'),opts=[];for(var m=150;m<=4
  sel.onchange=draw;draw()}
 function draw(){L=window.L;map=L.map('rmap',{scrollWheelZoom:false,zoomSnap:.25}).setView([-9.42,119.39],10);map.attributionControl.setPrefix('<a href="https://leafletjs.com" target="_blank" rel="noopener">Leaflet</a>');
  tiles.sat=L.layerGroup([L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:18,attribution:'Imagery © Esri, Maxar, Earthstar Geographics'}),L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',{maxZoom:18})]).addTo(map);
- tiles.map=L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19,subdomains:'abcd',attribution:'© OpenStreetMap contributors © CARTO'});
+ tiles.map=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:18,attribution:'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'});
  var i0=D.findIndex(function(d){return d>=OFF}),pts=P.slice(i0).map(function(p){return[p[0],p[1]]});
  L.polyline(pts,{color:'#0b0b0c',weight:9,opacity:.6}).addTo(map);line=L.polyline(pts,{color:'#ffcf6b',weight:5}).addTo(map);
  for(var k=5;k<42;k+=5){var p=idxAt(k);L.marker([p.lat,p.lon],{icon:L.divIcon({className:'',html:'<div class="kmk">'+k+'</div>',iconSize:[30,20],iconAnchor:[15,10]}),keyboard:false}).addTo(map)}
@@ -678,12 +679,14 @@ function draw(){L=window.L;map=L.map('rmap',{scrollWheelZoom:false,zoomSnap:.25}
  map.on('click',function(e){var best=0,bd=1e9;for(var i=i0;i<P.length;i++){var d=Math.pow(P[i][0]-e.latlng.lat,2)+Math.pow(P[i][1]-e.latlng.lng,2);if(d<bd){bd=d;best=i}}if(bd<4e-4){stop();setPos((D[best]-OFF)/1000)}});
  setTimeout(function(){map.flyToBounds(line.getBounds().pad(.12),{duration:2.5})},500);
  root.querySelector('#rPlay').onclick=play;
- root.querySelector('#rLayer').onclick=function(){if(layer==='sat'){map.removeLayer(tiles.sat);tiles.map.addTo(map);layer='map';this.textContent=t('🛰 Satellite','🛰 Satélite')}else{map.removeLayer(tiles.map);tiles.sat.addTo(map);layer='sat';this.textContent=t('🗺 Map view','🗺 Mapa')}};
+ tiles.night=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,attribution:'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'});var ORD=['sat','map','night'],LB={sat:t('🗺 Map view','🗺 Mapa'),map:t('🌙 Night','🌙 Noche'),night:t('🛰 Satellite','🛰 Satélite')};
+ root.querySelector('#rLayer').onclick=function(){map.removeLayer(tiles[layer]);layer=ORD[(ORD.indexOf(layer)+1)%3];tiles[layer].addTo(map);this.textContent=LB[layer]};
  root.querySelector('#rFull').onclick=function(){var w=root.querySelector('#rwrap');if(document.fullscreenElement)document.exitFullscreen();else if(w.requestFullscreen)w.requestFullscreen();setTimeout(function(){map.invalidateSize()},300)};
  document.addEventListener('fullscreenchange',function(){setTimeout(function(){map.invalidateSize()},200)});
- gpx();setPos(0)}
+ root.querySelector('#rShare').onclick=function(){var u=location.origin+location.pathname+'?km='+pos.toFixed(1)+(es()?'&lang=es':'')+'#course',b=this,txt=t('Km ','Km ')+fmt(pos,1)+t(' of the first marathon in the history of Sumba',' del primer maratón de la historia de Sumba');if(navigator.share){navigator.share({title:'Sumba Marathon',text:txt,url:u}).catch(function(){})}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){b.textContent=t('✓ Link copied','✓ Enlace copiado');setTimeout(function(){b.textContent=t('🔗 Share this km','🔗 Compartir este km')},2000)})}};
+ gpx();var qk=parseFloat((location.search.match(/[?&]km=([\d.]+)/)||[])[1]);if(qk>=0&&qk<=42.2){setPos(qk);setTimeout(function(){map.setView(runner.getLatLng(),14)},3200)}else setPos(0)}
 function load(){fetch('course.json').then(function(r){return r.json()}).then(function(c){C=c;P=c.pts;D=c.dist;E=P.map(function(p){return p[2]});OFF=c.start_offset_m;TOT=42195;stats();profile();splits();
-  if(es()){root.querySelector('#rPlay').textContent='▶ Recorrerlo';root.querySelector('#rLayer').textContent='🗺 Mapa';root.querySelector('#rFull').textContent='⛶ Pantalla completa';root.querySelector('#rhud').innerHTML='<b id="hKm">0,0</b> km · <span id="hEl">–</span> m · faltan <span id="hLeft">42,2</span> km'}
+  if(es()){root.querySelector('#rPlay').textContent='▶ Recorrerlo';root.querySelector('#rLayer').textContent='🗺 Mapa';root.querySelector('#rFull').textContent='⛶ Pantalla completa';root.querySelector('#rShare').textContent='🔗 Compartir este km';root.querySelector('#rhud').innerHTML='<b id="hKm">0,0</b> km · <span id="hEl">–</span> m · faltan <span id="hLeft">42,2</span> km<div class="hplace" id="hPlace"></div>'}
   var cs=document.createElement('link');cs.rel='stylesheet';cs.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';document.head.appendChild(cs);var sc=document.createElement('script');sc.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';sc.onload=draw;document.head.appendChild(sc)})}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();load()}},{rootMargin:'300px'});io.observe(root)}else load();
 })();
