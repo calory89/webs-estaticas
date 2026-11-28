@@ -397,9 +397,9 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
     <form id="f" novalidate>
       <div class="full picked"><div class="disp" id="pickN">—</div><div><b id="pickT">No bib picked yet</b><br><span class="fine" style="margin:0" id="pickH">Pick one on the wall above, or we'll give you the lowest free number.</span></div></div>
       <div><label for="name">Full name (as on the monument)</label><input id="name" autocomplete="name" required maxlength="80"></div>
-      <div><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+      <div><label for="email">Email</label><input id="email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required><div id="emailHint" class="fine" style="margin:6px 0 0;color:var(--gold2)"></div></div>
       <div><label for="phone">WhatsApp (optional)</label><input id="phone" type="tel" autocomplete="tel" placeholder="+44 …"></div>
-      <div><label for="country">Country</label><select id="country"></select></div>
+      <div><label for="country">Country</label><select id="country" autocomplete="country"></select></div>
       <div class="full"><label for="why">Why do you want to be one of the first? (optional, private)</label><input id="why" maxlength="280" placeholder="First marathon ever, a promise to my dad, my 40th birthday…"></div>
       <div class="full"><button class="cta" type="submit" id="go" style="width:100%;justify-content:center">Claim my bib →</button>
       <div class="msg" id="msg" role="status"></div>
@@ -515,6 +515,9 @@ function makeCard(b,name){var c=$('card'),x=c.getContext('2d'),W=1080,H=1920;var
   $('shareBtn').onclick=function(){var t=T('I just claimed bib '+pad(b)+' for the first marathon in the history of Sumba. Only 100 of us. Grab yours: ','Acabo de reservar el dorsal '+pad(b)+' del primer maratón de la historia de Sumba. Solo somos 100. Coge el tuyo: ')+'https://sumbamarathon.com/?ref='+b;
     c.toBlob(function(bl){try{var f=new File([bl],'sumba-marathon-bib.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:t}).catch(function(){});return}}catch(e){}
       if(navigator.share){navigator.share({text:t,url:'https://sumbamarathon.com/'}).catch(function(){})}else{window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank')}});try{if(window.zaraz)zaraz.track('share_bib',{bib:b});else if(window.gtag)gtag('event','share_bib',{bib:b})}catch(e){}}}
+/* email typo hint */
+(function(){var fix={'gmial.com':'gmail.com','gmal.com':'gmail.com','gmai.com':'gmail.com','gamil.com':'gmail.com','gmail.co':'gmail.com','gmail.con':'gmail.com','hotmial.com':'hotmail.com','hotmal.com':'hotmail.com','hotmail.co':'hotmail.com','hotmail.con':'hotmail.com','yaho.com':'yahoo.com','yahoo.co':'yahoo.com','outlok.com':'outlook.com','outlook.co':'outlook.com','iclod.com':'icloud.com','icloud.co':'icloud.com'};
+  var e=$('email'),h=$('emailHint');e.addEventListener('blur',function(){var v=e.value.trim(),at=v.lastIndexOf('@');h.innerHTML='';if(at<1)return;var d=v.slice(at+1).toLowerCase();if(fix[d]){var sug=v.slice(0,at+1)+fix[d];h.innerHTML=T('Did you mean ','¿Querías decir ')+'<a href="#" id="sugA">'+esc(sug)+'</a>?';$('sugA').onclick=function(ev){ev.preventDefault();e.value=sug;h.innerHTML=''}}})})();
 /* referral */
 window.REF=0;var REF=(location.search.match(/[?&]ref=(\d{1,3})/)||[])[1]||'';try{if(REF)sessionStorage.setItem('sm.ref',REF);else REF=sessionStorage.getItem('sm.ref')||''}catch(e){}window.REF=REF;
 if(REF&&+REF>=1&&+REF<=100){var rb=$('refBanner');rb.textContent=T('🏃 Runner #'+pad(+REF)+' of the First 100 invited you. Bibs are going — pick yours.','🏃 El corredor #'+pad(+REF)+' de los First 100 te ha invitado. Los dorsales vuelan — elige el tuyo.');rb.classList.add('on')}
@@ -543,7 +546,7 @@ fetch('/api/geo').then(function(r){return r.json()}).then(function(g){if(g&&g.co
 /* hero video: load after the page, only if motion is OK and data is not limited; skip hidden phone video */
 window.__rm=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
 (function(){var sd=navigator.connection&&(navigator.connection.saveData||/2g/.test(navigator.connection.effectiveType||''));if(window.__rm||sd)return;
-  function go(){[].forEach.call(document.querySelectorAll('.hero video[data-src]'),function(v){if(getComputedStyle(v.parentNode).display==='none')return;v.src=v.getAttribute('data-src');v.play().catch(function(){})})}
+  function go(){[].forEach.call(document.querySelectorAll('.hero video[data-src]'),function(v){if(getComputedStyle(v.parentNode).display==='none')return;var ds=v.getAttribute('data-src');if(innerWidth<700&&ds==='vid/hero.mp4')ds='vid/hero-m.mp4';v.src=ds;v.play().catch(function(){})})}
   if(document.readyState==='complete')setTimeout(go,1200);else window.addEventListener('load',function(){setTimeout(go,1200)})})();
 var sb=$('sbar');window.addEventListener('scroll',function(){var y=scrollY,c=$('claim').getBoundingClientRect().top;sb.classList.toggle('on',y>innerHeight*.7&&(c>innerHeight||c<-400))},{passive:true});
 if(/[?&]bib=(\d{1,3})/.test(location.search)){var qb=+RegExp.$1;if(qb>=1&&qb<=100)sel=qb}
