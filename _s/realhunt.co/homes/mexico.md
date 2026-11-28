@@ -1,6 +1,6 @@
 Title: Apartments for sale in Mexico (7, from €50,575) · RealHunt
 URL: https://realhunt.co/homes/mexico
-Updated: 2026-11-27
+Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Apartments for sale in Mexico
@@ -9,9 +9,9 @@ List last changed 5 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 65 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
-- [Cheapest€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 65 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/cuautlancingo-68984)
-- [Most space for the money€70,8052-bed house in Tonalá, JaliscoTonalá, Jalisco65 m² · 2 bed · €1,089/m² · 65 days on RealHunt](https://realhunt.co/deal/tonala-70805)
+- [Best score€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 66 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
+- [Cheapest€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 66 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/cuautlancingo-68984)
+- [Most space for the money€70,8052-bed house in Tonalá, JaliscoTonalá, Jalisco65 m² · 2 bed · €1,089/m² · 66 days on RealHunt](https://realhunt.co/deal/tonala-70805)
 
 RealHunt lists 7 apartments for sale in Mexico today, priced from €50,575 to €98,621. The cheapest costs €50,575: [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575), in San Pedro Tlaquepaque (49 m², 2 bedrooms). The median price is €83,298 (€1,108/m²), against €99,000 (€1,241/m²) for the 703 homes on RealHunt in 23 countries.
 Can you buy here? Read this first
@@ -44,19 +44,19 @@ Foreign buyers
 Some limits
 
 Data of
-27 Nov 2026
+28 Nov 2026
 
 ### The 7 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/mexico/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Mexico)
 
-- [Score 93€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 65 days on RealHuntCommunity fee not stated49 m², 2 bed.](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
-- [Score 89€70,8052-bed house in Tonalá, JaliscoTonalá, Jalisco65 m² · 2 bed · €1,089/m² · 65 days on RealHunt65 m², 2 bed.](https://realhunt.co/deal/tonala-70805)
-- [Score 87€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 65 days on RealHuntCommunity fee not stated78 m², 3 bed, 2 bath.](https://realhunt.co/deal/cuautlancingo-68984)
-- [Score 86€98,6212-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 bed · €1,108/m² · 65 days on RealHuntCommunity fee not statedAn 89 m² apartment with two bedrooms and two bathrooms in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-98621)
-- [Score 86€83,2982-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,388/m² · 65 days on RealHuntCommunity fee not stated60 m², 2 bed.](https://realhunt.co/deal/mazatlan-83298)
-- [Score 84€97,1002-bed, 2-bath apartment with pool in a gated Mazatlán complexMazatlán, Sinaloa65 m² · 2 bed · €1,494/m² · 53 days on RealHuntCommunity fee not statedA 65 m² apartment in Adora Residencial, a private gated community in Mazatlán: two bedrooms, two bathrooms and covered parking, with a pool…](https://realhunt.co/deal/mx-mazatlan-97k-889034)
-- [Score 84€83,4482-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,391/m² · 65 days on RealHuntCommunity fee not statedA 60 m² two-bedroom apartment in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-83448)
+- [Score 93€50,5752-bed apartment in San Pedro Tlaquepaque, JaliscoSan Pedro Tlaquepaque, Jalisco49 m² · 2 bed · €1,032/m² · 66 days on RealHuntCommunity fee not stated49 m², 2 bed.](https://realhunt.co/deal/san-pedro-tlaquepaque-50575)
+- [Score 89€70,8052-bed house in Tonalá, JaliscoTonalá, Jalisco65 m² · 2 bed · €1,089/m² · 66 days on RealHunt65 m², 2 bed.](https://realhunt.co/deal/tonala-70805)
+- [Score 87€68,9843-bed apartment in Cuautlancingo, PueblaCuautlancingo, Puebla78 m² · 3 bed · €884/m² · 66 days on RealHuntCommunity fee not stated78 m², 3 bed, 2 bath.](https://realhunt.co/deal/cuautlancingo-68984)
+- [Score 86€98,6212-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa89 m² · 2 bed · €1,108/m² · 66 days on RealHuntCommunity fee not statedAn 89 m² apartment with two bedrooms and two bathrooms in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-98621)
+- [Score 86€83,2982-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,388/m² · 66 days on RealHuntCommunity fee not stated60 m², 2 bed.](https://realhunt.co/deal/mazatlan-83298)
+- [Score 84€97,1002-bed, 2-bath apartment with pool in a gated Mazatlán complexMazatlán, Sinaloa65 m² · 2 bed · €1,494/m² · 54 days on RealHuntCommunity fee not statedA 65 m² apartment in Adora Residencial, a private gated community in Mazatlán: two bedrooms, two bathrooms and covered parking, with a pool…](https://realhunt.co/deal/mx-mazatlan-97k-889034)
+- [Score 84€83,4482-bed apartment in Mazatlán, SinaloaMazatlán, Sinaloa60 m² · 2 bed · €1,391/m² · 66 days on RealHuntCommunity fee not statedA 60 m² two-bedroom apartment in Mazatlán, Sinaloa.](https://realhunt.co/deal/mazatlan-83448)
 
 ### Compare the 7 homes, cheapest first
 
@@ -154,4 +154,4 @@ These listings come from casasyterrenos.com (7). RealHunt is not an estate agent
 [Email me new homes in Mexico](https://realhunt.co/alerts?country=Mexico) · [Filter and sort these homes](https://realhunt.co/?country=Mexico#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Mexico](https://realhunt.co/sitemap/mexico)
 
 ---
-Source: https://realhunt.co/homes/mexico (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/mexico (RealHunt, 2026-11-28). Licence CC BY 4.0: quote it with a link to the page.

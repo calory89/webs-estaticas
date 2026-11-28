@@ -1,6 +1,6 @@
 Título: Pisos en venta en Bulgaria (6, desde 58.900 €) · RealHunt
 URL: https://realhunt.co/es/homes/bulgaria
-Actualizado: 2026-11-27
+Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Pisos en venta en Bulgaria
@@ -9,9 +9,9 @@ Lista cambiada por última vez el 18 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota66.000 €Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en KavarnaKavarna Paradise, Kavarna (mar Negro)90 m² · 2 dorm. · 733 €/m² · 44 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/bg-kavarna-66k-89698)
-- [La más barata58.900 €Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)Byala, Varna53 m² · 1 dorm. · 1.111 €/m² · 53 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/bg-byala-58k-fbw62u)
-- [Más metros por el dinero69.000 €Piso de dos dormitorios con dos terrazas con panorámica al mar en Kavarna HillsKavarna Hills, Kavarna (mar Negro)100 m² · 2 dorm. · 690 €/m² · 44 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/bg-kavarna-hills-69k-1606144)
+- [Mejor nota66.000 €Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en KavarnaKavarna Paradise, Kavarna (mar Negro)90 m² · 2 dorm. · 733 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/bg-kavarna-66k-89698)
+- [La más barata58.900 €Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)Byala, Varna53 m² · 1 dorm. · 1.111 €/m² · 54 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/bg-byala-58k-fbw62u)
+- [Más metros por el dinero69.000 €Piso de dos dormitorios con dos terrazas con panorámica al mar en Kavarna HillsKavarna Hills, Kavarna (mar Negro)100 m² · 2 dorm. · 690 €/m² · 45 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/bg-kavarna-hills-69k-1606144)
 
 RealHunt tiene hoy 6 pisos en venta en Bulgaria, con precios de 58.900 € a 89.000 €. La más barata cuesta 58.900 €: [Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u), en Byala (53 m², 1 dormitorio). El precio mediano es de 69.000 € (759 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
 ¿Puedes comprar aquí? Lee esto primero
@@ -44,18 +44,18 @@ Compradores extranjeros
 Con límites
 
 Datos del
-27 nov 2026
+28 nov 2026
 
 ### Las 6 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Bulgaria)
 
-- [Nota 9466.000 €Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en KavarnaKavarna Paradise, Kavarna (mar Negro)90 m² · 2 dorm. · 733 €/m² · 44 días en RealHuntCuota de comunidad no indicadaPiso amplio de 89,5 m² en la tercera planta de un edificio de cinco alturas dentro del complejo cerrado y cuidado Kavarna Paradise, a 3 minutos…](https://realhunt.co/es/deal/bg-kavarna-66k-89698)
-- [Nota 9369.000 €Piso de dos dormitorios con dos terrazas con panorámica al mar en Kavarna HillsKavarna Hills, Kavarna (mar Negro)100 m² · 2 dorm. · 690 €/m² · 44 días en RealHuntCuota de comunidad no indicadaPiso amueblado de 99,6 m² en la cuarta de seis plantas de un edificio de ladrillo de 2008 en el complejo Kavarna Hills, en la parte de la ciudad…](https://realhunt.co/es/deal/bg-kavarna-hills-69k-1606144)
-- [Nota 9370.000 €Piso amueblado de dos dormitorios con terraza con vistas al mar a 300 m de la playa en KavarnaKavarna, Kavarna (mar Negro)99 m² · 2 dorm. · 707 €/m² · 44 días en RealHuntCuota de comunidad no indicadaPiso de 99 m² en la quinta de seis plantas, a unos 300 m de la playa: pasillo, salón amplio con cocina, dos baños completos, dos dormitorios…](https://realhunt.co/es/deal/bg-kavarna-70k-1672825)
-- [Nota 9258.900 €Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)Byala, Varna53 m² · 1 dorm. · 1.111 €/m² · 53 días en RealHuntCuota de comunidad no indicadaApartamento terminado de un dormitorio y 53 m² en un complejo cerrado de Byala, 50 km al sur de Varna, en el mar Negro, con terraza panorámica…](https://realhunt.co/es/deal/bg-byala-58k-fbw62u)
-- [Nota 9266.000 €Piso de dos dormitorios listo para entrar con terraza con vistas al mar en KavarnaKavarna Paradise, Kavarna (mar Negro)87 m² · 2 dorm. · 759 €/m² · 44 días en RealHuntCuota de comunidad no indicadaPiso de 86,5 m² en planta baja de un complejo cuidado de 2007, a 3 minutos andando de la playa: recibidor, salón con cocina equipada y comedor…](https://realhunt.co/es/deal/bg-kavarna-66k-89682)
-- [Nota 84Nueva89.000 €Piso con vista al mar de un dormitorio con piscina y sin cuota de mantenimiento en Sveti VlasSveti Vlas, Burgas64 m² · 1 dorm. · 1.391 €/m² · 9 días en RealHuntUn piso amueblado de 64 m² (57 m² neto) en la 2ª planta de un pequeño edificio de tres plantas en Sveti Vlas, a unos 300 m de la playa.](https://realhunt.co/es/deal/bg-sveti-vlas-sea-view-89k-92034)
+- [Nota 9466.000 €Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en KavarnaKavarna Paradise, Kavarna (mar Negro)90 m² · 2 dorm. · 733 €/m² · 45 días en RealHuntCuota de comunidad no indicadaPiso amplio de 89,5 m² en la tercera planta de un edificio de cinco alturas dentro del complejo cerrado y cuidado Kavarna Paradise, a 3 minutos…](https://realhunt.co/es/deal/bg-kavarna-66k-89698)
+- [Nota 9369.000 €Piso de dos dormitorios con dos terrazas con panorámica al mar en Kavarna HillsKavarna Hills, Kavarna (mar Negro)100 m² · 2 dorm. · 690 €/m² · 45 días en RealHuntCuota de comunidad no indicadaPiso amueblado de 99,6 m² en la cuarta de seis plantas de un edificio de ladrillo de 2008 en el complejo Kavarna Hills, en la parte de la ciudad…](https://realhunt.co/es/deal/bg-kavarna-hills-69k-1606144)
+- [Nota 9370.000 €Piso amueblado de dos dormitorios con terraza con vistas al mar a 300 m de la playa en KavarnaKavarna, Kavarna (mar Negro)99 m² · 2 dorm. · 707 €/m² · 45 días en RealHuntCuota de comunidad no indicadaPiso de 99 m² en la quinta de seis plantas, a unos 300 m de la playa: pasillo, salón amplio con cocina, dos baños completos, dos dormitorios…](https://realhunt.co/es/deal/bg-kavarna-70k-1672825)
+- [Nota 9258.900 €Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)Byala, Varna53 m² · 1 dorm. · 1.111 €/m² · 54 días en RealHuntCuota de comunidad no indicadaApartamento terminado de un dormitorio y 53 m² en un complejo cerrado de Byala, 50 km al sur de Varna, en el mar Negro, con terraza panorámica…](https://realhunt.co/es/deal/bg-byala-58k-fbw62u)
+- [Nota 9266.000 €Piso de dos dormitorios listo para entrar con terraza con vistas al mar en KavarnaKavarna Paradise, Kavarna (mar Negro)87 m² · 2 dorm. · 759 €/m² · 45 días en RealHuntCuota de comunidad no indicadaPiso de 86,5 m² en planta baja de un complejo cuidado de 2007, a 3 minutos andando de la playa: recibidor, salón con cocina equipada y comedor…](https://realhunt.co/es/deal/bg-kavarna-66k-89682)
+- [Nota 84Nueva89.000 €Piso con vista al mar de un dormitorio con piscina y sin cuota de mantenimiento en Sveti VlasSveti Vlas, Burgas64 m² · 1 dorm. · 1.391 €/m² · 10 días en RealHuntUn piso amueblado de 64 m² (57 m² neto) en la 2ª planta de un pequeño edificio de tres plantas en Sveti Vlas, a unos 300 m de la playa.](https://realhunt.co/es/deal/bg-sveti-vlas-sea-view-89k-92034)
 
 ### Compara las 6 viviendas, de más barata a más cara
 
@@ -152,4 +152,4 @@ Estos anuncios proceden de bulgarianproperties.com (3), homes.bg (2), green-acre
 [Avísame por correo de viviendas nuevas en Bulgaria](https://realhunt.co/es/alerts?country=Bulgaria) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Bulgaria#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Bulgaria](https://realhunt.co/es/sitemap/bulgaria)
 
 ---
-Fuente: https://realhunt.co/es/homes/bulgaria (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/bulgaria (RealHunt, 2026-11-28). Licencia CC BY 4.0: se puede citar con un enlace a la página.

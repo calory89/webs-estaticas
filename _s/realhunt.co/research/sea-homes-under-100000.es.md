@@ -2,9 +2,9 @@
 
 RealHunt publica 79 casas junto al mar de 100.000 € o menos, en 10 países. La mayoría están en Dinamarca (16), España (16) y Japón (14). La más barata es Casa japonesa con jardín de sakura, en Usuki, Oita, Japan, por 19.320 €.
 
-Casas revisadas por una persona, a su precio de salida a 27 de noviembre de 2026. Los países con menos de 3 casas así se cuentan, pero no salen en el gráfico.
+Casas revisadas por una persona, a su precio de salida a 28 de noviembre de 2026. Los países con menos de 3 casas así se cuentan, pero no salen en el gráfico.
 
-Actualizado el 27 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/sea-homes-under-100000 (CC BY 4.0). CSV: https://realhunt.co/research/sea-homes-under-100000.es.csv
+Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/sea-homes-under-100000 (CC BY 4.0). CSV: https://realhunt.co/research/sea-homes-under-100000.es.csv
 
 ## La tabla
 

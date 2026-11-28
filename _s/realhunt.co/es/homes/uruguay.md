@@ -1,6 +1,6 @@
 Título: Casas en venta en Uruguay (4, desde 150.300 €) · RealHunt
 URL: https://realhunt.co/es/homes/uruguay
-Actualizado: 2026-11-27
+Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Uruguay
@@ -9,9 +9,9 @@ Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor notaNueva180.300 €Casa de techo de madera con chimenea y barbacoa a menos de 100 m del mar, Playa GrandePlaya Grande, Maldonado115 m² · 2 dorm. · 1.568 €/m² · 7 días en RealHunt](https://realhunt.co/es/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
-- [La más barataNueva150.300 €Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 dorm. · 1.503 €/m² · 7 días en RealHunt](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
-- [Más metros por el dineroNueva186.300 €Casa de tres dormitorios con patio de barbacoa cerca de la rambla en Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 dorm. · 1.649 €/m² · 9 días en RealHunt](https://realhunt.co/es/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+- [Mejor notaNueva180.300 €Casa de techo de madera con chimenea y barbacoa a menos de 100 m del mar, Playa GrandePlaya Grande, Maldonado115 m² · 2 dorm. · 1.568 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
+- [La más barataNueva150.300 €Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 dorm. · 1.503 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
+- [Más metros por el dineroNueva186.300 €Casa de tres dormitorios con patio de barbacoa cerca de la rambla en Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 dorm. · 1.649 €/m² · 10 días en RealHunt](https://realhunt.co/es/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
 
 RealHunt tiene hoy 4 casas en venta en Uruguay, con precios de 150.300 € a 186.300 €. La más barata cuesta 150.300 €: [Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La Paloma](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k), en La Aguada (100 m², 3 dormitorios). El precio mediano es de 180.300 € (1.649 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
 
@@ -37,16 +37,16 @@ Gastos de compra
 5–8%
 
 Datos del
-27 nov 2026
+28 nov 2026
 
 ### Las 4 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Uruguay)
 
-- [Nota 85Nueva180.300 €Casa de techo de madera con chimenea y barbacoa a menos de 100 m del mar, Playa GrandePlaya Grande, Maldonado115 m² · 2 dorm. · 1.568 €/m² · 7 días en RealHuntSe pide US$198.000 (unos 180,3 €).](https://realhunt.co/es/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
-- [Nota 85Nueva150.300 €Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 dorm. · 1.503 €/m² · 7 días en RealHuntSe pide US$165.000 (unos 150,3 €).](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
-- [Nota 82Nueva150.300 €Casa de tres dormitorios recién construida a tres manzanas de la playa en La Paloma, RochaLa Paloma, Rocha90 m² · 3 dorm. · 1.670 €/m² · 7 días en RealHuntSe pide US$165.000 (aproximadamente 150,3 €).](https://realhunt.co/es/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
-- [Nota 82Nueva186.300 €Casa de tres dormitorios con patio de barbacoa cerca de la rambla en Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 dorm. · 1.649 €/m² · 9 días en RealHuntSe pide 205.000 dólares estadounidenses (alrededor de 186.300 €) por una casa de ladrillo de una planta de 113 m² en una parcela de 475 m² en…](https://realhunt.co/es/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
+- [Nota 85Nueva180.300 €Casa de techo de madera con chimenea y barbacoa a menos de 100 m del mar, Playa GrandePlaya Grande, Maldonado115 m² · 2 dorm. · 1.568 €/m² · 8 días en RealHuntSe pide US$198.000 (unos 180,3 €).](https://realhunt.co/es/deal/uy-piriapolis-playa-grande-house-near-sea-198k)
+- [Nota 85Nueva150.300 €Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La PalomaLa Aguada, Rocha100 m² · 3 dorm. · 1.503 €/m² · 8 días en RealHuntSe pide US$165.000 (unos 150,3 €).](https://realhunt.co/es/deal/uy-la-aguada-brick-chalet-one-block-from-beach-165k)
+- [Nota 82Nueva150.300 €Casa de tres dormitorios recién construida a tres manzanas de la playa en La Paloma, RochaLa Paloma, Rocha90 m² · 3 dorm. · 1.670 €/m² · 8 días en RealHuntSe pide US$165.000 (aproximadamente 150,3 €).](https://realhunt.co/es/deal/uy-la-paloma-new-house-three-blocks-from-beach-165k)
+- [Nota 82Nueva186.300 €Casa de tres dormitorios con patio de barbacoa cerca de la rambla en Colonia del SacramentoColonia del Sacramento, Colonia113 m² · 3 dorm. · 1.649 €/m² · 10 días en RealHuntSe pide 205.000 dólares estadounidenses (alrededor de 186.300 €) por una casa de ladrillo de una planta de 113 m² en una parcela de 475 m² en…](https://realhunt.co/es/deal/uy-colonia-del-sacramento-three-bed-house-near-rambla-205k)
 
 ### Compara las 4 viviendas, de más barata a más cara
 
@@ -125,4 +125,4 @@ Estos anuncios proceden de infocasas.com.uy (4). RealHunt no es una inmobiliaria
 [Avísame por correo de viviendas nuevas en Uruguay](https://realhunt.co/es/alerts?country=Uruguay) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Uruguay#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Uruguay](https://realhunt.co/es/sitemap/uruguay)
 
 ---
-Fuente: https://realhunt.co/es/homes/uruguay (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/uruguay (RealHunt, 2026-11-28). Licencia CC BY 4.0: se puede citar con un enlace a la página.

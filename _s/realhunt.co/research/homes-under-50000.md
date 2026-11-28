@@ -2,9 +2,9 @@
 
 68 of the 703 homes on RealHunt cost €50,000 or less, and 26 cost €30,000 or less. Most are in Italy (32), Japan (16), Germany (7). The region with the most is Calabria, Italy, with 6.
 
-Homes checked by a person and ready to live in, at their asking price on 27 November 2026. Countries and regions with fewer than 3 such homes are not listed.
+Homes checked by a person and ready to live in, at their asking price on 28 November 2026. Countries and regions with fewer than 3 such homes are not listed.
 
-Updated 27 November 2026. Source: RealHunt, https://realhunt.co/research/homes-under-50000 (CC BY 4.0). CSV: https://realhunt.co/research/homes-under-50000.csv
+Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/homes-under-50000 (CC BY 4.0). CSV: https://realhunt.co/research/homes-under-50000.csv
 
 ## The table
 

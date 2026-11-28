@@ -1,8 +1,8 @@
 # Cheap homes in Bulgaria: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 6 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 6 homes is €69,000 (€759 per m², from the 6 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 6 homes this is a small sample, so the median for Bulgaria is a rough guide.
+On 28 November 2026, RealHunt lists 6 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 6 homes is €69,000 (€759 per m², from the 6 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 6 homes this is a small sample, so the median for Bulgaria is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/bulgaria · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/bulgaria · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.pdf
 
 ## Key facts
@@ -18,7 +18,7 @@ Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://r
 | Taxes and fees to buy | 3.2–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes, buildings and apartments, with rights similar to locals; per GPG, foreigners can't own land directly, so a Bulgarian company is the usual route. |
 | Yearly property tax | 0.01-0.45% of the property's tax value plus a municipal garbage fee. |
-| Date of these figures | 27 November 2026 |
+| Date of these figures | 28 November 2026 |
 
 ## Costs and taxes
 

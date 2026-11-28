@@ -4,23 +4,23 @@ Cómo trabaja RealHunt
 
 Cada noche un programa abre el anuncio original de cada casa y anota lo que encuentra. Una casa se marca como que ya no está a la venta solo cuando el anuncio aparece retirado dos días distintos, o cuando un visitante avisa. Cuando el programa no puede leer un anuncio, lo revisa una persona a mano, y una casa que nadie ha podido confirmar en 30 días lleva un aviso en su página.
 
-Actualizado el 27 de noviembre de 2026
+Actualizado el 28 de noviembre de 2026
 
 ### Las cifras de hoy
 
 Qué | Casas
 Casas en RealHunt hoy | 703
-Anuncio confirmado en los últimos 30 días | 450
-Última lectura: anuncio publicado | 406
+Anuncio confirmado en los últimos 30 días | 470
+Última lectura: anuncio publicado | 426
 Última lectura: anuncio retirado | 23
 Última lectura: el portal bloqueó el programa | 138
 Última lectura: sin respuesta | 1
-Aún sin leer por el programa, o ilegibles (publicaciones en redes) | 135
+Aún sin leer por el programa, o ilegibles (publicaciones en redes) | 115
 Marcadas como que ya no están a la venta | 15
 Con el aviso «no hemos podido confirmar que siga a la venta» | 139
 Con una revisión fechada por una persona en su página | 4
 
-Calculado con las casas de la web a 27 de noviembre de 2026. «Última lectura» es el resultado de la última vez que el programa abrió el anuncio.
+Calculado con las casas de la web a 28 de noviembre de 2026. «Última lectura» es el resultado de la última vez que el programa abrió el anuncio.
 
 ### 1. La revisión nocturna lee cada anuncio
 
@@ -63,4 +63,4 @@ Los anuncios cambian cada día y una revisión de anoche puede estar desfasada e
 - [Política editorial](https://realhunt.co/es/editorial-policy)
 
 ---
-Fuente: https://realhunt.co/es/how-we-check-homes (RealHunt, 2026-11-27)
+Fuente: https://realhunt.co/es/how-we-check-homes (RealHunt, 2026-11-28)

@@ -1,6 +1,6 @@
 Title: Apartments for sale in Cyprus (4, from €130,000) · RealHunt
 URL: https://realhunt.co/homes/cyprus
-Updated: 2026-11-27
+Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Apartments for sale in Cyprus
@@ -9,9 +9,9 @@ List last changed 20 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€341,000Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea viewsCoral Bay, Paphos84 m² · 2 bed · €4,060/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/cy-coral-bay-341k-080655)
-- [CheapestNew€130,000Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, LarnacaMazotos, Larnaca70 m² · 2 bed · €1,857/m² · 9 days on RealHuntCommunity fee €108 a month](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
-- [Most space for the moneyNew€187,000Fully renovated two-bedroom townhouse with title deeds in Paralimni, FamagustaParalimni, Famagusta74 m² · 2 bed · €2,527/m² · 7 days on RealHunt](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
+- [Best score€341,000Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea viewsCoral Bay, Paphos84 m² · 2 bed · €4,060/m² · 47 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/cy-coral-bay-341k-080655)
+- [CheapestNew€130,000Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, LarnacaMazotos, Larnaca70 m² · 2 bed · €1,857/m² · 10 days on RealHuntCommunity fee €108 a month](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
+- [Most space for the moneyNew€187,000Fully renovated two-bedroom townhouse with title deeds in Paralimni, FamagustaParalimni, Famagusta74 m² · 2 bed · €2,527/m² · 8 days on RealHunt](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
 
 RealHunt lists 4 apartments for sale in Cyprus today, priced from €130,000 to €470,000. The cheapest costs €130,000: [Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874), in Mazotos (70 m², 2 bedrooms). The median price is €341,000 (€4,060/m²), against €99,000 (€1,241/m²) for the 703 homes on RealHunt in 23 countries.
 Can you buy here? Read this first
@@ -44,16 +44,16 @@ Foreign buyers
 Some limits
 
 Data of
-27 Nov 2026
+28 Nov 2026
 
 ### The 4 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Cyprus)
 
-- [Score 93€341,000Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea viewsCoral Bay, Paphos84 m² · 2 bed · €4,060/m² · 46 days on RealHuntCommunity fee not statedA ready-to-move-in 2-bedroom, 2-bathroom apartment a few steps from the Blue Flag beaches of Coral Bay, west of Paphos.](https://realhunt.co/deal/cy-coral-bay-341k-080655)
-- [Score 84€470,000Sea-front ground-floor flat with a 50 m² terrace and overflow pool in ProtarasProtaras, Famagusta85 m² · 2 bed · €5,529/m² · 46 days on RealHuntCommunity fee not statedA 2020 sea-front ground-floor apartment in Protaras, a stone's throw from Green Bay and Cavo Maris beach and about 5 minutes from Fig Tree Bay.](https://realhunt.co/deal/cy-protaras-470k-585375)
-- [Score 83New€130,000Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, LarnacaMazotos, Larnaca70 m² · 2 bed · €1,857/m² · 9 days on RealHuntCommunity fee €108 a monthA resale two-bedroom apartment with title deeds in a well-kept complex in Mazotos, a coastal village south-west of Larnaca.](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
-- [Score 82New€187,000Fully renovated two-bedroom townhouse with title deeds in Paralimni, FamagustaParalimni, Famagusta74 m² · 2 bed · €2,527/m² · 7 days on RealHuntA two-bedroom townhouse in a quiet residential area of Paralimni, sold with title deeds and fully renovated.](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
+- [Score 93€341,000Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea viewsCoral Bay, Paphos84 m² · 2 bed · €4,060/m² · 47 days on RealHuntCommunity fee not statedA ready-to-move-in 2-bedroom, 2-bathroom apartment a few steps from the Blue Flag beaches of Coral Bay, west of Paphos.](https://realhunt.co/deal/cy-coral-bay-341k-080655)
+- [Score 84€470,000Sea-front ground-floor flat with a 50 m² terrace and overflow pool in ProtarasProtaras, Famagusta85 m² · 2 bed · €5,529/m² · 47 days on RealHuntCommunity fee not statedA 2020 sea-front ground-floor apartment in Protaras, a stone's throw from Green Bay and Cavo Maris beach and about 5 minutes from Fig Tree Bay.](https://realhunt.co/deal/cy-protaras-470k-585375)
+- [Score 83New€130,000Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, LarnacaMazotos, Larnaca70 m² · 2 bed · €1,857/m² · 10 days on RealHuntCommunity fee €108 a monthA resale two-bedroom apartment with title deeds in a well-kept complex in Mazotos, a coastal village south-west of Larnaca.](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874)
+- [Score 82New€187,000Fully renovated two-bedroom townhouse with title deeds in Paralimni, FamagustaParalimni, Famagusta74 m² · 2 bed · €2,527/m² · 8 days on RealHuntA two-bedroom townhouse in a quiet residential area of Paralimni, sold with title deeds and fully renovated.](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
 
 ### Compare the 4 homes, cheapest first
 
@@ -141,4 +141,4 @@ These listings come from rightmove.co.uk (3), cy.green-acres.com (1). RealHunt i
 [Email me new homes in Cyprus](https://realhunt.co/alerts?country=Cyprus) · [Filter and sort these homes](https://realhunt.co/?country=Cyprus#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Cyprus](https://realhunt.co/sitemap/cyprus)
 
 ---
-Source: https://realhunt.co/homes/cyprus (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/cyprus (RealHunt, 2026-11-28). Licence CC BY 4.0: quote it with a link to the page.

@@ -1,6 +1,6 @@
 Title: Houses for sale in the Czech Republic (3, from €130,900)
 URL: https://realhunt.co/homes/czech-republic
-Updated: 2026-11-27
+Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in the Czech Republic
@@ -28,15 +28,15 @@ Top score
 85
 
 Data of
-27 Nov 2026
+28 Nov 2026
 
 ### The 3 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Czech+Republic)
 
-- [Score 85New€130,900Maintained brick house with a heat pump and garden in Lomnička near Plesná, ChebLomnička, Karlovy Vary region120 m² · 1 bed · €1,091/m² · 7 days on RealHuntAsking 3,182,000 CZK (about €130,900).](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
-- [Score 84New€159,600Renovated single-storey house with a 50 m² terrace and big garden in ČastohosticeČastohostice, Vysočina region109 m² · 3 bed · €1,464/m² · 6 days on RealHuntAsking 3,900,000 CZK (about €159,600), a private sale with no agency.](https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
-- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 6 days on RealHuntCommunity fee not statedAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
+- [Score 85New€130,900Maintained brick house with a heat pump and garden in Lomnička near Plesná, ChebLomnička, Karlovy Vary region120 m² · 1 bed · €1,091/m² · 8 days on RealHuntAsking 3,182,000 CZK (about €130,900).](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
+- [Score 84New€159,600Renovated single-storey house with a 50 m² terrace and big garden in ČastohosticeČastohostice, Vysočina region109 m² · 3 bed · €1,464/m² · 7 days on RealHuntAsking 3,900,000 CZK (about €159,600), a private sale with no agency.](https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
+- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 7 days on RealHuntCommunity fee not statedAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
 
 ### Compare the 3 homes, cheapest first
 
@@ -107,4 +107,4 @@ These listings come from bezrealitky.cz (3). RealHunt is not an estate agent and
 [Email me new homes in the Czech Republic](https://realhunt.co/alerts?country=Czech%20Republic) · [Filter and sort these homes](https://realhunt.co/?country=Czech+Republic#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the Czech Republic](https://realhunt.co/sitemap/czech-republic)
 
 ---
-Source: https://realhunt.co/homes/czech-republic (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/czech-republic (RealHunt, 2026-11-28). Licence CC BY 4.0: quote it with a link to the page.

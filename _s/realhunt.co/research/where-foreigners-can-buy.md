@@ -4,7 +4,7 @@ Of 20 countries, 12 let a buyer of any nationality buy a home on the same terms 
 
 Rules as of November 2026, for 14 nationalities. General information, not legal advice.
 
-Updated 27 November 2026. Source: RealHunt, https://realhunt.co/research/where-foreigners-can-buy (CC BY 4.0). CSV: https://realhunt.co/research/where-foreigners-can-buy.csv
+Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/where-foreigners-can-buy (CC BY 4.0). CSV: https://realhunt.co/research/where-foreigners-can-buy.csv
 
 ## The table
 

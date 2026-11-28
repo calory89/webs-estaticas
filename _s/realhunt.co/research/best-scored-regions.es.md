@@ -2,9 +2,9 @@
 
 Entre las 30 regiones con al menos 5 casas en RealHunt, la nota mediana más alta está en West Jutland, Dinamarca (91, precio mediano de 89.100 €); Funen, Dinamarca (90, precio mediano de 79.800 €); Valencia, España (89, precio mediano de 145.000 €).
 
-La nota es la calificación propia de RealHunt, de 70 a 98, hecha con 11 notas parciales como precio, espacio, estado, agua, clima y aeropuerto. 27 de noviembre de 2026.
+La nota es la calificación propia de RealHunt, de 70 a 98, hecha con 11 notas parciales como precio, espacio, estado, agua, clima y aeropuerto. 28 de noviembre de 2026.
 
-Actualizado el 27 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/best-scored-regions (CC BY 4.0). CSV: https://realhunt.co/research/best-scored-regions.es.csv
+Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/best-scored-regions (CC BY 4.0). CSV: https://realhunt.co/research/best-scored-regions.es.csv
 
 ## La tabla
 

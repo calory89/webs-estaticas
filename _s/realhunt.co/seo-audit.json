@@ -202,7 +202,7 @@
    "pages": 703,
    "indexable": 703,
    "noindex": 0,
-   "median_words": 1548,
+   "median_words": 1549,
    "title_over_60": 0,
    "desc_out_of_range": 0,
    "inlinks_under_3": 0
@@ -1162,7 +1162,7 @@
    "places": {
     "pages": 726,
     "twins": 726,
-    "words": 1741216,
+    "words": 1742489,
     "english": 0,
     "spanish_pct": 100
    },
@@ -1196,7 +1196,7 @@
    "checked": 4811,
    "indexable": 4275,
    "max_depth": 3,
-   "titles_changed_since_last_build": 704,
+   "titles_changed_since_last_build": 0,
    "external_link_hosts": 335,
    "no_text_without_javascript": 8,
    "click_handler_instead_of_link": 1434,
@@ -1204,7 +1204,6 @@
    "keyword_stuffing": 7,
    "year_in_title": 2,
    "near_identical_pages": 538,
-   "title_changed_twice_in_28_days": 584,
    "fixed_here": 0
   },
   "failures": [],
@@ -1322,49 +1321,6 @@
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/french-in-dominican-republic (94%)",
     "/can-i-buy/danish-in-dominican-republic ~ /can-i-buy/german-in-dominican-republic (95%)",
     "... 498 more"
-   ],
-   "title_changed_twice_in_28_days": [
-    "/cheap-houses/apartments-under-100000-in-spain: Cheap apartments for sale in Spain under €100,000 (25)",
-    "/cheap-houses/by-the-sea: Homes by the sea (163, from €19,320) · RealHunt",
-    "/cheap-houses/by-the-sea-under-100000-in-spain: Cheap homes by the sea in Spain under €100,000 (16)",
-    "/cheap-houses/by-the-sea-under-50000-in-japan: Cheap homes by the sea in Japan under €50,000 (5) · RealHunt",
-    "/cheap-houses/cabins-and-cottages: Cheap cabins and cottages (48, from €7,400) · RealHunt",
-    "/cheap-houses/cabins-and-cottages-in-spain: Cabins and cottages in Spain (3, from €125,000) · RealHunt",
-    "/cheap-houses/cheapest-in-spain: The 20 cheapest homes for sale in Spain (20, from €39,000)",
-    "/cheap-houses/editors-picks: Cheap hand-picked homes (34, from €7,400) · RealHunt",
-    "/cheap-houses/editors-picks-in-spain: Cheap hand-picked homes in Spain (13, from €63,000)",
-    "/cheap-houses/good-weather: Cheap homes with 150 or more good-weather days a year (58)",
-    "/cheap-houses/houses-under-100000-in-france: Cheap houses for sale in France under €100,000 (11)",
-    "/cheap-houses/houses-under-100000-in-italy: Cheap houses for sale in Italy under €100,000 (34)",
-    "/cheap-houses/houses-under-100000-in-spain: Cheap houses for sale in Spain under €100,000 (45)",
-    "/cheap-houses/houses-under-50000-in-japan: Cheap houses for sale in Japan under €50,000 (14) · RealHunt",
-    "/cheap-houses/in-the-mountains: Cheap homes in the mountains (45, from €7,400) · RealHunt",
-    "/cheap-houses/in-the-mountains-in-greece: Houses in the mountains in Greece (7, from €70,000)",
-    "/cheap-houses/in-the-mountains-in-spain: Homes in the mountains in Spain (25, from €59,000)",
-    "/cheap-houses/low-community-fee: Homes with a low community fee (14, from €90,600) · RealHunt",
-    "/cheap-houses/near-a-lake: Cheap houses near a lake (44, from €12,000) · RealHunt",
-    "/cheap-houses/near-a-lake-in-sweden: Cheap houses near a lake in Sweden (6, from €22,000)",
-    "/cheap-houses/near-alicante: Homes for sale within 100 km of Alicante (54, from €60,000)",
-    "/cheap-houses/near-an-airport: Homes within 30 km of an airport (218, from €10,240)",
-    "/cheap-houses/near-an-airport-in-france: Cheap homes within 30 km of an airport in France (11)",
-    "/cheap-houses/near-an-airport-in-greece: Houses within 30 km of an airport in Greece (18) · RealHunt",
-    "/cheap-houses/near-an-airport-in-italy: Cheap homes within 30 km of an airport in Italy (25)",
-    "/cheap-houses/near-an-airport-in-japan: Cheap houses within 30 km of an airport in Japan (10)",
-    "/cheap-houses/near-an-airport-in-spain: Homes within 30 km of an airport in Spain (45, from €52,000)",
-    "/cheap-houses/near-an-airport-in-sweden: Cheap homes within 30 km of an airport in Sweden (5)",
-    "/cheap-houses/near-florence: Homes for sale within 100 km of Florence (21, from €16,000)",
-    "/cheap-houses/near-malaga: Cheap houses for sale within 100 km of Málaga (13)",
-    "/cheap-houses/near-osaka: Cheap homes for sale within 100 km of Osaka (9) · RealHunt",
-    "/cheap-houses/near-seville: Cheap homes for sale within 100 km of Seville (6) · RealHunt",
-    "/cheap-houses/near-the-beach: Homes within 500 m of the sea (11, from €19,320) · RealHunt",
-    "/cheap-houses/near-toulouse: Houses for sale within 100 km of Toulouse (5, from €69,500)",
-    "/cheap-houses/near-valencia: Homes for sale within 100 km of Valencia (13, from €65,000)",
-    "/cheap-houses/new-this-month: Homes added in the last 30 days (287, from €7,400)",
-    "/cheap-houses/new-this-month-in-france: Houses added in the last 30 days in France (43) · RealHunt",
-    "/cheap-houses/new-this-month-in-greece: Houses added in the last 30 days in Greece (29) · RealHunt",
-    "/cheap-houses/new-this-month-in-italy: Homes added in the last 30 days in Italy (55, from €22,000)",
-    "/cheap-houses/new-this-month-in-japan: Cheap houses added in the last 30 days in Japan (13)",
-    "... 544 more"
    ]
   },
   "depth": {
@@ -1494,27 +1450,27 @@
     "listing": {
      "limit_kb": 100,
      "pages": 1781,
-     "over": 244,
+     "over": 258,
      "biggest": [
       {
        "path": "/es/homes/united-states",
        "kb": 134.3
       },
       {
+       "path": "/es/homes/france",
+       "kb": 131.5
+      },
+      {
+       "path": "/es/cheap-houses/new-this-month-in-italy",
+       "kb": 128.6
+      },
+      {
        "path": "/homes/united-states",
        "kb": 127.6
       },
       {
-       "path": "/es/homes/france",
-       "kb": 127.2
-      },
-      {
        "path": "/es/cheap-houses/under-100000-pounds-in-italy",
-       "kb": 125.2
-      },
-      {
-       "path": "/es/cheap-houses/new-this-month-in-italy",
-       "kb": 124.2
+       "kb": 126.5
       }
      ]
     },
@@ -1525,7 +1481,7 @@
      "biggest": [
       {
        "path": "/ru/homes/united-states",
-       "kb": 122.7
+       "kb": 122.8
       },
       {
        "path": "/ru/homes/united-states/under-300000",
@@ -1533,7 +1489,7 @@
       },
       {
        "path": "/ru/cheap-houses/under-50000-pounds",
-       "kb": 111.2
+       "kb": 111.3
       },
       {
        "path": "/fr/homes/united-states",

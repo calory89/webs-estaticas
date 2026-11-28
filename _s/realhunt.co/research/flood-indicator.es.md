@@ -2,9 +2,9 @@
 
 50 de las 585 casas de RealHunt con indicador de inundación (el 9 %) están marcadas como riesgo medio o alto, y 13 como alto. La proporción es mayor en Dominican Republic (100 % de 5), Estados Unidos (31 % de 61) y Grecia (22 % de 23). Ninguna casa está marcada como riesgo medio o alto en Francia, Polonia, Alemania, los Países Bajos, Canadá, Portugal, Suiza, Bulgaria y el Reino Unido.
 
-El indicador es una primera comprobación propia de RealHunt, a 27 de noviembre de 2026: la zona oficial de inundación donde puede consultarse (54 casas, Estados Unidos) y, en el resto, una lectura aproximada de la altitud y de la distancia al mar y a un río grande. No es un mapa oficial de inundaciones.
+El indicador es una primera comprobación propia de RealHunt, a 28 de noviembre de 2026: la zona oficial de inundación donde puede consultarse (54 casas, Estados Unidos) y, en el resto, una lectura aproximada de la altitud y de la distancia al mar y a un río grande. No es un mapa oficial de inundaciones.
 
-Actualizado el 27 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/flood-indicator (CC BY 4.0). CSV: https://realhunt.co/research/flood-indicator.es.csv
+Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/flood-indicator (CC BY 4.0). CSV: https://realhunt.co/research/flood-indicator.es.csv
 
 ## La tabla
 

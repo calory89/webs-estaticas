@@ -1,6 +1,6 @@
 Título: Viviendas en venta en Irlanda (4, desde 170.000 €)
 URL: https://realhunt.co/es/homes/ireland
-Actualizado: 2026-11-27
+Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Viviendas en venta en Irlanda
@@ -9,9 +9,9 @@ Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor notaNueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 7 días en RealHunt](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
-- [La más barataNueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 7 días en RealHuntComunidad 85 euros al mes](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
-- [Más metros por el dineroNueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 7 días en RealHuntComunidad 169 euros al mes](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+- [Mejor notaNueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
+- [La más barataNueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 8 días en RealHuntComunidad 85 euros al mes](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Más metros por el dineroNueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 8 días en RealHuntComunidad 169 euros al mes](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
 
 RealHunt tiene hoy 4 viviendas en venta en Irlanda, con precios de 170.000 € a 230.000 €. La más barata cuesta 170.000 €: [Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, Mayo](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k), en Killala (95 m², 1 dormitorio). El precio mediano es de 230.000 € (2.255 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
 
@@ -37,16 +37,16 @@ Gastos de compra
 2,5–3,5%
 
 Datos del
-27 nov 2026
+28 nov 2026
 
 ### Las 4 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/ireland/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Ireland)
 
-- [Nota 83Nueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 7 días en RealHuntUna casa de dos plantas recientemente renovada en Gore Street en el centro de Killala, a un corto paseo del puerto en Killala Bay.](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
-- [Nota 80Nueva230.000 €Casa adosada de dos dormitorios con vistas al mar en el Atlántico en Kilkieran, ConnemaraKilkieran, condado de Galway102 m² · 2 dorm. · 2.255 €/m² · 7 días en RealHuntUna casa adosada en un pequeño y ordenado desarrollo en un sitio elevado sobre el Atlántico cerca del pueblo de Kilkieran en Connemara, con…](https://realhunt.co/es/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
-- [Nota 80Nueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 7 días en RealHuntComunidad 169 euros al mesUn apartamento de tres dormitorios de 121 m² por 230.000 euros, vendido completamente amueblado, con un amarre privado en el puerto incluido.](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
-- [Nota 77Nueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 7 días en RealHuntComunidad 85 euros al mesUn piso de planta baja en la promoción Pebble Beach en Tramore, a distancia de paseo de la playa y del paseo marítimo, situado entre césped con…](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
+- [Nota 83Nueva170.000 €Casa de pueblo renovada con calificación energética A3 cerca del puerto de Killala, MayoKillala, condado de Mayo95 m² · 1 dorm. · 1.789 €/m² · 8 días en RealHuntUna casa de dos plantas recientemente renovada en Gore Street en el centro de Killala, a un corto paseo del puerto en Killala Bay.](https://realhunt.co/es/deal/ie-killala-renovated-village-house-a3-energy-170k)
+- [Nota 80Nueva230.000 €Casa adosada de dos dormitorios con vistas al mar en el Atlántico en Kilkieran, ConnemaraKilkieran, condado de Galway102 m² · 2 dorm. · 2.255 €/m² · 8 días en RealHuntUna casa adosada en un pequeño y ordenado desarrollo en un sitio elevado sobre el Atlántico cerca del pueblo de Kilkieran en Connemara, con…](https://realhunt.co/es/deal/ie-kilkieran-connemara-sea-view-two-bed-house-230k)
+- [Nota 80Nueva230.000 €Apartamento de tres dormitorios con vistas al puerto, terraza en la azotea y amarre de barco en Leitrim VillageLeitrim Village, condado de Leitrim121 m² · 3 dorm. · 1.901 €/m² · 8 días en RealHuntComunidad 169 euros al mesUn apartamento de tres dormitorios de 121 m² por 230.000 euros, vendido completamente amueblado, con un amarre privado en el puerto incluido.](https://realhunt.co/es/deal/ie-leitrim-village-marina-view-apartment-berth-230k)
+- [Nota 77Nueva220.000 €Piso de planta baja con dos dormitorios y baño en suite, a pie de playa de Tramore, WaterfordTramore, condado de Waterford76 m² · 2 dorm. · 2.895 €/m² · 8 días en RealHuntComunidad 85 euros al mesUn piso de planta baja en la promoción Pebble Beach en Tramore, a distancia de paseo de la playa y del paseo marítimo, situado entre césped con…](https://realhunt.co/es/deal/ie-tramore-ground-floor-two-bed-flat-near-beach-220k)
 
 ### Compara las 4 viviendas, de más barata a más cara
 
@@ -133,4 +133,4 @@ Estos anuncios proceden de myhome.ie (4). RealHunt no es una inmobiliaria y no v
 [Avísame por correo de viviendas nuevas en Irlanda](https://realhunt.co/es/alerts?country=Ireland) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Ireland#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Irlanda](https://realhunt.co/es/sitemap/ireland)
 
 ---
-Fuente: https://realhunt.co/es/homes/ireland (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/ireland (RealHunt, 2026-11-28). Licencia CC BY 4.0: se puede citar con un enlace a la página.

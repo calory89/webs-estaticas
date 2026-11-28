@@ -2,9 +2,9 @@
 
 RealHunt lists 79 homes by the sea at or under €100,000, in 10 countries. Most are in Denmark (16), Spain (16), Japan (14). The cheapest is Japanese home with a sakura garden in Usuki, Oita, Japan, at €19,320.
 
-Homes checked by a person, at their asking price on 27 November 2026. Countries with fewer than 3 such homes are counted but not charted.
+Homes checked by a person, at their asking price on 28 November 2026. Countries with fewer than 3 such homes are counted but not charted.
 
-Updated 27 November 2026. Source: RealHunt, https://realhunt.co/research/sea-homes-under-100000 (CC BY 4.0). CSV: https://realhunt.co/research/sea-homes-under-100000.csv
+Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/sea-homes-under-100000 (CC BY 4.0). CSV: https://realhunt.co/research/sea-homes-under-100000.csv
 
 ## The table
 

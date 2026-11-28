@@ -1,10 +1,10 @@
 # New homes on RealHunt in November 2026, by country
 
-297 homes were added to RealHunt in November 2026 up to 27 November 2026, in 26 countries. Most are in Italy (54), Spain (52), France (43). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
+297 homes were added to RealHunt in November 2026 up to 28 November 2026, in 26 countries. Most are in Italy (54), Spain (52), France (43). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
 
 Counted on the day each home went up on RealHunt. Homes that have already left the site are not counted. The page is rebuilt with every update.
 
-Updated 27 November 2026. Source: RealHunt, https://realhunt.co/research/new-homes-this-month (CC BY 4.0). CSV: https://realhunt.co/research/new-homes-this-month.csv
+Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/new-homes-this-month (CC BY 4.0). CSV: https://realhunt.co/research/new-homes-this-month.csv
 
 ## The table
 

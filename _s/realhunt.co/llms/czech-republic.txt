@@ -1,6 +1,6 @@
 # RealHunt: Czech Republic
 
-> Homes for sale in Czech Republic on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-27. 3 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
+> Homes for sale in Czech Republic on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-28. 3 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
 
 
 ---
@@ -31,15 +31,15 @@ Top score
 85
 
 Data of
-27 Nov 2026
+28 Nov 2026
 
 ### The 3 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Czech+Republic)
 
-- [Score 85New€130,900Maintained brick house with a heat pump and garden in Lomnička near Plesná, ChebLomnička, Karlovy Vary region120 m² · 1 bed · €1,091/m² · 7 days on RealHuntAsking 3,182,000 CZK (about €130,900).](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
-- [Score 84New€159,600Renovated single-storey house with a 50 m² terrace and big garden in ČastohosticeČastohostice, Vysočina region109 m² · 3 bed · €1,464/m² · 6 days on RealHuntAsking 3,900,000 CZK (about €159,600), a private sale with no agency.](https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
-- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 6 days on RealHuntCommunity fee not statedAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
+- [Score 85New€130,900Maintained brick house with a heat pump and garden in Lomnička near Plesná, ChebLomnička, Karlovy Vary region120 m² · 1 bed · €1,091/m² · 8 days on RealHuntAsking 3,182,000 CZK (about €130,900).](https://realhunt.co/deal/cz-lomnicka-plesna-brick-house-heat-pump-131k)
+- [Score 84New€159,600Renovated single-storey house with a 50 m² terrace and big garden in ČastohosticeČastohostice, Vysočina region109 m² · 3 bed · €1,464/m² · 7 days on RealHuntAsking 3,900,000 CZK (about €159,600), a private sale with no agency.](https://realhunt.co/deal/cz-castohostice-renovated-four-room-house-big-garden-160k)
+- [Score 77New€179,700Bright flat with two long balconies and a view over the old town of LitoměřiceLitoměřice, Ústí nad Labem region61 m² · 1 bed · €2,946/m² · 7 days on RealHuntCommunity fee not statedAsking 4,390,000 CZK (about €179,700).](https://realhunt.co/deal/cz-litomerice-two-balcony-flat-old-town-view-180k)
 
 ### Compare the 3 homes, cheapest first
 
@@ -115,9 +115,9 @@ Source: https://realhunt.co/data/countries/czech-republic.md
 
 # Cheap homes in the Czech Republic: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 3 homes for sale in the Czech Republic, each one checked by a person. In the Czech Republic, the median asking price of those 3 homes is €159,600 (€1,464 per m², from the 3 homes with a known size); the cheapest costs €130,900 and the most expensive €179,700. With 3 homes this is a small sample, so the median for the Czech Republic is a rough guide.
+On 28 November 2026, RealHunt lists 3 homes for sale in the Czech Republic, each one checked by a person. In the Czech Republic, the median asking price of those 3 homes is €159,600 (€1,464 per m², from the 3 homes with a known size); the cheapest costs €130,900 and the most expensive €179,700. With 3 homes this is a small sample, so the median for the Czech Republic is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/czech-republic · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/czech-republic · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/czech-republic.json · PDF: https://realhunt.co/data/countries/czech-republic.pdf
 
 ## Key facts
@@ -132,7 +132,7 @@ Also as JSON: https://realhunt.co/data/countries/czech-republic.json · PDF: htt
 | Median RealHunt score (70 to 98) | 84 |
 | Can foreigners buy? | Yes. Foreigners can buy homes and land in the Czech Republic on the same terms as Czechs: the limits on homes ended on 1 May 2009 and those on farmland and forest on 1 May 2011. |
 | Yearly property tax | Owners pay a yearly tax on land and buildings (daň z nemovitých věcí); from 2024 the rates rose to 1.8 times their old level on average, and each municipality can multiply the tax by a local coefficient between 0.5 and 5. The return is due by 31 January and the tax by 31 May. |
-| Date of these figures | 27 November 2026 |
+| Date of these figures | 28 November 2026 |
 
 ## Costs and taxes
 

@@ -1,6 +1,6 @@
 Título: Pisos en venta en Chipre (4, desde 130.000 €) · RealHunt
 URL: https://realhunt.co/es/homes/cyprus
-Actualizado: 2026-11-27
+Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Pisos en venta en Chipre
@@ -9,9 +9,9 @@ Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota341.000 €Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al marCoral Bay, Paphos84 m² · 2 dorm. · 4.060 €/m² · 46 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/cy-coral-bay-341k-080655)
-- [La más barataNueva130.000 €Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, LarnacaMazotos, Larnaca70 m² · 2 dorm. · 1.857 €/m² · 9 días en RealHuntComunidad 108 euros al mes](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874)
-- [Más metros por el dineroNueva187.000 €Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, FamagustaParalimni, Famagusta74 m² · 2 dorm. · 2.527 €/m² · 7 días en RealHunt](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
+- [Mejor nota341.000 €Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al marCoral Bay, Paphos84 m² · 2 dorm. · 4.060 €/m² · 47 días en RealHuntCuota de comunidad no indicada](https://realhunt.co/es/deal/cy-coral-bay-341k-080655)
+- [La más barataNueva130.000 €Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, LarnacaMazotos, Larnaca70 m² · 2 dorm. · 1.857 €/m² · 10 días en RealHuntComunidad 108 euros al mes](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874)
+- [Más metros por el dineroNueva187.000 €Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, FamagustaParalimni, Famagusta74 m² · 2 dorm. · 2.527 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
 
 RealHunt tiene hoy 4 pisos en venta en Chipre, con precios de 130.000 € a 470.000 €. La más barata cuesta 130.000 €: [Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874), en Mazotos (70 m², 2 dormitorios). El precio mediano es de 341.000 € (4.060 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
 ¿Puedes comprar aquí? Lee esto primero
@@ -44,16 +44,16 @@ Compradores extranjeros
 Con límites
 
 Datos del
-27 nov 2026
+28 nov 2026
 
 ### Las 4 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Cyprus)
 
-- [Nota 93341.000 €Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al marCoral Bay, Paphos84 m² · 2 dorm. · 4.060 €/m² · 46 días en RealHuntCuota de comunidad no indicadaApartamento de 2 dormitorios y 2 baños, listo para entrar, a pocos pasos de las playas con Bandera Azul de Coral Bay, al oeste de Pafos.](https://realhunt.co/es/deal/cy-coral-bay-341k-080655)
-- [Nota 84470.000 €Bajo frente al mar con terraza de 50 m² y piscina desbordante en ProtarasProtaras, Famagusta85 m² · 2 dorm. · 5.529 €/m² · 46 días en RealHuntCuota de comunidad no indicadaBajo frente al mar de 2020 en Protaras, a un paso de Green Bay y la playa de Cavo Maris y a unos 5 minutos de Fig Tree Bay.](https://realhunt.co/es/deal/cy-protaras-470k-585375)
-- [Nota 83Nueva130.000 €Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, LarnacaMazotos, Larnaca70 m² · 2 dorm. · 1.857 €/m² · 9 días en RealHuntComunidad 108 euros al mesUn apartamento de dos dormitorios de reventa con escritura de propiedad en un complejo bien mantenido en Mazotos, un pueblo costero al sudoeste de…](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874)
-- [Nota 82Nueva187.000 €Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, FamagustaParalimni, Famagusta74 m² · 2 dorm. · 2.527 €/m² · 7 días en RealHuntUna casa adosada de dos dormitorios en una zona residencial tranquila de Paralimni, vendida con escritura de propiedad y completamente renovada.](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
+- [Nota 93341.000 €Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al marCoral Bay, Paphos84 m² · 2 dorm. · 4.060 €/m² · 47 días en RealHuntCuota de comunidad no indicadaApartamento de 2 dormitorios y 2 baños, listo para entrar, a pocos pasos de las playas con Bandera Azul de Coral Bay, al oeste de Pafos.](https://realhunt.co/es/deal/cy-coral-bay-341k-080655)
+- [Nota 84470.000 €Bajo frente al mar con terraza de 50 m² y piscina desbordante en ProtarasProtaras, Famagusta85 m² · 2 dorm. · 5.529 €/m² · 47 días en RealHuntCuota de comunidad no indicadaBajo frente al mar de 2020 en Protaras, a un paso de Green Bay y la playa de Cavo Maris y a unos 5 minutos de Fig Tree Bay.](https://realhunt.co/es/deal/cy-protaras-470k-585375)
+- [Nota 83Nueva130.000 €Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, LarnacaMazotos, Larnaca70 m² · 2 dorm. · 1.857 €/m² · 10 días en RealHuntComunidad 108 euros al mesUn apartamento de dos dormitorios de reventa con escritura de propiedad en un complejo bien mantenido en Mazotos, un pueblo costero al sudoeste de…](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874)
+- [Nota 82Nueva187.000 €Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, FamagustaParalimni, Famagusta74 m² · 2 dorm. · 2.527 €/m² · 8 días en RealHuntUna casa adosada de dos dormitorios en una zona residencial tranquila de Paralimni, vendida con escritura de propiedad y completamente renovada.](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k)
 
 ### Compara las 4 viviendas, de más barata a más cara
 
@@ -141,4 +141,4 @@ Estos anuncios proceden de rightmove.co.uk (3), cy.green-acres.com (1). RealHunt
 [Avísame por correo de viviendas nuevas en Chipre](https://realhunt.co/es/alerts?country=Cyprus) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Cyprus#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Chipre](https://realhunt.co/es/sitemap/cyprus)
 
 ---
-Fuente: https://realhunt.co/es/homes/cyprus (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/cyprus (RealHunt, 2026-11-28). Licencia CC BY 4.0: se puede citar con un enlace a la página.

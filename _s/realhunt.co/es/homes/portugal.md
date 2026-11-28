@@ -1,6 +1,6 @@
 Título: Casas en venta en Portugal (11, desde 48.000 €) · RealHunt
 URL: https://realhunt.co/es/homes/portugal
-Actualizado: 2026-11-27
+Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Portugal
@@ -9,9 +9,9 @@ Lista cambiada por última vez el 27 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota76.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
-- [La más barata48.000 €Casa de pueblo recién pintada de tres dormitorios junto a los lagos del SaborBrunhoso, Bragança100 m² · 3 dorm. · 480 €/m² · 44 días en RealHunt](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522)
-- [Más metros por el dineroNueva160.000 €Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira AltaCandal, Beira Alta131 m² · 2 dorm. · 1.221 €/m² · Añadida hoy](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k)
+- [Mejor nota76.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [La más barata48.000 €Casa de pueblo recién pintada de tres dormitorios junto a los lagos del SaborBrunhoso, Bragança100 m² · 3 dorm. · 480 €/m² · 45 días en RealHunt](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522)
+- [Más metros por el dineroNueva160.000 €Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira AltaCandal, Beira Alta131 m² · 2 dorm. · 1.221 €/m² · 1 día en RealHunt](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k)
 
 RealHunt tiene hoy 11 casas en venta en Portugal, con precios de 48.000 € a 200.000 €. La más barata cuesta 48.000 €: [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522), en Brunhoso (100 m², 3 dormitorios). El precio mediano es de 160.000 € (1.989 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
 
@@ -40,23 +40,23 @@ Compradores extranjeros
 Compra libre
 
 Datos del
-27 nov 2026
+28 nov 2026
 
 ### Las 11 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Portugal)
 
-- [Nota 8576.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 53 días en RealHuntCasa T2 con terraza en Sobral (Carregal do Sal), en la región vinícola del Dão: cocina, salón, dos dormitorios y baño en la planta principal, más…](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
-- [Nota 84Nueva160.000 €Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira AltaCandal, Beira Alta131 m² · 2 dorm. · 1.221 €/m² · Añadida hoyLa vivienda ha sido reformada con acabados de calidad.](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k)
-- [Nota 80Nueva200.000 €Casa tradicional de 2 dormitorios con chimenea y amplio patio en Crato, AlentejoCrato, Alentejo157 m² · 2 dorm. · 1.274 €/m² · Añadida hoyEsta casa de 157 m² tiene tres habitaciones, incluidos dos dormitorios, y muy buena luz natural.](https://realhunt.co/es/deal/pt-crato-fireplace-patio-garage-countryside-200k)
-- [Nota 80Nueva189.000 €Casa de pueblo de tres dormitorios con terraza y vistas a la Serra da Lousã cerca de PenacovaParadela da Cortiça, Coimbra95 m² · 3 dorm. · 1.989 €/m² · 7 días en RealHuntUna casa de pueblo ordenada de tres plantas en Paradela da Cortiça con vista abierta a la Serra da Lousã.](https://realhunt.co/es/deal/pt-centro-penacova-paradela-village-house-views-189k)
-- [Nota 80Nueva130.000 €Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 dorm. · 1.688 €/m² · 9 días en RealHuntUna casa aislada de una sola planta con un tejado de nuevas tejas y una chimenea del Algarve al borde de un pequeño pueblo de montaña…](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
-- [Nota 79Nueva140.000 €Casa de dos dormitorios con jardín vallado y vistas al río cerca de Marvão, AlentejoPonte Velha, Portalegre70 m² · 2 dorm. · 2.000 €/m² · 7 días en RealHuntUna casa luminosa de 70 m2 en la tranquila zona de Ponte Velha bajo Marvão, con vistas al río y la montaña, en una parcela completamente vallada…](https://realhunt.co/es/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k)
-- [Nota 78Nueva179.000 €Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, AzoresSilveira, Azores84 m² · 1 dorm. · 2.131 €/m² · 7 días en RealHuntUna casa de piedra completamente renovada en Silveira, 3 km del antiguo pueblo ballenero de Lajes en la isla de Pico, vendida amueblada y equipada.](https://realhunt.co/es/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k)
-- [Nota 77Nueva179.000 €Casa tradicional de una planta con patio privado y terreno en Baleizão, AlentejoBaleizão, Alentejo83 m² · 3 dorm. · 2.157 €/m² · Añadida hoyEsta casa tradicional de una planta en Baleizão, de estilo alentejano, está totalmente amueblada y lista para entrar a vivir.](https://realhunt.co/es/deal/pt-baleizao-traditional-alentejo-patio-house-179k)
-- [Nota 77Nueva95.000 €Cabaña encalada de dos dormitorios renovada en Alcaria Ruiva, cerca de Mértola, AlentejoAlcaria Ruiva, Beja46 m² · 2 dorm. · 2.065 €/m² · 9 días en RealHuntUna cabaña del Alentejo de una sola planta con ribete azul y puerta roja en una calle empedrada en Alcaria Ruiva.](https://realhunt.co/es/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k)
-- [Nota 76Nueva199.900 €Villa reformada con vistas al Guadiana y jardín en Alcoutim, AlgarveAlcoutim, Algarve70 m² · 1 dorm. · 2.856 €/m² · Añadida hoyVilla tradicional totalmente reformada en dos plantas, respetando su diseño original.](https://realhunt.co/es/deal/pt-alcoutim-renovated-villa-river-views-garden-199k)
-- [Nota 8448.000 €Casa de pueblo recién pintada de tres dormitorios junto a los lagos del SaborBrunhoso, Bragança100 m² · 3 dorm. · 480 €/m² · 44 días en RealHuntCasa de dos plantas recién pintada de amarillo y azul en Brunhoso, a 8 km de Mogadouro: salón, cocina y baño abajo, tres dormitorios y balcón…](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522)
+- [Nota 8576.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 54 días en RealHuntCasa T2 con terraza en Sobral (Carregal do Sal), en la región vinícola del Dão: cocina, salón, dos dormitorios y baño en la planta principal, más…](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [Nota 84Nueva160.000 €Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira AltaCandal, Beira Alta131 m² · 2 dorm. · 1.221 €/m² · 1 día en RealHuntLa vivienda ha sido reformada con acabados de calidad.](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k)
+- [Nota 80Nueva200.000 €Casa tradicional de 2 dormitorios con chimenea y amplio patio en Crato, AlentejoCrato, Alentejo157 m² · 2 dorm. · 1.274 €/m² · 1 día en RealHuntEsta casa de 157 m² tiene tres habitaciones, incluidos dos dormitorios, y muy buena luz natural.](https://realhunt.co/es/deal/pt-crato-fireplace-patio-garage-countryside-200k)
+- [Nota 80Nueva189.000 €Casa de pueblo de tres dormitorios con terraza y vistas a la Serra da Lousã cerca de PenacovaParadela da Cortiça, Coimbra95 m² · 3 dorm. · 1.989 €/m² · 8 días en RealHuntUna casa de pueblo ordenada de tres plantas en Paradela da Cortiça con vista abierta a la Serra da Lousã.](https://realhunt.co/es/deal/pt-centro-penacova-paradela-village-house-views-189k)
+- [Nota 80Nueva130.000 €Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 dorm. · 1.688 €/m² · 10 días en RealHuntUna casa aislada de una sola planta con un tejado de nuevas tejas y una chimenea del Algarve al borde de un pequeño pueblo de montaña…](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
+- [Nota 79Nueva140.000 €Casa de dos dormitorios con jardín vallado y vistas al río cerca de Marvão, AlentejoPonte Velha, Portalegre70 m² · 2 dorm. · 2.000 €/m² · 8 días en RealHuntUna casa luminosa de 70 m2 en la tranquila zona de Ponte Velha bajo Marvão, con vistas al río y la montaña, en una parcela completamente vallada…](https://realhunt.co/es/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k)
+- [Nota 78Nueva179.000 €Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, AzoresSilveira, Azores84 m² · 1 dorm. · 2.131 €/m² · 8 días en RealHuntUna casa de piedra completamente renovada en Silveira, 3 km del antiguo pueblo ballenero de Lajes en la isla de Pico, vendida amueblada y equipada.](https://realhunt.co/es/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k)
+- [Nota 77Nueva179.000 €Casa tradicional de una planta con patio privado y terreno en Baleizão, AlentejoBaleizão, Alentejo83 m² · 3 dorm. · 2.157 €/m² · 1 día en RealHuntEsta casa tradicional de una planta en Baleizão, de estilo alentejano, está totalmente amueblada y lista para entrar a vivir.](https://realhunt.co/es/deal/pt-baleizao-traditional-alentejo-patio-house-179k)
+- [Nota 77Nueva95.000 €Cabaña encalada de dos dormitorios renovada en Alcaria Ruiva, cerca de Mértola, AlentejoAlcaria Ruiva, Beja46 m² · 2 dorm. · 2.065 €/m² · 10 días en RealHuntUna cabaña del Alentejo de una sola planta con ribete azul y puerta roja en una calle empedrada en Alcaria Ruiva.](https://realhunt.co/es/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k)
+- [Nota 76Nueva199.900 €Villa reformada con vistas al Guadiana y jardín en Alcoutim, AlgarveAlcoutim, Algarve70 m² · 1 dorm. · 2.856 €/m² · 1 día en RealHuntVilla tradicional totalmente reformada en dos plantas, respetando su diseño original.](https://realhunt.co/es/deal/pt-alcoutim-renovated-villa-river-views-garden-199k)
+- [Nota 8448.000 €Casa de pueblo recién pintada de tres dormitorios junto a los lagos del SaborBrunhoso, Bragança100 m² · 3 dorm. · 480 €/m² · 45 días en RealHuntCasa de dos plantas recién pintada de amarillo y azul en Brunhoso, a 8 km de Mogadouro: salón, cocina y baño abajo, tres dormitorios y balcón…](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522)
 
 ### Compara las 11 viviendas, de más barata a más cara
 
@@ -160,4 +160,4 @@ Estos anuncios proceden de green-acres.pt (10), imovirtual.com (1). RealHunt no 
 [Avísame por correo de viviendas nuevas en Portugal](https://realhunt.co/es/alerts?country=Portugal) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Portugal#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Portugal](https://realhunt.co/es/sitemap/portugal)
 
 ---
-Fuente: https://realhunt.co/es/homes/portugal (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/portugal (RealHunt, 2026-11-28). Licencia CC BY 4.0: se puede citar con un enlace a la página.

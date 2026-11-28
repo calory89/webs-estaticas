@@ -4,23 +4,23 @@ How RealHunt works
 
 Every night a program opens the original advert of each home and writes down what it finds. A home is marked as no longer for sale only when the advert is found removed on two different days, or when a visitor reports it. When the program cannot read an advert, a person checks it by hand, and a home that nobody could confirm for 30 days shows a notice on its page.
 
-Updated 27 November 2026
+Updated 28 November 2026
 
 ### Today's figures
 
 What | Homes
 Homes on RealHunt today | 703
-Advert confirmed online in the last 30 days | 450
-Last reading: advert online | 406
+Advert confirmed online in the last 30 days | 470
+Last reading: advert online | 426
 Last reading: advert removed | 23
 Last reading: the portal blocked the program | 138
 Last reading: no answer | 1
-Not read by the program yet, or not readable (social posts) | 135
+Not read by the program yet, or not readable (social posts) | 115
 Marked as no longer for sale | 15
 With the notice "we could not confirm this home is still for sale" | 139
 With a dated check by a person on their page | 4
 
-Computed from the homes on the site on 27 November 2026. "Last reading" is the result of the last time the program opened the advert.
+Computed from the homes on the site on 28 November 2026. "Last reading" is the result of the last time the program opened the advert.
 
 ### 1. The nightly check reads every advert
 
@@ -63,4 +63,4 @@ Seen a home that is sold? Use the button on its page, or write to carlos@equinox
 - [Editorial policy](https://realhunt.co/editorial-policy)
 
 ---
-Source: https://realhunt.co/how-we-check-homes (RealHunt, 2026-11-27)
+Source: https://realhunt.co/how-we-check-homes (RealHunt, 2026-11-28)

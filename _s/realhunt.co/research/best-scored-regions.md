@@ -2,9 +2,9 @@
 
 Among the 30 regions with at least 5 homes on RealHunt, the highest median score is in West Jutland, Denmark (91, median price €89,100); Funen, Denmark (90, median price €79,800); Valencia, Spain (89, median price €145,000).
 
-The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 27 November 2026.
+The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 28 November 2026.
 
-Updated 27 November 2026. Source: RealHunt, https://realhunt.co/research/best-scored-regions (CC BY 4.0). CSV: https://realhunt.co/research/best-scored-regions.csv
+Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/best-scored-regions (CC BY 4.0). CSV: https://realhunt.co/research/best-scored-regions.csv
 
 ## The table
 

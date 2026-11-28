@@ -1,6 +1,6 @@
 Título: Casas en venta en Canadá (16, desde 55.842 €) · RealHunt
 URL: https://realhunt.co/es/homes/canada
-Actualizado: 2026-11-27
+Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Canadá
@@ -9,9 +9,9 @@ Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor notaNueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 7 días en RealHunt](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
-- [La más barata55.842 €Casa de 2 dormitorios actualizada en Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 dorm. · 901 €/m² · 65 días en RealHunt](https://realhunt.co/es/deal/bulyea-55842)
-- [Más metros por el dinero90.400 €Casa familiar grande con vistas al mar sobre el estrecho de CansoMulgrave, Nueva Escocia215 m² · 3 dorm. · 420 €/m² · 53 días en RealHunt](https://realhunt.co/es/deal/ca-mulgrave-90k-623450)
+- [Mejor notaNueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [La más barata55.842 €Casa de 2 dormitorios actualizada en Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 dorm. · 901 €/m² · 66 días en RealHunt](https://realhunt.co/es/deal/bulyea-55842)
+- [Más metros por el dinero90.400 €Casa familiar grande con vistas al mar sobre el estrecho de CansoMulgrave, Nueva Escocia215 m² · 3 dorm. · 420 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/ca-mulgrave-90k-623450)
 
 RealHunt tiene hoy 16 casas en venta en Canadá, con precios de 55.842 € a 190.700 €. La más barata cuesta 55.842 €: [Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan](https://realhunt.co/es/deal/bulyea-55842), en Bulyea (62 m², 2 dormitorios). El precio mediano es de 99.500 € (963 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
 ¿Puedes comprar aquí? Lee esto primero
@@ -44,28 +44,28 @@ Compradores extranjeros
 Con límites
 
 Datos del
-27 nov 2026
+28 nov 2026
 
 ### Las 16 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/canada/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Canada)
 
-- [Nota 90Nueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 7 días en RealHuntSe pide C$194.000 (aproximadamente 123,4 €), menos de 610 € por m².](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
-- [Nota 88Nueva124.000 €Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva EscociaHillsburn, Nueva Escocia106 m² · 3 dorm. · 1.170 €/m² · 7 días en RealHuntSe pide C$194.900 (aproximadamente 124.000 euros) por una casa de tres dormitorios de aproximadamente 106 m² en una parcela en una colina en…](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
-- [Nota 87Nueva159.000 €Casa de carácter de 1888 con vistas al puerto y jardín con estanque de carpas en Pictou, Nueva EscociaPictou, Nueva Escocia171 m² · 3 dorm. · 930 €/m² · 7 días en RealHuntSe pide C$249.900 (aproximadamente 159.000 €) por una casa de madera blanca de aproximadamente 171 m², construida en 1888 en el pueblo histórico…](https://realhunt.co/es/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
-- [Nota 86Nueva127.100 €Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva EscociaPictou, Nueva Escocia132 m² · 3 dorm. · 963 €/m² · 9 días en RealHuntSe pide C$199.900 (aproximadamente 127.100 €) por una casa de estilo cottage blanca de aproximadamente 132 m² en el corazón de Pictou, una…](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k)
-- [Nota 85Nueva140.000 €Casa de carácter actualizada con estufa de leña y taller en Liverpool, Nueva EscociaLiverpool, Nueva Escocia155 m² · 3 dorm. · 903 €/m² · 7 días en RealHuntSe pide C$220.000 (aproximadamente 140.000 €) por una casa de 1935 de aproximadamente 155 m², a pocos minutos del centro de Liverpool, un pueblo…](https://realhunt.co/es/deal/ca-liverpool-ns-updated-character-house-workshop-220k)
-- [Nota 82Nueva190.700 €Casa histórica de cuatro dormitorios con techos de hojalata y jardines de flores en el centro de SummersideSummerside, Isla del Príncipe Eduardo156 m² · 4 dorm. · 1.222 €/m² · 7 días en RealHuntSe pide C$299.900 (aproximadamente 190,7 €).](https://realhunt.co/es/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k)
-- [Nota 82Nueva190.700 €Casa de cuatro dormitorios en aproximadamente cinco acres en Saint Andrews, Nuevo BrunswickSaint Andrews, Nuevo Brunswick150 m² · 4 dorm. · 1.271 €/m² · 9 días en RealHuntSe pide C$299.900 (aproximadamente 190.700 €) por una casa blanca de aproximadamente 150 m² en aproximadamente cinco acres en las afueras de Saint…](https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k)
-- [Nota 9486.962 €Casa de 2 dormitorios actualizada en Glace Bay, Nueva EscociaGlace Bay, Nueva Escocia124 m² · 2 dorm. · 701 €/m² · 65 días en RealHunt124 m² (1.334 pies cuadrados), 2 dormitorios, 1 baño.](https://realhunt.co/es/deal/glace-bay-86962)
-- [Nota 9290.400 €Casa familiar grande con vistas al mar sobre el estrecho de CansoMulgrave, Nueva Escocia215 m² · 3 dorm. · 420 €/m² · 53 días en RealHuntCasa de 1949 bien cuidada en Mulgrave, Nueva Escocia, con tres dormitorios, baño y medio y vistas preciosas al estrecho de Canso.](https://realhunt.co/es/deal/ca-mulgrave-90k-623450)
-- [Nota 8855.842 €Casa de 2 dormitorios actualizada en Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 dorm. · 901 €/m² · 65 días en RealHunt62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1957.](https://realhunt.co/es/deal/bulyea-55842)
-- [Nota 8868.327 €Casa de 2 dormitorios actualizada en Avonlea, SaskatchewanAvonlea, Saskatchewan77 m² · 2 dorm. · 887 €/m² · 65 días en RealHunt77 m² (824 pies cuadrados), 2 dormitorios, 1 baño, construida en 1926.](https://realhunt.co/es/deal/avonlea-68327)
-- [Nota 8699.500 €Casa en la costa acadiana con 4 dormitorios y baño nuevoGrande-Anse, Nuevo Brunswick107 m² · 4 dorm. · 930 €/m² · 53 días en RealHuntCasa de planta y media y unos 107 m² en Grande-Anse, en la costa acadiana de Nuevo Brunswick, junto a la bahía de Chaleur.](https://realhunt.co/es/deal/ca-grande-anse-99k-148091)
-- [Nota 8693.111 €Casa de 2 dormitorios reformada en Astle, Nuevo BrunswickAstle, Nuevo Brunswick94 m² · 2 dorm. · 991 €/m² · 65 días en RealHunt94 m² (1.016 pies cuadrados), 2 dormitorios, 1 baño.](https://realhunt.co/es/deal/astle-93111)
-- [Nota 8599.323 €Casa de 2 dormitorios lista para entrar a vivir en Shearstown, TerranovaShearstown, Terranova79 m² · 2 dorm. · 1.257 €/m² · 65 días en RealHunt79 m² (855 pies cuadrados), 2 dormitorios, 1 baño, construida en 1945.](https://realhunt.co/es/deal/shearstown-99323)
-- [Nota 8599.323 €Casa de 2 dormitorios actualizada en Minto, Nuevo BrunswickMinto, Nuevo Brunswick83 m² · 2 dorm. · 1.197 €/m² · 65 días en RealHunt83 m² (896 pies cuadrados), 2 dormitorios, 1 baño.](https://realhunt.co/es/deal/minto-99323)
-- [Nota 8192.552 €Casa de 2 dormitorios actualizada en Hughes Brook, TerranovaHughes Brook, Terranova62 m² · 2 dorm. · 1.493 €/m² · 65 días en RealHunt62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1962.](https://realhunt.co/es/deal/hughes-brook-92552)
+- [Nota 90Nueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 8 días en RealHuntSe pide C$194.000 (aproximadamente 123,4 €), menos de 610 € por m².](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [Nota 88Nueva124.000 €Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva EscociaHillsburn, Nueva Escocia106 m² · 3 dorm. · 1.170 €/m² · 8 días en RealHuntSe pide C$194.900 (aproximadamente 124.000 euros) por una casa de tres dormitorios de aproximadamente 106 m² en una parcela en una colina en…](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
+- [Nota 87Nueva159.000 €Casa de carácter de 1888 con vistas al puerto y jardín con estanque de carpas en Pictou, Nueva EscociaPictou, Nueva Escocia171 m² · 3 dorm. · 930 €/m² · 8 días en RealHuntSe pide C$249.900 (aproximadamente 159.000 €) por una casa de madera blanca de aproximadamente 171 m², construida en 1888 en el pueblo histórico…](https://realhunt.co/es/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
+- [Nota 86Nueva127.100 €Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva EscociaPictou, Nueva Escocia132 m² · 3 dorm. · 963 €/m² · 10 días en RealHuntSe pide C$199.900 (aproximadamente 127.100 €) por una casa de estilo cottage blanca de aproximadamente 132 m² en el corazón de Pictou, una…](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k)
+- [Nota 85Nueva140.000 €Casa de carácter actualizada con estufa de leña y taller en Liverpool, Nueva EscociaLiverpool, Nueva Escocia155 m² · 3 dorm. · 903 €/m² · 8 días en RealHuntSe pide C$220.000 (aproximadamente 140.000 €) por una casa de 1935 de aproximadamente 155 m², a pocos minutos del centro de Liverpool, un pueblo…](https://realhunt.co/es/deal/ca-liverpool-ns-updated-character-house-workshop-220k)
+- [Nota 82Nueva190.700 €Casa histórica de cuatro dormitorios con techos de hojalata y jardines de flores en el centro de SummersideSummerside, Isla del Príncipe Eduardo156 m² · 4 dorm. · 1.222 €/m² · 8 días en RealHuntSe pide C$299.900 (aproximadamente 190,7 €).](https://realhunt.co/es/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k)
+- [Nota 82Nueva190.700 €Casa de cuatro dormitorios en aproximadamente cinco acres en Saint Andrews, Nuevo BrunswickSaint Andrews, Nuevo Brunswick150 m² · 4 dorm. · 1.271 €/m² · 10 días en RealHuntSe pide C$299.900 (aproximadamente 190.700 €) por una casa blanca de aproximadamente 150 m² en aproximadamente cinco acres en las afueras de Saint…](https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k)
+- [Nota 9486.962 €Casa de 2 dormitorios actualizada en Glace Bay, Nueva EscociaGlace Bay, Nueva Escocia124 m² · 2 dorm. · 701 €/m² · 66 días en RealHunt124 m² (1.334 pies cuadrados), 2 dormitorios, 1 baño.](https://realhunt.co/es/deal/glace-bay-86962)
+- [Nota 9290.400 €Casa familiar grande con vistas al mar sobre el estrecho de CansoMulgrave, Nueva Escocia215 m² · 3 dorm. · 420 €/m² · 54 días en RealHuntCasa de 1949 bien cuidada en Mulgrave, Nueva Escocia, con tres dormitorios, baño y medio y vistas preciosas al estrecho de Canso.](https://realhunt.co/es/deal/ca-mulgrave-90k-623450)
+- [Nota 8855.842 €Casa de 2 dormitorios actualizada en Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 dorm. · 901 €/m² · 66 días en RealHunt62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1957.](https://realhunt.co/es/deal/bulyea-55842)
+- [Nota 8868.327 €Casa de 2 dormitorios actualizada en Avonlea, SaskatchewanAvonlea, Saskatchewan77 m² · 2 dorm. · 887 €/m² · 66 días en RealHunt77 m² (824 pies cuadrados), 2 dormitorios, 1 baño, construida en 1926.](https://realhunt.co/es/deal/avonlea-68327)
+- [Nota 8699.500 €Casa en la costa acadiana con 4 dormitorios y baño nuevoGrande-Anse, Nuevo Brunswick107 m² · 4 dorm. · 930 €/m² · 54 días en RealHuntCasa de planta y media y unos 107 m² en Grande-Anse, en la costa acadiana de Nuevo Brunswick, junto a la bahía de Chaleur.](https://realhunt.co/es/deal/ca-grande-anse-99k-148091)
+- [Nota 8693.111 €Casa de 2 dormitorios reformada en Astle, Nuevo BrunswickAstle, Nuevo Brunswick94 m² · 2 dorm. · 991 €/m² · 66 días en RealHunt94 m² (1.016 pies cuadrados), 2 dormitorios, 1 baño.](https://realhunt.co/es/deal/astle-93111)
+- [Nota 8599.323 €Casa de 2 dormitorios lista para entrar a vivir en Shearstown, TerranovaShearstown, Terranova79 m² · 2 dorm. · 1.257 €/m² · 66 días en RealHunt79 m² (855 pies cuadrados), 2 dormitorios, 1 baño, construida en 1945.](https://realhunt.co/es/deal/shearstown-99323)
+- [Nota 8599.323 €Casa de 2 dormitorios actualizada en Minto, Nuevo BrunswickMinto, Nuevo Brunswick83 m² · 2 dorm. · 1.197 €/m² · 66 días en RealHunt83 m² (896 pies cuadrados), 2 dormitorios, 1 baño.](https://realhunt.co/es/deal/minto-99323)
+- [Nota 8192.552 €Casa de 2 dormitorios actualizada en Hughes Brook, TerranovaHughes Brook, Terranova62 m² · 2 dorm. · 1.493 €/m² · 66 días en RealHunt62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1962.](https://realhunt.co/es/deal/hughes-brook-92552)
 
 ### Compara las 16 viviendas, de más barata a más cara
 
@@ -183,4 +183,4 @@ Estos anuncios proceden de redfin.ca (9), remax.ca (7). RealHunt no es una inmob
 [Avísame por correo de viviendas nuevas en Canadá](https://realhunt.co/es/alerts?country=Canada) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Canada#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Canadá](https://realhunt.co/es/sitemap/canada)
 
 ---
-Fuente: https://realhunt.co/es/homes/canada (RealHunt, 2026-11-27). Licencia CC BY 4.0: se puede citar con un enlace a la página.
+Fuente: https://realhunt.co/es/homes/canada (RealHunt, 2026-11-28). Licencia CC BY 4.0: se puede citar con un enlace a la página.

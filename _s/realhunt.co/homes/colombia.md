@@ -1,6 +1,6 @@
 Title: Houses for sale in Colombia (3, from €165,200) · RealHunt
 URL: https://realhunt.co/homes/colombia
-Updated: 2026-11-27
+Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in Colombia
@@ -28,15 +28,15 @@ Top score
 86
 
 Data of
-27 Nov 2026
+28 Nov 2026
 
 ### The 3 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Colombia)
 
-- [Score 86New€176,300Two-storey house with a mountain-view balcony and estate pool in Santa Fe de AntioquiaSanta Fe de Antioquia, Antioquia150 m² · 3 bed · €1,175/m² · 7 days on RealHuntCommunity fee €149 a monthAsking COP 650,000,000 (about €176,300).](https://realhunt.co/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m)
-- [Score 86New€165,200Fully remodelled three-bedroom house in a gated complex with pool, Santa MartaSanta Marta, Magdalena120 m² · 3 bed · €1,377/m² · 7 days on RealHuntCommunity fee not statedAsking COP 590,000,000 (about €165,200) for a two-storey house of about 120 m² in a gated residential complex in Rodadero Reservado, the quiet…](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m)
-- [Score 85New€203,500Sea-view four-bed flat on the 16th floor one block from Marbella beach, CartagenaMarbella, Bolívar132 m² · 4 bed · €1,542/m² · 7 days on RealHuntCommunity fee €203 a monthAsking COP 750,000,000 (about €203,500).](https://realhunt.co/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m)
+- [Score 86New€176,300Two-storey house with a mountain-view balcony and estate pool in Santa Fe de AntioquiaSanta Fe de Antioquia, Antioquia150 m² · 3 bed · €1,175/m² · 8 days on RealHuntCommunity fee €149 a monthAsking COP 650,000,000 (about €176,300).](https://realhunt.co/deal/co-santa-fe-de-antioquia-house-mountain-view-pool-650m)
+- [Score 86New€165,200Fully remodelled three-bedroom house in a gated complex with pool, Santa MartaSanta Marta, Magdalena120 m² · 3 bed · €1,377/m² · 8 days on RealHuntCommunity fee not statedAsking COP 590,000,000 (about €165,200) for a two-storey house of about 120 m² in a gated residential complex in Rodadero Reservado, the quiet…](https://realhunt.co/deal/co-santa-marta-remodelled-house-pool-rodadero-590m)
+- [Score 85New€203,500Sea-view four-bed flat on the 16th floor one block from Marbella beach, CartagenaMarbella, Bolívar132 m² · 4 bed · €1,542/m² · 8 days on RealHuntCommunity fee €203 a monthAsking COP 750,000,000 (about €203,500).](https://realhunt.co/deal/co-cartagena-marbella-sea-view-flat-four-bed-750m)
 
 ### Compare the 3 homes, cheapest first
 
@@ -110,4 +110,4 @@ These listings come from fincaraiz.com.co (3). RealHunt is not an estate agent a
 [Email me new homes in Colombia](https://realhunt.co/alerts?country=Colombia) · [Filter and sort these homes](https://realhunt.co/?country=Colombia#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Colombia](https://realhunt.co/sitemap/colombia)
 
 ---
-Source: https://realhunt.co/homes/colombia (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/colombia (RealHunt, 2026-11-28). Licence CC BY 4.0: quote it with a link to the page.

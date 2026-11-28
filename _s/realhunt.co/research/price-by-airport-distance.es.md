@@ -2,9 +2,9 @@
 
 Las casas de RealHunt a menos de 30 km de un aeropuerto tienen un precio de salida mediano de 1.568 €/m² (198 casas); entre 30 y 60 km es de 1.222 €/m² (258 casas), un 22 % menos, y entre 60 y 100 km, de 1.086 €/m² (165 casas). El precio mediano de la casa entera pasa de 150.000 € a 99.500 € y 91.000 €.
 
-693 casas con distancia conocida, a 27 de noviembre de 2026. Distancia en línea recta al aeropuerto con vuelos de pasajeros más cercano. Los tramos mezclan países, así que parte de la diferencia se debe a que las casas lejos de un aeropuerto están en países y regiones más baratos.
+693 casas con distancia conocida, a 28 de noviembre de 2026. Distancia en línea recta al aeropuerto con vuelos de pasajeros más cercano. Los tramos mezclan países, así que parte de la diferencia se debe a que las casas lejos de un aeropuerto están en países y regiones más baratos.
 
-Actualizado el 27 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/price-by-airport-distance (CC BY 4.0). CSV: https://realhunt.co/research/price-by-airport-distance.es.csv
+Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/price-by-airport-distance (CC BY 4.0). CSV: https://realhunt.co/research/price-by-airport-distance.es.csv
 
 ## La tabla
 

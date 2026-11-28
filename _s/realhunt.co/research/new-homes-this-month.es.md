@@ -1,10 +1,10 @@
 # Casas nuevas en RealHunt en noviembre de 2026, por país
 
-En noviembre de 2026, hasta el 27 de noviembre de 2026, se añadieron 297 casas a RealHunt, en 26 países. La mayoría están en Italia (54), España (52) y Francia (43). La más barata es Chalet de montaña con estufa de leña y altillo en el bosque de Hida, en Shokawa, Takayama, Gifu (7.400 €), y la de mejor nota es Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia, en Lynchburg, Virginia (nota 93).
+En noviembre de 2026, hasta el 28 de noviembre de 2026, se añadieron 297 casas a RealHunt, en 26 países. La mayoría están en Italia (54), España (52) y Francia (43). La más barata es Chalet de montaña con estufa de leña y altillo en el bosque de Hida, en Shokawa, Takayama, Gifu (7.400 €), y la de mejor nota es Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia, en Lynchburg, Virginia (nota 93).
 
 Contadas por el día en que cada casa entró en RealHunt. No se cuentan las casas que ya salieron de la web. La página se regenera con cada actualización.
 
-Actualizado el 27 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/new-homes-this-month (CC BY 4.0). CSV: https://realhunt.co/research/new-homes-this-month.es.csv
+Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/new-homes-this-month (CC BY 4.0). CSV: https://realhunt.co/research/new-homes-this-month.es.csv
 
 ## La tabla
 

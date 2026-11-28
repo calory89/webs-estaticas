@@ -4,7 +4,7 @@ Cómo trabaja RealHunt
 
 Una persona mira cada casa antes de publicarla. Una casa se rechaza cuando no es una vivienda entera en venta, cuando su precio no es bueno para la zona, cuando necesita más que una reforma ligera, cuando sus fotos son malas, cuando está junto a ruido o industria, cuando el anuncio no da los datos básicos o cuando sus gastos fijos son demasiado altos para el precio. Tienen que cumplirse todas las reglas de abajo.
 
-Actualizado el 27 de noviembre de 2026
+Actualizado el 28 de noviembre de 2026
 
 ### Una vivienda entera, en venta, con precio
 
@@ -67,4 +67,4 @@ No llevamos la cuenta de las casas que rechazamos, así que no damos ninguna cif
 - [Política editorial](https://realhunt.co/es/editorial-policy)
 
 ---
-Fuente: https://realhunt.co/es/what-we-reject (RealHunt, 2026-11-27)
+Fuente: https://realhunt.co/es/what-we-reject (RealHunt, 2026-11-28)

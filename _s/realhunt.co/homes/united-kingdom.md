@@ -1,6 +1,6 @@
 Title: Houses for sale in the United Kingdom (5, from €121,000)
 URL: https://realhunt.co/homes/united-kingdom
-Updated: 2026-11-27
+Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in the United Kingdom
@@ -9,9 +9,9 @@ List last changed 20 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best scoreNew€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · 7 days on RealHunt](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
-- [CheapestNew€121,000Traditional two-bedroom cottage with wood burner and large garden in Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 bed · €1,806/m² · 9 days on RealHunt](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k)
-- [Most space for the moneyNew€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 9 days on RealHunt](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
+- [Best scoreNew€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · 8 days on RealHunt](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+- [CheapestNew€121,000Traditional two-bedroom cottage with wood burner and large garden in Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 bed · €1,806/m² · 10 days on RealHunt](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k)
+- [Most space for the moneyNew€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 10 days on RealHunt](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
 
 RealHunt lists 5 houses for sale in the United Kingdom today, priced from €121,000 to €198,400. The cheapest costs €121,000: [Traditional two-bedroom cottage with wood burner and large garden in Whithorn, Galloway](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k), in Whithorn (67 m², 2 bedrooms). The median price is €161,000 (€1,807/m²), against €99,000 (€1,241/m²) for the 703 homes on RealHunt in 23 countries.
 
@@ -40,17 +40,17 @@ Foreign buyers
 Can buy freely
 
 Data of
-27 Nov 2026
+28 Nov 2026
 
 ### The 5 homes, best score first
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=United+Kingdom)
 
-- [Score 83New€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · 7 days on RealHuntAsking £140,000 (about €161,000).](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
-- [Score 83New€198,400Refurbished period townhouse with a double garage in Lack village, County FermanaghLack, Northern Ireland107 m² · 3 bed · €1,854/m² · 7 days on RealHuntAsking £172,500 (about €198,400) for a 107 m² traditional end-terrace townhouse that has been fully and carefully refurbished, keeping its…](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
-- [Score 83New€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 9 days on RealHuntA well-presented semi-detached house in the centre of Macduff, a coastal town on the Moray Firth in north-east Scotland, sold fully furnished and…](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
-- [Score 82New€195,400Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern IrelandGreyabbey, Northern Ireland80 m² · 2 bed · €2,443/m² · 7 days on RealHuntAsking £169,950 (about €195,400) for an 80 m² end-terrace house in the heart of historic Greyabbey, comprehensively renovated within the last five…](https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
-- [Score 81New€121,000Traditional two-bedroom cottage with wood burner and large garden in Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 bed · €1,806/m² · 9 days on RealHuntA traditional terraced cottage in the centre of Whithorn, in the far south-west of Scotland.](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k)
+- [Score 83New€161,000Well-kept three-bed semi-detached house with solar panels in Enniskillen, FermanaghEnniskillen, Northern Ireland107 m² · 3 bed · €1,505/m² · 8 days on RealHuntAsking £140,000 (about €161,000).](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k)
+- [Score 83New€198,400Refurbished period townhouse with a double garage in Lack village, County FermanaghLack, Northern Ireland107 m² · 3 bed · €1,854/m² · 8 days on RealHuntAsking £172,500 (about €198,400) for a 107 m² traditional end-terrace townhouse that has been fully and carefully refurbished, keeping its…](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k)
+- [Score 83New€126,500Furnished two-bedroom house with Moray Firth sea views in the harbour town of MacduffMacduff, Aberdeenshire70 m² · 2 bed · €1,807/m² · 10 days on RealHuntA well-presented semi-detached house in the centre of Macduff, a coastal town on the Moray Firth in north-east Scotland, sold fully furnished and…](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k)
+- [Score 82New€195,400Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern IrelandGreyabbey, Northern Ireland80 m² · 2 bed · €2,443/m² · 8 days on RealHuntAsking £169,950 (about €195,400) for an 80 m² end-terrace house in the heart of historic Greyabbey, comprehensively renovated within the last five…](https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k)
+- [Score 81New€121,000Traditional two-bedroom cottage with wood burner and large garden in Whithorn, GallowayWhithorn, Dumfries and Galloway67 m² · 2 bed · €1,806/m² · 10 days on RealHuntA traditional terraced cottage in the centre of Whithorn, in the far south-west of Scotland.](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k)
 
 ### Compare the 5 homes, cheapest first
 
@@ -144,4 +144,4 @@ These listings come from propertypal.com (3), onthemarket.com (2). RealHunt is n
 [Email me new homes in the United Kingdom](https://realhunt.co/alerts?country=United%20Kingdom) · [Filter and sort these homes](https://realhunt.co/?country=United+Kingdom#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in the United Kingdom](https://realhunt.co/sitemap/united-kingdom)
 
 ---
-Source: https://realhunt.co/homes/united-kingdom (RealHunt, 2026-11-27). Licence CC BY 4.0: quote it with a link to the page.
+Source: https://realhunt.co/homes/united-kingdom (RealHunt, 2026-11-28). Licence CC BY 4.0: quote it with a link to the page.

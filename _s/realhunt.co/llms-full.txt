@@ -2,7 +2,7 @@
 
 > RealHunt (https://realhunt.co) is where foreigners find, check and buy property: homes for sale around the world, each checked by a person and graded from 70 to 98 against every other home on the site, with buying rules, taxes and costs by country. It is not an estate agent; every home links to its original listing. Legal and tax notes are general information, not advice.
 
-Updated 2026-11-27. 703 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
+Updated 2026-11-28. 703 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
 
 
 ---
@@ -20,7 +20,7 @@ Buyers pay nothing. Resale homes are not for sale through RealHunt: we link to t
 
 
 ---
-Source: https://realhunt.co/editorial-policy (updated 2026-11-27)
+Source: https://realhunt.co/editorial-policy (updated 2026-11-28)
 
 Trust
 
@@ -28,7 +28,7 @@ Trust
 
 RealHunt publishes figures it computes from its own listings and buying rules it compiles from named sources. Nobody can pay to change a score, a ranking or a figure, and errors are corrected on the page with its date.
 
-Last reviewed: 27 November 2026
+Last reviewed: 28 November 2026
 
 ### Who publishes RealHunt
 
@@ -77,7 +77,7 @@ Text, figures, charts and tables may be quoted with a link to the page they come
 
 
 ---
-Source: https://realhunt.co/for-ai (updated 2026-11-27)
+Source: https://realhunt.co/for-ai (updated 2026-11-28)
 
 For AI assistants
 
@@ -85,7 +85,7 @@ For AI assistants
 
 AI assistants and search engines may read, quote and summarise every public page of RealHunt, with a link to the page the fact comes from. The data pages are licensed Creative Commons BY 4.0; the short index is https://realhunt.co/llms.txt and the full text is https://realhunt.co/llms-full.txt.
 
-Updated 27 November 2026
+Updated 28 November 2026
 
 ### What RealHunt is
 
@@ -151,7 +151,7 @@ Questions about the data, a correction or a different format: carlos@equinoxinve
 
 
 ---
-Source: https://realhunt.co/method (updated 2026-11-27)
+Source: https://realhunt.co/method (updated 2026-11-28)
 
 Methodology
 
@@ -159,7 +159,7 @@ Methodology
 
 The RealHunt score is a grade from 70 to 98 that every home on RealHunt carries. A person first decides whether a home is listed at all; the grade then averages up to 11 sub-scores from 0 to 100, all with the same weight, and compares the home with every other home on the site.
 
-Version 2026-11-14 · figures from 703 homes on 27 November 2026 · [Markdown version](https://realhunt.co/method.md)
+Version 2026-11-14 · figures from 703 homes on 28 November 2026 · [Markdown version](https://realhunt.co/method.md)
 
 ### Step 1. A person checks the home
 
@@ -222,7 +222,7 @@ Date | What changed
 
 
 ---
-Source: https://realhunt.co/press (updated 2026-11-27)
+Source: https://realhunt.co/press (updated 2026-11-28)
 
 Press
 
@@ -230,7 +230,7 @@ Press
 
 RealHunt (realhunt.co) is a website where foreigners find, check and buy property: it lists cheap homes for sale around the world, each one checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing and buyers pay nothing. It also publishes, free to quote, the buying rules, taxes and costs of 20 countries and data on what cheap homes cost.
 
-Numbers updated 27 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
+Numbers updated 28 November 2026 · Press contact: carlos@equinoxinvestmentgroup.com
 
 ### RealHunt in numbers
 
@@ -296,7 +296,7 @@ Write to the press contact[All the data](https://realhunt.co/research)[Badges an
 
 
 ---
-Source: https://realhunt.co/research (updated 2026-11-27)
+Source: https://realhunt.co/research (updated 2026-11-28)
 
 RealHunt data
 
@@ -304,7 +304,7 @@ RealHunt data
 
 RealHunt publishes 13 datasets, recomputed on every update from the 703 homes on the site and the buying rules of 20 countries. Anyone may quote them with a link.
 
-Updated 27 November 2026 · Creative Commons BY 4.0
+Updated 28 November 2026 · Creative Commons BY 4.0
 
 - [Median asking price of a cheap home, by country (2026)](https://realhunt.co/research/prices)Lowest median price per m²: Japan, €340.[CSV](https://realhunt.co/research/prices.csv) · [Markdown](https://realhunt.co/research/prices.md)
 - [What €50,000, €100,000 and €200,000 buy, country by country (2026)](https://realhunt.co/research/what-your-budget-buys)€50,001 to €100,000 buys a median 115 m² in Denmark and 34 m² in Switzerland.[CSV](https://realhunt.co/research/what-your-budget-buys.csv) · [Markdown](https://realhunt.co/research/what-your-budget-buys.md)
@@ -344,7 +344,7 @@ Quote any figure with a link to its page. For a custom cut of the data, a commen
 
 
 ---
-Source: https://realhunt.co/research/best-scored-regions (updated 2026-11-27)
+Source: https://realhunt.co/research/best-scored-regions (updated 2026-11-28)
 
 RealHunt data
 
@@ -352,10 +352,10 @@ RealHunt data
 
 Among the 30 regions with at least 5 homes on RealHunt, the highest median score is in West Jutland, Denmark (91, median price €89,100); Funen, Denmark (90, median price €79,800); Valencia, Spain (89, median price €145,000).
 
-The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 27 November 2026.
+The score is RealHunt's own grade from 70 to 98, built from 11 sub-scores such as price, space, condition, water, weather and airport. 28 November 2026.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/best-scored-regions.csv) · [Markdown version](https://realhunt.co/research/best-scored-regions.md) · How to cite
-Median RealHunt score, the 15 best regionsScore from 70 to 98; regions with at least 5 homes, 27 November 2026.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/best-scored-regions.csv) · [Markdown version](https://realhunt.co/research/best-scored-regions.md) · How to cite
+Median RealHunt score, the 15 best regionsScore from 70 to 98; regions with at least 5 homes, 28 November 2026.
 
 - West Jutland Denmark · small sample: 5 homes 91
 - Funen Denmark · small sample: 5 homes 90
@@ -443,7 +443,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/buying-costs-by-country (updated 2026-11-27)
+Source: https://realhunt.co/research/buying-costs-by-country (updated 2026-11-28)
 
 RealHunt data
 
@@ -453,7 +453,7 @@ Of 29 countries and destinations, the taxes and fees you pay on top of the price
 
 Transfer tax or VAT, stamp duty, notary, land registry and lawyer, as a share of the price. Compiled from the sources linked for each country; general information, not tax advice.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/buying-costs-by-country.csv) · [Markdown version](https://realhunt.co/research/buying-costs-by-country.md) · How to cite
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/buying-costs-by-country.csv) · [Markdown version](https://realhunt.co/research/buying-costs-by-country.md) · How to cite
 Taxes and fees on top of the price, by countryRange in % of the purchase price, lowest first. The bar runs from the low to the high end of the range.
 
 - Georgia 0.6–1.1%
@@ -896,7 +896,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/cheapest-per-sqm-europe (updated 2026-11-27)
+Source: https://realhunt.co/research/cheapest-per-sqm-europe (updated 2026-11-28)
 
 RealHunt data
 
@@ -904,10 +904,10 @@ RealHunt data
 
 The home with the lowest asking price per square metre in Europe on RealHunt is 1926 character home with a full home spa, sauna and geothermal heating in Bjurholm, Västerbotten, Sweden: €99,000 for 680 m², €146/m². By country, the lowest median price per m² is in Bulgaria (€759/m²), Denmark (€790/m²), Sweden (€800/m²), and the highest in the Netherlands (€4,286/m²).
 
-From 526 homes in 16 European countries whose listing gives a size of at least 20 m², each checked by a person, 27 November 2026.
+From 526 homes in 16 European countries whose listing gives a size of at least 20 m², each checked by a person, 28 November 2026.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/cheapest-per-sqm-europe.csv) · [Markdown version](https://realhunt.co/research/cheapest-per-sqm-europe.md) · How to cite
-Median asking price per m² in Europe, by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 27 November 2026.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/cheapest-per-sqm-europe.csv) · [Markdown version](https://realhunt.co/research/cheapest-per-sqm-europe.md) · How to cite
+Median asking price per m² in Europe, by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 28 November 2026.
 
 - Bulgaria small sample: 6 homes €759
 - Denmark 44 homes €790
@@ -1011,15 +1011,15 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/country-facts (updated 2026-11-27)
+Source: https://realhunt.co/research/country-facts (updated 2026-11-28)
 
 RealHunt data
 
 ## Key facts for buying a cheap home, country by country
 
-For each of the 23 countries where RealHunt lists at least 3 homes: how many homes, the median asking price, the price per m², the taxes and fees to buy and the rule for foreign buyers, in full sentences with their date so each one can be quoted on its own. Figures of 27 November 2026, from 703 homes checked by a person.
+For each of the 23 countries where RealHunt lists at least 3 homes: how many homes, the median asking price, the price per m², the taxes and fees to buy and the rule for foreign buyers, in full sentences with their date so each one can be quoted on its own. Figures of 28 November 2026, from 703 homes checked by a person.
 
-Updated 27 November 2026
+Updated 28 November 2026
 
 - Bulgaria6
 - Canada16
@@ -1091,11 +1091,11 @@ Rule: the middle of the range of taxes and fees on top of the price, lowest firs
 - United States: 2–5% (as of 2026)
 - Netherlands: 2–9% (as of 2026)
 - Dominican Republic: 4.25–7% (as of 2026)
-Median asking price of a cheap home, by country. Euros. Countries with at least 10 homes on RealHunt, 27 November 2026. You can use this chart with a link to this page (CC BY 4.0). The full table is in [prices by country](https://realhunt.co/research/prices).
+Median asking price of a cheap home, by country. Euros. Countries with at least 10 homes on RealHunt, 28 November 2026. You can use this chart with a link to this page (CC BY 4.0). The full table is in [prices by country](https://realhunt.co/research/prices).
 
 ### Spain
 
-On 27 November 2026, RealHunt lists 155 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 155 homes is €120,000 (€1,296 per m², from the 152 homes with a known size); the cheapest costs €39,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 28 November 2026, RealHunt lists 155 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 155 homes is €120,000 (€1,296 per m², from the 152 homes with a known size); the cheapest costs €39,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 155
@@ -1107,13 +1107,13 @@ Median RealHunt score (70 to 98) | 84
 Taxes and fees to buy | 7.5–14% of the price (as of 2026)
 Can foreigners buy? | Yes, no restrictions at present; the government has proposed a 100% tax on (or ban for) non-EU non-resident buyers, not enacted.
 Yearly property tax | IBI 0.4-1.1% of cadastral value (municipal), plus imputed income tax on unlet homes.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 155 homes in Spain](https://realhunt.co/homes/spain) · [Costs and taxes, with sources](https://realhunt.co/costs/spain) · [Buying guide, step by step](https://realhunt.co/guide/spain) · [Fact sheet (PDF)](https://realhunt.co/data/countries/spain.pdf) · [JSON](https://realhunt.co/data/countries/spain.json) · [Markdown](https://realhunt.co/data/countries/spain.md)
 
 ### Italy
 
-On 27 November 2026, RealHunt lists 102 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 102 homes is €97,000 (€1,167 per m², from the 84 homes with a known size); the cheapest costs €12,000 and the most expensive €215,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 28 November 2026, RealHunt lists 102 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 102 homes is €97,000 (€1,167 per m², from the 84 homes with a known size); the cheapest costs €12,000 and the most expensive €215,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 102
@@ -1125,13 +1125,13 @@ Median RealHunt score (70 to 98) | 82
 Taxes and fees to buy | 4–15% of the price (as of 2026)
 Can foreigners buy? | Yes for EU citizens; non-EU buyers need reciprocity (US, UK, Canada, Australia qualify).
 Yearly property tax | IMU 0.4-1.06% on second homes (on cadastral value).
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 102 homes in Italy](https://realhunt.co/homes/italy) · [Costs and taxes, with sources](https://realhunt.co/costs/italy) · [Buying guide, step by step](https://realhunt.co/guide/italy) · [Fact sheet (PDF)](https://realhunt.co/data/countries/italy.pdf) · [JSON](https://realhunt.co/data/countries/italy.json) · [Markdown](https://realhunt.co/data/countries/italy.md)
 
 ### France
 
-On 27 November 2026, RealHunt lists 62 homes for sale in France, each one checked by a person. In France, the median asking price of those 62 homes is €125,000 (€1,200 per m², from the 59 homes with a known size); the cheapest costs €39,000 and the most expensive €214,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 28 November 2026, RealHunt lists 62 homes for sale in France, each one checked by a person. In France, the median asking price of those 62 homes is €125,000 (€1,200 per m², from the 59 homes with a known size); the cheapest costs €39,000 and the most expensive €214,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 62
@@ -1143,13 +1143,13 @@ Median RealHunt score (70 to 98) | 82
 Taxes and fees to buy | 7–8.5% of the price (as of 2026)
 Can foreigners buy? | Yes. Foreigners can buy property in France without major restrictions, and non-EU buyers do not need a permit, although the paperwork can take longer.
 Yearly property tax | Owners pay an annual property tax (taxe foncière) set by the local authorities, and owners of a furnished second home also pay housing tax (taxe d'habitation), which some communes raise by a surcharge of 5% to 60%.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 62 homes in France](https://realhunt.co/homes/france) · [Costs and taxes, with sources](https://realhunt.co/costs/france) · [Buying guide, step by step](https://realhunt.co/guide/france) · [Fact sheet (PDF)](https://realhunt.co/data/countries/france.pdf) · [JSON](https://realhunt.co/data/countries/france.json) · [Markdown](https://realhunt.co/data/countries/france.md)
 
 ### United States
 
-On 27 November 2026, RealHunt lists 61 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 61 homes is €214,900 (€1,560 per m², from the 61 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 28 November 2026, RealHunt lists 61 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 61 homes is €214,900 (€1,560 per m², from the 61 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 61
@@ -1161,13 +1161,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 2–5% of the price (as of 2026)
 Can foreigners buy? | Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China.
 Yearly property tax | Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 61 homes in the United States](https://realhunt.co/homes/united-states) · [Costs and taxes, with sources](https://realhunt.co/costs/united-states) · [Buying guide, step by step](https://realhunt.co/guide/united-states) · [Fact sheet (PDF)](https://realhunt.co/data/countries/united-states.pdf) · [JSON](https://realhunt.co/data/countries/united-states.json) · [Markdown](https://realhunt.co/data/countries/united-states.md)
 
 ### Denmark
 
-On 27 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
+On 28 November 2026, RealHunt lists 46 homes for sale in Denmark, each one checked by a person. In Denmark, the median asking price of those 46 homes is €93,200 (€790 per m², from the 44 homes with a known size); the cheapest costs €35,400 and the most expensive €160,000. Taxes and fees add about 1.5–3% to the price of a home in Denmark (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 46
@@ -1179,13 +1179,13 @@ Median RealHunt score (70 to 98) | 88
 Taxes and fees to buy | 1.5–3% of the price (as of 2026)
 Can foreigners buy? | Without Danish domicile or 5 years of past residence you need permission from the Department of Civil Affairs (Civilstyrelsen); EU/EEA citizens who live and are registered in Denmark can buy a permanent home without permission by signing a declaration to the Land Registration Court. Holiday homes (sommerhuse) need permission, which is only given to people with particularly strong ties to Denmark, such as many years of holidays there.
 Yearly property tax | Owners pay property value tax (ejendomsværdiskat) of 0.51% on 80% of the official valuation (1.4% above DKK 9.2 million) plus municipal land tax (grundskyld) at a rate set by each municipality, capped at 30 per mille of the land value.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 46 homes in Denmark](https://realhunt.co/homes/denmark) · [Costs and taxes, with sources](https://realhunt.co/costs/denmark) · [Buying guide, step by step](https://realhunt.co/guide/denmark) · [Fact sheet (PDF)](https://realhunt.co/data/countries/denmark.pdf) · [JSON](https://realhunt.co/data/countries/denmark.json) · [Markdown](https://realhunt.co/data/countries/denmark.md)
 
 ### Greece
 
-On 27 November 2026, RealHunt lists 42 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 42 homes is €160,000 (€1,800 per m², from the 41 homes with a known size); the cheapest costs €68,000 and the most expensive €210,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
+On 28 November 2026, RealHunt lists 42 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 42 homes is €160,000 (€1,800 per m², from the 41 homes with a known size); the cheapest costs €68,000 and the most expensive €210,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 42
@@ -1197,13 +1197,13 @@ Median RealHunt score (70 to 98) | 85
 Taxes and fees to buy | 5.5–7% of the price (as of 2026)
 Can foreigners buy? | Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026.
 Yearly property tax | Owners on 1 January pay the unified property tax (ENFIA), calculated per property from its location, size, age and official zone value, with an extra charge if total Greek property exceeds €500,000.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 42 homes in Greece](https://realhunt.co/homes/greece) · [Costs and taxes, with sources](https://realhunt.co/costs/greece) · [Buying guide, step by step](https://realhunt.co/guide/greece) · [Fact sheet (PDF)](https://realhunt.co/data/countries/greece.pdf) · [JSON](https://realhunt.co/data/countries/greece.json) · [Markdown](https://realhunt.co/data/countries/greece.md)
 
 ### Sweden
 
-On 27 November 2026, RealHunt lists 37 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 37 homes is €72,000 (€800 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €178,900. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
+On 28 November 2026, RealHunt lists 37 homes for sale in Sweden, each one checked by a person. In Sweden, the median asking price of those 37 homes is €72,000 (€800 per m², from the 21 homes with a known size); the cheapest costs €22,000 and the most expensive €178,900. Taxes and fees add about 1.5–3.5% to the price of a home in Sweden (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 37
@@ -1215,13 +1215,13 @@ Median RealHunt score (70 to 98) | 84
 Taxes and fees to buy | 1.5–3.5% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no citizenship or residence rules for buying a home in Sweden, but you need a Swedish personal identity number or coordination number (samordningsnummer) to register ownership.
 Yearly property tax | Houses pay a municipal property fee (kommunal fastighetsavgift) of SEK 10,425 in 2026, or 0.75% of the tax value if that is lower.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 37 homes in Sweden](https://realhunt.co/homes/sweden) · [Costs and taxes, with sources](https://realhunt.co/costs/sweden) · [Buying guide, step by step](https://realhunt.co/guide/sweden) · [Fact sheet (PDF)](https://realhunt.co/data/countries/sweden.pdf) · [JSON](https://realhunt.co/data/countries/sweden.json) · [Markdown](https://realhunt.co/data/countries/sweden.md)
 
 ### Poland
 
-On 27 November 2026, RealHunt lists 31 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 31 homes is €75,170 (€1,139 per m², from the 31 homes with a known size); the cheapest costs €53,693 and the most expensive €90,600. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
+On 28 November 2026, RealHunt lists 31 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 31 homes is €75,170 (€1,139 per m², from the 31 homes with a known size); the cheapest costs €53,693 and the most expensive €90,600. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 31
@@ -1233,13 +1233,13 @@ Median RealHunt score (70 to 98) | 84
 Taxes and fees to buy | 2.5–4% of the price (as of 2026)
 Can foreigners buy? | EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land.
 Yearly property tax | Owners pay a local property tax (podatek od nieruchomości) set by the commune, capped in 2026 at PLN 1.25 per m² of usable floor space for flats and houses.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 31 homes in Poland](https://realhunt.co/homes/poland) · [Costs and taxes, with sources](https://realhunt.co/costs/poland) · [Buying guide, step by step](https://realhunt.co/guide/poland) · [Fact sheet (PDF)](https://realhunt.co/data/countries/poland.pdf) · [JSON](https://realhunt.co/data/countries/poland.json) · [Markdown](https://realhunt.co/data/countries/poland.md)
 
 ### Japan
 
-On 27 November 2026, RealHunt lists 30 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 30 homes is €49,680 (€340 per m², from the 15 homes with a known size); the cheapest costs €7,400 and the most expensive €125,400. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
+On 28 November 2026, RealHunt lists 30 homes for sale in Japan, each one checked by a person. In Japan, the median asking price of those 30 homes is €49,680 (€340 per m², from the 15 homes with a known size); the cheapest costs €7,400 and the most expensive €125,400. Taxes and fees add about 6–9% to the price of a home in Japan (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 30
@@ -1251,13 +1251,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 6–9% of the price (as of 2026)
 Can foreigners buy? | Yes. Foreigners can buy freehold land and homes on the same terms as Japanese citizens, even on a tourist visa, though buying does not give a visa or residency.
 Yearly property tax | Fixed asset tax is 1.4% of the government's assessed value, plus city planning tax of up to 0.3% in urban areas, and small residential plots get a lower tax base.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 30 homes in Japan](https://realhunt.co/homes/japan) · [Costs and taxes, with sources](https://realhunt.co/costs/japan) · [Buying guide, step by step](https://realhunt.co/guide/japan) · [Fact sheet (PDF)](https://realhunt.co/data/countries/japan.pdf) · [JSON](https://realhunt.co/data/countries/japan.json) · [Markdown](https://realhunt.co/data/countries/japan.md)
 
 ### Portugal
 
-On 27 November 2026, RealHunt lists 20 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 20 homes is €150,000 (€1,510 per m², from the 20 homes with a known size); the cheapest costs €48,000 and the most expensive €200,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 28 November 2026, RealHunt lists 20 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 20 homes is €150,000 (€1,510 per m², from the 20 homes with a known size); the cheapest costs €48,000 and the most expensive €200,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 20
@@ -1269,13 +1269,13 @@ Median RealHunt score (70 to 98) | 84
 Taxes and fees to buy | 3–12% of the price (as of 2026)
 Can foreigners buy? | Yes, same rights as Portuguese citizens (IMT increase for foreign second-home buyers announced Sept 2025).
 Yearly property tax | IMI 0.3-0.45% of taxable value (urban), set by municipality.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 20 homes in Portugal](https://realhunt.co/homes/portugal) · [Costs and taxes, with sources](https://realhunt.co/costs/portugal) · [Buying guide, step by step](https://realhunt.co/guide/portugal) · [Fact sheet (PDF)](https://realhunt.co/data/countries/portugal.pdf) · [JSON](https://realhunt.co/data/countries/portugal.json) · [Markdown](https://realhunt.co/data/countries/portugal.md)
 
 ### Germany
 
-On 27 November 2026, RealHunt lists 18 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 18 homes is €55,000 (€1,078 per m², from the 18 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
+On 28 November 2026, RealHunt lists 18 homes for sale in Germany, each one checked by a person. In Germany, the median asking price of those 18 homes is €55,000 (€1,078 per m², from the 18 homes with a known size); the cheapest costs €40,000 and the most expensive €199,000. Taxes and fees add about 5–8.5% to the price of a home in Germany (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 18
@@ -1287,13 +1287,13 @@ Median RealHunt score (70 to 98) | 80
 Taxes and fees to buy | 5–8.5% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no restrictions on foreigners buying property in Germany, though non-EU buyers usually need a bigger down payment to get a loan.
 Yearly property tax | Owners pay property tax (Grundsteuer), calculated since 2025 as assessed value x a tax rate x a municipal multiplier (Hebesatz) that each municipality sets.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 18 homes in Germany](https://realhunt.co/homes/germany) · [Costs and taxes, with sources](https://realhunt.co/costs/germany) · [Buying guide, step by step](https://realhunt.co/guide/germany) · [Fact sheet (PDF)](https://realhunt.co/data/countries/germany.pdf) · [JSON](https://realhunt.co/data/countries/germany.json) · [Markdown](https://realhunt.co/data/countries/germany.md)
 
 ### Netherlands
 
-On 27 November 2026, RealHunt lists 18 homes for sale in the Netherlands, each one checked by a person. In the Netherlands, the median asking price of those 18 homes is €325,000 (€4,286 per m², from the 18 homes with a known size); the cheapest costs €299,000 and the most expensive €339,500. Taxes and fees add about 2–9% to the price of a home in the Netherlands (figures as of 2026).
+On 28 November 2026, RealHunt lists 18 homes for sale in the Netherlands, each one checked by a person. In the Netherlands, the median asking price of those 18 homes is €325,000 (€4,286 per m², from the 18 homes with a known size); the cheapest costs €299,000 and the most expensive €339,500. Taxes and fees add about 2–9% to the price of a home in the Netherlands (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 18
@@ -1305,13 +1305,13 @@ Median RealHunt score (70 to 98) | 88
 Taxes and fees to buy | 2–9% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no nationality or residence rules and no surcharge for foreign buyers. Some cities, such as The Hague, restrict renting out cheaper homes after purchase without a permit (opkoopbescherming).
 Yearly property tax | Owners pay municipal property tax (onroerendezaakbelasting, OZB) on the official WOZ value, at a rate each municipality sets, which in practice is a per mille figure; tenants of homes do not pay it.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 18 homes in the Netherlands](https://realhunt.co/homes/netherlands) · [Costs and taxes, with sources](https://realhunt.co/costs/netherlands) · [Buying guide, step by step](https://realhunt.co/guide/netherlands) · [Fact sheet (PDF)](https://realhunt.co/data/countries/netherlands.pdf) · [JSON](https://realhunt.co/data/countries/netherlands.json) · [Markdown](https://realhunt.co/data/countries/netherlands.md)
 
 ### Canada
 
-On 27 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
+On 28 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 16
@@ -1323,13 +1323,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 1.5–4% of the price (as of 2026)
 Can foreigners buy? | Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied.
 Yearly property tax | Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 16 homes in Canada](https://realhunt.co/homes/canada) · [Costs and taxes, with sources](https://realhunt.co/costs/canada) · [Buying guide, step by step](https://realhunt.co/guide/canada) · [Fact sheet (PDF)](https://realhunt.co/data/countries/canada.pdf) · [JSON](https://realhunt.co/data/countries/canada.json) · [Markdown](https://realhunt.co/data/countries/canada.md)
 
 ### Mexico
 
-On 27 November 2026, RealHunt lists 12 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 12 homes is €98,621 (€1,354 per m², from the 12 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
+On 28 November 2026, RealHunt lists 12 homes for sale in Mexico, each one checked by a person. In Mexico, the median asking price of those 12 homes is €98,621 (€1,354 per m², from the 12 homes with a known size); the cheapest costs €50,575 and the most expensive €216,600. Taxes and fees add about 3.5–8% to the price of a home in Mexico (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 12
@@ -1341,13 +1341,13 @@ Median RealHunt score (70 to 98) | 86
 Taxes and fees to buy | 3.5–8% of the price (as of 2026)
 Can foreigners buy? | Yes, but in the Restricted Zone (within 50 km of the coast or 100 km of borders, which covers Tulum and Playa del Carmen) only through a fideicomiso bank trust or a Mexican company; direct ownership elsewhere.
 Yearly property tax | Municipal predial, set locally on cadastral value; usually small, often less than HOA fees.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 12 homes in Mexico](https://realhunt.co/homes/mexico) · [Costs and taxes, with sources](https://realhunt.co/costs/mexico) · [Buying guide, step by step](https://realhunt.co/guide/mexico) · [Fact sheet (PDF)](https://realhunt.co/data/countries/mexico.pdf) · [JSON](https://realhunt.co/data/countries/mexico.json) · [Markdown](https://realhunt.co/data/countries/mexico.md)
 
 ### Switzerland
 
-On 27 November 2026, RealHunt lists 10 homes for sale in Switzerland, each one checked by a person. In Switzerland, the median asking price of those 10 homes is €70,100 (€2,337 per m², from the 10 homes with a known size); the cheapest costs €32,300 and the most expensive €88,400. Taxes and fees add about 1–5% to the price of a home in Switzerland (figures as of 2026).
+On 28 November 2026, RealHunt lists 10 homes for sale in Switzerland, each one checked by a person. In Switzerland, the median asking price of those 10 homes is €70,100 (€2,337 per m², from the 10 homes with a known size); the cheapest costs €32,300 and the most expensive €88,400. Taxes and fees add about 1–5% to the price of a home in Switzerland (figures as of 2026).
 
 Fact | Value
 Homes on RealHunt | 10
@@ -1359,13 +1359,13 @@ Median RealHunt score (70 to 98) | 82
 Taxes and fees to buy | 1–5% of the price (as of 2026)
 Can foreigners buy? | Under the Lex Koller law, EU/EFTA citizens living in Switzerland and holders of a C permit buy like Swiss citizens, and non-EU holders of a B permit can buy a home they live in. People living abroad need a cantonal permit and can usually only buy one holiday home in a tourist area, within national quotas; a proposed tightening was under consultation in 2026.
 Yearly property tax | More than half of the cantons charge an annual property tax (Liegenschaftssteuer), usually 0.01-0.3% of the assessed value, and owners also pay cantonal wealth tax on the property value minus the mortgage.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 10 homes in Switzerland](https://realhunt.co/homes/switzerland) · [Costs and taxes, with sources](https://realhunt.co/costs/switzerland) · [Buying guide, step by step](https://realhunt.co/guide/switzerland) · [Fact sheet (PDF)](https://realhunt.co/data/countries/switzerland.pdf) · [JSON](https://realhunt.co/data/countries/switzerland.json) · [Markdown](https://realhunt.co/data/countries/switzerland.md)
 
 ### Bulgaria
 
-On 27 November 2026, RealHunt lists 6 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 6 homes is €69,000 (€759 per m², from the 6 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 6 homes this is a small sample, so the median for Bulgaria is a rough guide.
+On 28 November 2026, RealHunt lists 6 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 6 homes is €69,000 (€759 per m², from the 6 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 6 homes this is a small sample, so the median for Bulgaria is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 6 (small sample)
@@ -1377,13 +1377,13 @@ Median RealHunt score (70 to 98) | 93
 Taxes and fees to buy | 3.2–8.5% of the price (as of 2026)
 Can foreigners buy? | Yes, buildings and apartments, with rights similar to locals; per GPG, foreigners can't own land directly, so a Bulgarian company is the usual route.
 Yearly property tax | 0.01-0.45% of the property's tax value plus a municipal garbage fee.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 6 homes in Bulgaria](https://realhunt.co/homes/bulgaria) · [Costs and taxes, with sources](https://realhunt.co/costs/bulgaria) · [Buying guide, step by step](https://realhunt.co/guide/bulgaria) · [Fact sheet (PDF)](https://realhunt.co/data/countries/bulgaria.pdf) · [JSON](https://realhunt.co/data/countries/bulgaria.json) · [Markdown](https://realhunt.co/data/countries/bulgaria.md)
 
 ### Dominican Republic
 
-On 27 November 2026, RealHunt lists 5 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 5 homes is €201,200 (€2,282 per m², from the 4 homes with a known size); the cheapest costs €150,000 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 5 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
+On 28 November 2026, RealHunt lists 5 homes for sale in the Dominican Republic, each one checked by a person. In the Dominican Republic, the median asking price of those 5 homes is €201,200 (€2,282 per m², from the 4 homes with a known size); the cheapest costs €150,000 and the most expensive €223,600. Taxes and fees add about 4.25–7% to the price of a home in the Dominican Republic (figures as of 2026). With 5 homes this is a small sample, so the median for the Dominican Republic is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 5 (small sample)
@@ -1395,13 +1395,13 @@ Median RealHunt score (70 to 98) | 88
 Taxes and fees to buy | 4.25–7% of the price (as of 2026)
 Can foreigners buy? | Yes. Foreigners have the same rights as Dominican citizens to buy land and homes, with no restrictions.
 Yearly property tax | The yearly IPI tax is 1% of the part of a person's total Dominican property value, as assessed by the tax office DGII, above RD$10,695,494 in 2026, so a single cheap home is often below the threshold.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 5 homes in the Dominican Republic](https://realhunt.co/homes/dominican-republic) · [Costs and taxes, with sources](https://realhunt.co/costs/dominican-republic) · [Buying guide, step by step](https://realhunt.co/guide/dominican-republic) · [Fact sheet (PDF)](https://realhunt.co/data/countries/dominican-republic.pdf) · [JSON](https://realhunt.co/data/countries/dominican-republic.json) · [Markdown](https://realhunt.co/data/countries/dominican-republic.md)
 
 ### United Kingdom
 
-On 27 November 2026, RealHunt lists 5 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 5 homes is €161,000 (€1,807 per m², from the 5 homes with a known size); the cheapest costs €121,000 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 5 homes this is a small sample, so the median for the United Kingdom is a rough guide.
+On 28 November 2026, RealHunt lists 5 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 5 homes is €161,000 (€1,807 per m², from the 5 homes with a known size); the cheapest costs €121,000 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 5 homes this is a small sample, so the median for the United Kingdom is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 5 (small sample)
@@ -1413,13 +1413,13 @@ Median RealHunt score (70 to 98) | 83
 Taxes and fees to buy | 3–9% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no nationality restrictions on buying homes anywhere in the UK and no visa is needed, but buying does not give a right to live there.
 Yearly property tax | Owners or occupiers pay council tax to the local council, and many councils in England charge second homes a premium of up to 100% from April 2025.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 5 homes in the United Kingdom](https://realhunt.co/homes/united-kingdom) · [Costs and taxes, with sources](https://realhunt.co/costs/united-kingdom) · [Buying guide, step by step](https://realhunt.co/guide/united-kingdom) · [Fact sheet (PDF)](https://realhunt.co/data/countries/united-kingdom.pdf) · [JSON](https://realhunt.co/data/countries/united-kingdom.json) · [Markdown](https://realhunt.co/data/countries/united-kingdom.md)
 
 ### Cyprus
 
-On 27 November 2026, RealHunt lists 4 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 4 homes is €341,000 (€4,060 per m², from the 4 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 4 homes this is a small sample, so the median for Cyprus is a rough guide.
+On 28 November 2026, RealHunt lists 4 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 4 homes is €341,000 (€4,060 per m², from the 4 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 4 homes this is a small sample, so the median for Cyprus is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 4 (small sample)
@@ -1431,13 +1431,13 @@ Median RealHunt score (70 to 98) | 84
 Taxes and fees to buy | 2.5–3.5% of the price (as of 2026)
 Can foreigners buy? | EU citizens buy without restrictions. Non-EU buyers need permission from the Council of Ministers, applied for through the District Officer, and are normally limited to one home or a plot of up to 4,014 m².
 Yearly property tax | There is no annual national property tax (abolished in 2017); owners pay municipal fees of about €90 to €300 a year, plus sewerage and local authority charges.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 4 homes in Cyprus](https://realhunt.co/homes/cyprus) · [Costs and taxes, with sources](https://realhunt.co/costs/cyprus) · [Buying guide, step by step](https://realhunt.co/guide/cyprus) · [Fact sheet (PDF)](https://realhunt.co/data/countries/cyprus.pdf) · [JSON](https://realhunt.co/data/countries/cyprus.json) · [Markdown](https://realhunt.co/data/countries/cyprus.md)
 
 ### Ireland
 
-On 27 November 2026, RealHunt lists 4 homes for sale in Ireland, each one checked by a person. In Ireland, the median asking price of those 4 homes is €230,000 (€2,255 per m², from the 4 homes with a known size); the cheapest costs €170,000 and the most expensive €230,000. Taxes and fees add about 2.5–3.5% to the price of a home in Ireland (figures as of 2026). With 4 homes this is a small sample, so the median for Ireland is a rough guide.
+On 28 November 2026, RealHunt lists 4 homes for sale in Ireland, each one checked by a person. In Ireland, the median asking price of those 4 homes is €230,000 (€2,255 per m², from the 4 homes with a known size); the cheapest costs €170,000 and the most expensive €230,000. Taxes and fees add about 2.5–3.5% to the price of a home in Ireland (figures as of 2026). With 4 homes this is a small sample, so the median for Ireland is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 4 (small sample)
@@ -1449,13 +1449,13 @@ Median RealHunt score (70 to 98) | 80
 Taxes and fees to buy | 2.5–3.5% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no restrictions on foreigners buying homes in Ireland, and owning a home does not give a right to live there.
 Yearly property tax | Local Property Tax (LPT): from 2026 a home valued up to €240,000 pays a basic €95 a year and one valued €240,001 to €315,000 pays €235; each council can raise or lower the basic rate by up to 15%, and most raised it by 15% for 2026.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 4 homes in Ireland](https://realhunt.co/homes/ireland) · [Fact sheet (PDF)](https://realhunt.co/data/countries/ireland.pdf) · [JSON](https://realhunt.co/data/countries/ireland.json) · [Markdown](https://realhunt.co/data/countries/ireland.md)
 
 ### Uruguay
 
-On 27 November 2026, RealHunt lists 4 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 4 homes is €180,300 (€1,649 per m², from the 4 homes with a known size); the cheapest costs €150,300 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 4 homes this is a small sample, so the median for Uruguay is a rough guide.
+On 28 November 2026, RealHunt lists 4 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 4 homes is €180,300 (€1,649 per m², from the 4 homes with a known size); the cheapest costs €150,300 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 4 homes this is a small sample, so the median for Uruguay is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 4 (small sample)
@@ -1466,13 +1466,13 @@ Cheapest and most expensive | €150,300 · €186,300
 Median RealHunt score (70 to 98) | 85
 Taxes and fees to buy | 5–8% of the price (as of 2026)
 Can foreigners buy? | Yes. There are no limits on the types of property foreign buyers can purchase in Uruguay, and they have the same property rights as citizens.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 4 homes in Uruguay](https://realhunt.co/homes/uruguay) · [Fact sheet (PDF)](https://realhunt.co/data/countries/uruguay.pdf) · [JSON](https://realhunt.co/data/countries/uruguay.json) · [Markdown](https://realhunt.co/data/countries/uruguay.md)
 
 ### Colombia
 
-On 27 November 2026, RealHunt lists 3 homes for sale in Colombia, each one checked by a person. In Colombia, the median asking price of those 3 homes is €176,300 (€1,377 per m², from the 3 homes with a known size); the cheapest costs €165,200 and the most expensive €203,500. With 3 homes this is a small sample, so the median for Colombia is a rough guide.
+On 28 November 2026, RealHunt lists 3 homes for sale in Colombia, each one checked by a person. In Colombia, the median asking price of those 3 homes is €176,300 (€1,377 per m², from the 3 homes with a known size); the cheapest costs €165,200 and the most expensive €203,500. With 3 homes this is a small sample, so the median for Colombia is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 3 (small sample)
@@ -1483,13 +1483,13 @@ Cheapest and most expensive | €165,200 · €203,500
 Median RealHunt score (70 to 98) | 86
 Can foreigners buy? | Yes. A home bought by a foreigner counts as foreign investment, which needs no prior authorization and is treated the same as investment by residents. When the money comes in through the foreign exchange market, the exchange declaration serves as its registration with the Banco de la República.
 Yearly property tax | Impuesto predial unificado: each municipality sets the rate between 5 and 16 per thousand of the cadastral value (avalúo catastral).
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 3 homes in Colombia](https://realhunt.co/homes/colombia) · [Fact sheet (PDF)](https://realhunt.co/data/countries/colombia.pdf) · [JSON](https://realhunt.co/data/countries/colombia.json) · [Markdown](https://realhunt.co/data/countries/colombia.md)
 
 ### Czech Republic
 
-On 27 November 2026, RealHunt lists 3 homes for sale in the Czech Republic, each one checked by a person. In the Czech Republic, the median asking price of those 3 homes is €159,600 (€1,464 per m², from the 3 homes with a known size); the cheapest costs €130,900 and the most expensive €179,700. With 3 homes this is a small sample, so the median for the Czech Republic is a rough guide.
+On 28 November 2026, RealHunt lists 3 homes for sale in the Czech Republic, each one checked by a person. In the Czech Republic, the median asking price of those 3 homes is €159,600 (€1,464 per m², from the 3 homes with a known size); the cheapest costs €130,900 and the most expensive €179,700. With 3 homes this is a small sample, so the median for the Czech Republic is a rough guide.
 
 Fact | Value
 Homes on RealHunt | 3 (small sample)
@@ -1500,7 +1500,7 @@ Cheapest and most expensive | €130,900 · €179,700
 Median RealHunt score (70 to 98) | 84
 Can foreigners buy? | Yes. Foreigners can buy homes and land in the Czech Republic on the same terms as Czechs: the limits on homes ended on 1 May 2009 and those on farmland and forest on 1 May 2011.
 Yearly property tax | Owners pay a yearly tax on land and buildings (daň z nemovitých věcí); from 2024 the rates rose to 1.8 times their old level on average, and each municipality can multiply the tax by a local coefficient between 0.5 and 5. The return is due by 31 January and the tax by 31 May.
-Date of these figures | 27 November 2026
+Date of these figures | 28 November 2026
 
 [All 3 homes in the Czech Republic](https://realhunt.co/homes/czech-republic) · [Fact sheet (PDF)](https://realhunt.co/data/countries/czech-republic.pdf) · [JSON](https://realhunt.co/data/countries/czech-republic.json) · [Markdown](https://realhunt.co/data/countries/czech-republic.md)
 
@@ -1536,9 +1536,9 @@ Data log
 
 ## What changed in RealHunt's data, day by day
 
-The last homes were added on 27 November 2026: 100 homes in Spain (33), France (26), Greece (19), Italy (18) and Portugal (4). RealHunt lists 703 homes today, 27 November 2026. This page is rebuilt with every update and lists every day on which homes were added, the monthly totals and the dated changes to the method and the lists.
+The last homes were added on 27 November 2026: 100 homes in Spain (33), France (26), Greece (19), Italy (18) and Portugal (4). RealHunt lists 703 homes today, 28 November 2026. This page is rebuilt with every update and lists every day on which homes were added, the monthly totals and the dated changes to the method and the lists.
 
-Updated 27 November 2026
+Updated 28 November 2026
 
 ### Homes added, day by day
 
@@ -1616,7 +1616,7 @@ The last 60 days, newest first. A home whose advert went offline keeps its page 
 
 ### Dated changes to the method, the lists and the files
 
-- 27 November 2026 Per-country data files (JSON, Markdown, PDF), the map files and the OpenAPI description were rebuilt. [Open data](https://realhunt.co/research/open-data).
+- 28 November 2026 Per-country data files (JSON, Markdown, PDF), the map files and the OpenAPI description were rebuilt. [Open data](https://realhunt.co/research/open-data).
 - 14 November 2026 Current version of the method document: how the score is built, its limits and its change log. [How the score works](https://realhunt.co/method).
 - 9 November 2026 The directory of 179 property portals in 54 countries was compiled. [Property portals by country](https://realhunt.co/research/property-portals).
 
@@ -1639,7 +1639,7 @@ Text and figures on this page are free to quote with a link ([Creative Commons B
 
 
 ---
-Source: https://realhunt.co/research/find-homes (updated 2026-11-27)
+Source: https://realhunt.co/research/find-homes (updated 2026-11-28)
 
 Search
 
@@ -1702,7 +1702,7 @@ Country | Homes | From | Pages by top price | File
 
 
 ---
-Source: https://realhunt.co/research/flood-indicator (updated 2026-11-27)
+Source: https://realhunt.co/research/flood-indicator (updated 2026-11-28)
 
 RealHunt data
 
@@ -1710,10 +1710,10 @@ RealHunt data
 
 50 of 585 homes on RealHunt with a flood indicator (9%) are marked medium or high, and 13 are marked high. The share is largest in the Dominican Republic (100% of 5), the United States (31% of 61), Greece (22% of 23). No home is marked medium or high in France, Poland, Germany, the Netherlands, Canada, Portugal, Switzerland, Bulgaria and the United Kingdom.
 
-The indicator is RealHunt's own first check, 27 November 2026: an official flood zone where one is open to query (54 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
+The indicator is RealHunt's own first check, 28 November 2026: an official flood zone where one is open to query (54 homes, United States), and otherwise a rough reading of height above sea level and distance to the sea and to a large river. It is not an official flood map.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/flood-indicator.csv) · [Markdown version](https://realhunt.co/research/flood-indicator.md) · How to cite
-Homes with a medium or high flood indicator, by countryShare of the homes of each country that have the indicator, 27 November 2026. Countries with at least 5 such homes.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/flood-indicator.csv) · [Markdown version](https://realhunt.co/research/flood-indicator.md) · How to cite
+Homes with a medium or high flood indicator, by countryShare of the homes of each country that have the indicator, 28 November 2026. Countries with at least 5 such homes.
 
 - Dominican Republic small sample: 5 homes 100%
 - United States 61 homes 31%
@@ -1794,7 +1794,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/homes-under-50000 (updated 2026-11-27)
+Source: https://realhunt.co/research/homes-under-50000 (updated 2026-11-28)
 
 RealHunt data
 
@@ -1802,10 +1802,10 @@ RealHunt data
 
 68 of the 703 homes on RealHunt cost €50,000 or less, and 26 cost €30,000 or less. Most are in Italy (32), Japan (16), Germany (7). The region with the most is Calabria, Italy, with 6.
 
-Homes checked by a person and ready to live in, at their asking price on 27 November 2026. Countries and regions with fewer than 3 such homes are not listed.
+Homes checked by a person and ready to live in, at their asking price on 28 November 2026. Countries and regions with fewer than 3 such homes are not listed.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/homes-under-50000.csv) · [Markdown version](https://realhunt.co/research/homes-under-50000.md) · How to cite
-Homes at or under €50,000, by countryNumber of homes on RealHunt, 27 November 2026. In brackets, the share of that country's homes.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/homes-under-50000.csv) · [Markdown version](https://realhunt.co/research/homes-under-50000.md) · How to cite
+Homes at or under €50,000, by countryNumber of homes on RealHunt, 28 November 2026. In brackets, the share of that country's homes.
 
 - Italy 31% of 102 homes 32
 - Japan 53% of 30 homes 16
@@ -1868,7 +1868,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/new-build-prices (updated 2026-11-27)
+Source: https://realhunt.co/research/new-build-prices (updated 2026-11-28)
 
 RealHunt data
 
@@ -1876,10 +1876,10 @@ RealHunt data
 
 In RealHunt's new-build rankings the median starting price per square metre is lowest in Batumi (€1,366/m², 100 projects) and highest in Phuket (€3,661/m², 80 projects). Koh Samui: €1,759/m²; Bali: €1,872/m²; Tulum: €2,847/m².
 
-417 projects in 5 destinations, from the developers' published "from" prices, 27 November 2026. Some are leasehold and some are sold before they are built: a price per m² is not comparable with a finished freehold home without reading each project.
+417 projects in 5 destinations, from the developers' published "from" prices, 28 November 2026. Some are leasehold and some are sold before they are built: a price per m² is not comparable with a finished freehold home without reading each project.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-build-prices.csv) · [Markdown version](https://realhunt.co/research/new-build-prices.md) · How to cite
-Median starting price per m² of new-build projects, by destinationEuros per square metre; projects that publish it, 27 November 2026.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-build-prices.csv) · [Markdown version](https://realhunt.co/research/new-build-prices.md) · How to cite
+Median starting price per m² of new-build projects, by destinationEuros per square metre; projects that publish it, 28 November 2026.
 
 - Batumi 100 projects €1,366
 - Koh Samui 15 projects €1,759
@@ -1932,18 +1932,18 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/new-homes-this-month (updated 2026-11-27)
+Source: https://realhunt.co/research/new-homes-this-month (updated 2026-11-28)
 
 RealHunt data
 
 ## New homes on RealHunt in November 2026, by country
 
-297 homes were added to RealHunt in November 2026 up to 27 November 2026, in 26 countries. Most are in Italy (54), Spain (52), France (43). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
+297 homes were added to RealHunt in November 2026 up to 28 November 2026, in 26 countries. Most are in Italy (54), Spain (52), France (43). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
 
 Counted on the day each home went up on RealHunt. Homes that have already left the site are not counted. The page is rebuilt with every update.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-homes-this-month.csv) · [Markdown version](https://realhunt.co/research/new-homes-this-month.md) · How to cite
-Homes added in November 2026, by countryNumber of homes, up to 27 November 2026. In brackets, the median price.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/new-homes-this-month.csv) · [Markdown version](https://realhunt.co/research/new-homes-this-month.md) · How to cite
+Homes added in November 2026, by countryNumber of homes, up to 28 November 2026. In brackets, the median price.
 
 - Italy median €140,000 54
 - Spain median €170,000 52
@@ -2070,7 +2070,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/open-data (updated 2026-11-27)
+Source: https://realhunt.co/research/open-data (updated 2026-11-28)
 
 Open data
 
@@ -2078,7 +2078,7 @@ Open data
 
 Everything RealHunt publishes is also available as plain files that a person, a spreadsheet or an AI assistant can read without an account or a key: one JSON file per country with its key facts and every home, the same as Markdown and as a one-page PDF, CSV files of every study, a map file and a description of them all in OpenAPI format. Text and figures are licensed Creative Commons BY 4.0.
 
-Updated 27 November 2026
+Updated 28 November 2026
 
 ### The files
 
@@ -2165,7 +2165,7 @@ A wrong figure, a field you need or another format: carlos@equinoxinvestmentgrou
 
 
 ---
-Source: https://realhunt.co/research/price-by-airport-distance (updated 2026-11-27)
+Source: https://realhunt.co/research/price-by-airport-distance (updated 2026-11-28)
 
 RealHunt data
 
@@ -2173,10 +2173,10 @@ RealHunt data
 
 Homes on RealHunt less than 30 km from an airport have a median asking price of €1,568/m² (198 homes); between 30 and 60 km it is €1,222/m² (258 homes), 22% less, and between 60 and 100 km €1,086/m² (165 homes). The median price of a whole home goes from €150,000 to €99,500 and €91,000.
 
-693 homes with a known distance, 27 November 2026. Distance in a straight line to the nearest airport with passenger flights. The bands mix countries, so part of the gap is that homes far from an airport are in cheaper countries and regions.
+693 homes with a known distance, 28 November 2026. Distance in a straight line to the nearest airport with passenger flights. The bands mix countries, so part of the gap is that homes far from an airport are in cheaper countries and regions.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/price-by-airport-distance.csv) · [Markdown version](https://realhunt.co/research/price-by-airport-distance.md) · How to cite
-Median asking price per m², by distance to the nearest airportEuros per square metre; homes on RealHunt with a known size and distance, 27 November 2026.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/price-by-airport-distance.csv) · [Markdown version](https://realhunt.co/research/price-by-airport-distance.md) · How to cite
+Median asking price per m², by distance to the nearest airportEuros per square metre; homes on RealHunt with a known size and distance, 28 November 2026.
 
 - under 30 km 198 homes €1,568
 - 30 to 60 km 258 homes €1,222
@@ -2248,7 +2248,7 @@ Press and data questions: carlos@equinoxinvestmentgroup.com. See also the [press
 
 
 ---
-Source: https://realhunt.co/research/prices (updated 2026-11-27)
+Source: https://realhunt.co/research/prices (updated 2026-11-28)
 
 RealHunt data
 
@@ -2256,10 +2256,10 @@ RealHunt data
 
 Among the 15 countries with at least 10 homes with a known size on RealHunt, the lowest median asking price per square metre is in Japan (€340/m²), Denmark (€790/m²), Sweden (€800/m²), and the highest in the Netherlands (€4,286/m²). The lowest median asking price is in Japan (€49,680) and Germany (€55,000).
 
-Medians of 703 listings in 23 countries, each checked by a person, on 27 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
+Medians of 703 listings in 23 countries, each checked by a person, on 28 November 2026. They describe the cheap, move-in-ready homes RealHunt lists, not each country's whole market.
 
-Updated 27 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/prices.csv) · [Markdown version](https://realhunt.co/research/prices.md) · How to cite
-Median asking price per m², by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 27 November 2026.
+Updated 28 November 2026 · Source: RealHunt · [Download the CSV](https://realhunt.co/research/prices.csv) · [Markdown version](https://realhunt.co/research/prices.md) · How to cite
+Median asking price per m², by countryEuros per square metre, cheapest first. Homes on RealHunt with a known size, 28 November 2026.
 
 - Japan 15 homes €340
 - Bulgaria small sample: 6 homes €759
@@ -2319,7 +2319,7 @@ Country | Homes | Median price | Median €/m² | Homes with size | Median size 
 One reading per month of all the homes on RealHunt, kept from November 2026 on. This is the first point; a new one is added every month. The mix of homes changes from month to month, so a move in the median is not by itself a move in the market.
 
 Month | Day of the reading | Homes | Countries | Median price | Median €/m²
-2026-11 | 27 November 2026 | 703 | 23 | €99,000 | €1,241
+2026-11 | 28 November 2026 | 703 | 23 | €99,000 | €1,241
 
 [Download the series (CSV)](https://realhunt.co/research/monthly-series.csv) · [JSON](https://realhunt.co/research/monthly-series.json)
 
@@ -17710,9 +17710,9 @@ List last changed 18 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€85,0002-bedroom flat with a Lake Como view terracePeglio, Lake Como69 m² · 2 bed · €1,232/m² · 59 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/lake-como-peglio-85000)
-- [Cheapest€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 65 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/Dcsm9sZoDMp)
-- [Most space for the money€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 65 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/DdSm-JkiJem)
+- [Best score€85,0002-bedroom flat with a Lake Como view terracePeglio, Lake Como69 m² · 2 bed · €1,232/m² · 60 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/lake-como-peglio-85000)
+- [Cheapest€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 66 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/Dcsm9sZoDMp)
+- [Most space for the money€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 66 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/DdSm-JkiJem)
 
 RealHunt lists 11 apartments for sale in Italy under €100,000 today, priced from €16,000 to €100,000. The cheapest costs €16,000: [Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp), in Fiamignano (40 m², 2 bedrooms). The median price is €30,000 (€605/m²), against €97,000 (€1,167/m²) for the 102 homes we list in Italy.
 
@@ -17738,17 +17738,17 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/italy/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Italy&price=100000)
 
-- [Score 83€85,0002-bedroom flat with a Lake Como view terracePeglio, Lake Como69 m² · 2 bed · €1,232/m² · 59 days on RealHuntCommunity fee not stated€85,000 for a home above Lake Como.](https://realhunt.co/deal/lake-como-peglio-85000)
-- [Score 81New€100,000Beamed stone duplex with a lake-view garden and garage above Lake Iseo, ParzanicaParzanica, Lombardy80 m² · 1 bed · €1,250/m² · 9 days on RealHuntCommunity fee not statedA two-storey flat of 80 m² in the stone village of Parzanica, 750 metres up and, according to the advert, a ten-minute drive from Lake Iseo.](https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k)
-- [Score 91€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 25 days on RealHuntCommunity fee not statedA 47 m² ground-floor flat in the Residence Solemar at Torremezzo di Falconara Albanese, on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
-- [Score 91€30,000Furnished seaside flat a few steps from the beach at Acqualadrone, MessinaAcqualadrone, Sicily40 m² · 1 bed · €750/m² · 25 days on RealHuntCommunity fee not statedA 40 m² flat on the first floor of a 1985 building at Acqualadrone, on the northern tip of Sicily near Messina, with the sea right across the road.](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
-- [Score 91€28,000Furnished beachfront studio 50 m from a sandy beach in CalabriaFalerna Marina, Calabria40 m² · 1 bed · €700/m² · 25 days on RealHuntCommunity fee not statedA 40 m² studio on the 6th floor (with lift) of a seafront building at Falerna Marina, Calabria, 50 m from a long sandy beach with beach clubs.](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771)
-- [Score 87€41,000Apartment with sea view in Falconara Albanese, CosenzaFalconara Albanese, Calabria86 m² · €477/m² · 66 days on RealHuntCommunity fee not stated€477/m² · 86 m² · 3 rooms.](https://realhunt.co/deal/falconara-albanese-41000)
-- [Score 84€45,000Sea-view studio five minutes from the beachSicily65 days on RealHuntCommunity fee not statedStudio · 1 bathroom · 5 min to the beach · 1 hour 57 min to Palermo Airport.](https://realhunt.co/deal/DcyzSIdjOz6)
-- [Score 83€49,000Duplex in Acquedolci, MessinaAcquedolci, Sicily81 m² · €605/m² · 66 days on RealHuntCommunity fee not stated€605/m² · 81 m² · 4 rooms.](https://realhunt.co/deal/acquedolci-49000)
-- [Score 83€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 65 days on RealHuntCommunity fee not stated2 bedrooms, 1 bathroom, 40 m² (431 sq ft).](https://realhunt.co/deal/Dcsm9sZoDMp)
-- [Score 82€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 65 days on RealHuntCommunity fee not statedCharming 2-bedroom apartment in the historic Tuscan village of Montieri.](https://realhunt.co/deal/DdSm-JkiJem)
-- [Score 80€20,000Colorful one-bedroom apartment with attic and balconyGradoli, Lazio51 m² · 1 bed · €392/m² · 65 days on RealHuntCommunity fee not stated1 bedroom, 1 bathroom, 51 m² (549 sq ft).](https://realhunt.co/deal/Dcxwhq4kRRe)
+- [Score 83€85,0002-bedroom flat with a Lake Como view terracePeglio, Lake Como69 m² · 2 bed · €1,232/m² · 60 days on RealHuntCommunity fee not stated€85,000 for a home above Lake Como.](https://realhunt.co/deal/lake-como-peglio-85000)
+- [Score 81New€100,000Beamed stone duplex with a lake-view garden and garage above Lake Iseo, ParzanicaParzanica, Lombardy80 m² · 1 bed · €1,250/m² · 10 days on RealHuntCommunity fee not statedA two-storey flat of 80 m² in the stone village of Parzanica, 750 metres up and, according to the advert, a ten-minute drive from Lake Iseo.](https://realhunt.co/deal/it-lake-iseo-parzanica-beamed-duplex-100k)
+- [Score 91€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 26 days on RealHuntCommunity fee not statedA 47 m² ground-floor flat in the Residence Solemar at Torremezzo di Falconara Albanese, on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
+- [Score 91€30,000Furnished seaside flat a few steps from the beach at Acqualadrone, MessinaAcqualadrone, Sicily40 m² · 1 bed · €750/m² · 26 days on RealHuntCommunity fee not statedA 40 m² flat on the first floor of a 1985 building at Acqualadrone, on the northern tip of Sicily near Messina, with the sea right across the road.](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
+- [Score 91€28,000Furnished beachfront studio 50 m from a sandy beach in CalabriaFalerna Marina, Calabria40 m² · 1 bed · €700/m² · 26 days on RealHuntCommunity fee not statedA 40 m² studio on the 6th floor (with lift) of a seafront building at Falerna Marina, Calabria, 50 m from a long sandy beach with beach clubs.](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771)
+- [Score 87€41,000Apartment with sea view in Falconara Albanese, CosenzaFalconara Albanese, Calabria86 m² · €477/m² · 67 days on RealHuntCommunity fee not stated€477/m² · 86 m² · 3 rooms.](https://realhunt.co/deal/falconara-albanese-41000)
+- [Score 84€45,000Sea-view studio five minutes from the beachSicily66 days on RealHuntCommunity fee not statedStudio · 1 bathroom · 5 min to the beach · 1 hour 57 min to Palermo Airport.](https://realhunt.co/deal/DcyzSIdjOz6)
+- [Score 83€49,000Duplex in Acquedolci, MessinaAcquedolci, Sicily81 m² · €605/m² · 67 days on RealHuntCommunity fee not stated€605/m² · 81 m² · 4 rooms.](https://realhunt.co/deal/acquedolci-49000)
+- [Score 83€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 66 days on RealHuntCommunity fee not stated2 bedrooms, 1 bathroom, 40 m² (431 sq ft).](https://realhunt.co/deal/Dcsm9sZoDMp)
+- [Score 82€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 66 days on RealHuntCommunity fee not statedCharming 2-bedroom apartment in the historic Tuscan village of Montieri.](https://realhunt.co/deal/DdSm-JkiJem)
+- [Score 80€20,000Colorful one-bedroom apartment with attic and balconyGradoli, Lazio51 m² · 1 bed · €392/m² · 66 days on RealHuntCommunity fee not stated1 bedroom, 1 bathroom, 51 m² (549 sq ft).](https://realhunt.co/deal/Dcxwhq4kRRe)
 
 ### Compare the 11 homes, cheapest first
 
@@ -17863,9 +17863,9 @@ List last changed 30 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€65,000Sunny three-bedroom flat with sea and mountain views in CariñoCariño, A Coruña92 m² · 3 bed · €707/m² · 44 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/es-carino-65k-186545953)
-- [Cheapest€61,9902-bedroom flat with patio in ManresaManresa, Barcelona55 m² · 2 bed · €1,127/m² · 57 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/es-manresa-61k-18808)
-- [Most space for the money€88,0002-bedroom flat in MazaricosMazaricos, A Coruña109 m² · 2 bed · €807/m² · 57 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/es-mazaricos-88k-64288)
+- [Best score€65,000Sunny three-bedroom flat with sea and mountain views in CariñoCariño, A Coruña92 m² · 3 bed · €707/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/es-carino-65k-186545953)
+- [Cheapest€61,9902-bedroom flat with patio in ManresaManresa, Barcelona55 m² · 2 bed · €1,127/m² · 58 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/es-manresa-61k-18808)
+- [Most space for the money€88,0002-bedroom flat in MazaricosMazaricos, A Coruña109 m² · 2 bed · €807/m² · 58 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/es-mazaricos-88k-64288)
 
 RealHunt lists 25 apartments for sale in Spain under €100,000 today, priced from €61,990 to €99,900. The cheapest costs €61,990: [2-bedroom flat with patio in Manresa](https://realhunt.co/deal/es-manresa-61k-18808), in Manresa (55 m², 2 bedrooms). The median price is €91,000 (€1,574/m²), against €120,000 (€1,296/m²) for the 155 homes we list in Spain.
 
@@ -17891,31 +17891,31 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/spain/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Spain&price=100000)
 
-- [Score 91€65,000Sunny three-bedroom flat with sea and mountain views in CariñoCariño, A Coruña92 m² · 3 bed · €707/m² · 44 days on RealHuntCommunity fee not statedA roomy 92 m² furnished flat in the middle of Cariño, about 180 m from the beach and promenade: a hallway with a built-in wardrobe, a large…](https://realhunt.co/deal/es-carino-65k-186545953)
-- [Score 90€68,500Bright top-floor flat with a sea-view balcony in Corme Porto, Costa da MorteCorme Porto, A Coruña80 m² · 3 bed · €856/m² · 44 days on RealHuntCommunity fee not statedA well-kept three-bedroom flat in the centre of Corme, one of the prettiest fishing villages on the Costa da Morte: a separate kitchen, a pantry…](https://realhunt.co/deal/es-ponteceso-corme-68k-189908571)
-- [Score 87€88,0002-bedroom flat in MazaricosMazaricos, A Coruña109 m² · 2 bed · €807/m² · 57 days on RealHuntCommunity fee not stated€88,000 for 109 m² and 2 bedrooms in Mazaricos (A Coruña), about €807/m².](https://realhunt.co/deal/es-mazaricos-88k-64288)
-- [Score 87€79,9002-bedroom apartment with sea views in CartagenaCartagena, Murcia56 m² · 2 bed · €1,427/m² · 57 days on RealHuntCommunity fee not stated€79,900 for 56 m² and 2 bedrooms in Cartagena (Murcia), about €1,427/m².](https://realhunt.co/deal/es-cartagena-79k-19964)
-- [Score 85€91,0001-bedroom top-floor flat with pool in AlbuñolAlbuñol, Granada75 m² · 1 bed · €1,213/m² · 57 days on RealHuntCommunity fee not stated€91,000 for 75 m² and 1 bedroom in Albuñol (Granada), about €1,213/m².](https://realhunt.co/deal/es-albunol-91k-41469)
-- [Score 85€88,0002-bedroom flat with patio in CartagenaCartagena, Murcia60 m² · 2 bed · €1,467/m² · 57 days on RealHuntCommunity fee not stated€88,000 for 60 m² and 2 bedrooms in Cartagena (Murcia), about €1,467/m².](https://realhunt.co/deal/es-cartagena-88k-38250)
-- [Score 85€91,0001-bedroom flat with pool in Sant Jaume d'EnvejaSant Jaume d'Enveja, Tarragona68 m² · 1 bed · €1,338/m² · 57 days on RealHuntCommunity fee not stated€91,000 for 68 m² and 1 bedroom in Sant Jaume d'Enveja (Tarragona), about €1,338/m².](https://realhunt.co/deal/es-sant-jaume-d-enveja-91k-15282)
-- [Score 85€98,0002-bedroom flat in El EjidoEl Ejido, Almería79 m² · 2 bed · €1,241/m² · 57 days on RealHuntCommunity fee not stated€98,000 for 79 m² and 2 bedrooms in El Ejido (Almería), about €1,241/m².](https://realhunt.co/deal/es-el-ejido-98k-28806)
-- [Score 84€94,9001-bedroom apartment with pool in TorreviejaTorrevieja, Alicante45 m² · 1 bed · €2,109/m² · 57 days on RealHuntCommunity fee not stated€94,900 for 45 m² and 1 bedroom in Torrevieja (Alicante), about €2,109/m².](https://realhunt.co/deal/es-torrevieja-94k-95673)
-- [Score 84€97,0001-bedroom flat with terrace in TorreviejaTorrevieja, Alicante52 m² · 1 bed · €1,865/m² · 57 days on RealHuntCommunity fee not stated€97,000 for 52 m² and 1 bedroom in Torrevieja (Alicante), about €1,865/m².](https://realhunt.co/deal/es-torrevieja-97k-10226)
-- [Score 84€82,9001-bedroom apartment with sea views in VícarVícar, Almería47 m² · 1 bed · €1,764/m² · 57 days on RealHuntCommunity fee not stated€82,900 for 47 m² and 1 bedroom in Vícar (Almería), about €1,764/m².](https://realhunt.co/deal/es-vicar-82k-27426)
-- [Score 84€99,9002-bedroom flat with garden in MurciaMurcia64 m² · 2 bed · €1,561/m² · 57 days on RealHuntCommunity fee not stated€99,900 for 64 m² and 2 bedrooms in Murcia (Murcia), about €1,561/m².](https://realhunt.co/deal/es-murcia-99k-61734)
-- [Score 84€80,0001-bedroom flat with patio in MurciaMurcia45 m² · 1 bed · €1,778/m² · 57 days on RealHuntCommunity fee not stated€80,000 for 45 m² and 1 bedroom in Murcia (Murcia), about €1,778/m².](https://realhunt.co/deal/es-murcia-80k-47450)
-- [Score 84€97,0002-bedroom apartment with garden in MurciaMurcia60 m² · 2 bed · €1,617/m² · 57 days on RealHuntCommunity fee not stated€97,000 for 60 m² and 2 bedrooms in Murcia (Murcia), about €1,617/m².](https://realhunt.co/deal/es-murcia-97k-60666)
-- [Score 83€97,9002-bedroom apartment with terrace in AmpostaAmposta, Tarragona62 m² · 2 bed · €1,579/m² · 57 days on RealHuntCommunity fee not stated€97,900 for 62 m² and 2 bedrooms in Amposta (Tarragona), about €1,579/m².](https://realhunt.co/deal/es-amposta-97k-10966)
-- [Score 83€99,9001-bedroom apartment with pool in TorreviejaTorrevieja, Alicante47 m² · 1 bed · €2,126/m² · 57 days on RealHuntCommunity fee not stated€99,900 for 47 m² and 1 bedroom in Torrevieja (Alicante), about €2,126/m².](https://realhunt.co/deal/es-torrevieja-99k-86111)
-- [Score 83€99,0001-bedroom apartment with pool in CatralCatral, Alicante57 m² · 1 bed · €1,737/m² · 57 days on RealHuntCommunity fee not stated€99,000 for 57 m² and 1 bedroom in Catral (Alicante), about €1,737/m².](https://realhunt.co/deal/es-catral-99k-61991)
-- [Score 82€96,0002-bedroom ground-floor flat with garden and mountain views in AnnaAnna, Valencia61 m² · 2 bed · €1,574/m² · 57 days on RealHuntCommunity fee not stated€96,000 for 61 m² and 2 bedrooms in Anna (Valencia), about €1,574/m².](https://realhunt.co/deal/es-anna-96k-34774)
-- [Score 82€97,000Flat with sea views in RosesRoses, Girona47 m² · €2,064/m² · 57 days on RealHuntCommunity fee not stated€97,000 for 47 m² in Roses (Girona), about €2,064/m².](https://realhunt.co/deal/es-roses-97k-57061)
-- [Score 82€98,0002-bedroom apartment with mountain views in GarruchaGarrucha, Almería59 m² · 2 bed · €1,661/m² · 57 days on RealHuntCommunity fee not stated€98,000 for 59 m² and 2 bedrooms in Garrucha (Almería), about €1,661/m².](https://realhunt.co/deal/es-garrucha-98k-95417)
-- [Score 82€85,0001-bedroom apartment in MurciaMurcia46 m² · 1 bed · €1,848/m² · 57 days on RealHuntCommunity fee not stated€85,000 for 46 m² and 1 bedroom in Murcia (Murcia), about €1,848/m².](https://realhunt.co/deal/es-murcia-85k-23435)
-- [Score 81€99,000Studio with communal pool 950 m from La Mata beach, TorreviejaTorreblanca, Alicante29 m² · €3,414/m² · 28 days on RealHuntCommunity fee not statedA bright 29 m² studio in the Torresol 2 gated complex, with an enclosed balcony, fitted kitchen and appliances, communal pool and gardens.](https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k)
-- [Score 81€61,9902-bedroom flat with patio in ManresaManresa, Barcelona55 m² · 2 bed · €1,127/m² · 57 days on RealHuntCommunity fee not stated€61,990 for 55 m² and 2 bedrooms in Manresa (Barcelona), about €1,127/m².](https://realhunt.co/deal/es-manresa-61k-18808)
-- [Score 81€85,0003-bedroom flat with mountain views in ReinosaReinosa, Cantabria80 m² · 3 bed · €1,063/m² · 57 days on RealHuntCommunity fee not stated€85,000 for 80 m² and 3 bedrooms in Reinosa (Cantabria), about €1,062/m².](https://realhunt.co/deal/es-reinosa-85k-84223)
-- [Score 81€65,0002-bedroom flat with terrace in BejísBejís, Castellón69 m² · 2 bed · €942/m² · 57 days on RealHuntCommunity fee not stated€65,000 for 69 m² and 2 bedrooms in Bejís (Castellón), about €942/m².](https://realhunt.co/deal/es-bejis-65k-97644)
+- [Score 91€65,000Sunny three-bedroom flat with sea and mountain views in CariñoCariño, A Coruña92 m² · 3 bed · €707/m² · 45 days on RealHuntCommunity fee not statedA roomy 92 m² furnished flat in the middle of Cariño, about 180 m from the beach and promenade: a hallway with a built-in wardrobe, a large…](https://realhunt.co/deal/es-carino-65k-186545953)
+- [Score 90€68,500Bright top-floor flat with a sea-view balcony in Corme Porto, Costa da MorteCorme Porto, A Coruña80 m² · 3 bed · €856/m² · 45 days on RealHuntCommunity fee not statedA well-kept three-bedroom flat in the centre of Corme, one of the prettiest fishing villages on the Costa da Morte: a separate kitchen, a pantry…](https://realhunt.co/deal/es-ponteceso-corme-68k-189908571)
+- [Score 87€88,0002-bedroom flat in MazaricosMazaricos, A Coruña109 m² · 2 bed · €807/m² · 58 days on RealHuntCommunity fee not stated€88,000 for 109 m² and 2 bedrooms in Mazaricos (A Coruña), about €807/m².](https://realhunt.co/deal/es-mazaricos-88k-64288)
+- [Score 87€79,9002-bedroom apartment with sea views in CartagenaCartagena, Murcia56 m² · 2 bed · €1,427/m² · 58 days on RealHuntCommunity fee not stated€79,900 for 56 m² and 2 bedrooms in Cartagena (Murcia), about €1,427/m².](https://realhunt.co/deal/es-cartagena-79k-19964)
+- [Score 85€91,0001-bedroom top-floor flat with pool in AlbuñolAlbuñol, Granada75 m² · 1 bed · €1,213/m² · 58 days on RealHuntCommunity fee not stated€91,000 for 75 m² and 1 bedroom in Albuñol (Granada), about €1,213/m².](https://realhunt.co/deal/es-albunol-91k-41469)
+- [Score 85€88,0002-bedroom flat with patio in CartagenaCartagena, Murcia60 m² · 2 bed · €1,467/m² · 58 days on RealHuntCommunity fee not stated€88,000 for 60 m² and 2 bedrooms in Cartagena (Murcia), about €1,467/m².](https://realhunt.co/deal/es-cartagena-88k-38250)
+- [Score 85€91,0001-bedroom flat with pool in Sant Jaume d'EnvejaSant Jaume d'Enveja, Tarragona68 m² · 1 bed · €1,338/m² · 58 days on RealHuntCommunity fee not stated€91,000 for 68 m² and 1 bedroom in Sant Jaume d'Enveja (Tarragona), about €1,338/m².](https://realhunt.co/deal/es-sant-jaume-d-enveja-91k-15282)
+- [Score 85€98,0002-bedroom flat in El EjidoEl Ejido, Almería79 m² · 2 bed · €1,241/m² · 58 days on RealHuntCommunity fee not stated€98,000 for 79 m² and 2 bedrooms in El Ejido (Almería), about €1,241/m².](https://realhunt.co/deal/es-el-ejido-98k-28806)
+- [Score 84€94,9001-bedroom apartment with pool in TorreviejaTorrevieja, Alicante45 m² · 1 bed · €2,109/m² · 58 days on RealHuntCommunity fee not stated€94,900 for 45 m² and 1 bedroom in Torrevieja (Alicante), about €2,109/m².](https://realhunt.co/deal/es-torrevieja-94k-95673)
+- [Score 84€97,0001-bedroom flat with terrace in TorreviejaTorrevieja, Alicante52 m² · 1 bed · €1,865/m² · 58 days on RealHuntCommunity fee not stated€97,000 for 52 m² and 1 bedroom in Torrevieja (Alicante), about €1,865/m².](https://realhunt.co/deal/es-torrevieja-97k-10226)
+- [Score 84€82,9001-bedroom apartment with sea views in VícarVícar, Almería47 m² · 1 bed · €1,764/m² · 58 days on RealHuntCommunity fee not stated€82,900 for 47 m² and 1 bedroom in Vícar (Almería), about €1,764/m².](https://realhunt.co/deal/es-vicar-82k-27426)
+- [Score 84€99,9002-bedroom flat with garden in MurciaMurcia64 m² · 2 bed · €1,561/m² · 58 days on RealHuntCommunity fee not stated€99,900 for 64 m² and 2 bedrooms in Murcia (Murcia), about €1,561/m².](https://realhunt.co/deal/es-murcia-99k-61734)
+- [Score 84€80,0001-bedroom flat with patio in MurciaMurcia45 m² · 1 bed · €1,778/m² · 58 days on RealHuntCommunity fee not stated€80,000 for 45 m² and 1 bedroom in Murcia (Murcia), about €1,778/m².](https://realhunt.co/deal/es-murcia-80k-47450)
+- [Score 84€97,0002-bedroom apartment with garden in MurciaMurcia60 m² · 2 bed · €1,617/m² · 58 days on RealHuntCommunity fee not stated€97,000 for 60 m² and 2 bedrooms in Murcia (Murcia), about €1,617/m².](https://realhunt.co/deal/es-murcia-97k-60666)
+- [Score 83€97,9002-bedroom apartment with terrace in AmpostaAmposta, Tarragona62 m² · 2 bed · €1,579/m² · 58 days on RealHuntCommunity fee not stated€97,900 for 62 m² and 2 bedrooms in Amposta (Tarragona), about €1,579/m².](https://realhunt.co/deal/es-amposta-97k-10966)
+- [Score 83€99,9001-bedroom apartment with pool in TorreviejaTorrevieja, Alicante47 m² · 1 bed · €2,126/m² · 58 days on RealHuntCommunity fee not stated€99,900 for 47 m² and 1 bedroom in Torrevieja (Alicante), about €2,126/m².](https://realhunt.co/deal/es-torrevieja-99k-86111)
+- [Score 83€99,0001-bedroom apartment with pool in CatralCatral, Alicante57 m² · 1 bed · €1,737/m² · 58 days on RealHuntCommunity fee not stated€99,000 for 57 m² and 1 bedroom in Catral (Alicante), about €1,737/m².](https://realhunt.co/deal/es-catral-99k-61991)
+- [Score 82€96,0002-bedroom ground-floor flat with garden and mountain views in AnnaAnna, Valencia61 m² · 2 bed · €1,574/m² · 58 days on RealHuntCommunity fee not stated€96,000 for 61 m² and 2 bedrooms in Anna (Valencia), about €1,574/m².](https://realhunt.co/deal/es-anna-96k-34774)
+- [Score 82€97,000Flat with sea views in RosesRoses, Girona47 m² · €2,064/m² · 58 days on RealHuntCommunity fee not stated€97,000 for 47 m² in Roses (Girona), about €2,064/m².](https://realhunt.co/deal/es-roses-97k-57061)
+- [Score 82€98,0002-bedroom apartment with mountain views in GarruchaGarrucha, Almería59 m² · 2 bed · €1,661/m² · 58 days on RealHuntCommunity fee not stated€98,000 for 59 m² and 2 bedrooms in Garrucha (Almería), about €1,661/m².](https://realhunt.co/deal/es-garrucha-98k-95417)
+- [Score 82€85,0001-bedroom apartment in MurciaMurcia46 m² · 1 bed · €1,848/m² · 58 days on RealHuntCommunity fee not stated€85,000 for 46 m² and 1 bedroom in Murcia (Murcia), about €1,848/m².](https://realhunt.co/deal/es-murcia-85k-23435)
+- [Score 81€99,000Studio with communal pool 950 m from La Mata beach, TorreviejaTorreblanca, Alicante29 m² · €3,414/m² · 29 days on RealHuntCommunity fee not statedA bright 29 m² studio in the Torresol 2 gated complex, with an enclosed balcony, fitted kitchen and appliances, communal pool and gardens.](https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k)
+- [Score 81€61,9902-bedroom flat with patio in ManresaManresa, Barcelona55 m² · 2 bed · €1,127/m² · 58 days on RealHuntCommunity fee not stated€61,990 for 55 m² and 2 bedrooms in Manresa (Barcelona), about €1,127/m².](https://realhunt.co/deal/es-manresa-61k-18808)
+- [Score 81€85,0003-bedroom flat with mountain views in ReinosaReinosa, Cantabria80 m² · 3 bed · €1,063/m² · 58 days on RealHuntCommunity fee not stated€85,000 for 80 m² and 3 bedrooms in Reinosa (Cantabria), about €1,062/m².](https://realhunt.co/deal/es-reinosa-85k-84223)
+- [Score 81€65,0002-bedroom flat with terrace in BejísBejís, Castellón69 m² · 2 bed · €942/m² · 58 days on RealHuntCommunity fee not stated€65,000 for 69 m² and 2 bedrooms in Bejís (Castellón), about €942/m².](https://realhunt.co/deal/es-bejis-65k-97644)
 
 ### Compare the 25 homes, cheapest first
 
@@ -18026,7 +18026,7 @@ Near a city [Near Valencia 13](https://realhunt.co/cheap-houses/near-valencia) [
 
 Apartments under €100,000 in other countries [Italy 11](https://realhunt.co/cheap-houses/apartments-under-100000-in-italy) [Sweden 4](https://realhunt.co/cheap-houses/apartments-under-100000-in-sweden)
 
-How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 25 of these 25 homes were checked against the original listing in the last 30 days. 34 homes in Spain left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 25 of these 25 homes were checked against the original listing in the last 30 days. 31 homes in Spain left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
 These listings come from fotocasa.es (24), sell-2-go.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
@@ -18042,9 +18042,9 @@ List last changed 14 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€59,000Two-apartment house with river swimming spots and geothermal heatTegsnäset, Västerbotten156 m² · 4 bed · €378/m² · 65 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/Dc-RMNwIPpv)
-- [Cheapest€67,200Through-flat with three bedrooms and a sunny balcony in MalmöApelgården, Malmö84 m² · 3 bed · €800/m² · 44 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/se-malmo-rosengard-67k-1678590)
-- [Most space for the money€98,100Bright 1929 flat with three bedrooms near the centre of LandskronaLandskrona, Skåne110 m² · 3 bed · €892/m² · 44 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/se-landskrona-98k-1673127)
+- [Best score€59,000Two-apartment house with river swimming spots and geothermal heatTegsnäset, Västerbotten156 m² · 4 bed · €378/m² · 66 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/Dc-RMNwIPpv)
+- [Cheapest€67,200Through-flat with three bedrooms and a sunny balcony in MalmöApelgården, Malmö84 m² · 3 bed · €800/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/se-malmo-rosengard-67k-1678590)
+- [Most space for the money€98,100Bright 1929 flat with three bedrooms near the centre of LandskronaLandskrona, Skåne110 m² · 3 bed · €892/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/se-landskrona-98k-1673127)
 
 RealHunt lists 4 apartments for sale in Sweden under €100,000 today, priced from €59,000 to €98,100. The cheapest costs €59,000: [Two-apartment house with river swimming spots and geothermal heat](https://realhunt.co/deal/Dc-RMNwIPpv), in Tegsnäset (156 m², 4 bedrooms). The median price is €98,100 (€892/m²), against €72,000 (€800/m²) for the 37 homes we list in Sweden.
 
@@ -18070,10 +18070,10 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Sweden&price=100000)
 
-- [Score 92€59,000Two-apartment house with river swimming spots and geothermal heatTegsnäset, Västerbotten156 m² · 4 bed · €378/m² · 65 days on RealHuntCommunity fee not statedA flexible 156 m² house that can be one generous home or keep its current setup of two separate 3-room living areas, one per floor.](https://realhunt.co/deal/Dc-RMNwIPpv)
-- [Score 90€67,200Through-flat with three bedrooms and a sunny balcony in MalmöApelgården, Malmö84 m² · 3 bed · €800/m² · 44 days on RealHuntCommunity fee not statedAn 84 m² through-flat on the 6th floor with a lift and open views over the area: a spacious living and dining room, three good bedrooms, a fresh…](https://realhunt.co/deal/se-malmo-rosengard-67k-1678590)
-- [Score 86€98,100Bright 1929 flat with three bedrooms near the centre of LandskronaLandskrona, Skåne110 m² · 3 bed · €892/m² · 44 days on RealHuntCommunity fee not statedA 110 m² second-floor flat from 1929 a stone's throw from the centre of Landskrona: a large hall, three proper bedrooms, a big living room with a…](https://realhunt.co/deal/se-landskrona-98k-1673127)
-- [Score 85€98,100Stylish three-bedroom flat with a 2023 kitchen in central EslövCentral Eslöv, Skåne90 m² · 3 bed · €1,090/m² · 44 days on RealHuntCommunity fee not statedA 90.5 m² ground-floor through-flat in the middle of Eslöv: a bright hall, a large living room, three bedrooms (one opening onto a balcony over a…](https://realhunt.co/deal/se-eslov-98k-1701202)
+- [Score 92€59,000Two-apartment house with river swimming spots and geothermal heatTegsnäset, Västerbotten156 m² · 4 bed · €378/m² · 66 days on RealHuntCommunity fee not statedA flexible 156 m² house that can be one generous home or keep its current setup of two separate 3-room living areas, one per floor.](https://realhunt.co/deal/Dc-RMNwIPpv)
+- [Score 90€67,200Through-flat with three bedrooms and a sunny balcony in MalmöApelgården, Malmö84 m² · 3 bed · €800/m² · 45 days on RealHuntCommunity fee not statedAn 84 m² through-flat on the 6th floor with a lift and open views over the area: a spacious living and dining room, three good bedrooms, a fresh…](https://realhunt.co/deal/se-malmo-rosengard-67k-1678590)
+- [Score 86€98,100Bright 1929 flat with three bedrooms near the centre of LandskronaLandskrona, Skåne110 m² · 3 bed · €892/m² · 45 days on RealHuntCommunity fee not statedA 110 m² second-floor flat from 1929 a stone's throw from the centre of Landskrona: a large hall, three proper bedrooms, a big living room with a…](https://realhunt.co/deal/se-landskrona-98k-1673127)
+- [Score 85€98,100Stylish three-bedroom flat with a 2023 kitchen in central EslövCentral Eslöv, Skåne90 m² · 3 bed · €1,090/m² · 45 days on RealHuntCommunity fee not statedA 90.5 m² ground-floor through-flat in the middle of Eslöv: a bright hall, a large living room, three bedrooms (one opening onto a balcony over a…](https://realhunt.co/deal/se-eslov-98k-1701202)
 
 ### Compare the 4 homes, cheapest first
 
@@ -18196,9 +18196,9 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Italy&price=20000)
 
-- [Score 83€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 65 days on RealHuntCommunity fee not stated2 bedrooms, 1 bathroom, 40 m² (431 sq ft).](https://realhunt.co/deal/Dcsm9sZoDMp)
-- [Score 82€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 65 days on RealHuntCommunity fee not statedCharming 2-bedroom apartment in the historic Tuscan village of Montieri.](https://realhunt.co/deal/DdSm-JkiJem)
-- [Score 80€20,000Colorful one-bedroom apartment with attic and balconyGradoli, Lazio51 m² · 1 bed · €392/m² · 65 days on RealHuntCommunity fee not stated1 bedroom, 1 bathroom, 51 m² (549 sq ft).](https://realhunt.co/deal/Dcxwhq4kRRe)
+- [Score 83€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 66 days on RealHuntCommunity fee not stated2 bedrooms, 1 bathroom, 40 m² (431 sq ft).](https://realhunt.co/deal/Dcsm9sZoDMp)
+- [Score 82€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 66 days on RealHuntCommunity fee not statedCharming 2-bedroom apartment in the historic Tuscan village of Montieri.](https://realhunt.co/deal/DdSm-JkiJem)
+- [Score 80€20,000Colorful one-bedroom apartment with attic and balconyGradoli, Lazio51 m² · 1 bed · €392/m² · 66 days on RealHuntCommunity fee not stated1 bedroom, 1 bathroom, 51 m² (549 sq ft).](https://realhunt.co/deal/Dcxwhq4kRRe)
 
 ### Compare the 3 homes, cheapest first
 
@@ -18295,9 +18295,9 @@ List last changed 2 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 25 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
-- [Cheapest€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 65 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/Dcsm9sZoDMp)
-- [Most space for the money€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 65 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/DdSm-JkiJem)
+- [Best score€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 26 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
+- [Cheapest€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 66 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/Dcsm9sZoDMp)
+- [Most space for the money€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 66 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/DdSm-JkiJem)
 
 RealHunt lists 9 apartments for sale in Italy under €50,000 today, priced from €16,000 to €49,000. The cheapest costs €16,000: [Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp), in Fiamignano (40 m², 2 bedrooms). The median price is €29,000 (€527/m²), against €97,000 (€1,167/m²) for the 102 homes we list in Italy.
 
@@ -18323,15 +18323,15 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/italy/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Italy&price=50000)
 
-- [Score 91€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 25 days on RealHuntCommunity fee not statedA 47 m² ground-floor flat in the Residence Solemar at Torremezzo di Falconara Albanese, on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
-- [Score 91€30,000Furnished seaside flat a few steps from the beach at Acqualadrone, MessinaAcqualadrone, Sicily40 m² · 1 bed · €750/m² · 25 days on RealHuntCommunity fee not statedA 40 m² flat on the first floor of a 1985 building at Acqualadrone, on the northern tip of Sicily near Messina, with the sea right across the road.](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
-- [Score 91€28,000Furnished beachfront studio 50 m from a sandy beach in CalabriaFalerna Marina, Calabria40 m² · 1 bed · €700/m² · 25 days on RealHuntCommunity fee not statedA 40 m² studio on the 6th floor (with lift) of a seafront building at Falerna Marina, Calabria, 50 m from a long sandy beach with beach clubs.](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771)
-- [Score 87€41,000Apartment with sea view in Falconara Albanese, CosenzaFalconara Albanese, Calabria86 m² · €477/m² · 66 days on RealHuntCommunity fee not stated€477/m² · 86 m² · 3 rooms.](https://realhunt.co/deal/falconara-albanese-41000)
-- [Score 84€45,000Sea-view studio five minutes from the beachSicily65 days on RealHuntCommunity fee not statedStudio · 1 bathroom · 5 min to the beach · 1 hour 57 min to Palermo Airport.](https://realhunt.co/deal/DcyzSIdjOz6)
-- [Score 83€49,000Duplex in Acquedolci, MessinaAcquedolci, Sicily81 m² · €605/m² · 66 days on RealHuntCommunity fee not stated€605/m² · 81 m² · 4 rooms.](https://realhunt.co/deal/acquedolci-49000)
-- [Score 83€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 65 days on RealHuntCommunity fee not stated2 bedrooms, 1 bathroom, 40 m² (431 sq ft).](https://realhunt.co/deal/Dcsm9sZoDMp)
-- [Score 82€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 65 days on RealHuntCommunity fee not statedCharming 2-bedroom apartment in the historic Tuscan village of Montieri.](https://realhunt.co/deal/DdSm-JkiJem)
-- [Score 80€20,000Colorful one-bedroom apartment with attic and balconyGradoli, Lazio51 m² · 1 bed · €392/m² · 65 days on RealHuntCommunity fee not stated1 bedroom, 1 bathroom, 51 m² (549 sq ft).](https://realhunt.co/deal/Dcxwhq4kRRe)
+- [Score 91€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 26 days on RealHuntCommunity fee not statedA 47 m² ground-floor flat in the Residence Solemar at Torremezzo di Falconara Albanese, on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
+- [Score 91€30,000Furnished seaside flat a few steps from the beach at Acqualadrone, MessinaAcqualadrone, Sicily40 m² · 1 bed · €750/m² · 26 days on RealHuntCommunity fee not statedA 40 m² flat on the first floor of a 1985 building at Acqualadrone, on the northern tip of Sicily near Messina, with the sea right across the road.](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
+- [Score 91€28,000Furnished beachfront studio 50 m from a sandy beach in CalabriaFalerna Marina, Calabria40 m² · 1 bed · €700/m² · 26 days on RealHuntCommunity fee not statedA 40 m² studio on the 6th floor (with lift) of a seafront building at Falerna Marina, Calabria, 50 m from a long sandy beach with beach clubs.](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771)
+- [Score 87€41,000Apartment with sea view in Falconara Albanese, CosenzaFalconara Albanese, Calabria86 m² · €477/m² · 67 days on RealHuntCommunity fee not stated€477/m² · 86 m² · 3 rooms.](https://realhunt.co/deal/falconara-albanese-41000)
+- [Score 84€45,000Sea-view studio five minutes from the beachSicily66 days on RealHuntCommunity fee not statedStudio · 1 bathroom · 5 min to the beach · 1 hour 57 min to Palermo Airport.](https://realhunt.co/deal/DcyzSIdjOz6)
+- [Score 83€49,000Duplex in Acquedolci, MessinaAcquedolci, Sicily81 m² · €605/m² · 67 days on RealHuntCommunity fee not stated€605/m² · 81 m² · 4 rooms.](https://realhunt.co/deal/acquedolci-49000)
+- [Score 83€16,000Two-bedroom apartment with two balconies in a historic villageFiamignano, Lazio40 m² · 2 bed · €400/m² · 66 days on RealHuntCommunity fee not stated2 bedrooms, 1 bathroom, 40 m² (431 sq ft).](https://realhunt.co/deal/Dcsm9sZoDMp)
+- [Score 82€16,000Two-bedroom apartment with terrace in a historic Tuscan villageMontieri, Tuscany51 m² · 2 bed · €314/m² · 66 days on RealHuntCommunity fee not statedCharming 2-bedroom apartment in the historic Tuscan village of Montieri.](https://realhunt.co/deal/DdSm-JkiJem)
+- [Score 80€20,000Colorful one-bedroom apartment with attic and balconyGradoli, Lazio51 m² · 1 bed · €392/m² · 66 days on RealHuntCommunity fee not stated1 bedroom, 1 bathroom, 51 m² (549 sq ft).](https://realhunt.co/deal/Dcxwhq4kRRe)
 
 ### Compare the 9 homes, cheapest first
 
@@ -18442,9 +18442,9 @@ List last changed 14 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 53 days on RealHunt](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
-- [Cheapest€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-bytom-57k-186977)
-- [Most space for the money€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 47 days on RealHunt](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
+- [Best score€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 54 days on RealHunt](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
+- [Cheapest€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-bytom-57k-186977)
+- [Most space for the money€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 48 days on RealHunt](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
 
 The 10 best-rated homes for sale that RealHunt lists today cost from €57,120 to €325,000. The cheapest costs €57,120: [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977), in Bytom (127 m², 3 bedrooms). The median price is €79,800 (€577/m²), against €99,000 (€1,241/m²) for the 703 homes on RealHunt in 23 countries.
 
@@ -18472,16 +18472,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/cheap-houses/by-the-sea) [See these homes on the map](https://realhunt.co/map)
 
-- [Score 98€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 53 days on RealHuntA well-kept 1973 villa with 198 m² and five bedrooms on a quiet street in Ranum, near the Limfjord and Vilsted Lake.](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
-- [Score 97€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 47 days on RealHuntA two-storey family villa in Orehoved with 182 m² of living space, 8 rooms and open views over the fields from several rooms, on a 1,788 m² plot…](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
-- [Score 96€66,400Fjord-view villa with a big garden in Thy for €66kHurup, Thy115 m² · 4 bed · €577/m² · 53 days on RealHunt115 m² with three bedrooms on a 758 m² plot looking over open country and the Limfjord, near Hurup in Thy.](https://realhunt.co/deal/dk-hurup-66k-a04f4a)
-- [Score 96€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 45 days on RealHuntCommunity fee not statedA huge 127 m² flat on the second floor on Falista street: a big living and dining room, three separate bedrooms, a fully fitted kitchen opening…](https://realhunt.co/deal/pl-bytom-57k-186977)
-- [Score 95€82,875Move-in ready 2-bed house in Chapmanville, West VirginiaChapmanville, West Virginia176 m² · 2 bed · €471/m² · 65 days on RealHunt176 m² (1,897 sq ft), 2 bed, 1 bath, built 1954.](https://realhunt.co/deal/chapmanville-82875)
-- [Score 95€78,426Updated 3-bed house in Huntington, West VirginiaHuntington, West Virginia150 m² · 3 bed · €523/m² · 65 days on RealHunt150 m² (1,614 sq ft), 3 bed, 2 bath, built 1923.](https://realhunt.co/deal/huntington-78426)
-- [Score 94€66,000Furnished two-bedroom flat with a sea view in a gated complex in KavarnaKavarna Paradise, Kavarna (Black Sea)90 m² · 2 bed · €733/m² · 44 days on RealHuntCommunity fee not statedA spacious 89.5 m² flat on the third floor of a five-storey building in the well-kept gated complex Kavarna Paradise, a 3-minute walk from the…](https://realhunt.co/deal/bg-kavarna-66k-89698)
-- [Score 94€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 45 days on RealHuntCommunity fee not stated72 m² on the 1st floor: the layout was redone so the bedrooms face the front and the living room the back, with a modern dark kitchen, a new…](https://realhunt.co/deal/nl-amsterdam-299k-563619)
-- [Score 94€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 45 days on RealHuntCommunity fee not statedA huge 107 m² corner flat (formerly four rooms) on the 10th floor of the Gouden Rand in Zuidoost: a long bright living room with an open kitchen…](https://realhunt.co/deal/nl-amsterdam-325k-505653)
-- [Score 94€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 45 days on RealHuntCommunity fee not stated78 m² on the top floor of a small 1925 building in Dębowa Góra: four rooms, a white kitchen, a modern bathroom with a bath and access to a shared…](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
+- [Score 98€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 54 days on RealHuntA well-kept 1973 villa with 198 m² and five bedrooms on a quiet street in Ranum, near the Limfjord and Vilsted Lake.](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
+- [Score 97€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 48 days on RealHuntA two-storey family villa in Orehoved with 182 m² of living space, 8 rooms and open views over the fields from several rooms, on a 1,788 m² plot…](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
+- [Score 96€66,400Fjord-view villa with a big garden in Thy for €66kHurup, Thy115 m² · 4 bed · €577/m² · 54 days on RealHunt115 m² with three bedrooms on a 758 m² plot looking over open country and the Limfjord, near Hurup in Thy.](https://realhunt.co/deal/dk-hurup-66k-a04f4a)
+- [Score 96€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 46 days on RealHuntCommunity fee not statedA huge 127 m² flat on the second floor on Falista street: a big living and dining room, three separate bedrooms, a fully fitted kitchen opening…](https://realhunt.co/deal/pl-bytom-57k-186977)
+- [Score 95€82,875Move-in ready 2-bed house in Chapmanville, West VirginiaChapmanville, West Virginia176 m² · 2 bed · €471/m² · 66 days on RealHunt176 m² (1,897 sq ft), 2 bed, 1 bath, built 1954.](https://realhunt.co/deal/chapmanville-82875)
+- [Score 95€78,426Updated 3-bed house in Huntington, West VirginiaHuntington, West Virginia150 m² · 3 bed · €523/m² · 66 days on RealHunt150 m² (1,614 sq ft), 3 bed, 2 bath, built 1923.](https://realhunt.co/deal/huntington-78426)
+- [Score 94€66,000Furnished two-bedroom flat with a sea view in a gated complex in KavarnaKavarna Paradise, Kavarna (Black Sea)90 m² · 2 bed · €733/m² · 45 days on RealHuntCommunity fee not statedA spacious 89.5 m² flat on the third floor of a five-storey building in the well-kept gated complex Kavarna Paradise, a 3-minute walk from the…](https://realhunt.co/deal/bg-kavarna-66k-89698)
+- [Score 94€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 46 days on RealHuntCommunity fee not stated72 m² on the 1st floor: the layout was redone so the bedrooms face the front and the living room the back, with a modern dark kitchen, a new…](https://realhunt.co/deal/nl-amsterdam-299k-563619)
+- [Score 94€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 46 days on RealHuntCommunity fee not statedA huge 107 m² corner flat (formerly four rooms) on the 10th floor of the Gouden Rand in Zuidoost: a long bright living room with an open kitchen…](https://realhunt.co/deal/nl-amsterdam-325k-505653)
+- [Score 94€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 46 days on RealHuntCommunity fee not stated78 m² on the top floor of a small 1925 building in Dębowa Góra: four rooms, a white kitchen, a modern bathroom with a bath and access to a shared…](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
 
 ### Compare the 10 homes, cheapest first
 
@@ -18573,9 +18573,9 @@ List last changed 20 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best scoreNew€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 7 days on RealHunt](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
-- [Cheapest€55,842Updated 2-bed house in Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 bed · €901/m² · 65 days on RealHunt](https://realhunt.co/deal/bulyea-55842)
-- [Most space for the money€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m² · 53 days on RealHunt](https://realhunt.co/deal/ca-mulgrave-90k-623450)
+- [Best scoreNew€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 8 days on RealHunt](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [Cheapest€55,842Updated 2-bed house in Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 bed · €901/m² · 66 days on RealHunt](https://realhunt.co/deal/bulyea-55842)
+- [Most space for the money€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m² · 54 days on RealHunt](https://realhunt.co/deal/ca-mulgrave-90k-623450)
 
 The 10 best-rated houses for sale in Canada that RealHunt lists today cost from €55,842 to €159,000. The cheapest costs €55,842: [Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842), in Bulyea (62 m², 2 bedrooms). The median price is €99,500 (€930/m²), against €99,500 (€963/m²) for the 16 homes we list in Canada.
 
@@ -18603,16 +18603,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/canada/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Canada)
 
-- [Score 94€86,962Updated 2-bed house in Glace Bay, Nova ScotiaGlace Bay, Nova Scotia124 m² · 2 bed · €701/m² · 65 days on RealHunt124 m² (1,334 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/glace-bay-86962)
-- [Score 92€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m² · 53 days on RealHuntA well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso.](https://realhunt.co/deal/ca-mulgrave-90k-623450)
-- [Score 90New€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 7 days on RealHuntAsking C$194,000 (about €123,400), under €610 per m².](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
-- [Score 88New€124,000Freshly painted three-bedroom house with ocean views in Hillsburn, Nova ScotiaHillsburn, Nova Scotia106 m² · 3 bed · €1,170/m² · 7 days on RealHuntAsking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy…](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
-- [Score 88€55,842Updated 2-bed house in Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 bed · €901/m² · 65 days on RealHunt62 m² (672 sq ft), 2 bed, 1 bath, built 1957.](https://realhunt.co/deal/bulyea-55842)
-- [Score 88€68,327Updated 2-bed house in Avonlea, SaskatchewanAvonlea, Saskatchewan77 m² · 2 bed · €887/m² · 65 days on RealHunt77 m² (824 sq ft), 2 bed, 1 bath, built 1926.](https://realhunt.co/deal/avonlea-68327)
-- [Score 87New€159,000Character 1888 house with harbour views and a koi pond garden in Pictou, Nova ScotiaPictou, Nova Scotia171 m² · 3 bed · €930/m² · 7 days on RealHuntAsking C$249,900 (about €159,000) for a white wooden house of about 171 m², built in 1888 in the preserved old town of Pictou, with views over the…](https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
-- [Score 86€99,500Acadian coast house with 4 bedrooms and a new bathroomGrande-Anse, New Brunswick107 m² · 4 bed · €930/m² · 53 days on RealHuntA 1.5-storey house of about 107 m² in Grande-Anse on New Brunswick's Acadian coast, by the Bay of Chaleur.](https://realhunt.co/deal/ca-grande-anse-99k-148091)
-- [Score 86New€127,100Cottage-style house with a new kitchen near the waterfront in Pictou, Nova ScotiaPictou, Nova Scotia132 m² · 3 bed · €963/m² · 9 days on RealHuntAsking C$199,900 (about €127,100) for a white cottage-style house of about 132 m² in the heart of Pictou, a historic harbour town on the…](https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k)
-- [Score 86€93,111Renovated 2-bed house in Astle, New BrunswickAstle, New Brunswick94 m² · 2 bed · €991/m² · 65 days on RealHunt94 m² (1,016 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/astle-93111)
+- [Score 94€86,962Updated 2-bed house in Glace Bay, Nova ScotiaGlace Bay, Nova Scotia124 m² · 2 bed · €701/m² · 66 days on RealHunt124 m² (1,334 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/glace-bay-86962)
+- [Score 92€90,400Big family house with sea views over the Strait of CansoMulgrave, Nova Scotia215 m² · 3 bed · €420/m² · 54 days on RealHuntA well-kept 1949 house in Mulgrave, Nova Scotia, with three bedrooms, 1.5 baths and beautiful views over the Strait of Canso.](https://realhunt.co/deal/ca-mulgrave-90k-623450)
+- [Score 90New€123,400Updated five-bedroom house with a bathroom for every bedroom in Twillingate, NewfoundlandTwillingate, Newfoundland203 m² · 5 bed · €608/m² · 8 days on RealHuntAsking C$194,000 (about €123,400), under €610 per m².](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [Score 88New€124,000Freshly painted three-bedroom house with ocean views in Hillsburn, Nova ScotiaHillsburn, Nova Scotia106 m² · 3 bed · €1,170/m² · 8 days on RealHuntAsking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy…](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
+- [Score 88€55,842Updated 2-bed house in Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 bed · €901/m² · 66 days on RealHunt62 m² (672 sq ft), 2 bed, 1 bath, built 1957.](https://realhunt.co/deal/bulyea-55842)
+- [Score 88€68,327Updated 2-bed house in Avonlea, SaskatchewanAvonlea, Saskatchewan77 m² · 2 bed · €887/m² · 66 days on RealHunt77 m² (824 sq ft), 2 bed, 1 bath, built 1926.](https://realhunt.co/deal/avonlea-68327)
+- [Score 87New€159,000Character 1888 house with harbour views and a koi pond garden in Pictou, Nova ScotiaPictou, Nova Scotia171 m² · 3 bed · €930/m² · 8 days on RealHuntAsking C$249,900 (about €159,000) for a white wooden house of about 171 m², built in 1888 in the preserved old town of Pictou, with views over the…](https://realhunt.co/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
+- [Score 86€99,500Acadian coast house with 4 bedrooms and a new bathroomGrande-Anse, New Brunswick107 m² · 4 bed · €930/m² · 54 days on RealHuntA 1.5-storey house of about 107 m² in Grande-Anse on New Brunswick's Acadian coast, by the Bay of Chaleur.](https://realhunt.co/deal/ca-grande-anse-99k-148091)
+- [Score 86New€127,100Cottage-style house with a new kitchen near the waterfront in Pictou, Nova ScotiaPictou, Nova Scotia132 m² · 3 bed · €963/m² · 10 days on RealHuntAsking C$199,900 (about €127,100) for a white cottage-style house of about 132 m² in the heart of Pictou, a historic harbour town on the…](https://realhunt.co/deal/ca-pictou-ns-cottage-new-kitchen-200k)
+- [Score 86€93,111Renovated 2-bed house in Astle, New BrunswickAstle, New Brunswick94 m² · 2 bed · €991/m² · 66 days on RealHunt94 m² (1,016 sq ft), 2 bed, 1 bath.](https://realhunt.co/deal/astle-93111)
 
 ### Compare the 10 homes, cheapest first
 
@@ -18702,9 +18702,9 @@ List last changed 14 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 53 days on RealHunt](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
-- [Cheapest€66,400Fjord-view villa with a big garden in Thy for €66kHurup, Thy115 m² · 4 bed · €577/m² · 53 days on RealHunt](https://realhunt.co/deal/dk-hurup-66k-a04f4a)
-- [Most space for the money€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 47 days on RealHunt](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
+- [Best score€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 54 days on RealHunt](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
+- [Cheapest€66,400Fjord-view villa with a big garden in Thy for €66kHurup, Thy115 m² · 4 bed · €577/m² · 54 days on RealHunt](https://realhunt.co/deal/dk-hurup-66k-a04f4a)
+- [Most space for the money€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 48 days on RealHunt](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
 
 The 10 best-rated houses for sale in Denmark that RealHunt lists today cost from €66,400 to €93,200. The cheapest costs €66,400: [Fjord-view villa with a big garden in Thy for €66k](https://realhunt.co/deal/dk-hurup-66k-a04f4a), in Hurup (115 m², 4 bedrooms). The median price is €90,500 (€576/m²), against €93,200 (€790/m²) for the 46 homes we list in Denmark.
 
@@ -18732,16 +18732,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/denmark/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Denmark)
 
-- [Score 98€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 53 days on RealHuntA well-kept 1973 villa with 198 m² and five bedrooms on a quiet street in Ranum, near the Limfjord and Vilsted Lake.](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
-- [Score 97€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 47 days on RealHuntA two-storey family villa in Orehoved with 182 m² of living space, 8 rooms and open views over the fields from several rooms, on a 1,788 m² plot…](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
-- [Score 96€66,400Fjord-view villa with a big garden in Thy for €66kHurup, Thy115 m² · 4 bed · €577/m² · 53 days on RealHunt115 m² with three bedrooms on a 758 m² plot looking over open country and the Limfjord, near Hurup in Thy.](https://realhunt.co/deal/dk-hurup-66k-a04f4a)
-- [Score 93€90,500Villa with fjord views and solar panels on 1,700 m² in HygumHygum, West Jutland157 m² · 3 bed · €576/m² · 53 days on RealHunt157 m² brick villa set back from the road on a 1,693 m² plot in peaceful Hygum, near Lemvig, with views towards the water.](https://realhunt.co/deal/dk-hygum-90k-715977)
-- [Score 93€93,200Six-room country villa from 1877 with a heat pump in HjermHjerm, West Jutland177 m² · 5 bed · €527/m² · 53 days on RealHunt177 m² over two floors with five bedrooms, on a quiet 690 m² plot in Hjerm, West Jutland.](https://realhunt.co/deal/dk-hjerm-93k-04870b)
-- [Score 93€93,000Bright 130 m² villa with a big garden in Døjringe, Mid-ZealandDøjringe, Munke Bjergby130 m² · 3 bed · €715/m² · 44 days on RealHuntA 130 m² villa in the small village of Døjringe near Sorø: light living rooms with lots of windows, a simple white kitchen, a study corner with…](https://realhunt.co/deal/dk-munke-bjergby-93k-1947)
-- [Score 93€73,500Town house a few minutes' walk from the harbour and beachAsaa, North Jutland100 m² · 3 bed · €735/m² · 53 days on RealHuntA modernised 100 m² town house on a quiet street in Asaa, a few minutes on foot from the harbour and the beach on the Kattegat.](https://realhunt.co/deal/dk-asaa-73k-6623fe)
-- [Score 92€93,200211 m² country house with fields as far as the eye can seeFrøslev, Mors211 m² · 4 bed · €442/m² · 53 days on RealHuntA characterful home with high ceilings and 211 m² in Frøslev on Mors, on a 1,069 m² plot with open fields all around.](https://realhunt.co/deal/dk-froslev-93k-c03bb2)
-- [Score 92€79,800157 m² family villa with two bathrooms and energy label BBroby, Funen157 m² · 5 bed · €508/m² · 53 days on RealHuntA villa in green surroundings near Sandholt Lyndelse on Funen: four bedrooms, two bathrooms and a garden room, on a 1,006 m² plot.](https://realhunt.co/deal/dk-broby-79k-431a7e)
-- [Score 92€93,200151 m² single-storey villa on a 2,500 m² plot, 12 min from BillundHinnum, Grindsted151 m² · 4 bed · €617/m² · 47 days on RealHuntA single-storey villa with 151 m² of living space and 5 rooms in Hinnum, just outside Grindsted, on a big 2,500 m² plot with nature, peace and…](https://realhunt.co/deal/dk-grindsted-93k-0855d5)
+- [Score 98€79,800198 m² family villa near the Limfjord for under €80kRanum, North Jutland198 m² · 5 bed · €403/m² · 54 days on RealHuntA well-kept 1973 villa with 198 m² and five bedrooms on a quiet street in Ranum, near the Limfjord and Vilsted Lake.](https://realhunt.co/deal/dk-ranum-79k-6d9fbd)
+- [Score 97€79,800182 m² family villa between forest and water, 84 min from CopenhagenOrehoved, Falster182 m² · 5 bed · €438/m² · 48 days on RealHuntA two-storey family villa in Orehoved with 182 m² of living space, 8 rooms and open views over the fields from several rooms, on a 1,788 m² plot…](https://realhunt.co/deal/dk-orehoved-80k-12ff7b)
+- [Score 96€66,400Fjord-view villa with a big garden in Thy for €66kHurup, Thy115 m² · 4 bed · €577/m² · 54 days on RealHunt115 m² with three bedrooms on a 758 m² plot looking over open country and the Limfjord, near Hurup in Thy.](https://realhunt.co/deal/dk-hurup-66k-a04f4a)
+- [Score 93€90,500Villa with fjord views and solar panels on 1,700 m² in HygumHygum, West Jutland157 m² · 3 bed · €576/m² · 54 days on RealHunt157 m² brick villa set back from the road on a 1,693 m² plot in peaceful Hygum, near Lemvig, with views towards the water.](https://realhunt.co/deal/dk-hygum-90k-715977)
+- [Score 93€93,200Six-room country villa from 1877 with a heat pump in HjermHjerm, West Jutland177 m² · 5 bed · €527/m² · 54 days on RealHunt177 m² over two floors with five bedrooms, on a quiet 690 m² plot in Hjerm, West Jutland.](https://realhunt.co/deal/dk-hjerm-93k-04870b)
+- [Score 93€93,000Bright 130 m² villa with a big garden in Døjringe, Mid-ZealandDøjringe, Munke Bjergby130 m² · 3 bed · €715/m² · 45 days on RealHuntA 130 m² villa in the small village of Døjringe near Sorø: light living rooms with lots of windows, a simple white kitchen, a study corner with…](https://realhunt.co/deal/dk-munke-bjergby-93k-1947)
+- [Score 93€73,500Town house a few minutes' walk from the harbour and beachAsaa, North Jutland100 m² · 3 bed · €735/m² · 54 days on RealHuntA modernised 100 m² town house on a quiet street in Asaa, a few minutes on foot from the harbour and the beach on the Kattegat.](https://realhunt.co/deal/dk-asaa-73k-6623fe)
+- [Score 92€93,200211 m² country house with fields as far as the eye can seeFrøslev, Mors211 m² · 4 bed · €442/m² · 54 days on RealHuntA characterful home with high ceilings and 211 m² in Frøslev on Mors, on a 1,069 m² plot with open fields all around.](https://realhunt.co/deal/dk-froslev-93k-c03bb2)
+- [Score 92€79,800157 m² family villa with two bathrooms and energy label BBroby, Funen157 m² · 5 bed · €508/m² · 54 days on RealHuntA villa in green surroundings near Sandholt Lyndelse on Funen: four bedrooms, two bathrooms and a garden room, on a 1,006 m² plot.](https://realhunt.co/deal/dk-broby-79k-431a7e)
+- [Score 92€93,200151 m² single-storey villa on a 2,500 m² plot, 12 min from BillundHinnum, Grindsted151 m² · 4 bed · €617/m² · 48 days on RealHuntA single-storey villa with 151 m² of living space and 5 rooms in Hinnum, just outside Grindsted, on a big 2,500 m² plot with nature, peace and…](https://realhunt.co/deal/dk-grindsted-93k-0855d5)
 
 ### Compare the 10 homes, cheapest first
 
@@ -18832,9 +18832,9 @@ List last changed 13 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€40,000Sunny attic flat with a balcony for €40,000 in ChemnitzEbersdorf, Chemnitz54 m² · 1 bed · €741/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/de-chemnitz-40k-931045)
-- [Cheapest€40,000Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commissionSonnenberg, Chemnitz41 m² · €976/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/de-chemnitz-40k-587336)
-- [Most space for the money€55,000Three-room 71 m² flat with new floors, 10 km from SaarbrückenFischbach, Quierschied71 m² · 2 bed · €775/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/de-quierschied-55k-581809)
+- [Best score€40,000Sunny attic flat with a balcony for €40,000 in ChemnitzEbersdorf, Chemnitz54 m² · 1 bed · €741/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/de-chemnitz-40k-931045)
+- [Cheapest€40,000Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commissionSonnenberg, Chemnitz41 m² · €976/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/de-chemnitz-40k-587336)
+- [Most space for the money€55,000Three-room 71 m² flat with new floors, 10 km from SaarbrückenFischbach, Quierschied71 m² · 2 bed · €775/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/de-quierschied-55k-581809)
 
 The 10 best-rated apartments for sale in Germany that RealHunt lists today cost from €40,000 to €55,000. The cheapest costs €40,000: [Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commission](https://realhunt.co/deal/de-chemnitz-40k-587336), in Sonnenberg (41 m²). The median price is €50,000 (€893/m²), against €55,000 (€1,078/m²) for the 18 homes we list in Germany.
 
@@ -18862,16 +18862,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Germany)
 
-- [Score 87€40,000Sunny attic flat with a balcony for €40,000 in ChemnitzEbersdorf, Chemnitz54 m² · 1 bed · €741/m² · 45 days on RealHuntCommunity fee not stated54 m² under the roof of a well-kept 1930s building, 4.4 km from the centre: a hallway, a living room, a bedroom, a daylight bathroom with a bath…](https://realhunt.co/deal/de-chemnitz-40k-931045)
-- [Score 84€55,00065 m² attic flat with skylights and a balcony in Chemnitz-GablenzGablenz, Chemnitz65 m² · 1 bed · €846/m² · 45 days on RealHuntCommunity fee not statedA spacious two-room attic flat in a renovated building on a quiet side street: laminate floors, a bright living room under skylights, a daylight…](https://realhunt.co/deal/de-chemnitz-55k-462680)
-- [Score 84€55,000Three-room 71 m² flat with new floors, 10 km from SaarbrückenFischbach, Quierschied71 m² · 2 bed · €775/m² · 45 days on RealHuntCommunity fee not stated71.3 m² on the 1st floor of a four-flat building in Fischbach: a large living room, a bedroom, a children's room or office, a kitchen, a shower…](https://realhunt.co/deal/de-quierschied-55k-581809)
-- [Score 83€55,000Fully renovated period flat with a south balconySonnenberg, Chemnitz66 m² · 1 bed · €833/m² · 45 days on RealHuntCommunity fee not stated65.8 m² on the 3rd floor of a 1900 building: high ceilings, new floors, a fitted kitchen, a bathroom with a bath and a large south balcony over…](https://realhunt.co/deal/de-chemnitz-55k-893563)
-- [Score 82€50,000Move-in-ready three-room flat with a loggia over the city park in ChemnitzHelbersdorf, Chemnitz56 m² · 2 bed · €893/m² · 45 days on RealHuntCommunity fee not stated55.8 m² on the 5th floor of a renovated 1987 building right on the Stadtpark: three rooms, a bathroom with a bath and a south-east loggia looking…](https://realhunt.co/deal/de-chemnitz-50k-950618)
-- [Score 82€50,000Three-room flat with a balcony over the green, no buyer's commissionMarkersdorf, Chemnitz57 m² · 2 bed · €877/m² · 45 days on RealHuntCommunity fee not stated57 m² on the 3rd floor of a block renovated in 1994/95: a living room with a dining corner, a double bedroom, a children's room, a bathroom with a…](https://realhunt.co/deal/de-chemnitz-50k-484380)
-- [Score 81€45,000Art nouveau studio with a lift, fitted kitchen and carport in ChemnitzAltchemnitz, Chemnitz41 m² · €1,098/m² · 45 days on RealHuntCommunity fee not stated41 m² on the 2nd floor of a brick art nouveau building with a lift and a garden: a bright living-sleeping room, a fitted kitchen, a daylight…](https://realhunt.co/deal/de-chemnitz-45k-168857)
-- [Score 81€55,000Modernised three-room flat with a green-view balcony in ChemnitzMarkersdorf, Chemnitz57 m² · 2 bed · €965/m² · 45 days on RealHuntCommunity fee not stated57 m² on the 3rd floor, fully modernised in 2016: new bathroom and pipes, new wiring, wider doorways with new doors, laminate floors and a 2017…](https://realhunt.co/deal/de-chemnitz-55k-650355)
-- [Score 80€40,000Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commissionSonnenberg, Chemnitz41 m² · €976/m² · 45 days on RealHuntCommunity fee not stated40.8 m² on the 2nd floor of a 1998 building in Sonnenberg, sold privately with no commission: a bright room with three windows facing different…](https://realhunt.co/deal/de-chemnitz-40k-587336)
-- [Score 78€50,000Renovated studio with a big balcony and lift in KrefeldInrath, Krefeld30 m² · €1,667/m² · 45 days on RealHuntCommunity fee not stated30 m² on the 3rd floor of a building with a lift: a bright room opening onto a large balcony, a new shower room, new floors and a cellar.](https://realhunt.co/deal/de-krefeld-50k-993543)
+- [Score 87€40,000Sunny attic flat with a balcony for €40,000 in ChemnitzEbersdorf, Chemnitz54 m² · 1 bed · €741/m² · 46 days on RealHuntCommunity fee not stated54 m² under the roof of a well-kept 1930s building, 4.4 km from the centre: a hallway, a living room, a bedroom, a daylight bathroom with a bath…](https://realhunt.co/deal/de-chemnitz-40k-931045)
+- [Score 84€55,00065 m² attic flat with skylights and a balcony in Chemnitz-GablenzGablenz, Chemnitz65 m² · 1 bed · €846/m² · 46 days on RealHuntCommunity fee not statedA spacious two-room attic flat in a renovated building on a quiet side street: laminate floors, a bright living room under skylights, a daylight…](https://realhunt.co/deal/de-chemnitz-55k-462680)
+- [Score 84€55,000Three-room 71 m² flat with new floors, 10 km from SaarbrückenFischbach, Quierschied71 m² · 2 bed · €775/m² · 46 days on RealHuntCommunity fee not stated71.3 m² on the 1st floor of a four-flat building in Fischbach: a large living room, a bedroom, a children's room or office, a kitchen, a shower…](https://realhunt.co/deal/de-quierschied-55k-581809)
+- [Score 83€55,000Fully renovated period flat with a south balconySonnenberg, Chemnitz66 m² · 1 bed · €833/m² · 46 days on RealHuntCommunity fee not stated65.8 m² on the 3rd floor of a 1900 building: high ceilings, new floors, a fitted kitchen, a bathroom with a bath and a large south balcony over…](https://realhunt.co/deal/de-chemnitz-55k-893563)
+- [Score 82€50,000Move-in-ready three-room flat with a loggia over the city park in ChemnitzHelbersdorf, Chemnitz56 m² · 2 bed · €893/m² · 46 days on RealHuntCommunity fee not stated55.8 m² on the 5th floor of a renovated 1987 building right on the Stadtpark: three rooms, a bathroom with a bath and a south-east loggia looking…](https://realhunt.co/deal/de-chemnitz-50k-950618)
+- [Score 82€50,000Three-room flat with a balcony over the green, no buyer's commissionMarkersdorf, Chemnitz57 m² · 2 bed · €877/m² · 46 days on RealHuntCommunity fee not stated57 m² on the 3rd floor of a block renovated in 1994/95: a living room with a dining corner, a double bedroom, a children's room, a bathroom with a…](https://realhunt.co/deal/de-chemnitz-50k-484380)
+- [Score 81€45,000Art nouveau studio with a lift, fitted kitchen and carport in ChemnitzAltchemnitz, Chemnitz41 m² · €1,098/m² · 46 days on RealHuntCommunity fee not stated41 m² on the 2nd floor of a brick art nouveau building with a lift and a garden: a bright living-sleeping room, a fitted kitchen, a daylight…](https://realhunt.co/deal/de-chemnitz-45k-168857)
+- [Score 81€55,000Modernised three-room flat with a green-view balcony in ChemnitzMarkersdorf, Chemnitz57 m² · 2 bed · €965/m² · 46 days on RealHuntCommunity fee not stated57 m² on the 3rd floor, fully modernised in 2016: new bathroom and pipes, new wiring, wider doorways with new doors, laminate floors and a 2017…](https://realhunt.co/deal/de-chemnitz-55k-650355)
+- [Score 80€40,000Empty, ready-to-move-in studio for €40,000 in Chemnitz, no commissionSonnenberg, Chemnitz41 m² · €976/m² · 46 days on RealHuntCommunity fee not stated40.8 m² on the 2nd floor of a 1998 building in Sonnenberg, sold privately with no commission: a bright room with three windows facing different…](https://realhunt.co/deal/de-chemnitz-40k-587336)
+- [Score 78€50,000Renovated studio with a big balcony and lift in KrefeldInrath, Krefeld30 m² · €1,667/m² · 46 days on RealHuntCommunity fee not stated30 m² on the 3rd floor of a building with a lift: a bright room opening onto a large balcony, a new shower room, new floors and a cellar.](https://realhunt.co/deal/de-krefeld-50k-993543)
 
 ### Compare the 10 homes, cheapest first
 
@@ -18958,9 +18958,9 @@ List last changed 27 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€109,000Three-bedroom village house with a vine-covered terrace and sea views in MessiniaVasilitsi, Messinia116 m² · 3 bed · €940/m² · 42 days on RealHunt](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
-- [Cheapest€68,000Two-level stone house with a sea view in Marathokampos, SamosAgia Triada, Samos80 m² · 2 bed · €850/m² · 44 days on RealHunt](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
-- [Most space for the moneyNew€170,000Four-bedroom village house with a sea-view roof terrace in Othos, KarpathosOthos, Karpathos165 m² · 4 bed · €1,030/m² · 9 days on RealHunt](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k)
+- [Best score€109,000Three-bedroom village house with a vine-covered terrace and sea views in MessiniaVasilitsi, Messinia116 m² · 3 bed · €940/m² · 43 days on RealHunt](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
+- [Cheapest€68,000Two-level stone house with a sea view in Marathokampos, SamosAgia Triada, Samos80 m² · 2 bed · €850/m² · 45 days on RealHunt](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
+- [Most space for the moneyNew€170,000Four-bedroom village house with a sea-view roof terrace in Othos, KarpathosOthos, Karpathos165 m² · 4 bed · €1,030/m² · 10 days on RealHunt](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k)
 
 The 10 best-rated houses for sale in Greece that RealHunt lists today cost from €68,000 to €180,000. The cheapest costs €68,000: [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330), in Agia Triada (80 m², 2 bedrooms). The median price is €115,000 (€1,216/m²), against €160,000 (€1,800/m²) for the 42 homes we list in Greece.
 
@@ -18988,16 +18988,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/greece/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Greece)
 
-- [Score 93€109,000Three-bedroom village house with a vine-covered terrace and sea views in MessiniaVasilitsi, Messinia116 m² · 3 bed · €940/m² · 42 days on RealHuntA 116 m² two-storey house in Vasilitsi, at the southern tip of the Messinian peninsula, with views over the sea and the hills: three bedrooms, two…](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
-- [Score 91€115,000Whitewashed Cretan village house with a roof terrace and spiral stairsChoumeriako, Crete93 m² · 2 bed · €1,237/m² · 42 days on RealHuntA renovated 93 m² detached house in the traditional village of Choumeriako, 3 km from Neapoli and 13 km from the beaches of Agios Nikolaos.](https://realhunt.co/deal/gr-crete-choumeriako-renovated-115k)
-- [Score 91New€150,0002-bedroom house with terrace and views in Sinarades, CorfuSinarades, Corfu125 m² · 2 bed · €1,200/m² · Added todayThe house has three levels with 125 m2 of living space, two bedrooms with built-in wardrobes and one bathroom.](https://realhunt.co/deal/gr-sinarades-wooden-features-terrace-views-house-150k)
-- [Score 91New€160,000Renovated former olive mill house with terrace and fireplace in Kalamitsi Alexandrou, CreteKalamitsi Alexandrou, Crete154 m² · 4 bed · €1,039/m² · Added todayRenovated traditional former olive oil mill with 154 m² of built area, 4 bedrooms and 2 bathrooms.](https://realhunt.co/deal/gr-kalamitsi-alexandrou-renovated-olive-mill-terrace-160k)
-- [Score 90€68,000Two-level stone house with a sea view in Marathokampos, SamosAgia Triada, Samos80 m² · 2 bed · €850/m² · 44 days on RealHuntA well-kept 80 m² stone house in the upper part of Marathokampos, in the Agia Triada area, with a wonderful view of the sea.](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
-- [Score 89New€180,000Renovated detached stone house with courtyard in Andriani, MessiniaAndriani, Messinia148 m² · 2 bed · €1,216/m² · 7 days on RealHuntA detached stone house of 148 m2 in the village of Andriani, freshly renovated and set on a plot of about 500 m2.](https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k)
-- [Score 89New€170,000Four-bedroom village house with a sea-view roof terrace in Othos, KarpathosOthos, Karpathos165 m² · 4 bed · €1,030/m² · 9 days on RealHuntA three-floor house of 165 m² in Othos, the highest village on Karpathos, renovated in 2014.](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k)
-- [Score 88€95,000Fairy-tale house with a gazebo and stone BBQ in the Pelion forestChania, Pelion68 m² · 2 bed · €1,397/m² · 42 days on RealHuntSurrounded by towering trees in the mountain village of Chania in Pelion, a 68 m² single-family house renovated in 2021 on a 213 m² corner plot: a…](https://realhunt.co/deal/gr-pelion-fairytale-house-95k)
-- [Score 88€76,000Renovated stone house with a Libyan Sea view in Agios Vasileios, CreteAgios Vasileios, Crete61 m² · 2 bed · €1,246/m² · 44 days on RealHuntA 61 m² stone house in the village of Agios Vasileios (Viannos), renovated in 2010, with a sweeping view over olive groves to the Libyan Sea from…](https://realhunt.co/deal/gr-crete-viannos-76k-20595936)
-- [Score 88€80,000Renovated stone house with a sea view in Marathokampos, SamosMarathokampos, Samos64 m² · 2 bed · €1,250/m² · 44 days on RealHuntA renovated two-storey stone house in the Profitis Ilias quarter of Marathokampos, high above the bay, with a wide sea view from the balcony and…](https://realhunt.co/deal/gr-samos-marathokampos-80k-19741965)
+- [Score 93€109,000Three-bedroom village house with a vine-covered terrace and sea views in MessiniaVasilitsi, Messinia116 m² · 3 bed · €940/m² · 43 days on RealHuntA 116 m² two-storey house in Vasilitsi, at the southern tip of the Messinian peninsula, with views over the sea and the hills: three bedrooms, two…](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k)
+- [Score 91€115,000Whitewashed Cretan village house with a roof terrace and spiral stairsChoumeriako, Crete93 m² · 2 bed · €1,237/m² · 43 days on RealHuntA renovated 93 m² detached house in the traditional village of Choumeriako, 3 km from Neapoli and 13 km from the beaches of Agios Nikolaos.](https://realhunt.co/deal/gr-crete-choumeriako-renovated-115k)
+- [Score 91New€150,0002-bedroom house with terrace and views in Sinarades, CorfuSinarades, Corfu125 m² · 2 bed · €1,200/m² · 1 day on RealHuntThe house has three levels with 125 m2 of living space, two bedrooms with built-in wardrobes and one bathroom.](https://realhunt.co/deal/gr-sinarades-wooden-features-terrace-views-house-150k)
+- [Score 91New€160,000Renovated former olive mill house with terrace and fireplace in Kalamitsi Alexandrou, CreteKalamitsi Alexandrou, Crete154 m² · 4 bed · €1,039/m² · 1 day on RealHuntRenovated traditional former olive oil mill with 154 m² of built area, 4 bedrooms and 2 bathrooms.](https://realhunt.co/deal/gr-kalamitsi-alexandrou-renovated-olive-mill-terrace-160k)
+- [Score 90€68,000Two-level stone house with a sea view in Marathokampos, SamosAgia Triada, Samos80 m² · 2 bed · €850/m² · 45 days on RealHuntA well-kept 80 m² stone house in the upper part of Marathokampos, in the Agia Triada area, with a wonderful view of the sea.](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
+- [Score 89New€180,000Renovated detached stone house with courtyard in Andriani, MessiniaAndriani, Messinia148 m² · 2 bed · €1,216/m² · 8 days on RealHuntA detached stone house of 148 m2 in the village of Andriani, freshly renovated and set on a plot of about 500 m2.](https://realhunt.co/deal/gr-messinia-andriani-renovated-stone-house-180k)
+- [Score 89New€170,000Four-bedroom village house with a sea-view roof terrace in Othos, KarpathosOthos, Karpathos165 m² · 4 bed · €1,030/m² · 10 days on RealHuntA three-floor house of 165 m² in Othos, the highest village on Karpathos, renovated in 2014.](https://realhunt.co/deal/gr-karpathos-othos-four-bed-sea-view-170k)
+- [Score 88€95,000Fairy-tale house with a gazebo and stone BBQ in the Pelion forestChania, Pelion68 m² · 2 bed · €1,397/m² · 43 days on RealHuntSurrounded by towering trees in the mountain village of Chania in Pelion, a 68 m² single-family house renovated in 2021 on a 213 m² corner plot: a…](https://realhunt.co/deal/gr-pelion-fairytale-house-95k)
+- [Score 88€76,000Renovated stone house with a Libyan Sea view in Agios Vasileios, CreteAgios Vasileios, Crete61 m² · 2 bed · €1,246/m² · 45 days on RealHuntA 61 m² stone house in the village of Agios Vasileios (Viannos), renovated in 2010, with a sweeping view over olive groves to the Libyan Sea from…](https://realhunt.co/deal/gr-crete-viannos-76k-20595936)
+- [Score 88€80,000Renovated stone house with a sea view in Marathokampos, SamosMarathokampos, Samos64 m² · 2 bed · €1,250/m² · 45 days on RealHuntA renovated two-storey stone house in the Profitis Ilias quarter of Marathokampos, high above the bay, with a wide sea view from the balcony and…](https://realhunt.co/deal/gr-samos-marathokampos-80k-19741965)
 
 ### Compare the 10 homes, cheapest first
 
@@ -19076,7 +19076,7 @@ In pounds and dollars [Under £100,000 11](https://realhunt.co/cheap-houses/unde
 
 Top 10 by score in other countries [Denmark 10](https://realhunt.co/cheap-houses/best-rated-in-denmark) [Poland 10](https://realhunt.co/cheap-houses/best-rated-in-poland) [Netherlands 10](https://realhunt.co/cheap-houses/best-rated-in-netherlands) [Spain 10](https://realhunt.co/cheap-houses/best-rated-in-spain) [Italy 10](https://realhunt.co/cheap-houses/best-rated-in-italy) [Sweden 10](https://realhunt.co/cheap-houses/best-rated-in-sweden) [Canada 10](https://realhunt.co/cheap-houses/best-rated-in-canada) [Germany 10](https://realhunt.co/cheap-houses/best-rated-in-germany)
 
-How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 8 of these 10 homes were checked against the original listing in the last 30 days.
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 9 of these 10 homes were checked against the original listing in the last 30 days.
 
 These listings come from green-acres.gr (7), spitogatos.gr (3). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
@@ -19092,9 +19092,9 @@ List last changed 9 November 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€115,000Furnished lake-view house in the old centre of San Siro, Lake ComoSan Siro, Lombardy85 m² · 2 bed · €1,353/m² · 18 days on RealHunt](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
-- [Cheapest€12,000Stone house in a hill town 55 min from RomeLazio1 bed · 65 days on RealHunt](https://realhunt.co/deal/DcoUnwBDDxF)
-- [Most space for the money€22,000Four-level village house with sea and mountain views in Sangineto, CalabriaSangineto, Calabria108 m² · 2 bed · €204/m² · 25 days on RealHunt](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976)
+- [Best score€115,000Furnished lake-view house in the old centre of San Siro, Lake ComoSan Siro, Lombardy85 m² · 2 bed · €1,353/m² · 19 days on RealHunt](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
+- [Cheapest€12,000Stone house in a hill town 55 min from RomeLazio1 bed · 66 days on RealHunt](https://realhunt.co/deal/DcoUnwBDDxF)
+- [Most space for the money€22,000Four-level village house with sea and mountain views in Sangineto, CalabriaSangineto, Calabria108 m² · 2 bed · €204/m² · 26 days on RealHunt](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976)
 
 The 10 best-rated homes for sale in Italy that RealHunt lists today cost from €12,000 to €195,000. The cheapest costs €12,000: [Stone house in a hill town 55 min from Rome](https://realhunt.co/deal/DcoUnwBDDxF), in Lazio (1 bedroom). The median price is €30,000 (€750/m²), against €97,000 (€1,167/m²) for the 102 homes we list in Italy.
 
@@ -19122,16 +19122,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/italy/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Italy)
 
-- [Score 91€95,000Renovated stone house with a lake-view balcony above Lake ComoSan Siro, Lake Como60 m² · 2 bed · €1,583/m² · 46 days on RealHuntA semi-detached stone house in a quiet old village in San Siro, on the western shore of Lake Como near Menaggio, renovated a few years ago and…](https://realhunt.co/deal/it-san-siro-95k-057133)
-- [Score 91€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 25 days on RealHuntCommunity fee not statedA 47 m² ground-floor flat in the Residence Solemar at Torremezzo di Falconara Albanese, on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
-- [Score 91€30,000Furnished seaside flat a few steps from the beach at Acqualadrone, MessinaAcqualadrone, Sicily40 m² · 1 bed · €750/m² · 25 days on RealHuntCommunity fee not statedA 40 m² flat on the first floor of a 1985 building at Acqualadrone, on the northern tip of Sicily near Messina, with the sea right across the road.](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
-- [Score 91€115,000Furnished lake-view house in the old centre of San Siro, Lake ComoSan Siro, Lombardy85 m² · 2 bed · €1,353/m² · 18 days on RealHuntAn 85 m² restored, habitable semi-detached house in the car-free historic centre of San Siro, on the west shore of Lake Como.](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
-- [Score 91€30,000Village house with a sea-view balcony in Pollina, 30 minutes from CefalùPollina, Sicily50 m² · 1 bed · €600/m² · 25 days on RealHuntA 50 m² terraced village house with 2 rooms and 2 bathrooms in Pollina, one of the prettiest hill villages of northern Sicily, in the Madonie park.](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163)
-- [Score 91€195,000Renovated Lake Como flat with a lake-view balcony, 100 m from the shoreGravedona ed Uniti, Lombardy80 m² · 1 bed · €2,438/m² · 28 days on RealHuntCommunity fee not statedAn 80 m² top-floor flat in an old palazzo in Gravedona, 100 m from the Lake Como promenade.](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k)
-- [Score 91€28,000Furnished beachfront studio 50 m from a sandy beach in CalabriaFalerna Marina, Calabria40 m² · 1 bed · €700/m² · 25 days on RealHuntCommunity fee not statedA 40 m² studio on the 6th floor (with lift) of a seafront building at Falerna Marina, Calabria, 50 m from a long sandy beach with beach clubs.](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771)
-- [Score 91€22,000Four-level village house with sea and mountain views in Sangineto, CalabriaSangineto, Calabria108 m² · 2 bed · €204/m² · 25 days on RealHuntA 108 m² house over four levels in the old village of Sangineto, on the Riviera dei Cedri in Calabria, with views over the rooftops to the sea and…](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976)
-- [Score 89€12,000Stone house in a hill town 55 min from RomeLazio1 bed · 65 days on RealHunt1 bedrooms · 1 bathroom · 50 min to the beach · 55 min to Rome Airport.](https://realhunt.co/deal/DcoUnwBDDxF)
-- [Score 88€30,000Sea-view house five minutes from the beachCalabria1 bed · 65 days on RealHunt1 bedroom · 1 bathroom · 5 min to the beach · 53 min to Scalea Airport.](https://realhunt.co/deal/Dcgta8yjCAR)
+- [Score 91€95,000Renovated stone house with a lake-view balcony above Lake ComoSan Siro, Lake Como60 m² · 2 bed · €1,583/m² · 47 days on RealHuntA semi-detached stone house in a quiet old village in San Siro, on the western shore of Lake Como near Menaggio, renovated a few years ago and…](https://realhunt.co/deal/it-san-siro-95k-057133)
+- [Score 91€29,000Holiday flat with a big sea-view terrace and garden in CalabriaTorremezzo, Calabria55 m² · 1 bed · €527/m² · 26 days on RealHuntCommunity fee not statedA 47 m² ground-floor flat in the Residence Solemar at Torremezzo di Falconara Albanese, on the Tyrrhenian coast of Calabria.](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544)
+- [Score 91€30,000Furnished seaside flat a few steps from the beach at Acqualadrone, MessinaAcqualadrone, Sicily40 m² · 1 bed · €750/m² · 26 days on RealHuntCommunity fee not statedA 40 m² flat on the first floor of a 1985 building at Acqualadrone, on the northern tip of Sicily near Messina, with the sea right across the road.](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356)
+- [Score 91€115,000Furnished lake-view house in the old centre of San Siro, Lake ComoSan Siro, Lombardy85 m² · 2 bed · €1,353/m² · 19 days on RealHuntAn 85 m² restored, habitable semi-detached house in the car-free historic centre of San Siro, on the west shore of Lake Como.](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633)
+- [Score 91€30,000Village house with a sea-view balcony in Pollina, 30 minutes from CefalùPollina, Sicily50 m² · 1 bed · €600/m² · 26 days on RealHuntA 50 m² terraced village house with 2 rooms and 2 bathrooms in Pollina, one of the prettiest hill villages of northern Sicily, in the Madonie park.](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163)
+- [Score 91€195,000Renovated Lake Como flat with a lake-view balcony, 100 m from the shoreGravedona ed Uniti, Lombardy80 m² · 1 bed · €2,438/m² · 29 days on RealHuntCommunity fee not statedAn 80 m² top-floor flat in an old palazzo in Gravedona, 100 m from the Lake Como promenade.](https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k)
+- [Score 91€28,000Furnished beachfront studio 50 m from a sandy beach in CalabriaFalerna Marina, Calabria40 m² · 1 bed · €700/m² · 26 days on RealHuntCommunity fee not statedA 40 m² studio on the 6th floor (with lift) of a seafront building at Falerna Marina, Calabria, 50 m from a long sandy beach with beach clubs.](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771)
+- [Score 91€22,000Four-level village house with sea and mountain views in Sangineto, CalabriaSangineto, Calabria108 m² · 2 bed · €204/m² · 26 days on RealHuntA 108 m² house over four levels in the old village of Sangineto, on the Riviera dei Cedri in Calabria, with views over the rooftops to the sea and…](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976)
+- [Score 89€12,000Stone house in a hill town 55 min from RomeLazio1 bed · 66 days on RealHunt1 bedrooms · 1 bathroom · 50 min to the beach · 55 min to Rome Airport.](https://realhunt.co/deal/DcoUnwBDDxF)
+- [Score 88€30,000Sea-view house five minutes from the beachCalabria1 bed · 66 days on RealHunt1 bedroom · 1 bathroom · 5 min to the beach · 53 min to Scalea Airport.](https://realhunt.co/deal/Dcgta8yjCAR)
 
 ### Compare the 10 homes, cheapest first
 
@@ -19232,9 +19232,9 @@ List last changed 13 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/nl-amsterdam-299k-563619)
-- [Cheapest€299,000Three-room flat with a 14 m² south terrace next to Reigersbos metroReigersbos, Amsterdam72 m² · 2 bed · €4,153/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/nl-amsterdam-299k-968188)
-- [Most space for the money€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/nl-amsterdam-325k-505653)
+- [Best score€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/nl-amsterdam-299k-563619)
+- [Cheapest€299,000Three-room flat with a 14 m² south terrace next to Reigersbos metroReigersbos, Amsterdam72 m² · 2 bed · €4,153/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/nl-amsterdam-299k-968188)
+- [Most space for the money€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/nl-amsterdam-325k-505653)
 
 The 10 best-rated apartments for sale in the Netherlands that RealHunt lists today cost from €299,000 to €335,000. The cheapest costs €299,000: [Remodelled corner flat with a south balcony over the canal, Reigersbos](https://realhunt.co/deal/nl-amsterdam-299k-563619), in Reigersbos (73 m², 2 bedrooms). The median price is €315,000 (€4,167/m²), against €325,000 (€4,286/m²) for the 18 homes we list in the Netherlands.
 
@@ -19262,16 +19262,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Netherlands)
 
-- [Score 94€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 45 days on RealHuntCommunity fee not stated72 m² on the 1st floor: the layout was redone so the bedrooms face the front and the living room the back, with a modern dark kitchen, a new…](https://realhunt.co/deal/nl-amsterdam-299k-563619)
-- [Score 94€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 45 days on RealHuntCommunity fee not statedA huge 107 m² corner flat (formerly four rooms) on the 10th floor of the Gouden Rand in Zuidoost: a long bright living room with an open kitchen…](https://realhunt.co/deal/nl-amsterdam-325k-505653)
-- [Score 93€299,000Three-room flat with a 14 m² south terrace next to Reigersbos metroReigersbos, Amsterdam72 m² · 2 bed · €4,153/m² · 45 days on RealHuntCommunity fee not stated72 m² on the 1st floor, 50 m from Reigersbos shopping centre and metro: a big living room with an open kitchen, two bedrooms and a 14 m²…](https://realhunt.co/deal/nl-amsterdam-299k-968188)
-- [Score 90€335,00093 m² four-room flat with a 13.5 m² balcony by Nelson Mandela ParkNelson Mandelapark, Amsterdam93 m² · 3 bed · €3,602/m² · 45 days on RealHuntCommunity fee not stated93 m² on the 7th floor with a lift near Nelson Mandela Park: a large living and dining room with big windows, three bedrooms and a 13.5 m² balcony…](https://realhunt.co/deal/nl-amsterdam-335k-962495)
-- [Score 90€300,000Top-floor flat under the eaves with skylights near the GaasperplasGein, Amsterdam72 m² · 2 bed · €4,167/m² · 45 days on RealHuntCommunity fee not stated72 m² (122 m² gross) on the top floor of a well-kept building in Gein: a very bright living room under skylights, an open white kitchen, two…](https://realhunt.co/deal/nl-amsterdam-300k-930369)
-- [Score 89€305,000Top-floor four-room flat with energy label A and green views, GeinGein, Amsterdam70 m² · 3 bed · €4,357/m² · 45 days on RealHuntCommunity fee not stated70 m² on the top floor with no upstairs neighbours: a big living room with an open white kitchen, three bedrooms, a renewed bathroom, lots of…](https://realhunt.co/deal/nl-amsterdam-305k-988747)
-- [Score 89€330,00080 m² three-bedroom flat with a lift and balcony on Plein 40-45Plein 40-45, Amsterdam81 m² · 3 bed · €4,074/m² · 45 days on RealHuntCommunity fee not stated80.5 m² on the 3rd floor with a lift in Nieuw-West: a through living room with big windows, three bedrooms, a kitchen, a bathroom, a storeroom and…](https://realhunt.co/deal/nl-amsterdam-330k-999230)
-- [Score 88€315,000Top-floor corner flat with three bedrooms in VenserpolderVenserpolder, Amsterdam75 m² · 3 bed · €4,200/m² · 45 days on RealHuntCommunity fee not stated75 m² on the top floor, corner position with big windows: a bright living room, a white country-style kitchen, three bedrooms and a storeroom…](https://realhunt.co/deal/nl-amsterdam-315k-980579)
-- [Score 88€325,000Three-room flat with a 15 m² south balcony and free views in NellesteinNellestein, Amsterdam75 m² · 2 bed · €4,333/m² · 45 days on RealHuntCommunity fee not stated75 m² with a new white kitchen, wood-look floors and a 15 m² south balcony looking over nature, on a car-free street with a cycle path.](https://realhunt.co/deal/nl-amsterdam-325k-562301)
-- [Score 87€310,000Three-room flat with a sunny roof terrace by Reigersbos marketReigersbos, Amsterdam71 m² · 2 bed · €4,366/m² · 45 days on RealHuntCommunity fee not stated71 m² on the 1st floor: a large living room with a dining area, two bedrooms, a kitchen and a south-east roof terrace for the morning sun.](https://realhunt.co/deal/nl-amsterdam-310k-950790)
+- [Score 94€299,000Remodelled corner flat with a south balcony over the canal, ReigersbosReigersbos, Amsterdam73 m² · 2 bed · €4,096/m² · 46 days on RealHuntCommunity fee not stated72 m² on the 1st floor: the layout was redone so the bedrooms face the front and the living room the back, with a modern dark kitchen, a new…](https://realhunt.co/deal/nl-amsterdam-299k-563619)
+- [Score 94€325,000107 m² corner flat on the 10th floor with views over nature, AmsterdamGouden Rand, Amsterdam107 m² · 3 bed · €3,037/m² · 46 days on RealHuntCommunity fee not statedA huge 107 m² corner flat (formerly four rooms) on the 10th floor of the Gouden Rand in Zuidoost: a long bright living room with an open kitchen…](https://realhunt.co/deal/nl-amsterdam-325k-505653)
+- [Score 93€299,000Three-room flat with a 14 m² south terrace next to Reigersbos metroReigersbos, Amsterdam72 m² · 2 bed · €4,153/m² · 46 days on RealHuntCommunity fee not stated72 m² on the 1st floor, 50 m from Reigersbos shopping centre and metro: a big living room with an open kitchen, two bedrooms and a 14 m²…](https://realhunt.co/deal/nl-amsterdam-299k-968188)
+- [Score 90€335,00093 m² four-room flat with a 13.5 m² balcony by Nelson Mandela ParkNelson Mandelapark, Amsterdam93 m² · 3 bed · €3,602/m² · 46 days on RealHuntCommunity fee not stated93 m² on the 7th floor with a lift near Nelson Mandela Park: a large living and dining room with big windows, three bedrooms and a 13.5 m² balcony…](https://realhunt.co/deal/nl-amsterdam-335k-962495)
+- [Score 90€300,000Top-floor flat under the eaves with skylights near the GaasperplasGein, Amsterdam72 m² · 2 bed · €4,167/m² · 46 days on RealHuntCommunity fee not stated72 m² (122 m² gross) on the top floor of a well-kept building in Gein: a very bright living room under skylights, an open white kitchen, two…](https://realhunt.co/deal/nl-amsterdam-300k-930369)
+- [Score 89€305,000Top-floor four-room flat with energy label A and green views, GeinGein, Amsterdam70 m² · 3 bed · €4,357/m² · 46 days on RealHuntCommunity fee not stated70 m² on the top floor with no upstairs neighbours: a big living room with an open white kitchen, three bedrooms, a renewed bathroom, lots of…](https://realhunt.co/deal/nl-amsterdam-305k-988747)
+- [Score 89€330,00080 m² three-bedroom flat with a lift and balcony on Plein 40-45Plein 40-45, Amsterdam81 m² · 3 bed · €4,074/m² · 46 days on RealHuntCommunity fee not stated80.5 m² on the 3rd floor with a lift in Nieuw-West: a through living room with big windows, three bedrooms, a kitchen, a bathroom, a storeroom and…](https://realhunt.co/deal/nl-amsterdam-330k-999230)
+- [Score 88€315,000Top-floor corner flat with three bedrooms in VenserpolderVenserpolder, Amsterdam75 m² · 3 bed · €4,200/m² · 46 days on RealHuntCommunity fee not stated75 m² on the top floor, corner position with big windows: a bright living room, a white country-style kitchen, three bedrooms and a storeroom…](https://realhunt.co/deal/nl-amsterdam-315k-980579)
+- [Score 88€325,000Three-room flat with a 15 m² south balcony and free views in NellesteinNellestein, Amsterdam75 m² · 2 bed · €4,333/m² · 46 days on RealHuntCommunity fee not stated75 m² with a new white kitchen, wood-look floors and a 15 m² south balcony looking over nature, on a car-free street with a cycle path.](https://realhunt.co/deal/nl-amsterdam-325k-562301)
+- [Score 87€310,000Three-room flat with a sunny roof terrace by Reigersbos marketReigersbos, Amsterdam71 m² · 2 bed · €4,366/m² · 46 days on RealHuntCommunity fee not stated71 m² on the 1st floor: a large living room with a dining area, two bedrooms, a kitchen and a south-east roof terrace for the morning sun.](https://realhunt.co/deal/nl-amsterdam-310k-950790)
 
 ### Compare the 10 homes, cheapest first
 
@@ -19349,9 +19349,9 @@ List last changed 13 October 2026. Jump to the homes
 
 ### Three picks from this list
 
-- [Best score€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-bytom-57k-186977)
-- [Cheapest€53,693Two-level flat with its own garden and garage in JędrzejówJędrzejów, Świętokrzyskie65 m² · 3 bed · €826/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-jedrzejow-54k-977114)
-- [Most space for the money€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 45 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
+- [Best score€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-bytom-57k-186977)
+- [Cheapest€53,693Two-level flat with its own garden and garage in JędrzejówJędrzejów, Świętokrzyskie65 m² · 3 bed · €826/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-jedrzejow-54k-977114)
+- [Most space for the money€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
 
 The 10 best-rated apartments for sale in Poland that RealHunt lists today cost from €53,693 to €75,398. The cheapest costs €53,693: [Two-level flat with its own garden and garage in Jędrzejów](https://realhunt.co/deal/pl-jedrzejow-54k-977114), in Jędrzejów (65 m², 3 bedrooms). The median price is €68,316 (€918/m²), against €75,170 (€1,139/m²) for the 31 homes we list in Poland.
 
@@ -19379,16 +19379,16 @@ Top score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Poland)
 
-- [Score 96€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 45 days on RealHuntCommunity fee not statedA huge 127 m² flat on the second floor on Falista street: a big living and dining room, three separate bedrooms, a fully fitted kitchen opening…](https://realhunt.co/deal/pl-bytom-57k-186977)
-- [Score 94€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 45 days on RealHuntCommunity fee not stated78 m² on the top floor of a small 1925 building in Dębowa Góra: four rooms, a white kitchen, a modern bathroom with a bath and access to a shared…](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
-- [Score 93€53,693Two-level flat with its own garden and garage in JędrzejówJędrzejów, Świętokrzyskie65 m² · 3 bed · €826/m² · 45 days on RealHuntCommunity fee not statedA 65 m² two-level flat that lives like a house: ground floor plus an upper floor under the roof, its own garden, a garage and an outbuilding.](https://realhunt.co/deal/pl-jedrzejow-54k-977114)
-- [Score 93€68,316Designer attic flat with wooden beams and air conditioning in BytomŚródmieście, Bytom74 m² · 3 bed · €923/m² · 45 days on RealHuntCommunity fee not stated74 m² under the roof of a townhouse in central Bytom, behind a gated courtyard: an open living room and kitchen, bedrooms, a black-tiled bathroom…](https://realhunt.co/deal/pl-bytom-68k-687710)
-- [Score 92€68,316Five-room flat in a 1904 building next to the medical university in ZabrzeCentrum, Zabrze77 m² · 4 bed · €887/m² · 45 days on RealHuntCommunity fee not stated77 m² in the centre of Zabrze, on Plac Dworcowy by the train and bus stations: five separate rooms, a new white kitchen, bathroom.](https://realhunt.co/deal/pl-zabrze-68k-033339)
-- [Score 90€72,885Spacious 89 m² townhouse flat with wood floors in WałbrzychStary Zdrój, Wałbrzych89 m² · 3 bed · €819/m² · 45 days on RealHuntCommunity fee not stated89 m² on the top floor of a renovated, gated townhouse in Stary Zdrój: four rooms, a bright kitchen, bathroom, walk-in wardrobe, two cellars and a…](https://realhunt.co/deal/pl-walbrzych-73k-831228)
-- [Score 90€68,316Restored two-level loft with brick walls and beams in OstródaOstróda, Warmia-Masuria60 m² · 3 bed · €1,139/m² · 45 days on RealHuntCommunity fee not stated88 m² of floor space (60 m² official) on two levels in a restored townhouse with just six flats, in the centre of Ostróda: a navy kitchen, exposed…](https://realhunt.co/deal/pl-ostroda-68k-805099)
-- [Score 88€55,978Four-room flat with a balcony and cellar in Bielsk PodlaskiBielsk Podlaski, Podlaskie61 m² · 3 bed · €918/m² · 45 days on RealHuntCommunity fee not stated60.6 m² on the 4th floor of an insulated block on Ogrodowa street: a living room with a balcony, three rooms, a separate kitchen, a bathroom with…](https://realhunt.co/deal/pl-bielsk-podlaski-56k-483418)
-- [Score 87€67,402Four-room flat with a balcony in an insulated block in Bielsk PodlaskiBielsk Podlaski, Podlaskie62 m² · 3 bed · €1,087/m² · 45 days on RealHuntCommunity fee not stated62 m² on the 4th floor: a living room with a balcony, three separate rooms, a fully fitted kitchen and a shower room, plus a cellar.](https://realhunt.co/deal/pl-bielsk-podlaski-67k-382768)
-- [Score 87€75,398Four-room flat with a balcony and lift in GnieznoWiniary, Gniezno63 m² · 3 bed · €1,197/m² · 45 days on RealHuntCommunity fee not stated63 m² on the 4th floor of a building with a lift on Osiedle Piastowskie: four rooms, a separate bright kitchen, bathroom, WC and a balcony.](https://realhunt.co/deal/pl-gniezno-75k-933649)
+- [Score 96€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 46 days on RealHuntCommunity fee not statedA huge 127 m² flat on the second floor on Falista street: a big living and dining room, three separate bedrooms, a fully fitted kitchen opening…](https://realhunt.co/deal/pl-bytom-57k-186977)
+- [Score 94€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 46 days on RealHuntCommunity fee not stated78 m² on the top floor of a small 1925 building in Dębowa Góra: four rooms, a white kitchen, a modern bathroom with a bath and access to a shared…](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
+- [Score 93€53,693Two-level flat with its own garden and garage in JędrzejówJędrzejów, Świętokrzyskie65 m² · 3 bed · €826/m² · 46 days on RealHuntCommunity fee not statedA 65 m² two-level flat that lives like a house: ground floor plus an upper floor under the roof, its own garden, a garage and an outbuilding.](https://realhunt.co/deal/pl-jedrzejow-54k-977114)
+- [Score 93€68,316Designer attic flat with wooden beams and air conditioning in BytomŚródmieście, Bytom74 m² · 3 bed · €923/m² · 46 days on RealHuntCommunity fee not stated74 m² under the roof of a townhouse in central Bytom, behind a gated courtyard: an open living room and kitchen, bedrooms, a black-tiled bathroom…](https://realhunt.co/deal/pl-bytom-68k-687710)
+- [Score 92€68,316Five-room flat in a 1904 building next to the medical university in ZabrzeCentrum, Zabrze77 m² · 4 bed · €887/m² · 46 days on RealHuntCommunity fee not stated77 m² in the centre of Zabrze, on Plac Dworcowy by the train and bus stations: five separate rooms, a new white kitchen, bathroom.](https://realhunt.co/deal/pl-zabrze-68k-033339)
+- [Score 90€72,885Spacious 89 m² townhouse flat with wood floors in WałbrzychStary Zdrój, Wałbrzych89 m² · 3 bed · €819/m² · 46 days on RealHuntCommunity fee not stated89 m² on the top floor of a renovated, gated townhouse in Stary Zdrój: four rooms, a bright kitchen, bathroom, walk-in wardrobe, two cellars and a…](https://realhunt.co/deal/pl-walbrzych-73k-831228)
+- [Score 90€68,316Restored two-level loft with brick walls and beams in OstródaOstróda, Warmia-Masuria60 m² · 3 bed · €1,139/m² · 46 days on RealHuntCommunity fee not stated88 m² of floor space (60 m² official) on two levels in a restored townhouse with just six flats, in the centre of Ostróda: a navy kitchen, exposed…](https://realhunt.co/deal/pl-ostroda-68k-805099)
+- [Score 88€55,978Four-room flat with a balcony and cellar in Bielsk PodlaskiBielsk Podlaski, Podlaskie61 m² · 3 bed · €918/m² · 46 days on RealHuntCommunity fee not stated60.6 m² on the 4th floor of an insulated block on Ogrodowa street: a living room with a balcony, three rooms, a separate kitchen, a bathroom with…](https://realhunt.co/deal/pl-bielsk-podlaski-56k-483418)
+- [Score 87€67,402Four-room flat with a balcony in an insulated block in Bielsk PodlaskiBielsk Podlaski, Podlaskie62 m² · 3 bed · €1,087/m² · 46 days on RealHuntCommunity fee not stated62 m² on the 4th floor: a living room with a balcony, three separate rooms, a fully fitted kitchen and a shower room, plus a cellar.](https://realhunt.co/deal/pl-bielsk-podlaski-67k-382768)
+- [Score 87€75,398Four-room flat with a balcony and lift in GnieznoWiniary, Gniezno63 m² · 3 bed · €1,197/m² · 46 days on RealHuntCommunity fee not stated63 m² on the 4th floor of a building with a lift on Osiedle Piastowskie: four rooms, a separate bright kitchen, bathroom, WC and a balcony.](https://realhunt.co/deal/pl-gniezno-75k-933649)
 
 ### Compare the 10 homes, cheapest first
 
@@ -19464,11 +19464,11 @@ These listings come from morizon.pl (10). RealHunt is not an estate agent and do
 
 
 ---
-Source: https://realhunt.co/homes (updated 2026-11-27)
+Source: https://realhunt.co/homes (updated 2026-11-28)
 
 ## Homes for sale, country by country
 
-RealHunt lists 703 homes in 23 countries, each checked by a person. Pick a country for its homes, prices, buying costs and rules for foreigners. Counts of 27 November 2026.
+RealHunt lists 703 homes in 23 countries, each checked by a person. Pick a country for its homes, prices, buying costs and rules for foreigners. Counts of 28 November 2026.
 
 - [Spain155 · From €39,000 · Median price €120,000](https://realhunt.co/homes/spain)
 - [Italy102 · From €12,000 · Median price €97,000](https://realhunt.co/homes/italy)
