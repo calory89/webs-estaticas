@@ -551,6 +551,7 @@ function makeCard(b,name){var c=$('card'),x=c.getContext('2d'),W=1080,H=1920;var
   x.fillStyle='#0b0b0c';x.font='900 330px Impact,Arial Narrow,sans-serif';x.fillText(pad(b),W/2,1060);
   x.font='800 56px Inter,Arial,sans-serif';x.fillText(String(name).split(' ')[0].toUpperCase().slice(0,16),W/2,1190);
   x.fillStyle='#f4efe6';x.font='500 46px Inter,Arial,sans-serif';x.fillText(T('My name goes on the monument.','Mi nombre irá en el monumento.'),W/2,1420);x.fillText(T('Forever.','Para siempre.'),W/2,1485);
+  x.fillStyle='#1fb5c4';x.font='700 42px Inter,Arial,sans-serif';x.fillText(T('Finish it → win a plot in Sumba','Termínalo → gana una parcela en Sumba'),W/2,1590);
   x.fillStyle='#e8b04b';x.font='800 50px Inter,Arial,sans-serif';x.fillText((100-Object.keys(taken).length-1)+T(' bibs left → sumbamarathon.com',' dorsales libres → sumbamarathon.com'),W/2,1700);
   var url=c.toDataURL('image/png');$('dlBtn').href=url;$('share').classList.add('on');
   $('shareBtn').onclick=function(){var t=T('I just claimed bib '+pad(b)+' for the first marathon in the history of Sumba. Only 100 of us, and everyone who finishes wins a plot of land in Sumba. Grab yours: ','Acabo de reservar el dorsal '+pad(b)+' del primer maratón de la historia de Sumba. Solo somos 100 y quien lo termina gana una parcela en Sumba. Coge el tuyo: ')+'https://sumbamarathon.com/?ref='+b;
