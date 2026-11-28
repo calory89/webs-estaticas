@@ -716,13 +716,13 @@
           {
            "d": "2026-11-04",
            "k": "auto",
-           "t": "+5 new projects found and checked by the daily crawler (Seychelles, Cape Verde)",
+           "t": "+5 new projects found and checked by the daily research agent (Seychelles, Cape Verde)",
            "u": "/database"
           },
           {
            "d": "2026-11-04",
            "k": "auto",
-           "t": "+115 new projects found and checked by the daily crawler (Accra, Lagos, Kigali)",
+           "t": "+115 new projects found and checked by the daily research agent (Accra, Lagos, Kigali)",
            "u": "/database"
           }
          ]
@@ -2468,8 +2468,8 @@
     "tags": [
      "Open data"
     ],
-    "summary": "desk review evaluation",
-    "description": "Daily evaluation of the desk review on fixed fictional pages, case by case.",
+    "summary": "AI desk review evaluation",
+    "description": "Daily evaluation of the AI desk review on fixed fictional pages, case by case.",
     "operationId": "open_evals",
     "parameters": [],
     "responses": {
@@ -3505,7 +3505,7 @@
          "latest": {
           "commit": "code:4a4ef6e14b4acae774579d84a36667d4",
           "models": [
-           "reader-a"
+           "claude-haiku-5-5"
           ],
           "quotes": {
            "checked": 126,
@@ -3589,7 +3589,7 @@
           "seconds": 54,
           "code_key": "code:4a4ef6e14b4acae774579d84a36667d4",
           "consensus": {
-           "second_model": "reader-b",
+           "second_model": "claude-sonnet-5-5",
            "fields_agreed": 140,
            "fields_compared": 144,
            "cases_with_disagreement": [
@@ -3620,10 +3620,10 @@
            "day": "2026-11-04",
            "commit": "code:4a4ef6e14b4acae774579d84a36667d4",
            "models": [
-            "reader-a"
+            "claude-haiku-5-5"
            ],
            "consensus": {
-            "second_model": "reader-b",
+            "second_model": "claude-sonnet-5-5",
             "fields_agreed": 140,
             "fields_compared": 144,
             "cases_with_disagreement": [
@@ -3652,10 +3652,10 @@
            "day": "2026-11-04",
            "commit": "code:ea1e843b9d7a0832affb4ae8510fe7e7",
            "models": [
-            "reader-a"
+            "claude-haiku-5-5"
            ],
            "consensus": {
-            "second_model": "reader-b",
+            "second_model": "claude-sonnet-5-5",
             "fields_agreed": 137,
             "fields_compared": 144,
             "cases_with_disagreement": [
@@ -3920,8 +3920,8 @@
     "tags": [
      "Open data"
     ],
-    "summary": "Running cost of automated features",
-    "description": "Estimated daily spend of the website's automated reading features and the daily cap that stops them.",
+    "summary": "AI spend",
+    "description": "Estimated daily spend of the website AI features and the daily cap that stops them.",
     "operationId": "open_ai_spend",
     "parameters": [],
     "responses": {
@@ -5610,8 +5610,8 @@
           {
            "id": "kolaboro-2026-11-04-0",
            "url": "https://kolaboro.com/changelog",
-           "title": "+5 new projects found and checked by the daily crawler (Seychelles, Cape Verde)",
-           "content_text": "+5 new projects found and checked by the daily crawler (Seychelles, Cape Verde)",
+           "title": "+5 new projects found and checked by the daily research agent (Seychelles, Cape Verde)",
+           "content_text": "+5 new projects found and checked by the daily research agent (Seychelles, Cape Verde)",
            "date_published": "2026-11-04T12:00:00Z",
            "tags": [
             "auto"
@@ -5620,8 +5620,8 @@
           {
            "id": "kolaboro-2026-11-04-1",
            "url": "https://kolaboro.com/changelog",
-           "title": "+115 new projects found and checked by the daily crawler (Accra, Lagos, Kigali)",
-           "content_text": "+115 new projects found and checked by the daily crawler (Accra, Lagos, Kigali)",
+           "title": "+115 new projects found and checked by the daily research agent (Accra, Lagos, Kigali)",
+           "content_text": "+115 new projects found and checked by the daily research agent (Accra, Lagos, Kigali)",
            "date_published": "2026-11-04T12:00:00Z",
            "tags": [
             "auto"
@@ -8710,7 +8710,7 @@
          ],
          "paragraph": {
           "text": "Kolaboro data show 896 tracked projects across 144 markets in November 2026. Of these, 755 projects have a handover date that can be used for the delay index. History for the delay index starts this month. Among those 755 projects, 62 are past the first handover date, a share of 8.2%, and 31 are pas...",
-          "by": "reader-b",
+          "by": "claude-sonnet-5-5",
           "check": {
            "numbers_found": [
             "896",
@@ -10831,7 +10831,7 @@
            "status": "approved",
            "checked": "2026-11-03",
            "archived": false,
-           "note": "Looked up by our crawler; the register response was not archived at the time. New lookups are archived with SHA-256."
+           "note": "Looked up by our research agent; the register response was not archived at the time. New lookups are archived with SHA-256."
           },
           "BKK-007": {
            "market": "Bangkok",
@@ -10840,7 +10840,7 @@
            "status": "approved",
            "checked": "2026-11-03",
            "archived": false,
-           "note": "Looked up by our crawler; the register response was not archived at the time. New lookups are archived with SHA-256."
+           "note": "Looked up by our research agent; the register response was not archived at the time. New lookups are archived with SHA-256."
           },
           "BKK-008": {
            "market": "Bangkok",
@@ -10849,7 +10849,7 @@
            "status": "approved",
            "checked": "2026-11-03",
            "archived": false,
-           "note": "Looked up by our crawler; the register response was not archived at the time. New lookups are archived with SHA-256."
+           "note": "Looked up by our research agent; the register response was not archived at the time. New lookups are archived with SHA-256."
           }
          },
          "lookup_archive": [
@@ -13029,7 +13029,7 @@
         "example": {
          "generated": "2026-11-04",
          "what": "Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published: they would copy the developers' own copyrighted images. Before, after and highlighted diff images are kept privately for 90 days and are available to a buyer on request.",
-         "trigger": "A capture is taken when the crawler sees the page text change (text fingerprint), or once to make a first baseline.",
+         "trigger": "A capture is taken when the research agent sees the page text change (text fingerprint), or once to make a first baseline.",
          "method": [
           "Full-page screenshot in Chromium at 1280 px wide, animations off, lazy images scrolled into view, capped at 8000 px of page height.",
           "Both captures scaled to 560 px wide and turned grey. Pixel rows are aligned between the two captures (longest matching blocks), so content that only moved down is not counted as changed."
@@ -13603,7 +13603,7 @@
            "payment plan",
            "deposit percentage"
           ],
-          "method": "Every day the crawler reads each tracked developer page, fingerprints the text (SHA-256, sealed in Bitcoin with the daily seal) and, when the text changed, re-extracts what the page advertises. This file compares the values day by day and lists every change: the field, the old and new value, ...",
+          "method": "Every day the research agent reads each tracked developer page, fingerprints the text (SHA-256, sealed in Bitcoin with the daily seal) and, when the text changed, re-extracts what the page advertises. This file compares the values day by day and lists every change: the field, the old and new value, ...",
           "counts": {
            "projects": 821,
            "with_changes": 144,
@@ -16504,7 +16504,7 @@
           },
           {
            "id": "desk_review",
-           "objective": "95% of desk review requests return a report each calendar month",
+           "objective": "95% of AI desk review requests return a report each calendar month",
            "target": 0.95,
            "source": "API log (every /api/kb/analyze and /api/x/b/review call: success or failure)",
            "state": "setup",
