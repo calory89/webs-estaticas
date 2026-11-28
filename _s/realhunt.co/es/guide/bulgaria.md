@@ -34,9 +34,9 @@ Impuesto sobre los ingresos por alquiler: No residentes: impuesto definitivo del
 - [70.000 € · Piso amueblado de dos dormitorios con terraza con vistas al mar a 300 m de la playa en Kavarna](https://realhunt.co/es/deal/bg-kavarna-70k-1672825) · Kavarna (mar Negro) · nota 93 · 99 m² · 2 dorm.
 - [58.900 € · Apartamento con vistas al mar y piscina en la costa del mar Negro (Bulgaria)](https://realhunt.co/es/deal/bg-byala-58k-fbw62u) · Byala, Varna · nota 92 · 53 m² · 1 dorm.
 - [66.000 € · Piso de dos dormitorios listo para entrar con terraza con vistas al mar en Kavarna](https://realhunt.co/es/deal/bg-kavarna-66k-89682) · Kavarna Paradise, Kavarna (mar Negro) · nota 92 · 87 m² · 2 dorm.
-- [89.000 € · Piso con vista al mar de un dormitorio con piscina y sin cuota de mantenimiento en Sveti Vlas](https://realhunt.co/es/deal/bg-sveti-vlas-sea-view-89k-92034) · Sveti Vlas, Burgas · nota 84 · 64 m² · 1 dorm.
+- [85.000 € · Casa de 3 dormitorios lista para entrar a vivir con terraza y jardín en Stokite, provincia de Gabrovo](https://realhunt.co/es/deal/bg-stokite-solid-mountain-house-terrace-garden-85k) · Stokite, Gabrovo Province · nota 90 · 128 m² · 3 dorm.
 
-[Las 6 casas en Bulgaria](https://realhunt.co/es/homes/bulgaria)
+[Las 8 casas en Bulgaria](https://realhunt.co/es/homes/bulgaria)
 
 [Gastos, impuestos y fuentes de Bulgaria](https://realhunt.co/es/costs/bulgaria) · [Calculadora de gastos de compra para Bulgaria](https://realhunt.co/es/buying-costs/bulgaria) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -48,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: No residentes: impuesto definitivo del
 - [Bulgaria vs Grecia](https://realhunt.co/es/countries/bulgaria-vs-greece)
 - [Bulgaria vs Estados Unidos](https://realhunt.co/es/countries/bulgaria-vs-united-states)
 - [Bulgaria vs Dinamarca](https://realhunt.co/es/countries/bulgaria-vs-denmark)
-- [Bulgaria vs Suecia](https://realhunt.co/es/countries/bulgaria-vs-sweden)
 - [Bulgaria vs Portugal](https://realhunt.co/es/countries/bulgaria-vs-portugal)
+- [Bulgaria vs Suecia](https://realhunt.co/es/countries/bulgaria-vs-sweden)
 
 ### Fuentes
 

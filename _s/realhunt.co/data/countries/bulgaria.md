@@ -1,6 +1,6 @@
 # Cheap homes in Bulgaria: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 6 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 6 homes is €69,000 (€759 per m², from the 6 homes with a known size); the cheapest costs €58,900 and the most expensive €89,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 6 homes this is a small sample, so the median for Bulgaria is a rough guide.
+On 28 November 2026, RealHunt lists 8 homes for sale in Bulgaria, each one checked by a person. In Bulgaria, the median asking price of those 8 homes is €70,000 (€733 per m², from the 8 homes with a known size); the cheapest costs €58,900 and the most expensive €160,000. Taxes and fees add about 3.2–8.5% to the price of a home in Bulgaria (figures as of 2026). With 8 homes this is a small sample, so the median for Bulgaria is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/bulgaria · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 6 (small sample) |
-| Median asking price | €69,000 |
-| Median price per m² | €759 (6 homes with a known size) |
-| Median size | 90 m² |
-| Cheapest and most expensive | €58,900 · €89,000 |
-| Median RealHunt score (70 to 98) | 93 |
+| Homes on RealHunt | 8 (small sample) |
+| Median asking price | €70,000 |
+| Median price per m² | €733 (8 homes with a known size) |
+| Median size | 99 m² |
+| Cheapest and most expensive | €58,900 · €160,000 |
+| Median RealHunt score (70 to 98) | 92 |
 | Taxes and fees to buy | 3.2–8.5% of the price (as of 2026) |
 | Can foreigners buy? | Yes, buildings and apartments, with rights similar to locals; per GPG, foreigners can't own land directly, so a Bulgarian company is the usual route. |
 | Yearly property tax | 0.01-0.45% of the property's tax value plus a municipal garbage fee. |
@@ -44,7 +44,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/bulgaria
 
-## The 6 homes, best score first
+## The 8 homes, best score first
 
 ### Furnished two-bedroom flat with a sea view in a gated complex in Kavarna
 
@@ -85,6 +85,22 @@ https://realhunt.co/deal/bg-byala-58k-fbw62u
 An 86.5 m² flat on the ground floor of a well-maintained 2007 complex, a 3-minute walk from the beach: an entrance hall, a living room with a fully fitted kitchen and dining area, two furnished bedrooms, a bathroom and a terrace with sea views. South-west exposure brings light all day. Sold fully furnished and equipped, in very good condition with no renovation needed; suits holidays or year-round living. Asking €66,000, about €759/m².
 
 https://realhunt.co/deal/bg-kavarna-66k-89682
+
+### Move-in ready 3-bedroom house with terrace and garden in Stokite, Gabrovo Province
+
+€85,000 · Stokite, Gabrovo Province · 128 m² · 3 bedrooms · RealHunt score 90 · added 2026-11-28
+
+Move-in ready two-storey house in solid brick construction, built between 1984 and 1991. The ground floor has a living room, a kitchen with dining area and a bathroom, and the first floor has three bedrooms. Outdoor features include a covered terrace, a garden with fruit trees and a greenhouse, a balcony, views of green mountain slopes, a garage and outbuildings. Heating is by electricity and firewood with wood-burning stoves and an air conditioner. The house is about 25 km from Sevlievo and 18 km from Apriltsi. Asking €85,000, about €664/m².
+
+https://realhunt.co/deal/bg-stokite-solid-mountain-house-terrace-garden-85k
+
+### Renovated 5-bedroom house with terrace, fireplace and land in Tryavna, Gabrovo
+
+€160,000 · Tryavna, Gabrovo · 273 m² · 5 bedrooms · RealHunt score 88 · added 2026-11-28
+
+This renovated house is move-in ready and offers 273 m2 of living space. It has 5 bedrooms, 2 bathrooms, a living room with a fireplace, a dining room and two cellars. The property includes a panoramic terrace, a plot of 1,088 sq m with a canopy and an outbuilding. The village is 35 km from Veliko Tarnovo and reached by an asphalt road open year-round. Electricity and water are available and a new septic tank has been installed. Asking €160,000, about €586/m².
+
+https://realhunt.co/deal/bg-tryavna-renovated-house-terrace-fireplace-160k
 
 ### Sea-view one-bedroom flat with pool and no maintenance fee in Sveti Vlas
 

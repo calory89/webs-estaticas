@@ -1,4 +1,4 @@
-Title: Houses for sale in Greece (65, from €68,000) · RealHunt
+Title: Houses for sale in Greece (66, from €68,000) · RealHunt
 URL: https://realhunt.co/homes/greece
 Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
@@ -13,20 +13,20 @@ List last changed 28 November 2026. Jump to the homes
 - [Cheapest€68,000Two-level stone house with a sea view in Marathokampos, SamosAgia Triada, Samos80 m² · 2 bed · €850/m² · 45 days on RealHunt](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330)
 - [Most space for the moneyNew€80,000Fully renovated 3-bedroom detached house with garden and fireplace in Mikropoli, DramaMikropoli, Drama148 m² · 3 bed · €541/m² · Added today](https://realhunt.co/deal/gr-mikropoli-renovated-house-garden-fireplace-80k)
 
-RealHunt lists 65 houses for sale in Greece today, priced from €68,000 to €210,000. The cheapest costs €68,000: [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330), in Agia Triada (80 m², 2 bedrooms). The median price is €130,000 (€1,400/m²), against €115,000 (€1,140/m²) for the 1006 homes on RealHunt in 23 countries.
+RealHunt lists 66 houses for sale in Greece today, priced from €68,000 to €210,000. The cheapest costs €68,000: [Two-level stone house with a sea view in Marathokampos, Samos](https://realhunt.co/deal/gr-samos-agia-triada-68k-20601330), in Agia Triada (80 m², 2 bedrooms). The median price is €135,000 (€1,400/m²), against €115,000 (€1,113/m²) for the 1058 homes on RealHunt in 28 countries.
 Can you buy here? Read this first
 Yes. Buyers from outside the EU and EFTA need a permit to buy in designated border areas (parts of northern Greece and eastern Aegean islands such as the Dodecanese and Rhodes). The government has announced a 15% transfer tax for non-EU buyers of homes from 1 January 2027, not yet final in September 2026.
 
 [Rules by nationality](https://realhunt.co/can-i-buy) · Buying costs and rules for foreigners in Greece
 
 Homes
-65
+66
 
 From
 €68,000
 
 Median price
-€130,000
+€135,000
 
 Median per m²
 €1,400/m²
@@ -46,7 +46,7 @@ Some limits
 Data of
 28 Nov 2026
 
-### The 30 best of 65, by score
+### The 30 best of 66, by score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/greece/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Greece)
 
@@ -81,9 +81,9 @@ Sorted by RealHunt score, best first. For the cheapest first, see the table belo
 - [Score 87€158,000Furnished Cretan house with a shared pool for just four homesDrapanos, Crete76 m² · 2 bed · €2,079/m² · 43 days on RealHuntVilla Dionysos: a fully furnished 76 m² two-bedroom house over two floors in a small, quiet complex in Drapanos, near Chania.](https://realhunt.co/deal/gr-crete-drapanos-pool-158k)
 - [Score 87New€105,0002-bedroom house with garden, fireplace and land in Perivolakia, CretePerivolakia, Crete75 m² · 2 bed · €1,400/m² · Added todayThis house with a garden in Perivolakia sits about 12 km from the beach.](https://realhunt.co/deal/gr-perivolakia-garden-house-fireplace-land-105k)
 
-Showing the 30 best-scored of 65 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 66 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 60 cheapest of 65
+### Compare the 60 cheapest of 66
 
 Median price per m² of this list: €1,400/m².
 
@@ -149,21 +149,21 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Traditional 2-bedroom stone house with terrace and mountain views in Melampes, Crete](https://realhunt.co/deal/gr-melampes-traditional-stone-house-views-190k) | Melampes, Crete | €190,000 | 100 m² | €1,900/m² | 2 | 81 | 27 Nov 2026
 [Two-storey stone house facing the Libyan Sea in Koutsounari, south Crete](https://realhunt.co/deal/gr-crete-koutsounari-stone-house-libyan-sea-view-195k) | Koutsounari, Crete | €195,000 | 88 m² | €2,216/m² | 2 | 83 | 20 Nov 2026
 
-### The 65 homes in numbers
+### The 66 homes in numbers
 
 - Size: half of them have 90 m² or more. The largest has 200 m²: [House in good condition with terrace, garden and parquet floors in Sperchogeia, Messenia](https://realhunt.co/deal/gr-sperchogeia-terrace-garden-parquet-house-good-85k).
-- Bedrooms: 8 with 1 bedroom, 38 with 2, 17 with 3, 2 with 4 or more.
-- Type: 6 apartments and 59 houses.
-- Setting: 30 by the sea, 33 in villages, 1 in towns.
-- Where: Crete (26), Magnesia (4), Laconia (3), Messinia (3), Peloponnese (3), Achaea (2).
-- Lowest median price: Laconia, €90,000 across 3 homes. Highest: Magnesia, €180,000 across 4.
-- Extras named in the listings: 37 with a garden, 42 with a terrace, 18 with a garage, 3 with a pool, 31 with a fireplace.
+- Bedrooms: 8 with 1 bedroom, 38 with 2, 18 with 3, 2 with 4 or more.
+- Type: 6 apartments and 60 houses.
+- Setting: 31 by the sea, 33 in villages, 1 in towns.
+- Where: Crete (26), Magnesia (4), Peloponnese (4), Laconia (3), Messinia (3), Achaea (2).
+- Lowest median price: Laconia, €90,000 across 3 homes. Highest: Peloponnese, €190,000 across 4.
+- Extras named in the listings: 38 with a garden, 42 with a terrace, 19 with a garage, 3 with a pool, 32 with a fireplace.
 - Scores: 76 to 96 out of 98. The best rated: [House in good condition with terrace, garden and parquet floors in Sperchogeia, Messenia](https://realhunt.co/deal/gr-sperchogeia-terrace-garden-parquet-house-good-85k).
-- Newest, added 28 November 2026: [House in good condition with terrace, garden and parquet floors in Sperchogeia, Messenia](https://realhunt.co/deal/gr-sperchogeia-terrace-garden-parquet-house-good-85k). 52 of these homes were added in the last 30 days.
+- Newest, added 28 November 2026: [House in good condition with terrace, garden and parquet floors in Sperchogeia, Messenia](https://realhunt.co/deal/gr-sperchogeia-terrace-garden-parquet-house-good-85k). 53 of these homes were added in the last 30 days.
 
 ### What your money buys here
 
-Split into three groups of the same size by asking price: from €68,000 to €115,000, 22 homes with a median of 89 m², most often 2 bedrooms; from €120,000 to €158,000, 21 homes with a median of 90 m², most often 2 bedrooms; from €159,990 to €210,000, 22 homes with a median of 100 m², most often 2 bedrooms.
+Split into three groups of the same size by asking price: from €68,000 to €115,000, 22 homes with a median of 89 m², most often 2 bedrooms; from €120,000 to €159,990, 22 homes with a median of 90 m², most often 2 bedrooms; from €160,000 to €210,000, 22 homes with a median of 104 m², most often 2 bedrooms.
 
 ### Median price by region in Greece
 
@@ -181,7 +181,6 @@ Phthiotis | 1 | €130,000
 Syros | 1 | €130,000
 [Crete](https://realhunt.co/homes/greece/crete) | 26 | €135,000
 Thasos | 1 | €140,000
-Peloponnese | 3 | €145,000
 Corfu | 2 | €150,000
 Rhodes | 1 | €155,000
 [Messinia](https://realhunt.co/homes/greece/messinia) | 3 | €158,000
@@ -191,12 +190,13 @@ Chios | 1 | €175,000
 Euboea | 2 | €178,000
 [Magnesia](https://realhunt.co/homes/greece/magnesia) | 4 | €180,000
 Kea-Kythnos | 1 | €180,000
+Peloponnese | 4 | €190,000
 Achaea | 2 | €205,000
 Aegina | 1 | €210,000
 
 ### Buying costs and rules for foreigners in Greece
 
-Taxes and fees add about 5.5 to 7% to the price: Transfer tax 3.09% of the price or the taxable value, whichever is higher; notary about 0.8-1% plus VAT; land registry fees about 0.5-0.7%; lawyer 1-2% plus VAT; if an agent is used, the buyer usually pays a commission of 1-3% plus VAT on top. On the median home on this page (€130,000) that is €7,150 to €9,100, so €137,150 to €139,100 in all.
+Taxes and fees add about 5.5 to 7% to the price: Transfer tax 3.09% of the price or the taxable value, whichever is higher; notary about 0.8-1% plus VAT; land registry fees about 0.5-0.7%; lawyer 1-2% plus VAT; if an agent is used, the buyer usually pays a commission of 1-3% plus VAT on top. On the median home on this page (€135,000) that is €7,425 to €9,450, so €142,425 to €144,450 in all.
 
 At the same percentages: on €40,000, €2,200 to €2,800; on €80,000, €4,400 to €5,600; on €150,000, €8,250 to €10,500.
 
@@ -214,17 +214,17 @@ Source: [Independent Authority for Public Revenue (AADE), Unified Tax on the Own
 
 ### What to watch out for
 
-- 1 of the 65 listings gives no floor area, so its price per m² cannot be compared.
+- 1 of the 66 listings gives no floor area, so its price per m² cannot be compared.
 - 3 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- 5 of 65 sit where our rough flood check reads medium or high. Each home page links the official flood map.
-- 1 of 65 is close to a motorway, a railway or an airport (high on our noise check).
-- As a group these homes score lowest on price (47/100 on average) and highest on distance to an airport (91/100).
+- 5 of 66 sit where our rough flood check reads medium or high. Each home page links the official flood map.
+- 1 of 66 is close to a motorway, a railway or an airport (high on our noise check).
+- As a group these homes score lowest on price (46/100 on average) and highest on distance to an airport (91/100).
 
 ### Questions buyers ask
 
 #### How much does a house for sale in Greece cost?
 
-Asking prices run from €68,000 to €210,000 across 65 homes. The median is €130,000, or €1,400/m².
+Asking prices run from €68,000 to €210,000 across 66 homes. The median is €135,000, or €1,400/m².
 
 #### What is the cheapest house for sale in Greece?
 
@@ -236,27 +236,27 @@ Yes. Buyers from outside the EU and EFTA need a permit to buy in designated bord
 
 #### What are the buying costs in Greece?
 
-About 5.5 to 7% on top of the price: Transfer tax 3.09% of the price or the taxable value, whichever is higher; notary about 0.8-1% plus VAT; land registry fees about 0.5-0.7%; lawyer 1-2% plus VAT; if an agent is used, the buyer usually pays a commission of 1-3% plus VAT on top. On the median home on this page (€130,000) that is €7,150 to €9,100. General information, not tax advice.
+About 5.5 to 7% on top of the price: Transfer tax 3.09% of the price or the taxable value, whichever is higher; notary about 0.8-1% plus VAT; land registry fees about 0.5-0.7%; lawyer 1-2% plus VAT; if an agent is used, the buyer usually pays a commission of 1-3% plus VAT on top. On the median home on this page (€135,000) that is €7,425 to €9,450. General information, not tax advice.
 
 #### Which region is cheapest in Greece?
 
-Among regions with at least 3 homes on RealHunt, Laconia has the lowest median price, €90,000 across 3 homes, and Magnesia the highest, €180,000.
+Among regions with at least 3 homes on RealHunt, Laconia has the lowest median price, €90,000 across 3 homes, and Peloponnese the highest, €190,000.
 
 ### More searches in Greece
 
-By budget [Under €80,000 6](https://realhunt.co/homes/greece/under-80000) [Under €100,000 15](https://realhunt.co/homes/greece/under-100000) [Under €150,000 40](https://realhunt.co/homes/greece/under-150000) [Under €200,000 63](https://realhunt.co/homes/greece/under-200000)
+By budget [Under €80,000 6](https://realhunt.co/homes/greece/under-80000) [Under €100,000 15](https://realhunt.co/homes/greece/under-100000) [Under €150,000 40](https://realhunt.co/homes/greece/under-150000) [Under €200,000 64](https://realhunt.co/homes/greece/under-200000)
 
-By setting [By the sea 30](https://realhunt.co/homes/greece/by-the-sea) [Village houses 33](https://realhunt.co/homes/greece/village-houses)
+By setting [By the sea 31](https://realhunt.co/homes/greece/by-the-sea) [Village houses 33](https://realhunt.co/homes/greece/village-houses)
 
 By type [Apartments 6](https://realhunt.co/homes/greece/apartments)
 
-By bedrooms [1 bedroom 8](https://realhunt.co/homes/greece/1-bedroom) [2 bedrooms 38](https://realhunt.co/homes/greece/2-bedroom) [3 bedrooms 17](https://realhunt.co/homes/greece/3-bedroom)
+By bedrooms [1 bedroom 8](https://realhunt.co/homes/greece/1-bedroom) [2 bedrooms 38](https://realhunt.co/homes/greece/2-bedroom) [3 bedrooms 18](https://realhunt.co/homes/greece/3-bedroom)
 
 By region [Crete 26](https://realhunt.co/homes/greece/crete) [Magnesia 4](https://realhunt.co/homes/greece/magnesia) [Laconia 3](https://realhunt.co/homes/greece/laconia) [Messinia 3](https://realhunt.co/homes/greece/messinia)
 
-By area [Peloponnese 11](https://realhunt.co/homes/greece/peloponnese)
+By area [Peloponnese 12](https://realhunt.co/homes/greece/peloponnese)
 
-By feature [With a garden 37](https://realhunt.co/cheap-houses/with-garden-in-greece) [Stone houses 20](https://realhunt.co/cheap-houses/stone-houses-in-greece) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-greece) [With a terrace 42](https://realhunt.co/cheap-houses/with-a-terrace-in-greece) [Move-in ready 20](https://realhunt.co/cheap-houses/turnkey-in-greece) [Sea view 20](https://realhunt.co/cheap-houses/with-sea-view-in-greece) [With a fireplace 31](https://realhunt.co/cheap-houses/with-fireplace-in-greece) [With a garage 18](https://realhunt.co/cheap-houses/with-garage-in-greece) [On an island 37](https://realhunt.co/cheap-houses/on-an-island-in-greece) [In the mountains 12](https://realhunt.co/cheap-houses/in-the-mountains-in-greece) [Olive trees or vines 7](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-greece) [Near an airport 29](https://realhunt.co/cheap-houses/near-an-airport-in-greece) [Score 90+ 13](https://realhunt.co/cheap-houses/score-90-plus-in-greece) [New this month 52](https://realhunt.co/cheap-houses/new-this-month-in-greece) [New this week 42](https://realhunt.co/cheap-houses/new-this-week-in-greece) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-greece) [Quiet location 19](https://realhunt.co/cheap-houses/quiet-location-in-greece) [Over 80 m² 40](https://realhunt.co/cheap-houses/over-80-sqm-in-greece) [Over 120 m² 13](https://realhunt.co/cheap-houses/over-120-sqm-in-greece)
+By feature [With a garden 38](https://realhunt.co/cheap-houses/with-garden-in-greece) [Stone houses 20](https://realhunt.co/cheap-houses/stone-houses-in-greece) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-greece) [With a terrace 42](https://realhunt.co/cheap-houses/with-a-terrace-in-greece) [Move-in ready 20](https://realhunt.co/cheap-houses/turnkey-in-greece) [Sea view 20](https://realhunt.co/cheap-houses/with-sea-view-in-greece) [With a fireplace 32](https://realhunt.co/cheap-houses/with-fireplace-in-greece) [With a garage 19](https://realhunt.co/cheap-houses/with-garage-in-greece) [On an island 37](https://realhunt.co/cheap-houses/on-an-island-in-greece) [In the mountains 12](https://realhunt.co/cheap-houses/in-the-mountains-in-greece) [Olive trees or vines 8](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-greece) [Near an airport 29](https://realhunt.co/cheap-houses/near-an-airport-in-greece) [Score 90+ 13](https://realhunt.co/cheap-houses/score-90-plus-in-greece) [New this month 53](https://realhunt.co/cheap-houses/new-this-month-in-greece) [New this week 43](https://realhunt.co/cheap-houses/new-this-week-in-greece) [Period features 4](https://realhunt.co/cheap-houses/with-period-features-in-greece) [Quiet location 19](https://realhunt.co/cheap-houses/quiet-location-in-greece) [Over 80 m² 41](https://realhunt.co/cheap-houses/over-80-sqm-in-greece) [Over 120 m² 14](https://realhunt.co/cheap-houses/over-120-sqm-in-greece)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-greece) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-greece) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-greece)
 
@@ -264,15 +264,15 @@ By feature and budget [Sea view under €150,000 11](https://realhunt.co/cheap-h
 
 In pounds and dollars [Under $100,000 13](https://realhunt.co/cheap-houses/under-100000-dollars-in-greece)
 
-Near a city [Near Athens 5](https://realhunt.co/cheap-houses/near-athens)
+Near a city [Near Athens 6](https://realhunt.co/cheap-houses/near-athens)
 
-Neighbouring countries [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Cyprus 4](https://realhunt.co/homes/cyprus)
+Neighbouring countries [Bulgaria 8](https://realhunt.co/homes/bulgaria) [Turkey 3](https://realhunt.co/homes/turkey) [Cyprus 5](https://realhunt.co/homes/cyprus)
 
-By country [France 305](https://realhunt.co/homes/france) [Spain 171](https://realhunt.co/homes/spain) [Italy 107](https://realhunt.co/homes/italy) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 31](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Portugal 27](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Germany 18](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 7](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Cyprus 4](https://realhunt.co/homes/cyprus) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [France 306](https://realhunt.co/homes/france) [Spain 171](https://realhunt.co/homes/spain) [Italy 108](https://realhunt.co/homes/italy) [United States 64](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 32](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Portugal 28](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 18](https://realhunt.co/homes/canada) [Germany 18](https://realhunt.co/homes/germany) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 8](https://realhunt.co/homes/bulgaria) [United Kingdom 8](https://realhunt.co/homes/united-kingdom) [Mexico 7](https://realhunt.co/homes/mexico) [Uruguay 6](https://realhunt.co/homes/uruguay) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Ireland 4](https://realhunt.co/homes/ireland) [Thailand 3](https://realhunt.co/homes/thailand) [Brazil 3](https://realhunt.co/homes/brazil) [Finland 3](https://realhunt.co/homes/finland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Turkey 3](https://realhunt.co/homes/turkey) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
-How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 42 of these 65 homes were checked against the original listing in the last 30 days.
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 42 of these 66 homes were checked against the original listing in the last 30 days.
 
-These listings come from green-acres.gr (61), spitogatos.gr (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from green-acres.gr (61), spitogatos.gr (4), green-acres.fr (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Greece](https://realhunt.co/alerts?country=Greece) · [Filter and sort these homes](https://realhunt.co/?country=Greece#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Greece](https://realhunt.co/sitemap/greece)
 

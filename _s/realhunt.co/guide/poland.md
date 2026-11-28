@@ -33,10 +33,10 @@ Tax on rental income: Private rental income is taxed as a flat lump sum (ryczał
 - [€60,547 · Bright 78 m² four-room flat in Sosnowiec, no agent fee](https://realhunt.co/deal/pl-sosnowiec-61k-790712) · Sosnowiec, Silesia · score 94 · 78 m² · 3 bed
 - [€53,693 · Two-level flat with its own garden and garage in Jędrzejów](https://realhunt.co/deal/pl-jedrzejow-54k-977114) · Jędrzejów, Świętokrzyskie · score 93 · 65 m² · 3 bed
 - [€68,316 · Designer attic flat with wooden beams and air conditioning in Bytom](https://realhunt.co/deal/pl-bytom-68k-687710) · Śródmieście, Bytom · score 93 · 74 m² · 3 bed
+- [€49,707 · Well maintained semi-detached house with garden and fireplace in Rumia, Pomerania](https://realhunt.co/deal/pl-rumia-well-maintained-house-garden-fireplace-50k) · Rumia, Pomerania · score 93 · 100 m²
 - [€68,316 · Five-room flat in a 1904 building next to the medical university in Zabrze](https://realhunt.co/deal/pl-zabrze-68k-033339) · Centrum, Zabrze · score 92 · 77 m² · 4 bed
-- [€72,885 · Spacious 89 m² townhouse flat with wood floors in Wałbrzych](https://realhunt.co/deal/pl-walbrzych-73k-831228) · Stary Zdrój, Wałbrzych · score 90 · 89 m² · 3 bed
 
-[All 31 homes in Poland](https://realhunt.co/homes/poland)
+[All 32 homes in Poland](https://realhunt.co/homes/poland)
 
 [Costs, taxes and sources for Poland](https://realhunt.co/costs/poland) · [Buying-cost calculator for Poland](https://realhunt.co/buying-costs/poland) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -48,8 +48,8 @@ Tax on rental income: Private rental income is taxed as a flat lump sum (ryczał
 - [Poland vs Greece](https://realhunt.co/countries/greece-vs-poland)
 - [Poland vs United States](https://realhunt.co/countries/poland-vs-united-states)
 - [Poland vs Denmark](https://realhunt.co/countries/denmark-vs-poland)
-- [Poland vs Sweden](https://realhunt.co/countries/poland-vs-sweden)
 - [Poland vs Portugal](https://realhunt.co/countries/poland-vs-portugal)
+- [Poland vs Sweden](https://realhunt.co/countries/poland-vs-sweden)
 
 ### Sources
 

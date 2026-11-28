@@ -36,7 +36,7 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 - [80.000 € · Casa independiente de 3 dormitorios totalmente reformada con jardín y chimenea en Mikropoli, Drama](https://realhunt.co/es/deal/gr-mikropoli-renovated-house-garden-fireplace-80k) · Mikropoli, Drama · nota 92 · 148 m² · 3 dorm.
 - [130.000 € · Dúplex de 3 dormitorios en buen estado con vistas a la montaña y chimenea en Archanes, Creta](https://realhunt.co/es/deal/gr-archanes-mountain-views-maisonette-fireplace-130k) · Archanes, Creta · nota 92 · 190 m² · 3 dorm.
 
-[Las 65 casas en Grecia](https://realhunt.co/es/homes/greece)
+[Las 66 casas en Grecia](https://realhunt.co/es/homes/greece)
 
 [Gastos, impuestos y fuentes de Grecia](https://realhunt.co/es/costs/greece) · [Calculadora de gastos de compra para Grecia](https://realhunt.co/es/buying-costs/greece) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -47,8 +47,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 - [Grecia vs Italia](https://realhunt.co/es/countries/greece-vs-italy)
 - [Grecia vs Estados Unidos](https://realhunt.co/es/countries/greece-vs-united-states)
 - [Grecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-greece)
-- [Grecia vs Suecia](https://realhunt.co/es/countries/greece-vs-sweden)
 - [Grecia vs Portugal](https://realhunt.co/es/countries/greece-vs-portugal)
+- [Grecia vs Suecia](https://realhunt.co/es/countries/greece-vs-sweden)
 - [Grecia vs Polonia](https://realhunt.co/es/countries/greece-vs-poland)
 
 ### Fuentes

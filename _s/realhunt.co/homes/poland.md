@@ -1,29 +1,29 @@
-Title: Apartments for sale in Poland (31, from €53,693) · RealHunt
+Title: Apartments for sale in Poland (32, from €49,707) · RealHunt
 URL: https://realhunt.co/homes/poland
 Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Apartments for sale in Poland
 
-List last changed 18 November 2026. Jump to the homes
+List last changed 28 November 2026. Jump to the homes
 
 ### Three picks from this list
 
 - [Best score€57,120127 m² four-room flat with a loggia and pantry in BytomBytom, Silesia127 m² · 3 bed · €450/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-bytom-57k-186977)
-- [Cheapest€53,693Two-level flat with its own garden and garage in JędrzejówJędrzejów, Świętokrzyskie65 m² · 3 bed · €826/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-jedrzejow-54k-977114)
+- [CheapestNew€49,707Well maintained semi-detached house with garden and fireplace in Rumia, PomeraniaRumia, Pomerania100 m² · 2 bed · €497/m² · Added today](https://realhunt.co/deal/pl-rumia-well-maintained-house-garden-fireplace-50k)
 - [Most space for the money€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
 
-RealHunt lists 31 apartments for sale in Poland today, priced from €53,693 to €90,600. The cheapest costs €53,693: [Two-level flat with its own garden and garage in Jędrzejów](https://realhunt.co/deal/pl-jedrzejow-54k-977114), in Jędrzejów (65 m², 3 bedrooms). The median price is €75,170 (€1,139/m²), against €115,000 (€1,140/m²) for the 1006 homes on RealHunt in 23 countries.
+RealHunt lists 32 apartments for sale in Poland today, priced from €49,707 to €90,600. The cheapest costs €49,707: [Well maintained semi-detached house with garden and fireplace in Rumia, Pomerania](https://realhunt.co/deal/pl-rumia-well-maintained-house-garden-fireplace-50k), in Rumia (100 m², 2 bedrooms). The median price is €75,170 (€1,139/m²), against €115,000 (€1,113/m²) for the 1058 homes on RealHunt in 28 countries.
 Can you buy here? Read this first
 EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land.
 
 [Rules by nationality](https://realhunt.co/can-i-buy) · Buying costs and rules for foreigners in Poland
 
 Homes
-31
+32
 
 From
-€53,693
+€49,707
 
 Median price
 €75,170
@@ -32,7 +32,7 @@ Median per m²
 €1,139/m²
 
 Median size
-62 m²
+63 m²
 
 Top score
 96
@@ -46,7 +46,7 @@ Some limits
 Data of
 28 Nov 2026
 
-### The 30 best of 31, by score
+### The 30 best of 32, by score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Poland)
 
@@ -54,6 +54,7 @@ Sorted by RealHunt score, best first. For the cheapest first, see the table belo
 - [Score 94€60,547Bright 78 m² four-room flat in Sosnowiec, no agent feeSosnowiec, Silesia78 m² · 3 bed · €776/m² · 46 days on RealHuntCommunity fee not stated78 m² on the top floor of a small 1925 building in Dębowa Góra: four rooms, a white kitchen, a modern bathroom with a bath and access to a shared…](https://realhunt.co/deal/pl-sosnowiec-61k-790712)
 - [Score 93€53,693Two-level flat with its own garden and garage in JędrzejówJędrzejów, Świętokrzyskie65 m² · 3 bed · €826/m² · 46 days on RealHuntCommunity fee not statedA 65 m² two-level flat that lives like a house: ground floor plus an upper floor under the roof, its own garden, a garage and an outbuilding.](https://realhunt.co/deal/pl-jedrzejow-54k-977114)
 - [Score 93€68,316Designer attic flat with wooden beams and air conditioning in BytomŚródmieście, Bytom74 m² · 3 bed · €923/m² · 46 days on RealHuntCommunity fee not stated74 m² under the roof of a townhouse in central Bytom, behind a gated courtyard: an open living room and kitchen, bedrooms, a black-tiled bathroom…](https://realhunt.co/deal/pl-bytom-68k-687710)
+- [Score 93New€49,707Well maintained semi-detached house with garden and fireplace in Rumia, PomeraniaRumia, Pomerania100 m² · 2 bed · €497/m² · Added todayThis well maintained semi-detached house, built in 2009, is in Janowo, Rumia.](https://realhunt.co/deal/pl-rumia-well-maintained-house-garden-fireplace-50k)
 - [Score 92€68,316Five-room flat in a 1904 building next to the medical university in ZabrzeCentrum, Zabrze77 m² · 4 bed · €887/m² · 46 days on RealHuntCommunity fee not stated77 m² in the centre of Zabrze, on Plac Dworcowy by the train and bus stations: five separate rooms, a new white kitchen, bathroom.](https://realhunt.co/deal/pl-zabrze-68k-033339)
 - [Score 90€72,885Spacious 89 m² townhouse flat with wood floors in WałbrzychStary Zdrój, Wałbrzych89 m² · 3 bed · €819/m² · 46 days on RealHuntCommunity fee not stated89 m² on the top floor of a renovated, gated townhouse in Stary Zdrój: four rooms, a bright kitchen, bathroom, walk-in wardrobe, two cellars and a…](https://realhunt.co/deal/pl-walbrzych-73k-831228)
 - [Score 90€68,316Restored two-level loft with brick walls and beams in OstródaOstróda, Warmia-Masuria60 m² · 3 bed · €1,139/m² · 46 days on RealHuntCommunity fee not stated88 m² of floor space (60 m² official) on two levels in a restored townhouse with just six flats, in the centre of Ostróda: a navy kitchen, exposed…](https://realhunt.co/deal/pl-ostroda-68k-805099)
@@ -79,15 +80,15 @@ Sorted by RealHunt score, best first. For the cheapest first, see the table belo
 - [Score 81€79,740Renovated, furnished four-room flat with a balcony in SuwałkiSuwałki, Podlaskie60 m² · 3 bed · €1,329/m² · 46 days on RealHuntCommunity fee not stated60 m² on the 1st floor of Wojska Polskiego street, after a full renovation: four separate furnished rooms, a kitchen with appliances, a new shower…](https://realhunt.co/deal/pl-suwalki-80k-028116)
 - [Score 81€79,740Furnished four-room flat with a 2020 bathroom in KołoKoło, Greater Poland58 m² · 3 bed · €1,375/m² · 46 days on RealHuntCommunity fee not stated57.8 m² on the 3rd floor: four rooms (one walk-through), a kitchen, a bathroom renovated in 2020 with new plumbing, a separate WC, a balcony and a…](https://realhunt.co/deal/pl-kolo-80k-024273)
 - [Score 80€79,740Four-room flat with open kitchen and city views in WałbrzychWałbrzych, Lower Silesia57 m² · 3 bed · €1,399/m² · 46 days on RealHuntCommunity fee not stated57 m² on the 6th of 10 floors, with a lift: an open kitchen and living room, three bedrooms and a renovated bathroom.](https://realhunt.co/deal/pl-walbrzych-80k-970297)
-- [Score 80New€90,600Ground-floor flat with garden, terrace and garage in Szklarska Poręba, KarkonoszeSzklarska Poręba, Lower Silesia71 m² · 1 bed · €1,276/m² · 10 days on RealHuntCommunity fee €136 a monthA sunny 71 m² ground-floor flat in a quiet part of Szklarska Poręba, a mountain resort in the Karkonosze, in a building that was thermally…](https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867)
 
-Showing the 30 best-scored of 31 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 32 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 31 homes, cheapest first
+### Compare the 32 homes, cheapest first
 
 Median price per m² of this list: €1,139/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
+[Well maintained semi-detached house with garden and fireplace in Rumia, Pomerania](https://realhunt.co/deal/pl-rumia-well-maintained-house-garden-fireplace-50k) | Rumia, Pomerania | €49,707 | 100 m² | €497/m² | 2 | 93 | 28 Nov 2026
 [Two-level flat with its own garden and garage in Jędrzejów](https://realhunt.co/deal/pl-jedrzejow-54k-977114) | Jędrzejów, Świętokrzyskie | €53,693 | 65 m² | €826/m² | 3 | 93 | 13 Oct 2026
 [Four-room flat with a balcony and cellar in Bielsk Podlaski](https://realhunt.co/deal/pl-bielsk-podlaski-56k-483418) | Bielsk Podlaski, Podlaskie | €55,978 | 61 m² | €918/m² | 3 | 88 | 13 Oct 2026
 [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977) | Bytom, Silesia | €57,120 | 127 m² | €450/m² | 3 | 96 | 13 Oct 2026
@@ -120,21 +121,21 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Furnished four-room flat with two loggias in Łobez](https://realhunt.co/deal/pl-lobez-80k-191746) | Łobez, West Pomerania | €79,968 | 56 m² | €1,428/m² | 3 | 78 | 13 Oct 2026
 [Ground-floor flat with garden, terrace and garage in Szklarska Poręba, Karkonosze](https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867) | Szklarska Poręba, Lower Silesia | €90,600 | 71 m² | €1,276/m² | 1 | 80 | 18 Nov 2026
 
-### The 31 homes in numbers
+### The 32 homes in numbers
 
-- Size: half of them have 62 m² or more. The largest has 127 m²: [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977).
-- Bedrooms: 1 with 1 bedroom, 29 with 3, 1 with 4 or more.
-- Type: 28 apartments and 1 house.
-- Setting: 1 in villages, 30 in towns.
-- Where: Podlaskie (5), Łódź (3), Lower Silesia (3), Greater Poland (2), Silesia (2), Świętokrzyskie (2).
+- Size: half of them have 63 m² or more. The largest has 127 m²: [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977).
+- Bedrooms: 1 with 1 bedroom, 1 with 2, 29 with 3, 1 with 4 or more.
+- Type: 28 apartments and 2 houses.
+- Setting: 1 in villages, 31 in towns.
+- Where: Podlaskie (5), Łódź (3), Lower Silesia (3), Greater Poland (2), Pomerania (2), Silesia (2).
 - Lowest median price: Podlaskie, €71,971 across 5 homes. Highest: Lower Silesia, €79,740 across 3.
-- Extras named in the listings: 4 with a garden, 11 with a terrace, 2 with a garage, 2 with a fireplace.
+- Extras named in the listings: 5 with a garden, 12 with a terrace, 3 with a garage, 3 with a fireplace.
 - Scores: 78 to 96 out of 98. The best rated: [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977).
-- Newest, added 18 November 2026: [Ground-floor flat with garden, terrace and garage in Szklarska Poręba, Karkonosze](https://realhunt.co/deal/pl-szklarska-poreba-garden-flat-91k-543867). 1 of these homes was added in the last 30 days.
+- Newest, added 28 November 2026: [Well maintained semi-detached house with garden and fireplace in Rumia, Pomerania](https://realhunt.co/deal/pl-rumia-well-maintained-house-garden-fireplace-50k). 2 of these homes were added in the last 30 days.
 
 ### What your money buys here
 
-Split into three groups of the same size by asking price: from €53,693 to €68,316, 10 homes with a median of 65 m², most often 3 bedrooms; from €71,971 to €77,455, 11 homes with a median of 63 m², most often 3 bedrooms; from €77,455 to €90,600, 10 homes with a median of 60 m², most often 3 bedrooms.
+Split into three groups of the same size by asking price: from €49,707 to €68,316, 11 homes with a median of 65 m², most often 3 bedrooms; from €71,971 to €76,084, 10 homes with a median of 67 m², most often 3 bedrooms; from €77,455 to €90,600, 11 homes with a median of 60 m², most often 3 bedrooms.
 
 ### Median price by region in Poland
 
@@ -153,8 +154,8 @@ Gniezno | 1 | €75,398
 Warmia-Masuria | 2 | €77,683
 [Lower Silesia](https://realhunt.co/homes/poland/lower-silesia) | 3 | €79,740
 Greater Poland | 2 | €79,740
+Pomerania | 2 | €79,740
 Opole | 1 | €79,740
-Pomerania | 1 | €79,740
 West Pomerania | 2 | €79,968
 Subcarpathia | 1 | €79,968
 
@@ -174,18 +175,18 @@ General information, not tax or legal advice. Figures checked in 2026.
 
 - 1 listing states a monthly community fee, of 136 EUR. Add it to your yearly costs.
 - 27 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- 3 of 31 are close to a motorway, a railway or an airport (high on our noise check).
-- As a group these homes score lowest on space (30/100 on average) and highest on buying costs (84/100).
+- 3 of 32 are close to a motorway, a railway or an airport (high on our noise check).
+- As a group these homes score lowest on space (31/100 on average) and highest on buying costs (84/100).
 
 ### Questions buyers ask
 
 #### How much does an apartment for sale in Poland cost?
 
-Asking prices run from €53,693 to €90,600 across 31 homes. The median is €75,170, or €1,139/m².
+Asking prices run from €49,707 to €90,600 across 32 homes. The median is €75,170, or €1,139/m².
 
 #### What is the cheapest apartment for sale in Poland?
 
-Two-level flat with its own garden and garage in Jędrzejów in Jędrzejów, listed at €53,693, 65 m², 3 bedrooms. Its RealHunt score is 93.
+Well maintained semi-detached house with garden and fireplace in Rumia, Pomerania in Rumia, listed at €49,707, 100 m², 2 bedrooms. Its RealHunt score is 93.
 
 #### Can foreigners buy a house in Poland?
 
@@ -201,21 +202,23 @@ Among regions with at least 3 homes on RealHunt, Podlaskie has the lowest median
 
 ### More searches in Poland
 
-By budget [Under €60,000 3](https://realhunt.co/homes/poland/under-60000) [Under €80,000 30](https://realhunt.co/homes/poland/under-80000)
+By budget [Under €60,000 4](https://realhunt.co/homes/poland/under-60000) [Under €80,000 31](https://realhunt.co/homes/poland/under-80000)
+
+By type [Apartments 28](https://realhunt.co/homes/poland/apartments)
 
 By region [Podlaskie 5](https://realhunt.co/homes/poland/podlaskie) [Łódź 3](https://realhunt.co/homes/poland/lodz) [Lower Silesia 3](https://realhunt.co/homes/poland/lower-silesia)
 
-By feature [With a garden 4](https://realhunt.co/cheap-houses/with-garden-in-poland) [With a terrace 11](https://realhunt.co/cheap-houses/with-a-terrace-in-poland) [Move-in ready 13](https://realhunt.co/cheap-houses/turnkey-in-poland) [Near an airport 6](https://realhunt.co/cheap-houses/near-an-airport-in-poland) [Score 90+ 7](https://realhunt.co/cheap-houses/score-90-plus-in-poland) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-poland)
+By feature [With a garden 5](https://realhunt.co/cheap-houses/with-garden-in-poland) [With a terrace 12](https://realhunt.co/cheap-houses/with-a-terrace-in-poland) [Move-in ready 13](https://realhunt.co/cheap-houses/turnkey-in-poland) [With a fireplace 3](https://realhunt.co/cheap-houses/with-fireplace-in-poland) [With a garage 3](https://realhunt.co/cheap-houses/with-garage-in-poland) [Near an airport 7](https://realhunt.co/cheap-houses/near-an-airport-in-poland) [Score 90+ 8](https://realhunt.co/cheap-houses/score-90-plus-in-poland) [Quiet location 3](https://realhunt.co/cheap-houses/quiet-location-in-poland) [Over 80 m² 3](https://realhunt.co/cheap-houses/over-80-sqm-in-poland)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-poland) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-poland) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-poland)
 
 Neighbouring countries [Germany 18](https://realhunt.co/homes/germany)
 
-By country [France 305](https://realhunt.co/homes/france) [Spain 171](https://realhunt.co/homes/spain) [Italy 107](https://realhunt.co/homes/italy) [Greece 65](https://realhunt.co/homes/greece) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Japan 30](https://realhunt.co/homes/japan) [Portugal 27](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Germany 18](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 7](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Cyprus 4](https://realhunt.co/homes/cyprus) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [France 306](https://realhunt.co/homes/france) [Spain 171](https://realhunt.co/homes/spain) [Italy 108](https://realhunt.co/homes/italy) [Greece 66](https://realhunt.co/homes/greece) [United States 64](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Japan 30](https://realhunt.co/homes/japan) [Portugal 28](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 18](https://realhunt.co/homes/canada) [Germany 18](https://realhunt.co/homes/germany) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 8](https://realhunt.co/homes/bulgaria) [United Kingdom 8](https://realhunt.co/homes/united-kingdom) [Mexico 7](https://realhunt.co/homes/mexico) [Uruguay 6](https://realhunt.co/homes/uruguay) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Ireland 4](https://realhunt.co/homes/ireland) [Thailand 3](https://realhunt.co/homes/thailand) [Brazil 3](https://realhunt.co/homes/brazil) [Finland 3](https://realhunt.co/homes/finland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Turkey 3](https://realhunt.co/homes/turkey) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
-How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 31 of these 31 homes were checked against the original listing in the last 30 days.
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 31 of these 32 homes were checked against the original listing in the last 30 days.
 
-These listings come from morizon.pl (31). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from morizon.pl (31), green-acres.fr (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Poland](https://realhunt.co/alerts?country=Poland) · [Filter and sort these homes](https://realhunt.co/?country=Poland#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Poland](https://realhunt.co/sitemap/poland)
 

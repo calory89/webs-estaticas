@@ -48,8 +48,8 @@ Tax on rental income: Non-residents declare Dutch property in box 3, where tax i
 - [Netherlands vs Greece](https://realhunt.co/countries/greece-vs-netherlands)
 - [Netherlands vs United States](https://realhunt.co/countries/netherlands-vs-united-states)
 - [Netherlands vs Denmark](https://realhunt.co/countries/denmark-vs-netherlands)
-- [Netherlands vs Sweden](https://realhunt.co/countries/netherlands-vs-sweden)
 - [Netherlands vs Portugal](https://realhunt.co/countries/netherlands-vs-portugal)
+- [Netherlands vs Sweden](https://realhunt.co/countries/netherlands-vs-sweden)
 
 ### Sources
 

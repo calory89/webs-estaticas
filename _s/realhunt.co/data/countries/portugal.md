@@ -1,6 +1,6 @@
 # Cheap homes in Portugal: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 36 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 36 homes is €145,000 (€1,274 per m², from the 36 homes with a known size); the cheapest costs €48,000 and the most expensive €200,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 28 November 2026, RealHunt lists 37 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 37 homes is €142,900 (€1,264 per m², from the 37 homes with a known size); the cheapest costs €48,000 and the most expensive €200,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/portugal · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 36 |
-| Median asking price | €145,000 |
-| Median price per m² | €1,274 (36 homes with a known size) |
+| Homes on RealHunt | 37 |
+| Median asking price | €142,900 |
+| Median price per m² | €1,264 (37 homes with a known size) |
 | Median size | 110 m² |
 | Cheapest and most expensive | €48,000 · €200,000 |
 | Median RealHunt score (70 to 98) | 84 |
@@ -44,7 +44,15 @@ Sources:
 
 Full guide: https://realhunt.co/guide/portugal
 
-## The 36 homes, best score first
+## The 37 homes, best score first
+
+### In good condition 4-bedroom house with garden, garages and open views in Freineda, Guarda
+
+€112,500 · Freineda, Guarda · 418 m² · 4 bedrooms · RealHunt score 93 · added 2026-11-28
+
+Detached 4-bedroom house in good condition, with 1,565.87 m² of land. The ground floor has a furnished kitchen/living room, a bedroom, a bathroom and 2 garages. The first floor has a furnished kitchen, living room, 3 bedrooms, a fireplace room, a large terrace and a balcony. Outdoor features include a garden with fruit trees, a patio with barbecue, a well and open views. Central heating runs on oil, and Vilar Formoso is 8 km away. Asking €112,500, about €269/m².
+
+https://realhunt.co/deal/pt-freineda-detached-house-fireplace-garden-views-112k
 
 ### Fully renovated stone house with terrace and outbuilding in Tabuaço, Douro
 

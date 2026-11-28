@@ -1,0 +1,100 @@
+Title: Houses for sale in Thailand (3, from €60,392) · RealHunt
+URL: https://realhunt.co/homes/thailand
+Updated: 2026-11-28
+Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+## Houses for sale in Thailand
+
+List last changed 28 November 2026. Jump to the homes
+
+RealHunt lists 3 houses for sale in Thailand today, priced from €60,392 to €139,500. The cheapest costs €60,392: [Furnished corner townhouse with pool and air conditioning in Min Buri, Bangkok](https://realhunt.co/deal/th-min-buri-corner-townhouse-pool-furnished-60k), in Min Buri (140 m², 3 bedrooms). The median price is €65,664 (€469/m²), against €115,000 (€1,113/m²) for the 1058 homes on RealHunt in 28 countries.
+
+Homes
+3
+
+From
+€60,392
+
+Median price
+€65,664
+
+Median per m²
+€469/m²
+
+Median size
+140 m²
+
+Top score
+94
+
+Foreign buyers
+Some limits
+
+Data of
+28 Nov 2026
+
+### The 3 homes, best score first
+
+Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=Thailand)
+
+- [Score 94New€65,664Move-in ready furnished 3-bedroom house with garden and parking in Saraphi, Chiang MaiSaraphi, Chiang Mai140 m² · 3 bed · €469/m² · Added todayThis move-in ready single-storey house is furnished, so it can be lived in now.](https://realhunt.co/deal/th-saraphi-move-in-ready-furnished-house-66k)
+- [Score 92New€60,392Furnished corner townhouse with pool and air conditioning in Min Buri, BangkokMin Buri, Bangkok140 m² · 3 bed · €431/m² · Added todayThis is a 2-storey townhouse in a corner unit in Min Buri, Bangkok, with a usable area of 140 square metres.](https://realhunt.co/deal/th-min-buri-corner-townhouse-pool-furnished-60k)
+- [Score 84New€139,500Two-bedroom 85 m² pool-view condo from 2012 near Khao Takiab beach, Hua HinKhao Takiab, Prachuap Khiri Khan85 m² · 2 bed · €1,641/m² · 8 days on RealHuntCommunity fee not statedAn 85.3 m² condo with two bedrooms and two bathrooms on the 6th floor of The Seacraze, a low-rise building from 2012 a short walk from Khao Takiab…](https://realhunt.co/deal/th-hua-hin-seacraze-two-bed-pool-view-condo-140k)
+
+### Compare the 3 homes, cheapest first
+
+Median price per m² of this list: €469/m².
+
+Home | Place | Price | Size | Per m² | Beds | Score | Added
+[Furnished corner townhouse with pool and air conditioning in Min Buri, Bangkok](https://realhunt.co/deal/th-min-buri-corner-townhouse-pool-furnished-60k) | Min Buri, Bangkok | €60,392 | 140 m² | €431/m² | 3 | 92 | 28 Nov 2026
+[Move-in ready furnished 3-bedroom house with garden and parking in Saraphi, Chiang Mai](https://realhunt.co/deal/th-saraphi-move-in-ready-furnished-house-66k) | Saraphi, Chiang Mai | €65,664 | 140 m² | €469/m² | 3 | 94 | 28 Nov 2026
+[Two-bedroom 85 m² pool-view condo from 2012 near Khao Takiab beach, Hua Hin](https://realhunt.co/deal/th-hua-hin-seacraze-two-bed-pool-view-condo-140k) | Khao Takiab, Prachuap Khiri Khan | €139,500 | 85 m² | €1,641/m² | 2 | 84 | 20 Nov 2026
+
+### The 3 homes in numbers
+
+- Size: half of them have 140 m² or more. The largest has 140 m²: [Move-in ready furnished 3-bedroom house with garden and parking in Saraphi, Chiang Mai](https://realhunt.co/deal/th-saraphi-move-in-ready-furnished-house-66k).
+- Bedrooms: 1 with 2 bedrooms, 2 with 3.
+- Type: 1 apartment and 2 houses.
+- Setting: 1 by the sea, 1 in villages, 1 in towns.
+- Where: Bangkok (1), Chiang Mai (1), Prachuap Khiri Khan (1).
+- Extras named in the listings: 1 with a garden, 1 with a terrace, 2 with a garage, 2 with a pool.
+- Scores: 84 to 94 out of 98. The best rated: [Move-in ready furnished 3-bedroom house with garden and parking in Saraphi, Chiang Mai](https://realhunt.co/deal/th-saraphi-move-in-ready-furnished-house-66k).
+- Newest, added 28 November 2026: [Move-in ready furnished 3-bedroom house with garden and parking in Saraphi, Chiang Mai](https://realhunt.co/deal/th-saraphi-move-in-ready-furnished-house-66k). 3 of these homes were added in the last 30 days.
+
+### Median price by region in Thailand
+
+Region | Homes | Median price
+Bangkok | 1 | €60,392
+Chiang Mai | 1 | €65,664
+Prachuap Khiri Khan | 1 | €139,500
+
+### What to watch out for
+
+- 1 is in a shared building or complex but the listing does not state the community fee: ask for it in writing.
+- 1 of 3 sits where our rough flood check reads medium or high. Each home page links the official flood map.
+- As a group these homes score lowest on price (67/100 on average) and highest on distance to an airport (100/100).
+
+### Questions buyers ask
+
+#### How much does a house for sale in Thailand cost?
+
+Asking prices run from €60,392 to €139,500 across 3 homes. The median is €65,664, or €469/m².
+
+#### What is the cheapest house for sale in Thailand?
+
+Furnished corner townhouse with pool and air conditioning in Min Buri, Bangkok in Min Buri, listed at €60,392, 140 m², 3 bedrooms. Its RealHunt score is 92.
+
+### More searches in Thailand
+
+By budget [Under €150,000 3](https://realhunt.co/homes/thailand/under-150000)
+
+By country [France 306](https://realhunt.co/homes/france) [Spain 171](https://realhunt.co/homes/spain) [Italy 108](https://realhunt.co/homes/italy) [Greece 66](https://realhunt.co/homes/greece) [United States 64](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 32](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Portugal 28](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 18](https://realhunt.co/homes/canada) [Germany 18](https://realhunt.co/homes/germany) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 8](https://realhunt.co/homes/bulgaria) [United Kingdom 8](https://realhunt.co/homes/united-kingdom) [Mexico 7](https://realhunt.co/homes/mexico) [Uruguay 6](https://realhunt.co/homes/uruguay) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Ireland 4](https://realhunt.co/homes/ireland) [Brazil 3](https://realhunt.co/homes/brazil) [Finland 3](https://realhunt.co/homes/finland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Turkey 3](https://realhunt.co/homes/turkey) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 1 of these 3 homes were checked against the original listing in the last 30 days.
+
+These listings come from green-acres.fr (2), th.green-acres.com (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+
+[Email me new homes in Thailand](https://realhunt.co/alerts?country=Thailand) · [Filter and sort these homes](https://realhunt.co/?country=Thailand#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Thailand](https://realhunt.co/sitemap/thailand)
+
+---
+Source: https://realhunt.co/homes/thailand (RealHunt, 2026-11-28). Licence CC BY 4.0: quote it with a link to the page.

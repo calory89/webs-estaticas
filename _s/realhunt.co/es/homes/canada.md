@@ -1,38 +1,38 @@
-Título: Casas en venta en Canadá (16, desde 55.842 €) · RealHunt
+Título: Casas en venta en Canadá (18, desde 54.029 €) · RealHunt
 URL: https://realhunt.co/es/homes/canada
 Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Canadá
 
-Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
+Lista cambiada por última vez el 28 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor notaNueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
+- [Mejor notaNueva54.029 €Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, QuebecBelleterre, Quebec174 m² · 4 dorm. · 311 €/m² · Añadida hoy](https://realhunt.co/es/deal/ca-belleterre-move-in-ready-house-garage-54k)
 - [La más barata55.842 €Casa de 2 dormitorios actualizada en Bulyea, SaskatchewanBulyea, Saskatchewan62 m² · 2 dorm. · 901 €/m² · 66 días en RealHunt](https://realhunt.co/es/deal/bulyea-55842)
 - [Más metros por el dinero90.400 €Casa familiar grande con vistas al mar sobre el estrecho de CansoMulgrave, Nueva Escocia215 m² · 3 dorm. · 420 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/ca-mulgrave-90k-623450)
 
-RealHunt tiene hoy 16 casas en venta en Canadá, con precios de 55.842 € a 190.700 €. La más barata cuesta 55.842 €: [Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan](https://realhunt.co/es/deal/bulyea-55842), en Bulyea (62 m², 2 dormitorios). El precio mediano es de 99.500 € (963 €/m²), frente a 115.000 € (1.140 €/m²) de las 1006 viviendas de RealHunt en 23 países.
+RealHunt tiene hoy 18 casas en venta en Canadá, con precios de 54.029 € a 190.700 €. La más barata cuesta 54.029 €: [Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, Quebec](https://realhunt.co/es/deal/ca-belleterre-move-in-ready-house-garage-54k), en Belleterre (174 m², 4 dormitorios). El precio mediano es de 99.500 € (930 €/m²), frente a 115.000 € (1.113 €/m²) de las 1058 viviendas de RealHunt en 28 países.
 ¿Puedes comprar aquí? Lee esto primero
 Mayormente no por ahora: una prohibición federal impide que no canadienses compren viviendas en ciudades y pueblos grandes hasta el 1 de enero de 2027, con excepciones como titulares de permiso de trabajo y cónyuges de ciudadanos o residentes permanentes. La prohibición no cubre áreas rurales y pueblos pequeños, y el gobierno ha dicho que no tiene previsto simplemente extenderla, pero se está estudiando un sustituto.
 
 [Normas según tu nacionalidad](https://realhunt.co/es/can-i-buy) · Gastos de compra y normas para extranjeros en Canadá
 
 Viviendas
-16
+18
 
 Desde
-55.842 €
+54.029 €
 
 Precio mediano
 99.500 €
 
 Mediana por m²
-963 €/m²
+930 €/m²
 
 Tamaño mediano
-124 m²
+132 m²
 
 Mejor nota
 94
@@ -46,12 +46,14 @@ Con límites
 Datos del
 28 nov 2026
 
-### Las 16 viviendas, de mejor a peor nota
+### Las 18 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/canada/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Canada)
 
+- [Nota 93Nueva54.029 €Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, QuebecBelleterre, Quebec174 m² · 4 dorm. · 311 €/m² · Añadida hoyEsta casa lista para entrar a vivir en el pueblo de Belleterre está preparada para que los nuevos propietarios se instalen ya.](https://realhunt.co/es/deal/ca-belleterre-move-in-ready-house-garage-54k)
 - [Nota 90Nueva123.400 €Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, TerranovaTwillingate, Terranova203 m² · 5 dorm. · 608 €/m² · 8 días en RealHuntSe pide C$194.000 (aproximadamente 123,4 €), menos de 610 € por m².](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k)
 - [Nota 88Nueva124.000 €Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva EscociaHillsburn, Nueva Escocia106 m² · 3 dorm. · 1.170 €/m² · 8 días en RealHuntSe pide C$194.900 (aproximadamente 124.000 euros) por una casa de tres dormitorios de aproximadamente 106 m² en una parcela en una colina en…](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k)
+- [Nota 87Nueva127.654 €Casa renovada de 3 dormitorios con cocina abierta y terreno en Saint-Fabien, QuebecSaint-Fabien, Quebec163 m² · 3 dorm. · 783 €/m² · Añadida hoyEsta casa renovada ha sido objeto de varias reformas recientes, incluida la cocina y el suelo de la planta baja.](https://realhunt.co/es/deal/ca-saint-fabien-renovated-bright-house-heat-pump-128k)
 - [Nota 87Nueva159.000 €Casa de carácter de 1888 con vistas al puerto y jardín con estanque de carpas en Pictou, Nueva EscociaPictou, Nueva Escocia171 m² · 3 dorm. · 930 €/m² · 8 días en RealHuntSe pide C$249.900 (aproximadamente 159.000 €) por una casa de madera blanca de aproximadamente 171 m², construida en 1888 en el pueblo histórico…](https://realhunt.co/es/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k)
 - [Nota 86Nueva127.100 €Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva EscociaPictou, Nueva Escocia132 m² · 3 dorm. · 963 €/m² · 10 días en RealHuntSe pide C$199.900 (aproximadamente 127.100 €) por una casa de estilo cottage blanca de aproximadamente 132 m² en el corazón de Pictou, una…](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k)
 - [Nota 85Nueva140.000 €Casa de carácter actualizada con estufa de leña y taller en Liverpool, Nueva EscociaLiverpool, Nueva Escocia155 m² · 3 dorm. · 903 €/m² · 8 días en RealHuntSe pide C$220.000 (aproximadamente 140.000 €) por una casa de 1935 de aproximadamente 155 m², a pocos minutos del centro de Liverpool, un pueblo…](https://realhunt.co/es/deal/ca-liverpool-ns-updated-character-house-workshop-220k)
@@ -67,11 +69,12 @@ Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a
 - [Nota 8599.323 €Casa de 2 dormitorios actualizada en Minto, Nuevo BrunswickMinto, Nuevo Brunswick83 m² · 2 dorm. · 1.197 €/m² · 66 días en RealHunt83 m² (896 pies cuadrados), 2 dormitorios, 1 baño.](https://realhunt.co/es/deal/minto-99323)
 - [Nota 8192.552 €Casa de 2 dormitorios actualizada en Hughes Brook, TerranovaHughes Brook, Terranova62 m² · 2 dorm. · 1.493 €/m² · 66 días en RealHunt62 m² (672 pies cuadrados), 2 dormitorios, 1 baño, construida en 1962.](https://realhunt.co/es/deal/hughes-brook-92552)
 
-### Compara las 16 viviendas, de más barata a más cara
+### Compara las 18 viviendas, de más barata a más cara
 
-Precio mediano por m² de esta lista: 963 €/m².
+Precio mediano por m² de esta lista: 930 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
+[Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, Quebec](https://realhunt.co/es/deal/ca-belleterre-move-in-ready-house-garage-54k) | Belleterre, Quebec | 54.029 € | 174 m² | 311 €/m² | 4 | 93 | 28 nov 2026
 [Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan](https://realhunt.co/es/deal/bulyea-55842) | Bulyea, Saskatchewan | 55.842 € | 62 m² | 901 €/m² | 2 | 88 | 23 sept 2026
 [Casa de 2 dormitorios actualizada en Avonlea, Saskatchewan](https://realhunt.co/es/deal/avonlea-68327) | Avonlea, Saskatchewan | 68.327 € | 77 m² | 887 €/m² | 2 | 88 | 23 sept 2026
 [Casa de 2 dormitorios actualizada en Glace Bay, Nueva Escocia](https://realhunt.co/es/deal/glace-bay-86962) | Glace Bay, Nueva Escocia | 86.962 € | 124 m² | 701 €/m² | 2 | 94 | 23 sept 2026
@@ -84,26 +87,27 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k) | Twillingate, Terranova | 123.400 € | 203 m² | 608 €/m² | 5 | 90 | 20 nov 2026
 [Casa de tres dormitorios recién pintada con vistas al océano en Hillsburn, Nueva Escocia](https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k) | Hillsburn, Nueva Escocia | 124.000 € | 106 m² | 1.170 €/m² | 3 | 88 | 20 nov 2026
 [Casa de estilo cottage con cocina nueva cerca de la orilla en Pictou, Nueva Escocia](https://realhunt.co/es/deal/ca-pictou-ns-cottage-new-kitchen-200k) | Pictou, Nueva Escocia | 127.100 € | 132 m² | 963 €/m² | 3 | 86 | 18 nov 2026
+[Casa renovada de 3 dormitorios con cocina abierta y terreno en Saint-Fabien, Quebec](https://realhunt.co/es/deal/ca-saint-fabien-renovated-bright-house-heat-pump-128k) | Saint-Fabien, Quebec | 127.654 € | 163 m² | 783 €/m² | 3 | 87 | 28 nov 2026
 [Casa de carácter actualizada con estufa de leña y taller en Liverpool, Nueva Escocia](https://realhunt.co/es/deal/ca-liverpool-ns-updated-character-house-workshop-220k) | Liverpool, Nueva Escocia | 140.000 € | 155 m² | 903 €/m² | 3 | 85 | 20 nov 2026
 [Casa de carácter de 1888 con vistas al puerto y jardín con estanque de carpas en Pictou, Nueva Escocia](https://realhunt.co/es/deal/ca-pictou-ns-1888-house-harbour-views-koi-pond-250k) | Pictou, Nueva Escocia | 159.000 € | 171 m² | 930 €/m² | 3 | 87 | 20 nov 2026
 [Casa de cuatro dormitorios en aproximadamente cinco acres en Saint Andrews, Nuevo Brunswick](https://realhunt.co/es/deal/ca-saint-andrews-nb-four-bed-house-5-acres-300k) | Saint Andrews, Nuevo Brunswick | 190.700 € | 150 m² | 1.271 €/m² | 4 | 82 | 18 nov 2026
 [Casa histórica de cuatro dormitorios con techos de hojalata y jardines de flores en el centro de Summerside](https://realhunt.co/es/deal/ca-summerside-pe-heritage-house-tin-ceilings-300k) | Summerside, Isla del Príncipe Eduardo | 190.700 € | 156 m² | 1.222 €/m² | 4 | 82 | 20 nov 2026
 
-### Las 16 viviendas en cifras
+### Las 18 viviendas en cifras
 
-- Tamaño: la mitad tiene 124 m² o más. La más grande tiene 215 m²: [Casa familiar grande con vistas al mar sobre el estrecho de Canso](https://realhunt.co/es/deal/ca-mulgrave-90k-623450).
-- Dormitorios: 7 con 2 dormitorios, 5 con 3, 4 con 4 o más.
-- Tipo: 16 casas.
-- Entorno: 10 junto al mar, 1 en pueblos, 5 en ciudad.
-- Dónde: Nueva Escocia (6), Nuevo Brunswick (4), Terranova (3), Saskatchewan (2), Isla del Príncipe Eduardo (1).
+- Tamaño: la mitad tiene 132 m² o más. La más grande tiene 215 m²: [Casa familiar grande con vistas al mar sobre el estrecho de Canso](https://realhunt.co/es/deal/ca-mulgrave-90k-623450).
+- Dormitorios: 7 con 2 dormitorios, 6 con 3, 5 con 4 o más.
+- Tipo: 18 casas.
+- Entorno: 10 junto al mar, 3 en pueblos, 5 en ciudad.
+- Dónde: Nueva Escocia (6), Nuevo Brunswick (4), Terranova (3), Quebec (2), Saskatchewan (2), Isla del Príncipe Eduardo (1).
 - Precio mediano más bajo: Terranova, 99.323 € entre 3 viviendas. El más alto: Nueva Escocia, 127.100 € entre 6.
-- Extras que mencionan los anuncios: 7 con jardín, 6 con terraza, 1 con garaje, 2 con chimenea.
-- Notas: de 81 a 94 sobre 98. La de mejor nota: [Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k).
-- La más reciente, añadida el 20 de noviembre de 2026: [Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k). 7 de estas viviendas se añadieron en los últimos 30 días.
+- Extras que mencionan los anuncios: 7 con jardín, 6 con terraza, 2 con garaje, 2 con chimenea.
+- Notas: de 81 a 94 sobre 98. La de mejor nota: [Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, Quebec](https://realhunt.co/es/deal/ca-belleterre-move-in-ready-house-garage-54k).
+- La más reciente, añadida el 28 de noviembre de 2026: [Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, Quebec](https://realhunt.co/es/deal/ca-belleterre-move-in-ready-house-garage-54k). 9 de estas viviendas se añadieron en los últimos 30 días.
 
 ### Qué compra tu dinero aquí
 
-Divididas por precio en tres grupos del mismo tamaño: de 55.842 € a 92.552 €, 5 viviendas con una mediana de 77 m², casi siempre con 2 dormitorios; de 93.111 € a 124.000 €, 6 viviendas con una mediana de 106 m², casi siempre con 2 dormitorios; de 127.100 € a 190.700 €, 5 viviendas con una mediana de 155 m², casi siempre con 3 dormitorios.
+Divididas por precio en tres grupos del mismo tamaño: de 54.029 € a 92.552 €, 6 viviendas con una mediana de 124 m², casi siempre con 2 dormitorios; de 93.111 € a 124.000 €, 6 viviendas con una mediana de 106 m², casi siempre con 2 dormitorios; de 127.100 € a 190.700 €, 6 viviendas con una mediana de 156 m², casi siempre con 3 dormitorios.
 
 ### Precio mediano por región en Canadá
 
@@ -112,6 +116,7 @@ Saskatchewan | 2 | 68.327 €
 [Terranova](https://realhunt.co/es/homes/canada/newfoundland) | 3 | 99.323 €
 [Nuevo Brunswick](https://realhunt.co/es/homes/canada/new-brunswick) | 4 | 99.500 €
 [Nueva Escocia](https://realhunt.co/es/homes/canada/nova-scotia) | 6 | 127.100 €
+Quebec | 2 | 127.654 €
 Isla del Príncipe Eduardo | 1 | 190.700 €
 
 ### Gastos de compra y normas para extranjeros en Canadá
@@ -128,19 +133,19 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
 ### En qué fijarse antes de comprar
 
-- 3 de 16 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
-- 7 de 16 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
-- En conjunto, estas viviendas puntúan más bajo en precio (33/100 de media) y más alto en gastos de compra (88/100).
+- 3 de 18 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
+- 7 de 18 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
+- En conjunto, estas viviendas puntúan más bajo en precio (36/100 de media) y más alto en gastos de compra (88/100).
 
 ### Preguntas de quienes compran
 
 #### ¿Cuánto cuesta una casa en venta en Canadá?
 
-Los precios de venta van de 55.842 € a 190.700 € entre 16 viviendas. La mediana es de 99.500 € (963 €/m²).
+Los precios de venta van de 54.029 € a 190.700 € entre 18 viviendas. La mediana es de 99.500 € (930 €/m²).
 
 #### ¿Cuál es la casa más barata en venta en Canadá?
 
-Casa de 2 dormitorios actualizada en Bulyea, Saskatchewan, en Bulyea, anunciada por 55.842 €, con 62 m² y 2 dormitorios. Su nota en RealHunt es 88.
+Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, Quebec, en Belleterre, anunciada por 54.029 €, con 174 m² y 4 dormitorios. Su nota en RealHunt es 93.
 
 #### ¿Pueden los extranjeros comprar una casa en Canadá?
 
@@ -156,29 +161,31 @@ Entre las regiones con al menos 3 viviendas en RealHunt, Terranova tiene el prec
 
 ### Más búsquedas en Canadá
 
-Por presupuesto [Menos de 100.000 € 9](https://realhunt.co/es/homes/canada/under-100000) [Menos de 150.000 € 13](https://realhunt.co/es/homes/canada/under-150000)
+Por presupuesto [Menos de 80.000 € 3](https://realhunt.co/es/homes/canada/under-80000) [Menos de 100.000 € 10](https://realhunt.co/es/homes/canada/under-100000) [Menos de 150.000 € 15](https://realhunt.co/es/homes/canada/under-150000)
 
-Por entorno [Junto al mar 10](https://realhunt.co/es/homes/canada/by-the-sea) [En ciudad 5](https://realhunt.co/es/homes/canada/in-town)
+Por entorno [Junto al mar 10](https://realhunt.co/es/homes/canada/by-the-sea) [Casas de pueblo 3](https://realhunt.co/es/homes/canada/village-houses) [En ciudad 5](https://realhunt.co/es/homes/canada/in-town)
 
-Por dormitorios [2 dormitorios 7](https://realhunt.co/es/homes/canada/2-bedroom) [3 dormitorios 5](https://realhunt.co/es/homes/canada/3-bedroom)
+Por dormitorios [2 dormitorios 7](https://realhunt.co/es/homes/canada/2-bedroom) [3 dormitorios 6](https://realhunt.co/es/homes/canada/3-bedroom) [4 o más dormitorios 5](https://realhunt.co/es/homes/canada/4-bedroom)
 
 Por región [Nueva Escocia 6](https://realhunt.co/es/homes/canada/nova-scotia) [Nuevo Brunswick 4](https://realhunt.co/es/homes/canada/new-brunswick) [Terranova 3](https://realhunt.co/es/homes/canada/newfoundland)
 
 Por zona [Canadá atlántico 14](https://realhunt.co/es/homes/canada/atlantic-canada)
 
-Por característica [Cerca de un lago 3](https://realhunt.co/es/cheap-houses/near-a-lake-in-canada) [Con jardín 7](https://realhunt.co/es/cheap-houses/with-garden-in-canada) [Con terraza 6](https://realhunt.co/es/cheap-houses/with-a-terrace-in-canada) [Para entrar a vivir 3](https://realhunt.co/es/cheap-houses/turnkey-in-canada) [En una isla 4](https://realhunt.co/es/cheap-houses/on-an-island-in-canada) [Nota 90 o más 3](https://realhunt.co/es/cheap-houses/score-90-plus-in-canada) [Nuevas este mes 7](https://realhunt.co/es/cheap-houses/new-this-month-in-canada) [Elementos de época 3](https://realhunt.co/es/cheap-houses/with-period-features-in-canada) [Zona tranquila 7](https://realhunt.co/es/cheap-houses/quiet-location-in-canada) [Más de 80 m² 12](https://realhunt.co/es/cheap-houses/over-80-sqm-in-canada) [Más de 120 m² 8](https://realhunt.co/es/cheap-houses/over-120-sqm-in-canada)
+Por característica [Cerca de un lago 3](https://realhunt.co/es/cheap-houses/near-a-lake-in-canada) [Con jardín 7](https://realhunt.co/es/cheap-houses/with-garden-in-canada) [Con terraza 6](https://realhunt.co/es/cheap-houses/with-a-terrace-in-canada) [Para entrar a vivir 4](https://realhunt.co/es/cheap-houses/turnkey-in-canada) [En una isla 4](https://realhunt.co/es/cheap-houses/on-an-island-in-canada) [Nota 90 o más 4](https://realhunt.co/es/cheap-houses/score-90-plus-in-canada) [Nuevas este mes 9](https://realhunt.co/es/cheap-houses/new-this-month-in-canada) [Elementos de época 3](https://realhunt.co/es/cheap-houses/with-period-features-in-canada) [Zona tranquila 7](https://realhunt.co/es/cheap-houses/quiet-location-in-canada) [Más de 80 m² 14](https://realhunt.co/es/cheap-houses/over-80-sqm-in-canada) [Más de 120 m² 10](https://realhunt.co/es/cheap-houses/over-120-sqm-in-canada)
 
 Clasificaciones [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-canada)
 
-Por característica y presupuesto [Junto al mar, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/by-the-sea-under-100000-in-canada)
+Por característica y presupuesto [Junto al mar, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/by-the-sea-under-100000-in-canada) [Para entrar a vivir, menos de 100.000 € 3](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-canada)
 
-Países vecinos [Estados Unidos 61](https://realhunt.co/es/homes/united-states)
+En libras y en dólares [Menos de 100.000 dólares 5](https://realhunt.co/es/cheap-houses/under-100000-dollars-in-canada)
 
-Por país [Francia 305](https://realhunt.co/es/homes/france) [España 171](https://realhunt.co/es/homes/spain) [Italia 107](https://realhunt.co/es/homes/italy) [Grecia 65](https://realhunt.co/es/homes/greece) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 37](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Japón 30](https://realhunt.co/es/homes/japan) [Portugal 27](https://realhunt.co/es/homes/portugal) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Alemania 18](https://realhunt.co/es/homes/germany) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 7](https://realhunt.co/es/homes/mexico) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Chipre 4](https://realhunt.co/es/homes/cyprus) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Países vecinos [Estados Unidos 64](https://realhunt.co/es/homes/united-states)
 
-Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 7 de estas 16 viviendas se comprobaron con su anuncio original en los últimos 30 días.
+Por país [Francia 306](https://realhunt.co/es/homes/france) [España 171](https://realhunt.co/es/homes/spain) [Italia 108](https://realhunt.co/es/homes/italy) [Grecia 66](https://realhunt.co/es/homes/greece) [Estados Unidos 64](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 37](https://realhunt.co/es/homes/sweden) [Polonia 32](https://realhunt.co/es/homes/poland) [Japón 30](https://realhunt.co/es/homes/japan) [Portugal 28](https://realhunt.co/es/homes/portugal) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Alemania 18](https://realhunt.co/es/homes/germany) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 8](https://realhunt.co/es/homes/bulgaria) [Reino Unido 8](https://realhunt.co/es/homes/united-kingdom) [México 7](https://realhunt.co/es/homes/mexico) [Uruguay 6](https://realhunt.co/es/homes/uruguay) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Tailandia 3](https://realhunt.co/es/homes/thailand) [Brasil 3](https://realhunt.co/es/homes/brazil) [Finlandia 3](https://realhunt.co/es/homes/finland) [Eslovenia 3](https://realhunt.co/es/homes/slovenia) [Turquía 3](https://realhunt.co/es/homes/turkey) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
-Estos anuncios proceden de redfin.ca (9), remax.ca (7). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 7 de estas 18 viviendas se comprobaron con su anuncio original en los últimos 30 días.
+
+Estos anuncios proceden de redfin.ca (9), remax.ca (7), green-acres.fr (2). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en Canadá](https://realhunt.co/es/alerts?country=Canada) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Canada#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Canadá](https://realhunt.co/es/sitemap/canada)
 

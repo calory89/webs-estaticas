@@ -1,6 +1,6 @@
 # Cheap homes in the United Kingdom: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 5 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 5 homes is €161,000 (€1,807 per m², from the 5 homes with a known size); the cheapest costs €121,000 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 5 homes this is a small sample, so the median for the United Kingdom is a rough guide.
+On 28 November 2026, RealHunt lists 8 homes for sale in the United Kingdom, each one checked by a person. In the United Kingdom, the median asking price of those 8 homes is €126,500 (€1,806 per m², from the 8 homes with a known size); the cheapest costs €95,449 and the most expensive €198,400. Taxes and fees add about 3–9% to the price of a home in the United Kingdom (figures as of 2026). With 8 homes this is a small sample, so the median for the United Kingdom is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/united-kingdom · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: htt
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 5 (small sample) |
-| Median asking price | €161,000 |
-| Median price per m² | €1,807 (5 homes with a known size) |
-| Median size | 80 m² |
-| Cheapest and most expensive | €121,000 · €198,400 |
+| Homes on RealHunt | 8 (small sample) |
+| Median asking price | €126,500 |
+| Median price per m² | €1,806 (8 homes with a known size) |
+| Median size | 90 m² |
+| Cheapest and most expensive | €95,449 · €198,400 |
 | Median RealHunt score (70 to 98) | 83 |
 | Taxes and fees to buy | 3–9% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no nationality restrictions on buying homes anywhere in the UK and no visa is needed, but buying does not give a right to live there. |
@@ -48,7 +48,31 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-kingdom
 
-## The 5 homes, best score first
+## The 8 homes, best score first
+
+### Two-bedroom house with garden and off-street parking in Wingate, County Durham
+
+€95,449 · Wingate, County Durham · 91 m² · 2 bedrooms · RealHunt score 86 · added 2026-11-28
+
+This is a two-bedroom mid terrace house in Wingate, County Durham. The accommodation has a lounge and dining room, a kitchen, two larger than average double bedrooms and a family bathroom. Outside there is a garden with landscaped areas and off-street parking on a private drive. Wingate is within reach of the A19, Teesside, Sunderland and Durham City. The living area is 91 m2. Asking €95,449, about €1,049/m².
+
+https://realhunt.co/deal/gb-wingate-two-bedroom-house-garden-parking-95k
+
+### Terraced 2-bedroom family house with covered yard in Bishop Auckland, County Durham
+
+€95,509 · Bishop Auckland, County Durham · 90 m² · 2 bedrooms · RealHunt score 86 · added 2026-11-28
+
+This terraced family home in Bishop Auckland is offered for sale with no onward chain. The ground floor offers an entrance hallway, a spacious living room, a dining room and a kitchen, and the first floor has two bedrooms and a bathroom. Externally there is an enclosed covered yard with a garage door leading to the rear lane, which could be used as secure car parking. Shops, supermarkets and schools are a short distance away, and public transport links to Darlington, Durham and Newcastle. Asking €95,509, about €1,061/m².
+
+https://realhunt.co/deal/gb-bishop-auckland-terraced-family-home-covered-yard-96k
+
+### 2-bedroom terraced house in good condition with rear yard in Hunwick, County Durham
+
+€95,509 · Hunwick, County Durham, North East England · 80 m² · 2 bedrooms · RealHunt score 86 · added 2026-11-28
+
+This modern terraced house is in good condition and offered with no onward chain. The ground floor has an entrance hall leading into an open plan living room, dining room and kitchen, and the first floor has two double bedrooms and a family bathroom. Outside there is on-street parking to the front and an enclosed rear yard with gated access to the back lane. The village has a primary school, village hall, church, pub, tea room and a local shop, with frequent buses to Durham, Darlington and Newcastle. Asking €95,509, about €1,194/m².
+
+https://realhunt.co/deal/gb-hunwick-modern-terraced-house-enclosed-yard-96k
 
 ### Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff
 

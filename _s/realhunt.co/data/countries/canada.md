@@ -1,6 +1,6 @@
 # Cheap homes in Canada: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 16 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 16 homes is €99,500 (€963 per m², from the 16 homes with a known size); the cheapest costs €55,842 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
+On 28 November 2026, RealHunt lists 18 homes for sale in Canada, each one checked by a person. In Canada, the median asking price of those 18 homes is €99,500 (€930 per m², from the 18 homes with a known size); the cheapest costs €54,029 and the most expensive €190,700. Taxes and fees add about 1.5–4% to the price of a home in Canada (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/canada · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/canada.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 16 |
+| Homes on RealHunt | 18 |
 | Median asking price | €99,500 |
-| Median price per m² | €963 (16 homes with a known size) |
-| Median size | 124 m² |
-| Cheapest and most expensive | €55,842 · €190,700 |
-| Median RealHunt score (70 to 98) | 86 |
+| Median price per m² | €930 (18 homes with a known size) |
+| Median size | 132 m² |
+| Cheapest and most expensive | €54,029 · €190,700 |
+| Median RealHunt score (70 to 98) | 87 |
 | Taxes and fees to buy | 1.5–4% of the price (as of 2026) |
 | Can foreigners buy? | Mostly not for now: a federal ban stops non-Canadians from buying homes in cities and larger towns until January 1, 2027, with exceptions such as work permit holders and spouses of citizens or permanent residents. The ban does not cover rural areas and small towns, and the government has said it does not plan simply to extend it, but a replacement is being studied. |
 | Yearly property tax | Property tax is set by each city as a share of assessed value, from about 0.3% in Vancouver to 2.12% in Saint John in 2026. |
@@ -51,7 +51,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/canada
 
-## The 16 homes, best score first
+## The 18 homes, best score first
 
 ### Updated 2-bed house in Glace Bay, Nova Scotia
 
@@ -60,6 +60,14 @@ Full guide: https://realhunt.co/guide/canada
 124 m² (1,334 sq ft), 2 bed, 1 bath. Asking C$140,000. The listing mentions: recent upgrades, updated heating system, walk-in closet, walking distance of downtown.
 
 https://realhunt.co/deal/glace-bay-86962
+
+### Move-in ready 4-bedroom house with garage and land in Belleterre, Témiscamingue, Quebec
+
+€54,029 · Belleterre, Témiscamingue, Quebec · 174 m² · 4 bedrooms · RealHunt score 93 · added 2026-11-28
+
+This move-in ready house in the village of Belleterre is ready for new owners to move in now. It has 4 bedrooms and 2 bathrooms, with 174 m2 of living space. A garage and a parking space in the garage are included, and the property sits on a plot of land. The garage sits on a concrete slab and the home is available now. Asking €54,029, about €311/m².
+
+https://realhunt.co/deal/ca-belleterre-move-in-ready-house-garage-54k
 
 ### Big family house with sea views over the Strait of Canso
 
@@ -100,6 +108,14 @@ https://realhunt.co/deal/avonlea-68327
 Asking C$194,900 (about €124,000) for a three-bedroom house of about 106 m² on a hillside plot in Hillsburn, a shore village on the Bay of Fundy about 10 minutes from Annapolis Royal. The aerial photos show the sea just below. It is move-in ready, with a freshly painted exterior and new windows. The main floor has a large country kitchen with an island, a dining room, a living room with a pellet stove and a sea view, and a big bathroom with soaker tub and walk-in shower. Upstairs are the three bedrooms and a storage room. Outside are raised garden beds, a shed, a deck and a viewing platform.
 
 https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k
+
+### Renovated 3-bedroom house with open plan kitchen and land in Saint-Fabien, Quebec
+
+€127,654 · Saint-Fabien, Quebec · 163 m² · 3 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This renovated house has had several recent renovations, including the kitchen and ground-floor flooring. It offers 163 m2 of living area over 6 rooms, with 3 bedrooms, 1 bathroom and an open plan equipped kitchen. The plot covers 5,296 sq ft of land, and the home has air conditioning. A new central heat pump provides heating, and the home includes a central vacuum, a refrigerator, a dishwasher, a stove and a washer and dryer. Asking €127,654, about €783/m².
+
+https://realhunt.co/deal/ca-saint-fabien-renovated-bright-house-heat-pump-128k
 
 ### Character 1888 house with harbour views and a koi pond garden in Pictou, Nova Scotia
 

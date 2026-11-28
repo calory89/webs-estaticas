@@ -1,6 +1,6 @@
 # Cheap homes in Greece: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 65 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 65 homes is €130,000 (€1,400 per m², from the 64 homes with a known size); the cheapest costs €68,000 and the most expensive €210,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
+On 28 November 2026, RealHunt lists 66 homes for sale in Greece, each one checked by a person. In Greece, the median asking price of those 66 homes is €135,000 (€1,400 per m², from the 65 homes with a known size); the cheapest costs €68,000 and the most expensive €210,000. Taxes and fees add about 5.5–7% to the price of a home in Greece (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/greece · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/greece.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 65 |
-| Median asking price | €130,000 |
-| Median price per m² | €1,400 (64 homes with a known size) |
+| Homes on RealHunt | 66 |
+| Median asking price | €135,000 |
+| Median price per m² | €1,400 (65 homes with a known size) |
 | Median size | 90 m² |
 | Cheapest and most expensive | €68,000 · €210,000 |
 | Median RealHunt score (70 to 98) | 87 |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/greece
 
-## The 65 homes, best score first
+## The 66 homes, best score first
 
 ### House in good condition with terrace, garden and parquet floors in Sperchogeia, Messenia
 
@@ -351,6 +351,14 @@ https://realhunt.co/deal/gr-limenaria-stone-cottage-garden-fireplace-140k
 Fully renovated two-storey house of 104 sq m, with a separate entrance for each floor. Each floor is self-contained, with one bedroom, a living room with kitchen, a bathroom and a veranda; the upper veranda has a barbecue. Sold fully furnished with new wooden furniture, it includes a refrigerator, two dishwashers, a washing machine, an electric cooker, a small electric oven and two extractor hoods. It has oil-fired central heating and 926 sq ft of land, 50 metres from the sea in central Afissos. Asking €180,000, about €1,731/m².
 
 https://realhunt.co/deal/gr-afissos-renovated-furnished-two-storey-house-180k
+
+### In good condition 3-bedroom house with garden views in Archaio Limani, Corinthia, Peloponnese
+
+€197,000 · Archaio Limani, Corinthia, Peloponnese · 160 m² · 3 bedrooms · RealHunt score 86 · added 2026-11-28
+
+This detached house is in good condition and spread over two levels, ground floor and first floor. It has 3 bedrooms, a spacious living and dining area with a fireplace, and 2 bathrooms. A 1,000 sq m plot holds a large garden with olive and fruit trees, and large verandas offer panoramic views. Parking is available for 2 vehicles, and oil-fired central heating is fitted. The beach is a 5-minute drive away, and public transport is close by. Asking €197,000, about €1,231/m².
+
+https://realhunt.co/deal/gr-archaio-limani-good-condition-house-garden-views-197k
 
 ### Furnished two-bedroom flat with a sea view in Pefki, North Evia
 

@@ -29,13 +29,14 @@ Impuesto sobre los ingresos por alquiler: Los arrendadores no residentes pagan e
 
 ### Mejores casas en el Reino Unido
 
+- [95.509 € · Casa adosada de 2 dormitorios con patio cubierto en Bishop Auckland, County Durham](https://realhunt.co/es/deal/gb-bishop-auckland-terraced-family-home-covered-yard-96k) · Bishop Auckland, County Durham · nota 86 · 90 m² · 2 dorm.
+- [95.509 € · Casa adosada de 2 dormitorios en buen estado con patio trasero en Hunwick, County Durham](https://realhunt.co/es/deal/gb-hunwick-modern-terraced-house-enclosed-yard-96k) · Hunwick, County Durham, North East England · nota 86 · 80 m² · 2 dorm.
+- [95.449 € · Casa de dos dormitorios con jardín y aparcamiento propio en Wingate, Condado de Durham](https://realhunt.co/es/deal/gb-wingate-two-bedroom-house-garden-parking-95k) · Wingate, County Durham · nota 86 · 91 m² · 2 dorm.
 - [161.000 € · Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, Fermanagh](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k) · Enniskillen, condado de Fermanagh (Irlanda del Norte) · nota 83 · 107 m² · 3 dorm.
 - [198.400 € · Casa adosada de época renovada con garaje doble en el pueblo de Lack, condado de Fermanagh](https://realhunt.co/es/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k) · Lack, condado de Fermanagh, Irlanda del Norte · nota 83 · 107 m² · 3 dorm.
 - [126.500 € · Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff](https://realhunt.co/es/deal/uk-macduff-furnished-house-sea-views-110k) · Macduff, Aberdeenshire · nota 83 · 70 m² · 2 dorm.
-- [195.400 € · Casa adosada de dos dormitorios renovada con garaje en el histórico Greyabbey, Irlanda del Norte](https://realhunt.co/es/deal/uk-greyabbey-renovated-end-terrace-garage-170k) · Greyabbey, Irlanda del Norte · nota 82 · 80 m² · 2 dorm.
-- [121.000 € · Cottage tradicional de dos dormitorios con estufa de leña y jardín grande en Whithorn, Galloway](https://realhunt.co/es/deal/uk-whithorn-cottage-wood-burner-garden-105k) · Whithorn, Dumfries and Galloway · nota 81 · 67 m² · 2 dorm.
 
-[Las 5 casas en el Reino Unido](https://realhunt.co/es/homes/united-kingdom)
+[Las 8 casas en el Reino Unido](https://realhunt.co/es/homes/united-kingdom)
 
 [Gastos, impuestos y fuentes de Reino Unido](https://realhunt.co/es/costs/united-kingdom) · [Calculadora de gastos de compra para Reino Unido](https://realhunt.co/es/buying-costs/united-kingdom) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -47,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: Los arrendadores no residentes pagan e
 - [Reino Unido vs Grecia](https://realhunt.co/es/countries/greece-vs-united-kingdom)
 - [Reino Unido vs Estados Unidos](https://realhunt.co/es/countries/united-kingdom-vs-united-states)
 - [Reino Unido vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-united-kingdom)
-- [Reino Unido vs Suecia](https://realhunt.co/es/countries/sweden-vs-united-kingdom)
 - [Reino Unido vs Portugal](https://realhunt.co/es/countries/portugal-vs-united-kingdom)
+- [Reino Unido vs Suecia](https://realhunt.co/es/countries/sweden-vs-united-kingdom)
 
 ### Fuentes
 

@@ -29,13 +29,14 @@ Tax on rental income: Non-resident landlords pay UK income tax on rent at 20%, 4
 
 ### Best homes in the United Kingdom
 
+- [€95,509 · Terraced 2-bedroom family house with covered yard in Bishop Auckland, County Durham](https://realhunt.co/deal/gb-bishop-auckland-terraced-family-home-covered-yard-96k) · Bishop Auckland, County Durham · score 86 · 90 m² · 2 bed
+- [€95,509 · 2-bedroom terraced house in good condition with rear yard in Hunwick, County Durham](https://realhunt.co/deal/gb-hunwick-modern-terraced-house-enclosed-yard-96k) · Hunwick, County Durham, North East England · score 86 · 80 m² · 2 bed
+- [€95,449 · Two-bedroom house with garden and off-street parking in Wingate, County Durham](https://realhunt.co/deal/gb-wingate-two-bedroom-house-garden-parking-95k) · Wingate, County Durham · score 86 · 91 m² · 2 bed
 - [€161,000 · Well-kept three-bed semi-detached house with solar panels in Enniskillen, Fermanagh](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k) · Enniskillen, County Fermanagh (Northern Ireland) · score 83 · 107 m² · 3 bed
 - [€198,400 · Refurbished period townhouse with a double garage in Lack village, County Fermanagh](https://realhunt.co/deal/uk-lack-fermanagh-refurbished-townhouse-double-garage-172k) · Lack, County Fermanagh, Northern Ireland · score 83 · 107 m² · 3 bed
 - [€126,500 · Furnished two-bedroom house with Moray Firth sea views in the harbour town of Macduff](https://realhunt.co/deal/uk-macduff-furnished-house-sea-views-110k) · Macduff, Aberdeenshire · score 83 · 70 m² · 2 bed
-- [€195,400 · Renovated two-bedroom end terrace with garage in historic Greyabbey, Northern Ireland](https://realhunt.co/deal/uk-greyabbey-renovated-end-terrace-garage-170k) · Greyabbey, Northern Ireland · score 82 · 80 m² · 2 bed
-- [€121,000 · Traditional two-bedroom cottage with wood burner and large garden in Whithorn, Galloway](https://realhunt.co/deal/uk-whithorn-cottage-wood-burner-garden-105k) · Whithorn, Dumfries and Galloway · score 81 · 67 m² · 2 bed
 
-[All 5 homes in the United Kingdom](https://realhunt.co/homes/united-kingdom)
+[All 8 homes in the United Kingdom](https://realhunt.co/homes/united-kingdom)
 
 [Costs, taxes and sources for United Kingdom](https://realhunt.co/costs/united-kingdom) · [Buying-cost calculator for United Kingdom](https://realhunt.co/buying-costs/united-kingdom) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -47,8 +48,8 @@ Tax on rental income: Non-resident landlords pay UK income tax on rent at 20%, 4
 - [United Kingdom vs Greece](https://realhunt.co/countries/greece-vs-united-kingdom)
 - [United Kingdom vs United States](https://realhunt.co/countries/united-kingdom-vs-united-states)
 - [United Kingdom vs Denmark](https://realhunt.co/countries/denmark-vs-united-kingdom)
-- [United Kingdom vs Sweden](https://realhunt.co/countries/sweden-vs-united-kingdom)
 - [United Kingdom vs Portugal](https://realhunt.co/countries/portugal-vs-united-kingdom)
+- [United Kingdom vs Sweden](https://realhunt.co/countries/sweden-vs-united-kingdom)
 
 ### Sources
 

@@ -1,6 +1,6 @@
 # Casas baratas en Estados Unidos: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 61 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 61 casas es de 214.900 € (1.560 € por m², calculado con las 61 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 64 casas en venta en Estados Unidos, revisadas una a una por una persona. En Estados Unidos, el precio de salida mediano de esas 64 casas es de 214.100 € (1.556 € por m², calculado con las 64 casas de superficie conocida); la más barata cuesta 65.428 € y la más cara, 447.600 €. Los impuestos y gastos de compra suman alrededor del 2–5% del precio de una casa en Estados Unidos (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-states · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/united-states.json · PDF: 
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 61 |
-| Precio de salida mediano | 214.900 € |
-| Precio mediano por m² | 1.560 € (61 casas de superficie conocida) |
-| Superficie mediana | 121 m² |
+| Casas en RealHunt | 64 |
+| Precio de salida mediano | 214.100 € |
+| Precio mediano por m² | 1.556 € (64 casas de superficie conocida) |
+| Superficie mediana | 122 m² |
 | La más barata y la más cara | 65.428 € · 447.600 € |
-| Nota RealHunt mediana (de 70 a 98) | 86 |
+| Nota RealHunt mediana (de 70 a 98) | 87 |
 | Impuestos y gastos de compra | 2–5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay una prohibición federal sobre que extranjeros compren viviendas, pero unos 30 estados han añadido algunos límites, y Texas y Florida restringen a compradores de ciertos países como China. |
 | Impuesto anual sobre la vivienda | El impuesto sobre la propiedad se fija localmente y en 2024 fue de media alrededor del 1,22% del valor en la mayor ciudad de cada estado, desde el 0,30% en Honolulu hasta el 3,02% en Detroit. |
@@ -48,7 +48,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-states
 
-## Las 61 casas, de mejor a peor nota
+## Las 64 casas, de mejor a peor nota
 
 ### Casa de 3 dormitorios actualizada en Huntington, Virginia Occidental
 
@@ -66,6 +66,14 @@ https://realhunt.co/es/deal/huntington-78426
 
 https://realhunt.co/es/deal/chapmanville-82875
 
+### Casa lista para entrar a vivir reformada con chimenea y porche envolvente en Cleveland, Ohio
+
+150.535 € · Cleveland, Ohio · 255 m² · 3 dormitorios · nota RealHunt 95 · añadida el 2026-11-28
+
+Esta casa lista para entrar a vivir ha sido reformada y actualizada en todas sus zonas. Ofrece 3 dormitorios y 2 baños, además de un salón separado, una sala familiar, un comedor y una cocina nueva y amplia. En el exterior hay un porche delantero envolvente, aparcamiento fuera de la calle y 4865 pies cuadrados de terreno. Entre los extras figuran una chimenea en la sala familiar y un sótano completo. La calefacción procede de un horno de alta eficiencia y un calentador de agua instalados en 2023. Precio 150.535 €, unos 590 €/m².
+
+https://realhunt.co/es/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k
+
 ### Casa adosada de 3 dormitorios actualizada en McKees Rocks, Pensilvania
 
 65.428 € · McKees Rocks, Pennsylvania · 106 m² · 3 dormitorios · nota RealHunt 93 · añadida el 2026-09-23
@@ -73,6 +81,22 @@ https://realhunt.co/es/deal/chapmanville-82875
 106 m² (1.140 pies cuadrados), 3 dormitorios, 1,5 baños, construida en 1909. Precio: 75.000 $. El anuncio menciona: casa adosada toda de ladrillo, porche delantero acogedor, suelo laminado reciente, ventanas de doble acristalamiento actualizadas.
 
 https://realhunt.co/es/deal/mckees-rocks-65428
+
+### Casa con gran jardín, vidrieras y taller en Conneautville, Pensilvania
+
+68.751 € · Conneautville, Pennsylvania · 140 m² · 3 dormitorios · nota RealHunt 93 · añadida el 2026-11-28
+
+Esta casa de 3 dormitorios con 1 baño tiene 140 m2 de superficie habitable sobre 20.042 pies cuadrados de terreno en Conneautville. Cuenta con vidrieras, carpintería de madera, un ventanal en el comedor, un porche delantero cerrado y suelos de madera maciza. Un taller adosado se encuentra en la parte trasera de la casa. El amplio jardín tiene árboles maduros y espacio para huertos o flores, y la vivienda está en una calle con poco tráfico. Precio 68.751 €, unos 491 €/m².
+
+https://realhunt.co/es/deal/us-conneautville-stained-glass-woodwork-yard-house-69k
+
+### Casa de 3 dormitorios lista para entrar a vivir con chimenea, terraza y garaje en Dayton, Ohio
+
+118.824 € · Dayton, Ohio · 128 m² · 3 dormitorios · nota RealHunt 93 · añadida el 2026-11-28
+
+Esta casa lista para entrar a vivir tiene tres dormitorios y un baño en 128 m2 de superficie habitable. El luminoso salón tiene chimenea de ladrillo, la cocina tiene muebles blancos y los tres dormitorios tienen moqueta nueva. En el exterior hay un porche cubierto, una terraza, un jardín vallado, un patio de hormigón y 4123 pies cuadrados de terreno. Un garaje independiente para un coche, con plaza extra para un segundo vehículo, y un sótano completo con ventanas de bloques de vidrio aportan almacenamiento y aparcamiento. La casa tiene calefacción y aire acondicionado central actualizados. Precio 118.824 €, unos 928 €/m².
+
+https://realhunt.co/es/deal/us-dayton-ready-house-fireplace-garage-119k
 
 ### Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia
 

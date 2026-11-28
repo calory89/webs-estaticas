@@ -1,6 +1,6 @@
 # Casas baratas en Uruguay: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 4 casas en venta en Uruguay, revisadas una a una por una persona. En Uruguay, el precio de salida mediano de esas 4 casas es de 180.300 € (1.649 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 150.300 € y la más cara, 186.300 €. Los impuestos y gastos de compra suman alrededor del 5–8% del precio de una casa en Uruguay (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de Uruguay es solo orientativa.
+A 28 de noviembre de 2026, RealHunt publica 6 casas en venta en Uruguay, revisadas una a una por una persona. En Uruguay, el precio de salida mediano de esas 6 casas es de 164.607 € (1.568 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 93.425 € y la más cara, 186.300 €. Los impuestos y gastos de compra suman alrededor del 5–8% del precio de una casa en Uruguay (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Uruguay es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/uruguay · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https://realhunt.co/data/countries/uruguay.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 4 (muestra pequeña) |
-| Precio de salida mediano | 180.300 € |
-| Precio mediano por m² | 1.649 € (4 casas de superficie conocida) |
-| Superficie mediana | 113 m² |
-| La más barata y la más cara | 150.300 € · 186.300 € |
+| Casas en RealHunt | 6 (muestra pequeña) |
+| Precio de salida mediano | 164.607 € |
+| Precio mediano por m² | 1.568 € (6 casas de superficie conocida) |
+| Superficie mediana | 115 m² |
+| La más barata y la más cara | 93.425 € · 186.300 € |
 | Nota RealHunt mediana (de 70 a 98) | 85 |
 | Impuestos y gastos de compra | 5–8% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay límites a los tipos de inmuebles que pueden comprar los extranjeros en Uruguay, y tienen los mismos derechos de propiedad que los ciudadanos. |
@@ -29,7 +29,23 @@ Fuentes:
 - https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/impuesto-trasmisiones-patrimoniales-itp
 - https://www.globalpropertyguide.com/Latin-America/Uruguay/Buying-Guide
 
-## Las 4 casas, de mejor a peor nota
+## Las 6 casas, de mejor a peor nota
+
+### Cabaña de 2 dormitorios con estudio y jardín cerca de la playa en Piedras de Afilar, Canelones
+
+93.425 € · Piedras de Afilar, Canelones · 173 m² · 2 dormitorios · nota RealHunt 92 · añadida el 2026-11-28
+
+Esta propiedad es una cabaña y un estudio en una parcela de 495 m² en Piedras de Afilar, Canelones. La cabaña tiene una zona de estar de planta abierta y un dormitorio en altillo, y el anuncio indica 2 dormitorios y 1 baño en 173 m² construidos. El terreno incluye un jardín amplio con mucha sombra, una terraza, una zona de barbacoa cubierta con parrilla y un trastero. El estudio cuenta con una estufa de leña, y la playa está a 800 m. Precio 93.425 €, unos 540 €/m².
+
+https://realhunt.co/es/deal/uy-piedras-de-afilar-cabin-studio-beach-garden-93k
+
+### Casa en buen estado con estufa de leña y playa cercana en Cerros de los Rochas, Rocha
+
+164.607 € · Cerros de los Rochas, Rocha · 301 m² · 8 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+La propiedad está en buen estado y comprende dos casas y una cabaña en una parcela de 510 m². Cada casa delantera tiene una estufa de leña en el salón comedor, tres dormitorios (uno en planta baja), un baño y cocina independiente. La cabaña tiene salón comedor con cocina integrada, un baño y dos dormitorios en la planta superior, y puede alojar a cuatro personas. La parcela tiene 17 m de frente a la calle principal, la playa está a pocas manzanas y hay una parada de autobús en la puerta. Precio 164.607 €, unos 547 €/m².
+
+https://realhunt.co/es/deal/uy-cerros-de-los-rochas-good-condition-beach-houses-cabin-165k
 
 ### Chalet de ladrillo con tres dormitorios a una manzana de la playa en La Aguada, La Paloma
 

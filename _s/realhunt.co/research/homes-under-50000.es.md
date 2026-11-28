@@ -1,6 +1,6 @@
 # Dónde están las casas de menos de 50.000 €: países y regiones (2026)
 
-68 de las 1.006 casas de RealHunt cuestan 50.000 € o menos, y 26 cuestan 30.000 € o menos. La mayoría están en Italia (32), Japón (16) y Alemania (7). La región con más es Calabria, Italia, con 6.
+72 de las 1.058 casas de RealHunt cuestan 50.000 € o menos, y 26 cuestan 30.000 € o menos. La mayoría están en Italia (32), Japón (16) y Alemania (7). La región con más es Calabria, Italia, con 6.
 
 Casas revisadas por una persona y listas para entrar a vivir, a su precio de salida a 28 de noviembre de 2026. No aparecen los países ni las regiones con menos de 3 casas así.
 
@@ -28,7 +28,7 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.058 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Una región es la última parte de la ubicación de cada casa antes del país (una provincia, un estado, un condado o una ciudad).
 - El recuento describe lo que RealHunt publica hoy. Un país que no aparece puede tener casas así que aún no se han añadido.

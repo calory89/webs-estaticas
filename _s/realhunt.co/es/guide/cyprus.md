@@ -30,11 +30,12 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto sobre
 ### Mejores casas en Chipre
 
 - [341.000 € · Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al mar](https://realhunt.co/es/deal/cy-coral-bay-341k-080655) · Coral Bay, Paphos · nota 93 · 84 m² · 2 dorm.
+- [130.000 € · Casa independiente de 3 dormitorios lista para entrar con chimenea y vistas en Kaminária, Limassol](https://realhunt.co/es/deal/cy-kaminaria-ready-detached-house-fireplace-views-130k) · Kaminária, Limassol · nota 90 · 163 m² · 3 dorm.
 - [470.000 € · Bajo frente al mar con terraza de 50 m² y piscina desbordante en Protaras](https://realhunt.co/es/deal/cy-protaras-470k-585375) · Protaras, Famagusta · nota 84 · 85 m² · 2 dorm.
 - [130.000 € · Apartamento amueblado de dos dormitorios con escritura de propiedad y piscina compartida en Mazotos, Larnaca](https://realhunt.co/es/deal/cy-mazotos-2-bed-pool-130k-477874) · Mazotos, Larnaca · nota 83 · 70 m² · 2 dorm.
 - [187.000 € · Casa adosada de dos dormitorios completamente renovada con escritura de propiedad en Paralimni, Famagusta](https://realhunt.co/es/deal/cy-paralimni-renovated-townhouse-title-deeds-187k) · Paralimni, Famagusta · nota 82 · 74 m² · 2 dorm.
 
-[Las 4 casas en Chipre](https://realhunt.co/es/homes/cyprus)
+[Las 5 casas en Chipre](https://realhunt.co/es/homes/cyprus)
 
 [Gastos, impuestos y fuentes de Chipre](https://realhunt.co/es/costs/cyprus) · [Calculadora de gastos de compra para Chipre](https://realhunt.co/es/buying-costs/cyprus) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -46,8 +47,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto sobre
 - [Chipre vs Grecia](https://realhunt.co/es/countries/cyprus-vs-greece)
 - [Chipre vs Estados Unidos](https://realhunt.co/es/countries/cyprus-vs-united-states)
 - [Chipre vs Dinamarca](https://realhunt.co/es/countries/cyprus-vs-denmark)
-- [Chipre vs Suecia](https://realhunt.co/es/countries/cyprus-vs-sweden)
 - [Chipre vs Portugal](https://realhunt.co/es/countries/cyprus-vs-portugal)
+- [Chipre vs Suecia](https://realhunt.co/es/countries/cyprus-vs-sweden)
 
 ### Fuentes
 

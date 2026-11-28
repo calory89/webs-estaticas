@@ -40,7 +40,7 @@ Los precios y los recuentos salen de las casas de la web; las normas, los impues
 
 ### Sin cifras infladas
 
-Decimos cuántas casas hay: 1.006 hoy. No «miles».
+Decimos cuántas casas hay: 1.058 hoy. No «miles».
 
 ### Sin fotos ajenas como propias
 

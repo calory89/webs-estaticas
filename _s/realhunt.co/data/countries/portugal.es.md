@@ -1,6 +1,6 @@
 # Casas baratas en Portugal: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 36 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 36 casas es de 145.000 € (1.274 € por m², calculado con las 36 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 200.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 37 casas en venta en Portugal, revisadas una a una por una persona. En Portugal, el precio de salida mediano de esas 37 casas es de 142.900 € (1.264 € por m², calculado con las 37 casas de superficie conocida); la más barata cuesta 48.000 € y la más cara, 200.000 €. Los impuestos y gastos de compra suman alrededor del 3–12% del precio de una casa en Portugal (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/portugal · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/portugal.json · PDF: https
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 36 |
-| Precio de salida mediano | 145.000 € |
-| Precio mediano por m² | 1.274 € (36 casas de superficie conocida) |
+| Casas en RealHunt | 37 |
+| Precio de salida mediano | 142.900 € |
+| Precio mediano por m² | 1.264 € (37 casas de superficie conocida) |
 | Superficie mediana | 110 m² |
 | La más barata y la más cara | 48.000 € · 200.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 84 |
@@ -44,7 +44,15 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/portugal
 
-## Las 36 casas, de mejor a peor nota
+## Las 37 casas, de mejor a peor nota
+
+### Casa de 4 dormitorios en buen estado con jardín, garajes y vistas abiertas en Freineda, Guarda
+
+112.500 € · Freineda, Guarda · 418 m² · 4 dormitorios · nota RealHunt 93 · añadida el 2026-11-28
+
+Casa independiente de 4 dormitorios en buen estado, con 1.565,87 m² de terreno. La planta baja tiene cocina y salón amueblados, un dormitorio, un baño y 2 garajes. La primera planta tiene cocina amueblada, salón, 3 dormitorios, una sala con chimenea, una amplia terraza y un balcón. Entre las características exteriores destacan un jardín con frutales, un patio con barbacoa, un pozo y vistas abiertas. La calefacción central funciona con gasóleo, y Vilar Formoso está a 8 km. Precio 112.500 €, unos 269 €/m².
+
+https://realhunt.co/es/deal/pt-freineda-detached-house-fireplace-garden-views-112k
 
 ### Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro
 

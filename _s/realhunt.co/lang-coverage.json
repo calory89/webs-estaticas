@@ -1,56 +1,104 @@
 {
- "total": 1833,
+ "total": 1589,
  "max_total": 3200,
  "langs": {
   "de": {
-   "pages": 403,
+   "pages": 349,
    "by_kind": {
-    "country": 18,
-    "gfeature": 9,
-    "feature": 133,
-    "gband": 3,
-    "band": 42,
-    "ccyBand": 8,
+    "country": 11,
+    "gfeature": 7,
+    "feature": 110,
+    "ccyBand": 7,
     "ptype": 7,
-    "setting": 15,
-    "beds": 18,
+    "band": 31,
+    "setting": 14,
+    "beds": 16,
     "area": 15,
-    "combo": 33,
-    "region": 42,
+    "gband": 2,
+    "combo": 32,
+    "region": 41,
     "near": 7,
-    "regionBand": 48,
+    "regionBand": 44,
     "town": 4
    },
    "by_country": {
-    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
-    "poland": 14,
     "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
-    "bulgaria": 5,
     "dominican-republic": 6,
-    "united-kingdom": 7,
-    "cyprus": 2,
     "ireland": 5,
-    "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 21,
+    "all countries": 18,
     "spain": 45,
-    "italy": 45,
+    "italy": 44,
+    "poland": 6,
+    "united-states": 20,
     "greece": 2,
     "france": 7,
-    "portugal": 1
+    "canada": 18,
+    "portugal": 1,
+    "bulgaria": 5,
+    "united-kingdom": 2,
+    "uruguay": 3,
+    "cyprus": 2
    },
-   "homes": 991,
+   "homes": 1043,
    "homes_with_title": 588,
-   "not_published": 347,
+   "not_published": 444,
    "not_published_sample": [
+    {
+     "path": "/homes/poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-60000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
     {
      "path": "/homes/greece",
      "why": "a home without a title in this language, or a place without a vetted name"
@@ -208,136 +256,99 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain",
+     "path": "/homes/united-states",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-80000",
+     "path": "/homes/united-states/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-100000",
+     "path": "/homes/united-states/under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-150000",
+     "path": "/homes/united-states/under-150000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-200000",
+     "path": "/homes/united-states/under-200000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/by-the-sea",
+     "path": "/homes/united-states/under-300000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/village-houses",
+     "path": "/homes/united-states/village-houses",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/in-town",
+     "path": "/homes/united-states/in-town",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/alicante",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/almeria",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/1-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-pool-in-spain",
+     "path": "/homes/united-states/pennsylvania",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
    "sitemap": "sitemap-de.xml"
   },
   "ru": {
-   "pages": 221,
+   "pages": 193,
    "by_kind": {
-    "country": 18,
-    "gband": 3,
-    "band": 42,
-    "ccyBand": 8,
+    "country": 11,
+    "ccyBand": 7,
     "ptype": 7,
-    "setting": 15,
-    "beds": 18,
+    "band": 31,
+    "setting": 14,
+    "beds": 16,
     "area": 15,
-    "region": 42,
-    "regionBand": 48,
+    "gband": 2,
+    "region": 41,
+    "regionBand": 44,
     "town": 4
    },
    "by_country": {
-    "united-states": 26,
     "denmark": 17,
     "sweden": 18,
-    "poland": 6,
     "japan": 21,
     "germany": 8,
     "netherlands": 5,
-    "canada": 15,
     "switzerland": 8,
     "mexico": 7,
-    "bulgaria": 3,
     "dominican-republic": 3,
-    "united-kingdom": 4,
-    "cyprus": 1,
     "ireland": 3,
-    "uruguay": 2,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 4,
+    "all countries": 3,
     "spain": 34,
-    "italy": 27,
+    "italy": 26,
+    "poland": 4,
+    "united-states": 11,
+    "canada": 11,
     "france": 3,
-    "greece": 1
+    "bulgaria": 3,
+    "cyprus": 1,
+    "greece": 1,
+    "united-kingdom": 1
    },
-   "homes": 991,
+   "homes": 1043,
    "homes_with_title": 588,
-   "not_published": 185,
+   "not_published": 237,
    "not_published_sample": [
+    {
+     "path": "/homes/poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-60000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
     {
      "path": "/homes/greece",
      "why": "a home without a title in this language, or a place without a vetted name"
@@ -415,6 +426,82 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
+     "path": "/homes/united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/under-300000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/village-houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/in-town",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/pennsylvania",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/ohio",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/3-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/pennsylvania/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/pennsylvania/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/pennsylvania/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/united-states/ohio/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-united-states",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/bulgaria",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/bulgaria/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
      "path": "/homes/spain",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
@@ -488,148 +575,108 @@
     },
     {
      "path": "/homes/spain/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/torrevieja",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/hondon-de-los-frailes",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/orihuela",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/galera",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-80000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/castile-and-leon",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/under-100000-dollars-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/france",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/france/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 403,
+   "pages": 349,
    "by_kind": {
-    "country": 18,
-    "gfeature": 9,
-    "feature": 133,
-    "gband": 3,
-    "band": 42,
-    "ccyBand": 8,
+    "country": 11,
+    "gfeature": 7,
+    "feature": 110,
+    "ccyBand": 7,
     "ptype": 7,
-    "setting": 15,
-    "beds": 18,
+    "band": 31,
+    "setting": 14,
+    "beds": 16,
     "area": 15,
-    "combo": 33,
-    "region": 42,
+    "gband": 2,
+    "combo": 32,
+    "region": 41,
     "near": 7,
-    "regionBand": 48,
+    "regionBand": 44,
     "town": 4
    },
    "by_country": {
-    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
-    "poland": 14,
     "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
-    "bulgaria": 5,
     "dominican-republic": 6,
-    "united-kingdom": 7,
-    "cyprus": 2,
     "ireland": 5,
-    "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 21,
+    "all countries": 18,
     "spain": 45,
-    "italy": 45,
+    "italy": 44,
+    "poland": 6,
+    "united-states": 20,
     "greece": 2,
     "france": 7,
-    "portugal": 1
+    "canada": 18,
+    "portugal": 1,
+    "bulgaria": 5,
+    "united-kingdom": 2,
+    "uruguay": 3,
+    "cyprus": 2
    },
-   "homes": 991,
+   "homes": 1043,
    "homes_with_title": 588,
-   "not_published": 347,
+   "not_published": 444,
    "not_published_sample": [
+    {
+     "path": "/homes/poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-60000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
     {
      "path": "/homes/greece",
      "why": "a home without a title in this language, or a place without a vetted name"
@@ -787,141 +834,141 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain",
+     "path": "/homes/united-states",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-80000",
+     "path": "/homes/united-states/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-100000",
+     "path": "/homes/united-states/under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-150000",
+     "path": "/homes/united-states/under-150000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-200000",
+     "path": "/homes/united-states/under-200000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/by-the-sea",
+     "path": "/homes/united-states/under-300000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/village-houses",
+     "path": "/homes/united-states/village-houses",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/in-town",
+     "path": "/homes/united-states/in-town",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/alicante",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/almeria",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/1-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-pool-in-spain",
+     "path": "/homes/united-states/pennsylvania",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
    "sitemap": "sitemap-fr.xml"
   },
   "nl": {
-   "pages": 403,
+   "pages": 349,
    "by_kind": {
-    "country": 18,
-    "gfeature": 9,
-    "feature": 133,
-    "gband": 3,
-    "band": 42,
-    "ccyBand": 8,
+    "country": 11,
+    "gfeature": 7,
+    "feature": 110,
+    "ccyBand": 7,
     "ptype": 7,
-    "setting": 15,
-    "beds": 18,
+    "band": 31,
+    "setting": 14,
+    "beds": 16,
     "area": 15,
-    "combo": 33,
-    "region": 42,
+    "gband": 2,
+    "combo": 32,
+    "region": 41,
     "near": 7,
-    "regionBand": 48,
+    "regionBand": 44,
     "town": 4
    },
    "by_country": {
-    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
-    "poland": 14,
     "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
-    "bulgaria": 5,
     "dominican-republic": 6,
-    "united-kingdom": 7,
-    "cyprus": 2,
     "ireland": 5,
-    "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 21,
+    "all countries": 18,
     "spain": 45,
-    "italy": 45,
+    "italy": 44,
+    "poland": 6,
+    "united-states": 20,
     "greece": 2,
     "france": 7,
-    "portugal": 1
+    "canada": 18,
+    "portugal": 1,
+    "bulgaria": 5,
+    "united-kingdom": 2,
+    "uruguay": 3,
+    "cyprus": 2
    },
-   "homes": 991,
+   "homes": 1043,
    "homes_with_title": 588,
-   "not_published": 347,
+   "not_published": 444,
    "not_published_sample": [
+    {
+     "path": "/homes/poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-60000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
     {
      "path": "/homes/greece",
      "why": "a home without a title in this language, or a place without a vetted name"
@@ -1079,141 +1126,141 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain",
+     "path": "/homes/united-states",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-80000",
+     "path": "/homes/united-states/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-100000",
+     "path": "/homes/united-states/under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-150000",
+     "path": "/homes/united-states/under-150000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-200000",
+     "path": "/homes/united-states/under-200000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/by-the-sea",
+     "path": "/homes/united-states/under-300000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/village-houses",
+     "path": "/homes/united-states/village-houses",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/in-town",
+     "path": "/homes/united-states/in-town",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/alicante",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/almeria",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/1-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-pool-in-spain",
+     "path": "/homes/united-states/pennsylvania",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
    "sitemap": "sitemap-nl.xml"
   },
   "pl": {
-   "pages": 403,
+   "pages": 349,
    "by_kind": {
-    "country": 18,
-    "gfeature": 9,
-    "feature": 133,
-    "gband": 3,
-    "band": 42,
-    "ccyBand": 8,
+    "country": 11,
+    "gfeature": 7,
+    "feature": 110,
+    "ccyBand": 7,
     "ptype": 7,
-    "setting": 15,
-    "beds": 18,
+    "band": 31,
+    "setting": 14,
+    "beds": 16,
     "area": 15,
-    "combo": 33,
-    "region": 42,
+    "gband": 2,
+    "combo": 32,
+    "region": 41,
     "near": 7,
-    "regionBand": 48,
+    "regionBand": 44,
     "town": 4
    },
    "by_country": {
-    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
-    "poland": 14,
     "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
-    "bulgaria": 5,
     "dominican-republic": 6,
-    "united-kingdom": 7,
-    "cyprus": 2,
     "ireland": 5,
-    "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 21,
+    "all countries": 18,
     "spain": 45,
-    "italy": 45,
+    "italy": 44,
+    "poland": 6,
+    "united-states": 20,
     "greece": 2,
     "france": 7,
-    "portugal": 1
+    "canada": 18,
+    "portugal": 1,
+    "bulgaria": 5,
+    "united-kingdom": 2,
+    "uruguay": 3,
+    "cyprus": 2
    },
-   "homes": 991,
+   "homes": 1043,
    "homes_with_title": 588,
-   "not_published": 347,
+   "not_published": 444,
    "not_published_sample": [
+    {
+     "path": "/homes/poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/poland/under-60000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-poland",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
     {
      "path": "/homes/greece",
      "why": "a home without a title in this language, or a place without a vetted name"
@@ -1371,87 +1418,39 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain",
+     "path": "/homes/united-states",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-80000",
+     "path": "/homes/united-states/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-100000",
+     "path": "/homes/united-states/under-100000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-150000",
+     "path": "/homes/united-states/under-150000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/under-200000",
+     "path": "/homes/united-states/under-200000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/by-the-sea",
+     "path": "/homes/united-states/under-300000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/village-houses",
+     "path": "/homes/united-states/village-houses",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/in-town",
+     "path": "/homes/united-states/in-town",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/spain/alicante",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/almeria",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/1-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-pool-in-spain",
+     "path": "/homes/united-states/pennsylvania",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
@@ -1459,9 +1458,9 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 403,
-  "spanish_pages_linked": 403
+  "english_pages_linked": 349,
+  "spanish_pages_linked": 349
  },
- "home_pages_linked": 616,
+ "home_pages_linked": 362,
  "failures": []
 }

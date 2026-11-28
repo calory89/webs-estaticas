@@ -1,6 +1,6 @@
 # Casas baratas en Chipre: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 4 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 4 casas es de 341.000 € (4.060 € por m², calculado con las 4 casas de superficie conocida); la más barata cuesta 130.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 4 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
+A 28 de noviembre de 2026, RealHunt publica 5 casas en venta en Chipre, revisadas una a una por una persona. En Chipre, el precio de salida mediano de esas 5 casas es de 187.000 € (2.527 € por m², calculado con las 5 casas de superficie conocida); la más barata cuesta 130.000 € y la más cara, 470.000 €. Los impuestos y gastos de compra suman alrededor del 2,5–3,5% del precio de una casa en Chipre (cifras de 2026). Con 5 casas la muestra es pequeña, así que la mediana de Chipre es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/cyprus · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 4 (muestra pequeña) |
-| Precio de salida mediano | 341.000 € |
-| Precio mediano por m² | 4.060 € (4 casas de superficie conocida) |
+| Casas en RealHunt | 5 (muestra pequeña) |
+| Precio de salida mediano | 187.000 € |
+| Precio mediano por m² | 2.527 € (5 casas de superficie conocida) |
 | Superficie mediana | 84 m² |
 | La más barata y la más cara | 130.000 € · 470.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 84 |
@@ -49,7 +49,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/cyprus
 
-## Las 4 casas, de mejor a peor nota
+## Las 5 casas, de mejor a peor nota
 
 ### Piso de 2 dormitorios listo para entrar a pasos de la playa en Coral Bay, con piscina y vistas al mar
 
@@ -58,6 +58,14 @@ Guía completa: https://realhunt.co/es/guide/cyprus
 Apartamento de 2 dormitorios y 2 baños, listo para entrar, a pocos pasos de las playas con Bandera Azul de Coral Bay, al oeste de Pafos. 84 m² con cocina moderna equipada, salón luminoso y balcón privado con vistas al mar para ver la puesta de sol. Complejo cerrado con una gran piscina comunitaria entre jardines y parking privado. A unos 25 km del aeropuerto de Pafos. A unos 4.060 €/m², un 18% por debajo de la mediana de precios pedidos en Pafos (4.923 €/m², index.cy, octubre de 2026).
 
 https://realhunt.co/es/deal/cy-coral-bay-341k-080655
+
+### Casa independiente de 3 dormitorios lista para entrar con chimenea y vistas en Kaminária, Limassol
+
+130.000 € · Kaminária, Limassol · 163 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-11-28
+
+Esta casa independiente de dos plantas, lista para entrar a vivir, está totalmente amueblada y preparada para disfrutarla como residencia permanente, casa de vacaciones o inversión. Ofrece 3 dormitorios, 1 baño, 1 ducha, 1 aseo, un salón y una cocina combinada con zona de comedor, en 163 m2 construidos. Entre sus extras destacan una parcela de 300 m2, chimenea interior, vistas al campo, aparcamiento descubierto y trastero. Está situada en el tranquilo pueblo de montaña de Kaminaria, en la parte occidental del distrito de Limasol, rodeada de vegetación. Precio 130.000 €, unos 798 €/m².
+
+https://realhunt.co/es/deal/cy-kaminaria-ready-detached-house-fireplace-views-130k
 
 ### Bajo frente al mar con terraza de 50 m² y piscina desbordante en Protaras
 

@@ -1,8 +1,8 @@
 {
- "noindex_copies": 7,
+ "noindex_copies": 20,
  "written_by_hand": {
-  "pages": 1118,
-  "words": 1916492,
+  "pages": 1170,
+  "words": 1977296,
   "english": 104,
   "failed": [
    {
@@ -124,6 +124,14 @@
     ]
    },
    {
+    "url": "https://realhunt.co/es/deal/DbbD15oDKLz",
+    "english": 1,
+    "words": 1634,
+    "hits": [
+     "map"
+    ]
+   },
+   {
     "url": "https://realhunt.co/es/deal/fr-esperaza-three-storey-terrace-garden-views-130k",
     "english": 6,
     "words": 1860,
@@ -137,6 +145,14 @@
     ]
    },
    {
+    "url": "https://realhunt.co/es/deal/jp-matsue-yakumo-modern-2015-house-garden-125k",
+    "english": 1,
+    "words": 1774,
+    "hits": [
+     "map"
+    ]
+   },
+   {
     "url": "https://realhunt.co/es/deal/fr-ladignac-le-long-renovated-house-wood-stove-land-130k",
     "english": 6,
     "words": 1916,
@@ -147,22 +163,6 @@
      "France",
      "France",
      "France"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/DbbD15oDKLz",
-    "english": 1,
-    "words": 1634,
-    "hits": [
-     "map"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/jp-matsue-yakumo-modern-2015-house-garden-125k",
-    "english": 1,
-    "words": 1774,
-    "hits": [
-     "map"
     ]
    },
    {
@@ -195,19 +195,6 @@
     "words": 1911,
     "hits": [
      "map"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/fr-merry-sec-renovated-house-terraces-garden-views-130k",
-    "english": 6,
-    "words": 1927,
-    "hits": [
-     "France",
-     "France",
-     "France",
-     "France",
-     "France",
-     "France"
     ]
    },
    {
@@ -315,19 +302,6 @@
     ]
    },
    {
-    "url": "https://realhunt.co/es/deal/fr-mezin-stone-house-courtyard-garden-130k",
-    "english": 6,
-    "words": 1889,
-    "hits": [
-     "France",
-     "France",
-     "France",
-     "France",
-     "France",
-     "France"
-    ]
-   },
-   {
     "url": "https://realhunt.co/es/deal/Dbk8HHgCAHX",
     "english": 1,
     "words": 1809,
@@ -341,6 +315,32 @@
     "words": 1699,
     "hits": [
      "map"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-merry-sec-renovated-house-terraces-garden-views-130k",
+    "english": 6,
+    "words": 1927,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-mezin-stone-house-courtyard-garden-130k",
+    "english": 6,
+    "words": 1889,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
     ]
    },
    {
@@ -377,7 +377,7 @@
    {
     "url": "https://realhunt.co/es/deal/fr-gannay-sur-loire-character-house-garden-garage-129k",
     "english": 4,
-    "words": 1870,
+    "words": 1866,
     "hits": [
      "France",
      "France",
@@ -427,35 +427,35 @@
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1375,
+ "twins": 1419,
  "groups": {
   "homes": {
-   "pages": 1006,
-   "twins": 1006,
+   "pages": 1058,
+   "twins": 1058,
    "words": 0,
    "english": 0,
-   "by_hand": 1006,
+   "by_hand": 1058,
    "spanish_pct": 0
   },
   "places": {
-   "pages": 824,
-   "twins": 822,
-   "words": 2016961,
+   "pages": 868,
+   "twins": 866,
+   "words": 2090109,
    "english": 6,
    "spanish_pct": 100
   },
   "pages": {
    "pages": 41,
    "twins": 8,
-   "words": 2952,
+   "words": 3078,
    "english": 418,
    "by_hand": 2,
-   "spanish_pct": 85.84
+   "spanish_pct": 86.42
   },
   "content": {
    "pages": 591,
    "twins": 589,
-   "words": 461677,
+   "words": 462772,
    "english": 33,
    "by_hand": 42,
    "spanish_pct": 99.99
@@ -473,7 +473,7 @@
   {
    "url": "https://realhunt.co/homes/france/page/10",
    "english": 4,
-   "words": 2205,
+   "words": 2215,
    "hits": [
     "France",
     "France",

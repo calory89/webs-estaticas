@@ -1,6 +1,6 @@
 # Cheap homes in the United States: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 61 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 61 homes is €214,900 (€1,560 per m², from the 61 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
+On 28 November 2026, RealHunt lists 64 homes for sale in the United States, each one checked by a person. In the United States, the median asking price of those 64 homes is €214,100 (€1,556 per m², from the 64 homes with a known size); the cheapest costs €65,428 and the most expensive €447,600. Taxes and fees add about 2–5% to the price of a home in the United States (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/united-states · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: https://realhunt.co/data/countries/united-states.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/united-states.json · PDF: http
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 61 |
-| Median asking price | €214,900 |
-| Median price per m² | €1,560 (61 homes with a known size) |
-| Median size | 121 m² |
+| Homes on RealHunt | 64 |
+| Median asking price | €214,100 |
+| Median price per m² | €1,556 (64 homes with a known size) |
+| Median size | 122 m² |
 | Cheapest and most expensive | €65,428 · €447,600 |
-| Median RealHunt score (70 to 98) | 86 |
+| Median RealHunt score (70 to 98) | 87 |
 | Taxes and fees to buy | 2–5% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There is no federal ban on foreigners buying homes, but about 30 states have added some limits, and Texas and Florida restrict buyers from certain countries such as China. |
 | Yearly property tax | Property tax is set locally and in 2024 averaged about 1.22% of value across the largest city in each state, from 0.30% in Honolulu to 3.02% in Detroit. |
@@ -48,7 +48,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/united-states
 
-## The 61 homes, best score first
+## The 64 homes, best score first
 
 ### Updated 3-bed house in Huntington, West Virginia
 
@@ -66,6 +66,14 @@ https://realhunt.co/deal/huntington-78426
 
 https://realhunt.co/deal/chapmanville-82875
 
+### Move-in ready remodeled house with fireplace and wraparound porch in Cleveland, Ohio
+
+€150,535 · Cleveland, Ohio · 255 m² · 3 bedrooms · RealHunt score 95 · added 2026-11-28
+
+This move-in ready house has been remodeled and updated throughout. It offers 3 bedrooms and 2 bathrooms, plus a separate living room, a family room, a dining area and a new oversized kitchen. Outside, there is a wraparound front porch, off-street parking and 4,865 sq ft of land. Extra features include a fireplace in the family room and a full cellar. Heating comes from a high-efficiency furnace and hot water tank installed in 2023. Asking €150,535, about €590/m².
+
+https://realhunt.co/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k
+
 ### Updated 3-bed townhouse in McKees Rocks, Pennsylvania
 
 €65,428 · McKees Rocks, Pennsylvania · 106 m² · 3 bedrooms · RealHunt score 93 · added 2026-09-23
@@ -73,6 +81,22 @@ https://realhunt.co/deal/chapmanville-82875
 106 m² (1,140 sq ft), 3 bed, 1.5 bath, built 1909. Asking $75,000. The listing mentions: full brick row home, welcoming front porch, newer laminate flooring, updated double pane windows.
 
 https://realhunt.co/deal/mckees-rocks-65428
+
+### House with large yard, stained glass and workshop in Conneautville, Pennsylvania
+
+€68,751 · Conneautville, Pennsylvania · 140 m² · 3 bedrooms · RealHunt score 93 · added 2026-11-28
+
+This 3-bedroom house with 1 bathroom has 140 m2 of living space on 20,042 sq ft of land in Conneautville. It features stained glass windows, woodwork, a bay window in the dining room, an enclosed front porch and hardwood floors. An attached workshop sits at the back of the house. The large yard has mature trees and room for flower or vegetable gardens, and the home sits on a low-traffic street. Asking €68,751, about €491/m².
+
+https://realhunt.co/deal/us-conneautville-stained-glass-woodwork-yard-house-69k
+
+### Move-in ready 3-bedroom house with fireplace, terrace and garage in Dayton, Ohio
+
+€118,824 · Dayton, Ohio · 128 m² · 3 bedrooms · RealHunt score 93 · added 2026-11-28
+
+This move-in ready house has three bedrooms and one bathroom across 128 m2 of living space. The bright living room has a brick fireplace, the kitchen has white cabinetry, and the three bedrooms have fresh carpet. Outside you will find a covered front porch, a terrace, a fenced yard, a concrete patio and 4,123 sq ft of land. A detached one-car garage with an extra pad for a second vehicle, plus a full cellar with glass block windows, adds storage and parking. The home has updated HVAC with central air conditioning. Asking €118,824, about €928/m².
+
+https://realhunt.co/deal/us-dayton-ready-house-fireplace-garage-119k
 
 ### Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia
 

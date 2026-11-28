@@ -1,6 +1,6 @@
 # Casas junto al mar por menos de 100.000 €: dónde están, país por país (2026)
 
-RealHunt publica 82 casas junto al mar de 100.000 € o menos, en 10 países. La mayoría están en Dinamarca (16), España (16) y Japón (14). La más barata es Casa japonesa con jardín de sakura, en Usuki, Oita, Japan, por 19.320 €.
+RealHunt publica 85 casas junto al mar de 100.000 € o menos, en 13 países. La mayoría están en Dinamarca (16), España (16) y Japón (14). La más barata es Casa japonesa con jardín de sakura, en Usuki, Oita, Japan, por 19.320 €.
 
 Casas revisadas por una persona, a su precio de salida a 28 de noviembre de 2026. Los países con menos de 3 casas así se cuentan, pero no salen en el gráfico.
 
@@ -20,10 +20,13 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Suecia | 4 | 59.000 € | 64.000 € | 50 m² | Medelpad (1), Norrbotten (1), Västerbotten (1), Västernorrland (1) |
 | México | 4 | 83.298 € | 97.100 € | 65 m² | Sinaloa (4) |
 | Estados Unidos | 2 | 88.800 € | 95.089 € | s. d. | South Carolina (1), Texas (1) |
+| Guatemala | 1 | 84.781 € | 84.781 € | s. d. | Escuintla (1) |
+| South Africa | 1 | 85.423 € | 85.423 € | s. d. | Western Cape (1) |
+| Uruguay | 1 | 93.425 € | 93.425 € | s. d. | Canelones (1) |
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.058 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Junto al mar: a 5 km o menos de la costa cuando se conoce la distancia; si no, casas que una persona clasificó como playa y costa.
 - El recuento describe lo que RealHunt publica hoy. Un país que no aparece puede tener casas así que aún no se han añadido.

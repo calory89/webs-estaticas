@@ -1,6 +1,6 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 107 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 107 casas es de 97.000 € (1.138 € por m², calculado con las 89 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 215.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 108 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 108 casas es de 97.000 € (1.138 € por m², calculado con las 90 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 215.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 107 |
+| Casas en RealHunt | 108 |
 | Precio de salida mediano | 97.000 € |
-| Precio mediano por m² | 1.138 € (89 casas de superficie conocida) |
-| Superficie mediana | 85 m² |
+| Precio mediano por m² | 1.138 € (90 casas de superficie conocida) |
+| Superficie mediana | 86 m² |
 | La más barata y la más cara | 12.000 € · 215.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 82 |
 | Impuestos y gastos de compra | 4–15% del precio (cifras de 2026) |
@@ -43,7 +43,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/italy
 
-## Las 107 casas, de mejor a peor nota
+## Las 108 casas, de mejor a peor nota
 
 ### Casa de pueblo en cuatro niveles con vistas al mar y la montaña en Sangineto, Calabria
 
@@ -188,6 +188,14 @@ https://realhunt.co/es/deal/falconara-albanese-41000
 Esta casa adosada lista para entrar a vivir se encuentra en buen estado y puede habitarse de inmediato. Ofrece 110 metros cuadrados con dos dormitorios, un estudio, un baño, cocina, comedor, salón y una segunda cocina pequeña. Ambos dormitorios tienen balcón privado, y una entrada independiente da acceso a un amplio sótano. La vivienda cuenta con calefacción central de gas, está en una ubicación céntrica del pueblo y se encuentra a menos de 30 minutos en coche de las playas del mar Adriático. Precio 59.000 €, unos 536 €/m².
 
 https://realhunt.co/es/deal/it-alanno-ready-townhouse-balconies-cellar-village-59k
+
+### Casa independiente con jardín privado y vistas al campo en Torrita di Siena, Toscana
+
+89.000 € · Torrita di Siena, Tuscany · 188 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-11-28
+
+Esta casa independiente en Torrita di Siena ofrece 188 metros cuadrados de superficie habitable en dos plantas. La casa cuenta con una cocina amplia, un salón luminoso, tres dormitorios y un baño. En el exterior hay un jardín privado de 1.500 metros cuadrados y un balcón panorámico con vistas al campo. El sótano alberga dos garajes grandes, una bodega, trasteros y el sistema de calefacción. Está a pocos pasos del centro histórico, con servicios locales cerca. Precio 89.000 €, unos 473 €/m².
+
+https://realhunt.co/es/deal/it-torrita-di-siena-detached-house-garden-views-89k
 
 ### Casa independiente renovada con jardín y paneles solares en Carpignano Salentino, Apulia
 

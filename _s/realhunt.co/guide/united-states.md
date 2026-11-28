@@ -29,14 +29,14 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 
 ### Best homes in the United States
 
+- [€150,535 · Move-in ready remodeled house with fireplace and wraparound porch in Cleveland, Ohio](https://realhunt.co/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k) · Cleveland, Ohio · score 95 · 255 m² · 3 bed
 - [€82,875 · Move-in ready 2-bed house in Chapmanville, West Virginia](https://realhunt.co/deal/chapmanville-82875) · Chapmanville, West Virginia · score 95 · 176 m² · 2 bed
 - [€78,426 · Updated 3-bed house in Huntington, West Virginia](https://realhunt.co/deal/huntington-78426) · Huntington, West Virginia · score 95 · 150 m² · 3 bed
+- [€118,824 · Move-in ready 3-bedroom house with fireplace, terrace and garage in Dayton, Ohio](https://realhunt.co/deal/us-dayton-ready-house-fireplace-garage-119k) · Dayton, Ohio · score 93 · 128 m² · 3 bed
+- [€68,751 · House with large yard, stained glass and workshop in Conneautville, Pennsylvania](https://realhunt.co/deal/us-conneautville-stained-glass-woodwork-yard-house-69k) · Conneautville, Pennsylvania · score 93 · 140 m² · 3 bed
 - [€223,300 · Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia](https://realhunt.co/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k) · Lynchburg, Virginia · score 93 · 289 m² · 3 bed
-- [€65,428 · Updated 3-bed townhouse in McKees Rocks, Pennsylvania](https://realhunt.co/deal/mckees-rocks-65428) · McKees Rocks, Pennsylvania · score 93 · 106 m² · 3 bed
-- [€153,900 · The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k) · Scotland Neck, North Carolina · score 91 · 199 m² · 3 bed
-- [€68,917 · Updated 2-bed house in Cleveland, Oklahoma](https://realhunt.co/deal/cleveland-68917) · Cleveland, Oklahoma · score 91 · 98 m² · 2 bed
 
-[All 61 homes in the United States](https://realhunt.co/homes/united-states)
+[All 64 homes in the United States](https://realhunt.co/homes/united-states)
 
 [Costs, taxes and sources for United States](https://realhunt.co/costs/united-states) · [Buying-cost calculator for United States](https://realhunt.co/buying-costs/united-states) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -47,8 +47,8 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 - [United States vs Italy](https://realhunt.co/countries/italy-vs-united-states)
 - [United States vs Greece](https://realhunt.co/countries/greece-vs-united-states)
 - [United States vs Denmark](https://realhunt.co/countries/denmark-vs-united-states)
-- [United States vs Sweden](https://realhunt.co/countries/sweden-vs-united-states)
 - [United States vs Portugal](https://realhunt.co/countries/portugal-vs-united-states)
+- [United States vs Sweden](https://realhunt.co/countries/sweden-vs-united-states)
 - [United States vs Poland](https://realhunt.co/countries/poland-vs-united-states)
 
 ### Sources

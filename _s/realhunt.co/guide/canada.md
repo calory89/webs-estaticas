@@ -30,13 +30,13 @@ Tax on rental income: Non-residents have 25% of gross rent withheld, but they ca
 ### Best homes in Canada
 
 - [€86,962 · Updated 2-bed house in Glace Bay, Nova Scotia](https://realhunt.co/deal/glace-bay-86962) · Glace Bay, Nova Scotia · score 94 · 124 m² · 2 bed
+- [€54,029 · Move-in ready 4-bedroom house with garage and land in Belleterre, Témiscamingue, Quebec](https://realhunt.co/deal/ca-belleterre-move-in-ready-house-garage-54k) · Belleterre, Témiscamingue, Quebec · score 93 · 174 m² · 4 bed
 - [€90,400 · Big family house with sea views over the Strait of Canso](https://realhunt.co/deal/ca-mulgrave-90k-623450) · Mulgrave, Nova Scotia · score 92 · 215 m² · 3 bed
 - [€123,400 · Updated five-bedroom house with a bathroom for every bedroom in Twillingate, Newfoundland](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k) · Twillingate, Newfoundland · score 90 · 203 m² · 5 bed
 - [€124,000 · Freshly painted three-bedroom house with ocean views in Hillsburn, Nova Scotia](https://realhunt.co/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k) · Hillsburn, Nova Scotia · score 88 · 106 m² · 3 bed
 - [€55,842 · Updated 2-bed house in Bulyea, Saskatchewan](https://realhunt.co/deal/bulyea-55842) · Bulyea, Saskatchewan · score 88 · 62 m² · 2 bed
-- [€68,327 · Updated 2-bed house in Avonlea, Saskatchewan](https://realhunt.co/deal/avonlea-68327) · Avonlea, Saskatchewan · score 88 · 77 m² · 2 bed
 
-[All 16 homes in Canada](https://realhunt.co/homes/canada)
+[All 18 homes in Canada](https://realhunt.co/homes/canada)
 
 [Costs, taxes and sources for Canada](https://realhunt.co/costs/canada) · [Buying-cost calculator for Canada](https://realhunt.co/buying-costs/canada) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -48,8 +48,8 @@ Tax on rental income: Non-residents have 25% of gross rent withheld, but they ca
 - [Canada vs Greece](https://realhunt.co/countries/canada-vs-greece)
 - [Canada vs United States](https://realhunt.co/countries/canada-vs-united-states)
 - [Canada vs Denmark](https://realhunt.co/countries/canada-vs-denmark)
-- [Canada vs Sweden](https://realhunt.co/countries/canada-vs-sweden)
 - [Canada vs Portugal](https://realhunt.co/countries/canada-vs-portugal)
+- [Canada vs Sweden](https://realhunt.co/countries/canada-vs-sweden)
 
 ### Sources
 

@@ -9,13 +9,13 @@ Actualizado el 28 de noviembre de 2026
 ### Las cifras de hoy
 
 Qué | Casas
-Casas en RealHunt hoy | 1.006
+Casas en RealHunt hoy | 1.058
 Anuncio confirmado en los últimos 30 días | 554
 Última lectura: anuncio publicado | 510
 Última lectura: anuncio retirado | 25
 Última lectura: el portal bloqueó el programa | 132
 Última lectura: sin respuesta | 1
-Aún sin leer por el programa, o ilegibles (publicaciones en redes) | 338
+Aún sin leer por el programa, o ilegibles (publicaciones en redes) | 390
 Marcadas como que ya no están a la venta | 15
 Con el aviso «no hemos podido confirmar que siga a la venta» | 134
 Con una revisión fechada por una persona en su página | 4

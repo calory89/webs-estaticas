@@ -47,8 +47,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes tributan por el rend
 - [Suiza vs Grecia](https://realhunt.co/es/countries/greece-vs-switzerland)
 - [Suiza vs Estados Unidos](https://realhunt.co/es/countries/switzerland-vs-united-states)
 - [Suiza vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-switzerland)
-- [Suiza vs Suecia](https://realhunt.co/es/countries/sweden-vs-switzerland)
 - [Suiza vs Portugal](https://realhunt.co/es/countries/portugal-vs-switzerland)
+- [Suiza vs Suecia](https://realhunt.co/es/countries/sweden-vs-switzerland)
 
 ### Fuentes
 

@@ -1,6 +1,6 @@
 # Cheap homes in Cyprus: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 4 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 4 homes is €341,000 (€4,060 per m², from the 4 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 4 homes this is a small sample, so the median for Cyprus is a rough guide.
+On 28 November 2026, RealHunt lists 5 homes for sale in Cyprus, each one checked by a person. In Cyprus, the median asking price of those 5 homes is €187,000 (€2,527 per m², from the 5 homes with a known size); the cheapest costs €130,000 and the most expensive €470,000. Taxes and fees add about 2.5–3.5% to the price of a home in Cyprus (figures as of 2026). With 5 homes this is a small sample, so the median for Cyprus is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/cyprus · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://realhunt.co/data/countries/cyprus.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/cyprus.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 4 (small sample) |
-| Median asking price | €341,000 |
-| Median price per m² | €4,060 (4 homes with a known size) |
+| Homes on RealHunt | 5 (small sample) |
+| Median asking price | €187,000 |
+| Median price per m² | €2,527 (5 homes with a known size) |
 | Median size | 84 m² |
 | Cheapest and most expensive | €130,000 · €470,000 |
 | Median RealHunt score (70 to 98) | 84 |
@@ -49,7 +49,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/cyprus
 
-## The 4 homes, best score first
+## The 5 homes, best score first
 
 ### Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea views
 
@@ -58,6 +58,14 @@ Full guide: https://realhunt.co/guide/cyprus
 A ready-to-move-in 2-bedroom, 2-bathroom apartment a few steps from the Blue Flag beaches of Coral Bay, west of Paphos. 84 m² with a modern fitted kitchen, a bright open living area and a private balcony with sea views for the sunsets. Gated complex with a large communal pool in landscaped gardens and private parking. About 25 km from Paphos airport. At about €4,060/m² it is roughly 18% below the Paphos median asking price (€4,923/m², index.cy, October 2026).
 
 https://realhunt.co/deal/cy-coral-bay-341k-080655
+
+### Move-in ready 3-bedroom detached house with fireplace and views in Kaminária, Limassol
+
+€130,000 · Kaminária, Limassol · 163 m² · 3 bedrooms · RealHunt score 90 · added 2026-11-28
+
+This move-in ready two-storey detached house is fully furnished and ready to live in as a permanent residence, holiday home or investment. It offers 3 bedrooms, 1 bathroom, 1 shower, 1 toilet, a living room and a combined kitchen and dining area across 163 m2. Outdoor and extra features include a 300 m2 plot, an indoor fireplace, country views, uncovered parking and storage space. It sits in the peaceful mountain village of Kaminaria, in the western part of Limassol District, surrounded by greenery. Asking €130,000, about €798/m².
+
+https://realhunt.co/deal/cy-kaminaria-ready-detached-house-fireplace-views-130k
 
 ### Sea-front ground-floor flat with a 50 m² terrace and overflow pool in Protaras
 

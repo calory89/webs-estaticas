@@ -36,7 +36,7 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [€80,000 · Fully renovated 3-bedroom detached house with garden and fireplace in Mikropoli, Drama](https://realhunt.co/deal/gr-mikropoli-renovated-house-garden-fireplace-80k) · Mikropoli, Drama · score 92 · 148 m² · 3 bed
 - [€130,000 · In good condition 3-bedroom maisonette with mountain views and fireplace in Archanes, Crete](https://realhunt.co/deal/gr-archanes-mountain-views-maisonette-fireplace-130k) · Archanes, Crete · score 92 · 190 m² · 3 bed
 
-[All 65 homes in Greece](https://realhunt.co/homes/greece)
+[All 66 homes in Greece](https://realhunt.co/homes/greece)
 
 [Costs, taxes and sources for Greece](https://realhunt.co/costs/greece) · [Buying-cost calculator for Greece](https://realhunt.co/buying-costs/greece) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -47,8 +47,8 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [Greece vs Italy](https://realhunt.co/countries/greece-vs-italy)
 - [Greece vs United States](https://realhunt.co/countries/greece-vs-united-states)
 - [Greece vs Denmark](https://realhunt.co/countries/denmark-vs-greece)
-- [Greece vs Sweden](https://realhunt.co/countries/greece-vs-sweden)
 - [Greece vs Portugal](https://realhunt.co/countries/greece-vs-portugal)
+- [Greece vs Sweden](https://realhunt.co/countries/greece-vs-sweden)
 - [Greece vs Poland](https://realhunt.co/countries/greece-vs-poland)
 
 ### Sources

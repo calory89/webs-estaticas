@@ -33,10 +33,10 @@ Impuesto sobre los ingresos por alquiler: Los alquileres de particulares tributa
 - [60.547 € · Piso luminoso de 78 m² con cuatro estancias en Sosnowiec, sin comisión](https://realhunt.co/es/deal/pl-sosnowiec-61k-790712) · Sosnowiec, Silesia · nota 94 · 78 m² · 3 dorm.
 - [53.693 € · Piso dúplex con jardín propio y garaje en Jędrzejów](https://realhunt.co/es/deal/pl-jedrzejow-54k-977114) · Jędrzejów, Świętokrzyskie · nota 93 · 65 m² · 3 dorm.
 - [68.316 € · Ático de diseño con vigas de madera y aire acondicionado en Bytom](https://realhunt.co/es/deal/pl-bytom-68k-687710) · Śródmieście, Bytom · nota 93 · 74 m² · 3 dorm.
+- [49.707 € · Casa adosada bien mantenida con jardín y chimenea en Rumia, Pomerania](https://realhunt.co/es/deal/pl-rumia-well-maintained-house-garden-fireplace-50k) · Rumia, Pomerania · nota 93 · 100 m²
 - [68.316 € · Piso de cinco habitaciones en un edificio de 1904 junto a la universidad de medicina de Zabrze](https://realhunt.co/es/deal/pl-zabrze-68k-033339) · Centrum, Zabrze · nota 92 · 77 m² · 4 dorm.
-- [72.885 € · Amplio piso de 89 m² con suelos de madera en Wałbrzych](https://realhunt.co/es/deal/pl-walbrzych-73k-831228) · Stary Zdrój, Wałbrzych · nota 90 · 89 m² · 3 dorm.
 
-[Las 31 casas en Polonia](https://realhunt.co/es/homes/poland)
+[Las 32 casas en Polonia](https://realhunt.co/es/homes/poland)
 
 [Gastos, impuestos y fuentes de Polonia](https://realhunt.co/es/costs/poland) · [Calculadora de gastos de compra para Polonia](https://realhunt.co/es/buying-costs/poland) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
@@ -48,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: Los alquileres de particulares tributa
 - [Polonia vs Grecia](https://realhunt.co/es/countries/greece-vs-poland)
 - [Polonia vs Estados Unidos](https://realhunt.co/es/countries/poland-vs-united-states)
 - [Polonia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-poland)
-- [Polonia vs Suecia](https://realhunt.co/es/countries/poland-vs-sweden)
 - [Polonia vs Portugal](https://realhunt.co/es/countries/poland-vs-portugal)
+- [Polonia vs Suecia](https://realhunt.co/es/countries/poland-vs-sweden)
 
 ### Fuentes
 

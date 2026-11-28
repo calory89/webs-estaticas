@@ -1,6 +1,6 @@
 # Casas baratas en Francia: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 305 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 305 casas es de 124.800 € (1.053 € por m², calculado con las 302 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 214.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 306 casas en venta en Francia, revisadas una a una por una persona. En Francia, el precio de salida mediano de esas 306 casas es de 124.800 € (1.050 € por m², calculado con las 303 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 214.000 €. Los impuestos y gastos de compra suman alrededor del 7–8,5% del precio de una casa en Francia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/france · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/france.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 305 |
+| Casas en RealHunt | 306 |
 | Precio de salida mediano | 124.800 € |
-| Precio mediano por m² | 1.053 € (302 casas de superficie conocida) |
+| Precio mediano por m² | 1.050 € (303 casas de superficie conocida) |
 | Superficie mediana | 115 m² |
 | La más barata y la más cara | 39.000 € · 214.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 82 |
@@ -47,7 +47,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/france
 
-## Las 305 casas, de mejor a peor nota
+## Las 306 casas, de mejor a peor nota
 
 ### Casa de 171 m² con antiguo local comercial en el centro de Bussière-Poitevine
 
@@ -288,6 +288,14 @@ https://realhunt.co/es/deal/fr-exideuil-sur-vienne-holiday-cottage-barn-plot-56k
 Esta casa de campo se encuentra en un caserío tranquilo y es ideal para cerrarla y marcharse. Tiene 2 dormitorios, 1 baño, un acogedor salón con chimenea y una cocina comedor. En el exterior hay una terraza de madera, un gran granero adosado, un jardín de 710 m² frente a la casa y 2,85 acres de terreno. La calefacción es de leña, y el pueblo, con tiendas y un centro médico, está a pocos minutos. Los aeropuertos de Limoges y Poitiers están a unos 50 minutos. Precio 60.000 €, unos 667 €/m².
 
 https://realhunt.co/es/deal/fr-bussiere-poitevine-cottage-barn-fireplace-garden-60k
+
+### Casa de cuatro dormitorios con jardín y terraza en Montluçon, Allier
+
+76.500 € · Montluçon, Allier · 115 m² · 4 dormitorios · nota RealHunt 87 · añadida el 2026-11-28
+
+Es una casa de cuatro dormitorios en una zona muy demandada de Montluçon, con 115 m2 de superficie habitable. La casa incluye un amplio vestíbulo, una zona de lavado, una cocina equipada, un salón con chimenea empotrada y acceso a la terraza, y un aseo. La planta superior tiene cuatro dormitorios, un baño, un aseo y una amplia terraza. Entre los exteriores hay un jardín, un patio delantero, un garaje y 1.722 sq ft de terreno. Precio 76.500 €, unos 665 €/m².
+
+https://realhunt.co/es/deal/fr-montlucon-house-fireplace-terrace-garage-garden-76k
 
 ### Casa renovada de 3 dormitorios con jardín y vistas al campo en Sanxay, Vienne
 

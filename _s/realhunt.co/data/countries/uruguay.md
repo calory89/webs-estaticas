@@ -1,6 +1,6 @@
 # Cheap homes in Uruguay: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 4 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 4 homes is €180,300 (€1,649 per m², from the 4 homes with a known size); the cheapest costs €150,300 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 4 homes this is a small sample, so the median for Uruguay is a rough guide.
+On 28 November 2026, RealHunt lists 6 homes for sale in Uruguay, each one checked by a person. In Uruguay, the median asking price of those 6 homes is €164,607 (€1,568 per m², from the 6 homes with a known size); the cheapest costs €93,425 and the most expensive €186,300. Taxes and fees add about 5–8% to the price of a home in Uruguay (figures as of 2026). With 6 homes this is a small sample, so the median for Uruguay is a rough guide.
 
 Source: RealHunt, https://realhunt.co/homes/uruguay · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https://realhunt.co/data/countries/uruguay.pdf
@@ -9,11 +9,11 @@ Also as JSON: https://realhunt.co/data/countries/uruguay.json · PDF: https://re
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 4 (small sample) |
-| Median asking price | €180,300 |
-| Median price per m² | €1,649 (4 homes with a known size) |
-| Median size | 113 m² |
-| Cheapest and most expensive | €150,300 · €186,300 |
+| Homes on RealHunt | 6 (small sample) |
+| Median asking price | €164,607 |
+| Median price per m² | €1,568 (6 homes with a known size) |
+| Median size | 115 m² |
+| Cheapest and most expensive | €93,425 · €186,300 |
 | Median RealHunt score (70 to 98) | 85 |
 | Taxes and fees to buy | 5–8% of the price (as of 2026) |
 | Can foreigners buy? | Yes. There are no limits on the types of property foreign buyers can purchase in Uruguay, and they have the same property rights as citizens. |
@@ -29,7 +29,23 @@ Sources:
 - https://www.gub.uy/direccion-general-impositiva/comunicacion/publicaciones/impuesto-trasmisiones-patrimoniales-itp
 - https://www.globalpropertyguide.com/Latin-America/Uruguay/Buying-Guide
 
-## The 4 homes, best score first
+## The 6 homes, best score first
+
+### 2-bedroom cabin and studio with garden near the beach in Piedras de Afilar, Canelones
+
+€93,425 · Piedras de Afilar, Canelones · 173 m² · 2 bedrooms · RealHunt score 92 · added 2026-11-28
+
+This property is a cabin and studio on a 495 m² plot in Piedras de Afilar, Canelones. The cabin has an open-plan living area and a mezzanine bedroom, and the listing shows 2 bedrooms and 1 bathroom across 173 m² built. The grounds include a spacious garden with plenty of shade, a terrace, a covered barbecue area with grill and a storage room. The studio apartment has a wood-burning stove, and the beach is 800 m away. Asking €93,425, about €540/m².
+
+https://realhunt.co/deal/uy-piedras-de-afilar-cabin-studio-beach-garden-93k
+
+### House in good condition with wood stove and beach nearby in Cerros de los Rochas, Rocha
+
+€164,607 · Cerros de los Rochas, Rocha · 301 m² · 8 bedrooms · RealHunt score 88 · added 2026-11-28
+
+This property is in good condition and comprises two houses and a cabin on one 510 m² plot. Each front house has a wood-burning stove in the living-dining room, three bedrooms (one on the ground floor), a bathroom and a separate kitchen. The cabin has a living-dining room with an integrated kitchen, a bathroom and two upstairs bedrooms, and sleeps four. The plot has 17 m of frontage on the main road, the beach is a few blocks away, and there is a bus stop at the door. Asking €164,607, about €547/m².
+
+https://realhunt.co/deal/uy-cerros-de-los-rochas-good-condition-beach-houses-cabin-165k
 
 ### Brick chalet with three bedrooms one block from the beach in La Aguada, La Paloma
 

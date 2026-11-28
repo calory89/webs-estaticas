@@ -1,6 +1,6 @@
 # Casas baratas en Bulgaria: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 6 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 6 casas es de 69.000 € (759 € por m², calculado con las 6 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 89.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 6 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
+A 28 de noviembre de 2026, RealHunt publica 8 casas en venta en Bulgaria, revisadas una a una por una persona. En Bulgaria, el precio de salida mediano de esas 8 casas es de 70.000 € (733 € por m², calculado con las 8 casas de superficie conocida); la más barata cuesta 58.900 € y la más cara, 160.000 €. Los impuestos y gastos de compra suman alrededor del 3,2–8,5% del precio de una casa en Bulgaria (cifras de 2026). Con 8 casas la muestra es pequeña, así que la mediana de Bulgaria es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/bulgaria · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https://realhunt.co/data/countries/bulgaria.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/bulgaria.json · PDF: https
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 6 (muestra pequeña) |
-| Precio de salida mediano | 69.000 € |
-| Precio mediano por m² | 759 € (6 casas de superficie conocida) |
-| Superficie mediana | 90 m² |
-| La más barata y la más cara | 58.900 € · 89.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 93 |
+| Casas en RealHunt | 8 (muestra pequeña) |
+| Precio de salida mediano | 70.000 € |
+| Precio mediano por m² | 733 € (8 casas de superficie conocida) |
+| Superficie mediana | 99 m² |
+| La más barata y la más cara | 58.900 € · 160.000 € |
+| Nota RealHunt mediana (de 70 a 98) | 92 |
 | Impuestos y gastos de compra | 3,2–8,5% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí, edificios y apartamentos, con derechos similares a los locales; según GPG, los extranjeros no pueden ser propietarios de tierra directamente, por lo que una empresa búlgara es la ruta habitual. |
 | Impuesto anual sobre la vivienda | 0,01-0,45% del valor fiscal del inmueble más una tasa municipal de basuras. |
@@ -44,7 +44,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/bulgaria
 
-## Las 6 casas, de mejor a peor nota
+## Las 8 casas, de mejor a peor nota
 
 ### Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en Kavarna
 
@@ -85,6 +85,22 @@ https://realhunt.co/es/deal/bg-byala-58k-fbw62u
 Piso de 86,5 m² en planta baja de un complejo cuidado de 2007, a 3 minutos andando de la playa: recibidor, salón con cocina equipada y comedor, dos dormitorios amueblados, baño y terraza con vistas al mar. La orientación suroeste da luz todo el día. Se vende totalmente amueblado y equipado, en muy buen estado y sin necesidad de reforma; sirve para vacaciones o para vivir todo el año. Precio 66.000 €, unos 759 €/m².
 
 https://realhunt.co/es/deal/bg-kavarna-66k-89682
+
+### Casa de 3 dormitorios lista para entrar a vivir con terraza y jardín en Stokite, provincia de Gabrovo
+
+85.000 € · Stokite, Gabrovo Province · 128 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-11-28
+
+Casa de dos plantas lista para entrar a vivir, de construcción sólida con muros de ladrillo, levantada entre 1984 y 1991. La planta baja tiene salón, cocina con zona de comedor y baño, y la planta superior tiene tres dormitorios. Entre las zonas exteriores hay una terraza cubierta, un jardín con frutales e invernadero, un balcón, vistas a las laderas verdes de la montaña, un garaje y anexos. La calefacción es eléctrica y de leña, con estufas de leña y aire acondicionado. La casa está a unos 25 km de Sevlievo y a 18 km de Apriltsi. Precio 85.000 €, unos 664 €/m².
+
+https://realhunt.co/es/deal/bg-stokite-solid-mountain-house-terrace-garden-85k
+
+### Casa renovada de 5 dormitorios con terraza, chimenea y terreno en Tryavna, Gabrovo
+
+160.000 € · Tryavna, Gabrovo · 273 m² · 5 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+Esta casa renovada está lista para entrar a vivir y ofrece 273 m2 de superficie habitable. Tiene 5 dormitorios, 2 baños, un salón con chimenea, un comedor y dos sótanos. La propiedad incluye una terraza panorámica, una parcela de 1.088 m2 con una marquesina y un anexo. La localidad está a 35 km de Veliko Tarnovo y se accede por una carretera asfaltada transitable todo el año. Hay electricidad y agua disponibles y se ha instalado una fosa séptica nueva. Precio 160.000 €, unos 586 €/m².
+
+https://realhunt.co/es/deal/bg-tryavna-renovated-house-terrace-fireplace-160k
 
 ### Piso con vista al mar de un dormitorio con piscina y sin cuota de mantenimiento en Sveti Vlas
 

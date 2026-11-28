@@ -28,14 +28,14 @@ Impuesto sobre los ingresos por alquiler: Larga estancia: 25% fijo para no resid
 
 ### Mejores casas en Portugal
 
+- [112.500 € · Casa de 4 dormitorios en buen estado con jardín, garajes y vistas abiertas en Freineda, Guarda](https://realhunt.co/es/deal/pt-freineda-detached-house-fireplace-garden-views-112k) · Freineda, Guarda · nota 93 · 418 m² · 4 dorm.
 - [140.000 € · Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k) · Tabuaço, Douro, Viseu · nota 92 · 173 m² · 3 dorm.
 - [68.500 € · Casa alentejana de una planta rehabilitada con techos de caña cerca de Mértola](https://realhunt.co/es/deal/pt-mertola-68k-313027) · Penilhos, Mértola, Beja · nota 91 · 75 m² · 2 dorm.
 - [150.000 € · Casa de dos dormitorios renovada con aire acondicionado en el casco histórico de Estremoz](https://realhunt.co/es/deal/pt-estremoz-150k-259126) · Estremoz, Évora · nota 91 · 110 m² · 2 dorm.
 - [125.000 € · Casa independiente de cinco dormitorios con jardín, garaje y calefacción central en Brunhoso, Mogadouro](https://realhunt.co/es/deal/pt-brunhoso-125k-258088) · Brunhoso, Mogadouro, Bragança · nota 91 · 170 m² · 5 dorm.
 - [115.000 € · Casa de pueblo alentejana totalmente reformada con techos de madera en Chança, Alter do Chão](https://realhunt.co/es/deal/pt-alter-do-chao-115k-285437) · Chança, Alter do Chão, Portalegre · nota 91 · 130 m²
-- [150.000 € · Casa de pueblo de tres plantas totalmente renovada en Peso, Covilhã, a los pies de la Serra da Estrela](https://realhunt.co/es/deal/pt-covilha-peso-150k-280003) · Peso, Covilhã, Castelo Branco · nota 91 · 86 m² · 2 dorm.
 
-[Las 36 casas en Portugal](https://realhunt.co/es/homes/portugal)
+[Las 37 casas en Portugal](https://realhunt.co/es/homes/portugal)
 
 [Gastos, impuestos y fuentes de Portugal](https://realhunt.co/es/costs/portugal) · [Calculadora de gastos de compra para Portugal](https://realhunt.co/es/buying-costs/portugal) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

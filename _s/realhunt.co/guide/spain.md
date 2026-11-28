@@ -47,8 +47,8 @@ Tax on rental income: Non-residents: EU/EEA 19% on net income; non-EU 24% on gro
 - [Spain vs Greece](https://realhunt.co/countries/greece-vs-spain)
 - [Spain vs United States](https://realhunt.co/countries/spain-vs-united-states)
 - [Spain vs Denmark](https://realhunt.co/countries/denmark-vs-spain)
-- [Spain vs Sweden](https://realhunt.co/countries/spain-vs-sweden)
 - [Spain vs Portugal](https://realhunt.co/countries/portugal-vs-spain)
+- [Spain vs Sweden](https://realhunt.co/countries/spain-vs-sweden)
 - [Spain vs Poland](https://realhunt.co/countries/poland-vs-spain)
 
 ### Sources

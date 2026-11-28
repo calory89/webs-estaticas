@@ -1,6 +1,6 @@
 # Casas baratas en el Reino Unido: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 5 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 5 casas es de 161.000 € (1.807 € por m², calculado con las 5 casas de superficie conocida); la más barata cuesta 121.000 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 5 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
+A 28 de noviembre de 2026, RealHunt publica 8 casas en venta en el Reino Unido, revisadas una a una por una persona. En el Reino Unido, el precio de salida mediano de esas 8 casas es de 126.500 € (1.806 € por m², calculado con las 8 casas de superficie conocida); la más barata cuesta 95.449 € y la más cara, 198.400 €. Los impuestos y gastos de compra suman alrededor del 3–9% del precio de una casa en el Reino Unido (cifras de 2026). Con 8 casas la muestra es pequeña, así que la mediana de el Reino Unido es solo orientativa.
 
 Fuente: RealHunt, https://realhunt.co/es/homes/united-kingdom · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF: https://realhunt.co/data/countries/united-kingdom.es.pdf
@@ -9,11 +9,11 @@ También en JSON: https://realhunt.co/data/countries/united-kingdom.json · PDF:
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 5 (muestra pequeña) |
-| Precio de salida mediano | 161.000 € |
-| Precio mediano por m² | 1.807 € (5 casas de superficie conocida) |
-| Superficie mediana | 80 m² |
-| La más barata y la más cara | 121.000 € · 198.400 € |
+| Casas en RealHunt | 8 (muestra pequeña) |
+| Precio de salida mediano | 126.500 € |
+| Precio mediano por m² | 1.806 € (8 casas de superficie conocida) |
+| Superficie mediana | 90 m² |
+| La más barata y la más cara | 95.449 € · 198.400 € |
 | Nota RealHunt mediana (de 70 a 98) | 83 |
 | Impuestos y gastos de compra | 3–9% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. No hay restricciones de nacionalidad para comprar viviendas en ninguna parte del Reino Unido ni se necesita visado, pero la compra no da derecho a vivir allí. |
@@ -48,7 +48,31 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/united-kingdom
 
-## Las 5 casas, de mejor a peor nota
+## Las 8 casas, de mejor a peor nota
+
+### Casa de dos dormitorios con jardín y aparcamiento propio en Wingate, Condado de Durham
+
+95.449 € · Wingate, County Durham · 91 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-11-28
+
+Se trata de una casa adosada de dos dormitorios en Wingate, Condado de Durham. La vivienda tiene salón comedor, cocina, dos dormitorios dobles más grandes de lo habitual y un baño familiar. En el exterior hay un jardín con zonas ajardinadas y aparcamiento fuera de la calle en un camino privado. Wingate está al alcance de la A19, Teesside, Sunderland y la ciudad de Durham. La superficie habitable es de 91 m2. Precio 95.449 €, unos 1.049 €/m².
+
+https://realhunt.co/es/deal/gb-wingate-two-bedroom-house-garden-parking-95k
+
+### Casa adosada de 2 dormitorios con patio cubierto en Bishop Auckland, County Durham
+
+95.509 € · Bishop Auckland, County Durham · 90 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-11-28
+
+Esta casa familiar adosada en Bishop Auckland se pone a la venta sin cadena de venta posterior. La planta baja tiene recibidor, un amplio salón, comedor y cocina, y la planta superior tiene dos dormitorios y un baño. En el exterior hay un patio cubierto cerrado con puerta de garaje que da al callejón trasero, que podría usarse como aparcamiento seguro. Tiendas, supermercados y colegios están a poca distancia, y el transporte público conecta con Darlington, Durham y Newcastle. Precio 95.509 €, unos 1.061 €/m².
+
+https://realhunt.co/es/deal/gb-bishop-auckland-terraced-family-home-covered-yard-96k
+
+### Casa adosada de 2 dormitorios en buen estado con patio trasero en Hunwick, County Durham
+
+95.509 € · Hunwick, County Durham, North East England · 80 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-11-28
+
+Esta casa adosada moderna está en buen estado y se ofrece sin cadena de compra. La planta baja tiene un vestíbulo de entrada que da a un salón comedor abierto y a la cocina, y la primera planta tiene dos dormitorios dobles y un baño familiar. En el exterior hay aparcamiento en la calle, en la fachada, y un patio cerrado en la parte trasera con acceso por una puerta a la calleja trasera. El pueblo cuenta con un colegio de primaria, salón de actos, iglesia, pub, salón de té y una tienda local, con autobuses frecuentes a Durham, Darlington y Newcastle. Precio 95.509 €, unos 1.194 €/m².
+
+https://realhunt.co/es/deal/gb-hunwick-modern-terraced-house-enclosed-yard-96k
 
 ### Casa de dos dormitorios amueblada con vistas al fiordo de Moray en la ciudad portuaria de Macduff
 

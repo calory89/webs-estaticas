@@ -1,6 +1,6 @@
 # Cheap homes in France: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 305 homes for sale in France, each one checked by a person. In France, the median asking price of those 305 homes is €124,800 (€1,053 per m², from the 302 homes with a known size); the cheapest costs €39,000 and the most expensive €214,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 28 November 2026, RealHunt lists 306 homes for sale in France, each one checked by a person. In France, the median asking price of those 306 homes is €124,800 (€1,050 per m², from the 303 homes with a known size); the cheapest costs €39,000 and the most expensive €214,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/france · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 305 |
+| Homes on RealHunt | 306 |
 | Median asking price | €124,800 |
-| Median price per m² | €1,053 (302 homes with a known size) |
+| Median price per m² | €1,050 (303 homes with a known size) |
 | Median size | 115 m² |
 | Cheapest and most expensive | €39,000 · €214,000 |
 | Median RealHunt score (70 to 98) | 82 |
@@ -47,7 +47,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/france
 
-## The 305 homes, best score first
+## The 306 homes, best score first
 
 ### 171 m² house with a former shop in the centre of Bussière-Poitevine
 
@@ -288,6 +288,14 @@ https://realhunt.co/deal/fr-exideuil-sur-vienne-holiday-cottage-barn-plot-56k
 This cottage sits in a quiet hamlet and is ideal to lock up and leave. It has 2 bedrooms, 1 bathroom, a cosy living room with a fireplace, and a kitchen diner. Outside there is a wooden deck, a large attached barn, a 710 m² garden opposite the house and 2.85 acres of land. Heating is by wood, and the village with shops and a medical centre is a few minutes away. Limoges and Poitiers airports are about 50 minutes away. Asking €60,000, about €667/m².
 
 https://realhunt.co/deal/fr-bussiere-poitevine-cottage-barn-fireplace-garden-60k
+
+### Four-bedroom house with garden and terrace in Montluçon, Allier
+
+€76,500 · Montluçon, Allier · 115 m² · 4 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This is a four-bedroom house in a sought-after area of Montluçon, with 115 m2 of living space. The house includes a spacious entrance hall, a utility room, a fitted kitchen, a living room with an inset fireplace and access to the terrace, and a toilet. The upper floor has four bedrooms, a bathroom, a toilet and a large terrace. Outdoor features include a garden, a front courtyard, a garage and 1,722 sq ft of land. Asking €76,500, about €665/m².
+
+https://realhunt.co/deal/fr-montlucon-house-fireplace-terrace-garage-garden-76k
 
 ### Renovated 3-bedroom house with garden and countryside views in Sanxay, Vienne
 

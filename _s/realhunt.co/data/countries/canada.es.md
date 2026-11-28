@@ -1,6 +1,6 @@
 # Casas baratas en Canadá: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 16 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 16 casas es de 99.500 € (963 € por m², calculado con las 16 casas de superficie conocida); la más barata cuesta 55.842 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 18 casas en venta en Canadá, revisadas una a una por una persona. En Canadá, el precio de salida mediano de esas 18 casas es de 99.500 € (930 € por m², calculado con las 18 casas de superficie conocida); la más barata cuesta 54.029 € y la más cara, 190.700 €. Los impuestos y gastos de compra suman alrededor del 1,5–4% del precio de una casa en Canadá (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/canada · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https://realhunt.co/data/countries/canada.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/canada.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 16 |
+| Casas en RealHunt | 18 |
 | Precio de salida mediano | 99.500 € |
-| Precio mediano por m² | 963 € (16 casas de superficie conocida) |
-| Superficie mediana | 124 m² |
-| La más barata y la más cara | 55.842 € · 190.700 € |
-| Nota RealHunt mediana (de 70 a 98) | 86 |
+| Precio mediano por m² | 930 € (18 casas de superficie conocida) |
+| Superficie mediana | 132 m² |
+| La más barata y la más cara | 54.029 € · 190.700 € |
+| Nota RealHunt mediana (de 70 a 98) | 87 |
 | Impuestos y gastos de compra | 1,5–4% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Mayormente no por ahora: una prohibición federal impide que no canadienses compren viviendas en ciudades y pueblos grandes hasta el 1 de enero de 2027, con excepciones como titulares de permiso de trabajo y cónyuges de ciudadanos o residentes permanentes. La prohibición no cubre áreas rurales y pueblos pequeños, y el gobierno ha dicho que no tiene previsto simplemente extenderla, pero se está estudiando un sustituto. |
 | Impuesto anual sobre la vivienda | El impuesto sobre la propiedad lo fija cada ciudad como un porcentaje del valor tasado, desde alrededor del 0,3% en Vancouver hasta el 2,12% en Saint John en 2026. |
@@ -51,7 +51,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/canada
 
-## Las 16 casas, de mejor a peor nota
+## Las 18 casas, de mejor a peor nota
 
 ### Casa de 2 dormitorios actualizada en Glace Bay, Nueva Escocia
 
@@ -60,6 +60,14 @@ Guía completa: https://realhunt.co/es/guide/canada
 124 m² (1.334 pies cuadrados), 2 dormitorios, 1 baño. Precio: 140.000 C$. El anuncio menciona: mejoras recientes, sistema de calefacción actualizado, vestidor, a poca distancia a pie del centro.
 
 https://realhunt.co/es/deal/glace-bay-86962
+
+### Casa de 4 dormitorios lista para entrar con garaje y terreno en Belleterre, Témiscamingue, Quebec
+
+54.029 € · Belleterre, Témiscamingue, Quebec · 174 m² · 4 dormitorios · nota RealHunt 93 · añadida el 2026-11-28
+
+Esta casa lista para entrar a vivir en el pueblo de Belleterre está preparada para que los nuevos propietarios se instalen ya. Tiene 4 dormitorios y 2 baños, con 174 m2 de superficie habitable. Cuenta con un garaje y una plaza de aparcamiento dentro del garaje, y la propiedad está situada en una parcela de terreno. El garaje está sobre una losa de hormigón y la vivienda está disponible ahora. Precio 54.029 €, unos 311 €/m².
+
+https://realhunt.co/es/deal/ca-belleterre-move-in-ready-house-garage-54k
 
 ### Casa familiar grande con vistas al mar sobre el estrecho de Canso
 
@@ -100,6 +108,14 @@ https://realhunt.co/es/deal/avonlea-68327
 Se pide C$194.900 (aproximadamente 124.000 euros) por una casa de tres dormitorios de aproximadamente 106 m² en una parcela en una colina en Hillsburn, un pueblo de la costa en la Bahía de Fundy a unos 10 minutos de Annapolis Royal. Las fotos aéreas muestran el mar justo abajo. Está lista para entrar, con exterior recién pintado y ventanas nuevas. La planta principal tiene una gran cocina campestre con isla, un comedor, un salón con estufa de pellets y vista al mar, y un cuarto de baño grande con bañera de remojo y ducha de obra. Arriba hay tres dormitorios y una habitación de almacenamiento. Fuera hay jardineras elevadas, un cobertizo, una terraza y una plataforma de observación.
 
 https://realhunt.co/es/deal/ca-hillsburn-ns-cottage-house-bay-of-fundy-views-195k
+
+### Casa renovada de 3 dormitorios con cocina abierta y terreno en Saint-Fabien, Quebec
+
+127.654 € · Saint-Fabien, Quebec · 163 m² · 3 dormitorios · nota RealHunt 87 · añadida el 2026-11-28
+
+Esta casa renovada ha sido objeto de varias reformas recientes, incluida la cocina y el suelo de la planta baja. Ofrece 163 m² habitables distribuidos en 6 habitaciones, con 3 dormitorios, 1 baño y una cocina equipada de planta abierta. La parcela tiene 5.296 pies cuadrados de terreno, y la vivienda dispone de aire acondicionado. Una bomba de calor central nueva proporciona la calefacción, y la vivienda incluye aspirador central con accesorios, nevera, lavavajillas, placa de cocción, lavadora y secadora. Precio 127.654 €, unos 783 €/m².
+
+https://realhunt.co/es/deal/ca-saint-fabien-renovated-bright-house-heat-pump-128k
 
 ### Casa de carácter de 1888 con vistas al puerto y jardín con estanque de carpas en Pictou, Nueva Escocia
 

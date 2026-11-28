@@ -1,8 +1,8 @@
 # Cheap homes in Slovenia: key facts and every home on RealHunt
 
-On 27 November 2026, RealHunt lists 3 homes for sale in Slovenia, each one checked by a person. In Slovenia, the median asking price of those 3 homes is €229,000 (€1,346 per m², from the 3 homes with a known size); the cheapest costs €105,000 and the most expensive €245,000. With 3 homes this is a small sample, so the median for Slovenia is a rough guide.
+On 28 November 2026, RealHunt lists 3 homes for sale in Slovenia, each one checked by a person. In Slovenia, the median asking price of those 3 homes is €140,000 (€1,123 per m², from the 3 homes with a known size); the cheapest costs €105,000 and the most expensive €229,000. With 3 homes this is a small sample, so the median for Slovenia is a rough guide.
 
-Source: RealHunt, https://realhunt.co/homes/slovenia · Updated 27 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
+Source: RealHunt, https://realhunt.co/homes/slovenia · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/slovenia.json · PDF: https://realhunt.co/data/countries/slovenia.pdf
 
 ## Key facts
@@ -10,14 +10,14 @@ Also as JSON: https://realhunt.co/data/countries/slovenia.json · PDF: https://r
 | Fact | Value |
 | --- | --- |
 | Homes on RealHunt | 3 (small sample) |
-| Median asking price | €229,000 |
-| Median price per m² | €1,346 (3 homes with a known size) |
-| Median size | 112 m² |
-| Cheapest and most expensive | €105,000 · €245,000 |
-| Median RealHunt score (70 to 98) | 83 |
+| Median asking price | €140,000 |
+| Median price per m² | €1,123 (3 homes with a known size) |
+| Median size | 178 m² |
+| Cheapest and most expensive | €105,000 · €229,000 |
+| Median RealHunt score (70 to 98) | 87 |
 | Can foreigners buy? | Yes for citizens of EU, EEA and OECD countries (such as the United States, the United Kingdom and Canada), who buy like Slovenians. Citizens of EU candidate countries (North Macedonia, Serbia, Montenegro, Albania, Ukraine, Moldova, Bosnia and Herzegovina and Georgia) first need a decision confirming reciprocity, and citizens of other countries, such as China and Russia, cannot buy, only inherit where reciprocity exists. |
 | Yearly property tax | The direct user of the home, usually the owner, pays a yearly fee for the use of building land (nadomestilo za uporabo stavbnega zemljišča, NUSZ), set by each municipality's ordinance and assessed once a year by the tax administration (FURS); owners of holiday homes also pay property tax (davek od premoženja). |
-| Date of these figures | 27 November 2026 |
+| Date of these figures | 28 November 2026 |
 
 ## Costs and taxes
 
@@ -34,6 +34,14 @@ Sources:
 
 ## The 3 homes, best score first
 
+### Well maintained detached house with garden and fireplace in Spodnji Ivanjci, Pomurje
+
+€140,000 · Spodnji Ivanjci, Pomurje · 178 m² · 2 bedrooms · RealHunt score 91 · added 2026-11-28
+
+This well maintained detached house, built in 1989, stands on a 1,015 m² plot in a quiet hilly setting. It offers 2 bedrooms, 2 bathrooms, a living room opening onto a glazed winter garden, and a basement cellar. Extras include a garden, a balcony, a wood-burning fireplace, a garage with carport and a cellar. It is heated by central radiators with a pellet boiler and lies about 12 km from Gornja Radgona and 8 km from the Pomurje motorway. Asking €140,000, about €787/m².
+
+https://realhunt.co/deal/si-spodnji-ivanjci-well-maintained-house-garden-fireplace-140k
+
 ### Renovated two-flat house with a vineyard and vaulted wine cellar near Gornja Radgona
 
 €229,000 · Gornja Radgona, Pomurska · 204 m² · 6 bedrooms · RealHunt score 87 · added 2026-11-21
@@ -41,14 +49,6 @@ Sources:
 A house of 204 m² on 6,117 m² of land, a five-minute drive from the centre of Gornja Radgona, split into two separate four-room flats with their own entrances, each with a kitchen, living room, three bedrooms and a bathroom. It has been renovated over the years with new wiring and plumbing, quality windows, a new tiled roof, an insulated facade, a heat pump, heat recovery ventilation, air conditioning and fibre internet; energy class B1. Below is a vaulted wine cellar with climate control, and outside a 73.5 m² outbuilding with a garage, an orchard, raised beds and about 200 white vines. Sold fully furnished, with building and use permits.
 
 https://realhunt.co/deal/si-gornja-radgona-renovated-two-flat-house-vineyard-229k
-
-### Country house renovated 2020-2025 with 2 ha of land in Kozjak near Maribor
-
-€245,000 · Kozjak nad Pesnico, Kungota · 112 m² · 2 bedrooms · RealHunt score 83 · added 2026-11-20
-
-A house from 1965 fully renovated between 2020 and 2025, on a 21,508 m² sloping estate of meadows and woods in the Kozjak hills, under 15 km from Maribor. About 112 m²: entrance hall, kitchen open to a living and dining room with a terrace, two bedrooms, a new bathroom, a WC and a laundry, plus a basement boiler and storage room. New PVC windows (2020), facade insulation, insulated metal roof, underfloor heating and a solid-fuel stove. Carport and summer kitchen. The photos show bright new interiors and wide views. An older house and outbuilding on the land are dilapidated.
-
-https://realhunt.co/deal/si-kozjak-kungota-renovated-country-house-2ha-245k
 
 ### Restored Prekmurje farmhouse with antique furniture in Ivanjševci, Goričko
 

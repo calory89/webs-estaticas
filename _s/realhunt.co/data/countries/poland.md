@@ -1,6 +1,6 @@
 # Cheap homes in Poland: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 31 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 31 homes is €75,170 (€1,139 per m², from the 31 homes with a known size); the cheapest costs €53,693 and the most expensive €90,600. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
+On 28 November 2026, RealHunt lists 32 homes for sale in Poland, each one checked by a person. In Poland, the median asking price of those 32 homes is €75,170 (€1,139 per m², from the 32 homes with a known size); the cheapest costs €49,707 and the most expensive €90,600. Taxes and fees add about 2.5–4% to the price of a home in Poland (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/poland · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/poland.json · PDF: https://realhunt.co/data/countries/poland.pdf
@@ -9,12 +9,12 @@ Also as JSON: https://realhunt.co/data/countries/poland.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 31 |
+| Homes on RealHunt | 32 |
 | Median asking price | €75,170 |
-| Median price per m² | €1,139 (31 homes with a known size) |
-| Median size | 62 m² |
-| Cheapest and most expensive | €53,693 · €90,600 |
-| Median RealHunt score (70 to 98) | 84 |
+| Median price per m² | €1,139 (32 homes with a known size) |
+| Median size | 63 m² |
+| Cheapest and most expensive | €49,707 · €90,600 |
+| Median RealHunt score (70 to 98) | 86 |
 | Taxes and fees to buy | 2.5–4% of the price (as of 2026) |
 | Can foreigners buy? | EU, EEA and Swiss citizens buy on the same terms as Poles. Other foreigners can buy an apartment without a permit, but usually need a permit from the Ministry of the Interior (MSWiA) to buy a house or land. |
 | Yearly property tax | Owners pay a local property tax (podatek od nieruchomości) set by the commune, capped in 2026 at PLN 1.25 per m² of usable floor space for flats and houses. |
@@ -45,7 +45,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/poland
 
-## The 31 homes, best score first
+## The 32 homes, best score first
 
 ### 127 m² four-room flat with a loggia and pantry in Bytom
 
@@ -62,6 +62,14 @@ https://realhunt.co/deal/pl-bytom-57k-186977
 78 m² on the top floor of a small 1925 building in Dębowa Góra: four rooms, a white kitchen, a modern bathroom with a bath and access to a shared attic. Light floors and fresh walls, ready to live in; the buyer pays no commission. Asking 265,000 zł (about €60,547). At about €776/m² it is roughly 48% below the median asking price for flats in Sosnowiec (6,587 zł/m², Morizon sample, October 2026).
 
 https://realhunt.co/deal/pl-sosnowiec-61k-790712
+
+### Well maintained semi-detached house with garden and fireplace in Rumia, Pomerania
+
+€49,707 · Rumia, Pomerania · 100 m² · RealHunt score 93 · added 2026-11-28
+
+This well maintained semi-detached house, built in 2009, is in Janowo, Rumia. The ground floor has a living room, separate kitchen and WC, and the first floor has two bedrooms with balconies and a bathroom with bath and shower. Outdoor and extra features include a garden of about 161 m², a fireplace in the living room, two courtyard parking spaces and CCTV. The home has gas heating and a new Viessmann boiler fitted two years ago, and it is a 5-minute walk from Rumia Janowo SKM station. Asking €49,707, about €497/m².
+
+https://realhunt.co/deal/pl-rumia-well-maintained-house-garden-fireplace-50k
 
 ### Two-level flat with its own garden and garage in Jędrzejów
 

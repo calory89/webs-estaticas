@@ -1,6 +1,6 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 107 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 107 homes is €97,000 (€1,138 per m², from the 89 homes with a known size); the cheapest costs €12,000 and the most expensive €215,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 28 November 2026, RealHunt lists 108 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 108 homes is €97,000 (€1,138 per m², from the 90 homes with a known size); the cheapest costs €12,000 and the most expensive €215,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/italy · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 107 |
+| Homes on RealHunt | 108 |
 | Median asking price | €97,000 |
-| Median price per m² | €1,138 (89 homes with a known size) |
-| Median size | 85 m² |
+| Median price per m² | €1,138 (90 homes with a known size) |
+| Median size | 86 m² |
 | Cheapest and most expensive | €12,000 · €215,000 |
 | Median RealHunt score (70 to 98) | 82 |
 | Taxes and fees to buy | 4–15% of the price (as of 2026) |
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 107 homes, best score first
+## The 108 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -188,6 +188,14 @@ https://realhunt.co/deal/falconara-albanese-41000
 This move-in ready townhouse is in good condition and can be lived in immediately. It offers 110 square metres with two bedrooms, a study, one bathroom, a kitchen, a dining area, a living room and a second small kitchen. Both bedrooms have private balconies, and a separate entrance leads to a spacious cellar. The home has gas-fired central heating, is located in a central village position and is less than 30 minutes by car from the Adriatic beaches. Asking €59,000, about €536/m².
 
 https://realhunt.co/deal/it-alanno-ready-townhouse-balconies-cellar-village-59k
+
+### Detached house with private garden and countryside views in Torrita di Siena, Tuscany
+
+€89,000 · Torrita di Siena, Tuscany · 188 m² · 3 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This detached house in Torrita di Siena offers 188 square metres of living space over two levels. The home has a spacious kitchen, a bright living room, three bedrooms and one bathroom. Outside there is a private garden of 1,500 square metres and a panoramic balcony with views of the countryside. The basement holds two large garages, a cellar, storage rooms and the heating system. It is a few steps from the historic centre, with local services close by. Asking €89,000, about €473/m².
+
+https://realhunt.co/deal/it-torrita-di-siena-detached-house-garden-views-89k
 
 ### Renovated detached house with garden and solar panels in Carpignano Salentino, Apulia
 

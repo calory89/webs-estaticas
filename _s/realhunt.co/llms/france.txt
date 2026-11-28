@@ -1,6 +1,6 @@
 # RealHunt: France
 
-> Homes for sale in France on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-28. 305 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
+> Homes for sale in France on RealHunt, with the buying guide and the costs of buying there. Updated 2026-11-28. 306 homes. Index of every country: https://realhunt.co/llms.txt. Licence CC BY 4.0: quote it with a link to the page it comes from. Legal and tax notes are general information, not advice.
 
 
 ---
@@ -16,10 +16,10 @@ List last changed 28 November 2026. Jump to the homes
 - [Cheapest€39,000Renovated two-room flat for €39,000 in Saint-ÉtienneMontaud, Saint-Étienne45 m² · 1 bed · €867/m² · 46 days on RealHuntCommunity fee not stated](https://realhunt.co/deal/fr-saint-etienne-39k-705662)
 - [Most space for the moneyNew€95,700Move-in ready 4-bedroom house with cellar and outbuildings in Monts-sur-Guesnes, VienneMonts-sur-Guesnes, Vienne238 m² · 4 bed · €402/m² · Added today](https://realhunt.co/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k)
 
-RealHunt lists 305 houses for sale in France today, priced from €39,000 to €214,000. The cheapest costs €39,000: [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662), in Montaud (45 m², 1 bedroom). The median price is €124,800 (€1,053/m²), against €115,000 (€1,140/m²) for the 1006 homes on RealHunt in 23 countries.
+RealHunt lists 306 houses for sale in France today, priced from €39,000 to €214,000. The cheapest costs €39,000: [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662), in Montaud (45 m², 1 bedroom). The median price is €124,800 (€1,050/m²), against €115,000 (€1,113/m²) for the 1058 homes on RealHunt in 28 countries.
 
 Homes
-305
+306
 
 From
 €39,000
@@ -28,7 +28,7 @@ Median price
 €124,800
 
 Median per m²
-€1,053/m²
+€1,050/m²
 
 Median size
 115 m²
@@ -45,7 +45,7 @@ Can buy freely
 Data of
 28 Nov 2026
 
-### The 30 best of 305, by score
+### The 30 best of 306, by score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [See these homes on the map](https://realhunt.co/map?country=France)
 
@@ -77,14 +77,14 @@ Sorted by RealHunt score, best first. For the cheapest first, see the table belo
 - [Score 88New€87,5004-bedroom brick house with garage, cellars and outbuildings in Orbec, CalvadosOrbec, Normandy142 m² · 4 bed · €616/m² · Added todayThis brick house offers 142 m2 of living space across 6 rooms, with 4 bedrooms and 1 bathroom.](https://realhunt.co/deal/fr-orbec-brick-house-garage-cellars-88k)
 - [Score 88New€125,000Two-level 4-bedroom house with garden and garage in Buxières-sous-les-Côtes, Meuse, LorraineBuxières-sous-les-Côtes, Lorraine170 m² · 4 bed · €735/m² · Added todayThis semi-detached house spreads 170 m² of living space over two levels.](https://realhunt.co/deal/fr-buxieres-sous-les-cotes-house-garden-garage-fireplace-125k)
 - [Score 88New€149,500Renovated 3-bedroom cottage with garden and garage in Trie-sur-Baïse, Hautes-PyrénéesTrie-sur-Baïse, Hautes-Pyrénées195 m² · 3 bed · €767/m² · 1 day on RealHuntRenovated semi-detached cottage built in 1776, with a light triple-aspect living room featuring a fireplace and French doors to the terrace.](https://realhunt.co/deal/fr-trie-sur-baise-renovated-cottage-garden-garage-149k)
+- [Score 87New€76,500Four-bedroom house with garden and terrace in Montluçon, AllierMontluçon, Allier115 m² · 4 bed · €665/m² · Added todayThis is a four-bedroom house in a sought-after area of Montluçon, with 115 m2 of living space.](https://realhunt.co/deal/fr-montlucon-house-fireplace-terrace-garage-garden-76k)
 - [Score 87New€112,500Character 5-bedroom townhouse with enclosed garden in Saint-Fraimbault, Orne, NormandySaint-Fraimbault, Normandy177 m² · 5 bed · €636/m² · Added todayThis character townhouse, dating from the 1800s, has five bedrooms and 177 m2 of living space.](https://realhunt.co/deal/fr-saint-fraimbault-character-townhouse-garden-lakeside-112k)
-- [Score 87New€86,000Renovated 3-bedroom house with garden and countryside views in Sanxay, VienneSanxay, Vienne90 m² · 3 bed · €956/m² · Added todayThis renovated house on medieval foundations is suitable for all year living.](https://realhunt.co/deal/fr-sanxay-renovated-village-house-wine-cellar-86k)
 
-Showing the 30 best-scored of 305 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 306 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 30 cheapest of 305
+### Compare the 30 cheapest of 306
 
-Median price per m² of this list: €1,053/m².
+Median price per m² of this list: €1,050/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Renovated two-room flat for €39,000 in Saint-Étienne](https://realhunt.co/deal/fr-saint-etienne-39k-705662) | Montaud, Saint-Étienne | €39,000 | 45 m² | €867/m² | 1 | 84 | 13 Oct 2026
@@ -118,21 +118,21 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Character house with panoramic views in Treignac](https://realhunt.co/deal/fr-treignac-66k-6l5r27) | Treignac, Corrèze | €66,600 | 88 m² | €757/m² | 2 | 83 | 5 Oct 2026
 [Move-in ready stone townhouse with fireplace and terrace in Montsecret-Clairefougère, Normandy](https://realhunt.co/deal/fr-montsecret-clairefougere-stone-townhouse-fireplace-terrace-69k) | Montsecret-Clairefougère, Normandy | €69,000 | 104 m² | €663/m² | 3 | 88 | 28 Nov 2026
 
-### The 305 homes in numbers
+### The 306 homes in numbers
 
 - Size: half of them have 115 m² or more. The largest has 307 m²: [4-bedroom manor house with garden, terrace and outbuilding in Durance, Lot-et-Garonne](https://realhunt.co/deal/fr-durance-manor-house-garden-terrace-outbuilding-150k).
-- Bedrooms: 13 with 1 bedroom, 78 with 2, 119 with 3, 93 with 4 or more; 2 listings do not say.
-- Type: 11 apartments and 294 houses.
-- Setting: 1 by the sea, 238 in villages, 43 in towns.
+- Bedrooms: 13 with 1 bedroom, 78 with 2, 119 with 3, 94 with 4 or more; 2 listings do not say.
+- Type: 11 apartments and 295 houses.
+- Setting: 1 by the sea, 238 in villages, 44 in towns.
 - Where: Charente (31), Burgundy (24), Languedoc (20), Dordogne (15), Brittany (14), Vienne (14).
 - Lowest median price: Saint-Étienne, €55,500 across 4 homes. Highest: Provence, €168,000 across 4.
-- Extras named in the listings: 201 with a garden, 137 with a terrace, 151 with a garage, 8 with a pool, 128 with a fireplace, 1 with a sauna.
+- Extras named in the listings: 202 with a garden, 138 with a terrace, 152 with a garage, 8 with a pool, 129 with a fireplace, 1 with a sauna.
 - Scores: 74 to 92 out of 98. The best rated: [171 m² house with a former shop in the centre of Bussière-Poitevine](https://realhunt.co/deal/fr-bussiere-poitevine-39k-088775).
-- Newest, added 28 November 2026: [Move-in ready 4-bedroom house with cellar and outbuildings in Monts-sur-Guesnes, Vienne](https://realhunt.co/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k). 286 of these homes were added in the last 30 days.
+- Newest, added 28 November 2026: [Move-in ready 4-bedroom house with cellar and outbuildings in Monts-sur-Guesnes, Vienne](https://realhunt.co/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k). 287 of these homes were added in the last 30 days.
 
 ### What your money buys here
 
-Split into three groups of the same size by asking price: from €39,000 to €108,000, 102 homes with a median of 87 m², most often 2 bedrooms; from €108,900 to €137,000, 101 homes with a median of 116 m², most often 3 bedrooms; from €137,000 to €214,000, 102 homes with a median of 130 m², most often 3 bedrooms.
+Split into three groups of the same size by asking price: from €39,000 to €108,000, 102 homes with a median of 87 m², most often 2 bedrooms; from €108,000 to €137,000, 102 homes with a median of 116 m², most often 3 bedrooms; from €137,000 to €214,000, 102 homes with a median of 130 m², most often 3 bedrooms.
 
 ### Median price by region in France
 
@@ -168,7 +168,7 @@ Pas-de-Calais | 2 | €116,000
 Morbihan | 1 | €125,080
 Haute-Loire | 1 | €127,000
 [Brittany](https://realhunt.co/homes/france/brittany) | 14 | €129,000
-[Allier](https://realhunt.co/homes/france/allier) | 7 | €129,000
+[Allier](https://realhunt.co/homes/france/allier) | 8 | €129,000
 [Haute-Marne](https://realhunt.co/homes/france/haute-marne) | 4 | €129,800
 Lot | 2 | €129,900
 Île-de-France | 1 | €129,990
@@ -223,18 +223,18 @@ General information, not tax or legal advice. Figures checked in 2026.
 
 ### What to watch out for
 
-- 3 of the 305 listings give no floor area, so their price per m² cannot be compared.
+- 3 of the 306 listings give no floor area, so their price per m² cannot be compared.
 - 11 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- 3 of 305 are close to a motorway, a railway or an airport (high on our noise check).
-- 2 of 305 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
-- 2 of 305 show an approximate map position: the listing names the town, not the street.
+- 3 of 306 are close to a motorway, a railway or an airport (high on our noise check).
+- 2 of 306 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
+- 2 of 306 show an approximate map position: the listing names the town, not the street.
 - As a group these homes score lowest on buying costs (36/100 on average) and highest on distance to an airport (77/100).
 
 ### Questions buyers ask
 
 #### How much does a house for sale in France cost?
 
-Asking prices run from €39,000 to €214,000 across 305 homes. The median is €124,800, or €1,053/m².
+Asking prices run from €39,000 to €214,000 across 306 homes. The median is €124,800, or €1,050/m².
 
 #### What is the cheapest house for sale in France?
 
@@ -254,35 +254,35 @@ Among regions with at least 3 homes on RealHunt, Saint-Étienne has the lowest m
 
 ### More searches in France
 
-By budget [Under €50,000 5](https://realhunt.co/homes/france/under-50000) [Under €60,000 24](https://realhunt.co/homes/france/under-60000) [Under €80,000 42](https://realhunt.co/homes/france/under-80000) [Under €100,000 90](https://realhunt.co/homes/france/under-100000) [Under €150,000 272](https://realhunt.co/homes/france/under-150000)
+By budget [Under €50,000 5](https://realhunt.co/homes/france/under-50000) [Under €60,000 24](https://realhunt.co/homes/france/under-60000) [Under €80,000 43](https://realhunt.co/homes/france/under-80000) [Under €100,000 91](https://realhunt.co/homes/france/under-100000) [Under €150,000 273](https://realhunt.co/homes/france/under-150000)
 
-By setting [Village houses 238](https://realhunt.co/homes/france/village-houses) [In town 43](https://realhunt.co/homes/france/in-town)
+By setting [Village houses 238](https://realhunt.co/homes/france/village-houses) [In town 44](https://realhunt.co/homes/france/in-town)
 
 By type [Apartments 11](https://realhunt.co/homes/france/apartments)
 
-By bedrooms [1 bedroom 13](https://realhunt.co/homes/france/1-bedroom) [2 bedrooms 78](https://realhunt.co/homes/france/2-bedroom) [3 bedrooms 119](https://realhunt.co/homes/france/3-bedroom) [4+ bedrooms 93](https://realhunt.co/homes/france/4-bedroom)
+By bedrooms [1 bedroom 13](https://realhunt.co/homes/france/1-bedroom) [2 bedrooms 78](https://realhunt.co/homes/france/2-bedroom) [3 bedrooms 119](https://realhunt.co/homes/france/3-bedroom) [4+ bedrooms 94](https://realhunt.co/homes/france/4-bedroom)
 
-By region [Charente 31](https://realhunt.co/homes/france/charente) [Burgundy 24](https://realhunt.co/homes/france/burgundy) [Languedoc 20](https://realhunt.co/homes/france/languedoc) [Dordogne 15](https://realhunt.co/homes/france/dordogne) [Brittany 14](https://realhunt.co/homes/france/brittany) [Vienne 14](https://realhunt.co/homes/france/vienne) [Lot-et-Garonne 12](https://realhunt.co/homes/france/lot-et-garonne) [Deux-Sèvres 10](https://realhunt.co/homes/france/deux-sevres) [Poitou-Charentes 10](https://realhunt.co/homes/france/poitou-charentes) [Allier 7](https://realhunt.co/homes/france/allier) [Creuse 7](https://realhunt.co/homes/france/creuse) [Haute-Vienne 7](https://realhunt.co/homes/france/haute-vienne) [Lorraine 7](https://realhunt.co/homes/france/lorraine) [Corrèze 6](https://realhunt.co/homes/france/correze) [Gers 6](https://realhunt.co/homes/france/gers) [Indre-et-Loire 6](https://realhunt.co/homes/france/indre-et-loire) [Aude 5](https://realhunt.co/homes/france/aude) [Charente-Maritime 5](https://realhunt.co/homes/france/charente-maritime) [Auvergne 4](https://realhunt.co/homes/france/auvergne) [Aveyron 4](https://realhunt.co/homes/france/aveyron) [Haute-Marne 4](https://realhunt.co/homes/france/haute-marne) [Indre 4](https://realhunt.co/homes/france/indre) [Mayenne 4](https://realhunt.co/homes/france/mayenne) [Normandy 4](https://realhunt.co/homes/france/normandy)
+By region [Charente 31](https://realhunt.co/homes/france/charente) [Burgundy 24](https://realhunt.co/homes/france/burgundy) [Languedoc 20](https://realhunt.co/homes/france/languedoc) [Dordogne 15](https://realhunt.co/homes/france/dordogne) [Brittany 14](https://realhunt.co/homes/france/brittany) [Vienne 14](https://realhunt.co/homes/france/vienne) [Lot-et-Garonne 12](https://realhunt.co/homes/france/lot-et-garonne) [Deux-Sèvres 10](https://realhunt.co/homes/france/deux-sevres) [Poitou-Charentes 10](https://realhunt.co/homes/france/poitou-charentes) [Allier 8](https://realhunt.co/homes/france/allier) [Creuse 7](https://realhunt.co/homes/france/creuse) [Haute-Vienne 7](https://realhunt.co/homes/france/haute-vienne) [Lorraine 7](https://realhunt.co/homes/france/lorraine) [Corrèze 6](https://realhunt.co/homes/france/correze) [Gers 6](https://realhunt.co/homes/france/gers) [Indre-et-Loire 6](https://realhunt.co/homes/france/indre-et-loire) [Aude 5](https://realhunt.co/homes/france/aude) [Charente-Maritime 5](https://realhunt.co/homes/france/charente-maritime) [Auvergne 4](https://realhunt.co/homes/france/auvergne) [Aveyron 4](https://realhunt.co/homes/france/aveyron) [Haute-Marne 4](https://realhunt.co/homes/france/haute-marne) [Indre 4](https://realhunt.co/homes/france/indre) [Mayenne 4](https://realhunt.co/homes/france/mayenne) [Normandy 4](https://realhunt.co/homes/france/normandy)
 
 By area [Limousin 26](https://realhunt.co/homes/france/limousin)
 
-By feature [Near a lake 3](https://realhunt.co/cheap-houses/near-a-lake-in-france) [With a garden 201](https://realhunt.co/cheap-houses/with-garden-in-france) [With a pool 8](https://realhunt.co/cheap-houses/with-pool-in-france) [Stone houses 67](https://realhunt.co/cheap-houses/stone-houses-in-france) [Cabins and cottages 13](https://realhunt.co/cheap-houses/cabins-and-cottages-in-france) [With a terrace 138](https://realhunt.co/cheap-houses/with-a-terrace-in-france) [Move-in ready 73](https://realhunt.co/cheap-houses/turnkey-in-france) [With land 37](https://realhunt.co/cheap-houses/with-land-in-france) [With a fireplace 128](https://realhunt.co/cheap-houses/with-fireplace-in-france) [With a garage 151](https://realhunt.co/cheap-houses/with-garage-in-france) [In the mountains 6](https://realhunt.co/cheap-houses/in-the-mountains-in-france) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-france) [Near an airport 36](https://realhunt.co/cheap-houses/near-an-airport-in-france) [Under €500/m² 6](https://realhunt.co/cheap-houses/under-500-per-sqm-in-france) [Over 100 m² under €50,000 3](https://realhunt.co/cheap-houses/over-100-sqm-under-50000-in-france) [Score 90+ 15](https://realhunt.co/cheap-houses/score-90-plus-in-france) [Hand-picked 8](https://realhunt.co/cheap-houses/editors-picks-in-france) [New this week 269](https://realhunt.co/cheap-houses/new-this-week-in-france) [Single-storey 12](https://realhunt.co/cheap-houses/single-storey-in-france) [Period features 37](https://realhunt.co/cheap-houses/with-period-features-in-france) [Quiet location 16](https://realhunt.co/cheap-houses/quiet-location-in-france) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings-in-france) [Business premises 3](https://realhunt.co/cheap-houses/with-business-premises-in-france) [Fibre internet 7](https://realhunt.co/cheap-houses/with-fibre-internet-in-france) [Over 80 m² 264](https://realhunt.co/cheap-houses/over-80-sqm-in-france) [Over 120 m² 125](https://realhunt.co/cheap-houses/over-120-sqm-in-france)
+By feature [Near a lake 3](https://realhunt.co/cheap-houses/near-a-lake-in-france) [With a garden 202](https://realhunt.co/cheap-houses/with-garden-in-france) [With a pool 8](https://realhunt.co/cheap-houses/with-pool-in-france) [Stone houses 67](https://realhunt.co/cheap-houses/stone-houses-in-france) [Cabins and cottages 13](https://realhunt.co/cheap-houses/cabins-and-cottages-in-france) [With a terrace 139](https://realhunt.co/cheap-houses/with-a-terrace-in-france) [Move-in ready 73](https://realhunt.co/cheap-houses/turnkey-in-france) [With land 37](https://realhunt.co/cheap-houses/with-land-in-france) [With a fireplace 129](https://realhunt.co/cheap-houses/with-fireplace-in-france) [With a garage 152](https://realhunt.co/cheap-houses/with-garage-in-france) [In the mountains 6](https://realhunt.co/cheap-houses/in-the-mountains-in-france) [Olive trees or vines 10](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-france) [Near an airport 36](https://realhunt.co/cheap-houses/near-an-airport-in-france) [Under €500/m² 6](https://realhunt.co/cheap-houses/under-500-per-sqm-in-france) [Over 100 m² under €50,000 3](https://realhunt.co/cheap-houses/over-100-sqm-under-50000-in-france) [Score 90+ 15](https://realhunt.co/cheap-houses/score-90-plus-in-france) [Hand-picked 8](https://realhunt.co/cheap-houses/editors-picks-in-france) [New this week 270](https://realhunt.co/cheap-houses/new-this-week-in-france) [Single-storey 12](https://realhunt.co/cheap-houses/single-storey-in-france) [Period features 37](https://realhunt.co/cheap-houses/with-period-features-in-france) [Quiet location 16](https://realhunt.co/cheap-houses/quiet-location-in-france) [Unusual buildings 3](https://realhunt.co/cheap-houses/unusual-buildings-in-france) [Business premises 3](https://realhunt.co/cheap-houses/with-business-premises-in-france) [Fibre internet 7](https://realhunt.co/cheap-houses/with-fibre-internet-in-france) [Over 80 m² 265](https://realhunt.co/cheap-houses/over-80-sqm-in-france) [Over 120 m² 125](https://realhunt.co/cheap-houses/over-120-sqm-in-france)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-france) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-france) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-france)
 
-By feature and budget [Houses under €100,000 79](https://realhunt.co/cheap-houses/houses-under-100000-in-france) [With a garden under €100,000 46](https://realhunt.co/cheap-houses/with-garden-under-100000-in-france) [Move-in ready under €100,000 26](https://realhunt.co/cheap-houses/turnkey-under-100000-in-france) [Stone houses under €100,000 16](https://realhunt.co/cheap-houses/stone-houses-under-100000-in-france) [Village houses under €50,000 4](https://realhunt.co/cheap-houses/village-houses-under-50000-in-france)
+By feature and budget [Houses under €100,000 80](https://realhunt.co/cheap-houses/houses-under-100000-in-france) [With a garden under €100,000 47](https://realhunt.co/cheap-houses/with-garden-under-100000-in-france) [Move-in ready under €100,000 26](https://realhunt.co/cheap-houses/turnkey-under-100000-in-france) [Stone houses under €100,000 16](https://realhunt.co/cheap-houses/stone-houses-under-100000-in-france) [Village houses under €50,000 4](https://realhunt.co/cheap-houses/village-houses-under-50000-in-france)
 
-In pounds and dollars [Under £100,000 136](https://realhunt.co/cheap-houses/under-100000-pounds-in-france) [Under $100,000 59](https://realhunt.co/cheap-houses/under-100000-dollars-in-france)
+In pounds and dollars [Under £100,000 137](https://realhunt.co/cheap-houses/under-100000-pounds-in-france) [Under $100,000 60](https://realhunt.co/cheap-houses/under-100000-dollars-in-france)
 
 Near a city [Near Lyon 7](https://realhunt.co/cheap-houses/near-lyon) [Near Toulouse 32](https://realhunt.co/cheap-houses/near-toulouse)
 
-Neighbouring countries [Spain 171](https://realhunt.co/homes/spain) [Italy 107](https://realhunt.co/homes/italy) [Switzerland 10](https://realhunt.co/homes/switzerland) [Germany 18](https://realhunt.co/homes/germany)
+Neighbouring countries [Spain 171](https://realhunt.co/homes/spain) [Italy 108](https://realhunt.co/homes/italy) [Switzerland 10](https://realhunt.co/homes/switzerland) [Germany 18](https://realhunt.co/homes/germany)
 
-By country [Spain 171](https://realhunt.co/homes/spain) [Italy 107](https://realhunt.co/homes/italy) [Greece 65](https://realhunt.co/homes/greece) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 31](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Portugal 27](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Germany 18](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 7](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Cyprus 4](https://realhunt.co/homes/cyprus) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [Spain 171](https://realhunt.co/homes/spain) [Italy 108](https://realhunt.co/homes/italy) [Greece 66](https://realhunt.co/homes/greece) [United States 64](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 32](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Portugal 28](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Canada 18](https://realhunt.co/homes/canada) [Germany 18](https://realhunt.co/homes/germany) [Switzerland 10](https://realhunt.co/homes/switzerland) [Bulgaria 8](https://realhunt.co/homes/bulgaria) [United Kingdom 8](https://realhunt.co/homes/united-kingdom) [Mexico 7](https://realhunt.co/homes/mexico) [Uruguay 6](https://realhunt.co/homes/uruguay) [Cyprus 5](https://realhunt.co/homes/cyprus) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [Ireland 4](https://realhunt.co/homes/ireland) [Thailand 3](https://realhunt.co/homes/thailand) [Brazil 3](https://realhunt.co/homes/brazil) [Finland 3](https://realhunt.co/homes/finland) [Slovenia 3](https://realhunt.co/homes/slovenia) [Turkey 3](https://realhunt.co/homes/turkey) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
-How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 61 of these 305 homes were checked against the original listing in the last 30 days. 3 homes in France left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 61 of these 306 homes were checked against the original listing in the last 30 days. 3 homes in France left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
-These listings come from green-acres.fr (277), bienici.com (25), french-property.com (1), instagram.com (1), rightmove.co.uk (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from green-acres.fr (278), bienici.com (25), french-property.com (1), instagram.com (1), rightmove.co.uk (1). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in France](https://realhunt.co/alerts?country=France) · [Filter and sort these homes](https://realhunt.co/?country=France#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in France](https://realhunt.co/sitemap/france)
 
@@ -328,7 +328,7 @@ Tax on rental income: Non-residents pay French income tax on French rental incom
 - [€123,000 · Fully renovated 19th-century longère on one level with garage in Lencloître, Vienne](https://realhunt.co/deal/fr-lencloitre-123k-157528) · Lencloître, Vienne · score 91 · 102 m² · 2 bed
 - [€139,000 · Former level-crossing keeper's house renovated in 2023 on 1,824 m² in Bergerac, Dordogne](https://realhunt.co/deal/fr-bergerac-139k-175736) · Bergerac, Dordogne · score 91 · 77 m² · 2 bed
 
-[All 305 homes in France](https://realhunt.co/homes/france)
+[All 306 homes in France](https://realhunt.co/homes/france)
 
 [Costs, taxes and sources for France](https://realhunt.co/costs/france) · [Buying-cost calculator for France](https://realhunt.co/buying-costs/france) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -339,8 +339,8 @@ Tax on rental income: Non-residents pay French income tax on French rental incom
 - [France vs Greece](https://realhunt.co/countries/france-vs-greece)
 - [France vs United States](https://realhunt.co/countries/france-vs-united-states)
 - [France vs Denmark](https://realhunt.co/countries/denmark-vs-france)
-- [France vs Sweden](https://realhunt.co/countries/france-vs-sweden)
 - [France vs Portugal](https://realhunt.co/countries/france-vs-portugal)
+- [France vs Sweden](https://realhunt.co/countries/france-vs-sweden)
 - [France vs Poland](https://realhunt.co/countries/france-vs-poland)
 
 ### Sources
@@ -404,7 +404,7 @@ Non-residents pay French income tax on French rental income at a minimum rate of
 - [€125,000 · Renovated stone house with a 60 m² living space and mezzanine near Villefagnan, Charente](https://realhunt.co/deal/fr-villefagnan-125k-152329) · Villefagnan, Charente · score 91 · 153 m² · 3 bed
 - [€149,000 · Fully renovated 250 m² house from 1900 with five bedrooms in La Courtine, Creuse](https://realhunt.co/deal/fr-la-courtine-149k-115059) · La Courtine, Creuse · score 91 · 250 m² · 5 bed
 
-[All 305 homes in France](https://realhunt.co/homes/france)
+[All 306 homes in France](https://realhunt.co/homes/france)
 
 [How to buy a home in France, step by step](https://realhunt.co/guide/france)
 
@@ -416,7 +416,7 @@ Source: https://realhunt.co/data/countries/france.md
 
 # Cheap homes in France: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 305 homes for sale in France, each one checked by a person. In France, the median asking price of those 305 homes is €124,800 (€1,053 per m², from the 302 homes with a known size); the cheapest costs €39,000 and the most expensive €214,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
+On 28 November 2026, RealHunt lists 306 homes for sale in France, each one checked by a person. In France, the median asking price of those 306 homes is €124,800 (€1,050 per m², from the 303 homes with a known size); the cheapest costs €39,000 and the most expensive €214,000. Taxes and fees add about 7–8.5% to the price of a home in France (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/france · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://realhunt.co/data/countries/france.pdf
@@ -425,9 +425,9 @@ Also as JSON: https://realhunt.co/data/countries/france.json · PDF: https://rea
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 305 |
+| Homes on RealHunt | 306 |
 | Median asking price | €124,800 |
-| Median price per m² | €1,053 (302 homes with a known size) |
+| Median price per m² | €1,050 (303 homes with a known size) |
 | Median size | 115 m² |
 | Cheapest and most expensive | €39,000 · €214,000 |
 | Median RealHunt score (70 to 98) | 82 |
@@ -463,7 +463,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/france
 
-## The 305 homes, best score first
+## The 306 homes, best score first
 
 ### 171 m² house with a former shop in the centre of Bussière-Poitevine
 
@@ -704,6 +704,14 @@ https://realhunt.co/deal/fr-exideuil-sur-vienne-holiday-cottage-barn-plot-56k
 This cottage sits in a quiet hamlet and is ideal to lock up and leave. It has 2 bedrooms, 1 bathroom, a cosy living room with a fireplace, and a kitchen diner. Outside there is a wooden deck, a large attached barn, a 710 m² garden opposite the house and 2.85 acres of land. Heating is by wood, and the village with shops and a medical centre is a few minutes away. Limoges and Poitiers airports are about 50 minutes away. Asking €60,000, about €667/m².
 
 https://realhunt.co/deal/fr-bussiere-poitevine-cottage-barn-fireplace-garden-60k
+
+### Four-bedroom house with garden and terrace in Montluçon, Allier
+
+€76,500 · Montluçon, Allier · 115 m² · 4 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This is a four-bedroom house in a sought-after area of Montluçon, with 115 m2 of living space. The house includes a spacious entrance hall, a utility room, a fitted kitchen, a living room with an inset fireplace and access to the terrace, and a toilet. The upper floor has four bedrooms, a bathroom, a toilet and a large terrace. Outdoor features include a garden, a front courtyard, a garage and 1,722 sq ft of land. Asking €76,500, about €665/m².
+
+https://realhunt.co/deal/fr-montlucon-house-fireplace-terrace-garage-garden-76k
 
 ### Renovated 3-bedroom house with garden and countryside views in Sanxay, Vienne
 

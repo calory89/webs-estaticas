@@ -28,14 +28,14 @@ Tax on rental income: Long-term: 25% flat for non-residents; short-term (AL) und
 
 ### Best homes in Portugal
 
+- [€112,500 · In good condition 4-bedroom house with garden, garages and open views in Freineda, Guarda](https://realhunt.co/deal/pt-freineda-detached-house-fireplace-garden-views-112k) · Freineda, Guarda · score 93 · 418 m² · 4 bed
 - [€140,000 · Fully renovated stone house with terrace and outbuilding in Tabuaço, Douro](https://realhunt.co/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k) · Tabuaço, Douro, Viseu · score 92 · 173 m² · 3 bed
 - [€68,500 · Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027) · Penilhos, Mértola, Beja · score 91 · 75 m² · 2 bed
 - [€150,000 · Renovated two-bedroom house with air conditioning in the historic quarter of Estremoz](https://realhunt.co/deal/pt-estremoz-150k-259126) · Estremoz, Évora · score 91 · 110 m² · 2 bed
 - [€125,000 · Detached five-bedroom house with garden, garage and central heating in Brunhoso, Mogadouro](https://realhunt.co/deal/pt-brunhoso-125k-258088) · Brunhoso, Mogadouro, Bragança · score 91 · 170 m² · 5 bed
 - [€115,000 · Fully remodelled Alentejo village house with wooden ceilings in Chança, Alter do Chão](https://realhunt.co/deal/pt-alter-do-chao-115k-285437) · Chança, Alter do Chão, Portalegre · score 91 · 130 m²
-- [€150,000 · Fully renovated three-storey village house in Peso, Covilhã, below Serra da Estrela](https://realhunt.co/deal/pt-covilha-peso-150k-280003) · Peso, Covilhã, Castelo Branco · score 91 · 86 m² · 2 bed
 
-[All 36 homes in Portugal](https://realhunt.co/homes/portugal)
+[All 37 homes in Portugal](https://realhunt.co/homes/portugal)
 
 [Costs, taxes and sources for Portugal](https://realhunt.co/costs/portugal) · [Buying-cost calculator for Portugal](https://realhunt.co/buying-costs/portugal) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 

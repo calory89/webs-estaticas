@@ -1,6 +1,6 @@
 # Casas baratas en Grecia: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 65 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 65 casas es de 130.000 € (1.400 € por m², calculado con las 64 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 210.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 66 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 66 casas es de 135.000 € (1.400 € por m², calculado con las 65 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 210.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/greece · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 65 |
-| Precio de salida mediano | 130.000 € |
-| Precio mediano por m² | 1.400 € (64 casas de superficie conocida) |
+| Casas en RealHunt | 66 |
+| Precio de salida mediano | 135.000 € |
+| Precio mediano por m² | 1.400 € (65 casas de superficie conocida) |
 | Superficie mediana | 90 m² |
 | La más barata y la más cara | 68.000 € · 210.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 87 |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/greece
 
-## Las 65 casas, de mejor a peor nota
+## Las 66 casas, de mejor a peor nota
 
 ### Casa en buen estado con terraza, jardín y suelos de parquet en Sperchogeia, Mesenia
 
@@ -351,6 +351,14 @@ https://realhunt.co/es/deal/gr-limenaria-stone-cottage-garden-fireplace-140k
 Casa de dos plantas totalmente reformada, de 104 m², con entrada independiente para cada planta. Cada planta es independiente, con un dormitorio, salón con cocina, baño y veranda, y la veranda superior tiene barbacoa. Se vende totalmente amueblada, con muebles de madera nuevos, e incluye frigorífico, dos lavavajillas, lavadora, cocina eléctrica, un horno eléctrico pequeño y dos campanas extractoras. Tiene calefacción central de gasóleo y 926 pies cuadrados de terreno, a 50 metros del mar, en el centro de Afissos. Precio 180.000 €, unos 1.731 €/m².
 
 https://realhunt.co/es/deal/gr-afissos-renovated-furnished-two-storey-house-180k
+
+### Casa de 3 dormitorios en buen estado con jardín y vistas en Archaio Limani, Corinthia, Peloponeso
+
+197.000 € · Archaio Limani, Corinthia, Peloponnese · 160 m² · 3 dormitorios · nota RealHunt 86 · añadida el 2026-11-28
+
+Esta casa independiente está en buen estado y se distribuye en dos plantas, planta baja y primera planta. Tiene 3 dormitorios, un amplio salón comedor con chimenea y 2 baños. Una parcela de 1.000 m² alberga un gran jardín con olivos y frutales, y amplias galerías ofrecen vistas panorámicas. Dispone de aparcamiento para 2 vehículos y calefacción central de gasóleo. La playa está a 5 minutos en coche y el transporte público queda cerca. Precio 197.000 €, unos 1.231 €/m².
+
+https://realhunt.co/es/deal/gr-archaio-limani-good-condition-house-garden-views-197k
 
 ### Piso amueblado de dos dormitorios con vistas al mar en Pefki, norte de Eubea
 

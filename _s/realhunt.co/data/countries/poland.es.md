@@ -1,6 +1,6 @@
 # Casas baratas en Polonia: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 31 casas en venta en Polonia, revisadas una a una por una persona. En Polonia, el precio de salida mediano de esas 31 casas es de 75.170 € (1.139 € por m², calculado con las 31 casas de superficie conocida); la más barata cuesta 53.693 € y la más cara, 90.600 €. Los impuestos y gastos de compra suman alrededor del 2,5–4% del precio de una casa en Polonia (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 32 casas en venta en Polonia, revisadas una a una por una persona. En Polonia, el precio de salida mediano de esas 32 casas es de 75.170 € (1.139 € por m², calculado con las 32 casas de superficie conocida); la más barata cuesta 49.707 € y la más cara, 90.600 €. Los impuestos y gastos de compra suman alrededor del 2,5–4% del precio de una casa en Polonia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/poland · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/poland.json · PDF: https://realhunt.co/data/countries/poland.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/poland.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 31 |
+| Casas en RealHunt | 32 |
 | Precio de salida mediano | 75.170 € |
-| Precio mediano por m² | 1.139 € (31 casas de superficie conocida) |
-| Superficie mediana | 62 m² |
-| La más barata y la más cara | 53.693 € · 90.600 € |
-| Nota RealHunt mediana (de 70 a 98) | 84 |
+| Precio mediano por m² | 1.139 € (32 casas de superficie conocida) |
+| Superficie mediana | 63 m² |
+| La más barata y la más cara | 49.707 € · 90.600 € |
+| Nota RealHunt mediana (de 70 a 98) | 86 |
 | Impuestos y gastos de compra | 2,5–4% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Los ciudadanos de la UE, EEE e Islandia compran en los mismos términos que los polacos. Otros extranjeros pueden comprar un apartamento sin permiso, pero normalmente necesitan un permiso del Ministerio del Interior (MSWiA) para comprar una casa o terreno. |
 | Impuesto anual sobre la vivienda | Los propietarios pagan un impuesto local sobre bienes inmuebles (podatek od nieruchomości) que fija el municipio, con un máximo en 2026 de 1,25 PLN por m² de superficie útil en pisos y casas. |
@@ -45,7 +45,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/poland
 
-## Las 31 casas, de mejor a peor nota
+## Las 32 casas, de mejor a peor nota
 
 ### Piso de 127 m² con cuatro estancias, logia y despensa en Bytom
 
@@ -62,6 +62,14 @@ https://realhunt.co/es/deal/pl-bytom-57k-186977
 78 m² en la última planta de un pequeño edificio de 1925 en Dębowa Góra: cuatro estancias, cocina blanca, baño moderno con bañera y acceso a un desván común. Suelos claros y paredes recién pintadas, listo para vivir; el comprador no paga comisión. Precio 265.000 zł (unos 60.547 €). A unos 776 €/m² está aproximadamente un 48% por debajo de la mediana de pisos en venta en Sosnowiec (6.587 zł/m², muestra de Morizon, octubre de 2026).
 
 https://realhunt.co/es/deal/pl-sosnowiec-61k-790712
+
+### Casa adosada bien mantenida con jardín y chimenea en Rumia, Pomerania
+
+49.707 € · Rumia, Pomerania · 100 m² · nota RealHunt 93 · añadida el 2026-11-28
+
+Esta casa adosada bien mantenida, construida en 2009, está en Janowo, Rumia. La planta baja tiene salón, cocina separada y aseo, y la primera planta tiene dos dormitorios con balcón y un baño con bañera y ducha. Entre otros extras, cuenta con un jardín de unos 161 m², chimenea en el salón, dos plazas de aparcamiento en el patio y videovigilancia. La vivienda tiene calefacción de gas y una caldera Viessmann nueva instalada hace dos años, y está a 5 minutos andando de la estación SKM de Rumia Janowo. Precio 49.707 €, unos 497 €/m².
+
+https://realhunt.co/es/deal/pl-rumia-well-maintained-house-garden-fireplace-50k
 
 ### Piso dúplex con jardín propio y garaje en Jędrzejów
 

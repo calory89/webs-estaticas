@@ -47,8 +47,8 @@ Tax on rental income: Rent paid abroad to a non-resident is generally subject to
 - [Dominican Republic vs Greece](https://realhunt.co/countries/dominican-republic-vs-greece)
 - [Dominican Republic vs United States](https://realhunt.co/countries/dominican-republic-vs-united-states)
 - [Dominican Republic vs Denmark](https://realhunt.co/countries/denmark-vs-dominican-republic)
-- [Dominican Republic vs Sweden](https://realhunt.co/countries/dominican-republic-vs-sweden)
 - [Dominican Republic vs Portugal](https://realhunt.co/countries/dominican-republic-vs-portugal)
+- [Dominican Republic vs Sweden](https://realhunt.co/countries/dominican-republic-vs-sweden)
 
 ### Sources
 

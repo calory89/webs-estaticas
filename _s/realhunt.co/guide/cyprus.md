@@ -30,11 +30,12 @@ Tax on rental income: Non-residents pay income tax on Cyprus rental income at 20
 ### Best homes in Cyprus
 
 - [€341,000 · Ready 2-bed flat steps from the beach in Coral Bay, with pool and sea views](https://realhunt.co/deal/cy-coral-bay-341k-080655) · Coral Bay, Paphos · score 93 · 84 m² · 2 bed
+- [€130,000 · Move-in ready 3-bedroom detached house with fireplace and views in Kaminária, Limassol](https://realhunt.co/deal/cy-kaminaria-ready-detached-house-fireplace-views-130k) · Kaminária, Limassol · score 90 · 163 m² · 3 bed
 - [€470,000 · Sea-front ground-floor flat with a 50 m² terrace and overflow pool in Protaras](https://realhunt.co/deal/cy-protaras-470k-585375) · Protaras, Famagusta · score 84 · 85 m² · 2 bed
 - [€130,000 · Furnished two-bedroom flat with title deeds and a shared pool in Mazotos, Larnaca](https://realhunt.co/deal/cy-mazotos-2-bed-pool-130k-477874) · Mazotos, Larnaca · score 83 · 70 m² · 2 bed
 - [€187,000 · Fully renovated two-bedroom townhouse with title deeds in Paralimni, Famagusta](https://realhunt.co/deal/cy-paralimni-renovated-townhouse-title-deeds-187k) · Paralimni, Famagusta · score 82 · 74 m² · 2 bed
 
-[All 4 homes in Cyprus](https://realhunt.co/homes/cyprus)
+[All 5 homes in Cyprus](https://realhunt.co/homes/cyprus)
 
 [Costs, taxes and sources for Cyprus](https://realhunt.co/costs/cyprus) · [Buying-cost calculator for Cyprus](https://realhunt.co/buying-costs/cyprus) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -46,8 +47,8 @@ Tax on rental income: Non-residents pay income tax on Cyprus rental income at 20
 - [Cyprus vs Greece](https://realhunt.co/countries/cyprus-vs-greece)
 - [Cyprus vs United States](https://realhunt.co/countries/cyprus-vs-united-states)
 - [Cyprus vs Denmark](https://realhunt.co/countries/cyprus-vs-denmark)
-- [Cyprus vs Sweden](https://realhunt.co/countries/cyprus-vs-sweden)
 - [Cyprus vs Portugal](https://realhunt.co/countries/cyprus-vs-portugal)
+- [Cyprus vs Sweden](https://realhunt.co/countries/cyprus-vs-sweden)
 
 ### Sources
 

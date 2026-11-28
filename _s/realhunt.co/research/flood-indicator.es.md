@@ -33,8 +33,8 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 - El indicador es un primer filtro, no una evaluación del riesgo de inundación. Fuera de Estados Unidos es una lectura aproximada del terreno: una casa marcada como riesgo bajo puede inundarse, y una marcada como medio puede estar perfectamente protegida por una defensa.
 - Los países no se miden con la misma regla: la cifra de Estados Unidos usa zonas oficiales de inundación en la mayoría de las casas, y los demás no. Compara países con cuidado.
-- 421 casas aún no tienen indicador y no se cuentan. No aparecen los países con menos de 5 casas con indicador; con menos de 10 van marcados como muestra pequeña.
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
+- 473 casas aún no tienen indicador y no se cuentan. No aparecen los países con menos de 5 casas con indicador; con menos de 10 van marcados como muestra pequeña.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.058 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Antes de comprar, comprueba la dirección en el mapa oficial de inundaciones del país y pregunta al vendedor y a la aseguradora por inundaciones anteriores.
 
 ## Cómo citar

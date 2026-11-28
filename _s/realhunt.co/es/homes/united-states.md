@@ -1,34 +1,34 @@
-Título: Casas en venta en Estados Unidos (61, desde 65.428 €)
+Título: Casas en venta en Estados Unidos (64, desde 65.428 €)
 URL: https://realhunt.co/es/homes/united-states
 Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Estados Unidos
 
-Lista cambiada por última vez el 20 de noviembre de 2026. Ir a las viviendas
+Lista cambiada por última vez el 28 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor notaNueva223.300 €Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, VirginiaLynchburg, Virginia289 m² · 3 dorm. · 773 €/m² · 8 días en RealHunt](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
+- [Mejor notaNueva150.535 €Casa lista para entrar a vivir reformada con chimenea y porche envolvente en Cleveland, OhioCleveland, Ohio255 m² · 3 dorm. · 590 €/m² · Añadida hoy](https://realhunt.co/es/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k)
 - [La más barata65.428 €Casa adosada de 3 dormitorios actualizada en McKees Rocks, PensilvaniaMcKees Rocks, Pensilvania106 m² · 3 dorm. · 617 €/m² · 66 días en RealHunt](https://realhunt.co/es/deal/mckees-rocks-65428)
 - [Más metros por el dinero82.875 €Casa de 2 dormitorios lista para entrar a vivir en Chapmanville, Virginia OccidentalChapmanville, Virginia Occidental176 m² · 2 dorm. · 471 €/m² · 66 días en RealHunt](https://realhunt.co/es/deal/chapmanville-82875)
 
-RealHunt tiene hoy 61 casas en venta en Estados Unidos, con precios de 65.428 € a 447.600 €. La más barata cuesta 65.428 €: [Casa adosada de 3 dormitorios actualizada en McKees Rocks, Pensilvania](https://realhunt.co/es/deal/mckees-rocks-65428), en McKees Rocks (106 m², 3 dormitorios). El precio mediano es de 214.900 € (1.560 €/m²), frente a 115.000 € (1.140 €/m²) de las 1006 viviendas de RealHunt en 23 países.
+RealHunt tiene hoy 64 casas en venta en Estados Unidos, con precios de 65.428 € a 447.600 €. La más barata cuesta 65.428 €: [Casa adosada de 3 dormitorios actualizada en McKees Rocks, Pensilvania](https://realhunt.co/es/deal/mckees-rocks-65428), en McKees Rocks (106 m², 3 dormitorios). El precio mediano es de 214.100 € (1.556 €/m²), frente a 115.000 € (1.113 €/m²) de las 1058 viviendas de RealHunt en 28 países.
 
 Viviendas
-61
+64
 
 Desde
 65.428 €
 
 Precio mediano
-214.900 €
+214.100 €
 
 Mediana por m²
-1.560 €/m²
+1.556 €/m²
 
 Tamaño mediano
-121 m²
+122 m²
 
 Mejor nota
 95
@@ -42,10 +42,13 @@ Compra libre
 Datos del
 28 nov 2026
 
-### Las 30 mejores de 61, por nota
+### Las 30 mejores de 64, por nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Todas las viviendas junto al mar](https://realhunt.co/es/homes/united-states/by-the-sea) [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=United+States)
 
+- [Nota 95Nueva150.535 €Casa lista para entrar a vivir reformada con chimenea y porche envolvente en Cleveland, OhioCleveland, Ohio255 m² · 3 dorm. · 590 €/m² · Añadida hoyEsta casa lista para entrar a vivir ha sido reformada y actualizada en todas sus zonas.](https://realhunt.co/es/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k)
+- [Nota 93Nueva118.824 €Casa de 3 dormitorios lista para entrar a vivir con chimenea, terraza y garaje en Dayton, OhioDayton, Ohio128 m² · 3 dorm. · 928 €/m² · Añadida hoyEsta casa lista para entrar a vivir tiene tres dormitorios y un baño en 128 m2 de superficie habitable.](https://realhunt.co/es/deal/us-dayton-ready-house-fireplace-garage-119k)
+- [Nota 93Nueva68.751 €Casa con gran jardín, vidrieras y taller en Conneautville, PensilvaniaConneautville, Pensilvania140 m² · 3 dorm. · 491 €/m² · Añadida hoyEsta casa de 3 dormitorios con 1 baño tiene 140 m2 de superficie habitable sobre 20.042 pies cuadrados de terreno en Conneautville.](https://realhunt.co/es/deal/us-conneautville-stained-glass-woodwork-yard-house-69k)
 - [Nota 93Nueva223.300 €Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, VirginiaLynchburg, Virginia289 m² · 3 dorm. · 773 €/m² · 8 días en RealHuntSe pide US$245.000 (aproximadamente 223,3 €) por una casa victoriana de 1889 renovada de aproximadamente 289 m² en Lynchburg, una ciudad…](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k)
 - [Nota 91153.900 €La histórica Savage House: casa victoriana blanca con porche de encajeScotland Neck, Carolina del Norte199 m² · 3 dorm. · 773 €/m² · 43 días en RealHuntEntra en el encanto de la histórica Savage House, una casa victoriana preciosa de 1900 en Scotland Neck, Carolina del Norte: 199 m² con tres…](https://realhunt.co/es/deal/us-north-carolina-victorian-170k)
 - [Nota 90Nueva227.700 €Casa de rancho elevado boscosa con techos de cedro al otro lado de la carretera del Lago Hurón, AlpenaAlpena, Michigan172 m² · 2 dorm. · 1.324 €/m² · 8 días en RealHuntComunidad 11 euros al mesSe pide US$250.000 (aproximadamente 227,7 €).](https://realhunt.co/es/deal/us-alpena-mi-cedar-ceiling-house-across-from-lake-huron-250k)
@@ -73,18 +76,16 @@ Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a
 - [Nota 86Nueva213.600 €Casa adosada de ladrillo completamente renovada con patio cercado en Lancaster, PensilvaniaLancaster, Pensilvania127 m² · 3 dorm. · 1.682 €/m² · 10 días en RealHuntPidiendo US$235.000 (aproximadamente 213.600 €) por una casa adosada de ladrillo de aproximadamente 127 m² que ha sido completamente reformada.](https://realhunt.co/es/deal/us-lancaster-pa-renovated-brick-rowhouse-235k)
 - [Nota 86134.400 €Condo de dos dormitorios en primera planta actualizado cerca de la playa en Maybury Mansions, Fort LauderdaleMaybury Mansions, Florida81 m² · 2 dorm. · 1.659 €/m² · 20 días en RealHuntComunidad 750 dólares al mesRenovado con acabados modernos, espacios luminosos y acceso exterior privado en la primera planta.](https://realhunt.co/es/deal/us-fort-lauderdale-2455-e102-150k)
 - [Nota 86237.400 €Casa adosada de esquina junto a lago con jardín tropical en Westview, Pembroke PinesPembroke Pines, Florida97 m² · 2 dorm. · 2.447 €/m² · 21 días en RealHuntCuota de comunidad no indicadaUna casa adosada de esquina de 2 dormitorios, 1,5 baños de 1.040 pies cuadrados con espacio verde extra, jardín frontal exuberante, ventanas de…](https://realhunt.co/es/deal/us-pembroke-pines-8982-265k)
-- [Nota 86241.900 €Casa adosada con patio cerrado a tres manzanas de Young Circle, HollywoodHollywood, Florida121 m² · 2 dorm. · 1.999 €/m² · 21 días en RealHuntCuota de comunidad no indicadaCasa adosada de 2 dormitorios y 2,5 baños de 1.300 pies cuadrados con patio cerrado, lavadora y secadora en la unidad y un espacio de aparcamiento…](https://realhunt.co/es/deal/us-hollywood-2200-6-270k)
-- [Nota 86389.800 €Casa renovada con garaje para dos autos y tejado de 2024 en Greenbriar (comunidad 55+), Boca RatonBoca Raton, Florida158 m² · 3 dorm. · 2.467 €/m² · 21 días en RealHuntComunidad 218 dólares al mesComunidad 55+: al menos un residente debe tener 55 años o más.](https://realhunt.co/es/deal/us-boca-raton-18102-435k)
-- [Nota 85159.100 €Cabaña de troncos estilo escandinavo con chimenea de piedra en 4 hectáreasSaxon, Wisconsin133 m² · 3 dorm. · 1.196 €/m² · 43 días en RealHuntGran cabaña de troncos de estilo escandinavo, hecha a medida en 1998, en una carretera rural tranquila de Saxon, Wisconsin, cerca del lago…](https://realhunt.co/es/deal/us-wisconsin-scandi-log-cabin-179k)
 
-Se muestran las 30 con mejor nota de 61 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
+Se muestran las 30 con mejor nota de 64 viviendas. La tabla y las búsquedas más concretas de abajo recogen el resto.
 
-### Compara las 60 más baratas de 61
+### Compara las 60 más baratas de 64
 
-Precio mediano por m² de esta lista: 1.560 €/m².
+Precio mediano por m² de esta lista: 1.556 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa adosada de 3 dormitorios actualizada en McKees Rocks, Pensilvania](https://realhunt.co/es/deal/mckees-rocks-65428) | McKees Rocks, Pensilvania | 65.428 € | 106 m² | 617 €/m² | 3 | 93 | 23 sept 2026
+[Casa con gran jardín, vidrieras y taller en Conneautville, Pensilvania](https://realhunt.co/es/deal/us-conneautville-stained-glass-woodwork-yard-house-69k) | Conneautville, Pensilvania | 68.751 € | 140 m² | 491 €/m² | 3 | 93 | 28 nov 2026
 [Casa de 2 dormitorios actualizada en Cleveland, Oklahoma](https://realhunt.co/es/deal/cleveland-68917) | Cleveland, Oklahoma | 68.917 € | 98 m² | 703 €/m² | 2 | 91 | 23 sept 2026
 [Casa de granja con tejado holandés, cubierta metálica y bomba de calor en Maine](https://realhunt.co/es/deal/us-ashland-89k-672054) | Ashland, Maine | 72.800 € | 96 m² | 758 €/m² | 3 | 87 | 5 oct 2026
 [Casa con jardín, pérgola y garaje junto a la frontera de Canadá](https://realhunt.co/es/deal/us-madawaska-79k-677888) | Madawaska, Maine | 77.300 € | 124 m² | 623 €/m² | 3 | 87 | 5 oct 2026
@@ -99,8 +100,10 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de 1 dormitorio reformada en Perryville, Arkansas](https://realhunt.co/es/deal/perryville-91599) | Perryville, Arkansas | 91.599 € | 75 m² | 1.221 €/m² | 1 | 83 | 23 sept 2026
 [Casa de 2 dormitorios reformada en Beeville, Texas](https://realhunt.co/es/deal/beeville-95089) | Beeville, Texas | 95.089 € | 74 m² | 1.285 €/m² | 2 | 81 | 23 sept 2026
 [Casa de 2 dormitorios lista para entrar a vivir en Marion, Indiana](https://realhunt.co/es/deal/marion-95874) | Marion, Indiana | 95.874 € | 78 m² | 1.229 €/m² | 2 | 80 | 23 sept 2026
+[Casa de 3 dormitorios lista para entrar a vivir con chimenea, terraza y garaje en Dayton, Ohio](https://realhunt.co/es/deal/us-dayton-ready-house-fireplace-garage-119k) | Dayton, Ohio | 118.824 € | 128 m² | 928 €/m² | 3 | 93 | 28 nov 2026
 [Condo de dos dormitorios en primera planta actualizado cerca de la playa en Maybury Mansions, Fort Lauderdale](https://realhunt.co/es/deal/us-fort-lauderdale-2455-e102-150k) | Maybury Mansions, Florida | 134.400 € | 81 m² | 1.659 €/m² | 2 | 86 | 8 nov 2026
 [Cabaña con tejado de granero, porche y hoguera en el bosque de Allegheny](https://realhunt.co/es/deal/us-pennsylvania-barn-cabin-155k) | Tionesta, Pensilvania | 137.700 € | 94 m² | 1.465 €/m² | 2 | 85 | 16 oct 2026
+[Casa lista para entrar a vivir reformada con chimenea y porche envolvente en Cleveland, Ohio](https://realhunt.co/es/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k) | Cleveland, Ohio | 150.535 € | 255 m² | 590 €/m² | 3 | 95 | 28 nov 2026
 [La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k) | Scotland Neck, Carolina del Norte | 153.900 € | 199 m² | 773 €/m² | 3 | 91 | 16 oct 2026
 [Cabaña de troncos nueva de 2024 rodeada de campos en Kentucky](https://realhunt.co/es/deal/us-kentucky-new-log-cabin-175k) | Elk Horn, Kentucky | 155.500 € | 114 m² | 1.364 €/m² | 2 | 83 | 16 oct 2026
 [Cabaña de troncos estilo escandinavo con chimenea de piedra en 4 hectáreas](https://realhunt.co/es/deal/us-wisconsin-scandi-log-cabin-179k) | Saxon, Wisconsin | 159.100 € | 133 m² | 1.196 €/m² | 3 | 85 | 16 oct 2026
@@ -141,25 +144,22 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Rancho de mediados de siglo con planta abierta y robles maduros en Herchel Heights, Tampa](https://realhunt.co/es/deal/us-tampa-8009-312k) | Herchel Heights Rev, Florida | 279.600 € | 177 m² | 1.580 €/m² | 3 | 87 | 8 nov 2026
 [Espaciosa casa de dos pisos con cuatro dormitorios y planta flexible en Buffalo Estates, Tampa](https://realhunt.co/es/deal/us-tampa-8105-325k) | Buffalo Estates, Florida | 291.200 € | 210 m² | 1.387 €/m² | 4 | 88 | 8 nov 2026
 [Apartamento renovado de dos dormitorios en planta alta con vistas al horizonte y al atardecer en Aventura](https://realhunt.co/es/deal/us-aventura-18011-1904-350k) | [Aventura, Florida](https://realhunt.co/es/homes/united-states/florida/aventura) | 313.600 € | 149 m² | 2.105 €/m² | 2 | 83 | 7 nov 2026
-[Casa renovada con garaje para dos autos y tejado de 2024 en Greenbriar (comunidad 55+), Boca Raton](https://realhunt.co/es/deal/us-boca-raton-18102-435k) | Boca Raton, Florida | 389.800 € | 158 m² | 2.467 €/m² | 3 | 86 | 7 nov 2026
-[Casa en esquina actualizada con ventanas de impacto en Greenbriar at Boca Chase (comunidad 55+)](https://realhunt.co/es/deal/us-boca-raton-10308-460k) | Boca Raton, Florida | 412.200 € | 147 m² | 2.804 €/m² | 3 | 85 | 7 nov 2026
-[Casa familiar en lote en esquina con gran jardín cercado de árboles frutales, Country Park, Boca Raton](https://realhunt.co/es/deal/us-boca-raton-8315-490k) | Boca Raton, Florida | 439.000 € | 102 m² | 4.304 €/m² | 3 | 82 | 7 nov 2026
 
-### Las 61 viviendas en cifras
+### Las 64 viviendas en cifras
 
-- Tamaño: la mitad tiene 121 m² o más. La más grande tiene 289 m²: [Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
-- Dormitorios: 1 con 1 dormitorio, 28 con 2, 26 con 3, 5 con 4 o más; 1 anuncio no lo indica.
-- Tipo: 14 pisos y 44 casas.
-- Entorno: 3 junto al mar, 20 en pueblos, 38 en ciudad.
-- Dónde: Florida (25), Pensilvania (6), Wisconsin (4), Arkansas (3), Maine (3), Michigan (2).
+- Tamaño: la mitad tiene 122 m² o más. La más grande tiene 289 m²: [Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
+- Dormitorios: 1 con 1 dormitorio, 28 con 2, 29 con 3, 5 con 4 o más; 1 anuncio no lo indica.
+- Tipo: 14 pisos y 47 casas.
+- Entorno: 3 junto al mar, 21 en pueblos, 40 en ciudad.
+- Dónde: Florida (25), Pensilvania (7), Ohio (4), Wisconsin (4), Arkansas (3), Maine (3).
 - Precio mediano más bajo: Maine, 77.300 € entre 3 viviendas. El más alto: Florida, 255.400 € entre 25.
-- Extras que mencionan los anuncios: 26 con jardín, 42 con terraza, 21 con garaje, 14 con piscina, 5 con chimenea, 2 con sauna.
-- Notas: de 79 a 95 sobre 98. La de mejor nota: [Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k).
-- La más reciente, añadida el 20 de noviembre de 2026: [Casa victoriana de 1889 renovada con porche delantero profundo en Lynchburg, Virginia](https://realhunt.co/es/deal/us-lynchburg-va-renovated-victorian-carriage-house-245k). 38 de estas viviendas se añadieron en los últimos 30 días.
+- Extras que mencionan los anuncios: 28 con jardín, 45 con terraza, 23 con garaje, 14 con piscina, 7 con chimenea, 2 con sauna.
+- Notas: de 79 a 95 sobre 98. La de mejor nota: [Casa lista para entrar a vivir reformada con chimenea y porche envolvente en Cleveland, Ohio](https://realhunt.co/es/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k).
+- La más reciente, añadida el 28 de noviembre de 2026: [Casa lista para entrar a vivir reformada con chimenea y porche envolvente en Cleveland, Ohio](https://realhunt.co/es/deal/us-cleveland-remodeled-house-wraparound-porch-fireplace-151k). 41 de estas viviendas se añadieron en los últimos 30 días.
 
 ### Qué compra tu dinero aquí
 
-Divididas por precio en tres grupos del mismo tamaño: de 65.428 € a 159.100 €, 20 viviendas con una mediana de 98 m², casi siempre con 2 dormitorios; de 159.400 € a 233.000 €, 21 viviendas con una mediana de 128 m², casi siempre con 3 dormitorios; de 237.400 € a 447.600 €, 20 viviendas con una mediana de 124 m², casi siempre con 2 dormitorios.
+Divididas por precio en tres grupos del mismo tamaño: de 65.428 € a 153.900 €, 21 viviendas con una mediana de 98 m², casi siempre con 3 dormitorios; de 155.500 € a 232.400 €, 22 viviendas con una mediana de 128 m², casi siempre con 3 dormitorios; de 233.000 € a 447.600 €, 21 viviendas con una mediana de 124 m², casi siempre con 2 dormitorios.
 
 ### Precio mediano por región en Estados Unidos
 
@@ -168,16 +168,16 @@ Oklahoma | 1 | 68.917 €
 [Maine](https://realhunt.co/es/homes/united-states/maine) | 3 | 77.300 €
 Illinois | 1 | 79.200 €
 Virginia Occidental | 2 | 82.875 €
+[Pensilvania](https://realhunt.co/es/homes/united-states/pennsylvania) | 7 | 85.929 €
 Missouri | 1 | 86.500 €
 Carolina del Sur | 1 | 88.800 €
 [Arkansas](https://realhunt.co/es/homes/united-states/arkansas) | 3 | 91.599 €
 Texas | 1 | 95.089 €
 Indiana | 1 | 95.874 €
-[Pensilvania](https://realhunt.co/es/homes/united-states/pennsylvania) | 6 | 137.700 €
 Carolina del Norte | 1 | 153.900 €
 Kentucky | 1 | 155.500 €
+[Ohio](https://realhunt.co/es/homes/united-states/ohio) | 4 | 200.000 €
 [Wisconsin](https://realhunt.co/es/homes/united-states/wisconsin) | 4 | 214.100 €
-Ohio | 2 | 214.900 €
 Nueva York | 2 | 218.100 €
 Michigan | 2 | 227.700 €
 Virginia | 2 | 227.700 €
@@ -188,7 +188,7 @@ Minnesota | 2 | 232.400 €
 
 ¿Pueden comprar los extranjeros? Sí. No hay una prohibición federal sobre que extranjeros compren viviendas, pero unos 30 estados han añadido algunos límites, y Texas y Florida restringen a compradores de ciertos países como China.
 
-Los impuestos y gastos añaden alrededor de un 2 a 5 % al precio: Los gastos de cierre (closing costs) varían según el estado y suelen ser del 2-5% del importe del préstamo; cubren la búsqueda y el seguro de título, las tasas de inscripción, los honorarios del abogado, la tasación y las comisiones del banco; desde agosto de 2024 el vendedor ya no tiene que pagar al agente del comprador, así que puede pagarlo el comprador salvo que el vendedor acepte hacerlo; FIRPTA no se aplica al comprar, pero sí cuando un extranjero vende más adelante, y entonces el comprador suele retener el 15% del precio de venta. En la vivienda mediana de esta página (214.900 €) son de 4.298 € a 10.745 €, es decir, de 219.198 € a 225.645 € en total.
+Los impuestos y gastos añaden alrededor de un 2 a 5 % al precio: Los gastos de cierre (closing costs) varían según el estado y suelen ser del 2-5% del importe del préstamo; cubren la búsqueda y el seguro de título, las tasas de inscripción, los honorarios del abogado, la tasación y las comisiones del banco; desde agosto de 2024 el vendedor ya no tiene que pagar al agente del comprador, así que puede pagarlo el comprador salvo que el vendedor acepte hacerlo; FIRPTA no se aplica al comprar, pero sí cuando un extranjero vende más adelante, y entonces el comprador suele retener el 15% del precio de venta. En la vivienda mediana de esta página (214.100 €) son de 4.282 € a 10.705 €, es decir, de 218.382 € a 224.805 € en total.
 
 Con los mismos porcentajes: sobre 40.000 €, de 800 € a 2.000 €; sobre 80.000 €, de 1.600 € a 4.000 €; sobre 150.000 €, de 3.000 € a 7.500 €.
 
@@ -209,16 +209,16 @@ Fuente: [Internal Revenue Service (IRS), retención FIRPTA](https://www.irs.gov/
 - Un precio bajo tiene un motivo. [Espaciosa casa de dos pisos con cuatro dormitorios y planta flexible en Buffalo Estates, Tampa](https://realhunt.co/es/deal/us-tampa-8105-325k): Casa de 1964 en ubicación suburbana de Tampa.
 - 9 anuncios indican la cuota mensual de comunidad, de 11 EUR. Súmala a tus gastos anuales.
 - 15 están en un edificio o una urbanización con gastos comunes, pero el anuncio no dice la cuota: pídela por escrito.
-- 19 de 61 están donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
-- 3 de 61 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
-- 10 de 61 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
-- En conjunto, estas viviendas puntúan más bajo en precio (32/100 de media) y más alto en cercanía a un aeropuerto (90/100).
+- 19 de 64 están donde nuestra comprobación orientativa de inundación da riesgo medio o alto. La ficha de cada vivienda enlaza el mapa oficial.
+- 3 de 64 están cerca de una autopista, una vía de tren o un aeropuerto (ruido alto en nuestra comprobación).
+- 10 de 64 se añadieron hace más de 60 días. Pregunta a la agencia si siguen en venta antes de organizar un viaje.
+- En conjunto, estas viviendas puntúan más bajo en precio (34/100 de media) y más alto en cercanía a un aeropuerto (90/100).
 
 ### Preguntas de quienes compran
 
 #### ¿Cuánto cuesta una casa en venta en Estados Unidos?
 
-Los precios de venta van de 65.428 € a 447.600 € entre 61 viviendas. La mediana es de 214.900 € (1.560 €/m²).
+Los precios de venta van de 65.428 € a 447.600 € entre 64 viviendas. La mediana es de 214.100 € (1.556 €/m²).
 
 #### ¿Cuál es la casa más barata en venta en Estados Unidos?
 
@@ -230,7 +230,7 @@ Sí. No hay una prohibición federal sobre que extranjeros compren viviendas, pe
 
 #### ¿Cuáles son los gastos de compra en Estados Unidos?
 
-Alrededor de un 2 a 5 % además del precio: Los gastos de cierre (closing costs) varían según el estado y suelen ser del 2-5% del importe del préstamo; cubren la búsqueda y el seguro de título, las tasas de inscripción, los honorarios del abogado, la tasación y las comisiones del banco; desde agosto de 2024 el vendedor ya no tiene que pagar al agente del comprador, así que puede pagarlo el comprador salvo que el vendedor acepte hacerlo; FIRPTA no se aplica al comprar, pero sí cuando un extranjero vende más adelante, y entonces el comprador suele retener el 15% del precio de venta. En la vivienda mediana de esta página (214.900 €) son de 4.298 € a 10.745 €. Información general, no asesoramiento fiscal.
+Alrededor de un 2 a 5 % además del precio: Los gastos de cierre (closing costs) varían según el estado y suelen ser del 2-5% del importe del préstamo; cubren la búsqueda y el seguro de título, las tasas de inscripción, los honorarios del abogado, la tasación y las comisiones del banco; desde agosto de 2024 el vendedor ya no tiene que pagar al agente del comprador, así que puede pagarlo el comprador salvo que el vendedor acepte hacerlo; FIRPTA no se aplica al comprar, pero sí cuando un extranjero vende más adelante, y entonces el comprador suele retener el 15% del precio de venta. En la vivienda mediana de esta página (214.100 €) son de 4.282 € a 10.705 €. Información general, no asesoramiento fiscal.
 
 #### ¿Cuál es la región más barata en Estados Unidos?
 
@@ -238,35 +238,35 @@ Entre las regiones con al menos 3 viviendas en RealHunt, Maine tiene el precio m
 
 ### Más búsquedas en Estados Unidos
 
-Por presupuesto [Menos de 80.000 € 6](https://realhunt.co/es/homes/united-states/under-80000) [Menos de 100.000 € 15](https://realhunt.co/es/homes/united-states/under-100000) [Menos de 150.000 € 17](https://realhunt.co/es/homes/united-states/under-150000) [Menos de 200.000 € 27](https://realhunt.co/es/homes/united-states/under-200000) [Menos de 300.000 € 56](https://realhunt.co/es/homes/united-states/under-300000)
+Por presupuesto [Menos de 80.000 € 7](https://realhunt.co/es/homes/united-states/under-80000) [Menos de 100.000 € 16](https://realhunt.co/es/homes/united-states/under-100000) [Menos de 150.000 € 19](https://realhunt.co/es/homes/united-states/under-150000) [Menos de 200.000 € 30](https://realhunt.co/es/homes/united-states/under-200000) [Menos de 300.000 € 59](https://realhunt.co/es/homes/united-states/under-300000)
 
-Por entorno [Junto al mar 3](https://realhunt.co/es/homes/united-states/by-the-sea) [Casas de pueblo 20](https://realhunt.co/es/homes/united-states/village-houses) [En ciudad 38](https://realhunt.co/es/homes/united-states/in-town)
+Por entorno [Junto al mar 3](https://realhunt.co/es/homes/united-states/by-the-sea) [Casas de pueblo 21](https://realhunt.co/es/homes/united-states/village-houses) [En ciudad 40](https://realhunt.co/es/homes/united-states/in-town)
 
-Por tipo [Pisos 14](https://realhunt.co/es/homes/united-states/apartments) [Casas 44](https://realhunt.co/es/homes/united-states/houses)
+Por tipo [Pisos 14](https://realhunt.co/es/homes/united-states/apartments) [Casas 47](https://realhunt.co/es/homes/united-states/houses)
 
-Por dormitorios [2 dormitorios 28](https://realhunt.co/es/homes/united-states/2-bedroom) [3 dormitorios 26](https://realhunt.co/es/homes/united-states/3-bedroom) [4 o más dormitorios 5](https://realhunt.co/es/homes/united-states/4-bedroom)
+Por dormitorios [2 dormitorios 28](https://realhunt.co/es/homes/united-states/2-bedroom) [3 dormitorios 29](https://realhunt.co/es/homes/united-states/3-bedroom) [4 o más dormitorios 5](https://realhunt.co/es/homes/united-states/4-bedroom)
 
-Por región [Florida 25](https://realhunt.co/es/homes/united-states/florida) [Pensilvania 6](https://realhunt.co/es/homes/united-states/pennsylvania) [Wisconsin 4](https://realhunt.co/es/homes/united-states/wisconsin) [Arkansas 3](https://realhunt.co/es/homes/united-states/arkansas) [Maine 3](https://realhunt.co/es/homes/united-states/maine)
+Por región [Florida 25](https://realhunt.co/es/homes/united-states/florida) [Pensilvania 7](https://realhunt.co/es/homes/united-states/pennsylvania) [Ohio 4](https://realhunt.co/es/homes/united-states/ohio) [Wisconsin 4](https://realhunt.co/es/homes/united-states/wisconsin) [Arkansas 3](https://realhunt.co/es/homes/united-states/arkansas) [Maine 3](https://realhunt.co/es/homes/united-states/maine)
 
 Por zona [Boca Raton 4](https://realhunt.co/es/homes/united-states/boca-raton)
 
-Por característica [Cerca de un lago 10](https://realhunt.co/es/cheap-houses/near-a-lake-in-united-states) [Con jardín 26](https://realhunt.co/es/cheap-houses/with-garden-in-united-states) [Con piscina 14](https://realhunt.co/es/cheap-houses/with-pool-in-united-states) [Casas de piedra 3](https://realhunt.co/es/cheap-houses/stone-houses-in-united-states) [Cabañas y casas de campo 8](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-united-states) [Con terraza 42](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-states) [Para entrar a vivir 12](https://realhunt.co/es/cheap-houses/turnkey-in-united-states) [Con terreno 6](https://realhunt.co/es/cheap-houses/with-land-in-united-states) [Con chimenea 5](https://realhunt.co/es/cheap-houses/with-fireplace-in-united-states) [Con garaje 21](https://realhunt.co/es/cheap-houses/with-garage-in-united-states) [Cerca de un aeropuerto 36](https://realhunt.co/es/cheap-houses/near-an-airport-in-united-states) [Nota 90 o más 9](https://realhunt.co/es/cheap-houses/score-90-plus-in-united-states) [Nuevas este mes 38](https://realhunt.co/es/cheap-houses/new-this-month-in-united-states) [Elementos de época 8](https://realhunt.co/es/cheap-houses/with-period-features-in-united-states) [Zona tranquila 14](https://realhunt.co/es/cheap-houses/quiet-location-in-united-states) [Comunidad baja 6](https://realhunt.co/es/cheap-houses/low-community-fee-in-united-states) [Más de 120 m² 31](https://realhunt.co/es/cheap-houses/over-120-sqm-in-united-states)
+Por característica [Cerca de un lago 10](https://realhunt.co/es/cheap-houses/near-a-lake-in-united-states) [Con jardín 28](https://realhunt.co/es/cheap-houses/with-garden-in-united-states) [Con piscina 14](https://realhunt.co/es/cheap-houses/with-pool-in-united-states) [Casas de piedra 3](https://realhunt.co/es/cheap-houses/stone-houses-in-united-states) [Cabañas y casas de campo 8](https://realhunt.co/es/cheap-houses/cabins-and-cottages-in-united-states) [Con terraza 45](https://realhunt.co/es/cheap-houses/with-a-terrace-in-united-states) [Para entrar a vivir 14](https://realhunt.co/es/cheap-houses/turnkey-in-united-states) [Con terreno 6](https://realhunt.co/es/cheap-houses/with-land-in-united-states) [Con chimenea 7](https://realhunt.co/es/cheap-houses/with-fireplace-in-united-states) [Con garaje 23](https://realhunt.co/es/cheap-houses/with-garage-in-united-states) [Cerca de un aeropuerto 38](https://realhunt.co/es/cheap-houses/near-an-airport-in-united-states) [Nota 90 o más 12](https://realhunt.co/es/cheap-houses/score-90-plus-in-united-states) [Nuevas este mes 41](https://realhunt.co/es/cheap-houses/new-this-month-in-united-states) [Nuevas esta semana 3](https://realhunt.co/es/cheap-houses/new-this-week-in-united-states) [Elementos de época 8](https://realhunt.co/es/cheap-houses/with-period-features-in-united-states) [Zona tranquila 14](https://realhunt.co/es/cheap-houses/quiet-location-in-united-states) [Comunidad baja 6](https://realhunt.co/es/cheap-houses/low-community-fee-in-united-states) [Más de 120 m² 34](https://realhunt.co/es/cheap-houses/over-120-sqm-in-united-states)
 
-Clasificaciones [Las más baratas 20](https://realhunt.co/es/cheap-houses/cheapest-in-united-states) [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-united-states)
+Clasificaciones [Más metros por euro 20](https://realhunt.co/es/cheap-houses/most-space-for-the-money-in-united-states) [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-united-states)
 
-Por característica y presupuesto [Con jardín, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-united-states) [Para entrar a vivir, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-united-states)
+Por característica y presupuesto [Con jardín, menos de 100.000 € 5](https://realhunt.co/es/cheap-houses/with-garden-under-100000-in-united-states) [Para entrar a vivir, menos de 100.000 € 4](https://realhunt.co/es/cheap-houses/turnkey-under-100000-in-united-states)
 
-En libras y en dólares [Menos de 100.000 dólares 12](https://realhunt.co/es/cheap-houses/under-100000-dollars-in-united-states)
+En libras y en dólares [Menos de 100.000 dólares 13](https://realhunt.co/es/cheap-houses/under-100000-dollars-in-united-states)
 
 Cerca de una ciudad [Cerca de Miami 22](https://realhunt.co/es/cheap-houses/near-miami)
 
-Países vecinos [Canadá 16](https://realhunt.co/es/homes/canada) [México 7](https://realhunt.co/es/homes/mexico)
+Países vecinos [Canadá 18](https://realhunt.co/es/homes/canada) [México 7](https://realhunt.co/es/homes/mexico)
 
-Por país [Francia 305](https://realhunt.co/es/homes/france) [España 171](https://realhunt.co/es/homes/spain) [Italia 107](https://realhunt.co/es/homes/italy) [Grecia 65](https://realhunt.co/es/homes/greece) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 37](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Japón 30](https://realhunt.co/es/homes/japan) [Portugal 27](https://realhunt.co/es/homes/portugal) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Alemania 18](https://realhunt.co/es/homes/germany) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 7](https://realhunt.co/es/homes/mexico) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Chipre 4](https://realhunt.co/es/homes/cyprus) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por país [Francia 306](https://realhunt.co/es/homes/france) [España 171](https://realhunt.co/es/homes/spain) [Italia 108](https://realhunt.co/es/homes/italy) [Grecia 66](https://realhunt.co/es/homes/greece) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 37](https://realhunt.co/es/homes/sweden) [Polonia 32](https://realhunt.co/es/homes/poland) [Japón 30](https://realhunt.co/es/homes/japan) [Portugal 28](https://realhunt.co/es/homes/portugal) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Canadá 18](https://realhunt.co/es/homes/canada) [Alemania 18](https://realhunt.co/es/homes/germany) [Suiza 10](https://realhunt.co/es/homes/switzerland) [Bulgaria 8](https://realhunt.co/es/homes/bulgaria) [Reino Unido 8](https://realhunt.co/es/homes/united-kingdom) [México 7](https://realhunt.co/es/homes/mexico) [Uruguay 6](https://realhunt.co/es/homes/uruguay) [Chipre 5](https://realhunt.co/es/homes/cyprus) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Tailandia 3](https://realhunt.co/es/homes/thailand) [Brasil 3](https://realhunt.co/es/homes/brazil) [Finlandia 3](https://realhunt.co/es/homes/finland) [Eslovenia 3](https://realhunt.co/es/homes/slovenia) [Turquía 3](https://realhunt.co/es/homes/turkey) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
 
-Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 50 de estas 61 viviendas se comprobaron con su anuncio original en los últimos 30 días. 5 viviendas en Estados Unidos salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 50 de estas 64 viviendas se comprobaron con su anuncio original en los últimos 30 días. 5 viviendas en Estados Unidos salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
 
-Estos anuncios proceden de coldwellbanker.com (38), redfin.com (15), estately.com (8). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
+Estos anuncios proceden de coldwellbanker.com (38), redfin.com (15), estately.com (8), green-acres.fr (3). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en Estados Unidos](https://realhunt.co/es/alerts?country=United%20States) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=United+States#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Estados Unidos](https://realhunt.co/es/sitemap/united-states)
 

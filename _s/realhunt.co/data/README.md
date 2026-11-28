@@ -8,17 +8,17 @@ Rules, taxes and costs are general information, not legal or tax advice. Descrip
 
 | File | Size | What it is |
 |---|---|---|
-| https://realhunt.co/data/homes.jsonl | 802 KB | Every home, one JSON object per line (the first line describes the file) |
-| https://realhunt.co/data/homes.csv | 274 KB | Every home, one row each, for spreadsheets |
-| https://realhunt.co/data/countries.json | 30 KB | Every country: homes, median, cheapest, buying costs, rule for foreigners |
-| https://realhunt.co/data/countries/index.json | 9 KB | Countries and the address of each country file |
+| https://realhunt.co/data/homes.jsonl | 845 KB | Every home, one JSON object per line (the first line describes the file) |
+| https://realhunt.co/data/homes.csv | 289 KB | Every home, one row each, for spreadsheets |
+| https://realhunt.co/data/countries.json | 33 KB | Every country: homes, median, cheapest, buying costs, rule for foreigners |
+| https://realhunt.co/data/countries/index.json | 11 KB | Countries and the address of each country file |
 | https://realhunt.co/data/costs.json | 44 KB | Buying costs and yearly taxes by country, with sources |
 | https://realhunt.co/data/can-i-buy.json | 13 KB | Who can buy where, by nationality group |
 | https://realhunt.co/data/glossary.json | 37 KB | Words of a home purchase by country (schema.org DefinedTermSet) |
-| https://realhunt.co/data/realhunt-homes.geojson | 309 KB | Every home with coordinates, as GeoJSON points |
-| https://realhunt.co/data/realhunt-best-homes.kml | 58 KB | The ten best-scored homes of each country (KML) |
-| https://realhunt.co/data/changed-today.txt | 164 KB | Pages added or changed in today's build, one address per line |
-| https://realhunt.co/research/homes.csv | 114 KB | Every home with airport distance and flood indicator |
+| https://realhunt.co/data/realhunt-homes.geojson | 326 KB | Every home with coordinates, as GeoJSON points |
+| https://realhunt.co/data/realhunt-best-homes.kml | 67 KB | The ten best-scored homes of each country (KML) |
+| https://realhunt.co/data/changed-today.txt | 124 KB | Pages added or changed in today's build, one address per line |
+| https://realhunt.co/research/homes.csv | 121 KB | Every home with airport distance and flood indicator |
 | https://realhunt.co/research/removed-homes.json | 41 KB | Homes taken off the site and price changes, with dates |
 | https://realhunt.co/research/removed-by-month.json | 1 KB | How many homes left the site or changed price, month by month |
 | https://realhunt.co/research/monthly-series.json | 1 KB | One reading per month: homes, countries, median price |
@@ -26,7 +26,7 @@ Rules, taxes and costs are general information, not legal or tax advice. Descrip
 | https://realhunt.co/feeds/price-drops.json | 4 KB | Price drops, newest first (JSON Feed) |
 | https://realhunt.co/feeds/removed.json | 44 KB | Homes taken off the site, newest first (JSON Feed) |
 | https://realhunt.co/press/realhunt-in-figures.pdf | 4 KB | RealHunt in figures: one page for the press, this month (the same file is kept as realhunt-in-figures-YYYY-MM.pdf) |
-| https://realhunt.co/llms.txt | 22 KB | Short index for AI assistants |
+| https://realhunt.co/llms.txt | 24 KB | Short index for AI assistants |
 | https://realhunt.co/llms-full.txt | 1.8 MB | The reference text of the site in one file |
 
 ## Fields of a home (homes.jsonl, homes.csv)
