@@ -41,12 +41,12 @@ Impuesto sobre los ingresos por alquiler: Los arrendadores no residentes pagan e
 
 ### Compara Reino Unido
 
+- [Reino Unido vs Francia](https://realhunt.co/es/countries/france-vs-united-kingdom)
 - [Reino Unido vs España](https://realhunt.co/es/countries/spain-vs-united-kingdom)
 - [Reino Unido vs Italia](https://realhunt.co/es/countries/italy-vs-united-kingdom)
-- [Reino Unido vs Francia](https://realhunt.co/es/countries/france-vs-united-kingdom)
+- [Reino Unido vs Grecia](https://realhunt.co/es/countries/greece-vs-united-kingdom)
 - [Reino Unido vs Estados Unidos](https://realhunt.co/es/countries/united-kingdom-vs-united-states)
 - [Reino Unido vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-united-kingdom)
-- [Reino Unido vs Grecia](https://realhunt.co/es/countries/greece-vs-united-kingdom)
 - [Reino Unido vs Suecia](https://realhunt.co/es/countries/sweden-vs-united-kingdom)
 - [Reino Unido vs Polonia](https://realhunt.co/es/countries/poland-vs-united-kingdom)
 

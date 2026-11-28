@@ -1,6 +1,6 @@
 # Cheap homes in Spain: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 155 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 155 homes is €120,000 (€1,296 per m², from the 152 homes with a known size); the cheapest costs €39,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 28 November 2026, RealHunt lists 165 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 165 homes is €120,000 (€1,231 per m², from the 162 homes with a known size); the cheapest costs €39,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/spain · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 155 |
+| Homes on RealHunt | 165 |
 | Median asking price | €120,000 |
-| Median price per m² | €1,296 (152 homes with a known size) |
-| Median size | 90 m² |
+| Median price per m² | €1,231 (162 homes with a known size) |
+| Median size | 93 m² |
 | Cheapest and most expensive | €39,000 · €348,000 |
 | Median RealHunt score (70 to 98) | 84 |
 | Taxes and fees to buy | 7.5–14% of the price (as of 2026) |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/spain
 
-## The 155 homes, best score first
+## The 165 homes, best score first
 
 ### Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón
 
@@ -320,6 +320,14 @@ https://realhunt.co/deal/es-castalla-85k-41639
 
 https://realhunt.co/deal/es-alhama-de-granada-99k-62382
 
+### Fully renovated 4-bedroom stone house with terrace and castle views in Sax, Alicante
+
+€112,000 · Sax, Alicante · 158 m² · 4 bedrooms · RealHunt score 88 · added 2026-11-28
+
+This fully renovated house was built in 1885 and is ready to move in. It has four bedrooms, two bathrooms, a separate furnished kitchen and several living rooms, including a living-dining room of 22.8 m2. Outdoor features include a terrace, an interior patio of more than 41 m2, views of the castle, a fireplace and 1,281 sq ft of land, plus an outbuilding next to the patio. The home has heating and split inverter air conditioning, and its stone walls are about 50 cm thick. Asking €112,000, about €709/m².
+
+https://realhunt.co/deal/es-sax-renovated-stone-house-castle-views-112k
+
 ### Premium townhouse fully renovated in 2025 in Jijona
 
 €149,000 · Jijona / Xixona, Alicante (about 25 min from Alicante) · 232 m² · 4 bedrooms · RealHunt score 88 · added 2026-10-14
@@ -360,6 +368,14 @@ https://realhunt.co/deal/es-colomera-70k-21488
 
 https://realhunt.co/deal/es-cartagena-79k-19964
 
+### Renovated 2-bedroom house with garden, terrace and garage in Morla de la Valdería, León
+
+€80,000 · Morla de la Valdería, León, Castilla y León · 111 m² · 2 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This renovated single-storey house in the village of Morla de la Valdería offers modern comforts with traditional character. It has 2 bedrooms, 1 bathroom with shower tray, and a bright living room-kitchen with a fitted kitchen. The living room opens to the rear garden, and there is also a terrace. The property includes a garage and 1,733 sq ft of land. Asking €80,000, about €721/m².
+
+https://realhunt.co/deal/es-morla-de-la-valderia-renovated-house-garden-terrace-garage-80k
+
 ### 2-bedroom flat in Mazaricos
 
 €88,000 · Mazaricos, A Coruña, Spain · 109 m² · 2 bedrooms · RealHunt score 87 · added 2026-10-01
@@ -392,6 +408,14 @@ A characterful 124 m² house with thick stone walls in the village of Velliza, a
 
 https://realhunt.co/deal/es-velliza-stone-house-138k-189374812
 
+### In good condition 1-bedroom country house with pool and garden in Fortuna, Murcia
+
+€145,000 · Fortuna, Murcia · 150 m² · 1 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This house is in good condition, built in 2000 on one floor. It has a bright dining room, an independent kitchen, one bedroom and a full bathroom. Outdoors there is a large garden plot, a sunny terrace, a balcony, a private pool and a garage with storage. Reversible air conditioning and a fireplace provide comfort in all seasons, and a septic tank manages wastewater. It sits in a rural location in Fortuna, Murcia. Asking €145,000, about €967/m².
+
+https://realhunt.co/deal/es-fortuna-good-condition-country-house-pool-145k
+
 ### Single-storey country house with pool, garden, barbecue and two outbuildings
 
 €179,990 · Estremera, Madrid · 185 m² · 4 bedrooms · RealHunt score 87 · added 2026-10-07
@@ -408,6 +432,14 @@ https://realhunt.co/deal/es-estremera-180k-760516
 
 https://realhunt.co/deal/es-arcos-de-la-frontera-52k-51177
 
+### Townhouse with former bar, patio and roof solarium in Tolox, Málaga, Andalusia
+
+€76,000 · Tolox, Málaga, Andalusia · 119 m² · 2 bedrooms · RealHunt score 86 · added 2026-11-28
+
+This townhouse in Tolox is a large home of 119 m2 spread over several floors. It has 2 bedrooms and 2 bathrooms, plus a lounge, a kitchen, a laundry room and a ground floor area that was formerly a bar, with a small kitchen and toilets. Outdoor features include a patio and a large roof solarium with village views. The property has a separate entrance and sits in the centre of the spa town. Asking €76,000, about €639/m².
+
+https://realhunt.co/deal/es-tolox-townhouse-bar-roof-solarium-patio-76k
+
 ### 4-bedroom house with terrace in Cehegín
 
 €79,900 · Cehegín, Murcia, Spain · 200 m² · 4 bedrooms · RealHunt score 86 · added 2026-10-01
@@ -416,6 +448,14 @@ https://realhunt.co/deal/es-arcos-de-la-frontera-52k-51177
 
 https://realhunt.co/deal/es-cehegin-79k-37859
 
+### Fully renovated 4-bedroom house with balcony and land in Villanueva de las Torres, Granada
+
+€115,000 · Villanueva de las Torres, Granada · 178 m² · 4 bedrooms · RealHunt score 86 · added 2026-11-28
+
+This fully renovated house combines traditional local architecture with modern finishes. It has four bedrooms, one bathroom, bright living areas and a fully equipped independent kitchen. Outdoor and extra features include a private balcony, 958 sq ft of land, air conditioning, individual climate control and fiber-optic internet. The home is in a quiet village with restaurants, a school, a pharmacy and supermarkets, minutes from Guadix and less than an hour from Granada. Asking €115,000, about €646/m².
+
+https://realhunt.co/deal/es-villanueva-de-las-torres-renovated-house-balcony-air-conditioning-115k
+
 ### Renovated stone house with patio and garage in Congosta de Vidriales, Zamora
 
 €120,000 · Congosta de Vidriales, Zamora · 169 m² · 3 bedrooms · RealHunt score 86 · added 2026-11-27
@@ -423,6 +463,14 @@ https://realhunt.co/deal/es-cehegin-79k-37859
 Completely renovated, furnished and ready to move in, with new walls, floors, windows and doors. The house has 169 square metres built, a kitchen-living room, three bedrooms, an office, two bathrooms and two pantries. It has a large private rear patio, a garage and oil heating. It stands on a quiet residential street in a village with all services nearby. Congosta de Vidriales is in the province of Zamora. Asking €120,000, about €710/m².
 
 https://realhunt.co/deal/es-congosta-de-vidriales-renovated-stone-house-patio-garage-120k
+
+### Village house with wooden beams and covered terrace in Jijona, Alicante
+
+€125,000 · Jijona, Alicante · 243 m² · 5 bedrooms · RealHunt score 86 · added 2026-11-28
+
+This is a village house with history, originally built in 1850 and spread across three floors. It has five bedrooms, a kitchen and exposed wooden beams, with a ground floor space of about 27 m². The home has a covered terrace and land of 1,173 sq ft. It is located in the urban center of Jijona, Alicante. The energy certificate rates consumption E and emissions D. Asking €125,000, about €514/m².
+
+https://realhunt.co/deal/es-jijona-village-house-wooden-beams-terrace-125k
 
 ### Remodelled three-bedroom penthouse with a 40 m² private roof terrace in Santomera
 
@@ -543,6 +591,22 @@ https://realhunt.co/deal/es-el-ejido-98k-28806
 A bright 70 m² two-bedroom flat just 10 m from the Mar Menor beach with no road in between, renovated in 2018. First floor with a lift, sea-view balcony, and it is sold with a tourist rental licence. Asking €116,500, about €1,664/m².
 
 https://realhunt.co/deal/es-los-urrutias-beachfront-tourist-licence-116k
+
+### Townhouse with covered terrace and countryside views in El Colmenar, Málaga, Andalusia
+
+€135,000 · El Colmenar, Málaga, Andalusia · 158 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-28
+
+Two-storey townhouse in the white village of El Colmenar, with 158 m2 of living area. It has two bedrooms, two bathrooms, an open-plan kitchen and an open-plan living room with French terrace windows. Outdoors there is a covered terrace, a balcony, an internal patio and countryside views. The property sits on 807 sq ft of land. Double-glazed PVC windows and ceramic floor tiles run throughout. Asking €135,000, about €854/m².
+
+https://realhunt.co/deal/es-el-colmenar-townhouse-terrace-countryside-views-135k
+
+### Spacious 6-bedroom house with garage and fireplace in Zurgena, Almería
+
+€139,000 · Zurgena, Almería, Andalusia · 335 m² · 6 bedrooms · RealHunt score 85 · added 2026-11-28
+
+Spacious village house in Zurgena with 335 m2 of living space spread over several floors. It has six bedrooms and two bathrooms, including two en-suite bathrooms, one with a shower and one with a bathtub. Highlights include high ceilings, a central staircase, Andalusian-style flooring and a fireplace in a storage room. A garage is reached directly from the kitchen, and the village offers all essential services within easy reach. Asking €139,000, about €415/m².
+
+https://realhunt.co/deal/es-zurgena-spacious-village-house-garage-fireplace-139k
 
 ### House with annexe and pool on walled plot in Albox, Almería
 
@@ -696,14 +760,6 @@ The house is in good structural condition and has 116 m2 of living space, three 
 
 https://realhunt.co/deal/es-abanilla-mountain-view-fireplace-pool-terrace-150k
 
-### Country house with olive trees and mountain views in Sorbas, Almería
-
-€155,000 · Sorbas, Almería · 135 m² · 4 bedrooms · RealHunt score 84 · added 2026-11-27
-
-Built in 2005, this country house offers 134 m² of living space. It has three bright bedrooms, two independent living rooms, an independent kitchen and a study. A large porch and a flat 1,480 m² plot with olive trees sit outside, with unobstructed mountain views. Sorbas is 15 minutes away, Campohermoso 10 minutes, and the Cabo de Gata beaches a short distance. Asking €155,000, about €1,148/m².
-
-https://realhunt.co/deal/es-sorbas-country-house-mountain-views-olive-155k
-
 ### Terraced house with a private pool, two patios and a garage
 
 €155,000 · Zarza de Tajo, Madrid · 136 m² · 3 bedrooms · RealHunt score 84 · added 2026-10-07
@@ -711,6 +767,14 @@ https://realhunt.co/deal/es-sorbas-country-house-mountain-views-olive-155k
 Terraced house in Zarza de Tajo, off the A-3 about an hour from Madrid, with a front patio, a back patio with a private pool and an independent garage. Ground floor with kitchen, bathroom and a living-dining room opening onto the pool; three bedrooms and a second bathroom upstairs. 136 m².
 
 https://realhunt.co/deal/es-zarza-de-tajo-155k-531208
+
+### Country house with olive trees and mountain views in Sorbas, Almería
+
+€155,000 · Sorbas, Almería · 135 m² · 4 bedrooms · RealHunt score 84 · added 2026-11-27
+
+Built in 2005, this country house offers 134 m² of living space. It has three bright bedrooms, two independent living rooms, an independent kitchen and a study. A large porch and a flat 1,480 m² plot with olive trees sit outside, with unobstructed mountain views. Sorbas is 15 minutes away, Campohermoso 10 minutes, and the Cabo de Gata beaches a short distance. Asking €155,000, about €1,148/m².
+
+https://realhunt.co/deal/es-sorbas-country-house-mountain-views-olive-155k
 
 ### Village house with private pool and covered terrace in Monòver, Alicante
 
@@ -776,14 +840,6 @@ https://realhunt.co/deal/es-polaciones-76k-71631
 
 https://realhunt.co/deal/es-amposta-97k-10966
 
-### Single-storey 3-bedroom detached house with garden and garage in Matanza, León
-
-€99,000 · Matanza, León, Castile and León · 103 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-27
-
-Built in 1972, this single-storey detached house is in good overall condition. It has 83 m² of built area, 3 bedrooms, a separate fully equipped kitchen with a pantry, and one full bathroom. The private garden includes a small outbuilding and a working well, and the garage has a bar counter and barbecue. The house has individual radiator heating with a fuel-based energy supply, plus fibre-optic internet. The village has a bar, shop, pharmacy and swimming pools. Asking €99,000, about €961/m².
-
-https://realhunt.co/deal/es-matanza-detached-single-storey-garden-garage-99k
-
 ### 1-bedroom apartment with pool in Catral
 
 €99,000 · Catral, Alicante, Spain · 57 m² · 1 bedrooms · RealHunt score 83 · added 2026-10-01
@@ -791,6 +847,14 @@ https://realhunt.co/deal/es-matanza-detached-single-storey-garden-garage-99k
 €99,000 for 57 m² and 1 bedroom in Catral (Alicante), about €1,737/m². About 16 km from the coast (straight line). With pool and terrace. Ready to move in: listed as almost new, and not marked as occupied, rented or at auction. Ask for the nota simple before paying a deposit.
 
 https://realhunt.co/deal/es-catral-99k-61991
+
+### Single-storey 3-bedroom detached house with garden and garage in Matanza, León
+
+€99,000 · Matanza, León, Castile and León · 103 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-27
+
+Built in 1972, this single-storey detached house is in good overall condition. It has 83 m² of built area, 3 bedrooms, a separate fully equipped kitchen with a pantry, and one full bathroom. The private garden includes a small outbuilding and a working well, and the garage has a bar counter and barbecue. The house has individual radiator heating with a fuel-based energy supply, plus fibre-optic internet. The village has a bar, shop, pharmacy and swimming pools. Asking €99,000, about €961/m².
+
+https://realhunt.co/deal/es-matanza-detached-single-storey-garden-garage-99k
 
 ### 1-bedroom apartment with pool in Torrevieja
 
@@ -807,6 +871,14 @@ https://realhunt.co/deal/es-torrevieja-99k-86111
 €99,950 for 57 m² and 2 bedrooms in San Pedro del Pinatar (Murcia), about €1,754/m². About 1000 m from the sea. With terrace. Ready to move in: listed in good condition, and not marked as occupied, rented or at auction. Ask for the nota simple before paying a deposit.
 
 https://realhunt.co/deal/es-san-pedro-del-pinatar-99k-91782
+
+### Fully renovated house with terrace and second residence in Alcaudete de la Jara, Toledo
+
+€139,900 · Alcaudete de la Jara, Toledo · 198 m² · 4 bedrooms · RealHunt score 83 · added 2026-11-28
+
+This fully renovated house spreads over two floors and has access from two streets. The ground floor offers a living-dining room, a separate kitchen with pantry, an en-suite bedroom and a full bathroom, plus a second independent residence with two bedrooms and a full bathroom. Outdoor features include a patio, a large upper-level terrace, a storage room and a 171 m² plot. The home has air conditioning and a living area of 198 m². Asking €139,900, about €707/m².
+
+https://realhunt.co/deal/es-alcaudete-de-la-jara-renovated-corner-house-terrace-patio-140k
 
 ### Three-bedroom townhouse with two terraces in La Marina, Costa Blanca
 
@@ -879,6 +951,14 @@ https://realhunt.co/deal/Dc26I9MkYDj
 €85,000 for 46 m² and 1 bedroom in Murcia (Murcia), about €1,848/m². About 14 km from the coast (straight line). Ready to move in: listed in very good condition, and not marked as occupied, rented or at auction. Ask for the nota simple before paying a deposit.
 
 https://realhunt.co/deal/es-murcia-85k-23435
+
+### 3-bedroom cave house with views and land in Castilléjar, Granada
+
+€95,000 · Castilléjar, Granada, Andalusia · 104 m² · 3 bedrooms · RealHunt score 82 · added 2026-11-28
+
+This is a cave house in Castilléjar, Granada, with its rounded cave ceilings preserved throughout. It has 3 bedrooms, 2 bathrooms, a spacious kitchen and several large rooms for living, sleeping or a home office. A large enclosed area at the front offers parking for several vehicles and views of the surrounding hills, and the plot covers 5,285 sq ft of land. The kitchen has a large traditional fireplace hood. Huéscar is about 15 km away, and Granada Airport is about 139 km away. Asking €95,000, about €913/m².
+
+https://realhunt.co/deal/es-castillejar-cave-house-fireplace-views-95k
 
 ### 2-bedroom ground-floor flat with garden and mountain views in Anna
 

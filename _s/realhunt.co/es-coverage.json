@@ -1,8 +1,8 @@
 {
  "noindex_copies": 7,
  "written_by_hand": {
-  "pages": 815,
-  "words": 1347168,
+  "pages": 978,
+  "words": 1652002,
   "english": 31,
   "failed": [
    {
@@ -67,15 +67,6 @@
     "words": 1773,
     "hits": [
      "map"
-    ]
-   },
-   {
-    "url": "https://realhunt.co/es/deal/gr-makrigialos-furnished-townhouse-pool-views-165k",
-    "english": 2,
-    "words": 1920,
-    "hits": [
-     "in",
-     "in"
     ]
    },
    {
@@ -245,40 +236,49 @@
     "hits": [
      "map"
     ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/gr-makrigialos-furnished-townhouse-pool-views-165k",
+    "english": 2,
+    "words": 1937,
+    "hits": [
+     "in",
+     "in"
+    ]
    }
   ]
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1279,
+ "twins": 1341,
  "groups": {
   "homes": {
-   "pages": 703,
-   "twins": 703,
+   "pages": 866,
+   "twins": 866,
    "words": 0,
    "english": 0,
-   "by_hand": 703,
+   "by_hand": 866,
    "spanish_pct": 0
   },
   "places": {
-   "pages": 726,
-   "twins": 726,
-   "words": 1742489,
+   "pages": 788,
+   "twins": 788,
+   "words": 1929655,
    "english": 0,
    "spanish_pct": 100
   },
   "pages": {
    "pages": 41,
    "twins": 8,
-   "words": 2963,
+   "words": 2975,
    "english": 418,
    "by_hand": 2,
-   "spanish_pct": 85.89
+   "spanish_pct": 85.95
   },
   "content": {
    "pages": 591,
    "twins": 589,
-   "words": 458477,
+   "words": 461271,
    "english": 33,
    "by_hand": 42,
    "spanish_pct": 99.99

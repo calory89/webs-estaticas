@@ -42,11 +42,11 @@ Impuesto sobre los ingresos por alquiler: Un no residente que alquila una vivien
 
 ### Compara Dinamarca
 
+- [Dinamarca vs Francia](https://realhunt.co/es/countries/denmark-vs-france)
 - [Dinamarca vs España](https://realhunt.co/es/countries/denmark-vs-spain)
 - [Dinamarca vs Italia](https://realhunt.co/es/countries/denmark-vs-italy)
-- [Dinamarca vs Francia](https://realhunt.co/es/countries/denmark-vs-france)
-- [Dinamarca vs Estados Unidos](https://realhunt.co/es/countries/denmark-vs-united-states)
 - [Dinamarca vs Grecia](https://realhunt.co/es/countries/denmark-vs-greece)
+- [Dinamarca vs Estados Unidos](https://realhunt.co/es/countries/denmark-vs-united-states)
 - [Dinamarca vs Suecia](https://realhunt.co/es/countries/denmark-vs-sweden)
 - [Dinamarca vs Polonia](https://realhunt.co/es/countries/denmark-vs-poland)
 - [Dinamarca vs Japón](https://realhunt.co/es/countries/denmark-vs-japan)

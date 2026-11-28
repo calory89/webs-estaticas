@@ -1,37 +1,37 @@
-Título: Casas en venta en Portugal (11, desde 48.000 €) · RealHunt
+Título: Casas en venta en Portugal (19, desde 48.000 €) · RealHunt
 URL: https://realhunt.co/es/homes/portugal
 Actualizado: 2026-11-28
 Licencia: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Casas en venta en Portugal
 
-Lista cambiada por última vez el 27 de noviembre de 2026. Ir a las viviendas
+Lista cambiada por última vez el 28 de noviembre de 2026. Ir a las viviendas
 
 ### Tres de esta lista
 
-- [Mejor nota76.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [Mejor notaNueva140.000 €Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, DouroTabuaço, Viseu173 m² · 3 dorm. · 809 €/m² · Añadida hoy](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k)
 - [La más barata48.000 €Casa de pueblo recién pintada de tres dormitorios junto a los lagos del SaborBrunhoso, Bragança100 m² · 3 dorm. · 480 €/m² · 45 días en RealHunt](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522)
-- [Más metros por el dineroNueva160.000 €Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira AltaCandal, Beira Alta131 m² · 2 dorm. · 1.221 €/m² · 1 día en RealHunt](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k)
+- [Más metros por el dinero76.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 54 días en RealHunt](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
 
-RealHunt tiene hoy 11 casas en venta en Portugal, con precios de 48.000 € a 200.000 €. La más barata cuesta 48.000 €: [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522), en Brunhoso (100 m², 3 dormitorios). El precio mediano es de 160.000 € (1.989 €/m²), frente a 99.000 € (1.241 €/m²) de las 703 viviendas de RealHunt en 23 países.
+RealHunt tiene hoy 19 casas en venta en Portugal, con precios de 48.000 € a 200.000 €. La más barata cuesta 48.000 €: [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522), en Brunhoso (100 m², 3 dormitorios). El precio mediano es de 140.000 € (1.264 €/m²), frente a 107.000 € (1.104 €/m²) de las 866 viviendas de RealHunt en 23 países.
 
 Viviendas
-11
+19
 
 Desde
 48.000 €
 
 Precio mediano
-160.000 €
+140.000 €
 
 Mediana por m²
-1.989 €/m²
+1.264 €/m²
 
 Tamaño mediano
-84 m²
+105 m²
 
 Mejor nota
-85
+92
 
 Gastos de compra
 3–12%
@@ -42,12 +42,20 @@ Compra libre
 Datos del
 28 nov 2026
 
-### Las 11 viviendas, de mejor a peor nota
+### Las 19 viviendas, de mejor a peor nota
 
 Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a más cara, mira la tabla de abajo: toca un encabezado como Precio para ordenarla. [Ver estas viviendas en el mapa](https://realhunt.co/es/map?country=Portugal)
 
+- [Nota 92Nueva140.000 €Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, DouroTabuaço, Viseu173 m² · 3 dorm. · 809 €/m² · Añadida hoyEsta casa de piedra totalmente reformada está lista para entrar a vivir, con una fachada de piedra que aporta buen aislamiento.](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k)
+- [Nota 88Nueva92.500 €Casa de 2 dormitorios lista para entrar a vivir con chimenea y terreno en Aldeias, GuardaAldeias, Guarda110 m² · 2 dorm. · 841 €/m² · Añadida hoyEsta casa lista para entrar a vivir en Aldeias puede habitarse ya mismo.](https://realhunt.co/es/deal/pt-aldeias-move-in-ready-house-fireplace-92k)
+- [Nota 87Nueva135.000 €Casa de 2 dormitorios en buen estado con jardín y vistas a la montaña en Aldeias, GuardaAldeias, Guarda105 m² · 2 dorm. · 1.286 €/m² · Añadida hoyEsta casa independiente está en buen estado, con una cocina lista para usar.](https://realhunt.co/es/deal/pt-aldeias-garden-house-mountain-views-fireplace-135k)
 - [Nota 8576.500 €Casa de pueblo de 2 dormitorios con terraza en la región vinícola del DãoCarregal do Sal, Viseu134 m² · 2 dorm. · 571 €/m² · 54 días en RealHuntCasa T2 con terraza en Sobral (Carregal do Sal), en la región vinícola del Dão: cocina, salón, dos dormitorios y baño en la planta principal, más…](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q)
+- [Nota 85Nueva142.900 €Casa de piedra totalmente reformada de 2 dormitorios con jardín y patio en Cidadelhe, GuardaCidadelhe, Guarda123 m² · 2 dorm. · 1.162 €/m² · Añadida hoyEsta casa de piedra totalmente reformada está lista para entrar a vivir y se divide en dos unidades independientes.](https://realhunt.co/es/deal/pt-cidadelhe-renovated-stone-house-courtyard-143k)
+- [Nota 85Nueva100.000 €Casa de tres plantas con vistas a la montaña y terreno en São Gião, CoimbraSão Gião, Coimbra84 m² · 4 dorm. · 1.190 €/m² · Añadida hoyEsta casa de tres plantas se encuentra en un pueblo a pocos kilómetros de São Gião, en Oliveira do Hospital.](https://realhunt.co/es/deal/pt-sao-giao-mountain-views-stone-house-land-100k)
 - [Nota 84Nueva160.000 €Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira AltaCandal, Beira Alta131 m² · 2 dorm. · 1.221 €/m² · 1 día en RealHuntLa vivienda ha sido reformada con acabados de calidad.](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k)
+- [Nota 83Nueva154.000 €Casa de 3 dormitorios bien conservada con jardín y chimenea en Salvada, AlentejoSalvada, Alentejo141 m² · 3 dorm. · 1.092 €/m² · Añadida hoyEsta casa bien conservada está en excelente estado, con tres dormitorios, un baño, un amplio salón, cocina y trastero.](https://realhunt.co/es/deal/pt-salvada-well-maintained-house-fireplace-garden-154k)
+- [Nota 83Nueva115.000 €Casa adosada con dos baños y terreno en el centro histórico de Estremoz, AlentejoEstremoz, Alentejo109 m² · 2 dorm. · 1.055 €/m² · Añadida hoyEsta casa adosada de dos plantas se encuentra en el centro histórico de Estremoz, a dos minutos a pie del castillo.](https://realhunt.co/es/deal/pt-estremoz-historic-centre-townhouse-land-115k)
+- [Nota 81Nueva139.000 €Propiedad con dos casas, 3 dormitorios y terreno en Meixedo e Padornelos, Trás-os-MontesMeixedo e Padornelos, Trás-os-Montes110 m² · 3 dorm. · 1.264 €/m² · Añadida hoyLa propiedad comprende dos casas independientes en una misma parcela: una casa de 2 dormitorios y otra de 1 dormitorio.](https://realhunt.co/es/deal/pt-meixedo-e-padornelos-two-houses-plot-investment-139k)
 - [Nota 80Nueva200.000 €Casa tradicional de 2 dormitorios con chimenea y amplio patio en Crato, AlentejoCrato, Alentejo157 m² · 2 dorm. · 1.274 €/m² · 1 día en RealHuntEsta casa de 157 m² tiene tres habitaciones, incluidos dos dormitorios, y muy buena luz natural.](https://realhunt.co/es/deal/pt-crato-fireplace-patio-garage-countryside-200k)
 - [Nota 80Nueva189.000 €Casa de pueblo de tres dormitorios con terraza y vistas a la Serra da Lousã cerca de PenacovaParadela da Cortiça, Coimbra95 m² · 3 dorm. · 1.989 €/m² · 8 días en RealHuntUna casa de pueblo ordenada de tres plantas en Paradela da Cortiça con vista abierta a la Serra da Lousã.](https://realhunt.co/es/deal/pt-centro-penacova-paradela-village-house-views-189k)
 - [Nota 80Nueva130.000 €Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de AlcoutimAlcoutim e Pereiro, Faro77 m² · 2 dorm. · 1.688 €/m² · 10 días en RealHuntUna casa aislada de una sola planta con un tejado de nuevas tejas y una chimenea del Algarve al borde de un pequeño pueblo de montaña…](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k)
@@ -58,16 +66,24 @@ Ordenadas por la nota de RealHunt, de mejor a peor. Para verlas de más barata a
 - [Nota 76Nueva199.900 €Villa reformada con vistas al Guadiana y jardín en Alcoutim, AlgarveAlcoutim, Algarve70 m² · 1 dorm. · 2.856 €/m² · 1 día en RealHuntVilla tradicional totalmente reformada en dos plantas, respetando su diseño original.](https://realhunt.co/es/deal/pt-alcoutim-renovated-villa-river-views-garden-199k)
 - [Nota 8448.000 €Casa de pueblo recién pintada de tres dormitorios junto a los lagos del SaborBrunhoso, Bragança100 m² · 3 dorm. · 480 €/m² · 45 días en RealHuntCasa de dos plantas recién pintada de amarillo y azul en Brunhoso, a 8 km de Mogadouro: salón, cocina y baño abajo, tres dormitorios y balcón…](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522)
 
-### Compara las 11 viviendas, de más barata a más cara
+### Compara las 19 viviendas, de más barata a más cara
 
-Precio mediano por m² de esta lista: 1.989 €/m².
+Precio mediano por m² de esta lista: 1.264 €/m².
 
 Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Casa de pueblo recién pintada de tres dormitorios junto a los lagos del Sabor](https://realhunt.co/es/deal/pt-mogadouro-48k-19109522) | Brunhoso, Bragança | 48.000 € | 100 m² | 480 €/m² | 3 | 84 | 14 oct 2026
 [Casa de pueblo de 2 dormitorios con terraza en la región vinícola del Dão](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q) | Carregal do Sal, Viseu | 76.500 € | 134 m² | 571 €/m² | 2 | 85 | 5 oct 2026
+[Casa de 2 dormitorios lista para entrar a vivir con chimenea y terreno en Aldeias, Guarda](https://realhunt.co/es/deal/pt-aldeias-move-in-ready-house-fireplace-92k) | Aldeias, Guarda | 92.500 € | 110 m² | 841 €/m² | 2 | 88 | 28 nov 2026
 [Cabaña encalada de dos dormitorios renovada en Alcaria Ruiva, cerca de Mértola, Alentejo](https://realhunt.co/es/deal/pt-alentejo-alcaria-ruiva-renovated-cottage-95k) | Alcaria Ruiva, Beja | 95.000 € | 46 m² | 2.065 €/m² | 2 | 77 | 18 nov 2026
+[Casa de tres plantas con vistas a la montaña y terreno en São Gião, Coimbra](https://realhunt.co/es/deal/pt-sao-giao-mountain-views-stone-house-land-100k) | São Gião, Coimbra | 100.000 € | 84 m² | 1.190 €/m² | 4 | 85 | 28 nov 2026
+[Casa adosada con dos baños y terreno en el centro histórico de Estremoz, Alentejo](https://realhunt.co/es/deal/pt-estremoz-historic-centre-townhouse-land-115k) | Estremoz, Alentejo | 115.000 € | 109 m² | 1.055 €/m² | 2 | 83 | 28 nov 2026
 [Casa aislada renovada con vistas abiertas a las colinas en el este del Algarve, cerca de Alcoutim](https://realhunt.co/es/deal/pt-algarve-alcoutim-renovated-hill-house-130k) | Alcoutim e Pereiro, Faro | 130.000 € | 77 m² | 1.688 €/m² | 2 | 80 | 18 nov 2026
+[Casa de 2 dormitorios en buen estado con jardín y vistas a la montaña en Aldeias, Guarda](https://realhunt.co/es/deal/pt-aldeias-garden-house-mountain-views-fireplace-135k) | Aldeias, Guarda | 135.000 € | 105 m² | 1.286 €/m² | 2 | 87 | 28 nov 2026
+[Propiedad con dos casas, 3 dormitorios y terreno en Meixedo e Padornelos, Trás-os-Montes](https://realhunt.co/es/deal/pt-meixedo-e-padornelos-two-houses-plot-investment-139k) | Meixedo e Padornelos, Trás-os-Montes | 139.000 € | 110 m² | 1.264 €/m² | 3 | 81 | 28 nov 2026
 [Casa de dos dormitorios con jardín vallado y vistas al río cerca de Marvão, Alentejo](https://realhunt.co/es/deal/pt-alentejo-marvao-ponte-velha-house-river-view-140k) | Ponte Velha, Portalegre | 140.000 € | 70 m² | 2.000 €/m² | 2 | 79 | 20 nov 2026
+[Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k) | Tabuaço, Viseu | 140.000 € | 173 m² | 809 €/m² | 3 | 92 | 28 nov 2026
+[Casa de piedra totalmente reformada de 2 dormitorios con jardín y patio en Cidadelhe, Guarda](https://realhunt.co/es/deal/pt-cidadelhe-renovated-stone-house-courtyard-143k) | Cidadelhe, Guarda | 142.900 € | 123 m² | 1.162 €/m² | 2 | 85 | 28 nov 2026
+[Casa de 3 dormitorios bien conservada con jardín y chimenea en Salvada, Alentejo](https://realhunt.co/es/deal/pt-salvada-well-maintained-house-fireplace-garden-154k) | Salvada, Alentejo | 154.000 € | 141 m² | 1.092 €/m² | 3 | 83 | 28 nov 2026
 [Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira Alta](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k) | Candal, Beira Alta | 160.000 € | 131 m² | 1.221 €/m² | 2 | 84 | 27 nov 2026
 [Casa de campo renovada y amueblada en 860 m² de terreno en Lajes do Pico, Azores](https://realhunt.co/es/deal/pt-azores-pico-silveira-renovated-cottage-big-plot-179k) | Silveira, Azores | 179.000 € | 84 m² | 2.131 €/m² | 1 | 78 | 20 nov 2026
 [Casa tradicional de una planta con patio privado y terreno en Baleizão, Alentejo](https://realhunt.co/es/deal/pt-baleizao-traditional-alentejo-patio-house-179k) | Baleizão, Alentejo | 179.000 € | 83 m² | 2.157 €/m² | 3 | 77 | 27 nov 2026
@@ -75,40 +91,43 @@ Vivienda | Lugar | Precio | Tamaño | Por m² | Dorm. | Nota | Añadida
 [Villa reformada con vistas al Guadiana y jardín en Alcoutim, Algarve](https://realhunt.co/es/deal/pt-alcoutim-renovated-villa-river-views-garden-199k) | Alcoutim, Algarve | 199.900 € | 70 m² | 2.856 €/m² | 1 | 76 | 27 nov 2026
 [Casa tradicional de 2 dormitorios con chimenea y amplio patio en Crato, Alentejo](https://realhunt.co/es/deal/pt-crato-fireplace-patio-garage-countryside-200k) | Crato, Alentejo | 200.000 € | 157 m² | 1.274 €/m² | 2 | 80 | 27 nov 2026
 
-### Las 11 viviendas en cifras
+### Las 19 viviendas en cifras
 
-- Tamaño: la mitad tiene 84 m² o más. La más grande tiene 157 m²: [Casa tradicional de 2 dormitorios con chimenea y amplio patio en Crato, Alentejo](https://realhunt.co/es/deal/pt-crato-fireplace-patio-garage-countryside-200k).
-- Dormitorios: 2 con 1 dormitorio, 6 con 2, 3 con 3.
-- Tipo: 11 casas.
-- Entorno: 10 en pueblos.
-- Dónde: Alentejo (2), Algarve (1), Azores (1), Beira Alta (1), Beja (1), Bragança (1).
-- Extras que mencionan los anuncios: 3 con jardín, 7 con terraza, 3 con garaje, 1 con piscina, 5 con chimenea.
-- Notas: de 76 a 85 sobre 98. La de mejor nota: [Casa de pueblo de 2 dormitorios con terraza en la región vinícola del Dão](https://realhunt.co/es/deal/pt-carregal-do-sal-76k-1bjc5q).
-- La más reciente, añadida el 27 de noviembre de 2026: [Casa renovada de 2 dormitorios con balcón y estufa de leña en Candal, Viseu, Beira Alta](https://realhunt.co/es/deal/pt-candal-renovated-storey-house-wood-stove-160k). 9 de estas viviendas se añadieron en los últimos 30 días.
+- Tamaño: la mitad tiene 105 m² o más. La más grande tiene 173 m²: [Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k).
+- Dormitorios: 2 con 1 dormitorio, 10 con 2, 6 con 3, 1 con 4 o más.
+- Tipo: 19 casas.
+- Entorno: 17 en pueblos, 1 en ciudad.
+- Dónde: Alentejo (4), Guarda (3), Coimbra (2), Viseu (2), Algarve (1), Azores (1).
+- Precio mediano más bajo: Guarda, 135.000 € entre 3 viviendas. El más alto: Alentejo, 179.000 € entre 4.
+- Extras que mencionan los anuncios: 7 con jardín, 11 con terraza, 7 con garaje, 2 con piscina, 10 con chimenea.
+- Notas: de 76 a 92 sobre 98. La de mejor nota: [Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k).
+- La más reciente, añadida el 28 de noviembre de 2026: [Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k). 17 de estas viviendas se añadieron en los últimos 30 días.
 
 ### Qué compra tu dinero aquí
 
-Divididas por precio en tres grupos del mismo tamaño: de 48.000 € a 130.000 €, 4 viviendas con una mediana de 100 m², casi siempre con 2 dormitorios; de 140.000 € a 179.000 €, 3 viviendas con una mediana de 84 m², casi siempre con 2 dormitorios; de 179.000 € a 200.000 €, 4 viviendas con una mediana de 95 m², casi siempre con 3 dormitorios.
+Divididas por precio en tres grupos del mismo tamaño: de 48.000 € a 115.000 €, 6 viviendas con una mediana de 109 m², casi siempre con 2 dormitorios; de 130.000 € a 154.000 €, 7 viviendas con una mediana de 110 m², casi siempre con 2 dormitorios; de 160.000 € a 200.000 €, 6 viviendas con una mediana de 95 m², casi siempre con 1 dormitorio.
 
 ### Precio mediano por región en Portugal
 
 Región | Viviendas | Precio mediano
 Bragança | 1 | 48.000 €
-Viseu | 1 | 76.500 €
 Beja | 1 | 95.000 €
 Faro | 1 | 130.000 €
+[Guarda](https://realhunt.co/es/homes/portugal/guarda) | 3 | 135.000 €
+Trás-os-Montes | 1 | 139.000 €
+Viseu | 2 | 140.000 €
 Portalegre | 1 | 140.000 €
 Beira Alta | 1 | 160.000 €
+[Alentejo](https://realhunt.co/es/homes/portugal/alentejo) | 4 | 179.000 €
 Azores | 1 | 179.000 €
-Coimbra | 1 | 189.000 €
+Coimbra | 2 | 189.000 €
 Algarve | 1 | 199.900 €
-Alentejo | 2 | 200.000 €
 
 ### Gastos de compra y normas para extranjeros en Portugal
 
 ¿Pueden comprar los extranjeros? Sí, los mismos derechos que los ciudadanos portugueses (aumento de IMT para compradores extranjeros de segunda residencia anunciado en septiembre de 2025).
 
-Los impuestos y gastos añaden alrededor de un 3 a 12 % al precio: Impuesto de transmisión IMT 0-8% (progresivo) + impuesto del sello 0,8% + notario y registro 0,9-1,2% + abogado 1,25-2%. En la vivienda mediana de esta página (160.000 €) son de 4.800 € a 19.200 €, es decir, de 164.800 € a 179.200 € en total.
+Los impuestos y gastos añaden alrededor de un 3 a 12 % al precio: Impuesto de transmisión IMT 0-8% (progresivo) + impuesto del sello 0,8% + notario y registro 0,9-1,2% + abogado 1,25-2%. En la vivienda mediana de esta página (140.000 €) son de 4.200 € a 16.800 €, es decir, de 144.200 € a 156.800 € en total.
 
 Con los mismos porcentajes: sobre 40.000 €, de 1.200 € a 4.800 €; sobre 80.000 €, de 2.400 € a 9.600 €; sobre 150.000 €, de 4.500 € a 18.000 €.
 
@@ -120,14 +139,14 @@ Información general, no asesoramiento fiscal ni legal. Datos revisados en 2026.
 
 ### En qué fijarse antes de comprar
 
-- En conjunto, estas viviendas puntúan más bajo en precio (30/100 de media) y más alto en estado para entrar a vivir (81/100).
+- En conjunto, estas viviendas puntúan más bajo en precio (43/100 de media) y más alto en estado para entrar a vivir (81/100).
 - ¿Piensas alquilarla? El registro de Alojamiento Local (AL) es obligatorio; desde noviembre de 2024 los municipios pueden congelar nuevas licencias de AL en zonas de contención (Lisboa y Oporto utilizan esto); los condominios pueden objetar con más del 50% de los propietarios.
 
 ### Preguntas de quienes compran
 
 #### ¿Cuánto cuesta una casa en venta en Portugal?
 
-Los precios de venta van de 48.000 € a 200.000 € entre 11 viviendas. La mediana es de 160.000 € (1.989 €/m²).
+Los precios de venta van de 48.000 € a 200.000 € entre 19 viviendas. La mediana es de 140.000 € (1.264 €/m²).
 
 #### ¿Cuál es la casa más barata en venta en Portugal?
 
@@ -139,23 +158,35 @@ Sí, los mismos derechos que los ciudadanos portugueses (aumento de IMT para com
 
 #### ¿Cuáles son los gastos de compra en Portugal?
 
-Alrededor de un 3 a 12 % además del precio: Impuesto de transmisión IMT 0-8% (progresivo) + impuesto del sello 0,8% + notario y registro 0,9-1,2% + abogado 1,25-2%. En la vivienda mediana de esta página (160.000 €) son de 4.800 € a 19.200 €. Información general, no asesoramiento fiscal.
+Alrededor de un 3 a 12 % además del precio: Impuesto de transmisión IMT 0-8% (progresivo) + impuesto del sello 0,8% + notario y registro 0,9-1,2% + abogado 1,25-2%. En la vivienda mediana de esta página (140.000 €) son de 4.200 € a 16.800 €. Información general, no asesoramiento fiscal.
+
+#### ¿Cuál es la región más barata en Portugal?
+
+Entre las regiones con al menos 3 viviendas en RealHunt, Guarda tiene el precio mediano más bajo, 135.000 € entre 3 viviendas, y Alentejo el más alto, 179.000 €.
 
 ### Más búsquedas en Portugal
 
-Por presupuesto [Menos de 100.000 € 3](https://realhunt.co/es/homes/portugal/under-100000) [Menos de 150.000 € 5](https://realhunt.co/es/homes/portugal/under-150000) [Menos de 200.000 € 11](https://realhunt.co/es/homes/portugal/under-200000)
+Por presupuesto [Menos de 100.000 € 5](https://realhunt.co/es/homes/portugal/under-100000) [Menos de 150.000 € 12](https://realhunt.co/es/homes/portugal/under-150000) [Menos de 200.000 € 19](https://realhunt.co/es/homes/portugal/under-200000)
 
-Por dormitorios [2 dormitorios 6](https://realhunt.co/es/homes/portugal/2-bedroom)
+Por entorno [Casas de pueblo 17](https://realhunt.co/es/homes/portugal/village-houses)
 
-Por característica [Con jardín 3](https://realhunt.co/es/cheap-houses/with-garden-in-portugal) [Con terraza 7](https://realhunt.co/es/cheap-houses/with-a-terrace-in-portugal) [Para entrar a vivir 5](https://realhunt.co/es/cheap-houses/turnkey-in-portugal) [Con chimenea 5](https://realhunt.co/es/cheap-houses/with-fireplace-in-portugal) [Con garaje 3](https://realhunt.co/es/cheap-houses/with-garage-in-portugal) [Nuevas este mes 9](https://realhunt.co/es/cheap-houses/new-this-month-in-portugal) [De una planta 3](https://realhunt.co/es/cheap-houses/single-storey-in-portugal) [Zona tranquila 6](https://realhunt.co/es/cheap-houses/quiet-location-in-portugal) [Más de 80 m² 7](https://realhunt.co/es/cheap-houses/over-80-sqm-in-portugal) [Más de 120 m² 3](https://realhunt.co/es/cheap-houses/over-120-sqm-in-portugal)
+Por dormitorios [2 dormitorios 10](https://realhunt.co/es/homes/portugal/2-bedroom) [3 dormitorios 6](https://realhunt.co/es/homes/portugal/3-bedroom)
 
-Países vecinos [España 155](https://realhunt.co/es/homes/spain)
+Por región [Alentejo 4](https://realhunt.co/es/homes/portugal/alentejo) [Guarda 3](https://realhunt.co/es/homes/portugal/guarda)
 
-Por país [España 155](https://realhunt.co/es/homes/spain) [Italia 102](https://realhunt.co/es/homes/italy) [Francia 62](https://realhunt.co/es/homes/france) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Grecia 42](https://realhunt.co/es/homes/greece) [Suecia 37](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Japón 30](https://realhunt.co/es/homes/japan) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Alemania 18](https://realhunt.co/es/homes/germany) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 7](https://realhunt.co/es/homes/mexico) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Chipre 4](https://realhunt.co/es/homes/cyprus) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+Por característica [Con jardín 7](https://realhunt.co/es/cheap-houses/with-garden-in-portugal) [Casas de piedra 4](https://realhunt.co/es/cheap-houses/stone-houses-in-portugal) [Con terraza 11](https://realhunt.co/es/cheap-houses/with-a-terrace-in-portugal) [Para entrar a vivir 8](https://realhunt.co/es/cheap-houses/turnkey-in-portugal) [Con chimenea 10](https://realhunt.co/es/cheap-houses/with-fireplace-in-portugal) [Con garaje 7](https://realhunt.co/es/cheap-houses/with-garage-in-portugal) [De montaña 3](https://realhunt.co/es/cheap-houses/in-the-mountains-in-portugal) [Olivos o viñas 4](https://realhunt.co/es/cheap-houses/with-olive-trees-or-vines-in-portugal) [Cerca de un aeropuerto 3](https://realhunt.co/es/cheap-houses/near-an-airport-in-portugal) [Nuevas este mes 17](https://realhunt.co/es/cheap-houses/new-this-month-in-portugal) [Nuevas esta semana 12](https://realhunt.co/es/cheap-houses/new-this-week-in-portugal) [De una planta 3](https://realhunt.co/es/cheap-houses/single-storey-in-portugal) [Zona tranquila 6](https://realhunt.co/es/cheap-houses/quiet-location-in-portugal) [Más de 80 m² 15](https://realhunt.co/es/cheap-houses/over-80-sqm-in-portugal) [Más de 120 m² 6](https://realhunt.co/es/cheap-houses/over-120-sqm-in-portugal)
 
-Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 6 de estas 11 viviendas se comprobaron con su anuncio original en los últimos 30 días. 10 viviendas en Portugal salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
+Clasificaciones [Las 10 con mejor nota 10](https://realhunt.co/es/cheap-houses/best-rated-in-portugal)
 
-Estos anuncios proceden de green-acres.pt (10), imovirtual.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
+En libras y en dólares [Menos de 100.000 libras 6](https://realhunt.co/es/cheap-houses/under-100000-pounds-in-portugal)
+
+Países vecinos [España 165](https://realhunt.co/es/homes/spain)
+
+Por país [Francia 179](https://realhunt.co/es/homes/france) [España 165](https://realhunt.co/es/homes/spain) [Italia 107](https://realhunt.co/es/homes/italy) [Grecia 65](https://realhunt.co/es/homes/greece) [Estados Unidos 61](https://realhunt.co/es/homes/united-states) [Dinamarca 46](https://realhunt.co/es/homes/denmark) [Suecia 37](https://realhunt.co/es/homes/sweden) [Polonia 31](https://realhunt.co/es/homes/poland) [Japón 30](https://realhunt.co/es/homes/japan) [Países Bajos 18](https://realhunt.co/es/homes/netherlands) [Alemania 18](https://realhunt.co/es/homes/germany) [Canadá 16](https://realhunt.co/es/homes/canada) [Suiza 10](https://realhunt.co/es/homes/switzerland) [México 7](https://realhunt.co/es/homes/mexico) [Bulgaria 6](https://realhunt.co/es/homes/bulgaria) [República Dominicana 5](https://realhunt.co/es/homes/dominican-republic) [Reino Unido 5](https://realhunt.co/es/homes/united-kingdom) [Chipre 4](https://realhunt.co/es/homes/cyprus) [Uruguay 4](https://realhunt.co/es/homes/uruguay) [Irlanda 4](https://realhunt.co/es/homes/ireland) [Colombia 3](https://realhunt.co/es/homes/colombia) [República Checa 3](https://realhunt.co/es/homes/czech-republic)
+
+Cómo elegimos estas viviendas: una persona lee cada anuncio y comprueba precio, tamaño, fotos y lugar antes de publicarlo, y la revisión de cada noche lo retira cuando el anuncio desaparece. [Cómo revisamos las casas](https://realhunt.co/es/how-we-check-homes) 10 de estas 19 viviendas se comprobaron con su anuncio original en los últimos 30 días. 10 viviendas en Portugal salieron de RealHunt o se marcaron como ya no a la venta en los últimos 30 días. [Ver el registro de casas retiradas](https://realhunt.co/es/research/removed-homes)
+
+Estos anuncios proceden de green-acres.pt (18), imovirtual.com (1). RealHunt no es una inmobiliaria y no vende estas viviendas: cada una enlaza a su anuncio original y una persona la revisó antes de publicarla.
 
 [Avísame por correo de viviendas nuevas en Portugal](https://realhunt.co/es/alerts?country=Portugal) · [Filtrar y ordenar estas viviendas](https://realhunt.co/es?country=Portugal#filters) · [Todas las búsquedas de casas baratas](https://realhunt.co/es/cheap-houses) · [Cómo funciona la nota](https://realhunt.co/es/method) · [Mapa del sitio: todas las páginas y casas en Portugal](https://realhunt.co/es/sitemap/portugal)
 

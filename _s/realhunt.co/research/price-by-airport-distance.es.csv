@@ -1,23 +1,23 @@
 ﻿tipo,nombre,desde_km,hasta_km,casas,precio_mediano_eur,mediana_eur_m2,casas_con_superficie,nota_mediana,distancia_mediana_km,a_menos_de_60_km_pct
-tramo,menos de 30 km,0,30,214,150000,1568,198,86,,
-tramo,de 30 a 60 km,30,60,280,99500,1222,258,84,,
-tramo,de 60 a 100 km,60,100,176,91000,1086,165,83,,
-tramo,100 km o más,100,,23,90400,1094,20,84,,
+tramo,menos de 30 km,0,30,237,130000,1397,221,86,,
+tramo,de 30 a 60 km,30,60,349,104600,1069,327,84,,
+tramo,de 60 a 100 km,60,100,231,99500,1000,220,83,,
+tramo,100 km o más,100,,39,110000,903,36,83,,
 pais,Países Bajos,,,18,,,,,14,100
 pais,Estados Unidos,,,61,,,,,19,80
 pais,México,,,12,,,,,20,100
 pais,Dominican Republic,,,5,,,,,25,100
-pais,Grecia,,,42,,,,,33,95
-pais,España,,,155,,,,,37,77
+pais,Grecia,,,65,,,,,32,94
+pais,España,,,165,,,,,37,76
 pais,Dinamarca,,,46,,,,,43,70
 pais,Japón,,,29,,,,,44,83
-pais,Italia,,,97,,,,,45,69
+pais,Italia,,,102,,,,,45,70
 pais,Bulgaria,,,6,,,,,47,100
 pais,Suecia,,,33,,,,,48,73
-pais,Francia,,,62,,,,,55,58
+pais,Francia,,,179,,,,,59,52
 pais,Reino Unido,,,5,,,,,61,40
 pais,Canadá,,,16,,,,,63,44
-pais,Portugal,,,20,,,,,65,50
+pais,Portugal,,,28,,,,,64,50
 pais,Alemania,,,18,,,,,66,28
 pais,Polonia,,,31,,,,,68,45
 pais,Suiza,,,10,,,,,71,30

@@ -42,12 +42,12 @@ Impuesto sobre los ingresos por alquiler: Los no residentes declaran el inmueble
 
 ### Compara Países Bajos
 
+- [Países Bajos vs Francia](https://realhunt.co/es/countries/france-vs-netherlands)
 - [Países Bajos vs España](https://realhunt.co/es/countries/netherlands-vs-spain)
 - [Países Bajos vs Italia](https://realhunt.co/es/countries/italy-vs-netherlands)
-- [Países Bajos vs Francia](https://realhunt.co/es/countries/france-vs-netherlands)
+- [Países Bajos vs Grecia](https://realhunt.co/es/countries/greece-vs-netherlands)
 - [Países Bajos vs Estados Unidos](https://realhunt.co/es/countries/netherlands-vs-united-states)
 - [Países Bajos vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-netherlands)
-- [Países Bajos vs Grecia](https://realhunt.co/es/countries/greece-vs-netherlands)
 - [Países Bajos vs Suecia](https://realhunt.co/es/countries/netherlands-vs-sweden)
 - [Países Bajos vs Polonia](https://realhunt.co/es/countries/netherlands-vs-poland)
 

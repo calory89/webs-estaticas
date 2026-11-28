@@ -15,7 +15,7 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/propert
 7. [ThinkSPAIN](https://www.thinkspain.com/)
 8. [Kyero](https://www.kyero.com/)
 
-RealHunt: 155 checked homes, https://realhunt.co/homes/spain
+RealHunt: 165 checked homes, https://realhunt.co/homes/spain
 
 ## Portugal
 
@@ -26,7 +26,7 @@ RealHunt: 155 checked homes, https://realhunt.co/homes/spain
 5. [OLX](https://www.olx.pt/)
 6. [RE/MAX PT](https://www.remax.pt/)
 
-RealHunt: 20 checked homes, https://realhunt.co/homes/portugal
+RealHunt: 28 checked homes, https://realhunt.co/homes/portugal
 
 ## Italy
 
@@ -38,7 +38,7 @@ RealHunt: 20 checked homes, https://realhunt.co/homes/portugal
 6. [Gate-away](https://www.gate-away.com/)
 7. [Trovit IT](https://case.trovit.it/)
 
-RealHunt: 102 checked homes, https://realhunt.co/homes/italy
+RealHunt: 107 checked homes, https://realhunt.co/homes/italy
 
 ## France
 
@@ -50,7 +50,7 @@ RealHunt: 102 checked homes, https://realhunt.co/homes/italy
 6. [Green-Acres](https://www.green-acres.fr/)
 7. [Superimmo](https://www.superimmo.com/)
 
-RealHunt: 62 checked homes, https://realhunt.co/homes/france
+RealHunt: 179 checked homes, https://realhunt.co/homes/france
 
 ## Germany
 
@@ -174,7 +174,7 @@ RealHunt: 6 checked homes, https://realhunt.co/homes/bulgaria
 2. [XE.gr](https://www.xe.gr/)
 3. [Tospitimou](https://www.tospitimou.gr/)
 
-RealHunt: 42 checked homes, https://realhunt.co/homes/greece
+RealHunt: 65 checked homes, https://realhunt.co/homes/greece
 
 ## Croatia
 

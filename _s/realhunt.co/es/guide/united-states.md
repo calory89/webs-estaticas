@@ -42,11 +42,11 @@ Impuesto sobre los ingresos por alquiler: Por defecto, un no residente paga el 3
 
 ### Compara Estados Unidos
 
+- [Estados Unidos vs Francia](https://realhunt.co/es/countries/france-vs-united-states)
 - [Estados Unidos vs España](https://realhunt.co/es/countries/spain-vs-united-states)
 - [Estados Unidos vs Italia](https://realhunt.co/es/countries/italy-vs-united-states)
-- [Estados Unidos vs Francia](https://realhunt.co/es/countries/france-vs-united-states)
-- [Estados Unidos vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-united-states)
 - [Estados Unidos vs Grecia](https://realhunt.co/es/countries/greece-vs-united-states)
+- [Estados Unidos vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-united-states)
 - [Estados Unidos vs Suecia](https://realhunt.co/es/countries/sweden-vs-united-states)
 - [Estados Unidos vs Polonia](https://realhunt.co/es/countries/poland-vs-united-states)
 - [Estados Unidos vs Japón](https://realhunt.co/es/countries/japan-vs-united-states)

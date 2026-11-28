@@ -33,8 +33,8 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/flood-i
 
 - The indicator is a first filter, not a flood-risk assessment. Outside the United States it is a rough reading of the terrain: a home marked low can still flood, and a home marked medium may be perfectly safe behind a defence.
 - Countries are not measured with the same ruler: the United States figure uses official flood zones for most homes, the others do not. Compare countries with care.
-- 118 homes have no indicator yet and are not counted. Countries with fewer than 5 homes with the indicator are left out; with fewer than 10 they are marked as a small sample.
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 703 chosen listings (52% of them at or under €100,000), not national averages.
+- 281 homes have no indicator yet and are not counted. Countries with fewer than 5 homes with the indicator are left out; with fewer than 10 they are marked as a small sample.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 866 chosen listings (48% of them at or under €100,000), not national averages.
 - Before buying, check the address on the official flood map of the country and ask the seller and the insurer about past floods.
 
 ## How to cite

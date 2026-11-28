@@ -26,7 +26,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median asking price, price per m² and cheapest home in 23 countries, from 703 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
+   "description": "Median asking price, price per m² and cheapest home in 23 countries, from 866 homes checked by a person. Chart, table, CSV and method. Free to quote with a link.",
    "schema": {
     "fields": [
      {
@@ -252,7 +252,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "30 regions ranked by the median RealHunt score of their homes, with the number of homes, median price and price per m². Chart, table and CSV.",
+   "description": "43 regions ranked by the median RealHunt score of their homes, with the number of homes, median price and price per m². Chart, table and CSV.",
    "schema": {
     "fields": [
      {
@@ -424,7 +424,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "Median price and price per m² of 693 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
+   "description": "Median price and price per m² of 856 cheap homes by distance to the nearest airport: under 30 km, 30 to 60, 60 to 100 and beyond. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {
@@ -522,7 +522,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "The 25 homes with the lowest asking price per m² in Europe on RealHunt, and the median per country, from 526 real listings checked by a person. Chart, tables and CSV.",
+   "description": "The 25 homes with the lowest asking price per m² in Europe on RealHunt, and the median per country, from 689 real listings checked by a person. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {
@@ -568,7 +568,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "79 real homes by the sea at or under €100,000, checked by a person: how many each country has, the cheapest, the median price and where they are. Chart, table and CSV.",
+   "description": "82 real homes by the sea at or under €100,000, checked by a person: how many each country has, the cheapest, the median price and where they are. Chart, table and CSV.",
    "schema": {
     "fields": [
      {
@@ -611,7 +611,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "description": "297 homes added to RealHunt in November 2026, in 26 countries: how many per country, the cheapest, the median price and the best scored. With the months before. Chart, tables and CSV.",
+   "description": "460 homes added to RealHunt in November 2026, in 26 countries: how many per country, the cheapest, the median price and the best scored. With the months before. Chart, tables and CSV.",
    "schema": {
     "fields": [
      {

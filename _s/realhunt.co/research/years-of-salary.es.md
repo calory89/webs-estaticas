@@ -2,7 +2,7 @@
 
 La casa mediana de RealHunt cuesta 1,5 años de sueldo neto medio en Alemania y 8 en los Países Bajos, entre los 10 países con al menos 10 casas y datos de salarios de Eurostat. En Alemania es un precio de salida mediano de 55.000 € frente a un sueldo neto de 36.535 € al año.
 
-Precios: 537 casas de RealHunt, a 28 de noviembre de 2026. Sueldos: Eurostat, ganancia neta anual de una persona sola sin hijos con el salario medio, 2025. Son casas baratas elegidas por una persona, no la vivienda media de cada país.
+Precios: 700 casas de RealHunt, a 28 de noviembre de 2026. Sueldos: Eurostat, ganancia neta anual de una persona sola sin hijos con el salario medio, 2025. Son casas baratas elegidas por una persona, no la vivienda media de cada país.
 
 Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/years-of-salary (CC BY 4.0). CSV: https://realhunt.co/research/years-of-salary.es.csv
 
@@ -13,18 +13,18 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Alemania | 1,5 | 55.000 € | 36.535 € | 18 |
 | Suecia | 1,8 | 72.000 € | 38.950 € | 37 |
 | Dinamarca | 2,1 | 93.200 € | 45.430 € | 46 |
-| Italia | 3,5 | 97.000 € | 27.788 € | 102 |
-| Francia | 3,9 | 125.000 € | 32.346 € | 62 |
+| Italia | 3,5 | 97.000 € | 27.788 € | 107 |
+| Francia | 3,7 | 119.000 € | 32.346 € | 179 |
 | Polonia | 3,9 | 75.170 € | 19.086 € | 31 |
-| España | 4,4 | 120.000 € | 27.041 € | 155 |
+| España | 4,4 | 120.000 € | 27.041 € | 165 |
 | Bulgaria (muestra pequeña) | 4,8 | 69.000 € | 14.450 € | 6 |
-| Portugal | 7 | 150.000 € | 21.449 € | 20 |
-| Grecia | 7,4 | 160.000 € | 21.498 € | 42 |
+| Grecia | 6 | 130.000 € | 21.498 € | 65 |
+| Portugal | 6,5 | 140.000 € | 21.449 € | 28 |
 | Países Bajos | 8 | 325.000 € | 40.793 € | 18 |
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 703 anuncios escogidos (el 52% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 866 anuncios escogidos (el 48% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Años = precio de salida mediano ÷ sueldo neto anual. No tiene en cuenta los impuestos y gastos de la compra, los intereses ni el coste de vida: es una vara para comparar países, no el tiempo que hace falta para ahorrar una casa.
 - Los sueldos son medias nacionales de 2025; las casas están donde RealHunt las ha encontrado, a menudo en regiones más baratas que la media del país. No aparecen los países que Eurostat no publica para ese año (Noruega, Suiza, Reino Unido, Estados Unidos, Japón y otros).

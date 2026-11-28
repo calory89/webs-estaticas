@@ -29,22 +29,22 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 
 ### Mejores casas en Grecia
 
+- [85.000 € · Casa en buen estado con terraza, jardín y suelos de parquet en Sperchogeia, Mesenia](https://realhunt.co/es/deal/gr-sperchogeia-terrace-garden-parquet-house-good-85k) · Sperchogeia, Messenia, Peloponnese · nota 96 · 200 m² · 3 dorm.
 - [109.000 € · Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k) · Vasilitsi, Mesenia · nota 93 · 116 m² · 3 dorm.
-- [115.000 € · Casa encalada en un pueblo de Creta con azotea y escalera de caracol](https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k) · Choumeriako, cerca de Neapoli, Creta · nota 91 · 93 m² · 2 dorm.
-- [150.000 € · Casa de 2 dormitorios con terraza y vistas en Sinarades, Corfú](https://realhunt.co/es/deal/gr-sinarades-wooden-features-terrace-views-house-150k) · Sinarades, Corfu · nota 91 · 125 m² · 2 dorm.
-- [160.000 € · Casa renovada, antiguo molino de aceite con terraza y chimenea en Kalamitsi Alexandrou, Creta](https://realhunt.co/es/deal/gr-kalamitsi-alexandrou-renovated-olive-mill-terrace-160k) · Kalamitsi Alexandrou, Creta · nota 91 · 154 m² · 4 dorm.
-- [68.000 € · Casa de piedra de dos plantas con vistas al mar en Marathokampos, Samos](https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330) · Agia Triada, Marathokampos, Samos (Grecia) · nota 90 · 80 m² · 2 dorm.
-- [180.000 € · Casa de piedra adosada renovada con patio en Andriani, Mesinia](https://realhunt.co/es/deal/gr-messinia-andriani-renovated-stone-house-180k) · Andriani, Mesenia · nota 89 · 148 m² · 2 dorm.
+- [85.000 € · Casa reformada de 3 dormitorios con vistas a la montaña y azotea en Katsidoni, Creta](https://realhunt.co/es/deal/gr-katsidoni-renovated-mountain-house-roof-terrace-85k) · Katsidoni, Creta · nota 93 · 96 m² · 3 dorm.
+- [92.000 € · Casa de 2 dormitorios con vistas al mar y terraza en Agios Stefanos, Creta](https://realhunt.co/es/deal/gr-agios-stefanos-sea-view-terrace-fireplace-house-92k) · Agios Stefanos, Creta · nota 92 · 130 m² · 2 dorm.
+- [80.000 € · Casa independiente de 3 dormitorios totalmente reformada con jardín y chimenea en Mikropoli, Drama](https://realhunt.co/es/deal/gr-mikropoli-renovated-house-garden-fireplace-80k) · Mikropoli, Drama · nota 92 · 148 m² · 3 dorm.
+- [130.000 € · Dúplex de 3 dormitorios en buen estado con vistas a la montaña y chimenea en Archanes, Creta](https://realhunt.co/es/deal/gr-archanes-mountain-views-maisonette-fireplace-130k) · Archanes, Creta · nota 92 · 190 m² · 3 dorm.
 
-[Las 42 casas en Grecia](https://realhunt.co/es/homes/greece)
+[Las 65 casas en Grecia](https://realhunt.co/es/homes/greece)
 
 [Gastos, impuestos y fuentes de Grecia](https://realhunt.co/es/costs/greece) · [Calculadora de gastos de compra para Grecia](https://realhunt.co/es/buying-costs/greece) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
 ### Compara Grecia
 
+- [Grecia vs Francia](https://realhunt.co/es/countries/france-vs-greece)
 - [Grecia vs España](https://realhunt.co/es/countries/greece-vs-spain)
 - [Grecia vs Italia](https://realhunt.co/es/countries/greece-vs-italy)
-- [Grecia vs Francia](https://realhunt.co/es/countries/france-vs-greece)
 - [Grecia vs Estados Unidos](https://realhunt.co/es/countries/greece-vs-united-states)
 - [Grecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-greece)
 - [Grecia vs Suecia](https://realhunt.co/es/countries/greece-vs-sweden)

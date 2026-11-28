@@ -36,17 +36,17 @@ Impuesto sobre los ingresos por alquiler: No residentes: UE/EEE 19% sobre el ren
 - [91.000 € · Casa de 4 dormitorios con terraza en Alozaina](https://realhunt.co/es/deal/es-alozaina-91k-40320) · Alozaina, Málaga, España · nota 92 · 175 m² · 4 dorm.
 - [150.000 € · Casa de pueblo con terraza llena de plantas frente al castillo de Castalla, con garaje](https://realhunt.co/es/deal/es-castalla-150k-388079) · Castalla, Alicante · nota 91 · 165 m² · 3 dorm.
 
-[Las 155 casas en España](https://realhunt.co/es/homes/spain)
+[Las 165 casas en España](https://realhunt.co/es/homes/spain)
 
 [Gastos, impuestos y fuentes de España](https://realhunt.co/es/costs/spain) · [Calculadora de gastos de compra para España](https://realhunt.co/es/buying-costs/spain) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
 ### Compara España
 
-- [España vs Italia](https://realhunt.co/es/countries/italy-vs-spain)
 - [España vs Francia](https://realhunt.co/es/countries/france-vs-spain)
+- [España vs Italia](https://realhunt.co/es/countries/italy-vs-spain)
+- [España vs Grecia](https://realhunt.co/es/countries/greece-vs-spain)
 - [España vs Estados Unidos](https://realhunt.co/es/countries/spain-vs-united-states)
 - [España vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-spain)
-- [España vs Grecia](https://realhunt.co/es/countries/greece-vs-spain)
 - [España vs Suecia](https://realhunt.co/es/countries/spain-vs-sweden)
 - [España vs Polonia](https://realhunt.co/es/countries/poland-vs-spain)
 - [España vs Japón](https://realhunt.co/es/countries/japan-vs-spain)

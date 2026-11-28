@@ -1,6 +1,6 @@
 # Cheap homes in Portugal: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 20 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 20 homes is €150,000 (€1,510 per m², from the 20 homes with a known size); the cheapest costs €48,000 and the most expensive €200,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
+On 28 November 2026, RealHunt lists 28 homes for sale in Portugal, each one checked by a person. In Portugal, the median asking price of those 28 homes is €140,000 (€1,274 per m², from the 28 homes with a known size); the cheapest costs €48,000 and the most expensive €200,000. Taxes and fees add about 3–12% to the price of a home in Portugal (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/portugal · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://realhunt.co/data/countries/portugal.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/portugal.json · PDF: https://r
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 20 |
-| Median asking price | €150,000 |
-| Median price per m² | €1,510 (20 homes with a known size) |
-| Median size | 96 m² |
+| Homes on RealHunt | 28 |
+| Median asking price | €140,000 |
+| Median price per m² | €1,274 (28 homes with a known size) |
+| Median size | 109 m² |
 | Cheapest and most expensive | €48,000 · €200,000 |
 | Median RealHunt score (70 to 98) | 84 |
 | Taxes and fees to buy | 3–12% of the price (as of 2026) |
@@ -44,7 +44,15 @@ Sources:
 
 Full guide: https://realhunt.co/guide/portugal
 
-## The 20 homes, best score first
+## The 28 homes, best score first
+
+### Fully renovated stone house with terrace and outbuilding in Tabuaço, Douro
+
+€140,000 · Tabuaço, Douro, Viseu · 173 m² · 3 bedrooms · RealHunt score 92 · added 2026-11-28
+
+This fully renovated stone house is ready to move into, with a stone façade that gives good insulation. It has 3 bedrooms, 2 bathrooms and 173 m2 of living area, plus a terrace, a fireplace and a parking space. A private plot of 428 m2 includes a detached outbuilding of 107.5 m2 that could become a second home, a local accommodation project or a garage. The house sits in a peaceful parish with vineyard views, just minutes from the Douro. Asking €140,000, about €809/m².
+
+https://realhunt.co/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k
 
 ### Restored single-storey Alentejo house with reed ceilings near Mértola
 
@@ -102,6 +110,22 @@ A fully renovated townhouse in the centre of Peso, close to shops and services. 
 
 https://realhunt.co/deal/pt-covilha-peso-150k-280003
 
+### Move-in ready 2-bedroom house with fireplace and land in Aldeias, Guarda
+
+€92,500 · Aldeias, Guarda · 110 m² · 2 bedrooms · RealHunt score 88 · added 2026-11-28
+
+This move-in ready house in Aldeias is ready to live in now. Downstairs is a kitchen with a fireplace and a service bathroom, and there are two bedrooms and a main living room. The main bathroom has a shower base, and a hallway has built-in wardrobe storage. The plot covers 441 sq ft of land, and a water heater provides hot water. It sits within the Serra da Estrela Natural Park, with public transport at the door to Gouveia and Seia. Asking €92,500, about €841/m².
+
+https://realhunt.co/deal/pt-aldeias-move-in-ready-house-fireplace-92k
+
+### In good condition 2-bedroom house with garden and mountain views in Aldeias, Guarda
+
+€135,000 · Aldeias, Guarda · 105 m² · 2 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This detached house is in good condition, with a kitchen ready to use. It has 2 bedrooms, an office, 2 bathrooms and a dining room spread over 2 floors. Outside there is a private garden, a terrace, a balcony and a garage for one vehicle, with views of the Serra da Estrela mountains. It is heated by a fireplace and radiators, and a natural water pool is 800 m away. Asking €135,000, about €1,286/m².
+
+https://realhunt.co/deal/pt-aldeias-garden-house-mountain-views-fireplace-135k
+
 ### Two-bed village house with terrace in Portugal's Dão wine country
 
 €76,500 · Carregal do Sal, Viseu · 134 m² · 2 bedrooms · RealHunt score 85 · added 2026-10-05
@@ -109,6 +133,22 @@ https://realhunt.co/deal/pt-covilha-peso-150k-280003
 A T2 house with a terrace in Sobral, Carregal do Sal, in the Dão wine region: kitchen, living room, two bedrooms and a bathroom on the main floor, plus large storage rooms on the ground floor; about 134 m² over several levels. A home, a holiday house or a rental.
 
 https://realhunt.co/deal/pt-carregal-do-sal-76k-1bjc5q
+
+### Three-storey house with mountain views and land in São Gião, Coimbra
+
+€100,000 · São Gião, Coimbra · 84 m² · 4 bedrooms · RealHunt score 85 · added 2026-11-28
+
+This three-storey house stands in a village a few kilometres from São Gião, in Oliveira do Hospital. It has four bedrooms, two bathrooms, a wine cellar, a kitchen with an open fireplace and an attic with potential for different uses. Features include balconies with views over the mountains and valleys, wooden windows with single glazing, and a chicken coop. The terraced land, enclosed by stone walls, grows olive, fig, vine, pear, orange and lemon trees. Electricity and water come from the public network. Asking €100,000, about €1,190/m².
+
+https://realhunt.co/deal/pt-sao-giao-mountain-views-stone-house-land-100k
+
+### Fully renovated 2-bedroom stone house with garden and courtyard in Cidadelhe, Guarda
+
+€142,900 · Cidadelhe, Guarda · 123 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-28
+
+This fully renovated stone house is move-in ready and split into two independent units. The main unit has an open-plan kitchen and living room plus a bedroom and bathroom, and the secondary unit is a private suite. Outdoor features include a private courtyard, a covered porch, a barbecue area and parking, plus 2,314 sq ft of land. Heating comes from a wood-burning stove, and both units have air conditioning. The village is close to Pinhel. Asking €142,900, about €1,162/m².
+
+https://realhunt.co/deal/pt-cidadelhe-renovated-stone-house-courtyard-143k
 
 ### Freshly painted three-bedroom village house near the Sabor lakes
 
@@ -125,6 +165,30 @@ https://realhunt.co/deal/pt-mogadouro-48k-19109522
 The house has been renovated with quality finishes. It has two storeys, two bedrooms with built-in wardrobes, and two bathrooms, one of them a service bathroom on the ground floor. Features include a balcony, a fully equipped kitchen, air conditioning, a wood-burning stove, and solar panels for hot water and a water heater. Arouca is 18 km away and São Pedro do Sul is 23.5 km away, with access to national roads and the PR3 Rota da Cárcoda walking path. Asking €160,000, about €1,221/m².
 
 https://realhunt.co/deal/pt-candal-renovated-storey-house-wood-stove-160k
+
+### Historic-centre townhouse with two bathrooms and land in Estremoz, Alentejo
+
+€115,000 · Estremoz, Alentejo · 109 m² · 2 bedrooms · RealHunt score 83 · added 2026-11-28
+
+This townhouse on two floors sits in the historic centre of Estremoz, two minutes on foot from the castle. The ground floor has a kitchen with a dining area, a bedroom and a bathroom. The first floor has a living room with excellent natural light, a second bedroom and a second bathroom. The property includes 581 sq ft of land. Shops, restaurants, schools and public transport are close by. Asking €115,000, about €1,055/m².
+
+https://realhunt.co/deal/pt-estremoz-historic-centre-townhouse-land-115k
+
+### Well maintained 3-bedroom house with garden and fireplace in Salvada, Alentejo
+
+€154,000 · Salvada, Alentejo · 141 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-28
+
+This well maintained house is in excellent condition, with three bedrooms, one bathroom, a large living room, a kitchen and a storage room. The living room has a fireplace. The property includes a large garden and 2,185 sq ft of land, with rear access through the back of the garden. Building a garage is possible. The house is located in Salvada, just minutes from Beja. Asking €154,000, about €1,092/m².
+
+https://realhunt.co/deal/pt-salvada-well-maintained-house-fireplace-garden-154k
+
+### Two-house property with 3 bedrooms and land in Meixedo e Padornelos, Trás-os-Montes
+
+€139,000 · Meixedo e Padornelos, Trás-os-Montes · 110 m² · 3 bedrooms · RealHunt score 81 · added 2026-11-28
+
+The property comprises two separate houses on one plot: a 2-bedroom house and a 1-bedroom house. The 2-bedroom house has a living and dining room, a kitchen, two bedrooms and a full bathroom. The 1-bedroom house has an open-plan kitchen, one bedroom, a full bathroom and a laundry room. The 2,153 sq ft plot suits one family living in one house while renting the other, two families, or investment. It is 400 metres from the health centre, pharmacies and shops. Asking €139,000, about €1,264/m².
+
+https://realhunt.co/deal/pt-meixedo-e-padornelos-two-houses-plot-investment-139k
 
 ### Renovated detached house with open hill views in the eastern Algarve, near Alcoutim
 

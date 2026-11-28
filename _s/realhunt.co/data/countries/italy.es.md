@@ -1,6 +1,6 @@
 # Casas baratas en Italia: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 102 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 102 casas es de 97.000 € (1.167 € por m², calculado con las 84 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 215.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 107 casas en venta en Italia, revisadas una a una por una persona. En Italia, el precio de salida mediano de esas 107 casas es de 97.000 € (1.138 € por m², calculado con las 89 casas de superficie conocida); la más barata cuesta 12.000 € y la más cara, 215.000 €. Los impuestos y gastos de compra suman alrededor del 4–15% del precio de una casa en Italia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/italy · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.es.pdf
@@ -9,9 +9,9 @@ También en JSON: https://realhunt.co/data/countries/italy.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 102 |
+| Casas en RealHunt | 107 |
 | Precio de salida mediano | 97.000 € |
-| Precio mediano por m² | 1.167 € (84 casas de superficie conocida) |
+| Precio mediano por m² | 1.138 € (89 casas de superficie conocida) |
 | Superficie mediana | 85 m² |
 | La más barata y la más cara | 12.000 € · 215.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 82 |
@@ -43,7 +43,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/italy
 
-## Las 102 casas, de mejor a peor nota
+## Las 107 casas, de mejor a peor nota
 
 ### Casa de pueblo en cuatro niveles con vistas al mar y la montaña en Sangineto, Calabria
 
@@ -117,6 +117,22 @@ https://realhunt.co/es/deal/it-lake-como-gravedona-lake-view-195k
 
 https://realhunt.co/es/deal/DcoUnwBDDxF
 
+### Casa de 3 dormitorios en buen estado con terraza y terreno en San Venanzo, Umbría
+
+85.000 € · San Venanzo, Umbria · 166 m² · 3 dormitorios · nota RealHunt 89 · añadida el 2026-11-28
+
+Esta casa independiente en San Venanzo está en buen estado. Se distribuye en dos plantas y tiene tres dormitorios, dos baños, un amplio salón, una pequeña cocina y un despacho. Dispone de terraza, balcón, chimenea tradicional, garaje independiente, una pequeña construcción auxiliar y unos 3.500 m² de terreno privado, en parte bosque. La vivienda cuenta con calefacción independiente de GLP, y Orvieto está a 20 km. Precio 85.000 €, unos 512 €/m².
+
+https://realhunt.co/es/deal/it-san-venanzo-detached-house-terrace-fireplace-garage-85k
+
+### Casa de campo de 6 dormitorios en buen estado con jardín, terraza y chimenea en Piteglio, Toscana
+
+105.000 € · Piteglio, Tuscany · 260 m² · 6 dormitorios · nota RealHunt 89 · añadida el 2026-11-28
+
+Esta casa de campo está en buen estado y ofrece una buena base para amueblarla y usarla según tu gusto. Se extiende en tres plantas con seis dormitorios, dos baños, cocina independiente y una zona de estar de 260 m2. Entre los exteriores y extras destacan un jardín, una terraza, una chimenea, un sótano y unos 3.500 m² de terreno contiguo. La propiedad está a pocos kilómetros de Garfagnana y Abetone, en la frontera con la provincia de Lucca. Precio 105.000 €, unos 404 €/m².
+
+https://realhunt.co/es/deal/it-piteglio-farmhouse-garden-terrace-fireplace-105k
+
 ### Casa encalada a 25 minutos de la playa
 
 28.000 € · Puglia, Italy · 1 dormitorios · nota RealHunt 88 · añadida el 2026-09-23
@@ -141,6 +157,14 @@ https://realhunt.co/es/deal/Dcgta8yjCAR
 
 https://realhunt.co/es/deal/DdUZvbGkTvh
 
+### Casa en buen estado con jardín y vistas en San Benedetto Belbo, Piamonte
+
+145.000 € · San Benedetto Belbo, Piedmont · 265 m² · 4 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+Esta casa está en buen estado y tiene dos apartamentos independientes, cada uno de tres estancias. Cuenta con 6 habitaciones, 4 dormitorios y 2 baños, en 265 m2 de superficie habitable. Incluye jardín, un balcón orientado al sur con vistas a las colinas, sótano y garaje con una plaza de aparcamiento. Dispone de calefacción central de gas. El pueblo se encuentra en las colinas de Langhe, con el mar de Liguria y los Alpes cerca. Precio 145.000 €, unos 547 €/m².
+
+https://realhunt.co/es/deal/it-san-benedetto-belbo-village-house-garden-views-145k
+
 ### Casa con vistas al mar a cinco minutos de la playa
 
 35.000 € · Calabria, Italy · 2 dormitorios · nota RealHunt 87 · añadida el 2026-09-23
@@ -156,6 +180,14 @@ https://realhunt.co/es/deal/Dc32k2tDKLf
 477 €/m² · 86 m² · 3 habitaciones. Piso de tres habitaciones con vistas al mar en Torremezzo di Falconara Albanese ReteImmobiliare.
 
 https://realhunt.co/es/deal/falconara-albanese-41000
+
+### Casa adosada lista para entrar a vivir de 2 dormitorios con balcones y sótano en Alanno, Abruzzo
+
+59.000 € · Alanno, Abruzzo · 110 m² · 2 dormitorios · nota RealHunt 87 · añadida el 2026-11-28
+
+Esta casa adosada lista para entrar a vivir se encuentra en buen estado y puede habitarse de inmediato. Ofrece 110 metros cuadrados con dos dormitorios, un estudio, un baño, cocina, comedor, salón y una segunda cocina pequeña. Ambos dormitorios tienen balcón privado, y una entrada independiente da acceso a un amplio sótano. La vivienda cuenta con calefacción central de gas, está en una ubicación céntrica del pueblo y se encuentra a menos de 30 minutos en coche de las playas del mar Adriático. Precio 59.000 €, unos 536 €/m².
+
+https://realhunt.co/es/deal/it-alanno-ready-townhouse-balconies-cellar-village-59k
 
 ### Casa independiente renovada con jardín y paneles solares en Carpignano Salentino, Apulia
 
@@ -236,6 +268,14 @@ https://realhunt.co/es/deal/DdOGB56ABXI
 Completamente reformada y amueblada, con sistemas y acabados nuevos, lista para entrar a vivir de inmediato. La casa tiene 82 m2 habitables, un dormitorio, un baño y estancias luminosas y bien distribuidas, con calefacción de leña y chimenea. Se encuentra en unos 1.500 m2 de terreno con jardín, huerto, zona de barbacoa y terraza, además de jacuzzi. El entorno es tranquilo y verde, a 8 minutos del mar, e incluye bodega. Precio 89.000 €, unos 1.085 €/m².
 
 https://realhunt.co/es/deal/it-carpasio-renovated-detached-house-large-garden-89k
+
+### Casa de piedra de tres niveles con vistas al lago y chimenea en Vicalvi, Frosinone, Lazio
+
+120.000 € · Vicalvi, Frosinone, Lazio · 210 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-11-28
+
+Esta casa de piedra de tres niveles se encuentra en el casco histórico de Vicalvi, a pocos pasos del castillo. Tiene dos dormitorios, uno con baño en suite, un salón que puede usarse como tercer dormitorio y tres baños. Los balcones ofrecen vistas al lago de la Reserva Natural de Posta Fibreno. La planta inferior cuenta con una taberna con arcos de piedra, chimenea, bodega y un patio privado. La calefacción es independiente de gas natural. Precio 120.000 €, unos 571 €/m².
+
+https://realhunt.co/es/deal/it-vicalvi-stone-house-views-fireplace-120k
 
 ### Casa independiente con jardín de 350 m² y garaje en San Lorenzo in Campo, Marcas
 

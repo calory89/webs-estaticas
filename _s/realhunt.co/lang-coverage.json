@@ -1,35 +1,35 @@
 {
- "total": 1985,
+ "total": 1833,
  "max_total": 3200,
  "langs": {
   "de": {
-   "pages": 437,
+   "pages": 403,
    "by_kind": {
     "country": 18,
-    "gfeature": 12,
-    "gband": 4,
-    "ccyBand": 11,
-    "feature": 142,
-    "band": 49,
+    "gfeature": 9,
+    "feature": 133,
+    "gband": 3,
+    "band": 42,
+    "ccyBand": 8,
     "ptype": 7,
     "setting": 15,
-    "combo": 38,
     "beds": 18,
     "area": 15,
-    "region": 43,
-    "regionBand": 52,
-    "near": 8,
+    "combo": 33,
+    "region": 42,
+    "near": 7,
+    "regionBand": 48,
     "town": 4
    },
    "by_country": {
-    "united-states": 48,
+    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
     "poland": 14,
-    "japan": 44,
+    "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 28,
+    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
     "bulgaria": 5,
@@ -40,447 +40,23 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 29,
-    "spain": 50,
-    "italy": 53,
-    "france": 10,
-    "greece": 7,
-    "portugal": 3
-   },
-   "homes": 688,
-   "homes_with_title": 588,
-   "not_published": 228,
-   "not_published_sample": [
-    {
-     "path": "/homes/spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/by-the-sea",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/in-town",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/almeria",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/1-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garden-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-pool-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/stone-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cabins-and-cottages-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/torrevieja",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/hondon-de-los-frailes",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/orihuela",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/galera",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-sea-view-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-land-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-fireplace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/in-the-mountains-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-olive-trees-or-vines-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-an-airport-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-month-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-week-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/single-storey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-period-features-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cave-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-80-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-120-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/by-the-sea",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    }
-   ],
-   "sitemap": "sitemap-de.xml"
-  },
-  "ru": {
-   "pages": 237,
-   "by_kind": {
-    "country": 18,
-    "gband": 4,
-    "ccyBand": 11,
-    "band": 49,
-    "ptype": 7,
-    "setting": 15,
-    "beds": 18,
-    "area": 15,
-    "region": 43,
-    "regionBand": 52,
-    "town": 4
-   },
-   "by_country": {
-    "united-states": 26,
-    "denmark": 17,
-    "sweden": 18,
-    "poland": 6,
-    "japan": 21,
-    "germany": 8,
-    "netherlands": 5,
-    "canada": 15,
-    "switzerland": 8,
-    "mexico": 7,
-    "bulgaria": 3,
-    "dominican-republic": 3,
-    "united-kingdom": 4,
-    "cyprus": 1,
-    "ireland": 3,
-    "uruguay": 2,
-    "colombia": 2,
-    "czech-republic": 2,
-    "all countries": 6,
-    "spain": 37,
-    "italy": 33,
-    "france": 5,
+    "all countries": 21,
+    "spain": 45,
+    "italy": 45,
     "greece": 2,
-    "portugal": 2
+    "france": 7,
+    "portugal": 1
    },
-   "homes": 688,
+   "homes": 851,
    "homes_with_title": 588,
-   "not_published": 104,
+   "not_published": 315,
    "not_published_sample": [
     {
-     "path": "/homes/spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/by-the-sea",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/in-town",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/almeria",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/castellon",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/1-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/2-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/3-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/4-bedroom",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/torrevieja",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/hondon-de-los-frailes",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/orihuela",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/galera",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
      "path": "/homes/greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
@@ -520,7 +96,290 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/greece/houses",
+     "path": "/homes/greece/1-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/2-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/3-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/stone-houses-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cabins-and-cottages-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/turnkey-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-sea-view-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/on-an-island-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/in-the-mountains-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-olive-trees-or-vines-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-month-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-week-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-period-features-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-120-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/village-houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/in-town",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/alicante",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/granada",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/murcia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/almeria",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/malaga",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/castellon",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/1-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/2-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/3-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/4-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-pool-in-spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    }
+   ],
+   "sitemap": "sitemap-de.xml"
+  },
+  "ru": {
+   "pages": 221,
+   "by_kind": {
+    "country": 18,
+    "gband": 3,
+    "band": 42,
+    "ccyBand": 8,
+    "ptype": 7,
+    "setting": 15,
+    "beds": 18,
+    "area": 15,
+    "region": 42,
+    "regionBand": 48,
+    "town": 4
+   },
+   "by_country": {
+    "united-states": 26,
+    "denmark": 17,
+    "sweden": 18,
+    "poland": 6,
+    "japan": 21,
+    "germany": 8,
+    "netherlands": 5,
+    "canada": 15,
+    "switzerland": 8,
+    "mexico": 7,
+    "bulgaria": 3,
+    "dominican-republic": 3,
+    "united-kingdom": 4,
+    "cyprus": 1,
+    "ireland": 3,
+    "uruguay": 2,
+    "colombia": 2,
+    "czech-republic": 2,
+    "all countries": 4,
+    "spain": 34,
+    "italy": 27,
+    "france": 3,
+    "greece": 1
+   },
+   "homes": 851,
+   "homes_with_title": 588,
+   "not_published": 158,
+   "not_published_sample": [
+    {
+     "path": "/homes/greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/village-houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/magnesia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/laconia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/apartments",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
@@ -536,6 +395,10 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
+     "path": "/homes/greece/crete/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
      "path": "/homes/greece/crete/under-150000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
@@ -544,7 +407,7 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/cheap-houses/under-100000-pounds-in-greece",
+     "path": "/homes/greece/peloponnese/under-150000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
@@ -552,64 +415,200 @@
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
+     "path": "/homes/spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/village-houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/in-town",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/alicante",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/granada",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/murcia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/almeria",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/malaga",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/castellon",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/1-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/2-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/3-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/4-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/alicante/torrevieja",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/alicante/hondon-de-los-frailes",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/alicante/orihuela",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/alicante/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/alicante/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/granada/galera",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/granada/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/murcia/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/malaga/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/costa-blanca",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/costa-blanca/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/andalusia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/andalusia/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/andalusia/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/andalusia/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/valencian-community",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/valencian-community/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/valencian-community/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/castile-and-leon",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
      "path": "/homes/france",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
-     "path": "/homes/france/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/france/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/france/village-houses",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/france/in-town",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/france/charente",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/france/creuse",
+     "path": "/homes/france/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
    "sitemap": "sitemap-ru.xml"
   },
   "fr": {
-   "pages": 437,
+   "pages": 403,
    "by_kind": {
     "country": 18,
-    "gfeature": 12,
-    "gband": 4,
-    "ccyBand": 11,
-    "feature": 142,
-    "band": 49,
+    "gfeature": 9,
+    "feature": 133,
+    "gband": 3,
+    "band": 42,
+    "ccyBand": 8,
     "ptype": 7,
     "setting": 15,
-    "combo": 38,
     "beds": 18,
     "area": 15,
-    "region": 43,
-    "regionBand": 52,
-    "near": 8,
+    "combo": 33,
+    "region": 42,
+    "near": 7,
+    "regionBand": 48,
     "town": 4
    },
    "by_country": {
-    "united-states": 48,
+    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
     "poland": 14,
-    "japan": 44,
+    "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 28,
+    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
     "bulgaria": 5,
@@ -620,19 +619,179 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 29,
-    "spain": 50,
-    "italy": 53,
-    "france": 10,
-    "greece": 7,
-    "portugal": 3
+    "all countries": 21,
+    "spain": 45,
+    "italy": 45,
+    "greece": 2,
+    "france": 7,
+    "portugal": 1
    },
-   "homes": 688,
+   "homes": 851,
    "homes_with_title": 588,
-   "not_published": 228,
+   "not_published": 315,
    "not_published_sample": [
     {
+     "path": "/homes/greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/village-houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/magnesia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/laconia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/1-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/2-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/3-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/stone-houses-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cabins-and-cottages-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/turnkey-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-sea-view-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/on-an-island-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/in-the-mountains-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-olive-trees-or-vines-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-month-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-week-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-period-features-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-120-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
      "path": "/homes/spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
@@ -709,199 +868,39 @@
     },
     {
      "path": "/cheap-houses/with-pool-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/stone-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cabins-and-cottages-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/torrevieja",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/hondon-de-los-frailes",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/orihuela",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/galera",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-sea-view-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-land-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-fireplace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/in-the-mountains-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-olive-trees-or-vines-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-an-airport-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-month-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-week-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/single-storey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-period-features-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cave-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-80-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-120-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/by-the-sea",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
    "sitemap": "sitemap-fr.xml"
   },
   "nl": {
-   "pages": 437,
+   "pages": 403,
    "by_kind": {
     "country": 18,
-    "gfeature": 12,
-    "gband": 4,
-    "ccyBand": 11,
-    "feature": 142,
-    "band": 49,
+    "gfeature": 9,
+    "feature": 133,
+    "gband": 3,
+    "band": 42,
+    "ccyBand": 8,
     "ptype": 7,
     "setting": 15,
-    "combo": 38,
     "beds": 18,
     "area": 15,
-    "region": 43,
-    "regionBand": 52,
-    "near": 8,
+    "combo": 33,
+    "region": 42,
+    "near": 7,
+    "regionBand": 48,
     "town": 4
    },
    "by_country": {
-    "united-states": 48,
+    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
     "poland": 14,
-    "japan": 44,
+    "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 28,
+    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
     "bulgaria": 5,
@@ -912,19 +911,179 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 29,
-    "spain": 50,
-    "italy": 53,
-    "france": 10,
-    "greece": 7,
-    "portugal": 3
+    "all countries": 21,
+    "spain": 45,
+    "italy": 45,
+    "greece": 2,
+    "france": 7,
+    "portugal": 1
    },
-   "homes": 688,
+   "homes": 851,
    "homes_with_title": 588,
-   "not_published": 228,
+   "not_published": 315,
    "not_published_sample": [
     {
+     "path": "/homes/greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/village-houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/magnesia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/laconia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/1-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/2-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/3-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/stone-houses-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cabins-and-cottages-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/turnkey-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-sea-view-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/on-an-island-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/in-the-mountains-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-olive-trees-or-vines-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-month-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-week-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-period-features-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-120-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
      "path": "/homes/spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
@@ -1001,199 +1160,39 @@
     },
     {
      "path": "/cheap-houses/with-pool-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/stone-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cabins-and-cottages-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/torrevieja",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/hondon-de-los-frailes",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/orihuela",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/galera",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-sea-view-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-land-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-fireplace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/in-the-mountains-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-olive-trees-or-vines-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-an-airport-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-month-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-week-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/single-storey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-period-features-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cave-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-80-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-120-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/by-the-sea",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
    "sitemap": "sitemap-nl.xml"
   },
   "pl": {
-   "pages": 437,
+   "pages": 403,
    "by_kind": {
     "country": 18,
-    "gfeature": 12,
-    "gband": 4,
-    "ccyBand": 11,
-    "feature": 142,
-    "band": 49,
+    "gfeature": 9,
+    "feature": 133,
+    "gband": 3,
+    "band": 42,
+    "ccyBand": 8,
     "ptype": 7,
     "setting": 15,
-    "combo": 38,
     "beds": 18,
     "area": 15,
-    "region": 43,
-    "regionBand": 52,
-    "near": 8,
+    "combo": 33,
+    "region": 42,
+    "near": 7,
+    "regionBand": 48,
     "town": 4
    },
    "by_country": {
-    "united-states": 48,
+    "united-states": 47,
     "denmark": 34,
     "sweden": 38,
     "poland": 14,
-    "japan": 44,
+    "japan": 43,
     "germany": 15,
     "netherlands": 8,
-    "canada": 28,
+    "canada": 27,
     "switzerland": 13,
     "mexico": 9,
     "bulgaria": 5,
@@ -1204,19 +1203,179 @@
     "uruguay": 4,
     "colombia": 2,
     "czech-republic": 2,
-    "all countries": 29,
-    "spain": 50,
-    "italy": 53,
-    "france": 10,
-    "greece": 7,
-    "portugal": 3
+    "all countries": 21,
+    "spain": 45,
+    "italy": 45,
+    "greece": 2,
+    "france": 7,
+    "portugal": 1
    },
-   "homes": 688,
+   "homes": 851,
    "homes_with_title": 588,
-   "not_published": 228,
+   "not_published": 315,
    "not_published_sample": [
     {
+     "path": "/homes/greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-80000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/under-200000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/by-the-sea",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/village-houses",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/magnesia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/laconia",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/apartments",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/1-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/2-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/3-bedroom",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garden-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/stone-houses-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cabins-and-cottages-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-a-terrace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-100000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/crete/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/greece/peloponnese/under-150000",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/turnkey-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-sea-view-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-fireplace-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-garage-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/on-an-island-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/in-the-mountains-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-olive-trees-or-vines-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/near-an-airport-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/score-90-plus-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-month-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/new-this-week-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/with-period-features-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-80-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/over-120-sqm-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/cheapest-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/most-space-for-the-money-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/cheap-houses/under-100000-dollars-in-greece",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
      "path": "/homes/spain",
+     "why": "a home without a title in this language, or a place without a vetted name"
+    },
+    {
+     "path": "/homes/spain/under-80000",
      "why": "a home without a title in this language, or a place without a vetted name"
     },
     {
@@ -1293,166 +1452,6 @@
     },
     {
      "path": "/cheap-houses/with-pool-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/stone-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cabins-and-cottages-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-a-terrace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/torrevieja",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/hondon-de-los-frailes",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/orihuela",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/alicante/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/galera",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/granada/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/murcia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/malaga/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/costa-blanca/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/andalusia/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/spain/valencian-community/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/turnkey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-sea-view-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-land-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-fireplace-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-garage-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/in-the-mountains-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-olive-trees-or-vines-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/near-an-airport-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-month-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/new-this-week-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/single-storey-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/with-period-features-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/cave-houses-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-80-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/cheap-houses/over-120-sqm-in-spain",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-100000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-150000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/under-200000",
-     "why": "a home without a title in this language, or a place without a vetted name"
-    },
-    {
-     "path": "/homes/greece/by-the-sea",
      "why": "a home without a title in this language, or a place without a vetted name"
     }
    ],
@@ -1460,8 +1459,8 @@
   }
  },
  "hreflang": {
-  "english_pages_linked": 437,
-  "spanish_pages_linked": 437
+  "english_pages_linked": 403,
+  "spanish_pages_linked": 403
  },
  "home_pages_linked": 616,
  "failures": []

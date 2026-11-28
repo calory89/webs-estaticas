@@ -42,12 +42,12 @@ Impuesto sobre los ingresos por alquiler: No residentes: impuesto definitivo del
 
 ### Compara Bulgaria
 
+- [Bulgaria vs Francia](https://realhunt.co/es/countries/bulgaria-vs-france)
 - [Bulgaria vs España](https://realhunt.co/es/countries/bulgaria-vs-spain)
 - [Bulgaria vs Italia](https://realhunt.co/es/countries/bulgaria-vs-italy)
-- [Bulgaria vs Francia](https://realhunt.co/es/countries/bulgaria-vs-france)
+- [Bulgaria vs Grecia](https://realhunt.co/es/countries/bulgaria-vs-greece)
 - [Bulgaria vs Estados Unidos](https://realhunt.co/es/countries/bulgaria-vs-united-states)
 - [Bulgaria vs Dinamarca](https://realhunt.co/es/countries/bulgaria-vs-denmark)
-- [Bulgaria vs Grecia](https://realhunt.co/es/countries/bulgaria-vs-greece)
 - [Bulgaria vs Suecia](https://realhunt.co/es/countries/bulgaria-vs-sweden)
 - [Bulgaria vs Polonia](https://realhunt.co/es/countries/bulgaria-vs-poland)
 

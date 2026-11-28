@@ -42,11 +42,11 @@ Tax on rental income: By default a non-resident pays 30% of gross rent (or a low
 
 ### Compare United States
 
+- [United States vs France](https://realhunt.co/countries/france-vs-united-states)
 - [United States vs Spain](https://realhunt.co/countries/spain-vs-united-states)
 - [United States vs Italy](https://realhunt.co/countries/italy-vs-united-states)
-- [United States vs France](https://realhunt.co/countries/france-vs-united-states)
-- [United States vs Denmark](https://realhunt.co/countries/denmark-vs-united-states)
 - [United States vs Greece](https://realhunt.co/countries/greece-vs-united-states)
+- [United States vs Denmark](https://realhunt.co/countries/denmark-vs-united-states)
 - [United States vs Sweden](https://realhunt.co/countries/sweden-vs-united-states)
 - [United States vs Poland](https://realhunt.co/countries/poland-vs-united-states)
 - [United States vs Japan](https://realhunt.co/countries/japan-vs-united-states)

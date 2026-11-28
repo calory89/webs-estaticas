@@ -42,12 +42,12 @@ Tax on rental income: Non-residents: 10% final tax on gross rent, paid quarterly
 
 ### Compare Bulgaria
 
+- [Bulgaria vs France](https://realhunt.co/countries/bulgaria-vs-france)
 - [Bulgaria vs Spain](https://realhunt.co/countries/bulgaria-vs-spain)
 - [Bulgaria vs Italy](https://realhunt.co/countries/bulgaria-vs-italy)
-- [Bulgaria vs France](https://realhunt.co/countries/bulgaria-vs-france)
+- [Bulgaria vs Greece](https://realhunt.co/countries/bulgaria-vs-greece)
 - [Bulgaria vs United States](https://realhunt.co/countries/bulgaria-vs-united-states)
 - [Bulgaria vs Denmark](https://realhunt.co/countries/bulgaria-vs-denmark)
-- [Bulgaria vs Greece](https://realhunt.co/countries/bulgaria-vs-greece)
 - [Bulgaria vs Sweden](https://realhunt.co/countries/bulgaria-vs-sweden)
 - [Bulgaria vs Poland](https://realhunt.co/countries/bulgaria-vs-poland)
 

@@ -40,12 +40,12 @@ Tax on rental income: Non-residents pay income tax on Cyprus rental income at 20
 
 ### Compare Cyprus
 
+- [Cyprus vs France](https://realhunt.co/countries/cyprus-vs-france)
 - [Cyprus vs Spain](https://realhunt.co/countries/cyprus-vs-spain)
 - [Cyprus vs Italy](https://realhunt.co/countries/cyprus-vs-italy)
-- [Cyprus vs France](https://realhunt.co/countries/cyprus-vs-france)
+- [Cyprus vs Greece](https://realhunt.co/countries/cyprus-vs-greece)
 - [Cyprus vs United States](https://realhunt.co/countries/cyprus-vs-united-states)
 - [Cyprus vs Denmark](https://realhunt.co/countries/cyprus-vs-denmark)
-- [Cyprus vs Greece](https://realhunt.co/countries/cyprus-vs-greece)
 - [Cyprus vs Sweden](https://realhunt.co/countries/cyprus-vs-sweden)
 - [Cyprus vs Poland](https://realhunt.co/countries/cyprus-vs-poland)
 

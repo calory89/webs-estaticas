@@ -42,12 +42,12 @@ Tax on rental income: Private rental income is taxed as a flat lump sum (ryczał
 
 ### Compare Poland
 
+- [Poland vs France](https://realhunt.co/countries/france-vs-poland)
 - [Poland vs Spain](https://realhunt.co/countries/poland-vs-spain)
 - [Poland vs Italy](https://realhunt.co/countries/italy-vs-poland)
-- [Poland vs France](https://realhunt.co/countries/france-vs-poland)
+- [Poland vs Greece](https://realhunt.co/countries/greece-vs-poland)
 - [Poland vs United States](https://realhunt.co/countries/poland-vs-united-states)
 - [Poland vs Denmark](https://realhunt.co/countries/denmark-vs-poland)
-- [Poland vs Greece](https://realhunt.co/countries/greece-vs-poland)
 - [Poland vs Sweden](https://realhunt.co/countries/poland-vs-sweden)
 - [Poland vs Japan](https://realhunt.co/countries/japan-vs-poland)
 

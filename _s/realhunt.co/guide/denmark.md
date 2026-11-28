@@ -42,11 +42,11 @@ Tax on rental income: A non-resident who rents out a Danish home is taxed in Den
 
 ### Compare Denmark
 
+- [Denmark vs France](https://realhunt.co/countries/denmark-vs-france)
 - [Denmark vs Spain](https://realhunt.co/countries/denmark-vs-spain)
 - [Denmark vs Italy](https://realhunt.co/countries/denmark-vs-italy)
-- [Denmark vs France](https://realhunt.co/countries/denmark-vs-france)
-- [Denmark vs United States](https://realhunt.co/countries/denmark-vs-united-states)
 - [Denmark vs Greece](https://realhunt.co/countries/denmark-vs-greece)
+- [Denmark vs United States](https://realhunt.co/countries/denmark-vs-united-states)
 - [Denmark vs Sweden](https://realhunt.co/countries/denmark-vs-sweden)
 - [Denmark vs Poland](https://realhunt.co/countries/denmark-vs-poland)
 - [Denmark vs Japan](https://realhunt.co/countries/denmark-vs-japan)

@@ -1,6 +1,6 @@
 # Cheap homes in Italy: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 102 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 102 homes is €97,000 (€1,167 per m², from the 84 homes with a known size); the cheapest costs €12,000 and the most expensive €215,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
+On 28 November 2026, RealHunt lists 107 homes for sale in Italy, each one checked by a person. In Italy, the median asking price of those 107 homes is €97,000 (€1,138 per m², from the 89 homes with a known size); the cheapest costs €12,000 and the most expensive €215,000. Taxes and fees add about 4–15% to the price of a home in Italy (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/italy · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://realhunt.co/data/countries/italy.pdf
@@ -9,9 +9,9 @@ Also as JSON: https://realhunt.co/data/countries/italy.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 102 |
+| Homes on RealHunt | 107 |
 | Median asking price | €97,000 |
-| Median price per m² | €1,167 (84 homes with a known size) |
+| Median price per m² | €1,138 (89 homes with a known size) |
 | Median size | 85 m² |
 | Cheapest and most expensive | €12,000 · €215,000 |
 | Median RealHunt score (70 to 98) | 82 |
@@ -43,7 +43,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/italy
 
-## The 102 homes, best score first
+## The 107 homes, best score first
 
 ### Four-level village house with sea and mountain views in Sangineto, Calabria
 
@@ -117,6 +117,22 @@ https://realhunt.co/deal/it-lake-como-gravedona-lake-view-195k
 
 https://realhunt.co/deal/DcoUnwBDDxF
 
+### In good condition 3-bedroom house with terrace and land in San Venanzo, Umbria
+
+€85,000 · San Venanzo, Umbria · 166 m² · 3 bedrooms · RealHunt score 89 · added 2026-11-28
+
+This detached house in San Venanzo is in good condition. It is arranged over two floors and has three bedrooms, two bathrooms, a spacious living room, a kitchenette and a study. It has a terrace, a balcony, a traditional fireplace, a detached garage, a small outbuilding and about 3,500 sqm of private land, partly woodland. The home has independent LPG heating, and Orvieto is 20 km away. Asking €85,000, about €512/m².
+
+https://realhunt.co/deal/it-san-venanzo-detached-house-terrace-fireplace-garage-85k
+
+### Good condition 6-bedroom farmhouse with garden, terrace and fireplace in Piteglio, Tuscany
+
+€105,000 · Piteglio, Tuscany · 260 m² · 6 bedrooms · RealHunt score 89 · added 2026-11-28
+
+This farmhouse is in good condition and offers a solid base for furnishing and using it to your own taste. It extends over three floors with six bedrooms, two bathrooms, a separate kitchen and a living area of 260 m2. Outdoor and extra features include a garden, a terrace, a fireplace, a cellar and about 3,500 sqm of adjoining land. The property sits a few kilometres from Garfagnana and Abetone, on the border with the province of Lucca. Asking €105,000, about €404/m².
+
+https://realhunt.co/deal/it-piteglio-farmhouse-garden-terrace-fireplace-105k
+
 ### Whitewashed house 25 minutes from the beach
 
 €28,000 · Puglia, Italy · 1 bedrooms · RealHunt score 88 · added 2026-09-23
@@ -141,6 +157,14 @@ https://realhunt.co/deal/Dcgta8yjCAR
 
 https://realhunt.co/deal/DdUZvbGkTvh
 
+### House in good condition with garden and views in San Benedetto Belbo, Piedmont
+
+€145,000 · San Benedetto Belbo, Piedmont · 265 m² · 4 bedrooms · RealHunt score 88 · added 2026-11-28
+
+This house is in good condition and contains two self-contained three-room apartments. It has 6 rooms, 4 bedrooms and 2 bathrooms across 265 m2 of living space. It includes a garden, a south-facing balcony with views across the hilly countryside, a cellar and a garage with one parking space. Gas-fired central heating is installed. The village sits in the Langhe hills, with the Ligurian seaside and the Alps nearby. Asking €145,000, about €547/m².
+
+https://realhunt.co/deal/it-san-benedetto-belbo-village-house-garden-views-145k
+
 ### Sea-view house five minutes from the beach
 
 €35,000 · Calabria, Italy · 2 bedrooms · RealHunt score 87 · added 2026-09-23
@@ -156,6 +180,14 @@ https://realhunt.co/deal/Dc32k2tDKLf
 €477/m² · 86 m² · 3 rooms. Three-room apartment with sea view in Torremezzo di Falconara Albanese ReteImmobiliare.
 
 https://realhunt.co/deal/falconara-albanese-41000
+
+### Move-in ready 2-bedroom townhouse with balconies and cellar in Alanno, Abruzzo
+
+€59,000 · Alanno, Abruzzo · 110 m² · 2 bedrooms · RealHunt score 87 · added 2026-11-28
+
+This move-in ready townhouse is in good condition and can be lived in immediately. It offers 110 square metres with two bedrooms, a study, one bathroom, a kitchen, a dining area, a living room and a second small kitchen. Both bedrooms have private balconies, and a separate entrance leads to a spacious cellar. The home has gas-fired central heating, is located in a central village position and is less than 30 minutes by car from the Adriatic beaches. Asking €59,000, about €536/m².
+
+https://realhunt.co/deal/it-alanno-ready-townhouse-balconies-cellar-village-59k
 
 ### Renovated detached house with garden and solar panels in Carpignano Salentino, Apulia
 
@@ -236,6 +268,14 @@ https://realhunt.co/deal/DdOGB56ABXI
 Completely renovated and furnished, with all-new systems and finishes, ready to live in immediately. The house has 82 m2 of living space, one bedroom, one bathroom and bright, well-distributed rooms, with wood heating and a fireplace. It sits on about 1,500 m2 of land with a garden, vegetable garden, barbecue area and terrace, plus a jacuzzi. The quiet, green setting is 8 minutes from the sea, with a cellar included. Asking €89,000, about €1,085/m².
 
 https://realhunt.co/deal/it-carpasio-renovated-detached-house-large-garden-89k
+
+### Three-level stone house with lake views and fireplace in Vicalvi, Frosinone, Lazio
+
+€120,000 · Vicalvi, Frosinone, Lazio · 210 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-28
+
+This three-level stone house stands in the historic centre of Vicalvi, a few steps from the castle. It has two bedrooms, one with an en suite bathroom, a living room that can serve as a third bedroom, and three bathrooms. Balconies offer views over the lake of the Posta Fibreno Nature Reserve. The lower floor has a taverna with stone arches, a fireplace, a cellar and a private courtyard. Heating is by independent natural gas. Asking €120,000, about €571/m².
+
+https://realhunt.co/deal/it-vicalvi-stone-house-views-fireplace-120k
 
 ### Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, Marche
 

@@ -53,12 +53,12 @@
       "schema": {
        "type": "string",
        "enum": [
+        "france",
         "spain",
         "italy",
-        "france",
+        "greece",
         "united-states",
         "denmark",
-        "greece",
         "sweden",
         "poland",
         "japan",
@@ -138,12 +138,12 @@
       "schema": {
        "type": "string",
        "enum": [
+        "france",
         "spain",
         "italy",
-        "france",
+        "greece",
         "united-states",
         "denmark",
-        "greece",
         "sweden",
         "poland",
         "japan",
@@ -188,12 +188,12 @@
       "schema": {
        "type": "string",
        "enum": [
+        "france",
         "spain",
         "italy",
-        "france",
+        "greece",
         "united-states",
         "denmark",
-        "greece",
         "sweden",
         "poland",
         "japan",
@@ -425,12 +425,12 @@
       "schema": {
        "type": "string",
        "enum": [
+        "france",
         "spain",
         "italy",
-        "france",
+        "greece",
         "united-states",
         "denmark",
-        "greece",
         "sweden",
         "poland",
         "japan",
@@ -541,12 +541,12 @@
       "schema": {
        "type": "string",
        "enum": [
+        "france",
         "spain",
         "italy",
-        "france",
+        "greece",
         "united-states",
         "denmark",
-        "greece",
         "sweden",
         "poland",
         "japan",
@@ -590,12 +590,12 @@
       "schema": {
        "type": "string",
        "enum": [
+        "france",
         "spain",
         "italy",
-        "france",
+        "greece",
         "united-states",
         "denmark",
-        "greece",
         "sweden",
         "poland",
         "japan",

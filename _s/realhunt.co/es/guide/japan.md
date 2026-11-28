@@ -42,12 +42,12 @@ Impuesto sobre los ingresos por alquiler: El alquiler pagado a un no residente t
 
 ### Compara Japón
 
+- [Japón vs Francia](https://realhunt.co/es/countries/france-vs-japan)
 - [Japón vs España](https://realhunt.co/es/countries/japan-vs-spain)
 - [Japón vs Italia](https://realhunt.co/es/countries/italy-vs-japan)
-- [Japón vs Francia](https://realhunt.co/es/countries/france-vs-japan)
+- [Japón vs Grecia](https://realhunt.co/es/countries/greece-vs-japan)
 - [Japón vs Estados Unidos](https://realhunt.co/es/countries/japan-vs-united-states)
 - [Japón vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-japan)
-- [Japón vs Grecia](https://realhunt.co/es/countries/greece-vs-japan)
 - [Japón vs Suecia](https://realhunt.co/es/countries/japan-vs-sweden)
 - [Japón vs Polonia](https://realhunt.co/es/countries/japan-vs-poland)
 

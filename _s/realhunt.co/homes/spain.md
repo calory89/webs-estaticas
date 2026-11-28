@@ -1,11 +1,11 @@
-Title: Houses for sale in Spain (155, from €39,000) · RealHunt
+Title: Houses for sale in Spain (165, from €39,000) · RealHunt
 URL: https://realhunt.co/homes/spain
 Updated: 2026-11-28
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
 
 ## Houses for sale in Spain
 
-List last changed 27 November 2026. Jump to the homes
+List last changed 28 November 2026. Jump to the homes
 
 ### Three picks from this list
 
@@ -13,10 +13,10 @@ List last changed 27 November 2026. Jump to the homes
 - [Cheapest€39,0003-bedroom house with terrace in NacimientoNacimiento, Almería100 m² · 3 bed · €390/m² · 58 days on RealHunt](https://realhunt.co/deal/es-nacimiento-39k-60637)
 - [Most space for the moneyNew€63,000Bright traditional Aragonese house with a stone-floored entrance patio in Torre los Negros, TeruelTorre los Negros, Teruel256 m² · 4 bed · €246/m² · 14 days on RealHunt](https://realhunt.co/deal/es-torre-los-negros-63k-028057)
 
-RealHunt lists 155 houses for sale in Spain today, priced from €39,000 to €348,000. The cheapest costs €39,000: [3-bedroom house with terrace in Nacimiento](https://realhunt.co/deal/es-nacimiento-39k-60637), in Nacimiento (100 m², 3 bedrooms). The median price is €120,000 (€1,296/m²), against €99,000 (€1,241/m²) for the 703 homes on RealHunt in 23 countries.
+RealHunt lists 165 houses for sale in Spain today, priced from €39,000 to €348,000. The cheapest costs €39,000: [3-bedroom house with terrace in Nacimiento](https://realhunt.co/deal/es-nacimiento-39k-60637), in Nacimiento (100 m², 3 bedrooms). The median price is €120,000 (€1,231/m²), against €107,000 (€1,104/m²) for the 866 homes on RealHunt in 23 countries.
 
 Homes
-155
+165
 
 From
 €39,000
@@ -25,10 +25,10 @@ Median price
 €120,000
 
 Median per m²
-€1,296/m²
+€1,231/m²
 
 Median size
-90 m²
+93 m²
 
 Top score
 94
@@ -42,7 +42,7 @@ Can buy freely
 Data of
 28 Nov 2026
 
-### The 30 best of 155, by score
+### The 30 best of 165, by score
 
 Sorted by RealHunt score, best first. For the cheapest first, see the table below: tap a heading such as Price to sort it. [All homes by the sea](https://realhunt.co/homes/spain/by-the-sea) [See these homes on the map](https://realhunt.co/map?country=Spain)
 
@@ -74,14 +74,14 @@ Sorted by RealHunt score, best first. For the cheapest first, see the table belo
 - [Score 89€85,0001-bedroom house with terrace in GualchosGualchos, Granada93 m² · 1 bed · €914/m² · 58 days on RealHunt€85,000 for 93 m² and 1 bedroom in Gualchos (Granada), about €914/m².](https://realhunt.co/deal/es-gualchos-85k-92930)
 - [Score 88€149,000Premium townhouse fully renovated in 2025 in JijonaJijona / Xixona, Alicante232 m² · 4 bed · €642/m² · 45 days on RealHuntA 232 m² townhouse just off the main street of Jijona, completely renovated in 2025 to a premium standard and never lived in since: new plumbing…](https://realhunt.co/deal/es-jijona-renovated-149k-189102956)
 - [Score 88€149,950Five-bedroom village house in move-in condition with a roof terrace and solar panelsHondón de los Frailes, Alicante180 m² · 5 bed · €833/m² · 45 days on RealHuntA roomy 180 m² townhouse in the very heart of Hondón de los Frailes, steps from shops, bars and services, in excellent move-in condition: a modern…](https://realhunt.co/deal/es-hondon-frailes-5bed-150k-188921317)
+- [Score 88New€112,000Fully renovated 4-bedroom stone house with terrace and castle views in Sax, AlicanteSax, Alicante158 m² · 4 bed · €709/m² · Added todayThis fully renovated house was built in 1885 and is ready to move in.](https://realhunt.co/deal/es-sax-renovated-stone-house-castle-views-112k)
 - [Score 88€70,0003-bedroom house with garden in GáldarGáldar, Las Palmas54 m² · 3 bed · €1,296/m² · 58 days on RealHunt€70,000 for 54 m² and 3 bedrooms in Gáldar (Las Palmas), about €1,296/m².](https://realhunt.co/deal/es-galdar-70k-15615)
-- [Score 88€59,9005-bedroom house with terrace in CehegínCehegín, Murcia200 m² · 5 bed · €300/m² · 58 days on RealHunt€59,900 for 200 m² and 5 bedrooms in Cehegín (Murcia), about €300/m².](https://realhunt.co/deal/es-cehegin-59k-77832)
 
-Showing the 30 best-scored of 155 homes. The table and the narrower searches below cover the rest.
+Showing the 30 best-scored of 165 homes. The table and the narrower searches below cover the rest.
 
-### Compare the 30 cheapest of 155
+### Compare the 30 cheapest of 165
 
-Median price per m² of this list: €1,296/m².
+Median price per m² of this list: €1,231/m².
 
 Home | Place | Price | Size | Per m² | Beds | Score | Added
 [3-bedroom house with terrace in Nacimiento](https://realhunt.co/deal/es-nacimiento-39k-60637) | Nacimiento, Almería | €39,000 | 100 m² | €390/m² | 3 | 92 | 1 Oct 2026
@@ -109,27 +109,27 @@ Home | Place | Price | Size | Per m² | Beds | Score | Added
 [Fully renovated village house in Árchez, Málaga's Moorish village](https://realhunt.co/deal/es-archez-75k-ni4va0) | Árchez, Málaga | €75,000 | 56 m² | €1,339/m² | 2 | 85 | 5 Oct 2026
 [3-bedroom house with terrace in Puerto Serrano](https://realhunt.co/deal/es-puerto-serrano-75k-12088) | Puerto Serrano, Cádiz | €75,000 | 110 m² | €682/m² | 3 | 85 | 1 Oct 2026
 [1-bedroom country house in Polaciones](https://realhunt.co/deal/es-polaciones-76k-71631) | Polaciones, Cantabria | €76,000 | 70 m² | €1,086/m² | 1 | 83 | 1 Oct 2026
+[Townhouse with former bar, patio and roof solarium in Tolox, Málaga, Andalusia](https://realhunt.co/deal/es-tolox-townhouse-bar-roof-solarium-patio-76k) | Tolox, Andalusia | €76,000 | 119 m² | €639/m² | 2 | 86 | 28 Nov 2026
 [2-bedroom house with terrace in Terque](https://realhunt.co/deal/es-terque-79k-93348) | [Terque, Almería](https://realhunt.co/homes/spain/almeria/terque) | €79,500 | 81 m² | €981/m² | 2 | 88 | 1 Oct 2026
 [A stone dining terrace above the Andarax valley](https://realhunt.co/deal/terque-stone-terrace-cave-79500) | [Terque, Almería](https://realhunt.co/homes/spain/almeria/terque) | €79,500 | 81 m² | €981/m² | 2 | 89 | 2 Oct 2026
 [2-bedroom apartment with sea views in Cartagena](https://realhunt.co/deal/es-cartagena-79k-19964) | Cartagena, Murcia | €79,900 | 56 m² | €1,427/m² | 2 | 87 | 1 Oct 2026
 [4-bedroom house with terrace in Cehegín](https://realhunt.co/deal/es-cehegin-79k-37859) | Cehegín, Murcia | €79,900 | 200 m² | €400/m² | 4 | 86 | 1 Oct 2026
-[4-bedroom house in Flix](https://realhunt.co/deal/es-flix-80k-33800) | Flix, Tarragona | €80,000 | 152 m² | €526/m² | 4 | 85 | 1 Oct 2026
 
-### The 155 homes in numbers
+### The 165 homes in numbers
 
-- Size: half of them have 90 m² or more. The largest has 355 m²: [5-bedroom house with mountain views in Parres](https://realhunt.co/deal/es-parres-90k-15042).
-- Bedrooms: 29 with 1 bedroom, 55 with 2, 40 with 3, 27 with 4 or more; 4 listings do not say.
-- Type: 54 apartments and 97 houses.
-- Setting: 44 by the sea, 92 in villages, 15 in towns.
-- Where: Alicante (35), Granada (21), Murcia (16), Almería (14), Madrid (9), Tenerife (9).
+- Size: half of them have 93 m² or more. The largest has 355 m²: [5-bedroom house with mountain views in Parres](https://realhunt.co/deal/es-parres-90k-15042).
+- Bedrooms: 30 with 1 bedroom, 58 with 2, 41 with 3, 32 with 4 or more; 4 listings do not say.
+- Type: 54 apartments and 107 houses.
+- Setting: 44 by the sea, 101 in villages, 15 in towns.
+- Where: Alicante (37), Granada (22), Murcia (17), Almería (14), Madrid (9), Tenerife (9).
 - Lowest median price: Castellón, €65,000 across 3 homes. Highest: Tenerife, €196,000 across 9.
-- Extras named in the listings: 45 with a garden, 118 with a terrace, 42 with a garage, 44 with a pool, 39 with a fireplace.
+- Extras named in the listings: 47 with a garden, 126 with a terrace, 46 with a garage, 45 with a pool, 43 with a fireplace.
 - Scores: 72 to 94 out of 98. The best rated: [Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380).
-- Newest, added 27 November 2026: [Renovated stone house with patio and garage in Congosta de Vidriales, Zamora](https://realhunt.co/deal/es-congosta-de-vidriales-renovated-stone-house-patio-garage-120k). 55 of these homes were added in the last 30 days.
+- Newest, added 28 November 2026: [Fully renovated 4-bedroom stone house with terrace and castle views in Sax, Alicante](https://realhunt.co/deal/es-sax-renovated-stone-house-castle-views-112k). 65 of these homes were added in the last 30 days.
 
 ### What your money buys here
 
-Split into three groups of the same size by asking price: from €39,000 to €93,000, 52 homes with a median of 92 m², most often 2 bedrooms; from €94,900 to €160,000, 51 homes with a median of 100 m², most often 2 bedrooms; from €164,995 to €348,000, 52 homes with a median of 88 m², most often 2 bedrooms.
+Split into three groups of the same size by asking price: from €39,000 to €94,900, 55 homes with a median of 92 m², most often 2 bedrooms; from €95,000 to €158,000, 55 homes with a median of 111 m², most often 2 bedrooms; from €159,900 to €348,000, 55 homes with a median of 88 m², most often 2 bedrooms.
 
 ### Median price by region in Spain
 
@@ -139,21 +139,24 @@ Region | Homes | Median price
 Las Palmas | 1 | €70,000
 Cádiz | 2 | €75,000
 [Cantabria](https://realhunt.co/homes/spain/cantabria) | 3 | €80,000
+Castilla y León | 1 | €80,000
 Lugo | 1 | €80,000
 [Almería](https://realhunt.co/homes/spain/almeria) | 14 | €89,000
 [Tarragona](https://realhunt.co/homes/spain/tarragona) | 3 | €91,000
 [Asturias](https://realhunt.co/homes/spain/asturias) | 3 | €93,000
-[Granada](https://realhunt.co/homes/spain/granada) | 21 | €95,000
+[Granada](https://realhunt.co/homes/spain/granada) | 22 | €95,000
 Huelva | 2 | €95,000
 [Málaga](https://realhunt.co/homes/spain/malaga) | 5 | €95,995
-[Murcia](https://realhunt.co/homes/spain/murcia) | 16 | €97,000
+[Murcia](https://realhunt.co/homes/spain/murcia) | 17 | €97,000
 Girona | 1 | €97,000
 Castile and León | 1 | €99,000
 Zamora | 1 | €120,000
 [Valencia](https://realhunt.co/homes/spain/valencia) | 7 | €125,000
+Andalusia | 4 | €135,000
 Valladolid | 1 | €138,000
 Albacete | 1 | €139,000
-[Alicante](https://realhunt.co/homes/spain/alicante) | 35 | €160,000
+Toledo | 1 | €139,900
+[Alicante](https://realhunt.co/homes/spain/alicante) | 37 | €150,000
 [Madrid](https://realhunt.co/homes/spain/madrid) | 9 | €169,000
 Teruel | 2 | €177,000
 La Palma | 1 | €178,000
@@ -186,19 +189,19 @@ Source: [Ministry of Foreign Affairs of Spain, Número de Identidad de Extranjer
 
 ### What to watch out for
 
-- 3 of the 155 listings give no floor area, so their price per m² cannot be compared.
+- 3 of the 165 listings give no floor area, so their price per m² cannot be compared.
 - 55 are in a shared building or complex but the listing does not state the community fee: ask for it in writing.
-- 10 of 155 sit where our rough flood check reads medium or high. Each home page links the official flood map.
-- 5 of 155 are close to a motorway, a railway or an airport (high on our noise check).
-- 2 of 155 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
-- 1 of 155 shows an approximate map position: the listing names the town, not the street.
+- 10 of 165 sit where our rough flood check reads medium or high. Each home page links the official flood map.
+- 5 of 165 are close to a motorway, a railway or an airport (high on our noise check).
+- 2 of 165 were added more than 60 days ago. Ask the agent whether they are still for sale before you plan a trip.
+- 1 of 165 shows an approximate map position: the listing names the town, not the street.
 - As a group these homes score lowest on buying costs (28/100 on average) and highest on distance to an airport (87/100).
 
 ### Questions buyers ask
 
 #### How much does a house for sale in Spain cost?
 
-Asking prices run from €39,000 to €348,000 across 155 homes. The median is €120,000, or €1,296/m².
+Asking prices run from €39,000 to €348,000 across 165 homes. The median is €120,000, or €1,231/m².
 
 #### What is the cheapest house for sale in Spain?
 
@@ -218,35 +221,35 @@ Among regions with at least 3 homes on RealHunt, Castellón has the lowest media
 
 ### More searches in Spain
 
-By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 33](https://realhunt.co/homes/spain/under-80000) [Under €100,000 74](https://realhunt.co/homes/spain/under-100000) [Under €150,000 97](https://realhunt.co/homes/spain/under-150000) [Under €200,000 144](https://realhunt.co/homes/spain/under-200000)
+By budget [Under €60,000 11](https://realhunt.co/homes/spain/under-60000) [Under €80,000 35](https://realhunt.co/homes/spain/under-80000) [Under €100,000 77](https://realhunt.co/homes/spain/under-100000) [Under €150,000 107](https://realhunt.co/homes/spain/under-150000) [Under €200,000 154](https://realhunt.co/homes/spain/under-200000)
 
-By setting [By the sea 44](https://realhunt.co/homes/spain/by-the-sea) [Village houses 92](https://realhunt.co/homes/spain/village-houses) [In town 15](https://realhunt.co/homes/spain/in-town)
+By setting [By the sea 44](https://realhunt.co/homes/spain/by-the-sea) [Village houses 101](https://realhunt.co/homes/spain/village-houses) [In town 15](https://realhunt.co/homes/spain/in-town)
 
-By type [Apartments 54](https://realhunt.co/homes/spain/apartments) [Houses 97](https://realhunt.co/homes/spain/houses)
+By type [Apartments 54](https://realhunt.co/homes/spain/apartments) [Houses 107](https://realhunt.co/homes/spain/houses)
 
-By bedrooms [1 bedroom 29](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 55](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 40](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 27](https://realhunt.co/homes/spain/4-bedroom)
+By bedrooms [1 bedroom 30](https://realhunt.co/homes/spain/1-bedroom) [2 bedrooms 58](https://realhunt.co/homes/spain/2-bedroom) [3 bedrooms 41](https://realhunt.co/homes/spain/3-bedroom) [4+ bedrooms 32](https://realhunt.co/homes/spain/4-bedroom)
 
-By region [Alicante 35](https://realhunt.co/homes/spain/alicante) [Granada 21](https://realhunt.co/homes/spain/granada) [Murcia 16](https://realhunt.co/homes/spain/murcia) [Almería 14](https://realhunt.co/homes/spain/almeria) [Madrid 9](https://realhunt.co/homes/spain/madrid) [Tenerife 9](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Fuerteventura 6](https://realhunt.co/homes/spain/fuerteventura) [Málaga 5](https://realhunt.co/homes/spain/malaga) [A Coruña 3](https://realhunt.co/homes/spain/a-coruna) [Asturias 3](https://realhunt.co/homes/spain/asturias) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Tarragona 3](https://realhunt.co/homes/spain/tarragona)
+By region [Alicante 37](https://realhunt.co/homes/spain/alicante) [Granada 22](https://realhunt.co/homes/spain/granada) [Murcia 17](https://realhunt.co/homes/spain/murcia) [Almería 14](https://realhunt.co/homes/spain/almeria) [Madrid 9](https://realhunt.co/homes/spain/madrid) [Tenerife 9](https://realhunt.co/homes/spain/tenerife) [Valencia 7](https://realhunt.co/homes/spain/valencia) [Fuerteventura 6](https://realhunt.co/homes/spain/fuerteventura) [Málaga 5](https://realhunt.co/homes/spain/malaga) [A Coruña 3](https://realhunt.co/homes/spain/a-coruna) [Asturias 3](https://realhunt.co/homes/spain/asturias) [Cantabria 3](https://realhunt.co/homes/spain/cantabria) [Castellón 3](https://realhunt.co/homes/spain/castellon) [Tarragona 3](https://realhunt.co/homes/spain/tarragona)
 
-By area [Costa Blanca 14](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 5](https://realhunt.co/homes/spain/costa-calida) [Canary Islands 17](https://realhunt.co/homes/spain/canary-islands) [Green Spain 10](https://realhunt.co/homes/spain/green-spain) [Andalusia 46](https://realhunt.co/homes/spain/andalusia) [Valencian Community 45](https://realhunt.co/homes/spain/valencian-community) [Catalonia 6](https://realhunt.co/homes/spain/catalonia) [Galicia 4](https://realhunt.co/homes/spain/galicia)
+By area [Costa Blanca 14](https://realhunt.co/homes/spain/costa-blanca) [Costa Cálida 5](https://realhunt.co/homes/spain/costa-calida) [Canary Islands 17](https://realhunt.co/homes/spain/canary-islands) [Green Spain 10](https://realhunt.co/homes/spain/green-spain) [Andalusia 51](https://realhunt.co/homes/spain/andalusia) [Valencian Community 47](https://realhunt.co/homes/spain/valencian-community) [Catalonia 6](https://realhunt.co/homes/spain/catalonia) [Galicia 4](https://realhunt.co/homes/spain/galicia) [Castile and León 3](https://realhunt.co/homes/spain/castile-and-leon)
 
-By feature [With a garden 45](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 44](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 6](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 118](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 97](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 16](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 4](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 39](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 42](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 25](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Olive trees or vines 5](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-spain) [Near an airport 45](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 9](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 23](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 13](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 55](https://realhunt.co/cheap-houses/new-this-month-in-spain) [New this week 37](https://realhunt.co/cheap-houses/new-this-week-in-spain) [Single-storey 10](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 7](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 45](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 77](https://realhunt.co/cheap-houses/quiet-location-in-spain) [Cave houses 5](https://realhunt.co/cheap-houses/cave-houses-in-spain) [Over 80 m² 89](https://realhunt.co/cheap-houses/over-80-sqm-in-spain) [Over 120 m² 46](https://realhunt.co/cheap-houses/over-120-sqm-in-spain)
+By feature [With a garden 47](https://realhunt.co/cheap-houses/with-garden-in-spain) [With a pool 45](https://realhunt.co/cheap-houses/with-pool-in-spain) [Stone houses 7](https://realhunt.co/cheap-houses/stone-houses-in-spain) [Cabins and cottages 3](https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain) [With a terrace 126](https://realhunt.co/cheap-houses/with-a-terrace-in-spain) [Move-in ready 100](https://realhunt.co/cheap-houses/turnkey-in-spain) [Sea view 16](https://realhunt.co/cheap-houses/with-sea-view-in-spain) [500 m from the sea 4](https://realhunt.co/cheap-houses/near-the-beach-in-spain) [With land 4](https://realhunt.co/cheap-houses/with-land-in-spain) [With a fireplace 43](https://realhunt.co/cheap-houses/with-fireplace-in-spain) [With a garage 46](https://realhunt.co/cheap-houses/with-garage-in-spain) [In the mountains 25](https://realhunt.co/cheap-houses/in-the-mountains-in-spain) [Olive trees or vines 5](https://realhunt.co/cheap-houses/with-olive-trees-or-vines-in-spain) [Near an airport 46](https://realhunt.co/cheap-houses/near-an-airport-in-spain) [Under €500/m² 10](https://realhunt.co/cheap-houses/under-500-per-sqm-in-spain) [Score 90+ 23](https://realhunt.co/cheap-houses/score-90-plus-in-spain) [Hand-picked 13](https://realhunt.co/cheap-houses/editors-picks-in-spain) [New this month 65](https://realhunt.co/cheap-houses/new-this-month-in-spain) [New this week 43](https://realhunt.co/cheap-houses/new-this-week-in-spain) [Single-storey 11](https://realhunt.co/cheap-houses/single-storey-in-spain) [Period features 9](https://realhunt.co/cheap-houses/with-period-features-in-spain) [Good weather 45](https://realhunt.co/cheap-houses/good-weather-in-spain) [Quiet location 77](https://realhunt.co/cheap-houses/quiet-location-in-spain) [Cave houses 6](https://realhunt.co/cheap-houses/cave-houses-in-spain) [Fibre internet 3](https://realhunt.co/cheap-houses/with-fibre-internet-in-spain) [Over 80 m² 99](https://realhunt.co/cheap-houses/over-80-sqm-in-spain) [Over 120 m² 53](https://realhunt.co/cheap-houses/over-120-sqm-in-spain)
 
 Rankings [The cheapest 20](https://realhunt.co/cheap-houses/cheapest-in-spain) [Most space for the money 20](https://realhunt.co/cheap-houses/most-space-for-the-money-in-spain) [Top 10 by score 10](https://realhunt.co/cheap-houses/best-rated-in-spain)
 
-By feature and budget [Move-in ready under €100,000 64](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 45](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 25](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [By the sea under €100,000 16](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [Sea view under €200,000 13](https://realhunt.co/cheap-houses/with-sea-view-under-200000-in-spain) [Sea view under €150,000 9](https://realhunt.co/cheap-houses/with-sea-view-under-150000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [With a garden under €100,000 7](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain)
+By feature and budget [Move-in ready under €100,000 64](https://realhunt.co/cheap-houses/turnkey-under-100000-in-spain) [Houses under €100,000 48](https://realhunt.co/cheap-houses/houses-under-100000-in-spain) [Apartments under €100,000 25](https://realhunt.co/cheap-houses/apartments-under-100000-in-spain) [By the sea under €100,000 16](https://realhunt.co/cheap-houses/by-the-sea-under-100000-in-spain) [Sea view under €200,000 13](https://realhunt.co/cheap-houses/with-sea-view-under-200000-in-spain) [Sea view under €150,000 9](https://realhunt.co/cheap-houses/with-sea-view-under-150000-in-spain) [With a garden under €100,000 8](https://realhunt.co/cheap-houses/with-garden-under-100000-in-spain) [With a pool under €100,000 7](https://realhunt.co/cheap-houses/with-pool-under-100000-in-spain) [Sea view under €100,000 6](https://realhunt.co/cheap-houses/with-sea-view-under-100000-in-spain)
 
-In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 50](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
+In pounds and dollars [Under £50,000 7](https://realhunt.co/cheap-houses/under-50000-pounds-in-spain) [Under $100,000 52](https://realhunt.co/cheap-houses/under-100000-dollars-in-spain)
 
-Near a city [Near Valencia 13](https://realhunt.co/cheap-houses/near-valencia) [Near Alicante 54](https://realhunt.co/cheap-houses/near-alicante) [Near Málaga 13](https://realhunt.co/cheap-houses/near-malaga) [Near Seville 6](https://realhunt.co/cheap-houses/near-seville)
+Near a city [Near Valencia 13](https://realhunt.co/cheap-houses/near-valencia) [Near Alicante 57](https://realhunt.co/cheap-houses/near-alicante) [Near Málaga 15](https://realhunt.co/cheap-houses/near-malaga) [Near Seville 6](https://realhunt.co/cheap-houses/near-seville)
 
-Neighbouring countries [Portugal 11](https://realhunt.co/homes/portugal) [France 62](https://realhunt.co/homes/france)
+Neighbouring countries [Portugal 19](https://realhunt.co/homes/portugal) [France 179](https://realhunt.co/homes/france)
 
-By country [Italy 102](https://realhunt.co/homes/italy) [France 62](https://realhunt.co/homes/france) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Greece 42](https://realhunt.co/homes/greece) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 31](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Netherlands 18](https://realhunt.co/homes/netherlands) [Germany 18](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Portugal 11](https://realhunt.co/homes/portugal) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 7](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Cyprus 4](https://realhunt.co/homes/cyprus) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
+By country [France 179](https://realhunt.co/homes/france) [Italy 107](https://realhunt.co/homes/italy) [Greece 65](https://realhunt.co/homes/greece) [United States 61](https://realhunt.co/homes/united-states) [Denmark 46](https://realhunt.co/homes/denmark) [Sweden 37](https://realhunt.co/homes/sweden) [Poland 31](https://realhunt.co/homes/poland) [Japan 30](https://realhunt.co/homes/japan) [Portugal 19](https://realhunt.co/homes/portugal) [Netherlands 18](https://realhunt.co/homes/netherlands) [Germany 18](https://realhunt.co/homes/germany) [Canada 16](https://realhunt.co/homes/canada) [Switzerland 10](https://realhunt.co/homes/switzerland) [Mexico 7](https://realhunt.co/homes/mexico) [Bulgaria 6](https://realhunt.co/homes/bulgaria) [Dominican Republic 5](https://realhunt.co/homes/dominican-republic) [United Kingdom 5](https://realhunt.co/homes/united-kingdom) [Cyprus 4](https://realhunt.co/homes/cyprus) [Uruguay 4](https://realhunt.co/homes/uruguay) [Ireland 4](https://realhunt.co/homes/ireland) [Colombia 3](https://realhunt.co/homes/colombia) [Czech Republic 3](https://realhunt.co/homes/czech-republic)
 
-How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 127 of these 155 homes were checked against the original listing in the last 30 days. 31 homes in Spain left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
+How we choose these homes: a person reads every listing and checks its price, size, photos and place before it goes up, and the nightly check takes it off when the advert goes. [How we check homes](https://realhunt.co/how-we-check-homes) 152 of these 165 homes were checked against the original listing in the last 30 days. 31 homes in Spain left RealHunt or were marked as no longer for sale in the last 30 days. [See the log of homes taken off the site](https://realhunt.co/research/removed-homes)
 
-These listings come from fotocasa.es (93), green-acres.es (42), pisos.com (10), idealista.com (4), thinkspain.com (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
+These listings come from fotocasa.es (93), green-acres.es (52), pisos.com (10), idealista.com (4), thinkspain.com (4). RealHunt is not an estate agent and does not sell these homes: each one links to its original listing, and a person checked it before it went up.
 
 [Email me new homes in Spain](https://realhunt.co/alerts?country=Spain) · [Filter and sort these homes](https://realhunt.co/?country=Spain#filters) · [All cheap-house searches](https://realhunt.co/cheap-houses) · [How the score works](https://realhunt.co/method) · [Site map: every page and home in Spain](https://realhunt.co/sitemap/spain)
 

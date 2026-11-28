@@ -1,6 +1,6 @@
 # Casas baratas en Grecia: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 42 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 42 casas es de 160.000 € (1.800 € por m², calculado con las 41 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 210.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 65 casas en venta en Grecia, revisadas una a una por una persona. En Grecia, el precio de salida mediano de esas 65 casas es de 130.000 € (1.400 € por m², calculado con las 64 casas de superficie conocida); la más barata cuesta 68.000 € y la más cara, 210.000 €. Los impuestos y gastos de compra suman alrededor del 5,5–7% del precio de una casa en Grecia (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/greece · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https://realhunt.co/data/countries/greece.es.pdf
@@ -9,12 +9,12 @@ También en JSON: https://realhunt.co/data/countries/greece.json · PDF: https:/
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 42 |
-| Precio de salida mediano | 160.000 € |
-| Precio mediano por m² | 1.800 € (41 casas de superficie conocida) |
-| Superficie mediana | 77 m² |
+| Casas en RealHunt | 65 |
+| Precio de salida mediano | 130.000 € |
+| Precio mediano por m² | 1.400 € (64 casas de superficie conocida) |
+| Superficie mediana | 90 m² |
 | La más barata y la más cara | 68.000 € · 210.000 € |
-| Nota RealHunt mediana (de 70 a 98) | 85 |
+| Nota RealHunt mediana (de 70 a 98) | 87 |
 | Impuestos y gastos de compra | 5,5–7% del precio (cifras de 2026) |
 | ¿Puede comprar un extranjero? | Sí. Los compradores de fuera de la UE y EFTA necesitan un permiso para comprar en zonas fronterizas designadas (partes del norte de Grecia e islas del Egeo oriental como el Dodecaneso y Rodas). El gobierno ha anunciado un impuesto de transferencia del 15% para compradores no comunitarios de viviendas a partir del 1 de enero de 2027, aún no definitivo en septiembre de 2026. |
 | Impuesto anual sobre la vivienda | Quienes son propietarios a 1 de enero pagan el impuesto unificado sobre la propiedad (ENFIA), calculado por inmueble según su ubicación, superficie, antigüedad y valor oficial de la zona, con un recargo si el total de inmuebles en Grecia supera 500.000 €. |
@@ -46,7 +46,23 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/greece
 
-## Las 42 casas, de mejor a peor nota
+## Las 65 casas, de mejor a peor nota
+
+### Casa en buen estado con terraza, jardín y suelos de parquet en Sperchogeia, Mesenia
+
+85.000 € · Sperchogeia, Messenia, Peloponnese · 200 m² · 3 dormitorios · nota RealHunt 96 · añadida el 2026-11-28
+
+Esta casa de planta baja está en buen estado, con una estructura sólida y un exterior en buen estado. Tiene 200 metros cuadrados habitables, 3 dormitorios, 1 baño, un salón y una sala de estar con suelos de parquet de madera. Entre sus exteriores destacan una terraza, un jardín, una parcela de 500 metros cuadrados, orientación oeste y vistas a la plaza. El mar está a 4000 metros y el aeropuerto a 5000 metros. Las ventanas son de madera. Precio 85.000 €, unos 425 €/m².
+
+https://realhunt.co/es/deal/gr-sperchogeia-terrace-garden-parquet-house-good-85k
+
+### Casa reformada de 3 dormitorios con vistas a la montaña y azotea en Katsidoni, Creta
+
+85.000 € · Katsidoni, Crete · 96 m² · 3 dormitorios · nota RealHunt 93 · añadida el 2026-11-28
+
+Esta casa renovada está totalmente amueblada y repartida en dos plantas. La planta baja tiene una sala de estar abierta con cocina, un baño y un dormitorio, y la segunda planta tiene una sala de estar y dos dormitorios. Al exterior hay una azotea con vistas, un patio de unos 15 m2 y una parcela de 70 m2. La vivienda cuenta con paneles solares y antena de TV, y está a 12 km del mar, con vistas al pueblo. Precio 85.000 €, unos 885 €/m².
+
+https://realhunt.co/es/deal/gr-katsidoni-renovated-mountain-house-roof-terrace-85k
 
 ### Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia
 
@@ -56,6 +72,30 @@ Casa de dos plantas y 116 m² en Vasilitsi, en el extremo sur de la península d
 
 https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k
 
+### Casa independiente de 3 dormitorios totalmente reformada con jardín y chimenea en Mikropoli, Drama
+
+80.000 € · Mikropoli, Drama · 148 m² · 3 dormitorios · nota RealHunt 92 · añadida el 2026-11-28
+
+Esta casa independiente totalmente reformada es anterior a 1955 y se distribuye en dos plantas conectadas por una escalera interior. Tiene tres dormitorios con armarios, dos salones, una cocina equipada con electrodomésticos y un baño. Entre sus extras destacan un jardín amplio, una chimenea, un trastero y una parcela de 830 m². Dispone de calefacción independiente de gasóleo. Está disponible de inmediato. Precio 80.000 €, unos 541 €/m².
+
+https://realhunt.co/es/deal/gr-mikropoli-renovated-house-garden-fireplace-80k
+
+### Casa de 2 dormitorios con vistas al mar y terraza en Agios Stefanos, Creta
+
+92.000 € · Agios Stefanos, Crete · 130 m² · 2 dormitorios · nota RealHunt 92 · añadida el 2026-11-28
+
+Esta casa se reparte en tres niveles y ofrece 130 m2 de superficie habitable en Agios Stefanos, Creta. Tiene 2 dormitorios, 1 baño, un aseo independiente, una cocina, un comedor, un pequeño salón con chimenea y un trastero. El salón de la segunda planta puede convertirse en un dormitorio con baño en suite. En el exterior hay un balcón grande y una terraza grande, ambos con vistas al mar, y una parcela de 145 m2 que puede convertirse en un jardín con zona de barbacoa. Precio 92.000 €, unos 708 €/m².
+
+https://realhunt.co/es/deal/gr-agios-stefanos-sea-view-terrace-fireplace-house-92k
+
+### Dúplex de 3 dormitorios en buen estado con vistas a la montaña y chimenea en Archanes, Creta
+
+130.000 € · Archanes, Crete · 190 m² · 3 dormitorios · nota RealHunt 92 · añadida el 2026-11-28
+
+Este dúplex de planta baja está en buen estado. Tiene 3 dormitorios, salón, cocina y 1 baño, con suelos de mosaico y de madera. Incluye chimenea, armarios y un trastero de 65 m², y el terreno tiene 2.056 pies cuadrados. La vivienda tiene vistas a la montaña y el edificio data de 1960. El mar está a 10 km, el centro de la ciudad a 10 km, el pueblo más cercano a 10 m y el aeropuerto a 10 km. Precio 130.000 €, unos 684 €/m².
+
+https://realhunt.co/es/deal/gr-archanes-mountain-views-maisonette-fireplace-130k
+
 ### Casa encalada en un pueblo de Creta con azotea y escalera de caracol
 
 115.000 € · Choumeriako, near Neapoli, Crete · 93 m² · 2 dormitorios · nota RealHunt 91 · añadida el 2026-10-16
@@ -63,6 +103,14 @@ https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k
 Casa independiente de 93 m² reformada en el pueblo tradicional de Choumeriako, a 3 km de Neapoli y a 13 km de las playas de Agios Nikolaos. Abajo, cocina moderna, dos dormitorios y baño con bañera rinconera; una escalera de caracol sube a un salón precioso con estufa de leña que da a una gran terraza con sombrillas y vistas al pueblo. Arcos de piedra, vigas de madera y paredes encaladas le mantienen el carácter. Precio 115.000 €, unos 1.237 €/m².
 
 https://realhunt.co/es/deal/gr-crete-choumeriako-renovated-115k
+
+### Casa independiente de 3 dormitorios en buen estado con anexo y jardín en Kato Chorio, Creta
+
+145.000 € · Kato Chorio, Crete · 150 m² · 3 dormitorios · nota RealHunt 91 · añadida el 2026-11-28
+
+Esta casa independiente está en buen estado, con una casa principal y un anexo independiente en una sola planta. Tiene 2 dormitorios dobles en la casa principal, un dormitorio doble en el anexo, cocina-comedor y chimenea en el salón del anexo. La parcela ajardinada de unos 850 m2 tiene árboles maduros, huerto, 2 trasteros y posibilidad de aparcamiento fuera de la vía pública. Tiene agua y electricidad conectadas, desagüe a fosa séptica, y el mar está a 15 minutos en coche. Precio 145.000 €, unos 967 €/m².
+
+https://realhunt.co/es/deal/gr-kato-chorio-detached-house-annex-garden-145k
 
 ### Casa de 2 dormitorios con terraza y vistas en Sinarades, Corfú
 
@@ -87,6 +135,46 @@ https://realhunt.co/es/deal/gr-kalamitsi-alexandrou-renovated-olive-mill-terrace
 Casa de piedra cuidada de 80 m² en la parte alta de Marathokampos, zona de Agia Triada, con una vista preciosa al mar. En planta baja cocina, comedor y baño; arriba dos dormitorios, salón, distribuidor y aseo. Carpintería de madera, suelos de parqué y baldosa y caldera de leña para la calefacción. Una casa tradicional en un rincón pintoresco, lista para vivir. Precio 68.000 €, unos 850 €/m².
 
 https://realhunt.co/es/deal/gr-samos-agia-triada-68k-20601330
+
+### Casa de 2 dormitorios con jardín y patio en Stavrochori, Creta
+
+85.000 € · Stavrochori, Crete · 100 m² · 2 dormitorios · nota RealHunt 90 · añadida el 2026-11-28
+
+Esta casa en Stavrochori, en el sureste de Creta, tiene una zona de día abierta con cocina. Cuenta con dos dormitorios y un baño, y unos 100 m2 de superficie habitable. La parcela mide unos 200 m2 e incluye un jardín y un patio de unos 100 m2. La casa está a 7 km del mar, a 7 km de Makry Gialos y de todos los servicios. Precio 85.000 €, unos 850 €/m².
+
+https://realhunt.co/es/deal/gr-stavrochori-courtyard-garden-open-plan-house-85k
+
+### Casa tradicional de piedra con vistas al mar y chimenea en Achladia, Creta
+
+86.000 € · Achladia, Crete · 95 m² · 3 dormitorios · nota RealHunt 90 · añadida el 2026-11-28
+
+Se trata de una casa tradicional de piedra en Achladia, con unos 95 m2 de superficie habitable. Tiene tres dormitorios, uno con entrada independiente, y un baño. El salón cuenta con chimenea, y un patio conduce a una terraza en la azotea con vistas al mar y a las montañas. La parcela tiene 114 m2. Dispone de paneles solares y calefacción central, el mar está a 8 km y todos los servicios están conectados. Precio 86.000 €, unos 905 €/m².
+
+https://realhunt.co/es/deal/gr-achladia-traditional-stone-house-sea-views-86k
+
+### Casa tradicional de 3 dormitorios de dos plantas con vistas al mar en Tourloti, Creta
+
+87.000 € · Tourloti, Crete · 89 m² · 3 dormitorios · nota RealHunt 89 · añadida el 2026-11-28
+
+Esta tradicional casa de dos plantas está a unos 3 km del mar, en Tourloti, en el este de Creta. La planta baja, de unos 56 m2, tiene una zona de cocina y salón, un dormitorio y un baño exterior. La primera planta, de unos 33 m2, tiene dos dormitorios grandes y un balcón con vistas al mar. La propiedad también tiene vistas al pueblo y a la montaña, además de 700 sq ft de terreno. Todos los servicios están conectados y el acceso es bueno. Precio 87.000 €, unos 978 €/m².
+
+https://realhunt.co/es/deal/gr-tourloti-traditional-storey-house-sea-views-87k
+
+### Casa reformada de 2 dormitorios de dos plantas con jardín y entradas independientes en Akoumia, Creta
+
+105.000 € · Akoumia, Crete · 117 m² · 2 dormitorios · nota RealHunt 89 · añadida el 2026-11-28
+
+Esta casa de dos plantas reformada en el pueblo de Akoumia tiene dos entradas independientes, con acceso propio para cada planta. La planta baja tiene un dormitorio, un baño y una cocina, mientras que la primera planta tiene dos dormitorios, una cocina y un baño. Un jardín privado y un balcón añaden espacio exterior para comer y relajarse. El pueblo está a 39 km de Rethymno. Se encuentra cerca de la plaza central del pueblo. Precio 105.000 €, unos 897 €/m².
+
+https://realhunt.co/es/deal/gr-akoumia-renovated-two-level-house-garden-105k
+
+### Casa amueblada lista para entrar a vivir con terraza y chimenea en Komnina, Phthiotis, Grecia Central
+
+120.000 € · Komnina, Phthiotis, Central Greece · 106 m² · 3 dormitorios · nota RealHunt 89 · añadida el 2026-11-28
+
+Casa independiente lista para entrar a vivir, construida en 1987 y vendida totalmente amueblada con todos los electrodomésticos. Tiene un baño, una sala de estar y cocina abiertas, armarios empotrados y suelos de azulejo. Cuenta con terraza, plaza de aparcamiento, parcela de 800 m², un trastero exterior de 15 m² y chimenea. Dispone de calefacción de gasóleo y aire acondicionado. La playa de Kamena Vourla está a unos 10 km, las termas de Termópilas a unos 20 km y el aeropuerto internacional de Atenas a unos 205 km. Precio 120.000 €, unos 1.132 €/m².
+
+https://realhunt.co/es/deal/gr-komnina-furnished-detached-house-terrace-fireplace-120k
 
 ### Casa de pueblo de cuatro dormitorios con terraza con vistas al mar en Othos, Karpathos
 
@@ -136,6 +224,30 @@ Rodeada de árboles altísimos en el pueblo de montaña de Chania, en Pelion, un
 
 https://realhunt.co/es/deal/gr-pelion-fairytale-house-95k
 
+### Casa renovada de 2 dormitorios con jardín y vistas en Vrises, Creta
+
+115.000 € · Vrises, Crete · 90 m² · 2 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+Esta casa renovada se distribuye en dos niveles en el pueblo de montaña de Vrises. La planta superior tiene una sala de estar y comedor de planta abierta, cocina equipada con acceso a balcón, dos dormitorios dobles y un baño. La planta inferior tiene dos trasteros. La propiedad cuenta con un jardín privado con árboles maduros, vistas, calefacción central y calentador solar de agua. La parcela mide aprox. 350 m2, Neapolis está a 5 minutos en coche y el aeropuerto de Heraklion está a una hora en coche. Precio 115.000 €, unos 1.278 €/m².
+
+https://realhunt.co/es/deal/gr-vrises-renovated-mountain-house-views-garden-115k
+
+### Casa de dos plantas de 3 dormitorios con vistas al mar cerca de la playa en Varnavas, Ática Oriental
+
+120.000 € · Varnavas, East Attica · 120 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+Esta casa de dos plantas se construyó en 1995 y se encuentra en una zona tranquila, adecuada para familias durante todo el año. Tiene tres dormitorios, dos baños, cocina y salón repartidos en dos niveles, con suelos de azulejo. Cuenta con vistas al mar, carpinterías de aluminio con doble acristalamiento, toldos y espacio exterior incluido en la propiedad. La playa está a 5 minutos y Atenas a 50 km. Precio 120.000 €, unos 1.000 €/m².
+
+https://realhunt.co/es/deal/gr-varnavas-sea-view-two-storey-house-120k
+
+### Casa unifamiliar renovada de 3 dormitorios con chimenea y terreno en Kainourgio, Phthiotis
+
+130.000 € · Kainourgio, Phthiotis · 112 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+Esta casa unifamiliar renovada está lista para entrar a vivir, con la estructura en buen estado. Tiene tres dormitorios, un salón-cocina abierto y un baño. Incluye chimenea, una parcela de unos 300 m², una plaza de aparcamiento al aire libre y un trastero independiente de 20 m². La vivienda cuenta con calefacción individual de gasoil y cuatro unidades de aire acondicionado. La playa está a unos 2,3 km, la autopista E75 a unos 3 km y el aeropuerto de Nea Anchialos a unos 114 km. Precio 130.000 €, unos 1.161 €/m².
+
+https://realhunt.co/es/deal/gr-kainourgio-renovated-detached-house-fireplace-130k
+
 ### Casa de piedra con vistas al mar y patio privado en Ano Manna, Syros
 
 130.000 € · Ano Manna, Syros · 85 m² · 2 dormitorios · nota RealHunt 88 · añadida el 2026-11-27
@@ -143,6 +255,14 @@ https://realhunt.co/es/deal/gr-pelion-fairytale-house-95k
 Esta casa independiente de piedra de 85 m² está en buen estado y conserva su carácter tradicional. Cuenta con salón, cocina, dos dormitorios y un baño, además de una zona cubierta semiexterior, un WC exterior, un trastero y un aljibe. El patio privado tiene espacio para una zona de estar y comedor al aire libre, y la casa tiene vistas al mar. Dispone de calefacción central de gasóleo con radiadores, doble acristalamiento, alcantarillado público y una parcela de 151 m² con acceso desde la carretera, cerca de colegios locales. Precio 130.000 €, unos 1.529 €/m².
 
 https://realhunt.co/es/deal/gr-ano-manna-stone-detached-house-sea-views-130k
+
+### Villa de piedra tradicional de 3 dormitorios con estudio y vistas en Exo Apidi, Creta
+
+150.000 € · Exo Apidi, Crete · 130 m² · 3 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+Esta es una villa tradicional de piedra en Exo Apidi, Creta. La villa principal tiene una zona de día abierta con cocina, tres dormitorios y dos baños, además de un estudio con entrada independiente y baño. La casa cuenta con patios delantero y trasero, vistas al pueblo y a las montañas, y una parcela de 308 m2. Tiene aire acondicionado y todos los servicios conectados, y el mar está a 8 km. Precio 150.000 €, unos 1.154 €/m².
+
+https://realhunt.co/es/deal/gr-exo-apidi-stone-traditional-villa-studio-views-150k
 
 ### Casa de 2 dormitorios renovada con jardín y vistas al mar en Eretria, Eubea
 
@@ -168,6 +288,30 @@ La casa de estilo tradicional está en muy buen estado y se vende totalmente amu
 
 https://realhunt.co/es/deal/gr-drosopigi-furnished-traditional-house-garden-90k
 
+### Casa de 2 dormitorios con jardín, chimenea y terreno en Perivolakia, Creta
+
+105.000 € · Perivolakia, Crete · 75 m² · 2 dormitorios · nota RealHunt 87 · añadida el 2026-11-28
+
+Esta casa con jardín en Perivolakia se encuentra a unos 12 km de la playa. Tiene 2 dormitorios, 2 baños, un salón con chimenea y aire acondicionado, cocina, lavadero y un aseo para invitados. Un porche cubierto de unos 15 m2 se encuentra en la entrada. La parcela de 288 m2 cuenta con un jardín bien cuidado, riego automático y frutales como naranjos, limoneros, higueras y olivos. La vivienda dispone de calentador solar de agua y de un entorno tranquilo a poca distancia de la costa. Precio 105.000 €, unos 1.400 €/m².
+
+https://realhunt.co/es/deal/gr-perivolakia-garden-house-fireplace-land-105k
+
+### Casa de campo en buen estado con jardín de olivos y chimenea en Dimitropoulo, Acaya
+
+120.000 € · Dimitropoulo, Achaea · 97 m² · 1 dormitorios · nota RealHunt 87 · añadida el 2026-11-28
+
+Esta casa de campo de dos plantas, construida en 1980, está en buen estado y se asienta sobre una parcela de 1.200 m². La planta baja tiene un amplio salón con chimenea, una cocina y un baño, y la planta superior tiene un dormitorio con inodoro. Al exterior hay un jardín con 16 olivos y una terraza. El salón dispone de aire acondicionado, y la vivienda está en Dimitropoulo, Aigialia, Acaya. Precio 120.000 €, unos 1.237 €/m².
+
+https://realhunt.co/es/deal/gr-dimitropoulo-country-house-olive-trees-terrace-120k
+
+### Casa de piedra lista para entrar a vivir con jardín y chimenea en Armeni, Creta
+
+145.000 € · Armeni, Crete · 105 m² · 2 dormitorios · nota RealHunt 87 · añadida el 2026-11-28
+
+Esta casa de piedra lista para entrar a vivir, amueblada y decorada con gran calidad, tiene un ambiente moderno con toques tradicionales. Tiene dos dormitorios dobles, un baño, una zona de estar y comedor abierta con estufa de leña, y una cocina moderna totalmente equipada con una gran chimenea abierta. Entre los exteriores hay una terraza sombreada en la parte delantera, un jardín bien establecido, una parcela de 606 m² con frutales y aparcamiento en la entrada. La casa tiene calentador de agua eléctrico. Armeni está a unos 27 km al suroeste de la ciudad de Sitia. Precio 145.000 €, unos 1.381 €/m².
+
+https://realhunt.co/es/deal/gr-armeni-stone-house-garden-fireplace-145k
+
 ### Casa amueblada en Creta con piscina compartida entre solo cuatro casas
 
 158.000 € · Drapanos, Apokoronas, Crete · 76 m² · 2 dormitorios · nota RealHunt 87 · añadida el 2026-10-16
@@ -192,6 +336,14 @@ Esta antigua casa de piedra fue reformada en 2009 y conserva su piedra vista, su
 
 https://realhunt.co/es/deal/gr-voulismeni-renovated-stone-house-fireplace-135k
 
+### Casita de piedra en buen estado con jardín y chimenea en Limenaria, Thasos
+
+140.000 € · Limenaria, Thasos · 100 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-11-28
+
+Esta casita de piedra está en buen estado y es apta para vivir todo el año. Tiene 2 dormitorios, 2 baños y un altillo convertido en un tercer dormitorio, además de cocina independiente y un solárium. Las comodidades exteriores incluyen jardín, terraza, bodega, chimenea con estufas de leña y cobertizos para leña, en un terreno de 3.531 pies cuadrados. El pueblo cuenta con un minimercado, cafeterías y tabernas. Precio 140.000 €, unos 1.400 €/m².
+
+https://realhunt.co/es/deal/gr-limenaria-stone-cottage-garden-fireplace-140k
+
 ### Casa de dos plantas reformada, amueblada, a 50 m del mar en Afissos, Magnesia
 
 180.000 € · Afissos, Magnesia · 104 m² · 2 dormitorios · nota RealHunt 86 · añadida el 2026-11-27
@@ -207,6 +359,14 @@ https://realhunt.co/es/deal/gr-afissos-renovated-furnished-two-storey-house-180k
 Piso de 50 m² en primera planta a unos cientos de metros de la playa en Pefki, en la isla de Eubea, con vistas al mar desde el balcón. Dos dormitorios, cocina equipada, baño moderno con ducha y rincón de comedor, todo con acabados recientes y suelos claros. Calefacción eléctrica, aire acondicionado, puerta blindada y aparcamiento. Se vende totalmente amueblado y equipado, listo para usar. Certificado energético E. Precio 80.000 €, unos 1.600 €/m².
 
 https://realhunt.co/es/deal/gr-evia-pefki-80k-19672601
+
+### Casa de piedra totalmente renovada de 1 dormitorio con jardín y vistas a la montaña en Skripero, Corfú
+
+129.000 € · Skripero, Corfu · 80 m² · 1 dormitorios · nota RealHunt 85 · añadida el 2026-11-28
+
+Esta casa independiente totalmente renovada se reconstruyó a partir de una casa tradicional de piedra en 2025. Tiene un dormitorio principal con chimenea, una habitación auxiliar para invitados o niños, una cocina abierta con salón y comedor, y dos baños con duchas a ras de suelo. Entre los exteriores hay un jardín trasero grande con césped, un patio delantero pavimentado con zona de barbacoa cubierta, una parcela de 634,11 m² y vistas abiertas a la montaña. Dispone de aire acondicionado, doble acristalamiento y tejado nuevo. El aeropuerto está a 18 km y Corfú capital a 17 km. Precio 129.000 €, unos 1.612 €/m².
+
+https://realhunt.co/es/deal/gr-skripero-renovated-stone-house-mountain-views-129k
 
 ### Casa moderna y amueblada de dos dormitorios cerca del mar en Rodas
 
@@ -256,6 +416,22 @@ Construida en 2016, esta casa independiente tiene tres niveles con 132 m2 de sup
 
 https://realhunt.co/es/deal/gr-zachloritika-mountain-views-fireplace-garden-205k
 
+### Casa de 2 dormitorios en buen estado con cocina y salón abierto en Eretria, Eubea
+
+108.000 € · Eretria, Euboea · 88 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-11-28
+
+Esta casa, construida en 1998, está en buen estado y se encuentra en la planta baja. Tiene 2 dormitorios, 1 baño y una cocina abierta al salón con 88 m² de superficie habitable. La estructura y el exterior están en buen estado estructural. La calefacción es central de gasóleo, y la calificación energética es B. Se encuentra en Eretria, Eubea, en la Grecia Central. Precio 108.000 €, unos 1.227 €/m².
+
+https://realhunt.co/es/deal/gr-eretria-good-condition-ground-floor-house-108k
+
+### Casa en buen estado con chimenea y jardín en Foniskaria, Acaya, Grecia Occidental
+
+125.000 € · Foniskaria, Achaea, Western Greece · 82 m² · 1 dormitorios · nota RealHunt 84 · añadida el 2026-11-28
+
+Esta casa en buen estado fue construida en 1960 y ofrece 82 metros cuadrados de superficie habitable. Tiene un dormitorio, un baño, un salón con chimenea y una cocina abierta al salón. La parcela de 4.087,87 metros cuadrados incluye 150 olivos, 100 limoneros, almacenes, gallineros y un depósito, además de jardín y dos plazas de aparcamiento. Cuenta con calefacción central de gasóleo y aire acondicionado. Precio 125.000 €, unos 1.524 €/m².
+
+https://realhunt.co/es/deal/gr-foniskaria-good-condition-house-fireplace-garden-125k
+
 ### Casa de planta baja de 2 dormitorios con vistas y calefacción de leña en Milies, Pelion, Magnesia
 
 125.000 € · Milies, Pelion, Magnesia · 61 m² · 2 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
@@ -288,6 +464,14 @@ En Trikeri, un pueblo empedrado con aire de isla en la punta de Pelion, una casa
 
 https://realhunt.co/es/deal/gr-trikeri-sea-terrace-120k
 
+### Casa independiente de 2 dormitorios con jardín y porches cubiertos en Kotronas, Mani, Peloponeso
+
+145.000 € · Kotronas, Mani, Peloponnese · 90 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-11-28
+
+Esta casa independiente de planta baja, construida en 2000, es soleada y aireada y está conectada a la red de agua y electricidad. Tiene salón, cocina con chimenea, dos dormitorios dobles con armarios y dos baños. Incluye jardín, porches cubiertos delante y detrás, un trastero de 15 m², una parcela de 400 m² y una plaza de aparcamiento. La playa de arena está a 950 m, y el pueblo cuenta con pequeñas tiendas y restaurantes. Gytheio está a 31 km y Areopolis a 20 minutos en coche. Precio 145.000 €, unos 1.611 €/m².
+
+https://realhunt.co/es/deal/gr-kotronas-sunny-ground-floor-seaside-house-145k
+
 ### Casa de piedra de dos plantas con vista al mar de Libia en Koutsounari, sur de Creta
 
 195.000 € · Koutsounari, Ierapetra, Crete · 88 m² · 2 dormitorios · nota RealHunt 83 · añadida el 2026-11-20
@@ -312,14 +496,6 @@ Casa tradicional reformada en dos niveles con 73 m² de superficie habitable, 2 
 
 https://realhunt.co/es/deal/gr-pitsidia-renovated-traditional-house-village-views-189k
 
-### Casa independiente reformada con jardín y terraza en Volos, Magnesia
-
-195.000 € · Volos, Magnesia · 77 m² · 1 dormitorios · nota RealHunt 82 · añadida el 2026-11-27
-
-Casa independiente totalmente reformada de 77 m² sobre una parcela de 121 m² en Agios Konstantinos. Cuenta con recibidor, cocina independiente, comedor, salón, un dormitorio y un baño, además de un sótano de 20 m². Un patio privado rodea la propiedad, y la vivienda dispone de caldera individual de gas natural, aire acondicionado con inverter y sistema de alarma de seguridad. Está cerca del centro de la ciudad y del paseo marítimo. Precio 195.000 €, unos 2.532 €/m².
-
-https://realhunt.co/es/deal/gr-volos-renovated-detached-house-courtyard-195k
-
 ### Casa de patio de piedra restaurada con terraza con vistas al mar en Gytheio
 
 195.000 € · Gytheio, Laconia · 85 m² · 2 dormitorios · nota RealHunt 82 · añadida el 2026-11-20
@@ -327,6 +503,14 @@ https://realhunt.co/es/deal/gr-volos-renovated-detached-house-courtyard-195k
 Una casa de piedra tradicional de 85 m² en un callejón tranquilo sin coches en el casco antiguo de Gytheio, a corta distancia del paseo portuario, en una parcela vallada de 127 m². Restaurada con pavimento de piedra original, suelos de madera y puertas antiguas conservadas. Un salón con suelo de piedra se abre al patio, donde una cocina recientemente renovada y una ducha exterior se encuentran bajo un limonero. En la planta superior hay un dormitorio doble y uno individual y un baño moderno, y una terraza elevada mira sobre los tejados al mar. Se vende llave en mano; la playa de Mavrovouni está a 5 minutos en coche.
 
 https://realhunt.co/es/deal/gr-peloponnese-gytheio-stone-house-sea-view-terrace-195k
+
+### Casa independiente reformada con jardín y terraza en Volos, Magnesia
+
+195.000 € · Volos, Magnesia · 77 m² · 1 dormitorios · nota RealHunt 82 · añadida el 2026-11-27
+
+Casa independiente totalmente reformada de 77 m² sobre una parcela de 121 m² en Agios Konstantinos. Cuenta con recibidor, cocina independiente, comedor, salón, un dormitorio y un baño, además de un sótano de 20 m². Un patio privado rodea la propiedad, y la vivienda dispone de caldera individual de gas natural, aire acondicionado con inverter y sistema de alarma de seguridad. Está cerca del centro de la ciudad y del paseo marítimo. Precio 195.000 €, unos 2.532 €/m².
+
+https://realhunt.co/es/deal/gr-volos-renovated-detached-house-courtyard-195k
 
 ### Villa adosada de dos plantas con piscina compartida y vistas a la montaña en Asproulianos, Creta
 

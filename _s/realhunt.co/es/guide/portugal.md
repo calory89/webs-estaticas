@@ -28,25 +28,25 @@ Impuesto sobre los ingresos por alquiler: Larga estancia: 25% fijo para no resid
 
 ### Mejores casas en Portugal
 
+- [140.000 € · Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k) · Tabuaço, Douro, Viseu · nota 92 · 173 m² · 3 dorm.
 - [68.500 € · Casa alentejana de una planta rehabilitada con techos de caña cerca de Mértola](https://realhunt.co/es/deal/pt-mertola-68k-313027) · Penilhos, Mértola, Beja · nota 91 · 75 m² · 2 dorm.
 - [150.000 € · Casa de dos dormitorios renovada con aire acondicionado en el casco histórico de Estremoz](https://realhunt.co/es/deal/pt-estremoz-150k-259126) · Estremoz, Évora · nota 91 · 110 m² · 2 dorm.
 - [125.000 € · Casa independiente de cinco dormitorios con jardín, garaje y calefacción central en Brunhoso, Mogadouro](https://realhunt.co/es/deal/pt-brunhoso-125k-258088) · Brunhoso, Mogadouro, Bragança · nota 91 · 170 m² · 5 dorm.
 - [115.000 € · Casa de pueblo alentejana totalmente reformada con techos de madera en Chança, Alter do Chão](https://realhunt.co/es/deal/pt-alter-do-chao-115k-285437) · Chança, Alter do Chão, Portalegre · nota 91 · 130 m²
 - [150.000 € · Casa de pueblo de tres plantas totalmente renovada en Peso, Covilhã, a los pies de la Serra da Estrela](https://realhunt.co/es/deal/pt-covilha-peso-150k-280003) · Peso, Covilhã, Castelo Branco · nota 91 · 86 m² · 2 dorm.
-- [145.000 € · Casa de pueblo amueblada con terraza y vistas a la sierra, lista para entrar, en Mação](https://realhunt.co/es/deal/pt-macao-145k-270445) · Castelo, Mação, Santarém · nota 91 · 96 m²
 
-[Las 20 casas en Portugal](https://realhunt.co/es/homes/portugal)
+[Las 28 casas en Portugal](https://realhunt.co/es/homes/portugal)
 
 [Gastos, impuestos y fuentes de Portugal](https://realhunt.co/es/costs/portugal) · [Calculadora de gastos de compra para Portugal](https://realhunt.co/es/buying-costs/portugal) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 
 ### Compara Portugal
 
+- [Portugal vs Francia](https://realhunt.co/es/countries/france-vs-portugal)
 - [Portugal vs España](https://realhunt.co/es/countries/portugal-vs-spain)
 - [Portugal vs Italia](https://realhunt.co/es/countries/italy-vs-portugal)
-- [Portugal vs Francia](https://realhunt.co/es/countries/france-vs-portugal)
+- [Portugal vs Grecia](https://realhunt.co/es/countries/greece-vs-portugal)
 - [Portugal vs Estados Unidos](https://realhunt.co/es/countries/portugal-vs-united-states)
 - [Portugal vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-portugal)
-- [Portugal vs Grecia](https://realhunt.co/es/countries/greece-vs-portugal)
 - [Portugal vs Suecia](https://realhunt.co/es/countries/portugal-vs-sweden)
 - [Portugal vs Polonia](https://realhunt.co/es/countries/poland-vs-portugal)
 

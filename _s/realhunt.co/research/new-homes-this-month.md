@@ -1,6 +1,6 @@
 # New homes on RealHunt in November 2026, by country
 
-297 homes were added to RealHunt in November 2026 up to 28 November 2026, in 26 countries. Most are in Italy (54), Spain (52), France (43). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is Renovated 1889 Victorian with a deep front porch in Lynchburg, Virginia in Lynchburg, Virginia (score 93).
+460 homes were added to RealHunt in November 2026 up to 28 November 2026, in 26 countries. Most are in France (160), Spain (62), Italy (59). The cheapest is Mountain chalet with a wood stove and a loft in the Hida forest in Shokawa, Takayama, Gifu (€7,400) and the best scored is House in good condition with terrace, garden and parquet floors in Sperchogeia, Messenia in Sperchogeia, Messenia, Peloponnese (score 96).
 
 Counted on the day each home went up on RealHunt. Homes that have already left the site are not counted. The page is rebuilt with every update.
 
@@ -10,12 +10,12 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/new-hom
 
 | Country | Homes added | From | Median price |
 | --- | --- | --- | --- |
-| Italy | 54 | €22,000 | €140,000 |
-| Spain | 52 | €63,000 | €170,000 |
-| France | 43 | €69,500 | €148,400 |
+| France | 160 | €56,000 | €123,000 |
+| Spain | 62 | €63,000 | €159,900 |
+| Italy | 59 | €22,000 | €130,000 |
+| Greece | 52 | €80,000 | €145,000 |
 | United States | 38 | €134,400 | €237,400 |
-| Greece | 29 | €85,000 | €178,000 |
-| Portugal | 18 | €68,500 | €150,000 |
+| Portugal | 26 | €68,500 | €142,900 |
 | Japan | 13 | €7,400 | €22,750 |
 | Canada | 7 | €123,400 | €140,000 |
 | Mexico | 5 | €143,000 | €160,200 |
@@ -39,13 +39,13 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/new-hom
 
 | Month | Homes added | Countries | Median price |
 | --- | --- | --- | --- |
-| November 2026 | 297 | 26 | €161,000 |
+| November 2026 | 460 | 26 | €139,000 |
 | October 2026 | 296 | 17 | €87,100 |
 | September 2026 | 110 | 10 | €59,000 |
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 703 chosen listings (52% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 866 chosen listings (48% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - A home counts in the month it went up on RealHunt. A home that has since left the site is not counted, so the months before can only go down when homes leave.
 - Median: the middle home when they are sorted (with an even number, the upper of the two in the middle).

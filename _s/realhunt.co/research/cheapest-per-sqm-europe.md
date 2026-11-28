@@ -2,7 +2,7 @@
 
 The home with the lowest asking price per square metre in Europe on RealHunt is 1926 character home with a full home spa, sauna and geothermal heating in Bjurholm, Västerbotten, Sweden: €99,000 for 680 m², €146/m². By country, the lowest median price per m² is in Bulgaria (€759/m²), Denmark (€790/m²), Sweden (€800/m²), and the highest in the Netherlands (€4,286/m²).
 
-From 526 homes in 16 European countries whose listing gives a size of at least 20 m², each checked by a person, 28 November 2026.
+From 689 homes in 16 European countries whose listing gives a size of at least 20 m², each checked by a person, 28 November 2026.
 
 Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.csv
 
@@ -27,28 +27,28 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/cheapes
 | 15 | [Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp) | Fiamignano, Rieti, Lazio, Italy | €16,000 | 40 m² | €400 | 83 |
 | 16 | [4-bedroom house with terrace in Cehegín](https://realhunt.co/deal/es-cehegin-79k-37859) | Cehegín, Murcia, Spain | €79,900 | 200 m² | €400 | 86 |
 | 17 | [5-bedroom house with terrace in Sorvilán](https://realhunt.co/deal/es-sorvilan-59k-76765) | Sorvilán, Granada, Spain | €59,000 | 147 m² | €401 | 94 |
-| 18 | [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) | Ranum, North Jutland | €79,800 | 198 m² | €403 | 98 |
-| 19 | [155 m² home with two greenhouses, own irrigation well and double garage](https://realhunt.co/deal/DcPcCXHgXCK) | Åfors, Kalmar, Småland, Sweden | €64,000 | 155 m² | €413 | 83 |
-| 20 | [Country house with a veranda near the Saint-Rémy lake, Thiers](https://realhunt.co/deal/fr-thiers-49k-mo1869) | Thiers, Puy-de-Dôme | €49,900 | 120 m² | €416 | 89 |
-| 21 | [Renovated three-level house with an energy rating C in Decazeville, Aveyron](https://realhunt.co/deal/fr-decazeville-49k-900846) | Decazeville, Aveyron | €49,980 | 116 m² | €431 | 90 |
-| 22 | [182 m² family villa between forest and water, 84 min from Copenhagen](https://realhunt.co/deal/dk-orehoved-80k-12ff7b) | Orehoved, Falster | €79,800 | 182 m² | €438 | 97 |
-| 23 | [211 m² country house with fields as far as the eye can see](https://realhunt.co/deal/dk-froslev-93k-c03bb2) | Frøslev, Mors | €93,200 | 211 m² | €442 | 92 |
-| 24 | [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977) | Bytom, Silesia | €57,120 | 127 m² | €450 | 96 |
-| 25 | [Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380) | Rossell, Baix Maestrat (Castellón) | €55,000 | 120 m² | €458 | 94 |
+| 18 | [Move-in ready 4-bedroom house with cellar and outbuildings in Monts-sur-Guesnes, Vienne](https://realhunt.co/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k) | Monts-sur-Guesnes, Vienne | €95,700 | 238 m² | €402 | 92 |
+| 19 | [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd) | Ranum, North Jutland | €79,800 | 198 m² | €403 | 98 |
+| 20 | [Good condition 6-bedroom farmhouse with garden, terrace and fireplace in Piteglio, Tuscany](https://realhunt.co/deal/it-piteglio-farmhouse-garden-terrace-fireplace-105k) | Piteglio, Tuscany | €105,000 | 260 m² | €404 | 89 |
+| 21 | [155 m² home with two greenhouses, own irrigation well and double garage](https://realhunt.co/deal/DcPcCXHgXCK) | Åfors, Kalmar, Småland, Sweden | €64,000 | 155 m² | €413 | 83 |
+| 22 | [Spacious 6-bedroom house with garage and fireplace in Zurgena, Almería](https://realhunt.co/deal/es-zurgena-spacious-village-house-garage-fireplace-139k) | Zurgena, Almería, Andalusia | €139,000 | 335 m² | €415 | 85 |
+| 23 | [Country house with a veranda near the Saint-Rémy lake, Thiers](https://realhunt.co/deal/fr-thiers-49k-mo1869) | Thiers, Puy-de-Dôme | €49,900 | 120 m² | €416 | 89 |
+| 24 | [House in good condition with terrace, garden and parquet floors in Sperchogeia, Messenia](https://realhunt.co/deal/gr-sperchogeia-terrace-garden-parquet-house-good-85k) | Sperchogeia, Messenia, Peloponnese | €85,000 | 200 m² | €425 | 96 |
+| 25 | [Renovated three-level house with an energy rating C in Decazeville, Aveyron](https://realhunt.co/deal/fr-decazeville-49k-900846) | Decazeville, Aveyron | €49,980 | 116 m² | €431 | 90 |
 
 | Country | Homes with size | Median €/m² | Cheapest per m² |
 | --- | --- | --- | --- |
 | Bulgaria | 6 | €759 | €690 |
 | Denmark | 44 | €790 | €403 |
 | Sweden | 21 | €800 | €146 |
+| France | 176 | €946 | €234 |
 | Germany | 18 | €1,078 | €741 |
+| Italy | 89 | €1,138 | €204 |
 | Poland | 31 | €1,139 | €450 |
-| Italy | 84 | €1,167 | €204 |
-| France | 59 | €1,200 | €234 |
-| Spain | 152 | €1,296 | €246 |
+| Spain | 162 | €1,231 | €246 |
+| Portugal | 28 | €1,274 | €480 |
+| Greece | 64 | €1,400 | €425 |
 | Czech Republic | 3 | €1,464 | €1,091 |
-| Portugal | 20 | €1,510 | €480 |
-| Greece | 41 | €1,800 | €850 |
 | United Kingdom | 5 | €1,807 | €1,505 |
 | Ireland | 4 | €2,255 | €1,789 |
 | Switzerland | 10 | €2,337 | €461 |
@@ -57,7 +57,7 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/cheapes
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 703 chosen listings (52% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 866 chosen listings (48% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - Price per m² is the asking price divided by the size the listing gives. Homes under 20 m² and homes without a size are left out. Sizes are those of the listing and can be measured in different ways from one country to another.
 - Europe here means the countries of Europe, Cyprus included. Countries with fewer than 3 homes with a size are left out of the country table.

@@ -42,12 +42,12 @@ Tax on rental income: Non-residents have 25% of gross rent withheld, but they ca
 
 ### Compare Canada
 
+- [Canada vs France](https://realhunt.co/countries/canada-vs-france)
 - [Canada vs Spain](https://realhunt.co/countries/canada-vs-spain)
 - [Canada vs Italy](https://realhunt.co/countries/canada-vs-italy)
-- [Canada vs France](https://realhunt.co/countries/canada-vs-france)
+- [Canada vs Greece](https://realhunt.co/countries/canada-vs-greece)
 - [Canada vs United States](https://realhunt.co/countries/canada-vs-united-states)
 - [Canada vs Denmark](https://realhunt.co/countries/canada-vs-denmark)
-- [Canada vs Greece](https://realhunt.co/countries/canada-vs-greece)
 - [Canada vs Sweden](https://realhunt.co/countries/canada-vs-sweden)
 - [Canada vs Poland](https://realhunt.co/countries/canada-vs-poland)
 
