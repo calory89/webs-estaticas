@@ -22,6 +22,12 @@
 <meta property="og:site_name" content="Sumba Marathon">
 <meta name="twitter:title" content="The First 100 · Sumba Marathon"><meta name="twitter:description" content="Sumba has never had a marathon. Only 100 people will ever run the first one.">
 <link rel="preload" as="image" href="vid/hero.webp">
+<link rel="preconnect" href="https://oykcsmextclpdnugixqz.supabase.co" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="0 marathons in the history of Sumba. Only 100 bibs for the first one.">
+<meta name="twitter:image" content="https://sumbamarathon.com/og.jpg"><meta name="twitter:image:alt" content="0 marathons in the history of Sumba. Only 100 bibs for the first one.">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Sumba Marathon","url":"https://sumbamarathon.com/","logo":"https://sumbamarathon.com/favicon.svg","parentOrganization":{"@type":"Organization","name":"Eco Beach City","url":"https://ecobeachcity.com/"},"sameAs":["https://www.instagram.com/ecobeachevents/"]},{"@type":"WebSite","name":"Sumba Marathon","url":"https://sumbamarathon.com/","inLanguage":["en","es"]},{"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Is this really the first marathon on Sumba?","acceptedAnswer":{"@type":"Answer","text":"As far as we can find, no marathon has ever been run on the island. That's exactly why the first one matters."}},
 {"@type":"Question","name":"Where is it?","acceptedAnswer":{"@type":"Answer","text":"Sumba Island, East Nusa Tenggara, Indonesia, about an hour's flight east of Bali. The finish line is on the beach at Eco Beach City, the organiser and host."}},
@@ -406,7 +412,7 @@ footer{padding:40px 0 120px;color:var(--mute);font-size:14px;border-top:1px soli
       <div class="full"><label for="why">Why do you want to be one of the first? (optional, private)</label><input id="why" maxlength="280" placeholder="First marathon ever, a promise to my dad, my 40th birthday…"></div>
       <div class="full"><button class="cta" type="submit" id="go" style="width:100%;justify-content:center">Claim my bib →</button>
       <div class="msg" id="msg" role="status"></div>
-      <div class="share" id="share"><canvas id="card" width="1080" height="1920" aria-label="Your bib card"></canvas><div class="btns"><b>Post it. Tag the friend who should take the next bib.</b><button type="button" class="cta" id="shareBtn">Share my bib →</button><a class="cta ghost" id="dlBtn" download="sumba-marathon-bib.png" href="#">Download for Stories</a></div></div>
+      <div class="share" id="share"><canvas id="card" width="1080" height="1920" aria-label="Your bib card"></canvas><div class="btns"><b id="shareT">Post it. Tag the friend who should take the next bib.</b><button type="button" class="cta" id="shareBtn">Share my bib →</button><a class="cta ghost" id="dlBtn" download="sumba-marathon-bib.png" href="#">Download for Stories</a></div></div>
       <p class="fine">Reserving is free and doesn't commit you to anything. We'll only use your details to send you Sumba Marathon news. Your first name and country appear on the live wall.</p></div>
     </form>
   </div>
@@ -456,7 +462,7 @@ if(LANG==='es'){document.documentElement.lang='es';document.title='Maratón de S
   $('name').placeholder='';$('findN').placeholder='Buscar nº (1–100)';
   $('leftT').textContent='de 100 dorsales libres · reservar es gratis';$('sbarT').textContent='de 100 dorsales libres · primer maratón de la historia de Sumba';
   $('liveT').textContent='SUMBA · IMÁGENES REALES';$('tagT').textContent='Donde se correrán los primeros 42,195 km de la historia de la isla 🏝️';
-  $('pickT').textContent='Aún no has elegido dorsal';var kk=document.querySelector('.kick');if(kk)kk.innerHTML='<span class="dot"></span> Sumba, Indonesia · Desde 2027 · Edición 001';var md=document.querySelector('meta[name=description]');if(md)md.setAttribute('content','Sumba nunca ha tenido un maratón. El primero tendrá 100 corredores y sus nombres irán en un monumento en la meta, para siempre. Elige tu dorsal, del 001 al 100.');$('mapFly').textContent='~1 h de vuelo';$('mapNote').textContent='Mapa simplificado, no a escala. Punto rojo: Tambolaka (oeste de Sumba).';$('mapT').textContent='Sumba está al este de Bali, en Nusa Tenggara Oriental, Indonesia';$('ckT').textContent='¿Cookies para contar visitas y ver cómo se usa la web? (Google Analytics, Microsoft Clarity)';$('ckY').textContent='Aceptar';$('ckN').textContent='Rechazar';$('why').placeholder='Mi primer maratón, una promesa a mi padre, mis 40…';$('pickH').textContent='Elige uno en el muro, o te damos el número libre más bajo.';}
+  $('pickT').textContent='Aún no has elegido dorsal';$('shareT').textContent='Publícalo. Etiqueta al amigo que debería coger el siguiente dorsal.';$('shareBtn').textContent='Compartir mi dorsal →';$('dlBtn').textContent='Descargar para Stories';var kk=document.querySelector('.kick');if(kk)kk.innerHTML='<span class="dot"></span> Sumba, Indonesia · Desde 2027 · Edición 001';var md=document.querySelector('meta[name=description]');if(md)md.setAttribute('content','Sumba nunca ha tenido un maratón. El primero tendrá 100 corredores y sus nombres irán en un monumento en la meta, para siempre. Elige tu dorsal, del 001 al 100.');$('mapFly').textContent='~1 h de vuelo';$('mapNote').textContent='Mapa simplificado, no a escala. Punto rojo: Tambolaka (oeste de Sumba).';$('mapT').textContent='Sumba está al este de Bali, en Nusa Tenggara Oriental, Indonesia';$('ckT').textContent='¿Cookies para contar visitas y ver cómo se usa la web? (Google Analytics, Microsoft Clarity)';$('ckY').textContent='Aceptar';$('ckN').textContent='Rechazar';$('why').placeholder='Mi primer maratón, una promesa a mi padre, mis 40…';$('pickH').textContent='Elige uno en el muro, o te damos el número libre más bajo.';}
 
 function pad(n){return ('00'+n).slice(-3)}
 function flag(c){if(!c||c.length!=2)return'';return String.fromCodePoint.apply(null,c.toUpperCase().split('').map(function(x){return 127397+x.charCodeAt(0)}))}
@@ -506,16 +512,16 @@ $('reels').innerHTML=R.map(function(r){return '<div class="reel"><video aria-lab
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(!v.src)v.src=v.getAttribute('data-src');var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})},{threshold:.35});[].forEach.call(document.querySelectorAll('.reel video'),function(v){io.observe(v)})}else{[].forEach.call(document.querySelectorAll('.reel video'),function(v){v.src=v.getAttribute('data-src')})}
 function makeCard(b,name){var c=$('card'),x=c.getContext('2d'),W=1080,H=1920;var g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'#141416');g.addColorStop(1,'#0b0b0c');x.fillStyle=g;x.fillRect(0,0,W,H);
   var r=x.createRadialGradient(W/2,H,50,W/2,H,1100);r.addColorStop(0,'rgba(232,176,75,.45)');r.addColorStop(1,'rgba(232,176,75,0)');x.fillStyle=r;x.fillRect(0,0,W,H);
-  x.textAlign='center';x.fillStyle='#e8b04b';x.font='800 44px Inter,Arial,sans-serif';x.fillText('SUMBA MARATHON · 2027',W/2,230);
-  x.fillStyle='#f4efe6';x.font='900 88px Impact,Arial Narrow,sans-serif';x.fillText('I AM ONE OF',W/2,420);x.fillText('THE FIRST 100',W/2,520);
+  x.textAlign='center';x.fillStyle='#e8b04b';x.font='800 44px Inter,Arial,sans-serif';x.fillText(T('SUMBA MARATHON · 2027','MARATÓN DE SUMBA · 2027'),W/2,230);
+  x.fillStyle='#f4efe6';x.font='900 88px Impact,Arial Narrow,sans-serif';x.fillText(T('I AM ONE OF','SOY UNO DE'),W/2,420);x.fillText(T('THE FIRST 100','LOS FIRST 100'),W/2,520);
   x.fillStyle='#f4efe6';x.beginPath();x.roundRect?x.roundRect(160,640,760,620,40):x.rect(160,640,760,620);x.fill();
-  x.fillStyle='#ff4d3d';x.fillRect(160,640,760,90);x.fillStyle='#fff';x.font='800 40px Inter,Arial,sans-serif';x.fillText('FIRST MARATHON IN SUMBA’S HISTORY',W/2,700);
+  x.fillStyle='#ff4d3d';x.fillRect(160,640,760,90);x.fillStyle='#fff';x.font='800 32px Inter,Arial,sans-serif';x.fillText(T('FIRST MARATHON IN SUMBA’S HISTORY','PRIMER MARATÓN DE LA HISTORIA DE SUMBA'),W/2,700);
   x.fillStyle='#0b0b0c';x.font='900 330px Impact,Arial Narrow,sans-serif';x.fillText(pad(b),W/2,1060);
   x.font='800 56px Inter,Arial,sans-serif';x.fillText(String(name).split(' ')[0].toUpperCase().slice(0,16),W/2,1190);
-  x.fillStyle='#f4efe6';x.font='500 46px Inter,Arial,sans-serif';x.fillText('My name goes on the monument.',W/2,1420);x.fillText('Forever.',W/2,1485);
-  x.fillStyle='#e8b04b';x.font='800 50px Inter,Arial,sans-serif';x.fillText((100-Object.keys(taken).length-1)+' bibs left → sumbamarathon.com',W/2,1700);
+  x.fillStyle='#f4efe6';x.font='500 46px Inter,Arial,sans-serif';x.fillText(T('My name goes on the monument.','Mi nombre irá en el monumento.'),W/2,1420);x.fillText(T('Forever.','Para siempre.'),W/2,1485);
+  x.fillStyle='#e8b04b';x.font='800 50px Inter,Arial,sans-serif';x.fillText((100-Object.keys(taken).length-1)+T(' bibs left → sumbamarathon.com',' dorsales libres → sumbamarathon.com'),W/2,1700);
   var url=c.toDataURL('image/png');$('dlBtn').href=url;$('share').classList.add('on');
-  $('shareBtn').onclick=function(){var t='I just claimed bib '+pad(b)+' for the first marathon in the history of Sumba. Only 100 of us. Grab yours: https://sumbamarathon.com/?bib';
+  $('shareBtn').onclick=function(){var t=T('I just claimed bib '+pad(b)+' for the first marathon in the history of Sumba. Only 100 of us. Grab yours: ','Acabo de reservar el dorsal '+pad(b)+' del primer maratón de la historia de Sumba. Solo somos 100. Coge el tuyo: ')+'https://sumbamarathon.com/?ref='+b;
     c.toBlob(function(bl){try{var f=new File([bl],'sumba-marathon-bib.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:t}).catch(function(){});return}}catch(e){}
       if(navigator.share){navigator.share({text:t,url:'https://sumbamarathon.com/'}).catch(function(){})}else{window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank')}});try{gtag('event','share_bib',{bib:b})}catch(e){}}}
 /* referral */
