@@ -9,13 +9,13 @@
 - **Escalas:** 1
 - **Precio habitual de la ruta:** 180 €
 - **Ahorro:** 41 %
-- **Comprobado:** 2026-11-27
+- **Comprobado:** 2026-11-28
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Zaragoza a Praga?
 
-106 € ida y vuelta con Wizz Air Malta, saliendo el 16 feb 2027 y volviendo el 19 feb 2027. Precio comprobado por última vez el 27 nov 2026.
+106 € ida y vuelta con Wizz Air Malta, saliendo el 16 feb 2027 y volviendo el 19 feb 2027. Precio comprobado por última vez el 28 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

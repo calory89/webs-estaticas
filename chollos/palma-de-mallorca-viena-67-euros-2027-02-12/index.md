@@ -9,13 +9,13 @@
 - **Escalas:** 0
 - **Precio habitual de la ruta:** 120 €
 - **Ahorro:** 44 %
-- **Comprobado:** 2026-11-27
+- **Comprobado:** 2026-11-28
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Palma de Mallorca a Viena?
 
-67 € ida y vuelta con Ryanair, saliendo el 12 feb 2027 y volviendo el 19 feb 2027. Precio comprobado por última vez el 27 nov 2026.
+67 € ida y vuelta con Ryanair, saliendo el 12 feb 2027 y volviendo el 19 feb 2027. Precio comprobado por última vez el 28 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

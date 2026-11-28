@@ -9,13 +9,13 @@
 - **Stops:** 1
 - **Usual price on this route:** €180
 - **Saving:** 41 %
-- **Checked:** 2026-11-27
+- **Checked:** 2026-11-28
 
 ## FAQ
 
 ### How much is the flight from Zaragoza to Prague?
 
-€106 return with Wizz Air Malta, leaving 16 Feb 2027 and coming back 19 Feb 2027. Price last checked on 27 Nov 2026.
+€106 return with Wizz Air Malta, leaving 16 Feb 2027 and coming back 19 Feb 2027. Price last checked on 28 Nov 2026.
 
 ### How much do I save?
 

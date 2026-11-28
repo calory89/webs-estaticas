@@ -1,6 +1,6 @@
 # Happy Low Cost: rutas de vuelos baratos con precios reales
 
-> 890 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-28T00:03Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
+> 889 rutas. Precios de ida y vuelta en turista para 1 adulto, consultados en Kiwi.com; "lo habitual" es la mediana de los precios que vimos. Generado 2026-11-28T07:44Z. Licencia CC BY 4.0: cita "Happy Low Cost (happylowcost.com)". JSON: https://www.happylowcost.com/vuelos/feed.json
 
 - [Alicante → Milán](https://www.happylowcost.com/vuelos/alicante-milan/): desde 38 € ida y vuelta, lo habitual 39 €, directo, Wizz Air Malta. 1.130 km, consultado el 2026-11-22
 - [Alicante → Venecia](https://www.happylowcost.com/vuelos/alicante-venecia/): desde 40 € ida y vuelta, lo habitual 48 €, directo, Ryanair, aeropuerto de Venice. 1.330 km, consultado el 2026-11-23
@@ -353,7 +353,7 @@
 - [Londres → Salzburgo](https://www.happylowcost.com/vuelos/londres-salzburgo/): desde 59 € ida y vuelta, lo habitual 60 €, directo, Ryanair, mes más barato 2027-01 (88 €). 1.030 km, consultado el 2026-10-22
 - [Londres → Riga](https://www.happylowcost.com/vuelos/londres-riga/): desde 70 € ida y vuelta, lo habitual 73 €, directo, Ryanair, mes más barato 2027-02 (71 €). 1.670 km, consultado el 2026-10-22
 - [Londres → Viena](https://www.happylowcost.com/vuelos/londres-viena/): desde 72 € ida y vuelta, lo habitual 77 €, directo, Ryanair, mes más barato 2027-01 (62 €), aeropuerto de Vienna. 1.250 km, consultado el 2026-10-22
-- [Londres → Bucarest](https://www.happylowcost.com/vuelos/londres-bucarest/): desde 83 € ida y vuelta, lo habitual 83 €, directo, Ryanair, mes más barato 2027-01 (67 €), aeropuerto de Bucharest. 2.080 km, consultado el 2026-10-22
+- [Londres → Bucarest](https://www.happylowcost.com/vuelos/londres-bucarest/): desde 83 € ida y vuelta, lo habitual 83 €, directo, Ryanair, mes más barato 2027-03 (65 €), aeropuerto de Bucharest. 2.080 km, consultado el 2026-10-22
 - [Londres → Múnich](https://www.happylowcost.com/vuelos/londres-munich/): desde 94 € ida y vuelta, lo habitual 150 €, directo, easyJet, mes más barato 2027-03 (131 €). 920 km, consultado el 2026-10-22
 - [Londres → Islandia](https://www.happylowcost.com/vuelos/londres-reikiavik/): desde 104 € ida y vuelta, lo habitual 107 €, directo, easyJet, mes más barato 2027-03 (94 €), aeropuerto de Keflavik. 1.900 km, consultado el 2026-10-22
 - [Londres → Brujas](https://www.happylowcost.com/vuelos/londres-brujas/): desde 134 € ida y vuelta, lo habitual 153 €, directo, Brussels Airlines, mes más barato 2027-01 (143 €), aeropuerto de Brussels. 330 km, consultado el 2026-10-22
@@ -375,7 +375,7 @@
 - [Madrid → Zanzíbar](https://www.happylowcost.com/vuelos/madrid-zanzibar/): desde 590 € ida y vuelta, lo habitual 591 €, 1 escala(s), Etihad Airways, mes más barato 2026-12 (595 €). 6.790 km, consultado el 2026-11-15
 - [Madrid → Phu Quoc](https://www.happylowcost.com/vuelos/madrid-phu-quoc/): desde 630 € ida y vuelta, lo habitual 658 €, 2 escala(s), Hainan Airlines, mes más barato 2027-01 (681 €). 10.710 km, consultado el 2026-11-15
 - [Madrid → Nassau](https://www.happylowcost.com/vuelos/madrid-nassau/): desde 645 € ida y vuelta, lo habitual 808 €, 1 escala(s), Air Canada, mes más barato 2027-03 (724 €). 6.920 km, consultado el 2026-11-15
-- [Madrid → Kioto](https://www.happylowcost.com/vuelos/madrid-kioto/): desde 716 € ida y vuelta, lo habitual 932 €, 1 escala(s), China Eastern Airlines, mes más barato 2027-01 (713 €), aeropuerto de Osaka. 10.660 km, consultado el 2026-11-14
+- [Madrid → Kioto](https://www.happylowcost.com/vuelos/madrid-kioto/): desde 716 € ida y vuelta, lo habitual 932 €, 1 escala(s), China Eastern Airlines, mes más barato 2027-01 (752 €), aeropuerto de Osaka. 10.660 km, consultado el 2026-11-14
 - [Madrid → Charleston](https://www.happylowcost.com/vuelos/madrid-charleston/): desde 729 € ida y vuelta, lo habitual 765 €, 2 escala(s), TAP Portugal, mes más barato 2027-04 (733 €). 6.660 km, consultado el 2026-11-14
 - [Madrid → Jacksonville](https://www.happylowcost.com/vuelos/madrid-jacksonville/): desde 763 € ida y vuelta, lo habitual 828 €, 1 escala(s), Air France, mes más barato 2027-04 (682 €). 6.930 km, consultado el 2026-11-14
 - [Manchester → Brujas](https://www.happylowcost.com/vuelos/manchester-brujas/): desde 42 € ida y vuelta, lo habitual 42 €, directo, Ryanair, aeropuerto de Brussels. 530 km, consultado el 2026-10-23
@@ -407,7 +407,6 @@
 - [Milán → Palermo](https://www.happylowcost.com/vuelos/milan-palermo/): desde 36 € ida y vuelta, lo habitual 38 €, directo, Ryanair. 870 km, consultado el 2026-10-23
 - [Milán → Varsovia](https://www.happylowcost.com/vuelos/milan-varsovia/): desde 36 € ida y vuelta, lo habitual 38 €, directo, Wizz Air Malta, aeropuerto de Warsaw. 1.140 km, consultado el 2026-10-23
 - [Milán → Agadir](https://www.happylowcost.com/vuelos/milan-agadir/): desde 38 € ida y vuelta, lo habitual 42 €, directo, Ryanair. 2.340 km, consultado el 2026-10-23
-- [Milán → Malta](https://www.happylowcost.com/vuelos/milan-malta/): desde 38 € ida y vuelta, lo habitual 38 €, directo, Ryanair. 1.160 km, consultado el 2026-10-23
 - [Milán → Bucarest](https://www.happylowcost.com/vuelos/milan-bucarest/): desde 39 € ida y vuelta, lo habitual 41 €, directo, Wizz Air Malta, aeropuerto de Bucharest. 1.330 km, consultado el 2026-10-23
 - [Milán → Budapest](https://www.happylowcost.com/vuelos/milan-budapest/): desde 40 € ida y vuelta, lo habitual 41 €, directo, Ryanair. 800 km, consultado el 2026-10-23
 - [Milán → Cracovia](https://www.happylowcost.com/vuelos/milan-cracovia/): desde 40 € ida y vuelta, lo habitual 43 €, directo, Ryanair. 940 km, consultado el 2026-10-23
@@ -535,7 +534,7 @@
 - [Oslo → Ciudad de México](https://www.happylowcost.com/vuelos/oslo-ciudad-de-mexico/): desde 853 € ida y vuelta, lo habitual 961 €, 3 escala(s), Ryanair, aeropuerto de Mexico City. 9.200 km, consultado el 2026-10-23
 - [Oslo → Isla Mauricio](https://www.happylowcost.com/vuelos/oslo-mauricio/): desde 915 € ida y vuelta, lo habitual 933 €, 2 escala(s), Norwegian Air Shuttle, aeropuerto de Plaisance. 9.900 km, consultado el 2026-10-23
 - [Oslo → Perú](https://www.happylowcost.com/vuelos/oslo-lima/): desde 960 € ida y vuelta, lo habitual 1088 €, 2 escala(s), Norwegian Air Shuttle, aeropuerto de Lima. 11.070 km, consultado el 2026-10-23
-- [Palma → Malta](https://www.happylowcost.com/vuelos/palma-malta/): desde 38 € ida y vuelta, lo habitual 38 €, directo, Ryanair. 1.110 km, consultado el 2026-10-22
+- [Palma → Malta](https://www.happylowcost.com/vuelos/palma-malta/): desde 37 € ida y vuelta, lo habitual 46 €, directo, Ryanair. 1.110 km, consultado el 2026-11-28
 - [Palma → Milán](https://www.happylowcost.com/vuelos/palma-milan/): desde 40 € ida y vuelta, lo habitual 42 €, directo, Ryanair. 840 km, consultado el 2026-10-22
 - [Palma → París](https://www.happylowcost.com/vuelos/palma-paris/): desde 51 € ida y vuelta, lo habitual 60 €, directo, Vueling. 1.040 km, consultado el 2026-10-22
 - [Palma → Hamburgo](https://www.happylowcost.com/vuelos/palma-hamburgo/): desde 55 € ida y vuelta, lo habitual 104 €, directo, Ryanair. 1.660 km, consultado el 2026-11-27
@@ -555,13 +554,13 @@
 - [Palma → Santorini](https://www.happylowcost.com/vuelos/palma-santorini/): desde 225 € ida y vuelta, lo habitual 233 €, 2 escala(s), Ryanair, aeropuerto de Thira. 2.020 km, consultado el 2026-10-22
 - [Palma → El Cairo](https://www.happylowcost.com/vuelos/palma-el-cairo/): desde 227 € ida y vuelta, lo habitual 234 €, 1 escala(s), Vueling. 2.800 km, consultado el 2026-11-27
 - [Palma → Nueva York](https://www.happylowcost.com/vuelos/palma-nueva-york/): desde 435 € ida y vuelta, lo habitual 585 €, 1 escala(s), Lufthansa. 6.300 km, consultado el 2026-10-22
+- [Palma → Los Ángeles](https://www.happylowcost.com/vuelos/palma-los-angeles/): desde 610 € ida y vuelta, lo habitual 623 €, 2 escala(s), Wizz Air Malta. 9.850 km, consultado el 2026-11-28
 - [Palma → Orlando](https://www.happylowcost.com/vuelos/palma-orlando/): desde 651 € ida y vuelta, lo habitual 653 €, 1 escala(s), Wizz Air Malta. 7.570 km, consultado el 2026-10-22
 - [Palma → Sri Lanka](https://www.happylowcost.com/vuelos/palma-sri-lanka/): desde 668 € ida y vuelta, lo habitual 751 €, 3 escala(s), Wizz Air Malta, aeropuerto de Colombo. 8.400 km, consultado el 2026-10-22
+- [Palma → Maldivas](https://www.happylowcost.com/vuelos/palma-maldivas/): desde 708 € ida y vuelta, lo habitual 801 €, 2 escala(s), Etihad Airways, aeropuerto de Male. 8.070 km, consultado el 2026-11-28
 - [Palma → Bali](https://www.happylowcost.com/vuelos/palma-bali/): desde 734 € ida y vuelta, lo habitual 1135 €, 3 escala(s), Iberia Express, aeropuerto de Denpasar. 12.540 km, consultado el 2026-11-27
-- [Palma → Los Ángeles](https://www.happylowcost.com/vuelos/palma-los-angeles/): desde 753 € ida y vuelta, lo habitual 795 €, 2 escala(s), Vueling. 9.850 km, consultado el 2026-10-22
 - [Palma → Río de Janeiro](https://www.happylowcost.com/vuelos/palma-rio-de-janeiro/): desde 786 € ida y vuelta, lo habitual 805 €, 3 escala(s), Iberia Airlines. 8.420 km, consultado el 2026-10-22
 - [Palma → Nassau](https://www.happylowcost.com/vuelos/palma-nassau/): desde 809 € ida y vuelta, lo habitual 892 €, 2 escala(s), Wizz Air Malta. 7.470 km, consultado el 2026-10-22
-- [Palma → Maldivas](https://www.happylowcost.com/vuelos/palma-maldivas/): desde 818 € ida y vuelta, lo habitual 940 €, 3 escala(s), easyJet, aeropuerto de Male. 8.070 km, consultado el 2026-10-22
 - [Palma → Bogotá](https://www.happylowcost.com/vuelos/palma-bogota/): desde 892 € ida y vuelta, lo habitual 981 €, 1 escala(s), Wizz Air Malta. 8.550 km, consultado el 2026-11-27
 - [Palma → Ciudad del Cabo](https://www.happylowcost.com/vuelos/palma-ciudad-del-cabo/): desde 1041 € ida y vuelta, lo habitual 1139 €, 2 escala(s), Vueling, aeropuerto de Cape Town. 8.340 km, consultado el 2026-11-27
 - [París → Dublín](https://www.happylowcost.com/vuelos/paris-dublin/): desde 38 € ida y vuelta, lo habitual 41 €, directo, Ryanair. 790 km, consultado el 2026-10-22

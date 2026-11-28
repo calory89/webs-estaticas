@@ -191,6 +191,10 @@ Swimwear and shorts are fine on the beach and in the hotel zone. Cover shoulders
 
 No. English is widely spoken in hotels and tourist areas, but a few words of French or Darija help in taxis and markets.
 
+### How much is a cheap flight to Agadir?
+
+Today the cheapest deal we have to Agadir is €70 return from Sevilla. Fares change by the hour: check the live price on the deal page.
+
 ### What to see in Agadir in one day?
 
 If you only have one day, follow day 1 of this itinerary: Beach, kasbah and port. Morning: walk the promenade from the southern hotels to the marina, with a coffee stop on the way.

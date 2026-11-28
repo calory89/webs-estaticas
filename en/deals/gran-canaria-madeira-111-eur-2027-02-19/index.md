@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €190
 - **Saving:** 42 %
-- **Checked:** 2026-11-27
+- **Checked:** 2026-11-28
 
 ## FAQ
 
 ### How much is the flight from Gran Canaria to Madeira?
 
-€111 return with Binter Canarias, leaving 19 Feb 2027 and coming back 23 Feb 2027. Price last checked on 27 Nov 2026.
+€111 return with Binter Canarias, leaving 19 Feb 2027 and coming back 23 Feb 2027. Price last checked on 28 Nov 2026.
 
 ### How much do I save?
 

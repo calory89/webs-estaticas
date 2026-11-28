@@ -233,6 +233,10 @@ En noviembre, enero y febrero, fuera de fiestas, cuando bajan hoteles y vuelos y
 
 Sí, en hoteles, bares y restaurantes con licencia, sobre todo en la Marina y la zona de playa. En los locales de barrio normalmente no se sirve.
 
+### ¿Cuánto cuesta un vuelo barato a Agadir?
+
+Hoy el chollo más barato que tenemos a Agadir cuesta 70 € ida y vuelta desde Sevilla. Los precios cambian cada hora: compruébalo en la página del chollo.
+
 ### ¿Merece la pena visitar Agadir?
 
 Para quien escribió esta guía, sí: Agadir no es Marrakech ni Fez, y conviene saberlo antes de comprar el vuelo. Con 3 días ves lo esencial. Presupuesto: Gastos por persona y día, sin vuelo: Presupuesto ajustado: 40-60 € (hotel sencillo en Talborjt compartido, comida local, bus y petit taxi, playa y zoco).

@@ -126,10 +126,6 @@ En general sí, pero hay muchos carteristas en el transporte público y zonas tu
 
 No es imprescindible, pero un "bonjour" al entrar en un comercio o restaurante cambia el trato. En zonas turísticas casi todos se defienden en inglés.
 
-### ¿Cuánto cuesta un vuelo barato a París?
-
-Hoy el chollo más barato que tenemos a París cuesta 39 € ida y vuelta desde Valencia. Los precios cambian cada hora: compruébalo en la página del chollo.
-
 ### ¿Merece la pena visitar París?
 
 Para quien escribió esta guía, sí: París tiene fama de cara y de saturada, y las dos cosas son ciertas si te limitas a hacer cola en los sitios de postal. Con 4 días ves lo esencial. Presupuesto: Como referencia general, una cama en dormitorio de albergue ronda los 30-50 euros por noche, una habitación doble en hotel sencillo entre 90 y 150, y los apartamentos suelen ser caros.

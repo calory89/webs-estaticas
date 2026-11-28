@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €120
 - **Saving:** 44 %
-- **Checked:** 2026-11-27
+- **Checked:** 2026-11-28
 
 ## FAQ
 
 ### How much is the flight from Palma de Mallorca to Vienna?
 
-€67 return with Ryanair, leaving 12 Feb 2027 and coming back 19 Feb 2027. Price last checked on 27 Nov 2026.
+€67 return with Ryanair, leaving 12 Feb 2027 and coming back 19 Feb 2027. Price last checked on 28 Nov 2026.
 
 ### How much do I save?
 

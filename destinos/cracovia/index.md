@@ -131,10 +131,6 @@ En general, sí. Como en cualquier ciudad turística, cuida la cartera en la pla
 
 Es habitual dejar un 10 % en restaurantes si el servicio ha sido bueno. En los bares mleczne no se espera.
 
-### ¿Cuánto cuesta un vuelo barato a Cracovia?
-
-Hoy el chollo más barato que tenemos a Cracovia cuesta 74 € ida y vuelta desde Zaragoza. Los precios cambian cada hora: compruébalo en la página del chollo.
-
 ### ¿Merece la pena visitar Cracovia?
 
 Para quien escribió esta guía, sí: Cracovia es una de esas ciudades que resultan fáciles. Con 3 días ves lo esencial. Presupuesto: Ajustado: 40-50 € con hostal, bares mleczne y algún museo.

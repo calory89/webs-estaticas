@@ -9,13 +9,13 @@
 - **Stops:** 0
 - **Usual price on this route:** €130
 - **Saving:** 50 %
-- **Checked:** 2026-11-27
+- **Checked:** 2026-11-28
 
 ## FAQ
 
 ### How much is the flight from Valencia to Brussels?
 
-€65 return with Vueling, leaving 19 Feb 2027 and coming back 21 Feb 2027. Price last checked on 27 Nov 2026.
+€65 return with Vueling, leaving 19 Feb 2027 and coming back 21 Feb 2027. Price last checked on 28 Nov 2026.
 
 ### How much do I save?
 

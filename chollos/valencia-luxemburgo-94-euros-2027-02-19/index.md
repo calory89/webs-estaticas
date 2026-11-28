@@ -9,13 +9,13 @@
 - **Escalas:** 0
 - **Precio habitual de la ruta:** 170 €
 - **Ahorro:** 45 %
-- **Comprobado:** 2026-11-27
+- **Comprobado:** 2026-11-28
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Valencia a Luxemburgo?
 
-94 € ida y vuelta con Luxair, saliendo el 19 feb 2027 y volviendo el 22 feb 2027. Precio comprobado por última vez el 27 nov 2026.
+94 € ida y vuelta con Luxair, saliendo el 19 feb 2027 y volviendo el 22 feb 2027. Precio comprobado por última vez el 28 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

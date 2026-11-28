@@ -9,13 +9,13 @@
 - **Escalas:** 1
 - **Precio habitual de la ruta:** 200 €
 - **Ahorro:** 40 %
-- **Comprobado:** 2026-11-27
+- **Comprobado:** 2026-11-28
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta el vuelo de Alicante a Larnaca?
 
-121 € ida y vuelta con Wizz Air Malta, saliendo el 21 feb 2027 y volviendo el 23 feb 2027. Precio comprobado por última vez el 27 nov 2026.
+121 € ida y vuelta con Wizz Air Malta, saliendo el 21 feb 2027 y volviendo el 23 feb 2027. Precio comprobado por última vez el 28 nov 2026.
 
 ### ¿Cuánto se ahorra?
 

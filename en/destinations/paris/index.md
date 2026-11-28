@@ -114,10 +114,6 @@ Generally yes. The main issue is petty theft in crowded places, such as the Mét
 
 No, but start with "Bonjour" before asking for anything. It changes the tone of almost every interaction, and a few words of French go a long way.
 
-### How much is a cheap flight to Paris?
-
-Today the cheapest deal we have to Paris is €39 return from Valencia. Fares change by the hour: check the live price on the deal page.
-
 ### What to see in Paris in one day?
 
 If you only have one day, follow day 1 of this itinerary: Île de la Cité (Sainte-Chapelle early, then Notre-Dame), lunch in the Latin Quarter, afternoon at the Luxembourg Gardens, evening along the Seine.
