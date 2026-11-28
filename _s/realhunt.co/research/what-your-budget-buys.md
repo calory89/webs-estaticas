@@ -2,7 +2,7 @@
 
 Between €50,001 and €100,000, the homes on RealHunt are largest in Denmark (median 115 m²), Sweden (median 108 m²), Japan (median 106 m²) and smallest in Switzerland (34 m²). Up to €50,000 there are homes in 4 countries, most of them in Italy (32), Japan (16), Germany (7).
 
-From 866 listings checked by a person, 28 November 2026. A home counts in one price band only.
+From 1,006 listings checked by a person, 28 November 2026. A home counts in one price band only.
 
 Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.csv
 
@@ -27,8 +27,8 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 
 | Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home |
 | --- | --- | --- | --- | --- | --- |
+| France | 85 | 84 m² | €988 | 2 | [Move-in ready 4-bedroom house with cellar and outbuildings in Monts-sur-Guesnes, Vienne](https://realhunt.co/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k), €95,700, score 92 |
 | Spain | 75 | 81 m² | €981 | 2 | [Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón](https://realhunt.co/deal/es-rossell-55k-187471380), €55,000, score 94 |
-| France | 54 | 91 m² | €864 | 2 | [Move-in ready 4-bedroom house with cellar and outbuildings in Monts-sur-Guesnes, Vienne](https://realhunt.co/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k), €95,700, score 92 |
 | Denmark | 44 | 115 m² | €787 | 3 | [198 m² family villa near the Limfjord for under €80k](https://realhunt.co/deal/dk-ranum-79k-6d9fbd), €79,800, score 98 |
 | Sweden | 34 | 108 m² | €800 | 3 | [Three-bedroom brick townhouse with a garden near the south coast in Skivarp](https://realhunt.co/deal/se-skivarp-62k-1795989), €62,300, score 93 |
 | Poland | 31 | 62 m² | €1,139 | 3 | [127 m² four-room flat with a loggia and pantry in Bytom](https://realhunt.co/deal/pl-bytom-57k-186977), €57,120, score 96 |
@@ -41,17 +41,17 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 | Switzerland | 8 | 34 m² | €2,372 | 1 | [Holiday cottage with winter garden by a bathing lake in Salgesch](https://realhunt.co/deal/ch-salgesch-49k-76547), €52,800, score 85 |
 | Mexico | 7 | 65 m² | €1,108 | 2 | [2-bed apartment in San Pedro Tlaquepaque, Jalisco](https://realhunt.co/deal/san-pedro-tlaquepaque-50575), €50,575, score 93 |
 | Bulgaria | 6 | 90 m² | €759 | 2 | [Furnished two-bedroom flat with a sea view in a gated complex in Kavarna](https://realhunt.co/deal/bg-kavarna-66k-89698), €66,000, score 94 |
-| Portugal | 5 | 84 m² | €913 | 2 | [Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027), €68,500, score 91 |
+| Portugal | 6 | 84 m² | €1,190 | 2 | [Restored single-storey Alentejo house with reed ceilings near Mértola](https://realhunt.co/deal/pt-mertola-68k-313027), €68,500, score 91 |
 
 ### What €100,001 to €200,000 buys, by country
 
 | Country | Homes in band | Median size | Median €/m² | Bedrooms (median) | Best-scored home |
 | --- | --- | --- | --- | --- | --- |
-| France | 118 | 136 m² | €981 | 3 | [Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454), €148,400, score 91 |
-| Spain | 77 | 115 m² | €1,458 | 3 | [Village house with a plant-filled terrace facing Castalla castle, with garage](https://realhunt.co/deal/es-castalla-150k-388079), €150,000, score 91 |
+| France | 213 | 123 m² | €1,078 | 3 | [Brick house with a 2019 living-room extension, garden and garage in Ohain, Avesnois](https://realhunt.co/deal/fr-ohain-148k-150454), €148,400, score 91 |
+| Spain | 83 | 114 m² | €1,333 | 3 | [Village house with a plant-filled terrace facing Castalla castle, with garage](https://realhunt.co/deal/es-castalla-150k-388079), €150,000, score 91 |
 | Greece | 48 | 90 m² | €1,611 | 2 | [Three-bedroom village house with a vine-covered terrace and sea views in Messinia](https://realhunt.co/deal/gr-messinia-vasilitsi-sea-view-109k), €109,000, score 93 |
 | Italy | 47 | 110 m² | €1,345 | 2 | [Furnished lake-view house in the old centre of San Siro, Lake Como](https://realhunt.co/deal/it-san-siro-como-lake-view-115k-805633), €115,000, score 91 |
-| Portugal | 22 | 110 m² | €1,352 | 2 | [Fully renovated stone house with terrace and outbuilding in Tabuaço, Douro](https://realhunt.co/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k), €140,000, score 92 |
+| Portugal | 29 | 110 m² | €1,286 | 3 | [Fully renovated stone house with terrace and outbuilding in Tabuaço, Douro](https://realhunt.co/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k), €140,000, score 92 |
 | United States | 12 | 117 m² | €1,379 | 3 | [The historic Savage House: a white Victorian with a gingerbread porch](https://realhunt.co/deal/us-north-carolina-victorian-170k), €153,900, score 91 |
 | Canada | 7 | 155 m² | €963 | 3 | [Updated five-bedroom house with a bathroom for every bedroom in Twillingate, Newfoundland](https://realhunt.co/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k), €123,400, score 90 |
 | United Kingdom | 5 | 80 m² | €1,807 | 2 | [Well-kept three-bed semi-detached house with solar panels in Enniskillen, Fermanagh](https://realhunt.co/deal/uk-enniskillen-three-bed-semi-solar-panels-140k), €161,000, score 83 |
@@ -69,7 +69,7 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/what-yo
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 866 chosen listings (48% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 1,006 chosen listings (45% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - Price bands do not overlap: up to €50,000; €50,001 to €100,000; €100,001 to €200,000.
 - Size and price per m² are shown when at least 3 homes in the band give their size. An empty band means RealHunt lists no home there today, not that none exists in the country.

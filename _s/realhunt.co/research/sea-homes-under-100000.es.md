@@ -23,7 +23,7 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 866 anuncios escogidos (el 48% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Junto al mar: a 5 km o menos de la costa cuando se conoce la distancia; si no, casas que una persona clasificó como playa y costa.
 - El recuento describe lo que RealHunt publica hoy. Un país que no aparece puede tener casas así que aún no se han añadido.

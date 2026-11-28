@@ -47,8 +47,8 @@ Impuesto sobre los ingresos por alquiler: Tipo fijo opcional «cedolare secca» 
 - [Italia vs Estados Unidos](https://realhunt.co/es/countries/italy-vs-united-states)
 - [Italia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-italy)
 - [Italia vs Suecia](https://realhunt.co/es/countries/italy-vs-sweden)
+- [Italia vs Portugal](https://realhunt.co/es/countries/italy-vs-portugal)
 - [Italia vs Polonia](https://realhunt.co/es/countries/italy-vs-poland)
-- [Italia vs Japón](https://realhunt.co/es/countries/italy-vs-japan)
 
 ### Fuentes
 

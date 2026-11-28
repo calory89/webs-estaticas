@@ -269,14 +269,6 @@ Completely renovated and furnished, with all-new systems and finishes, ready to 
 
 https://realhunt.co/deal/it-carpasio-renovated-detached-house-large-garden-89k
 
-### Three-level stone house with lake views and fireplace in Vicalvi, Frosinone, Lazio
-
-€120,000 · Vicalvi, Frosinone, Lazio · 210 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-28
-
-This three-level stone house stands in the historic centre of Vicalvi, a few steps from the castle. It has two bedrooms, one with an en suite bathroom, a living room that can serve as a third bedroom, and three bathrooms. Balconies offer views over the lake of the Posta Fibreno Nature Reserve. The lower floor has a taverna with stone arches, a fireplace, a cellar and a private courtyard. Heating is by independent natural gas. Asking €120,000, about €571/m².
-
-https://realhunt.co/deal/it-vicalvi-stone-house-views-fireplace-120k
-
 ### Detached house with a 350 m2 garden and garage in San Lorenzo in Campo, Marche
 
 €120,000 · San Lorenzo in Campo, Le Marche · 130 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-20
@@ -284,6 +276,14 @@ https://realhunt.co/deal/it-vicalvi-stone-house-views-fireplace-120k
 An early 1900s detached house in the centre of San Lorenzo in Campo, a hill village in Pesaro and Urbino province, about 25 km from the Marotta beaches. The renovated, furnished first floor (65 m2) has a kitchen with dining area, two bedrooms and a bathroom; the ground floor (65 m2) holds a garage and two storage rooms. The owner lists wall and ceiling insulation, new floors, exterior painting and certified wiring, plumbing and boiler. A fenced south-facing garden of about 350 m2, a covered pergola and a carport. Pharmacy, shops and schools are a short walk away.
 
 https://realhunt.co/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k
+
+### Three-level stone house with lake views and fireplace in Vicalvi, Frosinone, Lazio
+
+€120,000 · Vicalvi, Frosinone, Lazio · 210 m² · 2 bedrooms · RealHunt score 85 · added 2026-11-28
+
+This three-level stone house stands in the historic centre of Vicalvi, a few steps from the castle. It has two bedrooms, one with an en suite bathroom, a living room that can serve as a third bedroom, and three bathrooms. Balconies offer views over the lake of the Posta Fibreno Nature Reserve. The lower floor has a taverna with stone arches, a fireplace, a cellar and a private courtyard. Heating is by independent natural gas. Asking €120,000, about €571/m².
+
+https://realhunt.co/deal/it-vicalvi-stone-house-views-fireplace-120k
 
 ### Medieval-village house with a terrace above a sea of clouds in Tuscany
 

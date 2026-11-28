@@ -48,8 +48,8 @@ Tax on rental income: Non-residents pay Greek tax on Greek rental income at 15% 
 - [Greece vs United States](https://realhunt.co/countries/greece-vs-united-states)
 - [Greece vs Denmark](https://realhunt.co/countries/denmark-vs-greece)
 - [Greece vs Sweden](https://realhunt.co/countries/greece-vs-sweden)
+- [Greece vs Portugal](https://realhunt.co/countries/greece-vs-portugal)
 - [Greece vs Poland](https://realhunt.co/countries/greece-vs-poland)
-- [Greece vs Japan](https://realhunt.co/countries/greece-vs-japan)
 
 ### Sources
 

@@ -23,7 +23,7 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/sea-hom
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 866 chosen listings (48% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 1,006 chosen listings (45% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - By the sea: within 5 km of the coast when the distance is known, otherwise homes filed by a person under beach and coast.
 - The count describes what RealHunt lists today. A country that is missing may have such homes that have not been added yet.

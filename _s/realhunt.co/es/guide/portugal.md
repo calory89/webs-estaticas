@@ -35,7 +35,7 @@ Impuesto sobre los ingresos por alquiler: Larga estancia: 25% fijo para no resid
 - [115.000 € · Casa de pueblo alentejana totalmente reformada con techos de madera en Chança, Alter do Chão](https://realhunt.co/es/deal/pt-alter-do-chao-115k-285437) · Chança, Alter do Chão, Portalegre · nota 91 · 130 m²
 - [150.000 € · Casa de pueblo de tres plantas totalmente renovada en Peso, Covilhã, a los pies de la Serra da Estrela](https://realhunt.co/es/deal/pt-covilha-peso-150k-280003) · Peso, Covilhã, Castelo Branco · nota 91 · 86 m² · 2 dorm.
 
-[Las 28 casas en Portugal](https://realhunt.co/es/homes/portugal)
+[Las 36 casas en Portugal](https://realhunt.co/es/homes/portugal)
 
 [Gastos, impuestos y fuentes de Portugal](https://realhunt.co/es/costs/portugal) · [Calculadora de gastos de compra para Portugal](https://realhunt.co/es/buying-costs/portugal) · [¿Puedo comprar allí? Normas por nacionalidad](https://realhunt.co/es/can-i-buy)
 

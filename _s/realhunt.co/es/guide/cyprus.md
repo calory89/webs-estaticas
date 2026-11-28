@@ -47,7 +47,7 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto sobre
 - [Chipre vs Estados Unidos](https://realhunt.co/es/countries/cyprus-vs-united-states)
 - [Chipre vs Dinamarca](https://realhunt.co/es/countries/cyprus-vs-denmark)
 - [Chipre vs Suecia](https://realhunt.co/es/countries/cyprus-vs-sweden)
-- [Chipre vs Polonia](https://realhunt.co/es/countries/cyprus-vs-poland)
+- [Chipre vs Portugal](https://realhunt.co/es/countries/cyprus-vs-portugal)
 
 ### Fuentes
 

@@ -1,6 +1,6 @@
 # Casas baratas en España: datos clave y todas las casas de RealHunt
 
-A 28 de noviembre de 2026, RealHunt publica 165 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 165 casas es de 120.000 € (1.231 € por m², calculado con las 162 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
+A 28 de noviembre de 2026, RealHunt publica 171 casas en venta en España, revisadas una a una por una persona. En España, el precio de salida mediano de esas 171 casas es de 125.000 € (1.232 € por m², calculado con las 168 casas de superficie conocida); la más barata cuesta 39.000 € y la más cara, 348.000 €. Los impuestos y gastos de compra suman alrededor del 7,5–14% del precio de una casa en España (cifras de 2026).
 
 Fuente: RealHunt, https://realhunt.co/es/homes/spain · Actualizado el 28 de noviembre de 2026 · Licencia: CC BY 4.0 (textos y cifras; las fotos pertenecen a los anuncios originales).
 También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.es.pdf
@@ -9,10 +9,10 @@ También en JSON: https://realhunt.co/data/countries/spain.json · PDF: https://
 
 | Dato | Valor |
 | --- | --- |
-| Casas en RealHunt | 165 |
-| Precio de salida mediano | 120.000 € |
-| Precio mediano por m² | 1.231 € (162 casas de superficie conocida) |
-| Superficie mediana | 93 m² |
+| Casas en RealHunt | 171 |
+| Precio de salida mediano | 125.000 € |
+| Precio mediano por m² | 1.232 € (168 casas de superficie conocida) |
+| Superficie mediana | 96 m² |
 | La más barata y la más cara | 39.000 € · 348.000 € |
 | Nota RealHunt mediana (de 70 a 98) | 84 |
 | Impuestos y gastos de compra | 7,5–14% del precio (cifras de 2026) |
@@ -46,7 +46,7 @@ Fuentes:
 
 Guía completa: https://realhunt.co/es/guide/spain
 
-## Las 165 casas, de mejor a peor nota
+## Las 171 casas, de mejor a peor nota
 
 ### Casa de pueblo con terraza panorámica al mar y a la montaña en Rossell, Castellón
 
@@ -327,6 +327,14 @@ https://realhunt.co/es/deal/es-alhama-de-granada-99k-62382
 Esta casa totalmente reformada se construyó en 1885 y está lista para entrar a vivir. Tiene cuatro dormitorios, dos baños, una cocina independiente amueblada y varios salones, entre ellos un salón comedor de 22,8 m2. Entre sus exteriores destacan una terraza, un patio interior de más de 41 m2, vistas al castillo, chimenea y 1.281 sq ft de terreno, además de una construcción auxiliar junto al patio. La vivienda cuenta con calefacción y aire acondicionado split inverter, y sus muros de piedra tienen unos 50 cm de grosor. Precio 112.000 €, unos 709 €/m².
 
 https://realhunt.co/es/deal/es-sax-renovated-stone-house-castle-views-112k
+
+### Casa de campo reformada de 5 dormitorios con azotea y terreno en Oria, Almería
+
+130.000 € · Oria, Almería, Andalusia · 232 m² · 5 dormitorios · nota RealHunt 88 · añadida el 2026-11-28
+
+Esta casa de campo reformada está en buen estado. Ofrece 232 m2 con 5 dormitorios, 2 baños, un amplio salón con chimenea de esquina y una cocina equipada. En el exterior hay una azotea, una terraza embaldosada elevada con barbacoa, vistas a campo abierto y aparcamiento delante. La parcela de 62.484 sq ft incluye varias construcciones auxiliares con potencial de conversión, sujeto a permisos. Oria y Albox están a menos de 20 minutos en coche. Precio 130.000 €, unos 560 €/m².
+
+https://realhunt.co/es/deal/es-oria-renovated-country-house-roof-terrace-130k
 
 ### Casona reformada integralmente en 2025 con acabados premium en Jijona
 
@@ -736,6 +744,14 @@ https://realhunt.co/es/deal/es-orce-cave-house-views-patio-99k
 
 https://realhunt.co/es/deal/es-murcia-99k-61734
 
+### Casa renovada de 3 dormitorios con vistas al campo y terreno en Pinoso, Alicante
+
+129.000 € · Pinoso, Alicante · 104 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-28
+
+Esta casa renovada en el pueblo de Casas Pastor, cerca de Pinoso, está lista para entrar a vivir. Tiene 3 dormitorios y 2 baños, una cocina luminosa, un salón con estufa de leña y una galería acristalada con vistas al patio. En la planta superior hay un balcón con vistas al campo. La parcela mide 1.292 sq ft, con un pequeño patio y una dependencia auxiliar. La calefacción es de gasóleo con un termo eléctrico adicional, y la vivienda cuenta con agua y electricidad. Precio 129.000 €, unos 1.240 €/m².
+
+https://realhunt.co/es/deal/es-pinoso-renovated-village-house-countryside-views-129k
+
 ### Casa cueva renovada de 3 dormitorios con patio y terraza en Castilléjar, Granada
 
 129.950 € · Castilléjar, Granada · 140 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-27
@@ -743,6 +759,14 @@ https://realhunt.co/es/deal/es-murcia-99k-61734
 La casa cueva ha sido renovada conservando sus paredes naturales de cueva, sus techos abovedados y sus vigas de madera. Incluye una sala de estar con una habitación contigua, una cocina con trastero y dos baños modernos con duchas a ras de suelo. Un amplio patio cerrado ofrece espacio para aparcar y para una terraza o un jardín, además de un túnel de cueva de unos 18 metros para un taller o un estudio. Castilléjar está a 5 a 10 minutos en coche y Granada a unas 1 hora y 40 minutos. Precio 129.950 €, unos 928 €/m².
 
 https://realhunt.co/es/deal/es-castillejar-cave-house-renovated-courtyard-129k
+
+### Casa de campo de 3 dormitorios con vistas a la montaña, jardín y chimenea en Barinas, Murcia
+
+133.500 € · Barinas, Murcia · 116 m² · 3 dormitorios · nota RealHunt 84 · añadida el 2026-11-28
+
+Esta casa de campo en Barinas tiene tres dormitorios, un baño y una luminosa zona de estar y comedor abierta con cocina. El salón cuenta con chimenea de leña y aire acondicionado, y la vivienda tiene vigas de madera vistas. En el exterior hay un jardín, un porche delantero soleado con vistas a la montaña, dos patios privados traseros y 3.670 sq ft de terreno. Una parcela independiente dispone de zona de barbacoa, trastero y aparcamiento para un coche. El pueblo de Barinas está a poca distancia a pie, y Abanilla queda cerca. Precio 133.500 €, unos 1.151 €/m².
+
+https://realhunt.co/es/deal/es-barinas-country-house-mountain-views-fireplace-134k
 
 ### Casa cueva lista para entrar a vivir, amueblada, con vistas a la montaña en Freila, Granada
 
@@ -871,6 +895,14 @@ https://realhunt.co/es/deal/es-torrevieja-99k-86111
 99.950 € por 57 m² y 2 dormitorios en San Pedro del Pinatar (Murcia), unos 1.754 €/m². A unos 1000 m del mar. Con terraza. Para entrar a vivir: anunciado en buen estado y no figura como ocupado, alquilado ni en subasta. Pide la nota simple antes de pagar ninguna señal.
 
 https://realhunt.co/es/deal/es-san-pedro-del-pinatar-99k-91782
+
+### Casa totalmente reformada de 3 dormitorios con terraza y vistas en Algueña, Alicante
+
+125.000 € · Algueña, Alicante · 101 m² · 3 dormitorios · nota RealHunt 83 · añadida el 2026-11-28
+
+Esta casa totalmente reformada está lista para entrar a vivir y cuenta con un amplio salón-comedor con chimenea. Tiene tres dormitorios dobles, un baño completamente reformado y una cocina totalmente equipada. En el exterior dispone de una terraza con vistas al pueblo y a las montañas, un patio privado y 1.356 sq ft de terreno. Cuenta con instalaciones eléctricas y de fontanería nuevas, sistema de alarma y orientación este. Se encuentra en el pueblo de Algueña, en el interior de la provincia de Alicante. Precio 125.000 €, unos 1.238 €/m².
+
+https://realhunt.co/es/deal/es-alguena-renovated-house-terrace-mountain-views-125k
 
 ### Casa totalmente reformada con terraza y segunda vivienda en Alcaudete de la Jara, Toledo
 
@@ -1104,6 +1136,14 @@ https://realhunt.co/es/deal/es-torrevieja-torresol-studio-pool-99k
 
 https://realhunt.co/es/deal/es-torrevieja-99k-92433
 
+### Casa reformada de 3 dormitorios con terraza y chimenea en Jijona, Alicante, Comunidad Valenciana
+
+119.500 € · Jijona, Alicante, Valencian Community · 96 m² · 3 dormitorios · nota RealHunt 81 · añadida el 2026-11-28
+
+Casa reformada en el casco antiguo de Jijona, distribuida en varias plantas. Tiene tres dormitorios, cada uno con su propio baño, y una cocina independiente en la planta principal. Cada planta cuenta con una puerta con cerradura y llave, y la tercera planta incluye un espacio independiente. La última planta tiene terraza, y la casa también dispone de chimenea, con unos 96 m² construidos. La propiedad está cerca de tiendas, restaurantes y servicios públicos. Precio 119.500 €, unos 1.245 €/m².
+
+https://realhunt.co/es/deal/es-jijona-renovated-house-terrace-fireplace-120k
+
 ### Casa amueblada lista para entrar a vivir de 1 dormitorio con jardín y piscina en El Ronquillo, Sevilla
 
 125.000 € · El Ronquillo, Seville · 66 m² · 1 dormitorios · nota RealHunt 81 · añadida el 2026-11-27
@@ -1167,6 +1207,14 @@ https://realhunt.co/es/deal/es-orihuela-bungalow-private-garden-terrace-198k
 Bungaló de planta baja reformado y amueblado, listo para entrar a vivir. Tiene 2 dormitorios con armarios empotrados, un baño moderno con ducha de obra y mampara, y una cocina equipada con lavadora y lavavajillas. En el exterior hay porche de entrada con toldos, una amplia terraza con vistas a un jardín comunitario cuidado, y un trastero exterior. Supermercados, centros comerciales, campos de golf y La Zenia Boulevard están a distancia caminable, y las playas de Orihuela Costa están a poca distancia. Precio 199.000 €, unos 2.341 €/m².
 
 https://realhunt.co/es/deal/es-orihuela-renovated-furnished-bungalow-terrace-199k
+
+### Casa de madera de 1 dormitorio con terraza, vistas y terreno en Lorca, Murcia
+
+127.000 € · Lorca, Murcia · 99 m² · 1 dormitorios · nota RealHunt 80 · añadida el 2026-11-28
+
+Esta casa de madera ofrece 99 m² de superficie habitable, un dormitorio y un baño. Incluye una cocina totalmente equipada, salón y comedor separados, y una galería cerrada y una terraza. El terreno de 4,5 hectáreas ofrece vistas panorámicas desde cada rincón. La vivienda cuenta con paneles solares, calefacción de gas butano y una conexión de agua actual con la propiedad vecina. Está a 10 minutos de El Consejero y a 25 minutos del centro de Lorca. Precio 127.000 €, unos 1.283 €/m².
+
+https://realhunt.co/es/deal/es-lorca-wooden-countryside-house-terrace-views-127k
 
 ### Bungalow renovado de 3 dormitorios con terrazas y solárium en Torrevieja, Costa Blanca, Alicante
 

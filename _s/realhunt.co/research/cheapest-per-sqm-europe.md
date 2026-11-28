@@ -2,7 +2,7 @@
 
 The home with the lowest asking price per square metre in Europe on RealHunt is 1926 character home with a full home spa, sauna and geothermal heating in Bjurholm, Västerbotten, Sweden: €99,000 for 680 m², €146/m². By country, the lowest median price per m² is in Bulgaria (€759/m²), Denmark (€790/m²), Sweden (€800/m²), and the highest in the Netherlands (€4,286/m²).
 
-From 689 homes in 16 European countries whose listing gives a size of at least 20 m², each checked by a person, 28 November 2026.
+From 829 homes in 16 European countries whose listing gives a size of at least 20 m², each checked by a person, 28 November 2026.
 
 Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.csv
 
@@ -41,12 +41,12 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/cheapes
 | Bulgaria | 6 | €759 | €690 |
 | Denmark | 44 | €790 | €403 |
 | Sweden | 21 | €800 | €146 |
-| France | 176 | €946 | €234 |
+| France | 302 | €1,053 | €234 |
 | Germany | 18 | €1,078 | €741 |
 | Italy | 89 | €1,138 | €204 |
 | Poland | 31 | €1,139 | €450 |
-| Spain | 162 | €1,231 | €246 |
-| Portugal | 28 | €1,274 | €480 |
+| Spain | 168 | €1,232 | €246 |
+| Portugal | 36 | €1,274 | €475 |
 | Greece | 64 | €1,400 | €425 |
 | Czech Republic | 3 | €1,464 | €1,091 |
 | United Kingdom | 5 | €1,807 | €1,505 |
@@ -57,7 +57,7 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/cheapes
 
 ## Method and limits
 
-- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 866 chosen listings (48% of them at or under €100,000), not national averages.
+- RealHunt is not a census of the market. A person picks homes that are cheap for their country and ready to live in, so these are medians of 1,006 chosen listings (45% of them at or under €100,000), not national averages.
 - Prices are asking prices in euros, as listed on the day each home was added. A sale can close lower.
 - Price per m² is the asking price divided by the size the listing gives. Homes under 20 m² and homes without a size are left out. Sizes are those of the listing and can be measured in different ways from one country to another.
 - Europe here means the countries of Europe, Cyprus included. Countries with fewer than 3 homes with a size are left out of the country table.

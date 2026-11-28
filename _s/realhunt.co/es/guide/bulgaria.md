@@ -49,7 +49,7 @@ Impuesto sobre los ingresos por alquiler: No residentes: impuesto definitivo del
 - [Bulgaria vs Estados Unidos](https://realhunt.co/es/countries/bulgaria-vs-united-states)
 - [Bulgaria vs Dinamarca](https://realhunt.co/es/countries/bulgaria-vs-denmark)
 - [Bulgaria vs Suecia](https://realhunt.co/es/countries/bulgaria-vs-sweden)
-- [Bulgaria vs Polonia](https://realhunt.co/es/countries/bulgaria-vs-poland)
+- [Bulgaria vs Portugal](https://realhunt.co/es/countries/bulgaria-vs-portugal)
 
 ### Fuentes
 

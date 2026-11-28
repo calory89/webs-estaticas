@@ -47,9 +47,9 @@
     "france": 7,
     "portugal": 1
    },
-   "homes": 851,
+   "homes": 991,
    "homes_with_title": 588,
-   "not_published": 315,
+   "not_published": 347,
    "not_published_sample": [
     {
      "path": "/homes/greece",
@@ -334,9 +334,9 @@
     "france": 3,
     "greece": 1
    },
-   "homes": 851,
+   "homes": 991,
    "homes_with_title": 588,
-   "not_published": 158,
+   "not_published": 185,
    "not_published_sample": [
     {
      "path": "/homes/greece",
@@ -626,9 +626,9 @@
     "france": 7,
     "portugal": 1
    },
-   "homes": 851,
+   "homes": 991,
    "homes_with_title": 588,
-   "not_published": 315,
+   "not_published": 347,
    "not_published_sample": [
     {
      "path": "/homes/greece",
@@ -918,9 +918,9 @@
     "france": 7,
     "portugal": 1
    },
-   "homes": 851,
+   "homes": 991,
    "homes_with_title": 588,
-   "not_published": 315,
+   "not_published": 347,
    "not_published_sample": [
     {
      "path": "/homes/greece",
@@ -1210,9 +1210,9 @@
     "france": 7,
     "portugal": 1
    },
-   "homes": 851,
+   "homes": 991,
    "homes_with_title": 588,
-   "not_published": 315,
+   "not_published": 347,
    "not_published_sample": [
     {
      "path": "/homes/greece",

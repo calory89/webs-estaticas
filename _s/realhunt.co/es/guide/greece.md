@@ -48,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: Los no residentes pagan impuesto grieg
 - [Grecia vs Estados Unidos](https://realhunt.co/es/countries/greece-vs-united-states)
 - [Grecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-greece)
 - [Grecia vs Suecia](https://realhunt.co/es/countries/greece-vs-sweden)
+- [Grecia vs Portugal](https://realhunt.co/es/countries/greece-vs-portugal)
 - [Grecia vs Polonia](https://realhunt.co/es/countries/greece-vs-poland)
-- [Grecia vs Japón](https://realhunt.co/es/countries/greece-vs-japan)
 
 ### Fuentes
 

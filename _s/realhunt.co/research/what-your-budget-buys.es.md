@@ -2,7 +2,7 @@
 
 Entre 50.001 y 100.000 €, las casas de RealHunt son más grandes en Dinamarca (mediana de 115 m²), Suecia (mediana de 108 m²) y Japón (mediana de 106 m²) y más pequeñas en Suiza (34 m²). Hasta 50.000 € hay casas en 4 países, sobre todo en Italia (32), Japón (16) y Alemania (7).
 
-A partir de 866 anuncios revisados por una persona, a 28 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
+A partir de 1.006 anuncios revisados por una persona, a 28 de noviembre de 2026. Cada casa cuenta en un solo tramo de precio.
 
 Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/what-your-budget-buys (CC BY 4.0). CSV: https://realhunt.co/research/what-your-budget-buys.es.csv
 
@@ -27,8 +27,8 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 | País | Casas en el tramo | Superficie mediana | Mediana €/m² | Dormitorios (mediana) | Casa con mejor nota |
 | --- | --- | --- | --- | --- | --- |
+| Francia | 85 | 84 m² | 988 € | 2 | [Casa lista para entrar a vivir de 4 dormitorios con sótano y dependencias en Monts-sur-Guesnes, Vienne](https://realhunt.co/es/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k), 95.700 €, nota 92 |
 | España | 75 | 81 m² | 981 € | 2 | [Casa de pueblo con terraza panorámica al mar y a la montaña en Rossell, Castellón](https://realhunt.co/es/deal/es-rossell-55k-187471380), 55.000 €, nota 94 |
-| Francia | 54 | 91 m² | 864 € | 2 | [Casa lista para entrar a vivir de 4 dormitorios con sótano y dependencias en Monts-sur-Guesnes, Vienne](https://realhunt.co/es/deal/fr-monts-sur-guesnes-ready-house-cellar-outbuildings-96k), 95.700 €, nota 92 |
 | Dinamarca | 44 | 115 m² | 787 € | 3 | [Villa familiar de 198 m² junto al Limfjord por menos de 80.000 €](https://realhunt.co/es/deal/dk-ranum-79k-6d9fbd), 79.800 €, nota 98 |
 | Suecia | 34 | 108 m² | 800 € | 3 | [Adosado de ladrillo de tres dormitorios con jardín cerca de la costa sur en Skivarp](https://realhunt.co/es/deal/se-skivarp-62k-1795989), 62.300 €, nota 93 |
 | Polonia | 31 | 62 m² | 1.139 € | 3 | [Piso de 127 m² con cuatro estancias, logia y despensa en Bytom](https://realhunt.co/es/deal/pl-bytom-57k-186977), 57.120 €, nota 96 |
@@ -41,17 +41,17 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Suiza | 8 | 34 m² | 2.372 € | 1 | [Casita de vacaciones con jardín de invierno junto a un lago de baño en Salgesch](https://realhunt.co/es/deal/ch-salgesch-49k-76547), 52.800 €, nota 85 |
 | México | 7 | 65 m² | 1.108 € | 2 | [Piso de 2 dormitorios en San Pedro Tlaquepaque, Jalisco](https://realhunt.co/es/deal/san-pedro-tlaquepaque-50575), 50.575 €, nota 93 |
 | Bulgaria | 6 | 90 m² | 759 € | 2 | [Piso amueblado de dos dormitorios con vistas al mar en un complejo cerrado en Kavarna](https://realhunt.co/es/deal/bg-kavarna-66k-89698), 66.000 €, nota 94 |
-| Portugal | 5 | 84 m² | 913 € | 2 | [Casa alentejana de una planta rehabilitada con techos de caña cerca de Mértola](https://realhunt.co/es/deal/pt-mertola-68k-313027), 68.500 €, nota 91 |
+| Portugal | 6 | 84 m² | 1.190 € | 2 | [Casa alentejana de una planta rehabilitada con techos de caña cerca de Mértola](https://realhunt.co/es/deal/pt-mertola-68k-313027), 68.500 €, nota 91 |
 
 ### Qué se compra con de 100.001 a 200.000 €, por país
 
 | País | Casas en el tramo | Superficie mediana | Mediana €/m² | Dormitorios (mediana) | Casa con mejor nota |
 | --- | --- | --- | --- | --- | --- |
-| Francia | 118 | 136 m² | 981 € | 3 | [Casa de ladrillo con ampliación del salón de 2019, jardín y garaje en Ohain, Avesnois](https://realhunt.co/es/deal/fr-ohain-148k-150454), 148.400 €, nota 91 |
-| España | 77 | 115 m² | 1.458 € | 3 | [Casa de pueblo con terraza llena de plantas frente al castillo de Castalla, con garaje](https://realhunt.co/es/deal/es-castalla-150k-388079), 150.000 €, nota 91 |
+| Francia | 213 | 123 m² | 1.078 € | 3 | [Casa de ladrillo con ampliación del salón de 2019, jardín y garaje en Ohain, Avesnois](https://realhunt.co/es/deal/fr-ohain-148k-150454), 148.400 €, nota 91 |
+| España | 83 | 114 m² | 1.333 € | 3 | [Casa de pueblo con terraza llena de plantas frente al castillo de Castalla, con garaje](https://realhunt.co/es/deal/es-castalla-150k-388079), 150.000 €, nota 91 |
 | Grecia | 48 | 90 m² | 1.611 € | 2 | [Casa de pueblo de tres dormitorios con terraza de parra y vistas al mar en Mesenia](https://realhunt.co/es/deal/gr-messinia-vasilitsi-sea-view-109k), 109.000 €, nota 93 |
 | Italia | 47 | 110 m² | 1.345 € | 2 | [Casa amueblada con vistas al lago en el casco antiguo de San Siro, lago de Como](https://realhunt.co/es/deal/it-san-siro-como-lake-view-115k-805633), 115.000 €, nota 91 |
-| Portugal | 22 | 110 m² | 1.352 € | 2 | [Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k), 140.000 €, nota 92 |
+| Portugal | 29 | 110 m² | 1.286 € | 3 | [Casa de piedra totalmente reformada con terraza y anexo en Tabuaço, Douro](https://realhunt.co/es/deal/pt-tabuaco-renovated-stone-house-outbuilding-140k), 140.000 €, nota 92 |
 | Estados Unidos | 12 | 117 m² | 1.379 € | 3 | [La histórica Savage House: casa victoriana blanca con porche de encaje](https://realhunt.co/es/deal/us-north-carolina-victorian-170k), 153.900 €, nota 91 |
 | Canadá | 7 | 155 m² | 963 € | 3 | [Casa actualizada de cinco dormitorios con cuarto de baño para cada dormitorio en Twillingate, Terranova](https://realhunt.co/es/deal/ca-twillingate-nl-five-bed-house-each-room-ensuite-194k), 123.400 €, nota 90 |
 | Reino Unido | 5 | 80 m² | 1.807 € | 2 | [Casa adosada de tres dormitorios bien mantenida con paneles solares en Enniskillen, Fermanagh](https://realhunt.co/es/deal/uk-enniskillen-three-bed-semi-solar-panels-140k), 161.000 €, nota 83 |
@@ -69,7 +69,7 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 866 anuncios escogidos (el 48% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Los tramos no se solapan: hasta 50.000 €; de 50.001 a 100.000 €; de 100.001 a 200.000 €.
 - La superficie y el precio por m² se muestran cuando al menos 3 casas del tramo indican su superficie. Un tramo vacío significa que RealHunt no tiene hoy ninguna casa ahí, no que no exista en el país.

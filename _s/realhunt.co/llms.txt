@@ -2,7 +2,7 @@
 
 > RealHunt lists cheap homes for sale around the world (mostly under €100,000), each checked by a person and graded from 70 to 98 against every other home on the site. It is not an estate agent: every home links to its original listing.
 
-Today: 866 homes in 23 countries (a country counts from 3 homes). Updated 2026-11-28 08:09 UTC.
+Today: 1006 homes in 23 countries (a country counts from 3 homes). Updated 2026-11-28 10:05 UTC.
 
 ## Key pages
 
@@ -24,12 +24,12 @@ Today: 866 homes in 23 countries (a country counts from 3 homes). Updated 2026-1
 
 ### To find homes
 
-- [Homes for sale by country: 866 homes in 23 countries](https://realhunt.co/homes)
+- [Homes for sale by country: 1006 homes in 23 countries](https://realhunt.co/homes)
 - [New homes on RealHunt, newest first](https://realhunt.co/new)
 - [The best homes on RealHunt, by country](https://realhunt.co/best)
 - [What €100,000 buys in 15 countries](https://realhunt.co/what-100k-buys)
-- [Houses for sale in France (179, from €39,000)](https://realhunt.co/homes/france)
-- [Houses for sale in Spain (165, from €39,000)](https://realhunt.co/homes/spain)
+- [Houses for sale in France (305, from €39,000)](https://realhunt.co/homes/france)
+- [Houses for sale in Spain (171, from €39,000)](https://realhunt.co/homes/spain)
 - [Houses for sale in Italy (107, from €12,000)](https://realhunt.co/homes/italy)
 - [Houses for sale in Greece (65, from €68,000)](https://realhunt.co/homes/greece)
 - [Houses for sale in the United States (61, from €65,428)](https://realhunt.co/homes/united-states)
@@ -160,16 +160,16 @@ Today: 866 homes in 23 countries (a country counts from 3 homes). Updated 2026-1
 
 Each file holds the country's listing page, its buying guide and costs, and every home: https://realhunt.co/llms/<country>.txt
 
-- [France](https://realhunt.co/llms/france.txt): 179 homes
-- [Spain](https://realhunt.co/llms/spain.txt): 165 homes
+- [France](https://realhunt.co/llms/france.txt): 305 homes
+- [Spain](https://realhunt.co/llms/spain.txt): 171 homes
 - [Italy](https://realhunt.co/llms/italy.txt): 107 homes
 - [Greece](https://realhunt.co/llms/greece.txt): 65 homes
 - [United States](https://realhunt.co/llms/united-states.txt): 61 homes
 - [Denmark](https://realhunt.co/llms/denmark.txt): 46 homes
 - [Sweden](https://realhunt.co/llms/sweden.txt): 37 homes
+- [Portugal](https://realhunt.co/llms/portugal.txt): 36 homes
 - [Poland](https://realhunt.co/llms/poland.txt): 31 homes
 - [Japan](https://realhunt.co/llms/japan.txt): 30 homes
-- [Portugal](https://realhunt.co/llms/portugal.txt): 28 homes
 - [Germany](https://realhunt.co/llms/germany.txt): 18 homes
 - [Netherlands](https://realhunt.co/llms/netherlands.txt): 18 homes
 - [Canada](https://realhunt.co/llms/canada.txt): 16 homes
@@ -186,16 +186,16 @@ Each file holds the country's listing page, its buying guide and costs, and ever
 
 ## Countries (figures of 2026-11-28)
 
-- [France](https://realhunt.co/homes/france): 179 homes from €39,000, median €119,000 (€946/m²); buying costs about 7 to 8.5% on top of the price. Text: https://realhunt.co/homes/france.md. Data: https://realhunt.co/data/countries/france.json, https://realhunt.co/data/countries/france.md
-- [Spain](https://realhunt.co/homes/spain): 165 homes from €39,000, median €120,000 (€1,231/m²); buying costs about 7.5 to 14% on top of the price. Text: https://realhunt.co/homes/spain.md. Data: https://realhunt.co/data/countries/spain.json, https://realhunt.co/data/countries/spain.md
+- [France](https://realhunt.co/homes/france): 305 homes from €39,000, median €124,800 (€1,053/m²); buying costs about 7 to 8.5% on top of the price. Text: https://realhunt.co/homes/france.md. Data: https://realhunt.co/data/countries/france.json, https://realhunt.co/data/countries/france.md
+- [Spain](https://realhunt.co/homes/spain): 171 homes from €39,000, median €125,000 (€1,232/m²); buying costs about 7.5 to 14% on top of the price. Text: https://realhunt.co/homes/spain.md. Data: https://realhunt.co/data/countries/spain.json, https://realhunt.co/data/countries/spain.md
 - [Italy](https://realhunt.co/homes/italy): 107 homes from €12,000, median €97,000 (€1,138/m²); buying costs about 4 to 15% on top of the price. Text: https://realhunt.co/homes/italy.md. Data: https://realhunt.co/data/countries/italy.json, https://realhunt.co/data/countries/italy.md
 - [Greece](https://realhunt.co/homes/greece): 65 homes from €68,000, median €130,000 (€1,400/m²); buying costs about 5.5 to 7% on top of the price. Text: https://realhunt.co/homes/greece.md. Data: https://realhunt.co/data/countries/greece.json, https://realhunt.co/data/countries/greece.md
 - [United States](https://realhunt.co/homes/united-states): 61 homes from €65,428, median €214,900 (€1,560/m²); buying costs about 2 to 5% on top of the price. Text: https://realhunt.co/homes/united-states.md. Data: https://realhunt.co/data/countries/united-states.json, https://realhunt.co/data/countries/united-states.md
 - [Denmark](https://realhunt.co/homes/denmark): 46 homes from €35,400, median €93,200 (€790/m²); buying costs about 1.5 to 3% on top of the price. Text: https://realhunt.co/homes/denmark.md. Data: https://realhunt.co/data/countries/denmark.json, https://realhunt.co/data/countries/denmark.md
 - [Sweden](https://realhunt.co/homes/sweden): 37 homes from €22,000, median €72,000 (€800/m²); buying costs about 1.5 to 3.5% on top of the price. Text: https://realhunt.co/homes/sweden.md. Data: https://realhunt.co/data/countries/sweden.json, https://realhunt.co/data/countries/sweden.md
+- [Portugal](https://realhunt.co/homes/portugal): 36 homes from €48,000, median €145,000 (€1,274/m²); buying costs about 3 to 12% on top of the price. Text: https://realhunt.co/homes/portugal.md. Data: https://realhunt.co/data/countries/portugal.json, https://realhunt.co/data/countries/portugal.md
 - [Poland](https://realhunt.co/homes/poland): 31 homes from €53,693, median €75,170 (€1,139/m²); buying costs about 2.5 to 4% on top of the price. Text: https://realhunt.co/homes/poland.md. Data: https://realhunt.co/data/countries/poland.json, https://realhunt.co/data/countries/poland.md
 - [Japan](https://realhunt.co/homes/japan): 30 homes from €7,400, median €49,680 (€340/m²); buying costs about 6 to 9% on top of the price. Text: https://realhunt.co/homes/japan.md. Data: https://realhunt.co/data/countries/japan.json, https://realhunt.co/data/countries/japan.md
-- [Portugal](https://realhunt.co/homes/portugal): 28 homes from €48,000, median €140,000 (€1,274/m²); buying costs about 3 to 12% on top of the price. Text: https://realhunt.co/homes/portugal.md. Data: https://realhunt.co/data/countries/portugal.json, https://realhunt.co/data/countries/portugal.md
 - [Germany](https://realhunt.co/homes/germany): 18 homes from €40,000, median €55,000 (€1,078/m²); buying costs about 5 to 8.5% on top of the price. Text: https://realhunt.co/homes/germany.md. Data: https://realhunt.co/data/countries/germany.json, https://realhunt.co/data/countries/germany.md
 - [Netherlands](https://realhunt.co/homes/netherlands): 18 homes from €299,000, median €325,000 (€4,286/m²); buying costs about 2 to 9% on top of the price. Text: https://realhunt.co/homes/netherlands.md. Data: https://realhunt.co/data/countries/netherlands.json, https://realhunt.co/data/countries/netherlands.md
 - [Canada](https://realhunt.co/homes/canada): 16 homes from €55,842, median €99,500 (€963/m²); buying costs about 1.5 to 4% on top of the price. Text: https://realhunt.co/homes/canada.md. Data: https://realhunt.co/data/countries/canada.json, https://realhunt.co/data/countries/canada.md

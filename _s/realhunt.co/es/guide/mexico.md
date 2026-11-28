@@ -49,7 +49,7 @@ Impuesto sobre los ingresos por alquiler: No residentes: retención del 25% de I
 - [México vs Estados Unidos](https://realhunt.co/es/countries/mexico-vs-united-states)
 - [México vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-mexico)
 - [México vs Suecia](https://realhunt.co/es/countries/mexico-vs-sweden)
-- [México vs Polonia](https://realhunt.co/es/countries/mexico-vs-poland)
+- [México vs Portugal](https://realhunt.co/es/countries/mexico-vs-portugal)
 
 ### Fuentes
 

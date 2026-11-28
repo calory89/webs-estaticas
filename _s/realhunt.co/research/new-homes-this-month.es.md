@@ -1,6 +1,6 @@
 # Casas nuevas en RealHunt en noviembre de 2026, por país
 
-En noviembre de 2026, hasta el 28 de noviembre de 2026, se añadieron 460 casas a RealHunt, en 26 países. La mayoría están en Francia (160), España (62) e Italia (59). La más barata es Chalet de montaña con estufa de leña y altillo en el bosque de Hida, en Shokawa, Takayama, Gifu (7.400 €), y la de mejor nota es Casa en buen estado con terraza, jardín y suelos de parquet en Sperchogeia, Mesenia, en Sperchogeia, Messenia, Peloponnese (nota 96).
+En noviembre de 2026, hasta el 28 de noviembre de 2026, se añadieron 600 casas a RealHunt, en 26 países. La mayoría están en Francia (286), España (68) e Italia (59). La más barata es Chalet de montaña con estufa de leña y altillo en el bosque de Hida, en Shokawa, Takayama, Gifu (7.400 €), y la de mejor nota es Casa en buen estado con terraza, jardín y suelos de parquet en Sperchogeia, Mesenia, en Sperchogeia, Messenia, Peloponnese (nota 96).
 
 Contadas por el día en que cada casa entró en RealHunt. No se cuentan las casas que ya salieron de la web. La página se regenera con cada actualización.
 
@@ -10,12 +10,12 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 | País | Casas añadidas | Desde | Precio mediano |
 | --- | --- | --- | --- |
-| Francia | 160 | 56.000 € | 123.000 € |
-| España | 62 | 63.000 € | 159.900 € |
+| Francia | 286 | 56.000 € | 127.000 € |
+| España | 68 | 63.000 € | 150.000 € |
 | Italia | 59 | 22.000 € | 130.000 € |
 | Grecia | 52 | 80.000 € | 145.000 € |
 | Estados Unidos | 38 | 134.400 € | 237.400 € |
-| Portugal | 26 | 68.500 € | 142.900 € |
+| Portugal | 34 | 68.500 € | 150.000 € |
 | Japón | 13 | 7.400 € | 22.750 € |
 | Canadá | 7 | 123.400 € | 140.000 € |
 | México | 5 | 143.000 € | 160.200 € |
@@ -39,13 +39,13 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 | Mes | Casas añadidas | Países | Precio mediano |
 | --- | --- | --- | --- |
-| noviembre de 2026 | 460 | 26 | 139.000 € |
+| noviembre de 2026 | 600 | 26 | 136.250 € |
 | octubre de 2026 | 296 | 17 | 87.100 € |
 | septiembre de 2026 | 110 | 10 | 59.000 € |
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 866 anuncios escogidos (el 48% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Una casa cuenta en el mes en que entró en RealHunt. Una casa que ya salió de la web no cuenta, así que los meses anteriores solo pueden bajar cuando salen casas.
 - Mediana: la casa que queda en el centro al ordenarlas (si el número es par, la más alta de las dos centrales).

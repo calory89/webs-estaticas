@@ -1,9 +1,9 @@
 {
  "noindex_copies": 7,
  "written_by_hand": {
-  "pages": 978,
-  "words": 1652002,
-  "english": 31,
+  "pages": 1118,
+  "words": 1916492,
+  "english": 104,
   "failed": [
    {
     "url": "https://realhunt.co/es/deal/jp-takayama-log-cabin-11k-225929",
@@ -70,6 +70,86 @@
     ]
    },
    {
+    "url": "https://realhunt.co/es/deal/fr-outarville-period-house-garden-cellar-150k",
+    "english": 4,
+    "words": 1800,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-saint-clementin-character-village-house-walled-garden-131k",
+    "english": 4,
+    "words": 1849,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-champagne-mouton-country-house-barn-garden-terrace-130k",
+    "english": 6,
+    "words": 1988,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-outarville-stone-house-land-open-plan-130k",
+    "english": 13,
+    "words": 1801,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-esperaza-three-storey-terrace-garden-views-130k",
+    "english": 6,
+    "words": 1860,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-ladignac-le-long-renovated-house-wood-stove-land-130k",
+    "english": 6,
+    "words": 1916,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
     "url": "https://realhunt.co/es/deal/DbbD15oDKLz",
     "english": 1,
     "words": 1634,
@@ -115,6 +195,19 @@
     "words": 1911,
     "hits": [
      "map"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-merry-sec-renovated-house-terraces-garden-views-130k",
+    "english": 6,
+    "words": 1927,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
     ]
    },
    {
@@ -222,6 +315,19 @@
     ]
    },
    {
+    "url": "https://realhunt.co/es/deal/fr-mezin-stone-house-courtyard-garden-130k",
+    "english": 6,
+    "words": 1889,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
     "url": "https://realhunt.co/es/deal/Dbk8HHgCAHX",
     "english": 1,
     "words": 1809,
@@ -238,6 +344,77 @@
     ]
    },
    {
+    "url": "https://realhunt.co/es/deal/fr-coussey-ready-village-house-garden-129k",
+    "english": 4,
+    "words": 1881,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-porte-du-quercy-stone-character-house-terrace-garage-130k",
+    "english": 2,
+    "words": 1778,
+    "hits": [
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-martinvelle-stone-house-garden-cellar-129k",
+    "english": 4,
+    "words": 1902,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-gannay-sur-loire-character-house-garden-garage-129k",
+    "english": 4,
+    "words": 1870,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-chalvraines-stone-house-hangar-garden-cellar-130k",
+    "english": 2,
+    "words": 1877,
+    "hits": [
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-courbiac-stone-farmhouse-barn-views-129k",
+    "english": 2,
+    "words": 1962,
+    "hits": [
+     "France",
+     "France"
+    ]
+   },
+   {
+    "url": "https://realhunt.co/es/deal/fr-chamberet-detached-house-barn-garden-130k",
+    "english": 4,
+    "words": 1894,
+    "hits": [
+     "France",
+     "France",
+     "France",
+     "France"
+    ]
+   },
+   {
     "url": "https://realhunt.co/es/deal/gr-makrigialos-furnished-townhouse-pool-views-165k",
     "english": 2,
     "words": 1937,
@@ -250,35 +427,35 @@
  },
  "max_english_share": 0.004,
  "max_english_words": 0,
- "twins": 1341,
+ "twins": 1375,
  "groups": {
   "homes": {
-   "pages": 866,
-   "twins": 866,
+   "pages": 1006,
+   "twins": 1006,
    "words": 0,
    "english": 0,
-   "by_hand": 866,
+   "by_hand": 1006,
    "spanish_pct": 0
   },
   "places": {
-   "pages": 788,
-   "twins": 788,
-   "words": 1929655,
-   "english": 0,
+   "pages": 824,
+   "twins": 822,
+   "words": 2016961,
+   "english": 6,
    "spanish_pct": 100
   },
   "pages": {
    "pages": 41,
    "twins": 8,
-   "words": 2975,
+   "words": 2952,
    "english": 418,
    "by_hand": 2,
-   "spanish_pct": 85.95
+   "spanish_pct": 85.84
   },
   "content": {
    "pages": 591,
    "twins": 589,
-   "words": 461271,
+   "words": 461677,
    "english": 33,
    "by_hand": 42,
    "spanish_pct": 99.99
@@ -291,8 +468,28 @@
    "spanish_pct": 88.46
   }
  },
- "not_published": 469,
+ "not_published": 471,
  "not_published_sample": [
+  {
+   "url": "https://realhunt.co/homes/france/page/10",
+   "english": 4,
+   "words": 2205,
+   "hits": [
+    "France",
+    "France",
+    "France",
+    "France"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/stone-houses-in-france",
+   "english": 2,
+   "words": 4813,
+   "hits": [
+    "France",
+    "France"
+   ]
+  },
   {
    "url": "https://realhunt.co/extension",
    "english": 13,
@@ -6508,41 +6705,6 @@
    "url": "https://realhunt.co/top/batumi/villa-makhinjauri-batumi",
    "english": 9,
    "words": 91,
-   "hits": [
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "See",
-    "the"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/batumi/dest-asatiani-batumi-batumi",
-   "english": 13,
-   "words": 79,
-   "hits": [
-    "Apartments",
-    "in",
-    "Ranked",
-    "in",
-    "the",
-    "new",
-    "builds",
-    "by",
-    "buyers",
-    "Apartments",
-    "in",
-    "See"
-   ]
-  },
-  {
-   "url": "https://realhunt.co/top/batumi/parkside-villas-airport-batumi",
-   "english": 9,
-   "words": 83,
    "hits": [
     "Ranked",
     "in",

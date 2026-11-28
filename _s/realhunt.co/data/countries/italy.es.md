@@ -269,14 +269,6 @@ Completamente reformada y amueblada, con sistemas y acabados nuevos, lista para 
 
 https://realhunt.co/es/deal/it-carpasio-renovated-detached-house-large-garden-89k
 
-### Casa de piedra de tres niveles con vistas al lago y chimenea en Vicalvi, Frosinone, Lazio
-
-120.000 € · Vicalvi, Frosinone, Lazio · 210 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-11-28
-
-Esta casa de piedra de tres niveles se encuentra en el casco histórico de Vicalvi, a pocos pasos del castillo. Tiene dos dormitorios, uno con baño en suite, un salón que puede usarse como tercer dormitorio y tres baños. Los balcones ofrecen vistas al lago de la Reserva Natural de Posta Fibreno. La planta inferior cuenta con una taberna con arcos de piedra, chimenea, bodega y un patio privado. La calefacción es independiente de gas natural. Precio 120.000 €, unos 571 €/m².
-
-https://realhunt.co/es/deal/it-vicalvi-stone-house-views-fireplace-120k
-
 ### Casa independiente con jardín de 350 m² y garaje en San Lorenzo in Campo, Marcas
 
 120.000 € · San Lorenzo in Campo, Le Marche · 130 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-11-20
@@ -284,6 +276,14 @@ https://realhunt.co/es/deal/it-vicalvi-stone-house-views-fireplace-120k
 Una casa independiente de principios del 1900 en el centro de San Lorenzo in Campo, un pueblo en la colina en la provincia de Pesaro y Urbino, a unos 25 km de las playas de Marotta. La primera planta renovada y amueblada (65 m²) tiene una cocina con comedor, dos dormitorios y un cuarto de baño; la planta baja (65 m²) contiene un garaje y dos trasteros. El propietario lista aislamiento de paredes y techos, suelos nuevos, pintura exterior e instalación eléctrica, tuberías y caldera certificadas. Un jardín vallado orientado al sur de aproximadamente 350 m², una pérgola cubierta y una plaza de garaje. Farmacia, tiendas y escuelas están a corta distancia.
 
 https://realhunt.co/es/deal/it-marche-san-lorenzo-in-campo-house-garden-garage-120k
+
+### Casa de piedra de tres niveles con vistas al lago y chimenea en Vicalvi, Frosinone, Lazio
+
+120.000 € · Vicalvi, Frosinone, Lazio · 210 m² · 2 dormitorios · nota RealHunt 85 · añadida el 2026-11-28
+
+Esta casa de piedra de tres niveles se encuentra en el casco histórico de Vicalvi, a pocos pasos del castillo. Tiene dos dormitorios, uno con baño en suite, un salón que puede usarse como tercer dormitorio y tres baños. Los balcones ofrecen vistas al lago de la Reserva Natural de Posta Fibreno. La planta inferior cuenta con una taberna con arcos de piedra, chimenea, bodega y un patio privado. La calefacción es independiente de gas natural. Precio 120.000 €, unos 571 €/m².
+
+https://realhunt.co/es/deal/it-vicalvi-stone-house-views-fireplace-120k
 
 ### Casa en un pueblo medieval con terraza sobre un mar de nubes en Toscana
 

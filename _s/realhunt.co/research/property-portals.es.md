@@ -15,7 +15,7 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 7. [ThinkSPAIN](https://www.thinkspain.com/)
 8. [Kyero](https://www.kyero.com/)
 
-RealHunt: 165 casas revisadas, https://realhunt.co/es/homes/spain
+RealHunt: 171 casas revisadas, https://realhunt.co/es/homes/spain
 
 ## Portugal
 
@@ -26,7 +26,7 @@ RealHunt: 165 casas revisadas, https://realhunt.co/es/homes/spain
 5. [OLX](https://www.olx.pt/)
 6. [RE/MAX PT](https://www.remax.pt/)
 
-RealHunt: 28 casas revisadas, https://realhunt.co/es/homes/portugal
+RealHunt: 36 casas revisadas, https://realhunt.co/es/homes/portugal
 
 ## Italia
 
@@ -50,7 +50,7 @@ RealHunt: 107 casas revisadas, https://realhunt.co/es/homes/italy
 6. [Green-Acres](https://www.green-acres.fr/)
 7. [Superimmo](https://www.superimmo.com/)
 
-RealHunt: 179 casas revisadas, https://realhunt.co/es/homes/france
+RealHunt: 305 casas revisadas, https://realhunt.co/es/homes/france
 
 ## Alemania
 

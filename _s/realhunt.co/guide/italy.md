@@ -47,8 +47,8 @@ Tax on rental income: Optional flat 'cedolare secca' on short lets: 21% for one 
 - [Italy vs United States](https://realhunt.co/countries/italy-vs-united-states)
 - [Italy vs Denmark](https://realhunt.co/countries/denmark-vs-italy)
 - [Italy vs Sweden](https://realhunt.co/countries/italy-vs-sweden)
+- [Italy vs Portugal](https://realhunt.co/countries/italy-vs-portugal)
 - [Italy vs Poland](https://realhunt.co/countries/italy-vs-poland)
-- [Italy vs Japan](https://realhunt.co/countries/italy-vs-japan)
 
 ### Sources
 

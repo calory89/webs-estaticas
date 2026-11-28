@@ -2,7 +2,7 @@
 
 La casa con el precio de salida por metro cuadrado más bajo de Europa en RealHunt es Casa con carácter de 1926 con spa completo, sauna y calefacción geotérmica, en Bjurholm, Västerbotten, Sweden: 99.000 € por 680 m², 146 €/m². Por países, el precio mediano por m² más bajo está en Bulgaria (759 €/m²), Dinamarca (790 €/m²) y Suecia (800 €/m²), y el más alto en los Países Bajos (4.286 €/m²).
 
-A partir de 689 casas de 16 países europeos cuyo anuncio indica una superficie de al menos 20 m², revisadas una a una por una persona, a 28 de noviembre de 2026.
+A partir de 829 casas de 16 países europeos cuyo anuncio indica una superficie de al menos 20 m², revisadas una a una por una persona, a 28 de noviembre de 2026.
 
 Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/cheapest-per-sqm-europe (CC BY 4.0). CSV: https://realhunt.co/research/cheapest-per-sqm-europe.es.csv
 
@@ -41,12 +41,12 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Bulgaria | 6 | 759 € | 690 € |
 | Dinamarca | 44 | 790 € | 403 € |
 | Suecia | 21 | 800 € | 146 € |
-| Francia | 176 | 946 € | 234 € |
+| Francia | 302 | 1.053 € | 234 € |
 | Alemania | 18 | 1.078 € | 741 € |
 | Italia | 89 | 1.138 € | 204 € |
 | Polonia | 31 | 1.139 € | 450 € |
-| España | 162 | 1.231 € | 246 € |
-| Portugal | 28 | 1.274 € | 480 € |
+| España | 168 | 1.232 € | 246 € |
+| Portugal | 36 | 1.274 € | 475 € |
 | Grecia | 64 | 1.400 € | 425 € |
 | República Checa | 3 | 1.464 € | 1.091 € |
 | Reino Unido | 5 | 1.807 € | 1.505 € |
@@ -57,7 +57,7 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 866 anuncios escogidos (el 48% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - El precio por m² es el precio de salida dividido por la superficie que da el anuncio. Se dejan fuera las casas de menos de 20 m² y las que no indican superficie. Las superficies son las del anuncio y pueden medirse de forma distinta según el país.
 - Europa son aquí los países de Europa, Chipre incluido. Los países con menos de 3 casas con superficie no aparecen en la tabla por país.

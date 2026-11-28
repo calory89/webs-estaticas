@@ -49,7 +49,7 @@ Impuesto sobre los ingresos por alquiler: Los alquileres de particulares tributa
 - [Polonia vs Estados Unidos](https://realhunt.co/es/countries/poland-vs-united-states)
 - [Polonia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-poland)
 - [Polonia vs Suecia](https://realhunt.co/es/countries/poland-vs-sweden)
-- [Polonia vs Japón](https://realhunt.co/es/countries/japan-vs-poland)
+- [Polonia vs Portugal](https://realhunt.co/es/countries/poland-vs-portugal)
 
 ### Fuentes
 

@@ -49,7 +49,7 @@ Tax on rental income: Rent paid to a non-resident is subject to 20.42% withholdi
 - [Japan vs United States](https://realhunt.co/countries/japan-vs-united-states)
 - [Japan vs Denmark](https://realhunt.co/countries/denmark-vs-japan)
 - [Japan vs Sweden](https://realhunt.co/countries/japan-vs-sweden)
-- [Japan vs Poland](https://realhunt.co/countries/japan-vs-poland)
+- [Japan vs Portugal](https://realhunt.co/countries/japan-vs-portugal)
 
 ### Sources
 

@@ -49,7 +49,7 @@ Tax on rental income: Private rental income is taxed as a flat lump sum (ryczał
 - [Poland vs United States](https://realhunt.co/countries/poland-vs-united-states)
 - [Poland vs Denmark](https://realhunt.co/countries/denmark-vs-poland)
 - [Poland vs Sweden](https://realhunt.co/countries/poland-vs-sweden)
-- [Poland vs Japan](https://realhunt.co/countries/japan-vs-poland)
+- [Poland vs Portugal](https://realhunt.co/countries/poland-vs-portugal)
 
 ### Sources
 

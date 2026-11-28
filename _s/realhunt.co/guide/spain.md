@@ -36,7 +36,7 @@ Tax on rental income: Non-residents: EU/EEA 19% on net income; non-EU 24% on gro
 - [€91,000 · 4-bedroom house with terrace in Alozaina](https://realhunt.co/deal/es-alozaina-91k-40320) · Alozaina, Málaga, Spain · score 92 · 175 m² · 4 bed
 - [€150,000 · Village house with a plant-filled terrace facing Castalla castle, with garage](https://realhunt.co/deal/es-castalla-150k-388079) · Castalla, Alicante · score 91 · 165 m² · 3 bed
 
-[All 165 homes in Spain](https://realhunt.co/homes/spain)
+[All 171 homes in Spain](https://realhunt.co/homes/spain)
 
 [Costs, taxes and sources for Spain](https://realhunt.co/costs/spain) · [Buying-cost calculator for Spain](https://realhunt.co/buying-costs/spain) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 
@@ -48,8 +48,8 @@ Tax on rental income: Non-residents: EU/EEA 19% on net income; non-EU 24% on gro
 - [Spain vs United States](https://realhunt.co/countries/spain-vs-united-states)
 - [Spain vs Denmark](https://realhunt.co/countries/denmark-vs-spain)
 - [Spain vs Sweden](https://realhunt.co/countries/spain-vs-sweden)
+- [Spain vs Portugal](https://realhunt.co/countries/portugal-vs-spain)
 - [Spain vs Poland](https://realhunt.co/countries/poland-vs-spain)
-- [Spain vs Japan](https://realhunt.co/countries/japan-vs-spain)
 
 ### Sources
 

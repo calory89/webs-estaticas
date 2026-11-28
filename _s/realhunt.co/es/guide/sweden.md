@@ -48,8 +48,8 @@ Impuesto sobre los ingresos por alquiler: Las personas no residentes pagan un 30
 - [Suecia vs Grecia](https://realhunt.co/es/countries/greece-vs-sweden)
 - [Suecia vs Estados Unidos](https://realhunt.co/es/countries/sweden-vs-united-states)
 - [Suecia vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-sweden)
+- [Suecia vs Portugal](https://realhunt.co/es/countries/portugal-vs-sweden)
 - [Suecia vs Polonia](https://realhunt.co/es/countries/poland-vs-sweden)
-- [Suecia vs Japón](https://realhunt.co/es/countries/japan-vs-sweden)
 
 ### Fuentes
 

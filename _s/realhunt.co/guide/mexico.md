@@ -49,7 +49,7 @@ Tax on rental income: Non-residents: 25% ISR withholding on gross rent; plus 16%
 - [Mexico vs United States](https://realhunt.co/countries/mexico-vs-united-states)
 - [Mexico vs Denmark](https://realhunt.co/countries/denmark-vs-mexico)
 - [Mexico vs Sweden](https://realhunt.co/countries/mexico-vs-sweden)
-- [Mexico vs Poland](https://realhunt.co/countries/mexico-vs-poland)
+- [Mexico vs Portugal](https://realhunt.co/countries/mexico-vs-portugal)
 
 ### Sources
 

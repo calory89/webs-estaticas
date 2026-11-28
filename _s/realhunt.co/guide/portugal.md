@@ -35,7 +35,7 @@ Tax on rental income: Long-term: 25% flat for non-residents; short-term (AL) und
 - [€115,000 · Fully remodelled Alentejo village house with wooden ceilings in Chança, Alter do Chão](https://realhunt.co/deal/pt-alter-do-chao-115k-285437) · Chança, Alter do Chão, Portalegre · score 91 · 130 m²
 - [€150,000 · Fully renovated three-storey village house in Peso, Covilhã, below Serra da Estrela](https://realhunt.co/deal/pt-covilha-peso-150k-280003) · Peso, Covilhã, Castelo Branco · score 91 · 86 m² · 2 bed
 
-[All 28 homes in Portugal](https://realhunt.co/homes/portugal)
+[All 36 homes in Portugal](https://realhunt.co/homes/portugal)
 
 [Costs, taxes and sources for Portugal](https://realhunt.co/costs/portugal) · [Buying-cost calculator for Portugal](https://realhunt.co/buying-costs/portugal) · [Can I buy there? Rules by nationality](https://realhunt.co/can-i-buy)
 

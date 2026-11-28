@@ -1,6 +1,6 @@
 # Cheap homes in Spain: key facts and every home on RealHunt
 
-On 28 November 2026, RealHunt lists 165 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 165 homes is €120,000 (€1,231 per m², from the 162 homes with a known size); the cheapest costs €39,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
+On 28 November 2026, RealHunt lists 171 homes for sale in Spain, each one checked by a person. In Spain, the median asking price of those 171 homes is €125,000 (€1,232 per m², from the 168 homes with a known size); the cheapest costs €39,000 and the most expensive €348,000. Taxes and fees add about 7.5–14% to the price of a home in Spain (figures as of 2026).
 
 Source: RealHunt, https://realhunt.co/homes/spain · Updated 28 November 2026 · Licence: CC BY 4.0 (text and figures; the photos belong to the original listings).
 Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://realhunt.co/data/countries/spain.pdf
@@ -9,10 +9,10 @@ Also as JSON: https://realhunt.co/data/countries/spain.json · PDF: https://real
 
 | Fact | Value |
 | --- | --- |
-| Homes on RealHunt | 165 |
-| Median asking price | €120,000 |
-| Median price per m² | €1,231 (162 homes with a known size) |
-| Median size | 93 m² |
+| Homes on RealHunt | 171 |
+| Median asking price | €125,000 |
+| Median price per m² | €1,232 (168 homes with a known size) |
+| Median size | 96 m² |
 | Cheapest and most expensive | €39,000 · €348,000 |
 | Median RealHunt score (70 to 98) | 84 |
 | Taxes and fees to buy | 7.5–14% of the price (as of 2026) |
@@ -46,7 +46,7 @@ Sources:
 
 Full guide: https://realhunt.co/guide/spain
 
-## The 165 homes, best score first
+## The 171 homes, best score first
 
 ### Village house with a panoramic sea-and-mountain terrace in Rossell, Castellón
 
@@ -327,6 +327,14 @@ https://realhunt.co/deal/es-alhama-de-granada-99k-62382
 This fully renovated house was built in 1885 and is ready to move in. It has four bedrooms, two bathrooms, a separate furnished kitchen and several living rooms, including a living-dining room of 22.8 m2. Outdoor features include a terrace, an interior patio of more than 41 m2, views of the castle, a fireplace and 1,281 sq ft of land, plus an outbuilding next to the patio. The home has heating and split inverter air conditioning, and its stone walls are about 50 cm thick. Asking €112,000, about €709/m².
 
 https://realhunt.co/deal/es-sax-renovated-stone-house-castle-views-112k
+
+### Renovated 5-bedroom country house with roof terrace and land in Oria, Almería
+
+€130,000 · Oria, Almería, Andalusia · 232 m² · 5 bedrooms · RealHunt score 88 · added 2026-11-28
+
+This renovated country house is in good condition. It offers 232 m2 with 5 bedrooms, 2 bathrooms, a large lounge with a corner fireplace and a fitted kitchen. Outside there is a roof terrace, a raised tiled patio with a barbecue, views across open countryside and parking at the front. The 62,484 sq ft plot includes several outbuildings with potential for conversion, subject to permissions. Oria and Albox are under 20 minutes away by car. Asking €130,000, about €560/m².
+
+https://realhunt.co/deal/es-oria-renovated-country-house-roof-terrace-130k
 
 ### Premium townhouse fully renovated in 2025 in Jijona
 
@@ -736,6 +744,14 @@ https://realhunt.co/deal/es-orce-cave-house-views-patio-99k
 
 https://realhunt.co/deal/es-murcia-99k-61734
 
+### Renovated 3-bedroom house with countryside views and land in Pinoso, Alicante
+
+€129,000 · Pinoso, Alicante · 104 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-28
+
+This renovated house in the hamlet of Casas Pastor, near Pinoso, is move-in ready. It has 3 bedrooms and 2 bathrooms, a bright kitchen, a living room with a wood stove, and a conservatory overlooking the patio. The upper floor has a balcony with countryside views. The land is 1,292 sq ft, with a courtyard and an outbuilding. Heating is by oil with an electric boiler, and the home is connected to water and electricity. Asking €129,000, about €1,240/m².
+
+https://realhunt.co/deal/es-pinoso-renovated-village-house-countryside-views-129k
+
 ### Renovated 3-bedroom cave house with courtyard and terrace in Castilléjar, Granada
 
 €129,950 · Castilléjar, Granada · 140 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-27
@@ -743,6 +759,14 @@ https://realhunt.co/deal/es-murcia-99k-61734
 The cave house has been renovated while keeping its natural cave walls, vaulted ceilings and wooden beams. Inside are a living room with an adjoining room, a kitchen with storage room and two modern bathrooms with walk-in showers. A large enclosed courtyard offers ample parking and room for a terrace or garden, plus an 18-metre cave tunnel for a workshop or studio. Castilléjar is 5 to 10 minutes away by car, and Granada is about 1 hour and 40 minutes away. Asking €129,950, about €928/m².
 
 https://realhunt.co/deal/es-castillejar-cave-house-renovated-courtyard-129k
+
+### 3-bedroom country house with mountain views, garden and fireplace in Barinas, Murcia
+
+€133,500 · Barinas, Murcia · 116 m² · 3 bedrooms · RealHunt score 84 · added 2026-11-28
+
+This country house in Barinas has three bedrooms, one bathroom and a bright open-plan living and dining area with kitchen. The living room has a wood-burning fireplace and air conditioning, and the home has exposed wooden beams. Outside there is a garden, a sunny front porch with mountain views, two private rear patios and 3,670 sq ft of land. A separate plot holds a barbecue area, storage room and parking for one car. The village of Barinas is a short walk away, and Abanilla is nearby. Asking €133,500, about €1,151/m².
+
+https://realhunt.co/deal/es-barinas-country-house-mountain-views-fireplace-134k
 
 ### Move-in ready furnished cave house with mountain views in Freila, Granada
 
@@ -871,6 +895,14 @@ https://realhunt.co/deal/es-torrevieja-99k-86111
 €99,950 for 57 m² and 2 bedrooms in San Pedro del Pinatar (Murcia), about €1,754/m². About 1000 m from the sea. With terrace. Ready to move in: listed in good condition, and not marked as occupied, rented or at auction. Ask for the nota simple before paying a deposit.
 
 https://realhunt.co/deal/es-san-pedro-del-pinatar-99k-91782
+
+### Fully renovated 3-bedroom house with terrace and views in Algueña, Alicante
+
+€125,000 · Algueña, Alicante · 101 m² · 3 bedrooms · RealHunt score 83 · added 2026-11-28
+
+This fully renovated house is move-in ready, with a living and dining room featuring a fireplace. There are three double bedrooms, a fully renovated bathroom and a fully equipped kitchen. Outdoors, the home has a terrace with views across the village and towards the mountains, a private patio and 1,356 sq ft of land. New electrical and plumbing systems, an alarm system and an east-facing orientation complete the home. It is set in the village of Algueña in the Valencian countryside. Asking €125,000, about €1,238/m².
+
+https://realhunt.co/deal/es-alguena-renovated-house-terrace-mountain-views-125k
 
 ### Fully renovated house with terrace and second residence in Alcaudete de la Jara, Toledo
 
@@ -1104,6 +1136,14 @@ https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k
 
 https://realhunt.co/deal/es-torrevieja-99k-92433
 
+### Renovated 3-bedroom house with terrace and fireplace in Jijona, Alicante, Valencian Community
+
+€119,500 · Jijona, Alicante, Valencian Community · 96 m² · 3 bedrooms · RealHunt score 81 · added 2026-11-28
+
+Renovated house in the old town of Jijona, spread across several floors. It has three bedrooms, each with its own bathroom, and a separate kitchen on the main floor. Each floor has its own lockable door, and the third floor includes an independent space. The upper floor has a terrace, and the house also has a fireplace, with about 96 m² of built area. The property is close to shops, restaurants and public services. Asking €119,500, about €1,245/m².
+
+https://realhunt.co/deal/es-jijona-renovated-house-terrace-fireplace-120k
+
 ### Turnkey furnished 1-bedroom house with garden and pool in El Ronquillo, Seville
 
 €125,000 · El Ronquillo, Seville · 66 m² · 1 bedrooms · RealHunt score 81 · added 2026-11-27
@@ -1167,6 +1207,14 @@ https://realhunt.co/deal/es-orihuela-bungalow-private-garden-terrace-198k
 Fully renovated and furnished ground-floor bungalow, ready to move into. It has 2 bedrooms with fitted wardrobes, a modern bathroom with a walk-in shower, and a fully fitted kitchen with a washing machine and dishwasher. Outside there is a front porch with awnings, a spacious terrace overlooking a communal garden, and an external storage room. Shopping centres, supermarkets, golf courses and La Zenia Boulevard are within walking distance, and the beaches of Orihuela Costa are a short distance away. Asking €199,000, about €2,341/m².
 
 https://realhunt.co/deal/es-orihuela-renovated-furnished-bungalow-terrace-199k
+
+### Wooden 1-bedroom house with terrace, views and land in Lorca, Murcia
+
+€127,000 · Lorca, Murcia · 99 m² · 1 bedrooms · RealHunt score 80 · added 2026-11-28
+
+This wooden house offers 99 m² of living space, one bedroom and one bathroom. It includes a fully equipped kitchen, separate living and dining rooms, and an enclosed veranda with a terrace. The 4.5 hectares of land offer panoramic views from every corner. The home has solar panels, butane gas heating and a current water connection to the neighbouring property. It is 10 minutes from El Consejero and 25 minutes from Lorca centre. Asking €127,000, about €1,283/m².
+
+https://realhunt.co/deal/es-lorca-wooden-countryside-house-terrace-views-127k
 
 ### Renovated 3-bedroom bungalow with terraces and solarium in Torrevieja, Costa Blanca, Alicante
 

@@ -49,7 +49,7 @@ Tax on rental income: Non-resident owners are taxed in Germany on net rental inc
 - [Germany vs United States](https://realhunt.co/countries/germany-vs-united-states)
 - [Germany vs Denmark](https://realhunt.co/countries/denmark-vs-germany)
 - [Germany vs Sweden](https://realhunt.co/countries/germany-vs-sweden)
-- [Germany vs Poland](https://realhunt.co/countries/germany-vs-poland)
+- [Germany vs Portugal](https://realhunt.co/countries/germany-vs-portugal)
 
 ### Sources
 

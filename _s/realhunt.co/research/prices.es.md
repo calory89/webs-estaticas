@@ -2,7 +2,7 @@
 
 Entre los 15 países con al menos 10 casas de superficie conocida en RealHunt, el precio de salida mediano por metro cuadrado más bajo está en Japón (340 €/m²), Dinamarca (790 €/m²) y Suecia (800 €/m²), y el más alto en los Países Bajos (4.286 €/m²). El precio de salida mediano más bajo está en Japón (49.680 €) y Alemania (55.000 €).
 
-Medianas de 866 anuncios en 23 países, revisados uno a uno por una persona, a 28 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
+Medianas de 1.006 anuncios en 23 países, revisados uno a uno por una persona, a 28 de noviembre de 2026. Describen las casas baratas y listas para vivir que publica RealHunt, no todo el mercado de cada país.
 
 Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es/research/prices (CC BY 4.0). CSV: https://realhunt.co/research/prices.es.csv
 
@@ -14,13 +14,13 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 | Bulgaria (muestra pequeña) | 6 | 69.000 € | 759 € | 6 | 90 m² | 58.900 € | 89.000 € | 3 | 93 |
 | Dinamarca | 46 | 93.200 € | 790 € | 44 | 115 m² | 35.400 € | 160.000 € | 21 | 88 |
 | Suecia | 37 | 72.000 € | 800 € | 21 | 108 m² | 22.000 € | 178.900 € | 23 | 84 |
-| Francia | 179 | 119.000 € | 946 € | 176 | 124 m² | 39.000 € | 214.000 € | 55 | 83 |
 | Canadá | 16 | 99.500 € | 963 € | 16 | 124 m² | 55.842 € | 190.700 € | 5 | 86 |
+| Francia | 305 | 124.800 € | 1.053 € | 302 | 115 m² | 39.000 € | 214.000 € | 69 | 82 |
 | Alemania | 18 | 55.000 € | 1.078 € | 18 | 54 m² | 40.000 € | 199.000 € | 7 | 80 |
 | Italia | 107 | 97.000 € | 1.138 € | 89 | 85 m² | 12.000 € | 215.000 € | 27 | 82 |
 | Polonia | 31 | 75.170 € | 1.139 € | 31 | 62 m² | 53.693 € | 90.600 € | 18 | 84 |
-| España | 165 | 120.000 € | 1.231 € | 162 | 93 m² | 39.000 € | 348.000 € | 43 | 84 |
-| Portugal | 28 | 140.000 € | 1.274 € | 28 | 109 m² | 48.000 € | 200.000 € | 17 | 84 |
+| España | 171 | 125.000 € | 1.232 € | 168 | 96 m² | 39.000 € | 348.000 € | 44 | 84 |
+| Portugal | 36 | 145.000 € | 1.274 € | 36 | 110 m² | 48.000 € | 200.000 € | 18 | 84 |
 | México | 12 | 98.621 € | 1.354 € | 12 | 78 m² | 50.575 € | 216.600 € | 5 | 86 |
 | Colombia (muestra pequeña) | 3 | 176.300 € | 1.377 € | 3 | 132 m² | 165.200 € | 203.500 € | 3 | 86 |
 | Grecia | 65 | 130.000 € | 1.400 € | 64 | 90 m² | 68.000 € | 210.000 € | 27 | 87 |
@@ -36,7 +36,7 @@ Actualizado el 28 de noviembre de 2026. Fuente: RealHunt, https://realhunt.co/es
 
 ## Método y límites
 
-- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 866 anuncios escogidos (el 48% cuesta 100.000 € o menos), no medias nacionales.
+- RealHunt no es un censo del mercado. Una persona elige casas baratas para su país y listas para entrar a vivir, así que estas cifras son medianas de 1.006 anuncios escogidos (el 45% cuesta 100.000 € o menos), no medias nacionales.
 - Los precios son los de salida de cada anuncio, en euros, el día en que se añadió la casa. La venta puede cerrarse por menos.
 - Mediana: la casa que queda en el centro al ordenarlas (si el número es par, la más alta de las dos centrales).
 - Los países con menos de 10 casas aparecen marcados como muestra pequeña; con menos de 3 no se publican.

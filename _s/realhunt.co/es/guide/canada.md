@@ -49,7 +49,7 @@ Impuesto sobre los ingresos por alquiler: A los no residentes se les retiene el 
 - [Canadá vs Estados Unidos](https://realhunt.co/es/countries/canada-vs-united-states)
 - [Canadá vs Dinamarca](https://realhunt.co/es/countries/canada-vs-denmark)
 - [Canadá vs Suecia](https://realhunt.co/es/countries/canada-vs-sweden)
-- [Canadá vs Polonia](https://realhunt.co/es/countries/canada-vs-poland)
+- [Canadá vs Portugal](https://realhunt.co/es/countries/canada-vs-portugal)
 
 ### Fuentes
 

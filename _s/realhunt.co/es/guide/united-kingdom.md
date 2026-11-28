@@ -48,7 +48,7 @@ Impuesto sobre los ingresos por alquiler: Los arrendadores no residentes pagan e
 - [Reino Unido vs Estados Unidos](https://realhunt.co/es/countries/united-kingdom-vs-united-states)
 - [Reino Unido vs Dinamarca](https://realhunt.co/es/countries/denmark-vs-united-kingdom)
 - [Reino Unido vs Suecia](https://realhunt.co/es/countries/sweden-vs-united-kingdom)
-- [Reino Unido vs Polonia](https://realhunt.co/es/countries/poland-vs-united-kingdom)
+- [Reino Unido vs Portugal](https://realhunt.co/es/countries/portugal-vs-united-kingdom)
 
 ### Fuentes
 

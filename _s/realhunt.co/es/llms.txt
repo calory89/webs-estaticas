@@ -2,7 +2,7 @@
 
 > RealHunt publica casas baratas en venta en todo el mundo (la mayoría por menos de 100.000 €), revisadas una a una por una persona y calificadas de 70 a 98 frente a todas las demás casas de la web. No es una inmobiliaria: cada casa enlaza con su anuncio original.
 
-Hoy: 866 casas en 23 países (un país cuenta a partir de 3 casas). Actualizado el 2026-11-28 08:09 UTC. Índice en inglés, con todas las páginas: https://realhunt.co/llms.txt. Los textos y las cifras se pueden citar con un enlace a la página de origen (CC BY 4.0); las normas, los impuestos y los gastos son información general, no asesoramiento jurídico ni fiscal.
+Hoy: 1006 casas en 23 países (un país cuenta a partir de 3 casas). Actualizado el 2026-11-28 10:05 UTC. Índice en inglés, con todas las páginas: https://realhunt.co/llms.txt. Los textos y las cifras se pueden citar con un enlace a la página de origen (CC BY 4.0); las normas, los impuestos y los gastos son información general, no asesoramiento jurídico ni fiscal.
 
 ## Páginas principales
 
@@ -35,12 +35,12 @@ Hoy: 866 casas en 23 países (un país cuenta a partir de 3 casas). Actualizado 
 
 ### Para buscar casas
 
-- [Casas en venta por país: 866 viviendas en 23 países](https://realhunt.co/es/homes)
+- [Casas en venta por país: 1.006 viviendas en 23 países](https://realhunt.co/es/homes)
 - [Casas nuevas en RealHunt, primero las más recientes](https://realhunt.co/es/new)
 - [Las mejores casas de RealHunt, por país](https://realhunt.co/es/best)
 - [Qué se compra con 100.000 € en 15 países](https://realhunt.co/es/what-100k-buys)
-- [Casas en venta en Francia (179, desde 39.000 €)](https://realhunt.co/es/homes/france)
-- [Casas en venta en España (165, desde 39.000 €)](https://realhunt.co/es/homes/spain)
+- [Casas en venta en Francia (305, desde 39.000 €)](https://realhunt.co/es/homes/france)
+- [Casas en venta en España (171, desde 39.000 €)](https://realhunt.co/es/homes/spain)
 - [Casas en venta en Italia (107, desde 12.000 €)](https://realhunt.co/es/homes/italy)
 - [Casas en venta en Grecia (65, desde 68.000 €)](https://realhunt.co/es/homes/greece)
 - [Casas en venta en Estados Unidos (61, desde 65.428 €)](https://realhunt.co/es/homes/united-states)
@@ -99,16 +99,16 @@ Hoy: 866 casas en 23 países (un país cuenta a partir de 3 casas). Actualizado 
 
 ## Países
 
-- [Casas en venta en Francia](https://realhunt.co/es/homes/france): 179 casas. Texto: https://realhunt.co/es/homes/france.md
-- [Casas en venta en España](https://realhunt.co/es/homes/spain): 165 casas. Texto: https://realhunt.co/es/homes/spain.md
+- [Casas en venta en Francia](https://realhunt.co/es/homes/france): 305 casas. Texto: https://realhunt.co/es/homes/france.md
+- [Casas en venta en España](https://realhunt.co/es/homes/spain): 171 casas. Texto: https://realhunt.co/es/homes/spain.md
 - [Casas en venta en Italia](https://realhunt.co/es/homes/italy): 107 casas. Texto: https://realhunt.co/es/homes/italy.md
 - [Casas en venta en Grecia](https://realhunt.co/es/homes/greece): 65 casas. Texto: https://realhunt.co/es/homes/greece.md
 - [Casas en venta en Estados Unidos](https://realhunt.co/es/homes/united-states): 61 casas. Texto: https://realhunt.co/es/homes/united-states.md
 - [Casas en venta en Dinamarca](https://realhunt.co/es/homes/denmark): 46 casas. Texto: https://realhunt.co/es/homes/denmark.md
 - [Casas en venta en Suecia](https://realhunt.co/es/homes/sweden): 37 casas. Texto: https://realhunt.co/es/homes/sweden.md
+- [Casas en venta en Portugal](https://realhunt.co/es/homes/portugal): 36 casas. Texto: https://realhunt.co/es/homes/portugal.md
 - [Pisos en venta en Polonia](https://realhunt.co/es/homes/poland): 31 casas. Texto: https://realhunt.co/es/homes/poland.md
 - [Casas en venta en Japón](https://realhunt.co/es/homes/japan): 30 casas. Texto: https://realhunt.co/es/homes/japan.md
-- [Casas en venta en Portugal](https://realhunt.co/es/homes/portugal): 28 casas. Texto: https://realhunt.co/es/homes/portugal.md
 - [Pisos en venta en los Países Bajos](https://realhunt.co/es/homes/netherlands): 18 casas. Texto: https://realhunt.co/es/homes/netherlands.md
 - [Pisos en venta en Alemania](https://realhunt.co/es/homes/germany): 18 casas. Texto: https://realhunt.co/es/homes/germany.md
 - [Casas en venta en Canadá](https://realhunt.co/es/homes/canada): 16 casas. Texto: https://realhunt.co/es/homes/canada.md

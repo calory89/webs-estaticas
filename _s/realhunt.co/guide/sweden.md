@@ -48,8 +48,8 @@ Tax on rental income: Non-resident individuals pay 30% tax on net rental income 
 - [Sweden vs Greece](https://realhunt.co/countries/greece-vs-sweden)
 - [Sweden vs United States](https://realhunt.co/countries/sweden-vs-united-states)
 - [Sweden vs Denmark](https://realhunt.co/countries/denmark-vs-sweden)
+- [Sweden vs Portugal](https://realhunt.co/countries/portugal-vs-sweden)
 - [Sweden vs Poland](https://realhunt.co/countries/poland-vs-sweden)
-- [Sweden vs Japan](https://realhunt.co/countries/japan-vs-sweden)
 
 ### Sources
 

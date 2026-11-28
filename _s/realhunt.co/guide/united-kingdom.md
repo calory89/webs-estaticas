@@ -48,7 +48,7 @@ Tax on rental income: Non-resident landlords pay UK income tax on rent at 20%, 4
 - [United Kingdom vs United States](https://realhunt.co/countries/united-kingdom-vs-united-states)
 - [United Kingdom vs Denmark](https://realhunt.co/countries/denmark-vs-united-kingdom)
 - [United Kingdom vs Sweden](https://realhunt.co/countries/sweden-vs-united-kingdom)
-- [United Kingdom vs Poland](https://realhunt.co/countries/poland-vs-united-kingdom)
+- [United Kingdom vs Portugal](https://realhunt.co/countries/portugal-vs-united-kingdom)
 
 ### Sources
 

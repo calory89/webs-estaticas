@@ -15,7 +15,7 @@ Updated 28 November 2026. Source: RealHunt, https://realhunt.co/research/propert
 7. [ThinkSPAIN](https://www.thinkspain.com/)
 8. [Kyero](https://www.kyero.com/)
 
-RealHunt: 165 checked homes, https://realhunt.co/homes/spain
+RealHunt: 171 checked homes, https://realhunt.co/homes/spain
 
 ## Portugal
 
@@ -26,7 +26,7 @@ RealHunt: 165 checked homes, https://realhunt.co/homes/spain
 5. [OLX](https://www.olx.pt/)
 6. [RE/MAX PT](https://www.remax.pt/)
 
-RealHunt: 28 checked homes, https://realhunt.co/homes/portugal
+RealHunt: 36 checked homes, https://realhunt.co/homes/portugal
 
 ## Italy
 
@@ -50,7 +50,7 @@ RealHunt: 107 checked homes, https://realhunt.co/homes/italy
 6. [Green-Acres](https://www.green-acres.fr/)
 7. [Superimmo](https://www.superimmo.com/)
 
-RealHunt: 179 checked homes, https://realhunt.co/homes/france
+RealHunt: 305 checked homes, https://realhunt.co/homes/france
 
 ## Germany
 

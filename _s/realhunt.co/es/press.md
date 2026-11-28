@@ -8,13 +8,13 @@ Cifras actualizadas el 28 de noviembre de 2026 · Contacto de prensa: carlos@equ
 
 ### RealHunt en cifras
 
-- 866casas en venta en la web
+- 1.006casas en venta en la web
 - 23países con al menos 3 casas
-- 107.000 €precio de salida mediano
+- 115.000 €precio de salida mediano
 - 7.400 €la casa más barata hoy
-- 48%de las casas cuesta 100.000 € o menos
+- 45%de las casas cuesta 100.000 € o menos
 - 70–98rango de notas hoy (escala de 70 a 98)
-- 465casas añadidas en los últimos 30 días
+- 605casas añadidas en los últimos 30 días
 - 62portales y agencias de los que salen las casas
 - 280respuestas a «¿puedo comprar allí?» (14 nacionalidades, 20 países)
 
@@ -30,11 +30,11 @@ Calculadas con las casas de la web cada vez que se actualiza. Precios de salida 
 - [Dónde están las casas de menos de 50.000 €: países y regiones (2026)](https://realhunt.co/es/research/homes-under-50000). 68 casas de 50.000 € o menos; la mayoría en Italia (32).
 - [Cuántos años de sueldo neto medio cuesta una casa barata, país por país (2026)](https://realhunt.co/es/research/years-of-salary). 1,5 años de sueldo neto en Alemania, 8 en los Países Bajos.
 - [Casas baratas y riesgo de inundación: parte con indicador medio o alto, por país (2026)](https://realhunt.co/es/research/flood-indicator). El 9 % de 585 casas está marcado como medio o alto; 13, como alto.
-- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.397 €/m² a menos de 30 km de un aeropuerto, 1.069 €/m² entre 30 y 60 km.
+- [Cómo cambia el precio de una casa barata con la distancia al aeropuerto (2026)](https://realhunt.co/es/research/price-by-airport-distance). 1.379 €/m² a menos de 30 km de un aeropuerto, 1.123 €/m² entre 30 y 60 km.
 - [Precio por m² de la obra nueva en Bali, Phuket, Koh Samui, Tulum y Batumi (2026)](https://realhunt.co/es/research/new-build-prices). De 1.366 €/m² en Batumi a 3.661 €/m² en Phuket.
 - [Las casas más baratas por metro cuadrado de Europa (2026)](https://realhunt.co/es/research/cheapest-per-sqm-europe). La más baja de Europa: 146 €/m² en Bjurholm, Västerbotten, Suecia; mediana más baja: Bulgaria, 759 €/m².
 - [Casas junto al mar por menos de 100.000 €: dónde están, país por país (2026)](https://realhunt.co/es/research/sea-homes-under-100000). 82 casas junto al mar de 100.000 € o menos; la mayoría en Dinamarca (16).
-- [Casas nuevas en RealHunt en noviembre de 2026, por país](https://realhunt.co/es/research/new-homes-this-month). 460 casas añadidas en noviembre de 2026; la mayoría en Francia (160).
+- [Casas nuevas en RealHunt en noviembre de 2026, por país](https://realhunt.co/es/research/new-homes-this-month). 600 casas añadidas en noviembre de 2026; la mayoría en Francia (286).
 
 Cada página tiene su gráfico, tabla, CSV, método y una cita lista para copiar. ¿Necesitas otro corte (un país, un tramo de precio, un mes)? Pídelo en carlos@equinoxinvestmentgroup.com.
 
